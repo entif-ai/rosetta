@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://entif.ai/packs/stdpack-source-substrate/schema/source-substrate.schema.json",
+  "title": "Source Substrate Starter Shapes",
+  "type": "object",
+  "properties": {
+    "sourceSystemProfile": {
+      "type": "object",
+      "required": ["canonicalName", "capabilityFacets", "curationPosture", "evidenceRefs", "rightsPosture", "sourceRoles", "sourceSystemId"]
+    },
+    "sourceRecord": {
+      "type": "object",
+      "required": ["metadataBlob", "publicationStatus", "recordLocalId", "recordType", "sourceSystemId", "stableLocators"]
+    },
+    "sourceManifestation": {
+      "type": "object",
+      "required": ["accessRequirements", "byteHashes", "manifestationId", "manifestationKind", "mediaType", "sourceRecordCid", "structureProfile"]
+    },
+    "trustMatrix": {
+      "type": "object",
+      "required": ["axes", "notes", "subjectCid", "trustClass"]
+    }
+  },
+  "additionalProperties": false
+}

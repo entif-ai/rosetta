@@ -1,0 +1,9 @@
+{
+  "name": "source-registry",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/source-registry/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project source-registry --web",
+  "targets": {}
+}

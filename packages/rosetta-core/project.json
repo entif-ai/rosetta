@@ -1,0 +1,9 @@
+{
+  "name": "rosetta-core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rosetta-core/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project rosetta-core --web",
+  "targets": {}
+}

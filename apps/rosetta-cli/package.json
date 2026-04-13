@@ -1,0 +1,11 @@
+{
+  "name": "@entif-ai/rosetta-cli",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@entif-ai/ingress-refinery": "workspace:*",
+    "@entif-ai/projection-adapters": "workspace:*",
+    "@entif-ai/rosetta-receipts": "workspace:*",
+    "@entif-ai/rosetta-store": "workspace:*"
+  }
+}

@@ -1,0 +1,20 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix entif: <https://entif.ai/ns#> .
+
+entif:SourceSystemProfileShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceSystemProfile ;
+  sh:property [ sh:path entif:sourceSystemId ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:canonicalName ; sh:minCount 1 ] .
+
+entif:SourceRecordShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceRecord ;
+  sh:property [ sh:path entif:recordLocalId ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:stableLocators ; sh:minCount 1 ] .
+
+entif:SourceManifestationShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceManifestation ;
+  sh:property [ sh:path entif:manifestationId ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceRecordCid ; sh:minCount 1 ] .

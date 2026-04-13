@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "tsBuildInfoFile": "tmp/tsconfig.spec.tsbuildinfo",
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["src/**/*.spec.ts", "src/**/*.test.ts"],
+  "exclude": ["dist", "tmp"]
+}

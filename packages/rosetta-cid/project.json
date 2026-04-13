@@ -1,0 +1,9 @@
+{
+  "name": "rosetta-cid",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rosetta-cid/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project rosetta-cid --web",
+  "targets": {}
+}

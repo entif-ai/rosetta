@@ -1,0 +1,9 @@
+{
+  "name": "source-substrate",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/source-substrate/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project source-substrate --web",
+  "targets": {}
+}

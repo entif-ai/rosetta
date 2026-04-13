@@ -1,0 +1,15 @@
+{
+  "$schema": "../_schemas/pack-manifest.schema.json",
+  "id": "rrp",
+  "kind": "pack",
+  "version": "0.1.0",
+  "title": "Rosetta Receipt Pack",
+  "summary": "Receipt vocabulary, schema, starter SHACL, examples, and test vectors for signed bundle verification.",
+  "entrypoints": {
+    "examples": ["examples/bootstrap-receipt-bundle.md"],
+    "schema": ["schema/receipt.schema.json"],
+    "shacl": ["shacl/receipt.shacl.ttl"],
+    "tests": ["tests/README.md", "test-vectors/receipt-pass.json", "test-vectors/receipt-tampered.json"],
+    "vocab": ["vocab/rrp.ttl"]
+  }
+}

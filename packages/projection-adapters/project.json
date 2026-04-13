@@ -1,0 +1,9 @@
+{
+  "name": "projection-adapters",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/projection-adapters/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project projection-adapters --web",
+  "targets": {}
+}

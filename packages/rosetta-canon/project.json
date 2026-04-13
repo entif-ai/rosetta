@@ -1,0 +1,9 @@
+{
+  "name": "rosetta-canon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rosetta-canon/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project rosetta-canon --web",
+  "targets": {}
+}
