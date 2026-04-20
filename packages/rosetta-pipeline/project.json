@@ -1,0 +1,8 @@
+{
+  "name": "rosetta-pipeline",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rosetta-pipeline/src",
+  "projectType": "library",
+  "tags": ["rosetta", "pipeline", "semantic"],
+  "targets": {}
+}
