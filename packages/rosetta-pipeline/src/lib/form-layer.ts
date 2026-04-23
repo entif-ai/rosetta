@@ -6,8 +6,8 @@
  * Tokenizes text signals into typed tokens (word, punct, number, emoji, datetime).
  * Each Form tile carries provenance back to the source Observation.
  */
-import { createFormToken, createFormDatetime } from "../../../rosetta-core/src/index.js";
-import type { TileEnvelope } from "../../../rosetta-core/src/index.js";
+import { createFormToken, createFormDatetime } from "@entif-ai/rosetta-core";
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import type { PipelineContext } from "./pipeline-context.js";
 import type { Layer1Forms } from "./pipeline-types.js";
 

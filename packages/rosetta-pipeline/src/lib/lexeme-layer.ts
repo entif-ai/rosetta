@@ -8,8 +8,8 @@
  *
  * TODO (next cycle): wire in WordNet VocabPack or vector-embedding sense scorer.
  */
-import { createLexeme, createConjecture } from "../../../rosetta-core/src/index.js";
-import type { TileEnvelope } from "../../../rosetta-core/src/index.js";
+import { createLexeme, createConjecture } from "@entif-ai/rosetta-core";
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import type { PipelineContext } from "./pipeline-context.js";
 import type { Layer2Lexemes } from "./pipeline-types.js";
 
@@ -40,7 +40,7 @@ function guessPOS(surface: string): "noun" | "verb" | "adj" | "adv" {
   return "noun";
 }
 
-export function runLexemeLayer(ctx: PipelineContext): Layer2Lexemes {
+function runLexemeLayer(ctx: PipelineContext): Layer2Lexemes {
   const { L1, options } = ctx;
   if (!L1) throw new Error("L1 (forms) not available — run form layer first");
 
