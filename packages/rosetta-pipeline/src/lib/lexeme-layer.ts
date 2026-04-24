@@ -8,7 +8,8 @@
  *
  * TODO (next cycle): wire in WordNet VocabPack or vector-embedding sense scorer.
  */
-import { createConjecture, createLexeme, type TileEnvelope } from "../../../rosetta-core/src/index.js";
+import { createLexeme, createConjecture } from "@entif-ai/rosetta-core";
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import type { PipelineContext } from "./pipeline-context.js";
 import type { Layer2Lexemes } from "./pipeline-types.js";
 
