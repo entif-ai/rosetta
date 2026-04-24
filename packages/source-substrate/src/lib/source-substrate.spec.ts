@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
-import { createSourceManifestationTile, createSourceRecordTile, createSourceSystemProfileTile, createTrustMatrixTile } from './source-substrate.js';
+import {
+  createSourceEpisodeTile,
+  createSourceManifestationTile,
+  createSourceRecordTile,
+  createSourceSystemProfileTile,
+  createTrustMatrixTile
+} from './source-substrate.js';
 
 describe('source-substrate', () => {
   it('keeps source system, record, manifestation, and trust matrix separate', () => {
@@ -64,5 +70,42 @@ describe('source-substrate', () => {
     );
 
     expect(new Set([system.kind, record.kind, manifestation.kind, matrix.kind]).size).toBe(4);
+  });
+
+  it('models a parse-only source episode with chronology, rights, locator, family, and raw evidence', () => {
+    const episode = createSourceEpisodeTile({
+      chronology: {
+        primary: {
+          date: '2026-04-23',
+          kind: 'updatedAt',
+          localDateTime: '2026-04-23T13:09:43',
+          source: 'top-matter'
+        }
+      },
+      classification: {
+        confidence: 0.95,
+        reasons: ['top-matter contains chat export metadata']
+      },
+      episodeId: 'episode.chat.20260423',
+      family: 'chat-transcript',
+      locator: 'docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md',
+      mode: 'parse-only',
+      rawEvidenceRefs: [
+        {
+          evidenceId: 'raw.chat.20260423',
+          evidenceKind: 'local-file',
+          locator: 'docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md',
+          sha256: 'abc123'
+        }
+      ],
+      rightsScope: ['local-private', 'no-external-publish']
+    });
+
+    expect(episode.kind).toBe('source.episode');
+    expect(episode.payload.family).toBe('chat-transcript');
+    expect(episode.payload.mode).toBe('parse-only');
+    expect(episode.payload.rawEvidenceRefs[0].locator).toContain('20260423');
+    expect(episode.payload.rightsScope).toContain('local-private');
+    expect(episode.payload.chronology.primary.kind).toBe('updatedAt');
   });
 });

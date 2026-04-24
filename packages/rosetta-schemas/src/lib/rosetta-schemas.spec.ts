@@ -27,4 +27,17 @@ describe('rosetta-schemas', () => {
 
     expect(bundle.summary.conforms).toBe(1);
   });
+
+  it('requires source episode fields for Text-Core ingest', () => {
+    const result = validatePayload('source.episode', {
+      episodeId: 'episode.chat.20260423',
+      family: 'chat-transcript',
+      mode: 'parse-only'
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('Missing required field: rawEvidenceRefs');
+    expect(result.errors).toContain('Missing required field: chronology');
+    expect(result.errors).toContain('Missing required field: rightsScope');
+  });
 });

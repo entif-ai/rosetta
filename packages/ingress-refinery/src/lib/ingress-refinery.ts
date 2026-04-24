@@ -9,6 +9,10 @@ import {
   createSourceManifestationTile,
   createSourceSystemProfileTile,
   createTrustMatrixTile,
+  type RawEvidenceRef,
+  type SourceChronology,
+  type SourceEpisode,
+  type SourceFamily,
   type SourceManifestation,
   type SourceRecord,
   type TrustMatrix
@@ -23,6 +27,14 @@ export interface IngressJob {
   policyRefs: string[];
   mode: 'parse-only';
   status: 'evaluated' | 'normalized' | 'parsed';
+}
+
+export interface SourceEpisodeRequest {
+  chronology: SourceChronology;
+  locator?: string;
+  rawEvidenceRefs: RawEvidenceRef[];
+  requestedMode?: 'parse-only' | 'side-effect';
+  rightsScope: string[];
 }
 
 export interface FetchReceiptPayload {
@@ -125,6 +137,80 @@ export function createIngressJob(sourceRecordCid: string, sourceManifestationCid
       status: 'parsed'
     },
     { pack: 'ingress-refinery' }
+  );
+}
+
+function classifySourceFamily(record: TileEnvelope<SourceRecord>, manifestation: TileEnvelope<SourceManifestation>): {
+  confidence: number;
+  family: SourceFamily;
+  reasons: string[];
+} {
+  const recordType = record.payload.recordType.toLowerCase();
+  const sourceSystemId = record.payload.sourceSystemId.toLowerCase();
+  const metadataText = JSON.stringify(record.payload.metadataBlob).toLowerCase();
+  const structureProfile = manifestation.payload.structureProfile.toLowerCase();
+
+  if (recordType.includes('chat') || metadataText.includes('chatgpt') || structureProfile.includes('chat')) {
+    return {
+      confidence: 0.95,
+      family: 'chat-transcript',
+      reasons: ['Record or manifestation metadata matched chat transcript signals.']
+    };
+  }
+
+  if (sourceSystemId === 'arxiv' || recordType.includes('arxiv') || metadataText.includes('arxiv')) {
+    return {
+      confidence: 0.9,
+      family: 'arxiv-paper',
+      reasons: ['Record metadata matched arXiv paper signals.']
+    };
+  }
+
+  if (sourceSystemId === 'github' || recordType.includes('github') || metadataText.includes('github')) {
+    return {
+      confidence: 0.85,
+      family: 'github-text',
+      reasons: ['Record metadata matched GitHub text signals.']
+    };
+  }
+
+  return {
+    confidence: 0.1,
+    family: 'unresolved',
+    reasons: ['No supported source-family classifier matched.']
+  };
+}
+
+export function createParseOnlySourceEpisode(
+  record: TileEnvelope<SourceRecord>,
+  manifestation: TileEnvelope<SourceManifestation>,
+  request: SourceEpisodeRequest
+): TileEnvelope<SourceEpisode> {
+  if (request.requestedMode && request.requestedMode !== 'parse-only') {
+    throw new Error('Source episode creation is parse-only; side-effect ingest modes are not allowed.');
+  }
+
+  const classification = classifySourceFamily(record, manifestation);
+  const locator = request.locator ?? manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unresolved';
+
+  return buildTile(
+    'source.episode',
+    {
+      chronology: request.chronology,
+      classification: {
+        confidence: classification.confidence,
+        reasons: classification.reasons
+      },
+      episodeId: `episode.${classification.family}.${record.cid.slice(-8)}.${manifestation.cid.slice(-8)}`,
+      family: classification.family,
+      locator,
+      mode: 'parse-only',
+      rawEvidenceRefs: request.rawEvidenceRefs,
+      rightsScope: request.rightsScope,
+      sourceManifestationCid: manifestation.cid,
+      sourceRecordCid: record.cid
+    },
+    { pack: 'source-substrate', parents: [record.cid, manifestation.cid] }
   );
 }
 
