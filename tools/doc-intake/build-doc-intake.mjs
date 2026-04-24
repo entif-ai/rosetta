@@ -28,7 +28,7 @@ const issueDrafts = [
     effort: 'S',
     labels: ['docs-intake', 'governance', 'automation'],
     sourceRefs: [
-      ['docs/handoffs/2026-04-13-bootstrap-handoff.md', 'Forbids large-scale corpus ingest before the refinery/cache exist and calls for token-economical future sessions.'],
+      ['docs/handoffs/2026-04-13-bootstrap-handoff.md', 'Forbids large-scale runtime corpus ingest before the refinery/cache exist and calls for token-economical future sessions.'],
       ['docs/backlog/20260410 - Entif.AI - Rosetta - Phased Backlog (v0.1).md', 'Defines cheap-first refinement, receipt discipline, and explicit backlog artifacts.'],
       ['docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md', 'Contains prior context on token economy, catalog validation, and backlog-as-tests behavior.']
     ],
@@ -46,7 +46,7 @@ const issueDrafts = [
       'Generated issue drafts cite source documents and remain reviewable before publishing.'
     ],
     nonGoals: [
-      'No full semantic corpus ingestion.',
+      'No full Rosetta-native semantic corpus ingestion.',
       'No automatic GitHub issue creation without an explicit publish step.',
       'No replacement for the future Ingress Refinery or canonical corpus cache.'
     ]
@@ -556,15 +556,30 @@ function buildReadme(documents) {
 
   return `# Docs Intake
 
-This folder tracks local documentation parsing and issue-draft promotion without performing large-scale semantic corpus ingest.
+This folder tracks two separate workflows:
+
+- docs-intake ledgering: shallow indexing, chronology, hashes, issue drafts, and GitHub issue state
+- docs intelligence: human/agent extraction of requirements, intent, designs, technology choices, relationships, contradictions, and issue candidates from repository documents
+
+Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it is not blocked by Ingress Refinery or canonical cache readiness.
 
 ## Workflow
+
+### Ledger Workflow
 
 1. Run \`pnpm run docs:intake\`.
 2. Review \`docs/intake/doc-ledger.md\` for corpus shape.
 3. Review candidate issues under \`docs/intake/issue-drafts/\`.
 4. Publish only the chosen issue drafts to GitHub, then record the issue URL/number in \`docs/intake/github-issue-ledger.json\`.
 5. Rerun \`pnpm run docs:intake\`; published drafts move to \`docs/intake/issue-drafts/archive/\`.
+
+### Docs Intelligence Workflow
+
+1. Read \`docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md\`.
+2. Select the next document or batch from \`docs/intake/docs-intelligence/PRIORITY_QUEUE.md\`.
+3. Use \`docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md\` for each extraction artifact.
+4. Convert extracted requirements and decisions into issue drafts or GitHub issues with source evidence.
+5. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
 
 ## Current Snapshot
 
@@ -583,6 +598,7 @@ This folder tracks local documentation parsing and issue-draft promotion without
 - Local issue drafts are the review gate before GitHub issue creation.
 - Active issue drafts are unpublished candidates; published drafts are archived and tracked in \`docs/intake/github-issue-ledger.json\`.
 - The ledger is a map, not the canonical corpus cache promised by the architecture.
+- Requirements extraction is allowed and expected before Rosetta-native ingestion exists.
 `;
 }
 
@@ -641,7 +657,7 @@ export async function main() {
     generatedAt,
     policy: {
       conflictResolution: 'Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.',
-      ingestBoundary: 'This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.',
+      ingestBoundary: 'This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.',
       publishBoundary: 'GitHub issues should be created from reviewed local drafts, then linked back through docs/intake/github-issue-ledger.json.'
     },
     documents

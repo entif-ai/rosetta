@@ -25,13 +25,13 @@ The repo has a high-value documentation corpus, but no durable local map from pa
 
 ## Source Evidence
 
-- `docs/handoffs/2026-04-13-bootstrap-handoff.md`; hash 27ff548837e0: Forbids large-scale corpus ingest before the refinery/cache exist and calls for token-economical future sessions.
+- `docs/handoffs/2026-04-13-bootstrap-handoff.md`; hash 27ff548837e0: Forbids large-scale runtime corpus ingest before the refinery/cache exist and calls for token-economical future sessions.
 - `docs/backlog/20260410 - Entif.AI - Rosetta - Phased Backlog (v0.1).md`; hash 2baec5fab6f5: Defines cheap-first refinement, receipt discipline, and explicit backlog artifacts.
 - `docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md`; hash c196d4d9366e: Contains prior context on token economy, catalog validation, and backlog-as-tests behavior.
 
 ## Non-Goals
 
-- No full semantic corpus ingestion.
+- No full Rosetta-native semantic corpus ingestion.
 - No automatic GitHub issue creation without an explicit publish step.
 - No replacement for the future Ingress Refinery or canonical corpus cache.
 

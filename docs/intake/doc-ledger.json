@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-24T13:46:34.997Z",
+  "generatedAt": "2026-04-24T14:26:21.251Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
-    "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.",
+    "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
     "publishBoundary": "GitHub issues should be created from reviewed local drafts, then linked back through docs/intake/github-issue-ledger.json."
   },
   "documents": [
@@ -7235,7 +7235,7 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T13:46:34.997Z",
+            "isoDateTime": "2026-04-24T14:26:21.251Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7250,13 +7250,13 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T13:46:34.997Z",
-      "bytes": 8423,
-      "contentFingerprint": "e332e4cf2355540e8ce36f46b9351be394f037f254ca01bee6372766a3a6f1f8",
-      "words": 1112,
-      "revisionFingerprint": "15a241fd5204dc48778f92e0157d1073ef05b0d673d39859014ab564a306c409",
+      "modifiedAt": "2026-04-24T14:26:21.251Z",
+      "bytes": 8253,
+      "contentFingerprint": "5f4d60005cecf108445bb8dcf0b955302715f99a76efb8754b080fbd0e6ba633",
+      "words": 1113,
+      "revisionFingerprint": "d3bbbd7b3be406dd1d4cba08296aefbdb0fc94fb3b099bc218e90fed2c6ac7d0",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "88e07eeb43860555724c723731fd8fe14238416c7ee7db28b26e1056ba093e57",
+      "sha256": "8252515014563d13f50d53a08e1f784a47cce8c2e041662c581da2e057d748cf",
       "headings": [
         "Current Handoff",
         "Purpose",

@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/tc-004-source-observation-receipts`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/22
+Current branch at time of update: `codex/docs-intelligence-workflow`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/24
 
 ## Purpose
 
@@ -62,7 +62,8 @@ The docs corpus is indexed by:
 
 Important rules:
 
-- Do not perform large-scale semantic corpus ingest yet.
+- Do not perform large-scale Rosetta-native semantic corpus ingest yet.
+- Do perform docs-intelligence extraction for planning now; repository source documents should be mined for requirements, intent, designs, priorities, and issue candidates without waiting for runtime ingestion readiness.
 - The intake ledger fingerprints and orients docs; it is not the future canonical corpus cache.
 - Top-matter dates are preferred over filename dates.
 - Filename dates are preferred over filesystem mtime.
@@ -86,16 +87,18 @@ Merged:
 - PR #19: `feat(canonical-cache): add revision persistence`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
 - PR #21: `docs(intake): archive canonical cache draft`
+- PR #22: `feat(text-core): add source observation transform receipts`
 
 Open at time of update:
 
-- PR #22: `feat(text-core): add source observation transform receipts`
-- Issue #9: `TC-004 Source to observation tiling and transform receipts`
+- PR #24: `docs(intake): define docs intelligence workflow`
+- Issue #23: `DI-001 First docs-intelligence extraction pass`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
 - Issues #11, #12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #22: `feat(text-core): add source observation transform receipts`
 - PR #21: `docs(intake): archive canonical cache draft`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
 - PR #19: `feat(canonical-cache): add revision persistence`
@@ -108,37 +111,32 @@ Closed at time of update:
 - Issue #6: `TC-001 Source episode envelope and family classification`
 - Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
 - Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
+- Issue #9: `TC-004 Source to observation tiling and transform receipts`
 - Issue #14: `Archive published docs intake issue drafts`
 
 ## Current Work Product
 
-Current branch: `codex/tc-004-source-observation-receipts`
-Source issue: https://github.com/entif-ai/rosetta/issues/9
+Current branch: `codex/docs-intelligence-workflow`
+Source issue: https://github.com/entif-ai/rosetta/issues/23
 
-This branch implements TC-004 source-to-observation tiling and transform receipts.
+This branch corrects the repository workflow: source documents are now explicitly treated as docs-intelligence inputs for planning, issue generation, dependency mapping, and project coordination. They are not blocked on Rosetta runtime ingestion readiness.
 
 Changed behavior:
 
-- `rosetta-core` exposes source-span observation payload support and `createSourceObservation`.
-- `ingress-refinery` exposes `refineTextToObservationArtifacts` to keep source records/manifestations, observations, canonical artifacts, and derived artifacts distinct.
-- Source observations reference byte spans back to source record and manifestation CIDs.
-- Source-to-observation transforms emit `rrp:transform.source-observation` receipts with verifiable receipt bundles.
-- Derived summary/extract artifacts are emitted as separate `source.derived_artifact` tiles.
+- `README.md` clarifies that the runtime-ingest freeze does not block requirements extraction from repository docs.
+- `docs/intake/README.md` now separates ledgering from docs intelligence.
+- `docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md` defines agent startup, extraction outputs, prioritization, GitHub issue workflow, and done criteria.
+- `docs/intake/docs-intelligence/PRIORITY_QUEUE.md` defines the first extraction batches.
+- `docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md` gives agents a consistent extraction shape.
+- `tools/doc-intake/build-doc-intake.mjs` now regenerates the intake README with the docs-intelligence lane intact.
+- Issue #23 starts the first high-authority docs-intelligence extraction pass.
 
 ## Validation State
 
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec vitest run packages/ingress-refinery/src/lib/ingress-refinery.spec.ts packages/rosetta-core/src/lib/rosetta-core.spec.ts` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx typecheck ingress-refinery --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx build ingress-refinery --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint ingress-refinery --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint rosetta-core --skip-nx-cache --outputStyle=static` passed.
-- Rebase conflict refresh on 2026-04-24:
-  - `pnpm run docs:intake` passed.
-  - `pnpm exec nx build rosetta-core --skip-nx-cache --outputStyle=static` passed to refresh untracked local build output before direct Vitest imports.
-  - `pnpm exec vitest run packages/ingress-refinery/src/lib/ingress-refinery.spec.ts packages/rosetta-core/src/lib/rosetta-core.spec.ts` passed: 2 files, 26 tests.
-  - `pnpm exec nx run-many -t typecheck build lint -p ingress-refinery rosetta-core --skip-nx-cache --outputStyle=static` passed.
-  - `pnpm run verify` passed.
-  - `git diff --check` passed.
+- `pnpm run docs:intake` passed.
+- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed.
+- `pnpm exec eslint tools/doc-intake/build-doc-intake.mjs` passed.
+- `git diff --check` passed.
 
 Known non-failing warnings:
 
@@ -149,12 +147,13 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Force-push PR #22 with lease after rebase completion.
+1. Merge PR #24 after review.
 
 For Text-Core:
 
-1. After TC-004 merges, continue TC-005 promotion states and evidence-linked extracts.
-2. TC-006 and TC-007 are unclaimed at this handoff.
+1. TC-001 through TC-004 are merged.
+2. Pause additional Text-Core implementation by default unless explicitly selected; issue #23 should mine the highest-authority docs first so TC-005+ priorities are evidence-driven.
+3. TC-005, TC-006, and TC-007 remain open implementation candidates.
 
 ## Current Technical Posture
 
@@ -164,5 +163,6 @@ For Text-Core:
 - Text-Core TC-001 source episode envelope is merged.
 - Text-Core TC-002 normalization fingerprints are merged.
 - Text-Core TC-003 cache dedupe/revision/local persistence is merged.
-- Text-Core TC-004 source-to-observation tiling and transform receipts is in progress.
+- Text-Core TC-004 source-to-observation tiling and transform receipts is merged.
+- Docs intelligence is now the intended next planning lane before further broad Text-Core prioritization.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.
