@@ -16,6 +16,7 @@ export default tseslint.config(
       'node_modules/**',
       'packages/**/dist/**',
       'tmp/**',
+      '**/tmp/**',
       'vitest.config.ts'
     ]
   },

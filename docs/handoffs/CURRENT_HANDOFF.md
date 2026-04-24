@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/archive-promoted-issue-drafts`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/15
+Current branch at time of update: `codex/nx-affected-validation`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/17
 
 ## Purpose
 
@@ -85,55 +85,43 @@ Merged:
 
 Open at time of update:
 
-- PR #15: `fix(doc-intake): archive published issue drafts`
-- Issue #14: `Archive published docs intake issue drafts`
+- PR #17: `chore(nx): use affected validation by default`
 - Issues #7-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
 - Issue #4: `Define Text-Core MVP scope gate from governing docs`
 - Issue #6: `TC-001 Source episode envelope and family classification`
+- Issue #14: `Archive published docs intake issue drafts`
 
 ## Current Work Product
 
-Current branch: `codex/archive-promoted-issue-drafts`
-Source issue: https://github.com/entif-ai/rosetta/issues/14
+Current branch: `codex/nx-affected-validation`
+Source issue: local operational follow-up from the PR #15 handoff
 
-This branch updates the docs intake workflow so issue drafts that have already been promoted to GitHub are removed from the active candidate folder and regenerated under `docs/intake/issue-drafts/archive/`.
+This branch makes the default local validation workflow use Nx affected execution and local cache instead of broad direct tool runs.
 
 Changed behavior:
 
-- `resolveIssueDraftState` maps drafts with a recorded GitHub issue URL to `published`.
-- Published drafts render archive-oriented publishing notes and are removed from `docs/intake/issue-drafts/`.
-- Unpublished drafts remain active candidates.
-- `docs/intake/github-issue-ledger.json` records `draftStatus`, `activeDraftPath`, and `archivedDraftPath` for each generated draft.
-- `docs/intake/README.md` documents the active-vs-archived draft policy.
+- `pnpm run lint`, `typecheck`, `test`, `build`, and `verify` now call `nx affected --base=origin/main`.
+- Full-run escape hatches remain available as `lint:full`, `typecheck:full`, `test:full`, and `verify:full`.
+- Per-project cached Vitest targets exist for apps/packages with specs, so affected test runs select only impacted projects.
+- Spec TypeScript configs emit declaration-only outputs under `tmp/spec-types`, enabling real cached leaf `typecheck` targets.
+- `doc-intake` is modeled as an Nx project with cached `generate` and `test` targets; normal build no longer regenerates docs.
+- ESLint ignores project-local `tmp/` output so cached typecheck artifacts do not pollute lint.
 
 ## Validation State
 
-Completed before merging latest `origin/main` into this branch:
-
-- `pnpm run docs:intake` passed
-- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
-- `pnpm run test` passed: 18 files, 58 tests
-- `pnpm run lint` passed
-- `pnpm run typecheck` passed
-- `git diff --check` passed
-
-Validation after merging latest `origin/main`:
-
-- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
-- `pnpm run docs:intake` passed
-- `git diff --check` passed
-- `pnpm run lint` passed
-- `pnpm run typecheck` passed
-- `pnpm run build` passed
-- exploratory `pnpm exec nx affected -t test,typecheck,build --base=origin/main --outputStyle=static --parallel=3` failed due pre-existing Nx target configuration issues:
-  - root project `@entif-ai/source:typecheck` invokes broad `tsc --build --emitDeclarationOnly` and trips existing `tsconfig.spec.json` file-list/rootDir errors
-  - parallel app builds can hit `ENOTEMPTY` in `apps/rosetta-cli/dist`
-  - follow-up Nx affected/cache cleanup should be handled separately
+- `pnpm run verify` passed.
+- `git diff --check` passed.
+- `pnpm exec nx affected -t typecheck --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
+- `pnpm exec nx affected -t test --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
+- `pnpm exec nx affected -t lint --base=origin/main --parallel=3 --outputStyle=static` passed.
+- `pnpm exec nx affected -t build --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
+- User independently verified faster cached runs locally.
 
 Known non-failing warnings:
 
@@ -142,15 +130,15 @@ Known non-failing warnings:
 
 ## Next Actions
 
-For PR #15:
+For this branch:
 
-1. Push the merge-resolution commit.
-2. Mark PR #15 ready for review.
-3. Merge when GitHub reports it mergeable.
+1. Push `codex/nx-affected-validation`.
+2. Open a draft PR.
+3. Merge after GitHub reports it green and mergeable.
 
 For Text-Core:
 
-1. Start TC-002 on a new `codex/` feature branch after PR #15 is merged.
+1. Start TC-002 on a new `codex/` feature branch after the Nx validation PR is merged.
 2. Keep issue #7 as the likely next implementation driver.
 
 ## Current Technical Posture
