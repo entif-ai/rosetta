@@ -2,7 +2,7 @@
  * PipelineContext — holds mutable state across all pipeline layers.
  * Enables mid-pipeline inspection and revision.
  */
-import type { TileEnvelope } from "../../../rosetta-core/src/index.js";
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import type {
   Layer0Observation,
   Layer1Forms,
@@ -39,6 +39,7 @@ export class PipelineContext {
       maxFrameSlots: options.maxFrameSlots ?? 10,
       emitConjectures: options.emitConjectures ?? true,
       language: options.language ?? "en",
+      ...options,
     };
     this.L0 = { tile: observation };
     this.trace.push(observation);

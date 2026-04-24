@@ -59,13 +59,13 @@
     },
     "TC-002": {
       "number": 7,
-      "state": "open",
+      "state": "closed",
       "title": "TC-002 Chronology-aware normalization and fingerprints",
       "url": "https://github.com/entif-ai/rosetta/issues/7"
     },
     "TC-003": {
       "number": 8,
-      "state": "open",
+      "state": "closed",
       "title": "TC-003 Dedupe, revision graph, and cache persistence",
       "url": "https://github.com/entif-ai/rosetta/issues/8"
     },

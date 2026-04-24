@@ -2,13 +2,13 @@
  * rosetta-pipeline: shared types and interfaces
  * Built by Emilie's 15-min builder cycle
  */
-import type { TileEnvelope } from "../../../rosetta-core/src/index.js";
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 
 export type {
   TileEnvelope,
   CoreKind,
-} from "../../../rosetta-core/src/index.js";
-export type { JsonValue } from "../../../rosetta-canon/src/index.js";
+} from "@entif-ai/rosetta-core";
+export type { JsonValue } from "@entif-ai/rosetta-canon";
 
 // ── Pipeline stage output ────────────────────────────────────────────────────
 
