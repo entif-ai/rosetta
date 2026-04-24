@@ -15,13 +15,13 @@
  *   import { runPipeline } from "./pipeline-runner.js";
  *   const result = runPipeline(observationTile, options);
  */
+import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import { PipelineContext } from "./pipeline-context.js";
 import { runFormLayer } from "./form-layer.js";
 import { runLexemeLayer } from "./lexeme-layer.js";
 import { runConceptLayer } from "./concept-layer.js";
 import { runFrameLayer } from "./frame-layer.js";
 import { runEpistemeLayer } from "./episteme-layer.js";
-import type { TileEnvelope } from "../../../rosetta-core/src/index.js";
 import type { PipelineResult, PipelineOptions } from "./pipeline-types.js";
 
 export { runFormLayer, runLexemeLayer, runConceptLayer, runFrameLayer, runEpistemeLayer };

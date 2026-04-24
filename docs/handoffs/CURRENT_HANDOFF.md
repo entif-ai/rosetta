@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/tc-003-cache-persistence`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/19
+Current branch at time of update: `codex/tc-005-pipeline-stabilization`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/20
 
 ## Purpose
 
@@ -82,63 +82,68 @@ Merged:
 - PR #1: `docs(intake): add documentation ledger and issue draft workflow`
 - PR #5: `docs(backlog): define Text-Core MVP scope gate`
 - PR #13: `feat(text-core): add source episode envelope`
+- PR #18: `feat(text-core): add normalization fingerprints`
 
 Open at time of update:
 
-- PR #19: `feat(canonical-cache): add revision persistence`
-- Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
-- Issues #9-#12: follow-up Text-Core implementation issues
+- PR #20: `fix(rosetta-pipeline): stabilize pipeline slice` draft
+- Issue #10: `TC-005 Promotion state machine and structured extracts`
+- Issues #9, #11, #12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #19: `feat(canonical-cache): add revision persistence`
 - PR #18: `feat(text-core): add normalization fingerprints`
-- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
 - PR #17: `chore(nx): use affected validation by default`
 - PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
 - Issue #4: `Define Text-Core MVP scope gate from governing docs`
 - Issue #6: `TC-001 Source episode envelope and family classification`
+- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
+- Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
 - Issue #14: `Archive published docs intake issue drafts`
 
 ## Current Work Product
 
-Current branch: `codex/tc-003-cache-persistence`
-Source issue: https://github.com/entif-ai/rosetta/issues/8
+Current branch: `codex/tc-005-pipeline-stabilization`
+Source issue: https://github.com/entif-ai/rosetta/issues/10
 
-This branch implements TC-003 dedupe, revision graph, and local cache persistence.
+This branch stabilizes the existing local `rosetta-pipeline` TC-005-adjacent slice under Node 24 before broader promotion-state work proceeds.
 
 Changed behavior:
 
-- `canonical-cache` dedupes repeated normalized content by content fingerprint while retaining every raw evidence artifact CID.
-- Materially changed content in the same record family is linked into a revision chain instead of being treated as an unrelated duplicate.
-- Cache state can be saved to and reloaded from a local JSON persistence path for bootstrap development.
+- `rosetta-pipeline` imports core/canon types through package aliases instead of deep relative paths.
+- Pipeline layer entrypoints remain exported for package consumers.
+- The simplified frame heuristic preserves the tested capital-question contract: `What is the capital of France?` emits a `CapitalRelationFrame` with country filled and capital left variable.
+- Pipeline options remain fully populated with the resolved `runId`.
 
 ## Validation State
 
-- Red state confirmed: `pnpm exec vitest run packages/canonical-cache/src/lib/canonical-cache.spec.ts` failed before implementation because TC-003 APIs did not exist.
-- Green focused test: `pnpm exec vitest run packages/canonical-cache/src/lib/canonical-cache.spec.ts` passed: 1 file, 6 tests.
-- `pnpm exec eslint packages/canonical-cache/src/lib/canonical-cache.ts packages/canonical-cache/src/lib/canonical-cache.spec.ts` passed.
-- `pnpm exec tsc -p packages/canonical-cache/tsconfig.spec.json --noEmit` passed.
-- `pnpm exec nx run-many -t typecheck test build -p canonical-cache --skip-nx-cache --outputStyle=static` passed.
-- `pnpm run docs:intake` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx test rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx typecheck rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx build rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm run docs:intake` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm run verify` passed before rebasing onto current `origin/main`; rerun after conflict resolution before final push.
 - `git diff --check` passed.
 
 Known non-failing warnings:
 
-- Nx/Node may emit `MaxListenersExceededWarning` during sequential package builds.
-- React Router build may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
+- Nx/Vitest may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
 
 ## Next Actions
 
 For this branch:
 
-1. Keep PR #19 draft until GitHub reports it mergeable/green.
-2. Close issue #8 after merge.
+1. Finish the rebase onto `origin/main`, rerun `pnpm run docs:intake`, `pnpm run verify`, and `git diff --check` under Node 24.
+2. Force-push the rebased branch to PR #20 with lease.
+3. Continue TC-005 with red/green tests for explicit replayable promotion states, pending-confirmation ambiguity, refusal receipts, and evidence-linked extracts after this stabilization slice.
 
 For Text-Core:
 
-1. After TC-003 merges, continue with TC-004 source to observation tiling and transform receipts.
+1. TC-003 is merged and issue #8 is closed.
+2. TC-004, TC-006, and TC-007 are unclaimed at this handoff.
 
 ## Current Technical Posture
 
@@ -147,5 +152,5 @@ For Text-Core:
 - `docs:intake` indexes docs and issue drafts but does not semantically ingest the corpus.
 - Text-Core TC-001 source episode envelope is merged.
 - Text-Core TC-002 normalization fingerprints are merged.
-- Text-Core TC-003 cache dedupe/revision/local persistence is in progress.
+- Text-Core TC-003 cache dedupe/revision/local persistence is merged.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.

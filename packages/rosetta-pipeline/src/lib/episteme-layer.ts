@@ -3,7 +3,7 @@
  * Wraps the resolved interpretation in an epistemic belief state (rosetta.episteme)
  * and scores it with a rosetta.matrix (ELPQ axes: Ethos/Logos/Pathos/Quixote).
  */
-import { createEpisteme, createMatrix } from "../../../rosetta-core/src/index.js";
+import { createEpisteme, createMatrix } from "@entif-ai/rosetta-core";
 import type { PipelineContext } from "./pipeline-context.js";
 import type { Layer4Episteme } from "./pipeline-types.js";
 
