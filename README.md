@@ -1,6 +1,6 @@
-# entif-ai
+# rosetta
 
-`entif-ai` is the constitutional monorepo for the Rosetta provenance kernel, the Source Substrate, the Ingress Refinery, the canonical corpus cache, and read-only projection adapters.
+`rosetta` is the constitutional monorepo for the Rosetta provenance kernel, the Source Substrate, the Ingress Refinery, the canonical corpus cache, and read-only projection adapters.
 
 Think of this repo like a shipyard, not a showroom. The hull, engine mounts, and navigation rules matter first. Pretty passenger cabins come later.
 
