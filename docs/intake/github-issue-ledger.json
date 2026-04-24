@@ -40,9 +40,13 @@
       "draftStatus": "candidate"
     },
     "canonical-cache-persistence": {
-      "activeDraftPath": "docs/intake/issue-drafts/canonical-cache-persistence.md",
-      "archivedDraftPath": null,
-      "draftStatus": "candidate"
+      "number": 8,
+      "state": "closed",
+      "title": "TC-003 Dedupe, revision graph, and cache persistence",
+      "url": "https://github.com/entif-ai/rosetta/issues/8",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/canonical-cache-persistence.md",
+      "draftStatus": "published"
     },
     "coverage-thresholds-and-acceptance-matrices": {
       "activeDraftPath": "docs/intake/issue-drafts/coverage-thresholds-and-acceptance-matrices.md",

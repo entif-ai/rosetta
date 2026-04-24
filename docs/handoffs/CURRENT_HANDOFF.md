@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/tc-005-pipeline-stabilization`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/20
+Current branch at time of update: `codex/archive-cache-persistence-draft`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/21
 
 ## Purpose
 
@@ -83,15 +83,19 @@ Merged:
 - PR #5: `docs(backlog): define Text-Core MVP scope gate`
 - PR #13: `feat(text-core): add source episode envelope`
 - PR #18: `feat(text-core): add normalization fingerprints`
+- PR #19: `feat(canonical-cache): add revision persistence`
+- PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
 
 Open at time of update:
 
-- PR #20: `fix(rosetta-pipeline): stabilize pipeline slice` draft
+- PR #21: `docs(intake): archive canonical cache draft`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
-- Issues #9, #11, #12: follow-up Text-Core implementation issues
+- Issue #9: `TC-004 Source to observation tiling and transform receipts` is claimed by another harness on `codex/tc-004-source-observation-receipts`
+- Issues #11, #12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
 - PR #19: `feat(canonical-cache): add revision persistence`
 - PR #18: `feat(text-core): add normalization fingerprints`
 - PR #17: `chore(nx): use affected validation by default`
@@ -106,26 +110,20 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/tc-005-pipeline-stabilization`
-Source issue: https://github.com/entif-ai/rosetta/issues/10
+Current branch: `codex/archive-cache-persistence-draft`
+Source issue: none; docs/intake cleanup after issue #8 and PR #20 merges
 
-This branch stabilizes the existing local `rosetta-pipeline` TC-005-adjacent slice under Node 24 before broader promotion-state work proceeds.
+This branch archives the stale `canonical-cache-persistence` local draft after TC-003 was completed through issue #8 / PR #19, and refreshes this handoff after PR #20 merged.
 
 Changed behavior:
 
-- `rosetta-pipeline` imports core/canon types through package aliases instead of deep relative paths.
-- Pipeline layer entrypoints remain exported for package consumers.
-- The simplified frame heuristic preserves the tested capital-question contract: `What is the capital of France?` emits a `CapitalRelationFrame` with country filled and capital left variable.
-- Pipeline options remain fully populated with the resolved `runId`.
+- `docs/intake/issue-drafts/canonical-cache-persistence.md` moved to `docs/intake/issue-drafts/archive/canonical-cache-persistence.md`.
+- `docs/intake/github-issue-ledger.json` marks `canonical-cache-persistence` as published against closed issue #8.
+- This handoff no longer lists merged PR #20 as open/current work.
 
 ## Validation State
 
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx test rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx typecheck rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx build rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint rosetta-pipeline --skip-nx-cache --outputStyle=static` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm run docs:intake` passed.
-- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm run verify` passed before rebasing onto current `origin/main`; rerun after conflict resolution before final push.
+- `pnpm run docs:intake` passed.
 - `git diff --check` passed.
 
 Known non-failing warnings:
@@ -136,14 +134,14 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Finish the rebase onto `origin/main`, rerun `pnpm run docs:intake`, `pnpm run verify`, and `git diff --check` under Node 24.
-2. Force-push the rebased branch to PR #20 with lease.
-3. Continue TC-005 with red/green tests for explicit replayable promotion states, pending-confirmation ambiguity, refusal receipts, and evidence-linked extracts after this stabilization slice.
+1. Keep PR #21 draft until GitHub reports it mergeable/green.
 
 For Text-Core:
 
 1. TC-003 is merged and issue #8 is closed.
-2. TC-004, TC-006, and TC-007 are unclaimed at this handoff.
+2. TC-004 is in progress in another harness on issue #9.
+3. TC-005 remains open after PR #20 stabilization.
+4. TC-006 and TC-007 are unclaimed at this handoff.
 
 ## Current Technical Posture
 

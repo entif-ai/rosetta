@@ -33,8 +33,8 @@ The cache currently clusters artifacts in memory, so dedupe/lifecycle state disa
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- Active draft path: `docs/intake/issue-drafts/canonical-cache-persistence.md`
-- Archived draft path: `not archived`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Persist canonical corpus cache beyond the in-memory slice" --body-file docs/intake/issue-drafts/canonical-cache-persistence.md --label canonical-cache,storage,dedupe`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/canonical-cache-persistence.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/8`
+- Recommended publish command shape: `not applicable; draft already published`
