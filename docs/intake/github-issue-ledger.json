@@ -29,6 +29,15 @@
       "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md",
       "draftStatus": "published"
     },
+    "docs-intelligence-first-pass": {
+      "number": 23,
+      "state": "open",
+      "title": "DI-001 First docs-intelligence extraction pass",
+      "url": "https://github.com/entif-ai/rosetta/issues/23",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/docs-intelligence-first-pass.md",
+      "draftStatus": "published"
+    },
     "expand-pack-schemas-and-shacl-source-artifacts": {
       "activeDraftPath": "docs/intake/issue-drafts/expand-pack-schemas-and-shacl-source-artifacts.md",
       "archivedDraftPath": null,
@@ -75,7 +84,7 @@
     },
     "TC-004": {
       "number": 9,
-      "state": "open",
+      "state": "closed",
       "title": "TC-004 Source to observation tiling and transform receipts",
       "url": "https://github.com/entif-ai/rosetta/issues/9"
     },

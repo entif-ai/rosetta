@@ -67,7 +67,8 @@ Every stable branch should update `docs/handoffs/CURRENT_HANDOFF.md` before its 
 - Keep `docs/handoffs/CURRENT_HANDOFF.md` current enough that a new account or machine can resume without rereading the whole docs corpus.
 - Record published GitHub issue URLs and state changes in `docs/intake/github-issue-ledger.json`.
 - Use local issue drafts under `docs/intake/issue-drafts/` as the review gate before creating remote GitHub issues.
-- Do not perform large-scale semantic corpus ingest until the Ingress Refinery and canonical corpus cache are ready.
+- Do not perform large-scale Rosetta-native semantic corpus ingest until the Ingress Refinery and canonical corpus cache are ready.
+- Do perform docs-intelligence extraction for planning now: read the repo's source documents for intent, requirements, architecture, technology choices, priorities, contradictions, and GitHub issue candidates. This planning lane is not blocked by runtime ingestion readiness and must not be routed through Rosetta-native tile/tapestry conversion unless a specific issue asks for that product behavior.
 - Prefer targeted validation during development; use `pnpm run verify` when a branch changes shared contracts or before claiming a broad green state.
 
 ## Repository Guide
@@ -94,6 +95,8 @@ Every stable branch should update `docs/handoffs/CURRENT_HANDOFF.md` before its 
   Active baton-pass receipt for future Codex and agent sessions.
 - `docs/intake/README.md`
   Documentation intake workflow, local issue drafts, and GitHub issue ledger policy.
+- `docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md`
+  Requirements-mining workflow for turning repository docs into extracted knowledge, roadmap maps, GitHub issues, and project-board coordination.
 
 ## Package Map
 
