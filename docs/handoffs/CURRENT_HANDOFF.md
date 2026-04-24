@@ -30,8 +30,12 @@ Update this file whenever a branch reaches a stable state, especially before pus
 ## Branch And PR Practice
 
 - Use feature branches with the `codex/` prefix.
+- Compartmentalize unrelated work into separate feature branches and separate PRs.
+- Do not bundle independent fixes, planning docs, feature work, and cleanup unless one change is required to validate the other.
 - Keep each branch scoped to one stable slice.
 - Commit only after a stable state is reached.
+- Follow Conventional Commits for every commit, with scopes where useful.
+- Preserve commit semantics for future semantic versioning and changelog automation. `nx release` is not configured yet, but history should stay compatible with that future.
 - Use red/green TDD for all code changes:
   - write or update failing tests first
   - run the focused test to confirm the red state

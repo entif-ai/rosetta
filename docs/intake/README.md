@@ -15,7 +15,7 @@ This folder tracks local documentation parsing and issue-draft promotion without
 - Current April 2026 docs: 24
 - Governing/planning/live docs: 36
 - Docs dated by canonical top matter: 73
-- Generated at: 2026-04-24T06:11:28.049Z
+- Generated at: 2026-04-24T06:13:18.254Z
 
 ## Policy
 

@@ -57,8 +57,11 @@ Every stable branch should update `docs/handoffs/CURRENT_HANDOFF.md` before its 
 ## Handoff And Branch Protocol
 
 - Work on focused `codex/` feature branches.
+- Compartmentalize unrelated work into separate branches and separate PRs. Do not bundle independent fixes, planning docs, feature work, and cleanup unless one change is required to validate the other.
 - Treat each stable branch as a handoff boundary.
 - Commit only coherent, validated slices.
+- Follow Conventional Commits for every commit. Use scopes when they clarify ownership, for example `docs(handoff): ...`, `test(doc-intake): ...`, or `feat(source-substrate): ...`.
+- Shape commit history for future semantic versioning and changelog automation. `nx release` is not configured yet, but commit types should remain compatible with that path.
 - Use red/green TDD for code changes: add or update failing tests first, implement the smallest change that makes them pass, and keep those tests in the normal validation path.
 - Do not add or refine functionality without tests covering the behavior and important failure/resilience cases.
 - Keep `docs/handoffs/CURRENT_HANDOFF.md` current enough that a new account or machine can resume without rereading the whole docs corpus.
