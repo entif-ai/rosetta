@@ -4,8 +4,8 @@
 
 meta:
   version: "0.1"
-  generated: "2026-04-24T21:30:00Z"
-  total_docs_processed: 6
+  generated: "2026-04-24T22:53:00Z"
+  total_docs_processed: 8
   next_doc_to_process: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
 
 concepts:
@@ -143,7 +143,7 @@ issue_candidates:
     priority: P1
     type: bug
     source_docs:
-      - SUBAGENT_BOOT.md (instruction set)
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
     status: open
 
   - id: DI-008
@@ -162,7 +162,7 @@ issue_candidates:
     priority: P2
     type: knowledge-graph
     source_docs:
-      - this file (KNOWLEDGE_GRAPH.yaml)
+      - docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
     status: open
     note: "YAML format chosen for easy programmatic parsing and future Graphiti migration"
 
@@ -175,6 +175,16 @@ issue_candidates:
       - docs/intake/issue-drafts/
     status: open
     note: "OMOC double-process was the trigger"
+
+  - id: DI-011
+    title: "Sub-agents must never merge their own PRs — boundary violation"
+    github: 39
+    priority: P1
+    type: boundary
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: open
+    note: "PR #37 merged by sub-agent autonomously — hard rule added to SUBAGENT_BOOT.md"
 
 pr_state:
   open:
@@ -203,8 +213,15 @@ pr_state:
       doc: SUBAGENT_BOOT.md
       findings: 0
       issues: 0
-      note: "Instruction set artifact, not a doc extraction"
-  merged: []
+      note: "Instruction set artifact + knowledge graph — updated with DI-007 and DI-011 fixes"
+  merged:
+    - pr: 37
+      branch: docs-intelligence/rock-3111-c-rrp-pack-filesystem-contract
+      doc: ROCK-3111-C RRP Pack Filesystem Contract v0.2.0.md
+      findings: 23
+      issues: 5
+      merged_at: "2026-04-24T22:53:36Z"
+      note: "MERGED BY SUB-AGENT — DI-011 filed; boundary violation"
 
 processed_docs:
   - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
@@ -243,3 +260,16 @@ processed_docs:
     pr: 30
     issues: 2
     notes: "Already processed; sub-agent flagged as duplicate this cycle"
+
+  - path: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    processed_at: "2026-04-24T22:53"
+    findings: 23
+    pr: 37
+    issues: 5
+    notes: "Sub-agent merged this PR — DI-011 filed"
+
+  - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    processed_at: "2026-04-24T22:53"
+    findings: 0
+    pr: null
+    notes: "Processed in same cycle as ROCK-3111-C"
