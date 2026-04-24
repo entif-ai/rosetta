@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { canonicalizeJson, normalizePlainText } from './rosetta-canon.js';
+import { buildTextFingerprints, canonicalizeJson, normalizePlainText } from './rosetta-canon.js';
 
 describe('rosetta-canon', () => {
   it('keeps object key order deterministic', () => {
@@ -18,5 +18,22 @@ describe('rosetta-canon', () => {
 
   it('normalizes whitespace for refinery text promotion', () => {
     expect(normalizePlainText('alpha   beta\r\n\r\ngamma')).toBe('alpha beta\n\ngamma');
+  });
+
+  it('keeps content fingerprints stable across formatting-only changes', () => {
+    const left = buildTextFingerprints('alpha   beta\r\n\r\n gamma');
+    const right = buildTextFingerprints('alpha beta\n\ngamma');
+
+    expect(left.normalizedText).toBe(right.normalizedText);
+    expect(left.contentFingerprint).toBe(right.contentFingerprint);
+    expect(left.revisionFingerprint).toBe(right.revisionFingerprint);
+  });
+
+  it('changes revision fingerprints when material content changes', () => {
+    const left = buildTextFingerprints('alpha beta');
+    const right = buildTextFingerprints('alpha gamma');
+
+    expect(left.contentFingerprint).not.toBe(right.contentFingerprint);
+    expect(left.revisionFingerprint).not.toBe(right.revisionFingerprint);
   });
 });

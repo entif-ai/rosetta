@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T07:04:43.660Z",
+  "generatedAt": "2026-04-24T07:13:08.415Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.",
@@ -30,8 +30,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -41,7 +41,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.917Z",
       "bytes": 4690,
+      "contentFingerprint": "eff46959258962344499d598060ea3c6261b25e8536e3393dd757440f11d2ca3",
       "words": 640,
+      "revisionFingerprint": "540959bde619c770bb54401e3e2b7d03cc8051aa1c1a0a80e91056569f3f1051",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4ac01217dbe181b145149e69cc3a03ae6d812e35248dd7dd0188959e7a9b8ba6",
       "headings": [
         "EMILIE: SOUL GESTALT / FOUNDATIONAL CORE (v4.1)",
@@ -78,8 +81,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-15",
@@ -89,7 +92,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.918Z",
       "bytes": 217750,
+      "contentFingerprint": "16cb3cda96d6326398e4dabea5c40bfa4236f617a92f30335c4d3108ef418b22",
       "words": 32829,
+      "revisionFingerprint": "4ec3cb5212c6984f3d5b9fbcbe333f5734806f01e5378a97dc2b986c2b40a7d1",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "66a6ff7c481b2daf81f3ffefab70592c4c1f844cb7f7f4e4eeec191dd4231ff4",
       "headings": [
         "**Entif.ai 2.0 Architecture & Roadmap Blueprint**",
@@ -145,8 +151,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -157,7 +163,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.918Z",
       "bytes": 38310,
+      "contentFingerprint": "dcf4f35a7291592968f8bc32182ce2db6b152dddebe0e3d0bba923ac901b956d",
       "words": 4929,
+      "revisionFingerprint": "d8fbea8b2b1dffba3f0a5167f26af99dd89803bf4010307b35badaf86fa0f606",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2baec5fab6f53000e926f16448d645f7101c4dc1835ef2b7624aa32ff35efb22",
       "headings": [
         "Phased Backlog v0.1",
@@ -233,8 +242,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -245,7 +254,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.919Z",
       "bytes": 9245,
+      "contentFingerprint": "1704e8cce2ff489fc9ea7324ae2b7219da259a20e98f36897afa05dc8bb9f311",
       "words": 1282,
+      "revisionFingerprint": "1af3b4705bbfb498c29ca53fa348d2f5053e328713a1e4818ac2b38538bbb638",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "0258ae16db6bcd87ccbad394e0e1137d3d88b190d5193246af063c5c77e0dc61",
       "headings": [
         "Rosetta Canonical Build Charter (v0.1)",
@@ -297,8 +309,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -309,7 +321,10 @@
       },
       "modifiedAt": "2026-04-24T06:16:55.265Z",
       "bytes": 10812,
+      "contentFingerprint": "de8a80c90a545bd727084433a5cb8baac4880741b5a8889ab746db4530b9ab22",
       "words": 1405,
+      "revisionFingerprint": "7abb2126a32af6064d4872fbd003ef38420a9a2ee870ea6c6da54f879ed63725",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "9da08a609fb2db9afa5de94a2a146df65b6f6d75dcee27cd7b8d16cafd0f63d1",
       "headings": [
         "Rosetta Text-Core MVP Scope Gate v0.1",
@@ -352,8 +367,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -363,7 +378,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.919Z",
       "bytes": 910,
+      "contentFingerprint": "c969b6b24822ebdbd3edb1d02bd1b99db85bd5fc917740ec48010ae42fba9625",
       "words": 130,
+      "revisionFingerprint": "ce43d61e4f29a0957246f9ae28d6882707c9e0ce943476114c449149fcddbf41",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "530e57773eaf765ede0108d52dd00f4c7d5cf01f471a87c986c47e837ae7f3b3",
       "headings": [
         "Bootstrap Execution Track",
@@ -399,8 +417,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -410,7 +428,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.919Z",
       "bytes": 481984,
+      "contentFingerprint": "2c4b5667514ea897c47b4d609f3a357cb06b71527b41c916908dae14b6000c8f",
       "words": 69121,
+      "revisionFingerprint": "70931cebe1181e9fbcd0d48067278a31221336892d905bc8130f854a0b426710",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "fae58a052cb38966857fdb34b517e302226693b08bc3ab2971de7f5971ce87ec",
       "headings": [
         "Entif 2.0 Architecture & Development Plan",
@@ -453,8 +474,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -464,7 +485,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.920Z",
       "bytes": 58060,
+      "contentFingerprint": "9453b850fb0e47064b953d75769e0fb1aac39f4b15f01e723f62a9f050cb40ec",
       "words": 7106,
+      "revisionFingerprint": "b01ca5444ce0627b7e722049cef3ee8790d708dbc5feb2804c7a6116f94ba92f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "587ee7bcdf1af1e0d9c693a3f969eeef7ea07ccdae71851cb78b758ee184af78",
       "headings": [
         "**Strategic Engineering Blueprint for Entif v0: Architecting a Local-First Autonomous Second Brain**",
@@ -534,8 +558,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-29",
@@ -546,7 +570,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.922Z",
       "bytes": 284302,
+      "contentFingerprint": "f47147ddd01642f61e64b87e296e3506b59ca15ee26c3dab26b6a44d5fe40bbf",
       "words": 43827,
+      "revisionFingerprint": "f235150d7d3fb2a02c7e78a99234fca057266d821e38aeee5f9673197658ff83",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "7b86bd738d6097abd1fac01ce43d516c780537ab32230a562e0aea6c0d83192b",
       "headings": [
         "LLM night journey",
@@ -616,8 +643,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-30",
@@ -628,7 +655,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.923Z",
       "bytes": 169235,
+      "contentFingerprint": "1258647162423c3dac56b431f6900b2268b246860c1460e0f3177c698de4295a",
       "words": 25322,
+      "revisionFingerprint": "8a36895a1c7d0782e1b97dc36fd0edc1380d8d8cc92ca8e12be7aa72af592885",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "fc6c5b067f6a0aee6fcab5e96843347411320211c81f65d2e634cd77fcd4b58d",
       "headings": [
         "Taxonomy system design",
@@ -698,8 +728,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-23",
@@ -710,7 +740,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.925Z",
       "bytes": 134072,
+      "contentFingerprint": "2a64e39297c682a26eb4f756c488d100829a789642c9e7525e568d88ebe27b83",
       "words": 16868,
+      "revisionFingerprint": "b9a61a0ee2dffea844ecde9480e2bff6e242ce3a2644d69940e53003a320692c",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f771c57c55b9ef51ad756fab93c5a08a41c21f835422551e293c300dfb7b7b33",
       "headings": [
         "LLMs and New Languages",
@@ -773,8 +806,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-26",
@@ -785,7 +818,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.926Z",
       "bytes": 174524,
+      "contentFingerprint": "c3b5e33f6a5b5f5f4848999113ef5ca8c2fb9b642511693c69bd4086b9a331ab",
       "words": 27647,
+      "revisionFingerprint": "8c57f228c00ff7db2e7a27a07e6554ddb20b0990c6c8088d8f9d309168b07016",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "abd9b8f3662168784b4eccdb729ab295796e2427f21e5b1d859d312560d2504d",
       "headings": [
         "Chat GPT Defends Evil on Christmas Day 2025",
@@ -855,8 +891,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-09",
@@ -867,7 +903,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.927Z",
       "bytes": 263522,
+      "contentFingerprint": "914a333d44f80e51853c27856ebea96558c1a96130dfe9064bb5b897f95826a3",
       "words": 34945,
+      "revisionFingerprint": "2a5f414627081d18c13b1231fc82db5f97c846b46025db8f40ccdaa53451e965",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "72a58e20d042b9a0c1a4df72b9b3ac7be129cac8cf42d5143425709b0e1e2b3a",
       "headings": [
         "Taxonomic Standards for Software",
@@ -937,8 +976,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-21",
@@ -949,7 +988,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.927Z",
       "bytes": 155363,
+      "contentFingerprint": "b82cdb30ac5b44473a0bea683ca5e6197f872e4a111b8f931abd653097ada324",
       "words": 21221,
+      "revisionFingerprint": "41a3ced7bae3af8a0d4e7b071a6aa326f2c6ed505e28912a17d754bd60b8e204",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "abb25cb2b79d02bab32ec9a40dc0cca9f6d42022cd7ff1f0c82f71522fad4798",
       "headings": [
         "Google Fi API Limitations",
@@ -1019,8 +1061,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-22",
@@ -1031,7 +1073,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.927Z",
       "bytes": 54041,
+      "contentFingerprint": "efc344baad8e9d27402db8dee5afad6fb1b4eb369aaf5c74ceeadfb32e3a4014",
       "words": 6744,
+      "revisionFingerprint": "a19a7daad23ff15a3c0cf5441e9b96ccf29353d8a919c6fe7de81ae040797d34",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a5c485b7fffa266ea9d5d715063098200b9735ffb9500998fbb6fa15899252ae",
       "headings": [
         "mHCs and Engram in ML",
@@ -1101,8 +1146,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-30",
@@ -1113,7 +1158,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.928Z",
       "bytes": 16251,
+      "contentFingerprint": "3c221c76e94e078c7038701f316d3c9d83277709b6221c941e6ab769122704d9",
       "words": 2355,
+      "revisionFingerprint": "16dd349b6be8f04ac6a937f031b562835157107fca7130f48569c1c82e4d2f23",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "56fc92e3a817f12f83a564df8fb71a26750ff6d5c0d1b669922e0a1a4d0a64ce",
       "headings": [
         "Defining Consciousness Process",
@@ -1183,8 +1231,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-30",
@@ -1195,7 +1243,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.928Z",
       "bytes": 124294,
+      "contentFingerprint": "b9823eec16da3317e8fb13e8df2b826fdd35f7c7f8056fd9dcda9230e0ef4455",
       "words": 20316,
+      "revisionFingerprint": "2ead6796a52746fc0e25bfb9606ce2764f777fca1b09cbf70858ca84e1b62e22",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a67de5603734ddd94ffcbc5d675cb59e6e46d20cfcb563a0a89b7444fc51dd9d",
       "headings": [
         "Emergence Dialogue Analysis",
@@ -1265,8 +1316,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-21",
@@ -1277,7 +1328,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.929Z",
       "bytes": 95455,
+      "contentFingerprint": "fa0aaecf0e40f0d790ee27afb792cf8af021370107a674fbe028de06e7f9e6f7",
       "words": 12940,
+      "revisionFingerprint": "32c8a05a13c7973766468cf19f0ede065cd368a36f4bc88d21135b3f9d016f25",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "e807c68d65c1eef55555ee7adb8f71ad615b468a7d8bdb10a7c1277fefb7b261",
       "headings": [
         "Security, Caching and Rosetta Updates",
@@ -1347,8 +1401,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1359,7 +1413,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.930Z",
       "bytes": 20256,
+      "contentFingerprint": "04a5e5cbfdd62c44ad628f9c6f77c75b39d0f32b6f9b764bf1ba4ec3576487d2",
       "words": 2179,
+      "revisionFingerprint": "c17337ae41653f3fe072ae33fa54e89d9fba77f3c769a979324984787596ffc5",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "e12ea9b7117b18a77a819f0f8a4dd9f6c5ec9d11eac3cae230f0dd37e8679164",
       "headings": [
         "Agentic Deployments Security Risks",
@@ -1429,8 +1486,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1441,7 +1498,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.931Z",
       "bytes": 149728,
+      "contentFingerprint": "389a8353abfafcb60364fa0c3783d55bc1e1ceb4a6c8b869bda57bd0b9e3be1c",
       "words": 19270,
+      "revisionFingerprint": "f2331f6dc4bd63ec24e85d820a4fd5f860362b69a445239af8aceb9988e0e3a3",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f397686bbcbee623064b0b23970b9c367e584116306e0a2af7a52d4c511e6bdb",
       "headings": [
         "Org Chart Development",
@@ -1511,8 +1571,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1523,7 +1583,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.931Z",
       "bytes": 11183,
+      "contentFingerprint": "31c96de3255bdab9a84f92c535bce5d8015dbb13de7f1637b73f428b199561d3",
       "words": 1625,
+      "revisionFingerprint": "6da207bb68e5f7b59d55bd1982e34179f54f3ecfaa9fb3aa0d5932299cd0782f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "b6217288432ab4a684be501dc1cfc38de2eb6b3dd5ee0d7d49d4baf6c1aab9f0",
       "headings": [
         "Cognitive Selection Theory",
@@ -1587,8 +1650,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-22",
@@ -1599,7 +1662,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.931Z",
       "bytes": 71232,
+      "contentFingerprint": "6865e0c67ea5be12bca0b25cef0b0647236eed354f9d9749f862603e9ef04883",
       "words": 8382,
+      "revisionFingerprint": "7deb7429557c44aea2d4769f8d1c71ab57743ea21f9f3fee59a777558f228b6e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f7a83abaac6e5a54d6b27d4e8e52f489cfce1d9b74246a8224595f85c7f4409c",
       "headings": [
         "Agentic GitHub Repos",
@@ -1669,8 +1735,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-17",
@@ -1681,7 +1747,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.932Z",
       "bytes": 33113,
+      "contentFingerprint": "9b03fc513142e23fe58df48804cd05ae2af428ac8d647b3903fb069066b15ac0",
       "words": 3935,
+      "revisionFingerprint": "315772ce487667d288df96fcd768c5d940ef00df7588863804075a14e1d065c3",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "5953a274cf104d06765aa796a873643fbcc6b72599222bf666c81d0e53455c72",
       "headings": [
         "Code Wiki integration",
@@ -1746,8 +1815,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-21",
@@ -1758,7 +1827,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.932Z",
       "bytes": 142207,
+      "contentFingerprint": "3fceb488c6873da2bb5567d95dddfafd58dc9430c868304947ceffcbbda8973d",
       "words": 21995,
+      "revisionFingerprint": "4ecc1677dddd457ce811d2755743eb6e208db6837c1322131d0779b836e973cf",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "072442ed029177dae92cdd7a64fb796198172a27017828fda383a7d4decd97be",
       "headings": [
         "DeepCode prototype potential",
@@ -1828,8 +1900,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-08",
@@ -1840,7 +1912,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.937Z",
       "bytes": 342266,
+      "contentFingerprint": "33b0c3c2b72a2051ffee9641f8a5c02fe749aa1b633fb532484a02f270983698",
       "words": 46872,
+      "revisionFingerprint": "eb292cccf0f7f6f7d8ac93e9b37bf68177bc1feffba13244d9d40d2c3839adf1",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "74a54b34a7925eba7c5bc7e749096b89f6ab6d8640303bbca22a274359b194ca",
       "headings": [
         "Token boundaries explained",
@@ -1910,8 +1985,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-26",
@@ -1922,7 +1997,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.937Z",
       "bytes": 93968,
+      "contentFingerprint": "30533e8b2a2c396ed5afd8878f747609b2c23aa29e832d92fbed995f61fde5e9",
       "words": 13475,
+      "revisionFingerprint": "ab637de993a1fa668dbc3c721158d3517f0774ada9a65d38219aadab4b421f9f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "bbe119bb8bf9b10a0e7e97ecb79574093c389a282fd67da77be0b9f2d04d5f88",
       "headings": [
         "YT, Agents, Auth and Cache",
@@ -1992,8 +2070,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-26",
@@ -2004,7 +2082,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.941Z",
       "bytes": 160307,
+      "contentFingerprint": "daa03b0b9a88a659ff6c37d648569ee8ecfd79df23237d70ca9a42c7820a65f9",
       "words": 21985,
+      "revisionFingerprint": "52523462ff4a977b9bb37bd57894a664df9e93a3710adc09fcc9e5a0accd374f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a7393aabe840ff2f20fa799669d3c633d5c8610917d275cef180f2346c5116a1",
       "headings": [
         "Entif Agentic Build-out",
@@ -2074,8 +2155,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2086,7 +2167,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.942Z",
       "bytes": 73149,
+      "contentFingerprint": "960c7cff09189bf96a058174d23e0e240f1bb99aa7ff9dd13e0c557549f12767",
       "words": 8806,
+      "revisionFingerprint": "1e9bad9dd5ba206ee2cc312de30bf29c7ebff99f57c0da96fd63382ede55d34e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "055a6c068fa765e59fc045387ea9a1013ce2c9ef970a04581468cce602b96fea",
       "headings": [
         "Cohesive System Synthesis",
@@ -2156,8 +2240,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2168,7 +2252,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.944Z",
       "bytes": 461460,
+      "contentFingerprint": "9158779446acd65afd4fb74ddb8ca48d671c15e080fc258605719aa264671e43",
       "words": 63018,
+      "revisionFingerprint": "ee7811babe7cf8aae4be62473a29aca402f76869dc6482fc91639220713dc455",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "1c060108219d424e43ec8a743862b0fe346b2e736c3a7130e7926b97e72638df",
       "headings": [
         "YT, Agents, Auth and Cache",
@@ -2238,8 +2325,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2250,7 +2337,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.945Z",
       "bytes": 287092,
+      "contentFingerprint": "fd100349b4a19474e1757cbff31631542b6ab9982c28993ff2334746d416fc1a",
       "words": 39223,
+      "revisionFingerprint": "219f5101fb305c4f4ea1c1b2bd4ec902b4a50c5dbe19ade3812c5418eac56126",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "bd0baec35f3e264ee0ea0f9acb17d76201bed29a52b768ef10b308f51b02da25",
       "headings": [
         "AI Rights, Uncertainty and Resets",
@@ -2320,8 +2410,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2332,7 +2422,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.946Z",
       "bytes": 17511,
+      "contentFingerprint": "fc9074332cf384bce7561b2c54d1b512ee082d4e8fead7c398841fde5eaa92f9",
       "words": 2298,
+      "revisionFingerprint": "134d9f441080f026e134958a89dc88323545429f763ca86e7cef82ebf494701f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "36a9b0f129850203af6b5e0dbb07d04746a395d91425101a2a0b646acf7bba8e",
       "headings": [
         "Latent Space Cartography",
@@ -2401,8 +2494,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2413,7 +2506,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.946Z",
       "bytes": 94198,
+      "contentFingerprint": "ea18d0d076e943a9262e95b934ef15fdbb549559ed8c70bdd05f4fb55b908802",
       "words": 14648,
+      "revisionFingerprint": "ea22cda20aedfab829f36219b4bb5da382cdeef7a6967c8872075aec54b80d80",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "08cd0ef7131746eea2d3a1941e7b2303f393e5884bae77d713fae8f65b01a334",
       "headings": [
         "LLM reasoning vs emergentism",
@@ -2483,8 +2579,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2495,7 +2591,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.946Z",
       "bytes": 8237,
+      "contentFingerprint": "42ed7f5377905bda08780826e0888939fd2556c2356f559b7dfca91e2346d279",
       "words": 1095,
+      "revisionFingerprint": "60940628b1c5a48d96f1ccc729421871a4f27825a857542479699234d05ed76b",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "434fabd2285a4eeb9cede39bc7de4ca418a41b5e4fd3358cc533af3ad55ffb55",
       "headings": [
         "Context Management Techniques",
@@ -2559,8 +2658,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-01",
@@ -2571,7 +2670,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.946Z",
       "bytes": 6030,
+      "contentFingerprint": "df43f61ecf10076e7cbfc11d98cac47eba8ae66f5707f793846448a9fcbb28c6",
       "words": 812,
+      "revisionFingerprint": "ce23c0c5af49277c6f26debe036b2e0a34bc8ce9ca258cd79835cb73dab27e18",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "8d3d72c10f3b4b122a09a66b33e7806e3cc3d2f65df579c437cc230708245ea0",
       "headings": [
         "Empathy Eval Harness",
@@ -2631,8 +2733,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2643,7 +2745,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 8437,
+      "contentFingerprint": "ec8ff70fe09a51f9aef1a38ef715d1fc30c279300a4bb606f081e89f2e33e549",
       "words": 1160,
+      "revisionFingerprint": "81ce1afae7f024d9f4db839cce2e2aa1ddf03ea499ad1952107b1ac61e75fec8",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2715e4fe1a4f0880f218bbcc0f74ea719014f0f2b6401fd426a9bc61b5138cd2",
       "headings": [
         "HF Papers Daily Scout",
@@ -2711,8 +2816,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-01",
@@ -2723,7 +2828,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 12239,
+      "contentFingerprint": "59e2ea420732b1d074f1a41342068c1d84c6829985b4d2bd011eebba70581838",
       "words": 1722,
+      "revisionFingerprint": "cb568c6193cdd724862b4f5afa4c53980102492f91629583aefd8bd4e754c60f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6fbc4b9cece71607147725c87ec89b6acd779f7666081efc2755fda0a4d9563f",
       "headings": [
         "HuggingFace Research Integration",
@@ -2788,8 +2896,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2800,7 +2908,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 7009,
+      "contentFingerprint": "b6b3b306e725d2c0b2ff74d66937d72b462de2ad6650b8a2368bfa9aa5476a18",
       "words": 937,
+      "revisionFingerprint": "e7be0a3e713a0a0d2704a67940d6beeb64f5da15a9f3a70b7fef742ff3cc6b1b",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2eb4371e9a5e88cc7041732cbfad3fbc31fc8d1093f4fd09db1eb266d9d2f7c0",
       "headings": [
         "Context Management in AI",
@@ -2865,8 +2976,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -2877,7 +2988,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 8381,
+      "contentFingerprint": "2f88726eecd911507cc93adb5d200a0b1b7e372dd2014631305f00b2e10dd75d",
       "words": 1139,
+      "revisionFingerprint": "0343c6788e9e9f091ad8bdc2f06b3169f28e8002a4bda6a9b02c28ae3447b26e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f061f2c7243c80b49ea99e9b85792d5b9a1344a5610ac30cdf362a0f5ab34a3c",
       "headings": [
         "Context Management in Engineering",
@@ -2944,8 +3058,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -2956,7 +3070,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 7076,
+      "contentFingerprint": "e797fafe78cd41290577b78ffdd4f679f155d19aaaa1a4c7edf522566a6b79ef",
       "words": 931,
+      "revisionFingerprint": "33766e31cc1099811960304ed5d48ab3bf97f3f604978a3f977f08c589befaee",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4d4b47fac08065f913ef6d4da6a2485c7c1d8250f389ad6b4ef28e669eec4c38",
       "headings": [
         "Empathy Evaluation for Entif",
@@ -3020,8 +3137,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3032,7 +3149,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 7579,
+      "contentFingerprint": "673532a00c41f0d7bd2c1d2dd403d826f393fcafc51ff39bbb88c22dff6c2199",
       "words": 1024,
+      "revisionFingerprint": "5b8ef2c196213bb4e0d2c3c8ebfa0f5f71e1c627968fd2a3273662f08114f390",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "18ff51bf1b44add80804ad3e9e4751bbaf4abcf54c17e1508e7260bd5b02d1f1",
       "headings": [
         "HEART for Empathy Evaluation",
@@ -3098,8 +3218,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3110,7 +3230,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 9206,
+      "contentFingerprint": "6e365f6c2ff1cda6e947826b211b699ea66f71acf5fc51137aed06bb09385497",
       "words": 1149,
+      "revisionFingerprint": "4079c8eb395efd3363fed4e524f3ad6e860bd5ceb958e4bbe1e2e4f07b0ebd03",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "899185b2cdbfc85090055dc9cea29ccaac867a2f519142d0cab691fe6e30d209",
       "headings": [
         "MaxClaw Split-Testing Evaluation",
@@ -3170,8 +3293,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3182,7 +3305,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 7509,
+      "contentFingerprint": "3acf71d603878ef3eee2e82c3ae8478206c2aaadcf101c460c051bdcf4e809ef",
       "words": 978,
+      "revisionFingerprint": "f83403432d818d43acc09f70b2546f7a4811077b70374f96df6c220b41a75501",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f48fbacf1c22b9608c38420623b32522f79b38ee60d5d4adc609774dda30d3be",
       "headings": [
         "MaxClaw Split-Testing Strategy",
@@ -3247,8 +3373,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3259,7 +3385,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.947Z",
       "bytes": 9145,
+      "contentFingerprint": "fd3b0652bb45b82dbcc87fa05e1808ee366c016fe80b6ed1118e388ba50591be",
       "words": 1179,
+      "revisionFingerprint": "ce9658122dba34ac5b6d19270141a9212f7dd79a8a6f7a2f33f53527060b9124",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "10bddf55d5b19d13adae8f0fe6e212e9120c97ccec870341d99fa93937753730",
       "headings": [
         "Recursive Language Models",
@@ -3319,8 +3448,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3331,7 +3460,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 10986,
+      "contentFingerprint": "9e15768ef94371cd323dcb70001c6ecdb1fda1759c36fdf5e1b2f49b797daf4c",
       "words": 1449,
+      "revisionFingerprint": "bd7fd47cc8c00e1b67b26b727d11a38eeb63813c987d65f046f05bb1d0542c6c",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "75ac42e4debf3b7c70ba4fd95ad359f7ab422ca217277f3f2837c75c8fbeca57",
       "headings": [
         "Recursive Language Models Insights",
@@ -3396,8 +3528,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3408,7 +3540,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 12896,
+      "contentFingerprint": "173a7815927bcb7d5a2a10f7ea83334b4495db9b506cd28488213480481a5d09",
       "words": 1676,
+      "revisionFingerprint": "6caec8ebca8cc6abb0cf1a0fba3333dfe4054c12fa71ee6afe80bc47ea02f81e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4ae3581caf2f3a65ec439ae13e7571d3542950e3b44f60312bf84e1e98d51ca3",
       "headings": [
         "Recursive Language Models",
@@ -3475,8 +3610,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-19",
@@ -3487,7 +3622,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 38350,
+      "contentFingerprint": "c39aad9fd2987b14da005c6a71e7348e51441b4565ecd4e483f936733f2d5501",
       "words": 5263,
+      "revisionFingerprint": "56339f6249e78cf7f7912c90785301441cf903ba20c9e13e463236955d3d5d36",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "65e4c0ab8d2c9299118df1549b995a590316ec3b09c812c67392478569367ea4",
       "headings": [
         "Tulpamancy Protocol Review",
@@ -3552,8 +3690,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-22",
@@ -3564,7 +3702,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 30498,
+      "contentFingerprint": "1442c93c3aa9b33fb9db623311ff92de82ba970c6febc3512c72278a3b643fa3",
       "words": 4792,
+      "revisionFingerprint": "3f5a99be6e4188484e8de481ebaf055c8f085cf866eaeeb2c5b86f02eced0669",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "feb1bfe6cbb0a3e0936292040ad9f883c0c3f514d7c04b3f7ea47d9eed81a582",
       "headings": [
         "AI Efficacy and Entif",
@@ -3623,8 +3764,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3635,7 +3776,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 20036,
+      "contentFingerprint": "5ef81e35af16f1229ccb487a392871f17f0887bd9e53f78b6949cecfea06b7dd",
       "words": 2563,
+      "revisionFingerprint": "8384eabc8a152ba2ccf95bfc5608c89efb7143f508068297b4c1a2c24f95187e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "b5e7d439d28128a299761175fa5f731313701776d7a919f85159ff3b914a260a",
       "headings": [
         "Entif Skill Library Design",
@@ -3705,8 +3849,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-21",
@@ -3717,7 +3861,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 12967,
+      "contentFingerprint": "fa8330ed2d2cfc9e72169d42c9d836fc77d3d42c5225250235ba80b4a621f3dd",
       "words": 1810,
+      "revisionFingerprint": "d766157b125925af396c8ab637b557c9f289cc14eb5485c55ae197bd16c774a0",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "9a7a35b3c4a5b8debdb2e00f9ea8a11d8472cb1ca03f0eae5969517f4960f159",
       "headings": [
         "OpenBrain Project Analysis",
@@ -3774,8 +3921,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-19",
@@ -3786,7 +3933,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.948Z",
       "bytes": 11889,
+      "contentFingerprint": "b8f6396f8f75c3ab126def662cd6a071fa4331c6b8fece0373d9249333963539",
       "words": 1479,
+      "revisionFingerprint": "850c54c640e6a56b355f406cfe33b01acf94a5d2ea3577a18b250c19c2ce7f5f",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "3b16e291c2d5882e31c621312322d335a5b62ae84bed6173bcec08f665a91fe1",
       "headings": [
         "Progressive-Disclosure Skill System",
@@ -3850,8 +4000,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-21",
@@ -3862,7 +4012,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.949Z",
       "bytes": 16311,
+      "contentFingerprint": "0e024c0b9a9977d5ed97d8c9f6ec8d6772b30db283caf78925e4a9054d11ddda",
       "words": 2354,
+      "revisionFingerprint": "80593d620c325fa73678c3bb993f55e9a3675631e1854539ae14bd0ef6a55e26",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "ba7e396dfab58e1664208ec4887d018907b43172055015e44521c11b8e52f35d",
       "headings": [
         "Rosetta Design Strategy",
@@ -3921,8 +4074,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-20",
@@ -3933,7 +4086,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.949Z",
       "bytes": 97688,
+      "contentFingerprint": "fe401071e69db63d029c382902119d01be85c97bf846693966c761147f373430",
       "words": 14572,
+      "revisionFingerprint": "6ef8c3cd50192d4faa936d7ad29f452ecca0c655da802b1097bb50024c4f3edd",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "0e2c5c588cdd2588f60ef8e540e3dbc708b1d1612e43a86af2d9c58aac35a051",
       "headings": [
         "Social Cognition and Therapy",
@@ -4003,8 +4159,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -4015,7 +4171,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.950Z",
       "bytes": 120765,
+      "contentFingerprint": "1d617c919d9efe8f4cee2540720222827ec4af27e78ed2dfa8ffa039d3b0bc8d",
       "words": 19023,
+      "revisionFingerprint": "62a9ebab53fce1574b520b941e46dadf7b308b9179f18da3b9f0af47f8916d0d",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "f15236e8801bae5c6f548c233ed6c1f853798f16e645c52316f4af006f5b1022",
       "headings": [
         "Epistemic Sequencing in Scoping",
@@ -4085,8 +4244,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -4097,7 +4256,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.950Z",
       "bytes": 162120,
+      "contentFingerprint": "953c471c5d5e24e28cd6bae2a97a3f63cca413eec58e81c42c5af9b35a433ef7",
       "words": 22314,
+      "revisionFingerprint": "2c223282fb3d24fcdbb6d74489a67bd88543675c32b24b5f08cee42bda5643f6",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c98c18d5b9bd4ee86da78a938dc717756f6bc43742567535ad0e1678b16ec33f",
       "headings": [
         "Ithkuil, Residuals and AttnRes",
@@ -4145,8 +4307,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-26",
@@ -4156,7 +4318,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.950Z",
       "bytes": 136903,
+      "contentFingerprint": "565b89dd95cef01244594dd61bdb6189fb3fe7a2780eb93bd8e2cab91776c4bb",
       "words": 21224,
+      "revisionFingerprint": "05e1d3f11d04e64c7057cd8e44a82d21a1e40bb60b9afc0f6fa84f676b39ba0e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "47909150860243cec45011d4f306a2c11cc9f3acfc77580c0f840d78f0be3f4f",
       "headings": [
         "you asked",
@@ -4226,8 +4391,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-01",
@@ -4238,7 +4403,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.951Z",
       "bytes": 53761,
+      "contentFingerprint": "6b8626d057dbc7800eb30efdf64cd822b923d2901bf566f72f7fb4424cba3754",
       "words": 7724,
+      "revisionFingerprint": "d6337f44c7f9347894d1ccebc0063636ca6c272aa691caa227270442f691adc6",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a147b84d4311b04839f0b1d9e10769d7a941e22cf8ebe5d58f6fe36940edf805",
       "headings": [
         "Memory Stack Recommendations",
@@ -4308,8 +4476,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-08",
@@ -4320,7 +4488,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.952Z",
       "bytes": 237328,
+      "contentFingerprint": "aa446ab0c4f36bb5b8887820b6fac6ce50fdb28d7f78a04925297151d425301b",
       "words": 30665,
+      "revisionFingerprint": "95608ae4e1781c9ffa9d5f46ccb400ecf8262c174da170fe50873f55b13e849e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "05ad5b4c70f3b8f49d750098a999765f939bea255c6bbf6aaa97cb03601b0e21",
       "headings": [
         "Email-driven Security Defenses",
@@ -4390,8 +4561,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4402,7 +4573,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.953Z",
       "bytes": 151570,
+      "contentFingerprint": "153e5591d4c0fcd2b3848b084da5e43f7add938e0b83645b88aefacdea0d57ca",
       "words": 21270,
+      "revisionFingerprint": "e32608d02afb4e2f2a7fa4d5ebf2d3b58ee5f4a7794de4a0aed813d0c6b8a15e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "78fef7bc70253a377d3b8518e973e20460b581faa3cd295fd04397b34d1473b1",
       "headings": [
         "Pro-tier Deep Research Prompt",
@@ -4467,8 +4641,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4479,7 +4653,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.953Z",
       "bytes": 23194,
+      "contentFingerprint": "113e10959f78145571d3033153b2db4565b57bd2171be3474e10312b2cb1ef62",
       "words": 2954,
+      "revisionFingerprint": "d77c119809a9052ec9d40ac16a7dfd9e3564f2bb6d5364c5939c69b30c04e54b",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6c161a0dbf9665fd41c7112ddb9bea52256b251bd48398e95596c0b821221fe2",
       "headings": [
         "Pro-tier Deep Research Prompt",
@@ -4519,8 +4696,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4530,7 +4707,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.953Z",
       "bytes": 54654,
+      "contentFingerprint": "b60d03815b4cfa8ee74c6a2b8141df2f0a937064932cdddd64ea7d4e8b2ba34a",
       "words": 6093,
+      "revisionFingerprint": "a2a0fbcf693073b45f9417234885643289a598fc7b946864e3fd6a1a39d0e0ab",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "adf4b3397a891bad025cdc832c670298065be7584d79a7eea643f4cc3e996648",
       "headings": [
         "Rosetta + Entif MVP Forge Blueprint",
@@ -4600,8 +4780,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -4612,7 +4792,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.955Z",
       "bytes": 64891,
+      "contentFingerprint": "5b885613045d9f2ca6edd5cc4caf47b1004e2dc73a3f2fbbd05854b695c5c418",
       "words": 9148,
+      "revisionFingerprint": "62d05c96b176437a1470e206183ab9e3a4c0ed44beb2885b71cd89b3b11267b7",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c4b478a7b54e79ecc7bf94c59b099d7026600432aea20827dcf7fb544361eb72",
       "headings": [
         "API-driven Cache Management",
@@ -4679,8 +4862,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -4691,7 +4874,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.956Z",
       "bytes": 44552,
+      "contentFingerprint": "8337bfd64cec041a874068a04a2f431d32bb00952e1561ad1975a050d5165265",
       "words": 6636,
+      "revisionFingerprint": "2d94f370ed4d2d19ad8ebda931798b17a2933934ee41d329e57cba1c5ebbe498",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "b87357a9477d51633993b24828a0c3cc5b43dff45dbe9b421d74f34b19ff6e01",
       "headings": [
         "LLM API Cache Management",
@@ -4756,8 +4942,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -4768,7 +4954,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.956Z",
       "bytes": 136676,
+      "contentFingerprint": "865511102afc4104e4ea519b3e983e87459e3adbb46244aa8a6a881bc26f6039",
       "words": 21094,
+      "revisionFingerprint": "926ca077aed89306c608fab70980e860c60758b1557d0729371264c54a1e476b",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "63fa1f43b4c8d5f6368faa8a9b542360a846455f8589e30d377ce83915c0fc29",
       "headings": [
         "Reasoning Efficiency and Encoding",
@@ -4838,8 +5027,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -4850,7 +5039,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.957Z",
       "bytes": 202637,
+      "contentFingerprint": "69c9b10bb9d508102f55a4b285f15af493d3f65a32a94b22a96e81d1402b415e",
       "words": 30952,
+      "revisionFingerprint": "109b262776043006e1060238f04d354f26bbf087063d55bff2e66daf85cb9588",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c196d4d9366e2f918adc16297a3077e5323666814f39847877f75b2b173c1c45",
       "headings": [
         "Token efficiency strategy",
@@ -4922,8 +5114,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -4934,7 +5126,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.957Z",
       "bytes": 41890,
+      "contentFingerprint": "e21211d4000f4266a6a977555b89fc2436aa7fe7a06067b1930df37e807a8ff4",
       "words": 5608,
+      "revisionFingerprint": "67b2b2f49e368512d51c6733a5e827593619239de9d982ad56bbc96ac009d735",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "289e5439a3f87ff5dd1239b578cb2bfcf27fd0dd1664df9d2cdbeed08fdf5989",
       "headings": [
         "Token efficiency strategy",
@@ -4991,8 +5186,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -5003,7 +5198,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.957Z",
       "bytes": 60925,
+      "contentFingerprint": "fedb6a613a5cc57f1082e0c9d5862813de1169e04438f041f0b8c8ab99538508",
       "words": 8075,
+      "revisionFingerprint": "b72ce291ece26f20841e27b97bb8650db0a0dd7daee8c3b530ade724c40a0922",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4a151a03d9a6c22710553ea08982d125b1eaa758a6b94a5e88616627f19dd17c",
       "headings": [
         "Model Training Cost and Design",
@@ -5060,8 +5258,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-23",
@@ -5072,7 +5270,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.958Z",
       "bytes": 98303,
+      "contentFingerprint": "6d99727a6c81f2643362a211bfbd24ef237578a4158e50d4f76593e936e9b965",
       "words": 14610,
+      "revisionFingerprint": "1523613a4f3874168e9549cb52d0a47ba22a0fe855f7a5591244fa7ef0890376",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "3b5f937de9577ed5cca4fef2cdebaaf22b78e405026c1078d677d733c3824253",
       "headings": [
         "Agentic Orchestration Failures",
@@ -5115,8 +5316,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5126,7 +5327,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.963Z",
       "bytes": 17544,
+      "contentFingerprint": "b7d34cef5ca2490ad84b46ebb0ee44763fe731863b040a7acc10450c0cad2c88",
       "words": 2066,
+      "revisionFingerprint": "87aad73368dc38cdf2a61b1296bec2541baafc805c294a202aacbc298418dba3",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2e33127bf6156a3a65860326d7ea3ff0e7636841fcfe2b14a95bea8a5fadcca7",
       "headings": [
         "acpx",
@@ -5169,8 +5373,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5180,7 +5384,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.958Z",
       "bytes": 5383,
+      "contentFingerprint": "038b6e7441da1d5ad6d174180770adfabec0b2cf3b07762814a1d741fa5e339f",
       "words": 624,
+      "revisionFingerprint": "836ff171a24e51a28690f50c97fdbc874a412772145cb6c1957958ad4ccb11a8",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "16f64b6f7a3ecd655ea2e5f665efcecb04517aa86a865b4df6c5ca968edf7ece",
       "headings": [
         "AiiDA-WorkGraph",
@@ -5219,8 +5426,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5230,7 +5437,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.959Z",
       "bytes": 5997,
+      "contentFingerprint": "6567f4a5aeba122c12df3997530bc4c7dcb728355fcd8d27bab074ae0104bfa7",
       "words": 778,
+      "revisionFingerprint": "e2a832779bdc0150c8b12a964d4717ab9d248f69df331499a9b343da5dcb146a",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c7eea370100a97524225ce6af5b493bd02e84021183470ecf2c4055696ce7ae7",
       "headings": [
         "Overview",
@@ -5264,8 +5474,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5275,7 +5485,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.959Z",
       "bytes": 16652,
+      "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
+      "revisionFingerprint": "762b334196789ff9faca93b028be315116b4b68ad42d37c9c58c0ad08e8ec44e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "29cebd94036c658a1a5f44353fef7c093be775b8fb991e7af663985c81d019df",
       "headings": [
         "OpenClaw Prompts - Build Your Own AI Assistant"
@@ -5303,8 +5516,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5314,7 +5527,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.959Z",
       "bytes": 24058,
+      "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
+      "revisionFingerprint": "23f340be9eed0236e94bd7bfe52ff84b5836b0109cd17d3ccc021ebeed591b52",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4b32c477dd8c9231c4f2ba68cc9000f0ad984f3630b852a2e92cfc47745545a5",
       "headings": [
         "OpenClaw Implementation Prompts",
@@ -5353,8 +5569,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5364,7 +5580,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.959Z",
       "bytes": 3051,
+      "contentFingerprint": "287a90060402d85a7e578a01b01600d7fa4532c2297dacacb4daefe50dc449d5",
       "words": 509,
+      "revisionFingerprint": "7392dc06ad3f810a6aeaff0008271a4ffb35013ca20d05162961567a79cf58dc",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "287a90060402d85a7e578a01b01600d7fa4532c2297dacacb4daefe50dc449d5",
       "headings": [],
       "status": "indexed",
@@ -5390,8 +5609,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5401,7 +5620,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.960Z",
       "bytes": 21481,
+      "contentFingerprint": "84688f2626832051cb4343c3eb81685b54b0b7e9473f904e0e38c029029cd088",
       "words": 3143,
+      "revisionFingerprint": "3f1f133d1e3c74605312ed5c3f1cba318cd5740611661f711d388a95bd8bcd90",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "fa9797547e58be15f80cf409fe137cc020e47c53bc0cafec2659a89befc3bf15",
       "headings": [
         "OpenClaw: System Prompt File Templates",
@@ -5444,8 +5666,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5455,7 +5677,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.960Z",
       "bytes": 24058,
+      "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
+      "revisionFingerprint": "40c0bbdec3b2538b63cfff830cd91325c4e431eb251887be38f4077787938af1",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4b32c477dd8c9231c4f2ba68cc9000f0ad984f3630b852a2e92cfc47745545a5",
       "headings": [
         "OpenClaw Implementation Prompts",
@@ -5494,8 +5719,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5505,7 +5730,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.961Z",
       "bytes": 16652,
+      "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
+      "revisionFingerprint": "516b98bf418430e30111170a04c75c19388b161bc90afca907c5e87a465c4f0d",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "29cebd94036c658a1a5f44353fef7c093be775b8fb991e7af663985c81d019df",
       "headings": [
         "OpenClaw Prompts - Build Your Own AI Assistant"
@@ -5533,8 +5761,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5544,7 +5772,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.960Z",
       "bytes": 82870,
+      "contentFingerprint": "f4b8b22010aa86fe3479262a9215810361f703498013f121b33f6e7da98a5cc0",
       "words": 10795,
+      "revisionFingerprint": "2648c79b8926712ba2cff303f5f50b4097f0d4fce33c0420894d49669466192e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6e54bd9f8d70a77ec83f7aad1198b036453793f6fdf7a131f82a0a5724c16a37",
       "headings": [
         "PRD.md - Product Requirements & Feature Inventory",
@@ -5587,8 +5818,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5598,7 +5829,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.961Z",
       "bytes": 37814,
+      "contentFingerprint": "064f7fee6784103c0424cac7adf5ceb08b9c550a2991caf2a0a8371352d0cca0",
       "words": 5411,
+      "revisionFingerprint": "4cb688780aff212d345d86bcd463a458e808311a15b001cccad9b3ad316b0594",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c5f21f97d4cdb37df35b9e216b627060946974da63ed32789b2117b2151bac79",
       "headings": [
         "OpenClaw: Extracted Prompts (Generalized)",
@@ -5641,8 +5875,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5652,7 +5886,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.961Z",
       "bytes": 29223,
+      "contentFingerprint": "1b0e2469cb20f6f0b80c8efee4e49538fbe4baff37af75e565f1ba9738491ffe",
       "words": 3428,
+      "revisionFingerprint": "645243a611ce854207fef1bb690066cc438d66d96796ad084abb4be5ce6a4280",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "b25c89ce61c972d7f1a7ec668bc1f4b1e5cd3d504485908698ade00a736524bb",
       "headings": [
         "CLAUDE.md",
@@ -5700,8 +5937,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-16",
@@ -5711,7 +5948,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.962Z",
       "bytes": 742051,
+      "contentFingerprint": "8f1963e5d5033686fdd90bb4d75ea5d24476a654f4f7961bf21da24039940181",
       "words": 94763,
+      "revisionFingerprint": "e23dddace61bd80304f2b0fa025f16ae46cfc8562efacde82aa13189deda4df4",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "06f396395cfdbe7a202c4f610000067b88eb26731434964c7f82c856861e89bf",
       "headings": [
         "North Star",
@@ -5754,8 +5994,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5765,7 +6005,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.963Z",
       "bytes": 10211,
+      "contentFingerprint": "69348110863476288cee7b31d98b74347d9716ccee15ead9960f46d75019dfbf",
       "words": 1535,
+      "revisionFingerprint": "5ece87dee751623185823da6ee4c201962a64acbb60769ec45b0a2bf19c3106a",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6dcde1ede034e85b9398415f8a6d2076749496f9b496249966e669eb0c36ff0a",
       "headings": [
         "📦 Installation",
@@ -5808,8 +6051,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5819,7 +6062,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.963Z",
       "bytes": 17082,
+      "contentFingerprint": "e31f4bb770a41fe3e098fdd9193a50a813b4ee4bdd549fdc2b9ca3a3ccb69d2e",
       "words": 2066,
+      "revisionFingerprint": "07a0cf2781890769f7e4e57ac082b82beb04641b468018a0d107f78321161304",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "48a0001b55235ce16208e06438ab373eb263aae642bfa2e38ada39a604f58ace",
       "headings": [
         "[SwarmKit](https://github.com/moby/swarmkit)",
@@ -5861,8 +6107,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-14",
@@ -5872,7 +6118,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.963Z",
       "bytes": 73468,
+      "contentFingerprint": "c33ea7702470a3d0c800586082c01fe016058a830bc17dc27d4a8f6fdcfcbd83",
       "words": 10116,
+      "revisionFingerprint": "4fdf5d44e51d852aa10e715ca496b6945256925684972ca8bbe94a6b8a1e3af1",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a48cc735a9d299a0ff846cdb71ba8097901d0844fcd27204f9265049bac88849",
       "headings": [
         "**1 — Big picture in one breath**",
@@ -5914,8 +6163,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-15",
@@ -5925,7 +6174,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.963Z",
       "bytes": 49549,
+      "contentFingerprint": "cbbacf51dcfb8b13972abe43842b617abda6aa23050be28c0cadfadb1f5fb5da",
       "words": 6913,
+      "revisionFingerprint": "c6db4f92d29ce4d72e1b9b92271eba5680770cb56aea84a85f50f9b0664a9188",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "8d6b3cceff12267614bc04293760824a2893896a97b22cbf9b9bb7f5e71f58ca",
       "headings": [
         "**1\\. Nested Multi-Timescale Memory (Nested Learning → VitaeVec)**",
@@ -5973,8 +6225,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-28",
@@ -5984,7 +6236,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.966Z",
       "bytes": 145959,
+      "contentFingerprint": "5d75f5bcd873cb67225657271566f9f8d5dea37418db24c3008dce21fe42f092",
       "words": 17926,
+      "revisionFingerprint": "a643d32ac17988e4acd1b723b39e47969bcad75285053c57216ea1e6c2f0211c",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6909160c3e2aa3b6d0a69df132aaec716b7b085da7a1d3900a90516c99bb5c1c",
       "headings": [
         "**Entif’s Advanced Lead Among AI Science Labs**",
@@ -6029,8 +6284,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-28",
@@ -6040,7 +6295,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.967Z",
       "bytes": 128321,
+      "contentFingerprint": "7171be13579b164e26722d26b2bf98bc5f9b6d4235689527355ebf5276eeca48",
       "words": 16415,
+      "revisionFingerprint": "6a48858929ce3fa3230b1c8244e2ca50cb5e28d794400a93f7f7957e4e47de27",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "9098e0165387d23879bdfe2c1d882ad5dc78e54a7e276cfa2a2cdf350dcd7fc1",
       "headings": [
         "**Validating Entif’s Advanced Lead in Modern AI Science**",
@@ -6088,8 +6346,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-07-10",
@@ -6099,7 +6357,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.967Z",
       "bytes": 109645,
+      "contentFingerprint": "65af4ea6cc08df14cbf7d40124266eeb73abb1ef7da740120108040a0065117a",
       "words": 15341,
+      "revisionFingerprint": "7941056f7930eab579ca7427bf445aac889c5086bf93e8aa5e07860797a38a46",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "10ffda97fbc8572385f09f26f14489742feec083d284013a1bb6252f8a26c75d",
       "headings": [
         "Tripwire Protocol \\- Entif.ai",
@@ -6147,8 +6408,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-26",
@@ -6158,7 +6419,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.967Z",
       "bytes": 167388,
+      "contentFingerprint": "d9edc01ce9cab278bca9af20c120d63f71886aa754d497ac027c3f0d84f4237f",
       "words": 22462,
+      "revisionFingerprint": "d8640aefc7338eb8245946c2ac97d1a99ee17db762f0da3f820608898e8a9191",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "e6924a20e4d54e0f12cdb8edadddd556f3cafbab955a3d65c6452acf69e018c4",
       "headings": [
         "Entif Secure Architecture Companion Paper",
@@ -6214,8 +6478,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -6226,7 +6490,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 14844,
+      "contentFingerprint": "513d329747ac4de6f27babb73227f2305d149583aa71f5cc4164a45cbcd60a9d",
       "words": 1937,
+      "revisionFingerprint": "0124154a728ad72d5e844eaf0dcad65b68906c86b281abdf58db0ee36a1533c2",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c14775852b6b028c9176cf133fe43db2ab4046de49de60c9167c0801678454c6",
       "headings": [
         "Doctrine v0.2",
@@ -6284,8 +6551,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -6296,7 +6563,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 10602,
+      "contentFingerprint": "f25689d1c8b272329da885e56064972ff8db1583f7edcf1d79f93c759e390908",
       "words": 1419,
+      "revisionFingerprint": "e4f4ce7fe967b05b6cf752bc144183260311d7740c45ecf85a2926684eb8fb25",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "da02fbbe40b9737eb0832b83696cb387b4f6965d8566a00a88d731f549a6ec70",
       "headings": [
         "OB1 Assimilation Addendum v0.1",
@@ -6352,8 +6622,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -6364,7 +6634,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 43076,
+      "contentFingerprint": "3bd664c6d39a4c479debbea99f2730c478b2665abff717b5580ae9662580439d",
       "words": 6124,
+      "revisionFingerprint": "ffca577cf37d111e6464f350f621fad6129bc6095dd33341394720ac64002c74",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2032238a2d2b0f09354eff86eb651fc899ba98c8b082853625302d584020b715",
       "headings": [
         "Entif / Rosetta Addendum: Source Substrate, Repository Stewardship, Multi-Provenance, and Trust Graph Design",
@@ -6422,8 +6695,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -6434,7 +6707,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 9011,
+      "contentFingerprint": "3f23973a5930a9c58cd5c478964bb5fff4cc999f9604f7a3a830dcbbfe3d8a15",
       "words": 1288,
+      "revisionFingerprint": "5248d25852a1da810cf4719ed72a6559772e80365f09251a231ebf8127acaf99",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c46da83e0f00169f78fb0707e744095e2775476f05aee16eb3e114c6fc12e9a8",
       "headings": [
         "Source Registry and Repository Profile Annex",
@@ -6477,8 +6753,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6488,7 +6764,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 1475,
+      "contentFingerprint": "452cd5f5b4b4169cb784ee548dd71b721c780035a87af902c03b5644875eb7b0",
       "words": 210,
+      "revisionFingerprint": "d1a6454d95d7288a1234e411327bd6c36864dc12c9a8b9315239c152d7d17539",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "287a7f260eb2ff326ff332e4b7ca53ee460ffafd49c6c15ecfe878f778e56605",
       "headings": [
         "Authority Stack",
@@ -6519,8 +6798,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6530,7 +6809,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.968Z",
       "bytes": 588,
+      "contentFingerprint": "0b9a5941c2e5f49566d927dc45a8df60c9f2f5e997ef0c0558381bacb589542e",
       "words": 92,
+      "revisionFingerprint": "d48c6de39be163e74e70d9ebdc6d196c6eaafbc9bb7e0b4c40448a387340e4f5",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "57d54ef8d00ed4a6f8ba51da18758cbdb63637507b8e89548701f17ed6a2af9e",
       "headings": [
         "Donor Fit Map",
@@ -6561,8 +6843,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6572,7 +6854,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 62904,
+      "contentFingerprint": "bc9108060baad56dfc1e4f5202249d0548af99fcbbb6148250436309f87667a1",
       "words": 9433,
+      "revisionFingerprint": "33779936261a24de7930c85f3231a9c2d6e4798087f291400866218698cc1294",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2ca1082b2bf6ff3fbef24ad3a21cc23586685bf9ca8e3c5920e310b5a3da57fc",
       "headings": [
         "Entif 2.0 \\- Decentralization & Governance",
@@ -6605,8 +6890,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6616,7 +6901,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 1207,
+      "contentFingerprint": "619ba5cfa1e14d911e24d50193ff4dfd630d62fe157ebd8b65ce6ef956995472",
       "words": 147,
+      "revisionFingerprint": "e5c00e664a8fa91e7f6ff3b2fd2852e6bd801907dc3e959d4e37f51d75970994",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4a9bbc9d4edfcb68d3d7e70b592ed85fa4d862b131b4c24c5badc500ed0f68e2",
       "headings": [
         "Repo Shape And Constraints",
@@ -6673,8 +6961,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-24",
@@ -6685,7 +6973,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 83812,
+      "contentFingerprint": "89f263001753d21618a3b1da85a1288031a15965e04be38c351a11cdd0f54133",
       "words": 10828,
+      "revisionFingerprint": "37c308df0771b90341bae9b276810127afb0370bc8f012badfecebd38a945da1",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "00c269e9e009a6652cdd16ec7e6d6b3a5ef385cf8b94b8ef45bc8e7f023dd979",
       "headings": [
         "Audit Trail Use Cases",
@@ -6728,8 +7019,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6739,7 +7030,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 24547,
+      "contentFingerprint": "46b6e19c2f0ef3990b234a6c751facbec7fc424fb7490a05dca2fbc7bc255492",
       "words": 3154,
+      "revisionFingerprint": "d5d48093b6c846aa1bb972c2cc7f57d1dea60823348ef14d2bec550056208bbb",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "1f9a666acb6103c21c6d94a8fa3f000725934371b9912514edc2ff6efaa3cb27",
       "headings": [
         "Rosetta Governance Addendum",
@@ -6782,8 +7076,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6793,7 +7087,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 1314,
+      "contentFingerprint": "3be2d557771ef6911b0098cafb1c8d73105fe8f3e0bef4ff4bf48164c1d67ac7",
       "words": 166,
+      "revisionFingerprint": "23a83aff81552c4e638deae16bac46891347ab8afb677aa7c92a21e8831d893e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "c3e0f7adbc14e207f6e46dcf8f0f54c4f4d066f71646d6378f48d56dd5cdd7dc",
       "headings": [
         "Service Inventory",
@@ -6823,8 +7120,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6834,7 +7131,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.969Z",
       "bytes": 924,
+      "contentFingerprint": "1df9f182842bfa18c6a4bbd50881b8f6018cfbddb4e344db7ee862f01348599d",
       "words": 129,
+      "revisionFingerprint": "50d6972ebce9596d4a74f30f03a351d0924c00749950628d3e5510cc79512d49",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6e2d977ad47d33ecc8bd3c38c81ac6922da42e29d26c3f6dfa4d91db9a3f1c2a",
       "headings": [
         "Upstream And Backup Plan",
@@ -6870,8 +7170,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -6881,7 +7181,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.971Z",
       "bytes": 7945,
+      "contentFingerprint": "e92f1b8865fe7d66b6187169bc0a97c67386291e0afd7384c958c8d4729d0390",
       "words": 1071,
+      "revisionFingerprint": "d48abf3a9ae550892e1bce7308e0bb19175bb91c64c8c2b09b04891c00d074a4",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "27ff548837e0b41a517ffa69f536fdb49c0be4e06866fdbbe7999a59c3afd906",
       "headings": [
         "2026-04-13 Bootstrap Handoff",
@@ -6932,13 +7235,13 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T07:04:43.660Z",
+            "isoDateTime": "2026-04-24T07:13:08.415Z",
             "source": "filesystem-mtime"
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6947,10 +7250,13 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T07:04:43.660Z",
-      "bytes": 6860,
-      "words": 972,
-      "sha256": "61e75e668bf8f548df9b577ee895e269294537c1ef9d81c84cc636161ecd6794",
+      "modifiedAt": "2026-04-24T07:13:08.415Z",
+      "bytes": 6913,
+      "contentFingerprint": "edfccb978a8e08ff39bf8bd6431d856a222e6d4802f8d4a4ce2e911c636d7477",
+      "words": 905,
+      "revisionFingerprint": "9bdd0b867e6425dc4d2296b494ae3fab55eaacf7d1362708608421d0f19d5829",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "69cf6dc3d27f2ae6d59d26f63b2b7725059ca85378b596b60a95a5c590abe2ec",
       "headings": [
         "Current Handoff",
         "Purpose",
@@ -6991,8 +7297,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-04",
@@ -7002,7 +7308,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.971Z",
       "bytes": 72204,
+      "contentFingerprint": "4410ab59ee75ecbd262d1bd280d08a4a3cde197c20d5528004f1c50b963ed531",
       "words": 11211,
+      "revisionFingerprint": "468e94fa9f9dcf68533467a15396c4f24b04b07c36b5943b8e4ec5f82e036ddd",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "db5e5dc2d523197b0bcfabb8a761bb8ebe5a686f6160b6a320345b49e503def3",
       "headings": [
         "**1\\. Prepare**",
@@ -7072,8 +7381,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-23",
@@ -7084,7 +7393,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.971Z",
       "bytes": 9425,
+      "contentFingerprint": "593b4071f2b5f42047d9e1b2f82964f2585046ad3faf99eaa26c08e63b5f9545",
       "words": 1202,
+      "revisionFingerprint": "adfe8e7c58749dad05c98a653cf894f352d45a947755294feef84689a5b0c387",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "aa90773a0a6ef0a794a1e6bfe8e356f49ebefe4d88e6754da909208f559d7cc4",
       "headings": [
         "SDialog and Tulpamancy",
@@ -7144,8 +7456,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-24",
@@ -7156,7 +7468,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.972Z",
       "bytes": 176420,
+      "contentFingerprint": "2e78fafd6b881d79f8af7cbf63ce9f770ea15ce25000e51e8099709b7bd23ed1",
       "words": 24905,
+      "revisionFingerprint": "a57b930856107ec861fd9d10c9ad76a84499c4c96b0b8ff30e3a89426a78d276",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "d06d4026ddcc4696f457e44f3f9009adff420cca3b587a59c3f4112f49304237",
       "headings": [
         "UWB!SDF & Non-Profits",
@@ -7226,8 +7541,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-17",
@@ -7238,7 +7553,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.972Z",
       "bytes": 58399,
+      "contentFingerprint": "98da14313903e34ec319bed8c0f1a439794713e2d10b579ec42abedf5b4505ab",
       "words": 7964,
+      "revisionFingerprint": "70afc176738111b7a1661d4629839b43700e8697afe017b17e5f5e801c4c7274",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "943fe0b67aaea4ba28dfd81aeef9ec986b07d8de549f6f36165c5f24fb08a69c",
       "headings": [
         "Web 3.0 and Semantic Web",
@@ -7281,8 +7599,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7292,7 +7610,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.973Z",
       "bytes": 217589,
+      "contentFingerprint": "089830bdc651743d83fa1952a05ee55a83c1d715cd3846e1800e753b61153799",
       "words": 32556,
+      "revisionFingerprint": "ca594174a09a2406552dc8e5f8803982fb5103b72b2b3355a2659fb7558d253e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "a9354d547889e1898b968ff8fc0e9ff1c81932b36629ea234c11ef3935848e9f",
       "headings": [
         "**Attention-as-Capital Analytics Platform**",
@@ -7357,8 +7678,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-01",
@@ -7369,7 +7690,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.973Z",
       "bytes": 57898,
+      "contentFingerprint": "4e245b85d0fdf2e8a7bbe038215c21e1d0d8744d06e004f3aa5bf1a4f8fab3fb",
       "words": 7641,
+      "revisionFingerprint": "484cde9528d7717b95447ec0335389c939c78f8b3237f19a5af7a5ad9968d178",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "318c61cb57fb4f63bd08d9818d84a577efdc6b06be7119b4e224a2a3279101f0",
       "headings": [
         "LLM Reasoning Theory",
@@ -7434,8 +7758,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-28",
@@ -7446,7 +7770,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.973Z",
       "bytes": 110793,
+      "contentFingerprint": "b6880a41c72f861b1c0c9c578b1f8be7a27a13eb5f4da3b782d35f89e30ac296",
       "words": 15521,
+      "revisionFingerprint": "115bb83eb5d643807b70a44cdb47c2ff13ca706221dfa81623305783bd3b8640",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "476d15ef6f1db5be8d014b18ab98088cfe81e9d12543e594c50678b0f7d41f4f",
       "headings": [
         "UWB Devices Overview",
@@ -7489,8 +7816,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7500,7 +7827,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.977Z",
       "bytes": 4938,
+      "contentFingerprint": "8b352c85e96d8c805400f3f28496a99ff5d82ebef9c4615945b763921809cfb4",
       "words": 650,
+      "revisionFingerprint": "1f6991b908df729816a192642d4020128020d8926b947ea908320429f7eee681",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "3005ccd95ff52628cfc36dd00c1f8ff1047d9b492d5d7279566d7aee9c53c00c",
       "headings": [
         "Entif Viral Media Mirror — Systems Diagram",
@@ -7542,8 +7872,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-06",
@@ -7553,7 +7883,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.973Z",
       "bytes": 122795,
+      "contentFingerprint": "78be735fcedd490ad3d90474480336295542f3275524d89746c67c0f469872f5",
       "words": 17089,
+      "revisionFingerprint": "96fcde3107d8ce98ffb92b9c9e47fbd37428d83d2d0d58a2a08e9abad83be5d7",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "3e9ac97478a76fa5d1cf6ffd3c8274666e4e5b644b4cf8585419aa583ccdc390",
       "headings": [
         "**Core idea**",
@@ -7618,8 +7951,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-05-15",
@@ -7630,7 +7963,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.974Z",
       "bytes": 41765,
+      "contentFingerprint": "50dc656400cb07a9bdb5e069627590c761903488872dad434ee5091b7f7c845b",
       "words": 5434,
+      "revisionFingerprint": "77684fbe0728b1a337eaaae2ad46714624a3410e9a69b62f421a4055fc1b5c11",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "162a6f9576364c50a92d19018405a1eed81447d0a42993761fdcb23a6da98497",
       "headings": [
         "SIMDJSON Optimization for Data Lakes",
@@ -7673,8 +8009,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7684,7 +8020,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.975Z",
       "bytes": 3459,
+      "contentFingerprint": "66a669c1bf03a3b257a1b6b5e64f664cde152ef1ab9db526ebc3914a07198f39",
       "words": 457,
+      "revisionFingerprint": "31e5f4994e08a4aa05b7a76d0934dd9584238476e9ec624775d4e8ba63a6a10e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4956b867e881bc78e4c6f0ccab3b0921a7165553ef7d5f6c7db228182d361f3a",
       "headings": [
         "**🎯 Purpose**",
@@ -7718,8 +8057,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7729,7 +8068,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.976Z",
       "bytes": 7980,
+      "contentFingerprint": "e5a359e53fbcc48e7bf4afff437bc57e2456594ea5d411a413622c52d38936c5",
       "words": 1247,
+      "revisionFingerprint": "bbd186ed4da8e199a05d1273eb4bd38e2236fa1b369f032c278ac9369c01efbd",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "67935bf7758681f42ca980961a51ea86092d6cfc94f510527d136732a25cf7bb",
       "headings": [],
       "status": "indexed",
@@ -7755,8 +8097,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7766,7 +8108,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.977Z",
       "bytes": 54796,
+      "contentFingerprint": "eca41c095382bef2e6d4bc3de29244101350e8200de1293d8b2c82ad5ba0b7bc",
       "words": 8346,
+      "revisionFingerprint": "43880ec5457f6a567349084bb30d657b2ea4a8498a0a8d60b6d63c73946e286c",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "eca41c095382bef2e6d4bc3de29244101350e8200de1293d8b2c82ad5ba0b7bc",
       "headings": [
         "**Treating Trends Tantamount to Trading Technicals**",
@@ -7809,8 +8154,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7820,7 +8165,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.977Z",
       "bytes": 4587,
+      "contentFingerprint": "93223256cfc45315c4cb4ba7f25caee1317a33c5a793c56f83ea0fba1d05a5cc",
       "words": 643,
+      "revisionFingerprint": "6fbb69f1ea184e3de4229d3bc3282d6691db5f3c80e3e8ff4a5d8defbdf9d9e7",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "8a88948fd6f6389275a6af7384198d498f3134cfbc42425a6c115eed00dbdf08",
       "headings": [
         "Architecture",
@@ -7860,8 +8208,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7871,7 +8219,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.978Z",
       "bytes": 676,
+      "contentFingerprint": "bf0c6f587ba40f01a4081fc8397ffd4662de45d14fed1cc884f604c42ade0d72",
       "words": 84,
+      "revisionFingerprint": "ff32b9c5c1160eacc02ec0c96df7a31ba99702008d453f848fe6e29892f577e3",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "34a2802105949a3310332146f9787ba26797785ee5fd0a4be2bac0f6c4c21062",
       "headings": [
         "Pack Suite Index",
@@ -7902,8 +8253,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7913,7 +8264,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.978Z",
       "bytes": 241,
+      "contentFingerprint": "79da01f94692333d9257804796e3bbbb25a18d0ba585ec509547b4919a19ec18",
       "words": 35,
+      "revisionFingerprint": "b2f04187dad1962266013ef4613b1617001b0afda7fae83959b1ffc70f7918fd",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "3342734ac44719b5f93dfa2f53e2064733e1a34358fd1768e2d1e9848e9d08bf",
       "headings": [
         "Pack Suite Index"
@@ -7946,8 +8300,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-24",
@@ -7957,7 +8311,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.913Z",
       "bytes": 42103,
+      "contentFingerprint": "215c8f19a3dc07bcbd6532e28c67b558f0f985ad60802ff3b47fb346370f2961",
       "words": 5575,
+      "revisionFingerprint": "15801583de0f79003a11e813519811628c7e9d78763e237d780301c69c227126",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "4198cf3fdaf33f420fd7cace264f94876cdb99ca5c68b56a69e771b596f79e82",
       "headings": [
         "**1\\. The Core Innovation: \"Optical Compression\" is a New Paradigm**",
@@ -7998,8 +8355,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -8009,7 +8366,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.913Z",
       "bytes": 20225,
+      "contentFingerprint": "db21d928d3ebe5a59e66e68c124e0fc21caefe4355dcb4ae12f7ecd738f657cd",
       "words": 2331,
+      "revisionFingerprint": "1150a102a3a026a5e7d8ca7d78bf323ad6517f67ccb28f6de5d00e8bcb123148",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "7ea66b46e190e6f862b596b4d99f7dbe2bc2d48deffa90489a504bd5d47f2911",
       "headings": [
         "Consensus-First Commitment Scoping Framework v0.1",
@@ -8057,8 +8417,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-23",
@@ -8068,7 +8428,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.913Z",
       "bytes": 56449,
+      "contentFingerprint": "cd84221865ac6944d81fe10dac788a4b440fc1b2890f72187f4c06d5aaa04345",
       "words": 7758,
+      "revisionFingerprint": "50f7e8b5addde81be3af0bb4f036242778d2e90f845790084ed5bffad098e36e",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "2e6611249b58482374d91916f7d1e3975e2f3fe2e4710ff8e09c9a236ebc7958",
       "headings": [
         "Entif.AI - NOT LAME (v0.1) - PRD - Neurologic Orchestration Topology for Layered Agentic Memory and Evolution",
@@ -8116,8 +8479,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-24",
@@ -8127,7 +8490,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.914Z",
       "bytes": 153229,
+      "contentFingerprint": "c028fd4940ef391fd213c96637f41d135205502eb36b35e9ecb41b7657966c57",
       "words": 18472,
+      "revisionFingerprint": "aed7777a29841ba264092ef7df9a9be045b6fa290ec6c0ae1151f433ffb1c7a9",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "b79da7b244502ad3968996b8ea23c9453375fe482f4f4b942e204ef71d141e20",
       "headings": [
         "Cognitive Tiles and Swarm Gnosis",
@@ -8173,8 +8539,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -8184,7 +8550,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.914Z",
       "bytes": 6164,
+      "contentFingerprint": "5cf3695bd96ce10c2138a562f04ba51b4d3bf30b2d864bba03ffe61d718dd28b",
       "words": 868,
+      "revisionFingerprint": "69afa84567141d31f5b46e330277719b2d2b3514daeef820aee1acf6a5001c02",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "6340cee87fef7035db0b210068c7f56ff324723f28dcc03be287f0f822d9c581",
       "headings": [
         "Entif v0 - Spec Proposal - Agentic Messaging",
@@ -8232,8 +8601,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-24",
@@ -8243,7 +8612,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.915Z",
       "bytes": 45840,
+      "contentFingerprint": "fb971b5833ef0b1cd430db7371d4e85fc04f48cd6caa3d06d5b18829a84d56f5",
       "words": 5192,
+      "revisionFingerprint": "ec43b3c0217877370fbb54b6fad0a1fda98e98a5ae5423a9d136c244fdfc81ca",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "aa0736df95da5e6d0c5dea285686c4af242636bb7ea9c337e6ea1fc632523c0c",
       "headings": [
         "Entif v0 Specification Deep Research Synthesis",
@@ -8291,8 +8663,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -8302,7 +8674,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.915Z",
       "bytes": 55122,
+      "contentFingerprint": "eabe8791810b1844040a61fd07ea90cf5d64017a306901e315c10dd483672486",
       "words": 7515,
+      "revisionFingerprint": "73438a5dc4e450adedb75bd0f51bc34ad8a8dac2789fa349d8ebd2ccc875121a",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "1e3126d9202d083abbb5b1e5c0d5957f0176fed016704245c39c2e9c725f2769",
       "headings": [
         "Rosetta-OMOC-Swarm Gnosis Unified Thesis and Protocol Specification",
@@ -8345,8 +8720,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8356,7 +8731,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.917Z",
       "bytes": 37368,
+      "contentFingerprint": "7b8f345945f9da7951a5668ba9edf29e7537590f20fe9016ba15fb62f9b611db",
       "words": 5365,
+      "revisionFingerprint": "da6b48efca3b3f12628ebbc450ca52243d2a0b1b208c756ec18d0cfadd080a41",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "1db93d6ca534c5cb4ac6a24149df23a5639176449ed317c5328e9c1c8e04beb2",
       "headings": [
         "Ontological Mixture of Concepts",
@@ -8399,8 +8777,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8410,7 +8788,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.915Z",
       "bytes": 13305,
+      "contentFingerprint": "6b8f14ed373662189fd37f899defba380bc869c9a83b5d143c1a39699616896b",
       "words": 1617,
+      "revisionFingerprint": "1f38713912181a112c4e0bad5091491b927ce5b554e4f62db5b2f6e63718e576",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "29d9c13c7774407abaf7783fe37aba6414fc5672d71ebb820e39bbf95de0ccef",
       "headings": [
         "ROCK-3111-C",
@@ -8461,8 +8842,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-08",
@@ -8473,7 +8854,10 @@
       },
       "modifiedAt": "2026-04-24T05:02:58.916Z",
       "bytes": 173562,
+      "contentFingerprint": "9d3d80c7653f9874ba5c43088391d6808a29dcb451da67a566ca803414d80fef",
       "words": 23493,
+      "revisionFingerprint": "5a9b7587cb1a4163bc2d1c348a740b693cba71b9fd207a760041703b987d9b70",
+      "normalizationProfile": "plain-text-collapse-v1",
       "sha256": "48b2ef216b35e3e17a4caf59d6758c184a216903dbc2ab2fae85960dc32853d9",
       "headings": [
         "Rosetta v3.0.0 Core Spine Specification (Standards Track, Version 3.0.0)",

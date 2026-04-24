@@ -46,6 +46,17 @@ describe('ingress-refinery', () => {
     expect(snapshot.manifestation.cid).not.toBe(refined.canonicalArtifact.cid);
   });
 
+  it('stores distinct content and revision fingerprints on canonical artifacts', () => {
+    const snapshot = buildBootstrapDemoSnapshot();
+    const formatted = refineTextArtifact(snapshot.record, snapshot.manifestation, 'alpha   beta\r\n\r\n gamma');
+    const equivalent = refineTextArtifact(snapshot.record, snapshot.manifestation, 'alpha beta\n\ngamma');
+    const revised = refineTextArtifact(snapshot.record, snapshot.manifestation, 'alpha beta\n\ndelta');
+
+    expect(formatted.canonicalArtifact.payload.contentFingerprint).toBe(equivalent.canonicalArtifact.payload.contentFingerprint);
+    expect(formatted.canonicalArtifact.payload.revisionFingerprint).toBe(equivalent.canonicalArtifact.payload.revisionFingerprint);
+    expect(formatted.canonicalArtifact.payload.revisionFingerprint).not.toBe(revised.canonicalArtifact.payload.revisionFingerprint);
+  });
+
   it('retains all bootstrap pid lanes and yields a fully conformant bundle', () => {
     const snapshot = buildBootstrapDemoSnapshot();
 

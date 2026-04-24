@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/nx-affected-validation`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/17
+Current branch at time of update: `codex/tc-002-normalization-fingerprints`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/18
 
 ## Purpose
 
@@ -85,11 +85,13 @@ Merged:
 
 Open at time of update:
 
-- PR #17: `chore(nx): use affected validation by default`
-- Issues #7-#12: follow-up Text-Core implementation issues
+- PR #18: `feat(text-core): add normalization fingerprints`
+- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
+- Issues #8-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #17: `chore(nx): use affected validation by default`
 - PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
@@ -99,29 +101,25 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/nx-affected-validation`
-Source issue: local operational follow-up from the PR #15 handoff
+Current branch: `codex/tc-002-normalization-fingerprints`
+Source issue: https://github.com/entif-ai/rosetta/issues/7
 
-This branch makes the default local validation workflow use Nx affected execution and local cache instead of broad direct tool runs.
+This branch implements TC-002 chronology-aware normalization and fingerprints.
 
 Changed behavior:
 
-- `pnpm run lint`, `typecheck`, `test`, `build`, and `verify` now call `nx affected --base=origin/main`.
-- Full-run escape hatches remain available as `lint:full`, `typecheck:full`, `test:full`, and `verify:full`.
-- Per-project cached Vitest targets exist for apps/packages with specs, so affected test runs select only impacted projects.
-- Spec TypeScript configs emit declaration-only outputs under `tmp/spec-types`, enabling real cached leaf `typecheck` targets.
-- `doc-intake` is modeled as an Nx project with cached `generate` and `test` targets; normal build no longer regenerates docs.
-- ESLint ignores project-local `tmp/` output so cached typecheck artifacts do not pollute lint.
+- `rosetta-canon` exposes `buildTextFingerprints` for normalized text, content fingerprint, revision fingerprint, and normalization profile.
+- Plain text normalization trims line-edge whitespace as well as collapsing internal spaces and excessive blank lines.
+- `ingress-refinery` stores content and revision fingerprints on canonical artifacts and normalization receipts.
+- `docs:intake` records content and revision fingerprints for each indexed document while preserving created/updated/exported/path/mtime chronology evidence.
 
 ## Validation State
 
-- `pnpm run verify` passed.
+- `pnpm exec vitest run packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.spec.mjs` passed: 3 files, 19 tests.
+- `pnpm exec nx run-many -t build -p rosetta-canon ingress-refinery --skip-nx-cache --outputStyle=static` passed.
+- `pnpm exec eslint packages/rosetta-canon/src/lib/rosetta-canon.ts packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.mjs tools/doc-intake/build-doc-intake.spec.mjs` passed.
+- `pnpm run docs:intake` passed.
 - `git diff --check` passed.
-- `pnpm exec nx affected -t typecheck --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
-- `pnpm exec nx affected -t test --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
-- `pnpm exec nx affected -t lint --base=origin/main --parallel=3 --outputStyle=static` passed.
-- `pnpm exec nx affected -t build --base=origin/main --exclude @entif-ai/source --parallel=3 --outputStyle=static` passed.
-- User independently verified faster cached runs locally.
 
 Known non-failing warnings:
 
@@ -132,14 +130,13 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Push `codex/nx-affected-validation`.
-2. Open a draft PR.
-3. Merge after GitHub reports it green and mergeable.
+1. Push merge resolution to `codex/tc-002-normalization-fingerprints`.
+2. Keep PR #18 draft until GitHub reports it mergeable/green.
+3. Close issue #7 after merge.
 
 For Text-Core:
 
-1. Start TC-002 on a new `codex/` feature branch after the Nx validation PR is merged.
-2. Keep issue #7 as the likely next implementation driver.
+1. After TC-002 merges, continue with TC-003 dedupe, revision graph, and cache persistence.
 
 ## Current Technical Posture
 
