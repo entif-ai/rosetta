@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/archive-promoted-issue-drafts`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/15
+Current branch at time of update: `codex/tc-002-normalization-fingerprints`
+Current PR at time of update: pending
 
 ## Purpose
 
@@ -85,55 +85,40 @@ Merged:
 
 Open at time of update:
 
-- PR #15: `fix(doc-intake): archive published issue drafts`
-- Issue #14: `Archive published docs intake issue drafts`
-- Issues #7-#12: follow-up Text-Core implementation issues
+- PR #17: `chore(nx): use affected validation by default`
+- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
+- Issues #8-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
 - Issue #4: `Define Text-Core MVP scope gate from governing docs`
 - Issue #6: `TC-001 Source episode envelope and family classification`
+- Issue #14: `Archive published docs intake issue drafts`
 
 ## Current Work Product
 
-Current branch: `codex/archive-promoted-issue-drafts`
-Source issue: https://github.com/entif-ai/rosetta/issues/14
+Current branch: `codex/tc-002-normalization-fingerprints`
+Source issue: https://github.com/entif-ai/rosetta/issues/7
 
-This branch updates the docs intake workflow so issue drafts that have already been promoted to GitHub are removed from the active candidate folder and regenerated under `docs/intake/issue-drafts/archive/`.
+This branch implements TC-002 chronology-aware normalization and fingerprints.
 
 Changed behavior:
 
-- `resolveIssueDraftState` maps drafts with a recorded GitHub issue URL to `published`.
-- Published drafts render archive-oriented publishing notes and are removed from `docs/intake/issue-drafts/`.
-- Unpublished drafts remain active candidates.
-- `docs/intake/github-issue-ledger.json` records `draftStatus`, `activeDraftPath`, and `archivedDraftPath` for each generated draft.
-- `docs/intake/README.md` documents the active-vs-archived draft policy.
+- `rosetta-canon` exposes `buildTextFingerprints` for normalized text, content fingerprint, revision fingerprint, and normalization profile.
+- Plain text normalization trims line-edge whitespace as well as collapsing internal spaces and excessive blank lines.
+- `ingress-refinery` stores content and revision fingerprints on canonical artifacts and normalization receipts.
+- `docs:intake` records content and revision fingerprints for each indexed document while preserving created/updated/exported/path/mtime chronology evidence.
 
 ## Validation State
 
-Completed before merging latest `origin/main` into this branch:
-
-- `pnpm run docs:intake` passed
-- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
-- `pnpm run test` passed: 18 files, 58 tests
-- `pnpm run lint` passed
-- `pnpm run typecheck` passed
-- `git diff --check` passed
-
-Validation after merging latest `origin/main`:
-
-- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
-- `pnpm run docs:intake` passed
-- `git diff --check` passed
-- `pnpm run lint` passed
-- `pnpm run typecheck` passed
-- `pnpm run build` passed
-- exploratory `pnpm exec nx affected -t test,typecheck,build --base=origin/main --outputStyle=static --parallel=3` failed due pre-existing Nx target configuration issues:
-  - root project `@entif-ai/source:typecheck` invokes broad `tsc --build --emitDeclarationOnly` and trips existing `tsconfig.spec.json` file-list/rootDir errors
-  - parallel app builds can hit `ENOTEMPTY` in `apps/rosetta-cli/dist`
-  - follow-up Nx affected/cache cleanup should be handled separately
+- `pnpm exec vitest run packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.spec.mjs` passed: 3 files, 19 tests.
+- `pnpm exec nx run-many -t build -p rosetta-canon ingress-refinery --skip-nx-cache --outputStyle=static` passed.
+- `pnpm exec eslint packages/rosetta-canon/src/lib/rosetta-canon.ts packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.mjs tools/doc-intake/build-doc-intake.spec.mjs` passed.
+- `pnpm run docs:intake` passed.
+- `git diff --check` passed.
 
 Known non-failing warnings:
 
@@ -142,16 +127,15 @@ Known non-failing warnings:
 
 ## Next Actions
 
-For PR #15:
+For this branch:
 
-1. Push the merge-resolution commit.
-2. Mark PR #15 ready for review.
-3. Merge when GitHub reports it mergeable.
+1. Push `codex/tc-002-normalization-fingerprints`.
+2. Open a draft PR against `main`.
+3. Close issue #7 after merge.
 
 For Text-Core:
 
-1. Start TC-002 on a new `codex/` feature branch after PR #15 is merged.
-2. Keep issue #7 as the likely next implementation driver.
+1. After TC-002 merges, continue with TC-003 dedupe, revision graph, and cache persistence.
 
 ## Current Technical Posture
 

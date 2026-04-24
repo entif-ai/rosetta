@@ -1,4 +1,4 @@
-import { normalizePlainText } from '@entif-ai/rosetta-canon';
+import { buildTextFingerprints, normalizePlainText } from '@entif-ai/rosetta-canon';
 import { sha256Hex } from '@entif-ai/rosetta-cid';
 import { buildTile, createAction, createEvaluation, createObservation, createRun, createToolCall, type TileEnvelope } from '@entif-ai/rosetta-core';
 import { buildReceiptBundle, createReceipt, createSigningKeyPair, digestTile, signReceiptEd25519, type ReceiptPayload } from '@entif-ai/rosetta-receipts';
@@ -47,10 +47,12 @@ export interface FetchReceiptPayload {
 }
 
 export interface NormalizationReceiptPayload {
-  sourceManifestationCid: string;
-  parserProfile: string;
-  normalizationProfile: string;
   canonicalTextHash: string;
+  contentFingerprint: string;
+  normalizationProfile: string;
+  parserProfile: string;
+  revisionFingerprint: string;
+  sourceManifestationCid: string;
 }
 
 export interface EvaluationReceiptPayload {
@@ -65,6 +67,7 @@ export interface CanonicalArtifact {
   sourceRecordCid: string;
   sourceManifestationCid: string;
   byteHash: string;
+  contentFingerprint: string;
   normalizedText: string;
   normalizedTextHash: string;
   pidFamily: string[];
@@ -80,6 +83,7 @@ export interface CanonicalArtifact {
     manifestationKey: string;
     recordFamilyKey: string;
   };
+  revisionFingerprint: string;
   revisionParentCid?: string;
 }
 
@@ -226,9 +230,10 @@ export function refineTextArtifact(
   normalizationReceipt: TileEnvelope<NormalizationReceiptPayload>;
   trustMatrix: TileEnvelope<TrustMatrix>;
 } {
-  const normalizedText = normalizePlainText(rawText);
+  const fingerprints = buildTextFingerprints(rawText);
+  const normalizedText = fingerprints.normalizedText;
   const byteHash = sha256Hex(rawText);
-  const normalizedTextHash = sha256Hex(normalizedText);
+  const normalizedTextHash = fingerprints.contentFingerprint;
   const fetchReceipt = buildTile(
     'source.fetch_receipt',
     {
@@ -245,8 +250,10 @@ export function refineTextArtifact(
     'source.normalization_receipt',
     {
       canonicalTextHash: normalizedTextHash,
-      normalizationProfile: 'plain-text-collapse-v1',
+      contentFingerprint: fingerprints.contentFingerprint,
+      normalizationProfile: fingerprints.normalizationProfile,
       parserProfile: 'text/plain@v1',
+      revisionFingerprint: fingerprints.revisionFingerprint,
       sourceManifestationCid: manifestation.cid
     },
     { pack: 'ingress-refinery', parents: [fetchReceipt.cid] }
@@ -279,6 +286,7 @@ export function refineTextArtifact(
     {
       artifactId: `artifact.${manifestation.payload.manifestationId}`,
       byteHash,
+      contentFingerprint: fingerprints.contentFingerprint,
       dedupe: {
         byteIdentityKey: byteHash,
         conceptualClusterKey: normalizePlainText(String(record.payload.metadataBlob.title ?? record.payload.recordLocalId)).toLowerCase(),
@@ -294,6 +302,7 @@ export function refineTextArtifact(
         normalizationReceiptCid: normalizationReceipt.cid
       },
       rightsScopes: manifestation.payload.accessRequirements,
+      revisionFingerprint: fingerprints.revisionFingerprint,
       sourceManifestationCid: manifestation.cid,
       sourceRecordCid: record.cid
     },

@@ -368,6 +368,48 @@ function wordCount(text) {
   return (text.match(/\S+/gu) ?? []).length;
 }
 
+function canonicalizeJson(value) {
+  if (Array.isArray(value)) {
+    return value.map((entry) => canonicalizeJson(entry));
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).sort(([left], [right]) => left.localeCompare(right)).map(([key, entry]) => [key, canonicalizeJson(entry)]));
+  }
+
+  return value;
+}
+
+function normalizePlainText(text) {
+  return text.replace(/\r\n/gu, '\n').replace(/[ \t]+/gu, ' ').replace(/\n{3,}/gu, '\n\n').trim();
+}
+
+function sha256Hex(text) {
+  return createHash('sha256').update(text).digest('hex');
+}
+
+export function buildDocumentFingerprints(relativePath, text) {
+  const normalizationProfile = 'plain-text-collapse-v1';
+  const normalizedText = normalizePlainText(text);
+  const contentFingerprint = sha256Hex(normalizedText);
+  const revisionFingerprint = sha256Hex(
+    JSON.stringify(
+      canonicalizeJson({
+        contentFingerprint,
+        normalizedText,
+        normalizationProfile,
+        path: relativePath
+      })
+    )
+  );
+
+  return {
+    contentFingerprint,
+    normalizationProfile,
+    revisionFingerprint
+  };
+}
+
 async function collectFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
   const files = [];
@@ -556,6 +598,7 @@ export async function main() {
     const relativePath = posixPath(path.relative(root, file));
     const [stats, text] = await Promise.all([stat(file), readFile(file, 'utf8')]);
     const sha256 = createHash('sha256').update(text).digest('hex');
+    const fingerprints = buildDocumentFingerprints(relativePath, text);
     const previousDoc = previous.get(relativePath);
     const issueDoc = issueLedger.documents?.[relativePath] ?? {};
     const chronology = buildChronology(relativePath, text, stats, previousDoc, intakeRunAt);
@@ -576,7 +619,10 @@ export async function main() {
       chronology,
       modifiedAt: stats.mtime.toISOString(),
       bytes: stats.size,
+      contentFingerprint: fingerprints.contentFingerprint,
       words: wordCount(text),
+      revisionFingerprint: fingerprints.revisionFingerprint,
+      normalizationProfile: fingerprints.normalizationProfile,
       sha256,
       headings: extractHeadings(text),
       status: issueDoc.status ?? (previousDoc?.sha256 === sha256 ? (previousDoc.status ?? 'indexed') : 'indexed'),

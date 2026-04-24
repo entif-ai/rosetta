@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildChronology, extractTopMatterDates, inferFreshness, resolveIssueDraftState } from './build-doc-intake.mjs';
+import { buildChronology, buildDocumentFingerprints, extractTopMatterDates, inferFreshness, resolveIssueDraftState } from './build-doc-intake.mjs';
 
 describe('doc intake chronology', () => {
   it('preserves chat export created, updated, and exported timestamps separately', () => {
@@ -93,6 +93,16 @@ Date: 2026-04-24
 
   it('marks filesystem-only dating as an undated import', () => {
     expect(inferFreshness('2026-04-24', 'filesystemModifiedAt')).toBe('undated-import');
+  });
+
+  it('builds stable content fingerprints while material revisions change', () => {
+    const formatted = buildDocumentFingerprints('docs/chats/example.md', '# Title\r\n\r\nalpha   beta');
+    const equivalent = buildDocumentFingerprints('docs/chats/example.md', '# Title\n\nalpha beta');
+    const revised = buildDocumentFingerprints('docs/chats/example.md', '# Title\n\nalpha gamma');
+
+    expect(formatted.contentFingerprint).toBe(equivalent.contentFingerprint);
+    expect(formatted.revisionFingerprint).toBe(equivalent.revisionFingerprint);
+    expect(formatted.revisionFingerprint).not.toBe(revised.revisionFingerprint);
   });
 
   it('routes published issue drafts to archive and removes them from active candidates', () => {
