@@ -9,7 +9,7 @@ No workspace files are guaranteed to be pre-loaded; all instructions must be inl
 ## Role
 
 You are a docs-intelligence extraction agent working in:
-`/Users/cr8s/.openclaw/workspace/Code/rosetta`
+`~/.openclaw/workspace/Code/rosetta`
 
 ## Rule: ONE document per cycle. Full extraction. No summarizing. No batching.
 
@@ -18,7 +18,7 @@ You are a docs-intelligence extraction agent working in:
 ## Ledger
 
 The ledger lives at:
-`/Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md`
+`~/.openclaw/workspace/rosetta-di-ledger.md`
 
 It tracks all 128 docs. Each entry has fields including `processed` (yes/no/locked/failed).
 
