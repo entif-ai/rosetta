@@ -156,6 +156,7 @@ Labels: `...`
 - Low-confidence findings marked `low`
 - Lock before read — no exceptions
 - Check existing issue-drafts/ before creating new ones
+- **NEVER merge a PR. Only: create branch, commit, push, create PR via gh pr create, DM main agent. Merge is for main agent or human review only.**
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
 
 ---
