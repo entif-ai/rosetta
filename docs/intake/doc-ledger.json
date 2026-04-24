@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T05:02:58.978Z",
+  "generatedAt": "2026-04-24T06:03:39.779Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.",
@@ -264,6 +264,74 @@
       "issueCandidateRefs": [
         "text-core-mvp-scope-gate"
       ]
+    },
+    {
+      "path": "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md",
+      "title": "Rosetta Text-Core MVP Scope Gate v0.1",
+      "category": "backlog",
+      "authorityTier": "planning",
+      "freshness": "current",
+      "docDate": "2026-04-24",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-04-24",
+            "line": 4,
+            "localDateTime": "2026-04-24",
+            "raw": "2026-04-24",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-04-24",
+            "isoDateTime": "2026-04-24T06:03:39.779Z",
+            "source": "filesystem-mtime"
+          },
+          "pathDate": {
+            "date": "2026-04-24",
+            "raw": "20260424",
+            "source": "path"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-04-24T06:03:48.614Z",
+          "observedAt": "2026-04-24T06:03:48.614Z"
+        },
+        "primary": {
+          "date": "2026-04-24",
+          "kind": "declaredAt",
+          "localDateTime": "2026-04-24",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-04-24T06:03:39.779Z",
+      "bytes": 10812,
+      "words": 1405,
+      "sha256": "9da08a609fb2db9afa5de94a2a146df65b6f6d75dcee27cd7b8d16cafd0f63d1",
+      "headings": [
+        "Rosetta Text-Core MVP Scope Gate v0.1",
+        "Decision",
+        "Source Basis",
+        "Scope Classification",
+        "Must-Have",
+        "Should-Have",
+        "Deferred",
+        "Dependency Graph",
+        "Follow-Up Implementation Issues",
+        "TC-001 Source episode envelope and family classification",
+        "TC-002 Chronology-aware normalization and fingerprints",
+        "TC-003 Dedupe, revision graph, and cache persistence",
+        "TC-004 Source to observation tiling and transform receipts",
+        "TC-005 Promotion state machine and structured extracts",
+        "TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline",
+        "TC-007 Chat + arXiv importers and English accompaniment"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
     },
     {
       "path": "docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md",

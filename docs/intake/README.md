@@ -11,11 +11,11 @@ This folder tracks local documentation parsing and issue-draft promotion without
 
 ## Current Snapshot
 
-- Documents indexed: 126
-- Current April 2026 docs: 22
-- Governing/planning/live docs: 34
-- Docs dated by canonical top matter: 71
-- Generated at: 2026-04-24T05:02:58.978Z
+- Documents indexed: 127
+- Current April 2026 docs: 23
+- Governing/planning/live docs: 35
+- Docs dated by canonical top matter: 72
+- Generated at: 2026-04-24T06:03:39.779Z
 
 ## Policy
 

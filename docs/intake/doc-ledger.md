@@ -1,6 +1,6 @@
 # Docs Intake Ledger
 
-Generated: 2026-04-24T05:02:58.978Z
+Generated: 2026-04-24T06:03:39.779Z
 
 This is the human-readable companion to `docs/intake/doc-ledger.json`. It is intentionally shallow: hashes and issue references live in JSON; this file is for quick orientation.
 
@@ -59,6 +59,7 @@ This is the human-readable companion to `docs/intake/doc-ledger.json`. It is int
 
 | Date | Freshness | Path | Words | Status |
 | --- | --- | --- | ---: | --- |
+| 2026-04-24 | current | `docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md` | 1405 | indexed |
 | 2026-04-24 | undated-import | `docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md` | 130 | indexed |
 | 2026-04-24 | undated-import | `docs/backlog/Entif 2.0 - Comprehensive Action Plans.md` | 69121 | indexed |
 | 2026-04-24 | undated-import | `docs/backlog/Entif v0 Second Brain Architecture Plan.md` | 7106 | indexed |

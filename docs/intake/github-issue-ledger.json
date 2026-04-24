@@ -4,13 +4,13 @@
   "issueDrafts": {
     "docs-intake-ledger-and-issue-promotion": {
       "number": 2,
-      "state": "open",
+      "state": "closed",
       "title": "Build docs intake ledger and GitHub issue promotion workflow",
       "url": "https://github.com/entif-ai/rosetta/issues/2"
     },
     "lean-validation-loop-and-local-receipts": {
       "number": 3,
-      "state": "open",
+      "state": "closed",
       "title": "Re-run lean validation loop and checkpoint local receipts",
       "url": "https://github.com/entif-ai/rosetta/issues/3"
     },
