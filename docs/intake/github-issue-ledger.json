@@ -39,14 +39,19 @@
       "draftStatus": "published"
     },
     "expand-pack-schemas-and-shacl-source-artifacts": {
-      "activeDraftPath": "docs/intake/issue-drafts/expand-pack-schemas-and-shacl-source-artifacts.md",
-      "archivedDraftPath": null,
-      "draftStatus": "candidate"
+      "number": 42,
+      "state": "open",
+      "title": "Expand pack schemas and SHACL coverage for receipts and source artifacts",
+      "url": "https://github.com/entif-ai/rosetta/issues/42",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/expand-pack-schemas-and-shacl-source-artifacts.md",
+      "draftStatus": "published"
     },
     "real-acquisition-adapters-behind-refinery-boundary": {
       "activeDraftPath": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "archivedDraftPath": null,
-      "draftStatus": "candidate"
+      "draftStatus": "deferred",
+      "deferredReason": "Overlaps TC-007 and should wait until TC-005 promotion outputs and TC-006 storage/retrieval boundaries are explicit."
     },
     "canonical-cache-persistence": {
       "number": 8,
@@ -58,9 +63,22 @@
       "draftStatus": "published"
     },
     "coverage-thresholds-and-acceptance-matrices": {
-      "activeDraftPath": "docs/intake/issue-drafts/coverage-thresholds-and-acceptance-matrices.md",
-      "archivedDraftPath": null,
-      "draftStatus": "candidate"
+      "number": 43,
+      "state": "open",
+      "title": "Add coverage reporting and package acceptance matrices",
+      "url": "https://github.com/entif-ai/rosetta/issues/43",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/coverage-thresholds-and-acceptance-matrices.md",
+      "draftStatus": "published"
+    },
+    "authority-stack-gaps": {
+      "number": 41,
+      "state": "open",
+      "title": "Govern authority-stack portability, integrity, and Prism shadow-mode gaps",
+      "url": "https://github.com/entif-ai/rosetta/issues/41",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/authority-stack-gaps.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {

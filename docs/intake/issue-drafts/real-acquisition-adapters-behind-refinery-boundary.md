@@ -4,6 +4,11 @@ Issue draft id: `real-acquisition-adapters-behind-refinery-boundary`
 Priority: `P1`
 Effort: `L`
 Labels: `ingress-refinery`, `adapters`, `source-registry`
+Status: `deferred`
+
+## Deferral Note
+
+Do not publish this draft yet. It overlaps the open TC-007 importer issue and should wait until TC-005 promotion outputs and TC-006 storage/retrieval boundaries are explicit. Reconcile with `https://github.com/entif-ai/rosetta/issues/12` before promoting.
 
 ## Problem
 
