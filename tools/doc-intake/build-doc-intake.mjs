@@ -561,7 +561,7 @@ This folder tracks two separate workflows:
 - docs-intake ledgering: shallow indexing, chronology, hashes, issue drafts, and GitHub issue state
 - docs intelligence: human/agent extraction of requirements, intent, designs, technology choices, relationships, contradictions, and issue candidates from repository documents
 
-Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it is not blocked by Ingress Refinery or canonical cache readiness.
+Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it is not blocked by Ingress Refinery or canonical cache readiness. Its outputs are extraction artifacts, finding rows, issue drafts, GitHub comments, tags, subjects, and orchestration notes, not Rosetta Protocol tiles or tapestries.
 
 ## Workflow
 
@@ -576,10 +576,13 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 ### Docs Intelligence Workflow
 
 1. Read \`docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md\`.
-2. Select the next document or batch from \`docs/intake/docs-intelligence/PRIORITY_QUEUE.md\`.
-3. Use \`docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md\` for each extraction artifact.
-4. Convert extracted requirements and decisions into issue drafts or GitHub issues with source evidence.
-5. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
+2. Read \`docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md\` when assigning low-cost or parallel agents.
+3. Fetch current GitHub/repo state and read relevant accepted drafts under \`docs/intake/issue-drafts/archive/\`.
+4. Select the next document or batch from \`docs/intake/docs-intelligence/PRIORITY_QUEUE.md\`.
+5. Use \`docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md\` for each extraction artifact.
+6. For cheap-agent batches, emit finding rows with timestamps, source paths, locators, tags, subjects, evidence citations, confidence, and action recommendations.
+7. Convert extracted requirements and decisions into issue drafts or GitHub issues only after orchestration review.
+8. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
 
 ## Current Snapshot
 
@@ -599,6 +602,7 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 - Active issue drafts are unpublished candidates; published drafts are archived and tracked in \`docs/intake/github-issue-ledger.json\`.
 - The ledger is a map, not the canonical corpus cache promised by the architecture.
 - Requirements extraction is allowed and expected before Rosetta-native ingestion exists.
+- Do not describe docs-intelligence findings as source episodes, observations, tapestries, indexed corpus state, or protocol-native ingestion.
 `;
 }
 
