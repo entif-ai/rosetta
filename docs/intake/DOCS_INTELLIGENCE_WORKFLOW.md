@@ -21,6 +21,8 @@ Use product terms such as source episodes, observations, tapestries, rights-scop
 
 This workflow should be decomposable for low-cost round-the-clock agents such as MiniMax, Qwen, or similar models.
 
+Use `docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md` as the operating contract for those agents.
+
 Assign those agents small batches, preferably one document or one tightly related document pair at a time. Each batch should produce findings that include:
 
 - extraction timestamp
@@ -35,6 +37,27 @@ Assign those agents small batches, preferably one document or one tightly relate
 - confidence and uncertainty notes
 
 Cheap-agent outputs are raw planning intelligence. They should be handed back to a stronger orchestrator for deduplication, conflict resolution, issue shaping, sequencing, and final build decisions.
+
+## Parallel Work Rules
+
+Parallel docs-intelligence work is safe when agents own disjoint source documents or explicitly separate output files. It is unsafe when multiple agents edit the same extraction artifact, issue draft, or GitHub issue body without coordination.
+
+Before starting, an agent must comment on the active GitHub issue with:
+
+- source document paths it owns
+- output file path it will write
+- expected issue comments or drafts it may touch
+- any open issues it may affect
+
+While working, an agent should avoid changing `docs/intake/github-issue-ledger.json` unless it actually publishes or updates a GitHub issue. It should avoid editing `CURRENT_HANDOFF.md` unless it is preparing the branch for handoff or merge.
+
+After finishing, an agent must comment with:
+
+- output files created or changed
+- finding count
+- issue candidates created, updated, or deferred
+- validation run
+- known uncertainty or source conflicts
 
 ## Boundary
 
@@ -61,12 +84,13 @@ Do not use this workflow for:
 An agent assigned to docs intelligence should:
 
 1. Read `README.md`, `docs/handoffs/CURRENT_HANDOFF.md`, this file, and `docs/intake/docs-intelligence/PRIORITY_QUEUE.md`.
-2. Run `git status --short --branch`.
-3. Inspect open GitHub issues and recent comments before taking a batch.
-4. Comment on the GitHub issue it is taking, including document paths and expected output files.
-5. Work on a focused `codex/` branch.
-6. Produce extraction artifacts before creating or revising implementation issues.
-7. Link every issue candidate to source document paths and, where useful, specific headings or quoted short excerpts.
+2. Read `docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md`.
+3. Run `git status --short --branch`.
+4. Inspect open GitHub issues and recent comments before taking a batch.
+5. Comment on the GitHub issue it is taking, including document paths and expected output files.
+6. Work on a focused `codex/` branch.
+7. Produce extraction artifacts before creating or revising implementation issues.
+8. Link every issue candidate to source document paths and, where useful, specific headings or quoted short excerpts.
 
 ## Extraction Output
 
@@ -127,6 +151,7 @@ When GitHub Projects are available, use fields like:
 A docs-intelligence batch is done when:
 
 - extraction artifacts exist for the selected docs
+- extraction artifacts use the template and include finding rows when the source contains actionable material
 - contradictions and supersession notes are recorded
 - issue candidates are either drafted, published, or explicitly deferred
 - GitHub issue comments identify ownership and impact

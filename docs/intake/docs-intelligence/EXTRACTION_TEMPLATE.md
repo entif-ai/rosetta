@@ -39,6 +39,14 @@ Use one row per salient finding so lower-cost agents can produce mergeable extra
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  |  |  |  |  | requirement / decision / risk / contradiction / supersession / issue-candidate / ablation |  |  |  |  |
 
+Allowed finding types: `requirement`, `decision`, `risk`, `contradiction`, `supersession`, `issue-candidate`, `dependency`, `technology`, `open-question`, `ablation`.
+
+Confidence values: `high`, `medium`, `low`.
+
+Tag style: lowercase kebab-case. Prefer stable tags such as `text-core`, `runtime-ingestion`, `docs-intelligence`, `storage`, `retrieval`, `tapestry`, `rights`, `importers`, `english-accompaniment`, `governance`, `project-board`, `parallelization`.
+
+Citation style: cite the source path and nearest heading. Use short excerpts only when they are needed to disambiguate evidence.
+
 ## Components And Technologies
 
 - 

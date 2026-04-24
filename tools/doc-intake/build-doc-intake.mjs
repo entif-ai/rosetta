@@ -576,11 +576,12 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 ### Docs Intelligence Workflow
 
 1. Read \`docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md\`.
-2. Select the next document or batch from \`docs/intake/docs-intelligence/PRIORITY_QUEUE.md\`.
-3. Use \`docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md\` for each extraction artifact.
-4. For cheap-agent batches, emit finding rows with timestamps, source paths, locators, tags, subjects, evidence citations, confidence, and action recommendations.
-5. Convert extracted requirements and decisions into issue drafts or GitHub issues only after orchestration review.
-6. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
+2. Read \`docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md\` when assigning low-cost or parallel agents.
+3. Select the next document or batch from \`docs/intake/docs-intelligence/PRIORITY_QUEUE.md\`.
+4. Use \`docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md\` for each extraction artifact.
+5. For cheap-agent batches, emit finding rows with timestamps, source paths, locators, tags, subjects, evidence citations, confidence, and action recommendations.
+6. Convert extracted requirements and decisions into issue drafts or GitHub issues only after orchestration review.
+7. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
 
 ## Current Snapshot
 
