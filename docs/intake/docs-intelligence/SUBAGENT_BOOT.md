@@ -141,10 +141,11 @@ Labels: `...`
 10. **Commit** extraction + issue drafts + any updated docs
 11. **Push branch**
 12. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
-13. **Update ledger** — mark doc as `processed:<timestamp>:<pr-number>`, increment total_processed, increment runs_since_last_batched_update
-14. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
-15. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
-16. **Compact context** — end your turn with only the confirmation, no residual context
+13. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
+14. **Update ledger** — mark doc as `processed:<timestamp>:<pr-number>`, increment total_processed, increment runs_since_last_batched_update
+15. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
+16. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
+17. **Compact context** — end your turn with only the confirmation, no residual context
 
 ---
 
@@ -156,6 +157,8 @@ Labels: `...`
 - Low-confidence findings marked `low`
 - Lock before read — no exceptions
 - Check existing issue-drafts/ before creating new ones
+- Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
+- Forbidden commands include `gh pr merge`, `gh pr close`, `gh pr review --approve`, and any GitHub UI/API action that changes PR merge state.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
 
 ---
