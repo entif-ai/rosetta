@@ -1,0 +1,245 @@
+# Rosetta Docs Intelligence — Knowledge Graph
+# Format: YAML (Graphiti-upgradeable in future iteration — see DI-009)
+# Updated after every extraction cycle
+
+meta:
+  version: "0.1"
+  generated: "2026-04-24T21:30:00Z"
+  total_docs_processed: 6
+  next_doc_to_process: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+
+concepts:
+  - id: authority-chain
+    name: Authority Chain
+    introduced_by: docs/governance/AUTHORITY_STACK.md
+    introduced_at: "2026-04-24"
+    definition: "Primary authority flows from a named bootstrap document, not from convention or implicit consensus"
+    extends: []
+    referenced_by:
+      - docs/governance/AUTHORITY_STACK.md
+      - docs/governance/DONOR_FIT_MAP.md
+    status: active
+
+  - id: memory-sovereignty-map
+    name: Memory Sovereignty Map
+    introduced_by: docs/PRDs/20260423 - Entif.AI - NOT LAME (v0.1) - PRD - Neurologic Orchestration Topology for Layered Agentic Memory and Evolution.md
+    introduced_at: "2026-04-24"
+    definition: "Five-layer map: Constitutional(Git), Artifact(obj+PG), Vector(pgvector,nothing authoritative), Temporal(PG graph), Adaptive(PG+scheduled); SQLite FTS5 as local lexical only"
+    extends: []
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+    status: active
+
+  - id: write-admission-gate
+    name: Write-Admission Gate
+    introduced_by: docs/PRDs/NOT LAME PRD
+    introduced_at: "2026-04-24"
+    definition: "9-step state machine: Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project; fail-closed"
+    extends: []
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+    status: active
+
+  - id: parse-only-default
+    name: Parse-Only Ingress Default
+    introduced_by: docs/governance/AUTHORITY_STACK.md
+    introduced_at: "2026-04-24"
+    definition: "Parse-only ingress is the hardcoded default; side-effecting imports require a guard token"
+    extends: []
+    referenced_by:
+      - docs/governance/AUTHORITY_STACK.md
+      - docs/governance/DONOR_FIT_MAP.md
+    status: active
+
+  - id: omoc-tranche-routing
+    name: OMOC Tranche Routing
+    introduced_by: docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md
+    introduced_at: "2026-04-24"
+    definition: "Concept-simplex routing replaces expert identity with concept composition; routes across 5 tranches"
+    extends: []
+    referenced_by:
+      - docs/RFCs/OMOC Swarm Gnosis Protocol
+    status: active
+
+  - id: donor-anatomy-metaphor
+    name: Donor Anatomy Reference
+    introduced_by: docs/governance/DONOR_FIT_MAP.md
+    introduced_at: "2026-04-24"
+    definition: "Donor is treated as an anatomy reference skeleton: useful for proportion and placement, but not the living body being constructed"
+    extends: []
+    referenced_by:
+      - docs/governance/DONOR_FIT_MAP.md
+    status: active
+
+  - id: receipt-law
+    name: Receipt Law
+    introduced_by: docs/PRDs/NOT LAME PRD
+    introduced_at: "2026-04-24"
+    definition: "Every meaningful step emits receipts; receipt absence equals failure condition"
+    extends: []
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+      - docs/governance/AUTHORITY_STACK.md
+    status: active
+
+  - id: text-core-mvp
+    name: Text-Core MVP
+    introduced_by: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+    introduced_at: "2026-04-24"
+    definition: "Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two text-source families required, deterministic refinery, source→observation→interpretation→tapestry, rights-scoped retrieval, minimum English accompaniment, Postgres/pgvector baseline"
+    extends: []
+    referenced_by:
+      - docs/backlog/Text-Core MVP Scope Gate
+      - docs/PRDs/NOT LAME PRD
+    status: active
+
+  - id: postgresql-canonical
+    name: PostgreSQL as Canonical Registry
+    introduced_by: docs/PRDs/NOT LAME PRD
+    introduced_at: "2026-04-24"
+    definition: "NOT LAME specifies PostgreSQL as canonical registry; SQLite only as local shadow; Bootstrap uses SQLite — migration gap"
+    extends: []
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+      - docs/governance/AUTHORITY_STACK.md (noted gap)
+    status: active
+    note: "Migration gap — DI-008 tracks resolution"
+
+  - id: langgraph-workflow-only
+    name: LangGraph Workflow-Only
+    introduced_by: docs/PRDs/NOT LAME PRD
+    introduced_at: "2026-04-24"
+    definition: "LangGraph is the workflow layer, not constitutional; nodes call kernel APIs; sovereign kernel owns receipts, write gate, policy, provenance"
+    extends: []
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+    status: active
+
+  - id: sovereign-kernel
+    name: Sovereign Kernel
+    introduced_by: docs/PRDs/NOT LAME PRD
+    introduced_at: "2026-04-24"
+    definition: "Owns receipts, write gate, policy, provenance, memory routing, certification, context compilation; LangGraph is workflow only"
+    extends: [receipt-law, write-admission-gate, memory-sovereignty-map]
+    referenced_by:
+      - docs/PRDs/NOT LAME PRD
+    status: active
+
+  - id: prism-shadow-mode
+    name: Prism Shadow Mode
+    introduced_by: docs/governance/AUTHORITY_STACK.md
+    introduced_at: "2026-04-24"
+    definition: "Prism is evaluated in shadow mode only; no production semantic authority until shadow mode is formally lifted; exit criteria undefined"
+    extends: []
+    referenced_by:
+      - docs/governance/AUTHORITY_STACK.md
+    status: active
+    note: "Shadow-mode lift criteria issue — see DI-007"
+
+issue_candidates:
+  - id: DI-007
+    title: "Sub-agent context isolation — clean boot per cycle"
+    github: 31
+    priority: P1
+    type: bug
+    source_docs:
+      - SUBAGENT_BOOT.md (instruction set)
+    status: open
+
+  - id: DI-008
+    title: "Ledger locking mechanism — mark doc in-flight, dead-letter queue"
+    github: 32
+    priority: P1
+    type: reliability
+    source_docs:
+      - rosetta-di-ledger.md
+    status: open
+    note: "PostgreSQL migration gap also flagged here"
+
+  - id: DI-009
+    title: "Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti"
+    github: 33
+    priority: P2
+    type: knowledge-graph
+    source_docs:
+      - this file (KNOWLEDGE_GRAPH.yaml)
+    status: open
+    note: "YAML format chosen for easy programmatic parsing and future Graphiti migration"
+
+  - id: DI-010
+    title: "Sub-agents must check prior work before creating issues or re-processing docs"
+    github: 34
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/issue-drafts/
+    status: open
+    note: "OMOC double-process was the trigger"
+
+pr_state:
+  open:
+    - pr: 27
+      branch: docs-intelligence/authority-stack
+      doc: AUTHORITY_STACK.md
+      findings: 8
+      issues: 3
+    - pr: 28
+      branch: docs-intelligence/donor-fit-map
+      doc: DONOR_FIT_MAP.md
+      findings: 3
+      issues: 1
+    - pr: 29
+      branch: docs-intelligence/upstream-and-backup-plan
+      doc: UPSTREAM_AND_BACKUP_PLAN.md
+      findings: 4
+      issues: 2
+    - pr: 30
+      branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
+      doc: OMOC Swarm Gnosis Protocol Spec
+      findings: 35
+      issues: 2
+    - pr: 36
+      branch: docs-intelligence/subagent-boot-instructions
+      doc: SUBAGENT_BOOT.md
+      findings: 0
+      issues: 0
+      note: "Instruction set artifact, not a doc extraction"
+  merged: []
+
+processed_docs:
+  - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
+    processed_at: "2026-04-24T20:50"
+    findings: 2
+    pr: null
+    notes: "Not yet on a per-doc branch"
+
+  - path: docs/governance/SERVICE_INVENTORY.md
+    processed_at: "2026-04-24T20:50"
+    findings: 2
+    pr: null
+    notes: "Not yet on a per-doc branch"
+
+  - path: docs/PRDs/20260423 - Entif.AI - NOT LAME (v0.1) - PRD - Neurologic Orchestration Topology for Layered Agentic Memory and Evolution.md
+    processed_at: "2026-04-24T20:50"
+    findings: 30
+    pr: null
+    notes: "Not yet on a per-doc branch"
+
+  - path: docs/governance/AUTHORITY_STACK.md
+    processed_at: "2026-04-24T21:00"
+    findings: 8
+    pr: 27
+    issues: 3
+
+  - path: docs/governance/DONOR_FIT_MAP.md
+    processed_at: "2026-04-24T21:30"
+    findings: 3
+    pr: 28
+    issues: 1
+
+  - path: docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md
+    processed_at: "2026-04-24T17:36"
+    findings: 35
+    pr: 30
+    issues: 2
+    notes: "Already processed; sub-agent flagged as duplicate this cycle"
