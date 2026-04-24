@@ -33,8 +33,8 @@ The bootstrap slice has minimal conformance output, but pack-level receipt/sourc
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- Active draft path: `docs/intake/issue-drafts/expand-pack-schemas-and-shacl-source-artifacts.md`
-- Archived draft path: `not archived`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Expand pack schemas and SHACL coverage for receipts and source artifacts" --body-file docs/intake/issue-drafts/expand-pack-schemas-and-shacl-source-artifacts.md --label schemas,shacl,receipts,source-substrate`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/expand-pack-schemas-and-shacl-source-artifacts.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/42`
+- Recommended publish command shape: `not applicable; draft already published`

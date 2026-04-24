@@ -45,6 +45,7 @@ Authority Stack pins Node 24.14.1 but .nvmrc and CI enforcement not confirmed.
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- Active draft path: `docs/intake/issue-drafts/authority-stack-gaps.md`
-- Not yet submitted to GitHub
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/authority-stack-gaps.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/41`
