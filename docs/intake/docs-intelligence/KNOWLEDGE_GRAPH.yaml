@@ -3,9 +3,10 @@
 # Updated after every extraction cycle
 
 meta:
-  version: "0.2"
-  generated: "2026-04-24T23:13:00Z"
+  version: "0.3"
+  generated: "2026-04-24T23:20:00Z"
   total_docs_processed: 9
+  total_issue_drafts_inventory: 22
   next_doc_to_process: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
 
 concepts:
@@ -332,6 +333,18 @@ pr_state:
       doc: OMOC Swarm Gnosis Protocol Spec
       findings: 35
       issues: 2
+    - pr: 46
+      branch: codex/normalize-docs-intelligence-issue-drafts
+      doc: "(12 issue drafts from OMC research spec + Text-Core MVP scope gate)"
+      findings: 0
+      issues: 12
+      note: "OMOC 10 issues + Text-Core 2 issues from normalize branch"
+    - pr: 48
+      branch: docs-intelligence/subagent-boot-v2
+      doc: SUBAGENT_BOOT.md + KNOWLEDGE_GRAPH.yaml
+      findings: 0
+      issues: 0
+      note: "SUBAGENT_BOOT.md v2 with all DI-007 to DI-012 rules; KNOWLEDGE_GRAPH v0.3"
   merged:
     - pr: 37
       branch: docs-intelligence/rock-3111-c-rrp-pack-filesystem-contract
@@ -417,3 +430,180 @@ processed_docs:
     pr: 29
     issues: 2
     notes: "Sub-agent ran; extraction done"
+
+issue_drafts_inventory:
+  # OMC-related issue drafts from codex/normalize-docs-intelligence-issue-drafts (PR #46)
+  - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-activation-store-score-calibration
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-constitutional-memory-mutation-policy
+    priority: P2
+    type: blocked-by-authority
+
+  - path: docs/intake/issue-drafts/omc-crdt-overlay-library-choice.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-crdt-overlay-library-choice
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-datamuse-rate-limits-and-cache
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-four-zone-compaction-thresholds
+    priority: P3
+    type: implementation
+
+  - path: docs/intake/issue-drafts/omc-nerdm-jsonld-context-version.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-nerdm-jsonld-context-version
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omc-routescore-calibration-harness.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-routescore-calibration-harness
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/omc-subagent-context-budget-limits.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-subagent-context-budget-limits
+    priority: P2
+    type: implementation
+    note: "Related to DI-007 (sub-agent context isolation)"
+
+  - path: docs/intake/issue-drafts/omc-swarm-reputation-metrics.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-swarm-reputation-metrics
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md
+    source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: omc-tiny-specialist-model-selection
+    priority: P2
+    type: research-spike
+
+  # Text-Core issue drafts from codex/normalize-docs-intelligence-issue-drafts (PR #46)
+  - path: docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md
+    source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: text-core-english-accompaniment-package-contract
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md
+    source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+    source_pr: 46
+    branch: codex/normalize-docs-intelligence-issue-drafts
+    issue_id: text-core-postgres-pgvector-operational-baseline
+    priority: P1
+    type: implementation
+    note: "Part of Text-Core MVP scope gate — pgvector baseline required before RC claims"
+
+  # ROCK-3111-C issue drafts from PR #44
+  - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
+    source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    source_pr: 44
+    branch: docs-intelligence/rock-3111-c-issue-drafts
+    issue_id: rock-3111-c-pack-id-placeholder
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md
+    source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    source_pr: 44
+    branch: docs-intelligence/rock-3111-c-issue-drafts
+    issue_id: rock-3111-c-refinement-enforcement
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md
+    source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    source_pr: 44
+    branch: docs-intelligence/rock-3111-c-issue-drafts
+    issue_id: rock-3111-c-persona-pack-governance
+    priority: P3
+    type: docs-intelligence
+
+  - path: docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md
+    source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    source_pr: 44
+    branch: docs-intelligence/rock-3111-c-issue-drafts
+    issue_id: rock-3111-c-dependency-cycle-detection
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
+    source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    source_pr: 44
+    branch: docs-intelligence/rock-3111-c-issue-drafts
+    issue_id: rock-3111-c-recipes-skills-ci
+    priority: P3
+    type: implementation
+
+  # AUTHORITY_STACK issue drafts
+  - path: docs/intake/issue-drafts/authority-stack-gaps.md
+    source_doc: docs/governance/AUTHORITY_STACK.md
+    source_pr: 27
+    branch: docs-intelligence/authority-stack
+    issue_id: authority-stack-gaps
+    priority: P2
+    type: governance
+
+  # DONOR_FIT_MAP issue drafts
+  - path: docs/intake/issue-drafts/donor-fit-verification.md
+    source_doc: docs/governance/DONOR_FIT_MAP.md
+    source_pr: 28
+    branch: docs-intelligence/donor-fit-map
+    issue_id: donor-fit-verification
+    priority: P3
+    type: ablation
+
+  # UPSTREAM_AND_BACKUP_PLAN issue drafts
+  - path: docs/intake/issue-drafts/upstream-backup-recovery-rule-gap.md
+    source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+    source_pr: 29
+    branch: docs-intelligence/upstream-and-backup-plan
+    issue_id: upstream-backup-recovery-rule-gap
+    priority: P2
+    type: risk-flag
+
+  - path: docs/intake/issue-drafts/upstream-backup-mirror-sync-unspecified.md
+    source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+    source_pr: 29
+    branch: docs-intelligence/upstream-and-backup-plan
+    issue_id: upstream-backup-mirror-sync-unspecified
+    priority: P3
+    type: implementation
