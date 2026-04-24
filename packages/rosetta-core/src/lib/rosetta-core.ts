@@ -89,6 +89,15 @@ export interface ObservationPayload {
   observationId: string;
   signal: string;
   source: string;
+  sourceSpans?: SourceSpanRef[];
+}
+
+export interface SourceSpanRef {
+  endOffset: number;
+  sourceManifestationCid: string;
+  sourceRecordCid: string;
+  startOffset: number;
+  textHash: string;
 }
 
 export interface EvaluationPayload {
@@ -195,6 +204,26 @@ export function createObservation(source: string, signal: string, parents: strin
       source
     },
     { parents }
+  );
+}
+
+export function createSourceObservation(
+  source: string,
+  signal: string,
+  sourceSpans: SourceSpanRef[],
+  parents: string[] = []
+): TileEnvelope<ObservationPayload> {
+  const sourceParents = sourceSpans.flatMap((span) => [span.sourceRecordCid, span.sourceManifestationCid]);
+
+  return buildTile(
+    'rosetta.observation',
+    {
+      observationId: `observation.${makeContentId(`${source}:${signal}:${canonicalizeJson(sourceSpans as unknown as JsonValue)}`).slice(-12)}`,
+      signal,
+      source,
+      sourceSpans
+    },
+    { parents: [...new Set([...sourceParents, ...parents])] }
   );
 }
 

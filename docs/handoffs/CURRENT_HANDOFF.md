@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/archive-cache-persistence-draft`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/21
+Current branch at time of update: `codex/tc-004-source-observation-receipts`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/22
 
 ## Purpose
 
@@ -85,16 +85,18 @@ Merged:
 - PR #18: `feat(text-core): add normalization fingerprints`
 - PR #19: `feat(canonical-cache): add revision persistence`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
+- PR #21: `docs(intake): archive canonical cache draft`
 
 Open at time of update:
 
-- PR #21: `docs(intake): archive canonical cache draft`
+- PR #22: `feat(text-core): add source observation transform receipts`
+- Issue #9: `TC-004 Source to observation tiling and transform receipts`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
-- Issue #9: `TC-004 Source to observation tiling and transform receipts` is claimed by another harness on `codex/tc-004-source-observation-receipts`
 - Issues #11, #12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #21: `docs(intake): archive canonical cache draft`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
 - PR #19: `feat(canonical-cache): add revision persistence`
 - PR #18: `feat(text-core): add normalization fingerprints`
@@ -110,38 +112,49 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/archive-cache-persistence-draft`
-Source issue: none; docs/intake cleanup after issue #8 and PR #20 merges
+Current branch: `codex/tc-004-source-observation-receipts`
+Source issue: https://github.com/entif-ai/rosetta/issues/9
 
-This branch archives the stale `canonical-cache-persistence` local draft after TC-003 was completed through issue #8 / PR #19, and refreshes this handoff after PR #20 merged.
+This branch implements TC-004 source-to-observation tiling and transform receipts.
 
 Changed behavior:
 
-- `docs/intake/issue-drafts/canonical-cache-persistence.md` moved to `docs/intake/issue-drafts/archive/canonical-cache-persistence.md`.
-- `docs/intake/github-issue-ledger.json` marks `canonical-cache-persistence` as published against closed issue #8.
-- This handoff no longer lists merged PR #20 as open/current work.
+- `rosetta-core` exposes source-span observation payload support and `createSourceObservation`.
+- `ingress-refinery` exposes `refineTextToObservationArtifacts` to keep source records/manifestations, observations, canonical artifacts, and derived artifacts distinct.
+- Source observations reference byte spans back to source record and manifestation CIDs.
+- Source-to-observation transforms emit `rrp:transform.source-observation` receipts with verifiable receipt bundles.
+- Derived summary/extract artifacts are emitted as separate `source.derived_artifact` tiles.
 
 ## Validation State
 
-- `pnpm run docs:intake` passed.
-- `git diff --check` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec vitest run packages/ingress-refinery/src/lib/ingress-refinery.spec.ts packages/rosetta-core/src/lib/rosetta-core.spec.ts` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx typecheck ingress-refinery --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx build ingress-refinery --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint ingress-refinery --skip-nx-cache --outputStyle=static` passed.
+- `source /Users/emilie/.nvm/nvm.sh && nvm use --silent && pnpm exec nx lint rosetta-core --skip-nx-cache --outputStyle=static` passed.
+- Rebase conflict refresh on 2026-04-24:
+  - `pnpm run docs:intake` passed.
+  - `pnpm exec nx build rosetta-core --skip-nx-cache --outputStyle=static` passed to refresh untracked local build output before direct Vitest imports.
+  - `pnpm exec vitest run packages/ingress-refinery/src/lib/ingress-refinery.spec.ts packages/rosetta-core/src/lib/rosetta-core.spec.ts` passed: 2 files, 26 tests.
+  - `pnpm exec nx run-many -t typecheck build lint -p ingress-refinery rosetta-core --skip-nx-cache --outputStyle=static` passed.
+  - `pnpm run verify` passed.
+  - `git diff --check` passed.
 
 Known non-failing warnings:
 
+- Nx may emit `MaxListenersExceededWarning` during large dependent builds.
 - Nx/Vitest may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
 
 ## Next Actions
 
 For this branch:
 
-1. Keep PR #21 draft until GitHub reports it mergeable/green.
+1. Force-push PR #22 with lease after rebase completion.
 
 For Text-Core:
 
-1. TC-003 is merged and issue #8 is closed.
-2. TC-004 is in progress in another harness on issue #9.
-3. TC-005 remains open after PR #20 stabilization.
-4. TC-006 and TC-007 are unclaimed at this handoff.
+1. After TC-004 merges, continue TC-005 promotion states and evidence-linked extracts.
+2. TC-006 and TC-007 are unclaimed at this handoff.
 
 ## Current Technical Posture
 
@@ -151,4 +164,5 @@ For Text-Core:
 - Text-Core TC-001 source episode envelope is merged.
 - Text-Core TC-002 normalization fingerprints are merged.
 - Text-Core TC-003 cache dedupe/revision/local persistence is merged.
+- Text-Core TC-004 source-to-observation tiling and transform receipts is in progress.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.

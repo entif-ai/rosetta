@@ -1,9 +1,16 @@
 import { describe, expect, it } from 'vitest';
 
+import type { TileEnvelope } from '@entif-ai/rosetta-core';
 import { verifyReceiptBundle } from '@entif-ai/rosetta-receipts';
 import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 
-import { buildBootstrapDemoSnapshot, createIngressJob, createParseOnlySourceEpisode, refineTextArtifact } from './ingress-refinery.js';
+import {
+  buildBootstrapDemoSnapshot,
+  createIngressJob,
+  createParseOnlySourceEpisode,
+  refineTextArtifact,
+  refineTextToObservationArtifacts
+} from './ingress-refinery.js';
 
 describe('ingress-refinery', () => {
   it('closes the bootstrap receipt bundle when the policy artifact is present', () => {
@@ -44,6 +51,57 @@ describe('ingress-refinery', () => {
 
     expect(snapshot.record.cid).not.toBe(snapshot.manifestation.cid);
     expect(snapshot.manifestation.cid).not.toBe(refined.canonicalArtifact.cid);
+  });
+
+  it('emits source-span observations separately from source and derived artifacts', () => {
+    const snapshot = buildBootstrapDemoSnapshot();
+    const refined = refineTextToObservationArtifacts(snapshot.record, snapshot.manifestation, 'Alpha beta. Gamma delta.');
+
+    expect(refined.observation.kind).toBe('rosetta.observation');
+    expect(refined.observation.cid).not.toBe(snapshot.record.cid);
+    expect(refined.observation.cid).not.toBe(snapshot.manifestation.cid);
+    expect(refined.observation.cid).not.toBe(refined.canonicalArtifact.cid);
+    expect(refined.observation.parents).toContain(snapshot.manifestation.cid);
+
+    expect(refined.observation.payload.sourceSpans).toEqual([
+      {
+        endOffset: 24,
+        sourceManifestationCid: snapshot.manifestation.cid,
+        sourceRecordCid: snapshot.record.cid,
+        startOffset: 0,
+        textHash: refined.canonicalArtifact.payload.byteHash
+      }
+    ]);
+
+    expect(refined.derivedArtifacts.map((artifact) => artifact.payload.derivationKind)).toEqual(['summary', 'extract']);
+    expect(refined.derivedArtifacts.every((artifact) => artifact.kind === 'source.derived_artifact')).toBe(true);
+    expect(refined.derivedArtifacts.every((artifact) => artifact.cid !== refined.observation.cid)).toBe(true);
+    expect(refined.derivedArtifacts.every((artifact) => artifact.payload.sourceObservationCid === refined.observation.cid)).toBe(true);
+  });
+
+  it('emits a verifiable transform receipt for source-to-observation tiling', () => {
+    const snapshot = buildBootstrapDemoSnapshot();
+    const refined = refineTextToObservationArtifacts(snapshot.record, snapshot.manifestation, 'Alpha beta. Gamma delta.');
+    const store = new InMemoryTileStore();
+
+    const closureTiles: TileEnvelope[] = [
+      snapshot.record,
+      snapshot.manifestation,
+      refined.canonicalArtifact,
+      refined.observation,
+      refined.transformReceipt
+    ];
+    closureTiles.forEach((tile) => store.put(tile));
+
+    expect(refined.transformReceipt.payload.receiptType).toBe('rrp:transform.source-observation');
+    expect(refined.transformReceipt.payload.subjects).toEqual([
+      { cid: refined.observation.cid, role: 'rrp:subject.observation' }
+    ]);
+    expect(refined.transformReceipt.payload.claims[0].evidence).toEqual([
+      { cid: snapshot.manifestation.cid, span: 'bytes:0-24' },
+      { cid: refined.canonicalArtifact.cid }
+    ]);
+    expect(verifyReceiptBundle(refined.transformReceiptBundle, store).ok).toBe(true);
   });
 
   it('stores distinct content and revision fingerprints on canonical artifacts', () => {
