@@ -6,6 +6,7 @@
     "api": "pnpm exec nx serve rosetta-api",
     "build": "NX_DAEMON=false pnpm exec nx sync && NX_DAEMON=false pnpm exec nx run-many -t build --exclude @entif-ai/source --skip-nx-cache --parallel=1",
     "demo": "pnpm exec nx sync && pnpm exec nx build rosetta-cli && node apps/rosetta-cli/dist/main.js",
+    "docs:intake": "node tools/doc-intake/build-doc-intake.mjs",
     "graph": "pnpm exec nx graph",
     "lint": "pnpm exec eslint .",
     "sync": "NX_DAEMON=false pnpm exec nx sync",
