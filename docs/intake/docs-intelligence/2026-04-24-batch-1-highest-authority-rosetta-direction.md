@@ -142,13 +142,13 @@ Sequencing recommendation:
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-| Refine TC-005 acceptance around replayable promotion states and refusal receipts | issue update/comment | `text-core`, `implementation`, `ingress-refinery`, `schemas` | TC-001 through TC-004 | Scope Gate M5; Phased Backlog B-007/B-008 |
-| Split TC-006 into tapestry v1 plus rights retrieval/storage subtasks if implementation scope grows | issue update/comment | `text-core`, `tapestry`, `storage` | TC-005 | Scope Gate M6/M7/M8; Phased Backlog B-009/B-011 |
-| Keep TC-007 to chat/arXiv plus English accompaniment, not all importers | issue update/comment | `text-core`, `integrations`, `english-accompaniment` | TC-006 and storage baseline | Scope Gate M9/M10; Phased Backlog B-012/B-015 |
-| Draft Postgres/pgvector operational baseline issue if TC-006 remains too broad | draft candidate | `storage`, `retrieval`, `text-core` | rights retrieval contracts | Charter Text-Core exit criteria; Phased Backlog B-011/9.2 |
-| Draft English accompaniment package contract | draft candidate | `english-accompaniment`, `documentation`, `text-core` | structured extracts and tapestry intros | Scope Gate M10; Phased Backlog B-015 |
+| Title | Type | Draft Or Target | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| Refine TC-005 acceptance around replayable promotion states and refusal receipts | issue update/comment | Existing issue target: #10 | `text-core`, `implementation`, `ingress-refinery`, `schemas` | TC-001 through TC-004 | Scope Gate M5; Phased Backlog B-007/B-008 |
+| Split TC-006 into tapestry v1 plus rights retrieval/storage subtasks if implementation scope grows | issue update/comment | Existing issue target: #11 | `text-core`, `tapestry`, `storage` | TC-005 | Scope Gate M6/M7/M8; Phased Backlog B-009/B-011 |
+| Keep TC-007 to chat/arXiv plus English accompaniment, not all importers | issue update/comment | Existing issue target: #12 | `text-core`, `integrations`, `english-accompaniment` | TC-006 and storage baseline | Scope Gate M9/M10; Phased Backlog B-012/B-015 |
+| Draft Postgres/pgvector operational baseline issue if TC-006 remains too broad | draft candidate | `docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md` | `storage`, `retrieval`, `text-core` | rights retrieval contracts | Charter Text-Core exit criteria; Phased Backlog B-011/9.2 |
+| Draft English accompaniment package contract | draft candidate | `docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md` | `english-accompaniment`, `documentation`, `text-core` | structured extracts and tapestry intros | Scope Gate M10; Phased Backlog B-015 |
 
 ## Project Board Suggestions
 
