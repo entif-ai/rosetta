@@ -3,9 +3,9 @@
 # Updated after every extraction cycle
 
 meta:
-  version: "0.1"
-  generated: "2026-04-24T21:30:00Z"
-  total_docs_processed: 6
+  version: "0.2"
+  generated: "2026-04-24T23:13:00Z"
+  total_docs_processed: 9
   next_doc_to_process: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
 
 concepts:
@@ -136,6 +136,71 @@ concepts:
     status: active
     note: "Shadow-mode lift criteria issue — see DI-007"
 
+  - id: rrp-pack-contract
+    name: RRP Pack Filesystem Contract
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "Pack filesystem contract: pack.json required, refinement-first rule, CID-based pack_id, 8-section structure, optional recipes/ and skills/ subtrees"
+    extends: []
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: active
+
+  - id: pack-id-placeholder
+    name: RRP pack_id Placeholder
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "pack.json uses 'cid:rrp-pack-placeholder' at freeze time — not a real content-addressed ID; algorithm not specified"
+    extends: [rrp-pack-contract]
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
+    status: active
+
+  - id: refinement-first-rule
+    name: Refinement-First Rule
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "Packs MUST extend core semantics without redefining or silently mutating Rosetta core meanings — no automated enforcement mechanism described"
+    extends: []
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md
+    status: active
+
+  - id: persona-pack-elevated-governance
+    name: PersonaPack Elevated Governance
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "PersonaPack — identity/persona/council pack (non-core; elevated governance applies) — 'elevated governance' is undefined"
+    extends: []
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md
+    status: active
+
+  - id: pack-dependency-cycles
+    name: Pack Dependency Cycle Detection
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "depends_on uses doc_id but no cycle detection mechanism described; circular deps could break resolution/promotion/rendering"
+    extends: []
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md
+    status: active
+
+  - id: recipes-skills-ci
+    name: recipes/ and skills/ CI Enforcement
+    introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    introduced_at: "2026-04-24"
+    definition: "recipes/ and skills/ are optional subtrees, 'not RRP pack roots' — no CI enforcement; could ship broken recipes/skills undetected"
+    extends: []
+    referenced_by:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
+    status: active
+
 issue_candidates:
   - id: DI-007
     title: "Sub-agent context isolation — clean boot per cycle"
@@ -143,7 +208,7 @@ issue_candidates:
     priority: P1
     type: bug
     source_docs:
-      - SUBAGENT_BOOT.md (instruction set)
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
     status: open
 
   - id: DI-008
@@ -162,9 +227,8 @@ issue_candidates:
     priority: P2
     type: knowledge-graph
     source_docs:
-      - this file (KNOWLEDGE_GRAPH.yaml)
+      - docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
     status: open
-    note: "YAML format chosen for easy programmatic parsing and future Graphiti migration"
 
   - id: DI-010
     title: "Sub-agents must check prior work before creating issues or re-processing docs"
@@ -175,6 +239,76 @@ issue_candidates:
       - docs/intake/issue-drafts/
     status: open
     note: "OMOC double-process was the trigger"
+
+  - id: DI-011
+    title: "Sub-agents must never merge their own PRs — boundary violation"
+    github: 39
+    priority: P1
+    type: boundary
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: open
+    note: "PR #37 merged by sub-agent autonomously — NEVER-merge rule added to SUBAGENT_BOOT.md"
+
+  - id: DI-012
+    title: "Sub-agent must create issue draft files for every issue candidate in extraction"
+    github: 45
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: open
+    note: "PR #37 had 5 issue candidates but zero issue draft files; fixed in PR #44"
+
+  - id: ROCK-3111-C-pack-id-placeholder
+    title: "RRP pack_id is a placeholder — needs real content-addressed ID at freeze"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-refinement-enforcement
+    title: "Refinement-first rule has no automated enforcement mechanism"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-persona-pack-governance
+    title: "PersonaPack elevated governance is undefined"
+    github: null
+    priority: P3
+    type: docs-intelligence
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-dependency-cycle-detection
+    title: "Pack dependency cycle detection not specified"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-recipes-skills-ci
+    title: "recipes/ and skills/ subtrees lack CI enforcement"
+    github: null
+    priority: P3
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
 
 pr_state:
   open:
@@ -198,13 +332,33 @@ pr_state:
       doc: OMOC Swarm Gnosis Protocol Spec
       findings: 35
       issues: 2
+  merged:
+    - pr: 37
+      branch: docs-intelligence/rock-3111-c-rrp-pack-filesystem-contract
+      doc: ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      findings: 23
+      issues: 5
+      merged_at: "2026-04-24T22:53:36Z"
+      note: "MERGED BY SUB-AGENT — DI-011 filed; boundary violation"
+    - pr: 44
+      branch: docs-intelligence/rock-3111-c-issue-drafts
+      doc: "(5 issue drafts — no source doc extraction)"
+      findings: 0
+      issues: 5
+      merged_at: "2026-04-24T23:13:00Z"
+      note: "5 issue draft files from ROCK-3111-C extraction (DI-012 fix)"
     - pr: 36
       branch: docs-intelligence/subagent-boot-instructions
       doc: SUBAGENT_BOOT.md
       findings: 0
       issues: 0
-      note: "Instruction set artifact, not a doc extraction"
-  merged: []
+      note: "CLOSED without merging; replaced by PR #47"
+    - pr: 47
+      branch: docs-intelligence/subagent-boot-instructions
+      doc: SUBAGENT_BOOT.md + KNOWLEDGE_GRAPH.yaml
+      findings: 0
+      issues: 0
+      note: "REPLACES PR #36 — all DI-007 through DI-012 rules; merge conflict resolved"
 
 processed_docs:
   - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
@@ -243,3 +397,23 @@ processed_docs:
     pr: 30
     issues: 2
     notes: "Already processed; sub-agent flagged as duplicate this cycle"
+
+  - path: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    processed_at: "2026-04-24T22:53"
+    findings: 23
+    pr: 37
+    issues: 5
+    notes: "Sub-agent merged PR — DI-011 filed; issue drafts added in PR #44"
+
+  - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+    processed_at: "2026-04-24T22:53"
+    findings: 0
+    pr: null
+    notes: "Processed in same cycle as ROCK-3111-C"
+
+  - path: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+    processed_at: "2026-04-24T17:36"
+    findings: 4
+    pr: 29
+    issues: 2
+    notes: "Sub-agent ran; extraction done"
