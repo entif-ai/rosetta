@@ -138,16 +138,16 @@ Labels: `...`
 6. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
 7. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
 8. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
-9. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/` OR an explicit link to an existing GitHub issue/comment target
+9. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
 10. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
-10. **Commit** extraction + issue drafts + any updated docs
-11. **Push branch**
-12. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
-13. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
-14. **Update ledger** — mark doc as `processed:<timestamp>:<pr-number>`, increment total_processed, increment runs_since_last_batched_update
-15. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
-16. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
-17. **Compact context** — end your turn with only the confirmation, no residual context
+11. **Commit** extraction + issue drafts + any updated docs
+12. **Push branch**
+13. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
+14. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
+15. **Update ledger** — mark doc as `processed:<timestamp>:<pr-number>`, increment total_processed, increment runs_since_last_batched_update
+16. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
+17. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
+18. **Compact context** — end your turn with only the confirmation, no residual context
 
 ---
 

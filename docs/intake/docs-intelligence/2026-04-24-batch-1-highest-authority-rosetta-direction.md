@@ -108,13 +108,18 @@ Batch 1 establishes the current build direction: a three-rung staircase (Bootstr
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-| DI-002 Batch 2: Current PRD/RFC Product Shape | docs-intelligence | `planning`, `docs-intake` | DI-001 complete | PRIORITY_QUEUE.md Batch 2 definition |
-| DI-003 Batch 3: Source Dialogue About Rosetta and Agent Orchestration | docs-intelligence | `planning`, `docs-intake` | DI-001 complete | PRIORITY_QUEUE.md Batch 3 definition |
-| DI-004 Read REPO_SHAPE_AND_CONSTRAINTS.md and SERVICE_INVENTORY.md | docs-intelligence | `planning`, `docs-intake` | DI-001 complete | Not yet read in Batch 1 |
-| TC-006 scope clarification: tapestry v1 + rights + Postgres vs separate issues | implementation | `text-core`, `tapestry`, `storage` | TC-005 green | Scope gate M6/M7/M8 may need split into separate issues; current TC-006 covers all three |
-| TC-006 blocked by: confirm TC-001 through TC-004 integration against scope gate | blocker | `text-core` | TC-001 through TC-004 | "Pause additional Text-Core implementation by default unless explicitly selected" — CURRENT_HANDOFF.md |
+| Title | Type | Draft Or Target | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| Refine TC-005 acceptance around replayable promotion states and refusal receipts | issue update/comment | Existing issue target: #10 | `text-core`, `implementation`, `ingress-refinery`, `schemas` | TC-001 through TC-004 | Scope Gate M5; Phased Backlog B-007/B-008 |
+| Split TC-006 into tapestry v1 plus rights retrieval/storage subtasks if implementation scope grows | issue update/comment | Existing issue target: #11 | `text-core`, `tapestry`, `storage` | TC-005 | Scope Gate M6/M7/M8; Phased Backlog B-009/B-011 |
+| Keep TC-007 to chat/arXiv plus English accompaniment, not all importers | issue update/comment | Existing issue target: #12 | `text-core`, `integrations`, `english-accompaniment` | TC-006 and storage baseline | Scope Gate M9/M10; Phased Backlog B-012/B-015 |
+| Draft Postgres/pgvector operational baseline issue if TC-006 remains too broad | draft candidate | `docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md` | `storage`, `retrieval`, `text-core` | rights retrieval contracts | Charter Text-Core exit criteria; Phased Backlog B-011/9.2 |
+| Draft English accompaniment package contract | draft candidate | `docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md` | `english-accompaniment`, `documentation`, `text-core` | structured extracts and tapestry intros | Scope Gate M10; Phased Backlog B-015 |
+| DI-002 Batch 2: Current PRD/RFC Product Shape | docs-intelligence | `/docs/intake/` | `planning`, `docs-intake` | DI-001 complete | PRIORITY_QUEUE.md Batch 2 definition |
+| DI-003 Batch 3: Source Dialogue About Rosetta and Agent Orchestration | docs-intelligence | `/docs/intake/` | `planning`, `docs-intake` | DI-001 complete | PRIORITY_QUEUE.md Batch 3 definition |
+| DI-004 Read REPO_SHAPE_AND_CONSTRAINTS.md and SERVICE_INVENTORY.md | docs-intelligence | `/docs/intake/` | `planning`, `docs-intake` | DI-001 complete | Not yet read in Batch 1 |
+| TC-006 scope clarification: tapestry v1 + rights + Postgres vs separate issues | implementation | Existing issue target: #11 | `text-core`, `tapestry`, `storage` | TC-005 green | Scope gate M6/M7/M8 may need split into separate issues; current TC-006 covers all three |
+| TC-006 blocked by: confirm TC-001 through TC-004 integration against scope gate | blocker | Existing issue target: #11 |`text-core` | TC-001 through TC-004 | "Pause additional Text-Core implementation by default unless explicitly selected" — CURRENT_HANDOFF.md |
 
 ---
 

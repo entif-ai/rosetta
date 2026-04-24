@@ -187,18 +187,18 @@ This document is the foundational engineering specification for the Ontological 
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-|---|---|---|---|---|
-| Activation-store composite score: normalize b1–b8 weights empirically | issue-candidate | activation-memory, weights, eval | Tier 9 (activation-store v0) | Section 6.3 formula with 8 uncalibrated weight variables; current values unknown |
-| CRDT implementation choice: select library for mutable overlay merge | issue-candidate | crdt, distributed-state, infrastructure | Tier 9 (activation-store v0) | Section 6.4 requires CRDT for mutable overlays; no specific library named |
-| Datamuse API rate limits and caching strategy for deterministic lexical expansion | issue-candidate | datamuse, rate-limits, caching | Tier 6 (concept-registry v0) | Section 3.3 designates Datamuse for deterministic-first stages; no rate-limit plan documented |
-| Four-zone compaction trigger: define token-pressure and cadence-threshold values | issue-candidate | compaction, cache, thresholds | Tier 7 (tapestry-builder v0) | Section 8.3 references token pressure or cadence threshold trigger; concrete values TBD |
-| Sub-agent context budget limits: define max tokens per layer (L1/L2/L3) | issue-candidate | context-budget, routing, subagents | Tier 8 (omc-router v0) | Section 8.4 describes budget hierarchy but no concrete token limits per layer |
-| RouteScore c1–c8 weights: calibrate via eval-harness route calibration harness | issue-candidate | routing, weights, eval | Tier 8 (omc-router v0), Tier 10 (eval-harness v0) | Section 9.2 RouteScore formula has 8 uncalibrated coefficients |
-| Nightly self-improvement: mutation policy for constitutional memory — how is it enforced? | issue-candidate | self-improvement, constitutional-memory, governance | Tier 10 (eval-harness v0) | Section 10.4 says "may NOT silently mutate constitutional memory" but no enforcement mechanism defined |
-| NERDm adapter: JSON-LD context document and schema version to use | issue-candidate | nerdm, json-ld, metadata | Tier 5 (ingest-refinery v0) | Section 7.4 designates NERDm pattern but no specific schema version or context document chosen |
-| Tiny specialist model selection: criteria for when L3 spawns small model vs delegates to L1/L2 | issue-candidate | tiny-specialists, routing, llm-selection | Tier 8 (omc-router v0) | Section 9.5 gives necessary conditions but no decision tree for model selection |
-| Swarms reputation: how is "repeatable utility" and "low drift" measured operationally? | issue-candidate | swarm, reputation, metrics | Tier 12 (swarmd stub) | Section 11.3 says use provenance/proof not popularity but no concrete metric definitions |
+| Title | Type | Draft | Labels | Depends On | Evidence |
+|---|---|---|---|---|---|
+| Activation-store composite score: normalize b1-b8 weights empirically | issue-candidate | `docs/intake/issue-drafts/omc-activation-store-score-calibration.md` | activation-memory, weights, eval | Tier 9 (activation-store v0) | Section 6.3 formula with 8 uncalibrated weight variables; current values unknown |
+| CRDT implementation choice: select library for mutable overlay merge | issue-candidate | `docs/intake/issue-drafts/omc-crdt-overlay-library-choice.md` | crdt, distributed-state, infrastructure | Tier 9 (activation-store v0) | Section 6.4 requires CRDT for mutable overlays; no specific library named |
+| Datamuse API rate limits and caching strategy for deterministic lexical expansion | issue-candidate | `docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md` | datamuse, rate-limits, caching | Tier 6 (concept-registry v0) | Section 3.3 designates Datamuse for deterministic-first stages; no rate-limit plan documented |
+| Four-zone compaction trigger: define token-pressure and cadence-threshold values | issue-candidate | `docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md` | compaction, cache, thresholds | Tier 7 (tapestry-builder v0) | Section 8.3 references token pressure or cadence threshold trigger; concrete values TBD |
+| Sub-agent context budget limits: define max tokens per layer (L1/L2/L3) | issue-candidate | `docs/intake/issue-drafts/omc-subagent-context-budget-limits.md` | context-budget, routing, subagents | Tier 8 (omc-router v0) | Section 8.4 describes budget hierarchy but no concrete token limits per layer |
+| RouteScore c1-c8 weights: calibrate via eval-harness route calibration harness | issue-candidate | `docs/intake/issue-drafts/omc-routescore-calibration-harness.md` | routing, weights, eval | Tier 8 (omc-router v0), Tier 10 (eval-harness v0) | Section 9.2 RouteScore formula has 8 uncalibrated coefficients |
+| Nightly self-improvement: mutation policy for constitutional memory - how is it enforced? | issue-candidate | `docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md` | self-improvement, constitutional-memory, governance | Tier 10 (eval-harness v0) | Section 10.4 says "may NOT silently mutate constitutional memory" but no enforcement mechanism defined |
+| NERDm adapter: JSON-LD context document and schema version to use | issue-candidate | `docs/intake/issue-drafts/omc-nerdm-jsonld-context-version.md` | nerdm, json-ld, metadata | Tier 5 (ingest-refinery v0) | Section 7.4 designates NERDm pattern but no specific schema version or context document chosen |
+| Tiny specialist model selection: criteria for when L3 spawns small model vs delegates to L1/L2 | issue-candidate | `docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md` | tiny-specialists, routing, llm-selection | Tier 8 (omc-router v0) | Section 9.5 gives necessary conditions but no decision tree for model selection |
+| Swarms reputation: how is "repeatable utility" and "low drift" measured operationally? | issue-candidate | `docs/intake/issue-drafts/omc-swarm-reputation-metrics.md` | swarm, reputation, metrics | Tier 12 (swarmd stub) | Section 11.3 says use provenance/proof not popularity but no concrete metric definitions |
 
 ---
 
