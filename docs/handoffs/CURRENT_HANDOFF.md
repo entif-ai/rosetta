@@ -1,10 +1,10 @@
 # Current Handoff
 
-Status: active baton-pass for Codex and agent sessions  
-Date: 2026-04-24  
-Last updated: 2026-04-24  
-Current branch at time of update: `codex/text-core-mvp-scope-gate`  
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/5
+Status: active baton-pass for Codex and agent sessions
+Date: 2026-04-24
+Last updated: 2026-04-24
+Current branch at time of update: `codex/archive-promoted-issue-drafts`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/15
 
 ## Purpose
 
@@ -69,7 +69,9 @@ Important rules:
 - Chat exports may include `Created`, `Updated`, and `Exported`; store those separately under `chronology.canonical`.
 - Use `updatedAt` as the primary working date when present, but keep all chronology evidence.
 - Local issue drafts are the review gate before creating remote GitHub issues.
-- After publishing issues, record the URLs in `docs/intake/github-issue-ledger.json`.
+- Active issue drafts are unpublished candidates.
+- Published issue drafts must be archived under `docs/intake/issue-drafts/archive/`.
+- `docs/intake/github-issue-ledger.json` must record published draft state with `draftStatus`, `activeDraftPath`, `archivedDraftPath`, issue number, state, and URL where known.
 
 ## GitHub State
 
@@ -78,95 +80,92 @@ Remote: `https://github.com/entif-ai/rosetta.git`
 Merged:
 
 - PR #1: `docs(intake): add documentation ledger and issue draft workflow`
+- PR #5: `docs(backlog): define Text-Core MVP scope gate`
 
 Open at time of update:
 
-- PR #5: `docs(backlog): define Text-Core MVP scope gate`
-- Issue #4: `Define Text-Core MVP scope gate from governing docs`
+- PR #13: `feat(text-core): add source episode envelope`
+- Issue #6: `TC-001 Source episode envelope and family classification`
+- Issue #14: `Archive published docs intake issue drafts`
 
 Closed at time of update:
 
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
+- Issue #4: `Define Text-Core MVP scope gate from governing docs`
+
+Published Text-Core follow-up issues:
+
+- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
+- Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
+- Issue #9: `TC-004 Source to observation tiling and transform receipts`
+- Issue #10: `TC-005 Promotion state machine and structured extracts`
+- Issue #11: `TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline`
+- Issue #12: `TC-007 Chat + arXiv importers and English accompaniment`
 
 ## Current Work Product
 
-PR #5 adds:
+Current branch: `codex/archive-promoted-issue-drafts`
+Source issue: https://github.com/entif-ai/rosetta/issues/14
 
-- `docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md`
-- regenerated docs intake ledger files
-- updated issue ledger state for issues #2 and #3
+This branch updates the docs intake workflow so issue drafts that have already been promoted to GitHub are removed from the active candidate folder and regenerated under `docs/intake/issue-drafts/archive/`.
 
-Scope gate summary:
+Changed behavior:
 
-- Text-Core MVP should start as a small, receipt-bound text-ingest spine.
-- Minimum Text-Core Green requires:
-  - two structurally different text-source families end to end
-  - deterministic refinery
-  - source -> observation -> interpretation -> tapestry flow
-  - rights-scoped retrieval
-  - minimum English accompaniment
-  - Postgres/pgvector baseline before serious RC claims
-
-Follow-up implementation issue candidates from the scope gate:
-
-- TC-001 Source episode envelope and family classification
-- TC-002 Chronology-aware normalization and fingerprints
-- TC-003 Dedupe, revision graph, and cache persistence
-- TC-004 Source to observation tiling and transform receipts
-- TC-005 Promotion state machine and structured extracts
-- TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline
-- TC-007 Chat + arXiv importers and English accompaniment
+- `resolveIssueDraftState` maps drafts with a recorded GitHub issue URL to `published`.
+- Published drafts render archive-oriented publishing notes and are removed from `docs/intake/issue-drafts/`.
+- Unpublished drafts remain active candidates.
+- `docs/intake/github-issue-ledger.json` records `draftStatus`, `activeDraftPath`, and `archivedDraftPath` for each generated draft.
+- `docs/intake/README.md` documents the active-vs-archived draft policy.
 
 ## Validation State
 
-Latest completed validation on `main` after PR #1:
+Completed on this branch:
 
-- `pnpm exec nx sync` passed
-- `pnpm run verify` passed
-- tests: 17 files passed, 52 tests passed
-- build passed
+- `pnpm run docs:intake` passed
+- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
+- `pnpm run test` passed: 18 files, 58 tests
+- `pnpm run lint` passed
+- `pnpm run typecheck` passed
+- final post-handoff `pnpm run docs:intake` passed
+- `git diff --check` passed
+
+Previous validation for PR #13:
+
+- `pnpm run test` passed: 18 files, 60 tests
+- `pnpm run lint` passed
+- `pnpm run typecheck` passed
+- `pnpm run docs:intake` passed
+- `git diff --check` passed
 
 Known non-failing warnings:
 
 - Nx/Node may emit `MaxListenersExceededWarning` during sequential package builds.
 - React Router build may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
 
-Latest validation on `codex/text-core-mvp-scope-gate`:
-
-- `pnpm run docs:intake` passed
-- `git diff --check` passed
-
-Additional test coverage added on this branch:
-
-- `tools/doc-intake/build-doc-intake.spec.mjs`
-- covers chat top-matter chronology parsing, primary date precedence, fallback evidence retention, stable intake timestamps, and filesystem-only undated import classification
-- `vitest.config.ts` now includes `tools/**/*.spec.mjs`
-
 ## Next Actions
 
-If PR #5 is not merged:
+For `codex/archive-promoted-issue-drafts`:
 
-1. Review/merge PR #5.
-2. After merge, sync `main`.
-3. Close issue #4 with a comment referencing the scope gate document.
-4. Publish TC-001 through TC-007 follow-up issues, or at minimum TC-001 first.
+1. Run the focused doc-intake spec.
+2. Run full test/lint checks appropriate for the branch.
+3. Run `pnpm run docs:intake` again after handoff changes.
+4. Run `git diff --check`.
+5. Create a GitHub issue for this cleanup branch.
+6. Commit with a Conventional Commit.
+7. Push and open a PR.
 
-If PR #5 is merged:
+For Text-Core after this cleanup branch:
 
-1. Sync `main`.
-2. Close issue #4 if still open.
-3. Create branch `codex/tc-001-source-episode-envelope`.
-4. Implement TC-001 using existing packages first:
-   - `packages/source-substrate`
-   - `packages/ingress-refinery`
-   - `packages/rosetta-schemas`
-5. Avoid creating a new `packages/ingest-core` until the source episode API has enough real pressure to justify the split.
+1. Continue review/merge of PR #13.
+2. After PR #13 merges, sync `main`.
+3. Update the handoff and issue ledger for completed TC-001 state.
+4. Start TC-002 on a new `codex/` feature branch.
 
 ## Current Technical Posture
 
 - Bootstrap provenance kernel is implemented and tested.
 - Source-aware refinery is fixture-backed, not live upstream acquisition.
 - `docs:intake` indexes docs and issue drafts but does not semantically ingest the corpus.
-- Text-Core has now been scoped, but implementation has not started.
+- Text-Core source episode envelope work is in PR #13.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.

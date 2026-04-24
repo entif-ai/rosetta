@@ -6,19 +6,48 @@
       "number": 2,
       "state": "closed",
       "title": "Build docs intake ledger and GitHub issue promotion workflow",
-      "url": "https://github.com/entif-ai/rosetta/issues/2"
+      "url": "https://github.com/entif-ai/rosetta/issues/2",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/docs-intake-ledger-and-issue-promotion.md",
+      "draftStatus": "published"
     },
     "lean-validation-loop-and-local-receipts": {
       "number": 3,
       "state": "closed",
       "title": "Re-run lean validation loop and checkpoint local receipts",
-      "url": "https://github.com/entif-ai/rosetta/issues/3"
+      "url": "https://github.com/entif-ai/rosetta/issues/3",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/lean-validation-loop-and-local-receipts.md",
+      "draftStatus": "published"
     },
     "text-core-mvp-scope-gate": {
       "number": 4,
-      "state": "open",
+      "state": "closed",
       "title": "Define Text-Core MVP scope gate from governing docs",
-      "url": "https://github.com/entif-ai/rosetta/issues/4"
+      "url": "https://github.com/entif-ai/rosetta/issues/4",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md",
+      "draftStatus": "published"
+    },
+    "expand-pack-schemas-and-shacl-source-artifacts": {
+      "activeDraftPath": "docs/intake/issue-drafts/expand-pack-schemas-and-shacl-source-artifacts.md",
+      "archivedDraftPath": null,
+      "draftStatus": "candidate"
+    },
+    "real-acquisition-adapters-behind-refinery-boundary": {
+      "activeDraftPath": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
+      "archivedDraftPath": null,
+      "draftStatus": "candidate"
+    },
+    "canonical-cache-persistence": {
+      "activeDraftPath": "docs/intake/issue-drafts/canonical-cache-persistence.md",
+      "archivedDraftPath": null,
+      "draftStatus": "candidate"
+    },
+    "coverage-thresholds-and-acceptance-matrices": {
+      "activeDraftPath": "docs/intake/issue-drafts/coverage-thresholds-and-acceptance-matrices.md",
+      "archivedDraftPath": null,
+      "draftStatus": "candidate"
     }
   }
 }

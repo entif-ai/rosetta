@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildChronology, extractTopMatterDates, inferFreshness } from './build-doc-intake.mjs';
+import { buildChronology, extractTopMatterDates, inferFreshness, resolveIssueDraftState } from './build-doc-intake.mjs';
 
 describe('doc intake chronology', () => {
   it('preserves chat export created, updated, and exported timestamps separately', () => {
@@ -93,5 +93,40 @@ Date: 2026-04-24
 
   it('marks filesystem-only dating as an undated import', () => {
     expect(inferFreshness('2026-04-24', 'filesystemModifiedAt')).toBe('undated-import');
+  });
+
+  it('routes published issue drafts to archive and removes them from active candidates', () => {
+    const state = resolveIssueDraftState('text-core-mvp-scope-gate', {
+      issueDrafts: {
+        'text-core-mvp-scope-gate': {
+          number: 4,
+          state: 'closed',
+          title: 'Define Text-Core MVP scope gate from governing docs',
+          url: 'https://github.com/entif-ai/rosetta/issues/4'
+        }
+      }
+    });
+
+    expect(state).toEqual({
+      activePath: null,
+      archivePath: 'docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md',
+      published: true,
+      issueUrl: 'https://github.com/entif-ai/rosetta/issues/4',
+      status: 'published'
+    });
+  });
+
+  it('keeps unpublished issue drafts in the active candidate folder', () => {
+    const state = resolveIssueDraftState('canonical-cache-persistence', {
+      issueDrafts: {}
+    });
+
+    expect(state).toEqual({
+      activePath: 'docs/intake/issue-drafts/canonical-cache-persistence.md',
+      archivePath: null,
+      published: false,
+      issueUrl: null,
+      status: 'candidate'
+    });
   });
 });

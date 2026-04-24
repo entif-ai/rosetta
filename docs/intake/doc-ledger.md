@@ -1,6 +1,6 @@
 # Docs Intake Ledger
 
-Generated: 2026-04-24T06:13:18.254Z
+Generated: 2026-04-24T06:32:21.500Z
 
 This is the human-readable companion to `docs/intake/doc-ledger.json`. It is intentionally shallow: hashes and issue references live in JSON; this file is for quick orientation.
 
@@ -33,7 +33,7 @@ This is the human-readable companion to `docs/intake/doc-ledger.json`. It is int
 | 2026-04-24 | undated-import | `docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md` | 3154 | indexed |
 | 2026-04-24 | undated-import | `docs/governance/SERVICE_INVENTORY.md` | 166 | indexed |
 | 2026-04-24 | undated-import | `docs/governance/UPSTREAM_AND_BACKUP_PLAN.md` | 129 | indexed |
-| 2026-04-24 | current | `docs/handoffs/CURRENT_HANDOFF.md` | 969 | indexed |
+| 2026-04-24 | current | `docs/handoffs/CURRENT_HANDOFF.md` | 1030 | indexed |
 | 2026-04-13 | current | `docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md` | 6124 | indexed |
 | 2026-04-13 | current | `docs/governance/20260412 - Source Registry and Repository Profile Annex.md` | 1288 | indexed |
 | 2026-04-13 | current | `docs/handoffs/2026-04-13-bootstrap-handoff.md` | 1071 | indexed |
