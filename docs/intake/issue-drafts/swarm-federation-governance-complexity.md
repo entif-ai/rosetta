@@ -1,79 +1,92 @@
-# Swarm Federation Governance Complexity: Layering vs. Co-design
+# Issue Draft: Swarm Federation Governance Complexity
 
-## Source Document
-- RFC: 20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec
-- Extraction: 2026-04-24-omoc-swarm-gnosis-protocol-spec.md
+**Doc intelligence source:** `docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md`
 
-## Context
+**Extraction timestamp:** 2026-04-24
 
-Section 10.1 of the source RFC establishes an explicit federation staging order:
+**Status:** open — risk identified, no resolution proposed
 
-1. single-tenant local
-2. multi-agent local
-3. org-scoped federation
-4. trusted inter-org exchange
-5. public commons / open swarm
+---
 
-Section 18, Question 6 and Question 8 surface the core unresolved questions about licensing, governance, and selective disclosure for multi-tenant use.
+## Problem Statement
 
-This issue draft addresses a structural architectural question that sits beneath those open questions:
+Section 10.1 of the OMOC spec proposes a 5-layer staged federation progression:
 
-> **Should org-scoped federation (Tack 7 scope) be designed in isolation from inter-org federation design, or should both layers be co-designed from the start to avoid expensive refactoring when the system scales from org-scoped to inter-org?**
+1. Single-tenant local
+2. Multi-agent local
+3. Org-scoped federation
+4. Trusted inter-org exchange
+5. Public commons / open swarm
 
-The RFC treats these as sequential layers. The governance, rights-scoping, and selective disclosure requirements that work for org-scoped exchange may not survive inter-org scaling without structural redesign.
+**Each layer requires stronger proof, rights, and abuse-handling than the last.**
 
-## The Tension
+Managing these 5 layers simultaneously — with their distinct governance requirements, trust models, rights scopes, and abuse-handling mechanisms — creates substantial complexity that the spec acknowledges but does not scope.
 
-### Argument for Layer-by-Layer (Isolated org-scoped first)
+This is a risk because:
+1. Governance requirements for layer 4 (inter-org) and layer 5 (public) are fundamentally different from layers 1-3
+2. Abuse-handling at the public commons layer requires legal, technical, and social mechanisms beyond what internal org-scoped systems need
+3. Rights-preserving exchange bundles and selective disclosure requirements multiply with each additional trust boundary crossed
 
-- Org-scoped federation is the immediately actionable scope (Tack 7 acceptance gate)
-- Inter-org exchange is further out; requirements are less mature
-- Building for org-scoped first gets the system to a verifiable state faster
-- Governance model for inter-org may be fundamentally different (different trust assumptions, different legal entities)
-- Over-engineering for inter-org now risks adding complexity that slows org-scoped delivery
+## Evidence from Source
 
-### Argument for Co-design from the Start
+**Section 10.1:**
+> "Federation should proceed in layers: single-tenant local → multi-agent local → org-scoped federation → trusted inter-org exchange → public commons / open swarm. Each layer requires stronger proof, rights, and abuse-handling than the last."
 
-- Architecture choices made for org-scoped (rights-scoped retrieval, selective disclosure, proof-carrying bundles) may require breaking changes to support inter-org
-- If the underlying schema does not anticipate multi-entity trust boundaries, migration to inter-org could require restructuring the exchange object schema, receipt binding, and verification surface
-- Selective disclosure for commercial multi-tenant use (open question #8) is relevant to both org-scoped AND inter-org — solving it once in a generalized way may be cheaper than retrofitting
-- The public commons vision (public library / Entif Commons) implies a specific licensing model that, if adopted at all, should be designed into the exchange object from the beginning rather than bolted on later
+**Section 10.2:**
+> "The public or federated substrate should exchange: tiles, tapestries, skills/operators, archetype or lens packs, ontology packs, schema profiles, receipts and attestations, and, where appropriate, slugs plus witness packs. It should NOT assume that raw session history, private context, or sensitive prompt scaffolds are the exchange default."
 
-## Key Refactoring Risk Areas
+**Section 10.4:**
+> "The 'public library' vision is strongest when framed as: an Entif Commons of signed packs, tiles, tapestries, skills, and validators; a Rosetta verifier surface so third parties can validate signatures, histories, and pack provenance; and a commons route to interoperability where adoption grows because verification and reuse are easier than siloing."
 
-The following are likely to require different designs for org-scoped vs. inter-org:
+**Section 15.3:**
+> "A public or federated artifact should be able to prove integrity without oversharing sensitive content. That implies: commitments and hashes, witness packs, redaction-friendly receipt design, and forkable policy profiles."
 
-1. **Rights-scope granularity:** Org-scoped can rely on internal identity/property management. Inter-org requires cross-entity rights verification without a shared identity provider.
-2. **Proof-carrying bundles:** Org-scoped can assume a shared verification surface. Inter-org requires third-party verifiable proofs without shared trust infrastructure.
-3. **Selective disclosure:** Org-scoped can use policy-based filtering. Inter-org requires cryptographic selective disclosure (e.g., zero-knowledge proofs or commitment schemes) if commercial sensitivity applies.
-4. **Receipt binding:** Org-scoped receipts can reference a shared ledger. Inter-org receipts require cross-ledger verification or a shared attestation registry.
-5. **Licensing model:** Org-scoped can use bilateral agreements. Public commons requires a unilateral license grant that is automatically enforceable by verification surface.
+**Section 18 (Open Question 6):**
+> "What is the right public-commons licensing and governance model for Swarm Gnosis artifacts?"
 
-## Decision Criteria
+The spec explicitly identifies public commons licensing/governance as an open question (not resolved).
 
-1. **Tack 7 acceptance gate scope:** Is the acceptance gate for Tack 7 explicitly limited to "third parties can verify what they receive without trusted-local-state assumptions," or does it imply "and this design scales to inter-org without refactoring"?
-2. **Licensing model maturity:** Is the public commons licensing model sufficiently defined to influence schema design now? If not, org-scoped-first may be correct.
-3. **Selective disclosure urgency:** Is commercial multi-tenant selective disclosure a near-term requirement (within 12 months) or a future consideration? If near-term, it should inform Tack 7 schema design.
-4. **Migration cost estimate:** How costly is a breaking change to the exchange object schema once org-scoped federation is in production? If high, invest more in co-design now.
+## Specific Concerns
 
-## Recommended Action
+### 1. Rights Scoping Across Trust Boundaries
 
-Before Tack 7 begins, clarify:
+At layer 3 (org-scoped), rights-scoping is an intra-org problem. At layers 4-5, rights-scoping crosses org boundaries with different legal jurisdictions, legal entities, and policy frameworks. A tile that is rights-scope-compatible with Org A's policy may not be compatible with Org B's.
 
-1. The Tack 7 acceptance gate language: is "org-scoped federation" explicitly scoped to single-organization trust boundaries, or does it imply inter-org-ready architecture?
-2. Whether the licensing model for public commons is a stated near-term goal or a distant aspiration — if the former, design the exchange object to accommodate it
-3. Whether commercial multi-tenant selective disclosure is a near-term requirement that should inform current schema design
+### 2. Abuse-Handling Asymmetry
 
-If the answers suggest inter-org scale is genuinely distant and the licensing model is undefined, proceed with org-scoped-first design but document the schema extension points explicitly so inter-org design can be additive rather than migratory.
+At layers 1-3, abuse (malicious tiles, fraudulent attestations, policy violations) can be handled by a central authority (the org). At layer 5, there is no central authority. Abuse-handling requires decentralized mechanisms (slashing, reputation systems, legal recourse) that are not specified.
 
-If inter-org is a stated 12-18 month goal, invest in co-designing the exchange object with multi-entity trust assumptions from the start.
+### 3. Receipt Chain Integrity Across Federation Boundaries
 
-## Labels
-- `federation`
-- `swarm-gnosis`
-- `build-order`
-- `governance`
-- `architecture`
+Receipts attest to processes within a single trust context. When a tile moves from Org A's runtime to Org B's runtime (layer 4) or to the public commons (layer 5), the receipt chain must remain verifiable. But Org A's Guard may not be trusted by Org B. This requires cross-verification mechanisms not described in the spec.
 
-## Status
-Open — awaiting clarification of Tack 7 acceptance gate scope and licensing model intent before kickoff.
+### 4. Witness Pack Complexity
+
+Section 15.3 mentions "witness packs" for selective disclosure, but no schema, no definition of what constitutes a valid witness, and no protocol for witness verification by third parties. At layer 5, this is a hard problem.
+
+### 5. Forkable Policy Profiles
+
+Section 15.3 mentions "forkable policy profiles" — the ability for a public artifact's policy to be forked (copied and modified) by downstream consumers. This creates policy drift risk: an artifact published with a specific policy may be forked into a variant that violates the original publisher's intent.
+
+## Risk Assessment
+
+- **Likelihood:** High — the 5-layer model is explicitly proposed; governance complexity is inherent in multi-layer federation
+- **Impact:** High — governance failures at layers 4-5 could compromise the integrity of public artifacts and undermine trust in the Rosetta/Entif ecosystem
+- **Mitigation:** Each layer needs a distinct governance spec before that layer is activated; do not attempt to build public commons governance until org-scoped federation is proven
+
+## Recommendation
+
+1. **Add a governance layer spec per federation stage** — each stage (3, 4, 5) should have a distinct governance model documented before activation
+2. **Layer 5 (public commons) should be gated behind a separate RFC** — this is not something to design in the same document as the technical exchange layer
+3. **Define "abuse" taxonomy first** — before designing abuse-handling, enumerate the abuse classes (fraudulent attestations, policy violation, malicious tiles, etc.)
+4. **Rights-preserving exchange should be a standalone spec** — not part of the general Swarm Gnosis spec
+
+**This issue is a risk** that should be tracked, not a blocker for layers 1-3.
+
+---
+
+## Related Issues
+
+- omoc-lean-vs-learned-routing-paradigm.md (same source doc)
+- Public commons licensing/governance (Open Question 6 from same doc)
+- Selective disclosure for commercial multi-tenant (Open Question 8 from same doc)
