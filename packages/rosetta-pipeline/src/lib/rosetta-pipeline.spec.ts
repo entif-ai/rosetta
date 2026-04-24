@@ -66,7 +66,7 @@ describe("rosetta-pipeline", () => {
     expect(lexemes.formCids).toHaveLength(2);
     expect(lexemes.lexemes.map((lexeme) => (lexeme.payload as { lemma: string }).lemma)).toEqual(["light", "bank"]);
     expect(lexemes.lexemes.every((lexeme) => lexeme.kind === "rosetta.lexeme")).toBe(true);
-    expect(lexemes.conjectures.map((conjecture) => conjecture.payload.method)).toEqual([
+    expect(lexemes.conjectures.map((conjecture) => (conjecture.payload as { method: string }).method)).toEqual([
       "common_word_lookup",
       "common_word_lookup",
     ]);
@@ -76,26 +76,26 @@ describe("rosetta-pipeline", () => {
     expect(concepts.concepts.map((concept) => (concept.payload as { label: string }).label)).toEqual(["light", "bank"]);
     expect(concepts.concepts.every((concept) => concept.kind === "rosetta.concept")).toBe(true);
     expect(concepts.latticeEdges).toHaveLength(concepts.concepts.length);
-    expect(concepts.latticeEdges.every((edge) => edge.payload.relation === "instance_of")).toBe(true);
+    expect(concepts.latticeEdges.every((edge) => (edge.payload as { relation: string }).relation === "instance_of")).toBe(true);
     expect(concepts.conjectures).toEqual(lexemes.conjectures);
 
     const framedConcepts = runFrameLayer(ctx);
     expect(ctx.L3).toBe(framedConcepts);
     expect(framedConcepts.frames).toHaveLength(1);
-    expect(framedConcepts.frames[0].payload.frameType).toBe("QuestionFrame");
-    expect(framedConcepts.frames[0].payload.roles.map((role) => role.roleName)).toEqual(["query", "topic"]);
+    expect((framedConcepts.frames[0].payload as { frameType: string }).frameType).toBe("QuestionFrame");
+    expect(((framedConcepts.frames[0].payload as { roles: Array<{ roleName: string }> }).roles).map((role) => role.roleName)).toEqual(["query", "topic"]);
 
     const episteme = runEpistemeLayer(ctx);
     expect(ctx.L4).toBe(episteme);
     expect(episteme.episteme?.kind).toBe("rosetta.episteme");
-    expect(episteme.episteme?.payload.mode).toBe("INFERENTIAL");
-    expect(episteme.episteme?.payload.supportingEvidenceCids).toEqual([
+    expect((episteme.episteme?.payload as { mode: string }).mode).toBe("INFERENTIAL");
+    expect((episteme.episteme?.payload as { supportingEvidenceCids: string[] }).supportingEvidenceCids).toEqual([
       ...framedConcepts.concepts.map((concept) => concept.cid),
       ...framedConcepts.frames.map((frame) => frame.cid),
       ...framedConcepts.latticeEdges.map((edge) => edge.cid),
     ]);
     expect(episteme.matrix?.kind).toBe("rosetta.matrix");
-    expect(episteme.matrix?.payload.subjectCid).toBe(observation.cid);
+    expect((episteme.matrix?.payload as { subjectCid: string }).subjectCid).toBe(observation.cid);
   });
 
   it("rejects layers when their required prior context is missing", () => {
@@ -112,12 +112,12 @@ describe("rosetta-pipeline", () => {
     const observation = createObservation("user", "What is the capital of France?");
     const result = runPipeline(observation);
     const frames = result.layers.L3?.frames ?? [];
-    const capitalFrame = frames.find((frame) => frame.kind === "rosetta.frame" && frame.payload.frameType === "CapitalRelationFrame");
+    const capitalFrame = frames.find((frame) => frame.kind === "rosetta.frame" && (frame.payload as { frameType: string }).frameType === "CapitalRelationFrame");
 
     expect(capitalFrame).toBeDefined();
     expect(result.errors).toHaveLength(0);
 
-    const roles = capitalFrame?.payload.roles ?? [];
+    const roles = (capitalFrame?.payload as { roles: Array<{ roleName: string; filledBy?: unknown[]; variable?: boolean }> }).roles ?? [];
     const countryRole = roles.find((role) => role.roleName === "country");
     const capitalRole = roles.find((role) => role.roleName === "capital");
 
@@ -153,12 +153,12 @@ describe("rosetta-pipeline", () => {
     const observation = createObservation("user", "How does light work?");
     const result = runPipeline(observation);
     const frames = result.layers.L3?.frames ?? [];
-    const questionFrame = frames.find((frame) => frame.kind === "rosetta.frame" && frame.payload.frameType === "QuestionFrame");
+    const questionFrame = frames.find((frame) => frame.kind === "rosetta.frame" && (frame.payload as { frameType: string }).frameType === "QuestionFrame");
 
     expect(questionFrame).toBeDefined();
-    expect(frames.some((frame) => frame.payload.frameType === "CapitalRelationFrame")).toBe(false);
+    expect(frames.some((frame) => (frame.payload as { frameType: string }).frameType === "CapitalRelationFrame")).toBe(false);
 
-    const roles = questionFrame?.payload.roles ?? [];
+    const roles = (questionFrame?.payload as { roles: Array<{ roleName: string; variable?: boolean }> }).roles ?? [];
     expect(roles.map((role) => role.roleName)).toEqual(["query", "topic"]);
     expect(roles.every((role) => role.variable)).toBe(true);
     expect(result.layers.L3?.conjectures.length).toBeGreaterThan(0);
@@ -171,8 +171,8 @@ describe("rosetta-pipeline", () => {
     });
 
     expect(observation.kind).toBe("rosetta.observation");
-    expect(observation.payload.source).toBe("knowledge.graph.lookup");
-    expect(observation.payload.signal).toContain("France");
+    expect((observation.payload as { source: string }).source).toBe("knowledge.graph.lookup");
+    expect((observation.payload as { signal: string }).signal).toContain("France");
   });
 
   it("maps supported frame types into skill invocations", () => {
@@ -205,15 +205,15 @@ describe("rosetta-pipeline", () => {
       ignored: "value",
       summary: "preferred summary",
     });
-    expect(preferredSummary.payload.signal).toBe("lookup: preferred summary");
+    expect((preferredSummary.payload as { signal: string }).signal).toBe("lookup: preferred summary");
 
     const stableObject = observationFromToolResult("lookup", {
       z: 1,
       a: "first",
     });
-    expect(stableObject.payload.signal).toBe('lookup: {"a":"first","z":1}');
+    expect((stableObject.payload as { signal: string }).signal).toBe('lookup: {"a":"first","z":1}');
 
     const longObservation = observationFromToolResult("lookup", "x".repeat(1300));
-    expect(longObservation.payload.signal).toHaveLength(1200);
+    expect((longObservation.payload as { signal: string }).signal).toHaveLength(1200);
   });
 });
