@@ -1,3 +1,6 @@
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
+
 import type { TileEnvelope } from '@entif-ai/rosetta-core';
 import type { CanonicalArtifact } from '@entif-ai/ingress-refinery';
 import type { CorrectionEvent } from '@entif-ai/source-substrate';
@@ -9,13 +12,42 @@ export interface DedupeProposal {
   reason: string;
 }
 
+export interface CanonicalCacheOptions {
+  persistencePath?: string;
+}
+
+export interface RevisionGraphNode {
+  artifactCid: string;
+  parentArtifactCid?: string;
+  revisionFingerprint: string;
+}
+
+interface PersistedCanonicalCacheState {
+  artifacts: [string, TileEnvelope<CanonicalArtifact>][];
+  byteIndex: [string, string[]][];
+  canonicalArtifactCids: string[];
+  conceptualIndex: [string, string[]][];
+  contentIndex: [string, string][];
+  lifecycleEvents: [string, CorrectionEvent[]][];
+  manifestationIndex: [string, string[]][];
+  rawEvidenceByCanonicalCid: [string, string[]][];
+  recordFamilyIndex: [string, string[]][];
+  revisionChains: [string, RevisionGraphNode[]][];
+}
+
 export class CanonicalCorpusCache {
   private readonly artifacts = new Map<string, TileEnvelope<CanonicalArtifact>>();
   private readonly byteIndex = new Map<string, string[]>();
+  private readonly canonicalArtifactCids: string[] = [];
   private readonly conceptualIndex = new Map<string, string[]>();
+  private readonly contentIndex = new Map<string, string>();
   private readonly manifestationIndex = new Map<string, string[]>();
+  private readonly rawEvidenceByCanonicalCid = new Map<string, string[]>();
   private readonly recordFamilyIndex = new Map<string, string[]>();
+  private readonly revisionChains = new Map<string, RevisionGraphNode[]>();
   private readonly lifecycleEvents = new Map<string, CorrectionEvent[]>();
+
+  constructor(private readonly options: CanonicalCacheOptions = {}) {}
 
   private static addToIndex(index: Map<string, string[]>, key: string, artifactCid: string): string[] {
     const next = [...(index.get(key) ?? [])];
@@ -26,6 +58,57 @@ export class CanonicalCorpusCache {
     return next;
   }
 
+  private static fromState(state: PersistedCanonicalCacheState, options: CanonicalCacheOptions): CanonicalCorpusCache {
+    const cache = new CanonicalCorpusCache(options);
+
+    for (const [key, value] of state.artifacts) cache.artifacts.set(key, value);
+    for (const [key, value] of state.byteIndex) cache.byteIndex.set(key, value);
+    cache.canonicalArtifactCids.push(...state.canonicalArtifactCids);
+    for (const [key, value] of state.conceptualIndex) cache.conceptualIndex.set(key, value);
+    for (const [key, value] of state.contentIndex) cache.contentIndex.set(key, value);
+    for (const [key, value] of state.lifecycleEvents) cache.lifecycleEvents.set(key, value);
+    for (const [key, value] of state.manifestationIndex) cache.manifestationIndex.set(key, value);
+    for (const [key, value] of state.rawEvidenceByCanonicalCid) cache.rawEvidenceByCanonicalCid.set(key, value);
+    for (const [key, value] of state.recordFamilyIndex) cache.recordFamilyIndex.set(key, value);
+    for (const [key, value] of state.revisionChains) cache.revisionChains.set(key, value);
+
+    return cache;
+  }
+
+  static load(options: CanonicalCacheOptions): CanonicalCorpusCache {
+    if (!options.persistencePath || !existsSync(options.persistencePath)) {
+      return new CanonicalCorpusCache(options);
+    }
+
+    return CanonicalCorpusCache.fromState(
+      JSON.parse(readFileSync(options.persistencePath, 'utf8')) as PersistedCanonicalCacheState,
+      options
+    );
+  }
+
+  private addRawEvidence(canonicalArtifactCid: string, evidenceArtifactCid: string): void {
+    const next = [...(this.rawEvidenceByCanonicalCid.get(canonicalArtifactCid) ?? [])];
+    if (!next.includes(evidenceArtifactCid)) {
+      next.push(evidenceArtifactCid);
+      this.rawEvidenceByCanonicalCid.set(canonicalArtifactCid, next);
+    }
+  }
+
+  private addCanonicalArtifact(artifact: TileEnvelope<CanonicalArtifact>): void {
+    this.contentIndex.set(artifact.payload.contentFingerprint, artifact.cid);
+    this.canonicalArtifactCids.push(artifact.cid);
+    this.addRawEvidence(artifact.cid, artifact.cid);
+
+    const recordFamilyKey = artifact.payload.dedupe.recordFamilyKey;
+    const chain = [...(this.revisionChains.get(recordFamilyKey) ?? [])];
+    chain.push({
+      artifactCid: artifact.cid,
+      parentArtifactCid: chain.at(-1)?.artifactCid,
+      revisionFingerprint: artifact.payload.revisionFingerprint
+    });
+    this.revisionChains.set(recordFamilyKey, chain);
+  }
+
   ingest(artifact: TileEnvelope<CanonicalArtifact>): DedupeProposal[] {
     this.artifacts.set(artifact.cid, artifact);
     const dedupe = artifact.payload.dedupe;
@@ -34,6 +117,12 @@ export class CanonicalCorpusCache {
     const manifestationMembers = CanonicalCorpusCache.addToIndex(this.manifestationIndex, dedupe.manifestationKey, artifact.cid);
     const recordFamilyMembers = CanonicalCorpusCache.addToIndex(this.recordFamilyIndex, dedupe.recordFamilyKey, artifact.cid);
     const conceptualMembers = CanonicalCorpusCache.addToIndex(this.conceptualIndex, dedupe.conceptualClusterKey, artifact.cid);
+    const canonicalArtifactCid = this.contentIndex.get(artifact.payload.contentFingerprint);
+    if (canonicalArtifactCid) {
+      this.addRawEvidence(canonicalArtifactCid, artifact.cid);
+    } else {
+      this.addCanonicalArtifact(artifact);
+    }
 
     return [
       {
@@ -70,5 +159,43 @@ export class CanonicalCorpusCache {
 
   getLifecycleEvents(subjectCid: string): CorrectionEvent[] {
     return [...(this.lifecycleEvents.get(subjectCid) ?? [])];
+  }
+
+  getCanonicalArtifactCids(): string[] {
+    return [...this.canonicalArtifactCids];
+  }
+
+  getCanonicalCidForContentFingerprint(contentFingerprint: string): string | undefined {
+    return this.contentIndex.get(contentFingerprint);
+  }
+
+  getRawEvidenceCids(canonicalArtifactCid: string): string[] {
+    return [...(this.rawEvidenceByCanonicalCid.get(canonicalArtifactCid) ?? [])];
+  }
+
+  getRevisionChain(recordFamilyKey: string): RevisionGraphNode[] {
+    return (this.revisionChains.get(recordFamilyKey) ?? []).map((node) => ({ ...node }));
+  }
+
+  save(): void {
+    if (!this.options.persistencePath) {
+      throw new Error('Canonical cache persistence requires a persistencePath.');
+    }
+
+    const state: PersistedCanonicalCacheState = {
+      artifacts: [...this.artifacts.entries()],
+      byteIndex: [...this.byteIndex.entries()],
+      canonicalArtifactCids: [...this.canonicalArtifactCids],
+      conceptualIndex: [...this.conceptualIndex.entries()],
+      contentIndex: [...this.contentIndex.entries()],
+      lifecycleEvents: [...this.lifecycleEvents.entries()],
+      manifestationIndex: [...this.manifestationIndex.entries()],
+      rawEvidenceByCanonicalCid: [...this.rawEvidenceByCanonicalCid.entries()],
+      recordFamilyIndex: [...this.recordFamilyIndex.entries()],
+      revisionChains: [...this.revisionChains.entries()]
+    };
+
+    mkdirSync(dirname(this.options.persistencePath), { recursive: true });
+    writeFileSync(this.options.persistencePath, `${JSON.stringify(state, null, 2)}\n`);
   }
 }
