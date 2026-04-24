@@ -81,27 +81,20 @@ Merged:
 
 - PR #1: `docs(intake): add documentation ledger and issue draft workflow`
 - PR #5: `docs(backlog): define Text-Core MVP scope gate`
+- PR #13: `feat(text-core): add source episode envelope`
 
 Open at time of update:
 
-- PR #13: `feat(text-core): add source episode envelope`
-- Issue #6: `TC-001 Source episode envelope and family classification`
+- PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #14: `Archive published docs intake issue drafts`
+- Issues #7-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
 - Issue #4: `Define Text-Core MVP scope gate from governing docs`
-
-Published Text-Core follow-up issues:
-
-- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
-- Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
-- Issue #9: `TC-004 Source to observation tiling and transform receipts`
-- Issue #10: `TC-005 Promotion state machine and structured extracts`
-- Issue #11: `TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline`
-- Issue #12: `TC-007 Chat + arXiv importers and English accompaniment`
+- Issue #6: `TC-001 Source episode envelope and family classification`
 
 ## Current Work Product
 
@@ -120,23 +113,27 @@ Changed behavior:
 
 ## Validation State
 
-Completed on this branch:
+Completed before merging latest `origin/main` into this branch:
 
 - `pnpm run docs:intake` passed
 - `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
 - `pnpm run test` passed: 18 files, 58 tests
 - `pnpm run lint` passed
 - `pnpm run typecheck` passed
-- final post-handoff `pnpm run docs:intake` passed
 - `git diff --check` passed
 
-Previous validation for PR #13:
+Validation after merging latest `origin/main`:
 
-- `pnpm run test` passed: 18 files, 60 tests
-- `pnpm run lint` passed
-- `pnpm run typecheck` passed
+- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed: 1 file, 6 tests
 - `pnpm run docs:intake` passed
 - `git diff --check` passed
+- `pnpm run lint` passed
+- `pnpm run typecheck` passed
+- `pnpm run build` passed
+- exploratory `pnpm exec nx affected -t test,typecheck,build --base=origin/main --outputStyle=static --parallel=3` failed due pre-existing Nx target configuration issues:
+  - root project `@entif-ai/source:typecheck` invokes broad `tsc --build --emitDeclarationOnly` and trips existing `tsconfig.spec.json` file-list/rootDir errors
+  - parallel app builds can hit `ENOTEMPTY` in `apps/rosetta-cli/dist`
+  - follow-up Nx affected/cache cleanup should be handled separately
 
 Known non-failing warnings:
 
@@ -145,27 +142,21 @@ Known non-failing warnings:
 
 ## Next Actions
 
-For `codex/archive-promoted-issue-drafts`:
+For PR #15:
 
-1. Run the focused doc-intake spec.
-2. Run full test/lint checks appropriate for the branch.
-3. Run `pnpm run docs:intake` again after handoff changes.
-4. Run `git diff --check`.
-5. Create a GitHub issue for this cleanup branch.
-6. Commit with a Conventional Commit.
-7. Push and open a PR.
+1. Push the merge-resolution commit.
+2. Mark PR #15 ready for review.
+3. Merge when GitHub reports it mergeable.
 
-For Text-Core after this cleanup branch:
+For Text-Core:
 
-1. Continue review/merge of PR #13.
-2. After PR #13 merges, sync `main`.
-3. Update the handoff and issue ledger for completed TC-001 state.
-4. Start TC-002 on a new `codex/` feature branch.
+1. Start TC-002 on a new `codex/` feature branch after PR #15 is merged.
+2. Keep issue #7 as the likely next implementation driver.
 
 ## Current Technical Posture
 
 - Bootstrap provenance kernel is implemented and tested.
 - Source-aware refinery is fixture-backed, not live upstream acquisition.
 - `docs:intake` indexes docs and issue drafts but does not semantically ingest the corpus.
-- Text-Core source episode envelope work is in PR #13.
+- Text-Core TC-001 source episode envelope is merged.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.

@@ -49,5 +49,49 @@
       "archivedDraftPath": null,
       "draftStatus": "candidate"
     }
+  },
+  "implementationIssues": {
+    "TC-001": {
+      "number": 6,
+      "state": "closed",
+      "title": "TC-001 Source episode envelope and family classification",
+      "url": "https://github.com/entif-ai/rosetta/issues/6"
+    },
+    "TC-002": {
+      "number": 7,
+      "state": "open",
+      "title": "TC-002 Chronology-aware normalization and fingerprints",
+      "url": "https://github.com/entif-ai/rosetta/issues/7"
+    },
+    "TC-003": {
+      "number": 8,
+      "state": "open",
+      "title": "TC-003 Dedupe, revision graph, and cache persistence",
+      "url": "https://github.com/entif-ai/rosetta/issues/8"
+    },
+    "TC-004": {
+      "number": 9,
+      "state": "open",
+      "title": "TC-004 Source to observation tiling and transform receipts",
+      "url": "https://github.com/entif-ai/rosetta/issues/9"
+    },
+    "TC-005": {
+      "number": 10,
+      "state": "open",
+      "title": "TC-005 Promotion state machine and structured extracts",
+      "url": "https://github.com/entif-ai/rosetta/issues/10"
+    },
+    "TC-006": {
+      "number": 11,
+      "state": "open",
+      "title": "TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline",
+      "url": "https://github.com/entif-ai/rosetta/issues/11"
+    },
+    "TC-007": {
+      "number": 12,
+      "state": "open",
+      "title": "TC-007 Chat + arXiv importers and English accompaniment",
+      "url": "https://github.com/entif-ai/rosetta/issues/12"
+    }
   }
 }

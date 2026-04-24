@@ -46,6 +46,53 @@ export interface SourcePackage {
   profileRefs: string[];
 }
 
+export type SourceFamily =
+  | 'arxiv-paper'
+  | 'chat-transcript'
+  | 'github-text'
+  | 'journal-log'
+  | 'questionnaire'
+  | 'social-thread'
+  | 'unresolved'
+  | 'youtube-transcript';
+
+export interface SourceChronologyInstant {
+  date: string;
+  kind: string;
+  localDateTime?: string;
+  source: string;
+}
+
+export interface SourceChronology {
+  canonical?: Record<string, SourceChronologyInstant>;
+  fallback?: Record<string, unknown>;
+  intake?: Record<string, string>;
+  primary: SourceChronologyInstant;
+}
+
+export interface RawEvidenceRef {
+  evidenceId: string;
+  evidenceKind: 'local-file' | 'remote-fetch' | 'inline-text' | 'generated-fixture';
+  locator: string;
+  sha256?: string;
+}
+
+export interface SourceEpisode {
+  episodeId: string;
+  family: SourceFamily;
+  locator: string;
+  rawEvidenceRefs: RawEvidenceRef[];
+  rightsScope: string[];
+  chronology: SourceChronology;
+  mode: 'parse-only';
+  classification: {
+    confidence: number;
+    reasons: string[];
+  };
+  sourceManifestationCid?: string;
+  sourceRecordCid?: string;
+}
+
 export interface TrustMatrixAxes {
   artifactIntegrity: number;
   recordIdentity: number;
@@ -94,6 +141,10 @@ export function createSourceManifestationTile(
 
 export function createSourcePackageTile(sourcePackage: SourcePackage, parents: string[] = []): TileEnvelope<SourcePackage> {
   return buildTile('source.package', sourcePackage, { pack: 'source-substrate', parents });
+}
+
+export function createSourceEpisodeTile(episode: SourceEpisode, parents: string[] = []): TileEnvelope<SourceEpisode> {
+  return buildTile('source.episode', episode, { pack: 'source-substrate', parents });
 }
 
 export function createTrustMatrixTile(matrix: TrustMatrix, parents: string[] = []): TileEnvelope<TrustMatrix> {
