@@ -1,0 +1,53 @@
+{
+  "name": "doc-intake",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "root": "tools/doc-intake",
+  "projectType": "library",
+  "targets": {
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/doc-intake/build-doc-intake.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/README.md",
+        "{workspaceRoot}/docs/**/*.md",
+        "{workspaceRoot}/docs/intake/github-issue-ledger.json"
+      ],
+      "outputs": [
+        "{workspaceRoot}/docs/intake/doc-ledger.json",
+        "{workspaceRoot}/docs/intake/doc-ledger.md",
+        "{workspaceRoot}/docs/intake/github-issue-ledger.json",
+        "{workspaceRoot}/docs/intake/issue-drafts/*.md",
+        "{workspaceRoot}/docs/intake/issue-drafts/archive/*.md"
+      ]
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "vitest run tools/doc-intake/build-doc-intake.spec.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/vitest.config.ts",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    }
+  },
+  "tags": [
+    "tooling",
+    "docs"
+  ]
+}

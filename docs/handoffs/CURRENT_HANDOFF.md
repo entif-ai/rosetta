@@ -4,7 +4,7 @@ Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
 Current branch at time of update: `codex/tc-002-normalization-fingerprints`
-Current PR at time of update: pending
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/18
 
 ## Purpose
 
@@ -85,12 +85,13 @@ Merged:
 
 Open at time of update:
 
-- PR #17: `chore(nx): use affected validation by default`
+- PR #18: `feat(text-core): add normalization fingerprints`
 - Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
 - Issues #8-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #17: `chore(nx): use affected validation by default`
 - PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
@@ -129,8 +130,8 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Push `codex/tc-002-normalization-fingerprints`.
-2. Open a draft PR against `main`.
+1. Push merge resolution to `codex/tc-002-normalization-fingerprints`.
+2. Keep PR #18 draft until GitHub reports it mergeable/green.
 3. Close issue #7 after merge.
 
 For Text-Core:

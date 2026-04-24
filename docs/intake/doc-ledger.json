@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T07:11:26.143Z",
+  "generatedAt": "2026-04-24T07:13:08.415Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.",
@@ -30,8 +30,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -81,8 +81,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-15",
@@ -151,8 +151,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -242,8 +242,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -309,8 +309,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -367,8 +367,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -417,8 +417,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -474,8 +474,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -558,8 +558,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-29",
@@ -643,8 +643,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-30",
@@ -728,8 +728,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-23",
@@ -806,8 +806,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-26",
@@ -891,8 +891,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-09",
@@ -976,8 +976,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-21",
@@ -1061,8 +1061,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-22",
@@ -1146,8 +1146,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-30",
@@ -1231,8 +1231,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-30",
@@ -1316,8 +1316,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-21",
@@ -1401,8 +1401,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1486,8 +1486,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1571,8 +1571,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-23",
@@ -1650,8 +1650,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-22",
@@ -1735,8 +1735,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-17",
@@ -1815,8 +1815,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-21",
@@ -1900,8 +1900,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-08",
@@ -1985,8 +1985,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-26",
@@ -2070,8 +2070,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-26",
@@ -2155,8 +2155,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2240,8 +2240,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2325,8 +2325,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2410,8 +2410,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2494,8 +2494,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-27",
@@ -2579,8 +2579,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2658,8 +2658,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-01",
@@ -2733,8 +2733,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2816,8 +2816,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-01",
@@ -2896,8 +2896,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -2976,8 +2976,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3058,8 +3058,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3137,8 +3137,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3218,8 +3218,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3293,8 +3293,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3373,8 +3373,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3448,8 +3448,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3528,8 +3528,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3610,8 +3610,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-19",
@@ -3690,8 +3690,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-22",
@@ -3764,8 +3764,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-02",
@@ -3849,8 +3849,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-21",
@@ -3921,8 +3921,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-19",
@@ -4000,8 +4000,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-21",
@@ -4074,8 +4074,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-20",
@@ -4159,8 +4159,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -4244,8 +4244,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -4307,8 +4307,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-26",
@@ -4391,8 +4391,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-01",
@@ -4476,8 +4476,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-08",
@@ -4561,8 +4561,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4641,8 +4641,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4696,8 +4696,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -4780,8 +4780,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -4862,8 +4862,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -4942,8 +4942,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-11",
@@ -5027,8 +5027,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -5114,8 +5114,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -5186,8 +5186,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -5258,8 +5258,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-23",
@@ -5316,8 +5316,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5373,8 +5373,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5426,8 +5426,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5474,8 +5474,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5516,8 +5516,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5569,8 +5569,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5609,8 +5609,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5666,8 +5666,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5719,8 +5719,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5761,8 +5761,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5818,8 +5818,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5875,8 +5875,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -5937,8 +5937,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-16",
@@ -5994,8 +5994,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6051,8 +6051,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6107,8 +6107,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-14",
@@ -6163,8 +6163,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-15",
@@ -6225,8 +6225,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-28",
@@ -6284,8 +6284,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-28",
@@ -6346,8 +6346,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-07-10",
@@ -6408,8 +6408,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-26",
@@ -6478,8 +6478,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -6551,8 +6551,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-10",
@@ -6622,8 +6622,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -6695,8 +6695,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -6753,8 +6753,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6798,8 +6798,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6843,8 +6843,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6890,8 +6890,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -6961,8 +6961,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-24",
@@ -7019,8 +7019,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7076,8 +7076,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7120,8 +7120,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7170,8 +7170,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-13",
@@ -7235,13 +7235,13 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T07:11:26.143Z",
+            "isoDateTime": "2026-04-24T07:13:08.415Z",
             "source": "filesystem-mtime"
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7250,13 +7250,13 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T07:11:26.143Z",
-      "bytes": 6770,
-      "contentFingerprint": "0c3e3b9942afc249571fb4ee6e24d333d4cbd72e97dc53b6d52c377023bddd81",
-      "words": 892,
-      "revisionFingerprint": "37177fc27bf2d58668be8c5294444ce3f6faf0271b0fe6b4376072813404a7e0",
+      "modifiedAt": "2026-04-24T07:13:08.415Z",
+      "bytes": 6913,
+      "contentFingerprint": "edfccb978a8e08ff39bf8bd6431d856a222e6d4802f8d4a4ce2e911c636d7477",
+      "words": 905,
+      "revisionFingerprint": "9bdd0b867e6425dc4d2296b494ae3fab55eaacf7d1362708608421d0f19d5829",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "ec4ed07f4f8ff09be3e19a97ecc13e4ec306c60da995ed2d1bb14385a9cb04d6",
+      "sha256": "69cf6dc3d27f2ae6d59d26f63b2b7725059ca85378b596b60a95a5c590abe2ec",
       "headings": [
         "Current Handoff",
         "Purpose",
@@ -7297,8 +7297,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-04",
@@ -7381,8 +7381,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-12-23",
@@ -7456,8 +7456,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-24",
@@ -7541,8 +7541,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-17",
@@ -7599,8 +7599,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7678,8 +7678,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-01",
@@ -7758,8 +7758,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-28",
@@ -7816,8 +7816,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -7872,8 +7872,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-11-06",
@@ -7951,8 +7951,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-05-15",
@@ -8009,8 +8009,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8057,8 +8057,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8097,8 +8097,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8154,8 +8154,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8208,8 +8208,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8253,8 +8253,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8300,8 +8300,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-24",
@@ -8355,8 +8355,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-25",
@@ -8417,8 +8417,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-23",
@@ -8479,8 +8479,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2025-10-24",
@@ -8539,8 +8539,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-02-28",
@@ -8601,8 +8601,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-03-24",
@@ -8663,8 +8663,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-12",
@@ -8720,8 +8720,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8777,8 +8777,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-04-24",
@@ -8842,8 +8842,8 @@
           }
         },
         "intake": {
-          "firstIndexedAt": "2026-04-24T06:36:35.286Z",
-          "observedAt": "2026-04-24T06:36:35.286Z"
+          "firstIndexedAt": "2026-04-24T07:13:19.543Z",
+          "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
           "date": "2026-01-08",
