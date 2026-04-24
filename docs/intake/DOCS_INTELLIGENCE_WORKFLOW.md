@@ -85,7 +85,7 @@ An agent assigned to docs intelligence should:
 
 1. Read `README.md`, `docs/handoffs/CURRENT_HANDOFF.md`, this file, and `docs/intake/docs-intelligence/PRIORITY_QUEUE.md`.
 2. Read `docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md`.
-3. Run `git status --short --branch`.
+3. Run the runbook's freshness protocol: fetch, check branch state, inspect open GitHub issues, and read relevant accepted drafts under `docs/intake/issue-drafts/archive/`.
 4. Inspect open GitHub issues and recent comments before taking a batch.
 5. Comment on the GitHub issue it is taking, including document paths and expected output files.
 6. Work on a focused `codex/` branch.

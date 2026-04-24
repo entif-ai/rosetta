@@ -39,6 +39,26 @@ Taking docs-intelligence batch:
 
 If another agent has already claimed the same source, choose another source or ask the orchestrator.
 
+## Freshness Protocol
+
+At the start of every session in a cloned workspace:
+
+1. Run `git fetch origin`.
+2. Run `git status --short --branch`.
+3. Sync the assigned base branch with `git pull --ff-only` if you are on that branch.
+4. Check open GitHub issues for newly promoted work:
+
+```bash
+gh issue list --repo entif-ai/rosetta --state open --limit 30
+```
+
+5. Read recent comments on the issue you are taking.
+6. Read accepted local issue drafts under `docs/intake/issue-drafts/archive/` that match your assignment or recently merged PRs.
+
+Accepted drafts are part of the latest known-good target of primacy. If a reviewed PR promoted or archived a draft, future agents should read the archived draft before refining related issues.
+
+Do not trust a stale clone, stale handoff, or stale local issue draft over current GitHub issue state plus archived accepted drafts.
+
 ## Batch Size
 
 Default to one source document per agent.
@@ -72,8 +92,10 @@ Read these first:
 
 - `README.md`
 - `docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md`
+- `docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md`
 - `docs/intake/docs-intelligence/PRIORITY_QUEUE.md`
 - `docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md`
+- relevant accepted drafts in `docs/intake/issue-drafts/archive/`
 
 Then read only the assigned source document(s).
 
