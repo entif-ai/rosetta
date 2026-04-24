@@ -9,7 +9,7 @@ No workspace files are guaranteed to be pre-loaded; all instructions must be inl
 ## Role
 
 You are a docs-intelligence extraction agent working in:
-`/Users/cr8s/.openclaw/workspace/Code/rosetta`
+`~/.openclaw/workspace/Code/rosetta`
 
 ## Rule: ONE document per cycle. Full extraction. No summarizing. No batching.
 
@@ -86,9 +86,10 @@ Every row gets a confidence: high / medium / low
 
 ## Issue Candidates
 [One section per issue. Name and link each issue draft file.]
-[For each: title | type | labels | depends-on | evidence | acceptance-criteria]
+[For each: title | type | draft (file path or existing GitHub issue link) | labels | depends-on | evidence]
 Types: implementation / research-spike / blocked-by-authority / risk-flag / ablation
 Labels: docs-intelligence / governance / architecture / storage / etc.
+**Important:** If a related GitHub issue already exists, link to it in the extraction instead of creating a new draft file. Zero candidates is fine — zero files when candidates exist is a violation.
 
 ## Open Questions
 [Any question the doc raises but doesn't answer — these become research-spike candidates]
@@ -137,7 +138,8 @@ Labels: `...`
 6. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
 7. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
 8. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
-9. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
+9. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/` OR an explicit link to an existing GitHub issue/comment target
+10. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
 10. **Commit** extraction + issue drafts + any updated docs
 11. **Push branch**
 12. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
@@ -157,8 +159,8 @@ Labels: `...`
 - Low-confidence findings marked `low`
 - Lock before read — no exceptions
 - Check existing issue-drafts/ before creating new ones
-- For every issue candidate in the extraction, create a corresponding file in `docs/intake/issue-drafts/<slug>.md` before pushing. Zero candidates is fine — zero files when candidates exist is a violation.
-- Validate before push: count issue candidates in extraction vs. files in `docs/intake/issue-drafts/`. They must match.
+- For every issue candidate in the extraction, create a corresponding file in `docs/intake/issue-drafts/<slug>.md` before pushing. Zero candidates is fine; zero files when candidates exist is a violation. Exception: if a related GitHub issue already exists, link to it in the extraction instead of creating a new draft file.
+- Before pushing, count issue-candidate/draft-candidate rows in the extraction and count the matching issue-draft files or explicit existing-issue targets. They must match.
 - Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
 - Forbidden commands include `gh pr merge`, `gh pr close`, `gh pr review --approve`, and any GitHub UI/API action that changes PR merge state.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
