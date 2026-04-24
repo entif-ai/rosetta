@@ -9,6 +9,33 @@ Docs intelligence turns the repository's planning, PRD, RFC, governance, chat, i
 
 This workflow is not runtime ingestion. Do not block it on Ingress Refinery, canonical cache, Rosetta-native tiles, pasigraphy translation, or tapestry generation. Those systems may eventually process arbitrary documents as product behavior, but the repository's own source documents must be mined now as project intelligence.
 
+## Hard Boundary
+
+Docs intelligence is an agent operations loop over the repo's `docs/` folder. It is not Rosetta Protocol product behavior.
+
+Current docs-intelligence outputs are plain Markdown, issue drafts, GitHub issue comments, labels, source citations, and orchestration notes. They are not Rosetta tiles, tapestries, protocol-native observations, semantic corpus entries, or claims that Rosetta has ingested the documents.
+
+Use product terms such as source episodes, observations, tapestries, rights-scoped retrieval, Postgres/pgvector, and English accompaniment only when describing future Rosetta/Entif implementation work extracted from the documents. Do not use those terms to describe the current docs-mining loop.
+
+## Cheap-Agent Extraction Loop
+
+This workflow should be decomposable for low-cost round-the-clock agents such as MiniMax, Qwen, or similar models.
+
+Assign those agents small batches, preferably one document or one tightly related document pair at a time. Each batch should produce findings that include:
+
+- extraction timestamp
+- source path
+- title or nearest heading
+- date evidence from top matter, filename, or ledger
+- classification tags
+- subjects and components mentioned
+- salient requirement, decision, risk, contradiction, or outdated claim
+- citation to the source path and heading or short excerpt
+- issue-draft candidate, refinement, or ablation recommendation
+- confidence and uncertainty notes
+
+Cheap-agent outputs are raw planning intelligence. They should be handed back to a stronger orchestrator for deduplication, conflict resolution, issue shaping, sequencing, and final build decisions.
+
 ## Boundary
 
 Use docs intelligence for:
@@ -48,6 +75,7 @@ Use `docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md` for each document or 
 Every extraction should capture:
 
 - source identity: path, title, date evidence, authority tier, and freshness
+- extraction timestamp
 - short source summary
 - goals and intent
 - requirements and acceptance candidates
@@ -55,6 +83,7 @@ Every extraction should capture:
 - conceptual claims and product value
 - dependencies and sequencing constraints
 - contradictions, tensions, or supersession notes
+- finding-level classification tags, subjects, citations, confidence, and action recommendations
 - issue candidates with labels, likely owners/packages, dependencies, and priority rationale
 - project-board fields such as area, cycle, status, blocked-by, and parallelization notes
 
