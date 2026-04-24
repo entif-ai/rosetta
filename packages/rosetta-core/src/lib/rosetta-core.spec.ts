@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildTile,
   createObservation,
+  createSourceObservation,
   createRun,
   createConcept,
   createConjecture,
@@ -33,6 +34,28 @@ describe('rosetta-core', () => {
   it('creates source observations', () => {
     const observation = createObservation('datacite', 'metadata fetched');
     expect(observation.kind).toBe('rosetta.observation');
+  });
+
+  it('creates source-span observations with source parents', () => {
+    const observation = createSourceObservation('ingress-refinery', 'span text', [
+      {
+        endOffset: 9,
+        sourceManifestationCid: 'cid.manifestation',
+        sourceRecordCid: 'cid.record',
+        startOffset: 0,
+        textHash: 'hash.raw'
+      }
+    ]);
+
+    expect(observation.kind).toBe('rosetta.observation');
+    expect(observation.parents).toContain('cid.record');
+    expect(observation.parents).toContain('cid.manifestation');
+    expect(observation.payload.sourceSpans?.[0]).toMatchObject({
+      endOffset: 9,
+      sourceManifestationCid: 'cid.manifestation',
+      sourceRecordCid: 'cid.record',
+      startOffset: 0
+    });
   });
 });
 

@@ -1,6 +1,17 @@
 import { buildTextFingerprints, normalizePlainText } from '@entif-ai/rosetta-canon';
 import { sha256Hex } from '@entif-ai/rosetta-cid';
-import { buildTile, createAction, createEvaluation, createObservation, createRun, createToolCall, type TileEnvelope } from '@entif-ai/rosetta-core';
+import {
+  buildTile,
+  createAction,
+  createEvaluation,
+  createObservation,
+  createRun,
+  createSourceObservation,
+  createToolCall,
+  type ObservationPayload,
+  type SourceSpanRef,
+  type TileEnvelope
+} from '@entif-ai/rosetta-core';
 import { buildReceiptBundle, createReceipt, createSigningKeyPair, digestTile, signReceiptEd25519, type ReceiptPayload } from '@entif-ai/rosetta-receipts';
 import { emitConformanceBundle } from '@entif-ai/rosetta-schemas';
 import { compileReceiptBundleTapestry } from '@entif-ai/rosetta-tapestry';
@@ -87,6 +98,14 @@ export interface CanonicalArtifact {
   revisionParentCid?: string;
 }
 
+export interface DerivedTextArtifact {
+  artifactId: string;
+  derivationKind: 'extract' | 'summary';
+  payloadText: string;
+  sourceObservationCid: string;
+  sourceSpans: SourceSpanRef[];
+}
+
 export interface BootstrapDemoSnapshot {
   action: TileEnvelope;
   canonicalArtifact: TileEnvelope<CanonicalArtifact>;
@@ -106,6 +125,18 @@ export interface BootstrapDemoSnapshot {
   sourceSystem: TileEnvelope;
   tapestry: TileEnvelope;
   toolCall: TileEnvelope;
+  trustMatrix: TileEnvelope<TrustMatrix>;
+}
+
+export interface SourceObservationArtifacts {
+  canonicalArtifact: TileEnvelope<CanonicalArtifact>;
+  derivedArtifacts: Array<TileEnvelope<DerivedTextArtifact>>;
+  evaluationReceipt: TileEnvelope<EvaluationReceiptPayload>;
+  fetchReceipt: TileEnvelope<FetchReceiptPayload>;
+  normalizationReceipt: TileEnvelope<NormalizationReceiptPayload>;
+  observation: TileEnvelope<ObservationPayload>;
+  transformReceipt: TileEnvelope<ReceiptPayload>;
+  transformReceiptBundle: ReturnType<typeof buildReceiptBundle>;
   trustMatrix: TileEnvelope<TrustMatrix>;
 }
 
@@ -315,6 +346,77 @@ export function refineTextArtifact(
     fetchReceipt,
     normalizationReceipt,
     trustMatrix
+  };
+}
+
+function firstSentence(value: string): string {
+  const match = value.trim().match(/^.*?[.!?](?:\s|$)/u);
+  return (match?.[0] ?? value).trim();
+}
+
+export function refineTextToObservationArtifacts(
+  record: TileEnvelope<SourceRecord>,
+  manifestation: TileEnvelope<SourceManifestation>,
+  rawText: string,
+  policyRefs: string[] = ['policy.parse-only.default']
+): SourceObservationArtifacts {
+  const refined = refineTextArtifact(record, manifestation, rawText, policyRefs);
+  const sourceSpan: SourceSpanRef = {
+    endOffset: rawText.length,
+    sourceManifestationCid: manifestation.cid,
+    sourceRecordCid: record.cid,
+    startOffset: 0,
+    textHash: refined.canonicalArtifact.payload.byteHash
+  };
+  const observation = createSourceObservation('ingress-refinery', refined.canonicalArtifact.payload.normalizedText, [sourceSpan], [
+    refined.canonicalArtifact.cid
+  ]);
+  const derivedArtifacts: Array<TileEnvelope<DerivedTextArtifact>> = [
+    buildTile(
+      'source.derived_artifact',
+      {
+        artifactId: `derived.summary.${observation.cid.slice(-12)}`,
+        derivationKind: 'summary',
+        payloadText: firstSentence(refined.canonicalArtifact.payload.normalizedText),
+        sourceObservationCid: observation.cid,
+        sourceSpans: [sourceSpan]
+      },
+      { pack: 'ingress-refinery', parents: [observation.cid] }
+    ),
+    buildTile(
+      'source.derived_artifact',
+      {
+        artifactId: `derived.extract.${observation.cid.slice(-12)}`,
+        derivationKind: 'extract',
+        payloadText: refined.canonicalArtifact.payload.normalizedText,
+        sourceObservationCid: observation.cid,
+        sourceSpans: [sourceSpan]
+      },
+      { pack: 'ingress-refinery', parents: [observation.cid] }
+    )
+  ];
+  const transformReceipt = createReceipt({
+    claims: [
+      {
+        claimType: 'rrp:claim.transformed',
+        confidence: 1,
+        evidence: [{ cid: manifestation.cid, span: `bytes:${sourceSpan.startOffset}-${sourceSpan.endOffset}` }, { cid: refined.canonicalArtifact.cid }],
+        statement: 'Source manifestation span transformed into a Rosetta observation tile.',
+        verdict: 'pass'
+      }
+    ],
+    digests: [digestTile(observation, 'observation.canonical')],
+    policyRefs: [],
+    receiptType: 'rrp:transform.source-observation',
+    subjects: [{ cid: observation.cid, role: 'rrp:subject.observation' }]
+  });
+
+  return {
+    ...refined,
+    derivedArtifacts,
+    observation,
+    transformReceipt,
+    transformReceiptBundle: buildReceiptBundle(transformReceipt)
   };
 }
 
