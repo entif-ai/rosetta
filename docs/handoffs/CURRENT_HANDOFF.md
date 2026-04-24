@@ -32,6 +32,12 @@ Update this file whenever a branch reaches a stable state, especially before pus
 - Use feature branches with the `codex/` prefix.
 - Keep each branch scoped to one stable slice.
 - Commit only after a stable state is reached.
+- Use red/green TDD for all code changes:
+  - write or update failing tests first
+  - run the focused test to confirm the red state
+  - implement the smallest change that makes the test pass
+  - keep the test in the normal validation path
+- Do not add or refine functionality without tests covering the behavior and important failure/resilience cases.
 - Every stable branch should update this handoff before final push.
 - Every PR should identify:
   - source issue
@@ -126,6 +132,12 @@ Latest validation on `codex/text-core-mvp-scope-gate`:
 
 - `pnpm run docs:intake` passed
 - `git diff --check` passed
+
+Additional test coverage added on this branch:
+
+- `tools/doc-intake/build-doc-intake.spec.mjs`
+- covers chat top-matter chronology parsing, primary date precedence, fallback evidence retention, stable intake timestamps, and filesystem-only undated import classification
+- `vitest.config.ts` now includes `tools/**/*.spec.mjs`
 
 ## Next Actions
 

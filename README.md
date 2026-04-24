@@ -59,6 +59,8 @@ Every stable branch should update `docs/handoffs/CURRENT_HANDOFF.md` before its 
 - Work on focused `codex/` feature branches.
 - Treat each stable branch as a handoff boundary.
 - Commit only coherent, validated slices.
+- Use red/green TDD for code changes: add or update failing tests first, implement the smallest change that makes them pass, and keep those tests in the normal validation path.
+- Do not add or refine functionality without tests covering the behavior and important failure/resilience cases.
 - Keep `docs/handoffs/CURRENT_HANDOFF.md` current enough that a new account or machine can resume without rereading the whole docs corpus.
 - Record published GitHub issue URLs and state changes in `docs/intake/github-issue-ledger.json`.
 - Use local issue drafts under `docs/intake/issue-drafts/` as the review gate before creating remote GitHub issues.
