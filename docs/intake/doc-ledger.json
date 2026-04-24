@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T07:13:08.415Z",
+  "generatedAt": "2026-04-24T12:45:35.318Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale semantic corpus ingest.",
@@ -7235,7 +7235,7 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T07:13:08.415Z",
+            "isoDateTime": "2026-04-24T12:45:35.318Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7250,13 +7250,13 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T07:13:08.415Z",
-      "bytes": 6913,
-      "contentFingerprint": "edfccb978a8e08ff39bf8bd6431d856a222e6d4802f8d4a4ce2e911c636d7477",
-      "words": 905,
-      "revisionFingerprint": "9bdd0b867e6425dc4d2296b494ae3fab55eaacf7d1362708608421d0f19d5829",
+      "modifiedAt": "2026-04-24T12:45:35.318Z",
+      "bytes": 6918,
+      "contentFingerprint": "e871a06a7a05ee7bd76b6e978284eff2bb66515e97a9789a4e45aa6dceada164",
+      "words": 957,
+      "revisionFingerprint": "3e0cfb1f666c4055db5e7e3f415753c1d97539d75e61abd84771f77dbb24d48c",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "69cf6dc3d27f2ae6d59d26f63b2b7725059ca85378b596b60a95a5c590abe2ec",
+      "sha256": "9d600a4f8373f18fed39f623bbe6bb8ccbf0fcf9f17e36c6450a74dac7d856d2",
       "headings": [
         "Current Handoff",
         "Purpose",

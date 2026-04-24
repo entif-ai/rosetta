@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-24
 Last updated: 2026-04-24
-Current branch at time of update: `codex/tc-002-normalization-fingerprints`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/18
+Current branch at time of update: `codex/tc-003-cache-persistence`
+Current PR at time of update: https://github.com/entif-ai/rosetta/pull/19
 
 ## Purpose
 
@@ -85,12 +85,14 @@ Merged:
 
 Open at time of update:
 
-- PR #18: `feat(text-core): add normalization fingerprints`
-- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
-- Issues #8-#12: follow-up Text-Core implementation issues
+- PR #19: `feat(canonical-cache): add revision persistence`
+- Issue #8: `TC-003 Dedupe, revision graph, and cache persistence`
+- Issues #9-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #18: `feat(text-core): add normalization fingerprints`
+- Issue #7: `TC-002 Chronology-aware normalization and fingerprints`
 - PR #17: `chore(nx): use affected validation by default`
 - PR #15: `fix(doc-intake): archive published issue drafts`
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
@@ -101,23 +103,24 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/tc-002-normalization-fingerprints`
-Source issue: https://github.com/entif-ai/rosetta/issues/7
+Current branch: `codex/tc-003-cache-persistence`
+Source issue: https://github.com/entif-ai/rosetta/issues/8
 
-This branch implements TC-002 chronology-aware normalization and fingerprints.
+This branch implements TC-003 dedupe, revision graph, and local cache persistence.
 
 Changed behavior:
 
-- `rosetta-canon` exposes `buildTextFingerprints` for normalized text, content fingerprint, revision fingerprint, and normalization profile.
-- Plain text normalization trims line-edge whitespace as well as collapsing internal spaces and excessive blank lines.
-- `ingress-refinery` stores content and revision fingerprints on canonical artifacts and normalization receipts.
-- `docs:intake` records content and revision fingerprints for each indexed document while preserving created/updated/exported/path/mtime chronology evidence.
+- `canonical-cache` dedupes repeated normalized content by content fingerprint while retaining every raw evidence artifact CID.
+- Materially changed content in the same record family is linked into a revision chain instead of being treated as an unrelated duplicate.
+- Cache state can be saved to and reloaded from a local JSON persistence path for bootstrap development.
 
 ## Validation State
 
-- `pnpm exec vitest run packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.spec.mjs` passed: 3 files, 19 tests.
-- `pnpm exec nx run-many -t build -p rosetta-canon ingress-refinery --skip-nx-cache --outputStyle=static` passed.
-- `pnpm exec eslint packages/rosetta-canon/src/lib/rosetta-canon.ts packages/rosetta-canon/src/lib/rosetta-canon.spec.ts packages/ingress-refinery/src/lib/ingress-refinery.ts packages/ingress-refinery/src/lib/ingress-refinery.spec.ts tools/doc-intake/build-doc-intake.mjs tools/doc-intake/build-doc-intake.spec.mjs` passed.
+- Red state confirmed: `pnpm exec vitest run packages/canonical-cache/src/lib/canonical-cache.spec.ts` failed before implementation because TC-003 APIs did not exist.
+- Green focused test: `pnpm exec vitest run packages/canonical-cache/src/lib/canonical-cache.spec.ts` passed: 1 file, 6 tests.
+- `pnpm exec eslint packages/canonical-cache/src/lib/canonical-cache.ts packages/canonical-cache/src/lib/canonical-cache.spec.ts` passed.
+- `pnpm exec tsc -p packages/canonical-cache/tsconfig.spec.json --noEmit` passed.
+- `pnpm exec nx run-many -t typecheck test build -p canonical-cache --skip-nx-cache --outputStyle=static` passed.
 - `pnpm run docs:intake` passed.
 - `git diff --check` passed.
 
@@ -130,13 +133,12 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Push merge resolution to `codex/tc-002-normalization-fingerprints`.
-2. Keep PR #18 draft until GitHub reports it mergeable/green.
-3. Close issue #7 after merge.
+1. Keep PR #19 draft until GitHub reports it mergeable/green.
+2. Close issue #8 after merge.
 
 For Text-Core:
 
-1. After TC-002 merges, continue with TC-003 dedupe, revision graph, and cache persistence.
+1. After TC-003 merges, continue with TC-004 source to observation tiling and transform receipts.
 
 ## Current Technical Posture
 
@@ -144,4 +146,6 @@ For Text-Core:
 - Source-aware refinery is fixture-backed, not live upstream acquisition.
 - `docs:intake` indexes docs and issue drafts but does not semantically ingest the corpus.
 - Text-Core TC-001 source episode envelope is merged.
+- Text-Core TC-002 normalization fingerprints are merged.
+- Text-Core TC-003 cache dedupe/revision/local persistence is in progress.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.
