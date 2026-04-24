@@ -37,6 +37,8 @@ The repo has a high-value documentation corpus, but no durable local map from pa
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Build docs intake ledger and GitHub issue promotion workflow" --body-file docs/intake/issue-drafts/docs-intake-ledger-and-issue-promotion.md --label docs-intake,governance,automation`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/docs-intake-ledger-and-issue-promotion.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/2`
+- Recommended publish command shape: `not applicable; draft already published`

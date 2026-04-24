@@ -32,6 +32,8 @@ The bootstrap handoff says validation was strengthened but still needs a lean re
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Re-run lean validation loop and checkpoint local receipts" --body-file docs/intake/issue-drafts/lean-validation-loop-and-local-receipts.md --label validation,receipts,bootstrap`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/lean-validation-loop-and-local-receipts.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/3`
+- Recommended publish command shape: `not applicable; draft already published`

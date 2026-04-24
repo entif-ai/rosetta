@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { Console } from 'node:console';
-import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -10,6 +10,7 @@ const root = path.resolve(scriptDir, '..', '..');
 const docsRoot = path.join(root, 'docs');
 const intakeRoot = path.join(docsRoot, 'intake');
 const draftsRoot = path.join(intakeRoot, 'issue-drafts');
+const archivedDraftsRoot = path.join(draftsRoot, 'archive');
 const issueLedgerPath = path.join(intakeRoot, 'github-issue-ledger.json');
 const ledgerPath = path.join(intakeRoot, 'doc-ledger.json');
 const ledgerMarkdownPath = path.join(intakeRoot, 'doc-ledger.md');
@@ -411,7 +412,27 @@ async function readIssueLedger() {
   }
 }
 
-function buildDraftMarkdown(draft, docByPath) {
+export function resolveIssueDraftState(draftId, issueLedger) {
+  const issueUrl = issueLedger.issueDrafts?.[draftId]?.url ?? null;
+  const published = Boolean(issueUrl);
+  return published
+    ? {
+        activePath: null,
+        archivePath: `docs/intake/issue-drafts/archive/${draftId}.md`,
+        issueUrl,
+        published,
+        status: 'published'
+      }
+    : {
+        activePath: `docs/intake/issue-drafts/${draftId}.md`,
+        archivePath: null,
+        issueUrl,
+        published,
+        status: 'candidate'
+      };
+}
+
+function buildDraftMarkdown(draft, docByPath, draftState) {
   const sourceLines = draft.sourceRefs.map(([sourcePath, reason]) => {
     const doc = docByPath.get(sourcePath);
     const hash = doc ? `; hash ${doc.sha256.slice(0, 12)}` : '';
@@ -447,9 +468,15 @@ ${draft.nonGoals.map((item) => `- ${item}`).join('\n')}
 
 ## Publishing Notes
 
-- Local status: \`candidate\`
-- GitHub issue: \`pending\`
-- Recommended publish command shape: \`gh issue create --title "${draft.title.replaceAll('"', '\\"')}" --body-file docs/intake/issue-drafts/${draft.id}.md --label ${draft.labels.join(',')}\`
+- Local status: \`${draftState.status}\`
+- Active draft path: \`${draftState.activePath ?? 'archived'}\`
+- Archived draft path: \`${draftState.archivePath ?? 'not archived'}\`
+- GitHub issue: \`${draftState.issueUrl ?? 'pending'}\`
+- Recommended publish command shape: \`${
+    draftState.published
+      ? 'not applicable; draft already published'
+      : `gh issue create --title "${draft.title.replaceAll('"', '\\"')}" --body-file docs/intake/issue-drafts/${draft.id}.md --label ${draft.labels.join(',')}`
+  }\`
 `;
 }
 
@@ -495,6 +522,7 @@ This folder tracks local documentation parsing and issue-draft promotion without
 2. Review \`docs/intake/doc-ledger.md\` for corpus shape.
 3. Review candidate issues under \`docs/intake/issue-drafts/\`.
 4. Publish only the chosen issue drafts to GitHub, then record the issue URL/number in \`docs/intake/github-issue-ledger.json\`.
+5. Rerun \`pnpm run docs:intake\`; published drafts move to \`docs/intake/issue-drafts/archive/\`.
 
 ## Current Snapshot
 
@@ -511,12 +539,13 @@ This folder tracks local documentation parsing and issue-draft promotion without
 - Chat-style \`Created\`, \`Updated\`, and \`Exported\` stamps are stored separately under each document's \`chronology.canonical\` object.
 - \`docs/live/\`, \`docs/governance/\`, \`docs/handoffs/\`, \`docs/backlog/\`, \`docs/PRDs/\`, and \`docs/RFCs/\` carry higher authority than chats, ideas, external notes, or frontier research.
 - Local issue drafts are the review gate before GitHub issue creation.
+- Active issue drafts are unpublished candidates; published drafts are archived and tracked in \`docs/intake/github-issue-ledger.json\`.
 - The ledger is a map, not the canonical corpus cache promised by the architecture.
 `;
 }
 
 export async function main() {
-  await mkdir(draftsRoot, { recursive: true });
+  await mkdir(archivedDraftsRoot, { recursive: true });
   const previous = await readPreviousLedger();
   const issueLedger = await readIssueLedger();
   const files = await collectFiles(docsRoot);
@@ -576,9 +605,28 @@ export async function main() {
   await writeFile(ledgerMarkdownPath, buildLedgerMarkdown(documents));
   await writeFile(readmePath, buildReadme(documents));
 
+  issueLedger.issueDrafts ??= {};
   for (const draft of issueDrafts) {
-    await writeFile(path.join(draftsRoot, `${draft.id}.md`), buildDraftMarkdown(draft, docByPath));
+    const draftState = resolveIssueDraftState(draft.id, issueLedger);
+    const activeFilePath = path.join(draftsRoot, `${draft.id}.md`);
+    const archiveFilePath = path.join(archivedDraftsRoot, `${draft.id}.md`);
+
+    issueLedger.issueDrafts[draft.id] = {
+      ...(issueLedger.issueDrafts[draft.id] ?? {}),
+      activeDraftPath: draftState.activePath,
+      archivedDraftPath: draftState.archivePath,
+      draftStatus: draftState.status
+    };
+
+    if (draftState.published) {
+      await writeFile(archiveFilePath, buildDraftMarkdown(draft, docByPath, draftState));
+      await rm(activeFilePath, { force: true });
+    } else {
+      await writeFile(activeFilePath, buildDraftMarkdown(draft, docByPath, draftState));
+      await rm(archiveFilePath, { force: true });
+    }
   }
+  await writeFile(issueLedgerPath, `${JSON.stringify(issueLedger, null, 2)}\n`);
 
   logger.log(`Indexed ${documents.length} docs and wrote ${issueDrafts.length} issue drafts.`);
 }

@@ -33,6 +33,8 @@ The docs contain a clear Text-Core direction, but the next execution gate should
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Define Text-Core MVP scope gate from governing docs" --body-file docs/intake/issue-drafts/text-core-mvp-scope-gate.md --label planning,text-core,scope`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/4`
+- Recommended publish command shape: `not applicable; draft already published`
