@@ -3,8 +3,8 @@
 Status: active baton-pass for Codex and agent sessions  
 Date: 2026-04-24  
 Last updated: 2026-04-24  
-Current branch at time of update: `codex/text-core-mvp-scope-gate`  
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/5
+Current branch at time of update: `codex/tc-001-source-episode-envelope`
+Current issue at time of update: https://github.com/entif-ai/rosetta/issues/6
 
 ## Purpose
 
@@ -78,24 +78,27 @@ Remote: `https://github.com/entif-ai/rosetta.git`
 Merged:
 
 - PR #1: `docs(intake): add documentation ledger and issue draft workflow`
+- PR #5: `docs(backlog): define Text-Core MVP scope gate`
 
 Open at time of update:
 
-- PR #5: `docs(backlog): define Text-Core MVP scope gate`
-- Issue #4: `Define Text-Core MVP scope gate from governing docs`
+- Issue #6: `TC-001 Source episode envelope and family classification`
+- Issues #7-#12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
 - Issue #2: `Build docs intake ledger and GitHub issue promotion workflow`
 - Issue #3: `Re-run lean validation loop and checkpoint local receipts`
+- Issue #4: `Define Text-Core MVP scope gate from governing docs`
 
 ## Current Work Product
 
-PR #5 adds:
+Current branch adds TC-001:
 
-- `docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md`
-- regenerated docs intake ledger files
-- updated issue ledger state for issues #2 and #3
+- `source.episode` modeling in `packages/source-substrate`
+- parse-only source episode construction in `packages/ingress-refinery`
+- `source.episode` required-field validation in `packages/rosetta-schemas`
+- red/green tests covering source episode shape, unresolved classification, side-effect mode refusal, and schema conformance
 
 Scope gate summary:
 
@@ -143,30 +146,32 @@ Additional test coverage added on this branch:
 - covers chat top-matter chronology parsing, primary date precedence, fallback evidence retention, stable intake timestamps, and filesystem-only undated import classification
 - `vitest.config.ts` now includes `tools/**/*.spec.mjs`
 
+Latest focused TC-001 red/green validation:
+
+- initial source-substrate focused run failed because `createSourceEpisodeTile` did not exist
+- initial ingress-refinery focused run failed because `createParseOnlySourceEpisode` did not exist
+- initial schema focused run failed because `source.episode` had no required-field contract
+- after implementation:
+  - `pnpm exec vitest run packages/source-substrate/src/lib/source-substrate.spec.ts` passed
+  - `pnpm exec vitest run packages/ingress-refinery/src/lib/ingress-refinery.spec.ts` passed
+  - `pnpm exec vitest run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed
+
 ## Next Actions
 
-If PR #5 is not merged:
-
-1. Review/merge PR #5.
-2. After merge, sync `main`.
-3. Close issue #4 with a comment referencing the scope gate document.
-4. Publish TC-001 through TC-007 follow-up issues, or at minimum TC-001 first.
-
-If PR #5 is merged:
-
-1. Sync `main`.
-2. Close issue #4 if still open.
-3. Create branch `codex/tc-001-source-episode-envelope`.
-4. Implement TC-001 using existing packages first:
-   - `packages/source-substrate`
-   - `packages/ingress-refinery`
-   - `packages/rosetta-schemas`
-5. Avoid creating a new `packages/ingest-core` until the source episode API has enough real pressure to justify the split.
+1. Run broader validation for TC-001:
+   - `pnpm run test`
+   - `pnpm run lint`
+   - `pnpm run typecheck`
+   - `pnpm run docs:intake`
+   - `git diff --check`
+2. Commit and push `codex/tc-001-source-episode-envelope`.
+3. Open PR for issue #6.
+4. After merge, close #6 and start TC-002 on a separate branch.
 
 ## Current Technical Posture
 
 - Bootstrap provenance kernel is implemented and tested.
 - Source-aware refinery is fixture-backed, not live upstream acquisition.
 - `docs:intake` indexes docs and issue drafts but does not semantically ingest the corpus.
-- Text-Core has now been scoped, but implementation has not started.
+- Text-Core has been scoped and TC-001 implementation is in progress.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.
