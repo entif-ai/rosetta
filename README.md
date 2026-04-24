@@ -41,6 +41,30 @@ pnpm run demo
 pnpm run api
 ```
 
+## Starting A New Agent Session
+
+New Codex or agent sessions should start here:
+
+1. Read this `README.md`.
+2. Read `docs/handoffs/CURRENT_HANDOFF.md`.
+3. Check branch state with `git status --short --branch`.
+4. If continuing merged work, sync `main` with `git fetch origin` and `git pull --ff-only origin main`.
+5. Read the active GitHub issue/PR named in the handoff.
+6. Run the narrowest validation that matches the changed surface.
+
+Every stable branch should update `docs/handoffs/CURRENT_HANDOFF.md` before its final push. If documentation changed, also run `pnpm run docs:intake` so the intake ledger stays current.
+
+## Handoff And Branch Protocol
+
+- Work on focused `codex/` feature branches.
+- Treat each stable branch as a handoff boundary.
+- Commit only coherent, validated slices.
+- Keep `docs/handoffs/CURRENT_HANDOFF.md` current enough that a new account or machine can resume without rereading the whole docs corpus.
+- Record published GitHub issue URLs and state changes in `docs/intake/github-issue-ledger.json`.
+- Use local issue drafts under `docs/intake/issue-drafts/` as the review gate before creating remote GitHub issues.
+- Do not perform large-scale semantic corpus ingest until the Ingress Refinery and canonical corpus cache are ready.
+- Prefer targeted validation during development; use `pnpm run verify` when a branch changes shared contracts or before claiming a broad green state.
+
 ## Repository Guide
 
 - `docs/ARCHITECTURE.md`
@@ -60,7 +84,11 @@ pnpm run api
 - `docs/packs/PACK_SUITE_INDEX.md`
   Pack inventory.
 - `docs/handoffs/2026-04-13-bootstrap-handoff.md`
-  Current baton-pass receipt for future agent sessions.
+  Historical bootstrap baton-pass receipt.
+- `docs/handoffs/CURRENT_HANDOFF.md`
+  Active baton-pass receipt for future Codex and agent sessions.
+- `docs/intake/README.md`
+  Documentation intake workflow, local issue drafts, and GitHub issue ledger policy.
 
 ## Package Map
 
