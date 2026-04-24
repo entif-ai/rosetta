@@ -157,6 +157,8 @@ Labels: `...`
 - Lock before read — no exceptions
 - Check existing issue-drafts/ before creating new ones
 - **NEVER merge a PR. Only: create branch, commit, push, create PR via gh pr create, DM main agent. Merge is for main agent or human review only.**
+- For every issue candidate in the extraction, create a corresponding file in docs/intake/issue-drafts/<slug>.md before pushing. Zero candidates is fine — zero files when candidates exist is a violation.
+- Validate before push: count issue candidates in extraction vs. files in docs/intake/issue-drafts/. They must match.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
 
 ---
