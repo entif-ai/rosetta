@@ -3,7 +3,7 @@ import { Console } from 'node:console';
 import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(scriptDir, '..', '..');
@@ -235,7 +235,7 @@ function normalizeDateTime(rawValue) {
   };
 }
 
-function extractTopMatterDates(text) {
+export function extractTopMatterDates(text) {
   const evidence = {};
   const lines = text.split(/\r?\n/u).slice(0, 80);
   const labelToKind = {
@@ -276,7 +276,7 @@ function inferPathDate(relativePath) {
   return undefined;
 }
 
-function buildChronology(relativePath, text, stats, previousDoc, intakeRunAt) {
+export function buildChronology(relativePath, text, stats, previousDoc, intakeRunAt) {
   const topMatter = extractTopMatterDates(text);
   const pathDate = inferPathDate(relativePath);
   const filesystemModifiedAt = stats.mtime.toISOString();
@@ -336,7 +336,7 @@ function inferAuthorityTier(relativePath) {
   return 'unclassified';
 }
 
-function inferFreshness(docDate, dateKind) {
+export function inferFreshness(docDate, dateKind) {
   if (dateKind === 'filesystemModifiedAt') return 'undated-import';
   if (docDate >= '2026-04-01') return 'current';
   if (docDate >= '2026-03-01') return 'recent';
@@ -515,7 +515,7 @@ This folder tracks local documentation parsing and issue-draft promotion without
 `;
 }
 
-async function main() {
+export async function main() {
   await mkdir(draftsRoot, { recursive: true });
   const previous = await readPreviousLedger();
   const issueLedger = await readIssueLedger();
@@ -583,7 +583,9 @@ async function main() {
   logger.log(`Indexed ${documents.length} docs and wrote ${issueDrafts.length} issue drafts.`);
 }
 
-main().catch((error) => {
-  logger.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    logger.error(error);
+    process.exitCode = 1;
+  });
+}
