@@ -1,7 +1,8 @@
 /**
  * enti-skill — bridge between Rosetta semantic frames and actionable skills.
  */
-import { createObservation, type FramePayload, type JsonValue, type TileEnvelope } from "../../../rosetta-core/src/index.js";
+import type { JsonValue } from "../../../rosetta-canon/src/index.js";
+import { createObservation, type FramePayload, type TileEnvelope } from "../../../rosetta-core/src/index.js";
 
 export interface SkillInvocation {
   confidence: number;

@@ -11,15 +11,11 @@ import type { TileEnvelope } from "@entif-ai/rosetta-core";
 import type { PipelineContext } from "./pipeline-context.js";
 import type { Layer1Forms } from "./pipeline-types.js";
 
-export interface FormLayerOptions {
-  language?: string;
-}
-
 /**
  * Tokenize the signal in ctx.observation into rosetta.form.token tiles.
  * Detects: words, punctuation, whitespace, symbols, numbers, emojis, datetimes.
  */
-export function runFormLayer(ctx: PipelineContext, _opts: FormLayerOptions = {}): Layer1Forms {
+export function runFormLayer(ctx: PipelineContext): Layer1Forms {
   const obs = ctx.observation;
   const payload = obs.payload as { signal?: string; data?: string; [key: string]: unknown };
   const text: string = (payload.signal ?? payload.data ?? "").toString();

@@ -42,21 +42,21 @@
       }
     },
     "serve": {
-      "executor": "@nx/js:node",
+      "executor": "nx:run-commands",
       "defaultConfiguration": "development",
       "dependsOn": [
         "build"
       ],
       "options": {
-        "buildTarget": "rosetta-api:build",
-        "runBuildTargetDependencies": false
+        "command": "node apps/rosetta-api/dist/apps/rosetta-api/src/main.js",
+        "cwd": "."
       },
       "configurations": {
         "development": {
-          "buildTarget": "rosetta-api:build:development"
+          "command": "node apps/rosetta-api/dist/apps/rosetta-api/src/main.js"
         },
         "production": {
-          "buildTarget": "rosetta-api:build:production"
+          "command": "node apps/rosetta-api/dist/apps/rosetta-api/src/main.js"
         }
       }
     }

@@ -4,5 +4,19 @@
   "sourceRoot": "packages/rosetta-pipeline/src",
   "projectType": "library",
   "tags": ["rosetta", "pipeline", "semantic"],
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/rosetta-pipeline",
+        "command": "tsc --build tsconfig.lib.json"
+      },
+      "dependsOn": ["^build"],
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist/**/*.{js,cjs,mjs,jsx,d.ts,d.cts,d.mts}{,.map}",
+        "{projectRoot}/dist/tsconfig.lib.tsbuildinfo"
+      ]
+    }
+  }
 }
