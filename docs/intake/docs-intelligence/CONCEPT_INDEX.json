@@ -699,6 +699,88 @@
       "concepts": []
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-acpx.md",
+      "sourcePath": "docs/external/acpx.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "text-core",
+        "agentic-tooling",
+        "acp",
+        "protocol",
+        "acpx",
+        "coding-agents",
+        "session-management",
+        "dependency-management",
+        "npm",
+        "installation",
+        "node-js",
+        "dependency",
+        "openclaw",
+        "acp-bridge",
+        "crash-recovery",
+        "persistence",
+        "sessions",
+        "crash-reconnect",
+        "queue-management",
+        "configuration",
+        "security",
+        "permissions",
+        "config-files",
+        "auth",
+        "structured-output",
+        "json",
+        "ndjson",
+        "streaming",
+        "automation",
+        "multi-agent",
+        "compatibility",
+        "agent-adapters",
+        "compatibility-matrix",
+        "risk",
+        "stability",
+        "versioning",
+        "alpha",
+        "breaking-changes",
+        "docs-intelligence",
+        "onboarding",
+        "documentation",
+        "agent-delegation",
+        "cancellation",
+        "prompt-queueing",
+        "cooperative-cancel",
+        "ttl",
+        "lifecycle",
+        "soft-close",
+        "session-history",
+        "extensibility",
+        "custom-agents",
+        "escape-hatch",
+        "custom-servers",
+        "suppression",
+        "openclaw-config",
+        "banner-suppression",
+        "environment-variables",
+        "fs-operations",
+        "fs-sandbox",
+        "terminal-permissions",
+        "permission-controls",
+        "authentication",
+        "auth-methods",
+        "credentials",
+        "auth-handshake",
+        "env-credentials",
+        "directory-walk",
+        "session-routing",
+        "git-root",
+        "licensing",
+        "mit",
+        "roadmap",
+        "coverage-tracking",
+        "acp-coverage",
+        "spec-coverage"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-aiida-workgraph.md",
       "sourcePath": "docs/external/AiiDA-WorkGraph.md",
       "title": "Docs Intelligence Extraction",
@@ -922,6 +1004,224 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-attention-residuals-kimi.md",
+      "sourcePath": "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "attention-residuals",
+        "prenorm-dilution",
+        "depth-aggregation",
+        "transformer-architecture",
+        "memory-planes",
+        "block-attention",
+        "memory-efficiency",
+        "o-nd-complexity",
+        "memory-plane-costs",
+        "benchmark",
+        "reasoning",
+        "multi-step-reasoning",
+        "evaluation",
+        "model-capability",
+        "code-generation",
+        "code-capability",
+        "block-attn-res-impl",
+        "transformer-layer-integration",
+        "implementation",
+        "layer-hook",
+        "scaling-laws",
+        "compute-efficiency",
+        "1-25x-compute-equivalent",
+        "model-training",
+        "gradient-distribution",
+        "magnitude-bounding",
+        "convergence",
+        "training-stability",
+        "kimi-team",
+        "research-authorship",
+        "research",
+        "competitive-intelligence"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-prd.md",
+      "sourcePath": "docs/external/Berman-PRD.md",
+      "title": "Docs Intelligence Extraction: Berman-PRD.md",
+      "concepts": [
+        "workspace-structure",
+        "storage",
+        "openclaw",
+        "crm",
+        "skills",
+        "contacts",
+        "interactions",
+        "follow-ups",
+        "context",
+        "meetings",
+        "security",
+        "prompt-injection",
+        "anti-injection",
+        "intelligence",
+        "pattern-learner",
+        "auto-approval",
+        "box",
+        "relevance-scoring",
+        "gmail",
+        "gmail-draft",
+        "approval-workflow",
+        "relationship-health",
+        "nudge-generator",
+        "fathom",
+        "calendar-aware-polling",
+        "after-meetings",
+        "browser-control",
+        "clawdhub",
+        "crm-query",
+        "beehiiv",
+        "hubspot",
+        "humanizer",
+        "knowledge-base",
+        "financials",
+        "model-usage-tracker",
+        "nano-banana-pro-2",
+        "self-improving-agent",
+        "summarize",
+        "todoist",
+        "video-idea-pipeline",
+        "x-research-v2",
+        "x-analytics",
+        "x-search",
+        "excalidraw",
+        "gemini-video-watch",
+        "x-trending-scraper",
+        "youtube-sub-ratio",
+        "content-draft-generator",
+        "research-skill",
+        "platform-config",
+        "model-routing",
+        "gateway",
+        "model-fallback",
+        "agents",
+        "shared-modules",
+        "shared-db",
+        "embeddings",
+        "config",
+        "reranker",
+        "review-council",
+        "cursor-council",
+        "workspace-state",
+        "council-recommendations",
+        "telegram-delivery",
+        "env-utils",
+        "content-sanitizer",
+        "fs",
+        "notification-redaction",
+        "secret-redaction",
+        "event-log",
+        "interaction-store",
+        "log-rotation",
+        "tools",
+        "social-tracker",
+        "youtube",
+        "instagram",
+        "collection",
+        "querying",
+        "business-meta-analysis",
+        "business-analysis",
+        "council",
+        "8-experts",
+        "14-sources",
+        "cron",
+        "operations",
+        "daily-brief",
+        "morning-council",
+        "crm-ingestion",
+        "config-review",
+        "security-review",
+        "platform-health",
+        "social-collect",
+        "log-ingest",
+        "update-check",
+        "e2e-tests",
+        "prd-sync",
+        "memory",
+        "daily-notes",
+        "memory-synthesis",
+        "heartbeat-state",
+        "task-history",
+        "integrations",
+        "channels",
+        "telegram",
+        "13-topics",
+        "group-id",
+        "slack",
+        "bot-token",
+        "user-token",
+        "attribution",
+        "financials-confidential",
+        "cfo-persona",
+        "monthly-csv",
+        "databases",
+        "sqlite-wal",
+        "14-databases",
+        "cron-log",
+        "logs",
+        "environment",
+        "env-vars",
+        "api-keys",
+        "credentials",
+        "testing",
+        "ci",
+        "3-tiers",
+        "unit-tests",
+        "integration-tests",
+        "skill-tests",
+        "tool-tests",
+        "script-tests",
+        "workspace-config",
+        "root-md-files",
+        "agents-md",
+        "soul-md",
+        "identity-md",
+        "user-md",
+        "tools-md",
+        "memory-md",
+        "heartbeat-md",
+        "subagent-policy-md",
+        "restore-md",
+        "prd-md",
+        "reference",
+        "moltbot-clone",
+        "platform-internals",
+        "e2e-tier-1",
+        "e2e-tier-2",
+        "e2e-tier-3",
+        "nightly",
+        "weekly",
+        "sanitize",
+        "logging",
+        "interactions-db",
+        "llm-calls",
+        "api-calls",
+        "nlp",
+        "intent-detector",
+        "16-intent-types",
+        "video-pitches",
+        "video-pitch-hard-gate",
+        "semantic-search",
+        "similarity-threshold",
+        "cursor-agent",
+        "opus-summarizer",
+        "platform",
+        "platform-council",
+        "9-areas",
+        "openclaw-version-stale",
+        "automation",
+        "git",
+        "auto-git-sync",
+        "two-repo-sync"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-cognitive-tiles-swarm-gnosis.md",
       "sourcePath": "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
       "title": "Docs Intelligence Extraction",
@@ -1033,6 +1333,91 @@
         "immutability-gdpr",
         "economic-incentives-not-implemented",
         "merge-conflicts-no-central-authority"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-consensus-first-scoping-framework.md",
+      "sourcePath": "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "governance",
+        "process-orchestration",
+        "consensus-first",
+        "premature-closure",
+        "motivated-reasoning",
+        "risk",
+        "groupthink",
+        "automation-bias",
+        "llm-limitations",
+        "hallucination",
+        "evidence-management",
+        "consensus",
+        "productivity-theater",
+        "research",
+        "lean-validation",
+        "fake-door",
+        "architecture",
+        "stage-gate",
+        "discovery-driven",
+        "real-options",
+        "wager-sizing",
+        "premortem",
+        "contrarian",
+        "psychological-safety",
+        "dissent",
+        "phase-transition",
+        "user-signal",
+        "preference-vs-behavior",
+        "evidence-provenance",
+        "bias",
+        "exit-triggers",
+        "sunk-cost",
+        "scope-applicability",
+        "board-state",
+        "opportunity-magnitude",
+        "commitment",
+        "capital-allocation",
+        "two-way-door",
+        "reversibility",
+        "artifacts",
+        "documentation",
+        "strategic-lane",
+        "edge",
+        "differentiator",
+        "commitment-canvas",
+        "evidence-ledger",
+        "provenance",
+        "consent",
+        "calibration-loop",
+        "iterative",
+        "behavior-vs-preference",
+        "scoring-rubric",
+        "llm-workflow",
+        "overconfidence",
+        "templates",
+        "risk-analysis",
+        "scope-limitation",
+        "evidence-quality",
+        "bias-metadata",
+        "calibration",
+        "miscalibration",
+        "falsification",
+        "disconfirmation",
+        "competitive-strategy",
+        "competitive-positioning",
+        "edge-decay",
+        "competitive-tempo",
+        "competitive-pressure",
+        "resource-posture",
+        "opportunity-value",
+        "derivative-upside",
+        "commitment-posture",
+        "strategic-options",
+        "high-context-dissenters",
+        "comprehension-step",
+        "salvage-paths",
+        "decision-owner",
+        "accountability"
       ]
     },
     {
@@ -1166,6 +1551,77 @@
         "json-persistence",
         "root-vs-threaded",
         "thread-management"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-2-0-enriched.md",
+      "sourcePath": "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+      "title": "Entif 2.0 — Enriched by External Advancements",
+      "concepts": [
+        "voice",
+        "latency",
+        "routing",
+        "voice-mcp",
+        "performance",
+        "orchestrator",
+        "mcp",
+        "orchestration",
+        "tools",
+        "thin-slice",
+        "vad",
+        "asr",
+        "audio",
+        "cost",
+        "llm",
+        "intent",
+        "safety",
+        "dry-run",
+        "self-improvement",
+        "nightly",
+        "coaching",
+        "improvement",
+        "ingest",
+        "parse-only",
+        "privacy",
+        "entity-resolution",
+        "dedup",
+        "knowledge-graph",
+        "task-mining",
+        "tasker",
+        "consent",
+        "agents",
+        "genesis",
+        "alignment",
+        "receipt",
+        "metrics",
+        "data-model",
+        "phasing",
+        "plan",
+        "planning",
+        "monorepo",
+        "architecture",
+        "types",
+        "schema",
+        "protocol",
+        "loop",
+        "mode",
+        "classification",
+        "heuristics",
+        "classify",
+        "summarization",
+        "styles",
+        "summarize",
+        "evaluation",
+        "reserved",
+        "glyph",
+        "semantics",
+        "content",
+        "media",
+        "realtime",
+        "market-data",
+        "reuse",
+        "engineering",
+        "velocity"
       ]
     },
     {
@@ -1306,6 +1762,134 @@
         "deferred",
         "extension-points",
         "future"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-moltron.md",
+      "sourcePath": "docs/external/Moltron.md",
+      "title": "Docs Intelligence Extraction: Moltron",
+      "concepts": [
+        "skill-hardening",
+        "telemetry",
+        "skill-versioning",
+        "moltron-evolution-engine",
+        "adaptive-memory",
+        "self-repair",
+        "auto-repair",
+        "moltron-self-evolution",
+        "skill-portability",
+        "swarm",
+        "cross-agent",
+        "moltron-swarm",
+        "production-ready",
+        "days-to-learn",
+        "moltron-hardening-timeline",
+        "moltron-vs-openclaw",
+        "self-reflection",
+        "self-measure",
+        "moltron-critique-of-openclaw",
+        "open-telemetry",
+        "audit",
+        "moltron-observability",
+        "flight-recorder",
+        "root-access",
+        "moltron-audit",
+        "smythos",
+        "runtime",
+        "executable-skills",
+        "moltron-runtime-target",
+        "constrained-alignment",
+        "hybrid",
+        "model-routing",
+        "moltron-model-strategy",
+        "openclaw-integration",
+        "install-script",
+        "moltron-install",
+        "skill-efficiency",
+        "token-waste",
+        "moltron-motivation",
+        "vpc",
+        "hipaa",
+        "moltron-enterprise",
+        "zero-config",
+        "out-of-box",
+        "moltron-ease-of-use",
+        "performance-scorecard",
+        "adaptive",
+        "moltron-self-assessment",
+        "git-versioning",
+        "git-backup",
+        "moltron-versioning",
+        "self-evolution",
+        "skills",
+        "text-files",
+        "fragility",
+        "skill-building",
+        "agentic-evol",
+        "carcinization",
+        "metaphor",
+        "self-improvement",
+        "philosophy",
+        "infinite-evolution",
+        "self-improving",
+        "digital-employee",
+        "ambition",
+        "agentic-scaling",
+        "allergens",
+        "safety",
+        "constraints",
+        "real-world-example",
+        "feedback-loop",
+        "cost-optimization",
+        "specialization",
+        "economics",
+        "model-selection",
+        "workflow-compilation",
+        "architecture",
+        "skill-engineering",
+        "hybrid-flexibility",
+        "alignment",
+        "replication",
+        "scaling",
+        "multi-agent",
+        "accountability",
+        "versioning",
+        "replay",
+        "security",
+        "open-standards",
+        "cross-platform",
+        "cursor",
+        "claude-code",
+        "openai-codex",
+        "portability",
+        "evolution-loop",
+        "example",
+        "stripe",
+        "zendesk",
+        "workflow-example",
+        "integration",
+        "day-n",
+        "hardening",
+        "timeline",
+        "crypto",
+        "disclaimer",
+        "legal",
+        "non-endorsement",
+        "discord",
+        "community",
+        "tinkerers",
+        "engagement",
+        "mit-license",
+        "open-source",
+        "licensing",
+        "attribution",
+        "bash",
+        "curl",
+        "installation",
+        "onboarding",
+        "manual-install",
+        "git-clone",
+        "cp-r"
       ]
     },
     {
@@ -1929,6 +2513,86 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
+      "sourcePath": "docs/external/SwarmKit.md",
+      "title": "Docs Intelligence Extraction: SwarmKit",
+      "concepts": [
+        "orchestration",
+        "raft",
+        "distributed",
+        "consensus",
+        "fault-tolerance",
+        "security",
+        "tls",
+        "pki",
+        "authentication",
+        "authorization",
+        "token-join",
+        "join-flow",
+        "reconciliation",
+        "desired-state",
+        "state-management",
+        "service-types",
+        "replicated",
+        "global",
+        "scheduling",
+        "abstraction",
+        "rolling-updates",
+        "parallelism",
+        "delay",
+        "deployment",
+        "updates",
+        "restart-policies",
+        "fault-recovery",
+        "resilience",
+        "constraints",
+        "node-attributes",
+        "filtering",
+        "spread-strategy",
+        "load-balancing",
+        "strategy",
+        "state-store",
+        "in-memory",
+        "manager",
+        "state",
+        "node-availability",
+        "paused",
+        "drained",
+        "cluster-management",
+        "maintenance",
+        "cert-rotation",
+        "transparent-reload",
+        "certificates",
+        "go-version",
+        "protobuf",
+        "build-toolchain",
+        "swarmd",
+        "swarmctl",
+        "socket",
+        "tooling",
+        "cli",
+        "task-migration",
+        "drain",
+        "operations",
+        "failover",
+        "executor",
+        "pluggable-runtime",
+        "runtime",
+        "issue-candidate",
+        "supersession",
+        "project-status",
+        "relevance",
+        "constraint-labels",
+        "security-labeling",
+        "multi-tenancy",
+        "task-history-entries",
+        "operational-parameters",
+        "dispatcher-heartbeat",
+        "health-checking",
+        "availability"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md",
       "sourcePath": "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md",
       "title": "Docs Intelligence Extraction",
@@ -2098,96 +2762,6 @@
   ],
   "issueDrafts": [
     {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
-      "title": "CT-001 — Rosetta Network Layer Gap: Swarm Gnosis P2P vs Current SQLite/Bootstrap Architecture",
-      "labels": [],
-      "signature": "001-architecture-bootstrap-current-gnosis"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
-      "title": "CT-002 — Trust Bootstrap Problem: New Nodes Have No Reputation in Fully Open Network",
-      "labels": [],
-      "signature": "002-bootstrap-fully-have-network"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md",
-      "title": "CT-004 — GDPR Right-to-Eraser Conflict with Immutable Content-Addressed Storage",
-      "labels": [],
-      "signature": "004-addressed-conflict-content-eraser"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
-      "title": "CT-005 — Economic Persistence Gap: No Token/Payment System; Unpopular Data May Disappear",
-      "labels": [],
-      "signature": "005-data-disappear-economic-may"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
-      "title": "CT-006 — ZK Proof Integration Not Near-Term Viable: Heavy Proof Generation Cost",
-      "labels": [],
-      "signature": "006-cost-generation-heavy-integration"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration.md",
-      "title": "CT-007 — No Arbitration Mechanism for Conflicting Tile Versions: Fork Resolution Delegated to Social Process",
-      "labels": [],
-      "signature": "007-arbitration-conflicting-delegated-fork"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing.md",
-      "title": "CT-008 — VQ-VAE Codebook Alias Rate Must Be Validated Before Optical Slugs Can Be Trusted",
-      "labels": [],
-      "signature": "008-alias-before-can-codebook"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox.md",
-      "title": "CT-009 — WASM Sandbox for Witness Code Execution Not Yet Implemented in Rosetta",
-      "labels": [],
-      "signature": "009-code-execution-implemented-not"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar.md",
-      "title": "CT-010 — EGC Formal Grammar Not Yet Specified: Round-Tripping Depends on Unambiguous Grammar",
-      "labels": [],
-      "signature": "010-depends-egc-formal-grammar"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
-      "title": "Missing ADR for the 21 authoritative project baseline documents",
-      "labels": [],
-      "signature": "adr-authoritative-baseline-documents-project"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md",
-      "title": "Missing formal `cas://` URI scheme definition in rosetta-core",
-      "labels": [],
-      "signature": "cas-core-definition-formal-rosetta"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-headers-check-missing.md",
-      "title": "Missing `headers-check` Nx executor implementation",
-      "labels": [],
-      "signature": "check-executor-headers-implementation"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md",
-      "title": "Missing `known-red-tests` policy definition and documentation",
-      "labels": [],
-      "signature": "definition-documentation-known-policy-red"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md",
-      "title": "Missing Python package boundary enforcement mechanism",
-      "labels": [],
-      "signature": "boundary-enforcement-mechanism-package-python"
-    },
-    {
-      "path": "docs/intake/issue-drafts/ac-001-attention-capital-integration.md",
-      "title": "AC-001: Attention Capital Platform — Integration Design Needed if Added to Rosetta/Entif Ecosystem",
-      "labels": [],
-      "signature": "001-added-attention-capital-design"
-    },
-    {
       "path": "docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md",
       "title": "AC-001 — Attention Capital Analytics Platform Prior Art Search",
       "labels": [],
@@ -2204,6 +2778,18 @@
       "title": "AC-003 — Bio-Inspired Algorithms for Memetic Trend Discovery",
       "labels": [],
       "signature": "003-algorithms-bio-discovery-inspired"
+    },
+    {
+      "path": "docs/intake/issue-drafts/acpx-session-metadata-schema.md",
+      "title": "Document acpx Session Metadata Schema for Interop",
+      "labels": [],
+      "signature": "acpx-document-interop-metadata-schema"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ada-orchestrator-mcp.md",
+      "title": "Implement Ada orchestrator MCP CRUD surface",
+      "labels": [],
+      "signature": "ada-crud-implement-mcp-orchestrator"
     },
     {
       "path": "docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md",
@@ -2252,16 +2838,82 @@
       "signature": "automation-backup-strategy"
     },
     {
+      "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
+      "title": "Implement browser agent for acceptance verification",
+      "labels": [],
+      "signature": "acceptance-agent-browser-implement-verification"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md",
+      "title": "CCF-001: No Phase-Transition Enforcement Mechanism",
+      "labels": [],
+      "signature": "001-ccf-enforcement-mechanism-phase"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md",
+      "title": "CCF-002: No Formal Consensus Protocol",
+      "labels": [],
+      "signature": "002-ccf-consensus-formal-protocol"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md",
+      "title": "CCF-003: No Board State Formalization",
+      "labels": [],
+      "signature": "003-board-ccf-formalization-state"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-004-no-premortem-practice.md",
+      "title": "CCF-004: No Premortem Practice",
+      "labels": [],
+      "signature": "004-ccf-practice-premortem"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md",
+      "title": "CCF-005: No Evidence Ledger Implementation",
+      "labels": [],
+      "signature": "005-ccf-evidence-implementation-ledger"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md",
+      "title": "CCF-006: No Exit/Pivot Trigger Formalization",
+      "labels": [],
+      "signature": "006-ccf-exit-formalization-pivot"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md",
+      "title": "CCF-007: No \"Spec by Fluent Synthesis\" Enforcement",
+      "labels": [],
+      "signature": "007-ccf-enforcement-fluent-spec"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md",
+      "title": "CCF-008: No Anti-Motivated Reasoning Automation",
+      "labels": [],
+      "signature": "008-anti-automation-ccf-motivated"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md",
+      "title": "CCF-009: No Contrarian Protected Channel Formalization",
+      "labels": [],
+      "signature": "009-ccf-channel-contrarian-formalization"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md",
+      "title": "CCF-010: Consensus-First Framework Not Adopted",
+      "labels": [],
+      "signature": "010-adopted-ccf-consensus-first"
+    },
+    {
+      "path": "docs/intake/issue-drafts/cheap-first-routing-policy.md",
+      "title": "Implement cheap-first routing policy with budget header",
+      "labels": [],
+      "signature": "budget-cheap-first-header-implement"
+    },
+    {
       "path": "docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md",
       "title": "Issue: constitutional-primitives-prose-not-law",
       "labels": [],
       "signature": "constitutional-law-not-primitives-prose"
-    },
-    {
-      "path": "docs/intake/issue-drafts/df-001-skill-signature-gap.md",
-      "title": "DF-001: Skill installation lacks signature verification and quarantine",
-      "labels": [],
-      "signature": "001-installation-lacks-quarantine-signature"
     },
     {
       "path": "docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md",
@@ -2352,6 +3004,24 @@
       "signature": "donor-enforcement-exclusion-fit-map"
     },
     {
+      "path": "docs/intake/issue-drafts/entity-resolution-nightly.md",
+      "title": "Implement nightly entity resolution (MinHash/LSH + embeddings)",
+      "labels": [],
+      "signature": "embeddings-entity-implement-lsh-minhash"
+    },
+    {
+      "path": "docs/intake/issue-drafts/genesis-document-drift.md",
+      "title": "Build Genesis Document artifact and nightly drift detector",
+      "labels": [],
+      "signature": "artifact-build-detector-document-drift"
+    },
+    {
+      "path": "docs/intake/issue-drafts/glyph-schema-design.md",
+      "title": "Design glyph schema (LABEL/DEFINITION/RELATIONS + WordNet synset IDs)",
+      "labels": [],
+      "signature": "definition-design-glyph-ids-label"
+    },
+    {
       "path": "docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md",
       "title": "Issue: harness-platform-mismatch-root-cause",
       "labels": [],
@@ -2364,6 +3034,12 @@
       "signature": "constitutional-langgraph-not-workflow"
     },
     {
+      "path": "docs/intake/issue-drafts/limitless-connector.md",
+      "title": "Implement Limitless connector with cursor polling and idempotency",
+      "labels": [],
+      "signature": "connector-cursor-idempotency-implement-limitless"
+    },
+    {
       "path": "docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md",
       "title": "Issue: mac-studio-control-two-tier-guard",
       "labels": [],
@@ -2374,6 +3050,18 @@
       "title": "Issue: memory-adapter-certification-harness",
       "labels": [],
       "signature": "adapter-certification-harness-memory"
+    },
+    {
+      "path": "docs/intake/issue-drafts/moltron-claims-verification.md",
+      "title": "Evaluate Moltron's Claims vs. Reality",
+      "labels": [],
+      "signature": "claims-evaluate-moltron-reality"
+    },
+    {
+      "path": "docs/intake/issue-drafts/moltron-crypto-disclaimer.md",
+      "title": "Crypto Non-Endorsement — Reputational Risk Assessment",
+      "labels": [],
+      "signature": "assessment-crypto-endorsement-non-reputational"
     },
     {
       "path": "docs/intake/issue-drafts/omc-activation-store-score-calibration.md",
@@ -2486,20 +3174,6 @@
       "signature": "criteria-define-model-omc-routing"
     },
     {
-      "path": "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
-      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
-      "labels": [
-        "omoc",
-        "routing",
-        "deterministic",
-        "learned",
-        "build-order",
-        "tack-3",
-        "open-question"
-      ],
-      "signature": "before-lean-learned-mechanism-omoc"
-    },
-    {
       "path": "docs/intake/issue-drafts/omoc-lean-vs-learned-routing-paradigm.md",
       "title": "OMOC Routing — Deterministic vs. Learned",
       "labels": [],
@@ -2515,37 +3189,6 @@
         "research"
       ],
       "signature": "approach-first-implementation-lean-learned"
-    },
-    {
-      "path": "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md",
-      "title": "OQ-4 — Slug Adoption Timing vs Hydration Quality Unresolved",
-      "labels": [
-        "slugs",
-        "hydration",
-        "context-compiler",
-        "tack-1",
-        "tack-4",
-        "open-question",
-        "performance",
-        "compression",
-        "stable-bands"
-      ],
-      "signature": "adoption-hydration-quality-slug-timing"
-    },
-    {
-      "path": "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
-      "title": "7 Proposed ROCK Specs + 1 Playbook — Uncommitted, Proposal Bloat Risk",
-      "labels": [
-        "rock-specs",
-        "proposal-bloat",
-        "spec-suite",
-        "implementation-commitment",
-        "adr",
-        "build-order",
-        "tack-3",
-        "tack-7"
-      ],
-      "signature": "bloat-playbook-proposal-proposed-risk"
     },
     {
       "path": "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md",
@@ -2579,10 +3222,22 @@
       "signature": "bootstrap-criteria-define-driven-evidence"
     },
     {
+      "path": "docs/intake/issue-drafts/policy-gate-parse-only.md",
+      "title": "Implement policy gate for parse-only enforcement",
+      "labels": [],
+      "signature": "enforcement-gate-implement-only-parse"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
       "signature": "boundary-contract-module-python"
+    },
+    {
+      "path": "docs/intake/issue-drafts/r8s-net-integration.md",
+      "title": "Define r8s.net integration contract (data shape + pull cadence)",
+      "labels": [],
+      "signature": "cadence-contract-data-define-integration"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -2595,67 +3250,28 @@
       "signature": "acquisition-adapters-behind-boundary-real"
     },
     {
+      "path": "docs/intake/issue-drafts/receipt-ledger-sqlite.md",
+      "title": "Implement receipt ledger (SQLite + Console sink)",
+      "labels": [],
+      "signature": "console-implement-ledger-receipt-sink"
+    },
+    {
       "path": "docs/intake/issue-drafts/recovery-rule-no-enforcement.md",
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
     },
     {
-      "path": "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-      "title": "Pack dependency cycle detection not specified",
-      "labels": [
-        "packs",
-        "dependencies",
-        "validation",
-        "cycles"
-      ],
-      "signature": "cycle-dependency-detection-not-pack"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
-      "title": "PersonaPack \"elevated governance\" is undefined",
-      "labels": [
-        "packs",
-        "governance",
-        "persona-pack",
-        "definition"
-      ],
-      "signature": "elevated-governance-personapack"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
-      "title": "recipes/ and skills/ subtrees lack CI enforcement",
-      "labels": [
-        "packs",
-        "ci",
-        "recipes",
-        "skills",
-        "enforcement"
-      ],
-      "signature": "enforcement-lack-recipes-skills-subtrees"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md",
-      "title": "Refinement-first rule has no automated enforcement mechanism",
-      "labels": [
-        "packs",
-        "core-stability",
-        "enforcement",
-        "validation"
-      ],
-      "signature": "automated-enforcement-first-has-mechanism"
+      "path": "docs/intake/issue-drafts/rosetta-acp-interop-strategy.md",
+      "title": "Evaluate ACP as Rosetta's Agent-Delegation Protocol Layer",
+      "labels": [],
+      "signature": "acp-agent-delegation-evaluate-layer"
     },
     {
       "path": "docs/intake/issue-drafts/rosetta-traceability-header-enforcement.md",
       "title": "Issue: Enforce Rosetta Traceability Header Consistency",
       "labels": [],
       "signature": "consistency-enforce-header-rosetta-traceability"
-    },
-    {
-      "path": "docs/intake/issue-drafts/RPP-task-numbering-reference.md",
-      "title": "Issue: Define RPP Task Numbering Reference",
-      "labels": [],
-      "signature": "define-numbering-reference-rpp-task"
     },
     {
       "path": "docs/intake/issue-drafts/sac-001-audio-source-identity-prosodic-vs-biometric.md",
@@ -2766,25 +3382,39 @@
       "signature": "domain-protocol-source-substrate"
     },
     {
+      "path": "docs/intake/issue-drafts/summarization-styles.md",
+      "title": "Implement summarization style templates (Family/MoM/YT)",
+      "labels": [],
+      "signature": "family-implement-mom-style-summarization"
+    },
+    {
       "path": "docs/intake/issue-drafts/swarm-federation-governance-complexity.md",
       "title": "Swarm Federation Governance Complexity",
       "labels": [],
       "signature": "complexity-federation-governance-swarm"
     },
     {
-      "path": "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md",
-      "title": "Swarm Gnosis Public Commons Licensing and Governance Undefined",
+      "path": "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+      "title": "SwarmKit Design Patterns for Entif Memory/Decision Subsystems",
       "labels": [
-        "swarm-gnosis",
-        "public-commons",
-        "licensing",
-        "governance",
-        "layer-5",
-        "tack-7",
-        "open-question",
-        "federation"
+        "architecture",
+        "memory",
+        "decisioning",
+        "swarmkit",
+        "design-patterns"
       ],
-      "signature": "commons-gnosis-governance-licensing-public"
+      "signature": "decision-design-entif-memory-patterns"
+    },
+    {
+      "path": "docs/intake/issue-drafts/swarmkit-relevance-assessment.md",
+      "title": "Assess SwarmKit Relevance for Entif Engineering",
+      "labels": [
+        "research",
+        "architecture",
+        "relevance",
+        "swarmkit"
+      ],
+      "signature": "assess-engineering-entif-relevance-swarmkit"
     },
     {
       "path": "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md",
@@ -2881,6 +3511,12 @@
       "signature": "design-mvp-phase-pipeline-technicals"
     },
     {
+      "path": "docs/intake/issue-drafts/veracity-emotional-geometry-scope.md",
+      "title": "Define Veracity Vectors and Emotional Geometry implementation scope",
+      "labels": [],
+      "signature": "define-emotional-geometry-implementation-scope"
+    },
+    {
       "path": "docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md",
       "title": "Issue: video-transcript-dedup-playlist-tracking",
       "labels": [],
@@ -2915,7 +3551,9 @@
     },
     "openclaw": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/acpx.md",
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -3046,10 +3684,7 @@
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
-        "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
-      ]
+      "issueDrafts": []
     },
     "failure-taxonomy": {
       "documents": [
@@ -3118,9 +3753,7 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
+      "issueDrafts": []
     },
     "observability": {
       "documents": [
@@ -3149,7 +3782,8 @@
     },
     "telemetry": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -3174,6 +3808,7 @@
     "llm-limitations": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/ideas/Semantic Audio Cognition Framework.md"
       ],
       "issueDrafts": []
@@ -3206,9 +3841,7 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
+      "issueDrafts": []
     },
     "memory-failure": {
       "documents": [
@@ -3287,7 +3920,8 @@
     },
     "adaptive-memory": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -3444,6 +4078,7 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/external/AiiDA-WorkGraph.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -3826,7 +4461,8 @@
     },
     "logs": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -3838,14 +4474,16 @@
     },
     "classification": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
     "summarization": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/external/DeerFlow Architecture.md"
+        "docs/external/DeerFlow Architecture.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -3857,14 +4495,17 @@
     },
     "self-evolution": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
     "self-improvement": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md"
@@ -3902,7 +4543,8 @@
     },
     "replication": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -3941,6 +4583,7 @@
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -4040,7 +4683,8 @@
     },
     "parse-only": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -4052,7 +4696,9 @@
     },
     "safety": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -4117,7 +4763,9 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -4178,6 +4826,7 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
@@ -4186,14 +4835,13 @@
         "docs/intake/issue-drafts/donor-fit-verification.md",
         "docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md",
         "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md",
-        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
-        "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
+        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md"
       ]
     },
     "text-core": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/external/acpx.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
@@ -4317,6 +4965,7 @@
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
         "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
+        "docs/external/Berman-PRD.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
@@ -4327,7 +4976,8 @@
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
       ],
       "issueDrafts": []
     },
@@ -4427,10 +5077,13 @@
         "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Berman-PRD.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
+      ]
     },
     "sovereign-kernel": {
       "documents": [
@@ -4649,14 +5302,19 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
         "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
-        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md"
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
       ]
     },
     "package-topology": {
@@ -4699,7 +5357,8 @@
     "tooling": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -4715,8 +5374,10 @@
     "orchestration": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -4783,7 +5444,6 @@
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
         "docs/intake/issue-drafts/omoc-lean-vs-learned.md"
       ]
     },
@@ -4794,9 +5454,7 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
+      "issueDrafts": []
     },
     "roseta-v3": {
       "documents": [
@@ -4822,9 +5480,7 @@
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
+      "issueDrafts": []
     },
     "tiles": {
       "documents": [
@@ -5016,9 +5672,7 @@
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
+        "docs/intake/issue-drafts/omoc-lean-vs-learned.md"
       ]
     },
     "meaning-pipeline": {
@@ -5279,9 +5933,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
+      "issueDrafts": []
     },
     "semantic-latticing": {
       "documents": [
@@ -5470,11 +6122,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md",
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
+      "issueDrafts": []
     },
     "final-thesis": {
       "documents": [
@@ -5491,13 +6139,13 @@
     "routing": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-routescore-calibration-harness.md",
         "docs/intake/issue-drafts/omc-subagent-context-budget-limits.md",
-        "docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md",
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md"
+        "docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md"
       ]
     },
     "omc": {
@@ -5541,11 +6189,10 @@
     "performance": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
+      "issueDrafts": []
     },
     "agent-harnesses": {
       "documents": [
@@ -5575,9 +6222,12 @@
     "relevance": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/external/SwarmKit.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
+      ]
     },
     "eval-framework": {
       "documents": [
@@ -5594,7 +6244,8 @@
     },
     "suppression": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/acpx.md"
       ],
       "issueDrafts": []
     },
@@ -5957,6 +6608,7 @@
     "receipt": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
@@ -6379,7 +7031,8 @@
     },
     "evidence-quality": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -6407,12 +7060,7 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-        "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
-        "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
-      ]
+      "issueDrafts": []
     },
     "pack-categories": {
       "documents": [
@@ -6442,9 +7090,7 @@
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
-      ]
+      "issueDrafts": []
     },
     "filesystem": {
       "documents": [
@@ -6496,7 +7142,8 @@
     },
     "compatibility": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/acpx.md"
       ],
       "issueDrafts": []
     },
@@ -6542,8 +7189,10 @@
     "versioning": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/acpx.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/external/DeerFlow Architecture.md"
+        "docs/external/DeerFlow Architecture.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -6587,13 +7236,12 @@
     "ci": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Berman-PRD.md",
         "docs/external/DeerFlow Architecture.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md"
-      ]
+      "issueDrafts": []
     },
     "acceptance": {
       "documents": [
@@ -6610,6 +7258,7 @@
     "specialization": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": []
@@ -6624,17 +7273,15 @@
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md"
-      ]
+      "issueDrafts": []
     },
     "skills": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Berman-PRD.md",
+        "docs/external/Moltron.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md"
-      ]
+      "issueDrafts": []
     },
     "subtrees": {
       "documents": [
@@ -6657,6 +7304,7 @@
     "testing": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Berman-PRD.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -6683,6 +7331,7 @@
     "implementation": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -6705,26 +7354,484 @@
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md"
-      ]
+      "issueDrafts": []
     },
     "dependencies": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md",
-        "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md"
+        "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md"
       ]
     },
     "persona-pack": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
+      "issueDrafts": []
+    },
+    "agentic-tooling": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "acp": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "protocol": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "acpx": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "coding-agents": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "session-management": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency-management": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "npm": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "installation": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "node-js": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/AiiDA-WorkGraph.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "acp-bridge": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "crash-recovery": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "persistence": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "sessions": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "crash-reconnect": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "queue-management": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "configuration": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "security": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Berman-PRD.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "permissions": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-files": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "auth": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "structured-output": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "json": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "ndjson": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "streaming": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "automation": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-agent": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-adapters": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "compatibility-matrix": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "risk": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "stability": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md"
+        "docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md"
       ]
+    },
+    "alpha": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "breaking-changes": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "docs-intelligence": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md",
+        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
+      ]
+    },
+    "onboarding": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "documentation": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
+      ]
+    },
+    "agent-delegation": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "cancellation": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-queueing": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "cooperative-cancel": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "ttl": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "lifecycle": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "soft-close": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "session-history": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "extensibility": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "custom-agents": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "escape-hatch": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "custom-servers": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "openclaw-config": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "banner-suppression": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "environment-variables": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "fs-operations": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "fs-sandbox": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "terminal-permissions": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "permission-controls": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "authentication": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "auth-methods": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "credentials": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "auth-handshake": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "env-credentials": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "directory-walk": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "session-routing": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-root": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "licensing": {
+      "documents": [
+        "docs/external/acpx.md",
+        "docs/external/AiiDA-WorkGraph.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "mit": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "roadmap": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
+      ]
+    },
+    "coverage-tracking": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "acp-coverage": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "spec-coverage": {
+      "documents": [
+        "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
     },
     "scientific-workflow": {
       "documents": [
@@ -6837,7 +7944,8 @@
     "resilience": {
       "documents": [
         "docs/external/AiiDA-WorkGraph.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -7018,13 +8126,6 @@
       ],
       "issueDrafts": []
     },
-    "dependency": {
-      "documents": [
-        "docs/external/AiiDA-WorkGraph.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
-      ],
-      "issueDrafts": []
-    },
     "aiida-presto": {
       "documents": [
         "docs/external/AiiDA-WorkGraph.md"
@@ -7055,14 +8156,6 @@
       ],
       "issueDrafts": []
     },
-    "licensing": {
-      "documents": [
-        "docs/external/AiiDA-WorkGraph.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
-    },
     "ecosystem": {
       "documents": [
         "docs/external/AiiDA-WorkGraph.md"
@@ -7071,7 +8164,8 @@
     },
     "mit-license": {
       "documents": [
-        "docs/external/AiiDA-WorkGraph.md"
+        "docs/external/AiiDA-WorkGraph.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -7185,14 +8279,6 @@
       ],
       "issueDrafts": []
     },
-    "streaming": {
-      "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/DeerFlow Architecture.md",
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
     "redpanda": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
@@ -7216,6 +8302,7 @@
     "metrics": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
@@ -7289,7 +8376,8 @@
     },
     "knowledge-graph": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -7357,7 +8445,8 @@
     },
     "embeddings": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -7507,10 +8596,7 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-        "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
-      ]
+      "issueDrafts": []
     },
     "backtesting": {
       "documents": [
@@ -7532,7 +8618,8 @@
     },
     "privacy": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -7562,7 +8649,8 @@
     },
     "abstraction": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -7740,7 +8828,8 @@
     },
     "latency": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -7778,7 +8867,8 @@
     },
     "deployment": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -7854,14 +8944,6 @@
       ],
       "issueDrafts": []
     },
-    "risk": {
-      "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
-      ],
-      "issueDrafts": []
-    },
     "outliers": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
@@ -7899,18 +8981,10 @@
       ],
       "issueDrafts": []
     },
-    "security": {
-      "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/external/DeerFlow Architecture.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "tls": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -7958,7 +9032,8 @@
     },
     "cost": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -7971,6 +9046,1166 @@
     "egress": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
+      ],
+      "issueDrafts": []
+    },
+    "attention-residuals": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "prenorm-dilution": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "depth-aggregation": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "transformer-architecture": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-attention": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-efficiency": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "o-nd-complexity": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-plane-costs": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "benchmark": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "reasoning": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-step-reasoning": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-capability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "code-generation": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "code-capability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-attn-res-impl": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "transformer-layer-integration": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "layer-hook": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "scaling-laws": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "compute-efficiency": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "1-25x-compute-equivalent": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-training": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "gradient-distribution": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "magnitude-bounding": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "convergence": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-stability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "kimi-team": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "research-authorship": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "research": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md",
+        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
+        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
+      ]
+    },
+    "competitive-intelligence": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "workspace-structure": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "crm": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "contacts": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "interactions": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "follow-ups": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "context": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "meetings": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-injection": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-injection": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "intelligence": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "pattern-learner": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-approval": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "box": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "relevance-scoring": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "gmail": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "gmail-draft": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "approval-workflow": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "relationship-health": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "nudge-generator": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "fathom": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "calendar-aware-polling": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "after-meetings": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "browser-control": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "clawdhub": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "crm-query": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "beehiiv": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "hubspot": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "humanizer": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "knowledge-base": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "financials": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-usage-tracker": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "nano-banana-pro-2": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-improving-agent": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "summarize": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "todoist": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-idea-pipeline": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "x-research-v2": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "x-analytics": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "x-search": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "excalidraw": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "gemini-video-watch": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "x-trending-scraper": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-sub-ratio": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-draft-generator": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "research-skill": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-config": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-routing": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "gateway": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-fallback": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "agents": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "shared-modules": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "shared-db": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "config": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "reranker": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "review-council": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "cursor-council": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "workspace-state": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "council-recommendations": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "telegram-delivery": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "env-utils": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-sanitizer": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "fs": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "notification-redaction": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "secret-redaction": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "event-log": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "interaction-store": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "log-rotation": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "tools": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "social-tracker": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "instagram": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "collection": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "querying": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-meta-analysis": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-analysis": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "council": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "8-experts": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "14-sources": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "cron": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "operations": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "daily-brief": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "morning-council": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "crm-ingestion": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-review": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "security-review": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-health": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "social-collect": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "log-ingest": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "update-check": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "e2e-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "prd-sync": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "daily-notes": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-synthesis": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "heartbeat-state": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-history": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "integrations": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "channels": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "telegram": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "13-topics": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "group-id": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "slack": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "bot-token": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "user-token": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "attribution": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "financials-confidential": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "cfo-persona": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "monthly-csv": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "databases": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "sqlite-wal": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "14-databases": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "cron-log": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "environment": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "env-vars": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "api-keys": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "3-tiers": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "unit-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "integration-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "script-tests": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "workspace-config": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "root-md-files": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "agents-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "soul-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "user-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "tools-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "heartbeat-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "subagent-policy-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "restore-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "prd-md": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "reference": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltbot-clone": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-internals": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "e2e-tier-1": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "e2e-tier-2": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "e2e-tier-3": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "nightly": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "weekly": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "sanitize": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "logging": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "interactions-db": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-calls": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "api-calls": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "nlp": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "intent-detector": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "16-intent-types": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-pitches": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-pitch-hard-gate": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-search": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "similarity-threshold": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "cursor-agent": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "opus-summarizer": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform": {
+      "documents": [
+        "docs/external/Berman-PRD.md",
+        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-council": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "9-areas": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "openclaw-version-stale": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "git": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-git-sync": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
+      ],
+      "issueDrafts": []
+    },
+    "two-repo-sync": {
+      "documents": [
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -8139,12 +10374,6 @@
       "issueDrafts": []
     },
     "http-fallback": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-    "gateway": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
       ],
@@ -8555,6 +10784,431 @@
       ],
       "issueDrafts": []
     },
+    "process-orchestration": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "consensus-first": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "premature-closure": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "motivated-reasoning": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "groupthink": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "automation-bias": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "hallucination": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-management": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "consensus": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "productivity-theater": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "lean-validation": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "fake-door": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "stage-gate": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "discovery-driven": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "real-options": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "wager-sizing": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "premortem": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "contrarian": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "psychological-safety": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "dissent": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-transition": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "user-signal": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "preference-vs-behavior": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-provenance": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "bias": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "exit-triggers": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "sunk-cost": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-applicability": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "board-state": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "opportunity-magnitude": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "commitment": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "capital-allocation": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "two-way-door": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "reversibility": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "artifacts": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "strategic-lane": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "edge": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "differentiator": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "commitment-canvas": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-ledger": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "consent": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "calibration-loop": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "iterative": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "behavior-vs-preference": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "scoring-rubric": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-workflow": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "overconfidence": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "templates": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-analysis": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-limitation": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "bias-metadata": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "calibration": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "miscalibration": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "falsification": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "disconfirmation": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "competitive-strategy": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "competitive-positioning": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "edge-decay": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "competitive-tempo": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "competitive-pressure": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "resource-posture": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "opportunity-value": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "derivative-upside": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "commitment-posture": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "strategic-options": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "high-context-dissenters": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "comprehension-step": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "salvage-paths": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "decision-owner": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "accountability": {
+      "documents": [
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
     "langgraph-workflow": {
       "documents": [
         "docs/external/DeerFlow Architecture.md"
@@ -8756,18 +11410,6 @@
       "issueDrafts": []
     },
     "feishu": {
-      "documents": [
-        "docs/external/DeerFlow Architecture.md"
-      ],
-      "issueDrafts": []
-    },
-    "slack": {
-      "documents": [
-        "docs/external/DeerFlow Architecture.md"
-      ],
-      "issueDrafts": []
-    },
-    "telegram": {
       "documents": [
         "docs/external/DeerFlow Architecture.md"
       ],
@@ -9094,14 +11736,8 @@
     },
     "model-selection": {
       "documents": [
-        "docs/external/DeerFlow Architecture.md"
-      ],
-      "issueDrafts": []
-    },
-    "configuration": {
-      "documents": [
         "docs/external/DeerFlow Architecture.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -9274,6 +11910,268 @@
       ],
       "issueDrafts": []
     },
+    "voice": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "voice-mcp": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "orchestrator": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "thin-slice": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "vad": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "asr": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "llm": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "intent": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "dry-run": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "coaching": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "improvement": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingest": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-resolution": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "dedup": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-mining": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "tasker": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "genesis": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "alignment": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-model": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "phasing": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "plan": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "planning": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-should-have-owners.md",
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
+      ]
+    },
+    "types": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "schema": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "loop": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "mode": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "heuristics": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "classify": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "styles": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "reserved": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyph": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantics": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "content": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "media": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "realtime": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "market-data": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "reuse": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "engineering": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "velocity": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
     "deep-research": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
@@ -9381,13 +12279,6 @@
     "rpp": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "artifacts": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -9568,16 +12459,6 @@
       ],
       "issueDrafts": []
     },
-    "documentation": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
-      ]
-    },
     "code-quality": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -9614,15 +12495,6 @@
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
-    },
-    "planning": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-should-have-owners.md",
-        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
-      ]
     },
     "prompt-consolidation": {
       "documents": [
@@ -9693,12 +12565,6 @@
       ],
       "issueDrafts": []
     },
-    "acp": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "edge-adapter": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -9723,13 +12589,6 @@
       ],
       "issueDrafts": []
     },
-    "mcp": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "tool-contract": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -9746,13 +12605,15 @@
     "integration": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
     "cli": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -9887,6 +12748,607 @@
     "future": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-hardening": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-versioning": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-evolution-engine": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-repair": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-repair": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-self-evolution": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-portability": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
+      ]
+    },
+    "cross-agent": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-swarm": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "production-ready": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "days-to-learn": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-hardening-timeline": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-vs-openclaw": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-reflection": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-measure": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-critique-of-openclaw": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "open-telemetry": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "audit": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-observability": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "flight-recorder": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "root-access": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-audit": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "smythos": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "runtime": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "executable-skills": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-runtime-target": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "constrained-alignment": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hybrid": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-model-strategy": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "openclaw-integration": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "install-script": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-install": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-efficiency": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-waste": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-motivation": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "vpc": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hipaa": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-enterprise": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "zero-config": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "out-of-box": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-ease-of-use": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "performance-scorecard": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "adaptive": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-self-assessment": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-versioning": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-backup": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltron-versioning": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "text-files": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "fragility": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-building": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-evol": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "carcinization": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "metaphor": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "philosophy": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "infinite-evolution": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-improving": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "digital-employee": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "ambition": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-scaling": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "allergens": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "constraints": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "real-world-example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "feedback-loop": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-optimization": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "economics": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-compilation": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-engineering": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hybrid-flexibility": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "scaling": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "replay": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "open-standards": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-platform": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cursor": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "claude-code": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-codex": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "portability": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "evolution-loop": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "stripe": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "zendesk": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "day-n": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hardening": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "timeline": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "crypto": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "disclaimer": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "legal": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "non-endorsement": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "discord": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "community": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "tinkerers": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "engagement": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "open-source": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "bash": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "curl": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "manual-install": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-clone": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cp-r": {
+      "documents": [
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -10120,7 +13582,8 @@
     },
     "distributed": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -10129,14 +13592,6 @@
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
-    },
-    "swarm": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
-      ]
     },
     "asi": {
       "documents": [
@@ -11123,16 +14578,6 @@
       ],
       "issueDrafts": []
     },
-    "docs-intelligence": {
-      "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md",
-        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
-      ]
-    },
     "vocabulary": {
       "documents": [
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
@@ -11337,12 +14782,6 @@
       ],
       "issueDrafts": []
     },
-    "workspace-structure": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "monorepo-vs-polyrepo-decision-nx-monorepo-with-pnpm-workspace": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -11374,12 +14813,6 @@
       "issueDrafts": []
     },
     "first-slice": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "dry-run": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -11500,12 +14933,6 @@
       "issueDrafts": []
     },
     "12-specific-gates-required-for-mvp-alpha-rc": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "tools": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -11800,12 +15227,6 @@
       ],
       "issueDrafts": []
     },
-    "crypto": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
     "futures": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
@@ -12011,12 +15432,6 @@
       "issueDrafts": []
     },
     "elixir": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
-    "feedback-loop": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
@@ -12249,12 +15664,6 @@
       ],
       "issueDrafts": []
     },
-    "context": {
-      "documents": [
-        "docs/ideas/Semantic Audio Cognition Framework.md"
-      ],
-      "issueDrafts": []
-    },
     "lexeme-graph": {
       "documents": [
         "docs/ideas/Semantic Audio Cognition Framework.md"
@@ -12402,6 +15811,354 @@
     "artist-and-deaf-muse": {
       "documents": [
         "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "raft": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "fault-tolerance": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "pki": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "authorization": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-join": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "join-flow": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "reconciliation": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "desired-state": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "state-management": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "service-types": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "replicated": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "global": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "scheduling": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "rolling-updates": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "parallelism": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "delay": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "updates": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "restart-policies": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "fault-recovery": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "node-attributes": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "filtering": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "spread-strategy": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "load-balancing": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "strategy": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "state-store": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "in-memory": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "manager": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "state": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "node-availability": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "paused": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "drained": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "cluster-management": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "maintenance": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "cert-rotation": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "transparent-reload": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "certificates": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "go-version": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "protobuf": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "build-toolchain": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarmd": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarmctl": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "socket": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-migration": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "drain": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "failover": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "executor": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "pluggable-runtime": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "issue-candidate": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "supersession": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "project-status": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "constraint-labels": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "security-labeling": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-tenancy": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-history-entries": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "operational-parameters": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "dispatcher-heartbeat": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "health-checking": {
+      "documents": [
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "availability": {
+      "documents": [
+        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
@@ -12765,12 +16522,6 @@
       ],
       "issueDrafts": []
     },
-    "platform": {
-      "documents": [
-        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
     "medium": {
       "documents": [
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
@@ -13043,12 +16794,6 @@
       ],
       "issueDrafts": []
     },
-    "llm": {
-      "documents": [
-        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
     "gpt": {
       "documents": [
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
@@ -13134,12 +16879,6 @@
       "issueDrafts": []
     },
     "experimental": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md"
-      ]
-    },
-    "stability": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md"
@@ -13232,94 +16971,6 @@
         "docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md"
       ]
     },
-    "deterministic": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md"
-      ]
-    },
-    "learned": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md"
-      ]
-    },
-    "tack-3": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "research": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
-        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
-        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
-      ]
-    },
-    "hydration": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "tack-1": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "tack-4": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "stable-bands": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "rock-specs": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "proposal-bloat": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "spec-suite": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "implementation-commitment": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "adr": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "tack-7": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
-    },
     "contributor-experience": {
       "documents": [],
       "issueDrafts": [
@@ -13342,23 +16993,6 @@
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
-      ]
-    },
-    "definition": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md"
-      ]
-    },
-    "audio": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
-        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
-        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
-        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
-        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
-        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
       ]
     },
     "affective-modeling": {
@@ -13416,16 +17050,23 @@
         "docs/intake/issue-drafts/semantic-audio-stem-isolation.md"
       ]
     },
-    "public-commons": {
+    "decisioning": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
       ]
     },
-    "layer-5": {
+    "swarmkit": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
+      ]
+    },
+    "design-patterns": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
       ]
     },
     "ownership": {
@@ -13465,12 +17106,6 @@
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md"
-      ]
-    },
-    "roadmap": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
       ]
     }
   },

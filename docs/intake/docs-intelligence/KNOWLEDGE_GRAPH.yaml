@@ -1,11 +1,17 @@
 meta:
-  version: '0.8'
+  version: '0.9'
   generated: '2026-04-25T07:36:47Z'
-  total_docs_processed: 29
-  active_issue_drafts: 94
+  total_docs_processed: 30
+  active_issue_drafts: 104
   archived_issue_drafts: 23
-  total_issue_drafts_inventory: 117
-  docs_intelligence_files: 29
+  total_- path: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  processed_at: 2026-04-25T16:14:00Z
+  findings: 50
+  pr: null
+  issues: 10
+  notes: 'Extraction: 50 findings, 10 issue drafts (ccf-001 through ccf-010); PR pending.'
+issue_drafts_inventory: 127
+  docs_intelligence_files: 30
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -958,6 +964,78 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+
+- id: consensus-first-framework
+  name: Consensus-First Commitment Scoping Framework
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: v0.1 framework for agentic commitment sizing: five required artifacts, phase-transition handshake, commitment calibration loop, and AI-specific safeguards
+  extends: []
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-board-state
+  name: Board State
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Strategic situation characterized by opportunity magnitude, time sensitivity, competitive pressure, edge durability, loss tolerance, regulatory/trust constraints, portfolio opportunity cost
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-wager-sizing
+  name: Wager Sizing
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Interpretable rubric (Low/Medium/High per dimension) for commitment sizing; plain-English decision rule; maps to real-options
+  extends:
+  - consensus-first-framework
+  - real-options
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-evidence-ledger
+  name: Evidence Ledger
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'Required artifact: every claim needs claim statement, evidence type, source provenance, credibility score, incentive/bias notes, confidence level, disconfirmers; primary anti-hallucination mechanism'
+  extends:
+  - consensus-first-framework
+  - receipt-law
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-phase-transition-handshake
+  name: Phase-Transition Handshake
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Hard rule: no phase transition (ideation/spec/build/GA) is automatic; requires explicit affirmative on four questions including strongest-informed-objection comprehension and two-way/one-way door classification
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-anti-motivated-reasoning-guardrails
+  name: Anti-Motivated Reasoning Guardrails
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Four required mechanisms: explicit incentive notes in Evidence Ledger, premortems at bet-size increases, Team A/Team B or devil's advocacy on contested decisions, explicit disconfirmers and what-would-change-our-mind statements
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-protected-dissent-channel
+  name: Protected Dissent Channel
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Contrarian input protected channel with four-step protocol: capture, comprehension, structured challenge, explicit disposition; comprehension step mandatory before proceeding; not automatic deference
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
 pr_state:
   open:
   - pr: 62
@@ -1689,3 +1767,74 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/185
   status: published
 
+
+- path: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-001-no-phase-transition-enforcement
+  priority: P1
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-002-no-formal-consensus-protocol
+  priority: P1
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-003-no-board-state-formalization
+  priority: P1
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-004-no-premortem-practice
+  priority: P2
+  type: process-orchestration
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-005-no-evidence-ledger-implementation
+  priority: P1
+  type: evidence-management
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-006-no-exit-pivot-trigger-formalization
+  priority: P1
+  type: process-orchestration
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-007-no-spec-by-fluent-synthesis-enforcement
+  priority: P1
+  type: llm-workflow
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-008-no-anti-motivated-reasoning-automation
+  priority: P2
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-009-no-contrarian-protected-channel-formalization
+  priority: P2
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  source_pr: null
+  issue_id: ccf-010-consensus-first-framework-not-adopted
+  priority: P0
+  type: planning
+  status: candidate
