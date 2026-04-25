@@ -1631,6 +1631,162 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-agentic-memory-graph-design-doctrine.md",
+      "sourcePath": "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "receipts",
+        "canonicalization",
+        "cid",
+        "rfc8785",
+        "receipts-law",
+        "determinism",
+        "storage",
+        "federated-graphs",
+        "graph-router",
+        "knowledge-topology",
+        "graph-topology",
+        "domain-isolation",
+        "deterministic-middleware",
+        "voi",
+        "escalation",
+        "deterministic-gate",
+        "cost-control",
+        "signal-ingestion",
+        "sensing",
+        "bulk-trend",
+        "outlier-path",
+        "signal-plane",
+        "sensors",
+        "architecture",
+        "plane-map",
+        "mermaid",
+        "dependency-order",
+        "architecture-planes",
+        "implementation-order",
+        "execution-envelope",
+        "schema",
+        "yaml",
+        "actor",
+        "constitution",
+        "constraints",
+        "gates",
+        "orchestration",
+        "governance",
+        "persona-contract",
+        "novelty-budget",
+        "drift-metrics",
+        "dissent-posture",
+        "personaforge",
+        "engram",
+        "memory",
+        "activation",
+        "act-r",
+        "base-level",
+        "decay",
+        "ttl",
+        "memory-plane",
+        "muninn",
+        "contributor",
+        "pareto",
+        "registry",
+        "novelty-score",
+        "trust-score",
+        "high-signal-registry",
+        "api",
+        "routing",
+        "federation",
+        "signal-event",
+        "heuristic",
+        "voi-estimate",
+        "middleware-plane",
+        "transferability",
+        "scoring",
+        "rubric",
+        "novelty",
+        "composability",
+        "reproducibility",
+        "scoring-plane",
+        "constitutional-pack",
+        "scope",
+        "policy",
+        "signing",
+        "constitution-plane",
+        "postgres",
+        "pgvector",
+        "neo4j",
+        "neptune",
+        "graph-database",
+        "storage-topology",
+        "memory-pruning",
+        "hot-warm-cool-cold",
+        "model-routing",
+        "routing-matrix",
+        "compute-plane",
+        "model-selection",
+        "task-type",
+        "model-class",
+        "escalation-trigger",
+        "workflow",
+        "lifecycle",
+        "replayability",
+        "temporal",
+        "argo",
+        "workflow-plane",
+        "scorecard",
+        "output",
+        "capability",
+        "persona",
+        "roadmap",
+        "v0",
+        "v0-1",
+        "v1",
+        "implementation-phases",
+        "implementation",
+        "vertical-slice",
+        "github-ingestion",
+        "sequence-diagram",
+        "step-by-step",
+        "v0-slice",
+        "alternatives",
+        "vector-store",
+        "llm-providers",
+        "decision-support",
+        "risk",
+        "prompt-injection",
+        "persona-drift",
+        "graph-sprawl",
+        "cost-runaway",
+        "risk-management",
+        "domain-intelligence",
+        "analysis-algorithms",
+        "novelty-analysis",
+        "security-review",
+        "domain-intelligence-plane",
+        "rosetta-spine",
+        "cognitive-tiles",
+        "tiles",
+        "postmortem",
+        "skill",
+        "hard-ttl-days",
+        "soft-ttl-days",
+        "metacognitive",
+        "scored-artifact",
+        "transferability-plane",
+        "single-tenant",
+        "multi-tenant",
+        "constitutional-artifact-library",
+        "prov-o",
+        "prov",
+        "personas",
+        "identity-kernel",
+        "12-personas",
+        "constitutional-policy",
+        "tool-gating",
+        "structured-refusal"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-rosetta-prds-pro-extended-research.md",
       "sourcePath": "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
       "title": "Docs Intelligence Extraction",
@@ -3315,6 +3471,126 @@
       "signature": "donor-enforcement-exclusion-fit-map"
     },
     {
+      "path": "docs/intake/issue-drafts/entif-v0-001-voi-threshold-calibration.md",
+      "title": "ENTIF-v0-001: VOI Threshold Calibration — Escalation Gate Is Uncalibrated",
+      "labels": [],
+      "signature": "001-calibration-entif-escalation-gate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-002-middleware-escalation-dlq.md",
+      "title": "ENTIF-v0-002: Deterministic Middleware Lacks Escalation Queue, Retry Policy, and DLQ Semantics",
+      "labels": [],
+      "signature": "002-deterministic-dlq-entif-escalation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-003-constitutional-pack-signing.md",
+      "title": "ENTIF-v0-003: Constitutional Pack Signing Algorithm, Key Rotation, and Provisioning Unspecified",
+      "labels": [],
+      "signature": "003-algorithm-constitutional-entif-key"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-004-persona-identity-embedding-cid.md",
+      "title": "ENTIF-v0-004: Persona Identity Embedding CID Computation Unspecified",
+      "labels": [],
+      "signature": "004-cid-computation-embedding-entif"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-005-graph-router-join-strategy.md",
+      "title": "ENTIF-v0-005: Graph Router Join Strategy Enumeration Incomplete and Cache TTL Unjustified",
+      "labels": [],
+      "signature": "005-cache-entif-enumeration-graph"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-006-engram-act-r-parameterization.md",
+      "title": "ENTIF-v0-006: ACT-R Parameterization for Engram Base-Level Activation Unspecified",
+      "labels": [],
+      "signature": "006-act-activation-base-engram"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-007-memory-tier-transition-rules.md",
+      "title": "ENTIF-v0-007: Memory Tier Transition Rules (Hot/Warm/Cool/Cold) Not Specified",
+      "labels": [],
+      "signature": "007-cold-cool-entif-hot"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-008-workflow-state-transition-criteria.md",
+      "title": "ENTIF-v0-008: Workflow State Transition Criteria (Draft→Certified→Released) Not Defined",
+      "labels": [],
+      "signature": "008-certified-criteria-defined-draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-009-scoring-rubrics-five-scorecards.md",
+      "title": "ENTIF-v0-009: Five Scoring Frameworks Lack Rubrics (Scale, Frequency, Responsible Actor, Thresholds)",
+      "labels": [],
+      "signature": "009-actor-entif-five-frameworks"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-010-model-routing-matrix-stale.md",
+      "title": "ENTIF-v0-010: Model Routing Matrix Is Static — No Update Process as Model Landscape Evolves",
+      "labels": [],
+      "signature": "010-entif-evolves-landscape-matrix"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-011-rosetta-tile-minting-api.md",
+      "title": "ENTIF-v0-011: Rosetta Tile Minting API Contract Not Defined — Spine Integration Gap",
+      "labels": [],
+      "signature": "011-api-contract-defined-entif"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-012-phase-roadmap-accountability.md",
+      "title": "ENTIF-v0-012: Phase Roadmap (v0/v0.1/v1) Lacks Owners, Milestone Acceptance Criteria, and Dependency Chain",
+      "labels": [],
+      "signature": "012-acceptance-chain-criteria-dependency"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-013-postmortem-artifact-template.md",
+      "title": "ENTIF-v0-013: Postmortem Artifact Template Not Defined",
+      "labels": [],
+      "signature": "013-artifact-defined-entif-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-014-constitution-scope-delta-matrix.md",
+      "title": "ENTIF-v0-014: Constitutions Scope Difference Matrix (Single-Tenant vs Multi-Tenant) Incomplete",
+      "labels": [],
+      "signature": "014-constitutions-difference-entif-incomplete"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-015-model-routing-thresholds.md",
+      "title": "ENTIF-v0-015: Model Routing Decision Flow — VOI and Impact Threshold Values Not Provided",
+      "labels": [],
+      "signature": "015-decision-entif-flow-impact"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-016-domain-intelligence-plane-no-algorithms.md",
+      "title": "ENTIF-v0-016: Domain Intelligence Plane — Zero Analysis Algorithms Named or Specified",
+      "labels": [],
+      "signature": "016-algorithms-analysis-domain-entif"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-017-jcs-canonicalization-algorithm.md",
+      "title": "ENTIF-v0-017: JCS Canonicalization Procedure Not Specified as a Deterministic Algorithm with Test Vectors",
+      "labels": [],
+      "signature": "017-algorithm-canonicalization-deterministic-entif"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-018-signal-event-idempotency.md",
+      "title": "ENTIF-v0-018: Signal Event Idempotency — No Dedup Window, Polling Interval, or Idempotency Key Defined",
+      "labels": [],
+      "signature": "018-dedup-defined-entif-event"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-019-transferability-scorer-plane-unspecified.md",
+      "title": "ENTIF-v0-019: Transferability Scorer Plane — No API, Input Schema, or Output Schema Defined",
+      "labels": [],
+      "signature": "019-api-defined-entif-input"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entif-v0-020-structured-refusal-detection.md",
+      "title": "ENTIF-v0-020: Structured Refusal Detection and Enforcement Mechanism Not Implemented",
+      "labels": [],
+      "signature": "020-detection-enforcement-entif-implemented"
+    },
+    {
       "path": "docs/intake/issue-drafts/entity-resolution-nightly.md",
       "title": "Implement nightly entity resolution (MinHash/LSH + embeddings)",
       "labels": [],
@@ -3983,7 +4259,8 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -4282,7 +4559,8 @@
     },
     "vector-store": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -4669,6 +4947,7 @@
     "memory-plane": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -5209,6 +5488,7 @@
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
@@ -5350,6 +5630,7 @@
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
         "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
         "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
@@ -5463,6 +5744,7 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -5689,6 +5971,7 @@
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/external/Moltron.md",
@@ -5762,6 +6045,7 @@
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -5864,13 +6148,15 @@
     "federation": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
     "tiles": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -5922,7 +6208,8 @@
     },
     "receipts-law": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -5937,6 +6224,7 @@
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -6352,7 +6640,8 @@
     },
     "hot-warm-cool-cold": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -6537,6 +6826,7 @@
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
@@ -6616,6 +6906,7 @@
     "novelty": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
@@ -6930,7 +7221,8 @@
     },
     "yaml": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -6966,7 +7258,8 @@
     },
     "personas": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -7004,6 +7297,7 @@
     "engram": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": []
@@ -7208,7 +7502,8 @@
     },
     "escalation": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -7744,6 +8039,7 @@
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -7995,6 +8291,7 @@
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
@@ -8076,13 +8373,15 @@
     },
     "ttl": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
     "lifecycle": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -8229,7 +8528,8 @@
     },
     "roadmap": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
@@ -8273,7 +8573,8 @@
     },
     "reproducibility": {
       "documents": [
-        "docs/external/AiiDA-WorkGraph.md"
+        "docs/external/AiiDA-WorkGraph.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -8789,6 +9090,7 @@
     "neo4j": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": [
@@ -9177,6 +9479,7 @@
     "graph-database": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": [
@@ -9696,6 +9999,7 @@
     "prompt-injection": {
       "documents": [
         "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": [
@@ -9934,6 +10238,7 @@
     "model-routing": {
       "documents": [
         "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/external/Moltron.md"
       ],
       "issueDrafts": []
@@ -10166,7 +10471,8 @@
     },
     "security-review": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -10649,13 +10955,15 @@
     },
     "cognitive-tiles": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
     "canonicalization": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
       ],
@@ -10663,13 +10971,15 @@
     },
     "rfc8785": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
     "cid": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
@@ -10916,7 +11226,8 @@
     },
     "risk-management": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
@@ -12164,6 +12475,7 @@
     "model-selection": {
       "documents": [
         "docs/external/DeerFlow Architecture.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/external/Moltron.md"
       ],
       "issueDrafts": []
@@ -12507,7 +12819,8 @@
     },
     "schema": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-001-json-schema-missing.md"
@@ -12603,6 +12916,706 @@
       ],
       "issueDrafts": []
     },
+    "determinism": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "federated-graphs": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-router": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "knowledge-topology": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-topology": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-isolation": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "deterministic-middleware": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "voi": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "deterministic-gate": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-control": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "signal-ingestion": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "sensing": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "bulk-trend": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "outlier-path": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "signal-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "sensors": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "plane-map": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "mermaid": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency-order": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-planes": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-order": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "execution-envelope": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "actor": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitution": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": []
+    },
+    "constraints": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/external/Moltron.md",
+        "docs/external/SwarmKit.md"
+      ],
+      "issueDrafts": []
+    },
+    "gates": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "persona-contract": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "novelty-budget": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "drift-metrics": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "dissent-posture": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "personaforge": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "activation": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "act-r": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "base-level": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "decay": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "contributor": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "pareto": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "registry": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "novelty-score": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-score": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "high-signal-registry": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "api": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "signal-event": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "heuristic": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "voi-estimate": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "middleware-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "transferability": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "scoring": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "rubric": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": []
+    },
+    "composability": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "scoring-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitutional-pack": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "scope": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "signing": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitution-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "postgres": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "pgvector": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "neptune": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "storage-topology": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-pruning": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-matrix": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "compute-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-type": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-class": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "escalation-trigger": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md",
+        "docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md"
+      ]
+    },
+    "replayability": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "temporal": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "argo": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "scorecard": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "output": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "capability": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "persona": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": []
+    },
+    "v0": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "v0-1": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "v1": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-phases": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "vertical-slice": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "github-ingestion": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "sequence-diagram": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "step-by-step": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "v0-slice": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "alternatives": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-providers": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "decision-support": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "persona-drift": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-sprawl": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-runaway": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-intelligence": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "analysis-algorithms": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "novelty-analysis": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-intelligence-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-spine": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "postmortem": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "hard-ttl-days": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "soft-ttl-days": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "metacognitive": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "scored-artifact": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "transferability-plane": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "single-tenant": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-tenant": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitutional-artifact-library": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "prov-o": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": []
+    },
+    "prov": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-kernel": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "12-personas": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitutional-policy": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-gating": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "structured-refusal": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
     "deep-research": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
@@ -12653,12 +13666,6 @@
       ],
       "issueDrafts": []
     },
-    "cost-control": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "ingestion-pipeline": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -12667,8 +13674,7 @@
     },
     "abac": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -12794,13 +13800,6 @@
     "implementation-methodology": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "vertical-slice": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -13005,12 +14004,6 @@
       ],
       "issueDrafts": []
     },
-    "scope": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "exclusions": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -13051,12 +14044,6 @@
       "issueDrafts": []
     },
     "http": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "api": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -14394,12 +15381,6 @@
       ],
       "issueDrafts": []
     },
-    "persona": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": []
-    },
     "micro-model": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
@@ -14585,12 +15566,6 @@
       ],
       "issueDrafts": []
     },
-    "rubric": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": []
-    },
     "explicit-tools": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
@@ -14720,12 +15695,6 @@
     "epistemic-provenance-profile": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": []
-    },
-    "constitution": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": []
     },
@@ -14990,13 +15959,6 @@
     "phased-build-for-mr-tech-lead": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": []
-    },
-    "mermaid": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -15414,15 +16376,6 @@
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
-    },
-    "postgres": {
-      "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
-      ]
     },
     "trust-scoring": {
       "documents": [
@@ -17527,14 +18480,6 @@
       ],
       "issueDrafts": []
     },
-    "pgvector": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
-      ]
-    },
     "migration-contracts": {
       "documents": [
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
@@ -17656,12 +18601,6 @@
       "issueDrafts": []
     },
     "lasting-impact": {
-      "documents": [
-        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
-    "decay": {
       "documents": [
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
@@ -18003,17 +18942,18 @@
         "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md"
       ]
     },
-    "workflow": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md",
-        "docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md"
-      ]
-    },
     "reference-architecture": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md"
+      ]
+    },
+    "agentic-messaging": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md",
+        "docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md",
+        "docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md"
       ]
     },
     "ablation": {
