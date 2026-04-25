@@ -1013,6 +1013,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/223
   status: active
+- id: am-003-nonce-store-replay-detection
+  name: Nonce Store for Distributed Replay Protection
+  introduced_by: docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md
+  introduced_at: '2026-04-25'
+  definition: A storage backend for tracking used nonces per sender to prevent replay
+    attacks in the Agentic Messaging system. Requires TTL-based expiry aligned with
+    message expires_at, multi-node consistency, and replay_hits telemetry.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/226
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1933,3 +1943,127 @@ issue_drafts_inventory:
   type: planning
   status: candidate
 
+
+  # Rosetta v3 Core Spine Specification issue drafts (PR TBD)
+  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-001-append-only-enforcement
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+    priority: P2
+    type: docs-intelligence
+  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-003-trust-bootstrap-model
+    priority: P1
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-004-conformance-test-harness
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-005-delta-capsule-propagation
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-006-episteme-layer-4-scope
+    priority: P3
+    type: open-question
+  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-007-network-topology-assumptions
+    priority: P2
+    type: architecture
+  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+    priority: P2
+    type: risk
+  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-009-profile-negotiation-protocol
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-010-translator-tile-versioning
+    priority: P2
+    type: implementation
+
+  # Rosetta v3 Core Spine Specification issue drafts
+  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-001-append-only-enforcement
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+    priority: P2
+    type: docs-intelligence
+  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-003-trust-bootstrap-model
+    priority: P1
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-004-conformance-test-harness
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-005-delta-capsule-propagation
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-006-episteme-layer-4-scope
+    priority: P3
+    type: open-question
+  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-007-network-topology-assumptions
+    priority: P2
+    type: architecture
+  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+    priority: P2
+    type: risk
+  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-009-profile-negotiation-protocol
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-010-translator-tile-versioning
+    priority: P2
+    type: implementation
