@@ -61,6 +61,21 @@
       "outputs": [
         "{projectRoot}/coverage"
       ]
+    },
+    "validate-intelligence": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/doc-intake/validate-docs-intelligence.mjs --base origin/main"
+      },
+      "cache": false,
+      "inputs": [
+        "{projectRoot}/validate-docs-intelligence.mjs",
+        "{workspaceRoot}/docs/intake/docs-intelligence/*.md",
+        "{workspaceRoot}/docs/intake/issue-drafts/*.md",
+        "{workspaceRoot}/docs/intake/doc-ledger.json"
+      ],
+      "outputs": []
     }
   },
   "tags": [

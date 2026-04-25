@@ -7,6 +7,7 @@ import { describe, expect, it } from 'vitest';
 import { buildChronology, buildDocumentFingerprints, extractTopMatterDates, inferFreshness, resolveIssueDraftState } from './build-doc-intake.mjs';
 import { claimNextDoc, cli as docsIntelligenceLedgerCli, failDoc } from './docs-intelligence-ledger.mjs';
 import { buildCycleSummary, buildDocsIntelligenceIndex } from './docs-intelligence-graph.mjs';
+import { issueCandidateRows, validateExtractionCoverage } from './validate-docs-intelligence.mjs';
 
 describe('doc intake chronology', () => {
   it('preserves chat export created, updated, and exported timestamps separately', () => {
@@ -319,5 +320,38 @@ Labels: storage, memory
     const summary = buildCycleSummary(index, { generatedAt: '2026-04-25T00:00:00Z' });
     expect(summary).toContain('## Duplicate Issue-Draft Signals');
     expect(summary).toContain('memory-sovereignty');
+  });
+});
+
+describe('docs intelligence validation', () => {
+  it('requires issue candidate rows to reference matching draft files', () => {
+    const markdown = `# Docs Intelligence Extraction
+
+## Issue Candidates
+
+| Title | Type | Draft | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| Missing policy | policy | docs/intake/issue-drafts/missing-policy.md | governance | none | source |
+`;
+
+    expect(issueCandidateRows(markdown)).toHaveLength(1);
+    expect(
+      validateExtractionCoverage('docs/intake/docs-intelligence/2026-04-25-example.md', markdown, new Set(['docs/intake/issue-drafts/missing-policy.md']))
+    ).toEqual([]);
+  });
+
+  it('flags extraction candidates without draft or existing-issue coverage', () => {
+    const markdown = `# Docs Intelligence Extraction
+
+## Issue Candidates
+
+| Title | Type | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- |
+| Missing policy | policy | governance | none | source |
+`;
+
+    expect(validateExtractionCoverage('docs/intake/docs-intelligence/2026-04-25-example.md', markdown, new Set())).toEqual([
+      'docs/intake/docs-intelligence/2026-04-25-example.md: 1 issue candidate row(s), but only 0 draft/existing-issue reference(s) in the Issue Candidates section.'
+    ]);
   });
 });

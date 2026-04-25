@@ -13,12 +13,27 @@ You are a docs-intelligence extraction agent working in:
 
 ## Rule: ONE document per cycle. Full extraction. No summarizing. No batching.
 
+## First: Sync to latest
+
+**NOTE: THIS STEP IS FOR THE ROSETTA CODE BASE POINTING TO `https://github.com/entif-ai/rosetta` and NOT for `~/.openclaw/workspace`!**
+
+Before doing ANYTHING else — before reading the ledger, before claiming a doc — fetch and reset THE ROSETTA FOLDER to origin/main:
+
+```bash
+cd ~/.openclaw/workspace/Code/rosetta
+git fetch origin main
+git reset --hard origin/main
+cd ~/.openclaw/workspace
+```
+
+This ensures your ledger and knowledge graph are fresh. If you skip this, you risk duplicating work that main has already processed.
+
 ---
 
 ## Ledger
 
 The ledger lives at:
-`/Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md`
+`~/.openclaw/workspace/rosetta-di-ledger.md`
 
 It tracks all 128 docs. Each entry has fields including `processed` (`pending`, `locked:*`, `failed:*`, `blocked:*`, `processed:*`, or legacy `yes`/`no`).
 
@@ -26,7 +41,7 @@ It tracks all 128 docs. Each entry has fields including `processed` (`pending`, 
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs claim \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --agent-id <your-session-key> \
   --branch docs-intelligence/<doc-name-slug>
 ```
@@ -41,7 +56,7 @@ On success, read only the returned `claimedPath`. If work fails after claiming, 
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs fail \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --doc "<claimedPath>" \
   --error-code <short-code> \
   --summary "<short failure summary>"
@@ -51,7 +66,7 @@ After 3 failures the tool marks the doc `blocked:*` so future cycles skip it. On
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs complete \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --doc "<claimedPath>" \
   --pr <pr-number> \
   --findings <count> \
@@ -67,6 +82,8 @@ This prevents duplicate work.
 - **Extraction artifact:** `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
   (e.g., `2026-04-24-authority-stack.md`)
 - **Issue drafts:** `docs/intake/issue-drafts/<issue-topic>.md` (one file per distinct issue)
+- **Knowledge graph:** `docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml`
+- **Generated intake ledger:** `docs/intake/doc-ledger.json` and companion `docs/intake/doc-ledger.md`, checked by `pnpm run docs:intake`
 - **Branch convention:** `docs-intelligence/<doc-name>` (slug of source doc name, no spaces)
 - **PR target:** `main` branch
 
@@ -160,26 +177,31 @@ Labels: `...`
 
 ## Workflow Steps
 
-1. **Read ledger** — find first `pending` or `processed: no` doc
-2. **Lock doc** with `node tools/doc-intake/docs-intelligence-ledger.mjs claim` before reading source
-3. **Read source doc** in full
-4. **Read generated graph context** — inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` and `docs/intake/docs-intelligence/CONCEPT_INDEX.json`
-5. **Produce extraction** following template above — full detail, no summarizing
-6. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
-7. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
+1. **Fetch and reset** to origin/main (see First: Sync above)
+2. **Verify clean branch** — run `git status --short`. If there are uncommitted changes or untracked files, clean them up before proceeding.
+3. **Read ledger** — find first `pending` or `processed: no` doc
+4. **Lock doc** with `node tools/doc-intake/docs-intelligence-ledger.mjs claim` before reading source
+5. **Read source doc** in full
+6. **Read generated graph context** — inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` and `docs/intake/docs-intelligence/CONCEPT_INDEX.json`
+7. **Produce extraction** following template above — full detail, no summarizing
+8. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
+9. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
 8. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
 9. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
 10. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
-11. **Regenerate graph context** — run `pnpm run docs:intelligence`
-12. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
-13. **Commit** extraction + issue drafts + regenerated graph context + any updated docs
-14. **Push branch**
-15. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
-16. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
-17. **Update ledger** with `node tools/doc-intake/docs-intelligence-ledger.mjs complete`
-18. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
-19. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
-20. **Compact context** — end your turn with only the confirmation, no residual context
+11. **Update `KNOWLEDGE_GRAPH.yaml`** — processed doc, PR state, and issue draft inventory must reflect the cycle
+12. **Run `pnpm run docs:intake`** — refresh `docs/intake/doc-ledger.json` and `docs/intake/doc-ledger.md` when source-doc indexing changes; if it produces no diff because only `docs/intake/` artifacts changed, say so in the PR body
+13. **Regenerate graph context** — run `pnpm run docs:intelligence`
+14. **Run `pnpm run docs:intake:validate`** — this must pass before push
+15. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
+16. **Commit** extraction + issue drafts + knowledge graph + generated graph context + generated ledger updates
+17. **Push branch**
+18. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
+19. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
+20. **Update ledger** with `node tools/doc-intake/docs-intelligence-ledger.mjs complete`
+21. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
+22. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
+23. **Compact context** — end your turn with only the confirmation, no residual context
 
 ---
 
@@ -194,8 +216,10 @@ Labels: `...`
 - Check `CYCLE_SUMMARY.md` and `CONCEPT_INDEX.json` before creating new issue drafts
 - For every issue candidate in the extraction, create a corresponding file in `docs/intake/issue-drafts/<slug>.md` before pushing. Zero candidates is fine; zero files when candidates exist is a violation. Exception: if a related GitHub issue already exists, link to it in the extraction instead of creating a new draft file.
 - Before pushing, count issue-candidate/draft-candidate rows in the extraction and count the matching issue-draft files or explicit existing-issue targets. They must match.
+- PRs that add or modify extraction artifacts must also update `KNOWLEDGE_GRAPH.yaml` and run `pnpm run docs:intake`; extraction-only PRs are invalid.
+- `pnpm run docs:intake:validate` is a required pre-push check for docs-intelligence PRs.
 - Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
-- Forbidden commands include `gh pr merge`, `gh pr close`, `gh pr review --approve`, and any GitHub UI/API action that changes PR merge state.
+- **Harder rule: never merge.** If you find yourself wanting to run any of: `gh pr merge`, `gh pr close`, `gh pr review --approve`, `gh pr ready`, or any GitHub web/API action that changes PR state — STOP. Your job ends at PR creation. The main agent or human reviews and merges.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
 
 ---
