@@ -79,6 +79,15 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/authority-stack-gaps.md",
       "draftStatus": "published"
+    },
+    "rock-3111-c-pack-id-placeholder": {
+      "number": 69,
+      "state": "open",
+      "title": "ROCK-3111-C: Define and enforce content-addressed pack_id algorithm",
+      "url": "https://github.com/entif-ai/rosetta/issues/69",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
