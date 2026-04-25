@@ -395,6 +395,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
+- id: ac-001-attention-capital-integration
+  name: Attention Capital Platform Integration Gap
+  introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-integration.md
+  introduced_at: '2026-04-25'
+  definition: Attention Capital proposes a Python+Rust+Neo4j+Redpanda stack entirely
+    disjoint from Rosetta/Entif TypeScript/Nx/LangGraph/PostgreSQL stack. No integration
+    design exists.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/100
+  status: active
 - id: ct-002-trust-bootstrap
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md

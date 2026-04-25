@@ -233,6 +233,15 @@
     "archivedDraftPath": "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md",
     "draftStatus": "published"
   },
+  "ac-001-attention-capital-integration": {
+    "number": 100,
+    "state": "open",
+    "title": "AC-001: Attention Capital Platform \u2014 Integration Design Needed Before Commitment",
+    "url": "https://github.com/entif-ai/rosetta/issues/100",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-integration.md",
+    "draftStatus": "published"
+  },
   "ct-002-trust-bootstrap": {
     "number": 96,
     "state": "open",
