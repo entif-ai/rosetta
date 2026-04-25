@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: MOL-001-adaptive-memory-loop
+  name: Adaptive Memory Self-Evolution Loop
+  introduced_by: docs/intake/issue-drafts/MOL-001-adaptive-memory-loop.md
+  introduced_at: '2026-04-25'
+  definition: Closed-loop mechanism for post-promotion skill hardening, auto-repair,
+    and crystallize-based re-promotion in Rosetta adaptive memory plane, inspired
+    by Moltron's 6-step evolution engine.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/171
+  status: active
 - id: e2e-002-14day-not-lame-alignment
   name: 14-Day / NOT LAME Milestone Alignment
   introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
