@@ -645,6 +645,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/191
   status: active
+- id: ac-002-graph-database-retrieval
+  name: Graph Database Retrieval Pipeline
+  introduced_by: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
+  introduced_at: '2026-04-25'
+  definition: "Neo4j-based retrieval pipeline for relational trend data using Personalized\
+    \ PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,\
+    \ and temporal graph networks \u2014 superior to TopK nearest-neighbor similarity\
+    \ search"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/187
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

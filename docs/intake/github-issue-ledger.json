@@ -412,5 +412,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/acp-coverage-roadmap-access.md",
     "draftStatus": "published"
+  },
+  "ac-002-graph-database-retrieval.md": {
+    "number": 187,
+    "state": "open",
+    "title": "AC-002: Graph Database Retrieval Pipeline for Relational Trend Modeling",
+    "url": "https://github.com/entif-ai/rosetta/issues/187",
+    "activeDraftPath": "docs/intake/issue-drafts/ac-002-graph-database-retrieval.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-002-graph-database-retrieval.md",
+    "draftStatus": "published"
   }
 }
