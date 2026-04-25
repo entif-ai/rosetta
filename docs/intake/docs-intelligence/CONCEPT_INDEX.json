@@ -3599,6 +3599,162 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-token-boundaries-explained.md",
+      "sourcePath": "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "tokenization",
+        "vendor-agnostic",
+        "convergence",
+        "llm-vendors",
+        "latent-space",
+        "metrology",
+        "industrial-revolution",
+        "standardization",
+        "maudslay",
+        "johansson-gauge-blocks",
+        "precision-tooling",
+        "moe",
+        "concept-routing",
+        "pasigraphy",
+        "mixture-of-concepts",
+        "mixture-of-experts",
+        "syntagnet",
+        "verbatlas",
+        "stack-architecture",
+        "layer-diagram",
+        "protocol-layer",
+        "concept-frames",
+        "concept-packages",
+        "runtime-interop",
+        "execution-mesh",
+        "swarm-governance",
+        "json-schema",
+        "concept-registry",
+        "frame-registry",
+        "concept-schema",
+        "frame-schema",
+        "modality-maps",
+        "bundle-format",
+        "halo",
+        "mcda",
+        "audit",
+        "meaning-bundle",
+        "criterion-scores",
+        "explain-trace",
+        "sbert",
+        "procrustes",
+        "multimodal-prototypes",
+        "path2vec",
+        "sentence-embeddings",
+        "orthogonal-procrustes",
+        "clip",
+        "yamnet",
+        "ppr",
+        "wsd",
+        "katz",
+        "graph-priors",
+        "syntagmatic",
+        "personalized-pagerank",
+        "syntagmatic-edges",
+        "reference-code",
+        "bundle",
+        "codec",
+        "python-modules",
+        "pytorch",
+        "networkx",
+        "sentence-transformers",
+        "build-plan",
+        "task-list",
+        "prioritization",
+        "progress-tracking",
+        "20-tasks",
+        "phase-ordering",
+        "progress-estimates",
+        "fast-viable-ordering",
+        "dependencies",
+        "phase-sequencing",
+        "parallelization",
+        "benchmarking",
+        "simlex",
+        "korlex",
+        "wordnet-embeddings",
+        "simlex-999",
+        "rg-65",
+        "deep-research-prompt",
+        "rpp-spec",
+        "deep-research",
+        "rpp-architecture",
+        "architecture-blueprint",
+        "implementation-mvp",
+        "phase-1-10",
+        "10-phases",
+        "implementation-blueprint",
+        "analogy",
+        "johansson",
+        "gauge-blocks",
+        "rpp",
+        "entif-stack",
+        "glyphcore",
+        "mindmesh",
+        "truthfabric",
+        "scs",
+        "mcp",
+        "weights",
+        "decision-function",
+        "mcda-weights",
+        "criterion-vector",
+        "trm",
+        "micro-reasoner",
+        "concept-graph",
+        "micro-reasoners",
+        "stepwise-reasoning",
+        "mlacs",
+        "cache",
+        "router",
+        "semantic-fingerprint",
+        "semantic-cache",
+        "runtime-router",
+        "swarm",
+        "dht",
+        "gossip",
+        "spp",
+        "kademlia",
+        "routine-sharing",
+        "weak-supervision",
+        "auto-labeling",
+        "denoising",
+        "ufsac",
+        "omsti",
+        "semcor",
+        "train-o-matic",
+        "parallel-corpora",
+        "align-sim",
+        "stress-tests",
+        "semantic-robustness",
+        "cross-lingual",
+        "mt",
+        "wsi",
+        "spanish",
+        "mt-candidates",
+        "sif-scoring",
+        "wsi-purification",
+        "semver",
+        "versioning",
+        "deprecation",
+        "migration",
+        "replaced-by",
+        "conversion-tables",
+        "ontology-versioning",
+        "licensing",
+        "spdx",
+        "provenance",
+        "spdx-identifiers",
+        "provenance-sources",
+        "license-field"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md",
       "sourcePath": "docs/ideas/Treating Trends Tantamount to Trading Technicals.md",
       "title": "Docs Intelligence Extraction",
@@ -4114,6 +4270,12 @@
         "validation"
       ],
       "signature": "016-bootstrap-cts-gnosis-mechanism"
+    },
+    {
+      "path": "docs/intake/issue-drafts/DCP-010-automation-ceiling-audit-needed.md",
+      "title": "DCP-010: Automation ceiling audit not done for existing specs",
+      "labels": [],
+      "signature": "010-audit-automation-ceiling-dcp"
     },
     {
       "path": "docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md",
@@ -5025,6 +5187,109 @@
       "signature": "assess-engineering-entif-relevance-swarmkit"
     },
     {
+      "path": "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md",
+      "title": "Issue Draft",
+      "labels": [
+        "graph-embeddings",
+        "path2vec",
+        "pytorch",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md",
+      "title": "Issue Draft",
+      "labels": [
+        "mcda",
+        "wsd",
+        "disambiguation",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md",
+      "title": "Issue Draft",
+      "labels": [
+        "evaluation",
+        "semantic-robustness",
+        "stress-tests",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md",
+      "title": "Issue Draft",
+      "labels": [
+        "procrustes",
+        "alignment",
+        "embeddings",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md",
+      "title": "Issue Draft",
+      "labels": [
+        "ppr",
+        "wsd",
+        "graph-algorithms",
+        "disambiguation",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md",
+      "title": "Issue Draft",
+      "labels": [
+        "bundle",
+        "validation",
+        "jsonschema",
+        "explainability",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md",
+      "title": "Issue Draft",
+      "labels": [
+        "multimodal",
+        "clip",
+        "image-encoder",
+        "prototypes",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md",
+      "title": "Issue Draft",
+      "labels": [
+        "multimodal",
+        "yamnet",
+        "audio-encoder",
+        "prototypes",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
+      "path": "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md",
+      "title": "Issue Draft",
+      "labels": [
+        "codec",
+        "openai",
+        "function-calls",
+        "rpp"
+      ],
+      "signature": "draft"
+    },
+    {
       "path": "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md",
       "title": "Define English accompaniment package contract for Text-Core outputs",
       "labels": [
@@ -5757,7 +6022,8 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -6426,7 +6692,8 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md"
@@ -6461,7 +6728,9 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md"
+      ]
     },
     "prism-evaluation-constraint": {
       "documents": [
@@ -7140,7 +7409,8 @@
     },
     "analogy": {
       "documents": [
-        "docs/governance/DONOR_FIT_MAP.md"
+        "docs/governance/DONOR_FIT_MAP.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8063,13 +8333,15 @@
     "verbatlas": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
     "syntagnet": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8180,7 +8452,8 @@
     "benchmarking": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8245,7 +8518,8 @@
     },
     "layer-diagram": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8269,7 +8543,8 @@
     },
     "moe": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8738,7 +9013,8 @@
     },
     "build-plan": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8971,7 +9247,8 @@
     },
     "semver": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -8982,7 +9259,8 @@
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/external/DeerFlow Architecture.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -9001,7 +9279,8 @@
     "migration": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -9149,7 +9428,8 @@
     },
     "dependencies": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -9613,7 +9893,8 @@
       "documents": [
         "docs/external/acpx.md",
         "docs/external/AiiDA-WorkGraph.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -9794,7 +10075,8 @@
     },
     "parallelization": {
       "documents": [
-        "docs/external/AiiDA-WorkGraph.md"
+        "docs/external/AiiDA-WorkGraph.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -10221,7 +10503,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md"
+      ]
     },
     "community-detection": {
       "documents": [
@@ -10246,7 +10530,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md"
+      ]
     },
     "similarity": {
       "documents": [
@@ -10283,7 +10569,9 @@
         "docs/external/Berman-PRD.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md"
+      ]
     },
     "link-prediction": {
       "documents": [
@@ -10437,7 +10725,8 @@
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md"
+        "docs/intake/issue-drafts/cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md",
+        "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md"
       ]
     },
     "backtesting": {
@@ -10563,9 +10852,12 @@
     },
     "pytorch": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md"
+      ]
     },
     "scikit-learn": {
       "documents": [
@@ -10754,13 +11046,19 @@
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md",
+        "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md"
+      ]
     },
     "clip": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md"
+      ]
     },
     "audio-transformers": {
       "documents": [
@@ -10784,7 +11082,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md"
+      ]
     },
     "shap": {
       "documents": [
@@ -12288,7 +12588,8 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -12518,7 +12819,8 @@
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/cts-006-egc-ithkuil-graphemic-core.md"
@@ -13667,13 +13969,15 @@
     },
     "kademlia": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
     "dht": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/cts-007-swarm-gnosis-dht-cognitive-tile-network.md"
@@ -13759,7 +14063,8 @@
     },
     "deprecation": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -15472,7 +15777,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -15585,7 +15891,8 @@
         "docs/external/Moltron.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/sba-005-coach-module-safety-harness.md"
+        "docs/intake/issue-drafts/sba-005-coach-module-safety-harness.md",
+        "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md"
       ]
     },
     "data-model": {
@@ -16376,7 +16683,8 @@
     "deep-research": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -16474,9 +16782,20 @@
     },
     "rpp": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md",
+        "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md",
+        "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md",
+        "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md",
+        "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md",
+        "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md",
+        "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md",
+        "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md",
+        "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md"
+      ]
     },
     "mvp": {
       "documents": [
@@ -17378,7 +17697,8 @@
     },
     "trm": {
       "documents": [
-        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
+        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/eal-001-trm-kernel-capsule.md"
@@ -17606,7 +17926,10 @@
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md",
+        "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md"
+      ]
     },
     "meta-lcm": {
       "documents": [
@@ -17635,7 +17958,8 @@
     },
     "vendor-agnostic": {
       "documents": [
-        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
+        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -18718,7 +19042,8 @@
     "swarm": {
       "documents": [
         "docs/external/Moltron.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
@@ -19373,7 +19698,8 @@
     },
     "mixture-of-concepts": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -19765,7 +20091,8 @@
     },
     "mixture-of-experts": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -20898,7 +21225,8 @@
     },
     "prioritization": {
       "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
       "issueDrafts": []
     },
@@ -22527,6 +22855,738 @@
       ],
       "issueDrafts": []
     },
+    "tokenization": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "convergence": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-vendors": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "latent-space": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "metrology": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "industrial-revolution": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "standardization": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "maudslay": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "johansson-gauge-blocks": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "precision-tooling": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-routing": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "stack-architecture": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "protocol-layer": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-frames": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-packages": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "runtime-interop": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "execution-mesh": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm-governance": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-schema": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-registry": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "frame-registry": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-schema": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "frame-schema": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "modality-maps": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "bundle-format": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "halo": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcda": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md"
+      ]
+    },
+    "meaning-bundle": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "criterion-scores": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "explain-trace": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "sbert": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "procrustes": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md"
+      ]
+    },
+    "multimodal-prototypes": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "path2vec": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md"
+      ]
+    },
+    "sentence-embeddings": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "orthogonal-procrustes": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "yamnet": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md"
+      ]
+    },
+    "ppr": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md"
+      ]
+    },
+    "wsd": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md",
+        "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md"
+      ]
+    },
+    "katz": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-priors": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "syntagmatic": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "personalized-pagerank": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "syntagmatic-edges": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "reference-code": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "bundle": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md"
+      ]
+    },
+    "codec": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md"
+      ]
+    },
+    "python-modules": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "networkx": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "sentence-transformers": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-list": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "progress-tracking": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "20-tasks": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-ordering": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "progress-estimates": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "fast-viable-ordering": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-sequencing": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "simlex": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "korlex": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "wordnet-embeddings": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "simlex-999": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "rg-65": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "deep-research-prompt": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "rpp-spec": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "rpp-architecture": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-blueprint": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-mvp": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-1-10": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "10-phases": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-blueprint": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "johansson": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "gauge-blocks": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-stack": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyphcore": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mindmesh": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "truthfabric": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "scs": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "weights": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omc-activation-store-score-calibration.md",
+        "docs/intake/issue-drafts/omc-routescore-calibration-harness.md"
+      ]
+    },
+    "decision-function": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcda-weights": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "criterion-vector": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "micro-reasoner": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "concept-graph": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "micro-reasoners": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "stepwise-reasoning": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mlacs": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "router": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-fingerprint": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-cache": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "runtime-router": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "gossip": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "spp": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "routine-sharing": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "weak-supervision": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-labeling": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "denoising": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "ufsac": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "omsti": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "semcor": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "train-o-matic": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "parallel-corpora": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "align-sim": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "stress-tests": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md"
+      ]
+    },
+    "semantic-robustness": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md"
+      ]
+    },
+    "cross-lingual": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mt": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "wsi": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "spanish": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "mt-candidates": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "sif-scoring": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "wsi-purification": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "replaced-by": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "conversion-tables": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "ontology-versioning": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "spdx": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "spdx-identifiers": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-sources": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "license-field": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
     "trends": {
       "documents": [
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
@@ -23016,13 +24076,6 @@
         "docs/intake/issue-drafts/eal-003-reasoningbank-intrinsic-reward.md"
       ]
     },
-    "weights": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omc-activation-store-score-calibration.md",
-        "docs/intake/issue-drafts/omc-routescore-calibration-harness.md"
-      ]
-    },
     "eval": {
       "documents": [],
       "issueDrafts": [
@@ -23296,6 +24349,43 @@
         "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
       ]
     },
+    "jsonschema": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md"
+      ]
+    },
+    "image-encoder": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md"
+      ]
+    },
+    "prototypes": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md",
+        "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md"
+      ]
+    },
+    "audio-encoder": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md"
+      ]
+    },
+    "openai": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md"
+      ]
+    },
+    "function-calls": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md"
+      ]
+    },
     "ownership": {
       "documents": [],
       "issueDrafts": [
@@ -23336,5 +24426,47 @@
       ]
     }
   },
-  "duplicateIssueDraftClusters": []
+  "duplicateIssueDraftClusters": [
+    {
+      "signature": "draft",
+      "drafts": [
+        {
+          "path": "docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md",
+          "title": "Issue Draft"
+        },
+        {
+          "path": "docs/intake/issue-drafts/TB-009-openai-function-call-codec.md",
+          "title": "Issue Draft"
+        }
+      ]
+    }
+  ]
 }
