@@ -1111,6 +1111,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/254
   status: active
+- id: 2026-04-25-acpx-crash-reconnect-session-reload
+  name: Crash-Reconnect Session Semantics
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-crash-reconnect-session-reload.md
+  introduced_at: '2026-04-25'
+  definition: "Pattern where Rosetta detects dead agent sub-processes, respawns them,\
+    \ attempts session/load from persisted state, and falls back to session/new on\
+    \ failure \u2014 matching acpx crash-reconnect behavior."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/258
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
