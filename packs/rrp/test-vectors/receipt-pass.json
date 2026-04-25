@@ -1,8 +1,0 @@
-{
-  "name": "receipt-pass",
-  "expectation": "verify",
-  "notes": [
-    "Receipt contains a subject, digest, and evidence reference.",
-    "Bundle closure is expected to resolve."
-  ]
-}

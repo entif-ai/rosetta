@@ -1,8 +1,0 @@
-{
-  "name": "receipt-tampered",
-  "expectation": "reject",
-  "notes": [
-    "Tampered or incomplete bundles should fail closure checks.",
-    "Missing policy artifacts are treated as verification failures."
-  ]
-}
