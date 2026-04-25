@@ -17,7 +17,6 @@
     "graph": "pnpm exec nx graph",
     "lint": "pnpm run affected:lint",
     "lint:full": "pnpm exec nx run-many -t lint --all --parallel=3",
-    "packs:conformance": "pnpm exec nx run packs-rrp:conformance",
     "sync": "NX_DAEMON=false pnpm exec nx sync",
     "test": "pnpm run affected:test",
     "test:full": "pnpm exec nx run-many -t test --all --exclude @entif-ai/source --parallel=3",

@@ -1,75 +1,16 @@
 {
   "$schema": "../_schemas/pack-manifest.schema.json",
   "id": "stdpack-source-substrate",
-  "pack_id": "cidv1-sha256-1f587eab94732eef65814bf634a94d3b0a9be822559f1d2f42e70854db4c7939",
   "kind": "stdpack",
-  "category": "StdPack",
-  "namespace": "source-substrate",
-  "doc_id": "PACK-SOURCE-SUBSTRATE",
   "version": "0.1.0",
-  "status": "draft",
   "title": "Source Substrate Standard Pack",
-  "name": "Source Substrate Standard Pack",
   "summary": "Source system, record, manifestation, package, trust, and correction starter contracts.",
-  "compatible_core": {
-    "min": "3.0.0",
-    "max_exclusive": "4.0.0"
-  },
   "entrypoints": {
-    "examples": [
-      "examples/source-registry-bootstrap.md"
-    ],
-    "schema": [
-      "schema/source-substrate.schema.json"
-    ],
-    "shacl": [
-      "shacl/source-substrate.shacl.ttl"
-    ],
-    "tests": [
-      "tests/README.md"
-    ],
-    "vocab": [
-      "vocab/source-substrate.ttl"
-    ]
+    "examples": ["examples/source-registry-bootstrap.md"],
+    "schema": ["schema/source-substrate.schema.json"],
+    "shacl": ["shacl/source-substrate.shacl.ttl"],
+    "tests": ["tests/README.md"],
+    "vocab": ["vocab/source-substrate.ttl"]
   },
-  "dependsOn": [
-    "rrp"
-  ],
-  "depends_on": [
-    {
-      "doc_id": "ROCK-3111-C",
-      "version_range": "^0.1.0"
-    }
-  ],
-  "owners": [
-    {
-      "name": "Entif/Rosetta maintainers",
-      "role": "editor"
-    }
-  ],
-  "exports": [
-    {
-      "kind": "json-schema",
-      "id": "source-substrate.schema",
-      "path": "schema/source-substrate.schema.json",
-      "version": "0.1.0"
-    },
-    {
-      "kind": "shacl",
-      "id": "source-substrate.shacl",
-      "path": "shacl/source-substrate.shacl.ttl",
-      "version": "0.1.0"
-    },
-    {
-      "kind": "vocab",
-      "id": "source-substrate.vocab",
-      "path": "vocab/source-substrate.ttl",
-      "version": "0.1.0"
-    }
-  ],
-  "profiles": [],
-  "source_of_truth": {
-    "doctrine": "Doctrine v0.2",
-    "traceability_required": true
-  }
+  "dependsOn": ["rrp"]
 }

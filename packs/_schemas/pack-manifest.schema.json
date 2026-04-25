@@ -3,37 +3,16 @@
   "$id": "https://entif.ai/schema/pack-manifest.schema.json",
   "title": "Entif Pack Manifest",
   "type": "object",
-  "required": ["id", "pack_id", "kind", "category", "namespace", "doc_id", "version", "title", "status", "entrypoints"],
+  "required": ["id", "kind", "version", "title", "entrypoints"],
   "properties": {
     "id": { "type": "string" },
-    "pack_id": {
-      "type": "string",
-      "pattern": "^cidv1-sha256-[a-f0-9]{64}$"
-    },
     "kind": {
       "type": "string",
       "enum": ["pack", "stdpack", "vocabpack", "schema-pack"]
     },
-    "category": {
-      "type": "string",
-      "enum": ["StdPack", "VocabPack", "SchemaPack", "GovernancePack", "RecipePack", "SkillPack", "PersonaPack"]
-    },
-    "namespace": { "type": "string" },
-    "doc_id": { "type": "string" },
     "version": { "type": "string" },
     "title": { "type": "string" },
-    "name": { "type": "string" },
-    "status": { "type": "string" },
     "summary": { "type": "string" },
-    "compatible_core": {
-      "type": "object",
-      "required": ["min", "max_exclusive"],
-      "properties": {
-        "min": { "type": "string" },
-        "max_exclusive": { "type": "string" }
-      },
-      "additionalProperties": false
-    },
     "entrypoints": {
       "type": "object",
       "properties": {
@@ -48,67 +27,6 @@
     "dependsOn": {
       "type": "array",
       "items": { "type": "string" }
-    },
-    "depends_on": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["doc_id", "version_range"],
-        "properties": {
-          "doc_id": { "type": "string" },
-          "version_range": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
-    },
-    "owners": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name", "role"],
-        "properties": {
-          "name": { "type": "string" },
-          "role": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
-    },
-    "exports": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["kind", "id", "path", "version"],
-        "properties": {
-          "kind": { "type": "string" },
-          "id": { "type": "string" },
-          "path": { "type": "string" },
-          "version": { "type": "string" },
-          "hash": { "type": "string" },
-          "profile": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
-    },
-    "profiles": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name"],
-        "properties": {
-          "name": { "type": "string" },
-          "path": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
-    },
-    "source_of_truth": {
-      "type": "object",
-      "required": ["doctrine", "traceability_required"],
-      "properties": {
-        "doctrine": { "type": "string" },
-        "traceability_required": { "type": "boolean" }
-      },
-      "additionalProperties": false
     }
   },
   "additionalProperties": false

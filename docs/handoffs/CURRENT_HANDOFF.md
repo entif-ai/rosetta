@@ -3,7 +3,7 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-04-25
 Last updated: 2026-04-25
-Current branch at time of update: `codex/pack-conformance-foundation`
+Current branch at time of update: `codex/docs-intelligence-locking-graph`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -91,14 +91,10 @@ Merged:
 
 Open at time of update:
 
+- Issue #32: `DI-008 Ledger locking mechanism — mark doc in-flight, dead-letter queue for failures`
 - Issue #33: `DI-009 Internal knowledge graph from DI extractions — cross-doc concept linking and issue refinement`
-- Issue #69: `ROCK-3111-C: Define and enforce content-addressed pack_id algorithm`
-- Issue #71: `ROCK-3111-C: Automated enforcement for the refinement-first rule`
-- Issue #74: `ROCK-3111-C: Define and enforce dependency cycle detection for RRP packs`
-- Issue #79: `RRP recipes/ and skills/ subtrees lack CI/schema enforcement`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
 - Issues #11, #12: follow-up Text-Core implementation issues
-- Several newer docs-intelligence issues are also open from CT, OMOC, AC, and ROCK extractions; refresh with `gh issue list --repo entif-ai/rosetta --state open --limit 100` before selecting the next slice.
 
 Closed at time of update:
 
@@ -127,30 +123,29 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/pack-conformance-foundation`
+Current branch: `codex/docs-intelligence-locking-graph`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/69
-- https://github.com/entif-ai/rosetta/issues/74
+- https://github.com/entif-ai/rosetta/issues/32
+- https://github.com/entif-ai/rosetta/issues/33
 
-This branch implements the first pack conformance foundation from the ROCK-3111-C issue cluster. Issue #69 is the primary target because #71 depends on deterministic pack manifest identity. Issue #74 is included only where it shares the same validator surface: `depends_on` self-reference and cycle detection.
+This branch hardens the docs-intelligence flywheel against duplicate ingestion and overlapping PRs.
 
 Changed behavior:
 
-- `tools/pack-conformance/validate-packs.mjs` computes `rosetta-pack-id-v1` IDs from pack metadata plus sorted file hashes, verifies declared `pack_id`, checks declared entrypoint/export paths, and rejects self/cyclic `depends_on`.
-- `packs/rrp/project.json` exposes `nx run packs-rrp:conformance`.
-- `tools/pack-conformance/project.json` exposes the focused Vitest target for affected validation.
-- `packs/*/pack.json` now carry RFC-aligned `pack_id`, `doc_id`, `category`, `namespace`, `depends_on`, owner, export, and source-of-truth metadata while retaining the legacy `id`/`kind` fields required by current bootstrap tests.
-- `packs/rrp/test-vectors/pack-id-v1.expected.json` records a deterministic pack-id algorithm vector.
-- `ROCK-3111-C` now specifies the pack-id hash input, verification rule, edge cases, and `depends_on` acyclicity.
+- `tools/doc-intake/docs-intelligence-ledger.mjs` adds an atomic external-ledger claim/complete/fail command with stale-lock recovery and dead-letter/block handling.
+- `tools/doc-intake/docs-intelligence-graph.mjs` generates `CONCEPT_INDEX.json` and `CYCLE_SUMMARY.md` from extraction artifacts and issue drafts.
+- `pnpm run docs:intelligence` runs the graph/summarization target through Nx.
+- `SUBAGENT_BOOT.md` now requires the ledger command before source reads and requires generated graph context before creating issue drafts.
+- `DOCS_INTELLIGENCE_WORKFLOW.md` now includes claim, graph review, and graph refresh in the agent startup/done path.
+- Focused tests cover ledger claiming, failure blocking, concept indexing, and duplicate issue-draft signal generation.
 
 ## Validation State
 
 - `pnpm run docs:intake` passed.
-- `pnpm exec vitest run tools/pack-conformance/validate-packs.spec.mjs` passed.
-- `pnpm exec nx run packs-rrp:conformance` passed.
-- `pnpm run packs:conformance -- --skip-nx-cache` passed.
-- `pnpm exec eslint tools/pack-conformance/validate-packs.mjs tools/pack-conformance/validate-packs.spec.mjs tools/doc-intake/validate-docs-intelligence.mjs` passed.
+- `pnpm run docs:intelligence` passed.
+- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed.
+- `pnpm exec eslint tools/doc-intake/build-doc-intake.spec.mjs tools/doc-intake/docs-intelligence-graph.mjs tools/doc-intake/docs-intelligence-ledger.mjs` passed.
 - `pnpm run affected:verify` passed.
 - `git diff --check` passed.
 
@@ -163,9 +158,9 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Publish a draft PR for issue #69 and mention partial #74 coverage.
-2. Keep #71 open until a core glossary and explicit `extends` metadata rule are added on top of this validator.
-3. Consider a follow-up PR to enforce required root files and traceability headers across all packs.
+1. Publish a draft PR for issues #32 and #33.
+2. After review/merge, close #32 if the file-lock/dead-letter command is accepted.
+3. Keep #33 open only if the generated summary/index is treated as phase 1 and graph-backed automation remains future work.
 
 For Text-Core:
 

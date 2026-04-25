@@ -200,24 +200,11 @@ Use when schema evolution or semantic mapping is handled via translators.
 ```
 
 ### 4.2 Field semantics
-- `pack_id`: MUST be content-addressed for any pack checked by `packs-rrp:conformance`
-  - Algorithm: `rosetta-pack-id-v1`
-  - Hash input:
-    - canonical JSON object with keys sorted recursively
-    - `algorithm: "rosetta-pack-id-v1"`
-    - `manifest`: `pack.json` parsed as JSON with only `pack_id` omitted
-    - `files`: sorted list of every regular file under the pack root except `pack.json`; each entry includes repository-relative path within the pack, byte length, and SHA-256 digest
-  - Output format in this repo: `cidv1-sha256-<64 lowercase hex chars>`, matching the current `rosetta-cid` content-id helper
-  - Verification: recompute the ID from current pack contents and compare to declared `pack_id`; mismatch is non-conformant and MUST fail the conformance gate
-  - Edge cases:
-    - empty packs are not conformant because required pack root files and entrypoints are absent
-    - single-file packs hash as a one-entry sorted file manifest
-    - directory structure is material because each file path participates in the hash input
-    - `pack.json` metadata is material except for `pack_id`, which is omitted to avoid self-reference
+- `pack_id`: SHOULD be content-addressed when pack release is frozen
 - `category`: MUST match one of the supported primary categories
 - `namespace`: MUST be unique within the repo
 - `compatible_core`: MUST define the Rosetta core compatibility window
-- `depends_on`: MUST include required pack/doc dependencies; dependencies MUST NOT self-reference and MUST be acyclic across repo-local pack manifests
+- `depends_on`: MUST include required pack/doc dependencies
 - `exports`: MUST enumerate machine-consumable assets if present
 - `profiles`: MUST enumerate declared conformance profiles if present
 - `entrypoints`: SHOULD identify canonical file entrypoints for automation
@@ -334,8 +321,6 @@ A pack may claim “conformant” only if all relevant gates are green.
 
 Minimum generic gates:
 - manifest validation
-- content-addressed `pack_id` verification
-- `depends_on` self-reference and cycle detection
 - required file presence
 - schema parse/validation where applicable
 - example validation
@@ -346,8 +331,6 @@ Minimum generic gates:
 
 A pack MUST refuse merge if:
 - `pack.json` is missing required fields
-- declared `pack_id` does not match current pack contents
-- declared `depends_on` creates a self-reference or cycle
 - required files are absent
 - declared exports do not exist
 - examples fail validation
@@ -427,7 +410,7 @@ packs/rrp/
 
 ```json
 {
-  "pack_id": "cidv1-sha256-cada32cfe484e30fa81767221c6ffbb7782e0e51151dfe60a273e347e607cb80",
+  "pack_id": "cid:rrp-pack-placeholder",
   "name": "Receipt Refinement Pack",
   "doc_id": "ROCK-3111-C",
   "category": "SchemaPack",

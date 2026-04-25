@@ -1,7 +1,7 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T07:36:47Z'
-  total_docs_processed: 29
+  generated: '2026-04-25T23:59:30Z'
+  total_docs_processed: 28
   active_issue_drafts: 94
   archived_issue_drafts: 23
   total_issue_drafts_inventory: 117
@@ -435,58 +435,15 @@ concepts:
   referenced_by:
   - https://github.com/igent-ai/rosetta/issues/103
   status: active
-- id: 2026-04-25-pro-ext-research-cas-uri-missing
-  name: cas:// URI scheme undefined
-  introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
+- id: ct-004-gdpr-erasure
+  name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
   introduced_at: '2026-04-25'
-  definition: cas:// URI scheme used in receipt/tapestry examples has no formal spec,
-    validation, or ADR. Hash format (multihash vs plain hex) and authority namespace
-    are undefined.
+  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
+    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
+    \ be technically deleted, only delisted."
   referenced_by:
-  - https://github.com/gent-ai/rosetta/issues/103
-  status: active
-- id: ct-002-trust-bootstrap
-  name: CT-002 Trust Bootstrap Problem
-  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
-  introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/96
-  status: active
-- id: pro-ext-research-authoritative-baselines-adr-missing
-  name: Authoritative Project Baselines ADR Gap
-  introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
-  introduced_at: '2026-04-25'
-  definition: The 21 project baseline documents referenced in the Pro-Extended Research
-    prompt lack a formal ADR establishing them as the authoritative reference for
-    all architectural decisions.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/98
-  status: active
-- id: omoc-slug-adoption-timing-hydration-quality
-  name: Slug Adoption Timing vs Hydration Quality
-  introduced_by: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
-  introduced_at: '2026-04-25'
-  definition: 'Open question (OQ-4) from OMOC-Swarm Gnosis RFC: when should slugs
-    (compact semantic handles) be adopted relative to hydration pipeline maturity.
-    Risks: fidelity loss, latency spikes, format evolution brittleness. Recommended
-    resolution: dual-track (stable bands primary, slugs experimental) with empirical
-    hydration quality measurement.'
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/92
-  status: active
-- id: omoc-swarm-gnosis-eight-spec-proposal-bloat
-  name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
-  introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
-  introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/94
+  - https://github.com/entif-ai/rosetta/issues/107
   status: active
 - id: ct-003-egc-pasigraphy-esoteric
   name: EGC Pasigraphy Adoption Risk
@@ -498,154 +455,34 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/105
   status: active
-- id: ct-004-gdpr-erasure
-  name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
-  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+- id: deerflow-reference-architecture
+  name: DeerFlow Reference Architecture
+  introduced_by: docs/external/DeerFlow Architecture.md
   introduced_at: '2026-04-25'
-  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
-    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
-    \ be technically deleted, only delisted."
+  definition: External LangGraph-based super-agent architecture used as implementation
+    evidence for workflow-layer separation, sandbox isolation, skill installation,
+    memory persistence, MCP reload, and agent-runtime risk comparison.
+  extends:
+  - langgraph-workflow-only
   referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/107
+  - docs/intake/docs-intelligence/2026-04-25-deerflow-architecture.md
+  - https://github.com/entif-ai/rosetta/issues/89
   status: active
-- id: ct-006-zk-proofs
-  name: 'CT-006: ZK Proof Integration Not Near-Term Viable'
-  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md
+- id: aiida-workgraph-reference
+  name: AiiDA-WorkGraph Reference Architecture
+  introduced_by: docs/external/AiiDA-WorkGraph.md
   introduced_at: '2026-04-25'
-  definition: ZK-SNARK proof generation is too expensive (seconds to minutes per proof)
-    for near-term adoption in the Cognitive Tiles swarm. Classified as optional future
-    work; WASM sandbox (CT-009) is the near-term path.
+  definition: External scientific workflow reference covering automatic provenance
+    graphs, Pythonic task decorators, checkpointing, remote execution, AiiDA stack
+    dependencies, and experimental workflow visualization.
+  extends:
+  - receipt-law
   referenced_by:
-  - https://github.com/enti-ai/rosetta/issues/117
-  status: active
-- id: berman-box-sync-circular-ref
-  name: Box Sync Circular Reference Vulnerability
-  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
-  introduced_at: '2026-04-25'
-  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
-    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
-    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/113
-  status: active
-- id: MOL-004-opentelemetry-skill-audit
-  name: OpenTelemetry Skill Execution Audit
-  introduced_by: docs/intake/issue-drafts/MOL-004-opentelemetry-skill-audit.md
-  introduced_at: '2026-04-25'
-  definition: Adopt OpenTelemetry as the skill execution trace standard to provide
-    replay-level auditability for root-access operations, complementing receipt-level
-    emission with full execution traces.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/178
-  status: active
-- id: berman-fathom-processor-no-rollback
-  name: Fathom Processor Transaction Safety
-  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md
-  introduced_at: '2026-04-25'
-  definition: Fathom meeting processor lacks SQLite transaction wrapping and idempotency
-    keys, risking partial CRM updates if Gemini LLM extraction fails mid-operation.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/128
-  status: active
-- id: MOL-001-adaptive-memory-loop
-  name: Adaptive Memory Self-Evolution Loop
-  introduced_by: docs/intake/issue-drafts/MOL-001-adaptive-memory-loop.md
-  introduced_at: '2026-04-25'
-  definition: Closed-loop mechanism for post-promotion skill hardening, auto-repair,
-    and crystallize-based re-promotion in Rosetta adaptive memory plane, inspired
-    by Moltron's 6-step evolution engine.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/171
-  status: active
-- id: e2e-002-14day-not-lame-alignment
-  name: 14-Day / NOT LAME Milestone Alignment
-  introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
-  introduced_at: '2026-04-25'
-  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
-    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
-    \ and establish single-source-of-truth ownership for shared capabilities."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/150
-  status: active
-- id: AR-001-depth-aggregation-memory-plane-3
-  name: AttnRes-style Depth Aggregation for Memory Plane 3
-  introduced_by: docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md
-  introduced_at: '2026-04-25'
-  definition: Research issue evaluating whether learned content-dependent attention
-    over the depth dimension (replacing uniform residual accumulation) can address
-    depth dilution in Rosetta Memory Plane 3 aggregation.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/166
-  status: active
-- id: MOL-005-skill-hardening-threshold
-  name: Skill Hardening Threshold
-  introduced_by: docs/intake/issue-drafts/MOL-005-skill-hardening-threshold.md
-  introduced_at: '2026-04-25'
-  definition: Criteria for promoting skillpacks from draft to production-ready via
-    success-rate and consecutive-run thresholds, inspired by Moltrons 3-day hardening
-    narrative.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/180
-  status: active
-- id: RPP-task-numbering-reference
-  name: RPP Task Numbering Reference
-  introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
-  introduced_at: '2026-04-25'
-  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
-    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
-    \ A canonical task map is required to make the sequencing constraint enforceable."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/182
-  status: active
-- id: 2026-04-25-berman-e2e-tier3-cost-tracking
-  name: E2E Tier 3 Cost Tracking
-  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-e2e-tier3-cost-tracking.md
-  introduced_at: '2026-04-25'
-  definition: E2E Tier 3 test runs cost ~$2-3/run weekly with no cost tracking, budget
-    cap, or alerting. model-usage-tracker skill exists but is not wired into E2E test
-    scripts.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/124
-  status: active
-- id: ac-001-attention-capital-prior-art
-  name: Attention Capital Platform Prior Art Research
-  introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
-  introduced_at: '2026-04-25'
-  definition: "Research to validate novelty claims for the Attention Capital Analytics\
-    \ Platform before committing roadmap resources \u2014 covers academic literature,\
-    \ competitive landscape, patents, and OSS projects."
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/185
-  status: active
-- id: 2026-04-25-berman-env-symlink-ambiguity
-  name: Credential Symlink Ambiguity
-  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md
-  introduced_at: '2026-04-25'
-  definition: Multiple compatibility symlinks point to ~/.openclaw/.env as the canonical
-    .env, creating ambiguity about which path is authoritative for reads and writes
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/126
-  status: active
-- id: acpx-session-metadata-schema
-  name: acpx Session Metadata Schema
-  introduced_by: docs/intake/issue-drafts/acpx-session-metadata-schema.md
-  introduced_at: '2026-04-25'
-  definition: No formal schema exists for acpx session history metadata stored under
-    ~/.acpx/sessions/ (role, timestamp, textPreview fields). Creates interop risk
-    for session-replay and audit tooling.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/193
-  status: active
-- id: acp-coverage-roadmap-access
-  name: ACP Spec Coverage Roadmap Access
-  introduced_by: docs/intake/issue-drafts/acp-coverage-roadmap-access.md
-  introduced_at: '2026-04-25'
-  definition: The acpx README references an internal coverage roadmap document not
-    present in Rosetta's external docs bundle, blocking ACP adoption planning.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/191
+  - docs/intake/docs-intelligence/2026-04-25-aiida-workgraph.md
+  - docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   status: active
 issue_candidates:
+<<<<<<< Updated upstream
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
   github: 31
@@ -748,8 +585,277 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+=======
+  - id: consensus-first-framework
+    name: Consensus-First Commitment Scoping Framework v0.1
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Governance/planning methodology requiring consensual readiness confirmation before phase transitions, right-sized commitment sizing given board state (not cheapest), five required artifacts (Opportunity & Edge Brief, Commitment Canvas, Evidence Ledger, Falsification & Dissent Packet, Exit/Pivot/Salvage Plan), AI-specific safeguards against hallucination and miscalibration, and protected dissent as first-class input"
+    extends: [real-options, discovery-driven-planning, evidence-driven]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/docs-intelligence/2026-04-25-consensus-first-commitment-scoping-framework.md
+    status: active
+
+  - id: real-options
+    name: Real Options (Commitment Sizing)
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Treating investments as a sequence of choices (expand, delay, abandon) whose value comes from flexibility under uncertainty; maps two-way door (reversible) vs one-way door (expensive to undo) decisions"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: discovery-driven-planning
+    name: Discovery-Driven Planning
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Reframes planning around explicit assumptions and funding/commitment tied to learning milestones rather than pretending forecasts are reliable; combines with real-options theory"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: evidence-ledger
+    name: Evidence Ledger Artifact
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Seven-field per-claim structured ledger: claim statement, evidence type, source provenance, contextual credibility score, incentive/bias notes, calibrated confidence level, disconfirmers; designed to counter hallucination and overconfident synthesis"
+    extends: [evidence-driven]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+    status: active
+
+  - id: phase-transition-handshake
+    name: Phase Transition Handshake
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Hard-rule gate requiring explicit readiness confirmation before any workflow phase transition; four mandatory questions: readiness, missing perspectives, strongest objection, two-way/one-way door classification; no automatic transition"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-phase-transition-handshake.md
+    status: active
+
+  - id: falsification-dissent-packet
+    name: Falsification & Dissent Packet
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Three-part debiasing instrument: (1) Premortem, (2) Contrarian challenge (devil's advocacy or Team A/Team B), (3) Protected dissent capture with comprehension step; anti-silo-god mechanism"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-falsification-dissent-packet.md
+    status: active
+
+  - id: exit-pivot-salvage-plan
+    name: Exit/Pivot/Salvage Plan
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Four trigger sets (enter/continue/pivot/exit) each with five fields: metric/signal, thresholds, decision owner, containment steps, salvage paths; designed to stop sunk-cost worship"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-exit-pivot-salvage-plan.md
+    status: active
+
+  - id: commitment-canvas
+    name: Commitment Canvas Artifact
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Eight-field wager-sizing instrument: opportunity value (direct + derivative), downside exposure, loss tolerance, reversibility, tempo & decay, edge decay estimate, recommended commitment posture (Observe/Probe/Incubate/Parallel/Strike/Partner/Acquire/Pause/Exit)"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-commitment-canvas.md
+    status: active
+
+  - id: commitment-calibration-loop
+    name: Commitment Calibration Loop
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Continuous loop: (1) Update Board State → Update Commitment Canvas, (2) Update Evidence Ledger → Update Confidence + Disconfirmers, (3) Run periodic Premortems at major bet-size increases, (4) Re-check exit/pivot triggers before each new commitment tranche"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+    status: active
+
+  - id: board-state
+    name: Board State
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Current strategic situation characterized by: opportunity magnitude, time sensitivity, competitive pressure, known edges, edge durability, resource posture, loss tolerance, regulatory/trust constraints, ongoing portfolio opportunity cost"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: motivated-reasoning-guardrails
+    name: Anti-Motivated-Reasoning Guardrails
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Four structural countermeasures: (1) explicit incentive notes in Evidence Ledger, (2) premortems at bet-size increases, (3) Team A/Team B or devil's advocacy on contested decisions, (4) explicit disconfirmers and 'what would change our mind' statements"
+    extends: [consensus-first-framework, evidence-ledger]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-motivated-reasoning-guardrails.md
+    status: active
+
+  - id: spec-by-fluent-synthesis-prohibition
+    name: No Spec by Fluent Synthesis Rule
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Forbids generating specs from LLM synthesis without corresponding Evidence Ledger entries; requires claims to be labeled as hypothesis or backed by ledger entries; agent must express confidence bounded by evidence quality"
+    extends: [consensus-first-framework, evidence-ledger]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-no-fluent-synthesis-rule.md
+    status: active
+
+  - id: sme-prompt-out
+    name: SME Prompt-Out Requirement
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Agent must prompt for missing SME knowledge before finalizing any commitment recommendation; automation-bias control preventing humans from over-trusting agent momentum"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+    status: active
+
+  - id: evidence-driven
+    name: Evidence-Driven (General)
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "General concept: decisions and claims must be backed by structured evidence with provenance, credibility, incentive/bias notes, and disconfirmers; distinguishes behavioral evidence from stated preferences"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: DI-007
+    title: "Sub-agent context isolation — clean boot per cycle"
+    github: 31
+    priority: P1
+    type: bug
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload."
+
+  - id: DI-008
+    title: "Ledger locking mechanism — mark doc in-flight, dead-letter queue"
+    github: 32
+    priority: P1
+    type: reliability
+    source_docs:
+      - rosetta-di-ledger.md
+    status: open
+    note: "Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter implementation remains open."
+
+  - id: DI-009
+    title: "Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti"
+    github: 33
+    priority: P2
+    type: knowledge-graph
+    source_docs:
+      - docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
+    status: open
+    note: "Manual YAML exists; automation and graph-backed refinement remain open."
+
+  - id: DI-010
+    title: "Sub-agents must check prior work before creating issues or re-processing docs"
+    github: 34
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/issue-drafts/
+    status: closed
+    note: "Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md."
+
+  - id: DI-011
+    title: "Sub-agents must never merge their own PRs — boundary violation"
+    github: 39
+    priority: P1
+    type: boundary
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 forbade sub-agent merge/close/approve/readiness actions."
+
+  - id: DI-012
+    title: "Sub-agent must create issue draft files for every issue candidate in extraction"
+    github: 45
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 added candidate-to-draft validation and PR #49 normalized remaining OMC/Text-Core draft files."
+
+  - id: ROCK-3111-C-pack-id-placeholder
+    title: "RRP pack_id is a placeholder — needs real content-addressed ID at freeze"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-refinement-enforcement
+    title: "Refinement-first rule has no automated enforcement mechanism"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-persona-pack-governance
+    title: "PersonaPack elevated governance is undefined"
+    github: null
+    priority: P3
+    type: docs-intelligence
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-dependency-cycle-detection
+    title: "Pack dependency cycle detection not specified"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-recipes-skills-ci
+    title: "recipes/ and skills/ subtrees lack CI enforcement"
+    github: null
+    priority: P3
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+>>>>>>> Stashed changes
 pr_state:
   open:
+  - pr: 91
+    branch: docs-intelligence/trends-trading-technicals
+    doc: docs-intelligence batch: Cognitive Tiles, DeerFlow Architecture, Treating
+      Trends Tantamount to Trading Technicals
+    note: Clean PR after OpenClaw spillover removal; includes extraction artifacts,
+      issue-draft coverage, and this knowledge graph refresh rebased onto current
+      main promotion state.
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -1019,36 +1125,36 @@ processed_docs:
   findings: 37
   pr: 91
   issues: 10
-  notes: 'PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
-    GitHub issues, with CT-003 through CT-010 remaining as active drafts.'
+  notes: PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
+    GitHub issues, with CT-003 through CT-010 remaining as active drafts.
 - path: docs/external/DeerFlow Architecture.md
   processed_at: 2026-04-25T23:59
   findings: 25
   pr: 91
   issues: 14
-  notes: 'PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
-    #89, with DF-002 through DF-014 remaining as active drafts.'
+  notes: PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
+    #89, with DF-002 through DF-014 remaining as active drafts.
 - path: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   processed_at: 2026-04-25T23:59
   findings: 18
   pr: 91
   issues: 3
-  notes: 'PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
-    coverage for prior art, graph retrieval, and bio-inspired algorithms.'
+  notes: PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
+    coverage for prior art, graph retrieval, and bio-inspired algorithms.
 - path: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   processed_at: 2026-04-25T23:59
   findings: 20
   pr: 68
   issues: 6
-  notes: 'PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
-    coverage for M8, M10, and Should-Have ownership follow-up.'
+  notes: PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
+    coverage for M8, M10, and Should-Have ownership follow-up.
 - path: docs/external/AiiDA-WorkGraph.md
   processed_at: 2026-04-25T23:59
   findings: 12
   pr: 67
   issues: 3
-  notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
-    and experimental-GUI issue draft coverage.'
+  notes: PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference,
+    infrastructure-dependency, and experimental-GUI issue draft coverage.
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -1137,6 +1243,30 @@ issue_drafts_inventory:
   type: implementation
   note: "Part of Text-Core MVP scope gate \u2014 pgvector baseline required before\
     \ RC claims"
+- path: docs/intake/issue-drafts/text-core-should-have-owners.md
+  source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+  source_pr: 68
+  issue_id: text-core-should-have-owners
+  priority: P3
+  type: planning
+- path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-provenance-reference
+  priority: P3
+  type: research
+- path: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-infrastructure-dependencies
+  priority: P2
+  type: architecture
+- path: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-gui-experimental
+  priority: P3
+  type: risk
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1293,8 +1423,6 @@ issue_drafts_inventory:
   issue_id: RPP-task-numbering-reference
   priority: P2
   type: documentation
-  url: https://github.com/entif-ai/rosetta/issues/182
-  status: published
 - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md
@@ -1435,47 +1563,478 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/98
   status: published
   draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
-- issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
-  url: https://github.com/gent-ai/rosetta/issues/103
-  status: published
-- issue_id: 2026-04-25-pro-ext-research-authoritative-baselines-adr-missing
-  url: https://github.com/entif-ai/rosetta/issues/98
-  status: published
-  draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
-- issue_id: omoc-slug-adoption-timing-hydration-quality
-  url: https://github.com/entif-ai/rosetta/issues/92
-  status: published
-- issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
-  url: https://github.com/entif-ai/rosetta/issues/94
-  status: published
 - issue_id: ct-004-gdpr-erasure
   url: https://github.com/entif-ai/rosetta/issues/107
   status: published
   draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
-- path: docs/intake/issue-drafts/text-core-should-have-owners.md
-  source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
-  source_pr: 68
-  issue_id: text-core-should-have-owners
-  priority: P3
-  type: planning
-- path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-provenance-reference
-  priority: P3
-  type: research
-- issue_id: ct-006-zk-proofs
-  url: https://github.com/enti-ai/rosetta/issues/117
-  status: published
-- path: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
-  source_doc: docs/external/Berman-PRD.md
-  issue_id: berman-box-sync-circular-ref
-  priority: low
-  type: risk
-  url: https://github.com/entif-ai/rosetta/issues/113
-  status: published
-- issue_id: ac-001-attention-capital-prior-art
-  draft_path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
-  url: https://github.com/entif-ai/rosetta/issues/185
-  status: published
 
+<<<<<<< Updated upstream
+# PR #91 active issue drafts. CT-001, CT-002, and DF-001 were promoted on main
+# before this PR was rebased, so the extraction rows point at GitHub issues.
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric
+  type: risk
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure
+  type: ethics
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap
+  type: risk
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs
+  type: technology
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration
+  type: process
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing
+  type: validation
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox
+  type: implementation
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar
+  type: spec-gap
+- path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-001-attention-capital-prior-art
+  type: research
+- path: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-002-graph-database-retrieval
+  type: implementation-candidate
+- path: docs/intake/issue-drafts/ac-003-bio-inspired-trend-algorithms.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-003-bio-inspired-trend-algorithms
+  type: research
+- path: docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-002-subagent-timeout-requeue
+  type: reliability
+- path: docs/intake/issue-drafts/df-003-sandbox-singleton-state.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-003-sandbox-singleton-state
+  type: security
+- path: docs/intake/issue-drafts/df-004-memory-dedup-false-collisions.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-004-memory-dedup-false-collisions
+  type: correctness
+- path: docs/intake/issue-drafts/df-005-config-mtime-race-condition.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-005-config-mtime-race-condition
+  type: reliability
+- path: docs/intake/issue-drafts/df-006-docs-policy-no-ci.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-006-docs-policy-no-ci
+  type: docs
+- path: docs/intake/issue-drafts/df-007-client-artifact-conformance.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-007-client-artifact-conformance
+  type: conformance
+- path: docs/intake/issue-drafts/df-008-config-upgrade-silent-fail.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-008-config-upgrade-silent-fail
+  type: robustness
+- path: docs/intake/issue-drafts/df-009-skill-versioning-contract.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-009-skill-versioning-contract
+  type: api-stability
+- path: docs/intake/issue-drafts/df-010-json-store-scaling-bottleneck.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-010-json-store-scaling-bottleneck
+  type: scalability
+- path: docs/intake/issue-drafts/df-011-memory-fact-expiration.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-011-memory-fact-expiration
+  type: memory
+- path: docs/intake/issue-drafts/df-012-thread-state-restart-persistence.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-012-thread-state-restart-persistence
+  type: persistence
+- path: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-013-dangling-toolcall-no-replay
+  type: reliability
+- path: docs/intake/issue-drafts/df-014-mcp-oauth-refresh-timing.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-014-mcp-oauth-refresh-timing
+  type: oauth
+=======
+  - path: docs/intake/issue-drafts/backup-strategy-no-automation.md
+    source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+    source_pr: 29
+    branch: docs-intelligence/upstream-and-backup-plan
+    issue_id: backup-strategy-no-automation
+    priority: P2
+    type: implementation
+
+  # Agentic Orchestration Failures issue drafts from closed PR #50, salvaged through #57
+  - path: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: harness-platform-mismatch-root-cause
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: constitutional-primitives-prose-not-law
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/six-layer-memory-model-federated-jurisdiction.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: six-layer-memory-model-federated-jurisdiction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/memory-adapter-certification-harness.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: memory-adapter-certification-harness
+    priority: P1
+    type: reliability
+
+  - path: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: langgraph-workflow-not-constitutional
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: write-admission-gate-nine-step-state-machine
+    priority: P1
+    type: implementation
+
+  - path: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: skillpack-importer-quarantine-flow
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: mac-studio-control-two-tier-guard
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: video-transcript-dedup-playlist-tracking
+    priority: P3
+    type: implementation
+
+  # Ontologies and Dataset Repositories issue drafts from closed PR #51, salvaged through #57
+  - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: source-substrate-missing-protocol-domain
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: anti-personhood-correlation-governance-gap
+    priority: P1
+    type: governance
+
+  # Pro-Extended Research issue drafts from PRs #54/#55
+  - path: docs/intake/issue-drafts/RPP-task-numbering-reference.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 54
+    issue_id: RPP-task-numbering-reference
+    priority: P2
+    type: documentation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
+    priority: P2
+    type: spec-gap
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-headers-check-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-headers-check-missing
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-known-red-tests-policy-missing
+    priority: P3
+    type: policy
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-python-boundary-enforcement-missing
+    priority: P2
+    type: architecture
+
+  # OMOC Swarm Gnosis unique drafts from closed PR #58, salvaged through PR #61
+  - path: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-slug-adoption-timing-hydration-quality
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+    priority: P2
+    type: adr
+
+  # Pasigraphy v3 Architecture drafts salvaged from dirty PR #60
+  - path: docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-layer-dependency-direction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-trust-matrix-transition-criteria
+    priority: P2
+    type: governance
+
+  - path: docs/intake/issue-drafts/pasigraphy-contributing-done-language.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-contributing-done-language
+    priority: P2
+    type: documentation
+
+  # Semantic Audio Cognition drafts from incomplete PR #62
+  - path: docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-speaker-diarization-fingerprinting
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-stem-isolation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-stem-isolation
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-tonal-distinction-extraction
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-fx-dry-signal-differentiation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-emotional-geometry-timeline
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-semantic-emotive-graph-integration
+    priority: P2
+    type: architecture
+
+  # Trend Technicals drafts from incomplete PR #64
+  - path: docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-content-characteristic-ontology
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-influencer-equity-scoring
+    priority: P3
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-graph-database-schema.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-graph-database-schema
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-friston-cultural-modeling
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-fluid-dynamics-simulation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-phase-1-mvp-pipeline
+    priority: P2
+    type: planning
+
+  # Consensus-First Commitment Scoping Framework issue drafts (PR TBD)
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-evidence-ledger-schema
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-phase-transition-handshake.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-phase-transition-handshake
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-credibility-scoring-rubric.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-credibility-scoring-rubric
+    priority: P2
+    type: open-question
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-falsification-dissent-packet.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-falsification-dissent-packet
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-exit-pivot-salvage-plan.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-exit-pivot-salvage-plan
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-commitment-canvas.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-commitment-canvas
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-opportunity-edge-brief.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-opportunity-edge-brief
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-no-fluent-synthesis-rule.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-no-fluent-synthesis-rule
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-sme-prompt-out
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-calibration-loop
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-motivated-reasoning-guardrails.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-motivated-reasoning-guardrails
+    priority: P1
+    type: governance
+>>>>>>> Stashed changes

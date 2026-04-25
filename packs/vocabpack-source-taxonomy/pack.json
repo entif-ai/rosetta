@@ -1,59 +1,16 @@
 {
   "$schema": "../_schemas/pack-manifest.schema.json",
   "id": "vocabpack-source-taxonomy",
-  "pack_id": "cidv1-sha256-f01141ad6216e2083e4fbf08b747c50f4d82e22bef4770c7259f626609512347",
   "kind": "vocabpack",
-  "category": "VocabPack",
-  "namespace": "source-taxonomy",
-  "doc_id": "PACK-SOURCE-TAXONOMY",
   "version": "0.1.0",
-  "status": "draft",
   "title": "Source Taxonomy Vocabulary Pack",
-  "name": "Source Taxonomy Vocabulary Pack",
   "summary": "Starter taxonomy for infrastructure, repository, and volatility classes plus source tiers.",
-  "compatible_core": {
-    "min": "3.0.0",
-    "max_exclusive": "4.0.0"
-  },
   "entrypoints": {
-    "examples": [
-      "examples/tiering-and-trust.md"
-    ],
+    "examples": ["examples/tiering-and-trust.md"],
     "schema": [],
     "shacl": [],
-    "tests": [
-      "tests/README.md"
-    ],
-    "vocab": [
-      "vocab/source-taxonomy.ttl"
-    ]
+    "tests": ["tests/README.md"],
+    "vocab": ["vocab/source-taxonomy.ttl"]
   },
-  "dependsOn": [
-    "stdpack-source-substrate"
-  ],
-  "depends_on": [
-    {
-      "doc_id": "PACK-SOURCE-SUBSTRATE",
-      "version_range": "^0.1.0"
-    }
-  ],
-  "owners": [
-    {
-      "name": "Entif/Rosetta maintainers",
-      "role": "editor"
-    }
-  ],
-  "exports": [
-    {
-      "kind": "vocab",
-      "id": "source-taxonomy.vocab",
-      "path": "vocab/source-taxonomy.ttl",
-      "version": "0.1.0"
-    }
-  ],
-  "profiles": [],
-  "source_of_truth": {
-    "doctrine": "Doctrine v0.2",
-    "traceability_required": true
-  }
+  "dependsOn": ["stdpack-source-substrate"]
 }
