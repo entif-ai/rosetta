@@ -855,6 +855,8 @@ issue_drafts_inventory:
   issue_id: rock-3111-c-refinement-enforcement
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/71
+  status: published
 - path: docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
