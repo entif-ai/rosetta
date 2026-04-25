@@ -626,6 +626,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/126
   status: active
+- id: acpx-session-metadata-schema
+  name: acpx Session Metadata Schema
+  introduced_by: docs/intake/issue-drafts/acpx-session-metadata-schema.md
+  introduced_at: '2026-04-25'
+  definition: No formal schema exists for acpx session history metadata stored under
+    ~/.acpx/sessions/ (role, timestamp, textPreview fields). Creates interop risk
+    for session-replay and audit tooling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/193
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
