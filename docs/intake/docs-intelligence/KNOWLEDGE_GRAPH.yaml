@@ -435,6 +435,16 @@ concepts:
   referenced_by:
   - https://github.com/igent-ai/rosetta/issues/103
   status: active
+- id: ct-003-egc-pasigraphy-esoteric
+  name: EGC Pasigraphy Adoption Risk
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
+  introduced_at: '2026-04-25'
+  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
+    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
+    \ between maximal precision and natural readability is unresolved."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/105
+  status: active
 - id: deerflow-reference-architecture
   name: DeerFlow Reference Architecture
   introduced_by: docs/external/DeerFlow Architecture.md
