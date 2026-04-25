@@ -1,15 +1,70 @@
 {
   "$schema": "../_schemas/pack-manifest.schema.json",
   "id": "rrp",
+  "pack_id": "cidv1-sha256-cada32cfe484e30fa81767221c6ffbb7782e0e51151dfe60a273e347e607cb80",
   "kind": "pack",
+  "category": "SchemaPack",
+  "namespace": "rrp",
+  "doc_id": "ROCK-3111-C",
   "version": "0.1.0",
+  "status": "draft",
   "title": "Rosetta Receipt Pack",
+  "name": "Rosetta Receipt Pack",
   "summary": "Receipt vocabulary, schema, starter SHACL, examples, and test vectors for signed bundle verification.",
+  "compatible_core": {
+    "min": "3.0.0",
+    "max_exclusive": "4.0.0"
+  },
   "entrypoints": {
-    "examples": ["examples/bootstrap-receipt-bundle.md"],
-    "schema": ["schema/receipt.schema.json"],
-    "shacl": ["shacl/receipt.shacl.ttl"],
-    "tests": ["tests/README.md", "test-vectors/receipt-pass.json", "test-vectors/receipt-tampered.json"],
-    "vocab": ["vocab/rrp.ttl"]
+    "examples": [
+      "examples/bootstrap-receipt-bundle.md"
+    ],
+    "schema": [
+      "schema/receipt.schema.json"
+    ],
+    "shacl": [
+      "shacl/receipt.shacl.ttl"
+    ],
+    "tests": [
+      "tests/README.md",
+      "test-vectors/pack-id-v1.expected.json",
+      "test-vectors/receipt-pass.json",
+      "test-vectors/receipt-tampered.json"
+    ],
+    "vocab": [
+      "vocab/rrp.ttl"
+    ]
+  },
+  "depends_on": [],
+  "owners": [
+    {
+      "name": "Entif/Rosetta maintainers",
+      "role": "editor"
+    }
+  ],
+  "exports": [
+    {
+      "kind": "json-schema",
+      "id": "rrp.receipt",
+      "path": "schema/receipt.schema.json",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "shacl",
+      "id": "rrp.receipt",
+      "path": "shacl/receipt.shacl.ttl",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "vocab",
+      "id": "rrp.vocab",
+      "path": "vocab/rrp.ttl",
+      "version": "0.1.0"
+    }
+  ],
+  "profiles": [],
+  "source_of_truth": {
+    "doctrine": "Doctrine v0.2",
+    "traceability_required": true
   }
 }
