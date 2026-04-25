@@ -1,11 +1,11 @@
 meta:
-  version: '0.7'
-  generated: '2026-04-25T02:45:00Z'
-  total_docs_processed: 24
-  active_issue_drafts: 62
-  archived_issue_drafts: 9
-  total_issue_drafts_inventory: 71
-  docs_intelligence_files: 23
+  version: '0.8'
+  generated: '2026-04-25T23:59:00Z'
+  total_docs_processed: 26
+  active_issue_drafts: 90
+  archived_issue_drafts: 23
+  total_issue_drafts_inventory: 113
+  docs_intelligence_files: 27
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -445,6 +445,29 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
   status: active
+- id: ct-003-egc-pasigraphy-esoteric
+  name: EGC Pasigraphy Adoption Risk
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
+  introduced_at: '2026-04-25'
+  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
+    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
+    \ between maximal precision and natural readability is unresolved."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/105
+  status: active
+- id: deerflow-reference-architecture
+  name: DeerFlow Reference Architecture
+  introduced_by: docs/external/DeerFlow Architecture.md
+  introduced_at: '2026-04-25'
+  definition: External LangGraph-based super-agent architecture used as implementation
+    evidence for workflow-layer separation, sandbox isolation, skill installation,
+    memory persistence, MCP reload, and agent-runtime risk comparison.
+  extends:
+  - langgraph-workflow-only
+  referenced_by:
+  - docs/intake/docs-intelligence/2026-04-25-deerflow-architecture.md
+  - https://github.com/entif-ai/rosetta/issues/89
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -550,6 +573,13 @@ issue_candidates:
   notes: 'From PR #37 extraction; drafted in PR #44'
 pr_state:
   open:
+  - pr: 91
+    branch: docs-intelligence/trends-trading-technicals
+    doc: docs-intelligence batch: Cognitive Tiles, DeerFlow Architecture, Treating
+      Trends Tantamount to Trading Technicals
+    note: Clean PR after OpenClaw spillover removal; includes extraction artifacts,
+      issue-draft coverage, and this knowledge graph refresh rebased onto current
+      main promotion state.
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -814,6 +844,27 @@ processed_docs:
   issues: 6
   notes: 'Extraction-only PR #64 lacked issue drafts, graph update, and generated
     ledger refresh; clean reconciliation adds all companion artifacts.'
+- path: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  processed_at: 2026-04-25T23:59
+  findings: 37
+  pr: 91
+  issues: 10
+  notes: PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
+    GitHub issues, with CT-003 through CT-010 remaining as active drafts.
+- path: docs/external/DeerFlow Architecture.md
+  processed_at: 2026-04-25T23:59
+  findings: 25
+  pr: 91
+  issues: 14
+  notes: PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
+    #89, with DF-002 through DF-014 remaining as active drafts.
+- path: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  processed_at: 2026-04-25T23:59
+  findings: 18
+  pr: 91
+  issues: 3
+  notes: PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
+    coverage for prior art, graph retrieval, and bio-inspired algorithms.
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -1202,3 +1253,126 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/107
   status: published
   draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+
+# PR #91 active issue drafts. CT-001, CT-002, and DF-001 were promoted on main
+# before this PR was rebased, so the extraction rows point at GitHub issues.
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric
+  type: risk
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure
+  type: ethics
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap
+  type: risk
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs
+  type: technology
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration
+  type: process
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing
+  type: validation
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox
+  type: implementation
+- path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar.md
+  source_doc: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  source_pr: 91
+  issue_id: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar
+  type: spec-gap
+- path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-001-attention-capital-prior-art
+  type: research
+- path: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-002-graph-database-retrieval
+  type: implementation-candidate
+- path: docs/intake/issue-drafts/ac-003-bio-inspired-trend-algorithms.md
+  source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  source_pr: 91
+  issue_id: ac-003-bio-inspired-trend-algorithms
+  type: research
+- path: docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-002-subagent-timeout-requeue
+  type: reliability
+- path: docs/intake/issue-drafts/df-003-sandbox-singleton-state.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-003-sandbox-singleton-state
+  type: security
+- path: docs/intake/issue-drafts/df-004-memory-dedup-false-collisions.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-004-memory-dedup-false-collisions
+  type: correctness
+- path: docs/intake/issue-drafts/df-005-config-mtime-race-condition.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-005-config-mtime-race-condition
+  type: reliability
+- path: docs/intake/issue-drafts/df-006-docs-policy-no-ci.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-006-docs-policy-no-ci
+  type: docs
+- path: docs/intake/issue-drafts/df-007-client-artifact-conformance.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-007-client-artifact-conformance
+  type: conformance
+- path: docs/intake/issue-drafts/df-008-config-upgrade-silent-fail.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-008-config-upgrade-silent-fail
+  type: robustness
+- path: docs/intake/issue-drafts/df-009-skill-versioning-contract.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-009-skill-versioning-contract
+  type: api-stability
+- path: docs/intake/issue-drafts/df-010-json-store-scaling-bottleneck.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-010-json-store-scaling-bottleneck
+  type: scalability
+- path: docs/intake/issue-drafts/df-011-memory-fact-expiration.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-011-memory-fact-expiration
+  type: memory
+- path: docs/intake/issue-drafts/df-012-thread-state-restart-persistence.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-012-thread-state-restart-persistence
+  type: persistence
+- path: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-013-dangling-toolcall-no-replay
+  type: reliability
+- path: docs/intake/issue-drafts/df-014-mcp-oauth-refresh-timing.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  source_pr: 91
+  issue_id: df-014-mcp-oauth-refresh-timing
+  type: oauth
