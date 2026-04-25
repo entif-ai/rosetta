@@ -781,6 +781,99 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-agentic-github-repos.md",
+      "sourcePath": "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "gid",
+        "graph-indexed-development",
+        "agentic",
+        "ghost-repos",
+        "tonioyeme",
+        "agentic-stack",
+        "botcore",
+        "agent-portable-artifact",
+        "identity-files",
+        "identity-packaging",
+        "engram",
+        "act-r",
+        "hebbian",
+        "memory",
+        "agpl",
+        "licensing",
+        "suitedbot",
+        "saltdig",
+        "marketplace",
+        "escrow",
+        "usdc",
+        "base-l2",
+        "agent-economy",
+        "mcp-server",
+        "tool-surface",
+        "codegraphforge",
+        "mcp",
+        "pattern",
+        "narrative",
+        "mit",
+        "missing-license",
+        "risk",
+        "risk-assessment",
+        "supply-chain",
+        "security",
+        "malware",
+        "identity",
+        "tonitang",
+        "attribution",
+        "osint",
+        "pypi",
+        "oyeme",
+        "cross-account",
+        "trading",
+        "spy-profit",
+        "dt-helper",
+        "day-trading",
+        "agentic-cluster",
+        "moltbook",
+        "platform",
+        "api-first",
+        "platform-architecture",
+        "data-exposure",
+        "impersonation",
+        "security-incidents",
+        "prompt-injection",
+        "ioc",
+        "system-override",
+        "agentwallet",
+        "delegated-trading",
+        "clawhub",
+        "safety-architecture",
+        "autonomous-trading",
+        "base",
+        "playbook",
+        "systemic-risk",
+        "herding",
+        "leverage",
+        "mev",
+        "stablecoin-rail",
+        "agent-finance",
+        "escalation",
+        "reporting",
+        "fbi-ic3",
+        "sec-tcr",
+        "circle",
+        "hackathon",
+        "equities",
+        "defi",
+        "evidence-standards",
+        "evidence",
+        "defensive-architecture",
+        "agent-security",
+        "quarantine",
+        "license-check",
+        "dep-scan"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-aiida-workgraph.md",
       "sourcePath": "docs/external/AiiDA-WorkGraph.md",
       "title": "Docs Intelligence Extraction",
@@ -3888,6 +3981,18 @@
       "signature": "ada-crud-implement-mcp-orchestrator"
     },
     {
+      "path": "docs/intake/issue-drafts/AGR-001-agentwallet-eoa-key-prohibition.md",
+      "title": "AGR-001: Enforce EOA Key Handoff Prohibition for Agent Wallets — Require Smart Contract Wallet or HSM Enclave",
+      "labels": [],
+      "signature": "001-agent-agr-contract-enclave"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AGR-002-quarantine-pipeline-agent-sourced-code.md",
+      "title": "AGR-002: Build Quarantine Pipeline for Agent-Sourced Code — License Check, Dependency Scan, Static Grep, Sandbox Run",
+      "labels": [],
+      "signature": "002-agent-agr-build-check"
+    },
+    {
       "path": "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
       "title": "AM-004: mTLS Certificate Provisioning and Rotation",
       "labels": [
@@ -6143,6 +6248,7 @@
     "quarantine": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
@@ -6937,6 +7043,7 @@
         "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/external/Berman-PRD.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
@@ -8536,6 +8643,7 @@
     "engram": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
@@ -8743,6 +8851,7 @@
     "escalation": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
@@ -9021,6 +9130,7 @@
     "identity": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
@@ -9449,6 +9559,7 @@
     "security": {
       "documents": [
         "docs/external/acpx.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/external/Berman-PRD.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
@@ -9548,6 +9659,7 @@
     "risk": {
       "documents": [
         "docs/external/acpx.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
@@ -9780,6 +9892,7 @@
     "licensing": {
       "documents": [
         "docs/external/acpx.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/external/AiiDA-WorkGraph.md",
         "docs/external/Moltron.md"
       ],
@@ -9787,7 +9900,8 @@
     },
     "mit": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
       ],
       "issueDrafts": []
     },
@@ -9816,6 +9930,483 @@
     "spec-coverage": {
       "documents": [
         "docs/external/acpx.md"
+      ],
+      "issueDrafts": []
+    },
+    "gid": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-indexed-development": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "ghost-repos": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "tonioyeme": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-stack": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "botcore": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-portable-artifact": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-files": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-packaging": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "act-r": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+      ],
+      "issueDrafts": []
+    },
+    "hebbian": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agpl": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "suitedbot": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "saltdig": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "marketplace": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "escrow": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "usdc": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "base-l2": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-economy": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-server": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-surface": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "codegraphforge": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "pattern": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "narrative": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "missing-license": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-assessment": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "supply-chain": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "malware": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "tonitang": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "attribution": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/external/Berman-PRD.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "osint": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "pypi": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "oyeme": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-account": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "trading": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "spy-profit": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "dt-helper": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "day-trading": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-cluster": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "moltbook": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/external/Berman-PRD.md",
+        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "api-first": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-architecture": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-exposure": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "impersonation": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "security-incidents": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-injection": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md"
+      ]
+    },
+    "ioc": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "system-override": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentwallet": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "delegated-trading": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "clawhub": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "safety-architecture": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "autonomous-trading": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "base": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "playbook": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "systemic-risk": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "herding": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "leverage": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "mev": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "stablecoin-rail": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-finance": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "reporting": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "fbi-ic3": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "sec-tcr": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "circle": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "hackathon": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "equities": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "defi": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-standards": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "defensive-architecture": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-security": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "license-check": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+      ],
+      "issueDrafts": []
+    },
+    "dep-scan": {
+      "documents": [
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
       ],
       "issueDrafts": []
     },
@@ -11109,17 +11700,6 @@
       ],
       "issueDrafts": []
     },
-    "prompt-injection": {
-      "documents": [
-        "docs/external/Berman-PRD.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md"
-      ]
-    },
     "anti-injection": {
       "documents": [
         "docs/external/Berman-PRD.md"
@@ -11706,13 +12286,6 @@
       ],
       "issueDrafts": []
     },
-    "attribution": {
-      "documents": [
-        "docs/external/Berman-PRD.md",
-        "docs/external/Moltron.md"
-      ],
-      "issueDrafts": []
-    },
     "financials-confidential": {
       "documents": [
         "docs/external/Berman-PRD.md"
@@ -12011,13 +12584,6 @@
     "opus-summarizer": {
       "documents": [
         "docs/external/Berman-PRD.md"
-      ],
-      "issueDrafts": []
-    },
-    "platform": {
-      "documents": [
-        "docs/external/Berman-PRD.md",
-        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
@@ -15644,15 +16210,6 @@
       ],
       "issueDrafts": []
     },
-    "mcp": {
-      "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "thin-slice": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
@@ -16064,12 +16621,6 @@
       "issueDrafts": []
     },
     "personaforge": {
-      "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
-      ],
-      "issueDrafts": []
-    },
-    "act-r": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
