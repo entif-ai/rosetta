@@ -31,8 +31,6 @@ node_modules
 memory
 memory/*.md
 memory/*
-scripts
-scripts/*
 /connect.lock
 /coverage
 /libpeerconnection.log
