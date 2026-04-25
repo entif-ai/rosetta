@@ -142,6 +142,15 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-gnosis-public-commons-licensing-undefined.md",
       "draftStatus": "published"
+    },
+    "df-001-skill-signature-gap": {
+      "number": 89,
+      "state": "open",
+      "title": "DF-001: DeerFlow skill installation lacks signature verification and quarantine",
+      "url": "https://github.com/entif-ai/rosetta/issues/89",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/df-001-skill-signature-gap.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
