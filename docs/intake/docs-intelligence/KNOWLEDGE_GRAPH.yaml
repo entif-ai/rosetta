@@ -636,6 +636,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/193
   status: active
+- id: acp-coverage-roadmap-access
+  name: ACP Spec Coverage Roadmap Access
+  introduced_by: docs/intake/issue-drafts/acp-coverage-roadmap-access.md
+  introduced_at: '2026-04-25'
+  definition: The acpx README references an internal coverage roadmap document not
+    present in Rosetta's external docs bundle, blocking ACP adoption planning.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/191
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1469,3 +1478,4 @@ issue_drafts_inventory:
   draft_path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   url: https://github.com/entif-ai/rosetta/issues/185
   status: published
+
