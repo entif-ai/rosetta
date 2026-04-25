@@ -855,6 +855,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/204
   status: active
+- id: aiida-workgraph-infrastructure-dependencies
+  name: AiiDA-WorkGraph Infrastructure Dependencies
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph requires PostgreSQL plus RabbitMQ as a message broker
+    for task dispatch and async execution. Rosetta must explicitly model the broker
+    dependency when borrowing WorkGraph execution patterns.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/207
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
