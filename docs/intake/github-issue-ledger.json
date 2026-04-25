@@ -277,5 +277,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap": {
+    "number": 109,
+    "state": "open",
+    "title": "CT-005: Economic persistence gap \u2014 no token/payment system; unpopular data may disappear",
+    "url": "https://github.com/entif-ai/rosetta/issues/109",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
+    "draftStatus": "published"
   }
 }
