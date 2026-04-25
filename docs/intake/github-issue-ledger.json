@@ -178,5 +178,14 @@
       "title": "TC-007 Chat + arXiv importers and English accompaniment",
       "url": "https://github.com/entif-ai/rosetta/issues/12"
     }
+  },
+  "2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap": {
+    "number": 84,
+    "state": "open",
+    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "url": "https://github.com/entifik-ai/rosetta/issues/84",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
+    "draftStatus": "published"
   }
 }
