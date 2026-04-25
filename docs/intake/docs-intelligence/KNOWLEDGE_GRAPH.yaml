@@ -1,16 +1,10 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T07:36:47Z'
+  generated: '2026-04-25T20:47:00Z'
   total_docs_processed: 31
   active_issue_drafts: 116
   archived_issue_drafts: 23
-  total_- path: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  processed_at: 2026-04-25T16:30:00Z
-  findings: 47
-  pr: null
-  issues: 12
-  notes: 'Extraction: 47 findings, 12 issue drafts (am-001 through am-012); PR pending.'
-issue_drafts_inventory: 127
+  total_issue_drafts_inventory: 127
   docs_intelligence_files: 30
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
@@ -836,105 +830,155 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/11
   status: active
-- id: ccf-001-no-phase-transition-enforcement
-  name: No Phase-Transition Enforcement Mechanism
-  introduced_by: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
+- id: 2026-04-25-ada-orchestrator-mcp
+  name: Ada Orchestrator MCP CRUD Surface
+  introduced_by: docs/intake/issue-drafts/ada-orchestrator-mcp.md
   introduced_at: '2026-04-25'
-  definition: 'The Consensus-First Commitment Scoping Framework v0.1 asserts as a
-    hard rule: "no transition (ideation → spec, spec → build, build → GA, etc.) is
-    automatic." The spec defines four mandatory questions '
-  referenced_by: []
-  status: active
-- id: ccf-002-no-formal-consensus-protocol
-  name: No Formal Consensus Protocol
-  introduced_by: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework defines operational consensus as three-part: (1) group
-    understands the proposal, (2) strongest informed objection articulated and understood,
-    (3) next step explicitly agreed as ready eve'
-  referenced_by: []
-  status: active
-- id: ccf-003-no-board-state-formalization
-  name: No Board State Formalization
-  introduced_by: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework defines "Board State" as the central input for commitment
-    sizing: "The current strategic situation characterized by opportunity magnitude,
-    time sensitivity, competitive pressure, known e'
-  referenced_by: []
-  status: active
-- id: ccf-004-no-premortem-practice
-  name: No Premortem Practice
-  introduced_by: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework references premortem as a core anti-delusion mechanism:
-    "assume failure date, list plausible causes, rank by likelihood and impact" and
-    requires it "at major bet-size increases." A templ'
-  referenced_by: []
-  status: active
-- id: ccf-005-no-evidence-ledger-implementation
-  name: No Evidence Ledger Implementation
-  introduced_by: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
-  introduced_at: '2026-04-25'
-  definition: 'The Evidence Ledger is defined as a required artifact with seven mandatory
-    fields per entry: claim statement, evidence type, source provenance, credibility
-    score, incentive/bias notes, confidence leve'
-  referenced_by: []
-  status: active
-- id: ccf-006-no-exit-pivot-trigger-formalization
-  name: No Exit/Pivot Trigger Formalization
-  introduced_by: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
-  introduced_at: '2026-04-25'
-  definition: 'The Exit/Pivot/Salvage Plan requires four trigger sets (enter/continue/pivot/exit)
-    each with: metric/signal, threshold(s), decision owner, containment steps, and
-    salvage paths. This is the primary def'
-  referenced_by: []
-  status: active
-- id: ccf-007-no-spec-by-fluent-synthesis-enforcement
-  name: No "Spec by Fluent Synthesis" Enforcement
-  introduced_by: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework explicitly forbids "spec by fluent synthesis": "Any non-trivial
-    claim in a spec must have a ledger entry (or be labeled as hypothesis)." It also
-    requires the agent to "express confidence'
-  referenced_by: []
-  status: active
-- id: ccf-008-no-anti-motivated-reasoning-automation
-  name: No Anti-Motivated Reasoning Automation
-  introduced_by: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework defines four anti-motivated reasoning guardrails: explicit
-    incentive notes in Evidence Ledger, premortems at bet-size increases, Team A/Team
-    B or devil''s advocacy on contested decisions,'
-  referenced_by: []
-  status: active
-- id: ccf-009-no-contrarian-protected-channel-formalization
-  name: No Contrarian Protected Channel Formalization
-  introduced_by: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
-  introduced_at: '2026-04-25'
-  definition: 'The framework designates contrarian input as a "protected channel"
-    because organizations often punish or eject people who see problems early. It
-    specifies that protection means: capture, comprehension'
-  referenced_by: []
-  status: active
-- id: ccf-010-consensus-first-framework-not-adopted
-  name: Consensus-First Framework Not Adopted
-  introduced_by: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
-  introduced_at: '2026-04-25'
-  definition: 'The Consensus-First Commitment Scoping Framework v0.1 exists as a formal
-    document defining five required artifacts, phase-transition handshake, calibration
-    loop, and anti-delusion mechanisms. None of '
-  referenced_by: []
-  status: active
-- id: backup-strategy-no-automation
-  name: Backup Strategy Lacks Automation and Freshness Guarantees
-  introduced_by: docs/intake/issue-drafts/backup-strategy-no-automation.md
-  introduced_at: '2026-04-25'
-  definition: The UPSTREAM_AND_BACKUP_PLAN mirrors the authority stack to Open Brain
-    and Drive but specifies no sync cadence, automation, or freshness SLA, leaving
-    the external mirror potentially stale or unavailable without detection.
+  definition: Ada orchestrator needs an MCP tool surface (list_agents, create_agent,
+    command_agent, observe, summarize, read_file, write_file) for machine-readable
+    CRUD over sub-agents with path fencing and receipt ledger logging.
   referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/214
+  - https://github.com/enti-ai/rosetta/issues/201
+  status: active
+- id: aiida-workgraph-gui-experimental
+  name: AiiDA-WorkGraph GUI — Experimental Reference
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph GUI is explicitly experimental and under active development.
+    Rosetta may learn from its provenance graph visualization approach but should
+    not build hard dependencies on the GUI surface.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/204
+  status: active
+- id: aiida-workgraph-infrastructure-dependencies
+  name: AiiDA-WorkGraph Infrastructure Dependencies
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph requires PostgreSQL plus RabbitMQ as a message broker
+    for task dispatch and async execution. Rosetta must explicitly model the broker
+    dependency when borrowing WorkGraph execution patterns.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/207
+  status: active
+- id: aiida-workgraph-provenance-reference
+  name: AiiDA-WorkGraph Provenance Reference
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph auto-generates provenance graphs from task wiring; catalogued
+    as reference architecture for Rosetta receipt-law, not an implementation dependency.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/204
+  status: active
+- id: anti-personhood-correlation-governance-gap
+  name: Anti-Personhood-Correlation Constraint
+  introduced_by: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+  introduced_at: '2026-04-25'
+  definition: Governance constraint prohibiting the use of identity correlation infrastructure
+    to construct cognitive profiles or correlate anonymous/pseudonymous discourse
+    to identified individuals without consent.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/210
+  status: active
+- id: consensus-first-framework
+  name: Consensus-First Commitment Scoping Framework
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'v0.1 framework for agentic commitment sizing: five required artifacts,
+    phase-transition handshake, commitment calibration loop, and AI-specific safeguards'
+  extends: []
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-board-state
+  name: Board State
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Strategic situation characterized by opportunity magnitude, time sensitivity,
+    competitive pressure, edge durability, loss tolerance, regulatory/trust constraints,
+    portfolio opportunity cost
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-wager-sizing
+  name: Wager Sizing
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: Interpretable rubric (Low/Medium/High per dimension) for commitment
+    sizing; plain-English decision rule; maps to real-options
+  extends:
+  - consensus-first-framework
+  - real-options
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-evidence-ledger
+  name: Evidence Ledger
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'Required artifact: every claim needs claim statement, evidence type,
+    source provenance, credibility score, incentive/bias notes, confidence level,
+    disconfirmers; primary anti-hallucination mechanism'
+  extends:
+  - consensus-first-framework
+  - receipt-law
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-phase-transition-handshake
+  name: Phase-Transition Handshake
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'Hard rule: no phase transition (ideation/spec/build/GA) is automatic;
+    requires explicit affirmative on four questions including strongest-informed-objection
+    comprehension and two-way/one-way door classification'
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-anti-motivated-reasoning-guardrails
+  name: Anti-Motivated Reasoning Guardrails
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'Four required mechanisms: explicit incentive notes in Evidence Ledger,
+    premortems at bet-size increases, Team A/Team B or devil''s advocacy on contested
+    decisions, explicit disconfirmers and what-would-change-our-mind statements'
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: ccf-protected-dissent-channel
+  name: Protected Dissent Channel
+  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework
+    (v0.1).md
+  introduced_at: '2026-04-25'
+  definition: 'Contrarian input protected channel with four-step protocol: capture,
+    comprehension, structured challenge, explicit disposition; comprehension step
+    mandatory before proceeding; not automatic deference'
+  extends:
+  - consensus-first-framework
+  referenced_by:
+  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  status: active
+- id: AR-002-block-size-tapestry-cost-model
+  name: Tapestry Block-Size Cost Model
+  introduced_by: docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md
+  introduced_at: '2026-04-25'
+  definition: 'Tapestry block size is an unmodeled architectural parameter with a
+    cost tradeoff analogous to AttnRes block partition: larger blocks reduce retrieval
+    overhead but混 入 noise; smaller blocks improve precision but increase closure verification
+    cost across many units.'
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/218
   status: active
 issue_candidates:
 - id: DI-007
@@ -1039,199 +1083,8 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
-- id: consensus-first-framework
-  name: Consensus-First Commitment Scoping Framework
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: v0.1 framework for agentic commitment sizing: five required artifacts, phase-transition handshake, commitment calibration loop, and AI-specific safeguards
-  extends: []
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-board-state
-  name: Board State
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Strategic situation characterized by opportunity magnitude, time sensitivity, competitive pressure, edge durability, loss tolerance, regulatory/trust constraints, portfolio opportunity cost
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-wager-sizing
-  name: Wager Sizing
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Interpretable rubric (Low/Medium/High per dimension) for commitment sizing; plain-English decision rule; maps to real-options
-  extends:
-  - consensus-first-framework
-  - real-options
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-evidence-ledger
-  name: Evidence Ledger
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: 'Required artifact: every claim needs claim statement, evidence type, source provenance, credibility score, incentive/bias notes, confidence level, disconfirmers; primary anti-hallucination mechanism'
-  extends:
-  - consensus-first-framework
-  - receipt-law
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-phase-transition-handshake
-  name: Phase-Transition Handshake
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Hard rule: no phase transition (ideation/spec/build/GA) is automatic; requires explicit affirmative on four questions including strongest-informed-objection comprehension and two-way/one-way door classification
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-anti-motivated-reasoning-guardrails
-  name: Anti-Motivated Reasoning Guardrails
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Four required mechanisms: explicit incentive notes in Evidence Ledger, premortems at bet-size increases, Team A/Team B or devil's advocacy on contested decisions, explicit disconfirmers and what-would-change-our-mind statements
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-protected-dissent-channel
-  name: Protected Dissent Channel
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Contrarian input protected channel with four-step protocol: capture, comprehension, structured challenge, explicit disposition; comprehension step mandatory before proceeding; not automatic deference
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: agentic-messaging
-  name: Agentic Messaging Protocol
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Inter-agent communications protocol v0.1: signed ed25519 envelopes, typed message schemas (data plane vs control plane), mailroom ingest pipeline with quarantine-first staging, GuardLayer policy enforcement, and a 5-step minimal implementation sequence
-  extends:
-  - receipt-law
-  - sovereign-kernel
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: signed-envelope
-  name: Signed Envelope
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: 13-field envelope wrapping every bus message: msg_id, msg_type, schema_version, sender.node_id, sender.principal_ref, issued_at, expires_at, nonce, domain_ref, routing_key, payload_hash (sha256), sig (ed25519)
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: data-plane
-  name: Data Plane Messages
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Five message types (TASK_RECEIPT, INCIDENT_ENVELOPE, WORK_UNIT_UPDATE, ARTIFACT_PUBLISH, HEALTH_REPORT) that cannot trigger privileged actions; text treated as untrusted data
-  extends:
-  - receipt-law
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: control-plane
-  name: Control Plane Messages
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Three message types (ACTION_REQUEST, ACTION_DECISION, APPROVAL_REQUEST/RESPONSE) that request privileged capabilities; gated by Guard iam.decision
-  extends:
-  - sovereign-kernel
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: mailroom
-  name: Mailroom Ingest Pipeline
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Six-stage mandatory ingest pipeline: (1) Authenticate & Validate, (2) Schema Validate, (3) Quarantine Raw (append-only), (4) Canonicalize to Rosetta tiles/tapestries, (5) Route, (6) Persist canonical forms
-  extends:
-  - quarantine
-  - receipt-law
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: quarantine-raw
-  name: Quarantine Raw
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Mailroom stage 3: raw message ciphertext + metadata stored append-only before any canonicalization; only canonical forms written to downstream stores
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: replay-protection
-  name: Replay Protection (Nonce)
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Envelope nonce (unique per sender) + expires_at provides replay attack protection; nonce must not be seen before for a given sender
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: guardlayer
-  name: GuardLayer
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Fine-grained policy enforcement layer (after mailroom coarse policy): RBAC/ABAC checks, budget checks, tool allowlists, egress restrictions, approvals required; issues iam.decision for control plane messages
-  extends:
-  - sovereign-kernel
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: iam-decision
-  name: iam.decision
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Guard-issued authorization reference that control plane ACTION_REQUEST must carry; without valid iam.decision ref, ACTION_REQUEST MUST be denied
-  extends:
-  - guardlayer
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: domain-ref
-  name: Domain Reference
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: 'Message scoping: domain = tenant_id × classification × ABAC labels × vendor_route(optional); cross-domain reuse forbidden unless explicitly configured'
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: ed25519-envelope
-  name: ed25519 Envelope Signatures
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Every message envelope signed with ed25519 over envelope fields + payload_hash; signature verified before any processing
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
-- id: replaceable-substrate
-  name: Replaceable Execution Substrates
-  introduced_by: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  introduced_at: '2026-04-25'
-  definition: Agent runtimes must be swappable without breaking the audit spine; the truth/audit spine is message-based and Rosetta-object-anchored
-  extends: []
-  referenced_by:
-  - docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  status: active
 pr_state:
   open:
-  - pr: null
-    branch: docs-intelligence/entify-v0-agentic-messaging
-    doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-    note: Extraction: 47 findings, 12 issue drafts (am-001 through am-012); PR pending.
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -1531,21 +1384,6 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
-- path: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  title: Consensus-First Commitment Scoping Framework v0.1
-  type: PRD
-  extracted_at: '2026-04-25'
-  concepts:
-  - ccf-001-no-phase-transition-enforcement
-  - ccf-002-no-formal-consensus-protocol
-  - ccf-003-no-board-state-formalization
-  - ccf-004-no-premortem-practice
-  - ccf-005-no-evidence-ledger-implementation
-  - ccf-006-no-exit-pivot-trigger-formalization
-  - ccf-007-no-spec-by-fluent-synthesis-enforcement
-  - ccf-008-no-anti-motivated-reasoning-automation
-  - ccf-009-no-contrarian-protected-channel-formalization
-  - ccf-010-consensus-first-framework-not-adopted
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -1705,8 +1543,6 @@ issue_drafts_inventory:
   issue_id: backup-strategy-no-automation
   priority: P2
   type: implementation
-  url: https://github.com/entif-ai/rosetta/issues/214
-  status: published
 - path: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
@@ -1976,197 +1812,76 @@ issue_drafts_inventory:
   draft_path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   url: https://github.com/entif-ai/rosetta/issues/185
   status: published
-- issue_id: ccf-001-no-phase-transition-enforcement
-  draft_path: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
-  url: null
-  status: active
-- issue_id: ccf-002-no-formal-consensus-protocol
-  draft_path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
-  url: null
-  status: active
-- issue_id: ccf-003-no-board-state-formalization
-  draft_path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
-  url: null
-  status: active
-- issue_id: ccf-004-no-premortem-practice
-  draft_path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
-  url: null
-  status: active
-- issue_id: ccf-005-no-evidence-ledger-implementation
-  draft_path: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
-  url: null
-  status: active
-- issue_id: ccf-006-no-exit-pivot-trigger-formalization
-  draft_path: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
-  url: null
-  status: active
-- issue_id: ccf-007-no-spec-by-fluent-synthesis-enforcement
-  draft_path: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
-  url: null
-  status: active
-- issue_id: ccf-008-no-anti-motivated-reasoning-automation
-  draft_path: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
-  url: null
-  status: active
-- issue_id: ccf-009-no-contrarian-protected-channel-formalization
-  draft_path: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
-  url: null
-  status: active
-- issue_id: ccf-010-consensus-first-framework-not-adopted
-  draft_path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
-  url: null
-  status: active
+- issue_id: ada-orchestrator-mcp
+  url: https://github.com/enti-ai/rosetta/issues/201
+  status: published
+- issue_id: aiida-workgraph-infrastructure-dependencies
+  url: https://github.com/enti-ai/rosetta/issues/207
+  status: published
+- issue_id: aiida-workgraph-provenance-reference
+  url: https://github.com/enti-ai/rosetta/issues/204
+  status: published
+- issue_id: anti-personhood-correlation-governance-gap
+  url: https://github.com/enti-ai/rosetta/issues/210
+  status: published
 - path: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-001-no-phase-transition-enforcement
   priority: P1
   type: architecture
   status: candidate
 - path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-002-no-formal-consensus-protocol
   priority: P1
   type: governance
   status: candidate
 - path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-003-no-board-state-formalization
   priority: P1
   type: architecture
   status: candidate
 - path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-004-no-premortem-practice
   priority: P2
   type: process-orchestration
   status: candidate
 - path: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-005-no-evidence-ledger-implementation
   priority: P1
   type: evidence-management
   status: candidate
 - path: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-006-no-exit-pivot-trigger-formalization
   priority: P1
   type: process-orchestration
   status: candidate
 - path: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-007-no-spec-by-fluent-synthesis-enforcement
   priority: P1
   type: llm-workflow
   status: candidate
 - path: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-008-no-anti-motivated-reasoning-automation
   priority: P2
   type: governance
   status: candidate
 - path: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-009-no-contrarian-protected-channel-formalization
   priority: P2
   type: governance
   status: candidate
 - path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
   issue_id: ccf-010-consensus-first-framework-not-adopted
   priority: P0
   type: planning
   status: candidate
-- path: docs/intake/issue-drafts/am-001-json-schema-missing.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-001-json-schema-missing
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-002-quarantine-canonical-storage-gap
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-003-nonce-store-replay-detection
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-004-mtls-certificate-provisioning
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-005-guard-decision-api.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-005-guard-decision-api
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-006-data-control-plane-spoofing.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-006-data-control-plane-spoofing
-  priority: P1
-  type: security
-  status: candidate
-- path: docs/intake/issue-drafts/am-007-message-size-limit-dos.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-007-message-size-limit-dos
-  priority: P1
-  type: security
-  status: candidate
-- path: docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-008-data-plane-prompt-injection-mitigation
-  priority: P2
-  type: security
-  status: candidate
-- path: docs/intake/issue-drafts/am-009-domain-ref-schema.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-009-domain-ref-schema
-  priority: P1
-  type: implementation
-  status: candidate
-- path: docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-010-rosetta-integration-alignment
-  priority: P2
-  type: architecture
-  status: candidate
-- path: docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-011-mailroom-scope-boundary
-  priority: P2
-  type: open-question
-  status: candidate
-- path: docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md
-  source_doc: docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md
-  source_pr: null
-  issue_id: am-012-guardlayer-mailroom-call-sequence
-  priority: P2
-  type: open-question
-  status: candidate
+

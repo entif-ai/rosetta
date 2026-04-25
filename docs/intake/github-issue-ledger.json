@@ -673,5 +673,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/backup-strategy-no-automation.md",
     "draftStatus": "published"
+  },
+  "AR-002-block-size-tapestry-cost-model.md": {
+    "number": 218,
+    "state": "open",
+    "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
+    "url": "https://github.com/enti-ai/rosetta/issues/218",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/AR-002-block-size-tapestry-cost-model.md",
+    "draftStatus": "published"
   }
 }
