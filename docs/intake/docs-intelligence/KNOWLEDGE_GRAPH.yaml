@@ -1079,6 +1079,15 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/246
   status: active
+- id: 2026-04-25-acpx-config-layering-rosetta-alignment
+  name: Config Layering Standard (acpx pattern)
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-config-layering-rosetta-alignment.md
+  introduced_at: '2026-04-25'
+  definition: "Adopt acpx three-tier config precedence (global \u2192 project \u2192\
+    \ CLI flags) as the standard configuration pattern for Rosetta tools."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/249
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
