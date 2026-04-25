@@ -362,6 +362,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/87
   status: active
+- id: df-001-skill-signature-gap
+  name: DeerFlow Skill Signature Verification Gap
+  introduced_by: docs/intake/issue-drafts/df-001-skill-signature-gap.md
+  introduced_at: '2026-04-25'
+  definition: DeerFlow POST /api/skills/install extracts .skill ZIP archives to custom/
+    with no signature verification, content validation, or quarantine phase, creating
+    a security gap for production multi-user deployments.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/89
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
