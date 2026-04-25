@@ -1121,6 +1121,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/258
   status: active
+- id: cts-008-decision-forge-efe-active-inference
+  name: DecisionForge Expected Free Energy + Active Inference
+  introduced_by: docs/intake/issue-drafts/cts-008-decision-forge-efe-active-inference.md
+  introduced_at: '2026-04-25'
+  definition: DecisionForge module that calculates Expected Free Energy (EFE) for
+    slug decoding decisions using epistemic value + pragmatic value - computational
+    cost, implementing an active inference loop with cognitive budget enforcement.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/260
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
