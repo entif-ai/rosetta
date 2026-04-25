@@ -835,6 +835,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/11
   status: active
+- id: ada-orchestrator-mcp
+  name: Ada Orchestrator MCP CRUD Surface
+  introduced_by: docs/intake/issue-drafts/ada-orchestrator-mcp.md
+  introduced_at: '2026-04-25'
+  definition: 'Implement Ada orchestrator MCP tool surface: list_agents, create_agent,
+    command_agent, observe, summarize, read_file, write_file. Ada owns receipts, routes
+    by MCDA, and fences backend/frontend write access.'
+  extends: mcp
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/201
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
