@@ -691,5 +691,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-001-json-schema-missing.md",
     "draftStatus": "published"
+  },
+  "am-002-quarantine-canonical-storage-gap": {
+    "number": 223,
+    "state": "open",
+    "title": "AM-002: Quarantine-to-Canonical Write Gate and Storage Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/223",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-002-quarantine-canonical-storage-gap.md",
+    "draftStatus": "published"
   }
 }

@@ -995,6 +995,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/220
   status: active
+- id: am-002-quarantine-canonical-storage-gap
+  name: Quarantine-to-Canonical Write Gate and Storage Schema
+  introduced_by: docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md
+  introduced_at: '2026-04-25'
+  definition: "AM-002 identifies the gap between Stage 3 (Quarantine Raw) and Stage\
+    \ 4 (Canonicalize) in the mailroom pipeline \u2014 there is no storage schema\
+    \ for the four Rosetta object types (rosetta.receipt, rosetta.incident, state\
+    \ tiles, iam.decision) and no write gate specification for the quarantine\u2192\
+    canonical promotion transition."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/223
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
