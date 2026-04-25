@@ -86,11 +86,13 @@ An agent assigned to docs intelligence should:
 1. Read `README.md`, `docs/handoffs/CURRENT_HANDOFF.md`, this file, and `docs/intake/docs-intelligence/PRIORITY_QUEUE.md`.
 2. Read `docs/intake/docs-intelligence/CHEAP_AGENT_RUNBOOK.md`.
 3. Run the runbook's freshness protocol: fetch, check branch state, inspect open GitHub issues, and read relevant accepted drafts under `docs/intake/issue-drafts/archive/`.
-4. Inspect open GitHub issues and recent comments before taking a batch.
-5. Comment on the GitHub issue it is taking, including document paths and expected output files.
-6. Work on a focused `codex/` branch.
-7. Produce extraction artifacts before creating or revising implementation issues.
-8. Link every issue candidate to source document paths and, where useful, specific headings or quoted short excerpts.
+4. Claim exactly one source document with `node tools/doc-intake/docs-intelligence-ledger.mjs claim --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md --agent-id <session-key> --branch docs-intelligence/<doc-name-slug>`.
+5. Inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md`, `docs/intake/docs-intelligence/CONCEPT_INDEX.json`, open GitHub issues, and recent comments before taking a batch.
+6. Comment on the GitHub issue it is taking, including document paths and expected output files.
+7. Work on a focused `codex/` branch.
+8. Produce extraction artifacts before creating or revising implementation issues.
+9. Link every issue candidate to source document paths and, where useful, specific headings or quoted short excerpts.
+10. Run `pnpm run docs:intelligence` before pushing so the generated graph context includes the new extraction and issue-draft state.
 
 ## Extraction Output
 
@@ -157,6 +159,7 @@ A docs-intelligence batch is done when:
 - GitHub issue comments identify ownership and impact
 - `docs/intake/github-issue-ledger.json` reflects published issue state
 - `pnpm run docs:intake` and `git diff --check` pass
+- `pnpm run docs:intelligence` refreshes `CONCEPT_INDEX.json` and `CYCLE_SUMMARY.md`
 
 ## Explicit Non-Blocker
 

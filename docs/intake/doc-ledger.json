@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T23:43:36.163Z",
+  "generatedAt": "2026-04-25T01:50:41.360Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
@@ -7219,23 +7219,23 @@
       "category": "handoffs",
       "authorityTier": "governing",
       "freshness": "current",
-      "docDate": "2026-04-24",
+      "docDate": "2026-04-25",
       "dateSource": "top-matter",
       "dateKind": "declaredAt",
       "chronology": {
         "canonical": {
           "declaredAt": {
-            "date": "2026-04-24",
+            "date": "2026-04-25",
             "line": 4,
-            "localDateTime": "2026-04-24",
-            "raw": "2026-04-24",
+            "localDateTime": "2026-04-25",
+            "raw": "2026-04-25",
             "source": "top-matter"
           }
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T23:43:36.163Z",
+            "date": "2026-04-25",
+            "isoDateTime": "2026-04-25T01:50:41.360Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7244,19 +7244,19 @@
           "observedAt": "2026-04-24T07:13:19.543Z"
         },
         "primary": {
-          "date": "2026-04-24",
+          "date": "2026-04-25",
           "kind": "declaredAt",
-          "localDateTime": "2026-04-24",
+          "localDateTime": "2026-04-25",
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T23:43:36.163Z",
-      "bytes": 8253,
-      "contentFingerprint": "5f4d60005cecf108445bb8dcf0b955302715f99a76efb8754b080fbd0e6ba633",
-      "words": 1113,
-      "revisionFingerprint": "d3bbbd7b3be406dd1d4cba08296aefbdb0fc94fb3b099bc218e90fed2c6ac7d0",
+      "modifiedAt": "2026-04-25T01:50:41.360Z",
+      "bytes": 9154,
+      "contentFingerprint": "c4c29bdf54e01dcb0e1c2137cd157ba7257a50d9984a73aa0269a0db1dc60b4a",
+      "words": 1229,
+      "revisionFingerprint": "d86e5b8c4fc2b542d82712f255605c657a9ee05ca68adb32c5ba1ce7fdd7e8af",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "8252515014563d13f50d53a08e1f784a47cce8c2e041662c581da2e057d748cf",
+      "sha256": "d09b782e737ed99099dcd23abe58da6a6a11535954c3891b051147502c1fc2c2",
       "headings": [
         "Current Handoff",
         "Purpose",

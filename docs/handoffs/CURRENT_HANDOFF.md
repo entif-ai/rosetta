@@ -1,10 +1,10 @@
 # Current Handoff
 
 Status: active baton-pass for Codex and agent sessions
-Date: 2026-04-24
-Last updated: 2026-04-24
-Current branch at time of update: `codex/docs-intelligence-workflow`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/24
+Date: 2026-04-25
+Last updated: 2026-04-25
+Current branch at time of update: `codex/docs-intelligence-locking-graph`
+Current PR at time of update: pending publication
 
 ## Purpose
 
@@ -91,13 +91,20 @@ Merged:
 
 Open at time of update:
 
-- PR #24: `docs(intake): define docs intelligence workflow`
-- Issue #23: `DI-001 First docs-intelligence extraction pass`
+- Issue #32: `DI-008 Ledger locking mechanism — mark doc in-flight, dead-letter queue for failures`
+- Issue #33: `DI-009 Internal knowledge graph from DI extractions — cross-doc concept linking and issue refinement`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
 - Issues #11, #12: follow-up Text-Core implementation issues
 
 Closed at time of update:
 
+- PR #61: `docs(intake): salvage unique PR 58 drafts`
+- PR #59: `docs(intake): refresh docs intelligence graph state`
+- PR #58: superseded duplicate OMOC extraction, closed without merge
+- PR #56: `docs(attention-as-capital): extract Attention-as-Capital Analytics Platform`
+- PR #55: `docs(rosetta-prd): pro-ext-research extraction v2`
+- PR #54: `docs(intake): 20260410 Entif Rosetta PRDs Pro-Extended Research`
+- PR #53: `docs(intelligence): extract omoc-swarm-gnosis-protocol`
 - PR #22: `feat(text-core): add source observation transform receipts`
 - PR #21: `docs(intake): archive canonical cache draft`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
@@ -116,26 +123,30 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/docs-intelligence-workflow`
-Source issue: https://github.com/entif-ai/rosetta/issues/23
+Current branch: `codex/docs-intelligence-locking-graph`
+Source issues:
 
-This branch corrects the repository workflow: source documents are now explicitly treated as docs-intelligence inputs for planning, issue generation, dependency mapping, and project coordination. They are not blocked on Rosetta runtime ingestion readiness.
+- https://github.com/entif-ai/rosetta/issues/32
+- https://github.com/entif-ai/rosetta/issues/33
+
+This branch hardens the docs-intelligence flywheel against duplicate ingestion and overlapping PRs.
 
 Changed behavior:
 
-- `README.md` clarifies that the runtime-ingest freeze does not block requirements extraction from repository docs.
-- `docs/intake/README.md` now separates ledgering from docs intelligence.
-- `docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md` defines agent startup, extraction outputs, prioritization, GitHub issue workflow, and done criteria.
-- `docs/intake/docs-intelligence/PRIORITY_QUEUE.md` defines the first extraction batches.
-- `docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md` gives agents a consistent extraction shape.
-- `tools/doc-intake/build-doc-intake.mjs` now regenerates the intake README with the docs-intelligence lane intact.
-- Issue #23 starts the first high-authority docs-intelligence extraction pass.
+- `tools/doc-intake/docs-intelligence-ledger.mjs` adds an atomic external-ledger claim/complete/fail command with stale-lock recovery and dead-letter/block handling.
+- `tools/doc-intake/docs-intelligence-graph.mjs` generates `CONCEPT_INDEX.json` and `CYCLE_SUMMARY.md` from extraction artifacts and issue drafts.
+- `pnpm run docs:intelligence` runs the graph/summarization target through Nx.
+- `SUBAGENT_BOOT.md` now requires the ledger command before source reads and requires generated graph context before creating issue drafts.
+- `DOCS_INTELLIGENCE_WORKFLOW.md` now includes claim, graph review, and graph refresh in the agent startup/done path.
+- Focused tests cover ledger claiming, failure blocking, concept indexing, and duplicate issue-draft signal generation.
 
 ## Validation State
 
 - `pnpm run docs:intake` passed.
+- `pnpm run docs:intelligence` passed.
 - `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed.
-- `pnpm exec eslint tools/doc-intake/build-doc-intake.mjs` passed.
+- `pnpm exec eslint tools/doc-intake/build-doc-intake.spec.mjs tools/doc-intake/docs-intelligence-graph.mjs tools/doc-intake/docs-intelligence-ledger.mjs` passed.
+- `pnpm run affected:verify` passed.
 - `git diff --check` passed.
 
 Known non-failing warnings:
@@ -147,7 +158,9 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Merge PR #24 after review.
+1. Publish a draft PR for issues #32 and #33.
+2. After review/merge, close #32 if the file-lock/dead-letter command is accepted.
+3. Keep #33 open only if the generated summary/index is treated as phase 1 and graph-backed automation remains future work.
 
 For Text-Core:
 
