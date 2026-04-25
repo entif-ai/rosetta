@@ -3,13 +3,13 @@
 # Updated after every extraction cycle
 
 meta:
-  version: "0.5"
-  generated: "2026-04-25T01:30:00Z"
-  total_docs_processed: 15
-  active_issue_drafts: 45
+  version: "0.6"
+  generated: "2026-04-25T02:10:00Z"
+  total_docs_processed: 22
+  active_issue_drafts: 51
   archived_issue_drafts: 8
-  total_issue_drafts_inventory: 45
-  docs_intelligence_files: 18
+  total_issue_drafts_inventory: 59
+  docs_intelligence_files: 21
   inventory_note: "Counts come from the current filesystem; curated lists below are still manual until DI-009 automates graph updates."
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
@@ -366,14 +366,10 @@ issue_candidates:
 
 pr_state:
   open:
-    - pr: 56
-      branch: docs-intelligence/attention-as-capital
-      doc: docs/ideas/Attention-as-Capital Analytics Platform.md
-      note: "Open docs-intelligence extraction PR; not yet reconciled into issue drafts here."
-    - pr: 58
-      branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
-      doc: OMOC Swarm Gnosis Protocol Spec
-      note: "Open docs-intelligence PR; check for duplication against merged PRs #30 and #53 before merge."
+    - pr: 60
+      branch: docs-intelligence/pasigraphy-protocol
+      doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+      note: "Open dirty cumulative branch; do not merge directly. Salvage only Pasigraphy v3, Real-Time Ingestion extraction, and Pasigraphy issue drafts through a clean reconciliation PR."
   closed_superseded_dirty:
     - pr: 50
       branch: docs-intelligence/agentic-orchestration-failures
@@ -391,6 +387,10 @@ pr_state:
       branch: codex/di-flywheel-cleanup
       doc: docs-intelligence flywheel reconciliation
       note: "Closed unmerged because cumulative branch was dirty; KNOWLEDGE_GRAPH updates salvaged into v0.5."
+    - pr: 58
+      branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
+      doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+      note: "Closed 2026-04-25 as superseded; unique OQ-4 slug and eight-spec proposal-bloat drafts salvaged through PR #61."
   closed_superseded:
     - pr: 26
       branch: codex/docs-intelligence-batch-1
@@ -476,6 +476,19 @@ pr_state:
       branch: codex/reconcile-intake-issue-map
       doc: docs/intake/ISSUE_RECONCILIATION.md
       merged_at: "2026-04-25T01:11:04Z"
+    - pr: 56
+      branch: docs-intelligence/attention-as-capital
+      doc: docs/ideas/Attention-as-Capital Analytics Platform.md
+      merged_at: "2026-04-25T01:18:43Z"
+    - pr: 59
+      branch: codex/update-docs-intelligence-graph
+      doc: docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
+      merged_at: "2026-04-25"
+      note: "Refreshed graph state and salvaged graph-only updates from codex/di-flywheel-cleanup."
+    - pr: 61
+      branch: codex/salvage-pr58-issue-drafts
+      doc: "(2 unique issue drafts from closed PR #58)"
+      merged_at: "2026-04-25"
 
 processed_docs:
   - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
@@ -563,6 +576,33 @@ processed_docs:
     processed_at: "2026-04-25T00:38"
     pr: 55
     notes: "Second pro-ext extraction slice; reconcile duplicate/overlap before promoting drafts."
+
+  - path: docs/ideas/Attention-as-Capital Analytics Platform.md
+    processed_at: "2026-04-25T01:18"
+    findings: 42
+    pr: 56
+    issues: 1
+    notes: "Merged docs-intelligence extraction; active draft ac-001-attention-capital-integration.md remains staged."
+
+  - path: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    processed_at: "2026-04-25T01:30"
+    pr: 58
+    issues: 2
+    notes: "Closed dirty/superseded; unique issue drafts salvaged through PR #61. Canonical extraction remains prior PR #30 plus PR #61 drafts."
+
+  - path: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    processed_at: "2026-04-25T02:10"
+    findings: 12
+    pr: 60
+    issues: 3
+    notes: "Salvaged from dirty PR #60 into clean reconciliation branch; reinforces implemented/modeled/fixture-backed/not-yet vocabulary and layer map."
+
+  - path: docs/ideas/Real-Time Ingestion and Analytics Pipeline.md
+    processed_at: "2026-04-25T02:10"
+    findings: 11
+    pr: 60
+    issues: 0
+    notes: "Unadvertised extraction found on PR #60 and preserved as evidence ledger only; issue-candidate rows still need draft files or explicit folds."
 
 issue_drafts_inventory:
   # OMC-related issue drafts from codex/normalize-docs-intelligence-issue-drafts (PR #46)
@@ -866,3 +906,40 @@ issue_drafts_inventory:
     issue_id: 2026-04-25-pro-ext-research-python-boundary-enforcement-missing
     priority: P2
     type: architecture
+
+  # OMOC Swarm Gnosis unique drafts from closed PR #58, salvaged through PR #61
+  - path: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-slug-adoption-timing-hydration-quality
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+    priority: P2
+    type: adr
+
+  # Pasigraphy v3 Architecture drafts salvaged from dirty PR #60
+  - path: docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-layer-dependency-direction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-trust-matrix-transition-criteria
+    priority: P2
+    type: governance
+
+  - path: docs/intake/issue-drafts/pasigraphy-contributing-done-language.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-contributing-done-language
+    priority: P2
+    type: documentation

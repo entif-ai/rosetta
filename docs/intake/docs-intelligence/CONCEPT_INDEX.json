@@ -1272,6 +1272,70 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-pasigraphy-protocol-v3.md",
+      "sourcePath": "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+      "title": "Docs Intelligence Extraction: Pasigraphy Protocol v3 Architecture",
+      "concepts": [
+        "architecture",
+        "governance",
+        "bootstrap",
+        "mental-model",
+        "provenance-kernel",
+        "fixture-backed",
+        "text-core",
+        "kernel-packages",
+        "cid",
+        "receipts",
+        "guard",
+        "tapestry",
+        "store",
+        "importers",
+        "source-substrate",
+        "source-registry",
+        "tier-0",
+        "tier-1",
+        "runtime-ingestion",
+        "storage",
+        "ingress-refinery",
+        "canonical-cache",
+        "retrieval",
+        "projection-adapters",
+        "ob1",
+        "prism",
+        "mission-control",
+        "rosetta-cli",
+        "rosetta-api",
+        "rosetta-operator",
+        "sha-256-cids",
+        "ed25519-receipts",
+        "guard-logic",
+        "clustering",
+        "projections",
+        "refinery",
+        "trust-matrix",
+        "cli-api-demo",
+        "risk",
+        "live-adapters",
+        "postgres",
+        "shacl",
+        "trust-scoring",
+        "ob1-prism-runtime",
+        "corpus-ingest",
+        "docs-intelligence",
+        "vocabulary",
+        "implemented",
+        "modeled",
+        "not-yet",
+        "contributor-discipline",
+        "precise-language",
+        "dependency",
+        "layer-ordering",
+        "dependency-direction",
+        "bootstrap-values",
+        "evidence-driven"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-pro-ext-research.md",
       "sourcePath": "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
       "title": "Docs Intelligence Extraction",
@@ -1409,6 +1473,77 @@
         "tradeoffs",
         "decisions",
         "6-row-decision-table-explaining-chosen-vs-rejected-alternatives"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-real-time-ingestion-analytics-pipeline.md",
+      "sourcePath": "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "entif-ecosystem",
+        "r8s-net",
+        "stream-interface",
+        "entif-r8s-net-relationship",
+        "streaming",
+        "kafka",
+        "redpanda",
+        "websocket",
+        "rss",
+        "rate-limiting",
+        "ingestion-stack",
+        "data-feeds",
+        "forex",
+        "commodities",
+        "crypto",
+        "futures",
+        "news",
+        "sentiment",
+        "data-sources",
+        "glyphs",
+        "semantic-enrichment",
+        "entif",
+        "entity-event-intention",
+        "pattern-matching",
+        "glyph-enrichment",
+        "symbolic-affordances",
+        "causal-patterns",
+        "inflation-expectations",
+        "prediction",
+        "spike-predictor",
+        "anomaly-detector",
+        "sentiment-inflector",
+        "causal-cluster",
+        "prediction-engines",
+        "multi-timeframe",
+        "minute-scale",
+        "daily-snapshot",
+        "week-month-hypothesis",
+        "prediction-timeframes",
+        "react",
+        "next-js",
+        "tailwind",
+        "dashboard",
+        "live-grid",
+        "glyph-feed",
+        "prediction-carousel",
+        "alerts",
+        "ui-tech-stack",
+        "mobile-widget",
+        "api-access",
+        "email-alerts",
+        "telegram-alerts",
+        "output-channels",
+        "elixir",
+        "feedback-loop",
+        "recalibration",
+        "reflection",
+        "learning",
+        "elixir-integration",
+        "monetization",
+        "saas-dashboard",
+        "research-partnerships",
+        "premium-reports",
+        "business-model"
       ]
     }
   ],
@@ -1674,6 +1809,37 @@
       "signature": "bloat-playbook-proposal-proposed-risk"
     },
     {
+      "path": "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md",
+      "title": "CONTRIBUTING.md Does Not Reference the \"Done Language\" Vocabulary",
+      "labels": [
+        "docs-intelligence",
+        "governance",
+        "contributor-experience"
+      ],
+      "signature": "contributing-does-done-language-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
+      "title": "Clarify Layer Dependency Direction Rules Across Rosetta's Five Layers",
+      "labels": [
+        "architecture",
+        "governance",
+        "needs-clarification"
+      ],
+      "signature": "across-clarify-dependency-direction-five"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md",
+      "title": "Define Transition Criteria for Moving Trust Matrices from Bootstrap Values to Evidence-Driven Scoring",
+      "labels": [
+        "runtime-ingestion",
+        "trust-scoring",
+        "milestone",
+        "needs-acceptance-criteria"
+      ],
+      "signature": "bootstrap-criteria-define-driven-evidence"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
@@ -1885,13 +2051,15 @@
     "mission-control": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
     "ob1": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -2301,6 +2469,7 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/governance/AUTHORITY_STACK.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -2995,7 +3164,8 @@
     },
     "corpus-ingest": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -3003,7 +3173,8 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -3030,7 +3201,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -3104,18 +3276,22 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/donor-fit-verification.md",
         "docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md",
+        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md",
+        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
         "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
         "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
       ]
     },
     "text-core": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md",
@@ -3137,9 +3313,12 @@
     },
     "runtime-ingestion": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md"
+      ]
     },
     "runtime-vs-bootstrap-state": {
       "documents": [
@@ -3228,7 +3407,8 @@
     "storage": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
-        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
@@ -3560,10 +3740,12 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md"
+        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
+        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md"
       ]
     },
     "package-topology": {
@@ -3592,7 +3774,8 @@
     },
     "projections": {
       "documents": [
-        "docs/governance/DONOR_FIT_MAP.md"
+        "docs/governance/DONOR_FIT_MAP.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -3796,6 +3979,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -3847,6 +4031,7 @@
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -3897,6 +4082,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -4006,7 +4192,8 @@
     },
     "shacl": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -4425,7 +4612,8 @@
     "entif": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -5106,7 +5294,8 @@
     "dashboard": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -5231,7 +5420,9 @@
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md"
+      ]
     },
     "do-now-do-not": {
       "documents": [
@@ -5668,7 +5859,8 @@
     },
     "data-sources": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -5698,19 +5890,22 @@
     },
     "streaming": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
     "redpanda": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
     "kafka": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -6220,7 +6415,8 @@
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -6347,7 +6543,8 @@
     },
     "risk": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -8181,6 +8378,258 @@
       ],
       "issueDrafts": []
     },
+    "mental-model": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-kernel": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "fixture-backed": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "kernel-packages": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "cid": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "store": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "importers": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-substrate": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-registry": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
+      ]
+    },
+    "tier-0": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-1": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "canonical-cache": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "projection-adapters": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-cli": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-api": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-operator": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "sha-256-cids": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "ed25519-receipts": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-logic": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "clustering": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "refinery": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-matrix": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "cli-api-demo": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "live-adapters": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "postgres": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "trust-scoring": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md"
+      ]
+    },
+    "ob1-prism-runtime": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "docs-intelligence": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
+      ]
+    },
+    "vocabulary": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "implemented": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "modeled": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "not-yet": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "contributor-discipline": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "precise-language": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "layer-ordering": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency-direction": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "bootstrap-values": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-driven": {
+      "documents": [
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
     "tech-stack": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -8489,12 +8938,6 @@
         "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md"
       ]
     },
-    "cid": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "cas-uri-scheme": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -8723,14 +9166,6 @@
       ],
       "issueDrafts": []
     },
-    "retrieval": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
-      ]
-    },
     "sensitivity": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -8758,6 +9193,348 @@
     "6-row-decision-table-explaining-chosen-vs-rejected-alternatives": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-ecosystem": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "r8s-net": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "stream-interface": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-r8s-net-relationship": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "websocket": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "rss": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "rate-limiting": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingestion-stack": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-feeds": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "forex": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "commodities": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "crypto": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "futures": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "news": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "sentiment": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyphs": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-enrichment": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-event-intention": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "pattern-matching": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyph-enrichment": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "symbolic-affordances": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "causal-patterns": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "inflation-expectations": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "prediction": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "spike-predictor": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "anomaly-detector": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "sentiment-inflector": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "causal-cluster": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "prediction-engines": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-timeframe": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "minute-scale": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "daily-snapshot": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "week-month-hypothesis": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "prediction-timeframes": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "next-js": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "tailwind": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "live-grid": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyph-feed": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "prediction-carousel": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "alerts": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "ui-tech-stack": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "mobile-widget": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "api-access": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "email-alerts": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "telegram-alerts": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "output-channels": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "elixir": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "feedback-loop": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "recalibration": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "reflection": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "learning": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "elixir-integration": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "monetization": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "saas-dashboard": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "research-partnerships": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "premium-reports": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-model": {
+      "documents": [
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
     },
@@ -8903,13 +9680,25 @@
         "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
       ]
     },
-    "adapters": {
+    "contributor-experience": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
+        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
       ]
     },
-    "source-registry": {
+    "needs-clarification": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md"
+      ]
+    },
+    "needs-acceptance-criteria": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md"
+      ]
+    },
+    "adapters": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -8943,12 +9732,6 @@
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
-      ]
-    },
-    "postgres": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
       ]
     },
     "pgvector": {
