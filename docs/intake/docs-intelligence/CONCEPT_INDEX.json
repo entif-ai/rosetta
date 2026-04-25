@@ -1765,6 +1765,102 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-v0-agentic-messaging.md",
+      "sourcePath": "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+      "title": "Docs Intelligence Extraction — Entif v0 - Spec Proposal: Agentic Messaging",
+      "concepts": [
+        "security",
+        "inter-agent",
+        "provenance",
+        "agentic-messaging",
+        "audit-spine",
+        "replaceable-substrates",
+        "threat-model",
+        "prompt-injection",
+        "multi-tenancy",
+        "security-domains",
+        "abac",
+        "worker-compromise",
+        "replay-attack",
+        "transport",
+        "mtls",
+        "vpn",
+        "wireguard",
+        "tailscale",
+        "message-schemas",
+        "data-plane",
+        "task-receipt",
+        "incident-envelope",
+        "control-plane",
+        "action-request",
+        "action-decision",
+        "approval-request",
+        "cryptography",
+        "ed25519",
+        "signed-envelope",
+        "replay-protection",
+        "nonce",
+        "routing",
+        "routing-key",
+        "content-agnostic",
+        "content-addressing",
+        "payload-hash",
+        "sha256",
+        "identity",
+        "principal-ref",
+        "node-id",
+        "validation",
+        "validation-checklist",
+        "validation-failures",
+        "architecture",
+        "ingest",
+        "mailroom",
+        "quarantine",
+        "canonicalization",
+        "append-only",
+        "quarantine-triggers",
+        "invariants",
+        "data-plane-invariants",
+        "control-plane-invariants",
+        "fail-closed",
+        "rosetta",
+        "rosetta-object-mapping",
+        "guard",
+        "guardlayer",
+        "rbac",
+        "observability",
+        "telemetry",
+        "kpi",
+        "sequencing",
+        "build-sequence",
+        "phased-implementation",
+        "risk",
+        "scope-creep",
+        "deferred-semantic",
+        "gap",
+        "next-steps-gap",
+        "domain-ref",
+        "domain-tags",
+        "encryption-gap",
+        "plaintext-headers",
+        "message-size-limit",
+        "nonce-store",
+        "routing-key-collision",
+        "msg-type-spoofing",
+        "infrastructure",
+        "mtls-certificate-provisioning",
+        "iam-decision-format",
+        "semantic-understanding-gap",
+        "quarantine-canonical-storage-gap",
+        "proposal-bloat",
+        "next-steps-unowned",
+        "json-schema-missing",
+        "rosetta-integration-gap",
+        "mailroom-placement",
+        "guard-vs-mailroom-boundary"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-moltron.md",
       "sourcePath": "docs/external/Moltron.md",
       "title": "Docs Intelligence Extraction: Moltron",
@@ -2516,81 +2612,7 @@
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
       "sourcePath": "docs/external/SwarmKit.md",
       "title": "Docs Intelligence Extraction: SwarmKit",
-      "concepts": [
-        "orchestration",
-        "raft",
-        "distributed",
-        "consensus",
-        "fault-tolerance",
-        "security",
-        "tls",
-        "pki",
-        "authentication",
-        "authorization",
-        "token-join",
-        "join-flow",
-        "reconciliation",
-        "desired-state",
-        "state-management",
-        "service-types",
-        "replicated",
-        "global",
-        "scheduling",
-        "abstraction",
-        "rolling-updates",
-        "parallelism",
-        "delay",
-        "deployment",
-        "updates",
-        "restart-policies",
-        "fault-recovery",
-        "resilience",
-        "constraints",
-        "node-attributes",
-        "filtering",
-        "spread-strategy",
-        "load-balancing",
-        "strategy",
-        "state-store",
-        "in-memory",
-        "manager",
-        "state",
-        "node-availability",
-        "paused",
-        "drained",
-        "cluster-management",
-        "maintenance",
-        "cert-rotation",
-        "transparent-reload",
-        "certificates",
-        "go-version",
-        "protobuf",
-        "build-toolchain",
-        "swarmd",
-        "swarmctl",
-        "socket",
-        "tooling",
-        "cli",
-        "task-migration",
-        "drain",
-        "operations",
-        "failover",
-        "executor",
-        "pluggable-runtime",
-        "runtime",
-        "issue-candidate",
-        "supersession",
-        "project-status",
-        "relevance",
-        "constraint-labels",
-        "security-labeling",
-        "multi-tenancy",
-        "task-history-entries",
-        "operational-parameters",
-        "dispatcher-heartbeat",
-        "health-checking",
-        "availability"
-      ]
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md",
@@ -2826,10 +2848,145 @@
       "signature": "aiida-architecture-catalog-provenance-reference"
     },
     {
+      "path": "docs/intake/issue-drafts/am-001-json-schema-missing.md",
+      "title": "AM-001: Formal JSON Schema for Agentic Messaging Envelope and Message Types",
+      "labels": [
+        "agentic-messaging",
+        "schema",
+        "priority"
+      ],
+      "signature": "001-agentic-envelope-formal-json"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md",
+      "title": "AM-002: Quarantine-to-Canonical Write Gate and Storage Schema",
+      "labels": [
+        "agentic-messaging",
+        "storage",
+        "quarantine"
+      ],
+      "signature": "002-canonical-gate-quarantine-schema"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
+      "title": "AM-003: Nonce Store Specification for Distributed Replay Protection",
+      "labels": [
+        "agentic-messaging",
+        "security",
+        "distributed"
+      ],
+      "signature": "003-distributed-nonce-protection-replay"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
+      "title": "AM-004: mTLS Certificate Provisioning and Rotation",
+      "labels": [
+        "agentic-messaging",
+        "security",
+        "infrastructure"
+      ],
+      "signature": "004-certificate-mtls-provisioning-rotation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-005-guard-decision-api.md",
+      "title": "AM-005: Guard Decision API — `iam.decision` Format and Validation Protocol",
+      "labels": [
+        "agentic-messaging",
+        "guard",
+        "security"
+      ],
+      "signature": "005-api-decision-decision-format"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-006-data-control-plane-spoofing.md",
+      "title": "AM-006: Data/Control Plane Type Enforcement — Anti-Spoofing",
+      "labels": [
+        "agentic-messaging",
+        "security"
+      ],
+      "signature": "006-anti-control-data-enforcement"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-007-message-size-limit-dos.md",
+      "title": "AM-007: Message Size Limit — DoS Prevention at Ingress",
+      "labels": [
+        "agentic-messaging",
+        "security"
+      ],
+      "signature": "007-dos-ingress-limit-message"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md",
+      "title": "AM-008: Data Plane Text — Prompt Injection Mitigation Strategy",
+      "labels": [
+        "agentic-messaging",
+        "security",
+        "prompt-injection"
+      ],
+      "signature": "008-data-injection-mitigation-plane"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-009-domain-ref-schema.md",
+      "title": "AM-009: Domain Ref Schema — tenant_id, Classification, ABAC Format",
+      "labels": [
+        "agentic-messaging",
+        "security",
+        "multi-tenancy"
+      ],
+      "signature": "009-abac-classification-domain-format"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md",
+      "title": "AM-010: Rosetta Architecture Alignment — Agentic Messaging vs NOT LAME PRD vs Text-Core MVP",
+      "labels": [
+        "agentic-messaging",
+        "rosetta",
+        "governance"
+      ],
+      "signature": "010-agentic-alignment-architecture-core"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md",
+      "title": "AM-011: Mailroom Scope — Bus Ingress vs General Rosetta Ingress Pattern",
+      "labels": [
+        "agentic-messaging",
+        "architecture"
+      ],
+      "signature": "011-bus-general-ingress-ingress"
+    },
+    {
+      "path": "docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md",
+      "title": "AM-012: GuardLayer vs Mailroom Call Sequence and Error Propagation",
+      "labels": [
+        "agentic-messaging",
+        "guard",
+        "reliability"
+      ],
+      "signature": "012-call-error-guardlayer-mailroom"
+    },
+    {
       "path": "docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md",
       "title": "anti-personhood-correlation-governance-gap",
       "labels": [],
       "signature": "anti-correlation-governance-personhood"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md",
+      "title": "AR-001: Evaluate AttnRes-style Depth Aggregation for Memory Plane 3",
+      "labels": [],
+      "signature": "001-aggregation-attnres-depth-evaluate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md",
+      "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
+      "labels": [],
+      "signature": "002-block-cost-model-segmentation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-003-kimi-competitive-tracking.md",
+      "title": "AR-003: Track Kimi Team Publications for Competitive Gap Analysis",
+      "labels": [],
+      "signature": "003-analysis-competitive-kimi-publications"
     },
     {
       "path": "docs/intake/issue-drafts/backup-strategy-no-automation.md",
@@ -3663,6 +3820,7 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
@@ -3758,7 +3916,8 @@
     "observability": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -3783,6 +3942,7 @@
     "telemetry": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/external/Moltron.md"
       ],
       "issueDrafts": []
@@ -4020,7 +4180,8 @@
     },
     "fail-closed": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -4080,6 +4241,7 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": [
@@ -4310,9 +4472,12 @@
     "quarantine": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md"
+      ]
     },
     "skills-portability": {
       "documents": [
@@ -4832,6 +4997,7 @@
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
+        "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md",
         "docs/intake/issue-drafts/donor-fit-verification.md",
         "docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md",
         "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md",
@@ -4969,6 +5135,7 @@
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
+        "docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md",
         "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
       ]
     },
@@ -5305,11 +5472,13 @@
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
+        "docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md",
         "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
         "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
         "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
@@ -5357,8 +5526,7 @@
     "tooling": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -5376,8 +5544,7 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
@@ -5529,6 +5696,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -5653,10 +5821,14 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-005-guard-decision-api.md",
+        "docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md"
+      ]
     },
     "epistemic-sequencing": {
       "documents": [
@@ -6140,6 +6312,7 @@
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
@@ -6168,9 +6341,12 @@
     "rosetta": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md"
+      ]
     },
     "entif": {
       "documents": [
@@ -6222,8 +6398,7 @@
     "relevance": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
@@ -6927,10 +7102,12 @@
     "infrastructure": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md",
+        "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
         "docs/intake/issue-drafts/omc-crdt-overlay-library-choice.md"
       ]
     },
@@ -7001,7 +7178,8 @@
     "sequencing": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -7076,7 +7254,8 @@
     },
     "identity": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -7493,10 +7672,18 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/external/DeerFlow Architecture.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/external/Moltron.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
+        "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
+        "docs/intake/issue-drafts/am-005-guard-decision-api.md",
+        "docs/intake/issue-drafts/am-006-data-control-plane-spoofing.md",
+        "docs/intake/issue-drafts/am-007-message-size-limit-dos.md",
+        "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md",
+        "docs/intake/issue-drafts/am-009-domain-ref-schema.md"
+      ]
     },
     "permissions": {
       "documents": [
@@ -7575,6 +7762,7 @@
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
@@ -7745,8 +7933,7 @@
     },
     "authentication": {
       "documents": [
-        "docs/external/acpx.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/acpx.md"
       ],
       "issueDrafts": []
     },
@@ -7944,8 +8131,7 @@
     "resilience": {
       "documents": [
         "docs/external/AiiDA-WorkGraph.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
@@ -8277,7 +8463,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md"
+      ]
     },
     "redpanda": {
       "documents": [
@@ -8594,7 +8782,8 @@
     },
     "validation": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -8649,8 +8838,7 @@
     },
     "abstraction": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -8867,8 +9055,7 @@
     },
     "deployment": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -8983,8 +9170,7 @@
     },
     "tls": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -9275,9 +9461,12 @@
     },
     "prompt-injection": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md"
+      ]
     },
     "anti-injection": {
       "documents": [
@@ -9713,8 +9902,7 @@
     },
     "operations": {
       "documents": [
-        "docs/external/Berman-PRD.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -10212,6 +10400,7 @@
     "content-addressing": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -10231,7 +10420,8 @@
     },
     "canonicalization": {
       "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -10834,8 +11024,7 @@
     },
     "consensus": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
-        "docs/external/SwarmKit.md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -12001,7 +12190,8 @@
     },
     "ingest": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -12080,7 +12270,9 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-001-json-schema-missing.md"
+      ]
     },
     "loop": {
       "documents": [
@@ -12236,7 +12428,8 @@
     },
     "abac": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -12550,7 +12743,9 @@
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-001-json-schema-missing.md"
+      ]
     },
     "delivery": {
       "documents": [
@@ -12612,8 +12807,7 @@
     },
     "cli": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -12748,6 +12942,424 @@
     "future": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "inter-agent": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-messaging": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-001-json-schema-missing.md",
+        "docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md",
+        "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
+        "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
+        "docs/intake/issue-drafts/am-005-guard-decision-api.md",
+        "docs/intake/issue-drafts/am-006-data-control-plane-spoofing.md",
+        "docs/intake/issue-drafts/am-007-message-size-limit-dos.md",
+        "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md",
+        "docs/intake/issue-drafts/am-009-domain-ref-schema.md",
+        "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md",
+        "docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md",
+        "docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md"
+      ]
+    },
+    "audit-spine": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "replaceable-substrates": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "threat-model": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-tenancy": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-009-domain-ref-schema.md"
+      ]
+    },
+    "security-domains": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "worker-compromise": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "replay-attack": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "transport": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "mtls": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "vpn": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "wireguard": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "tailscale": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "message-schemas": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-plane": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-receipt": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "incident-envelope": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "control-plane": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "action-request": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "action-decision": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "approval-request": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "cryptography": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "ed25519": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "signed-envelope": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "replay-protection": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "nonce": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-key": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-agnostic": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "payload-hash": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "sha256": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "principal-ref": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "node-id": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "validation-checklist": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "validation-failures": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "mailroom": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "quarantine-triggers": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-plane-invariants": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "control-plane-invariants": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-object-mapping": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "guardlayer": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "rbac": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "kpi": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "build-sequence": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "phased-implementation": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-creep": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "deferred-semantic": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "next-steps-gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-ref": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-tags": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "encryption-gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "plaintext-headers": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "message-size-limit": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "nonce-store": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-key-collision": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "msg-type-spoofing": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "mtls-certificate-provisioning": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "iam-decision-format": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-understanding-gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "quarantine-canonical-storage-gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "proposal-bloat": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "next-steps-unowned": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-schema-missing": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-integration-gap": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "mailroom-placement": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-vs-mailroom-boundary": {
+      "documents": [
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
       "issueDrafts": []
     },
@@ -12900,8 +13512,7 @@
     },
     "runtime": {
       "documents": [
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -13123,8 +13734,7 @@
     },
     "constraints": {
       "documents": [
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -13582,10 +14192,11 @@
     },
     "distributed": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md"
+      ]
     },
     "bittorrent": {
       "documents": [
@@ -15814,354 +16425,6 @@
       ],
       "issueDrafts": []
     },
-    "raft": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "fault-tolerance": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "pki": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "authorization": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "token-join": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "join-flow": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "reconciliation": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "desired-state": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state-management": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "service-types": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "replicated": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "global": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "scheduling": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "rolling-updates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "parallelism": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "delay": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "updates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "restart-policies": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "fault-recovery": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "node-attributes": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "filtering": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "spread-strategy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "load-balancing": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "strategy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state-store": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "in-memory": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "manager": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "node-availability": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "paused": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "drained": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "cluster-management": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "maintenance": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "cert-rotation": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "transparent-reload": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "certificates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "go-version": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "protobuf": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "build-toolchain": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "swarmd": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "swarmctl": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "socket": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "task-migration": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "drain": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "failover": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "executor": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "pluggable-runtime": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "issue-candidate": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "supersession": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "project-status": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "constraint-labels": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "security-labeling": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-tenancy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "task-history-entries": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "operational-parameters": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "dispatcher-heartbeat": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "health-checking": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "availability": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
     "scope-gate": {
       "documents": [
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
@@ -16843,12 +17106,6 @@
       "issueDrafts": []
     },
     "visualizations": {
-      "documents": [
-        "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
-    "kpi": {
       "documents": [
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],

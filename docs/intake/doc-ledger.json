@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T19:45:07.957Z",
+  "generatedAt": "2026-04-25T20:30:29.444Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
@@ -7235,7 +7235,7 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-25",
-            "isoDateTime": "2026-04-25T19:45:07.957Z",
+            "isoDateTime": "2026-04-25T20:30:29.444Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7250,7 +7250,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-25T19:45:07.957Z",
+      "modifiedAt": "2026-04-25T20:30:29.444Z",
       "bytes": 9970,
       "contentFingerprint": "27a562aab24e2ea94339c491b7f4b867e1d7aeb022e1449921881d92cb7701fe",
       "words": 1341,
@@ -8772,7 +8772,7 @@
         "fallback": {
           "filesystemModifiedAt": {
             "date": "2026-04-25",
-            "isoDateTime": "2026-04-25T19:45:07.957Z",
+            "isoDateTime": "2026-04-25T20:30:29.444Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8786,7 +8786,7 @@
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-25T19:45:07.957Z",
+      "modifiedAt": "2026-04-25T20:30:29.444Z",
       "bytes": 14738,
       "contentFingerprint": "f21ff9cf9b03739b37852124c9ca670779e232297ed01304dde494e565622cf8",
       "words": 1806,
