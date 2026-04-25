@@ -241,5 +241,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-pro-ext-research-authoritative-baselines-adr-missing": {
+    "number": 98,
+    "state": "open",
+    "title": "Missing ADR: formally establish the 21 authoritative project baseline documents",
+    "url": "https://github.com/entif-ai/rosetta/issues/98",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
+    "draftStatus": "published"
   }
 }
