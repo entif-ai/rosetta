@@ -700,5 +700,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-002-quarantine-canonical-storage-gap.md",
     "draftStatus": "published"
+  },
+  "am-003-nonce-store-replay-detection.md": {
+    "number": 226,
+    "state": "open",
+    "title": "AM-003: Nonce Store Specification for Distributed Replay Protection",
+    "url": "https://github.com/entif-ai/rosetta/issues/226",
+    "activeDraftPath": "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-003-nonce-store-replay-detection.md",
+    "draftStatus": "published"
   }
 }
