@@ -3,11 +3,16 @@
 # Updated after every extraction cycle
 
 meta:
-  version: "0.3"
-  generated: "2026-04-24T23:20:00Z"
-  total_docs_processed: 9
-  total_issue_drafts_inventory: 22
-  next_doc_to_process: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+  version: "0.5"
+  generated: "2026-04-25T01:30:00Z"
+  total_docs_processed: 15
+  active_issue_drafts: 45
+  archived_issue_drafts: 8
+  total_issue_drafts_inventory: 45
+  docs_intelligence_files: 18
+  inventory_note: "Counts come from the current filesystem; curated lists below are still manual until DI-009 automates graph updates."
+  next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md
+  reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
 
 concepts:
   - id: authority-chain
@@ -202,6 +207,52 @@ concepts:
       - docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
     status: active
 
+  - id: harness-proof-architecture
+    name: Harness-Proof Architecture
+    introduced_by: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    introduced_at: "2026-04-24"
+    definition: "Architectural target where harnesses, models, and plugins cannot violate constitutional constraints because all durable writes route through deterministic kernel APIs."
+    extends: [sovereign-kernel, write-admission-gate, receipt-law]
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-24-agentic-orchestration-failures.md
+      - docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
+      - docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
+    status: active
+
+  - id: source-substrate-domain
+    name: Source Substrate Domain
+    introduced_by: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    introduced_at: "2026-04-24"
+    definition: "First-class source protocol domain separating source systems, record identity, manifestation identity, acquisition, custody, publication context, identity bindings, rights, lifecycle, and evaluation receipts."
+    extends: [receipt-law]
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-24-ontologies-and-dataset-repositories.md
+      - docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
+    status: active
+
+  - id: anti-personhood-correlation
+    name: Anti-Personhood-Correlation Constraint
+    introduced_by: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    introduced_at: "2026-04-24"
+    definition: "Governance constraint against using source, PID, authorship, and discourse-correlation infrastructure to construct identity or cognitive-fingerprint profiles without explicit consent."
+    extends: [source-substrate-domain]
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-24-ontologies-and-dataset-repositories.md
+      - docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+    status: active
+
+  - id: pro-ext-research-scaffold
+    name: Pro-Extended Research Scaffold
+    introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    introduced_at: "2026-04-25"
+    definition: "Deep-research scaffold and task-ordering source for Rosetta/Entif implementation, including traceability headers, cas URI examples, Python boundaries, known-red tests, and RPP task numbering."
+    extends: [text-core-mvp, receipt-law]
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-25-entif-rosetta-prds-pro-extended-research.md
+      - docs/intake/docs-intelligence/2026-04-25-pro-ext-research.md
+      - docs/intake/issue-drafts/RPP-task-numbering-reference.md
+    status: active
+
 issue_candidates:
   - id: DI-007
     title: "Sub-agent context isolation — clean boot per cycle"
@@ -210,7 +261,8 @@ issue_candidates:
     type: bug
     source_docs:
       - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
-    status: open
+    status: closed
+    note: "Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload."
 
   - id: DI-008
     title: "Ledger locking mechanism — mark doc in-flight, dead-letter queue"
@@ -220,7 +272,7 @@ issue_candidates:
     source_docs:
       - rosetta-di-ledger.md
     status: open
-    note: "PostgreSQL migration gap also flagged here"
+    note: "Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter implementation remains open."
 
   - id: DI-009
     title: "Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti"
@@ -230,6 +282,7 @@ issue_candidates:
     source_docs:
       - docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
     status: open
+    note: "Manual YAML exists; automation and graph-backed refinement remain open."
 
   - id: DI-010
     title: "Sub-agents must check prior work before creating issues or re-processing docs"
@@ -238,8 +291,8 @@ issue_candidates:
     type: coordination
     source_docs:
       - docs/intake/issue-drafts/
-    status: open
-    note: "OMOC double-process was the trigger"
+    status: closed
+    note: "Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md."
 
   - id: DI-011
     title: "Sub-agents must never merge their own PRs — boundary violation"
@@ -248,8 +301,8 @@ issue_candidates:
     type: boundary
     source_docs:
       - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
-    status: open
-    note: "PR #37 merged by sub-agent autonomously — NEVER-merge rule added to SUBAGENT_BOOT.md"
+    status: closed
+    note: "Closed after PR #48 forbade sub-agent merge/close/approve/readiness actions."
 
   - id: DI-012
     title: "Sub-agent must create issue draft files for every issue candidate in extraction"
@@ -258,8 +311,8 @@ issue_candidates:
     type: coordination
     source_docs:
       - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
-    status: open
-    note: "PR #37 had 5 issue candidates but zero issue draft files; fixed in PR #44"
+    status: closed
+    note: "Closed after PR #48 added candidate-to-draft validation and PR #49 normalized remaining OMC/Text-Core draft files."
 
   - id: ROCK-3111-C-pack-id-placeholder
     title: "RRP pack_id is a placeholder — needs real content-addressed ID at freeze"
@@ -313,65 +366,116 @@ issue_candidates:
 
 pr_state:
   open:
+    - pr: 56
+      branch: docs-intelligence/attention-as-capital
+      doc: docs/ideas/Attention-as-Capital Analytics Platform.md
+      note: "Open docs-intelligence extraction PR; not yet reconciled into issue drafts here."
+    - pr: 58
+      branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
+      doc: OMOC Swarm Gnosis Protocol Spec
+      note: "Open docs-intelligence PR; check for duplication against merged PRs #30 and #53 before merge."
+  closed_superseded_dirty:
+    - pr: 50
+      branch: docs-intelligence/agentic-orchestration-failures
+      doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+      findings: 35
+      issues: 9
+      note: "Closed 2026-04-25; useful draft payload salvaged through #52/#57 lineage."
+    - pr: 51
+      branch: docs-intelligence/ontologies-and-dataset-repositories
+      doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+      findings: 14
+      issues: 2
+      note: "Closed 2026-04-25; useful draft payload salvaged through #52/#57 lineage."
+    - pr: 52
+      branch: codex/di-flywheel-cleanup
+      doc: docs-intelligence flywheel reconciliation
+      note: "Closed unmerged because cumulative branch was dirty; KNOWLEDGE_GRAPH updates salvaged into v0.5."
+  closed_superseded:
+    - pr: 26
+      branch: codex/docs-intelligence-batch-1
+      doc: Batch 1 highest-authority Rosetta direction
+      note: "Closed after clean merged slices made the cumulative branch obsolete."
+    - pr: 28
+      branch: docs-intelligence/donor-fit-map
+      doc: DONOR_FIT_MAP.md
+      note: "Closed; useful payload already present on main, branch deleted accepted artifacts."
+    - pr: 29
+      branch: docs-intelligence/upstream-and-backup-plan
+      doc: UPSTREAM_AND_BACKUP_PLAN.md
+      note: "Closed; useful payload already present on main, branch carried stale churn."
+    - pr: 36
+      branch: docs-intelligence/subagent-boot-instructions
+      doc: SUBAGENT_BOOT.md
+      note: "Closed without merging; replaced by later boot-rule PRs."
+    - pr: 47
+      branch: docs-intelligence/subagent-boot-instructions
+      doc: SUBAGENT_BOOT.md + KNOWLEDGE_GRAPH.yaml
+      note: "Closed; superseded by PR #48."
+  merged:
     - pr: 27
       branch: docs-intelligence/authority-stack
       doc: AUTHORITY_STACK.md
       findings: 8
       issues: 3
-    - pr: 28
-      branch: docs-intelligence/donor-fit-map
-      doc: DONOR_FIT_MAP.md
-      findings: 3
-      issues: 1
-    - pr: 29
-      branch: docs-intelligence/upstream-and-backup-plan
-      doc: UPSTREAM_AND_BACKUP_PLAN.md
-      findings: 4
-      issues: 2
+      merged_at: "2026-04-24T22:58:07Z"
     - pr: 30
       branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
       doc: OMOC Swarm Gnosis Protocol Spec
       findings: 35
       issues: 2
-    - pr: 46
-      branch: codex/normalize-docs-intelligence-issue-drafts
-      doc: "(12 issue drafts from OMC research spec + Text-Core MVP scope gate)"
-      findings: 0
-      issues: 12
-      note: "OMOC 10 issues + Text-Core 2 issues from normalize branch"
-    - pr: 48
-      branch: docs-intelligence/subagent-boot-v2
-      doc: SUBAGENT_BOOT.md + KNOWLEDGE_GRAPH.yaml
-      findings: 0
-      issues: 0
-      note: "SUBAGENT_BOOT.md v2 with all DI-007 to DI-012 rules; KNOWLEDGE_GRAPH v0.3"
-  merged:
+      merged_at: "2026-04-24T23:30:24Z"
+    - pr: 35
+      branch: docs-intelligence/ontological-mixture-of-concepts-research-spec
+      doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
+      merged_at: "2026-04-24T22:58:18Z"
     - pr: 37
       branch: docs-intelligence/rock-3111-c-rrp-pack-filesystem-contract
       doc: ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
       findings: 23
       issues: 5
       merged_at: "2026-04-24T22:53:36Z"
-      note: "MERGED BY SUB-AGENT — DI-011 filed; boundary violation"
+      note: "Merged by sub-agent; DI-011 boundary violation closed after PR #48 hardened boot rules."
     - pr: 44
       branch: docs-intelligence/rock-3111-c-issue-drafts
-      doc: "(5 issue drafts — no source doc extraction)"
+      doc: "(5 issue drafts - no source doc extraction)"
       findings: 0
       issues: 5
-      merged_at: "2026-04-24T23:13:00Z"
-      note: "5 issue draft files from ROCK-3111-C extraction (DI-012 fix)"
-    - pr: 36
-      branch: docs-intelligence/subagent-boot-instructions
-      doc: SUBAGENT_BOOT.md
+      merged_at: "2026-04-24T23:16:40Z"
+    - pr: 46
+      branch: codex/promote-ready-issue-drafts
+      doc: Ready issue draft promotion
       findings: 0
-      issues: 0
-      note: "CLOSED without merging; replaced by PR #47"
-    - pr: 47
-      branch: docs-intelligence/subagent-boot-instructions
+      issues: 3
+      merged_at: "2026-04-24T23:17:12Z"
+    - pr: 48
+      branch: docs-intelligence/subagent-boot-v2
       doc: SUBAGENT_BOOT.md + KNOWLEDGE_GRAPH.yaml
       findings: 0
       issues: 0
-      note: "REPLACES PR #36 — all DI-007 through DI-012 rules; merge conflict resolved"
+      merged_at: "2026-04-24T23:27:01Z"
+    - pr: 49
+      branch: codex/normalize-docs-intelligence-issue-drafts
+      doc: "(12 issue drafts from OMC research spec + Text-Core MVP scope gate)"
+      findings: 0
+      issues: 12
+      merged_at: "2026-04-24T23:41:57Z"
+    - pr: 53
+      branch: docs-intelligence/omoc-swarm-gnosis
+      doc: OMOC Swarm Gnosis Protocol
+      merged_at: "2026-04-25T00:34:28Z"
+    - pr: 54
+      branch: docs-intelligence/entif-rosetta-prds-pro-extended-research
+      doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+      merged_at: "2026-04-25T00:36:42Z"
+    - pr: 55
+      branch: docs-intelligence/pro-ext-research-v2
+      doc: Pro-Extended Research extraction v2
+      merged_at: "2026-04-25T00:38:04Z"
+    - pr: 57
+      branch: codex/reconcile-intake-issue-map
+      doc: docs/intake/ISSUE_RECONCILIATION.md
+      merged_at: "2026-04-25T01:11:04Z"
 
 processed_docs:
   - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
@@ -430,6 +534,35 @@ processed_docs:
     pr: 29
     issues: 2
     notes: "Sub-agent ran; extraction done"
+
+  - path: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    processed_at: "2026-04-24T23:47"
+    findings: 35
+    pr: 50
+    issues: 9
+    notes: "Original PR closed as dirty; useful draft payload and graph concepts salvaged."
+
+  - path: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    processed_at: "2026-04-24T23:52"
+    findings: 14
+    pr: 51
+    issues: 2
+    notes: "Original PR closed as dirty; source-substrate and anti-personhood concepts salvaged."
+
+  - path: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md
+    processed_at: "2026-04-25T00:34"
+    pr: 53
+    notes: "Merged docs-intelligence extraction; candidate table still needs full draft backfill or explicit folds."
+
+  - path: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    processed_at: "2026-04-25T00:36"
+    pr: 54
+    notes: "Merged docs-intelligence extraction; pro-ext research issue drafts added on main."
+
+  - path: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    processed_at: "2026-04-25T00:38"
+    pr: 55
+    notes: "Second pro-ext extraction slice; reconcile duplicate/overlap before promoting drafts."
 
 issue_drafts_inventory:
   # OMC-related issue drafts from codex/normalize-docs-intelligence-issue-drafts (PR #46)
@@ -592,18 +725,144 @@ issue_drafts_inventory:
     type: ablation
 
   # UPSTREAM_AND_BACKUP_PLAN issue drafts
-  - path: docs/intake/issue-drafts/upstream-backup-recovery-rule-gap.md
+  - path: docs/intake/issue-drafts/recovery-rule-no-enforcement.md
     source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
     source_pr: 29
     branch: docs-intelligence/upstream-and-backup-plan
-    issue_id: upstream-backup-recovery-rule-gap
-    priority: P2
+    issue_id: recovery-rule-no-enforcement
+    priority: P3
     type: risk-flag
 
-  - path: docs/intake/issue-drafts/upstream-backup-mirror-sync-unspecified.md
+  - path: docs/intake/issue-drafts/backup-strategy-no-automation.md
     source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
     source_pr: 29
     branch: docs-intelligence/upstream-and-backup-plan
-    issue_id: upstream-backup-mirror-sync-unspecified
+    issue_id: backup-strategy-no-automation
+    priority: P2
+    type: implementation
+
+  # Agentic Orchestration Failures issue drafts from closed PR #50, salvaged through #57
+  - path: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: harness-platform-mismatch-root-cause
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: constitutional-primitives-prose-not-law
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/six-layer-memory-model-federated-jurisdiction.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: six-layer-memory-model-federated-jurisdiction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/memory-adapter-certification-harness.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: memory-adapter-certification-harness
+    priority: P1
+    type: reliability
+
+  - path: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: langgraph-workflow-not-constitutional
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: write-admission-gate-nine-step-state-machine
+    priority: P1
+    type: implementation
+
+  - path: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: skillpack-importer-quarantine-flow
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: mac-studio-control-two-tier-guard
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: video-transcript-dedup-playlist-tracking
     priority: P3
     type: implementation
+
+  # Ontologies and Dataset Repositories issue drafts from closed PR #51, salvaged through #57
+  - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: source-substrate-missing-protocol-domain
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: anti-personhood-correlation-governance-gap
+    priority: P1
+    type: governance
+
+  # Pro-Extended Research issue drafts from PRs #54/#55
+  - path: docs/intake/issue-drafts/RPP-task-numbering-reference.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 54
+    issue_id: RPP-task-numbering-reference
+    priority: P2
+    type: documentation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
+    priority: P2
+    type: spec-gap
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-headers-check-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-headers-check-missing
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-known-red-tests-policy-missing
+    priority: P3
+    type: policy
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-python-boundary-enforcement-missing
+    priority: P2
+    type: architecture
