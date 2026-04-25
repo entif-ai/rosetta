@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: harness-platform-mismatch-root-cause
 - Title: Platform Mismatch as Root Cause of All Agentic Failures
 - Type: architecture
 - Severity: critical
@@ -37,7 +37,7 @@ From the document:
 
 The design target must be: **harness-proof architecture** — a system where no harness can violate constitutional constraints even when it is stupid, buggy, or actively sloppy.
 
-The question is not "how do I get OpenClaw/Hermes to respect my design?"  
+The question is not "how do I get OpenClaw/Hermes to respect my design?"
 The question is "what is the maximum safe role a harness like that can have inside my design?"
 
 Answer: very limited. They can be useful as transient worker shells, tool adapters, UI surfaces, cheap delegation lanes, and summarizers/extractors under schema. They should NOT own canonical state, constitutional memory, policy enforcement, durable promotion rules, provenance, scheduler truth, or layer jurisdiction.

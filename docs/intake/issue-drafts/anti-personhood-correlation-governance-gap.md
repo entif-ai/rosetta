@@ -37,7 +37,7 @@ The risk is not that Entif will intentionally harm individuals. The risk is:
 
 The Source Substrate addendum (see: `source-substrate-missing-protocol-domain.md`) must include explicit governance language:
 
-1. **Prohibition language:** Identity-correlation outputs — defined as inferences that connect pseudonymized or anonymous discourse patterns to identified individuals, or that construct cognitive/psychological profiles of named individuals from their authored corpus — are prohibited uses of the Source Substrate infrastructure,除非 explicit individual consent is documented in the relevant `identity.record`.
+1. **Prohibition language:** Identity-correlation outputs — defined as inferences that connect pseudonymized or anonymous discourse patterns to identified individuals, or that construct cognitive/psychological profiles of named individuals from their authored corpus — are prohibited uses of the Source Substrate infrastructure unless explicit individual consent is documented in the relevant `identity.record`.
 
 2. **Audit trail requirement:** Any query to the Source Substrate that would produce cross-repository authorship correlation must be logged with: query rationale, requesting authority, output type, and downstream use case.
 

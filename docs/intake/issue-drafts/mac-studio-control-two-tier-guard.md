@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: mac-studio-control-two-tier-guard
 - Title: Mac Studio M3 Ultra Control — Two-Tier Guard (Browser + Desktop)
 - Type: implementation
 - Severity: high

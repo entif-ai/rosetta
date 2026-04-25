@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: video-transcript-dedup-playlist-tracking
 - Title: Video Transcript Deduplication by Canonical Video ID + Playlist Attachment Tracking
 - Type: implementation
 - Severity: medium

@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: write-admission-gate-nine-step-state-machine
 - Title: Write-Admission Gate — 9-Step State Machine, Fail-Closed
 - Type: implementation
 - Severity: critical
