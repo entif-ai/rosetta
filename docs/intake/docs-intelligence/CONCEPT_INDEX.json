@@ -1222,6 +1222,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-bootstrap-execution-track.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-bootstrap-execution-track.md",
+      "title": "Extraction: BOOTSTRAP_EXECUTION_TRACK.md",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-cognitive-tiles-swarm-gnosis.md",
       "sourcePath": "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
       "title": "Docs Intelligence Extraction",
@@ -2995,6 +3001,12 @@
       "signature": "automation-backup-strategy"
     },
     {
+      "path": "docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md",
+      "title": "BE-001 — Receipt Law Not Explicit in Bootstrap Governance",
+      "labels": [],
+      "signature": "001-bootstrap-explicit-governance-law"
+    },
+    {
       "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
       "title": "Implement browser agent for acceptance verification",
       "labels": [],
@@ -3429,6 +3441,12 @@
       "title": "Issue: Enforce Rosetta Traceability Header Consistency",
       "labels": [],
       "signature": "consistency-enforce-header-rosetta-traceability"
+    },
+    {
+      "path": "docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md",
+      "title": "ROSETTA-v3-010: Translator Tile Versioning Model Ambiguous",
+      "labels": [],
+      "signature": "010-ambiguous-model-rosetta-tile"
     },
     {
       "path": "docs/intake/issue-drafts/sac-001-audio-source-identity-prosodic-vs-biometric.md",

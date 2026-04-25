@@ -1,10 +1,16 @@
 meta:
   version: '0.8'
   generated: '2026-04-25T20:47:00Z'
-  total_docs_processed: 31
+  total_docs_processed: 30
   active_issue_drafts: 116
   archived_issue_drafts: 23
-  total_issue_drafts_inventory: 127
+  total_processed_docs:
+- path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  processed_at: 2026-04-25T00:00:00Z
+  findings: 10
+  pr: 197
+  issues: 1
+issue_drafts_inventory: 127
   docs_intelligence_files: 30
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
@@ -1411,7 +1417,21 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
+processed_docs:
+- path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  processed_at: 2026-04-25T00:00:00Z
+  findings: 10
+  pr: 197
+  issues: 1
 issue_drafts_inventory:
+- path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
+  source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  source_pr: 197
+  issue_id: be-001-receipt-law-not-explicit
+  priority: P1
+  type: architecture
+  status: candidate
+
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
