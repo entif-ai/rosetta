@@ -482,6 +482,7 @@ concepts:
   - docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   status: active
 issue_candidates:
+<<<<<<< Updated upstream
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
   github: 31
@@ -584,6 +585,268 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+=======
+  - id: consensus-first-framework
+    name: Consensus-First Commitment Scoping Framework v0.1
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Governance/planning methodology requiring consensual readiness confirmation before phase transitions, right-sized commitment sizing given board state (not cheapest), five required artifacts (Opportunity & Edge Brief, Commitment Canvas, Evidence Ledger, Falsification & Dissent Packet, Exit/Pivot/Salvage Plan), AI-specific safeguards against hallucination and miscalibration, and protected dissent as first-class input"
+    extends: [real-options, discovery-driven-planning, evidence-driven]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/docs-intelligence/2026-04-25-consensus-first-commitment-scoping-framework.md
+    status: active
+
+  - id: real-options
+    name: Real Options (Commitment Sizing)
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Treating investments as a sequence of choices (expand, delay, abandon) whose value comes from flexibility under uncertainty; maps two-way door (reversible) vs one-way door (expensive to undo) decisions"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: discovery-driven-planning
+    name: Discovery-Driven Planning
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Reframes planning around explicit assumptions and funding/commitment tied to learning milestones rather than pretending forecasts are reliable; combines with real-options theory"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: evidence-ledger
+    name: Evidence Ledger Artifact
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Seven-field per-claim structured ledger: claim statement, evidence type, source provenance, contextual credibility score, incentive/bias notes, calibrated confidence level, disconfirmers; designed to counter hallucination and overconfident synthesis"
+    extends: [evidence-driven]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+    status: active
+
+  - id: phase-transition-handshake
+    name: Phase Transition Handshake
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Hard-rule gate requiring explicit readiness confirmation before any workflow phase transition; four mandatory questions: readiness, missing perspectives, strongest objection, two-way/one-way door classification; no automatic transition"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-phase-transition-handshake.md
+    status: active
+
+  - id: falsification-dissent-packet
+    name: Falsification & Dissent Packet
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Three-part debiasing instrument: (1) Premortem, (2) Contrarian challenge (devil's advocacy or Team A/Team B), (3) Protected dissent capture with comprehension step; anti-silo-god mechanism"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-falsification-dissent-packet.md
+    status: active
+
+  - id: exit-pivot-salvage-plan
+    name: Exit/Pivot/Salvage Plan
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Four trigger sets (enter/continue/pivot/exit) each with five fields: metric/signal, thresholds, decision owner, containment steps, salvage paths; designed to stop sunk-cost worship"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-exit-pivot-salvage-plan.md
+    status: active
+
+  - id: commitment-canvas
+    name: Commitment Canvas Artifact
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Eight-field wager-sizing instrument: opportunity value (direct + derivative), downside exposure, loss tolerance, reversibility, tempo & decay, edge decay estimate, recommended commitment posture (Observe/Probe/Incubate/Parallel/Strike/Partner/Acquire/Pause/Exit)"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-commitment-canvas.md
+    status: active
+
+  - id: commitment-calibration-loop
+    name: Commitment Calibration Loop
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Continuous loop: (1) Update Board State → Update Commitment Canvas, (2) Update Evidence Ledger → Update Confidence + Disconfirmers, (3) Run periodic Premortems at major bet-size increases, (4) Re-check exit/pivot triggers before each new commitment tranche"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+    status: active
+
+  - id: board-state
+    name: Board State
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Current strategic situation characterized by: opportunity magnitude, time sensitivity, competitive pressure, known edges, edge durability, resource posture, loss tolerance, regulatory/trust constraints, ongoing portfolio opportunity cost"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: motivated-reasoning-guardrails
+    name: Anti-Motivated-Reasoning Guardrails
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Four structural countermeasures: (1) explicit incentive notes in Evidence Ledger, (2) premortems at bet-size increases, (3) Team A/Team B or devil's advocacy on contested decisions, (4) explicit disconfirmers and 'what would change our mind' statements"
+    extends: [consensus-first-framework, evidence-ledger]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-motivated-reasoning-guardrails.md
+    status: active
+
+  - id: spec-by-fluent-synthesis-prohibition
+    name: No Spec by Fluent Synthesis Rule
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Forbids generating specs from LLM synthesis without corresponding Evidence Ledger entries; requires claims to be labeled as hypothesis or backed by ledger entries; agent must express confidence bounded by evidence quality"
+    extends: [consensus-first-framework, evidence-ledger]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-no-fluent-synthesis-rule.md
+    status: active
+
+  - id: sme-prompt-out
+    name: SME Prompt-Out Requirement
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "Agent must prompt for missing SME knowledge before finalizing any commitment recommendation; automation-bias control preventing humans from over-trusting agent momentum"
+    extends: [consensus-first-framework]
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+      - docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+    status: active
+
+  - id: evidence-driven
+    name: Evidence-Driven (General)
+    introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    introduced_at: "2026-04-25"
+    definition: "General concept: decisions and claims must be backed by structured evidence with provenance, credibility, incentive/bias notes, and disconfirmers; distinguishes behavioral evidence from stated preferences"
+    extends: []
+    referenced_by:
+      - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    status: active
+
+  - id: DI-007
+    title: "Sub-agent context isolation — clean boot per cycle"
+    github: 31
+    priority: P1
+    type: bug
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload."
+
+  - id: DI-008
+    title: "Ledger locking mechanism — mark doc in-flight, dead-letter queue"
+    github: 32
+    priority: P1
+    type: reliability
+    source_docs:
+      - rosetta-di-ledger.md
+    status: open
+    note: "Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter implementation remains open."
+
+  - id: DI-009
+    title: "Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti"
+    github: 33
+    priority: P2
+    type: knowledge-graph
+    source_docs:
+      - docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml
+    status: open
+    note: "Manual YAML exists; automation and graph-backed refinement remain open."
+
+  - id: DI-010
+    title: "Sub-agents must check prior work before creating issues or re-processing docs"
+    github: 34
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/issue-drafts/
+    status: closed
+    note: "Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md."
+
+  - id: DI-011
+    title: "Sub-agents must never merge their own PRs — boundary violation"
+    github: 39
+    priority: P1
+    type: boundary
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 forbade sub-agent merge/close/approve/readiness actions."
+
+  - id: DI-012
+    title: "Sub-agent must create issue draft files for every issue candidate in extraction"
+    github: 45
+    priority: P1
+    type: coordination
+    source_docs:
+      - docs/intake/docs-intelligence/SUBAGENT_BOOT.md
+    status: closed
+    note: "Closed after PR #48 added candidate-to-draft validation and PR #49 normalized remaining OMC/Text-Core draft files."
+
+  - id: ROCK-3111-C-pack-id-placeholder
+    title: "RRP pack_id is a placeholder — needs real content-addressed ID at freeze"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-refinement-enforcement
+    title: "Refinement-first rule has no automated enforcement mechanism"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-persona-pack-governance
+    title: "PersonaPack elevated governance is undefined"
+    github: null
+    priority: P3
+    type: docs-intelligence
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-dependency-cycle-detection
+    title: "Pack dependency cycle detection not specified"
+    github: null
+    priority: P2
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+  - id: ROCK-3111-C-recipes-skills-ci
+    title: "recipes/ and skills/ subtrees lack CI enforcement"
+    github: null
+    priority: P3
+    type: implementation
+    source_docs:
+      - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+    status: candidate
+    notes: "From PR #37 extraction; drafted in PR #44"
+
+>>>>>>> Stashed changes
 pr_state:
   open:
   - pr: 91
@@ -1305,6 +1568,7 @@ issue_drafts_inventory:
   status: published
   draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
 
+<<<<<<< Updated upstream
 # PR #91 active issue drafts. CT-001, CT-002, and DF-001 were promoted on main
 # before this PR was rebased, so the extraction rows point at GitHub issues.
 - path: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
@@ -1427,3 +1691,350 @@ issue_drafts_inventory:
   source_pr: 91
   issue_id: df-014-mcp-oauth-refresh-timing
   type: oauth
+=======
+  - path: docs/intake/issue-drafts/backup-strategy-no-automation.md
+    source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
+    source_pr: 29
+    branch: docs-intelligence/upstream-and-backup-plan
+    issue_id: backup-strategy-no-automation
+    priority: P2
+    type: implementation
+
+  # Agentic Orchestration Failures issue drafts from closed PR #50, salvaged through #57
+  - path: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: harness-platform-mismatch-root-cause
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: constitutional-primitives-prose-not-law
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/six-layer-memory-model-federated-jurisdiction.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: six-layer-memory-model-federated-jurisdiction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/memory-adapter-certification-harness.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: memory-adapter-certification-harness
+    priority: P1
+    type: reliability
+
+  - path: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: langgraph-workflow-not-constitutional
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: write-admission-gate-nine-step-state-machine
+    priority: P1
+    type: implementation
+
+  - path: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: skillpack-importer-quarantine-flow
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: mac-studio-control-two-tier-guard
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+    source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
+    source_pr: 50
+    branch: codex/di-flywheel-cleanup
+    issue_id: video-transcript-dedup-playlist-tracking
+    priority: P3
+    type: implementation
+
+  # Ontologies and Dataset Repositories issue drafts from closed PR #51, salvaged through #57
+  - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: source-substrate-missing-protocol-domain
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+    source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
+    source_pr: 51
+    branch: codex/di-flywheel-cleanup
+    issue_id: anti-personhood-correlation-governance-gap
+    priority: P1
+    type: governance
+
+  # Pro-Extended Research issue drafts from PRs #54/#55
+  - path: docs/intake/issue-drafts/RPP-task-numbering-reference.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 54
+    issue_id: RPP-task-numbering-reference
+    priority: P2
+    type: documentation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
+    priority: P2
+    type: spec-gap
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-headers-check-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-headers-check-missing
+    priority: P2
+    type: implementation
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-known-red-tests-policy-missing
+    priority: P3
+    type: policy
+
+  - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md
+    source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md
+    source_pr: 55
+    issue_id: 2026-04-25-pro-ext-research-python-boundary-enforcement-missing
+    priority: P2
+    type: architecture
+
+  # OMOC Swarm Gnosis unique drafts from closed PR #58, salvaged through PR #61
+  - path: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-slug-adoption-timing-hydration-quality
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
+    source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
+    source_pr: 61
+    issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+    priority: P2
+    type: adr
+
+  # Pasigraphy v3 Architecture drafts salvaged from dirty PR #60
+  - path: docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-layer-dependency-direction
+    priority: P1
+    type: architecture
+
+  - path: docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-trust-matrix-transition-criteria
+    priority: P2
+    type: governance
+
+  - path: docs/intake/issue-drafts/pasigraphy-contributing-done-language.md
+    source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+    source_pr: 60
+    issue_id: pasigraphy-contributing-done-language
+    priority: P2
+    type: documentation
+
+  # Semantic Audio Cognition drafts from incomplete PR #62
+  - path: docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-speaker-diarization-fingerprinting
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-stem-isolation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-stem-isolation
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-tonal-distinction-extraction
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-fx-dry-signal-differentiation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-emotional-geometry-timeline
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-semantic-emotive-graph-integration
+    priority: P2
+    type: architecture
+
+  # Trend Technicals drafts from incomplete PR #64
+  - path: docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-content-characteristic-ontology
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-influencer-equity-scoring
+    priority: P3
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-graph-database-schema.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-graph-database-schema
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-friston-cultural-modeling
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-fluid-dynamics-simulation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-phase-1-mvp-pipeline
+    priority: P2
+    type: planning
+
+  # Consensus-First Commitment Scoping Framework issue drafts (PR TBD)
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-evidence-ledger-schema
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-phase-transition-handshake.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-phase-transition-handshake
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-credibility-scoring-rubric.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-credibility-scoring-rubric
+    priority: P2
+    type: open-question
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-falsification-dissent-packet.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-falsification-dissent-packet
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-exit-pivot-salvage-plan.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-exit-pivot-salvage-plan
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-commitment-canvas.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-commitment-canvas
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-opportunity-edge-brief.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-opportunity-edge-brief
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-no-fluent-synthesis-rule.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-no-fluent-synthesis-rule
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-sme-prompt-out
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-calibration-loop
+    priority: P1
+    type: governance
+
+  - path: docs/intake/issue-drafts/2026-04-25-consensus-first-motivated-reasoning-guardrails.md
+    source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+    source_pr: null
+    branch: docs-intelligence/consensus-first-commitment-scoping
+    issue_id: consensus-first-motivated-reasoning-guardrails
+    priority: P1
+    type: governance
+>>>>>>> Stashed changes

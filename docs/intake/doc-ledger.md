@@ -68,7 +68,7 @@ This is the human-readable companion to `docs/intake/doc-ledger.json`. It is int
 | 2026-04-11 | current | `docs/backlog/20260411 - Rosetta Canonical Build Charter (v0.1).md` | 1282 | indexed |
 | 2026-04-10 | current | `docs/backlog/20260410 - Entif.AI - Rosetta - Phased Backlog (v0.1).md` | 4929 | indexed |
 | 2026-04-10 | undated-import | `docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md` | 1617 | indexed |
-| 2026-03-25 | recent | `docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md` | 2331 | indexed |
+| 2026-03-25 | recent | `docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md` | 2331 | **extracted 2026-04-25 — PR #199** |
 | 2026-03-24 | recent | `docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md` | 5192 | indexed |
 | 2026-02-28 | near-history | `docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md` | 868 | indexed |
 | 2026-02-25 | undated-import | `docs/backlog/Entif v0 Second Brain Architecture Plan.md` | 7106 | indexed |
