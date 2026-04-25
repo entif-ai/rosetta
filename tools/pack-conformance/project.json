@@ -1,0 +1,40 @@
+{
+  "name": "pack-conformance",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "root": "tools/pack-conformance",
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "vitest run tools/pack-conformance/validate-packs.spec.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/vitest.config.ts",
+        {
+          "externalDependencies": ["vitest"]
+        }
+      ],
+      "outputs": ["{projectRoot}/coverage"]
+    },
+    "conformance": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/pack-conformance/validate-packs.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/**/*",
+        "{workspaceRoot}/packs/**/*.json",
+        "{workspaceRoot}/packs/**/*.md",
+        "{workspaceRoot}/packs/**/*.ttl"
+      ],
+      "outputs": []
+    }
+  },
+  "tags": ["tooling", "packs"]
+}
