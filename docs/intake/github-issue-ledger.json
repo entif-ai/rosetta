@@ -781,5 +781,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-003-no-board-state-formalization.md",
     "draftStatus": "published"
+  },
+  "cheap-first-routing-policy.md": {
+    "number": 254,
+    "state": "open",
+    "title": "Implement cheap-first routing policy with budget header",
+    "url": "https://github.com/enti-ai/rosetta/issues/254",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cheap-first-routing-policy.md",
+    "draftStatus": "published"
   }
 }
