@@ -1142,6 +1142,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/262
   status: active
+- id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  name: acpx Cross-Vendor Agent Evaluation
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-cross-vendor-agent-evaluation.md
+  introduced_at: '2026-04-25'
+  definition: Evaluation of acpx-built-in non-US-market agents (kimi, qwen, kilocode,
+    opencode, kiro) for Rosetta integration once acpx is adopted as the delegation
+    mechanism.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/265
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2133,4 +2143,7 @@ issue_drafts_inventory:
   priority: P1
   type: architecture
   status: candidate
+- issue_id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  url: https://github.com/entif-ai/rosetta/issues/265
+  status: published
 
