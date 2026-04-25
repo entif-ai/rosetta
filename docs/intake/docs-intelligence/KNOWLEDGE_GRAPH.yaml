@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: RPP-task-numbering-reference
+  name: RPP Task Numbering Reference
+  introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
+  introduced_at: '2026-04-25'
+  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
+    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
+    \ A canonical task map is required to make the sequencing constraint enforceable."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/182
+  status: active
 - id: 2026-04-25-berman-e2e-tier3-cost-tracking
   name: E2E Tier 3 Cost Tracking
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-e2e-tier3-cost-tracking.md
@@ -1195,6 +1205,8 @@ issue_drafts_inventory:
   issue_id: RPP-task-numbering-reference
   priority: P2
   type: documentation
+  url: https://github.com/entif-ai/rosetta/issues/182
+  status: published
 - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md

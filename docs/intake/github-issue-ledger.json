@@ -305,6 +305,15 @@
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
   },
+  "RPP-task-numbering-reference.md": {
+    "number": 182,
+    "state": "open",
+    "title": "Define RPP Task Numbering Reference (Tasks 1\u201319)",
+    "url": "https://github.com/entif-ai/rosetta/issues/182",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RPP-task-numbering-reference.md",
+    "draftStatus": "published"
+  },
   "2026-04-25-berman-e2e-tier3-cost-tracking": {
     "number": 124,
     "state": "open",
