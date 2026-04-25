@@ -538,6 +538,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/124
   status: active
+- id: ac-001-attention-capital-prior-art
+  name: Attention Capital Platform Prior Art Research
+  introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
+  introduced_at: '2026-04-25'
+  definition: "Research to validate novelty claims for the Attention Capital Analytics\
+    \ Platform before committing roadmap resources \u2014 covers academic literature,\
+    \ competitive landscape, patents, and OSS projects."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/185
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1364,4 +1374,8 @@ issue_drafts_inventory:
   priority: low
   type: risk
   url: https://github.com/entif-ai/rosetta/issues/113
+  status: published
+- issue_id: ac-001-attention-capital-prior-art
+  draft_path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
+  url: https://github.com/entif-ai/rosetta/issues/185
   status: published
