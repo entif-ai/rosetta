@@ -528,6 +528,14 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: berman-fathom-processor-no-rollback
+  name: Fathom Processor Transaction Safety
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md
+  introduced_at: '2026-04-25'
+  definition: Fathom meeting processor lacks SQLite transaction wrapping and idempotency
+    keys, risking partial CRM updates if Gemini LLM extraction fails mid-operation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/128
 - id: MOL-001-adaptive-memory-loop
   name: Adaptive Memory Self-Evolution Loop
   introduced_by: docs/intake/issue-drafts/MOL-001-adaptive-memory-loop.md
