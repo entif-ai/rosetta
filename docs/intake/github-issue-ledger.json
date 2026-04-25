@@ -88,6 +88,15 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md",
       "draftStatus": "published"
+    },
+    "rock-3111-c-refinement-enforcement": {
+      "number": 71,
+      "state": "open",
+      "title": "ROCK-3111-C: Automated enforcement for the refinement-first rule",
+      "url": "https://github.com/entif-ai/rosetta/issues/71",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-refinement-enforcement.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
