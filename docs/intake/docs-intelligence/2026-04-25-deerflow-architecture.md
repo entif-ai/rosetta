@@ -113,7 +113,7 @@ DeerFlow is a production-grade LangGraph-based AI super-agent with full-stack ar
 
 | Title | Type | Draft or Existing Issue | Labels | Depends On | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| DF-001: Skill installation lacks signature verification and quarantine | security-gap | docs/intake/issue-drafts/df-001-skill-signature-gap.md | security, skills, quarantine | - | "POST /api/skills/install accepts .skill ZIP archive... No signature verification or authenticity check on skill content" |
+| DF-001: Skill installation lacks signature verification and quarantine | security-gap | #89 | security, skills, quarantine | - | "POST /api/skills/install accepts .skill ZIP archive... No signature verification or authenticity check on skill content" |
 | DF-002: Subagent timeout lacks retry/requeue mechanism | reliability-gap | docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md | reliability, subagents, timeout | - | "15-minute timeout... no retry or re-queue mechanism. Timed-out tasks are simply marked failed" |
 | DF-003: Local sandbox singleton may have mutable state concurrency risk | concurrency-risk | docs/intake/issue-drafts/df-003-sandbox-singleton-state.md | concurrency, sandbox, singleton | - | "LocalSandboxProvider - Singleton local filesystem execution with path mappings" — no mention of thread-safety of instance state |
 | DF-004: Memory fact dedup via whitespace trim risks false collisions | correctness-risk | docs/intake/issue-drafts/df-004-memory-dedup-false-collisions.md | memory, deduplication, correctness | - | "whitespace-normalized fact deduplication (trims leading/trailing whitespace before comparing)" |
