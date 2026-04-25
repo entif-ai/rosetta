@@ -2891,6 +2891,15 @@
       ]
     },
     {
+<<<<<<< HEAD
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-mhcs-engram-ml.md",
+      "sourcePath": "docs/chats/20260122 - Chat GPT - mHCs and Engram in ML.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
+=======
+>>>>>>> origin/main
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-moltron.md",
       "sourcePath": "docs/external/Moltron.md",
       "title": "Docs Intelligence Extraction: Moltron",
@@ -4016,6 +4025,14 @@
       "signature": "ada-crud-implement-mcp-orchestrator"
     },
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      "path": "docs/intake/issue-drafts/AGR-001-agentwallet-eoa-key-prohibition.md",
+      "title": "AGR-001: Enforce EOA Key Handoff Prohibition for Agent Wallets — Require Smart Contract Wallet or HSM Enclave",
+      "labels": [],
+      "signature": "001-agent-agr-contract-enclave"
+=======
       "path": "docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md",
       "title": "Treat AiiDA-WorkGraph GUI as experimental reference only",
       "labels": [
@@ -4025,6 +4042,7 @@
         "workflow-visualization"
       ],
       "signature": "aiida-experimental-gui-only-reference"
+>>>>>>> origin/main
     },
     {
       "path": "docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md",
@@ -4080,6 +4098,7 @@
       "signature": "003-distributed-nonce-protection-replay"
     },
     {
+>>>>>>> origin/main
       "path": "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
       "title": "AM-004: mTLS Certificate Provisioning and Rotation",
       "labels": [
@@ -4177,12 +4196,6 @@
       "title": "AR-001: Evaluate AttnRes-style Depth Aggregation for Memory Plane 3",
       "labels": [],
       "signature": "001-aggregation-attnres-depth-evaluate"
-    },
-    {
-      "path": "docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md",
-      "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
-      "labels": [],
-      "signature": "002-block-cost-model-segmentation"
     },
     {
       "path": "docs/intake/issue-drafts/AR-003-kimi-competitive-tracking.md",
@@ -4832,6 +4845,36 @@
       "signature": "adapter-certification-harness-memory"
     },
     {
+      "path": "docs/intake/issue-drafts/MHC-001-translation-evidence-tile.md",
+      "title": "MHC-001: TranslationEvidence Tile Type (Doubly Stochastic Transport Plans)",
+      "labels": [],
+      "signature": "001-doubly-mhc-plans-stochastic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MHC-002-canonical-key-scheme.md",
+      "title": "MHC-002: CanonicalKey Scheme for Semantic Identity Registry",
+      "labels": [],
+      "signature": "002-canonicalkey-identity-mhc-registry"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MHC-003-non-collapse-contract.md",
+      "title": "MHC-003: Non-Collapse Contract at Spine Level",
+      "labels": [],
+      "signature": "003-collapse-contract-level-mhc"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MHC-004-engram-memory-plane.md",
+      "title": "MHC-004: Memory Plane Integration with Deterministic Lookup (Engram-style)",
+      "labels": [],
+      "signature": "004-deterministic-engram-integration-lookup"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MHC-005-mhc-stability-invariants.md",
+      "title": "MHC-005: mHC Stability Properties as Rosetta Tile Invariants",
+      "labels": [],
+      "signature": "005-invariants-mhc-mhc-properties"
+    },
+    {
       "path": "docs/intake/issue-drafts/moltron-claims-verification.md",
       "title": "Evaluate Moltron's Claims vs. Reality",
       "labels": [],
@@ -5318,6 +5361,20 @@
       "signature": "008-asymmetric-compatibility-corporate-design"
     },
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      "path": "docs/intake/issue-drafts/SCRU-001-cache-orchestrator-architecture.md",
+      "title": "SCRU-001: Design Cache Orchestrator Architecture for Enterprise Shared Caching",
+      "labels": [],
+      "signature": "001-architecture-cache-caching-design"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCRU-002-rock-3005-iam-stdpack.md",
+      "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+      "labels": [],
+      "signature": "002-3005-cache-decision-define"
+=======
       "path": "docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md",
       "title": "Scratchpad leakage vs. memory wipe: empirical disambiguation",
       "labels": [
@@ -5329,8 +5386,10 @@
         "empirical-gap"
       ],
       "signature": "disambiguation-empirical-leakage-memory-scratchpad"
+>>>>>>> origin/main
     },
     {
+>>>>>>> origin/main
       "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
       "title": "Semantic Audio Cognition: Emotional Geometry and Clip Evolution",
       "labels": [
@@ -7265,7 +7324,16 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+=======
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md",
@@ -8409,7 +8477,16 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+=======
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md"
@@ -9353,6 +9430,13 @@
     "identity": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+>>>>>>> origin/main
+=======
+>>>>>>> origin/main
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
@@ -9799,7 +9883,16 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/external/Moltron.md"
+=======
+        "docs/external/Moltron.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/external/Moltron.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
@@ -11664,6 +11757,10 @@
       ],
       "issueDrafts": []
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
     "prompt-injection": {
       "documents": [
         "docs/external/Berman-PRD.md",
@@ -11675,6 +11772,11 @@
         "docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md"
       ]
     },
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+=======
+>>>>>>> origin/main
     "anti-injection": {
       "documents": [
         "docs/external/Berman-PRD.md"
@@ -12710,7 +12812,16 @@
     },
     "long-context": {
       "documents": [
+<<<<<<< HEAD
+<<<<<<< HEAD
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+=======
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -13014,7 +13125,16 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/external/Moltron.md"
+=======
+        "docs/external/Moltron.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/external/Moltron.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -13301,7 +13421,16 @@
     },
     "decentralized": {
       "documents": [
+<<<<<<< HEAD
+<<<<<<< HEAD
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+=======
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -13443,7 +13572,16 @@
     "implementation-order": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+=======
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -13923,7 +14061,16 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+=======
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md"
@@ -16015,7 +16162,16 @@
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/external/Moltron.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+=======
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-no-limits-vs-genesis-bios-conflict.md"
@@ -16737,10 +16893,20 @@
     "mcp": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+=======
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -17154,12 +17320,21 @@
       ],
       "issueDrafts": []
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
     "act-r": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": []
     },
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+=======
+>>>>>>> origin/main
     "base-level": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
@@ -17280,6 +17455,24 @@
       ],
       "issueDrafts": []
     },
+<<<<<<< HEAD
+    "policy": {
+      "documents": [
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+<<<<<<< HEAD
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+=======
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+      ],
+      "issueDrafts": []
+    },
+=======
+>>>>>>> origin/main
     "signing": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
@@ -17692,7 +17885,16 @@
     "abac": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+=======
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+>>>>>>> origin/main
+=======
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+>>>>>>> origin/main
       ],
       "issueDrafts": []
     },
