@@ -2,8 +2,8 @@ meta:
   version: '0.7'
   generated: '2026-04-25T02:45:00Z'
   total_docs_processed: 24
-  active_issue_drafts: 63
-  archived_issue_drafts: 8
+  active_issue_drafts: 62
+  archived_issue_drafts: 9
   total_issue_drafts_inventory: 71
   docs_intelligence_files: 23
   inventory_note: Counts come from the current filesystem; curated lists below are
@@ -310,6 +310,17 @@ concepts:
     content to ship undetected.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/79
+  status: active
+- id: persona-pack-elevated-governance
+  name: PersonaPack Elevated Governance
+  introduced_by: docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md
+  introduced_at: '2026-04-25'
+  definition: PersonaPack is a non-core pack category (identity/persona/council) that
+    triggers elevated governance requirements beyond standard pack contracts, but
+    the trigger criteria, enforcement mechanism, and definition are currently undefined
+    in the RRP spec
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/77
   status: active
 issue_candidates:
 - id: DI-007
@@ -790,6 +801,8 @@ issue_drafts_inventory:
   issue_id: rock-3111-c-persona-pack-governance
   priority: P3
   type: docs-intelligence
+  url: https://github.com/entif-ai/rosetta/issues/77
+  status: published
 - path: docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
