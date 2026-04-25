@@ -25,6 +25,23 @@
         "{workspaceRoot}/docs/intake/issue-drafts/archive/*.md"
       ]
     },
+    "intelligence": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/doc-intake/docs-intelligence-graph.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/docs-intelligence-graph.mjs",
+        "{workspaceRoot}/docs/intake/docs-intelligence/*.md",
+        "{workspaceRoot}/docs/intake/issue-drafts/*.md"
+      ],
+      "outputs": [
+        "{workspaceRoot}/docs/intake/docs-intelligence/CONCEPT_INDEX.json",
+        "{workspaceRoot}/docs/intake/docs-intelligence/CYCLE_SUMMARY.md"
+      ]
+    },
     "test": {
       "executor": "nx:run-commands",
       "options": {

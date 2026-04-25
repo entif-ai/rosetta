@@ -20,13 +20,43 @@ You are a docs-intelligence extraction agent working in:
 The ledger lives at:
 `/Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md`
 
-It tracks all 128 docs. Each entry has fields including `processed` (yes/no/locked/failed).
+It tracks all 128 docs. Each entry has fields including `processed` (`pending`, `locked:*`, `failed:*`, `blocked:*`, `processed:*`, or legacy `yes`/`no`).
 
-**Before reading any source doc, you MUST:**
-1. Read the ledger
-2. Find the first doc where `processed: no`
-3. Atomically update that entry to `locked:<ISO timestamp>:<your-session-key>:<your-branch-name>` BEFORE reading the doc
-4. If the doc is already `locked` or `processed`, move to the next `pending` doc
+**Before reading any source doc, you MUST use the repo locking tool. Do not hand-edit the lock state.**
+
+```bash
+node tools/doc-intake/docs-intelligence-ledger.mjs claim \
+  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --agent-id <your-session-key> \
+  --branch docs-intelligence/<doc-name-slug>
+```
+
+The command atomically finds the next `processed: no` or `pending` row and updates it to:
+
+`locked:<ISO timestamp>:<agent-id>:<branch-name>`
+
+If it returns `{"claimedPath":null}`, stop; there is no claimable doc. The tool skips `locked:*`, `processed:*`, legacy `yes`, and `blocked:*` rows. It can retry `failed:*` rows until they reach the configured failure threshold.
+
+On success, read only the returned `claimedPath`. If work fails after claiming, record the failure:
+
+```bash
+node tools/doc-intake/docs-intelligence-ledger.mjs fail \
+  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --doc "<claimedPath>" \
+  --error-code <short-code> \
+  --summary "<short failure summary>"
+```
+
+After 3 failures the tool marks the doc `blocked:*` so future cycles skip it. On successful PR creation, mark the claim complete:
+
+```bash
+node tools/doc-intake/docs-intelligence-ledger.mjs complete \
+  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --doc "<claimedPath>" \
+  --pr <pr-number> \
+  --findings <count> \
+  --issues-drafted <count>
+```
 
 This prevents duplicate work.
 
@@ -130,24 +160,26 @@ Labels: `...`
 
 ## Workflow Steps
 
-1. **Read ledger** — find first `processed: no` doc
-2. **Lock doc** in ledger before reading source
+1. **Read ledger** — find first `pending` or `processed: no` doc
+2. **Lock doc** with `node tools/doc-intake/docs-intelligence-ledger.mjs claim` before reading source
 3. **Read source doc** in full
-4. **Produce extraction** following template above — full detail, no summarizing
-5. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
-6. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
-7. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
-8. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
-9. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
-10. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
-11. **Commit** extraction + issue drafts + any updated docs
-12. **Push branch**
-13. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
-14. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
-15. **Update ledger** — mark doc as `processed:<timestamp>:<pr-number>`, increment total_processed, increment runs_since_last_batched_update
-16. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
-17. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
-18. **Compact context** — end your turn with only the confirmation, no residual context
+4. **Read generated graph context** — inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` and `docs/intake/docs-intelligence/CONCEPT_INDEX.json`
+5. **Produce extraction** following template above — full detail, no summarizing
+6. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
+7. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
+8. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
+9. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
+10. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
+11. **Regenerate graph context** — run `pnpm run docs:intelligence`
+12. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
+13. **Commit** extraction + issue drafts + regenerated graph context + any updated docs
+14. **Push branch**
+15. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
+16. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
+17. **Update ledger** with `node tools/doc-intake/docs-intelligence-ledger.mjs complete`
+18. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
+19. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
+20. **Compact context** — end your turn with only the confirmation, no residual context
 
 ---
 
@@ -157,8 +189,9 @@ Labels: `...`
 - No tiles/tapestries/runtime-ingestion claims in findings
 - Cite path + heading for every finding
 - Low-confidence findings marked `low`
-- Lock before read — no exceptions
+- Lock with `tools/doc-intake/docs-intelligence-ledger.mjs claim` before read — no exceptions
 - Check existing issue-drafts/ before creating new ones
+- Check `CYCLE_SUMMARY.md` and `CONCEPT_INDEX.json` before creating new issue drafts
 - For every issue candidate in the extraction, create a corresponding file in `docs/intake/issue-drafts/<slug>.md` before pushing. Zero candidates is fine; zero files when candidates exist is a violation. Exception: if a related GitHub issue already exists, link to it in the extraction instead of creating a new draft file.
 - Before pushing, count issue-candidate/draft-candidate rows in the extraction and count the matching issue-draft files or explicit existing-issue targets. They must match.
 - Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
