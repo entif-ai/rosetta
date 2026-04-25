@@ -359,6 +359,15 @@
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-e2e-tier3-cost-tracking.md",
     "draftStatus": "published"
   },
+  "ac-001-attention-capital-prior-art": {
+    "number": 185,
+    "state": "open",
+    "title": "AC-001: Attention Capital Platform \u2014 Prior Art Search",
+    "url": "https://github.com/entif-ai/rosetta/issues/185",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-prior-art.md",
+    "draftStatus": "published"
+  },
   "2026-04-25-berman-env-symlink-ambiguity.md": {
     "number": 126,
     "state": "open",
