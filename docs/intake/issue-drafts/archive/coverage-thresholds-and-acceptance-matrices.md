@@ -32,8 +32,8 @@ The current test suite is stronger than before, but coverage expectations and pa
 
 ## Publishing Notes
 
-- Local status: `candidate`
-- Active draft path: `docs/intake/issue-drafts/coverage-thresholds-and-acceptance-matrices.md`
-- Archived draft path: `not archived`
-- GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Add coverage reporting and package acceptance matrices" --body-file docs/intake/issue-drafts/coverage-thresholds-and-acceptance-matrices.md --label testing,coverage,acceptance`
+- Local status: `published`
+- Active draft path: `archived`
+- Archived draft path: `docs/intake/issue-drafts/archive/coverage-thresholds-and-acceptance-matrices.md`
+- GitHub issue: `https://github.com/entif-ai/rosetta/issues/43`
+- Recommended publish command shape: `not applicable; draft already published`
