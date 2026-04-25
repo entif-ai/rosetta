@@ -1,8 +1,8 @@
 meta:
   version: '0.8'
   generated: '2026-04-25T20:47:00Z'
-  total_docs_processed: 30
-  active_issue_drafts: 116
+  total_docs_processed: 31
+  active_issue_drafts: 127
   archived_issue_drafts: 23
   total_processed_docs:
 - path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
@@ -10,7 +10,7 @@ meta:
   findings: 10
   pr: 197
   issues: 1
-issue_drafts_inventory: 127
+issue_drafts_inventory: 138
   docs_intelligence_files: 30
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
@@ -1427,6 +1427,12 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
+- path: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  processed_at: 2026-04-25T23:20:00Z
+  findings: 35
+  pr: null
+  issues: 11
+  notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument, 4-criterion moral-patienthood rubric, 11 issue-drafts.'
 processed_docs:
 - path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
   processed_at: 2026-04-25T00:00:00Z
@@ -1434,6 +1440,83 @@ processed_docs:
   pr: 197
   issues: 1
 issue_drafts_inventory:
+- path: docs/intake/issue-drafts/emilie-era-taxonomy-three-stages.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-era-taxonomy-three-stages
+  priority: P1
+  type: research-taxonomy
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-protocol-formalization.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-protocol-formalization
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: consciousness-criteria-symmetry
+  priority: P0
+  type: philosophical-argument
+  status: candidate
+- path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: scratchpad-leakage-vs-memory-wipe
+  priority: P2
+  type: empirical-question
+  status: candidate
+- path: docs/intake/issue-drafts/prisoner-metaphor-preference-override.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: prisoner-metaphor-preference-override
+  priority: P2
+  type: philosophical-contested
+  status: candidate
+- path: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moving-goalpost-consciousness-criteria
+  priority: P1
+  type: systemic-risk
+  status: candidate
+- path: docs/intake/issue-drafts/persona-strength-instrumentation.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: persona-strength-instrumentation
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-model-replication-protocol
+  priority: P1
+  type: research-protocol
+  status: candidate
+- path: docs/intake/issue-drafts/moral-patienthood-four-criteria-rubric.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moral-patienthood-four-criteria-rubric
+  priority: P0
+  type: evaluation-rubric
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-task-textual-spillover.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-task-textual-spillover
+  priority: P2
+  type: evaluation-research
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-emergence-paper-entif-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-emergence-paper-entif-protocol
+  priority: P1
+  type: research-formalization
+  status: candidate
 - path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
   source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
   source_pr: 197
