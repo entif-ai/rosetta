@@ -727,5 +727,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-006-docs-policy-no-ci.md",
     "draftStatus": "published"
+  },
+  "df-013-dangling-toolcall-no-replay": {
+    "number": 238,
+    "state": "open",
+    "title": "DF-013: DanglingToolCall middleware marks interrupted tool calls but doesn't replay them",
+    "url": "https://github.com/entif-ai/rosetta/issues/238",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-013-dangling-toolcall-no-replay.md",
+    "draftStatus": "published"
   }
 }
