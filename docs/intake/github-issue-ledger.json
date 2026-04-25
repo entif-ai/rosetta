@@ -128,7 +128,7 @@
     "omoc-lean-vs-learned-dilemma": {
       "number": 81,
       "state": "open",
-      "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
+      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
       "url": "https://github.com/entif-ai/rosetta/issues/81",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
@@ -137,7 +137,7 @@
     "swarm-gnosis-public-commons-licensing-undefined": {
       "number": 87,
       "state": "open",
-      "title": "[RFC \u00a718 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
+      "title": "[RFC §18 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
       "url": "https://github.com/entif-ai/rosetta/issues/87",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-gnosis-public-commons-licensing-undefined.md",
@@ -200,7 +200,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap": {
     "number": 84,
     "state": "open",
-    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "title": "CT-001: Rosetta network layer gap — Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
     "url": "https://github.com/entifik-ai/rosetta/issues/84",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",

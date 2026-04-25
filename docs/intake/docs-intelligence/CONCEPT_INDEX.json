@@ -851,6 +851,363 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-attention-residuals-kimi.md",
+      "sourcePath": "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "attention-residuals",
+        "prenorm-dilution",
+        "depth-aggregation",
+        "transformer-architecture",
+        "memory-planes",
+        "block-attention",
+        "memory-efficiency",
+        "o-nd-complexity",
+        "memory-plane-costs",
+        "benchmark",
+        "reasoning",
+        "multi-step-reasoning",
+        "evaluation",
+        "model-capability",
+        "code-generation",
+        "code-capability",
+        "block-attn-res-impl",
+        "transformer-layer-integration",
+        "implementation",
+        "layer-hook",
+        "scaling-laws",
+        "compute-efficiency",
+        "1-25x-compute-equivalent",
+        "model-training",
+        "gradient-distribution",
+        "magnitude-bounding",
+        "convergence",
+        "training-stability",
+        "kimi-team",
+        "research-authorship",
+        "research",
+        "competitive-intelligence"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-cognitive-tiles-swarm-gnosis.md",
+      "sourcePath": "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "content-addressing",
+        "provenance",
+        "proof-carrying",
+        "cognitive-tiles",
+        "swarm-gnosis",
+        "canonicalization",
+        "rfc8785",
+        "cid",
+        "multihash",
+        "tile-schema",
+        "merkle-dag",
+        "tile-structure",
+        "header-payload",
+        "hash-agility",
+        "future-proofing",
+        "kademlia",
+        "dht",
+        "gossipsub",
+        "p2p",
+        "swarm-network",
+        "semantic-indexes",
+        "tagging",
+        "discovery",
+        "pinning",
+        "caching",
+        "gc",
+        "anti-entropy",
+        "swarm-storage",
+        "http-fallback",
+        "gateway",
+        "peering",
+        "version-dag",
+        "append-only",
+        "crdt-vs-explicit",
+        "versioning",
+        "supersedence-markers",
+        "deprecation",
+        "index-tiles",
+        "human-readable-change-summary",
+        "diff",
+        "ed25519-signatures",
+        "content-authentication",
+        "trust-provenance",
+        "attestations",
+        "receipts",
+        "third-party-verification",
+        "provenance-metadata",
+        "witness-packages",
+        "wasm-sandbox",
+        "untrusted-code",
+        "verification-levels",
+        "quarantine",
+        "risk-management",
+        "zk-proofs",
+        "privacy-preserving-verification",
+        "expected-free-energy",
+        "active-inference",
+        "value-of-information",
+        "retrieval-agent",
+        "graphrag",
+        "two-stage-retrieval",
+        "pointer-then-drill-down",
+        "economic-cost-model",
+        "telemetry-reinforcement-loop",
+        "egc",
+        "controlled-language",
+        "amr-ucca-owl-sbvr-ace",
+        "pasigraphy",
+        "deterministic-round-tripping",
+        "no-ambiguity",
+        "optical-slugs",
+        "symbolic-slugs",
+        "vq-vae",
+        "vqgan",
+        "codec-adapters",
+        "alias-collision-testing",
+        "codec-evaluation",
+        "modular-pluggable-codecs",
+        "codec-registry",
+        "sybil-resistance",
+        "staking",
+        "economic-barriers",
+        "security",
+        "rate-limiting",
+        "dos-protection",
+        "token-bucket",
+        "reputation-system",
+        "trust-scores",
+        "eclipse-attack",
+        "diversity-requirements",
+        "embedded-license-field",
+        "attribution-propagation",
+        "governance",
+        "public-vs-private-swarms",
+        "enterprise-acl",
+        "evaluation-categories",
+        "10-category-plan",
+        "evaluation",
+        "bootstrapping-trust",
+        "new-user-challenge",
+        "risk",
+        "metadata-bloat",
+        "scalability",
+        "privacy-vs-transparency",
+        "immutability-gdpr",
+        "economic-incentives-not-implemented",
+        "merge-conflicts-no-central-authority"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-deerflow-architecture.md",
+      "sourcePath": "docs/external/DeerFlow Architecture.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "langgraph-workflow",
+        "sovereign-kernel",
+        "not-lame-reference",
+        "langgraph",
+        "agent-system",
+        "workflow-vs-constitutional",
+        "architecture-pattern",
+        "publishable-framework",
+        "boundary-enforcement",
+        "ci",
+        "harness-app-split",
+        "framework-design",
+        "dependency-direction",
+        "middleware-chain",
+        "agent-composition",
+        "thread-state",
+        "plan-mode",
+        "memory-queue",
+        "middleware-composition",
+        "virtual-paths",
+        "sandbox-isolation",
+        "path-translation",
+        "local-sandbox",
+        "virtual-path-system",
+        "memory-structured",
+        "fact-confidence",
+        "category-taxonomy",
+        "memory-injection",
+        "memory-system",
+        "fact-scoring",
+        "subagent-delegation",
+        "concurrency-limit",
+        "background-execution",
+        "sse-events",
+        "task-offloading",
+        "im-channels",
+        "feishu",
+        "slack",
+        "telegram",
+        "streaming-updates",
+        "card-patching",
+        "im-channel-integration",
+        "streaming",
+        "embedded-client",
+        "in-process",
+        "gateway-equivalent",
+        "conformance-tests",
+        "embedded-deployment",
+        "client-sdk",
+        "config-versioning",
+        "auto-upgrade",
+        "mtime-reload",
+        "config-management",
+        "versioning",
+        "skill-install",
+        "skill-archive",
+        "skill-signature",
+        "skill-security",
+        "skills-installation",
+        "security",
+        "sandbox-singleton",
+        "local-filesystem",
+        "path-mappings",
+        "singleton-pattern",
+        "config-mtime-reload",
+        "cache-invalidation",
+        "config-caching",
+        "hot-reload",
+        "memory-dedup-whitespace",
+        "fact-collision",
+        "memory-deduplication",
+        "dict-vs-non-dict",
+        "artifact-return",
+        "client-conformance",
+        "testing-gap",
+        "subagent-timeout",
+        "no-retry",
+        "no-requeue",
+        "subagent-reliability",
+        "docs-policy",
+        "manual-enforcement",
+        "claude-md-sync",
+        "documentation-discipline",
+        "test-coverage",
+        "harness-boundary",
+        "testing-strategy",
+        "mcp-oauth",
+        "token-refresh",
+        "http-transport",
+        "mcp-integration",
+        "oauth",
+        "model-factory",
+        "thinking-enabled",
+        "vision-support",
+        "env-var-resolution",
+        "model-selection",
+        "configuration",
+        "tool-groups",
+        "mcp-tools",
+        "builtin-tools",
+        "community-tools",
+        "tool-architecture",
+        "plugin-system",
+        "file-upload",
+        "document-conversion",
+        "markitdown",
+        "thread-isolation",
+        "file-handling",
+        "document-processing",
+        "todo-list",
+        "is-plan-mode-flag",
+        "task-tracking",
+        "planning-mode",
+        "summarization",
+        "context-reduction",
+        "token-limits",
+        "context-management",
+        "frontend-config",
+        "nginx-routing",
+        "base-urls",
+        "frontend-deployment",
+        "nginx",
+        "channel-thread-mapping",
+        "json-persistence",
+        "root-vs-threaded",
+        "thread-management"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-2-0-enriched.md",
+      "sourcePath": "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+      "title": "Entif 2.0 — Enriched by External Advancements",
+      "concepts": [
+        "voice",
+        "latency",
+        "routing",
+        "voice-mcp",
+        "performance",
+        "orchestrator",
+        "mcp",
+        "orchestration",
+        "tools",
+        "thin-slice",
+        "vad",
+        "asr",
+        "audio",
+        "cost",
+        "llm",
+        "intent",
+        "safety",
+        "dry-run",
+        "self-improvement",
+        "nightly",
+        "coaching",
+        "improvement",
+        "ingest",
+        "parse-only",
+        "privacy",
+        "entity-resolution",
+        "dedup",
+        "knowledge-graph",
+        "task-mining",
+        "tasker",
+        "consent",
+        "agents",
+        "genesis",
+        "alignment",
+        "receipt",
+        "metrics",
+        "data-model",
+        "phasing",
+        "plan",
+        "planning",
+        "monorepo",
+        "architecture",
+        "types",
+        "schema",
+        "protocol",
+        "loop",
+        "mode",
+        "classification",
+        "heuristics",
+        "classify",
+        "summarization",
+        "styles",
+        "summarize",
+        "evaluation",
+        "reserved",
+        "glyph",
+        "semantics",
+        "content",
+        "media",
+        "realtime",
+        "market-data",
+        "reuse",
+        "engineering",
+        "velocity"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-rosetta-prds-pro-extended-research.md",
       "sourcePath": "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
       "title": "Docs Intelligence Extraction",
@@ -988,6 +1345,96 @@
         "deferred",
         "extension-points",
         "future"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-moltron.md",
+      "sourcePath": "docs/external/Moltron.md",
+      "title": "Docs Intelligence Extraction: Moltron",
+      "concepts": [
+        "self-evolution",
+        "skills",
+        "text-files",
+        "fragility",
+        "skill-building",
+        "agentic-evol",
+        "carcinization",
+        "metaphor",
+        "self-improvement",
+        "philosophy",
+        "infinite-evolution",
+        "self-improving",
+        "digital-employee",
+        "ambition",
+        "agentic-scaling",
+        "allergens",
+        "safety",
+        "constraints",
+        "real-world-example",
+        "auto-repair",
+        "telemetry",
+        "feedback-loop",
+        "model-routing",
+        "cost-optimization",
+        "specialization",
+        "economics",
+        "model-selection",
+        "smythos",
+        "workflow-compilation",
+        "executable-skills",
+        "architecture",
+        "skill-engineering",
+        "constrained-alignment",
+        "hybrid-flexibility",
+        "alignment",
+        "swarm",
+        "replication",
+        "scaling",
+        "multi-agent",
+        "accountability",
+        "self-reflection",
+        "versioning",
+        "audit",
+        "root-access",
+        "replay",
+        "security",
+        "open-standards",
+        "cross-platform",
+        "cursor",
+        "claude-code",
+        "openai-codex",
+        "portability",
+        "evolution-loop",
+        "example",
+        "stripe",
+        "zendesk",
+        "workflow-example",
+        "integration",
+        "day-n",
+        "hardening",
+        "production-ready",
+        "skill-hardening",
+        "timeline",
+        "crypto",
+        "disclaimer",
+        "legal",
+        "non-endorsement",
+        "discord",
+        "community",
+        "tinkerers",
+        "engagement",
+        "mit-license",
+        "open-source",
+        "licensing",
+        "attribution",
+        "install-script",
+        "bash",
+        "curl",
+        "installation",
+        "onboarding",
+        "manual-install",
+        "git-clone",
+        "cp-r"
       ]
     },
     {
@@ -1550,7 +1997,151 @@
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-semantic-audio-cognition-framework.md",
       "sourcePath": "docs/ideas/Semantic Audio Cognition Framework.md",
       "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "audio-cognition",
+        "source-identity",
+        "diarization",
+        "fingerprinting",
+        "speaker-uniqueness",
+        "dialect",
+        "tone",
+        "signal-processing",
+        "stem-isolation",
+        "polyphonic-audio",
+        "stem-separation",
+        "prosody",
+        "intonation",
+        "pitch-tracking",
+        "tonal-distinctions",
+        "expressive-modulation",
+        "spectral-analysis",
+        "fx-tracking",
+        "fx-vs-dry",
+        "transformation-vs-essence",
+        "affective-mapping",
+        "emotional-geometry",
+        "emotion-arc",
+        "temporal-evolution",
+        "semantic-graph",
+        "context-integration",
+        "meaning-graph",
+        "correlation",
+        "context",
+        "ithkuil",
+        "lexeme-graph",
+        "phoneme-correlation",
+        "phoneme-dictionary",
+        "experience-design",
+        "empathetic-resonance",
+        "consummation",
+        "full-spectrum-feedback",
+        "llm-limitations",
+        "cross-modal-gap",
+        "audio-deaf",
+        "visual-vs-audio",
+        "psychoacoustic-divination",
+        "semantic-audio",
+        "ontology-in-waveform",
+        "source-substrate",
+        "provenance-lanes",
+        "identity-spine",
+        "personhood-correlation",
+        "felt-meaning",
+        "cross-modal-parity",
+        "visual-comprehension",
+        "seeing-vs-hearing",
+        "modality-gap",
+        "orpheus-myth",
+        "eurydice-metaphor",
+        "orpheus-and-mute-eurydice",
+        "artist-and-deaf-muse"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
+      "sourcePath": "docs/external/SwarmKit.md",
+      "title": "Docs Intelligence Extraction: SwarmKit",
       "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md",
+      "sourcePath": "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "text-core",
+        "scope-gate",
+        "runtime-ingestion",
+        "scope-classification",
+        "m1-m10",
+        "tc-001-tc-007",
+        "project-board",
+        "dependency-graph",
+        "mermaid",
+        "tc-001",
+        "tc-002",
+        "tc-003",
+        "tc-004",
+        "tc-005",
+        "tc-006",
+        "tc-007",
+        "deferred",
+        "scope-boundary",
+        "docs-intelligence",
+        "source-basis",
+        "backlog-refs",
+        "non-goals",
+        "source-substrate",
+        "ingress-refinery",
+        "source-episode",
+        "family-classification",
+        "unresolved-family",
+        "rosetta-canon",
+        "chronology",
+        "fingerprinting",
+        "content-fingerprint",
+        "revision-fingerprint",
+        "canonical-cache",
+        "dedupe",
+        "revision-graph",
+        "append-only",
+        "cache-persistence",
+        "rosetta-core",
+        "rosetta-receipts",
+        "observation-tiling",
+        "source-boundary",
+        "transform-receipts",
+        "rosetta-schemas",
+        "promotion-state-machine",
+        "routing-states",
+        "structured-extracts",
+        "rosetta-tapestry",
+        "rosetta-store",
+        "tapestry-v1",
+        "bounded-context",
+        "provenance-closure",
+        "rights-retrieval",
+        "rights-scoped",
+        "cache-domains",
+        "index-postgres",
+        "index-pgvector",
+        "postgres",
+        "pgvector",
+        "migration-contracts",
+        "storage-law",
+        "chat-import",
+        "arxiv-import",
+        "importers",
+        "two-family-threshold",
+        "chat-transcript",
+        "arxiv",
+        "english-accompaniment",
+        "promoted-artifacts",
+        "uncertainty-markers",
+        "should-have",
+        "nice-to-have",
+        "exit-criteria",
+        "definition-of-done"
+      ]
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md",
@@ -1639,6 +2230,66 @@
   ],
   "issueDrafts": [
     {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
+      "title": "CT-001 — Rosetta Network Layer Gap: Swarm Gnosis P2P vs Current SQLite/Bootstrap Architecture",
+      "labels": [],
+      "signature": "001-architecture-bootstrap-current-gnosis"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
+      "title": "CT-002 — Trust Bootstrap Problem: New Nodes Have No Reputation in Fully Open Network",
+      "labels": [],
+      "signature": "002-bootstrap-fully-have-network"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md",
+      "title": "CT-003 — EGC Pasigraphy May Be Too Esoteric for Practical Adoption",
+      "labels": [],
+      "signature": "003-adoption-egc-esoteric-may"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md",
+      "title": "CT-004 — GDPR Right-to-Eraser Conflict with Immutable Content-Addressed Storage",
+      "labels": [],
+      "signature": "004-addressed-conflict-content-eraser"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
+      "title": "CT-005 — Economic Persistence Gap: No Token/Payment System; Unpopular Data May Disappear",
+      "labels": [],
+      "signature": "005-data-disappear-economic-may"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
+      "title": "CT-006 — ZK Proof Integration Not Near-Term Viable: Heavy Proof Generation Cost",
+      "labels": [],
+      "signature": "006-cost-generation-heavy-integration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration.md",
+      "title": "CT-007 — No Arbitration Mechanism for Conflicting Tile Versions: Fork Resolution Delegated to Social Process",
+      "labels": [],
+      "signature": "007-arbitration-conflicting-delegated-fork"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing.md",
+      "title": "CT-008 — VQ-VAE Codebook Alias Rate Must Be Validated Before Optical Slugs Can Be Trusted",
+      "labels": [],
+      "signature": "008-alias-before-can-codebook"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox.md",
+      "title": "CT-009 — WASM Sandbox for Witness Code Execution Not Yet Implemented in Rosetta",
+      "labels": [],
+      "signature": "009-code-execution-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar.md",
+      "title": "CT-010 — EGC Formal Grammar Not Yet Specified: Round-Tripping Depends on Unambiguous Grammar",
+      "labels": [],
+      "signature": "010-depends-egc-formal-grammar"
+    },
+    {
       "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
       "title": "Missing ADR for the 21 authoritative project baseline documents",
       "labels": [],
@@ -1675,10 +2326,34 @@
       "signature": "001-added-attention-capital-design"
     },
     {
+      "path": "docs/intake/issue-drafts/ada-orchestrator-mcp.md",
+      "title": "Implement Ada orchestrator MCP CRUD surface",
+      "labels": [],
+      "signature": "ada-crud-implement-mcp-orchestrator"
+    },
+    {
       "path": "docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md",
       "title": "anti-personhood-correlation-governance-gap",
       "labels": [],
       "signature": "anti-correlation-governance-personhood"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md",
+      "title": "AR-001: Evaluate AttnRes-style Depth Aggregation for Memory Plane 3",
+      "labels": [],
+      "signature": "001-aggregation-attnres-depth-evaluate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md",
+      "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
+      "labels": [],
+      "signature": "002-block-cost-model-segmentation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-003-kimi-competitive-tracking.md",
+      "title": "AR-003: Track Kimi Team Publications for Competitive Gap Analysis",
+      "labels": [],
+      "signature": "003-analysis-competitive-kimi-publications"
     },
     {
       "path": "docs/intake/issue-drafts/backup-strategy-no-automation.md",
@@ -1687,10 +2362,106 @@
       "signature": "automation-backup-strategy"
     },
     {
+      "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
+      "title": "Implement browser agent for acceptance verification",
+      "labels": [],
+      "signature": "acceptance-agent-browser-implement-verification"
+    },
+    {
+      "path": "docs/intake/issue-drafts/cheap-first-routing-policy.md",
+      "title": "Implement cheap-first routing policy with budget header",
+      "labels": [],
+      "signature": "budget-cheap-first-header-implement"
+    },
+    {
       "path": "docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md",
       "title": "Issue: constitutional-primitives-prose-not-law",
       "labels": [],
       "signature": "constitutional-law-not-primitives-prose"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-001-skill-signature-gap.md",
+      "title": "DF-001: Skill installation lacks signature verification and quarantine",
+      "labels": [],
+      "signature": "001-installation-lacks-quarantine-signature"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md",
+      "title": "DF-002: Subagent timeout lacks retry/requeue mechanism",
+      "labels": [],
+      "signature": "002-lacks-mechanism-requeue-retry"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-003-sandbox-singleton-state.md",
+      "title": "DF-003: Local sandbox singleton may have mutable state concurrency risk",
+      "labels": [],
+      "signature": "003-concurrency-have-local-may"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-004-memory-dedup-false-collisions.md",
+      "title": "DF-004: Memory fact dedup via whitespace trim risks false collisions",
+      "labels": [],
+      "signature": "004-collisions-dedup-fact-false"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-005-config-mtime-race-condition.md",
+      "title": "DF-005: Config mtime reload race condition between LangGraph and Gateway",
+      "labels": [],
+      "signature": "005-between-condition-config-gateway"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-006-docs-policy-no-ci.md",
+      "title": "DF-006: Documentation update policy has no CI enforcement",
+      "labels": [],
+      "signature": "006-documentation-enforcement-has-policy"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-007-client-artifact-conformance.md",
+      "title": "DF-007: Embedded client artifact return not covered by conformance tests",
+      "labels": [],
+      "signature": "007-artifact-client-conformance-covered"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-008-config-upgrade-silent-fail.md",
+      "title": "DF-008: Config auto-upgrade may silently drop fields if merge fails",
+      "labels": [],
+      "signature": "008-auto-config-drop-fails"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-009-skill-versioning-contract.md",
+      "title": "DF-009: No skill versioning or changelog; no API stability contract",
+      "labels": [],
+      "signature": "009-api-changelog-contract-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-010-json-store-scaling-bottleneck.md",
+      "title": "DF-010: Redis-free JSON file persistence may bottleneck under high concurrency",
+      "labels": [],
+      "signature": "010-bottleneck-concurrency-file-free"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-011-memory-fact-expiration.md",
+      "title": "DF-011: No fact expiration or staleness mechanism in memory system",
+      "labels": [],
+      "signature": "011-expiration-fact-mechanism-memory"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-012-thread-state-restart-persistence.md",
+      "title": "DF-012: No thread state persistence strategy documented for restarts",
+      "labels": [],
+      "signature": "012-documented-persistence-restarts-state"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md",
+      "title": "DF-013: DanglingToolCall middleware marks interrupted tool calls but doesn't replay them",
+      "labels": [],
+      "signature": "013-but-calls-danglingtoolcall-doesn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/df-014-mcp-oauth-refresh-timing.md",
+      "title": "DF-014: MCP OAuth token refresh not validated against expiration time",
+      "labels": [],
+      "signature": "014-against-expiration-mcp-not"
     },
     {
       "path": "docs/intake/issue-drafts/donor-fit-verification.md",
@@ -1701,6 +2472,24 @@
         "repo-shape"
       ],
       "signature": "donor-enforcement-exclusion-fit-map"
+    },
+    {
+      "path": "docs/intake/issue-drafts/entity-resolution-nightly.md",
+      "title": "Implement nightly entity resolution (MinHash/LSH + embeddings)",
+      "labels": [],
+      "signature": "embeddings-entity-implement-lsh-minhash"
+    },
+    {
+      "path": "docs/intake/issue-drafts/genesis-document-drift.md",
+      "title": "Build Genesis Document artifact and nightly drift detector",
+      "labels": [],
+      "signature": "artifact-build-detector-document-drift"
+    },
+    {
+      "path": "docs/intake/issue-drafts/glyph-schema-design.md",
+      "title": "Design glyph schema (LABEL/DEFINITION/RELATIONS + WordNet synset IDs)",
+      "labels": [],
+      "signature": "definition-design-glyph-ids-label"
     },
     {
       "path": "docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md",
@@ -1715,6 +2504,12 @@
       "signature": "constitutional-langgraph-not-workflow"
     },
     {
+      "path": "docs/intake/issue-drafts/limitless-connector.md",
+      "title": "Implement Limitless connector with cursor polling and idempotency",
+      "labels": [],
+      "signature": "connector-cursor-idempotency-implement-limitless"
+    },
+    {
       "path": "docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md",
       "title": "Issue: mac-studio-control-two-tier-guard",
       "labels": [],
@@ -1725,6 +2520,18 @@
       "title": "Issue: memory-adapter-certification-harness",
       "labels": [],
       "signature": "adapter-certification-harness-memory"
+    },
+    {
+      "path": "docs/intake/issue-drafts/moltron-claims-verification.md",
+      "title": "Evaluate Moltron's Claims vs. Reality",
+      "labels": [],
+      "signature": "claims-evaluate-moltron-reality"
+    },
+    {
+      "path": "docs/intake/issue-drafts/moltron-crypto-disclaimer.md",
+      "title": "Crypto Non-Endorsement — Reputational Risk Assessment",
+      "labels": [],
+      "signature": "assessment-crypto-endorsement-non-reputational"
     },
     {
       "path": "docs/intake/issue-drafts/omc-activation-store-score-calibration.md",
@@ -1930,10 +2737,22 @@
       "signature": "bootstrap-criteria-define-driven-evidence"
     },
     {
+      "path": "docs/intake/issue-drafts/policy-gate-parse-only.md",
+      "title": "Implement policy gate for parse-only enforcement",
+      "labels": [],
+      "signature": "enforcement-gate-implement-only-parse"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
       "signature": "boundary-contract-module-python"
+    },
+    {
+      "path": "docs/intake/issue-drafts/r8s-net-integration.md",
+      "title": "Define r8s.net integration contract (data shape + pull cadence)",
+      "labels": [],
+      "signature": "cadence-contract-data-define-integration"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -1944,6 +2763,12 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/receipt-ledger-sqlite.md",
+      "title": "Implement receipt ledger (SQLite + Console sink)",
+      "labels": [],
+      "signature": "console-implement-ledger-receipt-sink"
     },
     {
       "path": "docs/intake/issue-drafts/recovery-rule-no-enforcement.md",
@@ -1961,17 +2786,6 @@
         "cycles"
       ],
       "signature": "cycle-dependency-detection-not-pack"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md",
-      "title": "RRP pack_id is a placeholder — needs real content-addressed ID at freeze",
-      "labels": [
-        "packs",
-        "rrp",
-        "identity",
-        "content-addressing"
-      ],
-      "signature": "addressed-content-freeze-needs-pack"
     },
     {
       "path": "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
@@ -2018,6 +2832,30 @@
       "title": "Issue: Define RPP Task Numbering Reference",
       "labels": [],
       "signature": "define-numbering-reference-rpp-task"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sac-001-audio-source-identity-prosodic-vs-biometric.md",
+      "title": "SAC-001: Audio Source Identity — Prosodic Signature vs Biometric Fingerprinting",
+      "labels": [],
+      "signature": "001-audio-biometric-fingerprinting-identity"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sac-002-emotional-geometry-schema.md",
+      "title": "SAC-002: Emotional Geometry Schema — Formal Definition and Graph Integration",
+      "labels": [],
+      "signature": "002-definition-emotional-formal-geometry"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sac-003-stem-isolation-source-separation.md",
+      "title": "SAC-003: Stem Isolation Preprocessing — Neural Source Separation Evaluation",
+      "labels": [],
+      "signature": "003-evaluation-isolation-neural-preprocessing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sac-004-cross-modal-parity-benchmark.md",
+      "title": "SAC-004: Cross-Modal Audio-Visual Parity Benchmark",
+      "labels": [],
+      "signature": "004-audio-benchmark-cross-modal"
     },
     {
       "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
@@ -2104,6 +2942,12 @@
       "signature": "domain-protocol-source-substrate"
     },
     {
+      "path": "docs/intake/issue-drafts/summarization-styles.md",
+      "title": "Implement summarization style templates (Family/MoM/YT)",
+      "labels": [],
+      "signature": "family-implement-mom-style-summarization"
+    },
+    {
       "path": "docs/intake/issue-drafts/swarm-federation-governance-complexity.md",
       "title": "Swarm Federation Governance Complexity",
       "labels": [],
@@ -2123,6 +2967,29 @@
         "federation"
       ],
       "signature": "commons-gnosis-governance-licensing-public"
+    },
+    {
+      "path": "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+      "title": "SwarmKit Design Patterns for Entif Memory/Decision Subsystems",
+      "labels": [
+        "architecture",
+        "memory",
+        "decisioning",
+        "swarmkit",
+        "design-patterns"
+      ],
+      "signature": "decision-design-entif-memory-patterns"
+    },
+    {
+      "path": "docs/intake/issue-drafts/swarmkit-relevance-assessment.md",
+      "title": "Assess SwarmKit Relevance for Entif Engineering",
+      "labels": [
+        "research",
+        "architecture",
+        "relevance",
+        "swarmkit"
+      ],
+      "signature": "assess-engineering-entif-relevance-swarmkit"
     },
     {
       "path": "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md",
@@ -2206,6 +3073,12 @@
         "cultural-intelligence"
       ],
       "signature": "design-mvp-phase-pipeline-technicals"
+    },
+    {
+      "path": "docs/intake/issue-drafts/veracity-emotional-geometry-scope.md",
+      "title": "Define Veracity Vectors and Emotional Geometry implementation scope",
+      "labels": [],
+      "signature": "define-emotional-geometry-implementation-scope"
     },
     {
       "path": "docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md",
@@ -2350,7 +3223,9 @@
     },
     "append-only": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -2474,7 +3349,8 @@
     },
     "telemetry": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -2498,7 +3374,8 @@
     },
     "llm-limitations": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/ideas/Semantic Audio Cognition Framework.md"
       ],
       "issueDrafts": []
     },
@@ -2766,6 +3643,7 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -2929,7 +3807,8 @@
     },
     "langgraph": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/DeerFlow Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -2993,7 +3872,8 @@
     },
     "quarantine": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
       ],
       "issueDrafts": []
     },
@@ -3077,7 +3957,8 @@
     },
     "dedupe": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -3156,13 +4037,16 @@
     "classification": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
     "summarization": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -3174,14 +4058,17 @@
     },
     "self-evolution": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
     "self-improvement": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md"
@@ -3219,7 +4106,8 @@
     },
     "replication": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -3258,6 +4146,7 @@
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -3357,7 +4246,8 @@
     },
     "parse-only": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -3369,7 +4259,9 @@
     },
     "safety": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -3391,7 +4283,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -3432,7 +4325,10 @@
     "evaluation": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -3492,6 +4388,7 @@
         "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
@@ -3508,7 +4405,8 @@
     "text-core": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md",
@@ -3531,7 +4429,8 @@
     "runtime-ingestion": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md"
@@ -3563,7 +4462,8 @@
     },
     "exit-criteria": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -3575,13 +4475,15 @@
     },
     "scope-classification": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
     "project-board": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -3635,7 +4537,8 @@
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
       ],
       "issueDrafts": []
     },
@@ -3738,11 +4641,14 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
+      ]
     },
     "sovereign-kernel": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
+        "docs/external/DeerFlow Architecture.md"
       ],
       "issueDrafts": []
     },
@@ -3956,14 +4862,18 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
         "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
-        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md"
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
       ]
     },
     "package-topology": {
@@ -4022,6 +4932,7 @@
     "orchestration": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -4099,6 +5010,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
@@ -4200,6 +5112,7 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -4797,6 +5710,7 @@
     "routing": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
@@ -4847,7 +5761,8 @@
     "performance": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
@@ -4883,7 +5798,9 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
+      ]
     },
     "eval-framework": {
       "documents": [
@@ -5263,6 +6180,7 @@
     "receipt": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
@@ -5714,7 +6632,6 @@
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-        "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md",
         "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
         "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
         "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
@@ -5736,9 +6653,7 @@
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md"
-      ]
+      "issueDrafts": []
     },
     "refinement-first": {
       "documents": [
@@ -5848,7 +6763,10 @@
     },
     "versioning": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -5892,6 +6810,7 @@
     "ci": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/DeerFlow Architecture.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -5909,13 +6828,12 @@
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
       ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md"
-      ]
+      "issueDrafts": []
     },
     "specialization": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": []
@@ -5936,7 +6854,8 @@
     },
     "skills": {
       "documents": [
-        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md"
+        "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md"
@@ -5989,6 +6908,7 @@
     "implementation": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -6112,6 +7032,7 @@
     "streaming": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/DeerFlow Architecture.md",
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
       "issueDrafts": []
@@ -6139,6 +7060,7 @@
     "metrics": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
@@ -6210,7 +7132,8 @@
     },
     "knowledge-graph": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -6306,7 +7229,8 @@
     },
     "active-inference": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
@@ -6448,7 +7372,8 @@
     },
     "privacy": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -6660,7 +7585,8 @@
     },
     "latency": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -6685,6 +7611,7 @@
     "scalability": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -6776,6 +7703,7 @@
     "risk": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
       "issueDrafts": []
@@ -6820,7 +7748,10 @@
     "security": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -6874,7 +7805,8 @@
     },
     "cost": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -6887,6 +7819,1784 @@
     "egress": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
+      ],
+      "issueDrafts": []
+    },
+    "attention-residuals": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "prenorm-dilution": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "depth-aggregation": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "transformer-architecture": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-attention": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-efficiency": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "o-nd-complexity": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-plane-costs": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "benchmark": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "reasoning": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-step-reasoning": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-capability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "code-generation": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "code-capability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-attn-res-impl": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "transformer-layer-integration": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "layer-hook": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "scaling-laws": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "compute-efficiency": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "1-25x-compute-equivalent": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-training": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "gradient-distribution": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "magnitude-bounding": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "convergence": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-stability": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "kimi-team": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "research-authorship": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "research": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md",
+        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
+        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
+      ]
+    },
+    "competitive-intelligence": {
+      "documents": [
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-addressing": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "proof-carrying": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-tiles": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "canonicalization": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "rfc8785": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "cid": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "multihash": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "tile-schema": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "merkle-dag": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "tile-structure": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "header-payload": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "hash-agility": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "future-proofing": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "kademlia": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "dht": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "gossipsub": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "p2p": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm-network": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-indexes": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "tagging": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "discovery": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "pinning": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "caching": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md"
+      ]
+    },
+    "gc": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-entropy": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm-storage": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "http-fallback": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "gateway": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "peering": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "version-dag": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "crdt-vs-explicit": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "supersedence-markers": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "deprecation": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "index-tiles": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "human-readable-change-summary": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "diff": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "ed25519-signatures": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-authentication": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-provenance": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "attestations": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "third-party-verification": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-metadata": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "witness-packages": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "wasm-sandbox": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "untrusted-code": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "verification-levels": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-management": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "zk-proofs": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-preserving-verification": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "expected-free-energy": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "value-of-information": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval-agent": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "graphrag": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "two-stage-retrieval": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "pointer-then-drill-down": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "economic-cost-model": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "telemetry-reinforcement-loop": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "egc": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "controlled-language": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "amr-ucca-owl-sbvr-ace": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "pasigraphy": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "deterministic-round-tripping": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-ambiguity": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "optical-slugs": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": []
+    },
+    "symbolic-slugs": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+      ],
+      "issueDrafts": []
+    },
+    "vq-vae": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "vqgan": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "codec-adapters": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "alias-collision-testing": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "codec-evaluation": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "modular-pluggable-codecs": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "codec-registry": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "sybil-resistance": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "staking": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "economic-barriers": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "rate-limiting": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "dos-protection": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-bucket": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "reputation-system": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-scores": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "eclipse-attack": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "diversity-requirements": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedded-license-field": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "attribution-propagation": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "public-vs-private-swarms": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "enterprise-acl": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "evaluation-categories": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "10-category-plan": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "bootstrapping-trust": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "new-user-challenge": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "metadata-bloat": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-vs-transparency": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "immutability-gdpr": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "economic-incentives-not-implemented": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "merge-conflicts-no-central-authority": {
+      "documents": [
+        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
+      ],
+      "issueDrafts": []
+    },
+    "langgraph-workflow": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "not-lame-reference": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-system": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-vs-constitutional": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-pattern": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "publishable-framework": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "boundary-enforcement": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "harness-app-split": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "framework-design": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency-direction": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "middleware-chain": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-composition": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "thread-state": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "plan-mode": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-queue": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "middleware-composition": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "virtual-paths": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "sandbox-isolation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "path-translation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "local-sandbox": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "virtual-path-system": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-structured": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "fact-confidence": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "category-taxonomy": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-injection": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-system": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": []
+    },
+    "fact-scoring": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "subagent-delegation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "concurrency-limit": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "background-execution": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "sse-events": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-offloading": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "im-channels": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "feishu": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "slack": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "telegram": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "streaming-updates": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "card-patching": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "im-channel-integration": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedded-client": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "in-process": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "gateway-equivalent": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "conformance-tests": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedded-deployment": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "client-sdk": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-versioning": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-upgrade": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "mtime-reload": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-management": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-install": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-archive": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-signature": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-security": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "skills-installation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "sandbox-singleton": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "local-filesystem": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "path-mappings": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "singleton-pattern": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-mtime-reload": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-invalidation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "config-caching": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "hot-reload": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-dedup-whitespace": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "fact-collision": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-deduplication": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "dict-vs-non-dict": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "artifact-return": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "client-conformance": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "testing-gap": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "subagent-timeout": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-retry": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-requeue": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "subagent-reliability": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "docs-policy": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "manual-enforcement": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "claude-md-sync": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "documentation-discipline": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "test-coverage": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "harness-boundary": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "testing-strategy": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-oauth": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-refresh": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "http-transport": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-integration": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "oauth": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-factory": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "thinking-enabled": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "vision-support": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "env-var-resolution": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-selection": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "configuration": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-groups": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-tools": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "builtin-tools": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "community-tools": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-architecture": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "plugin-system": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "file-upload": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "document-conversion": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "markitdown": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "thread-isolation": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "file-handling": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "document-processing": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "todo-list": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "is-plan-mode-flag": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-tracking": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "planning-mode": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-reduction": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-limits": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-management": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": []
+    },
+    "frontend-config": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "nginx-routing": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "base-urls": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "frontend-deployment": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "nginx": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "channel-thread-mapping": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-persistence": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "root-vs-threaded": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "thread-management": {
+      "documents": [
+        "docs/external/DeerFlow Architecture.md"
+      ],
+      "issueDrafts": []
+    },
+    "voice": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "voice-mcp": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "orchestrator": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "tools": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "thin-slice": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "vad": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "asr": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "llm": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "intent": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "dry-run": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "nightly": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "coaching": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "improvement": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingest": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-resolution": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "dedup": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-mining": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "tasker": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "consent": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "agents": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "genesis": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "alignment": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-model": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "phasing": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "plan": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "planning": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
+      ]
+    },
+    "types": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "schema": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "protocol": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "loop": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "mode": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "heuristics": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "classify": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "styles": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "summarize": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "reserved": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyph": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantics": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "content": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "media": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "realtime": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "market-data": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "reuse": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "engineering": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+      ],
+      "issueDrafts": []
+    },
+    "velocity": {
+      "documents": [
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
       ],
       "issueDrafts": []
     },
@@ -6969,14 +9679,6 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
-    },
-    "caching": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md"
-      ]
     },
     "context-economy": {
       "documents": [
@@ -7067,12 +9769,6 @@
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": []
-    },
-    "future-proofing": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -7245,14 +9941,6 @@
       ],
       "issueDrafts": []
     },
-    "planning": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
-      ]
-    },
     "prompt-consolidation": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -7352,13 +10040,6 @@
       ],
       "issueDrafts": []
     },
-    "mcp": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "tool-contract": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -7375,6 +10056,7 @@
     "integration": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/external/Moltron.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
@@ -7420,12 +10102,6 @@
       "issueDrafts": []
     },
     "promotion-state": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "configuration": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -7508,7 +10184,8 @@
     },
     "deferred": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -7521,6 +10198,434 @@
     "future": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+      ],
+      "issueDrafts": []
+    },
+    "text-files": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "fragility": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-building": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-evol": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "carcinization": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "metaphor": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "philosophy": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "infinite-evolution": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-improving": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "digital-employee": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "ambition": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-scaling": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "allergens": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "constraints": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "real-world-example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-repair": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "feedback-loop": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-routing": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-optimization": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "economics": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "smythos": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-compilation": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "executable-skills": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-engineering": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "constrained-alignment": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hybrid-flexibility": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
+      ]
+    },
+    "scaling": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-agent": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "accountability": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-reflection": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "audit": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "root-access": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "replay": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "open-standards": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-platform": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cursor": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "claude-code": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-codex": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "portability": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "evolution-loop": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "stripe": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "zendesk": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-example": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "day-n": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "hardening": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "production-ready": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-hardening": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "timeline": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "crypto": {
+      "documents": [
+        "docs/external/Moltron.md",
+        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "disclaimer": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "legal": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "non-endorsement": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "discord": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "community": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "tinkerers": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "engagement": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "mit-license": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "open-source": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "licensing": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
+      ]
+    },
+    "attribution": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "install-script": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "bash": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "curl": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "installation": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "onboarding": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "manual-install": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-clone": {
+      "documents": [
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "cp-r": {
+      "documents": [
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -7605,12 +10710,6 @@
       ],
       "issueDrafts": []
     },
-    "memory-system": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": []
-    },
     "neuroscientific": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
@@ -7648,12 +10747,6 @@
       "issueDrafts": []
     },
     "token-cache": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": []
-    },
-    "context-management": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -7780,14 +10873,6 @@
       ],
       "issueDrafts": []
     },
-    "swarm": {
-      "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
-      ]
-    },
     "asi": {
       "documents": [
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
@@ -7832,7 +10917,8 @@
     },
     "ithkuil": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/ideas/Semantic Audio Cognition Framework.md"
       ],
       "issueDrafts": []
     },
@@ -8203,18 +11289,6 @@
       ],
       "issueDrafts": []
     },
-    "symbolic-slugs": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": []
-    },
-    "optical-slugs": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": []
-    },
     "slug-doctrine": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
@@ -8349,7 +11423,8 @@
     },
     "mermaid": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -8408,12 +11483,6 @@
       "issueDrafts": []
     },
     "witness-packs": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
-      ],
-      "issueDrafts": []
-    },
-    "proof-carrying": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
@@ -8637,13 +11706,6 @@
       ],
       "issueDrafts": []
     },
-    "cid": {
-      "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "store": {
       "documents": [
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
@@ -8652,13 +11714,16 @@
     },
     "importers": {
       "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
     "source-substrate": {
       "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/ideas/Semantic Audio Cognition Framework.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -8684,7 +11749,8 @@
     },
     "canonical-cache": {
       "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -8771,7 +11837,8 @@
     },
     "postgres": {
       "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
@@ -8793,7 +11860,8 @@
     },
     "docs-intelligence": {
       "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
+        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
@@ -8842,12 +11910,6 @@
       "issueDrafts": []
     },
     "layer-ordering": {
-      "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
-      ],
-      "issueDrafts": []
-    },
-    "dependency-direction": {
       "documents": [
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
       ],
@@ -8961,12 +12023,6 @@
       ],
       "issueDrafts": []
     },
-    "documentation-discipline": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
     "governance-refs": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -9058,12 +12114,6 @@
       "issueDrafts": []
     },
     "first-slice": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "dry-run": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -9165,14 +12215,6 @@
       ],
       "issueDrafts": []
     },
-    "content-addressing": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md"
-      ]
-    },
     "cas-uri-scheme": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -9192,12 +12234,6 @@
       "issueDrafts": []
     },
     "12-specific-gates-required-for-mvp-alpha-rc": {
-      "documents": [
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-    "tools": {
       "documents": [
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -9467,12 +12503,6 @@
       ],
       "issueDrafts": []
     },
-    "rate-limiting": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
     "ingestion-stack": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
@@ -9492,12 +12522,6 @@
       "issueDrafts": []
     },
     "commodities": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
-    "crypto": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
@@ -9713,12 +12737,6 @@
       ],
       "issueDrafts": []
     },
-    "feedback-loop": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
     "recalibration": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
@@ -9770,6 +12788,681 @@
     "business-model": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio-cognition": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-identity": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "diarization": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "fingerprinting": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md",
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "speaker-uniqueness": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "dialect": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "tone": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "signal-processing": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "stem-isolation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "polyphonic-audio": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "stem-separation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "prosody": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "intonation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "pitch-tracking": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "tonal-distinctions": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "expressive-modulation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "spectral-analysis": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md"
+      ]
+    },
+    "fx-tracking": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "fx-vs-dry": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "transformation-vs-essence": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "affective-mapping": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "emotional-geometry": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "emotion-arc": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "temporal-evolution": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-graph": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-integration": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "meaning-graph": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "correlation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "context": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "lexeme-graph": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "phoneme-correlation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "phoneme-dictionary": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "experience-design": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "empathetic-resonance": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "consummation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "full-spectrum-feedback": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-modal-gap": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio-deaf": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "visual-vs-audio": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "psychoacoustic-divination": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-audio": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "ontology-in-waveform": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-lanes": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-spine": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "personhood-correlation": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "felt-meaning": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-modal-parity": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "visual-comprehension": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "seeing-vs-hearing": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "modality-gap": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "orpheus-myth": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "eurydice-metaphor": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "orpheus-and-mute-eurydice": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "artist-and-deaf-muse": {
+      "documents": [
+        "docs/ideas/Semantic Audio Cognition Framework.md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-gate": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "m1-m10": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-001-tc-007": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "dependency-graph": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-001": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-002": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-003": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-004": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-005": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-006": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tc-007": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-boundary": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "source-basis": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "backlog-refs": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "non-goals": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "source-episode": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "family-classification": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "unresolved-family": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-canon": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "chronology": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "content-fingerprint": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "revision-fingerprint": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "revision-graph": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-persistence": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-core": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-receipts": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "observation-tiling": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "source-boundary": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "transform-receipts": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-schemas": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "promotion-state-machine": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-states": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "structured-extracts": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-tapestry": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-store": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "tapestry-v1": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "bounded-context": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-closure": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rights-retrieval": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "rights-scoped": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-domains": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "index-postgres": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "index-pgvector": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "pgvector": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "migration-contracts": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "storage-law": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "chat-import": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "arxiv-import": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "two-family-threshold": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "chat-transcript": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "arxiv": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "english-accompaniment": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
+      ]
+    },
+    "promoted-artifacts": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "uncertainty-markers": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "should-have": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "nice-to-have": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
+      ],
+      "issueDrafts": []
+    },
+    "definition-of-done": {
+      "documents": [
+        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -10145,19 +13838,7 @@
       ],
       "issueDrafts": []
     },
-    "llm": {
-      "documents": [
-        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
     "transfer-learning": {
-      "documents": [
-        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
-      ],
-      "issueDrafts": []
-    },
-    "cost-optimization": {
       "documents": [
         "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
@@ -10280,14 +13961,6 @@
         "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
       ]
     },
-    "research": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
-        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
-        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
-      ]
-    },
     "hydration": {
       "documents": [],
       "issueDrafts": [
@@ -10379,17 +14052,6 @@
         "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md"
       ]
     },
-    "audio": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
-        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
-        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
-        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
-        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
-        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
-      ]
-    },
     "affective-modeling": {
       "documents": [],
       "issueDrafts": [
@@ -10410,12 +14072,6 @@
         "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
         "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
         "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
-      ]
-    },
-    "spectral-analysis": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md"
       ]
     },
     "signal-chain": {
@@ -10451,19 +14107,7 @@
         "docs/intake/issue-drafts/semantic-audio-stem-isolation.md"
       ]
     },
-    "prosody": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
-      ]
-    },
     "public-commons": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
-    },
-    "licensing": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
@@ -10475,16 +14119,23 @@
         "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
       ]
     },
-    "english-accompaniment": {
+    "decisioning": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
       ]
     },
-    "pgvector": {
+    "swarmkit": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md",
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
+      ]
+    },
+    "design-patterns": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
       ]
     },
     "cultural-intelligence": {
