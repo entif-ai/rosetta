@@ -1131,6 +1131,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/260
   status: active
+- id: ccf-010
+  name: Consensus-First Commitment Scoping Framework Not Adopted
+  introduced_by: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  introduced_at: '2026-04-25'
+  definition: The Consensus-First Commitment Scoping Framework v0.1 defines five required
+    artifacts, phase-transition handshake, calibration loop, and anti-delusion mechanisms.
+    None are operationalized in Rosetta workflows, allowing hallucination, premature
+    closure, groupthink, and LLM overconfidence to operate unchecked.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/262
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
