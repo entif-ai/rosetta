@@ -372,6 +372,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/89
   status: active
+- id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+  name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
+  introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
+  introduced_at: '2026-04-25'
+  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
+    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
+    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
+    \ becoming a deferred obligation."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/94
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1023,6 +1034,8 @@ issue_drafts_inventory:
   issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
   priority: P2
   type: adr
+  url: https://github.com/entif-ai/rosetta/issues/94
+  status: published
 - path: docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md
   source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
   source_pr: 60

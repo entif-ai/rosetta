@@ -205,5 +205,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
     "draftStatus": "published"
+  },
+  "omoc-swarm-gnosis-eight-spec-proposal-bloat": {
+    "number": 94,
+    "state": "open",
+    "title": "OMOC Swarm Gnosis \u00a717: 8 Proposed Specs Uncommitted \u2014 Proposal Bloat Risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/94",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
+    "draftStatus": "published"
   }
 }
