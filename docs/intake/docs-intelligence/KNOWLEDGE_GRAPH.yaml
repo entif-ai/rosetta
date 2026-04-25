@@ -1,7 +1,7 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T23:59:30Z'
-  total_docs_processed: 28
+  generated: '2026-04-25T07:36:47Z'
+  total_docs_processed: 29
   active_issue_drafts: 94
   archived_issue_drafts: 23
   total_issue_drafts_inventory: 117
@@ -434,88 +434,78 @@ concepts:
   referenced_by:
   - https://github.com/igent-ai/rosetta/issues/103
   status: active
-- +- id: 2026-04-25-pro-ext-research-cas-uri-missing
+- id: 2026-04-25-pro-ext-research-cas-uri-missing
   name: cas:// URI scheme undefined
   introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
-  introduced_at: '''2026-04-25'''
+  introduced_at: '2026-04-25'
   definition: cas:// URI scheme used in receipt/tapestry examples has no formal spec,
-  referenced_by: ''
-  https: //github.com/igent-ai/rosetta/issues/103
+    validation, or ADR. Hash format (multihash vs plain hex) and authority namespace
+    are undefined.
+  referenced_by:
+  - https://github.com/gent-ai/rosetta/issues/103
   status: active
-- +- id: ct-002-trust-bootstrap
+- id: ct-002-trust-bootstrap
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
-  introduced_at: '''2026-04-25'''
-  definition: '"In a fully open P2P knowledge swarm, new nodes have no prior identity\'
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/96
+  introduced_at: '2026-04-25'
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/96
   status: active
-- +- id: pro-ext-research-authoritative-baselines-adr-missing
+- id: pro-ext-research-authoritative-baselines-adr-missing
   name: Authoritative Project Baselines ADR Gap
   introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
-  introduced_at: '''2026-04-25'''
+  introduced_at: '2026-04-25'
   definition: The 21 project baseline documents referenced in the Pro-Extended Research
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/98
+    prompt lack a formal ADR establishing them as the authoritative reference for
+    all architectural decisions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/98
   status: active
-- +- id: omoc-slug-adoption-timing-hydration-quality
+- id: omoc-slug-adoption-timing-hydration-quality
   name: Slug Adoption Timing vs Hydration Quality
   introduced_by: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
-  introduced_at: '''2026-04-25'''
-  definition: '''Open question (OQ-4) from OMOC-Swarm Gnosis RFC: when should slugs'
-  Risks: fidelity loss, latency spikes, format evolution brittleness. Recommended
-  resolution: dual-track (stable bands primary, slugs experimental) with empirical
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/92
+  introduced_at: '2026-04-25'
+  definition: 'Open question (OQ-4) from OMOC-Swarm Gnosis RFC: when should slugs
+    (compact semantic handles) be adopted relative to hydration pipeline maturity.
+    Risks: fidelity loss, latency spikes, format evolution brittleness. Recommended
+    resolution: dual-track (stable bands primary, slugs experimental) with empirical
+    hydration quality measurement.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/92
   status: active
-- +- id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+- id: omoc-swarm-gnosis-eight-spec-proposal-bloat
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
-  introduced_at: '''2026-04-25'''
-  definition: '"Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec
-    documents\'
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/94
+  introduced_at: '2026-04-25'
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/94
   status: active
-- +- id: ct-003-egc-pasigraphy-esoteric
+- id: ct-003-egc-pasigraphy-esoteric
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
-  introduced_at: '''2026-04-25'''
-  definition: '"EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\'
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/105
+  introduced_at: '2026-04-25'
+  definition: EGC (Epistemic Graph Code) risks becoming an esoteric notation akin
+    to Ithkuil — too complex for practical human contribution. The tension between
+    maximal precision and natural readability is unresolved.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/105
   status: active
-- +- id: ct-004-gdpr-erasure
+- id: ct-004-gdpr-erasure
   name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
-  introduced_at: '''2026-04-25'''
-  definition: '"Content-addressed immutable storage (IPFS-style) is fundamentally
-    incompatible\'
-  referenced_by: ''
-  https: //github.com/entif-ai/rosetta/issues/107
-  status: active
-- id: aiida-workgraph-reference
-  name: AiiDA-WorkGraph Reference Architecture
-  introduced_by: docs/external/AiiDA-WorkGraph.md
   introduced_at: '2026-04-25'
-  definition: External scientific workflow reference covering automatic provenance
-    graphs, Pythonic task decorators, checkpointing, remote execution, AiiDA stack
-    dependencies, and experimental workflow visualization.
-  extends:
-  - receipt-law
+  definition: Content-addressed immutable storage (IPFS-style) is fundamentally incompatible
+    with GDPR Article 17 right-to-erasure — once data is pinned, it cannot be technically
+    deleted, only delisted.
   referenced_by:
-  - docs/intake/docs-intelligence/2026-04-25-aiida-workgraph.md
-  - docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
-  status: active
-- id: ct-005-economic-persistence-gap
-  name: Economic Persistence Gap (CT-005)
-  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md
-  introduced_at: '2026-04-25'
-  definition: Swarm Gnosis has no economic incentives for node operators to persist
-    data. Without a token/payment system, the network relies on altruistic nodes,
-    and unpopular data may be garbage-collected despite content-addressing.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/109
+  - https://github.com/entif-ai/rosetta/issues/107
   status: active
 issue_candidates:
 - id: DI-007
@@ -891,29 +881,29 @@ processed_docs:
   findings: 37
   pr: 91
   issues: 10
-  notes: PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
-    GitHub issues, with CT-003 through CT-010 remaining as active drafts.
+  notes: 'PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
+    GitHub issues, with CT-003 through CT-010 remaining as active drafts.'
 - path: docs/external/DeerFlow Architecture.md
   processed_at: 2026-04-25T23:59
   findings: 25
   pr: 91
   issues: 14
-  notes: PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
-    #89, with DF-002 through DF-014 remaining as active drafts.
+  notes: 'PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
+    #89, with DF-002 through DF-014 remaining as active drafts.'
 - path: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   processed_at: 2026-04-25T23:59
   findings: 18
   pr: 91
   issues: 3
-  notes: PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
-    coverage for prior art, graph retrieval, and bio-inspired algorithms.
+  notes: 'PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
+    coverage for prior art, graph retrieval, and bio-inspired algorithms.'
 - path: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   processed_at: 2026-04-25T23:59
   findings: 20
   pr: 68
   issues: 6
-  notes: PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
-    coverage for M8, M10, and Should-Have ownership follow-up.
+  notes: 'PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
+    coverage for M8, M10, and Should-Have ownership follow-up.'
 - path: docs/external/AiiDA-WorkGraph.md
   processed_at: 2026-04-25T23:59
   findings: 12
@@ -1008,30 +998,6 @@ issue_drafts_inventory:
   priority: P1
   type: implementation
   note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
-- path: docs/intake/issue-drafts/text-core-should-have-owners.md
-  source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
-  source_pr: 68
-  issue_id: text-core-should-have-owners
-  priority: P3
-  type: planning
-- path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-provenance-reference
-  priority: P3
-  type: research
-- path: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-infrastructure-dependencies
-  priority: P2
-  type: architecture
-- path: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-gui-experimental
-  priority: P3
-  type: risk
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1328,21 +1294,32 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/98
   status: published
   draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+- issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
+  url: https://github.com/gent-ai/rosetta/issues/103
+  status: published
+- issue_id: 2026-04-25-pro-ext-research-authoritative-baselines-adr-missing
+  url: https://github.com/entif-ai/rosetta/issues/98
+  status: published
+  draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+- issue_id: omoc-slug-adoption-timing-hydration-quality
+  url: https://github.com/entif-ai/rosetta/issues/92
+  status: published
+- issue_id: omoc-swarm-gnosis-eight-spec-proposal-bloat
+  url: https://github.com/entif-ai/rosetta/issues/94
+  status: published
+- issue_id: ct-004-gdpr-erasure
+  url: https://github.com/entif-ai/rosetta/issues/107
+  status: published
+  draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+- path: docs/intake/issue-drafts/text-core-should-have-owners.md
+  source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+  source_pr: 68
+  issue_id: text-core-should-have-owners
+  priority: P3
+  type: planning
 - path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   source_doc: docs/external/AiiDA-WorkGraph.md
   source_pr: 67
   issue_id: aiida-workgraph-provenance-reference
   priority: P3
   type: research
-- path: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-infrastructure-dependencies
-  priority: P2
-  type: architecture
-- path: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
-  source_doc: docs/external/AiiDA-WorkGraph.md
-  source_pr: 67
-  issue_id: aiida-workgraph-gui-experimental
-  priority: P3
-  type: risk
