@@ -817,5 +817,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-010-consensus-first-framework-not-adopted.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-acpx-cross-vendor-agent-evaluation.md": {
+    "number": 265,
+    "state": "open",
+    "title": "ACP-004: Evaluate acpx for Cross-Vendor Agent Integration (kimi, qwen, kilocode, opencode)",
+    "url": "https://github.com/entif-ai/rosetta/issues/265",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-cross-vendor-agent-evaluation.md",
+    "draftStatus": "published"
   }
 }
