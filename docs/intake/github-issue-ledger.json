@@ -106,6 +106,24 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-dependency-cycle-detection.md",
       "draftStatus": "published"
+    },
+    "rock-3111-c-recipes-skills-ci": {
+      "number": 79,
+      "state": "open",
+      "title": "RRP recipes/ and skills/ subtrees lack CI/schema enforcement",
+      "url": "https://github.com/entif-ai/rosetta/issues/79",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-recipes-skills-ci.md",
+      "draftStatus": "published"
+    },
+    "rock-3111-c-persona-pack-governance": {
+      "number": 77,
+      "state": "open",
+      "title": "ROCK-3111-C: PersonaPack elevated governance is undefined",
+      "url": "https://github.com/entif-ai/rosetta/issues/77",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-persona-pack-governance.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
