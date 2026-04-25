@@ -34,9 +34,9 @@ Closed hygiene issues #31, #34, #39, and #45 are resolved by the merged sub-agen
 
 | Bucket | Count | Location |
 | --- | ---: | --- |
-| Active issue drafts | 48 | `docs/intake/issue-drafts/*.md` |
+| Active issue drafts | 51 | `docs/intake/issue-drafts/*.md` |
 | Archived/published drafts | 8 | `docs/intake/issue-drafts/archive/*.md` |
-| Docs-intelligence Markdown files | 19 | `docs/intake/docs-intelligence/*.md` |
+| Docs-intelligence Markdown files | 21 | `docs/intake/docs-intelligence/*.md` |
 
 ## Promotion Waves
 
@@ -72,6 +72,20 @@ PR #58 reprocessed the already-covered OMOC Swarm Gnosis RFC and was closed as s
 | `omoc-slug-adoption-timing-hydration-quality.md` | Captures OQ-4 as a distinct hydration-quality research spike. |
 | `omoc-swarm-gnosis-eight-spec-proposal-bloat.md` | Captures the unsequenced ROCK-3201 through ROCK-3207 / ENTIF-OMOC-001 spec-suite risk. |
 
+### PR #60 Salvage
+
+PR #60 is a dirty cumulative branch against current `main`: it would delete accepted intake artifacts, remove `KNOWLEDGE_GRAPH.yaml`, rewrite generated ledgers, and re-open archived issue drafts. Do not merge it directly.
+
+The retained artifacts are:
+
+| Retained artifact | Reason |
+| --- | --- |
+| `docs/intake/docs-intelligence/2026-04-25-pasigraphy-protocol-v3.md` | Full extraction of the live Pasigraphy v3 architecture reference. |
+| `docs/intake/docs-intelligence/2026-04-25-real-time-ingestion-analytics-pipeline.md` | Coherent exploratory Batch 4 extraction present on the branch, but issue candidates remain embedded only. |
+| `pasigraphy-layer-dependency-direction.md` | Actionable architecture clarification from the Pasigraphy v3 extraction. |
+| `pasigraphy-trust-matrix-transition-criteria.md` | Actionable fixture-backed-to-evidence-driven trust scoring migration question. |
+| `pasigraphy-contributing-done-language.md` | Actionable contributor-facing docs gap for the implemented/modeled/fixture-backed/not-yet vocabulary. |
+
 ### Wave 2: Text-Core split issues
 
 These refine existing GitHub issues rather than replacing them.
@@ -93,6 +107,9 @@ These are actionable but mostly PRD/chat-derived. Validate them against RFC/gove
 | `2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md` and `python-module-boundary-contract.md` | Reconcile into one Python boundary issue. |
 | `2026-04-25-pro-ext-research-known-red-tests-policy-missing.md` | Promote if CI work starts; otherwise keep staged. |
 | `RPP-task-numbering-reference.md` | Promote as documentation/reference work before using numbered RPP tasks for sequencing. |
+| `pasigraphy-layer-dependency-direction.md` | Promote as an architecture clarification issue before more projection/source-substrate coupling lands. |
+| `pasigraphy-trust-matrix-transition-criteria.md` | Keep staged until live source adapters or evidence scoring work starts; then promote with acceptance criteria. |
+| `pasigraphy-contributing-done-language.md` | Promote or fold into the contributor-docs issue if one already exists; this is narrow and easy to close. |
 
 ### Wave 4: Harness/kernel architecture issues
 
@@ -118,11 +135,11 @@ These extraction files still contain issue-candidate rows that are not fully nor
 | `2026-04-25-entif-rosetta-prds-pro-extended-research.md` | Several candidates are covered by active drafts, but ACP adapter, ingress dedupe, promotion state machine, cache-prefix, memory taxonomy, Nx cache retention, and schema ID naming still need draft files or explicit folds into #10/#11. |
 | `2026-04-25-omoc-ontologies-agentic-token-efficiency.md` | Candidate table needs draft backfill or explicit fold into existing OMC/Rosetta protocol drafts. |
 | `2026-04-24-batch-2-governance-and-prd.md` | NOT LAME implementation rows overlap the harness/kernel cluster; resolve as folded or draft-backed. |
+| `2026-04-25-real-time-ingestion-analytics-pipeline.md` | Exploratory r8s.net issue candidates are embedded only; create drafts or explicitly defer as non-Rosetta-core product work. |
 
 ## Immediate Work Order
 
-1. Salvage the safe parts of draft PR #52 into a clean PR: deferred-status preservation, blank ID fixes, and intake reconciliation.
-2. Close or supersede draft PR #52 after the clean salvage PR lands.
-3. Promote Wave 1 RFC-backed drafts to GitHub issues, archiving each promoted draft and updating `docs/intake/github-issue-ledger.json`.
-4. Create a follow-up DI issue for automatic candidate-to-draft coverage checking, or extend #33 if the knowledge graph is meant to own this validation.
-5. Run a second pass over the purgatory table to either create missing draft files or mark candidates as folded into promoted issues.
+1. Land the clean PR #60 salvage, then close or supersede PR #60 without merging its cumulative branch.
+2. Promote Wave 1 RFC-backed drafts to GitHub issues, archiving each promoted draft and updating `docs/intake/github-issue-ledger.json`.
+3. Create a follow-up DI issue for automatic candidate-to-draft coverage checking, or extend #33 if the knowledge graph is meant to own this validation.
+4. Run a second pass over the purgatory table to either create missing draft files or mark candidates as folded into promoted issues.
