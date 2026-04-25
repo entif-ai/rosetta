@@ -403,5 +403,239 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/acpx-session-metadata-schema.md",
     "draftStatus": "published"
+  },
+  "acp-coverage-roadmap-access": {
+    "number": 191,
+    "state": "open",
+    "title": "Obtain and archive ACP Spec Coverage Roadmap from acpx upstream",
+    "url": "https://github.com/entif-ai/rosetta/issues/191",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/acp-coverage-roadmap-access.md",
+    "draftStatus": "published"
+  },
+  "ac-002-graph-database-retrieval.md": {
+    "number": 187,
+    "state": "open",
+    "title": "AC-002: Graph Database Retrieval Pipeline for Relational Trend Modeling",
+    "url": "https://github.com/entif-ai/rosetta/issues/187",
+    "activeDraftPath": "docs/intake/issue-drafts/ac-002-graph-database-retrieval.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-002-graph-database-retrieval.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-entif-2-0-enriched-fastmcp-evaluation": {
+    "number": 152,
+    "state": "open",
+    "title": "E2E-003: Evaluate FastMCP vs TypeScript MCP SDK",
+    "url": "https://github.com/entif-ai/rosetta/issues/152",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-fastmcp-evaluation.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-entif-2-0-enriched-ithkuil-deprecation": {
+    "number": 154,
+    "state": "open",
+    "title": "E2E-005: Deprecate Ithkuil Semantics",
+    "url": "https://github.com/entif-ai/rosetta/issues/154",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-ithkuil-deprecation.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-entif-2-0-enriched-memory-forge-alignment": {
+    "number": 156,
+    "state": "open",
+    "title": "E2E-004: Design MemoryForge Alignment",
+    "url": "https://github.com/entif-ai/rosetta/issues/156",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-memory-forge-alignment.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-entif-2-0-enriched-receipt-schema": {
+    "number": 158,
+    "state": "open",
+    "title": "E2E-001: Adopt Canonical Receipt Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/158",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-receipt-schema.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-pro-ext-research-headers-check-missing": {
+    "number": 160,
+    "state": "open",
+    "title": "Missing: headers-check Nx executor in workspace-generators",
+    "url": "https://github.com/entif-ai/rosetta/issues/160",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-headers-check-missing.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-pro-ext-research-known-red-tests-policy-missing": {
+    "number": 162,
+    "state": "open",
+    "title": "Missing: known-red-tests policy definition and documentation",
+    "url": "https://github.com/entif-ai/rosetta/issues/162",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-pro-ext-research-python-boundary-enforcement-missing": {
+    "number": 164,
+    "state": "open",
+    "title": "Missing: Python package boundary enforcement mechanism",
+    "url": "https://github.com/entif-ai/rosetta/issues/164",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md",
+    "draftStatus": "published"
+  },
+  "AR-003-kimi-competitive-tracking": {
+    "number": 169,
+    "state": "open",
+    "title": "AR-003: Track Kimi/Moonshot AI Publications for Competitive Gap Analysis",
+    "url": "https://github.com/entif-ai/rosetta/issues/169",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/AR-003-kimi-competitive-tracking.md",
+    "draftStatus": "published"
+  },
+  "MOL-002-skill-git-versioning": {
+    "number": 173,
+    "state": "open",
+    "title": "[MOL-002] Rosetta Skill-Packs Need Git-Backed Version Control",
+    "url": "https://github.com/entif-ai/rosetta/issues/173",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-002-skill-git-versioning.md",
+    "draftStatus": "published"
+  },
+  "MOL-003-skill-runtime-contract": {
+    "number": 175,
+    "state": "open",
+    "title": "MOL-003: Define Rosetta Skill Execution Runtime Contract",
+    "url": "https://github.com/entif-ai/rosetta/issues/175",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-003-skill-runtime-contract.md",
+    "draftStatus": "published"
+  },
+  "ac-003-bio-inspired-trend-algorithms": {
+    "number": 189,
+    "state": "open",
+    "title": "AC-003: Bio-Inspired Algorithms for Memetic Trend Discovery",
+    "url": "https://github.com/entif-ai/rosetta/issues/189",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-003-bio-inspired-trend-algorithms.md",
+    "draftStatus": "published"
+  },
+  "authority-stack-gaps": {
+    "number": 41,
+    "state": "open",
+    "title": "Govern authority-stack portability, integrity, and Prism shadow-mode gaps",
+    "url": "https://github.com/entif-ai/rosetta/issues/41",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/authority-stack-gaps.md",
+    "draftStatus": "published"
+  },
+  "canonical-cache-persistence": {
+    "number": 8,
+    "state": "open",
+    "title": "TC-003 Dedupe, revision graph, and cache persistence",
+    "url": "https://github.com/entif-ai/rosetta/issues/8",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/canonical-cache-persistence.md",
+    "draftStatus": "published"
+  },
+  "coverage-thresholds-and-acceptance-matrices": {
+    "number": 43,
+    "state": "open",
+    "title": "Add coverage reporting and package acceptance matrices",
+    "url": "https://github.com/entif-ai/rosetta/issues/43",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/coverage-thresholds-and-acceptance-matrices.md",
+    "draftStatus": "published"
+  },
+  "docs-intelligence-first-pass": {
+    "number": 23,
+    "state": "open",
+    "title": "DI-001 First docs-intelligence extraction pass",
+    "url": "https://github.com/entif-ai/rosetta/issues/23",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/docs-intelligence-first-pass.md",
+    "draftStatus": "published"
+  },
+  "expand-pack-schemas-and-shacl-source-artifacts": {
+    "number": 42,
+    "state": "open",
+    "title": "Expand pack schemas and SHACL coverage for receipts and source artifacts",
+    "url": "https://github.com/entif-ai/rosetta/issues/42",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/expand-pack-schemas-and-shacl-source-artifacts.md",
+    "draftStatus": "published"
+  },
+  "lean-validation-loop-and-local-receipts": {
+    "number": 3,
+    "state": "open",
+    "title": "Re-run lean validation loop and checkpoint local receipts",
+    "url": "https://github.com/entif-ai/rosetta/issues/3",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/lean-validation-loop-and-local-receipts.md",
+    "draftStatus": "published"
+  },
+  "rock-3111-c-dependency-cycle-detection": {
+    "number": 74,
+    "state": "open",
+    "title": "ROCK-3111-C: Define and enforce dependency cycle detection for RRP packs",
+    "url": "https://github.com/entif-ai/rosetta/issues/74",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-dependency-cycle-detection.md",
+    "draftStatus": "published"
+  },
+  "rock-3111-c-pack-id-placeholder": {
+    "number": 69,
+    "state": "open",
+    "title": "ROCK-3111-C: Define and enforce content-addressed pack_id algorithm",
+    "url": "https://github.com/entif-ai/rosetta/issues/69",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md",
+    "draftStatus": "published"
+  },
+  "rock-3111-c-persona-pack-governance": {
+    "number": 77,
+    "state": "open",
+    "title": "ROCK-3111-C: PersonaPack elevated governance is undefined",
+    "url": "https://github.com/entif-ai/rosetta/issues/77",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-persona-pack-governance.md",
+    "draftStatus": "published"
+  },
+  "rock-3111-c-recipes-skills-ci": {
+    "number": 79,
+    "state": "open",
+    "title": "RRP recipes/ and skills/ subtrees lack CI/schema enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/79",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-recipes-skills-ci.md",
+    "draftStatus": "published"
+  },
+  "text-core-mvp-scope-gate": {
+    "number": 11,
+    "state": "open",
+    "title": "TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline",
+    "url": "https://github.com/entif-ai/rosetta/issues/11",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md",
+    "draftStatus": "published"
+  },
+  "ada-orchestrator-mcp.md": {
+    "number": 201,
+    "state": "open",
+    "title": "Implement Ada orchestrator MCP CRUD surface",
+    "url": "https://github.com/entif-ai/rosetta/issues/201",
+    "activeDraftPath": "docs/intake/issue-drafts/ada-orchestrator-mcp.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ada-orchestrator-mcp.md",
+    "draftStatus": "published"
+  },
+  "aiida-workgraph-gui-experimental": {
+    "number": 204,
+    "state": "open",
+    "title": "Treat AiiDA-WorkGraph GUI as experimental reference only",
+    "url": "https://github.com/entif-ai/rosetta/issues/204",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-gui-experimental.md",
+    "draftStatus": "published"
   }
 }
