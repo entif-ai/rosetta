@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: e2e-002-14day-not-lame-alignment
+  name: 14-Day / NOT LAME Milestone Alignment
+  introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
+  introduced_at: '2026-04-25'
+  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
+    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
+    \ and establish single-source-of-truth ownership for shared capabilities."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/150
+  status: active
 - id: AR-001-depth-aggregation-memory-plane-3
   name: AttnRes-style Depth Aggregation for Memory Plane 3
   introduced_by: docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md

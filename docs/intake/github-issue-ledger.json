@@ -305,6 +305,15 @@
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
   },
+  "2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md": {
+    "number": 150,
+    "state": "open",
+    "title": "E2E-002: Align 14-Day Compounding Plan with NOT LAME PRD Milestone Gates",
+    "url": "https://github.com/entif-ai/rosetta/issues/150",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md",
+    "draftStatus": "published"
+  },
   "AR-001-depth-aggregation-memory-plane-3": {
     "number": 166,
     "state": "open",
