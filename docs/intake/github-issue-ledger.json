@@ -637,5 +637,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-gui-experimental.md",
     "draftStatus": "published"
+  },
+  "aiida-workgraph-infrastructure-dependencies.md": {
+    "number": 207,
+    "state": "open",
+    "title": "AiiDA-WorkGraph: model message broker as explicit infrastructure dependency",
+    "url": "https://github.com/entif-ai/rosetta/issues/207",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-infrastructure-dependencies.md",
+    "draftStatus": "published"
   }
 }
