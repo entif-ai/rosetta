@@ -455,23 +455,28 @@ async function readIssueLedger() {
 }
 
 export function resolveIssueDraftState(draftId, issueLedger) {
-  const issueUrl = issueLedger.issueDrafts?.[draftId]?.url ?? null;
+  const ledgerEntry = issueLedger.issueDrafts?.[draftId] ?? {};
+  const issueUrl = ledgerEntry.url ?? null;
   const published = Boolean(issueUrl);
-  return published
-    ? {
-        activePath: null,
-        archivePath: `docs/intake/issue-drafts/archive/${draftId}.md`,
-        issueUrl,
-        published,
-        status: 'published'
-      }
-    : {
-        activePath: `docs/intake/issue-drafts/${draftId}.md`,
-        archivePath: null,
-        issueUrl,
-        published,
-        status: 'candidate'
-      };
+  if (published) {
+    return {
+      activePath: null,
+      archivePath: `docs/intake/issue-drafts/archive/${draftId}.md`,
+      issueUrl,
+      published,
+      status: 'published'
+    };
+  }
+
+  const deferred = ledgerEntry.draftStatus === 'deferred';
+  return {
+    activePath: `docs/intake/issue-drafts/${draftId}.md`,
+    archivePath: null,
+    issueUrl,
+    published,
+    status: deferred ? 'deferred' : 'candidate',
+    ...(deferred && ledgerEntry.deferredReason ? { deferredReason: ledgerEntry.deferredReason } : {})
+  };
 }
 
 function buildDraftMarkdown(draft, docByPath, draftState) {
@@ -480,13 +485,28 @@ function buildDraftMarkdown(draft, docByPath, draftState) {
     const hash = doc ? `; hash ${doc.sha256.slice(0, 12)}` : '';
     return `- \`${sourcePath}\`${hash}: ${reason}`;
   });
+  const deferralNote =
+    draftState.status === 'deferred' && draftState.deferredReason
+      ? `
+## Deferral Note
+
+${draftState.deferredReason}
+`
+      : '';
+  const statusLine = draftState.status === 'deferred' ? '\nStatus: `deferred`' : '';
+  const publishCommand =
+    draftState.published
+      ? 'not applicable; draft already published'
+      : draftState.status === 'deferred'
+        ? 'not applicable; draft deferred'
+        : `gh issue create --title "${draft.title.replaceAll('"', '\\"')}" --body-file docs/intake/issue-drafts/${draft.id}.md --label ${draft.labels.join(',')}`;
 
   return `# ${draft.title}
 
 Issue draft id: \`${draft.id}\`
 Priority: \`${draft.priority}\`
 Effort: \`${draft.effort}\`
-Labels: ${draft.labels.map((label) => `\`${label}\``).join(', ')}
+Labels: ${draft.labels.map((label) => `\`${label}\``).join(', ')}${statusLine}${deferralNote}
 
 ## Problem
 
@@ -514,11 +534,7 @@ ${draft.nonGoals.map((item) => `- ${item}`).join('\n')}
 - Active draft path: \`${draftState.activePath ?? 'archived'}\`
 - Archived draft path: \`${draftState.archivePath ?? 'not archived'}\`
 - GitHub issue: \`${draftState.issueUrl ?? 'pending'}\`
-- Recommended publish command shape: \`${
-    draftState.published
-      ? 'not applicable; draft already published'
-      : `gh issue create --title "${draft.title.replaceAll('"', '\\"')}" --body-file docs/intake/issue-drafts/${draft.id}.md --label ${draft.labels.join(',')}`
-  }\`
+- Recommended publish command shape: \`${publishCommand}\`
 `;
 }
 
@@ -677,12 +693,18 @@ export async function main() {
     const activeFilePath = path.join(draftsRoot, `${draft.id}.md`);
     const archiveFilePath = path.join(archivedDraftsRoot, `${draft.id}.md`);
 
-    issueLedger.issueDrafts[draft.id] = {
+    const draftLedgerEntry = {
       ...(issueLedger.issueDrafts[draft.id] ?? {}),
       activeDraftPath: draftState.activePath,
       archivedDraftPath: draftState.archivePath,
       draftStatus: draftState.status
     };
+    if (draftState.status === 'deferred' && draftState.deferredReason) {
+      draftLedgerEntry.deferredReason = draftState.deferredReason;
+    } else {
+      delete draftLedgerEntry.deferredReason;
+    }
+    issueLedger.issueDrafts[draft.id] = draftLedgerEntry;
 
     if (draftState.published) {
       await writeFile(archiveFilePath, buildDraftMarkdown(draft, docByPath, draftState));
