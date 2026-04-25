@@ -1,6 +1,6 @@
 # Docs Intake Ledger
 
-Generated: 2026-04-24T19:40:24.365Z
+Generated: 2026-04-24T23:43:36.163Z
 
 This is the human-readable companion to `docs/intake/doc-ledger.json`. It is intentionally shallow: hashes and issue references live in JSON; this file is for quick orientation.
 

@@ -34,9 +34,9 @@ Closed hygiene issues #31, #34, #39, and #45 are resolved by the merged sub-agen
 
 | Bucket | Count | Location |
 | --- | ---: | --- |
-| Active issue drafts | 45 | `docs/intake/issue-drafts/*.md` |
+| Active issue drafts | 48 | `docs/intake/issue-drafts/*.md` |
 | Archived/published drafts | 8 | `docs/intake/issue-drafts/archive/*.md` |
-| Docs-intelligence Markdown files | 18 | `docs/intake/docs-intelligence/*.md` |
+| Docs-intelligence Markdown files | 19 | `docs/intake/docs-intelligence/*.md` |
 
 ## Promotion Waves
 
@@ -54,12 +54,23 @@ Promote these first because they are backed by `docs/RFCs/` and are granular eno
 | `omoc-lean-vs-learned-dilemma.md` | Promote as the canonical OMOC routing ADR/research-spike issue. |
 | `swarm-gnosis-public-commons-licensing-undefined.md` | Promote as a Swarm Gnosis governance research issue, gated before public commons work. |
 | `swarm-federation-governance-complexity.md` | Keep staged behind the public commons issue unless it becomes a separate federation-layer ADR. |
+| `omoc-slug-adoption-timing-hydration-quality.md` | Promote or fold into the Tack 1 context-compiler issue as the canonical OQ-4 hydration-quality research spike. |
+| `omoc-swarm-gnosis-eight-spec-proposal-bloat.md` | Keep staged as an ADR/spec-sequencing issue; do not promote until OQ-1/OQ-6 blockers are explicitly linked to ROCK-3201 and ROCK-3205. |
 
 Duplicates to fold before promotion:
 
 | Keep | Fold into it |
 | --- | --- |
 | `omoc-lean-vs-learned-dilemma.md` | `omoc-lean-vs-learned.md`, `omoc-lean-vs-learned-routing-paradigm.md` |
+
+### PR #58 Salvage
+
+PR #58 reprocessed the already-covered OMOC Swarm Gnosis RFC and should be closed or superseded, not merged. Its only retained artifacts are:
+
+| Retained draft | Reason |
+| --- | --- |
+| `omoc-slug-adoption-timing-hydration-quality.md` | Captures OQ-4 as a distinct hydration-quality research spike. |
+| `omoc-swarm-gnosis-eight-spec-proposal-bloat.md` | Captures the unsequenced ROCK-3201 through ROCK-3207 / ENTIF-OMOC-001 spec-suite risk. |
 
 ### Wave 2: Text-Core split issues
 
