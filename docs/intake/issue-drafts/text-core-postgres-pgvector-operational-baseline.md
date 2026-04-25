@@ -16,6 +16,7 @@ Define a standalone draft for the storage and retrieval operational baseline so 
 ## Source Evidence
 
 - `docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md` - Issue Candidates row for Postgres/pgvector operational baseline.
+- `docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md` - M8 gap row links this draft as the support artifact for formalizing migration contracts and pgvector baseline scope.
 - Charter Text-Core exit criteria and Phased Backlog B-011/9.2 are cited in that extraction row.
 
 ## Specific Findings

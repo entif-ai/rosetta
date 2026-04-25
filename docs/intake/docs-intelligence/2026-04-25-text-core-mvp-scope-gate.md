@@ -109,14 +109,14 @@ The Text-Core MVP Scope Gate v0.1 defines what "Text-Core Green" means: a receip
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-| TC-005: Promotion state machine — critical path | implementation | `text-core`, `promotion-state-machine`, P1 | TC-003, TC-004 | Routing states must be explicit and replayable; ambiguous → pending-confirmation; blocked promotion emits refusal receipt |
-| TC-006: Tapestry v1 + Rights retrieval + Postgres/pgvector split scope | implementation | `text-core`, `tapestry`, `storage`, P1 | TC-005 | TC-006 may need split into tapestry v1 plus rights retrieval/storage subtasks if implementation scope grows |
-| TC-007: Chat + arXiv importers + English accompaniment | implementation | `text-core`, `importers`, `english-accompaniment`, P1 | TC-005 | Keep TC-007 to chat/arXiv plus English accompaniment; scope boundary matters |
-| M10 gap: English accompaniment package contract undefined | requirement | `english-accompaniment`, `documentation`, `text-core` | TC-005 | No `packages/english-accompaniment` exists yet; acceptance criteria for M10 not formalized |
-| M8 gap: Postgres/pgvector migration contracts not yet authored | storage | `postgres`, `pgvector`, `migration`, `text-core` | TC-005 | M8 requires migration contracts; current Bootstrap is SQLite — PostgreSQL canonical path undefined |
-| Should-Have items lack implementation owners | backlog | `text-core`, `should-have` | none | GitHub text import, journal import, trust scoring, NERDm adapter all Should-Have with no owners assigned |
+| Title | Type | Draft or Existing Issue | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| TC-005: Promotion state machine — critical path | implementation | #10 | `text-core`, `promotion-state-machine`, P1 | TC-003, TC-004 | Routing states must be explicit and replayable; ambiguous → pending-confirmation; blocked promotion emits refusal receipt |
+| TC-006: Tapestry v1 + Rights retrieval + Postgres/pgvector split scope | implementation | #11 | `text-core`, `tapestry`, `storage`, P1 | TC-005 | TC-006 may need split into tapestry v1 plus rights retrieval/storage subtasks if implementation scope grows |
+| TC-007: Chat + arXiv importers + English accompaniment | implementation | #12 | `text-core`, `importers`, `english-accompaniment`, P1 | TC-005 | Keep TC-007 to chat/arXiv plus English accompaniment; scope boundary matters |
+| M10 gap: English accompaniment package contract undefined | requirement | `docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md` | `english-accompaniment`, `documentation`, `text-core` | TC-005 | No `packages/english-accompaniment` exists yet; acceptance criteria for M10 not formalized |
+| M8 gap: Postgres/pgvector migration contracts not yet authored | storage | `docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md` | `postgres`, `pgvector`, `migration`, `text-core` | TC-005 | M8 requires migration contracts; current Bootstrap is SQLite — PostgreSQL canonical path undefined |
+| Should-Have items lack implementation owners | backlog | `docs/intake/issue-drafts/text-core-should-have-owners.md` | `text-core`, `should-have` | none | GitHub text import, journal import, trust scoring, NERDm adapter all Should-Have with no owners assigned |
 
 ## Project Board Suggestions
 
