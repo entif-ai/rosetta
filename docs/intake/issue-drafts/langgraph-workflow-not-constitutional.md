@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: langgraph-workflow-not-constitutional
 - Title: LangGraph as Workflow Orchestration Layer Only — NOT Constitutional Layer
 - Type: architecture
 - Severity: critical

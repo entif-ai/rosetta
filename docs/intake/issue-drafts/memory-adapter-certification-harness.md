@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: memory-adapter-certification-harness
 - Title: Memory Adapter Certification Harness — Before Any Adapter Gets Power
 - Type: reliability
 - Severity: critical

@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- ID: 
+- ID: skillpack-importer-quarantine-flow
 - Title: Skillpack Importer — Parse → Classify → Quarantine → Certify → Promote
 - Type: implementation
 - Severity: high

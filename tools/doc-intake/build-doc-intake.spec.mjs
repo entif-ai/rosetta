@@ -139,4 +139,26 @@ Date: 2026-04-24
       status: 'candidate'
     });
   });
+
+  it('preserves manually deferred unpublished drafts in the active folder', () => {
+    const state = resolveIssueDraftState('real-acquisition-adapters-behind-refinery-boundary', {
+      issueDrafts: {
+        'real-acquisition-adapters-behind-refinery-boundary': {
+          activeDraftPath: 'docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md',
+          archivedDraftPath: null,
+          draftStatus: 'deferred',
+          deferredReason: 'Overlaps TC-007 until promotion outputs and storage boundaries are explicit.'
+        }
+      }
+    });
+
+    expect(state).toEqual({
+      activePath: 'docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md',
+      archivePath: null,
+      published: false,
+      issueUrl: null,
+      status: 'deferred',
+      deferredReason: 'Overlaps TC-007 until promotion outputs and storage boundaries are explicit.'
+    });
+  });
 });
