@@ -304,5 +304,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
+  },
+  "MOL-005-skill-hardening-threshold": {
+    "number": 180,
+    "state": "open",
+    "title": "[MOL-005] Rosetta Skillpacks Need Hardening Threshold Criteria",
+    "url": "https://github.com/entif-ai/rosetta/issues/180",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-005-skill-hardening-threshold.md",
+    "draftStatus": "published"
   }
 }

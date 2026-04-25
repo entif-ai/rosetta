@@ -522,11 +522,21 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
-    visited-folder cycle detection — folder symlinks/junction points creating cycles
-    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
+  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
+    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
+    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
+  status: active
+- id: MOL-005-skill-hardening-threshold
+  name: Skill Hardening Threshold
+  introduced_by: docs/intake/issue-drafts/MOL-005-skill-hardening-threshold.md
+  introduced_at: '2026-04-25'
+  definition: Criteria for promoting skillpacks from draft to production-ready via
+    success-rate and consecutive-run thresholds, inspired by Moltrons 3-day hardening
+    narrative.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/180
   status: active
 issue_candidates:
 - id: DI-007
