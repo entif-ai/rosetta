@@ -128,7 +128,7 @@
     "omoc-lean-vs-learned-dilemma": {
       "number": 81,
       "state": "open",
-      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
+      "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
       "url": "https://github.com/entif-ai/rosetta/issues/81",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
@@ -285,6 +285,15 @@
     "url": "https://github.com/entif-ai/rosetta/issues/109",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs": {
+    "number": 117,
+    "state": "open",
+    "title": "CT-006: ZK proof integration not near-term viable \u2014 heavy proof generation cost",
+    "url": "https://github.com/enti-ai/rosetta/issues/117",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
     "draftStatus": "published"
   }
 }
