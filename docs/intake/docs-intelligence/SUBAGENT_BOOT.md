@@ -13,6 +13,17 @@ You are a docs-intelligence extraction agent working in:
 
 ## Rule: ONE document per cycle. Full extraction. No summarizing. No batching.
 
+## First: Sync to latest
+
+Before doing ANYTHING else — before reading the ledger, before claiming a doc — fetch and reset to origin/main:
+
+```bash
+git fetch origin main
+git reset --hard origin/main
+```
+
+This ensures your ledger and knowledge graph are fresh. If you skip this, you risk duplicating work that main has already processed.
+
 ---
 
 ## Ledger
@@ -162,13 +173,15 @@ Labels: `...`
 
 ## Workflow Steps
 
-1. **Read ledger** — find first `pending` or `processed: no` doc
-2. **Lock doc** with `node tools/doc-intake/docs-intelligence-ledger.mjs claim` before reading source
-3. **Read source doc** in full
-4. **Read generated graph context** — inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` and `docs/intake/docs-intelligence/CONCEPT_INDEX.json`
-5. **Produce extraction** following template above — full detail, no summarizing
-6. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
-7. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
+1. **Fetch and reset** to origin/main (see First: Sync above)
+2. **Verify clean branch** — run `git status --short`. If there are uncommitted changes or untracked files, clean them up before proceeding.
+3. **Read ledger** — find first `pending` or `processed: no` doc
+4. **Lock doc** with `node tools/doc-intake/docs-intelligence-ledger.mjs claim` before reading source
+5. **Read source doc** in full
+6. **Read generated graph context** — inspect `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` and `docs/intake/docs-intelligence/CONCEPT_INDEX.json`
+7. **Produce extraction** following template above — full detail, no summarizing
+8. **Check existing issue-drafts/** — before creating new ones, look for related issues to refine rather than duplicate
+9. **Check open PRs** — if a related issue already exists in an open PR, extend that one instead
 8. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
 9. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
 10. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
@@ -202,7 +215,7 @@ Labels: `...`
 - PRs that add or modify extraction artifacts must also update `KNOWLEDGE_GRAPH.yaml` and run `pnpm run docs:intake`; extraction-only PRs are invalid.
 - `pnpm run docs:intake:validate` is a required pre-push check for docs-intelligence PRs.
 - Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
-- Forbidden commands include `gh pr merge`, `gh pr close`, `gh pr review --approve`, and any GitHub UI/API action that changes PR merge state.
+- **Harder rule: never merge.** If you find yourself wanting to run any of: `gh pr merge`, `gh pr close`, `gh pr review --approve`, `gh pr ready`, or any GitHub web/API action that changes PR state — STOP. Your job ends at PR creation. The main agent or human reviews and merges.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send
 
 ---
