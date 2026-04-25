@@ -39,8 +39,8 @@ concepts:
   name: Write-Admission Gate
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: '9-step state machine: Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project;
-    fail-closed'
+  definition: "9-step state machine: Propose\u2192Normalize\u2192Authorize\u2192Ground\u2192\
+    Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project; fail-closed"
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
@@ -92,9 +92,10 @@ concepts:
   name: Text-Core MVP
   introduced_by: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   introduced_at: '2026-04-24'
-  definition: Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two
-    text-source families required, deterministic refinery, source→observation→interpretation→tapestry,
-    rights-scoped retrieval, minimum English accompaniment, Postgres/pgvector baseline
+  definition: "Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two\
+    \ text-source families required, deterministic refinery, source\u2192observation\u2192\
+    interpretation\u2192tapestry, rights-scoped retrieval, minimum English accompaniment,\
+    \ Postgres/pgvector baseline"
   extends: []
   referenced_by:
   - docs/backlog/Text-Core MVP Scope Gate
@@ -104,14 +105,14 @@ concepts:
   name: PostgreSQL as Canonical Registry
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: NOT LAME specifies PostgreSQL as canonical registry; SQLite only as
-    local shadow; Bootstrap uses SQLite — migration gap
+  definition: "NOT LAME specifies PostgreSQL as canonical registry; SQLite only as\
+    \ local shadow; Bootstrap uses SQLite \u2014 migration gap"
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
   - docs/governance/AUTHORITY_STACK.md (noted gap)
   status: active
-  note: Migration gap — DI-008 tracks resolution
+  note: "Migration gap \u2014 DI-008 tracks resolution"
 - id: langgraph-workflow-only
   name: LangGraph Workflow-Only
   introduced_by: docs/PRDs/NOT LAME PRD
@@ -145,7 +146,7 @@ concepts:
   referenced_by:
   - docs/governance/AUTHORITY_STACK.md
   status: active
-  note: Shadow-mode lift criteria issue — see DI-007
+  note: "Shadow-mode lift criteria issue \u2014 see DI-007"
 - id: rrp-pack-contract
   name: RRP Pack Filesystem Contract
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -161,8 +162,8 @@ concepts:
   name: RRP pack_id Placeholder
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: pack.json uses 'cid:rrp-pack-placeholder' at freeze time — not a real
-    content-addressed ID; algorithm not specified
+  definition: "pack.json uses 'cid:rrp-pack-placeholder' at freeze time \u2014 not\
+    \ a real content-addressed ID; algorithm not specified"
   extends:
   - rrp-pack-contract
   referenced_by:
@@ -176,8 +177,8 @@ concepts:
   name: Refinement-First Rule
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: Packs MUST extend core semantics without redefining or silently mutating
-    Rosetta core meanings — no automated enforcement mechanism described
+  definition: "Packs MUST extend core semantics without redefining or silently mutating\
+    \ Rosetta core meanings \u2014 no automated enforcement mechanism described"
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -190,8 +191,8 @@ concepts:
   name: PersonaPack Elevated Governance
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: PersonaPack — identity/persona/council pack (non-core; elevated governance
-    applies) — 'elevated governance' is undefined
+  definition: "PersonaPack \u2014 identity/persona/council pack (non-core; elevated\
+    \ governance applies) \u2014 'elevated governance' is undefined"
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -212,8 +213,8 @@ concepts:
   name: recipes/ and skills/ CI Enforcement
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: recipes/ and skills/ are optional subtrees, 'not RRP pack roots' — no
-    CI enforcement; could ship broken recipes/skills undetected
+  definition: "recipes/ and skills/ are optional subtrees, 'not RRP pack roots' \u2014\
+    \ no CI enforcement; could ship broken recipes/skills undetected"
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -345,9 +346,9 @@ concepts:
   name: 'CT-001: Rosetta Network Layer Gap'
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md
   introduced_at: '2026-04-25'
-  definition: Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia
-    DHT + GossipSub) and Rosetta Bootstrap SQLite architecture — requires an architectural
-    decision gate before swarm work can enter the sprint queue.
+  definition: "Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia\
+    \ DHT + GossipSub) and Rosetta Bootstrap SQLite architecture \u2014 requires an\
+    \ architectural decision gate before swarm work can enter the sprint queue."
   referenced_by:
   - https://github.com/entifik-ai/rosetta/issues/84
   status: active
@@ -387,10 +388,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
-    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
-    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
-    a deferred obligation.
+  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
+    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
+    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
+    \ becoming a deferred obligation."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -408,9 +409,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
-    or attestation and therefore no path to trust — creating a bootstrapping paradox
-    that favors early participants and disadvantages newcomers.
+  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
+    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
+    \ paradox that favors early participants and disadvantages newcomers."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -448,9 +449,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
-    or attestation and therefore no path to trust — creating a bootstrapping paradox
-    that favors early participants and disadvantages newcomers.
+  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
+    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
+    \ paradox that favors early participants and disadvantages newcomers."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -480,10 +481,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
-    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
-    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
-    a deferred obligation.
+  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
+    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
+    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
+    \ becoming a deferred obligation."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -491,9 +492,9 @@ concepts:
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
   introduced_at: '2026-04-25'
-  definition: EGC (Epistemic Graph Code) risks becoming an esoteric notation akin
-    to Ithkuil — too complex for practical human contribution. The tension between
-    maximal precision and natural readability is unresolved.
+  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
+    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
+    \ between maximal precision and natural readability is unresolved."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/105
   status: active
@@ -501,11 +502,21 @@ concepts:
   name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
   introduced_at: '2026-04-25'
-  definition: Content-addressed immutable storage (IPFS-style) is fundamentally incompatible
-    with GDPR Article 17 right-to-erasure — once data is pinned, it cannot be technically
-    deleted, only delisted.
+  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
+    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
+    \ be technically deleted, only delisted."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
+  status: active
+- id: ct-006-zk-proofs
+  name: 'CT-006: ZK Proof Integration Not Near-Term Viable'
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md
+  introduced_at: '2026-04-25'
+  definition: ZK-SNARK proof generation is too expensive (seconds to minutes per proof)
+    for near-term adoption in the Cognitive Tiles swarm. Classified as optional future
+    work; WASM sandbox (CT-009) is the near-term path.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/117
   status: active
 - id: berman-box-sync-circular-ref
   name: Box Sync Circular Reference Vulnerability
@@ -519,7 +530,7 @@ concepts:
   status: active
 issue_candidates:
 - id: DI-007
-  title: Sub-agent context isolation — clean boot per cycle
+  title: "Sub-agent context isolation \u2014 clean boot per cycle"
   github: 31
   priority: P1
   type: bug
@@ -528,7 +539,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload.'
 - id: DI-008
-  title: Ledger locking mechanism — mark doc in-flight, dead-letter queue
+  title: "Ledger locking mechanism \u2014 mark doc in-flight, dead-letter queue"
   github: 32
   priority: P1
   type: reliability
@@ -538,7 +549,7 @@ issue_candidates:
   note: 'Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter
     implementation remains open.'
 - id: DI-009
-  title: Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti
+  title: "Internal knowledge graph \u2014 cross-doc concept linking, upgrade to Graphiti"
   github: 33
   priority: P2
   type: knowledge-graph
@@ -557,7 +568,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md.'
 - id: DI-011
-  title: Sub-agents must never merge their own PRs — boundary violation
+  title: "Sub-agents must never merge their own PRs \u2014 boundary violation"
   github: 39
   priority: P1
   type: boundary
@@ -576,7 +587,7 @@ issue_candidates:
   note: 'Closed after PR #48 added candidate-to-draft validation and PR #49 normalized
     remaining OMC/Text-Core draft files.'
 - id: ROCK-3111-C-pack-id-placeholder
-  title: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
+  title: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
   github: null
   priority: P2
   type: implementation
@@ -805,7 +816,7 @@ processed_docs:
   findings: 23
   pr: 37
   issues: 5
-  notes: 'Sub-agent merged PR — DI-011 filed; issue drafts added in PR #44'
+  notes: "Sub-agent merged PR \u2014 DI-011 filed; issue drafts added in PR #44"
 - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   processed_at: 2026-04-24T22:53
   findings: 0
@@ -1007,7 +1018,8 @@ issue_drafts_inventory:
   issue_id: text-core-postgres-pgvector-operational-baseline
   priority: P1
   type: implementation
-  note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
+  note: "Part of Text-Core MVP scope gate \u2014 pgvector baseline required before\
+    \ RC claims"
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1333,6 +1345,9 @@ issue_drafts_inventory:
   issue_id: aiida-workgraph-provenance-reference
   priority: P3
   type: research
+- issue_id: ct-006-zk-proofs
+  url: https://github.com/enti-ai/rosetta/issues/117
+  status: published
 - path: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   source_doc: docs/external/Berman-PRD.md
   issue_id: berman-box-sync-circular-ref

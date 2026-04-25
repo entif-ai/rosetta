@@ -287,6 +287,15 @@
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
     "draftStatus": "published"
   },
+  "2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs": {
+    "number": 117,
+    "state": "open",
+    "title": "CT-006: ZK proof integration not near-term viable \u2014 heavy proof generation cost",
+    "url": "https://github.com/enti-ai/rosetta/issues/117",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
+    "draftStatus": "published"
+  },
   "2026-04-25-berman-box-sync-depth-circular-ref.md": {
     "number": 113,
     "state": "open",
