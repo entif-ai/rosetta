@@ -538,6 +538,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/124
   status: active
+- id: 2026-04-25-berman-env-symlink-ambiguity
+  name: Credential Symlink Ambiguity
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md
+  introduced_at: '2026-04-25'
+  definition: Multiple compatibility symlinks point to ~/.openclaw/.env as the canonical
+    .env, creating ambiguity about which path is authoritative for reads and writes
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/126
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
