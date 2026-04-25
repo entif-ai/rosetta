@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: MOL-004-opentelemetry-skill-audit
+  name: OpenTelemetry Skill Execution Audit
+  introduced_by: docs/intake/issue-drafts/MOL-004-opentelemetry-skill-audit.md
+  introduced_at: '2026-04-25'
+  definition: Adopt OpenTelemetry as the skill execution trace standard to provide
+    replay-level auditability for root-access operations, complementing receipt-level
+    emission with full execution traces.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/178
+  status: active
 - id: berman-fathom-processor-no-rollback
   name: Fathom Processor Transaction Safety
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md
@@ -536,6 +546,7 @@ concepts:
     keys, risking partial CRM updates if Gemini LLM extraction fails mid-operation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/128
+  status: active
 - id: MOL-001-adaptive-memory-loop
   name: Adaptive Memory Self-Evolution Loop
   introduced_by: docs/intake/issue-drafts/MOL-001-adaptive-memory-loop.md
