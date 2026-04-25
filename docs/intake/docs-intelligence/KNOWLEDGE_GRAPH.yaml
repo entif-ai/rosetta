@@ -372,6 +372,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/89
   status: active
+- id: omoc-slug-adoption-timing-hydration-quality
+  name: Slug Adoption Timing vs Hydration Quality
+  introduced_by: docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md
+  introduced_at: '2026-04-25'
+  definition: 'Open question (OQ-4) from OMOC-Swarm Gnosis RFC: when should slugs
+    (compact semantic handles) be adopted relative to hydration pipeline maturity.
+    Risks: fidelity loss, latency spikes, format evolution brittleness. Recommended
+    resolution: dual-track (stable bands primary, slugs experimental) with empirical
+    hydration quality measurement.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/92
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1017,6 +1029,8 @@ issue_drafts_inventory:
   issue_id: omoc-slug-adoption-timing-hydration-quality
   priority: P2
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/92
+  status: published
 - path: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   source_doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
   source_pr: 61
