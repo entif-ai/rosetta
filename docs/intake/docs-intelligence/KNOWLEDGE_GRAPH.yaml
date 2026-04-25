@@ -845,6 +845,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/201
   status: active
+- id: aiida-workgraph-gui-experimental
+  name: "AiiDA-WorkGraph GUI \u2014 Experimental Reference"
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph GUI is explicitly experimental and under active development.
+    Rosetta may learn from its provenance graph visualization approach but should
+    not build hard dependencies on the GUI surface.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/204
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

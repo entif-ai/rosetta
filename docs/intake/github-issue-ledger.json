@@ -628,5 +628,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/ada-orchestrator-mcp.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ada-orchestrator-mcp.md",
     "draftStatus": "published"
+  },
+  "aiida-workgraph-gui-experimental": {
+    "number": 204,
+    "state": "open",
+    "title": "Treat AiiDA-WorkGraph GUI as experimental reference only",
+    "url": "https://github.com/entif-ai/rosetta/issues/204",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-gui-experimental.md",
+    "draftStatus": "published"
   }
 }
