@@ -405,6 +405,36 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/100
   status: active
+- id: ct-002-trust-bootstrap
+  name: CT-002 Trust Bootstrap Problem
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
+  introduced_at: '2026-04-25'
+  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
+    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
+    \ paradox that favors early participants and disadvantages newcomers."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/96
+  status: active
+- id: pro-ext-research-authoritative-baselines-adr-missing
+  name: Authoritative Project Baselines ADR Gap
+  introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+  introduced_at: '2026-04-25'
+  definition: The 21 project baseline documents referenced in the Pro-Extended Research
+    prompt lack a formal ADR establishing them as the authoritative reference for
+    all architectural decisions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/98
+  status: active
+- id: 2026-04-25-pro-ext-research-cas-uri-missing
+  name: cas:// URI scheme undefined
+  introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
+  introduced_at: '2026-04-25'
+  definition: cas:// URI scheme used in receipt/tapestry examples has no formal spec,
+    validation, or ADR. Hash format (multihash vs plain hex) and authority namespace
+    are undefined.
+  referenced_by:
+  - https://github.com/igent-ai/rosetta/issues/103
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1025,6 +1055,8 @@ issue_drafts_inventory:
   issue_id: 2026-04-25-pro-ext-research-cas-uri-missing
   priority: P2
   type: spec-gap
+  url: https://github.com/gent-ai/rosetta/issues/103
+  status: published
 - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-headers-check-missing.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md
@@ -1152,3 +1184,7 @@ issue_drafts_inventory:
   issue_id: trend-technicals-phase-1-mvp-pipeline
   priority: P2
   type: planning
+- issue_id: 2026-04-25-pro-ext-research-authoritative-baselines-adr-missing
+  url: https://github.com/entif-ai/rosetta/issues/98
+  status: published
+  draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
