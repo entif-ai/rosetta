@@ -1222,6 +1222,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-bootstrap-execution-track.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-bootstrap-execution-track.md",
+      "title": "Extraction: BOOTSTRAP_EXECUTION_TRACK.md",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-cognitive-tiles-swarm-gnosis.md",
       "sourcePath": "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
       "title": "Docs Intelligence Extraction",
@@ -3135,6 +3141,12 @@
       "title": "backup-strategy-no-automation",
       "labels": [],
       "signature": "automation-backup-strategy"
+    },
+    {
+      "path": "docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md",
+      "title": "BE-001 — Receipt Law Not Explicit in Bootstrap Governance",
+      "labels": [],
+      "signature": "001-bootstrap-explicit-governance-law"
     },
     {
       "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
