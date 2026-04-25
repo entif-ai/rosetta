@@ -1007,6 +1007,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/223
   status: active
+- id: am-003-nonce-store-replay-detection
+  name: Nonce Store for Distributed Replay Protection
+  introduced_by: docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md
+  introduced_at: '2026-04-25'
+  definition: A storage backend for tracking used nonces per sender to prevent replay
+    attacks in the Agentic Messaging system. Requires TTL-based expiry aligned with
+    message expires_at, multi-node consistency, and replay_hits telemetry.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/226
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
