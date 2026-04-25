@@ -646,5 +646,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-infrastructure-dependencies.md",
     "draftStatus": "published"
+  },
+  "aiida-workgraph-provenance-reference.md": {
+    "number": 204,
+    "state": "open",
+    "title": "Catalog AiiDA-WorkGraph as a provenance reference architecture",
+    "url": "https://github.com/enti-ai/rosetta/issues/204",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-provenance-reference.md",
+    "draftStatus": "published"
   }
 }

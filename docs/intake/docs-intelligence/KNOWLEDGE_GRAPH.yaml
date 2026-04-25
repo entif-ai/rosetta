@@ -865,6 +865,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/207
   status: active
+- id: aiida-workgraph-provenance-reference
+  name: AiiDA-WorkGraph Provenance Reference
+  introduced_by: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+  introduced_at: '2026-04-25'
+  definition: AiiDA-WorkGraph auto-generates provenance graphs from task wiring; catalogued
+    as reference architecture for Rosetta receipt-law, not an implementation dependency.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/204
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1684,6 +1693,8 @@ issue_drafts_inventory:
   issue_id: aiida-workgraph-provenance-reference
   priority: P3
   type: research
+  url: https://github.com/enti-ai/rosetta/issues/204
+  status: published
 - issue_id: ct-006-zk-proofs
   url: https://github.com/enti-ai/rosetta/issues/117
   status: published
