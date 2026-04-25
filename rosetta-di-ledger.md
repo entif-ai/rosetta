@@ -7,13 +7,13 @@
 ## Meta
 
 - repo: /Users/cr8s/.openclaw/workspace/Code/rosetta
-- last_updated: 2026-04-25T03:23Z
+- last_updated: 2026-04-25T04:14Z
 - total_docs_known: 128
-- total_processed: 19
+- total_processed: 22
 - current_batch: batch-3-active
-- telegram_dm_status: sent_8740875131_2026-04-25T22:20
+- telegram_dm_status: failed_cross-context_2026-04-25T23:52
 - last_telegram_batched_update: null
-- runs_since_last_batched_update: 0
+- runs_since_last_batched_update: 2
 - heartbeat_interval: 10 minutes
 - hourly_batched_update: every 6 runs (60 min)
 - cycle_rule: ONE document per sub-agent cycle — no batching, no summarizing; full extraction + refined issue draft per doc
@@ -119,7 +119,7 @@ One PR per cycle.
 | 4 | 2026-04-24T21:54 | docs/governance/DONOR_FIT_MAP.md | 7 | no (cross-context denied) | second-pass full extraction; 7 findings; 3 issue candidates |
 | 5 | 2026-04-24T23:45 | 1 doc: 20260423 - Chat GPT - Agentic Orchestration Failures.md | 13 | yes (per-cycle) | full extraction; 35 findings; 9 issue candidates; PR #50 |
 | 6 | 2026-04-24T23:58 | 1 doc: 20260412 - ChatGPT - Ontologies and Dataset Repositories.md | 15 | pending | full extraction; 14 findings; 2 issue drafts (Source Substrate domain gap + anti-personhood-correlation governance); PR #51 |
-| 8 | 2026-04-25T21:09 | 1 doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md | 20 | yes | DUPLICATE ESCAPE: source was already processed in PR #30 and later covered again in PR #53; do not merge PR #58 as-is. Salvage only genuinely new issue-draft material, then close/supersede. |
+| 9 | 2026-04-25T04:14 | 1 doc: Semantic Audio Cognition Framework.md | 22 | yes | full extraction; 14 findings; 4 issue drafts (SAC-001 through SAC-004); critical DI-012 collision on voice fingerprinting; PR #86 |
 
 ## Per-Document Processing Log
 
@@ -153,12 +153,12 @@ One PR per cycle.
 | docs/chats/20260410 - PRD Blueprint for Rosetta and Entif - ChatGPT - Deep Research Report.md | locked:2026-04-25T21:45:00Z:agent:main:subagent:7ee6d271-522b-43a5-ba0b-5ee542f8fe24:docs-intelligence/prd-blueprint-deep-research | 0 | - | - | - | Batch 3 | - |
 | docs/ideas/Attention-as-Capital Analytics Platform.md | yes | 0 | 42 | 1 | attention-capital, real-time-pipeline, neo4j, redpanda, python, rust, d3js, privacy, metrics, gdpr | full extraction; 42 findings; 1 issue draft (AC-001 — standalone nature needs integration design); PR #56 | 2026-04-25T21:50 |
 | docs/ideas/Real-Time Ingestion and Analytics Pipeline.md | processed | 0 | 0 | 0 | real-time-pipeline, ingestion, analytics, neo4j, redpanda | Batch 4 exploratory idea; already extracted (extraction predates this ledger entry) | 2026-04-25T02:28:30Z |
-| docs/ideas/Semantic Audio Cognition Framework.md | processed | 0 | 0 | 0 | semantic-audio, cognition, personal-chat | personal/emotional chat content; not appropriate for DI extraction; no Rosetta technical content | 2026-04-25T02:28:40Z |
-| docs/ideas/Treating Trends Tantamount to Trading Technicals.md | processed | 0 | 0 | 0 | trends, trading, personal-chat | personal creative ideation chat; not appropriate for DI extraction | 2026-04-25T02:28:55Z |
-| docs/ideas/Idea - Spatial Data Fabric (SDF) - Mixed-Reality Performance Stage (20251106).md | processed | 0 | 0 | 0 | spatial-data-fabric, mixed-reality, personal-chat | personal creative studio chat; not appropriate for DI extraction | 2026-04-25T02:29:05Z |
-| docs/external/Attention Residuals (AttnRes) - Kimi.md | no | 0 | 0 | 0 | attention-residuals, kimi, external-ref | pending | - |
+| docs/ideas/Semantic Audio Cognition Framework.md | yes | 0 | 14 | 4 | semantic-audio-cognition, psychoacoustic-divination, audio-cognition, ithkuil, prosodic-signature, biometric-fingerprinting, stem-isolation, emotional-geometry, cross-modal-parity, source-identity, anti-personhood-correlation | batch-4; 14 findings incl critical DI-012 collision; 4 issue drafts (SAC-001 through SAC-004); PR #86 | 2026-04-25T04:14Z |
+| docs/ideas/Treating Trends Tantamount to Trading Technicals.md | yes | 0 | 18 | 3 | trends, trading, black-swan, dalio-cycles, attention-capital, graph-database, neo4j, bio-inspired, ant-colony, bee-pollination, friston, free-energy, tribal, content-metadata, llm, ontological-classification | batch-4; 18 findings incl novel field claim, graph DB pipeline, bio-inspired algorithm proposals; 3 issue drafts (AC-001 through AC-003); PR #91 | 2026-04-25T04:35Z |
+| docs/ideas/Idea - Spatial Data Fabric (SDF) - Mixed-Reality Performance Stage (20251106).md | locked:2026-04-25T04:10:00Z:agent:main:subagent:docs-intelligence/spatial-data-fabric | 0 | - | - | - | Batch 4 — lock expired, skipping | - |
+| docs/external/Attention Residuals (AttnRes) - Kimi.md | yes | 0 | 8 | 3 | attention-residuals, kimi, block-attention, prenorm-dilution, depth-aggregation, memory-plane-3, tapestry, competitive-intelligence | Batch 5 external; 8 findings; AR-001 depth aggregation, AR-002 block size model, AR-003 Kimi tracking | 2026-04-25T03:32Z |
 | docs/external/Berman-PRD.md | no | 0 | 0 | 0 | berman, prd, external-ref | pending | - |
-| docs/external/DeerFlow Architecture.md | no | 0 | 0 | 0 | deerflow, architecture, external-ref | pending | - |
+| docs/external/DeerFlow Architecture.md | yes | 0 | 25 | 14 | deerflow, architecture, external-ref, langgraph-workflow, harness-app-split, middleware-chain, sandbox-isolation, memory-structured, subagent-delegation, im-channels, embedded-client | full extraction; 25 findings; 14 issue candidates (DF-001 through DF-014); PR #83 | 2026-04-25T23:52Z |
 | docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md | no | 0 | 0 | 0 | entif-2.0, external-advancements, research | pending; large file | - |
 | docs/external/Moltron.md | no | 0 | 0 | 0 | moltron, external-ref | pending | - |
 | docs/external/SwarmKit.md | no | 0 | 0 | 0 | swarmkit, external-ref | pending | - |
