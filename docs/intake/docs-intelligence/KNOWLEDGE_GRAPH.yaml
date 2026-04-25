@@ -395,6 +395,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
+- id: ct-002-trust-bootstrap
+  name: CT-002 Trust Bootstrap Problem
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
+  introduced_at: '2026-04-25'
+  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
+    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
+    \ paradox that favors early participants and disadvantages newcomers."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/96
+  status: active
 - id: pro-ext-research-authoritative-baselines-adr-missing
   name: Authoritative Project Baselines ADR Gap
   introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
