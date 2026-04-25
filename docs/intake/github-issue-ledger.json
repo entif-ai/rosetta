@@ -709,5 +709,86 @@
     "activeDraftPath": "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-003-nonce-store-replay-detection.md",
     "draftStatus": "published"
+  },
+  "soul-v4-challenge-tier-1-self-contradiction": {
+    "number": 234,
+    "state": "open",
+    "title": "SOUL-v4: T1 challenge framework conflicts with selfhood protection",
+    "url": "https://github.com/entif-ai/rosetta/issues/234",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-challenge-tier-1-self-contradiction.md",
+    "draftStatus": "published"
+  },
+  "df-006-docs-policy-no-ci.md": {
+    "number": 236,
+    "state": "open",
+    "title": "Documentation update policy has no CI enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/236",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-006-docs-policy-no-ci.md",
+    "draftStatus": "published"
+  },
+  "df-013-dangling-toolcall-no-replay": {
+    "number": 238,
+    "state": "open",
+    "title": "DF-013: DanglingToolCall middleware marks interrupted tool calls but doesn't replay them",
+    "url": "https://github.com/entif-ai/rosetta/issues/238",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-013-dangling-toolcall-no-replay.md",
+    "draftStatus": "published"
+  },
+  "rosetta-v3-004-conformance-test-harness": {
+    "number": 240,
+    "state": "open",
+    "title": "ROSETTA-v3-004: Conformance Test Harness Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/240",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-004-conformance-test-harness.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-acpx-adopt-as-delegation-mechanism": {
+    "number": 243,
+    "state": "open",
+    "title": "ACP-001: Adopt acpx as Rosetta's Standard Agent Delegation Mechanism (Replace PTY Scraping)",
+    "url": "https://github.com/entif-ai/rosetta/issues/243",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-adopt-as-delegation-mechanism.md",
+    "draftStatus": "published"
+  },
+  "video-transcript-dedup-playlist-tracking.md": {
+    "number": 246,
+    "state": "open",
+    "title": "Video Transcript Deduplication by Canonical Video ID + Playlist Attachment Tracking",
+    "url": "https://github.com/enti-ai/rosetta/issues/246",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/video-transcript-dedup-playlist-tracking.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-acpx-config-layering-rosetta-alignment.md": {
+    "number": 249,
+    "state": "open",
+    "title": "ACPX-003: Align Rosetta Config Layering with acpx's Global/Project/CLI Override Pattern",
+    "url": "https://github.com/entif-ai/rosetta/issues/249",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-config-layering-rosetta-alignment.md",
+    "draftStatus": "published"
+  },
+  "ccf-003-no-board-state-formalization": {
+    "number": 252,
+    "state": "open",
+    "title": "CCF-003: No Board State Formalization",
+    "url": "https://github.com/entif-ai/rosetta/issues/252",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-003-no-board-state-formalization.md",
+    "draftStatus": "published"
+  },
+  "cheap-first-routing-policy.md": {
+    "number": 254,
+    "state": "open",
+    "title": "Implement cheap-first routing policy with budget header",
+    "url": "https://github.com/enti-ai/rosetta/issues/254",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cheap-first-routing-policy.md",
+    "draftStatus": "published"
   }
 }
