@@ -128,7 +128,7 @@
     "omoc-lean-vs-learned-dilemma": {
       "number": 81,
       "state": "open",
-      "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
+      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
       "url": "https://github.com/entif-ai/rosetta/issues/81",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
@@ -137,7 +137,7 @@
     "swarm-gnosis-public-commons-licensing-undefined": {
       "number": 87,
       "state": "open",
-      "title": "[RFC \u00a718 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
+      "title": "[RFC §18 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
       "url": "https://github.com/entif-ai/rosetta/issues/87",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-gnosis-public-commons-licensing-undefined.md",
@@ -155,7 +155,7 @@
     "omoc-slug-adoption-timing-hydration-quality": {
       "number": 92,
       "state": "open",
-      "title": "OQ-4: Slug Adoption Timing vs Hydration Quality \u2014 Unresolved",
+      "title": "OQ-4: Slug Adoption Timing vs Hydration Quality — Unresolved",
       "url": "https://github.com/entif-ai/rosetta/issues/92",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-slug-adoption-timing-hydration-quality.md",
@@ -209,7 +209,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap": {
     "number": 84,
     "state": "open",
-    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "title": "CT-001: Rosetta network layer gap — Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
     "url": "https://github.com/entifik-ai/rosetta/issues/84",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
@@ -218,7 +218,7 @@
   "omoc-swarm-gnosis-eight-spec-proposal-bloat": {
     "number": 94,
     "state": "open",
-    "title": "OMOC Swarm Gnosis \u00a717: 8 Proposed Specs Uncommitted \u2014 Proposal Bloat Risk",
+    "title": "OMOC Swarm Gnosis §17: 8 Proposed Specs Uncommitted — Proposal Bloat Risk",
     "url": "https://github.com/entif-ai/rosetta/issues/94",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
@@ -236,7 +236,7 @@
   "ac-001-attention-capital-integration": {
     "number": 100,
     "state": "open",
-    "title": "AC-001: Attention Capital Platform \u2014 Integration Design Needed Before Commitment",
+    "title": "AC-001: Attention Capital Platform — Integration Design Needed Before Commitment",
     "url": "https://github.com/entif-ai/rosetta/issues/100",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-integration.md",
@@ -245,7 +245,7 @@
   "ct-002-trust-bootstrap": {
     "number": 96,
     "state": "open",
-    "title": "CT-002: Trust bootstrap problem \u2014 new nodes have no reputation in fully open network",
+    "title": "CT-002: Trust bootstrap problem — new nodes have no reputation in fully open network",
     "url": "https://github.com/entif-ai/rosetta/issues/96",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
@@ -281,7 +281,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap": {
     "number": 109,
     "state": "open",
-    "title": "CT-005: Economic persistence gap \u2014 no token/payment system; unpopular data may disappear",
+    "title": "CT-005: Economic persistence gap — no token/payment system; unpopular data may disappear",
     "url": "https://github.com/entif-ai/rosetta/issues/109",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
@@ -290,7 +290,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs": {
     "number": 117,
     "state": "open",
-    "title": "CT-006: ZK proof integration not near-term viable \u2014 heavy proof generation cost",
+    "title": "CT-006: ZK proof integration not near-term viable — heavy proof generation cost",
     "url": "https://github.com/enti-ai/rosetta/issues/117",
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
@@ -362,7 +362,7 @@
   "RPP-task-numbering-reference.md": {
     "number": 182,
     "state": "open",
-    "title": "Define RPP Task Numbering Reference (Tasks 1\u201319)",
+    "title": "Define RPP Task Numbering Reference (Tasks 1–19)",
     "url": "https://github.com/entif-ai/rosetta/issues/182",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RPP-task-numbering-reference.md",
@@ -371,7 +371,7 @@
   "2026-04-25-berman-e2e-tier3-cost-tracking": {
     "number": 124,
     "state": "open",
-    "title": "E2E Tier 3 cost tracking missing \u2014 ~$2-3/run could reach $100-150/month",
+    "title": "E2E Tier 3 cost tracking missing — ~$2-3/run could reach $100-150/month",
     "url": "https://github.com/entif-ai/rosetta/issues/124",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-e2e-tier3-cost-tracking.md",
@@ -380,7 +380,7 @@
   "ac-001-attention-capital-prior-art": {
     "number": 185,
     "state": "open",
-    "title": "AC-001: Attention Capital Platform \u2014 Prior Art Search",
+    "title": "AC-001: Attention Capital Platform — Prior Art Search",
     "url": "https://github.com/entif-ai/rosetta/issues/185",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-prior-art.md",
@@ -389,7 +389,7 @@
   "2026-04-25-berman-env-symlink-ambiguity.md": {
     "number": 126,
     "state": "open",
-    "title": "Credential symlink ambiguity \u2014 which .env is authoritative?",
+    "title": "Credential symlink ambiguity — which .env is authoritative?",
     "url": "https://github.com/entif-ai/rosetta/issues/126",
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-env-symlink-ambiguity.md",
@@ -672,6 +672,42 @@
     "url": "https://github.com/entif-ai/rosetta/issues/214",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/backup-strategy-no-automation.md",
+    "draftStatus": "published"
+  },
+  "AR-002-block-size-tapestry-cost-model.md": {
+    "number": 218,
+    "state": "open",
+    "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
+    "url": "https://github.com/enti-ai/rosetta/issues/218",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/AR-002-block-size-tapestry-cost-model.md",
+    "draftStatus": "published"
+  },
+  "am-001-json-schema-missing.md": {
+    "number": 220,
+    "state": "open",
+    "title": "AM-001: Formal JSON Schema for Agentic Messaging Envelope and Message Types",
+    "url": "https://github.com/entif-ai/rosetta/issues/220",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-001-json-schema-missing.md",
+    "draftStatus": "published"
+  },
+  "am-002-quarantine-canonical-storage-gap": {
+    "number": 223,
+    "state": "open",
+    "title": "AM-002: Quarantine-to-Canonical Write Gate and Storage Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/223",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-002-quarantine-canonical-storage-gap.md",
+    "draftStatus": "published"
+  },
+  "am-003-nonce-store-replay-detection.md": {
+    "number": 226,
+    "state": "open",
+    "title": "AM-003: Nonce Store Specification for Distributed Replay Protection",
+    "url": "https://github.com/entif-ai/rosetta/issues/226",
+    "activeDraftPath": "docs/intake/issue-drafts/am-003-nonce-store-replay-detection.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-003-nonce-store-replay-detection.md",
     "draftStatus": "published"
   }
 }
