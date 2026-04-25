@@ -1058,6 +1058,59 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/240
   status: active
+- id: 2026-04-25-acpx-adopt-as-delegation-mechanism
+  name: acpx as Delegation Mechanism
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-adopt-as-delegation-mechanism.md
+  introduced_at: '2026-04-25'
+  definition: Evaluate adopting acpx (headless ACP CLI client) as Rosetta's primary
+    mechanism for delegating to coding agents, replacing fragile PTY-scraping patterns
+    with structured ACP JSON messaging.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/243
+  status: active
+- id: video-transcript-dedup-playlist-tracking
+  name: Video Transcript Deduplication by Canonical Video ID + Playlist Attachment
+    Tracking
+  introduced_by: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+  introduced_at: '2026-04-25'
+  definition: "Store YouTube transcripts keyed by canonical video ID (not URL) to\
+    \ prevent duplicate transcription. When a video appears in a new playlist, add\
+    \ a playlist attachment edge \u2014 do not re-transcribe."
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/246
+  status: active
+- id: 2026-04-25-acpx-config-layering-rosetta-alignment
+  name: Config Layering Standard (acpx pattern)
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-config-layering-rosetta-alignment.md
+  introduced_at: '2026-04-25'
+  definition: "Adopt acpx three-tier config precedence (global \u2192 project \u2192\
+    \ CLI flags) as the standard configuration pattern for Rosetta tools."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/249
+  status: active
+- id: ccf-003-no-board-state-formalization
+  name: Board State Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
+  introduced_at: '2026-04-25'
+  definition: The central input for commitment sizing in the Consensus-First Commitment
+    Framework. Characterizes opportunity magnitude, time sensitivity, competitive
+    pressure, known edges, edge durability, resource posture, loss tolerance, regulatory/trust
+    constraints, and portfolio opportunity cost. Has no formal data structure or tooling
+    representation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/252
+  status: active
+- id: cheap-first-routing-policy
+  name: Cheap-First Routing Policy
+  introduced_by: docs/intake/issue-drafts/cheap-first-routing-policy.md
+  introduced_at: '2026-04-25'
+  definition: Model routing policy that defaults to cheap/fast tier, escalates to
+    mid-tier only on low-confidence signal from cheap model, and to heavy only on
+    low-confidence from mid-tier. Every call carries a budget header with token metering
+    and cost-per-outcome recording.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/254
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1690,6 +1743,8 @@ issue_drafts_inventory:
   issue_id: video-transcript-dedup-playlist-tracking
   priority: P3
   type: implementation
+  url: https://github.com/enti-ai/rosetta/issues/246
+  status: published
 - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
   source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
   source_pr: 51
@@ -1925,7 +1980,8 @@ issue_drafts_inventory:
   issue_id: ccf-003-no-board-state-formalization
   priority: P1
   type: architecture
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/252
 - path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-004-no-premortem-practice
