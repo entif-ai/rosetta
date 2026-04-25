@@ -176,7 +176,10 @@ concepts:
     referenced_by:
       - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
       - docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md
+      - https://github.com/entif-ai/rosetta/issues/71
     status: active
+    promoted: "2026-04-25"
+    promoted_as: "https://github.com/entif-ai/rosetta/issues/71"
 
   - id: persona-pack-elevated-governance
     name: PersonaPack Elevated Governance
