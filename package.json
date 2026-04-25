@@ -12,6 +12,8 @@
     "build": "pnpm run affected:build",
     "demo": "pnpm exec nx sync && pnpm exec nx build rosetta-cli && node apps/rosetta-cli/dist/main.js",
     "docs:intake": "pnpm exec nx run doc-intake:generate",
+    "docs:intelligence": "pnpm exec nx run doc-intake:intelligence",
+    "docs:intake:validate": "pnpm exec nx run doc-intake:validate-intelligence",
     "graph": "pnpm exec nx graph",
     "lint": "pnpm run affected:lint",
     "lint:full": "pnpm exec nx run-many -t lint --all --parallel=3",

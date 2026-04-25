@@ -1,6 +1,6 @@
 # Docs Intake Ledger
 
-Generated: 2026-04-24T18:29:17.039Z
+Generated: 2026-04-25T02:03:45.516Z
 
 This is the human-readable companion to `docs/intake/doc-ledger.json`. It is intentionally shallow: hashes and issue references live in JSON; this file is for quick orientation.
 
@@ -26,7 +26,7 @@ This is the human-readable companion to `docs/intake/doc-ledger.json`. It is int
 
 | Date | Freshness | Path | Words | Status |
 | --- | --- | --- | ---: | --- |
-| 2026-04-24 | current | `docs/handoffs/CURRENT_HANDOFF.md` | 1113 | indexed |
+| 2026-04-25 | current | `docs/handoffs/CURRENT_HANDOFF.md` | 1229 | indexed |
 | 2026-04-13 | current | `docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md` | 6124 | indexed |
 | 2026-04-13 | current | `docs/governance/20260412 - Source Registry and Repository Profile Annex.md` | 1288 | indexed |
 | 2026-04-13 | undated-import | `docs/governance/AUTHORITY_STACK.md` | 210 | indexed |

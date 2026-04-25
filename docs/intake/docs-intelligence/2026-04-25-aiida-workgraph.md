@@ -91,11 +91,11 @@ AiiDA-WorkGraph is a Python library for building, executing, and monitoring scal
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-| AiiDA-WorkGraph provenance pattern as Rosetta receipt-law reference architecture | research | provenance, workflow, reference-architecture | — | WorkGraph auto-generates provenance graphs from task wiring. Rosetta's receipt law has the same goal. This doc could be catalogued as a reference architecture rather than a system to re-implement | |
-| AiiDA dependency chain (PostgreSQL + RabbitMQ) must be explicitly modeled in Rosetta infrastructure requirements | architecture | infrastructure, dependencies, rabbitmq, postgresql | — | WorkGraph requires full AiiDA stack (PostgreSQL + RabbitMQ). Rosetta NOT LAME specifies PostgreSQL but omits message broker. If AiiDA execution model is borrowed, broker requirement must be explicit | |
-| WorkGraph GUI is experimental — do not build hard dependencies | risk | gui, experimental, stability | — | "The GUI is an experimental feature and is under active development." Any Rosetta UI reference to WorkGraph GUI patterns should carry a prominent stability warning | |
+| Title | Type | Draft or Existing Issue | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| AiiDA-WorkGraph provenance pattern as Rosetta receipt-law reference architecture | research | `docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md` | provenance, workflow, reference-architecture | — | WorkGraph auto-generates provenance graphs from task wiring. Rosetta's receipt law has the same goal. This doc could be catalogued as a reference architecture rather than a system to re-implement |
+| AiiDA dependency chain (PostgreSQL + RabbitMQ) must be explicitly modeled in Rosetta infrastructure requirements | architecture | `docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md` | infrastructure, dependencies, rabbitmq, postgresql | — | WorkGraph requires full AiiDA stack (PostgreSQL + RabbitMQ). Rosetta NOT LAME specifies PostgreSQL but omits message broker. If AiiDA execution model is borrowed, broker requirement must be explicit |
+| WorkGraph GUI is experimental — do not build hard dependencies | risk | `docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md` | gui, experimental, stability | — | "The GUI is an experimental feature and is under active development." Any Rosetta UI reference to WorkGraph GUI patterns should carry a prominent stability warning |
 
 ---
 
