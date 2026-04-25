@@ -656,6 +656,185 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
+- id: 2026-04-25-entif-2-0-enriched-fastmcp-evaluation
+  name: "Issue Draft: E2E-003 \u2014 Evaluate FastMCP vs TypeScript MCP SDK for Custom\
+    \ Server Implementations"
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-fastmcp-evaluation.md
+  introduced_at: '2026-04-25'
+  definition: Entif 2.0 Enriched recommends FastMCP (Python) for building custom MCP
+    servers. No TypeScript evaluation was performed. We need a structured comparison
+    before committing to a framework for the six pro
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/152
+  status: active
+- id: 2026-04-25-entif-2-0-enriched-ithkuil-deprecation
+  name: "Issue Draft: E2E-005 \u2014 Deprecate Ithkuil Semantics \u2014 Migrate to\
+    \ WordNet/BabelNet/SyntagNet/VerbAtlas"
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-ithkuil-deprecation.md
+  introduced_at: '2026-04-25'
+  definition: 'Entif 2.0 Enriched explicitly deprecates the Ithkuil-based semantic
+    engine in favor of standards-based resources: WordNet, BabelNet (multilingual),
+    SyntagNet (collocation constraints), and VerbAtlas ('
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/154
+  status: active
+- id: 2026-04-25-entif-2-0-enriched-memory-forge-alignment
+  name: "Issue Draft: E2E-004 \u2014 Design MemoryForge Alignment with Rosetta 3-Memory-Plane\
+    \ + Memory-Sovereignty-Map"
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-memory-forge-alignment.md
+  introduced_at: '2026-04-25'
+  definition: Entif 2.0 Enriched proposes MemoryForge as a unified memory layer (KG
+    entities + semantic bundles + vectors + episodic logs + scheduled consolidation).
+    Rosetta already defines a 3-memory-plane model a
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/156
+  status: active
+- id: 2026-04-25-entif-2-0-enriched-receipt-schema
+  name: "Issue Draft: E2E-001 \u2014 Adopt Canonical Receipt Schema"
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-receipt-schema.md
+  introduced_at: '2026-04-25'
+  definition: "Entif 2.0 Enriched establishes a canonical data shape: `session \u2192\
+    \ task \u2192 step \u2192 artifact \u2192 check \u2192 outcome \u2192 receipt`.\
+    \ This should be adopted as the universal receipt contract across all Rosetta\
+    \ compo"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/158
+  status: active
+- id: 2026-04-25-pro-ext-research-headers-check-missing
+  name: 'Issue Draft: Missing `headers-check` Nx executor implementation'
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-headers-check-missing.md
+  introduced_at: '2026-04-25'
+  definition: 'Issue Draft: Missing `headers-check` Nx executor implementation'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/160
+  status: active
+- id: 2026-04-25-pro-ext-research-known-red-tests-policy-missing
+  name: 'Issue Draft: Missing `known-red-tests` policy definition and documentation'
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-known-red-tests-policy-missing.md
+  introduced_at: '2026-04-25'
+  definition: 'Issue Draft: Missing `known-red-tests` policy definition and documentation'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/162
+  status: active
+- id: 2026-04-25-pro-ext-research-python-boundary-enforcement-missing
+  name: 'Issue Draft: Missing Python package boundary enforcement mechanism'
+  introduced_by: docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-python-boundary-enforcement-missing.md
+  introduced_at: '2026-04-25'
+  definition: 'Issue Draft: Missing Python package boundary enforcement mechanism'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/164
+  status: active
+- id: AR-003-kimi-competitive-tracking
+  name: 'AR-003: Track Kimi Team Publications for Competitive Gap Analysis'
+  introduced_by: docs/intake/issue-drafts/archive/AR-003-kimi-competitive-tracking.md
+  introduced_at: '2026-04-25'
+  definition: 'AR-003: Track Kimi Team Publications for Competitive Gap Analysis'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/169
+  status: active
+- id: MOL-002-skill-git-versioning
+  name: 'MOL-002: Rosetta Skill-Packs Need Git-Backed Version Control'
+  introduced_by: docs/intake/issue-drafts/archive/MOL-002-skill-git-versioning.md
+  introduced_at: '2026-04-25'
+  definition: Moltron versions skill artifacts in Git for rollback, audit, and cross-agent
+    replication. Rosetta's constitutional layer is Git-backed, but skill-pack artifacts
+    have no explicit versioning strategy. T
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/173
+  status: active
+- id: MOL-003-skill-runtime-contract
+  name: 'MOL-003: SmythOS vs. Rosetta Skill Execution Runtime Contract'
+  introduced_by: docs/intake/issue-drafts/archive/MOL-003-skill-runtime-contract.md
+  introduced_at: '2026-04-25'
+  definition: Moltron compiles skills to SmythOS executable workflows. Rosetta has
+    no defined skill execution runtime. This issue proposes defining a Rosetta-native
+    skill execution contract so that Moltron-style sk
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/175
+  status: active
+- id: ac-003-bio-inspired-trend-algorithms
+  name: "Issue Draft: AC-003 \u2014 Bio-Inspired Algorithms for Memetic Trend Discovery"
+  introduced_by: docs/intake/issue-drafts/archive/ac-003-bio-inspired-trend-algorithms.md
+  introduced_at: '2026-04-25'
+  definition: "The \"Treating Trends Tantamount to Trading Technicals\" framework\
+    \ proposes using ant colony optimization and bee pollination algorithms to model\
+    \ recency/freshness decay in memetic systems \u2014 finding opt"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/189
+  status: active
+- id: authority-stack-gaps
+  name: Authority Stack Issues
+  introduced_by: docs/intake/issue-drafts/archive/authority-stack-gaps.md
+  introduced_at: '2026-04-25'
+  definition: Authority Stack Issues
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/41
+  status: active
+- id: canonical-cache-persistence
+  name: Persist canonical corpus cache beyond the in-memory slice
+  introduced_by: docs/intake/issue-drafts/archive/canonical-cache-persistence.md
+  introduced_at: '2026-04-25'
+  definition: Persist canonical corpus cache beyond the in-memory slice
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/8
+  status: active
+- id: coverage-thresholds-and-acceptance-matrices
+  name: Add coverage reporting and package acceptance matrices
+  introduced_by: docs/intake/issue-drafts/archive/coverage-thresholds-and-acceptance-matrices.md
+  introduced_at: '2026-04-25'
+  definition: Add coverage reporting and package acceptance matrices
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/43
+  status: active
+- id: docs-intelligence-first-pass
+  name: DI-001 First docs-intelligence extraction pass
+  introduced_by: docs/intake/issue-drafts/archive/docs-intelligence-first-pass.md
+  introduced_at: '2026-04-25'
+  definition: DI-001 First docs-intelligence extraction pass
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/23
+  status: active
+- id: expand-pack-schemas-and-shacl-source-artifacts
+  name: Expand pack schemas and SHACL coverage for receipts and source artifacts
+  introduced_by: docs/intake/issue-drafts/archive/expand-pack-schemas-and-shacl-source-artifacts.md
+  introduced_at: '2026-04-25'
+  definition: Expand pack schemas and SHACL coverage for receipts and source artifacts
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/42
+  status: active
+- id: lean-validation-loop-and-local-receipts
+  name: Re-run lean validation loop and checkpoint local receipts
+  introduced_by: docs/intake/issue-drafts/archive/lean-validation-loop-and-local-receipts.md
+  introduced_at: '2026-04-25'
+  definition: Re-run lean validation loop and checkpoint local receipts
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/3
+  status: active
+- id: rock-3111-c-pack-id-placeholder
+  name: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  introduced_by: docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md
+  introduced_at: '2026-04-25'
+  definition: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID\
+    \ at freeze"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/69
+  status: active
+- id: rock-3111-c-persona-pack-governance
+  name: PersonaPack "elevated governance" is undefined
+  introduced_by: docs/intake/issue-drafts/archive/rock-3111-c-persona-pack-governance.md
+  introduced_at: '2026-04-25'
+  definition: PersonaPack "elevated governance" is undefined
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/77
+  status: active
+- id: text-core-mvp-scope-gate
+  name: Define Text-Core MVP scope gate from governing docs
+  introduced_by: docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md
+  introduced_at: '2026-04-25'
+  definition: Define Text-Core MVP scope gate from governing docs
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/11
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
