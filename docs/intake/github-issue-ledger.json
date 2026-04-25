@@ -322,7 +322,7 @@
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-fathom-processor-no-rollback.md",
     "draftStatus": "published"
-  },dd
+  },
   "MOL-001-adaptive-memory-loop": {
     "number": 171,
     "state": "open",
@@ -393,6 +393,15 @@
     "url": "https://github.com/entif-ai/rosetta/issues/126",
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-env-symlink-ambiguity.md",
+    "draftStatus": "published"
+  },
+  "acpx-session-metadata-schema.md": {
+    "number": 193,
+    "state": "open",
+    "title": "Document acpx Session Metadata Schema for Interop",
+    "url": "https://github.com/entif-ai/rosetta/issues/193",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/acpx-session-metadata-schema.md",
     "draftStatus": "published"
   }
 }
