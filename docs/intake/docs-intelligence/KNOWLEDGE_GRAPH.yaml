@@ -342,6 +342,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/81
   status: active
+- id: swarm-gnosis-public-commons-licensing-undefined
+  name: Swarm Gnosis Public Commons Licensing and Governance
+  introduced_by: docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md
+  introduced_at: '2026-04-25'
+  definition: The Swarm Gnosis federation model's layer 5 (public commons / open swarm)
+    lacks a defined licensing and governance model, blocking artifact attribution,
+    abuse-handling, and verifier surface trust anchoring.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/87
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
