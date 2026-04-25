@@ -1088,6 +1088,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/249
   status: active
+- id: ccf-003-no-board-state-formalization
+  name: Board State Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
+  introduced_at: '2026-04-25'
+  definition: The central input for commitment sizing in the Consensus-First Commitment
+    Framework. Characterizes opportunity magnitude, time sensitivity, competitive
+    pressure, known edges, edge durability, resource posture, loss tolerance, regulatory/trust
+    constraints, and portfolio opportunity cost. Has no formal data structure or tooling
+    representation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/252
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1957,7 +1969,8 @@ issue_drafts_inventory:
   issue_id: ccf-003-no-board-state-formalization
   priority: P1
   type: architecture
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/252
 - path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-004-no-premortem-practice

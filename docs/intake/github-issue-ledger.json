@@ -772,5 +772,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-config-layering-rosetta-alignment.md",
     "draftStatus": "published"
+  },
+  "ccf-003-no-board-state-formalization": {
+    "number": 252,
+    "state": "open",
+    "title": "CCF-003: No Board State Formalization",
+    "url": "https://github.com/entif-ai/rosetta/issues/252",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-003-no-board-state-formalization.md",
+    "draftStatus": "published"
   }
 }
