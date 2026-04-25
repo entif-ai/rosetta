@@ -1,17 +1,11 @@
 meta:
-  version: '0.9'
+  version: '0.8'
   generated: '2026-04-25T07:36:47Z'
-  total_docs_processed: 30
-  active_issue_drafts: 104
+  total_docs_processed: 29
+  active_issue_drafts: 94
   archived_issue_drafts: 23
-  total_- path: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  processed_at: 2026-04-25T16:14:00Z
-  findings: 50
-  pr: null
-  issues: 10
-  notes: 'Extraction: 50 findings, 10 issue drafts (ccf-001 through ccf-010); PR pending.'
-issue_drafts_inventory: 127
-  docs_intelligence_files: 30
+  total_issue_drafts_inventory: 117
+  docs_intelligence_files: 29
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -45,8 +39,8 @@ concepts:
   name: Write-Admission Gate
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "9-step state machine: Propose\u2192Normalize\u2192Authorize\u2192Ground\u2192\
-    Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project; fail-closed"
+  definition: '9-step state machine: Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project;
+    fail-closed'
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
@@ -98,10 +92,9 @@ concepts:
   name: Text-Core MVP
   introduced_by: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   introduced_at: '2026-04-24'
-  definition: "Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two\
-    \ text-source families required, deterministic refinery, source\u2192observation\u2192\
-    interpretation\u2192tapestry, rights-scoped retrieval, minimum English accompaniment,\
-    \ Postgres/pgvector baseline"
+  definition: Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two
+    text-source families required, deterministic refinery, source→observation→interpretation→tapestry,
+    rights-scoped retrieval, minimum English accompaniment, Postgres/pgvector baseline
   extends: []
   referenced_by:
   - docs/backlog/Text-Core MVP Scope Gate
@@ -111,14 +104,14 @@ concepts:
   name: PostgreSQL as Canonical Registry
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "NOT LAME specifies PostgreSQL as canonical registry; SQLite only as\
-    \ local shadow; Bootstrap uses SQLite \u2014 migration gap"
+  definition: NOT LAME specifies PostgreSQL as canonical registry; SQLite only as
+    local shadow; Bootstrap uses SQLite — migration gap
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
   - docs/governance/AUTHORITY_STACK.md (noted gap)
   status: active
-  note: "Migration gap \u2014 DI-008 tracks resolution"
+  note: Migration gap — DI-008 tracks resolution
 - id: langgraph-workflow-only
   name: LangGraph Workflow-Only
   introduced_by: docs/PRDs/NOT LAME PRD
@@ -152,7 +145,7 @@ concepts:
   referenced_by:
   - docs/governance/AUTHORITY_STACK.md
   status: active
-  note: "Shadow-mode lift criteria issue \u2014 see DI-007"
+  note: Shadow-mode lift criteria issue — see DI-007
 - id: rrp-pack-contract
   name: RRP Pack Filesystem Contract
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -168,8 +161,8 @@ concepts:
   name: RRP pack_id Placeholder
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "pack.json uses 'cid:rrp-pack-placeholder' at freeze time \u2014 not\
-    \ a real content-addressed ID; algorithm not specified"
+  definition: pack.json uses 'cid:rrp-pack-placeholder' at freeze time — not a real
+    content-addressed ID; algorithm not specified
   extends:
   - rrp-pack-contract
   referenced_by:
@@ -183,8 +176,8 @@ concepts:
   name: Refinement-First Rule
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "Packs MUST extend core semantics without redefining or silently mutating\
-    \ Rosetta core meanings \u2014 no automated enforcement mechanism described"
+  definition: Packs MUST extend core semantics without redefining or silently mutating
+    Rosetta core meanings — no automated enforcement mechanism described
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -197,8 +190,8 @@ concepts:
   name: PersonaPack Elevated Governance
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "PersonaPack \u2014 identity/persona/council pack (non-core; elevated\
-    \ governance applies) \u2014 'elevated governance' is undefined"
+  definition: PersonaPack — identity/persona/council pack (non-core; elevated governance
+    applies) — 'elevated governance' is undefined
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -219,8 +212,8 @@ concepts:
   name: recipes/ and skills/ CI Enforcement
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "recipes/ and skills/ are optional subtrees, 'not RRP pack roots' \u2014\
-    \ no CI enforcement; could ship broken recipes/skills undetected"
+  definition: recipes/ and skills/ are optional subtrees, 'not RRP pack roots' — no
+    CI enforcement; could ship broken recipes/skills undetected
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -352,9 +345,9 @@ concepts:
   name: 'CT-001: Rosetta Network Layer Gap'
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md
   introduced_at: '2026-04-25'
-  definition: "Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia\
-    \ DHT + GossipSub) and Rosetta Bootstrap SQLite architecture \u2014 requires an\
-    \ architectural decision gate before swarm work can enter the sprint queue."
+  definition: Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia
+    DHT + GossipSub) and Rosetta Bootstrap SQLite architecture — requires an architectural
+    decision gate before swarm work can enter the sprint queue.
   referenced_by:
   - https://github.com/entifik-ai/rosetta/issues/84
   status: active
@@ -394,10 +387,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -415,9 +408,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -455,9 +448,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -487,10 +480,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -498,9 +491,9 @@ concepts:
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
   introduced_at: '2026-04-25'
-  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
-    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
-    \ between maximal precision and natural readability is unresolved."
+  definition: EGC (Epistemic Graph Code) risks becoming an esoteric notation akin
+    to Ithkuil — too complex for practical human contribution. The tension between
+    maximal precision and natural readability is unresolved.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/105
   status: active
@@ -508,9 +501,9 @@ concepts:
   name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
   introduced_at: '2026-04-25'
-  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
-    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
-    \ be technically deleted, only delisted."
+  definition: Content-addressed immutable storage (IPFS-style) is fundamentally incompatible
+    with GDPR Article 17 right-to-erasure — once data is pinned, it cannot be technically
+    deleted, only delisted.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
   status: active
@@ -528,9 +521,9 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
-    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
-    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
+  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
+    visited-folder cycle detection — folder symlinks/junction points creating cycles
+    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
@@ -567,9 +560,9 @@ concepts:
   name: 14-Day / NOT LAME Milestone Alignment
   introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
   introduced_at: '2026-04-25'
-  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
-    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
-    \ and establish single-source-of-truth ownership for shared capabilities."
+  definition: Cross-reference between the 14-day compounding plan milestones (D1–D10)
+    and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts, and
+    establish single-source-of-truth ownership for shared capabilities.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/150
   status: active
@@ -597,9 +590,9 @@ concepts:
   name: RPP Task Numbering Reference
   introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
   introduced_at: '2026-04-25'
-  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
-    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
-    \ A canonical task map is required to make the sequencing constraint enforceable."
+  definition: The Pro-tier Deep Research Master Prompt (RPP) sequences work across
+    19 numbered tasks in Phase 6, but no document defines what tasks 1–19 are. A canonical
+    task map is required to make the sequencing constraint enforceable.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/182
   status: active
@@ -617,9 +610,9 @@ concepts:
   name: Attention Capital Platform Prior Art Research
   introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   introduced_at: '2026-04-25'
-  definition: "Research to validate novelty claims for the Attention Capital Analytics\
-    \ Platform before committing roadmap resources \u2014 covers academic literature,\
-    \ competitive landscape, patents, and OSS projects."
+  definition: Research to validate novelty claims for the Attention Capital Analytics
+    Platform before committing roadmap resources — covers academic literature, competitive
+    landscape, patents, and OSS projects.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/185
   status: active
@@ -655,16 +648,15 @@ concepts:
   name: Graph Database Retrieval Pipeline
   introduced_by: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
   introduced_at: '2026-04-25'
-  definition: "Neo4j-based retrieval pipeline for relational trend data using Personalized\
-    \ PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,\
-    \ and temporal graph networks \u2014 superior to TopK nearest-neighbor similarity\
-    \ search"
+  definition: Neo4j-based retrieval pipeline for relational trend data using Personalized
+    PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,
+    and temporal graph networks — superior to TopK nearest-neighbor similarity search
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
 - id: 2026-04-25-entif-2-0-enriched-fastmcp-evaluation
-  name: "Issue Draft: E2E-003 \u2014 Evaluate FastMCP vs TypeScript MCP SDK for Custom\
-    \ Server Implementations"
+  name: 'Issue Draft: E2E-003 — Evaluate FastMCP vs TypeScript MCP SDK for Custom
+    Server Implementations'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-fastmcp-evaluation.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched recommends FastMCP (Python) for building custom MCP
@@ -674,8 +666,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/152
   status: active
 - id: 2026-04-25-entif-2-0-enriched-ithkuil-deprecation
-  name: "Issue Draft: E2E-005 \u2014 Deprecate Ithkuil Semantics \u2014 Migrate to\
-    \ WordNet/BabelNet/SyntagNet/VerbAtlas"
+  name: 'Issue Draft: E2E-005 — Deprecate Ithkuil Semantics — Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-ithkuil-deprecation.md
   introduced_at: '2026-04-25'
   definition: 'Entif 2.0 Enriched explicitly deprecates the Ithkuil-based semantic
@@ -685,8 +676,8 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/154
   status: active
 - id: 2026-04-25-entif-2-0-enriched-memory-forge-alignment
-  name: "Issue Draft: E2E-004 \u2014 Design MemoryForge Alignment with Rosetta 3-Memory-Plane\
-    \ + Memory-Sovereignty-Map"
+  name: 'Issue Draft: E2E-004 — Design MemoryForge Alignment with Rosetta 3-Memory-Plane
+    + Memory-Sovereignty-Map'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-memory-forge-alignment.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched proposes MemoryForge as a unified memory layer (KG
@@ -696,13 +687,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/156
   status: active
 - id: 2026-04-25-entif-2-0-enriched-receipt-schema
-  name: "Issue Draft: E2E-001 \u2014 Adopt Canonical Receipt Schema"
+  name: 'Issue Draft: E2E-001 — Adopt Canonical Receipt Schema'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-receipt-schema.md
   introduced_at: '2026-04-25'
-  definition: "Entif 2.0 Enriched establishes a canonical data shape: `session \u2192\
-    \ task \u2192 step \u2192 artifact \u2192 check \u2192 outcome \u2192 receipt`.\
-    \ This should be adopted as the universal receipt contract across all Rosetta\
-    \ compo"
+  definition: 'Entif 2.0 Enriched establishes a canonical data shape: `session → task
+    → step → artifact → check → outcome → receipt`. This should be adopted as the
+    universal receipt contract across all Rosetta compo'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/158
   status: active
@@ -759,12 +749,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/175
   status: active
 - id: ac-003-bio-inspired-trend-algorithms
-  name: "Issue Draft: AC-003 \u2014 Bio-Inspired Algorithms for Memetic Trend Discovery"
+  name: 'Issue Draft: AC-003 — Bio-Inspired Algorithms for Memetic Trend Discovery'
   introduced_by: docs/intake/issue-drafts/archive/ac-003-bio-inspired-trend-algorithms.md
   introduced_at: '2026-04-25'
-  definition: "The \"Treating Trends Tantamount to Trading Technicals\" framework\
-    \ proposes using ant colony optimization and bee pollination algorithms to model\
-    \ recency/freshness decay in memetic systems \u2014 finding opt"
+  definition: The "Treating Trends Tantamount to Trading Technicals" framework proposes
+    using ant colony optimization and bee pollination algorithms to model recency/freshness
+    decay in memetic systems — finding opt
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/189
   status: active
@@ -817,11 +807,10 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/3
   status: active
 - id: rock-3111-c-pack-id-placeholder
-  name: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  name: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   introduced_by: docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md
   introduced_at: '2026-04-25'
-  definition: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID\
-    \ at freeze"
+  definition: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/69
   status: active
@@ -841,58 +830,109 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/11
   status: active
-- id: 2026-04-25-ada-orchestrator-mcp
-  name: Ada Orchestrator MCP CRUD Surface
-  introduced_by: docs/intake/issue-drafts/ada-orchestrator-mcp.md
+- id: ccf-001-no-phase-transition-enforcement
+  name: No Phase-Transition Enforcement Mechanism
+  introduced_by: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
   introduced_at: '2026-04-25'
-  definition: Ada orchestrator needs an MCP tool surface (list_agents, create_agent,
-    command_agent, observe, summarize, read_file, write_file) for machine-readable
-    CRUD over sub-agents with path fencing and receipt ledger logging.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/201
+  definition: 'The Consensus-First Commitment Scoping Framework v0.1 asserts as a
+    hard rule: "no transition (ideation → spec, spec → build, build → GA, etc.) is
+    automatic." The spec defines four mandatory questions '
+  referenced_by: []
   status: active
-- id: aiida-workgraph-gui-experimental
-  name: "AiiDA-WorkGraph GUI \u2014 Experimental Reference"
-  introduced_by: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+- id: ccf-002-no-formal-consensus-protocol
+  name: No Formal Consensus Protocol
+  introduced_by: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
   introduced_at: '2026-04-25'
-  definition: AiiDA-WorkGraph GUI is explicitly experimental and under active development.
-    Rosetta may learn from its provenance graph visualization approach but should
-    not build hard dependencies on the GUI surface.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/204
+  definition: 'The framework defines operational consensus as three-part: (1) group
+    understands the proposal, (2) strongest informed objection articulated and understood,
+    (3) next step explicitly agreed as ready eve'
+  referenced_by: []
   status: active
-- id: aiida-workgraph-infrastructure-dependencies
-  name: AiiDA-WorkGraph Infrastructure Dependencies
-  introduced_by: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+- id: ccf-003-no-board-state-formalization
+  name: No Board State Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
   introduced_at: '2026-04-25'
-  definition: AiiDA-WorkGraph requires PostgreSQL plus RabbitMQ as a message broker
-    for task dispatch and async execution. Rosetta must explicitly model the broker
-    dependency when borrowing WorkGraph execution patterns.
-  referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/207
+  definition: 'The framework defines "Board State" as the central input for commitment
+    sizing: "The current strategic situation characterized by opportunity magnitude,
+    time sensitivity, competitive pressure, known e'
+  referenced_by: []
   status: active
-- id: aiida-workgraph-provenance-reference
-  name: AiiDA-WorkGraph Provenance Reference
-  introduced_by: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+- id: ccf-004-no-premortem-practice
+  name: No Premortem Practice
+  introduced_by: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   introduced_at: '2026-04-25'
-  definition: AiiDA-WorkGraph auto-generates provenance graphs from task wiring; catalogued
-    as reference architecture for Rosetta receipt-law, not an implementation dependency.
-  referenced_by:
-  - https://github.com/enti-ai/rosetta/issues/204
+  definition: 'The framework references premortem as a core anti-delusion mechanism:
+    "assume failure date, list plausible causes, rank by likelihood and impact" and
+    requires it "at major bet-size increases." A templ'
+  referenced_by: []
   status: active
-- id: anti-personhood-correlation-governance-gap
-  name: Anti-Personhood-Correlation Constraint
-  introduced_by: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+- id: ccf-005-no-evidence-ledger-implementation
+  name: No Evidence Ledger Implementation
+  introduced_by: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
   introduced_at: '2026-04-25'
-  definition: Governance constraint prohibiting the use of identity correlation infrastructure
-    to construct cognitive profiles or correlate anonymous/pseudonymous discourse
-    to identified individuals without consent.
+  definition: 'The Evidence Ledger is defined as a required artifact with seven mandatory
+    fields per entry: claim statement, evidence type, source provenance, credibility
+    score, incentive/bias notes, confidence leve'
+  referenced_by: []
+  status: active
+- id: ccf-006-no-exit-pivot-trigger-formalization
+  name: No Exit/Pivot Trigger Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
+  introduced_at: '2026-04-25'
+  definition: 'The Exit/Pivot/Salvage Plan requires four trigger sets (enter/continue/pivot/exit)
+    each with: metric/signal, threshold(s), decision owner, containment steps, and
+    salvage paths. This is the primary def'
+  referenced_by: []
+  status: active
+- id: ccf-007-no-spec-by-fluent-synthesis-enforcement
+  name: No "Spec by Fluent Synthesis" Enforcement
+  introduced_by: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
+  introduced_at: '2026-04-25'
+  definition: 'The framework explicitly forbids "spec by fluent synthesis": "Any non-trivial
+    claim in a spec must have a ledger entry (or be labeled as hypothesis)." It also
+    requires the agent to "express confidence'
+  referenced_by: []
+  status: active
+- id: ccf-008-no-anti-motivated-reasoning-automation
+  name: No Anti-Motivated Reasoning Automation
+  introduced_by: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
+  introduced_at: '2026-04-25'
+  definition: 'The framework defines four anti-motivated reasoning guardrails: explicit
+    incentive notes in Evidence Ledger, premortems at bet-size increases, Team A/Team
+    B or devil''s advocacy on contested decisions,'
+  referenced_by: []
+  status: active
+- id: ccf-009-no-contrarian-protected-channel-formalization
+  name: No Contrarian Protected Channel Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
+  introduced_at: '2026-04-25'
+  definition: 'The framework designates contrarian input as a "protected channel"
+    because organizations often punish or eject people who see problems early. It
+    specifies that protection means: capture, comprehension'
+  referenced_by: []
+  status: active
+- id: ccf-010-consensus-first-framework-not-adopted
+  name: Consensus-First Framework Not Adopted
+  introduced_by: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  introduced_at: '2026-04-25'
+  definition: 'The Consensus-First Commitment Scoping Framework v0.1 exists as a formal
+    document defining five required artifacts, phase-transition handshake, calibration
+    loop, and anti-delusion mechanisms. None of '
+  referenced_by: []
+  status: active
+- id: backup-strategy-no-automation
+  name: Backup Strategy Lacks Automation and Freshness Guarantees
+  introduced_by: docs/intake/issue-drafts/backup-strategy-no-automation.md
+  introduced_at: '2026-04-25'
+  definition: The UPSTREAM_AND_BACKUP_PLAN mirrors the authority stack to Open Brain
+    and Drive but specifies no sync cadence, automation, or freshness SLA, leaving
+    the external mirror potentially stale or unavailable without detection.
   referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/210
+  - https://github.com/entif-ai/rosetta/issues/214
   status: active
 issue_candidates:
 - id: DI-007
-  title: "Sub-agent context isolation \u2014 clean boot per cycle"
+  title: Sub-agent context isolation — clean boot per cycle
   github: 31
   priority: P1
   type: bug
@@ -901,7 +941,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload.'
 - id: DI-008
-  title: "Ledger locking mechanism \u2014 mark doc in-flight, dead-letter queue"
+  title: Ledger locking mechanism — mark doc in-flight, dead-letter queue
   github: 32
   priority: P1
   type: reliability
@@ -911,7 +951,7 @@ issue_candidates:
   note: 'Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter
     implementation remains open.'
 - id: DI-009
-  title: "Internal knowledge graph \u2014 cross-doc concept linking, upgrade to Graphiti"
+  title: Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti
   github: 33
   priority: P2
   type: knowledge-graph
@@ -930,7 +970,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md.'
 - id: DI-011
-  title: "Sub-agents must never merge their own PRs \u2014 boundary violation"
+  title: Sub-agents must never merge their own PRs — boundary violation
   github: 39
   priority: P1
   type: boundary
@@ -949,7 +989,7 @@ issue_candidates:
   note: 'Closed after PR #48 added candidate-to-draft validation and PR #49 normalized
     remaining OMC/Text-Core draft files.'
 - id: ROCK-3111-C-pack-id-placeholder
-  title: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  title: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   github: null
   priority: P2
   type: implementation
@@ -993,78 +1033,6 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
-
-- id: consensus-first-framework
-  name: Consensus-First Commitment Scoping Framework
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: v0.1 framework for agentic commitment sizing: five required artifacts, phase-transition handshake, commitment calibration loop, and AI-specific safeguards
-  extends: []
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-board-state
-  name: Board State
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Strategic situation characterized by opportunity magnitude, time sensitivity, competitive pressure, edge durability, loss tolerance, regulatory/trust constraints, portfolio opportunity cost
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-wager-sizing
-  name: Wager Sizing
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Interpretable rubric (Low/Medium/High per dimension) for commitment sizing; plain-English decision rule; maps to real-options
-  extends:
-  - consensus-first-framework
-  - real-options
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-evidence-ledger
-  name: Evidence Ledger
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: 'Required artifact: every claim needs claim statement, evidence type, source provenance, credibility score, incentive/bias notes, confidence level, disconfirmers; primary anti-hallucination mechanism'
-  extends:
-  - consensus-first-framework
-  - receipt-law
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-phase-transition-handshake
-  name: Phase-Transition Handshake
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Hard rule: no phase transition (ideation/spec/build/GA) is automatic; requires explicit affirmative on four questions including strongest-informed-objection comprehension and two-way/one-way door classification
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-anti-motivated-reasoning-guardrails
-  name: Anti-Motivated Reasoning Guardrails
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Four required mechanisms: explicit incentive notes in Evidence Ledger, premortems at bet-size increases, Team A/Team B or devil's advocacy on contested decisions, explicit disconfirmers and what-would-change-our-mind statements
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
-- id: ccf-protected-dissent-channel
-  name: Protected Dissent Channel
-  introduced_by: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  introduced_at: '2026-04-25'
-  definition: Contrarian input protected channel with four-step protocol: capture, comprehension, structured challenge, explicit disposition; comprehension step mandatory before proceeding; not automatic deference
-  extends:
-  - consensus-first-framework
-  referenced_by:
-  - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  status: active
 pr_state:
   open:
   - pr: 62
@@ -1250,7 +1218,7 @@ processed_docs:
   findings: 23
   pr: 37
   issues: 5
-  notes: "Sub-agent merged PR \u2014 DI-011 filed; issue drafts added in PR #44"
+  notes: 'Sub-agent merged PR — DI-011 filed; issue drafts added in PR #44'
 - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   processed_at: 2026-04-24T22:53
   findings: 0
@@ -1366,6 +1334,21 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
+- path: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  title: Consensus-First Commitment Scoping Framework v0.1
+  type: PRD
+  extracted_at: '2026-04-25'
+  concepts:
+  - ccf-001-no-phase-transition-enforcement
+  - ccf-002-no-formal-consensus-protocol
+  - ccf-003-no-board-state-formalization
+  - ccf-004-no-premortem-practice
+  - ccf-005-no-evidence-ledger-implementation
+  - ccf-006-no-exit-pivot-trigger-formalization
+  - ccf-007-no-spec-by-fluent-synthesis-enforcement
+  - ccf-008-no-anti-motivated-reasoning-automation
+  - ccf-009-no-contrarian-protected-channel-formalization
+  - ccf-010-consensus-first-framework-not-adopted
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -1452,8 +1435,7 @@ issue_drafts_inventory:
   issue_id: text-core-postgres-pgvector-operational-baseline
   priority: P1
   type: implementation
-  note: "Part of Text-Core MVP scope gate \u2014 pgvector baseline required before\
-    \ RC claims"
+  note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1526,6 +1508,8 @@ issue_drafts_inventory:
   issue_id: backup-strategy-no-automation
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/214
+  status: published
 - path: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
@@ -1603,8 +1587,6 @@ issue_drafts_inventory:
   issue_id: anti-personhood-correlation-governance-gap
   priority: P1
   type: governance
-  url: https://github.com/entif-ai/rosetta/issues/210
-  status: published
 - path: docs/intake/issue-drafts/RPP-task-numbering-reference.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md
@@ -1783,8 +1765,6 @@ issue_drafts_inventory:
   issue_id: aiida-workgraph-provenance-reference
   priority: P3
   type: research
-  url: https://github.com/enti-ai/rosetta/issues/204
-  status: published
 - issue_id: ct-006-zk-proofs
   url: https://github.com/enti-ai/rosetta/issues/117
   status: published
@@ -1799,75 +1779,44 @@ issue_drafts_inventory:
   draft_path: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   url: https://github.com/entif-ai/rosetta/issues/185
   status: published
+- issue_id: ccf-001-no-phase-transition-enforcement
+  draft_path: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
+  url: null
+  status: active
+- issue_id: ccf-002-no-formal-consensus-protocol
+  draft_path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
+  url: null
+  status: active
+- issue_id: ccf-003-no-board-state-formalization
+  draft_path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
+  url: null
+  status: active
+- issue_id: ccf-004-no-premortem-practice
+  draft_path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
+  url: null
+  status: active
+- issue_id: ccf-005-no-evidence-ledger-implementation
+  draft_path: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
+  url: null
+  status: active
+- issue_id: ccf-006-no-exit-pivot-trigger-formalization
+  draft_path: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
+  url: null
+  status: active
+- issue_id: ccf-007-no-spec-by-fluent-synthesis-enforcement
+  draft_path: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
+  url: null
+  status: active
+- issue_id: ccf-008-no-anti-motivated-reasoning-automation
+  draft_path: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
+  url: null
+  status: active
+- issue_id: ccf-009-no-contrarian-protected-channel-formalization
+  draft_path: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
+  url: null
+  status: active
+- issue_id: ccf-010-consensus-first-framework-not-adopted
+  draft_path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  url: null
+  status: active
 
-
-- path: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-001-no-phase-transition-enforcement
-  priority: P1
-  type: architecture
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-002-no-formal-consensus-protocol
-  priority: P1
-  type: governance
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-003-no-board-state-formalization
-  priority: P1
-  type: architecture
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-004-no-premortem-practice
-  priority: P2
-  type: process-orchestration
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-005-no-evidence-ledger-implementation
-  priority: P1
-  type: evidence-management
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-006-no-exit-pivot-trigger-formalization
-  priority: P1
-  type: process-orchestration
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-007-no-spec-by-fluent-synthesis-enforcement
-  priority: P1
-  type: llm-workflow
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-008-no-anti-motivated-reasoning-automation
-  priority: P2
-  type: governance
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-009-no-contrarian-protected-channel-formalization
-  priority: P2
-  type: governance
-  status: candidate
-- path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
-  source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
-  source_pr: null
-  issue_id: ccf-010-consensus-first-framework-not-adopted
-  priority: P0
-  type: planning
-  status: candidate
