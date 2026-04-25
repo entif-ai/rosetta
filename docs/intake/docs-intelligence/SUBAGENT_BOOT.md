@@ -67,6 +67,8 @@ This prevents duplicate work.
 - **Extraction artifact:** `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
   (e.g., `2026-04-24-authority-stack.md`)
 - **Issue drafts:** `docs/intake/issue-drafts/<issue-topic>.md` (one file per distinct issue)
+- **Knowledge graph:** `docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml`
+- **Generated intake ledger:** `docs/intake/doc-ledger.json` and companion `docs/intake/doc-ledger.md`, checked by `pnpm run docs:intake`
 - **Branch convention:** `docs-intelligence/<doc-name>` (slug of source doc name, no spaces)
 - **PR target:** `main` branch
 
@@ -170,16 +172,19 @@ Labels: `...`
 8. **Write extraction** to `docs/intake/docs-intelligence/YYYY-MM-DD-short-name.md`
 9. **Write issue drafts** to `docs/intake/issue-drafts/<topic>.md` (one per issue)
 10. **Validate issue-draft coverage** — every extraction-table row with type `issue-candidate` or `draft candidate` must have a matching file in `docs/intake/issue-drafts/`, or an explicit link to an existing GitHub issue/comment target
-11. **Regenerate graph context** — run `pnpm run docs:intelligence`
-12. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
-13. **Commit** extraction + issue drafts + regenerated graph context + any updated docs
-14. **Push branch**
-15. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
-16. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
-17. **Update ledger** with `node tools/doc-intake/docs-intelligence-ledger.mjs complete`
-18. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
-19. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
-20. **Compact context** — end your turn with only the confirmation, no residual context
+11. **Update `KNOWLEDGE_GRAPH.yaml`** — processed doc, PR state, and issue draft inventory must reflect the cycle
+12. **Run `pnpm run docs:intake`** — refresh `docs/intake/doc-ledger.json` and `docs/intake/doc-ledger.md` when source-doc indexing changes; if it produces no diff because only `docs/intake/` artifacts changed, say so in the PR body
+13. **Regenerate graph context** — run `pnpm run docs:intelligence`
+14. **Run `pnpm run docs:intake:validate`** — this must pass before push
+15. **Create branch** `docs-intelligence/<doc-name-slug>` from `main`
+16. **Commit** extraction + issue drafts + knowledge graph + generated graph context + generated ledger updates
+17. **Push branch**
+18. **Create PR** to `main` via `gh pr create` with title "docs(intake): <doc-name> — N findings, M issues"
+19. **Stop at PR creation** — do not merge, squash, rebase-merge, close, or approve any PR
+20. **Update ledger** with `node tools/doc-intake/docs-intelligence-ledger.mjs complete`
+21. **Send Telegram DM** to `8740875131`: "Doc: <doc-name.md> | Findings: N | Total: X/128"
+22. **If runs_since_last_batched_update == 6** — send hourly digest, reset counter
+23. **Compact context** — end your turn with only the confirmation, no residual context
 
 ---
 
@@ -194,6 +199,8 @@ Labels: `...`
 - Check `CYCLE_SUMMARY.md` and `CONCEPT_INDEX.json` before creating new issue drafts
 - For every issue candidate in the extraction, create a corresponding file in `docs/intake/issue-drafts/<slug>.md` before pushing. Zero candidates is fine; zero files when candidates exist is a violation. Exception: if a related GitHub issue already exists, link to it in the extraction instead of creating a new draft file.
 - Before pushing, count issue-candidate/draft-candidate rows in the extraction and count the matching issue-draft files or explicit existing-issue targets. They must match.
+- PRs that add or modify extraction artifacts must also update `KNOWLEDGE_GRAPH.yaml` and run `pnpm run docs:intake`; extraction-only PRs are invalid.
+- `pnpm run docs:intake:validate` is a required pre-push check for docs-intelligence PRs.
 - Sub-agents create PRs only. They must never merge, squash-merge, rebase-merge, close, approve, or mark PRs ready for merge.
 - Forbidden commands include `gh pr merge`, `gh pr close`, `gh pr review --approve`, and any GitHub UI/API action that changes PR merge state.
 - Sub-agents must send Telegram DMs to main agent, not directly — main handles the send

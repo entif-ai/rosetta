@@ -86,6 +86,17 @@ Examples:
 - `2026-04-24-batch-1-highest-authority-rosetta-direction.md`
 - `2026-04-25-not-lame-prd-extraction.md`
 
+## Required Companion Artifacts
+
+A docs-intelligence PR is incomplete unless it includes all required companion artifacts for the extraction it adds or changes:
+
+- one extraction artifact under `docs/intake/docs-intelligence/`
+- one issue draft under `docs/intake/issue-drafts/` for every issue-candidate row, unless that row links to an existing GitHub issue
+- an updated `docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml`
+- a `pnpm run docs:intake` run; if generated ledgers do not change because only `docs/intake/` artifacts changed, say that explicitly in the PR body
+
+Do not open a PR with an extraction artifact only. That is a failed cycle, even if the extraction itself is useful.
+
 ## Required Reading
 
 Read these first:
@@ -155,6 +166,11 @@ Avoid broad commands like "build this system" or "implement everything."
 Before handing off:
 
 - extraction file exists and uses the template
+- every issue-candidate row names a matching issue draft file or existing GitHub issue
+- every named issue draft file exists under `docs/intake/issue-drafts/`
+- `docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml` is updated for processed docs, PR state, and draft inventory
+- `pnpm run docs:intake` has been run; note when it produces no generated diff
+- `pnpm run docs:intake:validate` passes
 - source paths are exact
 - every non-obvious claim has evidence
 - low-confidence findings are marked `low`

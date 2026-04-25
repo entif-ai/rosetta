@@ -3,13 +3,13 @@
 # Updated after every extraction cycle
 
 meta:
-  version: "0.6"
-  generated: "2026-04-25T02:10:00Z"
-  total_docs_processed: 22
-  active_issue_drafts: 51
+  version: "0.7"
+  generated: "2026-04-25T02:45:00Z"
+  total_docs_processed: 24
+  active_issue_drafts: 63
   archived_issue_drafts: 8
-  total_issue_drafts_inventory: 59
-  docs_intelligence_files: 21
+  total_issue_drafts_inventory: 71
+  docs_intelligence_files: 23
   inventory_note: "Counts come from the current filesystem; curated lists below are still manual until DI-009 automates graph updates."
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
@@ -253,6 +253,28 @@ concepts:
       - docs/intake/issue-drafts/RPP-task-numbering-reference.md
     status: active
 
+  - id: semantic-audio-cognition
+    name: Semantic Audio Cognition
+    introduced_by: docs/ideas/Semantic Audio Cognition Framework.md
+    introduced_at: "2026-04-25"
+    definition: "Entif audio-perception concept: speaker identity, stem separation, tonal nuance, FX/dry signal distinction, emotional geometry, and semantic-emotive graph integration."
+    extends: []
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-25-semantic-audio-cognition-framework.md
+      - docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+    status: active
+
+  - id: trend-technicals-cultural-intelligence
+    name: Trend Technicals Cultural Intelligence
+    introduced_by: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    introduced_at: "2026-04-25"
+    definition: "Exploratory cultural-intelligence frame that treats platforms as markets, influencers as equities, and trends/content events as analyzable technical indicators."
+    extends: []
+    referenced_by:
+      - docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md
+      - docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
+    status: active
+
 issue_candidates:
   - id: DI-007
     title: "Sub-agent context isolation — clean boot per cycle"
@@ -366,10 +388,14 @@ issue_candidates:
 
 pr_state:
   open:
-    - pr: 60
-      branch: docs-intelligence/pasigraphy-protocol
-      doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
-      note: "Open dirty cumulative branch; do not merge directly. Salvage only Pasigraphy v3, Real-Time Ingestion extraction, and Pasigraphy issue drafts through a clean reconciliation PR."
+    - pr: 62
+      branch: docs-intelligence/semantic-audio-cognition-framework
+      doc: docs/ideas/Semantic Audio Cognition Framework.md
+      note: "Open extraction-only branch; supersede with clean reconciliation PR because issue drafts, knowledge graph update, and generated ledger refresh were missing."
+    - pr: 64
+      branch: docs-intelligence/treating-trends-tantamount-to-trading-technicals
+      doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+      note: "Open extraction-only branch; supersede with clean reconciliation PR because issue drafts, knowledge graph update, and generated ledger refresh were missing."
   closed_superseded_dirty:
     - pr: 50
       branch: docs-intelligence/agentic-orchestration-failures
@@ -391,6 +417,10 @@ pr_state:
       branch: docs-intelligence/omoc-swarm-gnosis-protocol-spec
       doc: docs/RFCs/20260412 - Rosetta - OMOC - Swarm Gnosis Protocol Spec.md
       note: "Closed 2026-04-25 as superseded; unique OQ-4 slug and eight-spec proposal-bloat drafts salvaged through PR #61."
+    - pr: 60
+      branch: docs-intelligence/pasigraphy-protocol
+      doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+      note: "Closed 2026-04-25 as dirty/superseded; useful artifacts salvaged through PR #63."
   closed_superseded:
     - pr: 26
       branch: codex/docs-intelligence-batch-1
@@ -489,6 +519,11 @@ pr_state:
       branch: codex/salvage-pr58-issue-drafts
       doc: "(2 unique issue drafts from closed PR #58)"
       merged_at: "2026-04-25"
+    - pr: 63
+      branch: codex/reconcile-pr60-ledger
+      doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
+      merged_at: "2026-04-25T01:46:12Z"
+      note: "Clean salvage for PR #60 plus Real-Time Ingestion extraction and Pasigraphy issue drafts."
 
 processed_docs:
   - path: docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md
@@ -603,6 +638,20 @@ processed_docs:
     pr: 60
     issues: 0
     notes: "Unadvertised extraction found on PR #60 and preserved as evidence ledger only; issue-candidate rows still need draft files or explicit folds."
+
+  - path: docs/ideas/Semantic Audio Cognition Framework.md
+    processed_at: "2026-04-25T02:45"
+    findings: 15
+    pr: 62
+    issues: 6
+    notes: "Extraction-only PR #62 lacked issue drafts, graph update, and generated ledger refresh; clean reconciliation adds all companion artifacts."
+
+  - path: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    processed_at: "2026-04-25T02:45"
+    findings: 24
+    pr: 64
+    issues: 6
+    notes: "Extraction-only PR #64 lacked issue drafts, graph update, and generated ledger refresh; clean reconciliation adds all companion artifacts."
 
 issue_drafts_inventory:
   # OMC-related issue drafts from codex/normalize-docs-intelligence-issue-drafts (PR #46)
@@ -943,3 +992,89 @@ issue_drafts_inventory:
     issue_id: pasigraphy-contributing-done-language
     priority: P2
     type: documentation
+
+  # Semantic Audio Cognition drafts from incomplete PR #62
+  - path: docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-speaker-diarization-fingerprinting
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-stem-isolation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-stem-isolation
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-tonal-distinction-extraction
+    priority: P2
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-fx-dry-signal-differentiation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-emotional-geometry-timeline
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+    source_doc: docs/ideas/Semantic Audio Cognition Framework.md
+    source_pr: 62
+    issue_id: semantic-audio-semantic-emotive-graph-integration
+    priority: P2
+    type: architecture
+
+  # Trend Technicals drafts from incomplete PR #64
+  - path: docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-content-characteristic-ontology
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-influencer-equity-scoring
+    priority: P3
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-graph-database-schema.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-graph-database-schema
+    priority: P2
+    type: planning
+
+  - path: docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-friston-cultural-modeling
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-fluid-dynamics-simulation
+    priority: P3
+    type: research-spike
+
+  - path: docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md
+    source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+    source_pr: 64
+    issue_id: trend-technicals-phase-1-mvp-pipeline
+    priority: P2
+    type: planning
