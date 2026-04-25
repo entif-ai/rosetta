@@ -1,11 +1,11 @@
 meta:
-  version: '0.7'
-  generated: '2026-04-26T03:15:00Z'
-  total_docs_processed: 27
-  active_issue_drafts: 92
-  archived_issue_drafts: 9
-  total_issue_drafts_inventory: 116
-  docs_intelligence_files: 23
+  version: '0.8'
+  generated: '2026-04-25T23:59:30Z'
+  total_docs_processed: 28
+  active_issue_drafts: 94
+  archived_issue_drafts: 23
+  total_issue_drafts_inventory: 117
+  docs_intelligence_files: 29
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -886,6 +886,34 @@ processed_docs:
   issues: 6
   notes: 'Extraction-only PR #64 lacked issue drafts, graph update, and generated
     ledger refresh; clean reconciliation adds all companion artifacts.'
+- path: docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md
+  processed_at: 2026-04-25T23:59
+  findings: 37
+  pr: 91
+  issues: 10
+  notes: PR #91 adds extraction coverage; CT-001 and CT-002 now point at promoted
+    GitHub issues, with CT-003 through CT-010 remaining as active drafts.
+- path: docs/external/DeerFlow Architecture.md
+  processed_at: 2026-04-25T23:59
+  findings: 25
+  pr: 91
+  issues: 14
+  notes: PR #91 adds extraction coverage; DF-001 now points at promoted GitHub issue
+    #89, with DF-002 through DF-014 remaining as active drafts.
+- path: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
+  processed_at: 2026-04-25T23:59
+  findings: 18
+  pr: 91
+  issues: 3
+  notes: PR #91 refreshes the extraction and adds AC-001 through AC-003 issue-draft
+    coverage for prior art, graph retrieval, and bio-inspired algorithms.
+- path: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+  processed_at: 2026-04-25T23:59
+  findings: 20
+  pr: 68
+  issues: 6
+  notes: PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
+    coverage for M8, M10, and Should-Have ownership follow-up.
 - path: docs/external/AiiDA-WorkGraph.md
   processed_at: 2026-04-25T23:59
   findings: 12
@@ -980,6 +1008,30 @@ issue_drafts_inventory:
   priority: P1
   type: implementation
   note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
+- path: docs/intake/issue-drafts/text-core-should-have-owners.md
+  source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
+  source_pr: 68
+  issue_id: text-core-should-have-owners
+  priority: P3
+  type: planning
+- path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-provenance-reference
+  priority: P3
+  type: research
+- path: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-infrastructure-dependencies
+  priority: P2
+  type: architecture
+- path: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-gui-experimental
+  priority: P3
+  type: risk
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
