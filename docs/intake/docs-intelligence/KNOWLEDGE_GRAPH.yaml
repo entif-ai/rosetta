@@ -301,6 +301,16 @@ concepts:
   - docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md
   - docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
   status: active
+- id: rock-3111-c-recipes-skills-ci
+  name: RRP recipes/skills CI gap
+  introduced_by: docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
+  introduced_at: '2026-04-24'
+  definition: recipes/ and skills/ subtrees recommended in ROCK-3111-C Section 10
+    have no CI/schema enforcement and no defined metadata schema, allowing malformed
+    content to ship undetected.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/79
+  status: active
 - id: persona-pack-elevated-governance
   name: PersonaPack Elevated Governance
   introduced_by: docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md
@@ -807,6 +817,8 @@ issue_drafts_inventory:
   issue_id: rock-3111-c-recipes-skills-ci
   priority: P3
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/79
+  status: published
 - path: docs/intake/issue-drafts/authority-stack-gaps.md
   source_doc: docs/governance/AUTHORITY_STACK.md
   source_pr: 27
