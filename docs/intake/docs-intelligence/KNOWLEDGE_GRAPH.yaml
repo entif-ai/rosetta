@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: MOL-005-skill-hardening-threshold
+  name: Skill Hardening Threshold
+  introduced_by: docs/intake/issue-drafts/MOL-005-skill-hardening-threshold.md
+  introduced_at: '2026-04-25'
+  definition: Criteria for promoting skillpacks from draft to production-ready via
+    success-rate and consecutive-run thresholds, inspired by Moltrons 3-day hardening
+    narrative.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/180
+  status: active
 - id: RPP-task-numbering-reference
   name: RPP Task Numbering Reference
   introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
