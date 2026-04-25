@@ -3443,6 +3443,146 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-security-caching-rosetta-updates.md",
+      "sourcePath": "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "caching",
+        "vertex",
+        "gemini",
+        "billing",
+        "ui-usage",
+        "pricing",
+        "long-context",
+        "implicit-caching",
+        "prefix-matching",
+        "explicit-caching",
+        "economics",
+        "break-even",
+        "formula",
+        "anthropic",
+        "cache-control",
+        "opt-in",
+        "memory",
+        "titans",
+        "architecture",
+        "short-term-long-term",
+        "nested-learning",
+        "continuum",
+        "google",
+        "shared-cache",
+        "enterprise",
+        "git-blob-hash",
+        "orchestrator",
+        "provider-adapters",
+        "context-packs",
+        "tapestry",
+        "tiered",
+        "public-corpus",
+        "tax-codes",
+        "network-effect",
+        "cache-domain",
+        "security-boundary",
+        "abac",
+        "security",
+        "side-channel",
+        "latency",
+        "leakage",
+        "roseta",
+        "entif-docs",
+        "guard-layer",
+        "governance",
+        "rosetta",
+        "auth",
+        "authz",
+        "authn",
+        "rbac",
+        "agentic-swarm",
+        "action-schema",
+        "principal",
+        "session",
+        "intent",
+        "decision-schema",
+        "constraints",
+        "policy-version",
+        "receipt-schema",
+        "append-only",
+        "audit",
+        "pep",
+        "universal-enforcement",
+        "composable",
+        "policy",
+        "agent-identity",
+        "delegation-chain",
+        "cache-capabilities",
+        "cache-create",
+        "cache-reuse",
+        "cache-invalidate",
+        "framework-coherence",
+        "claw",
+        "agent-sdk",
+        "cli-agents",
+        "v3-spine",
+        "action",
+        "toolcall",
+        "observation",
+        "evaluation",
+        "receipt",
+        "rock-3005",
+        "iam-stdpack",
+        "tile-kinds",
+        "context-pack",
+        "cache",
+        "guard-micro-spine",
+        "normative-trace",
+        "iam-tiles",
+        "schemas",
+        "iam-decision",
+        "invariants",
+        "fail-closed",
+        "risk-class",
+        "ttl",
+        "approval",
+        "default-policy",
+        "appendix-a",
+        "canonicalization",
+        "hashing",
+        "reason-codes",
+        "semantic-slugs",
+        "authz-slug",
+        "context-cid",
+        "negotiation",
+        "precondition",
+        "etag",
+        "capability-ticket",
+        "jwt",
+        "macaroons",
+        "block-cid",
+        "tapestry-cid",
+        "manifest-diff",
+        "block-exchange",
+        "wire-efficiency",
+        "bloom-filter",
+        "merkle-tree",
+        "large-manifests",
+        "merkle",
+        "revocation",
+        "stale-authz",
+        "cache-poisoning",
+        "ingestion-hardening",
+        "edge-computing",
+        "mesh",
+        "iot",
+        "decentralized",
+        "swarm",
+        "mvp",
+        "fast-roi",
+        "implementation-order",
+        "appendix-b",
+        "negotiation-protocols"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-semantic-audio-cognition-framework.md",
       "sourcePath": "docs/ideas/Semantic Audio Cognition Framework.md",
       "title": "Docs Intelligence Extraction",
@@ -4840,6 +4980,18 @@
       "signature": "008-asymmetric-compatibility-corporate-design"
     },
     {
+      "path": "docs/intake/issue-drafts/SCRU-001-cache-orchestrator-architecture.md",
+      "title": "SCRU-001: Design Cache Orchestrator Architecture for Enterprise Shared Caching",
+      "labels": [],
+      "signature": "001-architecture-cache-caching-design"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCRU-002-rock-3005-iam-stdpack.md",
+      "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+      "labels": [],
+      "signature": "002-3005-cache-decision-define"
+    },
+    {
       "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
       "title": "Semantic Audio Cognition: Emotional Geometry and Clip Evolution",
       "labels": [
@@ -5323,6 +5475,7 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
@@ -5693,7 +5846,8 @@
     "fail-closed": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -6426,7 +6580,8 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md"
@@ -6459,7 +6614,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -6527,7 +6683,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md",
@@ -6785,7 +6942,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md",
@@ -7019,7 +7177,8 @@
         "docs/external/Moltron.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md",
@@ -7253,7 +7412,8 @@
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -7339,7 +7499,8 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -7794,7 +7955,8 @@
     "schemas": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -7923,7 +8085,8 @@
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md"
@@ -8227,7 +8390,8 @@
     },
     "nested-learning": {
       "documents": [
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
+        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -8383,7 +8547,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -9291,7 +9456,8 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
@@ -9318,7 +9484,8 @@
     },
     "auth": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -9471,7 +9638,8 @@
     "ttl": {
       "documents": [
         "docs/external/acpx.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -10677,7 +10845,8 @@
     "latency": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -11985,7 +12154,8 @@
     },
     "long-context": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -12288,7 +12458,8 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -12573,7 +12744,8 @@
     },
     "decentralized": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -12715,7 +12887,8 @@
     "implementation-order": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -13195,7 +13368,8 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md"
@@ -13601,7 +13775,8 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -15292,7 +15467,8 @@
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/external/Moltron.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-no-limits-vs-genesis-bios-conflict.md"
@@ -15463,7 +15639,8 @@
     },
     "orchestrator": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -15517,7 +15694,8 @@
     },
     "intent": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16021,7 +16199,8 @@
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16432,13 +16611,15 @@
     "abac": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
     "cache-domain": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16480,7 +16661,8 @@
     },
     "mvp": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16812,7 +16994,8 @@
     "pep": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -17183,7 +17366,8 @@
     },
     "rbac": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -18718,7 +18902,8 @@
     "swarm": {
       "documents": [
         "docs/external/Moltron.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omc-swarm-reputation-metrics.md"
@@ -19057,7 +19242,8 @@
     },
     "economics": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -19627,7 +19813,8 @@
     },
     "semantic-slugs": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -19741,7 +19928,8 @@
     },
     "observation": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -19909,7 +20097,8 @@
     },
     "roseta": {
       "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
+        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -21656,7 +21845,8 @@
     },
     "rock-3005": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -21867,6 +22057,576 @@
     "external-mapping": {
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+      ],
+      "issueDrafts": []
+    },
+    "vertex": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "gemini": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "billing": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "ui-usage": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "pricing": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "implicit-caching": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "prefix-matching": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "explicit-caching": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "break-even": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "formula": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "anthropic": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-control": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "opt-in": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "titans": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "short-term-long-term": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "continuum": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "google": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "shared-cache": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "enterprise": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "git-blob-hash": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "provider-adapters": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-packs": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "tiered": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "public-corpus": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "tax-codes": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "network-effect": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "security-boundary": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "side-channel": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "leakage": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-docs": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-layer": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "authz": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "authn": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-swarm": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "action-schema": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "principal": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "session": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "decision-schema": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy-version": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "receipt-schema": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "universal-enforcement": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "composable": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-identity": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "delegation-chain": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-capabilities": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-create": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-reuse": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-invalidate": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "framework-coherence": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "claw": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-sdk": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cli-agents": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "v3-spine": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "action": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "toolcall": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "iam-stdpack": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "tile-kinds": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-pack": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-micro-spine": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "normative-trace": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "iam-tiles": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "iam-decision": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-class": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "approval": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "default-policy": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "appendix-a": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "hashing": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "reason-codes": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "authz-slug": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-cid": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "negotiation": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "precondition": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "etag": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "capability-ticket": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "jwt": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "macaroons": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-cid": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "tapestry-cid": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "manifest-diff": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "block-exchange": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "wire-efficiency": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "bloom-filter": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "merkle-tree": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "large-manifests": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "merkle": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "revocation": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "stale-authz": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-poisoning": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingestion-hardening": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "edge-computing": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "mesh": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "iot": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "fast-roi": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "appendix-b": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+      ],
+      "issueDrafts": []
+    },
+    "negotiation-protocols": {
+      "documents": [
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
