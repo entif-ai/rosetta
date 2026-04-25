@@ -754,5 +754,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-adopt-as-delegation-mechanism.md",
     "draftStatus": "published"
+  },
+  "video-transcript-dedup-playlist-tracking.md": {
+    "number": 246,
+    "state": "open",
+    "title": "Video Transcript Deduplication by Canonical Video ID + Playlist Attachment Tracking",
+    "url": "https://github.com/enti-ai/rosetta/issues/246",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/video-transcript-dedup-playlist-tracking.md",
+    "draftStatus": "published"
   }
 }
