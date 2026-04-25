@@ -507,6 +507,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
   status: active
+- id: berman-box-sync-circular-ref
+  name: Box Sync Circular Reference Vulnerability
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
+  introduced_at: '2026-04-25'
+  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
+    visited-folder cycle detection — folder symlinks/junction points creating cycles
+    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/113
+  status: active
 issue_candidates:
 - id: DI-007
   title: Sub-agent context isolation — clean boot per cycle
@@ -1323,3 +1333,10 @@ issue_drafts_inventory:
   issue_id: aiida-workgraph-provenance-reference
   priority: P3
   type: research
+- path: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
+  source_doc: docs/external/Berman-PRD.md
+  issue_id: berman-box-sync-circular-ref
+  priority: low
+  type: risk
+  url: https://github.com/entif-ai/rosetta/issues/113
+  status: published
