@@ -522,11 +522,20 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
-    visited-folder cycle detection — folder symlinks/junction points creating cycles
-    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
+  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
+    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
+    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
+  status: active
+- id: berman-fathom-processor-no-rollback
+  name: Fathom Processor Transaction Safety
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md
+  introduced_at: '2026-04-25'
+  definition: Fathom meeting processor lacks SQLite transaction wrapping and idempotency
+    keys, risking partial CRM updates if Gemini LLM extraction fails mid-operation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/128
   status: active
 issue_candidates:
 - id: DI-007

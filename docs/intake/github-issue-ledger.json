@@ -304,5 +304,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-berman-fathom-processor-no-rollback": {
+    "number": 128,
+    "state": "open",
+    "title": "Fathom processor lacks rollback if LLM extraction fails mid-transaction",
+    "url": "https://github.com/entif-ai/rosetta/issues/128",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-fathom-processor-no-rollback.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-fathom-processor-no-rollback.md",
+    "draftStatus": "published"
   }
 }
