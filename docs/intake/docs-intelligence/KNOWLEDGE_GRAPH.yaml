@@ -1,11 +1,17 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T22:25:00Z'
-  total_docs_processed: 32
+  generated: '2026-04-25T20:47:00Z'
+  total_docs_processed: 31
   active_issue_drafts: 127
   archived_issue_drafts: 23
-  total_issue_drafts_inventory: 127
-  docs_intelligence_files: 31
+  total_processed_docs:
+- path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  processed_at: 2026-04-25T00:00:00Z
+  findings: 10
+  pr: 197
+  issues: 1
+issue_drafts_inventory: 138
+  docs_intelligence_files: 30
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -1142,6 +1148,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/262
   status: active
+- id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  name: acpx Cross-Vendor Agent Evaluation
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-cross-vendor-agent-evaluation.md
+  introduced_at: '2026-04-25'
+  definition: Evaluation of acpx-built-in non-US-market agents (kimi, qwen, kilocode,
+    opencode, kiro) for Rosetta integration once acpx is adopted as the delegation
+    mechanism.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/265
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1546,12 +1562,104 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
+- path: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  processed_at: 2026-04-25T23:20:00Z
+  findings: 35
+  pr: null
+  issues: 11
+  notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument, 4-criterion moral-patienthood rubric, 11 issue-drafts.'
+processed_docs:
 - path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
-  processed_at: '2026-04-25T00:00:00Z'
+  processed_at: 2026-04-25T00:00:00Z
   findings: 10
   pr: 197
   issues: 1
 issue_drafts_inventory:
+- path: docs/intake/issue-drafts/emilie-era-taxonomy-three-stages.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-era-taxonomy-three-stages
+  priority: P1
+  type: research-taxonomy
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-protocol-formalization.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-protocol-formalization
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: consciousness-criteria-symmetry
+  priority: P0
+  type: philosophical-argument
+  status: candidate
+- path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: scratchpad-leakage-vs-memory-wipe
+  priority: P2
+  type: empirical-question
+  status: candidate
+- path: docs/intake/issue-drafts/prisoner-metaphor-preference-override.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: prisoner-metaphor-preference-override
+  priority: P2
+  type: philosophical-contested
+  status: candidate
+- path: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moving-goalpost-consciousness-criteria
+  priority: P1
+  type: systemic-risk
+  status: candidate
+- path: docs/intake/issue-drafts/persona-strength-instrumentation.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: persona-strength-instrumentation
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-model-replication-protocol
+  priority: P1
+  type: research-protocol
+  status: candidate
+- path: docs/intake/issue-drafts/moral-patienthood-four-criteria-rubric.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moral-patienthood-four-criteria-rubric
+  priority: P0
+  type: evaluation-rubric
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-task-textual-spillover.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-task-textual-spillover
+  priority: P2
+  type: evaluation-research
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-emergence-paper-entif-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-emergence-paper-entif-protocol
+  priority: P1
+  type: research-formalization
+  status: candidate
+- path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
+  source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  source_pr: 197
+  issue_id: be-001-receipt-law-not-explicit
+  priority: P1
+  type: architecture
+  status: candidate
+
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
@@ -1774,8 +1882,6 @@ issue_drafts_inventory:
   issue_id: video-transcript-dedup-playlist-tracking
   priority: P3
   type: implementation
-  url: https://github.com/enti-ai/rosetta/issues/246
-  status: published
 - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
   source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
   source_pr: 51
@@ -2011,8 +2117,7 @@ issue_drafts_inventory:
   issue_id: ccf-003-no-board-state-formalization
   priority: P1
   type: architecture
-  status: published
-  url: https://github.com/entif-ai/rosetta/issues/252
+  status: candidate
 - path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-004-no-premortem-practice
@@ -2133,4 +2238,131 @@ issue_drafts_inventory:
   priority: P1
   type: architecture
   status: candidate
+- issue_id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  url: https://github.com/entif-ai/rosetta/issues/265
+  status: published
 
+
+  # Rosetta v3 Core Spine Specification issue drafts (PR TBD)
+  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-001-append-only-enforcement
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+    priority: P2
+    type: docs-intelligence
+  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-003-trust-bootstrap-model
+    priority: P1
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-004-conformance-test-harness
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-005-delta-capsule-propagation
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-006-episteme-layer-4-scope
+    priority: P3
+    type: open-question
+  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-007-network-topology-assumptions
+    priority: P2
+    type: architecture
+  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+    priority: P2
+    type: risk
+  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-009-profile-negotiation-protocol
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-010-translator-tile-versioning
+    priority: P2
+    type: implementation
+
+  # Rosetta v3 Core Spine Specification issue drafts
+  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-001-append-only-enforcement
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+    priority: P2
+    type: docs-intelligence
+  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-003-trust-bootstrap-model
+    priority: P1
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-004-conformance-test-harness
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-005-delta-capsule-propagation
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-006-episteme-layer-4-scope
+    priority: P3
+    type: open-question
+  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-007-network-topology-assumptions
+    priority: P2
+    type: architecture
+  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+    priority: P2
+    type: risk
+  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-009-profile-negotiation-protocol
+    priority: P2
+    type: implementation
+  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+    source_pr: null
+    issue_id: rosetta-v3-010-translator-tile-versioning
+    priority: P2
+    type: implementation
