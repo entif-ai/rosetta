@@ -295,5 +295,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-berman-box-sync-depth-circular-ref.md": {
+    "number": 113,
+    "state": "open",
+    "title": " Berman-PRD: Box sync has no circular reference protection",
+    "url": "https://github.com/entif-ai/rosetta/issues/113",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
+    "draftStatus": "published"
   }
 }
