@@ -682,5 +682,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AR-002-block-size-tapestry-cost-model.md",
     "draftStatus": "published"
+  },
+  "am-001-json-schema-missing.md": {
+    "number": 220,
+    "state": "open",
+    "title": "AM-001: Formal JSON Schema for Agentic Messaging Envelope and Message Types",
+    "url": "https://github.com/entif-ai/rosetta/issues/220",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-001-json-schema-missing.md",
+    "draftStatus": "published"
   }
 }
