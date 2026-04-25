@@ -718,5 +718,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-challenge-tier-1-self-contradiction.md",
     "draftStatus": "published"
+  },
+  "df-006-docs-policy-no-ci.md": {
+    "number": 236,
+    "state": "open",
+    "title": "Documentation update policy has no CI enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/236",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-006-docs-policy-no-ci.md",
+    "draftStatus": "published"
   }
 }
