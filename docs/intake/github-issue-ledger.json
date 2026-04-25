@@ -304,5 +304,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
+  },
+  "MOL-001-adaptive-memory-loop": {
+    "number": 171,
+    "state": "open",
+    "title": "[MOL-001] Rosetta Adaptive Memory Plane Needs Self-Evolution Loop (Moltron-Inspired)",
+    "url": "https://github.com/entif-ai/rosetta/issues/171",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-001-adaptive-memory-loop.md",
+    "draftStatus": "published"
   }
 }
