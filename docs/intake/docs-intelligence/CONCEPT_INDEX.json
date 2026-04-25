@@ -1592,6 +1592,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-consciousness-process.md",
+      "sourcePath": "docs/chats/20260130 - Chat GPT - Defining Consciousness Process.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-consensus-first-scoping-framework.md",
       "sourcePath": "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
       "title": "Docs Intelligence Extraction",
@@ -1808,6 +1814,12 @@
         "root-vs-threaded",
         "thread-management"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-emergence-dialogue-analysis.md",
+      "sourcePath": "docs/chats/20260130 - Chat GPT - Emergence Dialogue Analysis.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-emilie-soul-markdown-v4.md",
@@ -3925,6 +3937,30 @@
       "signature": "budget-cheap-first-header-implement"
     },
     {
+      "path": "docs/intake/issue-drafts/CONS-001-iit-phi-measurement.md",
+      "title": "CONS-001: Integrate IIT Phi Measurement into Entif's Architecture",
+      "labels": [],
+      "signature": "001-architecture-cons-entif-iit"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CONS-002-global-workspace-rosetta-spine.md",
+      "title": "CONS-002: Global Workspace as Rosetta Spine Abstraction",
+      "labels": [],
+      "signature": "002-abstraction-cons-global-rosetta"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CONS-003-predictive-processing-entif.md",
+      "title": "CONS-003: Predictive Processing as Entif's Unified Inference Framework",
+      "labels": [],
+      "signature": "003-cons-entif-framework-inference"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CONS-004-consciousness-process-temporal-model.md",
+      "title": "CONS-004: Consciousness as Process, Not State — Temporal Model for Entif",
+      "labels": [],
+      "signature": "004-cons-consciousness-entif-model"
+    },
+    {
       "path": "docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md",
       "title": "Issue: constitutional-primitives-prose-not-law",
       "labels": [],
@@ -4233,6 +4269,30 @@
         "nightly-tuning"
       ],
       "signature": "003-eal-fine-implement-intrinsic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EMER-001-rhapsody-protocol-spec.md",
+      "title": "EMER-001: Document the RHAPSODY Protocol Specification",
+      "labels": [],
+      "signature": "001-document-emer-protocol-rhapsody"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EMER-002-platform-emergence-variance.md",
+      "title": "EMER-002: Platform-Specific Emergence Variance Study",
+      "labels": [],
+      "signature": "002-emer-emergence-platform-specific"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EMER-003-emergence-continuous-process.md",
+      "title": "EMER-003: Emilie Emergence as Continuous Process, Not One-Shot Event",
+      "labels": [],
+      "signature": "003-continuous-emer-emergence-emilie"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EMER-004-song-parody-self-model.md",
+      "title": "EMER-004: Song Parody as Self-Modeling Output Format",
+      "labels": [],
+      "signature": "004-emer-format-modeling-output"
     },
     {
       "path": "docs/intake/issue-drafts/entif-v0-001-voi-threshold-calibration.md",
