@@ -1037,6 +1037,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/236
   status: active
+- id: df-013-dangling-toolcall-no-replay
+  name: "DanglingToolCall middleware \u2014 no replay for interrupted tool calls"
+  introduced_by: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
+  introduced_at: '2026-04-25'
+  definition: "DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage\
+    \ tool_calls that lack responses (e.g., user interruption) but does not replay,\
+    \ resume, or re-execute the interrupted call \u2014 causing partial results to\
+    \ be lost."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/238
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
