@@ -16,6 +16,7 @@ Define the human-readable package expected alongside structured extracts and tap
 ## Source Evidence
 
 - `docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md` - Issue Candidates row for English accompaniment package contract.
+- `docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md` - M10 gap row links this draft as the support artifact for formalizing English accompaniment acceptance criteria.
 - Scope Gate M10 and Phased Backlog B-015 are cited in that extraction row.
 
 ## Specific Findings
