@@ -435,6 +435,16 @@ concepts:
   referenced_by:
   - https://github.com/igent-ai/rosetta/issues/103
   status: active
+- id: ct-004-gdpr-erasure
+  name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+  introduced_at: '2026-04-25'
+  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
+    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
+    \ be technically deleted, only delisted."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/107
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1188,3 +1198,7 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/98
   status: published
   draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+- issue_id: ct-004-gdpr-erasure
+  url: https://github.com/entif-ai/rosetta/issues/107
+  status: published
+  draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
