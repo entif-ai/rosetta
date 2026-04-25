@@ -1058,6 +1058,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/240
   status: active
+- id: 2026-04-25-acpx-adopt-as-delegation-mechanism
+  name: acpx as Delegation Mechanism
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-adopt-as-delegation-mechanism.md
+  introduced_at: '2026-04-25'
+  definition: Evaluate adopting acpx (headless ACP CLI client) as Rosetta's primary
+    mechanism for delegating to coding agents, replacing fragile PTY-scraping patterns
+    with structured ACP JSON messaging.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/243
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
