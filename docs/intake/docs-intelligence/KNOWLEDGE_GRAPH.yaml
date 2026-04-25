@@ -395,6 +395,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
+- id: pro-ext-research-authoritative-baselines-adr-missing
+  name: Authoritative Project Baselines ADR Gap
+  introduced_by: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+  introduced_at: '2026-04-25'
+  definition: The 21 project baseline documents referenced in the Pro-Extended Research
+    prompt lack a formal ADR establishing them as the authoritative reference for
+    all architectural decisions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/98
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1142,3 +1152,7 @@ issue_drafts_inventory:
   issue_id: trend-technicals-phase-1-mvp-pipeline
   priority: P2
   type: planning
+- issue_id: 2026-04-25-pro-ext-research-authoritative-baselines-adr-missing
+  url: https://github.com/entif-ai/rosetta/issues/98
+  status: published
+  draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
