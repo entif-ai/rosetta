@@ -1068,6 +1068,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/243
   status: active
+- id: video-transcript-dedup-playlist-tracking
+  name: Video Transcript Deduplication by Canonical Video ID + Playlist Attachment
+    Tracking
+  introduced_by: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+  introduced_at: '2026-04-25'
+  definition: "Store YouTube transcripts keyed by canonical video ID (not URL) to\
+    \ prevent duplicate transcription. When a video appears in a new playlist, add\
+    \ a playlist attachment edge \u2014 do not re-transcribe."
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/246
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1700,6 +1711,8 @@ issue_drafts_inventory:
   issue_id: video-transcript-dedup-playlist-tracking
   priority: P3
   type: implementation
+  url: https://github.com/enti-ai/rosetta/issues/246
+  status: published
 - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
   source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
   source_pr: 51
