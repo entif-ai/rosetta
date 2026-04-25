@@ -150,6 +150,7 @@ concepts:
     extends: []
     referenced_by:
       - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
+      - https://github.com/entif-ai/rosetta/issues/69
     status: active
 
   - id: pack-id-placeholder
@@ -161,7 +162,10 @@ concepts:
     referenced_by:
       - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
       - docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
+      - https://github.com/entif-ai/rosetta/issues/69
     status: active
+    promoted: "2026-04-25"
+    promoted_as: "https://github.com/entif-ai/rosetta/issues/69"
 
   - id: refinement-first-rule
     name: Refinement-First Rule
@@ -762,6 +766,7 @@ issue_drafts_inventory:
     issue_id: rock-3111-c-pack-id-placeholder
     priority: P2
     type: implementation
+    promoted_to: https://github.com/entif-ai/rosetta/issues/69
 
   - path: docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md
     source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
