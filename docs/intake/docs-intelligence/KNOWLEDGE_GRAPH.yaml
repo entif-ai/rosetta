@@ -1027,6 +1027,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/234
   status: active
+- id: df-006-docs-policy-no-ci
+  name: Documentation Update Policy CI Gap
+  introduced_by: docs/intake/issue-drafts/df-006-docs-policy-no-ci.md
+  introduced_at: '2026-04-25'
+  definition: CLAUDE.md mandates updating README.md and CLAUDE.md after every code
+    change, but no CI check or pre-commit hook enforces this policy, allowing documentation
+    to drift from code.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/236
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
