@@ -619,5 +619,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-mvp-scope-gate.md",
     "draftStatus": "published"
+  },
+  "ada-orchestrator-mcp.md": {
+    "number": 201,
+    "state": "open",
+    "title": "Implement Ada orchestrator MCP CRUD surface",
+    "url": "https://github.com/entif-ai/rosetta/issues/201",
+    "activeDraftPath": "docs/intake/issue-drafts/ada-orchestrator-mcp.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ada-orchestrator-mcp.md",
+    "draftStatus": "published"
   }
 }
