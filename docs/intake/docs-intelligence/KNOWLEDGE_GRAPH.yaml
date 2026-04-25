@@ -874,6 +874,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/204
   status: active
+- id: anti-personhood-correlation-governance-gap
+  name: Anti-Personhood-Correlation Constraint
+  introduced_by: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
+  introduced_at: '2026-04-25'
+  definition: Governance constraint prohibiting the use of identity correlation infrastructure
+    to construct cognitive profiles or correlate anonymous/pseudonymous discourse
+    to identified individuals without consent.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/210
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1515,6 +1525,8 @@ issue_drafts_inventory:
   issue_id: anti-personhood-correlation-governance-gap
   priority: P1
   type: governance
+  url: https://github.com/entif-ai/rosetta/issues/210
+  status: published
 - path: docs/intake/issue-drafts/RPP-task-numbering-reference.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md
