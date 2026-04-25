@@ -322,6 +322,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/77
   status: active
+- id: omoc-lean-vs-learned-dilemma
+  name: OMOC Lean vs Learned Routing Dilemma
+  introduced_by: docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md
+  introduced_at: '2026-04-25'
+  definition: 'Unresolved architectural question: should OMOC routing be deterministic
+    (rule-based) or learned? Affects explainability, adaptivity, session-resume, survivorship
+    scoring, and Tack 3 acceptance gate.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/81
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
