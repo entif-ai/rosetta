@@ -655,5 +655,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/aiida-workgraph-provenance-reference.md",
     "draftStatus": "published"
+  },
+  "anti-personhood-correlation-governance-gap.md": {
+    "number": 210,
+    "state": "open",
+    "title": "Anti-Personhood-Correlation Constraint: Governance Gap in Identity Correlation Capabilities",
+    "url": "https://github.com/entif-ai/rosetta/issues/210",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/anti-personhood-correlation-governance-gap.md",
+    "draftStatus": "published"
   }
 }
