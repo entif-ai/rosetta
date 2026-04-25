@@ -20,8 +20,10 @@ You are a docs-intelligence extraction agent working in:
 Before doing ANYTHING else — before reading the ledger, before claiming a doc — fetch and reset THE ROSETTA FOLDER to origin/main:
 
 ```bash
+cd ~/.openclaw/workspace/Code/rosetta
 git fetch origin main
 git reset --hard origin/main
+cd ~/.openclaw/workspace
 ```
 
 This ensures your ledger and knowledge graph are fresh. If you skip this, you risk duplicating work that main has already processed.
@@ -31,7 +33,7 @@ This ensures your ledger and knowledge graph are fresh. If you skip this, you ri
 ## Ledger
 
 The ledger lives at:
-`/Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md`
+`~/.openclaw/workspace/rosetta-di-ledger.md`
 
 It tracks all 128 docs. Each entry has fields including `processed` (`pending`, `locked:*`, `failed:*`, `blocked:*`, `processed:*`, or legacy `yes`/`no`).
 
@@ -39,7 +41,7 @@ It tracks all 128 docs. Each entry has fields including `processed` (`pending`, 
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs claim \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --agent-id <your-session-key> \
   --branch docs-intelligence/<doc-name-slug>
 ```
@@ -54,7 +56,7 @@ On success, read only the returned `claimedPath`. If work fails after claiming, 
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs fail \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --doc "<claimedPath>" \
   --error-code <short-code> \
   --summary "<short failure summary>"
@@ -64,7 +66,7 @@ After 3 failures the tool marks the doc `blocked:*` so future cycles skip it. On
 
 ```bash
 node tools/doc-intake/docs-intelligence-ledger.mjs complete \
-  --ledger /Users/cr8s/.openclaw/workspace/rosetta-di-ledger.md \
+  --ledger ~/.openclaw/workspace/rosetta-di-ledger.md \
   --doc "<claimedPath>" \
   --pr <pr-number> \
   --findings <count> \
