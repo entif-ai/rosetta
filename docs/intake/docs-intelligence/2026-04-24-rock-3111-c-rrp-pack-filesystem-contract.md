@@ -119,13 +119,13 @@ This RFC defines the complete filesystem contract for Rosetta packs: mandatory d
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-| RRP pack_id is a placeholder — needs real content-addressed ID at freeze | docs-intelligence | packs,rrp,identity | ROCK-3111-C | pack.json example: `"pack_id": "cid:rrp-pack-placeholder"` |
-| Refinement-first rule has no automated enforcement mechanism | implementation | packs,core-stability,enforcement | ROCK-3111-C | "Packs MUST extend core semantics without redefining or silently mutating Rosetta core meanings" — no tooling described to detect violations |
-| PersonaPack "elevated governance" is undefined | docs-intelligence | packs,governance,persona-pack | ROCK-3111-C | "PersonaPack — identity/persona/council pack (non-core; elevated governance applies)" — no specifics |
-| Pack dependency cycle detection not specified | implementation | packs,dependencies,validation | ROCK-3111-C | depends_on uses doc_id but no cycle detection mechanism described |
-| recipes/ and skills/ subtrees lack CI enforcement | implementation | packs,ci,recipes,skills | ROCK-3111-C | Section 10: recommended but "not RRP pack roots"; no CI enforcement described |
+| Title | Type | Draft | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| RRP pack_id is a placeholder - needs real content-addressed ID at freeze | docs-intelligence | `docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md` | packs,rrp,identity | ROCK-3111-C | pack.json example: `"pack_id": "cid:rrp-pack-placeholder"` |
+| Refinement-first rule has no automated enforcement mechanism | implementation | `docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md` | packs,core-stability,enforcement | ROCK-3111-C | "Packs MUST extend core semantics without redefining or silently mutating Rosetta core meanings" - no tooling described to detect violations |
+| PersonaPack "elevated governance" is undefined | docs-intelligence | `docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md` | packs,governance,persona-pack | ROCK-3111-C | "PersonaPack - identity/persona/council pack (non-core; elevated governance applies)" - no specifics |
+| Pack dependency cycle detection not specified | implementation | `docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md` | packs,dependencies,validation | ROCK-3111-C | depends_on uses doc_id but no cycle detection mechanism described |
+| recipes/ and skills/ subtrees lack CI enforcement | implementation | `docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md` | packs,ci,recipes,skills | ROCK-3111-C | Section 10: recommended but "not RRP pack roots"; no CI enforcement described |
 
 ## Project Board Suggestions
 
