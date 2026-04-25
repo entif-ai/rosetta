@@ -1545,6 +1545,96 @@
         "premium-reports",
         "business-model"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-semantic-audio-cognition-framework.md",
+      "sourcePath": "docs/ideas/Semantic Audio Cognition Framework.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md",
+      "sourcePath": "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "platform-analogy",
+        "financial-models",
+        "social-media",
+        "social-platforms-as-stock-exchanges",
+        "influencer-analytics",
+        "equity-models",
+        "influencers-as-tradable-assets",
+        "content-metrics",
+        "earnings-analog",
+        "content-as-market-events",
+        "trend-modeling",
+        "multi-vector",
+        "trend-dimensionality",
+        "black-swan",
+        "influencer-categorization",
+        "influencer-outliers",
+        "influencer-case-study",
+        "one-hit-wonder",
+        "viral-but-non-replicable",
+        "probability-theory",
+        "trend-likelihood",
+        "individual-rarity-vs-collective-certainty",
+        "trend-patterns",
+        "memetics",
+        "common-patterns-across-viral-events",
+        "tribal-identity",
+        "audience-polarization",
+        "audience-belonging-opposition",
+        "time-series-analysis",
+        "cultural-dynamics",
+        "historical-pattern-modeling",
+        "economic-principles",
+        "modeling-methodology",
+        "decompose-complex-systems",
+        "cascade-modeling",
+        "long-term-impacts",
+        "event-ripple-effects",
+        "content-analysis",
+        "metadata-taxonomy",
+        "content-attributes",
+        "vector-geometry",
+        "demographic-modeling",
+        "multi-dimensional-demographic-mapping",
+        "system-design",
+        "ml-pipeline",
+        "end-to-end-system-blueprint",
+        "graph-retrieval",
+        "advanced-query",
+        "graph-query-optimization",
+        "physics-analogy",
+        "market-modeling",
+        "forex-financial-fluid-dynamics",
+        "neuroscience-ai",
+        "friston",
+        "free-energy",
+        "active-inference-application",
+        "bio-inspired",
+        "ant-colony",
+        "freshness-decay",
+        "information-path-optimization",
+        "bee-pollination",
+        "trend-discovery",
+        "discovery-and-sharing-algorithms",
+        "ontology",
+        "classification",
+        "protege",
+        "domain-ontology-construction",
+        "llm",
+        "transfer-learning",
+        "cost-optimization",
+        "efficient-model-utilization",
+        "temporal-modeling",
+        "graph-networks",
+        "time-evolving-networks",
+        "sentiment-analysis",
+        "time-series",
+        "sentiment-change-tracking"
+      ]
     }
   ],
   "issueDrafts": [
@@ -1930,6 +2020,72 @@
       "signature": "define-numbering-reference-rpp-task"
     },
     {
+      "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
+      "title": "Semantic Audio Cognition: Emotional Geometry and Clip Evolution",
+      "labels": [
+        "audio",
+        "affective-modeling",
+        "temporal-analysis",
+        "research-spike"
+      ],
+      "signature": "audio-clip-cognition-emotional-evolution"
+    },
+    {
+      "path": "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
+      "title": "Semantic Audio Cognition: FX vs Dry Signal Differentiation",
+      "labels": [
+        "audio",
+        "spectral-analysis",
+        "signal-chain",
+        "research-spike"
+      ],
+      "signature": "audio-cognition-differentiation-dry-semantic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+      "title": "Semantic Audio Cognition: Semantic-Emotive Graph Integration",
+      "labels": [
+        "audio",
+        "graph-integration",
+        "entif-ears",
+        "architecture"
+      ],
+      "signature": "audio-cognition-emotive-graph-integration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+      "title": "Semantic Audio Cognition: Speaker Diarization and Fingerprinting",
+      "labels": [
+        "audio",
+        "perception",
+        "entif-ears",
+        "research-spike"
+      ],
+      "signature": "audio-cognition-diarization-fingerprinting-semantic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+      "title": "Semantic Audio Cognition: Instrument and Stem Isolation",
+      "labels": [
+        "audio",
+        "decomposition",
+        "entif-ears",
+        "research-spike"
+      ],
+      "signature": "audio-cognition-instrument-isolation-semantic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md",
+      "title": "Semantic Audio Cognition: Tonal Distinction Extraction",
+      "labels": [
+        "audio",
+        "prosody",
+        "entif-ears",
+        "research-spike"
+      ],
+      "signature": "audio-cognition-distinction-extraction-semantic"
+    },
+    {
       "path": "docs/intake/issue-drafts/six-layer-memory-model-federated-jurisdiction.md",
       "title": "Issue: six-layer-memory-model-federated-jurisdiction",
       "labels": [],
@@ -1990,6 +2146,66 @@
         "pgvector"
       ],
       "signature": "006-baseline-broad-from-operational"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md",
+      "title": "Trend Technicals: Build Content Characteristic Ontology",
+      "labels": [
+        "ontology",
+        "content-analysis",
+        "cultural-intelligence"
+      ],
+      "signature": "build-characteristic-content-ontology-technicals"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
+      "title": "Trend Technicals: Explore Fluid Dynamics for Trend Flow Simulation",
+      "labels": [
+        "research",
+        "fluid-dynamics",
+        "trend-modeling"
+      ],
+      "signature": "dynamics-explore-flow-fluid-simulation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md",
+      "title": "Trend Technicals: Research Free Energy for Cultural Modeling",
+      "labels": [
+        "research",
+        "active-inference",
+        "cultural-modeling"
+      ],
+      "signature": "cultural-energy-free-modeling-research"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-graph-database-schema.md",
+      "title": "Trend Technicals: Graph Database Schema for Trend Mapping",
+      "labels": [
+        "graph-database",
+        "neo4j",
+        "cultural-intelligence"
+      ],
+      "signature": "database-graph-mapping-schema-technicals"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md",
+      "title": "Trend Technicals: Design Influencer Equity Scoring Model",
+      "labels": [
+        "influencer-analytics",
+        "equity-model",
+        "cultural-intelligence"
+      ],
+      "signature": "design-equity-influencer-model-scoring"
+    },
+    {
+      "path": "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md",
+      "title": "Trend Technicals: Design Phase 1 MVP Pipeline",
+      "labels": [
+        "planning",
+        "roadmap",
+        "cultural-intelligence"
+      ],
+      "signature": "design-mvp-phase-pipeline-technicals"
     },
     {
       "path": "docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md",
@@ -2939,7 +3155,8 @@
     },
     "classification": {
       "documents": [
-        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md"
+        "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
@@ -3745,7 +3962,8 @@
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
-        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md"
+        "docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md",
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md"
       ]
     },
     "package-topology": {
@@ -3829,9 +4047,12 @@
     },
     "ontology": {
       "documents": [
-        "docs/governance/DONOR_FIT_MAP.md"
+        "docs/governance/DONOR_FIT_MAP.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md"
+      ]
     },
     "donor-ontology": {
       "documents": [
@@ -5983,7 +6204,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-graph-database-schema.md"
+      ]
     },
     "knowledge-graph": {
       "documents": [
@@ -6085,17 +6308,21 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
+      ]
     },
     "friston": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
     "free-energy": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
@@ -6115,7 +6342,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md"
+      ]
     },
     "diffusion-model": {
       "documents": [
@@ -6155,7 +6384,8 @@
     },
     "ant-colony": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
@@ -6354,7 +6584,9 @@
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-graph-database-schema.md"
+      ]
     },
     "infra": {
       "documents": [
@@ -6556,7 +6788,8 @@
     },
     "black-swan": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md",
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
       ],
       "issueDrafts": []
     },
@@ -7016,7 +7249,9 @@
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
+      ]
     },
     "prompt-consolidation": {
       "documents": [
@@ -9538,6 +9773,438 @@
       ],
       "issueDrafts": []
     },
+    "platform-analogy": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "financial-models": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "social-media": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "social-platforms-as-stock-exchanges": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "influencer-analytics": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md"
+      ]
+    },
+    "equity-models": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "influencers-as-tradable-assets": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-metrics": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "earnings-analog": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-as-market-events": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md"
+      ]
+    },
+    "multi-vector": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-dimensionality": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "influencer-categorization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "influencer-outliers": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "influencer-case-study": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "one-hit-wonder": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "viral-but-non-replicable": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "probability-theory": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-likelihood": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "individual-rarity-vs-collective-certainty": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-patterns": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "memetics": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "common-patterns-across-viral-events": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "tribal-identity": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "audience-polarization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "audience-belonging-opposition": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "time-series-analysis": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "cultural-dynamics": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "historical-pattern-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "economic-principles": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "modeling-methodology": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "decompose-complex-systems": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "cascade-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "long-term-impacts": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "event-ripple-effects": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-analysis": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md"
+      ]
+    },
+    "metadata-taxonomy": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-attributes": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "vector-geometry": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "demographic-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-dimensional-demographic-mapping": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "system-design": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "ml-pipeline": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "end-to-end-system-blueprint": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-retrieval": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "advanced-query": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-query-optimization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "physics-analogy": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "market-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "forex-financial-fluid-dynamics": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "neuroscience-ai": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "active-inference-application": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "bio-inspired": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "freshness-decay": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "information-path-optimization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "bee-pollination": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-discovery": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "discovery-and-sharing-algorithms": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "protege": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-ontology-construction": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "transfer-learning": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-optimization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "efficient-model-utilization": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "temporal-modeling": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-networks": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "time-evolving-networks": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "sentiment-analysis": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "time-series": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
+    "sentiment-change-tracking": {
+      "documents": [
+        "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
+      ],
+      "issueDrafts": []
+    },
     "ablation": {
       "documents": [],
       "issueDrafts": [
@@ -9616,7 +10283,9 @@
     "research": {
       "documents": [],
       "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md"
+        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
+        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
+        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
       ]
     },
     "hydration": {
@@ -9710,6 +10379,84 @@
         "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md"
       ]
     },
+    "audio": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "affective-modeling": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md"
+      ]
+    },
+    "temporal-analysis": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md"
+      ]
+    },
+    "research-spike": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md",
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "spectral-analysis": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md"
+      ]
+    },
+    "signal-chain": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md"
+      ]
+    },
+    "graph-integration": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md"
+      ]
+    },
+    "entif-ears": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md",
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md",
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md",
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
+    "perception": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md"
+      ]
+    },
+    "decomposition": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-stem-isolation.md"
+      ]
+    },
+    "prosody": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md"
+      ]
+    },
     "public-commons": {
       "documents": [],
       "issueDrafts": [
@@ -9738,6 +10485,33 @@
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
+      ]
+    },
+    "cultural-intelligence": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md",
+        "docs/intake/issue-drafts/trend-technicals-graph-database-schema.md",
+        "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md",
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
+      ]
+    },
+    "cultural-modeling": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
+      ]
+    },
+    "equity-model": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md"
+      ]
+    },
+    "roadmap": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
       ]
     }
   },

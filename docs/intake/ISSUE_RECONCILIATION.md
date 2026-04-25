@@ -34,9 +34,9 @@ Closed hygiene issues #31, #34, #39, and #45 are resolved by the merged sub-agen
 
 | Bucket | Count | Location |
 | --- | ---: | --- |
-| Active issue drafts | 51 | `docs/intake/issue-drafts/*.md` |
+| Active issue drafts | 63 | `docs/intake/issue-drafts/*.md` |
 | Archived/published drafts | 8 | `docs/intake/issue-drafts/archive/*.md` |
-| Docs-intelligence Markdown files | 21 | `docs/intake/docs-intelligence/*.md` |
+| Docs-intelligence Markdown files | 23 | `docs/intake/docs-intelligence/*.md` |
 
 ## Promotion Waves
 
@@ -85,6 +85,19 @@ The retained artifacts are:
 | `pasigraphy-layer-dependency-direction.md` | Actionable architecture clarification from the Pasigraphy v3 extraction. |
 | `pasigraphy-trust-matrix-transition-criteria.md` | Actionable fixture-backed-to-evidence-driven trust scoring migration question. |
 | `pasigraphy-contributing-done-language.md` | Actionable contributor-facing docs gap for the implemented/modeled/fixture-backed/not-yet vocabulary. |
+
+### PR #62 and #64 Completion
+
+PR #62 and PR #64 were extraction-only branches. They should not merge as-is because they omitted required issue drafts, `KNOWLEDGE_GRAPH.yaml` updates, and generated intake ledger refreshes.
+
+The retained artifacts are:
+
+| Retained artifact | Reason |
+| --- | --- |
+| `docs/intake/docs-intelligence/2026-04-25-semantic-audio-cognition-framework.md` | Full extraction of the Semantic Audio Cognition idea document. |
+| `semantic-audio-*.md` issue drafts | Six draft work orders covering diarization, stem isolation, tonal extraction, FX/dry distinction, emotional geometry, and graph integration. |
+| `docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md` | Full extraction of the Trend Technicals cultural-intelligence idea document. |
+| `trend-technicals-*.md` issue drafts | Six draft work orders covering ontology, influencer scoring, graph schema, Friston research, fluid-dynamics research, and Phase 1 MVP planning. |
 
 ### Wave 2: Text-Core split issues
 
@@ -139,7 +152,7 @@ These extraction files still contain issue-candidate rows that are not fully nor
 
 ## Immediate Work Order
 
-1. Land the clean PR #60 salvage, then close or supersede PR #60 without merging its cumulative branch.
+1. Land the clean PR #62/#64 completion, then close or supersede PR #62 and PR #64 without merging their extraction-only branches.
 2. Promote Wave 1 RFC-backed drafts to GitHub issues, archiving each promoted draft and updating `docs/intake/github-issue-ledger.json`.
 3. Create a follow-up DI issue for automatic candidate-to-draft coverage checking, or extend #33 if the knowledge graph is meant to own this validation.
 4. Run a second pass over the purgatory table to either create missing draft files or mark candidates as folded into promoted issues.

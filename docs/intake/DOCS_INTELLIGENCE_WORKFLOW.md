@@ -156,10 +156,15 @@ A docs-intelligence batch is done when:
 - extraction artifacts use the template and include finding rows when the source contains actionable material
 - contradictions and supersession notes are recorded
 - issue candidates are either drafted, published, or explicitly deferred
+- every issue-candidate row links to a matching `docs/intake/issue-drafts/*.md` file or an existing GitHub issue
+- `docs/intake/docs-intelligence/KNOWLEDGE_GRAPH.yaml` records the processed document, PR state, and draft inventory update
+- `pnpm run docs:intake` has been run, with generated ledger changes committed when the source-doc index changes
 - GitHub issue comments identify ownership and impact
 - `docs/intake/github-issue-ledger.json` reflects published issue state
-- `pnpm run docs:intake` and `git diff --check` pass
+- `pnpm run docs:intake`, `pnpm run docs:intake:validate`, and `git diff --check` pass
 - `pnpm run docs:intelligence` refreshes `CONCEPT_INDEX.json` and `CYCLE_SUMMARY.md`
+
+Extraction-only PRs are not complete docs-intelligence work. If a PR adds or changes `docs/intake/docs-intelligence/YYYY-MM-DD-*.md` but does not include issue-draft coverage, knowledge graph updates, and generated ledger refreshes, it should be treated as incomplete and superseded by a clean reconciliation PR.
 
 ## Explicit Non-Blocker
 

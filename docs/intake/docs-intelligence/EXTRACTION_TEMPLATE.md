@@ -65,9 +65,11 @@ Citation style: cite the source path and nearest heading. Use short excerpts onl
 
 ## Issue Candidates
 
-| Title | Type | Labels | Depends On | Evidence |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| Title | Type | Draft or Existing Issue | Labels | Depends On | Evidence |
+| --- | --- | --- | --- | --- | --- |
+|  |  | `docs/intake/issue-drafts/<slug>.md` or `#NN` |  |  |  |
+
+Every issue-candidate row must name a draft file under `docs/intake/issue-drafts/` or an existing GitHub issue target. Candidate rows without draft/existing-issue coverage are invalid.
 
 ## Project Board Suggestions
 
