@@ -403,5 +403,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/acpx-session-metadata-schema.md",
     "draftStatus": "published"
+  },
+  "acp-coverage-roadmap-access": {
+    "number": 191,
+    "state": "open",
+    "title": "Obtain and archive ACP Spec Coverage Roadmap from acpx upstream",
+    "url": "https://github.com/entif-ai/rosetta/issues/191",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/acp-coverage-roadmap-access.md",
+    "draftStatus": "published"
   }
 }
