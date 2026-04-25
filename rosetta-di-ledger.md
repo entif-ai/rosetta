@@ -7,9 +7,9 @@
 ## Meta
 
 - repo: /Users/cr8s/.openclaw/workspace/Code/rosetta
-- last_updated: 2026-04-25T22:57Z
+- last_updated: 2026-04-25T03:23Z
 - total_docs_known: 128
-- total_processed: 18
+- total_processed: 19
 - current_batch: batch-3-active
 - telegram_dm_status: sent_8740875131_2026-04-25T22:20
 - last_telegram_batched_update: null
@@ -156,8 +156,19 @@ One PR per cycle.
 | docs/ideas/Semantic Audio Cognition Framework.md | processed | 0 | 0 | 0 | semantic-audio, cognition, personal-chat | personal/emotional chat content; not appropriate for DI extraction; no Rosetta technical content | 2026-04-25T02:28:40Z |
 | docs/ideas/Treating Trends Tantamount to Trading Technicals.md | processed | 0 | 0 | 0 | trends, trading, personal-chat | personal creative ideation chat; not appropriate for DI extraction | 2026-04-25T02:28:55Z |
 | docs/ideas/Idea - Spatial Data Fabric (SDF) - Mixed-Reality Performance Stage (20251106).md | processed | 0 | 0 | 0 | spatial-data-fabric, mixed-reality, personal-chat | personal creative studio chat; not appropriate for DI extraction | 2026-04-25T02:29:05Z |
-| docs/external/* | blocked:needs-expansion | 0 | 0 | 0 | external-docs | glob entry; needs expansion to individual file rows before DI extraction | 2026-04-25T02:29:15Z |
-| docs/frontier/* | blocked:needs-expansion | 0 | 0 | 0 | frontier-docs | glob entry; needs expansion to individual file rows before DI extraction | 2026-04-25T02:29:20Z |
+| docs/external/Attention Residuals (AttnRes) - Kimi.md | no | 0 | 0 | 0 | attention-residuals, kimi, external-ref | pending | - |
+| docs/external/Berman-PRD.md | no | 0 | 0 | 0 | berman, prd, external-ref | pending | - |
+| docs/external/DeerFlow Architecture.md | no | 0 | 0 | 0 | deerflow, architecture, external-ref | pending | - |
+| docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md | no | 0 | 0 | 0 | entif-2.0, external-advancements, research | pending; large file | - |
+| docs/external/Moltron.md | no | 0 | 0 | 0 | moltron, external-ref | pending | - |
+| docs/external/SwarmKit.md | no | 0 | 0 | 0 | swarmkit, external-ref | pending | - |
+| docs/external/acpx.md | no | 0 | 0 | 0 | acpx, external-ref | pending | - |
+| docs/external/Berman-*.md/txt | no | 0 | 0 | 0 | berman-prompts, personal-chat | pending review | - |
+| docs/external/AiiDA-WorkGraph.md | yes | 0 | 12 | 3 | provenance-first-class, pythonic-task-decorators, 3-tier-workflow, checkpointing, distributed-execution, sub-workflow-reuse, gui-experimental, rabbitmq-gap | already extracted PR bdf00b3; 12 findings; 3 issue candidates | 2026-04-24T22:03 |
+| docs/frontier/20251114 - Google DeepMind's Nested Learning Paradigm Versus Entif AI.md | no | 0 | 0 | 0 | frontier, deepmind, nested-learning, entif-2.0 | pending; ~73KB | - |
+| docs/frontier/20251115 - Chat GPT - Synthesizing 2025's Top Ideas for Entif AI 2.0.md | no | 0 | 0 | 0 | frontier, top-ideas, entif-2.0 | pending; ~50KB | - |
+| docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md | no | 0 | 0 | 0 | frontier, entif-lead, research | pending; ~146KB | - |
+| docs/frontier/20251128 - Chat GPT - Validating Entif's Advanced Lead in Modern AI Science.md | no | 0 | 0 | 0 | frontier, validation, entif-lead | pending; ~128KB | - |
 | docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md | yes | 0 | 10 | 3 | cognitive-tiles, swarm-gnosis, egc, wasm-sandbox, zk-proofs, trust-bootstrap, vq-vae, gdpr-erasure, arbitration-missing | 10 findings (CT-001 through CT-010); 3 issue candidates (CT-001 network layer gap, CT-002 trust bootstrap, CT-003 EGC esoteric); PR #73 | 2026-04-25T22:57Z |
 
 ## Telegram Batched Update Template
