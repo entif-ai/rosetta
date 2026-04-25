@@ -250,5 +250,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-pro-ext-research-cas-uri-missing": {
+    "number": 103,
+    "state": "open",
+    "title": "Missing: formal cas:// URI scheme definition in rosetta-core",
+    "url": "https://github.com/gent-ai/rosetta/issues/103",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-cas-uri-missing.md",
+    "draftStatus": "published"
   }
 }
