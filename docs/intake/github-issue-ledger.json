@@ -736,5 +736,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-013-dangling-toolcall-no-replay.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-004-conformance-test-harness": {
+    "number": 240,
+    "state": "open",
+    "title": "ROSETTA-v3-004: Conformance Test Harness Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/240",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-004-conformance-test-harness.md",
+    "draftStatus": "published"
   }
 }

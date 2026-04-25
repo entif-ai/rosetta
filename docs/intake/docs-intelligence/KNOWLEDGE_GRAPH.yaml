@@ -1048,6 +1048,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/238
   status: active
+- id: rosetta-v3-004-conformance-test-harness
+  name: Conformance Test Harness
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+  introduced_at: '2026-04-25'
+  definition: The Rosetta v3 spec defines Light/Full/Auditor/Forge conformance profiles
+    but does not specify a machine-readable test suite, certification workflow, or
+    acceptance criteria for profile compliance.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/240
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1985,7 +1995,8 @@ issue_drafts_inventory:
   issue_id: rosetta-v3-004-conformance-test-harness
   priority: P2
   type: implementation
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/240
 - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
   source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
   source_pr: null
