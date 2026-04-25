@@ -65,7 +65,7 @@ Duplicates to fold before promotion:
 
 ### PR #58 Salvage
 
-PR #58 reprocessed the already-covered OMOC Swarm Gnosis RFC and should be closed or superseded, not merged. Its only retained artifacts are:
+PR #58 reprocessed the already-covered OMOC Swarm Gnosis RFC and was closed as superseded. Its only retained artifacts are:
 
 | Retained draft | Reason |
 | --- | --- |
