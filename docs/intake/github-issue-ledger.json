@@ -128,7 +128,7 @@
     "omoc-lean-vs-learned-dilemma": {
       "number": 81,
       "state": "open",
-      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
+      "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
       "url": "https://github.com/entif-ai/rosetta/issues/81",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
@@ -285,6 +285,15 @@
     "url": "https://github.com/entif-ai/rosetta/issues/109",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-berman-box-sync-depth-circular-ref.md": {
+    "number": 113,
+    "state": "open",
+    "title": " Berman-PRD: Box sync has no circular reference protection",
+    "url": "https://github.com/entif-ai/rosetta/issues/113",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
   }
 }
