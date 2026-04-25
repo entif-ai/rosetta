@@ -232,5 +232,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md",
     "draftStatus": "published"
+  },
+  "ct-002-trust-bootstrap": {
+    "number": 96,
+    "state": "open",
+    "title": "CT-002: Trust bootstrap problem \u2014 new nodes have no reputation in fully open network",
+    "url": "https://github.com/entif-ai/rosetta/issues/96",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
+    "draftStatus": "published"
   }
 }
