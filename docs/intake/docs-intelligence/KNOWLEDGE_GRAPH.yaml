@@ -528,6 +528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
+- id: AR-001-depth-aggregation-memory-plane-3
+  name: AttnRes-style Depth Aggregation for Memory Plane 3
+  introduced_by: docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md
+  introduced_at: '2026-04-25'
+  definition: Research issue evaluating whether learned content-dependent attention
+    over the depth dimension (replacing uniform residual accumulation) can address
+    depth dilution in Rosetta Memory Plane 3 aggregation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/166
+  status: active
 - id: MOL-005-skill-hardening-threshold
   name: Skill Hardening Threshold
   introduced_by: docs/intake/issue-drafts/MOL-005-skill-hardening-threshold.md
