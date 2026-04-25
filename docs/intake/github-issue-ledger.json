@@ -313,5 +313,41 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AR-001-depth-aggregation-memory-plane-3.md",
     "draftStatus": "published"
+  },
+  "MOL-005-skill-hardening-threshold": {
+    "number": 180,
+    "state": "open",
+    "title": "[MOL-005] Rosetta Skillpacks Need Hardening Threshold Criteria",
+    "url": "https://github.com/entif-ai/rosetta/issues/180",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-005-skill-hardening-threshold.md",
+    "draftStatus": "published"
+  },
+  "RPP-task-numbering-reference.md": {
+    "number": 182,
+    "state": "open",
+    "title": "Define RPP Task Numbering Reference (Tasks 1\u201319)",
+    "url": "https://github.com/entif-ai/rosetta/issues/182",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RPP-task-numbering-reference.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-berman-e2e-tier3-cost-tracking": {
+    "number": 124,
+    "state": "open",
+    "title": "E2E Tier 3 cost tracking missing \u2014 ~$2-3/run could reach $100-150/month",
+    "url": "https://github.com/entif-ai/rosetta/issues/124",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-e2e-tier3-cost-tracking.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-berman-env-symlink-ambiguity.md": {
+    "number": 126,
+    "state": "open",
+    "title": "Credential symlink ambiguity \u2014 which .env is authoritative?",
+    "url": "https://github.com/entif-ai/rosetta/issues/126",
+    "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-env-symlink-ambiguity.md",
+    "draftStatus": "published"
   }
 }
