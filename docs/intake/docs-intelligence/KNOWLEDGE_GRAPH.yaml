@@ -538,6 +538,65 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/171
   status: active
+- id: e2e-002-14day-not-lame-alignment
+  name: 14-Day / NOT LAME Milestone Alignment
+  introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
+  introduced_at: '2026-04-25'
+  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
+    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
+    \ and establish single-source-of-truth ownership for shared capabilities."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/150
+  status: active
+- id: AR-001-depth-aggregation-memory-plane-3
+  name: AttnRes-style Depth Aggregation for Memory Plane 3
+  introduced_by: docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md
+  introduced_at: '2026-04-25'
+  definition: Research issue evaluating whether learned content-dependent attention
+    over the depth dimension (replacing uniform residual accumulation) can address
+    depth dilution in Rosetta Memory Plane 3 aggregation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/166
+  status: active
+- id: MOL-005-skill-hardening-threshold
+  name: Skill Hardening Threshold
+  introduced_by: docs/intake/issue-drafts/MOL-005-skill-hardening-threshold.md
+  introduced_at: '2026-04-25'
+  definition: Criteria for promoting skillpacks from draft to production-ready via
+    success-rate and consecutive-run thresholds, inspired by Moltrons 3-day hardening
+    narrative.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/180
+  status: active
+- id: RPP-task-numbering-reference
+  name: RPP Task Numbering Reference
+  introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
+  introduced_at: '2026-04-25'
+  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
+    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
+    \ A canonical task map is required to make the sequencing constraint enforceable."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/182
+  status: active
+- id: 2026-04-25-berman-e2e-tier3-cost-tracking
+  name: E2E Tier 3 Cost Tracking
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-e2e-tier3-cost-tracking.md
+  introduced_at: '2026-04-25'
+  definition: E2E Tier 3 test runs cost ~$2-3/run weekly with no cost tracking, budget
+    cap, or alerting. model-usage-tracker skill exists but is not wired into E2E test
+    scripts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/124
+  status: active
+- id: 2026-04-25-berman-env-symlink-ambiguity
+  name: Credential Symlink Ambiguity
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md
+  introduced_at: '2026-04-25'
+  definition: Multiple compatibility symlinks point to ~/.openclaw/.env as the canonical
+    .env, creating ambiguity about which path is authoritative for reads and writes
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/126
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1186,6 +1245,8 @@ issue_drafts_inventory:
   issue_id: RPP-task-numbering-reference
   priority: P2
   type: documentation
+  url: https://github.com/entif-ai/rosetta/issues/182
+  status: published
 - path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md
   source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended
     Research.md
