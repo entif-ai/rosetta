@@ -151,6 +151,15 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/df-001-skill-signature-gap.md",
       "draftStatus": "published"
+    },
+    "omoc-slug-adoption-timing-hydration-quality": {
+      "number": 92,
+      "state": "open",
+      "title": "OQ-4: Slug Adoption Timing vs Hydration Quality \u2014 Unresolved",
+      "url": "https://github.com/entif-ai/rosetta/issues/92",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-slug-adoption-timing-hydration-quality.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
