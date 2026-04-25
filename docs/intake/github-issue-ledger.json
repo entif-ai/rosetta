@@ -268,5 +268,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-cas-uri-missing.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-pro-ext-research-cas-uri-missing.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md": {
+    "number": 107,
+    "state": "open",
+    "title": "CT-004: GDPR right-to-erasure conflict with immutable content-addressed storage",
+    "url": "https://github.com/entif-ai/rosetta/issues/107",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md",
+    "draftStatus": "published"
   }
 }

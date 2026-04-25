@@ -1,11 +1,11 @@
 meta:
   version: '0.8'
   generated: '2026-04-25T23:59:30Z'
-  total_docs_processed: 27
-  active_issue_drafts: 91
+  total_docs_processed: 28
+  active_issue_drafts: 94
   archived_issue_drafts: 23
-  total_issue_drafts_inventory: 114
-  docs_intelligence_files: 28
+  total_issue_drafts_inventory: 117
+  docs_intelligence_files: 29
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -435,6 +435,16 @@ concepts:
   referenced_by:
   - https://github.com/igent-ai/rosetta/issues/103
   status: active
+- id: ct-004-gdpr-erasure
+  name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
+  introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
+  introduced_at: '2026-04-25'
+  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
+    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
+    \ be technically deleted, only delisted."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/107
+  status: active
 - id: ct-003-egc-pasigraphy-esoteric
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
@@ -457,6 +467,19 @@ concepts:
   referenced_by:
   - docs/intake/docs-intelligence/2026-04-25-deerflow-architecture.md
   - https://github.com/entif-ai/rosetta/issues/89
+  status: active
+- id: aiida-workgraph-reference
+  name: AiiDA-WorkGraph Reference Architecture
+  introduced_by: docs/external/AiiDA-WorkGraph.md
+  introduced_at: '2026-04-25'
+  definition: External scientific workflow reference covering automatic provenance
+    graphs, Pythonic task decorators, checkpointing, remote execution, AiiDA stack
+    dependencies, and experimental workflow visualization.
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/intake/docs-intelligence/2026-04-25-aiida-workgraph.md
+  - docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   status: active
 issue_candidates:
 - id: DI-007
@@ -862,6 +885,13 @@ processed_docs:
   issues: 6
   notes: PR #68 links TC-005/006/007 to existing GitHub issues and carries draft
     coverage for M8, M10, and Should-Have ownership follow-up.
+- path: docs/external/AiiDA-WorkGraph.md
+  processed_at: 2026-04-25T23:59
+  findings: 12
+  pr: 67
+  issues: 3
+  notes: PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference,
+    infrastructure-dependency, and experimental-GUI issue draft coverage.
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -956,6 +986,24 @@ issue_drafts_inventory:
   issue_id: text-core-should-have-owners
   priority: P3
   type: planning
+- path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-provenance-reference
+  priority: P3
+  type: research
+- path: docs/intake/issue-drafts/aiida-workgraph-infrastructure-dependencies.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-infrastructure-dependencies
+  priority: P2
+  type: architecture
+- path: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
+  source_doc: docs/external/AiiDA-WorkGraph.md
+  source_pr: 67
+  issue_id: aiida-workgraph-gui-experimental
+  priority: P3
+  type: risk
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1252,6 +1300,10 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/98
   status: published
   draft_path: docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md
+- issue_id: ct-004-gdpr-erasure
+  url: https://github.com/entif-ai/rosetta/issues/107
+  status: published
+  draft: 2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
 
 # PR #91 active issue drafts. CT-001, CT-002, and DF-001 were promoted on main
 # before this PR was rebased, so the extraction rows point at GitHub issues.
