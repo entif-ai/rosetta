@@ -745,5 +745,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-004-conformance-test-harness.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-acpx-adopt-as-delegation-mechanism": {
+    "number": 243,
+    "state": "open",
+    "title": "ACP-001: Adopt acpx as Rosetta's Standard Agent Delegation Mechanism (Replace PTY Scraping)",
+    "url": "https://github.com/entif-ai/rosetta/issues/243",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-adopt-as-delegation-mechanism.md",
+    "draftStatus": "published"
   }
 }
