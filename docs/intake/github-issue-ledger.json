@@ -98,6 +98,15 @@
       "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-refinement-enforcement.md",
       "draftStatus": "published"
     },
+    "rock-3111-c-dependency-cycle-detection": {
+      "number": 74,
+      "state": "open",
+      "title": "ROCK-3111-C: Define and enforce dependency cycle detection for RRP packs",
+      "url": "https://github.com/entif-ai/rosetta/issues/74",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/rock-3111-c-dependency-cycle-detection.md",
+      "draftStatus": "published"
+    },
     "rock-3111-c-recipes-skills-ci": {
       "number": 79,
       "state": "open",

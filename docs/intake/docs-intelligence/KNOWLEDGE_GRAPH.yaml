@@ -301,6 +301,16 @@ concepts:
   - docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md
   - docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
   status: active
+- id: rock-3111-c-dependency-cycle-detection
+  name: RRP Pack Dependency Cycle Detection
+  introduced_by: docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md
+  introduced_at: '2026-04-24'
+  definition: 'RRP pack depends_on cycle detection gap: the ROCK-3111-C spec documents
+    depends_on but does not specify cycle detection, self-reference blocking, or SCC-based
+    validation for pack certification.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/74
+  status: active
 - id: rock-3111-c-recipes-skills-ci
   name: RRP recipes/skills CI gap
   introduced_by: docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
@@ -810,6 +820,8 @@ issue_drafts_inventory:
   issue_id: rock-3111-c-dependency-cycle-detection
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/74
+  status: published
 - path: docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
