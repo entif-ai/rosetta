@@ -538,6 +538,25 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/182
   status: active
+- id: 2026-04-25-berman-e2e-tier3-cost-tracking
+  name: E2E Tier 3 Cost Tracking
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-e2e-tier3-cost-tracking.md
+  introduced_at: '2026-04-25'
+  definition: E2E Tier 3 test runs cost ~$2-3/run weekly with no cost tracking, budget
+    cap, or alerting. model-usage-tracker skill exists but is not wired into E2E test
+    scripts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/124
+  status: active
+- id: 2026-04-25-berman-env-symlink-ambiguity
+  name: Credential Symlink Ambiguity
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md
+  introduced_at: '2026-04-25'
+  definition: Multiple compatibility symlinks point to ~/.openclaw/.env as the canonical
+    .env, creating ambiguity about which path is authoritative for reads and writes
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/126
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
