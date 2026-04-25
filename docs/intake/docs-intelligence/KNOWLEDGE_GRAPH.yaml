@@ -522,11 +522,21 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
-    visited-folder cycle detection — folder symlinks/junction points creating cycles
-    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
+  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
+    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
+    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
+  status: active
+- id: 2026-04-25-berman-e2e-tier3-cost-tracking
+  name: E2E Tier 3 Cost Tracking
+  introduced_by: docs/intake/issue-drafts/2026-04-25-berman-e2e-tier3-cost-tracking.md
+  introduced_at: '2026-04-25'
+  definition: E2E Tier 3 test runs cost ~$2-3/run weekly with no cost tracking, budget
+    cap, or alerting. model-usage-tracker skill exists but is not wired into E2E test
+    scripts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/124
   status: active
 issue_candidates:
 - id: DI-007

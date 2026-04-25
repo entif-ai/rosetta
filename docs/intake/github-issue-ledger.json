@@ -304,5 +304,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-berman-e2e-tier3-cost-tracking": {
+    "number": 124,
+    "state": "open",
+    "title": "E2E Tier 3 cost tracking missing \u2014 ~$2-3/run could reach $100-150/month",
+    "url": "https://github.com/entif-ai/rosetta/issues/124",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-e2e-tier3-cost-tracking.md",
+    "draftStatus": "published"
   }
 }
