@@ -522,11 +522,21 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
-    visited-folder cycle detection — folder symlinks/junction points creating cycles
-    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
+  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
+    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
+    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
+  status: active
+- id: MOL-004-opentelemetry-skill-audit
+  name: OpenTelemetry Skill Execution Audit
+  introduced_by: docs/intake/issue-drafts/MOL-004-opentelemetry-skill-audit.md
+  introduced_at: '2026-04-25'
+  definition: Adopt OpenTelemetry as the skill execution trace standard to provide
+    replay-level auditability for root-access operations, complementing receipt-level
+    emission with full execution traces.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/178
   status: active
 issue_candidates:
 - id: DI-007

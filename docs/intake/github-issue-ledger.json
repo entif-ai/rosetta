@@ -304,5 +304,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-box-sync-depth-circular-ref.md",
     "draftStatus": "published"
+  },
+  "MOL-004-opentelemetry-skill-audit.md": {
+    "number": 178,
+    "state": "open",
+    "title": "[MOL-004] OpenTelemetry Traces for Skill Execution Audit",
+    "url": "https://github.com/entif-ai/rosetta/issues/178",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MOL-004-opentelemetry-skill-audit.md",
+    "draftStatus": "published"
   }
 }
