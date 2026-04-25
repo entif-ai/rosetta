@@ -2516,81 +2516,7 @@
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
       "sourcePath": "docs/external/SwarmKit.md",
       "title": "Docs Intelligence Extraction: SwarmKit",
-      "concepts": [
-        "orchestration",
-        "raft",
-        "distributed",
-        "consensus",
-        "fault-tolerance",
-        "security",
-        "tls",
-        "pki",
-        "authentication",
-        "authorization",
-        "token-join",
-        "join-flow",
-        "reconciliation",
-        "desired-state",
-        "state-management",
-        "service-types",
-        "replicated",
-        "global",
-        "scheduling",
-        "abstraction",
-        "rolling-updates",
-        "parallelism",
-        "delay",
-        "deployment",
-        "updates",
-        "restart-policies",
-        "fault-recovery",
-        "resilience",
-        "constraints",
-        "node-attributes",
-        "filtering",
-        "spread-strategy",
-        "load-balancing",
-        "strategy",
-        "state-store",
-        "in-memory",
-        "manager",
-        "state",
-        "node-availability",
-        "paused",
-        "drained",
-        "cluster-management",
-        "maintenance",
-        "cert-rotation",
-        "transparent-reload",
-        "certificates",
-        "go-version",
-        "protobuf",
-        "build-toolchain",
-        "swarmd",
-        "swarmctl",
-        "socket",
-        "tooling",
-        "cli",
-        "task-migration",
-        "drain",
-        "operations",
-        "failover",
-        "executor",
-        "pluggable-runtime",
-        "runtime",
-        "issue-candidate",
-        "supersession",
-        "project-status",
-        "relevance",
-        "constraint-labels",
-        "security-labeling",
-        "multi-tenancy",
-        "task-history-entries",
-        "operational-parameters",
-        "dispatcher-heartbeat",
-        "health-checking",
-        "availability"
-      ]
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md",
@@ -2830,6 +2756,24 @@
       "title": "anti-personhood-correlation-governance-gap",
       "labels": [],
       "signature": "anti-correlation-governance-personhood"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-001-depth-aggregation-memory-plane-3.md",
+      "title": "AR-001: Evaluate AttnRes-style Depth Aggregation for Memory Plane 3",
+      "labels": [],
+      "signature": "001-aggregation-attnres-depth-evaluate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md",
+      "title": "AR-002: Model Block-Size Cost Tradeoff for Tapestry Segmentation",
+      "labels": [],
+      "signature": "002-block-cost-model-segmentation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/AR-003-kimi-competitive-tracking.md",
+      "title": "AR-003: Track Kimi Team Publications for Competitive Gap Analysis",
+      "labels": [],
+      "signature": "003-analysis-competitive-kimi-publications"
     },
     {
       "path": "docs/intake/issue-drafts/backup-strategy-no-automation.md",
@@ -5357,8 +5301,7 @@
     "tooling": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -5376,8 +5319,7 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
@@ -6222,8 +6164,7 @@
     "relevance": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
@@ -7493,8 +7434,7 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/external/DeerFlow Architecture.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -7745,8 +7685,7 @@
     },
     "authentication": {
       "documents": [
-        "docs/external/acpx.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/acpx.md"
       ],
       "issueDrafts": []
     },
@@ -7944,8 +7883,7 @@
     "resilience": {
       "documents": [
         "docs/external/AiiDA-WorkGraph.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
@@ -8649,8 +8587,7 @@
     },
     "abstraction": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -8867,8 +8804,7 @@
     },
     "deployment": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -8983,8 +8919,7 @@
     },
     "tls": {
       "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/external/SwarmKit.md"
+        "docs/ideas/Attention-as-Capital Analytics Platform.md"
       ],
       "issueDrafts": []
     },
@@ -9713,8 +9648,7 @@
     },
     "operations": {
       "documents": [
-        "docs/external/Berman-PRD.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Berman-PRD.md"
       ],
       "issueDrafts": []
     },
@@ -10834,8 +10768,7 @@
     },
     "consensus": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
-        "docs/external/SwarmKit.md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
       ],
       "issueDrafts": []
     },
@@ -12612,8 +12545,7 @@
     },
     "cli": {
       "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
     },
@@ -12900,8 +12832,7 @@
     },
     "runtime": {
       "documents": [
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -13123,8 +13054,7 @@
     },
     "constraints": {
       "documents": [
-        "docs/external/Moltron.md",
-        "docs/external/SwarmKit.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -13582,8 +13512,7 @@
     },
     "distributed": {
       "documents": [
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/external/SwarmKit.md"
+        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
     },
@@ -15811,354 +15740,6 @@
     "artist-and-deaf-muse": {
       "documents": [
         "docs/ideas/Semantic Audio Cognition Framework.md"
-      ],
-      "issueDrafts": []
-    },
-    "raft": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "fault-tolerance": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "pki": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "authorization": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "token-join": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "join-flow": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "reconciliation": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "desired-state": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state-management": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "service-types": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "replicated": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "global": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "scheduling": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "rolling-updates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "parallelism": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "delay": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "updates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "restart-policies": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "fault-recovery": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "node-attributes": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "filtering": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "spread-strategy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "load-balancing": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "strategy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state-store": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "in-memory": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "manager": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "state": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "node-availability": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "paused": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "drained": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "cluster-management": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "maintenance": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "cert-rotation": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "transparent-reload": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "certificates": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "go-version": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "protobuf": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "build-toolchain": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "swarmd": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "swarmctl": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "socket": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "task-migration": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "drain": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "failover": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "executor": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "pluggable-runtime": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "issue-candidate": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "supersession": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "project-status": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "constraint-labels": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "security-labeling": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-tenancy": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "task-history-entries": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "operational-parameters": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "dispatcher-heartbeat": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "health-checking": {
-      "documents": [
-        "docs/external/SwarmKit.md"
-      ],
-      "issueDrafts": []
-    },
-    "availability": {
-      "documents": [
-        "docs/external/SwarmKit.md"
       ],
       "issueDrafts": []
     },
