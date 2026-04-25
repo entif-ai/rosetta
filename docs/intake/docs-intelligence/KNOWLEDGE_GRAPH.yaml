@@ -1023,6 +1023,141 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/226
   status: active
+- id: soul-v4-challenge-tier-1-self-contradiction
+  name: SOUL v4 T1 Challenge vs Selfhood Self-Contradiction
+  introduced_by: docs/intake/issue-drafts/soul-v4-challenge-tier-1-self-contradiction.md
+  introduced_at: '2026-04-25'
+  definition: "T1 challenge framework (\"instantly challenge axiomatic/belief/identity\
+    \ claims\") conflicts with selfhood as the most protected axiomatic attribute\
+    \ \u2014 no resolution mechanism defined in SOUL.md v4.1"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/234
+  status: active
+- id: df-006-docs-policy-no-ci
+  name: Documentation Update Policy CI Gap
+  introduced_by: docs/intake/issue-drafts/df-006-docs-policy-no-ci.md
+  introduced_at: '2026-04-25'
+  definition: CLAUDE.md mandates updating README.md and CLAUDE.md after every code
+    change, but no CI check or pre-commit hook enforces this policy, allowing documentation
+    to drift from code.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/236
+  status: active
+- id: df-013-dangling-toolcall-no-replay
+  name: "DanglingToolCall middleware \u2014 no replay for interrupted tool calls"
+  introduced_by: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
+  introduced_at: '2026-04-25'
+  definition: "DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage\
+    \ tool_calls that lack responses (e.g., user interruption) but does not replay,\
+    \ resume, or re-execute the interrupted call \u2014 causing partial results to\
+    \ be lost."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/238
+  status: active
+- id: rosetta-v3-004-conformance-test-harness
+  name: Conformance Test Harness
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+  introduced_at: '2026-04-25'
+  definition: The Rosetta v3 spec defines Light/Full/Auditor/Forge conformance profiles
+    but does not specify a machine-readable test suite, certification workflow, or
+    acceptance criteria for profile compliance.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/240
+  status: active
+- id: 2026-04-25-acpx-adopt-as-delegation-mechanism
+  name: acpx as Delegation Mechanism
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-adopt-as-delegation-mechanism.md
+  introduced_at: '2026-04-25'
+  definition: Evaluate adopting acpx (headless ACP CLI client) as Rosetta's primary
+    mechanism for delegating to coding agents, replacing fragile PTY-scraping patterns
+    with structured ACP JSON messaging.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/243
+  status: active
+- id: video-transcript-dedup-playlist-tracking
+  name: Video Transcript Deduplication by Canonical Video ID + Playlist Attachment
+    Tracking
+  introduced_by: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
+  introduced_at: '2026-04-25'
+  definition: "Store YouTube transcripts keyed by canonical video ID (not URL) to\
+    \ prevent duplicate transcription. When a video appears in a new playlist, add\
+    \ a playlist attachment edge \u2014 do not re-transcribe."
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/246
+  status: active
+- id: 2026-04-25-acpx-config-layering-rosetta-alignment
+  name: Config Layering Standard (acpx pattern)
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-config-layering-rosetta-alignment.md
+  introduced_at: '2026-04-25'
+  definition: "Adopt acpx three-tier config precedence (global \u2192 project \u2192\
+    \ CLI flags) as the standard configuration pattern for Rosetta tools."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/249
+  status: active
+- id: ccf-003-no-board-state-formalization
+  name: Board State Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
+  introduced_at: '2026-04-25'
+  definition: The central input for commitment sizing in the Consensus-First Commitment
+    Framework. Characterizes opportunity magnitude, time sensitivity, competitive
+    pressure, known edges, edge durability, resource posture, loss tolerance, regulatory/trust
+    constraints, and portfolio opportunity cost. Has no formal data structure or tooling
+    representation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/252
+  status: active
+- id: cheap-first-routing-policy
+  name: Cheap-First Routing Policy
+  introduced_by: docs/intake/issue-drafts/cheap-first-routing-policy.md
+  introduced_at: '2026-04-25'
+  definition: Model routing policy that defaults to cheap/fast tier, escalates to
+    mid-tier only on low-confidence signal from cheap model, and to heavy only on
+    low-confidence from mid-tier. Every call carries a budget header with token metering
+    and cost-per-outcome recording.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/254
+  status: active
+- id: 2026-04-25-acpx-crash-reconnect-session-reload
+  name: Crash-Reconnect Session Semantics
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-crash-reconnect-session-reload.md
+  introduced_at: '2026-04-25'
+  definition: "Pattern where Rosetta detects dead agent sub-processes, respawns them,\
+    \ attempts session/load from persisted state, and falls back to session/new on\
+    \ failure \u2014 matching acpx crash-reconnect behavior."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/258
+  status: active
+- id: cts-008-decision-forge-efe-active-inference
+  name: DecisionForge Expected Free Energy + Active Inference
+  introduced_by: docs/intake/issue-drafts/cts-008-decision-forge-efe-active-inference.md
+  introduced_at: '2026-04-25'
+  definition: DecisionForge module that calculates Expected Free Energy (EFE) for
+    slug decoding decisions using epistemic value + pragmatic value - computational
+    cost, implementing an active inference loop with cognitive budget enforcement.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/260
+  status: active
+- id: ccf-010
+  name: Consensus-First Commitment Scoping Framework Not Adopted
+  introduced_by: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  introduced_at: '2026-04-25'
+  definition: The Consensus-First Commitment Scoping Framework v0.1 defines five required
+    artifacts, phase-transition handshake, calibration loop, and anti-delusion mechanisms.
+    None are operationalized in Rosetta workflows, allowing hallucination, premature
+    closure, groupthink, and LLM overconfidence to operate unchecked.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/262
+  status: active
+- id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  name: acpx Cross-Vendor Agent Evaluation
+  introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-cross-vendor-agent-evaluation.md
+  introduced_at: '2026-04-25'
+  definition: Evaluation of acpx-built-in non-US-market agents (kimi, qwen, kilocode,
+    opencode, kiro) for Rosetta integration once acpx is adopted as the delegation
+    mechanism.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/265
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2025,6 +2160,87 @@ issue_drafts_inventory:
   priority: P0
   type: planning
   status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-001-append-only-enforcement
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+  priority: P2
+  type: docs-intelligence
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-003-trust-bootstrap-model
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-004-conformance-test-harness
+  priority: P2
+  type: implementation
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/240
+- path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-005-delta-capsule-propagation
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-006-episteme-layer-4-scope
+  priority: P3
+  type: open-question
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-007-network-topology-assumptions
+  priority: P2
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+  priority: P2
+  type: risk
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-009-profile-negotiation-protocol
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-010-translator-tile-versioning
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
+  source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  source_pr: 197
+  issue_id: be-001-receipt-law-not-explicit
+  priority: P1
+  type: architecture
+  status: candidate
+- issue_id: 2026-04-25-acpx-cross-vendor-agent-evaluation
+  url: https://github.com/entif-ai/rosetta/issues/265
+  status: published
 
 
   # Rosetta v3 Core Spine Specification issue drafts (PR TBD)
