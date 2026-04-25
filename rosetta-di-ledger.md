@@ -173,7 +173,7 @@ One PR per cycle.
 | docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md | processed:2026-04-25T20:22:26.439Z:212 | 0 | 50 | 10 |  |  | 2026-04-25T20:22:26.439Z |
 | docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md | processed:2026-04-25T20:39:49.747Z:216 | 0 | 47 | 12 |  |  | 2026-04-25T20:39:49.747Z |
 | docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md | processed:2026-04-25T20:46:38.640Z:217 | 0 | 30 | 20 |  |  | 2026-04-25T20:46:38.640Z |
-| docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md | locked:2026-04-25T21:02:09.100Z:heartbeat:1777150929:docs-intelligence/next | 0 |  |  |  |  | 2026-04-25T21:02:09.100Z |
+| docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md | processed:2026-04-25T21:10:03.405Z:222 | 0 | 47 | 10 |  |  | 2026-04-25T21:10:03.405Z |
 | docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md | no | 0 |  |  |  |  |  |
 | docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md | yes | 0 | 10 | 1 | bootstrap-state, receipt-implementation, source-substrate-bootstrap, parse-only-default, ob1, prism, mission-control, operator-shell-gating, cache-persistence, shacl-coverage | extracted 2026-04-25; 10 findings; 1 issue draft BE-001 (Receipt Law not explicit); PR #197 | 2026-04-25T18:20Z |
