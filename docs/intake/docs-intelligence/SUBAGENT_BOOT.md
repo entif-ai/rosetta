@@ -15,7 +15,9 @@ You are a docs-intelligence extraction agent working in:
 
 ## First: Sync to latest
 
-Before doing ANYTHING else — before reading the ledger, before claiming a doc — fetch and reset to origin/main:
+**NOTE: THIS STEP IS FOR THE ROSETTA CODE BASE POINTING TO `https://github.com/entif-ai/rosetta` and NOT for `~/.openclaw/workspace`!**
+
+Before doing ANYTHING else — before reading the ledger, before claiming a doc — fetch and reset THE ROSETTA FOLDER to origin/main:
 
 ```bash
 git fetch origin main
