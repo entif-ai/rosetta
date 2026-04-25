@@ -133,6 +133,15 @@
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
       "draftStatus": "published"
+    },
+    "swarm-gnosis-public-commons-licensing-undefined": {
+      "number": 87,
+      "state": "open",
+      "title": "[RFC \u00a718 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
+      "url": "https://github.com/entif-ai/rosetta/issues/87",
+      "activeDraftPath": null,
+      "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-gnosis-public-commons-licensing-undefined.md",
+      "draftStatus": "published"
     }
   },
   "implementationIssues": {
