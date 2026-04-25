@@ -799,5 +799,23 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-crash-reconnect-session-reload.md",
     "draftStatus": "published"
+  },
+  "cts-008-decision-forge-efe-active-inference": {
+    "number": 260,
+    "state": "open",
+    "title": "CTS-008: DecisionForge Expected Free Energy Calculation + Active Inference Loop",
+    "url": "https://github.com/entif-ai/rosetta/issues/260",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-008-decision-forge-efe-active-inference.md",
+    "draftStatus": "published"
+  },
+  "ccf-010-consensus-first-framework-not-adopted.md": {
+    "number": 262,
+    "state": "open",
+    "title": "CCF-010: Consensus-First Commitment Scoping Framework Not Adopted in Rosetta Workflows",
+    "url": "https://github.com/entif-ai/rosetta/issues/262",
+    "activeDraftPath": "docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-010-consensus-first-framework-not-adopted.md",
+    "draftStatus": "published"
   }
 }

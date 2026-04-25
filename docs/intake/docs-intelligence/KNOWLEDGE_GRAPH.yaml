@@ -1121,6 +1121,27 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/258
   status: active
+- id: cts-008-decision-forge-efe-active-inference
+  name: DecisionForge Expected Free Energy + Active Inference
+  introduced_by: docs/intake/issue-drafts/cts-008-decision-forge-efe-active-inference.md
+  introduced_at: '2026-04-25'
+  definition: DecisionForge module that calculates Expected Free Energy (EFE) for
+    slug decoding decisions using epistemic value + pragmatic value - computational
+    cost, implementing an active inference loop with cognitive budget enforcement.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/260
+  status: active
+- id: ccf-010
+  name: Consensus-First Commitment Scoping Framework Not Adopted
+  introduced_by: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
+  introduced_at: '2026-04-25'
+  definition: The Consensus-First Commitment Scoping Framework v0.1 defines five required
+    artifacts, phase-transition handshake, calibration loop, and anti-delusion mechanisms.
+    None are operationalized in Rosetta workflows, allowing hallucination, premature
+    closure, groupthink, and LLM overconfidence to operate unchecked.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/262
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
