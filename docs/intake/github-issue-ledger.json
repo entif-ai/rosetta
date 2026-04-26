@@ -2833,5 +2833,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-005-guard-decision-api.md",
     "draftStatus": "published"
+  },
+  "am-006-data-control-plane-spoofing.md": {
+    "number": 706,
+    "state": "open",
+    "title": "AM-006: Data/Control Plane Type Enforcement \u2014 Anti-Spoofing",
+    "url": "https://github.com/entif-ai/rosetta/issues/706",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-006-data-control-plane-spoofing.md",
+    "draftStatus": "published"
   }
 }
