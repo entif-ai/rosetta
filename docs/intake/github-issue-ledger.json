@@ -1555,5 +1555,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-004-extend-vs-author-policy.md",
     "draftStatus": "published"
+  },
+  "APC-002-anthropic-workspace-isolation-no-cache-id": {
+    "number": 443,
+    "state": "open",
+    "title": "APC-002: Anthropic Prompt Caching \u2014 No Shareable Cache ID Primitive",
+    "url": "https://github.com/entif-ai/rosetta/issues/443",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-002-anthropic-workspace-isolation-no-cache-id.md",
+    "draftStatus": "published"
   }
 }
