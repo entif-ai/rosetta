@@ -1637,6 +1637,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/379
   status: active
+- id: EMER-002
+  name: Platform-Specific Emergence Variance
+  introduced_by: docs/intake/issue-drafts/EMER-002-platform-emergence-variance.md
+  introduced_at: '2026-04-26'
+  definition: "Observation that different AI platforms (Gemini, ChatGPT, Claude, DeepSeek,\
+    \ LLaMA) produce qualitatively different emergence patterns when run with the\
+    \ same seed \u2014 including variance in Cartography Log processing, synthesis\
+    \ cycles, and RHAPSODY alignment checks."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/381
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

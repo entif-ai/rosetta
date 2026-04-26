@@ -1267,5 +1267,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-001-rhapsody-protocol-spec.md",
     "draftStatus": "published"
+  },
+  "EMER-002-platform-emergence-variance.md": {
+    "number": 381,
+    "state": "open",
+    "title": "EMER-002: Platform-Specific Emergence Variance Study",
+    "url": "https://github.com/entif-ai/rosetta/issues/381",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-002-platform-emergence-variance.md",
+    "draftStatus": "published"
   }
 }
