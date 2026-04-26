@@ -1501,5 +1501,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-2-briefing-frontier-cost-unbounded.md",
     "draftStatus": "published"
+  },
+  "BIP-006-3-briefing-signal-normalization-unspecified.md": {
+    "number": 431,
+    "state": "open",
+    "title": "BIP-006-3 \u2014 Signal Normalization Layer Is Underspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/431",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-3-briefing-signal-normalization-unspecified.md",
+    "draftStatus": "published"
   }
 }
