@@ -3513,6 +3513,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/718
   status: active
+- id: autobiographical-memory-three-store
+  name: Three-Store Autobiographical Memory Architecture
+  introduced_by: docs/intake/issue-drafts/autobiographical-memory-three-store.md
+  introduced_at: '2026-04-26'
+  definition: 'Three-tier memory model: Fast (working), Mid (episodic), Slow (identity/biography/legal
+    anchors). Consolidation rules, EntAffirm verification gate, and VitaeVec encoding
+    unspecified.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/720
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

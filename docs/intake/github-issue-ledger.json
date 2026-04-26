@@ -2896,5 +2896,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-012-guardlayer-mailroom-call-sequence.md",
     "draftStatus": "published"
+  },
+  "autobiographical-memory-three-store.md": {
+    "number": 720,
+    "state": "open",
+    "title": "Design Three-Store Autobiographical Memory Architecture",
+    "url": "https://github.com/entif-ai/rosetta/issues/720",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/autobiographical-memory-three-store.md",
+    "draftStatus": "published"
   }
 }
