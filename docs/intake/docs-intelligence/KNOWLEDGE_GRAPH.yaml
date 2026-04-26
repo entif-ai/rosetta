@@ -3564,6 +3564,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/727
   status: active
+- id: ccf-004-no-premortem-practice
+  name: No Premortem Practice
+  introduced_by: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
+  introduced_at: '2026-04-26'
+  definition: The Consensus-First Commitment Scoping Framework references premortem
+    as a core anti-delusion mechanism but no operational practice exists to trigger,
+    conduct, or record premortems in Rosetta workflows.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/292
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

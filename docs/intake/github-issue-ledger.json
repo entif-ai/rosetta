@@ -2941,5 +2941,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-002-no-formal-consensus-protocol.md",
     "draftStatus": "published"
+  },
+  "ccf-004-no-premortem-practice": {
+    "number": 292,
+    "state": "open",
+    "title": "No Premortem Practice (referenced by #292 Falsification & Dissent Packet)",
+    "url": "https://github.com/entif-ai/rosetta/issues/292",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-004-no-premortem-practice.md",
+    "draftStatus": "published"
   }
 }
