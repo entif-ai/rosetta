@@ -3343,6 +3343,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/240
   status: active
+- id: YAAC-002-claw-variant-security-matrix
+  name: Claw Variant Security Comparison Matrix
+  introduced_by: docs/intake/issue-drafts/YAAC-002-claw-variant-security-matrix.md
+  introduced_at: '2026-04-26'
+  definition: "Security comparison matrix for OpenClaw, ZeroClaw, Nanobot, IronClaw,\
+    \ PicoClaw, and Agent Zero \u2014 covering boundary models, supply chain risk,\
+    \ secrets handling, tool execution, maturity, and production readiness."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/688
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
