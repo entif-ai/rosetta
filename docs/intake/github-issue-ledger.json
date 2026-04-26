@@ -2662,5 +2662,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-007-clip-image-prototypes-etl.md",
     "draftStatus": "published"
+  },
+  "TB-008-yamnet-audio-prototypes-etl.md": {
+    "number": 672,
+    "state": "open",
+    "title": "YAMNet audio prototypes ETL: generate YAMNet vectors for 50 audio event concepts",
+    "url": "https://github.com/entif-ai/rosetta/issues/672",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-008-yamnet-audio-prototypes-etl.md",
+    "draftStatus": "published"
   }
 }

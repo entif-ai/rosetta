@@ -3219,6 +3219,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/670
   status: active
+- id: TB-008-yamnet-audio-prototypes-etl
+  name: YAMNet audio event prototypes ETL
+  introduced_by: docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md
+  introduced_at: '2026-04-26'
+  definition: "ETL pipeline generating 521-dim YAMNet audio event vectors for 50 AudioSet\
+    \ event classes, mapped to WordNet synset URIs for cross-modal audio\u2194text\
+    \ retrieval in the RPP multimodal layer."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/672
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
