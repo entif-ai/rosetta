@@ -2176,5 +2176,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-002-canonical-key-scheme.md",
     "draftStatus": "published"
+  },
+  "MHC-003-non-collapse-contract.md": {
+    "number": 575,
+    "state": "open",
+    "title": "MHC-003: Non-Collapse Contract at Spine Level",
+    "url": "https://github.com/entif-ai/rosetta/issues/575",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-003-non-collapse-contract.md",
+    "draftStatus": "published"
   }
 }

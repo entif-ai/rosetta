@@ -2663,6 +2663,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/573
   status: active
+- id: MHC-003
+  name: Non-Collapse Contract at Spine Level
+  introduced_by: docs/intake/issue-drafts/MHC-003-non-collapse-contract.md
+  introduced_at: '2026-04-26'
+  definition: 'Hard invariant enforced at the Pasigraphy spine: translators and refiners
+    cannot emit singleton tiles when ambiguity is unresolved. Central to Entif governance
+    and auditability.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/575
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
