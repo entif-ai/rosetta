@@ -2580,6 +2580,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/555
   status: active
+- id: MCST-001
+  name: MaxClaw Data Retention Risk
+  introduced_by: docs/intake/issue-drafts/MCST-001-data-retention-ambiguity-risk.md
+  introduced_at: '2026-04-26'
+  definition: "MaxClaw privacy policy permits indefinite data retention (\"as long\
+    \ as necessary/permitted\"), creating risk that anything transmitted to MaxClaw\
+    \ \u2014 even sanitized task specs \u2014 could persist and be used beyond intended\
+    \ scope."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/558
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

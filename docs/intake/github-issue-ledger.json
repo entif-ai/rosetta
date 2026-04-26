@@ -2104,5 +2104,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-005-reflective-density-instrumentation.md",
     "draftStatus": "published"
+  },
+  "MCST-001-data-retention-ambiguity-risk.md": {
+    "number": 558,
+    "state": "open",
+    "title": "MCST-001: MaxClaw Data Retention Risk \u2014 Zero-Retention Boundary Needed",
+    "url": "https://github.com/entif-ai/rosetta/issues/558",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-001-data-retention-ambiguity-risk.md",
+    "draftStatus": "published"
   }
 }
