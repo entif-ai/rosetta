@@ -2095,5 +2095,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-004-manifold-folding-empirical-measurement.md",
     "draftStatus": "published"
+  },
+  "LSC-005-reflective-density-instrumentation.md": {
+    "number": 555,
+    "state": "open",
+    "title": "LSC-005: Instrument Reflective Density Measurement",
+    "url": "https://github.com/entif-ai/rosetta/issues/555",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-005-reflective-density-instrumentation.md",
+    "draftStatus": "published"
   }
 }
