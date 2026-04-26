@@ -1438,5 +1438,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-3-social-cache-key-unspecified.md",
     "draftStatus": "published"
+  },
+  "text-core-should-have-owners.md": {
+    "number": 417,
+    "state": "open",
+    "title": "Assign owners for Text-Core Should-Have items",
+    "url": "https://github.com/entif-ai/rosetta/issues/417",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-should-have-owners.md",
+    "draftStatus": "published"
   }
 }

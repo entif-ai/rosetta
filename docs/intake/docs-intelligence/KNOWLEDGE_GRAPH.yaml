@@ -1826,6 +1826,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/415
   status: active
+- id: text-core-should-have-owners
+  name: Text-Core Should-Have Ownership
+  introduced_by: docs/intake/issue-drafts/text-core-should-have-owners.md
+  introduced_at: '2026-04-26'
+  definition: Assignment of implementation owners and sequencing notes for the five
+    Should-Have items in the Text-Core MVP Scope Gate to prevent silent dropout or
+    accidental Must-Have promotion.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/417
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2655,6 +2665,8 @@ issue_drafts_inventory:
   issue_id: text-core-should-have-owners
   priority: P3
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/417
+  status: published
 - path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   source_doc: docs/external/AiiDA-WorkGraph.md
   source_pr: 67
