@@ -1428,6 +1428,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/337
   status: active
+- id: cw-005-maturity-scoring
+  name: Capability Tile Maturity Scoring
+  introduced_by: docs/intake/issue-drafts/CW-005-maturity-scoring-not-defined.md
+  introduced_at: '2026-04-25'
+  definition: A 0-5 scale and computation system for rating the production-readiness
+    of capability tiles. 0=stub, 1=PoC, 2=working fragile, 3=usable, 4=team-ready,
+    5=hardened/prod.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/339
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
