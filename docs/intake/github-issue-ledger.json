@@ -1699,5 +1699,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-001-multi-path-email-attack-surface.md",
     "draftStatus": "published"
+  },
+  "EML-002-bayesian-classifier-triage-not-gate.md": {
+    "number": 471,
+    "state": "open",
+    "title": "EML-002: Bayesian Email Classifier is Triage Signal, Not Authorization Gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/471#issuecomment-4321841855",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-002-bayesian-classifier-triage-not-gate.md",
+    "draftStatus": "published"
   }
 }
