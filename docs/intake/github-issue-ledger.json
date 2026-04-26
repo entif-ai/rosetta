@@ -2986,5 +2986,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-009-no-contrarian-protected-channel-formalization.md",
     "draftStatus": "published"
+  },
+  "constitutional-primitives-prose-not-law.md": {
+    "number": 735,
+    "state": "open",
+    "title": "Constitutional Primitives Exist Only in Prose, Not Enforced in Runtime",
+    "url": "https://github.com/entif-ai/rosetta/issues/735",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/constitutional-primitives-prose-not-law.md",
+    "draftStatus": "published"
   }
 }
