@@ -844,5 +844,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-001-agentwallet-eoa-key-prohibition.md",
     "draftStatus": "published"
+  },
+  "AGR-002-quarantine-pipeline-agent-sourced-code.md": {
+    "number": 271,
+    "state": "open",
+    "title": "AGR-002: Build Quarantine Pipeline for Agent-Sourced Code \u2014 License Check, Dependency Scan, Static Grep, Sandbox Run",
+    "url": "https://github.com/entif-ai/rosetta/issues/271",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-002-quarantine-pipeline-agent-sourced-code.md",
+    "draftStatus": "published"
   }
 }

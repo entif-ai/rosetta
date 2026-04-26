@@ -1172,6 +1172,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/269
   status: active
+- id: AGR-002
+  name: Agent-Sourced Code Quarantine Pipeline
+  introduced_by: docs/intake/issue-drafts/AGR-002-quarantine-pipeline-agent-sourced-code.md
+  introduced_at: '2026-04-25'
+  definition: Automated 6-stage pipeline for classifying code artifacts from ghost-town
+    agent-authored repos as Adopt / Ideas Only / Reject based on license triage, SBOM,
+    static grep, and sandbox execution.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/271
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
