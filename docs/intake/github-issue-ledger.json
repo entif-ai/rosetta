@@ -2878,5 +2878,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-010-rosetta-integration-alignment.md",
     "draftStatus": "published"
+  },
+  "am-011-mailroom-scope-boundary.md": {
+    "number": 716,
+    "state": "open",
+    "title": "AM-011: Mailroom Scope \u2014 Bus Ingress vs General Rosetta Ingress Pattern",
+    "url": "https://github.com/entif-ai/rosetta/issues/716",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-011-mailroom-scope-boundary.md",
+    "draftStatus": "published"
   }
 }

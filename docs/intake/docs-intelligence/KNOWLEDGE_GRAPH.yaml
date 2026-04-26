@@ -3492,6 +3492,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/714
   status: active
+- id: am-011-mailroom-scope-boundary
+  name: "Mailroom Scope \u2014 Bus Ingress vs General Rosetta Ingress Pattern"
+  introduced_by: docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md
+  introduced_at: '2026-04-26'
+  definition: Question of whether the mailroom ingest pipeline is specific to inter-agent
+    bus messages or a general Rosetta ingress pattern for all external inputs (skillpacks,
+    human messages, tool results, file imports).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/716
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
