@@ -3061,6 +3061,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/639
   status: active
+- id: SCT-005
+  name: Mixture-of-Archetypes Scoring
+  introduced_by: docs/intake/issue-drafts/SCT-005-mixture-of-archetypes-scoring.md
+  introduced_at: '2026-04-26'
+  definition: Benchmark methodology for scoring diluted composite interaction traces
+    against multiple archetype stamps using weighted mixture models, confidence scoring,
+    and counter-evidence weighting.
+  referenced_by:
+  - https://github.com/Entif-AI/rosetta/issues/641
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
