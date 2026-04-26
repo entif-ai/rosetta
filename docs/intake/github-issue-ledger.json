@@ -2617,5 +2617,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-002-mcda-disambiguator-implementation.md",
     "draftStatus": "published"
+  },
+  "TB-003-align-sim-stress-tests.md": {
+    "number": 661,
+    "state": "open",
+    "title": "TB-003: ALIGN-SIM stress test suite: implement 5-criterion semantic robustness gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/661",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-003-align-sim-stress-tests.md",
+    "draftStatus": "published"
   }
 }
