@@ -1888,5 +1888,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-003-trust-tiers-write-admission-gate.md",
     "draftStatus": "published"
+  },
+  "swarmkit-design-patterns-entif.md": {
+    "number": 510,
+    "state": "open",
+    "title": "SwarmKit Design Patterns for Entif Memory/Decision Subsystems",
+    "url": "https://github.com/entif-ai/rosetta/issues/510",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/swarmkit-design-patterns-entif.md",
+    "draftStatus": "published"
   }
 }

@@ -2335,6 +2335,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/508
   status: active
+- id: swarmkit-design-patterns-entif
+  name: SwarmKit Design Patterns for Entif Memory/Decision Subsystems
+  introduced_by: docs/intake/issue-drafts/swarmkit-design-patterns-entif.md
+  introduced_at: '2026-04-26'
+  definition: Architectural patterns from Docker Swarm's SwarmKit (Raft consensus,
+    desired-state reconciliation, token-based admission, mutual TLS cert rotation,
+    in-memory replicated state, dynamic node roles) applicable to Entif distributed
+    memory and decisioning subsystems.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/510
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
