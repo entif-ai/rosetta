@@ -1627,5 +1627,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-009-weak-strong-routing-auditability.md",
     "draftStatus": "published"
+  },
+  "APC-010-100m-arr-month-six-challenged.md": {
+    "number": 459,
+    "state": "open",
+    "title": "APC-010: $100M ARR by Month Six Is Champagne Hallucination \u2014 Category Winability Affirmed",
+    "url": "https://github.com/entif-ai/rosetta/issues/459",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-010-100m-arr-month-six-challenged.md",
+    "draftStatus": "published"
   }
 }

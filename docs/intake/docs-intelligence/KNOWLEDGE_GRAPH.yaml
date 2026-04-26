@@ -2037,6 +2037,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/457
   status: active
+- id: APC-010-100m-arr-month-six-challenged
+  name: $100M ARR Month Six Challenge
+  introduced_by: docs/intake/issue-drafts/APC-010-100m-arr-month-six-challenged.md
+  introduced_at: '2026-04-26'
+  definition: Challenge to $100M/6-month revenue projection as champagne hallucination;
+    category winability affirmed with specific wedge-first GTM path
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/459
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
