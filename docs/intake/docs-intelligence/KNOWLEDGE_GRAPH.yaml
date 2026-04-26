@@ -1926,6 +1926,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/435
   status: active
+- id: BIP-008-1-humanize-wordlist-detection-fragile
+  name: 'BIP-008-1: Word-list AI detection fragility'
+  introduced_by: docs/intake/issue-drafts/BIP-008-1-humanize-wordlist-detection-fragile.md
+  introduced_at: '2026-04-26'
+  definition: Word-list based AI content detection (scanning for overuse of "delve",
+    "landscape", "leverage", etc.) is trivially evaded by modern RLHF-trained LLMs
+    and produces only binary flags without confidence scoring.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/437
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
