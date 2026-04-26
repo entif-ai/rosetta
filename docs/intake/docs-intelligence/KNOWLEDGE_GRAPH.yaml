@@ -3382,6 +3382,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/694
   status: active
+- id: yaac-005-shared-caching-architecture
+  name: Authorization-aware shared caching architecture
+  introduced_by: docs/intake/issue-drafts/YAAC-005-shared-caching-architecture.md
+  introduced_at: '2026-04-26'
+  definition: Shared caching architecture where context blocks are content-addressable,
+    policy-labeled (RBAC/ABAC), and safely shareable across authorized principals
+    within a cache security domain, with activity-based TTL and economics controls.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/696
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
