@@ -1698,6 +1698,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/391
   status: active
+- id: rosetta-v3-007-network-topology-assumptions
+  name: Network Topology Assumptions Undeclared
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+  introduced_at: '2026-04-25'
+  definition: The Rosetta v3.0.0 Core Spine Specification explicitly avoids prescribing
+    network topology (supports single-node and p2p federated equally) but never declares
+    which is the near-term default, causing potential implementation incompatibilities.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/84
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
