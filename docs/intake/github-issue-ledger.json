@@ -1042,5 +1042,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-001-cross-repo-capability-registry-undefined.md",
     "draftStatus": "published"
+  },
+  "CW-002-codewikforge-adapter-not-specced.md": {
+    "number": 328,
+    "state": "open",
+    "title": "CW-002: CodeWikiForge adapter not specced",
+    "url": "https://github.com/entif-ai/rosetta/issues/328",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-002-codewikforge-adapter-not-specced.md",
+    "draftStatus": "published"
   }
 }
