@@ -3191,6 +3191,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/663
   status: active
+- id: TB-005-personalized-pagerank-wsd
+  name: Personalized PageRank (PPR) Prior for WSD
+  introduced_by: docs/intake/issue-drafts/TB-005-personalized-pagerank-wsd.md
+  introduced_at: '2026-04-26'
+  definition: Seeded PageRank algorithm that injects contextual prior weights from
+    lexical anchors to bias concept graph traversal for WSD disambiguation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/665
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

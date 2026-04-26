@@ -2635,5 +2635,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-004-orthogonal-procrustes-alignment.md",
     "draftStatus": "published"
+  },
+  "TB-005-personalized-pagerank-wsd.md": {
+    "number": 665,
+    "state": "open",
+    "title": "Personalized PageRank (PPR) prior: implement seeded PageRank for WSD disambiguation over concept graph",
+    "url": "https://github.com/entif-ai/rosetta/issues/665",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-005-personalized-pagerank-wsd.md",
+    "draftStatus": "published"
   }
 }
