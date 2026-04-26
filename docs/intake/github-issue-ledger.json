@@ -2221,5 +2221,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-003-implement-skill-eval-harness.md",
     "draftStatus": "published"
+  },
+  "PSD-004-seed-happy-path-skills.md": {
+    "number": 583,
+    "state": "open",
+    "title": "PSD-004: Author Seed Happy-Path Skills for Skill Broker",
+    "url": "https://github.com/entif-ai/rosetta/issues/583",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-004-seed-happy-path-skills.md",
+    "draftStatus": "published"
   }
 }

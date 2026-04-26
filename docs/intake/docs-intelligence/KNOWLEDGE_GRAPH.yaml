@@ -2713,6 +2713,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/581
   status: active
+- id: PSD-004
+  name: Seed Happy-Path Skills
+  introduced_by: docs/intake/issue-drafts/PSD-004-seed-happy-path-skills.md
+  introduced_at: '2026-04-26'
+  definition: Three bootstrapping skills (doc-transforms, repo-hygiene, ingestion-tasks)
+    that prove the progressive-disclosure skill broker architecture
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/583
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3913,5 +3922,8 @@ issue_drafts_inventory:
   status: published
 - issue_id: HEA-001-event-driven-consciousness
   url: https://github.com/entif-ai/rosetta/issues/517
+  status: published
+- issue_id: PSD-004
+  url: https://github.com/entif-ai/rosetta/issues/583
   status: published
 
