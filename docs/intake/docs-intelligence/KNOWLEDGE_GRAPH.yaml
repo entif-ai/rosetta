@@ -2940,6 +2940,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/612
   status: active
+- id: RLM-003-ADM
+  name: Ada/ROMA Compatibility + Model REPL Competence
+  introduced_by: docs/intake/issue-drafts/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md
+  introduced_at: '2026-04-26'
+  definition: 'Integration requirements for RLM: Ada tool-calling API must support
+    mount/run/inspect primitives; model broker must expose REPL competence as a selection
+    axis.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/353
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
