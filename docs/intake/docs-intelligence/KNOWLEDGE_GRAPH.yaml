@@ -3239,6 +3239,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/674
   status: active
+- id: TXS-001-rosetta-docid-registry
+  name: Rosetta DocID Registry
+  introduced_by: docs/intake/issue-drafts/TXS-001-rosetta-docid-registry.md
+  introduced_at: '2026-04-26'
+  definition: "Machine-readable registry of ROCK-3001\u20133099 DocIDs with URI mappings,\
+    \ file naming conventions, dependency adjacency lists, and stability governance\
+    \ rules."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/676
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
