@@ -2716,5 +2716,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-005-design-tokens-wcag-stdpacks.md",
     "draftStatus": "published"
+  },
+  "TXS-006-otel-cloudevents-stdpacks.md": {
+    "number": 683,
+    "state": "open",
+    "title": "TXS-006: Telemetry StdPack \u2014 OpenTelemetry + CloudEvents Mapping",
+    "url": "https://github.com/entif-ai/rosetta/issues/683",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-006-otel-cloudevents-stdpacks.md",
+    "draftStatus": "published"
   }
 }

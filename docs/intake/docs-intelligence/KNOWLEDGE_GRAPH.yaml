@@ -3314,6 +3314,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/678
   status: active
+- id: TXS-006-otel-cloudevents-stdpacks
+  name: OpenTelemetry + CloudEvents StdPack
+  introduced_by: docs/intake/issue-drafts/TXS-006-otel-cloudevents-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Pasigraphy tile mappings for OpenTelemetry spans, metrics, and log records,
+    plus CloudEvents envelope to Pasigraphy event tile mapping, with OTLP export adapter.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/683
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
