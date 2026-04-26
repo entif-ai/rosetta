@@ -3162,6 +3162,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/657
   status: active
+- id: TB-002-mcda-disambiguator
+  name: MCDA Disambiguator
+  introduced_by: docs/intake/issue-drafts/TB-002-mcda-disambiguator-implementation.md
+  introduced_at: '2026-04-26'
+  definition: Multi-criteria decision analysis scoring layer for RPP word-sense disambiguation.
+    Combines six signals (proto_cos, ppr, role_fit, gloss, antonym_gap, entropy) into
+    a scalar ranking with configurable weights and human-readable explanation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/659
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
