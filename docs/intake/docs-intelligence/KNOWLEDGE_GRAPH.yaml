@@ -1596,6 +1596,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/371
   status: active
+- id: EEH-001
+  name: HEART Evaluation Receipt Schema
+  introduced_by: docs/intake/issue-drafts/EEH-001-HEART-eval-receipt-schema.md
+  introduced_at: '2026-04-26'
+  definition: Canonical signed-receipt schema for HEART (Human alignment, Empathic
+    responsiveness, Attunement, Resonance, Task-following) evaluation records, enabling
+    longitudinal tracking across model versions, personas, domains, and safety profiles.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/373
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
