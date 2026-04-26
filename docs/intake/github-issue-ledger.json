@@ -1897,5 +1897,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/swarmkit-design-patterns-entif.md",
     "draftStatus": "published"
+  },
+  "ESA-005-safe-villaticus-coordination-layer.md": {
+    "number": 383,
+    "state": "open",
+    "title": "ESA-005: SAFE as Villaticus coordination layer [enriched via ESA-004 comment]",
+    "url": "https://github.com/entif-ai/rosetta/issues/383",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-005-safe-villaticus-coordination-layer.md",
+    "draftStatus": "published"
   }
 }
