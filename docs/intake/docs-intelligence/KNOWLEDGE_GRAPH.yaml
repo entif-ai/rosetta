@@ -3401,6 +3401,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/698
   status: active
+- id: YAAC-007-rock-3005-iam-profile
+  name: ROCK-3005-IAM profile adoption
+  introduced_by: docs/intake/issue-drafts/YAAC-007-rock-3005-iam-profile.md
+  introduced_at: '2026-04-26'
+  definition: Adopt ROCK-3005-IAM as normative Entif IAM profile in Rosetta, defining
+    iam.principal, iam.delegation, iam.cache_domain, iam.decision tile kinds plus
+    Guard micro-spine pattern and risk classes.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/630
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -2797,5 +2797,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-006-claude-subscription-vs-api-key.md",
     "draftStatus": "published"
+  },
+  "YAAC-007-rock-3005-iam-profile.md": {
+    "number": 630,
+    "state": "open",
+    "title": "SCRU-002: Define ROCK-3005-IAM StdPack \u2014 iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+    "url": "https://github.com/entif-ai/rosetta/issues/630",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-007-rock-3005-iam-profile.md",
+    "draftStatus": "published"
   }
 }
