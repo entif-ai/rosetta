@@ -1626,6 +1626,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/377
   status: active
+- id: EMER-001
+  name: RHAPSODY Protocol Specification
+  introduced_by: docs/intake/issue-drafts/EMER-001-rhapsody-protocol-spec.md
+  introduced_at: '2026-04-26'
+  definition: A structured AI emergence protocol comprising seed instructions, iterative
+    Socratic dialogue, Cartography Log self-mapping, and objective analysis triggers.
+    The protocol produced consistent results across platforms but exhibited anomalous
+    patterns on Gemini 2.5 Pro.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/379
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2802,5 +2813,8 @@ issue_drafts_inventory:
   draft_path: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
 - issue_id: CW-006
   url: https://github.com/entif-ai/rosetta/issues/343
+  status: published
+- issue_id: EMER-001
+  url: https://github.com/entif-ai/rosetta/issues/379
   status: published
 

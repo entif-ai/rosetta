@@ -1258,5 +1258,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-003-attunement-diagnostic-bridge.md",
     "draftStatus": "published"
+  },
+  "EMER-001-rhapsody-protocol-spec.md": {
+    "number": 379,
+    "state": "open",
+    "title": "EMER-001: Document the RHAPSODY Protocol Specification",
+    "url": "https://github.com/entif-ai/rosetta/issues/379",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-001-rhapsody-protocol-spec.md",
+    "draftStatus": "published"
   }
 }
