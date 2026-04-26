@@ -853,5 +853,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-002-quarantine-pipeline-agent-sourced-code.md",
     "draftStatus": "published"
+  },
+  "YAAC-001-youtube-ingest-pipeline.md": {
+    "number": 273,
+    "state": "open",
+    "title": "YouTube ingest pipeline (Fabric + ASR fallback + checkpointing)",
+    "url": "https://github.com/entif-ai/rosetta/issues/273",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-001-youtube-ingest-pipeline.md",
+    "draftStatus": "published"
   }
 }
