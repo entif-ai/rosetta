@@ -2050,5 +2050,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-009-magazine-feed-adapters.md",
     "draftStatus": "published"
+  },
+  "HF-010-newsletter-google-alerts-intake-adapters.md": {
+    "number": 532,
+    "state": "open",
+    "title": "HF-010: Newsletter and Google Alerts Intake Adapters \u2014 enriched by HF-003 #532 comment",
+    "url": "https://github.com/entif-ai/rosetta/issues/532",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-010-newsletter-google-alerts-intake-adapters.md",
+    "draftStatus": "published"
   }
 }

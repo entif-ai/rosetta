@@ -2520,6 +2520,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/544
   status: active
+- id: HF-010-newsletter-google-alerts-intake-adapters
+  name: Newsletter and Google Alerts Intake Adapters
+  introduced_by: docs/intake/issue-drafts/HF-010-newsletter-google-alerts-intake-adapters.md
+  introduced_at: '2026-04-26'
+  definition: Email-based newsletter adapter (Matt Wolfe Future Tools as first target)
+    and Google Alerts adapter (RSS or email path) feeding into universal IntakeEnvelope
+    pipeline via HF-003 schema.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/532
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
