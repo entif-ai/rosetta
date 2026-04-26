@@ -3574,6 +3574,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/292
   status: active
+- id: ccf-005
+  name: Evidence Ledger Implementation Gap
+  introduced_by: docs/intake/issue-drafts/ccf-005-no-evidence-ledger-implementation.md
+  introduced_at: '2026-04-26'
+  definition: No implementation of the Evidence Ledger (7-field per-claim artifact
+    defined in CCF v0.1) exists in Rosetta tooling, repo structure, or process workflows.
+    Recommended path is extending the receipt system.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/288
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
