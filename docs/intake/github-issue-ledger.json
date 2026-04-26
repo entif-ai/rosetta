@@ -2284,5 +2284,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-003-lora-qlora-dora-infrastructure.md",
     "draftStatus": "published"
+  },
+  "REE-004-roma-hardware-qora-accelerator.md": {
+    "number": 596,
+    "state": "open",
+    "title": "REE-004: ROMA Hardware Accelerator for QLoRA Inference",
+    "url": "https://github.com/entif-ai/rosetta/issues/596",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-004-roma-hardware-qora-accelerator.md",
+    "draftStatus": "published"
   }
 }
