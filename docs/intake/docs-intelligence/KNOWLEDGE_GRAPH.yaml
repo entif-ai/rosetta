@@ -2693,6 +2693,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/571
   status: active
+- id: PSD-001-implement-skill-registry-v0
+  name: Skill Registry v0
+  introduced_by: docs/intake/issue-drafts/PSD-001-implement-skill-registry-v0.md
+  introduced_at: '2026-04-26'
+  definition: Persistent storage for progressive-disclosure skill catalog (Stage A
+    metadata), playbooks (Stage B blobs), and resources (Stage C blobs) with hybrid
+    SQL+vector search and content-addressed artifact store.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/461
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
