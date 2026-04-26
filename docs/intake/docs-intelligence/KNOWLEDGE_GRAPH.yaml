@@ -2461,6 +2461,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/532
   status: active
+- id: HF-004-three-tier-triage-routing
+  name: Three-Tier Triage Routing
+  introduced_by: docs/intake/issue-drafts/HF-004-three-tier-triage-routing.md
+  introduced_at: '2026-04-26'
+  definition: 'Content routing logic with three outcomes: archive-only (below threshold,
+    searchable), deep ingest queue (above threshold), and immediate escalation (watchlist
+    topic hit).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/534
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
