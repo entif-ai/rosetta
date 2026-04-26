@@ -2158,5 +2158,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-005-missing-verification-harness-community-skills.md",
     "draftStatus": "published"
+  },
+  "MHC-001-translation-evidence-tile.md": {
+    "number": 571,
+    "state": "open",
+    "title": "MHC-001: TranslationEvidence Tile Type (Doubly Stochastic Transport Plans)",
+    "url": "https://github.com/entif-ai/rosetta/issues/571",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-001-translation-evidence-tile.md",
+    "draftStatus": "published"
   }
 }
