@@ -2137,6 +2137,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/471
   status: active
+- id: EML-004-content-risk-middleware-generalizes
+  name: Content-Risk Middleware Skill-Pack Modularization
+  introduced_by: docs/intake/issue-drafts/EML-004-content-risk-middleware-generalizes.md
+  introduced_at: '2026-04-26'
+  definition: Modularizing content-risk scoring (ingress, risk, truthlint, rrp skill
+    packs) to reuse across email, skill markdown, forums, web pages, documents, and
+    internal knowledge objects.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/471
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
