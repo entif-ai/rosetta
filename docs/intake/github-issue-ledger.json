@@ -2419,5 +2419,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
     "draftStatus": "published"
+  },
+  "RLM-003-ARCH-async-subcall-pattern-mcp-contract.md": {
+    "number": 612,
+    "state": "open",
+    "title": "ContextRuntime: Bounded RLM Execution as a First-Class Entif Component",
+    "url": "https://github.com/entif-ai/rosetta/issues/612",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-ARCH-async-subcall-pattern-mcp-contract.md",
+    "draftStatus": "published"
   }
 }

@@ -2950,6 +2950,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/353
   status: active
+- id: RLM-003-ARCH
+  name: Async Subcall Pattern + MCP Contract for RLMRuntime
+  introduced_by: docs/intake/issue-drafts/RLM-003-ARCH-async-subcall-pattern-mcp-contract.md
+  introduced_at: '2026-04-26'
+  definition: Formal MCP contract for RLMRuntime (mount/run/inspect), async producer-worker-consumer
+    subcall pattern, Guard-enforced batching discipline, and budget tracking in receipts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/612
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
