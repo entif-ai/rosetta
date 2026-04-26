@@ -2027,6 +2027,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/455
   status: active
+- id: APC-009-weak-strong-routing-auditability
+  name: Weak-to-Strong Routing Auditable
+  introduced_by: docs/intake/issue-drafts/APC-009-weak-strong-routing-auditability.md
+  introduced_at: '2026-04-26'
+  definition: Entif routing layer must produce append-only routing receipts logging
+    cheap-model attempt, confidence-triggered escalation, strong-model response, and
+    cost attribution for every query.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/457
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

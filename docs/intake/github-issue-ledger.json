@@ -1618,5 +1618,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-008-multi-provider-composition-provenance.md",
     "draftStatus": "published"
+  },
+  "APC-009-weak-strong-routing-auditability.md": {
+    "number": 457,
+    "state": "open",
+    "title": "APC-009: Weak-to-Strong Routing Must Be Auditable",
+    "url": "https://github.com/entif-ai/rosetta/issues/457",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-009-weak-strong-routing-auditability.md",
+    "draftStatus": "published"
   }
 }
