@@ -2365,5 +2365,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-ARCH-context-runtime-design.md",
     "draftStatus": "published"
+  },
+  "df-007-client-artifact-conformance.md": {
+    "number": 614,
+    "state": "open",
+    "title": "DF-007: Add get_artifact conformance test to TestGatewayConformance",
+    "url": "https://github.com/entif-ai/rosetta/issues/614",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-007-client-artifact-conformance.md",
+    "draftStatus": "published"
   }
 }

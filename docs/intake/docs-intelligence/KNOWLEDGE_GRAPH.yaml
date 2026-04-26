@@ -2878,6 +2878,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/612
   status: active
+- id: df-007-client-artifact-conformance
+  name: Client Artifact Conformance Gap
+  introduced_by: docs/intake/issue-drafts/df-007-client-artifact-conformance.md
+  introduced_at: '2026-04-25'
+  definition: Embedded DeerFlowClient get_artifact method returns (bytes, mime_type)
+    tuple which is not validated against Gateway HTTP Response in TestGatewayConformance,
+    creating silent drift risk.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/614
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
