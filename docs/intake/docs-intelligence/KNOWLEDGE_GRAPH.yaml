@@ -1886,6 +1886,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/427
   status: active
+- id: BIP-006-2-briefing-frontier-cost-unbounded
+  name: Nightly Frontier Model Cost Is Unbounded
+  introduced_by: docs/intake/issue-drafts/BIP-006-2-briefing-frontier-cost-unbounded.md
+  introduced_at: '2026-04-26'
+  definition: The nightly briefing system (BIP-006) has no per-run cost cap, no adaptive
+    model fallback, no context window budget, and no integration with BIP-011 cost
+    tracking. Parallel persona execution multiplies cost without bounds.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/429
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

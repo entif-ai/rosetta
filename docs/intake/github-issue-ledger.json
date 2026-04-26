@@ -1492,5 +1492,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-005-config-mtime-race-condition.md",
     "draftStatus": "published"
+  },
+  "BIP-006-2-briefing-frontier-cost-unbounded.md": {
+    "number": 429,
+    "state": "open",
+    "title": "BIP-006-2: Nightly Frontier Model Cost Is Unbounded",
+    "url": "https://github.com/entif-ai/rosetta/issues/429",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-2-briefing-frontier-cost-unbounded.md",
+    "draftStatus": "published"
   }
 }
