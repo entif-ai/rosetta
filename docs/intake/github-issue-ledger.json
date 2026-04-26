@@ -2590,5 +2590,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-008-skill-safety-posture.md",
     "draftStatus": "published"
+  },
+  "SLD-009-skill-broker-query-select-hot-skill.md": {
+    "number": 655,
+    "state": "open",
+    "title": "SLD-009: skill_broker_query_and_select as First-Class Hot Skill",
+    "url": "https://github.com/entif-ai/rosetta/issues/655",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-009-skill-broker-query-select-hot-skill.md",
+    "draftStatus": "published"
   }
 }
