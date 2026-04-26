@@ -1051,5 +1051,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-002-codewikforge-adapter-not-specced.md",
     "draftStatus": "published"
+  },
+  "consciousness-criteria-symmetry.md": {
+    "number": 330,
+    "state": "open",
+    "title": "[symmetry] Consciousness criteria applied symmetrically to humans: evidentiary asymmetry is unjustified",
+    "url": "https://github.com/entif-ai/rosetta/issues/330",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/consciousness-criteria-symmetry.md",
+    "draftStatus": "published"
   }
 }
