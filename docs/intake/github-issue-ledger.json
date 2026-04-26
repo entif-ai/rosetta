@@ -2455,5 +2455,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCRU-001-cache-orchestrator-architecture.md",
     "draftStatus": "published"
+  },
+  "SCRU-002-rock-3005-iam-stdpack.md": {
+    "number": 630,
+    "state": "open",
+    "title": "SCRU-002: Define ROCK-3005-IAM StdPack \u2014 iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+    "url": "https://github.com/entif-ai/rosetta/issues/630",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCRU-002-rock-3005-iam-stdpack.md",
+    "draftStatus": "published"
   }
 }
