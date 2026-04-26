@@ -2356,6 +2356,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/383
   status: active
+- id: ESA-006
+  name: Rosetta MCP Compliance
+  introduced_by: docs/intake/issue-drafts/ESA-006-rosetta-mcp-compliance.md
+  introduced_at: '2026-04-26'
+  definition: Target MCP (Model Context Protocol) as the compliance standard for Rosetta
+    agent interface layer, benefiting from Linux Foundation-governed ecosystem convergence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/513
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
