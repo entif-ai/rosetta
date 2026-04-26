@@ -2446,5 +2446,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-TERM-termination-protocol-brittleness.md",
     "draftStatus": "published"
+  },
+  "SCRU-001-cache-orchestrator-architecture.md": {
+    "number": 628,
+    "state": "open",
+    "title": "SCRU-001: Design Cache Orchestrator Architecture for Enterprise Shared Caching",
+    "url": "https://github.com/entif-ai/rosetta/issues/628",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCRU-001-cache-orchestrator-architecture.md",
+    "draftStatus": "published"
   }
 }
