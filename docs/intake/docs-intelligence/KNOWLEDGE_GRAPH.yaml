@@ -1727,6 +1727,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/396
   status: active
+- id: BIP-002-2-kb-error-page-detection-narrow
+  name: Error-Page Detection Signal Set Too Narrow
+  introduced_by: docs/intake/issue-drafts/BIP-002-2-kb-error-page-detection-narrow.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-002 KB RAG error-page detector uses a hardcoded 2+ signal threshold
+    from 7 unweighted phrases, causing false rejections of real content and missing
+    novel WAF error pages.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/398
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
