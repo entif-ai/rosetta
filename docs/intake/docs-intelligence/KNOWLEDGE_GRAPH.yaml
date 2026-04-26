@@ -2550,6 +2550,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/549
   status: active
+- id: LSC-003-elastic-stability
+  name: Elastic Stability
+  introduced_by: docs/intake/issue-drafts/LSC-003-elastic-stability-mathematical-apparatus.md
+  introduced_at: '2026-04-26'
+  definition: Identity stability model where the self is represented as an energy
+    basin that is wide (tolerant to perturbations) with steep walls (resistant to
+    collapse into genericness), as opposed to rigid fixity or fluid drift.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/551
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
