@@ -1479,6 +1479,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/347
   status: active
+- id: DCP-001
+  name: ModuleSpec / InterfaceSpec / Blueprint Schemas
+  introduced_by: docs/intake/issue-drafts/DCP-001-json-schemas-undefined.md
+  introduced_at: '2026-04-26'
+  definition: Three JSON schemas (ModuleSpec, InterfaceSpec, Blueprint) required as
+    foundational artifacts for wiring any forge end-to-end in the DeepCode pipeline.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/349
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

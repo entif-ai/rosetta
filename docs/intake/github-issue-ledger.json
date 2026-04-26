@@ -1123,5 +1123,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-008-capability-tiles-cache-invalidation-missing.md",
     "draftStatus": "published"
+  },
+  "DCP-001-json-schemas-undefined.md": {
+    "number": 349,
+    "state": "open",
+    "title": "DCP-001: Define ModuleSpec/InterfaceSpec/Blueprint JSON schemas",
+    "url": "https://github.com/enti-ai/rosetta/issues/349",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-001-json-schemas-undefined.md",
+    "draftStatus": "published"
   }
 }
