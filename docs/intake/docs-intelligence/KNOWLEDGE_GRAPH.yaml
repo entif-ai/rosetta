@@ -2788,6 +2788,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/594
   status: active
+- id: REE-004
+  name: ROMA Hardware Accelerator for QLoRA
+  introduced_by: docs/intake/issue-drafts/REE-004-roma-hardware-qora-accelerator.md
+  introduced_at: '2026-04-26'
+  definition: Hybrid ROM+SRAM hardware accelerator architecture for QLoRA inference.
+    Stores quantized frozen base model in ROM, LoRA adapters and KV cache in SRAM.
+    Achieves >20K tokens/s throughput on-chip.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/596
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
