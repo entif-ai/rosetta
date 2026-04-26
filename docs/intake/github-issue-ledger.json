@@ -1708,5 +1708,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-002-bayesian-classifier-triage-not-gate.md",
     "draftStatus": "published"
+  },
+  "EML-003-nine-layer-email-agent-architecture.md": {
+    "number": 471,
+    "state": "open",
+    "title": "EML-003: Nine-Layer Email-to-Agent Defensive Architecture Fully Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/471",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-003-nine-layer-email-agent-architecture.md",
+    "draftStatus": "published"
   }
 }
