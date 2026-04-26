@@ -1834,5 +1834,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-002-bpmn-dmn-scxml-stdpacks.md",
     "draftStatus": "published"
+  },
+  "EML-013-semantic-efficiency-sapir-whorf.md": {
+    "number": 498,
+    "state": "open",
+    "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency \u2014 The Sapir-Whorf Argument",
+    "url": "https://github.com/entif-ai/rosetta/issues/498",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-013-semantic-efficiency-sapir-whorf.md",
+    "draftStatus": "published"
   }
 }

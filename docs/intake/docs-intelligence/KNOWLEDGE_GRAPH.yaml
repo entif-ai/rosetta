@@ -2270,6 +2270,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/496
   status: active
+- id: EML-013
+  name: Semantic Efficiency as Distinct from Parameter Efficiency (Sapir-Whorf)
+  introduced_by: docs/intake/issue-drafts/EML-013-semantic-efficiency-sapir-whorf.md
+  introduced_at: '2026-04-26'
+  definition: "The representational regime a system is trained in changes what kinds\
+    \ of cognition are cheap, natural, composable, and stable. Rosetta training produces\
+    \ models with explicit typed objects, relations, uncertainty, and provenance \u2014\
+    \ making cognition disciplined rather than ambiguous."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/498
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
