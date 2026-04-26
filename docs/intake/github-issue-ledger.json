@@ -2032,5 +2032,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-007-daily-top-shelf-output-format.md",
     "draftStatus": "published"
+  },
+  "HF-008-discord-bulk-ingest-server": {
+    "number": 542,
+    "state": "open",
+    "title": "Implement Discord bulk-ingest server with per-channel routing",
+    "url": "https://github.com/entif-ai/rosetta/issues/542",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-008-discord-bulk-ingest-server.md",
+    "draftStatus": "published"
   }
 }
