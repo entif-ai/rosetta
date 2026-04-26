@@ -1945,6 +1945,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/439
   status: active
+- id: SLD-004-extend-vs-author-policy
+  name: Extend vs Author-New Decision Policy
+  introduced_by: docs/intake/issue-drafts/SLD-004-extend-vs-author-policy.md
+  introduced_at: '2026-04-26'
+  definition: Policy governing when to reuse an existing skill (use-as-is), extend
+    it with a delta, or author new from scratch. Determined by match score, receipt
+    reliability, and acceptance-check gap detection.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/441
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
