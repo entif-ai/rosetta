@@ -1645,5 +1645,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-002-implement-skill-broker-pipeline.md",
     "draftStatus": "published"
+  },
+  "cts-007-swarm-gnosis-dht-cognitive-tile-network.md": {
+    "number": 84,
+    "state": "open",
+    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "url": "https://github.com/entif-ai/rosetta/issues/84",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-007-swarm-gnosis-dht-cognitive-tile-network.md",
+    "draftStatus": "published"
   }
 }
