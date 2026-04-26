@@ -1087,5 +1087,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-005-maturity-scoring-not-defined.md",
     "draftStatus": "published"
+  },
+  "sba-003-rosetta-2-0-protocol-specification.md": {
+    "number": 341,
+    "state": "open",
+    "title": "SBA-003: Rosetta 2.0 Protocol \u2014 implementation-ready specification for Layer 0\u20133 tiles and genesis key management",
+    "url": "https://github.com/entif-ai/rosetta/issues/341",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-003-rosetta-2-0-protocol-specification.md",
+    "draftStatus": "published"
   }
 }

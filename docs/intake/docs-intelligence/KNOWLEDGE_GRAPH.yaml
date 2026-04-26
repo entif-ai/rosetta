@@ -1438,6 +1438,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/339
   status: active
+- id: sba-003-rosetta-2-0-protocol-specification
+  name: "Rosetta 2.0 Protocol \u2014 Layer 0-3 tile specification and genesis key\
+    \ management"
+  introduced_by: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
+  introduced_at: '2026-04-25'
+  definition: 'Four-layer meaning pipeline (L0 Signals, L1 Forms, L2 Lexemes, L3 Concepts)
+    with 12 named Cognitive Tile types. Missing: tile serialization format, layer
+    transformation algorithms, genesis key ceremony, tamper-evidence mechanism, incident
+    trigger schema, and Tripwire semantic filter design.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/341
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2606,4 +2618,8 @@ issue_drafts_inventory:
 - issue_id: CW-001
   url: https://github.com/entif-ai/rosetta/issues/325
   status: published
+- issue_id: sba-003-rosetta-2-0-protocol-specification
+  url: https://github.com/entif-ai/rosetta/issues/341
+  status: published
+  draft_path: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
 
