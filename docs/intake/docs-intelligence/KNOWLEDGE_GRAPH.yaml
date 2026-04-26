@@ -3143,6 +3143,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/653
   status: active
+- id: SLD-009
+  name: "skill_broker_query_and_select \u2014 First-Class Hot Skill"
+  introduced_by: docs/intake/issue-drafts/SLD-009-skill-broker-query-select-hot-skill.md
+  introduced_at: '2026-04-26'
+  definition: Deterministic hot skill that queries the skill broker with a NeedSpec
+    and selects use_vs_extend_vs_author. Gateway to the Cold Library.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/655
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
