@@ -2140,5 +2140,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-003-blast-radius-expansion-external-agent.md",
     "draftStatus": "published"
+  },
+  "MCST-004-reliability-risk-cheap-lane.md": {
+    "number": 567,
+    "state": "open",
+    "title": "MCST-004: Reliability Risk in High-Volume Cheap-Lane Automation",
+    "url": "https://github.com/entif-ai/rosetta/issues/567",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-004-reliability-risk-cheap-lane.md",
+    "draftStatus": "published"
   }
 }
