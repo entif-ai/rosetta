@@ -1450,6 +1450,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/341
   status: active
+- id: cw-006-capability-tile-schema
+  name: Capability Tile Schema
+  introduced_by: docs/intake/issue-drafts/CW-006-capability-tile-schema-rosetta-catalog.md
+  introduced_at: '2026-04-25'
+  definition: TypeScript/JSON schema for CapabilityTile comprising TileHeader (tile_id,
+    tile_type, title, summary, versioning) and CapabilityTilePayload (kind, domain,
+    status, maturity_level 0-5, owners, implementation, interface, telemetry). Extends
+    Cognitive Tiles Merkle-DAG pattern.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/343
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2622,4 +2633,7 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/341
   status: published
   draft_path: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
+- issue_id: CW-006
+  url: https://github.com/entif-ai/rosetta/issues/343
+  status: published
 
