@@ -2376,6 +2376,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/515
   status: active
+- id: HEA-001-event-driven-consciousness
+  name: Event-Driven Consciousness Architecture
+  introduced_by: docs/intake/issue-drafts/HEA-001-event-driven-consciousness.md
+  introduced_at: '2026-04-26'
+  definition: Replace time-based nightly consolidation cycles with threshold-triggered,
+    always-on perpetual async listeners for Coach/Muse/Heretic. Compute-price-aware
+    scheduling, no idle windows.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/517
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3573,5 +3583,8 @@ issue_drafts_inventory:
   type: spec-gap
 - issue_id: EML-014
   url: https://github.com/entif-ai/rosetta/issues/500
+  status: published
+- issue_id: HEA-001-event-driven-consciousness
+  url: https://github.com/entif-ai/rosetta/issues/517
   status: published
 

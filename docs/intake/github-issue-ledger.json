@@ -1924,5 +1924,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-007-persona-frame-boundary-packs.md",
     "draftStatus": "published"
+  },
+  "HEA-001-event-driven-consciousness": {
+    "number": 517,
+    "state": "open",
+    "title": "HEA-001: Event-Driven Consciousness \u2014 Retire Nightly Consolidation Model",
+    "url": "https://github.com/entif-ai/rosetta/issues/517",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-001-event-driven-consciousness.md",
+    "draftStatus": "published"
   }
 }
