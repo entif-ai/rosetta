@@ -2500,5 +2500,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-001-skillcard-schema-tier0.md",
     "draftStatus": "published"
+  },
+  "SCT-003-violent-language-idiom-detection.md": {
+    "number": 637,
+    "state": "open",
+    "title": "SCT-003: Violent Language Idiom Detection \u2014 Threshold Marker vs Literal Violence",
+    "url": "https://github.com/entif-ai/rosetta/issues/637",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-003-violent-language-idiom-detection.md",
+    "draftStatus": "published"
   }
 }
