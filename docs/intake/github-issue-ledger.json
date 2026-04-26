@@ -2923,5 +2923,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/browser-agent-acceptance.md",
     "draftStatus": "published"
+  },
+  "ccf-001-no-phase-transition-enforcement.md": {
+    "number": 302,
+    "state": "open",
+    "title": "CCF: Implement Phase Transition Handshake Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/302",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-001-no-phase-transition-enforcement.md",
+    "draftStatus": "published"
   }
 }
