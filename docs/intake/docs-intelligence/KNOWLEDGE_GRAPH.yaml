@@ -2157,6 +2157,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/476
   status: active
+- id: python-module-boundary-contract
+  name: Python Module Boundary Contract
+  introduced_by: docs/intake/issue-drafts/python-module-boundary-contract.md
+  introduced_at: '2026-04-26'
+  definition: Architectural contract specifying how Python specialist modules (ML
+    pipelines, eval harnesses, embedding labs) communicate with the TypeScript core
+    via typed MCP/gRPC interfaces, isolated Nx project boundaries, and cross-boundary
+    receipt/guard flows.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/164
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
