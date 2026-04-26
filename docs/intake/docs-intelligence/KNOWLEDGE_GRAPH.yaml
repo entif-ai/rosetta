@@ -1786,6 +1786,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/408
   status: active
+- id: BIP-004-1
+  name: Thread Expansion Recursion Depth Limit
+  introduced_by: docs/intake/issue-drafts/BIP-004-1-social-thread-expansion-no-depth-limit.md
+  introduced_at: '2026-04-26'
+  definition: BIP-004 social thread expansion lacks a maximum recursion depth, allowing
+    unbounded API calls that can exhaust the API budget on deep or wide threads.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/410
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

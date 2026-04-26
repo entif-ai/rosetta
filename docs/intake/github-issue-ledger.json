@@ -1402,5 +1402,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-3-content-idea-id-collision.md",
     "draftStatus": "published"
+  },
+  "BIP-004-1-social-thread-expansion-no-depth-limit.md": {
+    "number": 410,
+    "state": "open",
+    "title": "BIP-004-1: Thread Expansion Has No Recursion Depth Limit",
+    "url": "https://github.com/entif-ai/rosetta/issues/410",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-1-social-thread-expansion-no-depth-limit.md",
+    "draftStatus": "published"
   }
 }
