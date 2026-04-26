@@ -1916,6 +1916,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/433
   status: active
+- id: BIP-007-1-intent-classification
+  name: BIP-007-1 Intent Classification Mechanism Not Specified
+  introduced_by: docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: "BIP-007 defines five intent types (Lookup, Create, Update, List, Associate)\
+    \ but does not specify the classification mechanism \u2014 the core NLP task that\
+    \ maps user messages to intent types."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/435
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3104,4 +3114,9 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/402
   priority: P1
   type: correctness
+- path: docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md
+  issue_id: BIP-007-1-intent-classification
+  url: https://github.com/entif-ai/rosetta/issues/435
+  status: published
+  type: spec-gap
 

@@ -1519,5 +1519,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-4-briefing-parallel-review-isolation.md",
     "draftStatus": "published"
+  },
+  "BIP-007-1-crm-nl-intent-classification-unspecified.md": {
+    "number": 435,
+    "state": "open",
+    "title": "BIP-007-1 \u2014 Intent Classification Mechanism Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/435",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-007-1-crm-nl-intent-classification-unspecified.md",
+    "draftStatus": "published"
   }
 }
