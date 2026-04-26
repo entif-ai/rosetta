@@ -2451,6 +2451,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/530
   status: active
+- id: HF-003
+  name: Universal Content Intake Envelope Schema
+  introduced_by: docs/intake/issue-drafts/HF-003-universal-content-intake-envelope-schema.md
+  introduced_at: '2026-04-26'
+  definition: Canonical schema (IntakeEnvelope) that all source adapters (magazine,
+    newsletter, RSS, Discord, email, manual, Google Alerts) must emit, enabling a
+    single normalize + triage pipeline regardless of source type.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/532
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
