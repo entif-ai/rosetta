@@ -2058,6 +2058,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/461
   status: active
+- id: cts-007-swarm-gnosis-dht
+  name: Swarm Gnosis DHT Peer Discovery + Cognitive Tile Protocol
+  introduced_by: docs/intake/issue-drafts/cts-007-swarm-gnosis-dht-cognitive-tile-network.md
+  introduced_at: '2026-04-26'
+  definition: Decentralized P2P distribution layer for Cognitive Tiles using Kademlia
+    DHT, content-addressed tile storage, and BitTorrent-inspired propagation with
+    a Gnostic Atlas mosaic structure.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/84
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
