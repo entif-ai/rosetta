@@ -3481,6 +3481,17 @@ concepts:
   referenced_by:
   - https://github.com/gentif-ai/rosetta/issues/711
   status: active
+- id: am-010
+  name: "AM-010: Rosetta Architecture Alignment \u2014 Agentic Messaging Spec"
+  introduced_by: docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md
+  introduced_at: '2026-04-26'
+  definition: Architecture alignment review needed for the Agentic Messaging spec
+    (2026-02-28) against current Rosetta governing documents (NOT LAME PRD, Text-Core
+    MVP scope gate, Consensus-First framework). The spec predates current architecture
+    by ~2 months and may have incompatible definitions for tapestry, tile, and receipt.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/714
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

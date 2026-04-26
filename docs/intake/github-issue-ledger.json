@@ -2869,5 +2869,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-009-domain-ref-schema.md",
     "draftStatus": "published"
+  },
+  "am-010-rosetta-integration-alignment.md": {
+    "number": 714,
+    "state": "open",
+    "title": "AM-010: Rosetta Architecture Alignment \u2014 Agentic Messaging Spec vs Current Rosetta",
+    "url": "https://github.com/entif-ai/rosetta/issues/714",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-010-rosetta-integration-alignment.md",
+    "draftStatus": "published"
   }
 }
