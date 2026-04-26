@@ -2643,6 +2643,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/569
   status: active
+- id: MHC-001
+  name: TranslationEvidence Tile Type
+  introduced_by: docs/intake/issue-drafts/MHC-001-translation-evidence-tile.md
+  introduced_at: '2026-04-26'
+  definition: A tile type representing soft mappings between concept spaces using
+    mHC-style doubly stochastic transport matrices with preserved uncertainty and
+    stability constraints.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/571
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
