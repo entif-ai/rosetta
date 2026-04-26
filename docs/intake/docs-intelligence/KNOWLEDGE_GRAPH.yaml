@@ -2653,6 +2653,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/571
   status: active
+- id: MHC-002
+  name: CanonicalKey Scheme for Semantic Identity Registry
+  introduced_by: docs/intake/issue-drafts/MHC-002-canonical-key-scheme.md
+  introduced_at: '2026-04-26'
+  definition: A deterministic identity scheme for semantic concepts providing normalization
+    rules, alias sets, ambiguity sets, provenance receipts, and supersession chains
+    for canonical concept resolution.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/573
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -2167,5 +2167,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-001-translation-evidence-tile.md",
     "draftStatus": "published"
+  },
+  "MHC-002-canonical-key-scheme.md": {
+    "number": 573,
+    "state": "open",
+    "title": "MHC-002: CanonicalKey Scheme for Semantic Identity Registry",
+    "url": "https://github.com/entif-ai/rosetta/issues/573",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-002-canonical-key-scheme.md",
+    "draftStatus": "published"
   }
 }
