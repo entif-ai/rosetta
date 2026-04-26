@@ -1096,5 +1096,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-003-rosetta-2-0-protocol-specification.md",
     "draftStatus": "published"
+  },
+  "CW-006-capability-tile-schema-rosetta-catalog": {
+    "number": 343,
+    "state": "open",
+    "title": "CW-006: Capability Tile schema needs Rosetta type catalog entry",
+    "url": "https://github.com/entif-ai/rosetta/issues/343",
+    "activeDraftPath": "docs/intake/issue-drafts/CW-006-capability-tile-schema-rosetta-catalog.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-006-capability-tile-schema-rosetta-catalog.md",
+    "draftStatus": "published"
   }
 }
