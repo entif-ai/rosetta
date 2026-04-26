@@ -177,6 +177,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-api-cache-mgmt.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-api-cache-mgmt.md",
+      "title": "DI Extraction: API-driven Cache Management",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-attention-residuals-kimi.md",
       "sourcePath": "docs/external/Attention Residuals (AttnRes) - Kimi.md",
       "title": "Docs Intelligence Extraction",
@@ -214,6 +220,18 @@
         "research",
         "competitive-intelligence"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-ai-assistant.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-berman-ai-assistant.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-impl-prompts.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-berman-impl-prompts.md",
+      "title": "BIP Extraction — Berman OpenClaw Implementation Prompts",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-prd.md",
@@ -2175,6 +2193,12 @@
       "concepts": []
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
       "title": "Docs Intelligence Extraction",
@@ -2472,6 +2496,12 @@
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
       "title": "Extraction: 20260323 - Chat GPT - Entif Skill Library Design",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-social-cognition-therapy.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-social-cognition-therapy.md",
+      "title": "Docs Intelligence Extraction",
       "concepts": []
     },
     {
@@ -2985,6 +3015,72 @@
       "signature": "012-call-error-guardlayer-mailroom"
     },
     {
+      "path": "docs/intake/issue-drafts/APC-001-openai-no-shareable-cache-id.md",
+      "title": "APC-001: OpenAI Prompt Caching Has No Shareable Cache ID Primitive",
+      "labels": [],
+      "signature": "001-apc-cache-caching-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-002-anthropic-workspace-isolation-no-cache-id.md",
+      "title": "APC-002: Anthropic Workspace-Level Cache Isolation — No Shared Cache ID Primitive",
+      "labels": [],
+      "signature": "002-anthropic-apc-cache-cache"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-003-gemini-vertex-named-cache-resources-iam.md",
+      "title": "APC-003: Google Gemini/Vertex AI — Closest Match to Named Cache Resources + IAM",
+      "labels": [],
+      "signature": "003-apc-cache-closest-gemini"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-004-entif-inference-firewall-semantic-cache-router-provenance.md",
+      "title": "APC-004: Entif Product Category — \"Inference Firewall + Semantic Cache Router + Provenance Engine\"",
+      "labels": [],
+      "signature": "004-apc-cache-category-engine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-005-compound-semantic-cache-key.md",
+      "title": "APC-005: Semantic Equivalence Cache Keys Require Compound Structure (Intent × Rights Domain × Classification × Version)",
+      "labels": [],
+      "signature": "005-apc-cache-classification-compound"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-006-privacy-budget-transliteration-leakage.md",
+      "title": "APC-006: Transliteration Can Leak by Joins — Privacy Budget Discipline Required",
+      "labels": [],
+      "signature": "006-apc-budget-can-discipline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-007-cache-poisoning-stale-answers.md",
+      "title": "APC-007: Cache Poisoning and Stale Certainty — Most Dangerous Cache Failure Mode",
+      "labels": [],
+      "signature": "007-apc-cache-cache-certainty"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-008-multi-provider-composition-provenance.md",
+      "title": "APC-008: Multi-Provider Composition Needs Its Own Provenance Spine",
+      "labels": [],
+      "signature": "008-apc-composition-its-multi"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-009-weak-strong-routing-auditability.md",
+      "title": "APC-009: Weak-to-Strong Routing Must Be Auditable",
+      "labels": [],
+      "signature": "009-apc-auditable-must-routing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-010-100m-arr-month-six-challenged.md",
+      "title": "APC-010: $100M ARR by Month Six Is Champagne Hallucination — Category Winability Affirmed",
+      "labels": [],
+      "signature": "010-100m-affirmed-apc-arr"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-011-sell-before-build-gtm-validated.md",
+      "title": "APC-011: Sell-Before-Build GTM Validated — Parallelize Market + Build, Lead with Design Partner Offer",
+      "labels": [],
+      "signature": "011-apc-before-build-build"
+    },
+    {
       "path": "docs/intake/issue-drafts/autobiographical-memory-three-store.md",
       "title": "Three-Store Autobiographical Memory Architecture",
       "labels": [],
@@ -2995,6 +3091,144 @@
       "title": "BE-001 — Receipt Law Not Explicit in Bootstrap Governance",
       "labels": [],
       "signature": "001-bootstrap-explicit-governance-law"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-1-crm-learning-feedback-loop.md",
+      "title": "BIP-001-1 — CRM Learning System Feedback Loop Underspecified",
+      "labels": [],
+      "signature": "001-bip-crm-feedback-learning"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-2-crm-exchange-count-formula.md",
+      "title": "BIP-001-2 — Exchange Count Estimation Misclassifies High-Volume Automated Senders",
+      "labels": [],
+      "signature": "001-automated-bip-count-estimation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-3-crm-llm-prompt-missing.md",
+      "title": "BIP-001-3 — LLM Classification Prompt Not Provided",
+      "labels": [],
+      "signature": "001-bip-classification-llm-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-1-kb-sentence-split-abbreviations.md",
+      "title": "BIP-002-1 — Sentence Split Regex Fails on Common English Abbreviations",
+      "labels": [],
+      "signature": "002-abbreviations-bip-common-english"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-2-kb-error-page-detection-narrow.md",
+      "title": "BIP-002-2 — Error-Page Detection Signal Set Too Narrow",
+      "labels": [],
+      "signature": "002-bip-detection-error-narrow"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-3-kb-near-duplicate-detection-missing.md",
+      "title": "BIP-002-3 — Content Hash Deduplication Misses Near-Duplicates",
+      "labels": [],
+      "signature": "002-bip-content-deduplication-duplicates"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md",
+      "title": "BIP-002-4 — Lock File Acquisition Is Not Atomic",
+      "labels": [],
+      "signature": "002-acquisition-atomic-bip-file"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-1-content-40pct-threshold-unvalidated.md",
+      "title": "BIP-003-1 — 40% Similarity Threshold Not Validated",
+      "labels": [],
+      "signature": "003-bip-not-similarity-threshold"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-2-content-hybrid-weights-unvalidated.md",
+      "title": "BIP-003-2 — Hybrid Score Weights Not Grounded in Evidence",
+      "labels": [],
+      "signature": "003-bip-evidence-grounded-hybrid"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-3-content-idea-id-collision.md",
+      "title": "BIP-003-3 — Idea ID Sequential Counter Has Collision Risk",
+      "labels": [],
+      "signature": "003-bip-collision-counter-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-1-social-thread-expansion-no-depth-limit.md",
+      "title": "BIP-004-1 — Thread Expansion Has No Recursion Depth Limit",
+      "labels": [],
+      "signature": "004-bip-depth-expansion-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-2-social-engagement-ranking-not-normalized.md",
+      "title": "BIP-004-2 — Engagement Ranking Ignores Follower Count Normalization",
+      "labels": [],
+      "signature": "004-bip-count-engagement-follower"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-3-social-cache-key-unspecified.md",
+      "title": "BIP-004-3 — Cache Key Definition Is Missing",
+      "labels": [],
+      "signature": "004-bip-cache-definition-key"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-005-1-youtube-quota-exhaustion.md",
+      "title": "BIP-005-1 — YouTube API Quota Exhaustion Risk Unmitigated",
+      "labels": [],
+      "signature": "005-api-bip-exhaustion-quota"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-1-briefing-policy-weight-update-unspecified.md",
+      "title": "BIP-006-1 — Policy Table Weight Update Mechanism Not Specified",
+      "labels": [],
+      "signature": "006-bip-mechanism-not-policy"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-2-briefing-frontier-cost-unbounded.md",
+      "title": "BIP-006-2 — Nightly Frontier Model Cost Is Unbounded",
+      "labels": [],
+      "signature": "006-bip-cost-frontier-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-3-briefing-signal-normalization-unspecified.md",
+      "title": "BIP-006-3 — Signal Normalization Layer Is Underspecified",
+      "labels": [],
+      "signature": "006-bip-layer-normalization-signal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-4-briefing-parallel-review-isolation.md",
+      "title": "BIP-006-4 — Parallel Persona Review Cannot See Other Reviews",
+      "labels": [],
+      "signature": "006-bip-cannot-other-parallel"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md",
+      "title": "BIP-007-1 — Intent Classification Mechanism Not Specified",
+      "labels": [],
+      "signature": "007-bip-classification-intent-mechanism"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-008-1-humanize-wordlist-detection-fragile.md",
+      "title": "BIP-008-1 — Word-List Detection Easily Evaded by Modern LLMs",
+      "labels": [],
+      "signature": "008-bip-detection-easily-evaded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-008-2-humanize-no-ground-truth-validation.md",
+      "title": "BIP-008-2 — No Ground Truth Validation of Humanization Quality",
+      "labels": [],
+      "signature": "008-bip-ground-humanization-quality"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-010-1-task-crm-crossref-unspecified.md",
+      "title": "BIP-010-1 — CRM Cross-Reference Lookup Strategy Not Specified",
+      "labels": [],
+      "signature": "010-bip-crm-cross-lookup"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-011-1-cost-tracking-pricing-hardcoded.md",
+      "title": "BIP-011-1 — Pricing Table Hardcoded, Not Dynamically Updated",
+      "labels": [],
+      "signature": "011-bip-dynamically-hardcoded-not"
     },
     {
       "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
@@ -4366,6 +4600,72 @@
       "signature": "enforcement-recovery-rule"
     },
     {
+      "path": "docs/intake/issue-drafts/REE-001-reasoning-efficiency-language-independence.md",
+      "title": "REE-001 — Reasoning Efficiency Is Not Married to English",
+      "labels": [],
+      "signature": "001-efficiency-english-married-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-002-semantic-layer-before-tokenizer.md",
+      "title": "REE-002 — Build Semantic Layer First, Custom Tokenizer Second",
+      "labels": [],
+      "signature": "002-build-custom-first-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-003-lora-qlora-dora-infrastructure.md",
+      "title": "REE-003 — QLoRA/DoRA Infrastructure Clarification for Entif Stack",
+      "labels": [],
+      "signature": "003-clarification-dora-entif-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-004-roma-hardware-qora-accelerator.md",
+      "title": "REE-004 — ROMA Hardware Accelerator for QLoRA Inference",
+      "labels": [],
+      "signature": "004-accelerator-hardware-inference-qlora"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-005-neural-architecture-primer.md",
+      "title": "REE-005 — Neural Network Architecture Primer Completeness",
+      "labels": [],
+      "signature": "005-architecture-completeness-network-neural"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-006-jigsaw-vs-monkeys-training-critique.md",
+      "title": "REE-006 — Jigsaw vs Monkeys: Critique of Brute-Force LLM Training",
+      "labels": [],
+      "signature": "006-brute-critique-force-jigsaw"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-007-ithkuil-lexeme-initialization.md",
+      "title": "REE-007 — Ithkuil Lexeme Curriculum as Structured Initialization Seed",
+      "labels": [],
+      "signature": "007-curriculum-initialization-ithkuil-lexeme"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-008-semantic-exoskeleton-concept.md",
+      "title": "REE-008 — Semantic Exoskeleton vs Host Model Internals",
+      "labels": [],
+      "signature": "008-exoskeleton-host-internals-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-009-comparative-training-experiment.md",
+      "title": "REE-009 — Comparative Training Experiment for Structured Initialization",
+      "labels": [],
+      "signature": "009-comparative-experiment-initialization-ree"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-010-qkv-layer-head-specificity.md",
+      "title": "REE-010 — Q/K/V Projection Specificity Across Layers and Heads",
+      "labels": [],
+      "signature": "010-across-heads-layers-projection"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-011-kv-cache-long-context-economics.md",
+      "title": "REE-011 — KV Cache Growth and Long-Context Inference Economics",
+      "labels": [],
+      "signature": "011-cache-context-economics-growth"
+    },
+    {
       "path": "docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md",
       "title": "RLM-001-ARCH",
       "labels": [],
@@ -4658,6 +4958,42 @@
       "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
       "labels": [],
       "signature": "002-3005-cache-decision-define"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-001-social-cognition-benchmark-clinical-psychology.md",
+      "title": "SCT-001: Social Cognition Benchmark — Clinical Psychology as Stress-Test Framework",
+      "labels": [],
+      "signature": "001-benchmark-clinical-cognition-framework"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-002-empathy-overaffirmation-discrimination.md",
+      "title": "SCT-002: Empathy vs Over-Affirmation Discrimination",
+      "labels": [],
+      "signature": "002-affirmation-discrimination-empathy-over"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-003-violent-language-idiom-detection.md",
+      "title": "SCT-003: Violent Language Idiom Detection — Threshold Marker vs Literal Violence",
+      "labels": [],
+      "signature": "003-detection-idiom-language-literal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-004-tulpa-stamp-comparator-architecture.md",
+      "title": "SCT-004: Tulpa Stamp Five-Layer Comparator Architecture",
+      "labels": [],
+      "signature": "004-architecture-comparator-five-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-005-mixture-of-archetypes-scoring.md",
+      "title": "SCT-005: Mixture-of-Archetypes Scoring for Diluted Composite Cases",
+      "labels": [],
+      "signature": "005-archetypes-cases-composite-diluted"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-006-interpreter-failure-detection.md",
+      "title": "SCT-006: Interpreter-Failure Detection — Frame Persistence and Ontology Violation Tracking",
+      "labels": [],
+      "signature": "006-detection-failure-frame-interpreter"
     },
     {
       "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",
