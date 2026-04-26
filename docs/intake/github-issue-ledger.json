@@ -2518,5 +2518,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-004-tulpa-stamp-comparator-architecture.md",
     "draftStatus": "published"
+  },
+  "SCT-005-mixture-of-archetypes-scoring": {
+    "number": 641,
+    "state": "open",
+    "title": "SCT-005: Mixture-of-Archetypes Scoring for Diluted Composite Cases",
+    "url": "https://github.com/Entif-AI/rosetta/issues/641",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-005-mixture-of-archetypes-scoring.md",
+    "draftStatus": "published"
   }
 }
