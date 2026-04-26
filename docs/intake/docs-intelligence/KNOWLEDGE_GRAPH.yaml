@@ -2777,6 +2777,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/592
   status: active
+- id: REE-003
+  name: QLoRA/DoRA Infrastructure Clarification
+  introduced_by: docs/intake/issue-drafts/REE-003-lora-qlora-dora-infrastructure.md
+  introduced_at: '2026-04-26'
+  definition: Distinguishes LoRA, QLoRA, and DoRA fine-tuning techniques; clarifies
+    that zeroing in LoRA context means adapter initialization as no-op, not full model
+    zeroing
+  extends: []
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/594
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

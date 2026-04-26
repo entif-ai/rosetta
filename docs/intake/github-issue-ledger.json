@@ -2275,5 +2275,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-002-semantic-layer-before-tokenizer.md",
     "draftStatus": "published"
+  },
+  "REE-003-lora-qlora-dora-infrastructure.md": {
+    "number": 594,
+    "state": "open",
+    "title": "REE-003: QLoRA/DoRA Infrastructure Clarification for Entif Stack",
+    "url": "https://github.com/entif-ai/rosetta/issues/594",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-003-lora-qlora-dora-infrastructure.md",
+    "draftStatus": "published"
   }
 }
