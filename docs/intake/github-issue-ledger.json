@@ -2860,5 +2860,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-008-data-plane-prompt-injection-mitigation.md",
     "draftStatus": "published"
+  },
+  "am-009-domain-ref-schema.md": {
+    "number": 711,
+    "state": "open",
+    "title": "AM-009: Domain Ref Schema \u2014 tenant_id, Classification, ABAC, and vendor_route Format",
+    "url": "https://github.com/gentif-ai/rosetta/issues/711",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-009-domain-ref-schema.md",
+    "draftStatus": "published"
   }
 }
