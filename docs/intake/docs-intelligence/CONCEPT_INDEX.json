@@ -177,6 +177,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-api-cache-mgmt.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-api-cache-mgmt.md",
+      "title": "DI Extraction: API-driven Cache Management",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-attention-residuals-kimi.md",
       "sourcePath": "docs/external/Attention Residuals (AttnRes) - Kimi.md",
       "title": "Docs Intelligence Extraction",
@@ -2163,6 +2169,18 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "title": "Extraction: Progressive-Disclosure Skill System",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
       "title": "Docs Intelligence Extraction",
@@ -2449,6 +2467,12 @@
         "appendix-b",
         "negotiation-protocols"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "title": "Extraction: 20260323 - Chat GPT - Entif Skill Library Design",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
@@ -2959,6 +2983,72 @@
         "reliability"
       ],
       "signature": "012-call-error-guardlayer-mailroom"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-001-openai-no-shareable-cache-id.md",
+      "title": "APC-001: OpenAI Prompt Caching Has No Shareable Cache ID Primitive",
+      "labels": [],
+      "signature": "001-apc-cache-caching-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-002-anthropic-workspace-isolation-no-cache-id.md",
+      "title": "APC-002: Anthropic Workspace-Level Cache Isolation — No Shared Cache ID Primitive",
+      "labels": [],
+      "signature": "002-anthropic-apc-cache-cache"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-003-gemini-vertex-named-cache-resources-iam.md",
+      "title": "APC-003: Google Gemini/Vertex AI — Closest Match to Named Cache Resources + IAM",
+      "labels": [],
+      "signature": "003-apc-cache-closest-gemini"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-004-entif-inference-firewall-semantic-cache-router-provenance.md",
+      "title": "APC-004: Entif Product Category — \"Inference Firewall + Semantic Cache Router + Provenance Engine\"",
+      "labels": [],
+      "signature": "004-apc-cache-category-engine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-005-compound-semantic-cache-key.md",
+      "title": "APC-005: Semantic Equivalence Cache Keys Require Compound Structure (Intent × Rights Domain × Classification × Version)",
+      "labels": [],
+      "signature": "005-apc-cache-classification-compound"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-006-privacy-budget-transliteration-leakage.md",
+      "title": "APC-006: Transliteration Can Leak by Joins — Privacy Budget Discipline Required",
+      "labels": [],
+      "signature": "006-apc-budget-can-discipline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-007-cache-poisoning-stale-answers.md",
+      "title": "APC-007: Cache Poisoning and Stale Certainty — Most Dangerous Cache Failure Mode",
+      "labels": [],
+      "signature": "007-apc-cache-cache-certainty"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-008-multi-provider-composition-provenance.md",
+      "title": "APC-008: Multi-Provider Composition Needs Its Own Provenance Spine",
+      "labels": [],
+      "signature": "008-apc-composition-its-multi"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-009-weak-strong-routing-auditability.md",
+      "title": "APC-009: Weak-to-Strong Routing Must Be Auditable",
+      "labels": [],
+      "signature": "009-apc-auditable-must-routing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-010-100m-arr-month-six-challenged.md",
+      "title": "APC-010: $100M ARR by Month Six Is Champagne Hallucination — Category Winability Affirmed",
+      "labels": [],
+      "signature": "010-100m-affirmed-apc-arr"
+    },
+    {
+      "path": "docs/intake/issue-drafts/APC-011-sell-before-build-gtm-validated.md",
+      "title": "APC-011: Sell-Before-Build GTM Validated — Parallelize Market + Build, Lead with Design Partner Offer",
+      "labels": [],
+      "signature": "011-apc-before-build-build"
     },
     {
       "path": "docs/intake/issue-drafts/autobiographical-memory-three-store.md",
@@ -4182,6 +4272,42 @@
       "signature": "apparent-constitute-constraint-does-evidence"
     },
     {
+      "path": "docs/intake/issue-drafts/PSD-001-implement-skill-registry-v0.md",
+      "title": "PSD-001 — Implement Skill Registry v0",
+      "labels": [],
+      "signature": "001-implement-psd-registry-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-002-implement-skill-broker-pipeline.md",
+      "title": "PSD-002 — Implement Skill Broker Pipeline",
+      "labels": [],
+      "signature": "002-broker-implement-pipeline-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-003-implement-skill-eval-harness.md",
+      "title": "PSD-003 — Implement Eval Harness for Skills",
+      "labels": [],
+      "signature": "003-eval-harness-implement-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-004-seed-happy-path-skills.md",
+      "title": "PSD-004 — Seed Happy-Path Skills",
+      "labels": [],
+      "signature": "004-happy-path-psd-seed"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-005-skill-guard-receipts-enforcement.md",
+      "title": "PSD-005 — Route Skills Through Guard + Receipts",
+      "labels": [],
+      "signature": "005-guard-psd-receipts-route"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-006-formalize-skill-economy-concept.md",
+      "title": "PSD-006 — Formalize \"Skill Economy\" Concept",
+      "labels": [],
+      "signature": "006-concept-economy-formalize-psd"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
@@ -4220,6 +4346,36 @@
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md",
+      "title": "RLM-001-ARCH",
+      "labels": [],
+      "signature": "001-arch-rlm"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-CONTEXT-ROT-context-rot-address.md",
+      "title": "RLM-001-CONTEXT-ROT",
+      "labels": [],
+      "signature": "001-context-rlm-rot"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SANDBOX-rlm-sandboxing-governance.md",
+      "title": "RLM-001-SANDBOX",
+      "labels": [],
+      "signature": "001-rlm-sandbox"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SLICE-repo-comprehension-vertical-slice.md",
+      "title": "RLM-001-SLICE",
+      "labels": [],
+      "signature": "001-rlm-slice"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-TILES-rosetta-rlm-tile-extensions.md",
+      "title": "RLM-001-TILES",
+      "labels": [],
+      "signature": "001-rlm-tiles"
     },
     {
       "path": "docs/intake/issue-drafts/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
@@ -4562,6 +4718,60 @@
       "title": "Issue: skillpack-importer-quarantine-flow",
       "labels": [],
       "signature": "flow-importer-quarantine-skillpack"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-001-skillcard-schema-tier0.md",
+      "title": "SLD-001: SkillCard Schema — Tier 0 ~100-Token Metadata Stub",
+      "labels": [],
+      "signature": "001-100-metadata-schema-skillcard"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-002-three-tier-progressive-disclosure.md",
+      "title": "SLD-002: Three-Tier Progressive Disclosure Architecture",
+      "labels": [],
+      "signature": "002-architecture-disclosure-progressive-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-003-skill-broker-middleware.md",
+      "title": "SLD-003: Skill Broker Middleware — Multi-Stage Retrieval Pipeline",
+      "labels": [],
+      "signature": "003-broker-middleware-multi-pipeline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-004-extend-vs-author-policy.md",
+      "title": "SLD-004: Extend vs Author-New Decision Policy",
+      "labels": [],
+      "signature": "004-author-decision-extend-new"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-005-hot-cold-skill-library.md",
+      "title": "SLD-005: Hot Skills Pack vs Cold Library — Two-Level Skill Registry",
+      "labels": [],
+      "signature": "005-cold-hot-level-library"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md",
+      "title": "SLD-006: Skill Vetting/Ingestion Pipeline",
+      "labels": [],
+      "signature": "006-ingestion-pipeline-skill-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-007-skill-telemetry-receipts.md",
+      "title": "SLD-007: Skill Telemetry and SkillReceipts as First-Class Query Surface",
+      "labels": [],
+      "signature": "007-class-first-query-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-008-skill-safety-posture.md",
+      "title": "SLD-008: Safety Posture — Guard Enforcement of Skill Metadata and Risk Classification",
+      "labels": [],
+      "signature": "008-classification-enforcement-guard-metadata"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-009-skill-broker-query-select-hot-skill.md",
+      "title": "SLD-009: skill_broker_query_and_select as First-Class Hot Skill",
+      "labels": [],
+      "signature": "009-broker-class-first-hot"
     },
     {
       "path": "docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md",
