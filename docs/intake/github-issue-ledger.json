@@ -1060,5 +1060,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/consciousness-criteria-symmetry.md",
     "draftStatus": "published"
+  },
+  "CW-003-structured-output-format-unknown.md": {
+    "number": 334,
+    "state": "open",
+    "title": "CW-003: Structured output format for CodeWiki CLI unknown",
+    "url": "https://github.com/entif-ai/rosetta/issues/334",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-003-structured-output-format-unknown.md",
+    "draftStatus": "published"
   }
 }
