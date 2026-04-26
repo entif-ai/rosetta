@@ -3121,6 +3121,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/12
   status: active
+- id: SLD-007
+  name: Skill Telemetry and SkillReceipts
+  introduced_by: docs/intake/issue-drafts/SLD-007-skill-telemetry-receipts.md
+  introduced_at: '2026-04-26'
+  definition: SkillReceipts are append-only telemetry records emitted by every skill
+    invocation, recording what was chosen, what it cost, whether it succeeded, why
+    it failed, and improvement signals. They feed broker Stage 4 ranking and enable
+    organizational learning queries like top skills by win_rate.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/651
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

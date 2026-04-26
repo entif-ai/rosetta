@@ -2572,5 +2572,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-english-accompaniment-package-contract.md",
     "draftStatus": "published"
+  },
+  "SLD-007-skill-telemetry-receipts.md": {
+    "number": 651,
+    "state": "open",
+    "title": "SLD-007: Skill Telemetry and SkillReceipts as First-Class Query Surface",
+    "url": "https://github.com/entif-ai/rosetta/issues/651",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-007-skill-telemetry-receipts.md",
+    "draftStatus": "published"
   }
 }
