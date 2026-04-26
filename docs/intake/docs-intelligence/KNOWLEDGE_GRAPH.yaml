@@ -1338,6 +1338,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/312
   status: active
+- id: six-layer-memory-model-federated-jurisdiction
+  name: Six-Layer Federated Memory Model
+  introduced_by: docs/intake/issue-drafts/six-layer-memory-model-federated-jurisdiction.md
+  introduced_at: '2026-04-25'
+  definition: 'Federated multi-layer memory architecture with hard jurisdiction per
+    layer: constitutional document store, artifact store, semantic vector recall,
+    temporal graph, and adaptive salience. Each layer has distinct authority scope,
+    write permissions, and provenance requirements. NOT a collapsed single store.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/315
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
