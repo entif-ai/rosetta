@@ -2510,6 +2510,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/542
   status: active
+- id: HF-009
+  name: Magazine Feed Adapters (Wired, Popular Mechanics, 2600)
+  introduced_by: docs/intake/issue-drafts/HF-009-magazine-feed-adapters.md
+  introduced_at: '2026-04-26'
+  definition: "Feed adapters for Wired, Popular Mechanics, and 2600: The Hacker Quarterly\
+    \ that emit IntakeEnvelope objects, with three-tier DRM fallback (official digital\
+    \ endpoints \u2192 email TOC \u2192 PDF/epub)"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/544
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
