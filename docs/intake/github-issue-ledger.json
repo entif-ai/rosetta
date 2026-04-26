@@ -2581,5 +2581,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-007-skill-telemetry-receipts.md",
     "draftStatus": "published"
+  },
+  "SLD-008-skill-safety-posture.md": {
+    "number": 653,
+    "state": "open",
+    "title": "SLD-008: Skill Safety Posture \u2014 Guard Enforcement of Risk Class and Tool Scopes",
+    "url": "https://github.com/entif-ai/rosetta/issues/653",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-008-skill-safety-posture.md",
+    "draftStatus": "published"
   }
 }
