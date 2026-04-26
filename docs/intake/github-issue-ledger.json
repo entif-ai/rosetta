@@ -1996,5 +1996,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-003-universal-content-intake-envelope-schema.md",
     "draftStatus": "published"
+  },
+  "HF-004-three-tier-triage-routing": {
+    "number": 534,
+    "state": "open",
+    "title": "HF-004: Implement three-tier triage routing (archive-only / deep-ingest / immediate-escalation)",
+    "url": "https://github.com/entif-ai/rosetta/issues/534",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-004-three-tier-triage-routing.md",
+    "draftStatus": "published"
   }
 }
