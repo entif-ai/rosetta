@@ -2203,5 +2203,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-005-mhc-stability-invariants.md",
     "draftStatus": "published"
+  },
+  "PSD-001-implement-skill-registry-v0": {
+    "number": 461,
+    "state": "open",
+    "title": "PSD-001: Implement Skill Registry v0",
+    "url": "https://github.com/entif-ai/rosetta/issues/461",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-001-implement-skill-registry-v0.md",
+    "draftStatus": "published"
   }
 }
