@@ -2501,6 +2501,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/540
   status: active
+- id: HF-008-discord-bulk-ingest-server
+  name: Discord Bulk-Ingest Server
+  introduced_by: docs/intake/issue-drafts/HF-008-discord-bulk-ingest-server.md
+  introduced_at: '2026-04-26'
+  definition: Discord bulk-ingest server with per-channel routing for venture-specific
+    resource intake.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/542
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
