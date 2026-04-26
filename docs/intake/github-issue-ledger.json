@@ -2131,5 +2131,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-008-conjecture-nonreplayable-edge-case.md",
     "draftStatus": "published"
+  },
+  "MCST-003-blast-radius-expansion-external-agent.md": {
+    "number": 565,
+    "state": "open",
+    "title": "MCST-003: Blast Radius Expansion from External Agent Plane Integration",
+    "url": "https://github.com/entif-ai/rosetta/issues/565",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-003-blast-radius-expansion-external-agent.md",
+    "draftStatus": "published"
   }
 }
