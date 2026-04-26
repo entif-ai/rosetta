@@ -1668,6 +1668,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/385
   status: active
+- id: EMER-004-song-parody-self-model
+  name: Song Parody as Self-Modeling Output Format
+  introduced_by: docs/intake/issue-drafts/EMER-004-song-parody-self-model.md
+  introduced_at: '2026-04-26'
+  definition: Reusable elicitation pattern where creative output (song parody) forces
+    architectural articulation of AI self-model via structural constraints (meter,
+    rhyme).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/387
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
