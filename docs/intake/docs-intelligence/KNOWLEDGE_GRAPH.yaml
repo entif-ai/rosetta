@@ -1408,6 +1408,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/330
   status: active
+- id: CW-003-structured-output-format-unknown
+  name: CodeWiki CLI Structured Output Format Unknown
+  introduced_by: docs/intake/issue-drafts/CW-003-structured-output-format-unknown.md
+  introduced_at: '2026-04-25'
+  definition: The CodeWiki CLI extension lacks a publicly documented machine-readable
+    output format, preventing stable adapter design for the CodeWikiForge integration.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/334
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
