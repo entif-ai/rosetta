@@ -2386,6 +2386,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/517
   status: active
+- id: HEA-002-draft-prune-rosetta-equivalence
+  name: Draft-and-Prune Equivalence Gap
+  introduced_by: docs/intake/issue-drafts/HEA-002-draft-prune-rosetta-equivalence.md
+  introduced_at: '2026-04-26'
+  definition: Draft-and-Prune (arXiv 2603.17233) aggregates by text-string majority
+    vote, not semantic identity. Rosetta canonical objects (tiles, bundles, CIDs,
+    frame URIs) can enable equivalence-aware aggregation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/519
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

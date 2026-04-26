@@ -1933,5 +1933,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-001-event-driven-consciousness.md",
     "draftStatus": "published"
+  },
+  "HEA-002-draft-prune-rosetta-equivalence.md": {
+    "number": 519,
+    "state": "open",
+    "title": "HEA-002: Draft-and-Prune Equivalence Gap \u2014 Rosetta as Canonical Aggregation Substrate",
+    "url": "https://github.com/entif-ai/rosetta/issues/519",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-002-draft-prune-rosetta-equivalence.md",
+    "draftStatus": "published"
   }
 }
