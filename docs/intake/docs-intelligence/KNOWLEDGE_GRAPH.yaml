@@ -1805,6 +1805,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/412
   status: active
+- id: ccf-006-no-exit-pivot-trigger-formalization
+  name: Exit/Pivot Trigger Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
+  introduced_at: '2026-04-26'
+  definition: Tooling and monitoring layer for exit/pivot/continue/enter triggers
+    in the Consensus-First Commitment Scoping Framework. Triggers require formal evaluation
+    mechanisms (docs, board metadata, or automated alerting) beyond artifact format
+    definition.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/290
+  - https://github.com/entif-ai/rosetta/issues/278
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
