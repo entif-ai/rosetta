@@ -3071,6 +3071,16 @@ concepts:
   referenced_by:
   - https://github.com/Entif-AI/rosetta/issues/641
   status: active
+- id: SCT-006-interpreter-failure-detection
+  name: "Interpreter-Failure Detection \u2014 Frame Persistence Tracking"
+  introduced_by: docs/intake/issue-drafts/SCT-006-interpreter-failure-detection.md
+  introduced_at: '2026-04-26'
+  definition: Recurring failure mode where the assistant imports a user-explicitly-rejected
+    frame, defends its hallucinated framing, and persists after correction. Requires
+    frame persistence tracking, ontology violation alerts, and repair-aware scoring.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/643
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4276,5 +4286,8 @@ issue_drafts_inventory:
   status: published
 - issue_id: PSD-004
   url: https://github.com/entif-ai/rosetta/issues/583
+  status: published
+- issue_id: SCT-006-interpreter-failure-detection
+  url: https://github.com/entif-ai/rosetta/issues/643
   status: published
 
