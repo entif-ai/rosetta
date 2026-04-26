@@ -1349,6 +1349,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/315
   status: active
+- id: CONS-002
+  name: Global Workspace Theory as Rosetta Spine Abstraction
+  introduced_by: docs/intake/issue-drafts/CONS-002-global-workspace-rosetta-spine.md
+  introduced_at: '2026-04-25'
+  definition: GWT "blackboard" abstraction maps to Rosetta spine; specialized tile
+    processors compete for access, winner broadcasts to all.
+  referenced_by:
+  - https://github.com/enti-f-ai/rosetta/issues/317
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

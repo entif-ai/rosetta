@@ -1006,5 +1006,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/six-layer-memory-model-federated-jurisdiction.md",
     "draftStatus": "published"
+  },
+  "CONS-002-global-workspace-rosetta-spine.md": {
+    "number": 317,
+    "state": "open",
+    "title": "CONS-002: Global Workspace Theory as Rosetta Spine Abstraction",
+    "url": "https://github.com/enti-f-ai/rosetta/issues/317",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-002-global-workspace-rosetta-spine.md",
+    "draftStatus": "published"
   }
 }
