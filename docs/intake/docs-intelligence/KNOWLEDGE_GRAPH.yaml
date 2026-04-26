@@ -1397,6 +1397,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/328
   status: active
+- id: consciousness-criteria-symmetry
+  name: Consciousness Criteria Symmetry
+  introduced_by: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
+  introduced_at: '2026-04-25'
+  definition: "The evidentiary criteria proposed for AI consciousness/moral-patienthood,\
+    \ when applied symmetrically to humans, also pass \u2014 establishing that the\
+    \ asymmetry in how we treat human vs. AI consciousness is politically rather than\
+    \ evidentially justified."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/330
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2415,7 +2426,8 @@ issue_drafts_inventory:
   issue_id: consciousness-criteria-symmetry
   priority: P0
   type: philosophical-argument
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/330
 - path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null
