@@ -970,5 +970,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-calibration-loop.md",
     "draftStatus": "published"
+  },
+  "moving-goalpost-consciousness-criteria": {
+    "number": 307,
+    "state": "open",
+    "title": "[systemic-risk] Moving goalpost problem: pre-commit strategy for AI consciousness criteria",
+    "url": "https://github.com/entif-ai/rosetta/issues/307",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/moving-goalpost-consciousness-criteria.md",
+    "draftStatus": "published"
   }
 }

@@ -1308,6 +1308,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/278
   status: active
+- id: moving-goalpost-consciousness-criteria
+  name: Moving Goalpost Problem (AI Consciousness)
+  introduced_by: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
+  introduced_at: '2026-04-25'
+  definition: Systemic risk where AI consciousness criteria are asymmetrically raised
+    as systems approach thresholds, neutralizing EMILIE research outcomes through
+    institutional pressure rather than technical evidence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/307
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
