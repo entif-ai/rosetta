@@ -3111,6 +3111,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/648
   status: active
+- id: text-core-english-accompaniment-package-contract
+  name: English Accompaniment Package Contract
+  introduced_by: docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md
+  introduced_at: '2026-04-26'
+  definition: Contract defining required sections and quality criteria for English
+    accompaniment packages that accompany structured Text-Core extracts and tapestry
+    intros.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/12
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3608,6 +3618,8 @@ issue_drafts_inventory:
   issue_id: text-core-english-accompaniment-package-contract
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/12
+  status: published
 - path: docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md
   source_doc: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   source_pr: 46
