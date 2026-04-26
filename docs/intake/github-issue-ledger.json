@@ -1762,5 +1762,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-005-social-engineering-scoring-dimension.md",
     "draftStatus": "published"
+  },
+  "EML-006-rosetta-module-map-content-risk.md": {
+    "number": 483,
+    "state": "open",
+    "title": "EML-006: Rosetta Module Map for Content-Risk Pipelines with Pack Family Structure",
+    "url": "https://github.com/entif-ai/rosetta/issues/483",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-006-rosetta-module-map-content-risk.md",
+    "draftStatus": "published"
   }
 }

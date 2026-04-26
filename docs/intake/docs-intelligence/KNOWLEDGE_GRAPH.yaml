@@ -2188,6 +2188,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/481
   status: active
+- id: EML-006
+  name: Rosetta Module Map for Content-Risk Pipelines
+  introduced_by: docs/intake/issue-drafts/EML-006-rosetta-module-map-content-risk.md
+  introduced_at: '2026-04-26'
+  definition: Formalized pack family structure (rrp.*, truthlint.*, risk.*, ingress.*,
+    identity.*, interop.*, gov.*) for content-risk pipelines with an immutability
+    principle (no module mutates truth in place).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/483
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
