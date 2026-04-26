@@ -1591,5 +1591,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-005-compound-semantic-cache-key.md",
     "draftStatus": "published"
+  },
+  "APC-006-privacy-budget-transliteration-leakage.md": {
+    "number": 451,
+    "state": "open",
+    "title": "APC-006: Transliteration Can Leak by Joins \u2014 Privacy Budget Discipline Required",
+    "url": "https://github.com/entif-ai/rosetta/issues/451",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-006-privacy-budget-transliteration-leakage.md",
+    "draftStatus": "published"
   }
 }
