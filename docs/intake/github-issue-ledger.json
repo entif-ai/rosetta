@@ -2059,5 +2059,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-010-newsletter-google-alerts-intake-adapters.md",
     "draftStatus": "published"
+  },
+  "LSC-001-twelve-cognitive-lenses-formalization.md": {
+    "number": 547,
+    "state": "open",
+    "title": "Formalize Twelve Cognitive Lenses as a reusable pattern",
+    "url": "https://github.com/entif-ai/rosetta/issues/547",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-001-twelve-cognitive-lenses-formalization.md",
+    "draftStatus": "published"
   }
 }

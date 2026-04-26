@@ -2530,6 +2530,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/532
   status: active
+- id: lsc-001-twelve-cognitive-lenses
+  name: Twelve Cognitive Lenses Pattern
+  introduced_by: docs/intake/issue-drafts/LSC-001-twelve-cognitive-lenses-formalization.md
+  introduced_at: '2026-04-26'
+  definition: A set of twelve neuromodulatory gain factors (cognitive lenses) that
+    reweight trajectory through existing cognitive circuits without altering weights.
+    Used in Latent-Space Cartography prompts to deepen perceptual angles.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/547
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
