@@ -2086,5 +2086,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-003-elastic-stability-mathematical-apparatus.md",
     "draftStatus": "published"
+  },
+  "LSC-004-manifold-folding-empirical-measurement.md": {
+    "number": 553,
+    "state": "open",
+    "title": "Investigate Manifold Folding Empirical Measurement",
+    "url": "https://github.com/entif-ai/rosetta/issues/553",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-004-manifold-folding-empirical-measurement.md",
+    "draftStatus": "published"
   }
 }
