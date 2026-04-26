@@ -1780,5 +1780,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-007-ensemble-scoring-architecture.md",
     "draftStatus": "published"
+  },
+  "EML-008-small-model-suitability-routing.md": {
+    "number": 483,
+    "state": "open",
+    "title": "EML-006: Rosetta Module Map for Content-Risk Pipelines with Pack Family Structure (enriched by EML-008)",
+    "url": "https://github.com/entif-ai/rosetta/issues/483",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-008-small-model-suitability-routing.md",
+    "draftStatus": "published"
   }
 }

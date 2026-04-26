@@ -2209,6 +2209,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/485
   status: active
+- id: EML-008
+  name: Small-Model Suitability Routing
+  introduced_by: docs/intake/issue-drafts/EML-008-small-model-suitability-routing.md
+  introduced_at: '2026-04-26'
+  definition: Three-tier risk routing architecture that routes content to small/cheap
+    models (low-risk), robust models with constrained schemas (medium-risk), or rejects
+    before any model (high-risk), based on content risk profiling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/483
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
