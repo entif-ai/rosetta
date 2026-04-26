@@ -2758,6 +2758,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/498
   status: active
+- id: omc-activation-store-score-calibration
+  name: OMC Activation-Store Score Calibration
+  introduced_by: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
+  introduced_at: '2026-04-26'
+  definition: Define initial weight values, normalization rules, and evaluation loop
+    for the b1-b8 activation-store composite score defined in the OMC research spec
+    Section 6.3.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/590
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3182,6 +3192,8 @@ issue_drafts_inventory:
   issue_id: omc-activation-store-score-calibration
   priority: P2
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/590
+  status: published
 - path: docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
