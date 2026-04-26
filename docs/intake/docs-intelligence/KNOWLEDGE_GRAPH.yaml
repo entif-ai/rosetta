@@ -2989,6 +2989,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/628
   status: active
+- id: SCRU-002
+  name: ROCK-3005-IAM StdPack
+  introduced_by: docs/intake/issue-drafts/SCRU-002-rock-3005-iam-stdpack.md
+  introduced_at: '2026-04-26'
+  definition: IAM tile schema StdPack (iam.principal, iam.delegation, iam.cache_domain,
+    iam.decision) extending Rosetta v3.0.0 Core Spine for standardized authorization
+    decision artifacts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/630
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
