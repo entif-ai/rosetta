@@ -2828,6 +2828,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/602
   status: active
+- id: ree-008
+  name: Semantic Exoskeleton
+  introduced_by: docs/intake/issue-drafts/REE-008-semantic-exoskeleton-concept.md
+  introduced_at: '2026-04-26'
+  definition: Custom embedding model that wraps a host LLM as a semantic control layer,
+    independently of the host's internal reasoning. Host model remains internally
+    ambiguous while system-level I/O becomes structured.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/604
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

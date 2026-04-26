@@ -2320,5 +2320,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-007-ithkuil-lexeme-initialization.md",
     "draftStatus": "published"
+  },
+  "REE-008-semantic-exoskeleton-concept.md": {
+    "number": 604,
+    "state": "open",
+    "title": "REE-008: Semantic Exoskeleton \u2014 Host Model Independence Principle",
+    "url": "https://github.com/entif-ai/rosetta/issues/604",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-008-semantic-exoskeleton-concept.md",
+    "draftStatus": "published"
   }
 }
