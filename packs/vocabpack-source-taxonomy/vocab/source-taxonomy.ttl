@@ -1,0 +1,17 @@
+@prefix entif: <https://entif.ai/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+entif:InfrastructureSource a rdfs:Class ;
+  rdfs:label "Infrastructure source" .
+
+entif:RepositorySource a rdfs:Class ;
+  rdfs:label "Repository source" .
+
+entif:VolatileSource a rdfs:Class ;
+  rdfs:label "Volatile source" .
+
+entif:Tier0 a rdfs:Resource ;
+  rdfs:label "Tier 0 source" .
+
+entif:Tier1 a rdfs:Resource ;
+  rdfs:label "Tier 1 source" .

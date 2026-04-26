@@ -1,0 +1,86 @@
+{
+  "name": "rosetta-cli",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/rosetta-cli/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "apps/rosetta-cli/dist",
+        "format": [
+          "cjs"
+        ],
+        "bundle": false,
+        "main": "apps/rosetta-cli/src/main.ts",
+        "tsConfig": "apps/rosetta-cli/tsconfig.app.json",
+        "assets": [
+          "apps/rosetta-cli/src/assets"
+        ],
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "vitest run apps/rosetta-cli/src/lib/rosetta-cli.spec.ts"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/vitest.config.ts",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "buildTarget": "rosetta-cli:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "rosetta-cli:build:development"
+        },
+        "production": {
+          "buildTarget": "rosetta-cli:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

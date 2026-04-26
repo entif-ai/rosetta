@@ -1,0 +1,14 @@
+@prefix entif: <https://entif.ai/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+entif:SourceSystemProfile a rdfs:Class ;
+  rdfs:label "Source system profile" .
+
+entif:SourceRecord a rdfs:Class ;
+  rdfs:label "Source record" .
+
+entif:SourceManifestation a rdfs:Class ;
+  rdfs:label "Source manifestation" .
+
+entif:TrustMatrix a rdfs:Class ;
+  rdfs:label "Trust matrix" .
