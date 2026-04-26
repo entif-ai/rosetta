@@ -1429,5 +1429,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-006-no-exit-pivot-trigger-formalization.md",
     "draftStatus": "published"
+  },
+  "BIP-004-3-social-cache-key-unspecified.md": {
+    "number": 415,
+    "state": "open",
+    "title": "BIP-004-3: Cache Key Definition Is Missing",
+    "url": "https://github.com/entif-ai/rosetta/issues/415",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-3-social-cache-key-unspecified.md",
+    "draftStatus": "published"
   }
 }
