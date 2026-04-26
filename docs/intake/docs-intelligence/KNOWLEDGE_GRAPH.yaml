@@ -2909,6 +2909,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/612
   status: active
+- id: 2026-04-25-consensus-first-credibility-scoring-rubric
+  name: Credibility Scoring Rubric for Evidence Ledger
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-credibility-scoring-rubric.md
+  introduced_at: '2026-04-25'
+  definition: 'Contextual credibility scoring for evidence ledger claims: not "is
+    this reputable" but "is this source positioned to know this claim?" Includes positioning
+    factors, evidence type interactions, and volume compensation rules.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/285
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
