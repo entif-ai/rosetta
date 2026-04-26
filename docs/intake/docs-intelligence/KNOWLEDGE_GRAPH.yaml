@@ -1688,6 +1688,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/389
   status: active
+- id: BIP-001-2-crm-exchange-count-formula
+  name: 'BIP-001-2: Exchange Count Formula Misclassifies Automated Senders'
+  introduced_by: docs/intake/issue-drafts/BIP-001-2-crm-exchange-count-formula.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-001 exchange estimation formula Math.min(Math.floor(totalMessages/2),
+    threadCount) conflates broadcast message volume with genuine two-way exchanges,
+    inflating scores for automated senders.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/391
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -1312,5 +1312,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-1-crm-learning-feedback-loop.md",
     "draftStatus": "published"
+  },
+  "BIP-001-2-crm-exchange-count-formula.md": {
+    "number": 391,
+    "state": "open",
+    "title": "BIP-001-2: Exchange Count Estimation Misclassifies High-Volume Automated Senders",
+    "url": "https://github.com/entif-ai/rosetta/issues/391",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-2-crm-exchange-count-formula.md",
+    "draftStatus": "published"
   }
 }
