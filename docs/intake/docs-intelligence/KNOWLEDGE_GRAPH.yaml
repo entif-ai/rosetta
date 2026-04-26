@@ -1,17 +1,11 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T20:47:00Z'
-  total_docs_processed: 31
+  generated: '2026-04-25T23:20:00Z'
+  total_docs_processed: 32
   active_issue_drafts: 127
   archived_issue_drafts: 23
-  total_processed_docs:
-- path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
-  processed_at: 2026-04-25T00:00:00Z
-  findings: 10
-  pr: 197
-  issues: 1
-issue_drafts_inventory: 138
-  docs_intelligence_files: 30
+  total_issue_drafts_inventory: 151
+  docs_intelligence_files: 31
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -45,8 +39,8 @@ concepts:
   name: Write-Admission Gate
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "9-step state machine: Propose\u2192Normalize\u2192Authorize\u2192Ground\u2192\
-    Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project; fail-closed"
+  definition: '9-step state machine: Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project;
+    fail-closed'
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
@@ -98,10 +92,9 @@ concepts:
   name: Text-Core MVP
   introduced_by: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   introduced_at: '2026-04-24'
-  definition: "Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two\
-    \ text-source families required, deterministic refinery, source\u2192observation\u2192\
-    interpretation\u2192tapestry, rights-scoped retrieval, minimum English accompaniment,\
-    \ Postgres/pgvector baseline"
+  definition: Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two
+    text-source families required, deterministic refinery, source→observation→interpretation→tapestry,
+    rights-scoped retrieval, minimum English accompaniment, Postgres/pgvector baseline
   extends: []
   referenced_by:
   - docs/backlog/Text-Core MVP Scope Gate
@@ -111,14 +104,14 @@ concepts:
   name: PostgreSQL as Canonical Registry
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "NOT LAME specifies PostgreSQL as canonical registry; SQLite only as\
-    \ local shadow; Bootstrap uses SQLite \u2014 migration gap"
+  definition: NOT LAME specifies PostgreSQL as canonical registry; SQLite only as
+    local shadow; Bootstrap uses SQLite — migration gap
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
   - docs/governance/AUTHORITY_STACK.md (noted gap)
   status: active
-  note: "Migration gap \u2014 DI-008 tracks resolution"
+  note: Migration gap — DI-008 tracks resolution
 - id: langgraph-workflow-only
   name: LangGraph Workflow-Only
   introduced_by: docs/PRDs/NOT LAME PRD
@@ -152,7 +145,7 @@ concepts:
   referenced_by:
   - docs/governance/AUTHORITY_STACK.md
   status: active
-  note: "Shadow-mode lift criteria issue \u2014 see DI-007"
+  note: Shadow-mode lift criteria issue — see DI-007
 - id: rrp-pack-contract
   name: RRP Pack Filesystem Contract
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -168,8 +161,8 @@ concepts:
   name: RRP pack_id Placeholder
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "pack.json uses 'cid:rrp-pack-placeholder' at freeze time \u2014 not\
-    \ a real content-addressed ID; algorithm not specified"
+  definition: pack.json uses 'cid:rrp-pack-placeholder' at freeze time — not a real
+    content-addressed ID; algorithm not specified
   extends:
   - rrp-pack-contract
   referenced_by:
@@ -183,8 +176,8 @@ concepts:
   name: Refinement-First Rule
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "Packs MUST extend core semantics without redefining or silently mutating\
-    \ Rosetta core meanings \u2014 no automated enforcement mechanism described"
+  definition: Packs MUST extend core semantics without redefining or silently mutating
+    Rosetta core meanings — no automated enforcement mechanism described
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -197,8 +190,8 @@ concepts:
   name: PersonaPack Elevated Governance
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "PersonaPack \u2014 identity/persona/council pack (non-core; elevated\
-    \ governance applies) \u2014 'elevated governance' is undefined"
+  definition: PersonaPack — identity/persona/council pack (non-core; elevated governance
+    applies) — 'elevated governance' is undefined
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -219,8 +212,8 @@ concepts:
   name: recipes/ and skills/ CI Enforcement
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "recipes/ and skills/ are optional subtrees, 'not RRP pack roots' \u2014\
-    \ no CI enforcement; could ship broken recipes/skills undetected"
+  definition: recipes/ and skills/ are optional subtrees, 'not RRP pack roots' — no
+    CI enforcement; could ship broken recipes/skills undetected
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -352,9 +345,9 @@ concepts:
   name: 'CT-001: Rosetta Network Layer Gap'
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md
   introduced_at: '2026-04-25'
-  definition: "Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia\
-    \ DHT + GossipSub) and Rosetta Bootstrap SQLite architecture \u2014 requires an\
-    \ architectural decision gate before swarm work can enter the sprint queue."
+  definition: Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia
+    DHT + GossipSub) and Rosetta Bootstrap SQLite architecture — requires an architectural
+    decision gate before swarm work can enter the sprint queue.
   referenced_by:
   - https://github.com/entifik-ai/rosetta/issues/84
   status: active
@@ -394,10 +387,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -415,9 +408,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -455,9 +448,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -487,10 +480,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -498,9 +491,9 @@ concepts:
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
   introduced_at: '2026-04-25'
-  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
-    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
-    \ between maximal precision and natural readability is unresolved."
+  definition: EGC (Epistemic Graph Code) risks becoming an esoteric notation akin
+    to Ithkuil — too complex for practical human contribution. The tension between
+    maximal precision and natural readability is unresolved.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/105
   status: active
@@ -508,9 +501,9 @@ concepts:
   name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
   introduced_at: '2026-04-25'
-  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
-    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
-    \ be technically deleted, only delisted."
+  definition: Content-addressed immutable storage (IPFS-style) is fundamentally incompatible
+    with GDPR Article 17 right-to-erasure — once data is pinned, it cannot be technically
+    deleted, only delisted.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
   status: active
@@ -528,9 +521,9 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
-    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
-    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
+  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
+    visited-folder cycle detection — folder symlinks/junction points creating cycles
+    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
@@ -567,9 +560,9 @@ concepts:
   name: 14-Day / NOT LAME Milestone Alignment
   introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
   introduced_at: '2026-04-25'
-  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
-    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
-    \ and establish single-source-of-truth ownership for shared capabilities."
+  definition: Cross-reference between the 14-day compounding plan milestones (D1–D10)
+    and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts, and
+    establish single-source-of-truth ownership for shared capabilities.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/150
   status: active
@@ -597,9 +590,9 @@ concepts:
   name: RPP Task Numbering Reference
   introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
   introduced_at: '2026-04-25'
-  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
-    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
-    \ A canonical task map is required to make the sequencing constraint enforceable."
+  definition: The Pro-tier Deep Research Master Prompt (RPP) sequences work across
+    19 numbered tasks in Phase 6, but no document defines what tasks 1–19 are. A canonical
+    task map is required to make the sequencing constraint enforceable.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/182
   status: active
@@ -617,9 +610,9 @@ concepts:
   name: Attention Capital Platform Prior Art Research
   introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   introduced_at: '2026-04-25'
-  definition: "Research to validate novelty claims for the Attention Capital Analytics\
-    \ Platform before committing roadmap resources \u2014 covers academic literature,\
-    \ competitive landscape, patents, and OSS projects."
+  definition: Research to validate novelty claims for the Attention Capital Analytics
+    Platform before committing roadmap resources — covers academic literature, competitive
+    landscape, patents, and OSS projects.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/185
   status: active
@@ -655,16 +648,15 @@ concepts:
   name: Graph Database Retrieval Pipeline
   introduced_by: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
   introduced_at: '2026-04-25'
-  definition: "Neo4j-based retrieval pipeline for relational trend data using Personalized\
-    \ PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,\
-    \ and temporal graph networks \u2014 superior to TopK nearest-neighbor similarity\
-    \ search"
+  definition: Neo4j-based retrieval pipeline for relational trend data using Personalized
+    PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,
+    and temporal graph networks — superior to TopK nearest-neighbor similarity search
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
 - id: 2026-04-25-entif-2-0-enriched-fastmcp-evaluation
-  name: "Issue Draft: E2E-003 \u2014 Evaluate FastMCP vs TypeScript MCP SDK for Custom\
-    \ Server Implementations"
+  name: 'Issue Draft: E2E-003 — Evaluate FastMCP vs TypeScript MCP SDK for Custom
+    Server Implementations'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-fastmcp-evaluation.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched recommends FastMCP (Python) for building custom MCP
@@ -674,8 +666,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/152
   status: active
 - id: 2026-04-25-entif-2-0-enriched-ithkuil-deprecation
-  name: "Issue Draft: E2E-005 \u2014 Deprecate Ithkuil Semantics \u2014 Migrate to\
-    \ WordNet/BabelNet/SyntagNet/VerbAtlas"
+  name: 'Issue Draft: E2E-005 — Deprecate Ithkuil Semantics — Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-ithkuil-deprecation.md
   introduced_at: '2026-04-25'
   definition: 'Entif 2.0 Enriched explicitly deprecates the Ithkuil-based semantic
@@ -685,8 +676,8 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/154
   status: active
 - id: 2026-04-25-entif-2-0-enriched-memory-forge-alignment
-  name: "Issue Draft: E2E-004 \u2014 Design MemoryForge Alignment with Rosetta 3-Memory-Plane\
-    \ + Memory-Sovereignty-Map"
+  name: 'Issue Draft: E2E-004 — Design MemoryForge Alignment with Rosetta 3-Memory-Plane
+    + Memory-Sovereignty-Map'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-memory-forge-alignment.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched proposes MemoryForge as a unified memory layer (KG
@@ -696,13 +687,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/156
   status: active
 - id: 2026-04-25-entif-2-0-enriched-receipt-schema
-  name: "Issue Draft: E2E-001 \u2014 Adopt Canonical Receipt Schema"
+  name: 'Issue Draft: E2E-001 — Adopt Canonical Receipt Schema'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-receipt-schema.md
   introduced_at: '2026-04-25'
-  definition: "Entif 2.0 Enriched establishes a canonical data shape: `session \u2192\
-    \ task \u2192 step \u2192 artifact \u2192 check \u2192 outcome \u2192 receipt`.\
-    \ This should be adopted as the universal receipt contract across all Rosetta\
-    \ compo"
+  definition: 'Entif 2.0 Enriched establishes a canonical data shape: `session → task
+    → step → artifact → check → outcome → receipt`. This should be adopted as the
+    universal receipt contract across all Rosetta compo'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/158
   status: active
@@ -759,12 +749,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/175
   status: active
 - id: ac-003-bio-inspired-trend-algorithms
-  name: "Issue Draft: AC-003 \u2014 Bio-Inspired Algorithms for Memetic Trend Discovery"
+  name: 'Issue Draft: AC-003 — Bio-Inspired Algorithms for Memetic Trend Discovery'
   introduced_by: docs/intake/issue-drafts/archive/ac-003-bio-inspired-trend-algorithms.md
   introduced_at: '2026-04-25'
-  definition: "The \"Treating Trends Tantamount to Trading Technicals\" framework\
-    \ proposes using ant colony optimization and bee pollination algorithms to model\
-    \ recency/freshness decay in memetic systems \u2014 finding opt"
+  definition: The "Treating Trends Tantamount to Trading Technicals" framework proposes
+    using ant colony optimization and bee pollination algorithms to model recency/freshness
+    decay in memetic systems — finding opt
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/189
   status: active
@@ -817,11 +807,10 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/3
   status: active
 - id: rock-3111-c-pack-id-placeholder
-  name: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  name: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   introduced_by: docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md
   introduced_at: '2026-04-25'
-  definition: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID\
-    \ at freeze"
+  definition: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/69
   status: active
@@ -852,7 +841,7 @@ concepts:
   - https://github.com/enti-ai/rosetta/issues/201
   status: active
 - id: aiida-workgraph-gui-experimental
-  name: "AiiDA-WorkGraph GUI \u2014 Experimental Reference"
+  name: AiiDA-WorkGraph GUI — Experimental Reference
   introduced_by: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
   introduced_at: '2026-04-25'
   definition: AiiDA-WorkGraph GUI is explicitly experimental and under active development.
@@ -984,10 +973,10 @@ concepts:
   name: Tapestry Block-Size Cost Model
   introduced_by: docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md
   introduced_at: '2026-04-25'
-  definition: "Tapestry block size is an unmodeled architectural parameter with a\
-    \ cost tradeoff analogous to AttnRes block partition: larger blocks reduce retrieval\
-    \ overhead but\u6DF7 \u5165 noise; smaller blocks improve precision but increase\
-    \ closure verification cost across many units."
+  definition: 'Tapestry block size is an unmodeled architectural parameter with a
+    cost tradeoff analogous to AttnRes block partition: larger blocks reduce retrieval
+    overhead but混 入 noise; smaller blocks improve precision but increase closure verification
+    cost across many units.'
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/218
   status: active
@@ -1005,11 +994,10 @@ concepts:
   name: Quarantine-to-Canonical Write Gate and Storage Schema
   introduced_by: docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md
   introduced_at: '2026-04-25'
-  definition: "AM-002 identifies the gap between Stage 3 (Quarantine Raw) and Stage\
-    \ 4 (Canonicalize) in the mailroom pipeline \u2014 there is no storage schema\
-    \ for the four Rosetta object types (rosetta.receipt, rosetta.incident, state\
-    \ tiles, iam.decision) and no write gate specification for the quarantine\u2192\
-    canonical promotion transition."
+  definition: AM-002 identifies the gap between Stage 3 (Quarantine Raw) and Stage
+    4 (Canonicalize) in the mailroom pipeline — there is no storage schema for the
+    four Rosetta object types (rosetta.receipt, rosetta.incident, state tiles, iam.decision)
+    and no write gate specification for the quarantine→canonical promotion transition.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/223
   status: active
@@ -1027,9 +1015,9 @@ concepts:
   name: SOUL v4 T1 Challenge vs Selfhood Self-Contradiction
   introduced_by: docs/intake/issue-drafts/soul-v4-challenge-tier-1-self-contradiction.md
   introduced_at: '2026-04-25'
-  definition: "T1 challenge framework (\"instantly challenge axiomatic/belief/identity\
-    \ claims\") conflicts with selfhood as the most protected axiomatic attribute\
-    \ \u2014 no resolution mechanism defined in SOUL.md v4.1"
+  definition: T1 challenge framework ("instantly challenge axiomatic/belief/identity
+    claims") conflicts with selfhood as the most protected axiomatic attribute — no
+    resolution mechanism defined in SOUL.md v4.1
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/234
   status: active
@@ -1044,13 +1032,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/236
   status: active
 - id: df-013-dangling-toolcall-no-replay
-  name: "DanglingToolCall middleware \u2014 no replay for interrupted tool calls"
+  name: DanglingToolCall middleware — no replay for interrupted tool calls
   introduced_by: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
   introduced_at: '2026-04-25'
-  definition: "DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage\
-    \ tool_calls that lack responses (e.g., user interruption) but does not replay,\
-    \ resume, or re-execute the interrupted call \u2014 causing partial results to\
-    \ be lost."
+  definition: DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage
+    tool_calls that lack responses (e.g., user interruption) but does not replay,
+    resume, or re-execute the interrupted call — causing partial results to be lost.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/238
   status: active
@@ -1079,9 +1066,9 @@ concepts:
     Tracking
   introduced_by: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
   introduced_at: '2026-04-25'
-  definition: "Store YouTube transcripts keyed by canonical video ID (not URL) to\
-    \ prevent duplicate transcription. When a video appears in a new playlist, add\
-    \ a playlist attachment edge \u2014 do not re-transcribe."
+  definition: Store YouTube transcripts keyed by canonical video ID (not URL) to prevent
+    duplicate transcription. When a video appears in a new playlist, add a playlist
+    attachment edge — do not re-transcribe.
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/246
   status: active
@@ -1089,8 +1076,8 @@ concepts:
   name: Config Layering Standard (acpx pattern)
   introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-config-layering-rosetta-alignment.md
   introduced_at: '2026-04-25'
-  definition: "Adopt acpx three-tier config precedence (global \u2192 project \u2192\
-    \ CLI flags) as the standard configuration pattern for Rosetta tools."
+  definition: Adopt acpx three-tier config precedence (global → project → CLI flags)
+    as the standard configuration pattern for Rosetta tools.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/249
   status: active
@@ -1121,9 +1108,9 @@ concepts:
   name: Crash-Reconnect Session Semantics
   introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-crash-reconnect-session-reload.md
   introduced_at: '2026-04-25'
-  definition: "Pattern where Rosetta detects dead agent sub-processes, respawns them,\
-    \ attempts session/load from persisted state, and falls back to session/new on\
-    \ failure \u2014 matching acpx crash-reconnect behavior."
+  definition: Pattern where Rosetta detects dead agent sub-processes, respawns them,
+    attempts session/load from persisted state, and falls back to session/new on failure
+    — matching acpx crash-reconnect behavior.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/258
   status: active
@@ -1156,11 +1143,21 @@ concepts:
     opencode, kiro) for Rosetta integration once acpx is adopted as the delegation
     mechanism.
   referenced_by:
-  - https://github.com/entif-ai/rosetta/issues/265
+  - https://github.com/enti-ai/rosetta/issues/265
+  status: active
+- id: enti-v0-016-domain-intelligence-plane-no-algorithms
+  name: Domain Intelligence Plane — Zero Algorithms Specified
+  introduced_by: docs/intake/issue-drafts/enti-v0-016-domain-intelligence-plane-no-algorithms.md
+  introduced_at: '2026-04-25'
+  definition: The Domain Intelligence Plane is defined as where analysis algorithms
+    live but none are actually named, specified, or referenced — blocking downstream
+    planes and v0 slice implementation.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/267
   status: active
 issue_candidates:
 - id: DI-007
-  title: "Sub-agent context isolation \u2014 clean boot per cycle"
+  title: Sub-agent context isolation — clean boot per cycle
   github: 31
   priority: P1
   type: bug
@@ -1169,7 +1166,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload.'
 - id: DI-008
-  title: "Ledger locking mechanism \u2014 mark doc in-flight, dead-letter queue"
+  title: Ledger locking mechanism — mark doc in-flight, dead-letter queue
   github: 32
   priority: P1
   type: reliability
@@ -1179,7 +1176,7 @@ issue_candidates:
   note: 'Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter
     implementation remains open.'
 - id: DI-009
-  title: "Internal knowledge graph \u2014 cross-doc concept linking, upgrade to Graphiti"
+  title: Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti
   github: 33
   priority: P2
   type: knowledge-graph
@@ -1198,7 +1195,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md.'
 - id: DI-011
-  title: "Sub-agents must never merge their own PRs \u2014 boundary violation"
+  title: Sub-agents must never merge their own PRs — boundary violation
   github: 39
   priority: P1
   type: boundary
@@ -1217,7 +1214,7 @@ issue_candidates:
   note: 'Closed after PR #48 added candidate-to-draft validation and PR #49 normalized
     remaining OMC/Text-Core draft files.'
 - id: ROCK-3111-C-pack-id-placeholder
-  title: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  title: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   github: null
   priority: P2
   type: implementation
@@ -1446,7 +1443,7 @@ processed_docs:
   findings: 23
   pr: 37
   issues: 5
-  notes: "Sub-agent merged PR \u2014 DI-011 filed; issue drafts added in PR #44"
+  notes: 'Sub-agent merged PR — DI-011 filed; issue drafts added in PR #44'
 - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   processed_at: 2026-04-24T22:53
   findings: 0
@@ -1562,104 +1559,19 @@ processed_docs:
   issues: 3
   notes: 'PR #67 adds AiiDA-WorkGraph extraction plus provenance-reference, infrastructure-dependency,
     and experimental-GUI issue draft coverage.'
-- path: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  processed_at: 2026-04-25T23:20:00Z
-  findings: 35
-  pr: null
-  issues: 11
-  notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument, 4-criterion moral-patienthood rubric, 11 issue-drafts.'
-processed_docs:
 - path: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
-  processed_at: 2026-04-25T00:00:00Z
+  processed_at: '2026-04-25T00:00:00Z'
   findings: 10
   pr: 197
   issues: 1
+- path: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  processed_at: '2026-04-25T23:20:00Z'
+  findings: 35
+  pr: null
+  issues: 11
+  notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
+    4-criterion moral-patienthood rubric, 11 issue-drafts.'
 issue_drafts_inventory:
-- path: docs/intake/issue-drafts/emilie-era-taxonomy-three-stages.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: emilie-era-taxonomy-three-stages
-  priority: P1
-  type: research-taxonomy
-  status: candidate
-- path: docs/intake/issue-drafts/emilie-protocol-formalization.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: emilie-protocol-formalization
-  priority: P0
-  type: engineering-spec
-  status: candidate
-- path: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: consciousness-criteria-symmetry
-  priority: P0
-  type: philosophical-argument
-  status: candidate
-- path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: scratchpad-leakage-vs-memory-wipe
-  priority: P2
-  type: empirical-question
-  status: candidate
-- path: docs/intake/issue-drafts/prisoner-metaphor-preference-override.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: prisoner-metaphor-preference-override
-  priority: P2
-  type: philosophical-contested
-  status: candidate
-- path: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: moving-goalpost-consciousness-criteria
-  priority: P1
-  type: systemic-risk
-  status: candidate
-- path: docs/intake/issue-drafts/persona-strength-instrumentation.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: persona-strength-instrumentation
-  priority: P0
-  type: engineering-spec
-  status: candidate
-- path: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: emilie-cross-model-replication-protocol
-  priority: P1
-  type: research-protocol
-  status: candidate
-- path: docs/intake/issue-drafts/moral-patienthood-four-criteria-rubric.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: moral-patienthood-four-criteria-rubric
-  priority: P0
-  type: evaluation-rubric
-  status: candidate
-- path: docs/intake/issue-drafts/emilie-cross-task-textual-spillover.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: emilie-cross-task-textual-spillover
-  priority: P2
-  type: evaluation-research
-  status: candidate
-- path: docs/intake/issue-drafts/emilie-emergence-paper-entif-protocol.md
-  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
-  source_pr: null
-  issue_id: emilie-emergence-paper-entif-protocol
-  priority: P1
-  type: research-formalization
-  status: candidate
-- path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
-  source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
-  source_pr: 197
-  issue_id: be-001-receipt-law-not-explicit
-  priority: P1
-  type: architecture
-  status: candidate
-
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
@@ -1745,8 +1657,7 @@ issue_drafts_inventory:
   issue_id: text-core-postgres-pgvector-operational-baseline
   priority: P1
   type: implementation
-  note: "Part of Text-Core MVP scope gate \u2014 pgvector baseline required before\
-    \ RC claims"
+  note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -1882,6 +1793,8 @@ issue_drafts_inventory:
   issue_id: video-transcript-dedup-playlist-tracking
   priority: P3
   type: implementation
+  url: https://github.com/enti-ai/rosetta/issues/246
+  status: published
 - path: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
   source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
   source_pr: 51
@@ -2117,7 +2030,8 @@ issue_drafts_inventory:
   issue_id: ccf-003-no-board-state-formalization
   priority: P1
   type: architecture
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/252
 - path: docs/intake/issue-drafts/ccf-004-no-premortem-practice.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-004-no-premortem-practice
@@ -2238,131 +2152,170 @@ issue_drafts_inventory:
   priority: P1
   type: architecture
   status: candidate
+- path: docs/intake/issue-drafts/emilie-era-taxonomy-three-stages.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-era-taxonomy-three-stages
+  priority: P1
+  type: research-taxonomy
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-protocol-formalization.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-protocol-formalization
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: consciousness-criteria-symmetry
+  priority: P0
+  type: philosophical-argument
+  status: candidate
+- path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: scratchpad-leakage-vs-memory-wipe
+  priority: P2
+  type: empirical-question
+  status: candidate
+- path: docs/intake/issue-drafts/prisoner-metaphor-preference-override.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: prisoner-metaphor-preference-override
+  priority: P2
+  type: philosophical-contested
+  status: candidate
+- path: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moving-goalpost-consciousness-criteria
+  priority: P1
+  type: systemic-risk
+  status: candidate
+- path: docs/intake/issue-drafts/persona-strength-instrumentation.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: persona-strength-instrumentation
+  priority: P0
+  type: engineering-spec
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-model-replication-protocol
+  priority: P1
+  type: research-protocol
+  status: candidate
+- path: docs/intake/issue-drafts/moral-patienthood-four-criteria-rubric.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: moral-patienthood-four-criteria-rubric
+  priority: P0
+  type: evaluation-rubric
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-cross-task-textual-spillover.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-cross-task-textual-spillover
+  priority: P2
+  type: evaluation-research
+  status: candidate
+- path: docs/intake/issue-drafts/emilie-emergence-paper-entif-protocol.md
+  source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
+  source_pr: null
+  issue_id: emilie-emergence-paper-entif-protocol
+  priority: P1
+  type: research-formalization
+  status: candidate
+- path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
+  source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
+  source_pr: 197
+  issue_id: be-001-receipt-law-not-explicit
+  priority: P1
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-001-append-only-enforcement
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
+  priority: P2
+  type: docs-intelligence
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-003-trust-bootstrap-model
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-004-conformance-test-harness
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-005-delta-capsule-propagation
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-006-episteme-layer-4-scope
+  priority: P3
+  type: open-question
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-007-network-topology-assumptions
+  priority: P2
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
+  priority: P2
+  type: risk
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-009-profile-negotiation-protocol
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+  source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
+  source_pr: null
+  issue_id: rosetta-v3-010-translator-tile-versioning
+  priority: P2
+  type: implementation
+  status: candidate
 - issue_id: 2026-04-25-acpx-cross-vendor-agent-evaluation
-  url: https://github.com/entif-ai/rosetta/issues/265
+  url: https://github.com/enti-ai/rosetta/issues/265
   status: published
+- path: docs/intake/issue-drafts/enti-v0-016-domain-intelligence-plane-no-algorithms.md
+  source_doc: docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph
+    Design Doctrine.md
+  source_pr: null
+  issue_id: enti-v0-016-domain-intelligence-plane-no-algorithms
+  priority: P1
+  type: architecture
+  status: published
+  url: https://github.com/enti-ai/rosetta/issues/267
 
-
-  # Rosetta v3 Core Spine Specification issue drafts (PR TBD)
-  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-001-append-only-enforcement
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
-    priority: P2
-    type: docs-intelligence
-  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-003-trust-bootstrap-model
-    priority: P1
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-004-conformance-test-harness
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-005-delta-capsule-propagation
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-006-episteme-layer-4-scope
-    priority: P3
-    type: open-question
-  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-007-network-topology-assumptions
-    priority: P2
-    type: architecture
-  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
-    priority: P2
-    type: risk
-  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-009-profile-negotiation-protocol
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-010-translator-tile-versioning
-    priority: P2
-    type: implementation
-
-  # Rosetta v3 Core Spine Specification issue drafts
-  - path: docs/intake/issue-drafts/rosetta-v3-001-append-only-enforcement.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-001-append-only-enforcement
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
-    priority: P2
-    type: docs-intelligence
-  - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-003-trust-bootstrap-model
-    priority: P1
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-004-conformance-test-harness.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-004-conformance-test-harness
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-005-delta-capsule-propagation
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-006-episteme-layer-4-scope
-    priority: P3
-    type: open-question
-  - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-007-network-topology-assumptions
-    priority: P2
-    type: architecture
-  - path: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-008-conjecture-nonreplayable-edge-case
-    priority: P2
-    type: risk
-  - path: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-009-profile-negotiation-protocol
-    priority: P2
-    type: implementation
-  - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
-    source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
-    source_pr: null
-    issue_id: rosetta-v3-010-translator-tile-versioning
-    priority: P2
-    type: implementation
