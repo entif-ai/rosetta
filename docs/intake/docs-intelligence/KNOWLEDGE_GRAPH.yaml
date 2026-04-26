@@ -3021,6 +3021,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/288
   status: active
+- id: SCT-002-empathy-overaffirmation-discrimination
+  name: Empathy vs Over-Affirmation Discrimination
+  introduced_by: docs/intake/issue-drafts/SCT-002-empathy-overaffirmation-discrimination.md
+  introduced_at: '2026-04-26'
+  definition: 'Distinguish genuine empathy (validates person without validating distortion)
+    from over-affirmation (validates person AND distortion). Safety-critical failure
+    mode in deployed chatbots: over-reassurance leads to poor crisis sensitivity and
+    dependency reinforcement.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/632
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
