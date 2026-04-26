@@ -2239,5 +2239,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-005-skill-guard-receipts-enforcement.md",
     "draftStatus": "published"
+  },
+  "PSD-006-formalize-skill-economy-concept.md": {
+    "number": 587,
+    "state": "open",
+    "title": "PSD-006: Formalize Skill Economy Concept",
+    "url": "https://github.com/entif-ai/rosetta/issues/587",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-006-formalize-skill-economy-concept.md",
+    "draftStatus": "published"
   }
 }

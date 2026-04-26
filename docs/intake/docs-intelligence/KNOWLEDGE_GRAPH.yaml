@@ -2731,6 +2731,22 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/585
   status: active
+- id: skill-economy
+  name: Skill Economy
+  introduced_by: docs/intake/issue-drafts/PSD-006-formalize-skill-economy-concept.md
+  introduced_at: '2026-04-26'
+  definition: A conceptual model where knowledge is framed as a tiny advertisement
+    (progressive disclosure) and execution is an audited transaction (receipts). The
+    broker acts as bouncer, the registry as market, receipts as ledger, and Guard
+    as regulator.
+  extends:
+  - progressive-disclosure
+  - skill-broker
+  - receipts
+  - skill-registry
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/587
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
