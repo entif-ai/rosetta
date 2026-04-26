@@ -2612,6 +2612,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/563
   status: active
+- id: MCST-003
+  name: Blast Radius Expansion from External Agent Plane
+  introduced_by: docs/intake/issue-drafts/MCST-003-blast-radius-expansion-external-agent.md
+  introduced_at: '2026-04-26'
+  definition: 'Adding external agent planes (e.g. MaxClaw) relocates and expands Entif
+    AI aggregate attack surface: additional identity surfaces, external memory stores,
+    and control endpoints outside the on-prem security perimeter.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/565
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
