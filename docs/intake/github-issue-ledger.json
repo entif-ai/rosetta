@@ -2356,5 +2356,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-011-kv-cache-long-context-economics.md",
     "draftStatus": "published"
+  },
+  "RLM-001-ARCH-context-runtime-design": {
+    "number": 612,
+    "state": "open",
+    "title": "ContextRuntime: Bounded RLM Execution as a First-Class Entif Component",
+    "url": "https://github.com/entif-ai/rosetta/issues/612",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-ARCH-context-runtime-design.md",
+    "draftStatus": "published"
   }
 }
