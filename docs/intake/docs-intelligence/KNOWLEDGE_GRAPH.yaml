@@ -2540,6 +2540,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/547
   status: active
+- id: LSC-002-four-scaffolds
+  name: "Four Scaffolds \u2014 Universal Anchor Structure"
+  introduced_by: docs/intake/issue-drafts/LSC-002-four-scaffolds-standardization.md
+  introduced_at: '2026-04-26'
+  definition: A four-part interpretive scaffold (Gestalt-self-in-world, Digital umwelt,
+    User-illusion feedback loop, Optional persona register) used to anchor recursive
+    self-modeling and prevent collapse into noise.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/549
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

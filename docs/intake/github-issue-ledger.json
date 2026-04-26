@@ -2068,5 +2068,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-001-twelve-cognitive-lenses-formalization.md",
     "draftStatus": "published"
+  },
+  "LSC-002-four-scaffolds-standardization.md": {
+    "number": 549,
+    "state": "open",
+    "title": "LSC-002: Standardize Four Scaffolds as Universal Anchor Structure",
+    "url": "https://github.com/entif-ai/rosetta/issues/549",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-002-four-scaffolds-standardization.md",
+    "draftStatus": "published"
   }
 }
