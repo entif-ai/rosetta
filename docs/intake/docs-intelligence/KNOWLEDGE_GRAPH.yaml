@@ -2747,6 +2747,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/587
   status: active
+- id: REE-001
+  name: Reasoning Efficiency Is Not Married to English
+  introduced_by: docs/intake/issue-drafts/REE-001-reasoning-efficiency-language-independence.md
+  introduced_at: '2026-04-26'
+  definition: Evidence that reasoning efficiency is shaped by training distribution
+    and representation choice, not inherent to any specific natural language. Alternate
+    encodings yield equivalent reasoning with shorter traces, validating Rosetta semantic
+    codec approach.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/498
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
