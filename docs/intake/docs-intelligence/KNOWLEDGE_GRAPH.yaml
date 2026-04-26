@@ -2303,6 +2303,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/502
   status: active
+- id: ESA-002
+  name: 7 Rules Constitutional Base
+  introduced_by: docs/intake/issue-drafts/ESA-002-seven-rules-constitutional-base.md
+  introduced_at: '2026-04-26'
+  definition: A 7-rule non-contradiction framework governing all Entif system behavior,
+    decision-making, and architectural evolution. Rules cover epistemic foundation
+    (meaning as artifact, signals vs. claims), action governance (parse-only default),
+    audit trail (receipts), cognitive economics (cheap-first), resource transparency,
+    and trust-scaled security.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/504
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
