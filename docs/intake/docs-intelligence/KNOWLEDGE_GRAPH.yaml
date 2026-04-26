@@ -1997,6 +1997,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/449
   status: active
+- id: APC-006-privacy-budget-transliteration-leakage
+  name: Transliteration Join Leakage / Privacy Budget
+  introduced_by: docs/intake/issue-drafts/APC-006-privacy-budget-transliteration-leakage.md
+  introduced_at: '2026-04-26'
+  definition: Statistical join inference can reconstruct originals from transliterated
+    correlated fields; requires privacy budget accounting and correlation-aware field
+    grouping.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/451
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
