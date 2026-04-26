@@ -1825,5 +1825,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-012-gemma-4-efficiency-calibration.md",
     "draftStatus": "published"
+  },
+  "TXS-002-bpmn-dmn-scxml-stdpacks.md": {
+    "number": 496,
+    "state": "open",
+    "title": "TXS-002: Standards Mapping: Pasigraphy StdPacks for BPMN/DMN/SCXML",
+    "url": "https://github.com/entif-ai/rosetta/issues/496",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-002-bpmn-dmn-scxml-stdpacks.md",
+    "draftStatus": "published"
   }
 }

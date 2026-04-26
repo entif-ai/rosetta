@@ -2260,6 +2260,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/494
   status: active
+- id: TXS-002
+  name: BPMN/DMN/SCXML Pasigraphy StdPacks
+  introduced_by: docs/intake/issue-drafts/TXS-002-bpmn-dmn-scxml-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Standards mapping pack defining Pasigraphy tile types for BPMN process
+    modeling, DMN decision modeling, and SCXML state machine modeling, with JSON Schema
+    tile definitions and serialization rules.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/496
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
