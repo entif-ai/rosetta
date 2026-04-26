@@ -2117,6 +2117,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/471
   status: active
+- id: EML-002
+  name: Bayesian Email Classifier Triage Signal Not Authorization Gate
+  introduced_by: docs/intake/issue-drafts/EML-002-bayesian-classifier-triage-not-gate.md
+  introduced_at: '2026-04-26'
+  definition: Bayesian inference scores email instruction probability for risk routing,
+    not authorization. Authorization decisions belong to external policy engine (OPA).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/471#issuecomment-4321841855
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
