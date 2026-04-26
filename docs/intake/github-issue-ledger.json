@@ -2464,5 +2464,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCRU-002-rock-3005-iam-stdpack.md",
     "draftStatus": "published"
+  },
+  "SCT-001-social-cognition-benchmark-clinical-psychology.md": {
+    "number": 632,
+    "state": "open",
+    "title": "SCT-001: Social Cognition Benchmark \u2014 Clinical Psychology as Stress-Test Framework",
+    "url": "https://github.com/entif-ai/rosetta/issues/632",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-001-social-cognition-benchmark-clinical-psychology.md",
+    "draftStatus": "published"
   }
 }

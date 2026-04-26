@@ -2999,6 +2999,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/630
   status: active
+- id: SCT-001
+  name: "Social Cognition Benchmark \u2014 Clinical Psychology Stress-Test Framework"
+  introduced_by: docs/intake/issue-drafts/SCT-001-social-cognition-benchmark-clinical-psychology.md
+  introduced_at: '2026-04-26'
+  definition: "A psychologically-informed benchmark framework for social cognition\
+    \ that borrows hardest test cases from clinical psychology, trauma work, attachment\
+    \ theory, and therapeutic interaction dynamics \u2014 distinct from everyday theory-of-mind\
+    \ benchmarks."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/632
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
