@@ -1557,6 +1557,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/363
   status: active
+- id: DCP-007-self-building-not-planned
+  name: Self-building bootstrap path
+  introduced_by: docs/intake/issue-drafts/DCP-007-self-building-not-planned.md
+  introduced_at: '2026-04-26'
+  definition: The self-building bootstrap path where the system re-implements itself
+    via a spec-defined orchestrator (Entif Builder v1), with gated PR-like self-modification
+    bundles and spec-as-code discipline.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/365
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
