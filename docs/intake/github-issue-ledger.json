@@ -1474,5 +1474,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-1-briefing-policy-weight-update-unspecified.md",
     "draftStatus": "published"
+  },
+  "semantic-audio-semantic-emotive-graph-integration.md": {
+    "number": 425,
+    "state": "open",
+    "title": "Semantic Audio Cognition: Semantic-Emotive Graph Integration",
+    "url": "https://github.com/entif-ai/rosetta/issues/425",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-semantic-emotive-graph-integration.md",
+    "draftStatus": "published"
   }
 }

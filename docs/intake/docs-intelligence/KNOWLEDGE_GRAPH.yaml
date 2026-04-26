@@ -1866,6 +1866,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/423
   status: active
+- id: semantic-audio-semantic-emotive-graph-integration
+  name: Semantic-Emotive Graph Integration (Audio)
+  introduced_by: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+  introduced_at: '2026-04-26'
+  definition: Defines how audio-derived entities (stems, tonal features, affective
+    arcs, speaker fingerprints) attach to the semantic lexeme graph, integrating audio
+    cognition into the larger graph of meaning, correlation, and context.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/425
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
