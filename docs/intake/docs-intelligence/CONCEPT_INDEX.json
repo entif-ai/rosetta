@@ -926,6 +926,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-email-security-defenses.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-email-security-defenses.md",
+      "title": "Extraction: Email-driven Security Defenses",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-emergence-dialogue-analysis.md",
       "sourcePath": "docs/chats/20260130 - Chat GPT - Emergence Dialogue Analysis.md",
       "title": "Docs Intelligence Extraction",
@@ -3823,6 +3829,90 @@
         "reproducibility"
       ],
       "signature": "emilie-engineering-formalize-object-protocol"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-001-multi-path-email-attack-surface.md",
+      "title": "EML-001: Multi-Path Email-Driven Attack Surface Requires Layered Defense",
+      "labels": [],
+      "signature": "001-attack-defense-driven-email"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-002-bayesian-classifier-triage-not-gate.md",
+      "title": "EML-002: Bayesian Email Classifier is Triage Signal, Not Authorization Gate",
+      "labels": [],
+      "signature": "002-authorization-bayesian-classifier-email"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-003-nine-layer-email-agent-architecture.md",
+      "title": "EML-003: Nine-Layer Email-to-Agent Defensive Architecture Fully Specified",
+      "labels": [],
+      "signature": "003-agent-architecture-defensive-email"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-004-content-risk-middleware-generalizes.md",
+      "title": "EML-004: Content-Risk Middleware Generalizes Beyond Email — Skill-Pack Modularization Needed",
+      "labels": [],
+      "signature": "004-beyond-content-email-eml"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-005-social-engineering-scoring-dimension.md",
+      "title": "EML-005: Social Engineering Playbook as Explicit Scoring Dimension, Distinct from Prompt-Injection",
+      "labels": [],
+      "signature": "005-dimension-distinct-eml-engineering"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-006-rosetta-module-map-content-risk.md",
+      "title": "EML-006: Rosetta Module Map for Content-Risk Pipelines with Pack Family Structure",
+      "labels": [],
+      "signature": "006-content-eml-family-map"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-007-ensemble-scoring-architecture.md",
+      "title": "EML-007: Three-Tier Ensemble Scoring Architecture for Content Risk",
+      "labels": [],
+      "signature": "007-architecture-content-eml-ensemble"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-008-small-model-suitability-routing.md",
+      "title": "EML-008: Small-Model Suitability Routing for Token Parsimony",
+      "labels": [],
+      "signature": "008-eml-model-parsimony-routing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-009-rbl-dnsbl-infrastructure-reputation.md",
+      "title": "EML-009: RBL/DNSBL and Infrastructure Reputation as Provenance Features",
+      "labels": [],
+      "signature": "009-dnsbl-eml-features-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-010-rosetta-native-model-training-requirements.md",
+      "title": "EML-010: Rosetta-Native Cognitive Model Training Requirements and Four-Wave Training Ladder",
+      "labels": [],
+      "signature": "010-cognitive-eml-four-ladder"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-011-megatrain-training-economics.md",
+      "title": "EML-011: MegaTrain Implications for Training Economics",
+      "labels": [],
+      "signature": "011-economics-eml-implications-megatrain"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-012-gemma-4-efficiency-calibration.md",
+      "title": "EML-012: Gemma 4 as Calibration Point for Intelligence-per-Parameter Efficiency",
+      "labels": [],
+      "signature": "012-calibration-efficiency-eml-gemma"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-013-semantic-efficiency-sapir-whorf.md",
+      "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency — The Sapir-Whorf Argument",
+      "labels": [],
+      "signature": "013-argument-distinct-efficiency-efficiency"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-014-compute-cost-trajectory-risk.md",
+      "title": "EML-014: Compute Cost Trajectory Risk for Brute-Force Maximalism Strategies",
+      "labels": [],
+      "signature": "014-brute-compute-cost-eml"
     },
     {
       "path": "docs/intake/issue-drafts/entaffirm-alignment-oracle.md",
