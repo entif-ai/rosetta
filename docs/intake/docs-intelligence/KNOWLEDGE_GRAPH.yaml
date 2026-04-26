@@ -1846,6 +1846,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
+- id: BIP-005-1-youtube-quota-exhaustion
+  name: YouTube API Quota Exhaustion Risk
+  introduced_by: docs/intake/issue-drafts/BIP-005-1-youtube-quota-exhaustion.md
+  introduced_at: '2026-04-26'
+  definition: YouTube Data API has a strict daily quota (10k units/day default). BIP-005
+    instructs daily metric collection across own + competitor channels with no quota
+    monitoring or backoff strategy, risking quota exhaustion within minutes.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/421
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
