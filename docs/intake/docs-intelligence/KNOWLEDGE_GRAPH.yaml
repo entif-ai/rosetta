@@ -1586,6 +1586,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/369
   status: active
+- id: DCP-010
+  name: Automation Ceiling Audit
+  introduced_by: docs/intake/issue-drafts/DCP-010-automation-ceiling-audit-needed.md
+  introduced_at: '2026-04-26'
+  definition: Formal audit of existing project specs (VieDay, SAFE, Entif) to score
+    DeepCode-readiness and identify gaps in section structure, component boundaries,
+    pseudo-code/workflows, and success criteria.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/371
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
