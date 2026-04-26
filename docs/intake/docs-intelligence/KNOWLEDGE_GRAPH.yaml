@@ -2838,6 +2838,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/604
   status: active
+- id: REE-009
+  name: Comparative Training Experiment for Structured Initialization
+  introduced_by: docs/intake/issue-drafts/REE-009-comparative-training-experiment.md
+  introduced_at: '2026-04-26'
+  definition: A controlled experiment comparing Ithkuil-seeded structured initialization
+    (WordNet/BabelNet/VerbAtlas/SyntagNet anchoring) against standard token-soup initialization
+    across sample efficiency, WSD, frame-role binding, and compositional generalization.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/606
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
