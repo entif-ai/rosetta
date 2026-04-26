@@ -2410,5 +2410,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-TILES-rosetta-rlm-tile-extensions.md",
     "draftStatus": "published"
+  },
+  "RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md": {
+    "number": 353,
+    "state": "open",
+    "title": "DCP-003: Model broker (NIM adapter) not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/353",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
+    "draftStatus": "published"
   }
 }
