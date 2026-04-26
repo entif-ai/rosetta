@@ -2752,5 +2752,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-002-claw-variant-security-matrix.md",
     "draftStatus": "published"
+  },
+  "df-008-config-upgrade-silent-fail.md": {
+    "number": 690,
+    "state": "open",
+    "title": "DF-008: Config auto-upgrade may silently drop fields if merge is interrupted",
+    "url": "https://github.com/entif-ai/rosetta/issues/690",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-008-config-upgrade-silent-fail.md",
+    "draftStatus": "published"
   }
 }
