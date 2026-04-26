@@ -1969,5 +1969,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-001-huggingface-daily-trending-papers-sweep.md",
     "draftStatus": "published"
+  },
+  "YAAC-008-deterministic-canonicalization.md": {
+    "number": 528,
+    "state": "open",
+    "title": "YAAC-008: Deterministic canonicalization + SHA-256 hashing for cache blocks",
+    "url": "https://github.com/entif-ai/rosetta/issues/528",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-008-deterministic-canonicalization.md",
+    "draftStatus": "published"
   }
 }

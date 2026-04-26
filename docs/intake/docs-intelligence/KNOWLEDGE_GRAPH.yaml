@@ -2430,6 +2430,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/526
   status: active
+- id: YAAC-008
+  name: Deterministic Canonicalization + SHA-256 Hashing
+  introduced_by: docs/intake/issue-drafts/YAAC-008-deterministic-canonicalization.md
+  introduced_at: '2026-04-26'
+  definition: Formal deterministic context block canonicalization rules (UTF-8 encoding,
+    whitespace normalization, stable wrapper format, deterministic ordering, SHA-256
+    hashing) enabling safe cross-principal cache sharing by hash equality.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/528
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
