@@ -1358,6 +1358,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-f-ai/rosetta/issues/317
   status: active
+- id: CONS-003
+  name: Predictive Processing Unified Inference Framework
+  introduced_by: docs/intake/issue-drafts/CONS-003-predictive-processing-entif.md
+  introduced_at: '2026-04-25'
+  definition: "Predictive Processing (Friston) as Entif's unified inference substrate\
+    \ \u2014 connects memory, reasoning, self-improvement, and receipts under free\
+    \ energy minimization"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/319
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

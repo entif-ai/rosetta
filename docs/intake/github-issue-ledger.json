@@ -1015,5 +1015,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-002-global-workspace-rosetta-spine.md",
     "draftStatus": "published"
+  },
+  "CONS-003-predictive-processing-entif.md": {
+    "number": 319,
+    "state": "open",
+    "title": "CONS-003: Predictive Processing as Entif's Unified Inference Framework",
+    "url": "https://github.com/entif-ai/rosetta/issues/319",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-003-predictive-processing-entif.md",
+    "draftStatus": "published"
   }
 }
