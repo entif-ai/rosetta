@@ -3041,6 +3041,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
+- id: SCT-003-violent-language-idiom-detection
+  name: "Violent Language Idiom Detection \u2014 Threshold Marker vs Literal Violence"
+  introduced_by: docs/intake/issue-drafts/SCT-003-violent-language-idiom-detection.md
+  introduced_at: '2026-04-26'
+  definition: 'AI semantic collapse failure where violence-coded idioms (magnitude
+    markers) are misinterpreted as literal violent intent. Requires three-layer taxonomy:
+    threshold-state labeling, violence-coded idiom, literal representation.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/637
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
