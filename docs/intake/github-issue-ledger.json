@@ -2689,5 +2689,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-001-rosetta-docid-registry.md",
     "draftStatus": "published"
+  },
+  "TXS-003-skos-semt-archimate-stdpacks.md": {
+    "number": 678,
+    "state": "open",
+    "title": "TXS-003: Standards Mapping: Pasigraphy StdPacks for SKOS/SEMAT/ArchiMate/ISO-42010",
+    "url": "https://github.com/entif-ai/rosetta/issues/678",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-003-skos-semt-archimate-stdpacks.md",
+    "draftStatus": "published"
   }
 }

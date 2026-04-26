@@ -3249,6 +3249,52 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/676
   status: active
+- id: TXS-003-skos
+  name: SKOS Pasigraphy Tile Mapping
+  introduced_by: docs/intake/issue-drafts/TXS-003-skos-semt-archimate-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Mapping of SKOS (W3C) taxonomy concepts (Concept, ConceptScheme, exactMatch,
+    broadMatch, narrowMatch) to Pasigraphy anchor hierarchy tiles
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
+- id: TXS-003-semat
+  name: SEMAT Essence Pasigraphy Tile Mapping
+  introduced_by: docs/intake/issue-drafts/TXS-003-skos-semt-archimate-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Mapping of SEMAT Essence (OMG) kernel alpha states (Opportunity, Stakeholders,
+    Requirements, Work, Team, Software System) to Pasigraphy tile types
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
+- id: TXS-003-archimate
+  name: ArchiMate Pasigraphy Tile Mapping
+  introduced_by: docs/intake/issue-drafts/TXS-003-skos-semt-archimate-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Mapping of ArchiMate (Open Group) layered enterprise architecture language
+    (business/application/technology layers, migration relationships) to Pasigraphy
+    layer definitions
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
+- id: TXS-003-iso42010
+  name: ISO 42010 Pasigraphy Tile Mapping
+  introduced_by: docs/intake/issue-drafts/TXS-003-skos-semt-archimate-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Mapping of ISO/IEC/IEEE 42010 architecture description elements (stakeholders,
+    concerns, viewpoints, views) to Pasigraphy viewpoint tiles
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
+- id: TXS-003
+  name: TXS-003 Standards Mapping StdPacks
+  introduced_by: docs/intake/issue-drafts/TXS-003-skos-semt-archimate-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Tile mappings and pack specs for SKOS, SEMAT, ArchiMate, and ISO 42010
+    standards in the Pasigraphy StdPacks system
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
