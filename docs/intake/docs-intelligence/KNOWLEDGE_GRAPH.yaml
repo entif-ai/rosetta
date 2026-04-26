@@ -2930,6 +2930,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/612
   status: active
+- id: RLM-001-TILES
+  name: RLM Tile Type Extensions
+  introduced_by: docs/intake/issue-drafts/RLM-001-TILES-rosetta-rlm-tile-extensions.md
+  introduced_at: '2026-04-26'
+  definition: 'Four proposed tile type extensions for RLM operations: Observation
+    (corpus snippet spans), Action/ToolCall (REPL steps + subcall metadata), Derived
+    (intermediate summaries/indexes), and Evaluation (verifier scores).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/612
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
