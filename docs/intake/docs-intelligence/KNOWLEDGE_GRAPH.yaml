@@ -1518,6 +1518,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/355
   status: active
+- id: dcp-005-five-forges
+  name: "Five Forges \u2014 Agentic Build Pipeline"
+  introduced_by: docs/intake/issue-drafts/DCP-005-five-forges-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: "Five specialized LLM task profiles (Spec, Blueprint, Code, Consistency,\
+    \ Reporter Forge) that implement a one-module-at-a-time doc\u2192code pipeline\
+    \ wired to the NIM orchestration layer."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/357
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

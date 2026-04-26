@@ -1159,5 +1159,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-004-code-atlas-not-implemented.md",
     "draftStatus": "published"
+  },
+  "DCP-005-five-forges-unimplemented.md": {
+    "number": 357,
+    "state": "open",
+    "title": "DCP-005: All 5 forges not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/357",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-005-five-forges-unimplemented.md",
+    "draftStatus": "published"
   }
 }
