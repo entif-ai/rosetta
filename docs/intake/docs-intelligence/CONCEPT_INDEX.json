@@ -216,6 +216,18 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-ai-assistant.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-berman-ai-assistant.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-impl-prompts.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-berman-impl-prompts.md",
+      "title": "BIP Extraction — Berman OpenClaw Implementation Prompts",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-prd.md",
       "sourcePath": "docs/external/Berman-PRD.md",
       "title": "Docs Intelligence Extraction: Berman-PRD.md",
@@ -2475,6 +2487,12 @@
       "concepts": []
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-social-cognition-therapy.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-social-cognition-therapy.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
       "sourcePath": "docs/external/SwarmKit.md",
       "title": "Docs Intelligence Extraction: SwarmKit",
@@ -2995,6 +3013,144 @@
       "title": "BE-001 — Receipt Law Not Explicit in Bootstrap Governance",
       "labels": [],
       "signature": "001-bootstrap-explicit-governance-law"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-1-crm-learning-feedback-loop.md",
+      "title": "BIP-001-1 — CRM Learning System Feedback Loop Underspecified",
+      "labels": [],
+      "signature": "001-bip-crm-feedback-learning"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-2-crm-exchange-count-formula.md",
+      "title": "BIP-001-2 — Exchange Count Estimation Misclassifies High-Volume Automated Senders",
+      "labels": [],
+      "signature": "001-automated-bip-count-estimation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-001-3-crm-llm-prompt-missing.md",
+      "title": "BIP-001-3 — LLM Classification Prompt Not Provided",
+      "labels": [],
+      "signature": "001-bip-classification-llm-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-1-kb-sentence-split-abbreviations.md",
+      "title": "BIP-002-1 — Sentence Split Regex Fails on Common English Abbreviations",
+      "labels": [],
+      "signature": "002-abbreviations-bip-common-english"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-2-kb-error-page-detection-narrow.md",
+      "title": "BIP-002-2 — Error-Page Detection Signal Set Too Narrow",
+      "labels": [],
+      "signature": "002-bip-detection-error-narrow"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-3-kb-near-duplicate-detection-missing.md",
+      "title": "BIP-002-3 — Content Hash Deduplication Misses Near-Duplicates",
+      "labels": [],
+      "signature": "002-bip-content-deduplication-duplicates"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md",
+      "title": "BIP-002-4 — Lock File Acquisition Is Not Atomic",
+      "labels": [],
+      "signature": "002-acquisition-atomic-bip-file"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-1-content-40pct-threshold-unvalidated.md",
+      "title": "BIP-003-1 — 40% Similarity Threshold Not Validated",
+      "labels": [],
+      "signature": "003-bip-not-similarity-threshold"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-2-content-hybrid-weights-unvalidated.md",
+      "title": "BIP-003-2 — Hybrid Score Weights Not Grounded in Evidence",
+      "labels": [],
+      "signature": "003-bip-evidence-grounded-hybrid"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-003-3-content-idea-id-collision.md",
+      "title": "BIP-003-3 — Idea ID Sequential Counter Has Collision Risk",
+      "labels": [],
+      "signature": "003-bip-collision-counter-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-1-social-thread-expansion-no-depth-limit.md",
+      "title": "BIP-004-1 — Thread Expansion Has No Recursion Depth Limit",
+      "labels": [],
+      "signature": "004-bip-depth-expansion-has"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-2-social-engagement-ranking-not-normalized.md",
+      "title": "BIP-004-2 — Engagement Ranking Ignores Follower Count Normalization",
+      "labels": [],
+      "signature": "004-bip-count-engagement-follower"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-004-3-social-cache-key-unspecified.md",
+      "title": "BIP-004-3 — Cache Key Definition Is Missing",
+      "labels": [],
+      "signature": "004-bip-cache-definition-key"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-005-1-youtube-quota-exhaustion.md",
+      "title": "BIP-005-1 — YouTube API Quota Exhaustion Risk Unmitigated",
+      "labels": [],
+      "signature": "005-api-bip-exhaustion-quota"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-1-briefing-policy-weight-update-unspecified.md",
+      "title": "BIP-006-1 — Policy Table Weight Update Mechanism Not Specified",
+      "labels": [],
+      "signature": "006-bip-mechanism-not-policy"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-2-briefing-frontier-cost-unbounded.md",
+      "title": "BIP-006-2 — Nightly Frontier Model Cost Is Unbounded",
+      "labels": [],
+      "signature": "006-bip-cost-frontier-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-3-briefing-signal-normalization-unspecified.md",
+      "title": "BIP-006-3 — Signal Normalization Layer Is Underspecified",
+      "labels": [],
+      "signature": "006-bip-layer-normalization-signal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-006-4-briefing-parallel-review-isolation.md",
+      "title": "BIP-006-4 — Parallel Persona Review Cannot See Other Reviews",
+      "labels": [],
+      "signature": "006-bip-cannot-other-parallel"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md",
+      "title": "BIP-007-1 — Intent Classification Mechanism Not Specified",
+      "labels": [],
+      "signature": "007-bip-classification-intent-mechanism"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-008-1-humanize-wordlist-detection-fragile.md",
+      "title": "BIP-008-1 — Word-List Detection Easily Evaded by Modern LLMs",
+      "labels": [],
+      "signature": "008-bip-detection-easily-evaded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-008-2-humanize-no-ground-truth-validation.md",
+      "title": "BIP-008-2 — No Ground Truth Validation of Humanization Quality",
+      "labels": [],
+      "signature": "008-bip-ground-humanization-quality"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-010-1-task-crm-crossref-unspecified.md",
+      "title": "BIP-010-1 — CRM Cross-Reference Lookup Strategy Not Specified",
+      "labels": [],
+      "signature": "010-bip-crm-cross-lookup"
+    },
+    {
+      "path": "docs/intake/issue-drafts/BIP-011-1-cost-tracking-pricing-hardcoded.md",
+      "title": "BIP-011-1 — Pricing Table Hardcoded, Not Dynamically Updated",
+      "labels": [],
+      "signature": "011-bip-dynamically-hardcoded-not"
     },
     {
       "path": "docs/intake/issue-drafts/browser-agent-acceptance.md",
@@ -4640,6 +4796,42 @@
       "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
       "labels": [],
       "signature": "002-3005-cache-decision-define"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-001-social-cognition-benchmark-clinical-psychology.md",
+      "title": "SCT-001: Social Cognition Benchmark — Clinical Psychology as Stress-Test Framework",
+      "labels": [],
+      "signature": "001-benchmark-clinical-cognition-framework"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-002-empathy-overaffirmation-discrimination.md",
+      "title": "SCT-002: Empathy vs Over-Affirmation Discrimination",
+      "labels": [],
+      "signature": "002-affirmation-discrimination-empathy-over"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-003-violent-language-idiom-detection.md",
+      "title": "SCT-003: Violent Language Idiom Detection — Threshold Marker vs Literal Violence",
+      "labels": [],
+      "signature": "003-detection-idiom-language-literal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-004-tulpa-stamp-comparator-architecture.md",
+      "title": "SCT-004: Tulpa Stamp Five-Layer Comparator Architecture",
+      "labels": [],
+      "signature": "004-architecture-comparator-five-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-005-mixture-of-archetypes-scoring.md",
+      "title": "SCT-005: Mixture-of-Archetypes Scoring for Diluted Composite Cases",
+      "labels": [],
+      "signature": "005-archetypes-cases-composite-diluted"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SCT-006-interpreter-failure-detection.md",
+      "title": "SCT-006: Interpreter-Failure Detection — Frame Persistence and Ontology Violation Tracking",
+      "labels": [],
+      "signature": "006-detection-failure-frame-interpreter"
     },
     {
       "path": "docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md",

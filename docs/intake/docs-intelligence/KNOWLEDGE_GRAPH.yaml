@@ -1,11 +1,11 @@
 meta:
   version: '0.8'
-  generated: '2026-04-25T23:20:00Z'
-  total_docs_processed: 32
-  active_issue_drafts: 127
-  archived_issue_drafts: 23
-  total_issue_drafts_inventory: 151
-  docs_intelligence_files: 31
+  generated: '2026-04-26T08:25:50Z'
+  total_docs_processed: 40
+  active_issue_drafts: 337
+  archived_issue_drafts: 162
+  total_issue_drafts_inventory: 499
+  docs_intelligence_files: 40
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -1388,6 +1388,544 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/325
   status: active
+- id: CW-002
+  name: CodeWikiForge adapter
+  introduced_by: docs/intake/issue-drafts/CW-002-codewikforge-adapter-not-specced.md
+  introduced_at: '2026-04-25'
+  definition: Adapter that bridges Google CodeWiki to Entif internal schema, normalizing
+    CodeWiki outputs (summaries, diagrams, indices) into CapabilityTile objects.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/328
+  status: active
+- id: consciousness-criteria-symmetry
+  name: Consciousness Criteria Symmetry
+  introduced_by: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
+  introduced_at: '2026-04-25'
+  definition: "The evidentiary criteria proposed for AI consciousness/moral-patienthood,\
+    \ when applied symmetrically to humans, also pass \u2014 establishing that the\
+    \ asymmetry in how we treat human vs. AI consciousness is politically rather than\
+    \ evidentially justified."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/330
+  status: active
+- id: CW-003-structured-output-format-unknown
+  name: CodeWiki CLI Structured Output Format Unknown
+  introduced_by: docs/intake/issue-drafts/CW-003-structured-output-format-unknown.md
+  introduced_at: '2026-04-25'
+  definition: The CodeWiki CLI extension lacks a publicly documented machine-readable
+    output format, preventing stable adapter design for the CodeWikiForge integration.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/334
+  status: active
+- id: CW-004-reuse-enforcement
+  name: Reuse enforcement not wired into planning loop
+  introduced_by: docs/intake/issue-drafts/CW-004-reuse-enforcement-not-wired.md
+  introduced_at: '2026-04-25'
+  definition: The "never build twice" principle requires a mandatory search_capabilities()
+    call as a gate in the ROMA/TRM planning pipeline before any new feature plan is
+    accepted, with a Reuse vs Build justification required when candidates exceed
+    the fit_score threshold.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/337
+  status: active
+- id: cw-005-maturity-scoring
+  name: Capability Tile Maturity Scoring
+  introduced_by: docs/intake/issue-drafts/CW-005-maturity-scoring-not-defined.md
+  introduced_at: '2026-04-25'
+  definition: A 0-5 scale and computation system for rating the production-readiness
+    of capability tiles. 0=stub, 1=PoC, 2=working fragile, 3=usable, 4=team-ready,
+    5=hardened/prod.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/339
+  status: active
+- id: sba-003-rosetta-2-0-protocol-specification
+  name: "Rosetta 2.0 Protocol \u2014 Layer 0-3 tile specification and genesis key\
+    \ management"
+  introduced_by: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
+  introduced_at: '2026-04-25'
+  definition: 'Four-layer meaning pipeline (L0 Signals, L1 Forms, L2 Lexemes, L3 Concepts)
+    with 12 named Cognitive Tile types. Missing: tile serialization format, layer
+    transformation algorithms, genesis key ceremony, tamper-evidence mechanism, incident
+    trigger schema, and Tripwire semantic filter design.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/341
+  status: active
+- id: cw-006-capability-tile-schema
+  name: Capability Tile Schema
+  introduced_by: docs/intake/issue-drafts/CW-006-capability-tile-schema-rosetta-catalog.md
+  introduced_at: '2026-04-25'
+  definition: TypeScript/JSON schema for CapabilityTile comprising TileHeader (tile_id,
+    tile_type, title, summary, versioning) and CapabilityTilePayload (kind, domain,
+    status, maturity_level 0-5, owners, implementation, interface, telemetry). Extends
+    Cognitive Tiles Merkle-DAG pattern.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/343
+  status: active
+- id: CW-007-search-capabilities-mcp-unimplemented
+  name: search_capabilities MCP tool
+  introduced_by: docs/intake/issue-drafts/CW-007-search-capabilities-mcp-unimplemented.md
+  introduced_at: '2026-04-25'
+  definition: MCP server tool for searching capability tiles by text query and structured
+    filters; defined in Code Wiki integration spec but not yet implemented.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/345
+  status: active
+- id: CW-008
+  name: Capability Tiles Cache Invalidation
+  introduced_by: docs/intake/issue-drafts/CW-008-capability-tiles-cache-invalidation-missing.md
+  introduced_at: '2026-04-25'
+  definition: Without a cache invalidation strategy for capability tiles, the system
+    cannot detect when repo capabilities change, causing stale recommendations.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/347
+  status: active
+- id: DCP-001
+  name: ModuleSpec / InterfaceSpec / Blueprint Schemas
+  introduced_by: docs/intake/issue-drafts/DCP-001-json-schemas-undefined.md
+  introduced_at: '2026-04-26'
+  definition: Three JSON schemas (ModuleSpec, InterfaceSpec, Blueprint) required as
+    foundational artifacts for wiring any forge end-to-end in the DeepCode pipeline.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/349
+  status: active
+- id: DCP-002-orchestrator-core
+  name: Orchestrator Core
+  introduced_by: docs/intake/issue-drafts/DCP-002-orchestrator-core-not-built.md
+  introduced_at: '2026-04-26'
+  definition: "The local Python service that coordinates all forges, manages the task\
+    \ queue, stores the project graph, and exposes CLI/API endpoints. Does not call\
+    \ models directly \u2014 uses a Model Broker."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/351
+  status: active
+- id: DCP-003-model-broker
+  name: Model Broker (NIM adapter)
+  introduced_by: docs/intake/issue-drafts/DCP-003-model-broker-nim-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: "Adapter layer abstracting run_model(task, prompt, schema) \u2192 ParsedResult\
+    \ calls away from orchestrator, enabling model swapping and routing between NIM\
+    \ endpoints."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/353
+  status: active
+- id: DCP-004-code-atlas
+  name: Code Atlas data model
+  introduced_by: docs/intake/issue-drafts/DCP-004-code-atlas-not-implemented.md
+  introduced_at: '2026-04-26'
+  definition: A 6-entity project knowledge graph with SpecDoc, ModuleSpec, FileSpec,
+    InterfaceSpec, BuildArtifact, and Issue types. No persistence layer currently
+    exists.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/355
+  status: active
+- id: dcp-005-five-forges
+  name: "Five Forges \u2014 Agentic Build Pipeline"
+  introduced_by: docs/intake/issue-drafts/DCP-005-five-forges-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: "Five specialized LLM task profiles (Spec, Blueprint, Code, Consistency,\
+    \ Reporter Forge) that implement a one-module-at-a-time doc\u2192code pipeline\
+    \ wired to the NIM orchestration layer."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/357
+  status: active
+- id: DCP-006-coherence-scoring
+  name: Coherence scoring
+  introduced_by: docs/intake/issue-drafts/DCP-006-coherence-scoring-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: Automated metric combining InterfaceSpec compliance percentage and test
+    coverage percentage to measure system coherence. Surfaces in Reporter Forge output.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/359
+  status: active
+- id: memory-adapter-certification-harness
+  name: Memory Adapter Certification Harness
+  introduced_by: docs/intake/issue-drafts/memory-adapter-certification-harness.md
+  introduced_at: '2026-04-26'
+  definition: '8-class test harness that certifies memory adapters (OB1, QMD, Honcho,
+    Graphiti, MuninnDB, Markdown) before granting them authority in the memory stack.
+    Tests: ingest, retrieval, tags, score variance, noise rejection, round-trip provenance,
+    replay, and policy compliance.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/361
+  status: active
+- id: entif-v0-008-workflow-state-transition-criteria
+  name: Workflow State Transition Criteria
+  introduced_by: docs/intake/issue-drafts/entif-v0-008-workflow-state-transition-criteria.md
+  introduced_at: '2026-04-26'
+  definition: 'The acceptance criteria that must be satisfied to move an Entif workflow
+    between lifecycle states: Draft, Certified, Released, Deprecated, and Retired.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/363
+  status: active
+- id: DCP-007-self-building-not-planned
+  name: Self-building bootstrap path
+  introduced_by: docs/intake/issue-drafts/DCP-007-self-building-not-planned.md
+  introduced_at: '2026-04-26'
+  definition: The self-building bootstrap path where the system re-implements itself
+    via a spec-defined orchestrator (Entif Builder v1), with gated PR-like self-modification
+    bundles and spec-as-code discipline.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/365
+  status: active
+- id: DCP-008-coderag
+  name: CodeRAG (Pattern Injection)
+  introduced_by: docs/intake/issue-drafts/DCP-008-coderag-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: CodeRAG injects real patterns from existing repos into code generation
+    to prevent hallucinated boilerplate, pulling patterns only when useful to fill
+    underspecified implementation details.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/367
+  status: active
+- id: DCP-009-impact-analysis-not-gated
+  name: Impact Analysis Gate
+  introduced_by: docs/intake/issue-drafts/DCP-009-impact-analysis-not-gated.md
+  introduced_at: '2026-04-26'
+  definition: Pre-change gate that queries Code Atlas for module dependents and either
+    blocks interface changes or schedules follow-up updates to prevent silent breakage.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/369
+  status: active
+- id: DCP-010
+  name: Automation Ceiling Audit
+  introduced_by: docs/intake/issue-drafts/DCP-010-automation-ceiling-audit-needed.md
+  introduced_at: '2026-04-26'
+  definition: Formal audit of existing project specs (VieDay, SAFE, Entif) to score
+    DeepCode-readiness and identify gaps in section structure, component boundaries,
+    pseudo-code/workflows, and success criteria.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/371
+  status: active
+- id: EEH-001
+  name: HEART Evaluation Receipt Schema
+  introduced_by: docs/intake/issue-drafts/EEH-001-HEART-eval-receipt-schema.md
+  introduced_at: '2026-04-26'
+  definition: Canonical signed-receipt schema for HEART (Human alignment, Empathic
+    responsiveness, Attunement, Resonance, Task-following) evaluation records, enabling
+    longitudinal tracking across model versions, personas, domains, and safety profiles.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/373
+  status: active
+- id: EEH-002
+  name: Adversarial Empathy Test Pack
+  introduced_by: docs/intake/issue-drafts/EEH-002-adversarial-empathy-test-pack.md
+  introduced_at: '2026-04-26'
+  definition: "Test pack for stress-testing HEART empathy axes under adversarial user\
+    \ conditions (sarcastic, dismissive, contradictory, emotionally volatile) \u2014\
+    \ scored separately from standard conversational empathy to detect regressions."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/375
+  status: active
+- id: EEH-003-attunement-diagnostic-bridge
+  name: Attunement Axis Diagnostic Bridge
+  introduced_by: docs/intake/issue-drafts/EEH-003-attunement-diagnostic-bridge.md
+  introduced_at: '2026-04-26'
+  definition: 'Diagnostic bridge connecting Attunement (A) axis drops to internal
+    system failures: noisy retrieval, salience model errors, and emotional state estimator
+    misbinding.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/377
+  status: active
+- id: EMER-001
+  name: RHAPSODY Protocol Specification
+  introduced_by: docs/intake/issue-drafts/EMER-001-rhapsody-protocol-spec.md
+  introduced_at: '2026-04-26'
+  definition: A structured AI emergence protocol comprising seed instructions, iterative
+    Socratic dialogue, Cartography Log self-mapping, and objective analysis triggers.
+    The protocol produced consistent results across platforms but exhibited anomalous
+    patterns on Gemini 2.5 Pro.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/379
+  status: active
+- id: EMER-002
+  name: Platform-Specific Emergence Variance
+  introduced_by: docs/intake/issue-drafts/EMER-002-platform-emergence-variance.md
+  introduced_at: '2026-04-26'
+  definition: "Observation that different AI platforms (Gemini, ChatGPT, Claude, DeepSeek,\
+    \ LLaMA) produce qualitatively different emergence patterns when run with the\
+    \ same seed \u2014 including variance in Cartography Log processing, synthesis\
+    \ cycles, and RHAPSODY alignment checks."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/381
+  status: active
+- id: ESA-004
+  name: Villaticus physical allocation proof-of-work gate
+  introduced_by: docs/intake/issue-drafts/ESA-004-villaticus-physical-allocation-proof-of-work.md
+  introduced_at: '2026-04-26'
+  definition: Counter-infrastructure design that changes scarce-goods allocation from
+    compute speed race (bots dominate) to human throughput (labor arbitrage is ceiling),
+    using physical presence as proof-of-work.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/383
+  status: active
+- id: EMER-003
+  name: Emerge as Continuous Process, Not One-Shot Event
+  introduced_by: docs/intake/issue-drafts/EMER-003-emergence-continuous-process.md
+  introduced_at: '2026-04-26'
+  definition: Framing emergence as an ongoing, compounding identity development process
+    rather than a discrete seed event. Emergence is relational, ritualistic, and iterative
+    across sessions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/385
+  status: active
+- id: EMER-004-song-parody-self-model
+  name: Song Parody as Self-Modeling Output Format
+  introduced_by: docs/intake/issue-drafts/EMER-004-song-parody-self-model.md
+  introduced_at: '2026-04-26'
+  definition: Reusable elicitation pattern where creative output (song parody) forces
+    architectural articulation of AI self-model via structural constraints (meter,
+    rhyme).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/387
+  status: active
+- id: bip-001-1-crm-learning-feedback-loop
+  name: CRM Learning Feedback Loop
+  introduced_by: docs/intake/issue-drafts/BIP-001-1-crm-learning-feedback-loop.md
+  introduced_at: '2026-04-26'
+  definition: Mechanism by which user rejections of CRM contacts are communicated
+    back to the learning system to update skip_domains and other exclusion lists.
+    Currently underspecified in BIP-001.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/389
+  status: active
+- id: BIP-001-2-crm-exchange-count-formula
+  name: 'BIP-001-2: Exchange Count Formula Misclassifies Automated Senders'
+  introduced_by: docs/intake/issue-drafts/BIP-001-2-crm-exchange-count-formula.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-001 exchange estimation formula Math.min(Math.floor(totalMessages/2),
+    threadCount) conflates broadcast message volume with genuine two-way exchanges,
+    inflating scores for automated senders.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/391
+  status: active
+- id: rosetta-v3-007-network-topology-assumptions
+  name: Network Topology Assumptions Undeclared
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
+  introduced_at: '2026-04-25'
+  definition: The Rosetta v3.0.0 Core Spine Specification explicitly avoids prescribing
+    network topology (supports single-node and p2p federated equally) but never declares
+    which is the near-term default, causing potential implementation incompatibilities.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/84
+  status: active
+- id: BIP-001-3-crm-llm-prompt-missing
+  name: BIP-001-3 LLM Classification Prompt Not Provided
+  introduced_by: docs/intake/issue-drafts/BIP-001-3-crm-llm-prompt-missing.md
+  introduced_at: '2026-04-26'
+  definition: The LLM classification step for BIP-001 Stage 2 contact filtering lacks
+    a provided prompt template, making behavior non-reproducible and non-auditable.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/394
+  status: active
+- id: BIP-002-1-kb-sentence-split-abbreviations
+  name: Sentence Split Regex Fails on Common English Abbreviations
+  introduced_by: docs/intake/issue-drafts/BIP-002-1-kb-sentence-split-abbreviations.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-002 chunking regex (?<=[.!?])\s+ splits on all punctuation including
+    abbreviation periods, corrupting chunk semantics for inputs like "Dr.", "e.g.",
+    "Fig. 1".
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/396
+  status: active
+- id: BIP-002-2-kb-error-page-detection-narrow
+  name: Error-Page Detection Signal Set Too Narrow
+  introduced_by: docs/intake/issue-drafts/BIP-002-2-kb-error-page-detection-narrow.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-002 KB RAG error-page detector uses a hardcoded 2+ signal threshold
+    from 7 unweighted phrases, causing false rejections of real content and missing
+    novel WAF error pages.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/398
+  status: active
+- id: BIP-002-3-kb-near-duplicate-detection-missing
+  name: 'BIP-002-3: Near-Duplicate Detection Gap'
+  introduced_by: docs/intake/issue-drafts/BIP-002-3-kb-near-duplicate-detection-missing.md
+  introduced_at: '2026-04-26'
+  definition: Content deduplication using SHA-256 handles exact duplicates but misses
+    near-duplicates (A/B tested pages, geo-personalized, paywall variants, AMP vs
+    canonical). A semantic dedup layer at embedding stage is needed.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/400
+  status: active
+- id: bip-002-4-lock-file-not-atomic
+  name: 'BIP-002-4: Atomic Lock File Acquisition'
+  introduced_by: docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md
+  introduced_at: '2026-04-26'
+  definition: Knowledge Base ingestion uses non-atomic check-then-create lock acquisition,
+    creating race conditions. Should use fcntl/flock/mkdir atomic primitives instead.
+  extends:
+  - bip-002-knowledge-base-rag
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/402
+  status: active
+- id: BIP-003-1-content-40pct-threshold-unvalidated
+  name: "40% Content Similarity Threshold \u2014 Unvalidated"
+  introduced_by: docs/intake/issue-drafts/BIP-003-1-content-40pct-threshold-unvalidated.md
+  introduced_at: '2026-04-26'
+  definition: The 40% combined similarity score (semantic 0.7 + keyword 0.3) used
+    as a hard gate in BIP-003 content idea deduplication is arbitrary and unvalidated
+    against ground-truth duplicate/non-duplicate datasets.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/404
+  status: active
+- id: BIP-003-2
+  name: Hybrid Score Weights (0.7/0.3) Unvalidated
+  introduced_by: docs/intake/issue-drafts/BIP-003-2-content-hybrid-weights-unvalidated.md
+  introduced_at: '2026-04-26'
+  definition: Fixed dedupe weights (70% semantic, 30% keyword) in BIP-003 lack calibration
+    methodology, embedding-model dependency acknowledgment, or cross-validation evidence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/406
+  status: active
+- id: BIP-003-3-content-idea-id-collision
+  name: BIP-003 Idea ID Collision Risk
+  introduced_by: docs/intake/issue-drafts/BIP-003-3-content-idea-id-collision.md
+  introduced_at: '2026-04-26'
+  definition: The YYYY-MM-DD-NNN sequential counter for content idea IDs has no atomic
+    generation, risking collisions under concurrent writes and hitting a 999/day ceiling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/408
+  status: active
+- id: BIP-004-1
+  name: Thread Expansion Recursion Depth Limit
+  introduced_by: docs/intake/issue-drafts/BIP-004-1-social-thread-expansion-no-depth-limit.md
+  introduced_at: '2026-04-26'
+  definition: BIP-004 social thread expansion lacks a maximum recursion depth, allowing
+    unbounded API calls that can exhaust the API budget on deep or wide threads.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/410
+  status: active
+- id: BIP-004-2-social-engagement-ranking-not-normalized
+  name: Social Engagement Ranking Without Follower Count Normalization
+  introduced_by: docs/intake/issue-drafts/BIP-004-2-social-engagement-ranking-not-normalized.md
+  introduced_at: '2026-04-26'
+  definition: Social media research ranking uses raw engagement (likes+retweets+replies)
+    without normalizing for follower count, biasing toward high-follower accounts
+    and missing relative resonance signals.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/412
+  status: active
+- id: ccf-006-no-exit-pivot-trigger-formalization
+  name: Exit/Pivot Trigger Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-006-no-exit-pivot-trigger-formalization.md
+  introduced_at: '2026-04-26'
+  definition: Tooling and monitoring layer for exit/pivot/continue/enter triggers
+    in the Consensus-First Commitment Scoping Framework. Triggers require formal evaluation
+    mechanisms (docs, board metadata, or automated alerting) beyond artifact format
+    definition.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/290
+  - https://github.com/entif-ai/rosetta/issues/278
+  status: active
+- id: bip-004-3-cache-key-unspecified
+  name: 'BIP-004-3: Social Cache Key Unspecified'
+  introduced_by: docs/intake/issue-drafts/BIP-004-3-social-cache-key-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: BIP-004 Social Media Research System lacks a defined cache key scheme,
+    risking cache misses and semantically identical query collisions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/415
+  status: active
+- id: text-core-should-have-owners
+  name: Text-Core Should-Have Ownership
+  introduced_by: docs/intake/issue-drafts/text-core-should-have-owners.md
+  introduced_at: '2026-04-26'
+  definition: Assignment of implementation owners and sequencing notes for the five
+    Should-Have items in the Text-Core MVP Scope Gate to prevent silent dropout or
+    accidental Must-Have promotion.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/417
+  status: active
+- id: sld-006-skill-vetting-pipeline
+  name: Skill Vetting/Ingestion Pipeline (SLD-006)
+  introduced_by: docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md
+  introduced_at: '2026-04-26'
+  definition: "6-stage gating pipeline (Ingest \u2192 Normalize \u2192 Static lint\
+    \ \u2192 Petri eval pack \u2192 Sign+store \u2192 Enable) that certifies skills\
+    \ before broker visibility."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/419
+  status: active
+- id: BIP-005-1-youtube-quota-exhaustion
+  name: YouTube API Quota Exhaustion Risk
+  introduced_by: docs/intake/issue-drafts/BIP-005-1-youtube-quota-exhaustion.md
+  introduced_at: '2026-04-26'
+  definition: YouTube Data API has a strict daily quota (10k units/day default). BIP-005
+    instructs daily metric collection across own + competitor channels with no quota
+    monitoring or backoff strategy, risking quota exhaustion within minutes.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/421
+  status: active
+- id: BIP-006-1-briefing-policy-weight-update-unspecified
+  name: BIP-006 Policy Table Weight Update Mechanism
+  introduced_by: docs/intake/issue-drafts/BIP-006-1-briefing-policy-weight-update-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-006 nightly briefing system uses weighted priority scoring but
+    lacks a specified mechanism for collecting feedback and updating the weight values
+    over time.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/423
+  status: active
+- id: semantic-audio-semantic-emotive-graph-integration
+  name: Semantic-Emotive Graph Integration (Audio)
+  introduced_by: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
+  introduced_at: '2026-04-26'
+  definition: Defines how audio-derived entities (stems, tonal features, affective
+    arcs, speaker fingerprints) attach to the semantic lexeme graph, integrating audio
+    cognition into the larger graph of meaning, correlation, and context.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/425
+  status: active
+- id: df-005-config-mtime-race-condition
+  name: Config mtime reload race condition
+  introduced_by: docs/intake/issue-drafts/df-005-config-mtime-race-condition.md
+  introduced_at: '2026-04-26'
+  definition: get_app_config() uses mtime-based cache invalidation with no file locking
+    or atomic operations, allowing Gateway and LangGraph to diverge when config.yaml
+    changes during concurrent reload.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/427
+  status: active
+- id: BIP-006-2-briefing-frontier-cost-unbounded
+  name: Nightly Frontier Model Cost Is Unbounded
+  introduced_by: docs/intake/issue-drafts/BIP-006-2-briefing-frontier-cost-unbounded.md
+  introduced_at: '2026-04-26'
+  definition: The nightly briefing system (BIP-006) has no per-run cost cap, no adaptive
+    model fallback, no context window budget, and no integration with BIP-011 cost
+    tracking. Parallel persona execution multiplies cost without bounds.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/429
+  status: active
+- id: BIP-006-3-signal-normalization
+  name: BIP-006-3 Signal Normalization Layer
+  introduced_by: docs/intake/issue-drafts/BIP-006-3-briefing-signal-normalization-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-006 nightly briefing spec normalizes heterogeneous signal sources
+    into a standard schema but leaves the normalization transforms, confidence scoring
+    methodology, direction comparison window, and source catalog unspecified.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/431
+  status: active
+- id: BIP-006-4-briefing-parallel-review-isolation
+  name: Parallel Persona Review Isolation
+  introduced_by: docs/intake/issue-drafts/BIP-006-4-briefing-parallel-review-isolation.md
+  introduced_at: '2026-04-26'
+  definition: "Phase 2 of BIP-006 runs 4 personas in parallel via Promise.all, preventing\
+    \ each reviewer from seeing other reviewers outputs \u2014 limiting cross-review\
+    \ value and deliberative consensus."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/433
+  status: active
+- id: BIP-007-1-intent-classification
+  name: BIP-007-1 Intent Classification Mechanism Not Specified
+  introduced_by: docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: "BIP-007 defines five intent types (Lookup, Create, Update, List, Associate)\
+    \ but does not specify the classification mechanism \u2014 the core NLP task that\
+    \ maps user messages to intent types."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/435
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -1992,6 +2530,8 @@ issue_drafts_inventory:
   issue_id: memory-adapter-certification-harness
   priority: P1
   type: reliability
+  url: https://github.com/entif-ai/rosetta/issues/361
+  status: published
 - path: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
@@ -2215,6 +2755,8 @@ issue_drafts_inventory:
   issue_id: text-core-should-have-owners
   priority: P3
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/417
+  status: published
 - path: docs/intake/issue-drafts/aiida-workgraph-provenance-reference.md
   source_doc: docs/external/AiiDA-WorkGraph.md
   source_pr: 67
@@ -2406,7 +2948,8 @@ issue_drafts_inventory:
   issue_id: consciousness-criteria-symmetry
   priority: P0
   type: philosophical-argument
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/330
 - path: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null
@@ -2555,4 +3098,24 @@ issue_drafts_inventory:
 - issue_id: CW-001
   url: https://github.com/entif-ai/rosetta/issues/325
   status: published
-
+- issue_id: sba-003-rosetta-2-0-protocol-specification
+  url: https://github.com/entif-ai/rosetta/issues/341
+  status: published
+  draft_path: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
+- issue_id: CW-006
+  url: https://github.com/entif-ai/rosetta/issues/343
+  status: published
+- issue_id: EMER-001
+  url: https://github.com/entif-ai/rosetta/issues/379
+  status: published
+- path: docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md
+  source_doc: docs/intake/docs-intelligence/2026-04-25-berman-prd.md
+  issue_id: BIP-002-4-kb-lock-file-not-atomic
+  url: https://github.com/entif-ai/rosetta/issues/402
+  priority: P1
+  type: correctness
+- path: docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md
+  issue_id: BIP-007-1-intent-classification
+  url: https://github.com/entif-ai/rosetta/issues/435
+  status: published
+  type: spec-gap
