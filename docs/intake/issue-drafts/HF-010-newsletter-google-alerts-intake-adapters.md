@@ -111,4 +111,8 @@ Crates is subscribed to multiple newsletters (including Matt Wolfe's Future Tool
 - Google Alerts: best approach is RSS feeds for each alert (available via Google Alerts setup). Email fallback is messier.
 - "Tips from humans" is the most informal source — these may come via email, Slack, Telegram, or other channels. Each tip should be treated as a potential IntakeEnvelope even if manually forwarded.
 - Deduplication is critical for newsletter intake: the same article may appear in multiple newsletters or in the same newsletter multiple times (re-sends). Hash of title+author+date+domain must catch this.
+<<<<<<< HEAD
 - "Saved recurring search queries" suggests Google Alerts or saved search RSS feeds — these should be treated as a separate source type (google-search).
+=======
+- "Saved recurring search queries" suggests Google Alerts or saved search RSS feeds — these should be treated as a separate source type (google-search).
+>>>>>>> 4d5e9cb (docs(intake): add HF-010 newsletter/Google Alerts intake adapters)
