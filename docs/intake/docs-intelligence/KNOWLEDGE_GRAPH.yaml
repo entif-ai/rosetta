@@ -1212,6 +1212,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/278
   status: active
+- id: 2026-04-25-consensus-first-commitment-canvas
+  name: Commitment Canvas Artifact
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-commitment-canvas.md
+  introduced_at: '2026-04-25'
+  definition: Eight-field artifact for determining the wager size that is justified
+    now (not later), covering opportunity value, downside exposure, loss tolerance,
+    reversibility, tempo, and recommended commitment posture.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/282
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
