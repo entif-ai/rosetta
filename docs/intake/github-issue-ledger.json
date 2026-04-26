@@ -2293,5 +2293,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-004-roma-hardware-qora-accelerator.md",
     "draftStatus": "published"
+  },
+  "REE-005-neural-architecture-primer.md": {
+    "number": 598,
+    "state": "open",
+    "title": "REE-005: Neural Network Architecture Primer Completeness",
+    "url": "https://github.com/entif-ai/rosetta/issues/598",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-005-neural-architecture-primer.md",
+    "draftStatus": "published"
   }
 }
