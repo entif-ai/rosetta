@@ -1986,6 +1986,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/447
   status: active
+- id: APC-005-compound-semantic-cache-key
+  name: Compound Semantic Cache Key
+  introduced_by: docs/intake/issue-drafts/APC-005-compound-semantic-cache-key.md
+  introduced_at: '2026-04-26'
+  definition: "A multi-dimensional cache key structure (semantic_intent \xD7 rights_domain\
+    \ \xD7 data_classification \xD7 policy_version \xD7 source_bundle_hash) designed\
+    \ to prevent authorization bypass via naive semantic equivalence caching in ABAC-governed\
+    \ enterprise contexts."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/449
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

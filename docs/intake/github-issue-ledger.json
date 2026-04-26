@@ -1582,5 +1582,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-004-entif-inference-firewall-semantic-cache-router-provenance.md",
     "draftStatus": "published"
+  },
+  "APC-005-compound-semantic-cache-key.md": {
+    "number": 449,
+    "state": "open",
+    "title": "APC-005: Semantic Equivalence Cache Keys Require Compound Structure (Intent \u00d7 Rights Domain \u00d7 Classification \u00d7 Version)",
+    "url": "https://github.com/entif-ai/rosetta/issues/449",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-005-compound-semantic-cache-key.md",
+    "draftStatus": "published"
   }
 }
