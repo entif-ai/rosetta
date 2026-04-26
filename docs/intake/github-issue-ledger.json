@@ -1114,5 +1114,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-007-search-capabilities-mcp-unimplemented.md",
     "draftStatus": "published"
+  },
+  "CW-008-capability-tiles-cache-invalidation-missing.md": {
+    "number": 347,
+    "state": "open",
+    "title": "CW-008: Capability tiles not cached/invalidated on git changes",
+    "url": "https://github.com/entif-ai/rosetta/issues/347",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-008-capability-tiles-cache-invalidation-missing.md",
+    "draftStatus": "published"
   }
 }

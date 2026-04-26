@@ -1470,6 +1470,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/345
   status: active
+- id: CW-008
+  name: Capability Tiles Cache Invalidation
+  introduced_by: docs/intake/issue-drafts/CW-008-capability-tiles-cache-invalidation-missing.md
+  introduced_at: '2026-04-25'
+  definition: Without a cache invalidation strategy for capability tiles, the system
+    cannot detect when repo capabilities change, causing stale recommendations.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/347
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
