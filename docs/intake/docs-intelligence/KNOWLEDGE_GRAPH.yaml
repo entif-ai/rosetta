@@ -2178,6 +2178,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/479
   status: active
+- id: EML-005
+  name: Social Engineering Scoring Dimension
+  introduced_by: docs/intake/issue-drafts/EML-005-social-engineering-scoring-dimension.md
+  introduced_at: '2026-04-26'
+  definition: "Social engineering risk scored as an independent dimension from prompt\
+    \ injection risk \u2014 tracks persuasion-shaped attacks (urgency, authority,\
+    \ secrecy cues) distinct from exploit-syntax-shaped attacks."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/481
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

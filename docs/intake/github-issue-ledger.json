@@ -1753,5 +1753,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-002-middleware-escalation-dlq.md",
     "draftStatus": "published"
+  },
+  "EML-005-social-engineering-scoring-dimension.md": {
+    "number": 481,
+    "state": "open",
+    "title": "EML-005: Social Engineering as Explicit Scoring Dimension, Distinct from Prompt Injection",
+    "url": "https://github.com/entif-ai/rosetta/issues/481",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-005-social-engineering-scoring-dimension.md",
+    "draftStatus": "published"
   }
 }
