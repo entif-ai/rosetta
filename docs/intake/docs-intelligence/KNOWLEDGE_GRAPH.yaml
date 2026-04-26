@@ -2673,6 +2673,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/575
   status: active
+- id: MHC-004-engram-memory-plane
+  name: Engram Memory Plane Integration
+  introduced_by: docs/intake/issue-drafts/MHC-004-engram-memory-plane.md
+  introduced_at: '2026-04-26'
+  definition: Integration of Engram deterministic memory lookup with Rosetta 3-memory-plane
+    model, enabling retroactive refinement and host-memory management for identity
+    tables.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/577
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

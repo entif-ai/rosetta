@@ -2185,5 +2185,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-003-non-collapse-contract.md",
     "draftStatus": "published"
+  },
+  "MHC-004-engram-memory-plane.md": {
+    "number": 577,
+    "state": "open",
+    "title": "MHC-004: Engram Memory Plane Integration with Deterministic Lookup",
+    "url": "https://github.com/entif-ai/rosetta/issues/577",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-004-engram-memory-plane.md",
+    "draftStatus": "published"
   }
 }
