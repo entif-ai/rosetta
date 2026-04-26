@@ -2563,5 +2563,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-005-hot-cold-skill-library.md",
     "draftStatus": "published"
+  },
+  "text-core-english-accompaniment-package-contract": {
+    "number": 12,
+    "state": "open",
+    "title": "TC-007 Chat + arXiv importers and English accompaniment",
+    "url": "https://github.com/entif-ai/rosetta/issues/12",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-english-accompaniment-package-contract.md",
+    "draftStatus": "published"
   }
 }
