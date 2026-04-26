@@ -952,5 +952,41 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-opportunity-edge-brief.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-phase-transition-handshake": {
+    "number": 302,
+    "state": "open",
+    "title": "CCF: Implement Phase Transition Handshake Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/302",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-phase-transition-handshake.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-calibration-loop": {
+    "number": 278,
+    "state": "open",
+    "title": "CCF: Implement Commitment Calibration Loop Automation",
+    "url": "https://github.com/enti i-ai/rosetta/issues/278",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-calibration-loop.md",
+    "draftStatus": "published"
+  },
+  "moving-goalpost-consciousness-criteria": {
+    "number": 307,
+    "state": "open",
+    "title": "[systemic-risk] Moving goalpost problem: pre-commit strategy for AI consciousness criteria",
+    "url": "https://github.com/entif-ai/rosetta/issues/307",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/moving-goalpost-consciousness-criteria.md",
+    "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-sme-prompt-out.md": {
+    "number": 310,
+    "state": "open",
+    "title": "CCF: Implement SME Prompt-Out Requirement Before Commitment Finalization",
+    "url": "https://github.com/entif-ai/rosetta/issues/310",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-sme-prompt-out.md",
+    "draftStatus": "published"
   }
 }

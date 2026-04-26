@@ -947,6 +947,7 @@ concepts:
   - consensus-first-framework
   referenced_by:
   - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  - https://github.com/entif-ai/rosetta/issues/302
   status: active
 - id: ccf-anti-motivated-reasoning-guardrails
   name: Anti-Motivated Reasoning Guardrails
@@ -1294,6 +1295,38 @@ concepts:
     CCF five-artifact workflow.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/300
+  status: active
+- id: 2026-04-25-consensus-first-calibration-loop
+  name: Commitment Calibration Loop
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+  introduced_at: '2026-04-25'
+  definition: "A continuous four-component loop that prevents static commitments from\
+    \ becoming sunk costs by: (1) updating board state \u2192 commitment canvas, (2)\
+    \ updating evidence ledger \u2192 confidence + disconfirmers, (3) running premortems\
+    \ at major bet-size increases, (4) re-checking exit/pivot triggers before new\
+    \ commitment tranches."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/278
+  status: active
+- id: moving-goalpost-consciousness-criteria
+  name: Moving Goalpost Problem (AI Consciousness)
+  introduced_by: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
+  introduced_at: '2026-04-25'
+  definition: Systemic risk where AI consciousness criteria are asymmetrically raised
+    as systems approach thresholds, neutralizing EMILIE research outcomes through
+    institutional pressure rather than technical evidence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/307
+  status: active
+- id: 2026-04-25-consensus-first-sme-prompt-out
+  name: SME Prompt-Out Before Commitment Finalization
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+  introduced_at: '2026-04-25'
+  definition: Automation-bias control requiring the agent to prompt for missing SME
+    knowledge before finalizing commitment recommendations, preventing over-trust
+    of fluent agent synthesis.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/310
   status: active
 issue_candidates:
 - id: DI-007

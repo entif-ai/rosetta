@@ -2023,6 +2023,12 @@
       "concepts": []
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-maxclaw-split-testing-eval.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-maxclaw-split-testing-eval.md",
+      "title": "DI: MaxClaw Split-Testing Evaluation",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-mhcs-engram-ml.md",
       "sourcePath": "docs/chats/20260122 - Chat GPT - mHCs and Engram in ML.md",
       "title": "Docs Intelligence Extraction",
@@ -3871,6 +3877,36 @@
       "title": "Issue: mac-studio-control-two-tier-guard",
       "labels": [],
       "signature": "control-guard-mac-studio-tier"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MCST-001-data-retention-ambiguity-risk.md",
+      "title": "MCST-001: MaxClaw Data Retention & Training Ambiguity Risk",
+      "labels": [],
+      "signature": "001-ambiguity-data-maxclaw-mcst"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MCST-002-supply-chain-community-skills-risk.md",
+      "title": "MCST-002: Community Expert/Skills Supply Chain Risk",
+      "labels": [],
+      "signature": "002-chain-community-expert-mcst"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MCST-003-blast-radius-expansion-external-agent.md",
+      "title": "MCST-003: Blast Radius Expansion from External Agent Plane Integration",
+      "labels": [],
+      "signature": "003-agent-blast-expansion-external"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MCST-004-reliability-risk-cheap-lane.md",
+      "title": "MCST-004: Reliability Risk in High-Volume \"Cheap Lane\" Automation",
+      "labels": [],
+      "signature": "004-automation-cheap-high-lane"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MCST-005-missing-verification-harness-community-skills.md",
+      "title": "MCST-005: Missing Verification Harness for Community Skills Promotion",
+      "labels": [],
+      "signature": "005-community-harness-mcst-promotion"
     },
     {
       "path": "docs/intake/issue-drafts/memory-adapter-certification-harness.md",
