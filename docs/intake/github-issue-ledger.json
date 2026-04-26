@@ -2599,5 +2599,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-009-skill-broker-query-select-hot-skill.md",
     "draftStatus": "published"
+  },
+  "TB-001-path2vec-trainer-implementation.md": {
+    "number": 657,
+    "state": "open",
+    "title": "Path2Vec trainer: implement graph-first sense embedding with MSE loss, neighbor regularization, and negative sampling",
+    "url": "https://github.com/entif-ai/rosetta/issues/657",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-001-path2vec-trainer-implementation.md",
+    "draftStatus": "published"
   }
 }

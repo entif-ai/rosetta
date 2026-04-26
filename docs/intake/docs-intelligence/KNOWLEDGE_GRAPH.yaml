@@ -3152,6 +3152,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/655
   status: active
+- id: TB-001-path2vec-trainer-implementation
+  name: Path2Vec Trainer Implementation
+  introduced_by: docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md
+  introduced_at: '2026-04-26'
+  definition: "Implement rpp/embed/train_path2vec.py \u2014 PyTorch module training\
+    \ sense embeddings to predict WordNet graph proximities via Path2Vec objective\
+    \ with MSE loss, neighbor regularization, and negative sampling"
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/657
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
