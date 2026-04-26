@@ -2818,6 +2818,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/600
   status: active
+- id: REE-007
+  name: Ithkuil Lexeme Curriculum as Structured Initialization Seed
+  introduced_by: docs/intake/issue-drafts/REE-007-ithkuil-lexeme-initialization.md
+  introduced_at: '2026-04-26'
+  definition: Using Ithkuil's 500+ page designed lexeme curriculum as foundation for
+    structured LLM embedding initialization, mapping lexemes to WordNet/BabelNet/VerbAtlas/SyntagNet
+    for intentional relational geometry.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/602
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
