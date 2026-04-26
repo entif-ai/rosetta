@@ -1861,5 +1861,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-001-canonical-entif-one-liner.md",
     "draftStatus": "published"
+  },
+  "ESA-002-seven-rules-constitutional-base.md": {
+    "number": 504,
+    "state": "open",
+    "title": "ESA-002: Adopt 7 Rules as Entif constitutional base",
+    "url": "https://github.com/entif-ai/rosetta/issues/504",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-002-seven-rules-constitutional-base.md",
+    "draftStatus": "published"
   }
 }
