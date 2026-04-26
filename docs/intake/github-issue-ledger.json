@@ -2743,5 +2743,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-008-self-consistency-checklist.md",
     "draftStatus": "published"
+  },
+  "YAAC-002-claw-variant-security-matrix.md": {
+    "number": 688,
+    "state": "open",
+    "title": "YAAC-002: Claw variant security comparison matrix",
+    "url": "https://github.com/entif-ai/rosetta/issues/688",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-002-claw-variant-security-matrix.md",
+    "draftStatus": "published"
   }
 }
