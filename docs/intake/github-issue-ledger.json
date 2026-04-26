@@ -1870,5 +1870,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-002-seven-rules-constitutional-base.md",
     "draftStatus": "published"
+  },
+  "source-substrate-missing-protocol-domain.md": {
+    "number": 506,
+    "state": "open",
+    "title": "Source Substrate: Missing First-Class Protocol Domain",
+    "url": "https://github.com/entif-ai/rosetta/issues/506",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/source-substrate-missing-protocol-domain.md",
+    "draftStatus": "published"
   }
 }
