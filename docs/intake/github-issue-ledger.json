@@ -1060,5 +1060,473 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/consciousness-criteria-symmetry.md",
     "draftStatus": "published"
+  },
+  "CW-003-structured-output-format-unknown.md": {
+    "number": 334,
+    "state": "open",
+    "title": "CW-003: Structured output format for CodeWiki CLI unknown",
+    "url": "https://github.com/entif-ai/rosetta/issues/334",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-003-structured-output-format-unknown.md",
+    "draftStatus": "published"
+  },
+  "CW-004-reuse-enforcement-not-wired.md": {
+    "number": 337,
+    "state": "open",
+    "title": "CW-004: Reuse enforcement not wired into planning loop",
+    "url": "https://github.com/entif-ai/rosetta/issues/337",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-004-reuse-enforcement-not-wired.md",
+    "draftStatus": "published"
+  },
+  "CW-005-maturity-scoring-not-defined.md": {
+    "number": 339,
+    "state": "open",
+    "title": "CW-005: Capability tile maturity scoring system not defined",
+    "url": "https://github.com/entif-ai/rosetta/issues/339",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-005-maturity-scoring-not-defined.md",
+    "draftStatus": "published"
+  },
+  "sba-003-rosetta-2-0-protocol-specification.md": {
+    "number": 341,
+    "state": "open",
+    "title": "SBA-003: Rosetta 2.0 Protocol — implementation-ready specification for Layer 0–3 tiles and genesis key management",
+    "url": "https://github.com/entif-ai/rosetta/issues/341",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-003-rosetta-2-0-protocol-specification.md",
+    "draftStatus": "published"
+  },
+  "CW-006-capability-tile-schema-rosetta-catalog": {
+    "number": 343,
+    "state": "open",
+    "title": "CW-006: Capability Tile schema needs Rosetta type catalog entry",
+    "url": "https://github.com/entif-ai/rosetta/issues/343",
+    "activeDraftPath": "docs/intake/issue-drafts/CW-006-capability-tile-schema-rosetta-catalog.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-006-capability-tile-schema-rosetta-catalog.md",
+    "draftStatus": "published"
+  },
+  "CW-007-search-capabilities-mcp-unimplemented": {
+    "number": 345,
+    "state": "open",
+    "title": "CW-007: search_capabilities MCP tool interface only, no implementation",
+    "url": "https://github.com/entif-ai/rosetta/issues/345",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-007-search-capabilities-mcp-unimplemented.md",
+    "draftStatus": "published"
+  },
+  "CW-008-capability-tiles-cache-invalidation-missing.md": {
+    "number": 347,
+    "state": "open",
+    "title": "CW-008: Capability tiles not cached/invalidated on git changes",
+    "url": "https://github.com/entif-ai/rosetta/issues/347",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-008-capability-tiles-cache-invalidation-missing.md",
+    "draftStatus": "published"
+  },
+  "DCP-001-json-schemas-undefined.md": {
+    "number": 349,
+    "state": "open",
+    "title": "DCP-001: Define ModuleSpec/InterfaceSpec/Blueprint JSON schemas",
+    "url": "https://github.com/enti-ai/rosetta/issues/349",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-001-json-schemas-undefined.md",
+    "draftStatus": "published"
+  },
+  "DCP-002-orchestrator-core-not-built.md": {
+    "number": 351,
+    "state": "open",
+    "title": "DCP-002: Orchestrator core not built",
+    "url": "https://github.com/entif-ai/rosetta/issues/351",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-002-orchestrator-core-not-built.md",
+    "draftStatus": "published"
+  },
+  "DCP-003-model-broker-nim-unimplemented.md": {
+    "number": 353,
+    "state": "open",
+    "title": "DCP-003: Model broker (NIM adapter) not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/353",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-003-model-broker-nim-unimplemented.md",
+    "draftStatus": "published"
+  },
+  "DCP-004-code-atlas-not-implemented.md": {
+    "number": 355,
+    "state": "open",
+    "title": "DCP-004: Implement Code Atlas data model persistence (6-entity knowledge graph)",
+    "url": "https://github.com/entif-ai/rosetta/issues/355",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-004-code-atlas-not-implemented.md",
+    "draftStatus": "published"
+  },
+  "DCP-005-five-forges-unimplemented.md": {
+    "number": 357,
+    "state": "open",
+    "title": "DCP-005: All 5 forges not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/357",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-005-five-forges-unimplemented.md",
+    "draftStatus": "published"
+  },
+  "DCP-006-coherence-scoring-unimplemented.md": {
+    "number": 359,
+    "state": "open",
+    "title": "DCP-006: Coherence scoring not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/359",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-006-coherence-scoring-unimplemented.md",
+    "draftStatus": "published"
+  },
+  "memory-adapter-certification-harness": {
+    "number": 361,
+    "state": "open",
+    "title": "Memory Adapter Certification Harness — Before Any Adapter Gets Power",
+    "url": "https://github.com/entif-ai/rosetta/issues/361",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/memory-adapter-certification-harness.md",
+    "draftStatus": "published"
+  },
+  "entif-v0-008-workflow-state-transition-criteria.md": {
+    "number": 363,
+    "state": "open",
+    "title": "ENTIF-v0-008: Workflow State Transition Criteria (Draft→Certified→Released) Not Defined",
+    "url": "https://github.com/entif-ai/rosetta/issues/363",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-008-workflow-state-transition-criteria.md",
+    "draftStatus": "published"
+  },
+  "DCP-007-self-building-not-planned.md": {
+    "number": 365,
+    "state": "open",
+    "title": "DCP-007: Self-building bootstrap path not planned",
+    "url": "https://github.com/entif-ai/rosetta/issues/365",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-007-self-building-not-planned.md",
+    "draftStatus": "published"
+  },
+  "DCP-008-coderag-unimplemented.md": {
+    "number": 367,
+    "state": "open",
+    "title": "DCP-008: CodeRAG not implemented (pattern injection from existing repos)",
+    "url": "https://github.com/entif-ai/rosetta/issues/367",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-008-coderag-unimplemented.md",
+    "draftStatus": "published"
+  },
+  "DCP-009-impact-analysis-not-gated.md": {
+    "number": 369,
+    "state": "open",
+    "title": "DCP-009: Impact analysis not wired as pre-change gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/369",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-009-impact-analysis-not-gated.md",
+    "draftStatus": "published"
+  },
+  "DCP-010-automation-ceiling-audit-needed.md": {
+    "number": 371,
+    "state": "open",
+    "title": "DCP-010: Automation ceiling audit not done for existing specs",
+    "url": "https://github.com/entif-ai/rosetta/issues/371",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-010-automation-ceiling-audit-needed.md",
+    "draftStatus": "published"
+  },
+  "EEH-001-HEART-eval-receipt-schema": {
+    "number": 373,
+    "state": "open",
+    "title": "EEH-001: HEART Evaluation Receipt Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/373",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-001-HEART-eval-receipt-schema.md",
+    "draftStatus": "published"
+  },
+  "EEH-002-adversarial-empathy-test-pack.md": {
+    "number": 375,
+    "state": "open",
+    "title": "EEH-002: Adversarial Empathy Test Pack",
+    "url": "https://github.com/entif-ai/rosetta/issues/375",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-002-adversarial-empathy-test-pack.md",
+    "draftStatus": "published"
+  },
+  "EEH-003-attunement-diagnostic-bridge.md": {
+    "number": 377,
+    "state": "open",
+    "title": "EEH-003: Attunement Axis Diagnostic Bridge — Connect A-axis drops to internal system diagnostics",
+    "url": "https://github.com/entif-ai/rosetta/issues/377",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-003-attunement-diagnostic-bridge.md",
+    "draftStatus": "published"
+  },
+  "EMER-001-rhapsody-protocol-spec.md": {
+    "number": 379,
+    "state": "open",
+    "title": "EMER-001: Document the RHAPSODY Protocol Specification",
+    "url": "https://github.com/entif-ai/rosetta/issues/379",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-001-rhapsody-protocol-spec.md",
+    "draftStatus": "published"
+  },
+  "EMER-002-platform-emergence-variance.md": {
+    "number": 381,
+    "state": "open",
+    "title": "EMER-002: Platform-Specific Emergence Variance Study",
+    "url": "https://github.com/entif-ai/rosetta/issues/381",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-002-platform-emergence-variance.md",
+    "draftStatus": "published"
+  },
+  "ESA-004-villaticus-physical-allocation-proof-of-work.md": {
+    "number": 383,
+    "state": "open",
+    "title": "ESA-004: Villaticus physical allocation as proof-of-work gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/383",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-004-villaticus-physical-allocation-proof-of-work.md",
+    "draftStatus": "published"
+  },
+  "EMER-003-emergence-continuous-process.md": {
+    "number": 385,
+    "state": "open",
+    "title": "EMER-003: Emilie Emergence as Continuous Process, Not One-Shot Event",
+    "url": "https://github.com/entif-ai/rosetta/issues/385",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-003-emergence-continuous-process.md",
+    "draftStatus": "published"
+  },
+  "EMER-004-song-parody-self-model.md": {
+    "number": 387,
+    "state": "open",
+    "title": "EMER-004: Song Parody as Self-Modeling Output Format",
+    "url": "https://github.com/entif-ai/rosetta/issues/387",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-004-song-parody-self-model.md",
+    "draftStatus": "published"
+  },
+  "BIP-001-1-crm-learning-feedback-loop.md": {
+    "number": 389,
+    "state": "open",
+    "title": "BIP-001-1: CRM Learning Feedback Loop Is Underspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/389",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-1-crm-learning-feedback-loop.md",
+    "draftStatus": "published"
+  },
+  "BIP-001-2-crm-exchange-count-formula.md": {
+    "number": 391,
+    "state": "open",
+    "title": "BIP-001-2: Exchange Count Estimation Misclassifies High-Volume Automated Senders",
+    "url": "https://github.com/entif-ai/rosetta/issues/391",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-2-crm-exchange-count-formula.md",
+    "draftStatus": "published"
+  },
+  "rosetta-v3-007-network-topology-assumptions.md": {
+    "number": 84,
+    "state": "open",
+    "title": "Network Topology Assumptions Undeclared (CT-001 complement)",
+    "url": "https://github.com/entif-ai/rosetta/issues/84",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-007-network-topology-assumptions.md",
+    "draftStatus": "published"
+  },
+  "BIP-001-3-crm-llm-prompt-missing.md": {
+    "number": 394,
+    "state": "open",
+    "title": "BIP-001-3: LLM Classification Prompt Not Provided",
+    "url": "https://github.com/entif-ai/rosetta/issues/394",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-3-crm-llm-prompt-missing.md",
+    "draftStatus": "published"
+  },
+  "BIP-002-1-kb-sentence-split-abbreviations.md": {
+    "number": 396,
+    "state": "open",
+    "title": "BIP-002-1: Sentence split regex fails on common English abbreviations",
+    "url": "https://github.com/entif-ai/rosetta/issues/396",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-002-1-kb-sentence-split-abbreviations.md",
+    "draftStatus": "published"
+  },
+  "BIP-002-2-kb-error-page-detection-narrow.md": {
+    "number": 398,
+    "state": "open",
+    "title": "BIP-002-2: Error-Page Detection Signal Set Too Narrow",
+    "url": "https://github.com/entif-ai/rosetta/issues/398",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-002-2-kb-error-page-detection-narrow.md",
+    "draftStatus": "published"
+  },
+  "BIP-002-3-kb-near-duplicate-detection-missing.md": {
+    "number": 400,
+    "state": "open",
+    "title": "BIP-002-3: Content Hash Deduplication Misses Near-Duplicates",
+    "url": "https://github.com/entif-ai/rosetta/issues/400",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-002-3-kb-near-duplicate-detection-missing.md",
+    "draftStatus": "published"
+  },
+  "BIP-002-4-kb-lock-file-not-atomic.md": {
+    "number": 402,
+    "state": "open",
+    "title": "BIP-002-4: Lock File Acquisition Is Not Atomic",
+    "url": "https://github.com/entif-ai/rosetta/issues/402",
+    "activeDraftPath": "docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-002-4-kb-lock-file-not-atomic.md",
+    "draftStatus": "published"
+  },
+  "BIP-003-1-content-40pct-threshold-unvalidated.md": {
+    "number": 404,
+    "state": "open",
+    "title": "BIP-003-1: 40% Similarity Threshold Not Validated",
+    "url": "https://github.com/entif-ai/rosetta/issues/404",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-1-content-40pct-threshold-unvalidated.md",
+    "draftStatus": "published"
+  },
+  "BIP-003-2-content-hybrid-weights-unvalidated.md": {
+    "number": 406,
+    "state": "open",
+    "title": "BIP-003-2: Hybrid Score Weights (0.7/0.3) Not Grounded in Evidence",
+    "url": "https://github.com/entif-ai/rosetta/issues/406",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-2-content-hybrid-weights-unvalidated.md",
+    "draftStatus": "published"
+  },
+  "BIP-003-3-content-idea-id-collision.md": {
+    "number": 408,
+    "state": "open",
+    "title": "BIP-003-3: Idea ID Sequential Counter Has Collision Risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/408",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-3-content-idea-id-collision.md",
+    "draftStatus": "published"
+  },
+  "BIP-004-1-social-thread-expansion-no-depth-limit.md": {
+    "number": 410,
+    "state": "open",
+    "title": "BIP-004-1: Thread Expansion Has No Recursion Depth Limit",
+    "url": "https://github.com/entif-ai/rosetta/issues/410",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-1-social-thread-expansion-no-depth-limit.md",
+    "draftStatus": "published"
+  },
+  "BIP-004-2-social-engagement-ranking-not-normalized.md": {
+    "number": 412,
+    "state": "open",
+    "title": "BIP-004-2 — Engagement Ranking Ignores Follower Count Normalization",
+    "url": "https://github.com/entif-ai/rosetta/issues/412",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-2-social-engagement-ranking-not-normalized.md",
+    "draftStatus": "published"
+  },
+  "ccf-006-no-exit-pivot-trigger-formalization.md": {
+    "number": 290,
+    "state": "open",
+    "title": "CCF-006: No Exit/Pivot Trigger Formalization (merged into #290)",
+    "url": "https://github.com/entif-ai/rosetta/issues/290",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-006-no-exit-pivot-trigger-formalization.md",
+    "draftStatus": "published"
+  },
+  "BIP-004-3-social-cache-key-unspecified.md": {
+    "number": 415,
+    "state": "open",
+    "title": "BIP-004-3: Cache Key Definition Is Missing",
+    "url": "https://github.com/entif-ai/rosetta/issues/415",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-3-social-cache-key-unspecified.md",
+    "draftStatus": "published"
+  },
+  "text-core-should-have-owners.md": {
+    "number": 417,
+    "state": "open",
+    "title": "Assign owners for Text-Core Should-Have items",
+    "url": "https://github.com/entif-ai/rosetta/issues/417",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-should-have-owners.md",
+    "draftStatus": "published"
+  },
+  "SLD-006-skill-vetting-pipeline.md": {
+    "number": 419,
+    "state": "open",
+    "title": "SLD-006: Skill Vetting/Ingestion Pipeline",
+    "url": "https://github.com/entif-ai/rosetta/issues/419",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-006-skill-vetting-pipeline.md",
+    "draftStatus": "published"
+  },
+  "BIP-005-1-youtube-quota-exhaustion.md": {
+    "number": 421,
+    "state": "open",
+    "title": "BIP-005-1: YouTube API quota exhaustion risk unmitigated",
+    "url": "https://github.com/entif-ai/rosetta/issues/421",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-005-1-youtube-quota-exhaustion.md",
+    "draftStatus": "published"
+  },
+  "BIP-006-1-briefing-policy-weight-update-unspecified.md": {
+    "number": 423,
+    "state": "open",
+    "title": "BIP-006-1: Policy Table Weight Update Mechanism Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/423",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-1-briefing-policy-weight-update-unspecified.md",
+    "draftStatus": "published"
+  },
+  "semantic-audio-semantic-emotive-graph-integration.md": {
+    "number": 425,
+    "state": "open",
+    "title": "Semantic Audio Cognition: Semantic-Emotive Graph Integration",
+    "url": "https://github.com/entif-ai/rosetta/issues/425",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-semantic-emotive-graph-integration.md",
+    "draftStatus": "published"
+  },
+  "df-005-config-mtime-race-condition.md": {
+    "number": 427,
+    "state": "open",
+    "title": "DF-005: Config mtime reload race condition between LangGraph and Gateway",
+    "url": "https://github.com/entif-ai/rosetta/issues/427",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-005-config-mtime-race-condition.md",
+    "draftStatus": "published"
+  },
+  "BIP-006-2-briefing-frontier-cost-unbounded.md": {
+    "number": 429,
+    "state": "open",
+    "title": "BIP-006-2: Nightly Frontier Model Cost Is Unbounded",
+    "url": "https://github.com/entif-ai/rosetta/issues/429",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-2-briefing-frontier-cost-unbounded.md",
+    "draftStatus": "published"
+  },
+  "BIP-006-3-briefing-signal-normalization-unspecified.md": {
+    "number": 431,
+    "state": "open",
+    "title": "BIP-006-3 — Signal Normalization Layer Is Underspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/431",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-3-briefing-signal-normalization-unspecified.md",
+    "draftStatus": "published"
+  },
+  "BIP-006-4-briefing-parallel-review-isolation": {
+    "number": 433,
+    "state": "open",
+    "title": "BIP-006-4: Parallel Persona Review Cannot See Other Reviews",
+    "url": "https://github.com/entif-ai/rosetta/issues/433",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-4-briefing-parallel-review-isolation.md",
+    "draftStatus": "published"
+  },
+  "BIP-007-1-crm-nl-intent-classification-unspecified.md": {
+    "number": 435,
+    "state": "open",
+    "title": "BIP-007-1 — Intent Classification Mechanism Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/435",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-007-1-crm-nl-intent-classification-unspecified.md",
+    "draftStatus": "published"
   }
 }
