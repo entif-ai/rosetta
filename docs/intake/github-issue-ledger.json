@@ -2698,5 +2698,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-003-skos-semt-archimate-stdpacks.md",
     "draftStatus": "published"
+  },
+  "TXS-004-schema-pack-artifact.md": {
+    "number": 680,
+    "state": "open",
+    "title": "TXS-004: Rosetta Schema Pack (ROCK-3010) Machine-Readable Artifact",
+    "url": "https://github.com/entif-ai/rosetta/issues/680",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-004-schema-pack-artifact.md",
+    "draftStatus": "published"
   }
 }

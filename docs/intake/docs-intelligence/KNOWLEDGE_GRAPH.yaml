@@ -3295,6 +3295,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/678
   status: active
+- id: TXS-004-schema-pack-artifact
+  name: Schema Pack Artifact (ROCK-3010)
+  introduced_by: docs/intake/issue-drafts/TXS-004-schema-pack-artifact.md
+  introduced_at: '2026-04-26'
+  definition: Normative machine-readable artifact bundle (JSON Schemas for all tile
+    types, SHACL profile shapes, RDF Turtle ontology) for Rosetta implementations,
+    per ROCK-3010.
+  referenced_by:
+  - https://github.com/atif-ai/rosetta/issues/680
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
