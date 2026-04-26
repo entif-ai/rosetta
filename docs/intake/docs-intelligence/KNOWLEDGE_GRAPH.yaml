@@ -3172,6 +3172,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/659
   status: active
+- id: TB-003-align-sim-stress-tests
+  name: ALIGN-SIM Semantic Robustness Stress Test Suite
+  introduced_by: docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md
+  introduced_at: '2026-04-26'
+  definition: "Five-criterion semantic embedding stress test gate (synonym, antonym,\
+    \ paraphrase, word-order, distractor) requiring \u22654/5 pass rate for model\
+    \ promotion."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/661
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
