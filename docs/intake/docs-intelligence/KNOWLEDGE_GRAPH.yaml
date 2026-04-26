@@ -2078,6 +2078,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/464
   status: active
+- id: bip-008-2-humanization-validation
+  name: Humanization Quality Validation Methodology
+  introduced_by: docs/intake/issue-drafts/BIP-008-2-humanize-no-ground-truth-validation.md
+  introduced_at: '2026-04-26'
+  definition: "Methodology to evaluate AI humanization quality using before/after\
+    \ AI detection scores, perplexity checks, and human preference pilots \u2014 addresses\
+    \ the lack of ground-truth validation in BIP-008."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/466
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
