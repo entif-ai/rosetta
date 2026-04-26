@@ -2023,5 +2023,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-006-synthesis-engine.md",
     "draftStatus": "published"
+  },
+  "HF-007-daily-top-shelf-output-format.md": {
+    "number": 540,
+    "state": "open",
+    "title": "HF-007: Implement daily top shelf action-shaped output format (3/2/1/1)",
+    "url": "https://github.com/entif-ai/rosetta/issues/540",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-007-daily-top-shelf-output-format.md",
+    "draftStatus": "published"
   }
 }

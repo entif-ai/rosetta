@@ -2491,6 +2491,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/538
   status: active
+- id: HF-007-daily-top-shelf-output-format
+  name: Daily Top Shelf (3/2/1/1) Action-Shaped Output Format
+  introduced_by: docs/intake/issue-drafts/HF-007-daily-top-shelf-output-format.md
+  introduced_at: '2026-04-26'
+  definition: An action-shaped daily digest format with 3 items to act on, 2 to store
+    for later, 1 design decision change, and 1 risk to track. Rejects link-list output
+    in favor of prioritised, actionable items with "why" context.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/540
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
