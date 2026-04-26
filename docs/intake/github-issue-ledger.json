@@ -898,5 +898,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-credibility-scoring-rubric.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-evidence-ledger-schema.md": {
+    "number": 288,
+    "state": "open",
+    "title": "CCF: Implement Evidence Ledger Artifact Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/288",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-evidence-ledger-schema.md",
+    "draftStatus": "published"
   }
 }
