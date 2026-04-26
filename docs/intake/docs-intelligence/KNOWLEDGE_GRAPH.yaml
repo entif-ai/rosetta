@@ -2017,6 +2017,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/453
   status: active
+- id: APC-008
+  name: Multi-Provider Composition Provenance Spine
+  introduced_by: docs/intake/issue-drafts/APC-008-multi-provider-composition-provenance.md
+  introduced_at: '2026-04-26'
+  definition: "Provenance tracking for multi-provider composed answers \u2014 hierarchical\
+    \ receipts that track sub-query receipts, composition logic, normalization, and\
+    \ fan-out dispatch distinct from single-provider provenance."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/455
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
