@@ -3132,6 +3132,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/651
   status: active
+- id: SLD-008-skill-safety-posture
+  name: "Skill Safety Posture \u2014 Guard Enforcement"
+  introduced_by: docs/intake/issue-drafts/SLD-008-skill-safety-posture.md
+  introduced_at: '2026-04-26'
+  definition: Guard enforcement of skill metadata (risk_class, tool_scopes, budget)
+    at every execution boundary. High-risk skills require sandboxed dry-run before
+    real execution. Skills are plan generators plus constraints; execution is always
+    Guard-adjudicated.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/653
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
