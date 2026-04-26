@@ -1168,5 +1168,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-005-five-forges-unimplemented.md",
     "draftStatus": "published"
+  },
+  "DCP-006-coherence-scoring-unimplemented.md": {
+    "number": 359,
+    "state": "open",
+    "title": "DCP-006: Coherence scoring not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/359",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-006-coherence-scoring-unimplemented.md",
+    "draftStatus": "published"
   }
 }

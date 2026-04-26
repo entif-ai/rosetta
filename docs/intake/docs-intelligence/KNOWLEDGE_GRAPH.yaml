@@ -1528,6 +1528,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/357
   status: active
+- id: DCP-006-coherence-scoring
+  name: Coherence scoring
+  introduced_by: docs/intake/issue-drafts/DCP-006-coherence-scoring-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: Automated metric combining InterfaceSpec compliance percentage and test
+    coverage percentage to measure system coherence. Surfaces in Reporter Forge output.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/359
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
