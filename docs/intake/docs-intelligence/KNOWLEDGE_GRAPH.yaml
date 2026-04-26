@@ -2046,6 +2046,18 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/459
   status: active
+- id: psd-002-skill-broker
+  name: Skill Broker Pipeline
+  introduced_by: docs/intake/issue-drafts/PSD-002-implement-skill-broker-pipeline.md
+  introduced_at: '2026-04-26'
+  definition: "A bouncer-with-clipboard component that, given a need (user ask + task\
+    \ context), returns a ranked shortlist of 3\u20137 relevant skills with confidence\
+    \ scores, cost bands, and risk bands. Runs a 5-stage pipeline: Hard Filters \u2192\
+    \ Lexical+Embedding Retrieval \u2192 Graph Boost+Penalties \u2192 Shortlist+Explain\
+    \ \u2192 Escalation."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/461
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
