@@ -1936,6 +1936,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/437
   status: active
+- id: APC-001-openai-no-shareable-cache-id
+  name: OpenAI Prompt Caching Has No Shareable Cache ID Primitive
+  introduced_by: docs/intake/issue-drafts/APC-001-openai-no-shareable-cache-id.md
+  introduced_at: '2026-04-26'
+  definition: "OpenAI prompt caching does not expose a shareable cache ID \u2014 it\
+    \ is automatic, org-scoped, and prefix-match only. No portable cache handle exists."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/439
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3129,3 +3138,4 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/435
   status: published
   type: spec-gap
+
