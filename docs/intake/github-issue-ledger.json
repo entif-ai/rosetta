@@ -2554,5 +2554,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-003-skill-broker-middleware.md",
     "draftStatus": "published"
+  },
+  "SLD-005-hot-cold-skill-library.md": {
+    "number": 648,
+    "state": "open",
+    "title": "SLD-005: Hot Skills Pack vs Cold Library \u2014 Two-Level Skill Registry",
+    "url": "https://github.com/entif-ai/rosetta/issues/648",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-005-hot-cold-skill-library.md",
+    "draftStatus": "published"
   }
 }

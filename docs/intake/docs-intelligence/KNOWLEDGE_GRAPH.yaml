@@ -3101,6 +3101,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/461
   status: active
+- id: SLD-005
+  name: Hot Skills Pack vs Cold Library (Two-Level Skill Registry)
+  introduced_by: docs/intake/issue-drafts/SLD-005-hot-cold-skill-library.md
+  introduced_at: '2026-04-25'
+  definition: "Two-level skill registry: Hot Skills Pack (\u226450 always-loaded skills\
+    \ per agent template) + Cold Library (unbounded broker-discovered skills never\
+    \ preloaded). Key to scaling to 100k+ skills without context-window blowup."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/648
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
