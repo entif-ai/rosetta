@@ -1795,6 +1795,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/410
   status: active
+- id: BIP-004-2-social-engagement-ranking-not-normalized
+  name: Social Engagement Ranking Without Follower Count Normalization
+  introduced_by: docs/intake/issue-drafts/BIP-004-2-social-engagement-ranking-not-normalized.md
+  introduced_at: '2026-04-26'
+  definition: Social media research ranking uses raw engagement (likes+retweets+replies)
+    without normalizing for follower count, biasing toward high-follower accounts
+    and missing relative resonance signals.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/412
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
