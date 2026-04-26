@@ -1321,5 +1321,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-2-crm-exchange-count-formula.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-007-network-topology-assumptions.md": {
+    "number": 84,
+    "state": "open",
+    "title": "Network Topology Assumptions Undeclared (CT-001 complement)",
+    "url": "https://github.com/entif-ai/rosetta/issues/84",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-007-network-topology-assumptions.md",
+    "draftStatus": "published"
   }
 }
