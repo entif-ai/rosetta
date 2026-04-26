@@ -3532,6 +3532,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/722
   status: active
+- id: browser-agent-acceptance
+  name: Browser Agent (Critic)
+  introduced_by: docs/intake/issue-drafts/browser-agent-acceptance.md
+  introduced_at: '2026-04-26'
+  definition: 'Browser Agent: verifies acceptance checks on living UI; emits evidence
+    (screenshots, HAR, verdicts); never writes code. Closes the evaluation loop for
+    Ada orchestration.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/724
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

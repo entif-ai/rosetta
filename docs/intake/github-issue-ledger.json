@@ -2914,5 +2914,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/be-001-receipt-law-not-explicit.md",
     "draftStatus": "published"
+  },
+  "browser-agent-acceptance.md": {
+    "number": 724,
+    "state": "open",
+    "title": "Implement Browser Agent (Critic) for acceptance verification",
+    "url": "https://github.com/entif-ai/rosetta/issues/724",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/browser-agent-acceptance.md",
+    "draftStatus": "published"
   }
 }
