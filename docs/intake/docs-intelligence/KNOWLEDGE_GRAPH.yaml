@@ -2088,6 +2088,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/466
   status: active
+- id: BIP-010-1
+  name: CRM Cross-Reference Lookup Strategy (BIP-010-1)
+  introduced_by: docs/intake/issue-drafts/BIP-010-1-task-crm-crossref-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: BIP-010 specifies CRM cross-reference for meeting action item enrichment
+    but does not define the lookup method (exact email match, fuzzy name match, or
+    semantic), similarity threshold, disambiguation strategy, or no-match behavior.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/468
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

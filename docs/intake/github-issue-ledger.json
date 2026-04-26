@@ -1672,5 +1672,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-008-2-humanize-no-ground-truth-validation.md",
     "draftStatus": "published"
+  },
+  "BIP-010-1-task-crm-crossref-unspecified.md": {
+    "number": 468,
+    "state": "open",
+    "title": "BIP-010-1 \u2014 CRM Cross-Reference Lookup Strategy Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/468",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-010-1-task-crm-crossref-unspecified.md",
+    "draftStatus": "published"
   }
 }
