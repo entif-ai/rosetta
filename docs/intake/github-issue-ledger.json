@@ -2806,5 +2806,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-007-rock-3005-iam-profile.md",
     "draftStatus": "published"
+  },
+  "YAAC-009-message-bus-mailroom-architecture.md": {
+    "number": 701,
+    "state": "open",
+    "title": "YAAC-009: Message Bus Mailroom Gatekeeping Architecture",
+    "url": "https://github.com/entif-ai/rosetta/issues/701",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-009-message-bus-mailroom-architecture.md",
+    "draftStatus": "published"
   }
 }
