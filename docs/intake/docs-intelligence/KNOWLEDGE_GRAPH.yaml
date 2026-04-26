@@ -2239,6 +2239,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/490
   status: active
+- id: EML-011
+  name: MegaTrain Training Economics
+  introduced_by: docs/intake/issue-drafts/EML-011-megatrain-training-economics.md
+  introduced_at: '2026-04-26'
+  definition: MegaTrain (arXiv:2604.05091) shows host-memory-centric training enables
+    120B single-node adaptation, shifting the LLM scaling boundary from VRAM to host
+    memory orchestration.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/492
+  - https://github.com/entif-ai/rosetta/issues/490#issuecomment-4321941295
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

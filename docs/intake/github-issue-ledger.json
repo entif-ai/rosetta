@@ -1807,5 +1807,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-010-rosetta-native-model-training-requirements.md",
     "draftStatus": "published"
+  },
+  "EML-011-megatrain-training-economics.md": {
+    "number": 492,
+    "state": "open",
+    "title": "EML-011: MegaTrain Implications for Training Economics",
+    "url": "https://github.com/entif-ai/rosetta/issues/492",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-011-megatrain-training-economics.md",
+    "draftStatus": "published"
   }
 }
