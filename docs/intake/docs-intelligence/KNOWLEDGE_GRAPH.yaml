@@ -1488,6 +1488,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/349
   status: active
+- id: DCP-002-orchestrator-core
+  name: Orchestrator Core
+  introduced_by: docs/intake/issue-drafts/DCP-002-orchestrator-core-not-built.md
+  introduced_at: '2026-04-26'
+  definition: "The local Python service that coordinates all forges, manages the task\
+    \ queue, stores the project graph, and exposes CLI/API endpoints. Does not call\
+    \ models directly \u2014 uses a Model Broker."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/351
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

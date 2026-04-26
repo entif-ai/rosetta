@@ -1132,5 +1132,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-001-json-schemas-undefined.md",
     "draftStatus": "published"
+  },
+  "DCP-002-orchestrator-core-not-built.md": {
+    "number": 351,
+    "state": "open",
+    "title": "DCP-002: Orchestrator core not built",
+    "url": "https://github.com/entif-ai/rosetta/issues/351",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-002-orchestrator-core-not-built.md",
+    "draftStatus": "published"
   }
 }
