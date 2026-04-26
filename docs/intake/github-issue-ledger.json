@@ -1843,5 +1843,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-013-semantic-efficiency-sapir-whorf.md",
     "draftStatus": "published"
+  },
+  "EML-014-compute-cost-trajectory-risk.md": {
+    "number": 500,
+    "state": "open",
+    "title": "EML-014: Compute Cost Trajectory Risk for Brute-Force Maximalism Strategies",
+    "url": "https://github.com/entif-ai/rosetta/issues/500",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-014-compute-cost-trajectory-risk.md",
+    "draftStatus": "published"
   }
 }
