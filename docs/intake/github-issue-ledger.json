@@ -2428,5 +2428,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-ARCH-async-subcall-pattern-mcp-contract.md",
     "draftStatus": "published"
+  },
+  "RLM-003-SEC-GuardLayer-rlm-repl-governance.md": {
+    "number": 624,
+    "state": "open",
+    "title": "RLM-003-SEC: GuardLayer Policy Instantiation for RLM REPL",
+    "url": "https://github.com/entif-ai/rosetta/issues/624",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-SEC-GuardLayer-rlm-repl-governance.md",
+    "draftStatus": "published"
   }
 }

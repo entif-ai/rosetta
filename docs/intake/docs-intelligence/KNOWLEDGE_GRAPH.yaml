@@ -2959,6 +2959,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/612
   status: active
+- id: RLM-003-SEC-GuardLayer-rlm-repl-governance
+  name: GuardLayer Policy Instantiation for RLM REPL
+  introduced_by: docs/intake/issue-drafts/RLM-003-SEC-GuardLayer-rlm-repl-governance.md
+  introduced_at: '2026-04-26'
+  definition: Security governance requiring RLM REPL to operate as untrusted code
+    execution behind Guard policy with network deny-by-default, filesystem allowlist,
+    resource quotas, and command mode for side effects.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/624
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
