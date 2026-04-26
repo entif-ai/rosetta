@@ -2311,5 +2311,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-006-jigsaw-vs-monkeys-training-critique.md",
     "draftStatus": "published"
+  },
+  "REE-007-ithkuil-lexeme-initialization.md": {
+    "number": 602,
+    "state": "open",
+    "title": "REE-007: Ithkuil Lexeme Curriculum as Structured Initialization Seed",
+    "url": "https://github.com/entif-ai/rosetta/issues/602",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-007-ithkuil-lexeme-initialization.md",
+    "draftStatus": "published"
   }
 }
