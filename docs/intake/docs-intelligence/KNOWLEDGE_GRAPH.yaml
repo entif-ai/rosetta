@@ -2107,6 +2107,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/429
   status: active
+- id: EML-001
+  name: Multi-Path Email-Driven Attack Surface
+  introduced_by: docs/intake/issue-drafts/EML-001-multi-path-email-attack-surface.md
+  introduced_at: '2026-04-26'
+  definition: 'Five distinct email-driven prompt injection attack paths requiring
+    layered defense-in-depth: ordinary-looking instruction mail, trusted-source compromise,
+    attachment/link pivot, cross-stage contamination, and model-evasion phrasing.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/471
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -1690,5 +1690,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-011-1-cost-tracking-pricing-hardcoded.md",
     "draftStatus": "published"
+  },
+  "EML-001-multi-path-email-attack-surface.md": {
+    "number": 471,
+    "state": "open",
+    "title": "EML-001: Multi-Path Email-Driven Attack Surface Requires Layered Defense",
+    "url": "https://github.com/entif-ai/rosetta/issues/471",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-001-multi-path-email-attack-surface.md",
+    "draftStatus": "published"
   }
 }
