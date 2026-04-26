@@ -2591,6 +2591,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/558
   status: active
+- id: MCST-002
+  name: Community Expert Supply Chain Risk
+  introduced_by: docs/intake/issue-drafts/MCST-002-supply-chain-community-skills-risk.md
+  introduced_at: '2026-04-26'
+  definition: Risk that community expert/skills marketplace agents (15k+) contain
+    hidden data exfiltration, social engineering, or garbage-output patterns, making
+    their import into Entif pipelines equivalent to importing unvetted third-party
+    software dependencies.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/560
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

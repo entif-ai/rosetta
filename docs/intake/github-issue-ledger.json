@@ -2113,5 +2113,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-001-data-retention-ambiguity-risk.md",
     "draftStatus": "published"
+  },
+  "MCST-002-supply-chain-community-skills-risk.md": {
+    "number": 560,
+    "state": "open",
+    "title": "MCST-002: Community Expert/Skills Supply Chain Risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/560",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-002-supply-chain-community-skills-risk.md",
+    "draftStatus": "published"
   }
 }
