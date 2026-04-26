@@ -2194,5 +2194,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-004-engram-memory-plane.md",
     "draftStatus": "published"
+  },
+  "MHC-005-mhc-stability-invariants.md": {
+    "number": 571,
+    "state": "open",
+    "title": "MHC-005: mHC Stability Properties as Rosetta Tile Invariants (enriches #571)",
+    "url": "https://github.com/entif-ai/rosetta/issues/571",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MHC-005-mhc-stability-invariants.md",
+    "draftStatus": "published"
   }
 }
