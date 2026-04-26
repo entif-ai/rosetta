@@ -1204,5 +1204,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-007-self-building-not-planned.md",
     "draftStatus": "published"
+  },
+  "DCP-008-coderag-unimplemented.md": {
+    "number": 367,
+    "state": "open",
+    "title": "DCP-008: CodeRAG not implemented (pattern injection from existing repos)",
+    "url": "https://github.com/entif-ai/rosetta/issues/367",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-008-coderag-unimplemented.md",
+    "draftStatus": "published"
   }
 }

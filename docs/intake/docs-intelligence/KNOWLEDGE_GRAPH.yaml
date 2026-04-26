@@ -1567,6 +1567,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/365
   status: active
+- id: DCP-008-coderag
+  name: CodeRAG (Pattern Injection)
+  introduced_by: docs/intake/issue-drafts/DCP-008-coderag-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: CodeRAG injects real patterns from existing repos into code generation
+    to prevent hallucinated boilerplate, pulling patterns only when useful to fill
+    underspecified implementation details.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/367
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
