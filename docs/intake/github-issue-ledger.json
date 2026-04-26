@@ -1960,5 +1960,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-004-mr-tech-lead-acrostic-publication.md",
     "draftStatus": "published"
+  },
+  "HF-001-huggingface-daily-trending-papers-sweep.md": {
+    "number": 526,
+    "state": "open",
+    "title": "HF-001: Implement HuggingFace daily trending-papers sweep pipeline",
+    "url": "https://github.com/entif-ai/rosetta/issues/526",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-001-huggingface-daily-trending-papers-sweep.md",
+    "draftStatus": "published"
   }
 }

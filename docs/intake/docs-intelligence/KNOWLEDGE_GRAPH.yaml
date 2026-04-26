@@ -2419,6 +2419,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/524
   status: active
+- id: HF-001
+  name: HuggingFace Daily Trending Papers Sweep Pipeline
+  introduced_by: docs/intake/issue-drafts/HF-001-huggingface-daily-trending-papers-sweep.md
+  introduced_at: '2026-04-26'
+  definition: Daily automated pipeline that pulls HuggingFace trending papers, extracts
+    metadata, classifies by subject/sphere, scores Entif/Rosetta relevance, stores
+    all records append-only, and escalates above-threshold papers for full ingestion
+    and backlog ticketing.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/526
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
