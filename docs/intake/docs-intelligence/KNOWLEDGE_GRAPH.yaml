@@ -2315,6 +2315,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/504
   status: active
+- id: source-substrate-missing-protocol-domain
+  name: Source Substrate Protocol Domain
+  introduced_by: docs/intake/issue-drafts/source-substrate-missing-protocol-domain.md
+  introduced_at: '2026-04-26'
+  definition: A first-class protocol domain for source handling in Rosetta, replacing
+    undifferentiated source fields with a multi-lane provenance model, 15-axis trust
+    scoring, and tiered ingestion priority.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/506
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2965,6 +2975,8 @@ issue_drafts_inventory:
   issue_id: source-substrate-missing-protocol-domain
   priority: P1
   type: architecture
+  url: https://github.com/entif-ai/rosetta/issues/506
+  status: published
 - path: docs/intake/issue-drafts/anti-personhood-correlation-governance-gap.md
   source_doc: docs/chats/20260412 - Chat GPT - Ontologies and Dataset Repositories.md
   source_pr: 51
