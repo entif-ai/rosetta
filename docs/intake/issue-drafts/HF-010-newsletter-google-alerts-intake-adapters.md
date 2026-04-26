@@ -112,3 +112,4 @@ Crates is subscribed to multiple newsletters (including Matt Wolfe's Future Tool
 - "Tips from humans" is the most informal source — these may come via email, Slack, Telegram, or other channels. Each tip should be treated as a potential IntakeEnvelope even if manually forwarded.
 - Deduplication is critical for newsletter intake: the same article may appear in multiple newsletters or in the same newsletter multiple times (re-sends). Hash of title+author+date+domain must catch this.
 - "Saved recurring search queries" suggests Google Alerts or saved search RSS feeds — these should be treated as a separate source type (google-search).
+- "Saved recurring search queries" suggests Google Alerts or saved search RSS feeds — these should be treated as a separate source type (google-search).

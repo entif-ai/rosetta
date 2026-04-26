@@ -1932,6 +1932,91 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-huggingface-research-integration.md",
+      "sourcePath": "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "research-pipeline",
+        "huggingface",
+        "daily-sweep",
+        "entif",
+        "rosetta",
+        "research",
+        "daily-automation",
+        "storage-schema",
+        "append-only",
+        "audit-trail",
+        "rosetta-spine",
+        "escalation-rule",
+        "backlog-ticketing",
+        "threshold",
+        "escalation",
+        "minimum-fields",
+        "receipts-first",
+        "receipts",
+        "content-intake",
+        "magazine",
+        "access-methods",
+        "drm",
+        "magazines",
+        "digital-access",
+        "wired",
+        "popmech",
+        "2600",
+        "newsletter",
+        "email",
+        "rss",
+        "newsletters",
+        "email-ingest",
+        "future-tools",
+        "matt-wolfe",
+        "intake-envelope",
+        "normalization",
+        "schema",
+        "deduplication",
+        "url-canonicalization",
+        "triage",
+        "classification",
+        "tagging",
+        "spheres",
+        "scoring",
+        "relevance-score",
+        "score-dimensions",
+        "relevance",
+        "triage-routing",
+        "archive-only",
+        "queue",
+        "deep-ingest",
+        "full-text",
+        "chunking",
+        "embedding",
+        "synthesis",
+        "entif-mapping",
+        "rosetta-mapping",
+        "design-doc",
+        "backlog-generator",
+        "ticketing",
+        "cross-linker",
+        "knowledge-graph",
+        "output-format",
+        "daily-digest",
+        "action-shape",
+        "discord",
+        "bulk-ingest",
+        "multi-channel",
+        "venture-routing",
+        "discord-item-schema",
+        "manual-tagging",
+        "triage-boost",
+        "google-alerts",
+        "intake-sources",
+        "provenance",
+        "audit",
+        "graceful-degradation",
+        "pending-ingest"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-latent-space-cartography.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-latent-space-cartography.md",
       "title": "Extraction: Latent Space Cartography",
@@ -3674,6 +3759,60 @@
       "signature": "cause-harness-mismatch-platform-root"
     },
     {
+      "path": "docs/intake/issue-drafts/HF-001-huggingface-daily-trending-papers-sweep.md",
+      "title": "HF-001 — HuggingFace Daily Trending-Papers Sweep Pipeline",
+      "labels": [],
+      "signature": "001-daily-huggingface-papers-pipeline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-002-relevance-scoring-threshold-calibration.md",
+      "title": "HF-002 — Relevance Scoring Threshold and Six-Dimension Score Vector Calibration",
+      "labels": [],
+      "signature": "002-calibration-dimension-relevance-score"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-003-universal-content-intake-envelope-schema.md",
+      "title": "HF-003 — Universal Content Intake Envelope Schema",
+      "labels": [],
+      "signature": "003-content-envelope-intake-schema"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-004-three-tier-triage-routing.md",
+      "title": "HF-004 — Implement Three-Tier Triage Routing",
+      "labels": [],
+      "signature": "004-implement-routing-three-tier"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-005-deep-ingest-pipeline.md",
+      "title": "HF-005 — Deep Ingest Pipeline with Full-Text Fetch, Chunk, Embed, and Structured Output",
+      "labels": [],
+      "signature": "005-chunk-deep-embed-fetch"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-006-synthesis-engine.md",
+      "title": "HF-006 — Synthesis Engine: Entif/Rosetta Mapping, Backlog Generator, Cross-Linker",
+      "labels": [],
+      "signature": "006-backlog-cross-engine-entif"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-007-daily-top-shelf-output-format.md",
+      "title": "HF-007 — Daily Top Shelf Action-Shaped Output Format",
+      "labels": [],
+      "signature": "007-action-daily-format-output"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-008-discord-bulk-ingest-server.md",
+      "title": "HF-008 — Discord Bulk-Ingest Server with Per-Channel Routing",
+      "labels": [],
+      "signature": "008-bulk-channel-discord-ingest"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-009-magazine-feed-adapters.md",
+      "title": "HF-009 — Magazine Feed Adapters (Wired, Popular Mechanics, 2600) with DRM Fallback",
+      "labels": [],
+      "signature": "009-2600-adapters-drm-fallback"
+    },
+    {
       "path": "docs/intake/issue-drafts/HF-010-newsletter-google-alerts-intake-adapters.md",
       "title": "HF-010 — Newsletter and Google Alerts Intake Adapters",
       "labels": [],
@@ -4778,6 +4917,12 @@
     }
   ],
   "concepts": {
+    "2600": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
     "text-core": {
       "documents": [
         "docs/external/acpx.md",
@@ -5773,7 +5918,8 @@
     "escalation": {
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -6060,7 +6206,8 @@
       "documents": [
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md",
@@ -7272,6 +7419,7 @@
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": [
@@ -7365,7 +7513,8 @@
         "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -7817,7 +7966,8 @@
     },
     "audit-trail": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -7827,6 +7977,7 @@
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
@@ -7854,6 +8005,7 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
@@ -10966,7 +11118,8 @@
     "knowledge-graph": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -11046,7 +11199,8 @@
     },
     "classification": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -11439,7 +11593,8 @@
     },
     "scoring": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -11763,7 +11918,8 @@
     "rosetta-spine": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md"
+        "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -12683,6 +12839,7 @@
     "append-only": {
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
@@ -12724,6 +12881,7 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
@@ -14586,7 +14744,8 @@
     },
     "synthesis": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -14863,7 +15022,8 @@
     },
     "normalization": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -14901,6 +15061,387 @@
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+      ],
+      "issueDrafts": []
+    },
+    "research-pipeline": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "huggingface": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "daily-sweep": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/eal-001-trm-kernel-capsule.md",
+        "docs/intake/issue-drafts/eal-002-persona-tiles-tulpamancy.md",
+        "docs/intake/issue-drafts/eal-003-reasoningbank-intrinsic-reward.md"
+      ]
+    },
+    "daily-automation": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "storage-schema": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "escalation-rule": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "backlog-ticketing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "threshold": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "minimum-fields": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "receipts-first": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-intake": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "magazine": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "access-methods": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "drm": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "magazines": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "digital-access": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "wired": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "popmech": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "newsletter": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "email": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+      ],
+      "issueDrafts": []
+    },
+    "rss": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "newsletters": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "email-ingest": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "future-tools": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "matt-wolfe": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "intake-envelope": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "deduplication": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "url-canonicalization": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "triage": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "tagging": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "spheres": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "relevance-score": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "score-dimensions": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "relevance": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
+      ]
+    },
+    "triage-routing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "archive-only": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "queue": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "deep-ingest": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "full-text": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "chunking": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedding": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-mapping": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-mapping": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "design-doc": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "backlog-generator": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "ticketing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-linker": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "output-format": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "daily-digest": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "action-shape": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "discord": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/external/Moltron.md"
+      ],
+      "issueDrafts": []
+    },
+    "bulk-ingest": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-channel": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "venture-routing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "discord-item-schema": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "manual-tagging": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "triage-boost": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "google-alerts": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "intake-sources": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "graceful-degradation": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+      ],
+      "issueDrafts": []
+    },
+    "pending-ingest": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
       "issueDrafts": []
     },
@@ -15423,12 +15964,6 @@
       "issueDrafts": []
     },
     "non-endorsement": {
-      "documents": [
-        "docs/external/Moltron.md"
-      ],
-      "issueDrafts": []
-    },
-    "discord": {
       "documents": [
         "docs/external/Moltron.md"
       ],
@@ -17732,16 +18267,6 @@
       ],
       "issueDrafts": []
     },
-    "entif": {
-      "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/eal-001-trm-kernel-capsule.md",
-        "docs/intake/issue-drafts/eal-002-persona-tiles-tulpamancy.md",
-        "docs/intake/issue-drafts/eal-003-reasoningbank-intrinsic-reward.md"
-      ]
-    },
     "claw-selection": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
@@ -17769,12 +18294,6 @@
       "issueDrafts": []
     },
     "openclaw-market": {
-      "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
-      ],
-      "issueDrafts": []
-    },
-    "email": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
@@ -18859,12 +19378,6 @@
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/swarmkit-design-patterns-entif.md"
-      ]
-    },
-    "relevance": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/swarmkit-relevance-assessment.md"
       ]
     },
     "graph-embeddings": {
