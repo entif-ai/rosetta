@@ -2014,5 +2014,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-005-deep-ingest-pipeline.md",
     "draftStatus": "published"
+  },
+  "HF-006-synthesis-engine.md": {
+    "number": 538,
+    "state": "open",
+    "title": "HF-006: Implement synthesis engine \u2014 Entif/Rosetta mapping, backlog generator, cross-linker",
+    "url": "https://github.com/entif-ai/rosetta/issues/538",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-006-synthesis-engine.md",
+    "draftStatus": "published"
   }
 }
