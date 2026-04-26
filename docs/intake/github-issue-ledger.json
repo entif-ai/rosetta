@@ -1654,5 +1654,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-007-swarm-gnosis-dht-cognitive-tile-network.md",
     "draftStatus": "published"
+  },
+  "APC-011-sell-before-build-gtm-validated.md": {
+    "number": 464,
+    "state": "open",
+    "title": "APC-011: Sell-Before-Build GTM \u2014 Parallelize Market + Build, Lead with Design Partner Offer",
+    "url": "https://github.com/entif-ai/rosetta/issues/464",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-011-sell-before-build-gtm-validated.md",
+    "draftStatus": "published"
   }
 }
