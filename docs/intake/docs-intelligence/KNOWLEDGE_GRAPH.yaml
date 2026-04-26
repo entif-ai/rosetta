@@ -2722,6 +2722,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/583
   status: active
+- id: PSD-005-skill-guard-receipts-enforcement
+  name: Skill Guard + Receipts Enforcement
+  introduced_by: docs/intake/issue-drafts/PSD-005-skill-guard-receipts-enforcement.md
+  introduced_at: '2026-04-26'
+  definition: Enforce deny-by-default Guard gateway for skill execution and mandate
+    receipts for every skill run, ensuring skill selection is advisory not permissive.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/585
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

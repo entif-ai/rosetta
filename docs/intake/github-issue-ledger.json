@@ -2230,5 +2230,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-004-seed-happy-path-skills.md",
     "draftStatus": "published"
+  },
+  "PSD-005-skill-guard-receipts-enforcement": {
+    "number": 585,
+    "state": "open",
+    "title": "PSD-005: Route Skills Through Guard + Receipts Enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/585",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-005-skill-guard-receipts-enforcement.md",
+    "draftStatus": "published"
   }
 }
