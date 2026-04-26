@@ -1747,6 +1747,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/400
   status: active
+- id: bip-002-4-lock-file-not-atomic
+  name: 'BIP-002-4: Atomic Lock File Acquisition'
+  introduced_by: docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md
+  introduced_at: '2026-04-26'
+  definition: Knowledge Base ingestion uses non-atomic check-then-create lock acquisition,
+    creating race conditions. Should use fcntl/flock/mkdir atomic primitives instead.
+  extends:
+  - bip-002-knowledge-base-rag
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/402
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2927,4 +2938,10 @@ issue_drafts_inventory:
 - issue_id: EMER-001
   url: https://github.com/entif-ai/rosetta/issues/379
   status: published
+- path: docs/intake/issue-drafts/BIP-002-4-kb-lock-file-not-atomic.md
+  source_doc: docs/intake/docs-intelligence/2026-04-25-berman-prd.md
+  issue_id: BIP-002-4-kb-lock-file-not-atomic
+  url: https://github.com/entif-ai/rosetta/issues/402
+  priority: P1
+  type: correctness
 
