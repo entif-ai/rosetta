@@ -2683,6 +2683,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/577
   status: active
+- id: MHC-005
+  name: mHC Stability Invariants as Tile Pipeline Constraints
+  introduced_by: docs/intake/issue-drafts/MHC-005-mhc-stability-invariants.md
+  introduced_at: '2026-04-26'
+  definition: "Formal stability properties (spectral norm \u2264 1, closure under\
+    \ composition, Birkhoff polytope convex combination) enforceable as tile-level\
+    \ invariants in Rosetta pipelines."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/571
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
