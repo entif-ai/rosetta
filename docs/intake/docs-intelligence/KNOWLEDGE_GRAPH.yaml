@@ -2281,6 +2281,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/498
   status: active
+- id: EML-014
+  name: Compute Cost Trajectory Risk
+  introduced_by: docs/intake/issue-drafts/EML-014-compute-cost-trajectory-risk.md
+  introduced_at: '2026-04-26'
+  definition: Strategic risk that brute-force compute maximalism (xAI-style million-GPU
+    roadmaps) may be undercut by architectural efficiency gains (Gemma-4-style high
+    intelligence-per-active-parameter models), making planetary-scale compute a losing
+    bet if efficiency compounding outpaces it.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/500
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -3474,4 +3485,7 @@ issue_drafts_inventory:
   url: https://github.com/entif-ai/rosetta/issues/435
   status: published
   type: spec-gap
+- issue_id: EML-014
+  url: https://github.com/entif-ai/rosetta/issues/500
+  status: published
 
