@@ -2163,6 +2163,24 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "title": "Extraction: Progressive-Disclosure Skill System",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
       "title": "Docs Intelligence Extraction",
@@ -2449,6 +2467,12 @@
         "appendix-b",
         "negotiation-protocols"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "title": "Extraction: 20260323 - Chat GPT - Entif Skill Library Design",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
@@ -4182,6 +4206,42 @@
       "signature": "apparent-constitute-constraint-does-evidence"
     },
     {
+      "path": "docs/intake/issue-drafts/PSD-001-implement-skill-registry-v0.md",
+      "title": "PSD-001 — Implement Skill Registry v0",
+      "labels": [],
+      "signature": "001-implement-psd-registry-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-002-implement-skill-broker-pipeline.md",
+      "title": "PSD-002 — Implement Skill Broker Pipeline",
+      "labels": [],
+      "signature": "002-broker-implement-pipeline-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-003-implement-skill-eval-harness.md",
+      "title": "PSD-003 — Implement Eval Harness for Skills",
+      "labels": [],
+      "signature": "003-eval-harness-implement-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-004-seed-happy-path-skills.md",
+      "title": "PSD-004 — Seed Happy-Path Skills",
+      "labels": [],
+      "signature": "004-happy-path-psd-seed"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-005-skill-guard-receipts-enforcement.md",
+      "title": "PSD-005 — Route Skills Through Guard + Receipts",
+      "labels": [],
+      "signature": "005-guard-psd-receipts-route"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-006-formalize-skill-economy-concept.md",
+      "title": "PSD-006 — Formalize \"Skill Economy\" Concept",
+      "labels": [],
+      "signature": "006-concept-economy-formalize-psd"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
@@ -4220,6 +4280,102 @@
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-001-reasoning-efficiency-language-independence.md",
+      "title": "REE-001 — Reasoning Efficiency Is Not Married to English",
+      "labels": [],
+      "signature": "001-efficiency-english-married-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-002-semantic-layer-before-tokenizer.md",
+      "title": "REE-002 — Build Semantic Layer First, Custom Tokenizer Second",
+      "labels": [],
+      "signature": "002-build-custom-first-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-003-lora-qlora-dora-infrastructure.md",
+      "title": "REE-003 — QLoRA/DoRA Infrastructure Clarification for Entif Stack",
+      "labels": [],
+      "signature": "003-clarification-dora-entif-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-004-roma-hardware-qora-accelerator.md",
+      "title": "REE-004 — ROMA Hardware Accelerator for QLoRA Inference",
+      "labels": [],
+      "signature": "004-accelerator-hardware-inference-qlora"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-005-neural-architecture-primer.md",
+      "title": "REE-005 — Neural Network Architecture Primer Completeness",
+      "labels": [],
+      "signature": "005-architecture-completeness-network-neural"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-006-jigsaw-vs-monkeys-training-critique.md",
+      "title": "REE-006 — Jigsaw vs Monkeys: Critique of Brute-Force LLM Training",
+      "labels": [],
+      "signature": "006-brute-critique-force-jigsaw"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-007-ithkuil-lexeme-initialization.md",
+      "title": "REE-007 — Ithkuil Lexeme Curriculum as Structured Initialization Seed",
+      "labels": [],
+      "signature": "007-curriculum-initialization-ithkuil-lexeme"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-008-semantic-exoskeleton-concept.md",
+      "title": "REE-008 — Semantic Exoskeleton vs Host Model Internals",
+      "labels": [],
+      "signature": "008-exoskeleton-host-internals-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-009-comparative-training-experiment.md",
+      "title": "REE-009 — Comparative Training Experiment for Structured Initialization",
+      "labels": [],
+      "signature": "009-comparative-experiment-initialization-ree"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-010-qkv-layer-head-specificity.md",
+      "title": "REE-010 — Q/K/V Projection Specificity Across Layers and Heads",
+      "labels": [],
+      "signature": "010-across-heads-layers-projection"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-011-kv-cache-long-context-economics.md",
+      "title": "REE-011 — KV Cache Growth and Long-Context Inference Economics",
+      "labels": [],
+      "signature": "011-cache-context-economics-growth"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md",
+      "title": "RLM-001-ARCH",
+      "labels": [],
+      "signature": "001-arch-rlm"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-CONTEXT-ROT-context-rot-address.md",
+      "title": "RLM-001-CONTEXT-ROT",
+      "labels": [],
+      "signature": "001-context-rlm-rot"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SANDBOX-rlm-sandboxing-governance.md",
+      "title": "RLM-001-SANDBOX",
+      "labels": [],
+      "signature": "001-rlm-sandbox"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SLICE-repo-comprehension-vertical-slice.md",
+      "title": "RLM-001-SLICE",
+      "labels": [],
+      "signature": "001-rlm-slice"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-TILES-rosetta-rlm-tile-extensions.md",
+      "title": "RLM-001-TILES",
+      "labels": [],
+      "signature": "001-rlm-tiles"
     },
     {
       "path": "docs/intake/issue-drafts/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
@@ -4562,6 +4718,60 @@
       "title": "Issue: skillpack-importer-quarantine-flow",
       "labels": [],
       "signature": "flow-importer-quarantine-skillpack"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-001-skillcard-schema-tier0.md",
+      "title": "SLD-001: SkillCard Schema — Tier 0 ~100-Token Metadata Stub",
+      "labels": [],
+      "signature": "001-100-metadata-schema-skillcard"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-002-three-tier-progressive-disclosure.md",
+      "title": "SLD-002: Three-Tier Progressive Disclosure Architecture",
+      "labels": [],
+      "signature": "002-architecture-disclosure-progressive-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-003-skill-broker-middleware.md",
+      "title": "SLD-003: Skill Broker Middleware — Multi-Stage Retrieval Pipeline",
+      "labels": [],
+      "signature": "003-broker-middleware-multi-pipeline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-004-extend-vs-author-policy.md",
+      "title": "SLD-004: Extend vs Author-New Decision Policy",
+      "labels": [],
+      "signature": "004-author-decision-extend-new"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-005-hot-cold-skill-library.md",
+      "title": "SLD-005: Hot Skills Pack vs Cold Library — Two-Level Skill Registry",
+      "labels": [],
+      "signature": "005-cold-hot-level-library"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md",
+      "title": "SLD-006: Skill Vetting/Ingestion Pipeline",
+      "labels": [],
+      "signature": "006-ingestion-pipeline-skill-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-007-skill-telemetry-receipts.md",
+      "title": "SLD-007: Skill Telemetry and SkillReceipts as First-Class Query Surface",
+      "labels": [],
+      "signature": "007-class-first-query-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-008-skill-safety-posture.md",
+      "title": "SLD-008: Safety Posture — Guard Enforcement of Skill Metadata and Risk Classification",
+      "labels": [],
+      "signature": "008-classification-enforcement-guard-metadata"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-009-skill-broker-query-select-hot-skill.md",
+      "title": "SLD-009: skill_broker_query_and_select as First-Class Hot Skill",
+      "labels": [],
+      "signature": "009-broker-class-first-hot"
     },
     {
       "path": "docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md",
