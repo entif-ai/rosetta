@@ -1483,5 +1483,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-semantic-emotive-graph-integration.md",
     "draftStatus": "published"
+  },
+  "df-005-config-mtime-race-condition.md": {
+    "number": 427,
+    "state": "open",
+    "title": "DF-005: Config mtime reload race condition between LangGraph and Gateway",
+    "url": "https://github.com/entif-ai/rosetta/issues/427",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-005-config-mtime-race-condition.md",
+    "draftStatus": "published"
   }
 }
