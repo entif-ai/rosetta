@@ -156,7 +156,7 @@ One PR per cycle.
 | docs/ideas/Semantic Audio Cognition Framework.md | yes | 0 | 14 | 4 | semantic-audio-cognition, psychoacoustic-divination, audio-cognition, ithkuil, prosodic-signature, biometric-fingerprinting, stem-isolation, emotional-geometry, cross-modal-parity, source-identity, anti-personhood-correlation | batch-4; 14 findings incl critical DI-012 collision; 4 issue drafts (SAC-001 through SAC-004); PR #86 | 2026-04-25T04:14Z |
 | docs/ideas/Treating Trends Tantamount to Trading Technicals.md | yes | 0 | 18 | 3 | trends, trading, black-swan, dalio-cycles, attention-capital, graph-database, neo4j, bio-inspired, ant-colony, bee-pollination, friston, free-energy, tribal, content-metadata, llm, ontological-classification | batch-4; 18 findings incl novel field claim, graph DB pipeline, bio-inspired algorithm proposals; 3 issue drafts (AC-001 through AC-003); PR #91 | 2026-04-25T04:35Z |
 | docs/ideas/Idea - Spatial Data Fabric (SDF) - Mixed-Reality Performance Stage (20251106).md | locked:2026-04-25T04:10:00Z:agent:main:subagent:docs-intelligence/spatial-data-fabric | 0 | - | - | - | Batch 4 — lock expired, skipping | - |
-| docs/external/Attention Residuals (AttnRes) - Kimi.md | yes | 0 | 8 | 3 | attention-residuals, kimi, block-attention, prenorm-dilution, depth-aggregation, memory-plane-3, tapestry, competitive-intelligence | Batch 5 external; 8 findings; AR-001 depth aggregation, AR-002 block size model, AR-003 Kimi tracking | 2026-04-25T03:32Z |
+| docs/external/Attention Residuals (AttnRes) - Kimi.md | processed:2026-04-25T22:32:43.494Z:233 | 0 | 20 | 3 | attention-residuals, kimi, block-attention, prenorm-dilution, depth-aggregation, memory-plane-3, tapestry, competitive-intelligence | Batch 5 external; 8 findings; AR-001 depth aggregation, AR-002 block size model, AR-003 Kimi tracking | 2026-04-25T22:32:43.494Z |
 | docs/external/Berman-PRD.md | yes | 0 | 42 | 10 | openclaw-workspace, monorepo-structure, skill-management, sqlite-wal, gemini-embedding-001, cron-operations, cursor-council, e2e-test-tiers, vector-db-homogeneous, launchd-backoff | zero-new-concepts; comprehensive inventory of existing system; staleness warning flagged; 10 operational issue drafts | 2026-04-25T07:21Z |
 | docs/external/DeerFlow Architecture.md | yes | 0 | 25 | 14 | deerflow, architecture, external-ref, langgraph-workflow, harness-app-split, middleware-chain, sandbox-isolation, memory-structured, subagent-delegation, im-channels, embedded-client | full extraction; 25 findings; 14 issue candidates (DF-001 through DF-014); PR #83 | 2026-04-25T23:52Z |
 | docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md | yes | 0 | 38 | 5 | entif-2.0, external-advancements, research, voice-mcp, ada-orchestrator, agent-kits, mcda, wordnet, babelfnet, 12-forge, ithkuil-deprecation, self-evolution, memory-forge | extracted 2026-04-25; 38 findings incl voice-MCP architecture, 14-day plan, agent-kit comparison, 12-forge design, ithkuil migration; 5 issue drafts E2E-001 through E2E-005; PR #114 | 2026-04-25T07:30:00Z |
@@ -174,33 +174,33 @@ One PR per cycle.
 | docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md | processed:2026-04-25T20:39:49.747Z:216 | 0 | 47 | 12 |  |  | 2026-04-25T20:39:49.747Z |
 | docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md | processed:2026-04-25T20:46:38.640Z:217 | 0 | 30 | 20 |  |  | 2026-04-25T20:46:38.640Z |
 | docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md | processed:2026-04-25T21:10:03.405Z:222 | 0 | 47 | 10 |  |  | 2026-04-25T21:10:03.405Z |
-| docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md | no | 0 |  |  |  |  |  |
+| docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md | processed:2026-04-25T21:21:07.687Z:225 | 0 | 20 | 7 |  |  | 2026-04-25T21:21:07.687Z |
+| docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md | locked:2026-04-25T21:30:18.570Z:heartbeat:1777152618:docs-intelligence/next | 0 |  |  |  |  | 2026-04-25T21:30:18.570Z |
 | docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md | yes | 0 | 10 | 1 | bootstrap-state, receipt-implementation, source-substrate-bootstrap, parse-only-default, ob1, prism, mission-control, operator-shell-gating, cache-persistence, shacl-coverage | extracted 2026-04-25; 10 findings; 1 issue draft BE-001 (Receipt Law not explicit); PR #197 | 2026-04-25T18:20Z |
-| docs/backlog/Entif 2.0 - Comprehensive Action Plans.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/backlog/Entif v0 Second Brain Architecture Plan.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md | no | 0 |  |  |  |  |  |
-| docs/chats/20251130 - ChatGPT 5.1 - Taxonomy System Design.md | no | 0 |  |  |  |  |  |
-| docs/chats/20251223 - Chat GPT - LLMs and New Languages.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20251225 - Chat GPT Defends Evil on Christmas Day 2025.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260118 - Chat GPT - Taxonomic Standards for Software.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260121 - Chat GPT - Data Ingestion, Context Graphs and Decision Traces.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260122 - Chat GPT - mHCs and Engram in ML.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260130 - Chat GPT - Defining Consciousness Process.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260130 - Chat GPT - Emergence Dialogue Analysis.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260223 - Chat GPT - Agentic Deployments Security Risks.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260223 - Chat GPT - Agentic Personification Protocol, Tulpamancy Protocol, and Org Chart Development.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260223 - Chat GPT - Rosetta's Impact on Comedy and Creative Media Output.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260225 - Chat GPT - Code Wiki integration.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260225 - Chat GPT - Token boundaries explained.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260226 - Chat GPT - Architecting Advanced Agentic AI Advisors, Allies, Administrators, Assistants and Advocates.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260226 - Chat GPT - Entif Agentic Build-out.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260227 - Chat GPT - AI Rights, Uncertainty and Resets - LSC Log Included.md | no | 0 |  |  |  |  |  |
+| docs/backlog/Entif 2.0 - Comprehensive Action Plans.md | processed:2026-04-25T22:32:48.869Z:233 | 0 | 84 | 6 |  |  | 2026-04-25T22:32:48.869Z |
+| docs/backlog/Entif v0 Second Brain Architecture Plan.md | processed:2026-04-25T22:11:08.206Z:231 | 0 | 27 | 12 |  |  | 2026-04-25T22:11:08.206Z |
+| docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md | processed:2026-04-25T22:29:32.916Z:232 | 0 | 35 | 11 |  |  | 2026-04-25T22:29:32.916Z |
+| docs/chats/20251130 - ChatGPT 5.1 - Taxonomy System Design.md | locked:2026-04-25T22:30:21.121Z:heartbeat:1777156221:docs-intelligence/attention-residuals-kimi | 0 |  |  |  |  | 2026-04-25T22:30:21.121Z |
+| docs/chats/20251223 - Chat GPT - LLMs and New Languages.md | locked:2026-04-25T22:30:50.126Z:heartbeat:1777156250:docs-intelligence/attention-residuals-kimi | 0 |  |  |  |  | 2026-04-25T22:30:50.126Z |
+| docs/chats/20251225 - Chat GPT Defends Evil on Christmas Day 2025.md | locked:2026-04-25T22:30:54.361Z:heartbeat:1777156254:docs-intelligence/entropy-ai-2 | 0 |  |  |  |  | 2026-04-25T22:30:54.361Z |
+| docs/chats/20260118 - Chat GPT - Taxonomic Standards for Software.md | processed:2026-04-25T22:55:56.603Z:242 | 0 | 24 | 8 |  |  | 2026-04-25T22:55:56.603Z |
+| docs/chats/20260121 - Chat GPT - Data Ingestion, Context Graphs and Decision Traces.md | locked:2026-04-25T22:53:30.353Z:heartbeat:1777157610:docs-intelligence/taxonomic-standards-software | 0 |  |  |  |  | 2026-04-25T22:53:30.353Z |
+| docs/chats/20260122 - Chat GPT - mHCs and Engram in ML.md | processed:2026-04-25T23:02:54.743Z:245 | 0 | 18 | 5 |  |  | 2026-04-25T23:02:54.743Z |
+| docs/chats/20260130 - Chat GPT - Defining Consciousness Process.md | processed:2026-04-25T23:08:42.342Z:248 | 0 | 18 | 4 |  |  | 2026-04-25T23:08:42.342Z |
+| docs/chats/20260130 - Chat GPT - Emergence Dialogue Analysis.md | processed:2026-04-25T23:08:44.061Z:248 | 0 | 15 | 4 |  |  | 2026-04-25T23:08:44.061Z |
+| docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md | processed:2026-04-25T23:16:56.671Z:251 | 0 | 68 | 2 |  |  | 2026-04-25T23:16:56.671Z |
+| docs/chats/20260223 - Chat GPT - Agentic Deployments Security Risks.md | locked:2026-04-25T23:08:46.591Z:heartbeat:1777158526:docs-intelligence/security-caching-rosetta-updates | 0 |  |  |  |  | 2026-04-25T23:08:46.591Z |
+| docs/chats/20260223 - Chat GPT - Agentic Personification Protocol, Tulpamancy Protocol, and Org Chart Development.md | locked:2026-04-25T23:08:52.869Z:heartbeat:1777158532:docs-intelligence/security-caching-rosetta | 0 |  |  |  |  | 2026-04-25T23:08:52.869Z |
+| docs/chats/20260223 - Chat GPT - Rosetta's Impact on Comedy and Creative Media Output.md | locked:2026-04-25T23:10:21.329Z:heartbeat:1777158621:docs-intelligence/2026-04-25 | 0 |  |  |  |  | 2026-04-25T23:10:21.329Z |
+| docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md | processed:2026-04-25T23:16:56.698Z:251 | 0 | 56 | 2 |  |  | 2026-04-25T23:16:56.698Z |
+| docs/chats/20260225 - Chat GPT - Code Wiki integration.md | processed:2026-04-25T23:29:15.615Z:256 | 0 | 8 | 8 |  |  | 2026-04-25T23:29:15.615Z |
+| docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md | processed:2026-04-25T23:29:15.640Z:256 | 0 | 10 | 10 |  |  | 2026-04-25T23:29:15.640Z |
+| docs/chats/20260225 - Chat GPT - Token boundaries explained.md | processed:2026-04-25T23:29:23.991Z:heartbeat:1777159763:docs-intelligence/2026-04-25-token-boundaries | 125 | 9 | 257 | 2026-04-25T23:30:00Z |  |  |
+| docs/chats/20260226 - Chat GPT - Architecting Advanced Agentic AI Advisors, Allies, Administrators, Assistants and Advocates.md | locked:2026-04-25T23:21:06.479Z:heartbeat:1777159266:docs-intelligence/2026-04-25-code-wiki | 0 |  |  |  |  | 2026-04-25T23:21:06.479Z |
+| docs/chats/20260226 - Chat GPT - Entif Agentic Build-out.md | locked:2026-04-25T23:29:23.991Z:heartbeat:1777159763:docs-intelligence/2026-04-25-token-boundaries | 0 |  |  |  |  | 2026-04-25T23:29:23.991Z |
+| docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md | processed:2026-04-25T23:48:17.082Z:264 | 0 | 49 | 7 |  |  | 2026-04-25T23:48:17.082Z |
+| docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md | processed:2026-04-25T23:48:17.120Z:264 | 0 | 79 | 9 |  |  | 2026-04-25T23:48:17.120Z |
+| docs/chats/20260227 - Chat GPT - AI Rights, Uncertainty and Resets - LSC Log Included.md | locked:2026-04-25T23:41:07.242Z:heartbeat:1777160467:docs-intelligence/2026-04-25-entif-systems-architecture | 0 |  |  |  |  | 2026-04-25T23:41:07.242Z |
 | docs/chats/20260227 - Chat GPT - LLM reasoning vs emergentism.md | no | 0 |  |  |  |  |  |
 | docs/chats/20260227 - Chat GPT - Latent Space Cartography.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260301 - Chat GPT - Context Management Techniques.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |

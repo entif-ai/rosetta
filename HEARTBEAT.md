@@ -11,6 +11,7 @@ Before anything else — pull latest into Rosetta:
 ```bash
 cd ~/.openclaw/workspace/Code/rosetta
 git fetch origin main
+git co main
 git pull origin main
 ```
 
@@ -75,6 +76,32 @@ Also add `docs/intake/doc-ledger.json` and `docs/intake/doc-ledger.md` if they c
 
 Include a clear commit message.
 
+**17.5. Merge origin/main before push — resolve staleness conflicts:**
+
+```bash
+# Fetch latest main and merge into working branch to resolve staleness
+git fetch origin main
+git merge origin/main -m "Merge origin/main to resolve staleness conflicts"
+
+# If merge conflicts exist, check if they're only in generated intake files
+CONFLICTING_FILES=$(git diff --name-only --diff-filter=U)
+if [ -n "$CONFLICTING_FILES" ]; then
+  # Allow conflicts only in these generated files
+  NON_GENERATED=$(echo "$CONFLICTING_FILES" | grep -v -E "^(docs/intake/doc-ledger|docs/intake/docs-intelligence/CONCEPT_INDEX|docs/intake/docs-intelligence/CYCLE_SUMMARY|docs/intake/docs-intelligence/KNOWLEDGE_GRAPH|docs/intake/issue-drafts/)")
+  if [ -n "$NON_GENERATED" ]; then
+    echo "ERROR: Merge conflicts found in non-generated files: $NON_GENERATED"
+    echo "Manual intervention required. Aborting merge."
+    git merge --abort
+    exit 1
+  fi
+  # Conflicts only in generated files — regenerate to resolve
+  pnpm run docs:intake
+  pnpm run docs:intelligence
+  git add .
+  git commit -m "Merge origin/main and resolve conflicts in generated files"
+fi
+```
+
 **18. Push the branch.**
 
 **19. Create PR** to `main` via `gh pr create`. Title format: `docs(intake): <doc-name> — N findings, M issues`. Body should cite source path, findings count, and issue candidates.
@@ -90,11 +117,13 @@ node tools/doc-intake/docs-intelligence-ledger.mjs complete \
   --issues-drafted <count>
 ```
 
-**21. Send Telegram DM** to `8740875131` — format: "Doc: `<doc-name.md>` | Findings: N | Issues: M | Total: X/128"
+**21. Get latest code:** `cd ~/.openclaw/workspace/rosetta; git co main; git pull;` before doing anything else, assuming the worktree is clean.
 
-**22. If runs_since_last_batched_update == 6** — send hourly digest, reset counter.
+**22. Send Telegram DM** to `8740875131` — format: "Doc: `<doc-name.md>` | Findings: N | Issues: M | Total: X/128"
 
-**23. Compact context** — end turn with only the confirmation. No residual context carried forward.
+**23. If runs_since_last_batched_update == 6** — send hourly digest, reset counter.
+
+**24. Compact context** — end turn with only the confirmation. No residual context carried forward.
 
 ---
 
