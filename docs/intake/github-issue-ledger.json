@@ -2257,5 +2257,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-001-reasoning-efficiency-language-independence.md",
     "draftStatus": "published"
+  },
+  "omc-activation-store-score-calibration.md": {
+    "number": 590,
+    "state": "open",
+    "title": "Calibrate OMC activation-store composite score weights",
+    "url": "https://github.com/entif-ai/rosetta/issues/590",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-activation-store-score-calibration.md",
+    "draftStatus": "published"
   }
 }
