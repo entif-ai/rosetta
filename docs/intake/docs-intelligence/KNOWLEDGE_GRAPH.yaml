@@ -1577,6 +1577,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/367
   status: active
+- id: DCP-009-impact-analysis-not-gated
+  name: Impact Analysis Gate
+  introduced_by: docs/intake/issue-drafts/DCP-009-impact-analysis-not-gated.md
+  introduced_at: '2026-04-26'
+  definition: Pre-change gate that queries Code Atlas for module dependents and either
+    blocks interface changes or schedules follow-up updates to prevent silent breakage.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/369
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
