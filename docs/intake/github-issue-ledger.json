@@ -1717,5 +1717,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-003-nine-layer-email-agent-architecture.md",
     "draftStatus": "published"
+  },
+  "EML-004-content-risk-middleware-generalizes.md": {
+    "number": 471,
+    "state": "open",
+    "title": "EML-004: Content-Risk Middleware Generalizes Beyond Email \u2014 Skill-Pack Modularization Needed",
+    "url": "https://github.com/entif-ai/rosetta/issues/471",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-004-content-risk-middleware-generalizes.md",
+    "draftStatus": "published"
   }
 }
