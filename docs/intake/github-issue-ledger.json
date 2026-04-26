@@ -1600,5 +1600,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-006-privacy-budget-transliteration-leakage.md",
     "draftStatus": "published"
+  },
+  "APC-007-cache-poisoning-stale-answers.md": {
+    "number": 453,
+    "state": "open",
+    "title": "APC-007: Cache Poisoning \u2014 Stale Certainty Is More Dangerous Than No Answer",
+    "url": "https://github.com/entif-ai/rosetta/issues/453",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-007-cache-poisoning-stale-answers.md",
+    "draftStatus": "published"
   }
 }

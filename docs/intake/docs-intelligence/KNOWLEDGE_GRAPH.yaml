@@ -2007,6 +2007,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/451
   status: active
+- id: APC-007-cache-poisoning-stale-answers
+  name: Cache Poisoning via Stale Certainty
+  introduced_by: docs/intake/issue-drafts/APC-007-cache-poisoning-stale-answers.md
+  introduced_at: '2026-04-26'
+  definition: "Fast, confident, wrong cached answers are more dangerous than no answer\
+    \ \u2014 stale policy content served as authoritative truth without invalidation\
+    \ signals."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/453
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
