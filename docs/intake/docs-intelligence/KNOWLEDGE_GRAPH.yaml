@@ -2848,6 +2848,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/606
   status: active
+- id: REE-010-qkv-layer-head-specificity
+  name: QKV Layer-Head Projection Specificity
+  introduced_by: docs/intake/issue-drafts/REE-010-qkv-layer-head-specificity.md
+  introduced_at: '2026-04-26'
+  definition: Attention Q/K/V projections are layer-specific (each layer has distinct
+    W_Q, W_K, W_V) and head-specific (multiple parallel subspaces within each layer).
+    Rational initialization must be specified per-layer and per-head, not globally.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/608
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
