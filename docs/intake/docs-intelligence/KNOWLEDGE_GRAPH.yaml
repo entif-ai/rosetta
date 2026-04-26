@@ -3584,6 +3584,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/288
   status: active
+- id: ccf-007
+  name: Spec by Fluent Synthesis Enforcement
+  introduced_by: docs/intake/issue-drafts/ccf-007-no-spec-by-fluent-synthesis-enforcement.md
+  introduced_at: '2026-04-26'
+  definition: Enforcement mechanism to prevent LLM-generated specs from containing
+    confident-sounding claims without Evidence Ledger backing, as mandated by the
+    Consensus-First Commitment Scoping Framework.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/297
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
