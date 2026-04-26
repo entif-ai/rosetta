@@ -2851,5 +2851,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-007-message-size-limit-dos.md",
     "draftStatus": "published"
+  },
+  "am-008-data-plane-prompt-injection-mitigation.md": {
+    "number": 709,
+    "state": "open",
+    "title": "AM-008: Data Plane Prompt Injection \u2014 Missing In-Spec Mitigation",
+    "url": "https://github.com/entif-ai/rosetta/issues/709",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-008-data-plane-prompt-injection-mitigation.md",
+    "draftStatus": "published"
   }
 }

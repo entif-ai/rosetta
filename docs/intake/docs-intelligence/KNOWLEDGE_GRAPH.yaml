@@ -3461,6 +3461,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/701
   status: active
+- id: am-008-data-plane-prompt-injection-mitigation
+  name: Data Plane Prompt Injection Mitigation
+  introduced_by: docs/intake/issue-drafts/am-008-data-plane-prompt-injection-mitigation.md
+  introduced_at: '2026-04-26'
+  definition: 'Security gap: data plane text fields are classified as untrusted but
+    no in-spec mitigation exists for prompt injection in TASK_RECEIPT and other data
+    plane payload text fields.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/709
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
