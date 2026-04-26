@@ -2868,6 +2868,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/610
   status: active
+- id: RLM-001-ARCH-context-runtime-design
+  name: "ContextRuntime \u2014 Bounded RLM Execution Engine"
+  introduced_by: docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md
+  introduced_at: '2026-04-26'
+  definition: A first-class Entif component that mounts external memory substrates
+    and executes bounded RLM programs against them via REPL, emitting JSONL receipts
+    per step rather than appending to context.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/612
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
