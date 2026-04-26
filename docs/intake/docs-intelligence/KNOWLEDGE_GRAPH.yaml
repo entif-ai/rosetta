@@ -2969,6 +2969,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/624
   status: active
+- id: RLM-003-TERM
+  name: RLM Termination Protocol Brittleness
+  introduced_by: docs/intake/issue-drafts/RLM-003-TERM-termination-protocol-brittleness.md
+  introduced_at: '2026-04-26'
+  definition: RLM trajectories can generate non-terminating loops. Requires typed
+    FinalizeAnswer tool event + signed termination receipt + partial-result tile on
+    hard-stop.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/626
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -2437,5 +2437,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-SEC-GuardLayer-rlm-repl-governance.md",
     "draftStatus": "published"
+  },
+  "RLM-003-TERM-termination-protocol-brittleness.md": {
+    "number": 626,
+    "state": "open",
+    "title": "RLM-003-TERM: Typed FinalizeAnswer Tool Event for RLM Termination Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/626",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-003-TERM-termination-protocol-brittleness.md",
+    "draftStatus": "published"
   }
 }
