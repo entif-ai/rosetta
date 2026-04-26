@@ -1368,6 +1368,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/319
   status: active
+- id: CONS-004
+  name: Consciousness as Process (Temporal Model)
+  introduced_by: docs/intake/issue-drafts/CONS-004-consciousness-process-temporal-model.md
+  introduced_at: '2026-04-25'
+  definition: Consciousness modeled as continuous, boundary-less temporal flow rather
+    than a discrete state; requires phase-based mode transitions and non-collapse
+    ambiguity preservation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/322
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
