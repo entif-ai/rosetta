@@ -1417,6 +1417,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/334
   status: active
+- id: CW-004-reuse-enforcement
+  name: Reuse enforcement not wired into planning loop
+  introduced_by: docs/intake/issue-drafts/CW-004-reuse-enforcement-not-wired.md
+  introduced_at: '2026-04-25'
+  definition: The "never build twice" principle requires a mandatory search_capabilities()
+    call as a gate in the ROMA/TRM planning pipeline before any new feature plan is
+    accepted, with a Reuse vs Build justification required when candidates exceed
+    the fit_score threshold.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/337
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
