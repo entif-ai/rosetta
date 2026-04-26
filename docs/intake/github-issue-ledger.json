@@ -1726,5 +1726,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-004-content-risk-middleware-generalizes.md",
     "draftStatus": "published"
+  },
+  "cts-011-mcpforge-routing-extension.md": {
+    "number": 476,
+    "state": "open",
+    "title": "CTS-011: MCPForge Routing Table Extension \u2014 compression_ratio + required_precision",
+    "url": "https://github.com/entif-ai/rosetta/issues/476",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-011-mcpforge-routing-extension.md",
+    "draftStatus": "published"
   }
 }

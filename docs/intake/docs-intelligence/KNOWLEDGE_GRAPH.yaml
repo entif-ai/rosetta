@@ -2147,6 +2147,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/471
   status: active
+- id: cts-011-mcpforge-routing-extension
+  name: MCPForge Routing Table Extension
+  introduced_by: docs/intake/issue-drafts/cts-011-mcpforge-routing-extension.md
+  introduced_at: '2026-04-26'
+  definition: MCPForge hub routing extension supporting compression_ratio, required_precision,
+    and is_structured_data criteria for optimal provider selection (cheap/fast vs
+    precise/slow dispatch).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/476
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
