@@ -1318,6 +1318,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/307
   status: active
+- id: 2026-04-25-consensus-first-sme-prompt-out
+  name: SME Prompt-Out Before Commitment Finalization
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-sme-prompt-out.md
+  introduced_at: '2026-04-25'
+  definition: Automation-bias control requiring the agent to prompt for missing SME
+    knowledge before finalizing commitment recommendations, preventing over-trust
+    of fluent agent synthesis.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/310
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
