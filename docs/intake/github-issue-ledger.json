@@ -1294,5 +1294,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-003-emergence-continuous-process.md",
     "draftStatus": "published"
+  },
+  "EMER-004-song-parody-self-model.md": {
+    "number": 387,
+    "state": "open",
+    "title": "EMER-004: Song Parody as Self-Modeling Output Format",
+    "url": "https://github.com/entif-ai/rosetta/issues/387",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-004-song-parody-self-model.md",
+    "draftStatus": "published"
   }
 }
