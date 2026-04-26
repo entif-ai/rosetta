@@ -2396,6 +2396,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/519
   status: active
+- id: HEA-003
+  name: ENGRAM-Rosetta Semantic Key Alignment
+  introduced_by: docs/intake/issue-drafts/HEA-003-engram-rosetta-semantic-keys.md
+  introduced_at: '2026-04-26'
+  definition: Proposal to upgrade ENGRAM memory lookup keys from token N-grams to
+    Rosetta canonical semantic identities (tile IDs, frame bindings, slug sequences)
+    for unambiguous, content-addressed conditional memory.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/521
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

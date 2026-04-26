@@ -1942,5 +1942,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-002-draft-prune-rosetta-equivalence.md",
     "draftStatus": "published"
+  },
+  "HEA-003-engram-rosetta-semantic-keys.md": {
+    "number": 521,
+    "state": "open",
+    "title": "HEA-003: ENGRAM + Rosetta \u2014 Semantic Slugs as Conditional Memory Lookup Keys",
+    "url": "https://github.com/entif-ai/rosetta/issues/521",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-003-engram-rosetta-semantic-keys.md",
+    "draftStatus": "published"
   }
 }
