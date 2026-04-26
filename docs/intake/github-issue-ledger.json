@@ -1915,5 +1915,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-006-rosetta-mcp-compliance.md",
     "draftStatus": "published"
+  },
+  "ESA-007-persona-frame-boundary-packs.md": {
+    "number": 515,
+    "state": "open",
+    "title": "ESA-007: Three-Pack Persona/Frame/Boundary Architecture for Emilie's Mythic Material",
+    "url": "https://github.com/entif-ai/rosetta/issues/515",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-007-persona-frame-boundary-packs.md",
+    "draftStatus": "published"
   }
 }

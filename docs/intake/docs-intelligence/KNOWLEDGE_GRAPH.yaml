@@ -2365,6 +2365,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/513
   status: active
+- id: ESA-007-persona-frame-boundary-packs
+  name: Persona/Frame/Boundary Three-Pack Architecture
+  introduced_by: docs/intake/issue-drafts/ESA-007-persona-frame-boundary-packs.md
+  introduced_at: '2026-04-26'
+  definition: 'Three-pack architecture for encoding Emilie''s mythic/persona material:
+    Persona Pack (tone/relationship), Frame Pack (interpretive lenses), Boundary Pack
+    (enforced limits on influence). Prevents privilege escalation from creative/framing
+    material into factual tool execution.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/515
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
