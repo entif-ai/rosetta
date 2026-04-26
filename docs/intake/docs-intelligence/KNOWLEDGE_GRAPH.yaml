@@ -1768,6 +1768,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/404
   status: active
+- id: BIP-003-2
+  name: Hybrid Score Weights (0.7/0.3) Unvalidated
+  introduced_by: docs/intake/issue-drafts/BIP-003-2-content-hybrid-weights-unvalidated.md
+  introduced_at: '2026-04-26'
+  definition: Fixed dedupe weights (70% semantic, 30% keyword) in BIP-003 lack calibration
+    methodology, embedding-model dependency acknowledgment, or cross-validation evidence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/406
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

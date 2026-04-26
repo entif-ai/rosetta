@@ -1384,5 +1384,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-1-content-40pct-threshold-unvalidated.md",
     "draftStatus": "published"
+  },
+  "BIP-003-2-content-hybrid-weights-unvalidated.md": {
+    "number": 406,
+    "state": "open",
+    "title": "BIP-003-2: Hybrid Score Weights (0.7/0.3) Not Grounded in Evidence",
+    "url": "https://github.com/entif-ai/rosetta/issues/406",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-2-content-hybrid-weights-unvalidated.md",
+    "draftStatus": "published"
   }
 }
