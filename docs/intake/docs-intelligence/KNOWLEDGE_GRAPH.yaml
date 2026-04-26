@@ -3542,6 +3542,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/724
   status: active
+- id: ccf-001-no-phase-transition-enforcement
+  name: No Phase-Transition Enforcement Mechanism
+  introduced_by: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
+  introduced_at: '2026-04-25'
+  definition: "The Consensus-First Commitment Scoping Framework v0.1 defines phase-transition\
+    \ handshake rules but contains no enforcement mechanism \u2014 no automated gate,\
+    \ checklist, or tooling to ensure agents obtain explicit yes before producing\
+    \ the next artifact."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/302
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4416,7 +4427,8 @@ issue_drafts_inventory:
   issue_id: ccf-001-no-phase-transition-enforcement
   priority: P1
   type: architecture
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/302
 - path: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-002-no-formal-consensus-protocol
