@@ -1932,6 +1932,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-holistic-entif-redesign.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-holistic-entif-redesign.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-huggingface-research-integration.md",
       "sourcePath": "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
       "title": "Docs Intelligence Extraction",
@@ -2161,6 +2167,18 @@
         "git-clone",
         "cp-r"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-progressive-disclosure-skill-system.md",
+      "title": "Extraction: Progressive-Disclosure Skill System",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
@@ -2449,6 +2467,12 @@
         "appendix-b",
         "negotiation-protocols"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-skill-library-design.md",
+      "title": "Extraction: 20260323 - Chat GPT - Entif Skill Library Design",
+      "concepts": []
     },
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-swarmkit.md",
@@ -3771,6 +3795,30 @@
       "signature": "cause-harness-mismatch-platform-root"
     },
     {
+      "path": "docs/intake/issue-drafts/HEA-001-event-driven-consciousness.md",
+      "title": "HEA-001: Event-Driven Consciousness — Retire Nightly Consolidation Model",
+      "labels": [],
+      "signature": "001-consciousness-consolidation-driven-event"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-002-draft-prune-rosetta-equivalence.md",
+      "title": "HEA-002: Draft-and-Prune Equivalence Gap — Rosetta as Canonical Aggregation Substrate",
+      "labels": [],
+      "signature": "002-aggregation-canonical-draft-equivalence"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-003-engram-rosetta-semantic-keys.md",
+      "title": "HEA-003: ENGRAM + Rosetta — Semantic Slugs as Conditional Memory Lookup Keys",
+      "labels": [],
+      "signature": "003-conditional-engram-hea-keys"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-004-mr-tech-lead-acrostic-publication.md",
+      "title": "HEA-004: MR. TECH LEAD — Publish Hybrid Architecture with Acrostic Brand",
+      "labels": [],
+      "signature": "004-acrostic-architecture-brand-hea"
+    },
+    {
       "path": "docs/intake/issue-drafts/HF-001-huggingface-daily-trending-papers-sweep.md",
       "title": "HF-001 — HuggingFace Daily Trending-Papers Sweep Pipeline",
       "labels": [],
@@ -4182,6 +4230,42 @@
       "signature": "apparent-constitute-constraint-does-evidence"
     },
     {
+      "path": "docs/intake/issue-drafts/PSD-001-implement-skill-registry-v0.md",
+      "title": "PSD-001 — Implement Skill Registry v0",
+      "labels": [],
+      "signature": "001-implement-psd-registry-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-002-implement-skill-broker-pipeline.md",
+      "title": "PSD-002 — Implement Skill Broker Pipeline",
+      "labels": [],
+      "signature": "002-broker-implement-pipeline-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-003-implement-skill-eval-harness.md",
+      "title": "PSD-003 — Implement Eval Harness for Skills",
+      "labels": [],
+      "signature": "003-eval-harness-implement-psd"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-004-seed-happy-path-skills.md",
+      "title": "PSD-004 — Seed Happy-Path Skills",
+      "labels": [],
+      "signature": "004-happy-path-psd-seed"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-005-skill-guard-receipts-enforcement.md",
+      "title": "PSD-005 — Route Skills Through Guard + Receipts",
+      "labels": [],
+      "signature": "005-guard-psd-receipts-route"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PSD-006-formalize-skill-economy-concept.md",
+      "title": "PSD-006 — Formalize \"Skill Economy\" Concept",
+      "labels": [],
+      "signature": "006-concept-economy-formalize-psd"
+    },
+    {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
       "title": "Issue: Python Module Boundary Contract",
       "labels": [],
@@ -4220,6 +4304,36 @@
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md",
+      "title": "RLM-001-ARCH",
+      "labels": [],
+      "signature": "001-arch-rlm"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-CONTEXT-ROT-context-rot-address.md",
+      "title": "RLM-001-CONTEXT-ROT",
+      "labels": [],
+      "signature": "001-context-rlm-rot"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SANDBOX-rlm-sandboxing-governance.md",
+      "title": "RLM-001-SANDBOX",
+      "labels": [],
+      "signature": "001-rlm-sandbox"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-SLICE-repo-comprehension-vertical-slice.md",
+      "title": "RLM-001-SLICE",
+      "labels": [],
+      "signature": "001-rlm-slice"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-001-TILES-rosetta-rlm-tile-extensions.md",
+      "title": "RLM-001-TILES",
+      "labels": [],
+      "signature": "001-rlm-tiles"
     },
     {
       "path": "docs/intake/issue-drafts/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
@@ -4562,6 +4676,60 @@
       "title": "Issue: skillpack-importer-quarantine-flow",
       "labels": [],
       "signature": "flow-importer-quarantine-skillpack"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-001-skillcard-schema-tier0.md",
+      "title": "SLD-001: SkillCard Schema — Tier 0 ~100-Token Metadata Stub",
+      "labels": [],
+      "signature": "001-100-metadata-schema-skillcard"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-002-three-tier-progressive-disclosure.md",
+      "title": "SLD-002: Three-Tier Progressive Disclosure Architecture",
+      "labels": [],
+      "signature": "002-architecture-disclosure-progressive-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-003-skill-broker-middleware.md",
+      "title": "SLD-003: Skill Broker Middleware — Multi-Stage Retrieval Pipeline",
+      "labels": [],
+      "signature": "003-broker-middleware-multi-pipeline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-004-extend-vs-author-policy.md",
+      "title": "SLD-004: Extend vs Author-New Decision Policy",
+      "labels": [],
+      "signature": "004-author-decision-extend-new"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-005-hot-cold-skill-library.md",
+      "title": "SLD-005: Hot Skills Pack vs Cold Library — Two-Level Skill Registry",
+      "labels": [],
+      "signature": "005-cold-hot-level-library"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md",
+      "title": "SLD-006: Skill Vetting/Ingestion Pipeline",
+      "labels": [],
+      "signature": "006-ingestion-pipeline-skill-sld"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-007-skill-telemetry-receipts.md",
+      "title": "SLD-007: Skill Telemetry and SkillReceipts as First-Class Query Surface",
+      "labels": [],
+      "signature": "007-class-first-query-skill"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-008-skill-safety-posture.md",
+      "title": "SLD-008: Safety Posture — Guard Enforcement of Skill Metadata and Risk Classification",
+      "labels": [],
+      "signature": "008-classification-enforcement-guard-metadata"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SLD-009-skill-broker-query-select-hot-skill.md",
+      "title": "SLD-009: skill_broker_query_and_select as First-Class Hot Skill",
+      "labels": [],
+      "signature": "009-broker-class-first-hot"
     },
     {
       "path": "docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md",
