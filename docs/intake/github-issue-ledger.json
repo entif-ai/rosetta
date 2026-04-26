@@ -1609,5 +1609,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-007-cache-poisoning-stale-answers.md",
     "draftStatus": "published"
+  },
+  "APC-008-multi-provider-composition-provenance.md": {
+    "number": 455,
+    "state": "open",
+    "title": "APC-008: Multi-Provider Composition Provenance Spine",
+    "url": "https://github.com/entif-ai/rosetta/issues/455",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-008-multi-provider-composition-provenance.md",
+    "draftStatus": "published"
   }
 }
