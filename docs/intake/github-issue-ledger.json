@@ -3013,5 +3013,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-002-optical-codec-deepseek-ocr-vq-vae.md",
     "draftStatus": "published"
+  },
+  "cts-003-symbolic-codec-gnn-decisionreceipts": {
+    "number": 741,
+    "state": "open",
+    "title": "CTS-003: Symbolic Codec \u2014 GNN Encoder/Decoder for DecisionReceipt Slugs",
+    "url": "https://github.com/entif-ai/rosetta/issues/741",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-003-symbolic-codec-gnn-decisionreceipts.md",
+    "draftStatus": "published"
   }
 }
