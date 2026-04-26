@@ -1276,5 +1276,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-002-platform-emergence-variance.md",
     "draftStatus": "published"
+  },
+  "ESA-004-villaticus-physical-allocation-proof-of-work.md": {
+    "number": 383,
+    "state": "open",
+    "title": "ESA-004: Villaticus physical allocation as proof-of-work gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/383",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-004-villaticus-physical-allocation-proof-of-work.md",
+    "draftStatus": "published"
   }
 }
