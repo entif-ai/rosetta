@@ -2622,6 +2622,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/565
   status: active
+- id: MCST-004-reliability-risk-cheap-lane
+  name: Reliability Risk in High-Volume Cheap-Lane Automation
+  introduced_by: docs/intake/issue-drafts/MCST-004-reliability-risk-cheap-lane.md
+  introduced_at: '2026-04-26'
+  definition: The economic paradox where routing high-volume automation through cheap
+    external agents (e.g., MaxClaw) without proportionate verification creates conditions
+    for silent partial failures, hallucinated done states, looping, and tool failures
+    that become operationally expensive at scale.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/567
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
