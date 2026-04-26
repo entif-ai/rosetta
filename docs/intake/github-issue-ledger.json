@@ -1249,5 +1249,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-002-adversarial-empathy-test-pack.md",
     "draftStatus": "published"
+  },
+  "EEH-003-attunement-diagnostic-bridge.md": {
+    "number": 377,
+    "state": "open",
+    "title": "EEH-003: Attunement Axis Diagnostic Bridge \u2014 Connect A-axis drops to internal system diagnostics",
+    "url": "https://github.com/entif-ai/rosetta/issues/377",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-003-attunement-diagnostic-bridge.md",
+    "draftStatus": "published"
   }
 }
