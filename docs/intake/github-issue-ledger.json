@@ -2392,5 +2392,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-SANDBOX-rlm-sandboxing-governance.md",
     "draftStatus": "published"
+  },
+  "RLM-001-SLICE-repo-comprehension-vertical-slice.md": {
+    "number": 612,
+    "state": "open",
+    "title": "ContextRuntime: Bounded RLM Execution as a First-Class Entif Component [enriched by RLM-001-SLICE]",
+    "url": "https://github.com/entif-ai/rosetta/issues/612",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-SLICE-repo-comprehension-vertical-slice.md",
+    "draftStatus": "published"
   }
 }
