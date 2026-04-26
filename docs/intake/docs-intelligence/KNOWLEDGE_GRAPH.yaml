@@ -2098,6 +2098,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/468
   status: active
+- id: BIP-011-1-cost-tracking-pricing-hardcoded
+  name: 'BIP-011-1: Dynamic Pricing Table'
+  introduced_by: docs/intake/issue-drafts/BIP-011-1-cost-tracking-pricing-hardcoded.md
+  introduced_at: '2026-04-26'
+  definition: AI provider pricing table must be externalized to a runtime config file
+    with automated update checks, not hardcoded in spec
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/429
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

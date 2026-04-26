@@ -1681,5 +1681,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-010-1-task-crm-crossref-unspecified.md",
     "draftStatus": "published"
+  },
+  "BIP-011-1-cost-tracking-pricing-hardcoded.md": {
+    "number": 429,
+    "state": "open",
+    "title": "BIP-011-1: Pricing Table Hardcoded, Not Dynamically Updated",
+    "url": "https://github.com/entif-ai/rosetta/issues/429",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-011-1-cost-tracking-pricing-hardcoded.md",
+    "draftStatus": "published"
   }
 }
