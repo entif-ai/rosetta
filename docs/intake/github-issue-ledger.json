@@ -2536,5 +2536,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-006-interpreter-failure-detection.md",
     "draftStatus": "published"
+  },
+  "SLD-002-three-tier-progressive-disclosure.md": {
+    "number": 645,
+    "state": "open",
+    "title": "SLD-002: Three-Tier Progressive Disclosure Architecture",
+    "url": "https://github.com/entif-ai/rosetta/issues/645",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-002-three-tier-progressive-disclosure.md",
+    "draftStatus": "published"
   }
 }

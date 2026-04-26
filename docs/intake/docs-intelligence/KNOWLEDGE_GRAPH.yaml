@@ -3081,6 +3081,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/643
   status: active
+- id: sld-002-three-tier-progressive-disclosure
+  name: Three-Tier Progressive Disclosure Architecture
+  introduced_by: docs/intake/issue-drafts/SLD-002-three-tier-progressive-disclosure.md
+  introduced_at: '2026-04-26'
+  definition: "Architectural pattern for skill loading: Tier 0 (SkillCard stub) \u2192\
+    \ Tier 1 (SKILL.md spec on demand) \u2192 Tier 2 (resources on explicit handle).\
+    \ Prevents context window bottleneck as skill library scales."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/645
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
