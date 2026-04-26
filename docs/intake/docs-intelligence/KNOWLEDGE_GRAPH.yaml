@@ -1955,6 +1955,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/441
   status: active
+- id: APC-002
+  name: Anthropic Workspace-Level Cache Isolation
+  introduced_by: docs/intake/issue-drafts/APC-002-anthropic-workspace-isolation-no-cache-id.md
+  introduced_at: '2026-04-26'
+  definition: Anthropic prompt caching has no shareable cache ID primitive. Cache
+    boundary is workspace-level (not org-level) after Feb 2026 change. Cross-seat
+    sharing requires same workspace + exact prefix match.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/443
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
