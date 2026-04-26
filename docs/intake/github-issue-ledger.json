@@ -1879,5 +1879,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/source-substrate-missing-protocol-domain.md",
     "draftStatus": "published"
+  },
+  "ESA-003-trust-tiers-write-admission-gate": {
+    "number": 508,
+    "state": "open",
+    "title": "ESA-003: Map trust tiers to write admission gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/508",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-003-trust-tiers-write-admission-gate.md",
+    "draftStatus": "published"
   }
 }
