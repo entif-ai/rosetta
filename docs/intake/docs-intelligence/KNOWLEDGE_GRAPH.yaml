@@ -2440,6 +2440,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/528
   status: active
+- id: HF-002
+  name: Relevance Scoring Threshold Calibration
+  introduced_by: docs/intake/issue-drafts/HF-002-relevance-scoring-threshold-calibration.md
+  introduced_at: '2026-04-26'
+  definition: Calibration of a six-dimension paper relevance scoring model (Stack
+    impact, Time-to-value, Novelty, Credibility, Leverage, Risk relevance) against
+    a ground-truth reference set, to set an empirical triage threshold for the HuggingFace
+    daily sweep pipeline.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/530
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
