@@ -2633,6 +2633,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/567
   status: active
+- id: MCST-005
+  name: Community Skills Verification Harness
+  introduced_by: docs/intake/issue-drafts/MCST-005-missing-verification-harness-community-skills.md
+  introduced_at: '2026-04-26'
+  definition: A systematic verification pipeline for vetting community-authored MaxClaw
+    skills before promotion to production, including static analysis, sandboxed execution,
+    egress auditing, and behavioral testing.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/569
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

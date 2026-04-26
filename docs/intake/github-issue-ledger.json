@@ -2149,5 +2149,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-004-reliability-risk-cheap-lane.md",
     "draftStatus": "published"
+  },
+  "MCST-005-missing-verification-harness-community-skills.md": {
+    "number": 569,
+    "state": "open",
+    "title": "MCST-005: Missing Verification Harness for Community Skills Promotion",
+    "url": "https://github.com/entif-ai/rosetta/issues/569",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-005-missing-verification-harness-community-skills.md",
+    "draftStatus": "published"
   }
 }
