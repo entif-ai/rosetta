@@ -1150,5 +1150,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-003-model-broker-nim-unimplemented.md",
     "draftStatus": "published"
+  },
+  "DCP-004-code-atlas-not-implemented.md": {
+    "number": 355,
+    "state": "open",
+    "title": "DCP-004: Implement Code Atlas data model persistence (6-entity knowledge graph)",
+    "url": "https://github.com/entif-ai/rosetta/issues/355",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-004-code-atlas-not-implemented.md",
+    "draftStatus": "published"
   }
 }
