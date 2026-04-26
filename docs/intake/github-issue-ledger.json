@@ -1951,5 +1951,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-003-engram-rosetta-semantic-keys.md",
     "draftStatus": "published"
+  },
+  "HEA-004-mr-tech-lead-acrostic-publication.md": {
+    "number": 524,
+    "state": "open",
+    "title": "MR. TECH LEAD \u2014 Publish Hybrid Architecture with Acrostic arXiv Identity",
+    "url": "https://github.com/entif-ai/rosetta/issues/524",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-004-mr-tech-lead-acrostic-publication.md",
+    "draftStatus": "published"
   }
 }

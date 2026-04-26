@@ -2406,6 +2406,19 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/521
   status: active
+- id: HEA-004-mr-tech-lead-acrostic-publication
+  name: "MR. TECH LEAD \u2014 Hybrid Architecture Acrostic Publication Identity"
+  introduced_by: docs/intake/issue-drafts/HEA-004-mr-tech-lead-acrostic-publication.md
+  introduced_at: '2026-04-26'
+  definition: The MR. TECH LEAD acrostic (Mamba-3, Rosetta Pasigraphy, TurboQuant,
+    ENGRAM, CCA, H-Neurons, Learning to Self-Evolve, ELIXIR, AttnRes, Draft-and-Prune)
+    is a memorable branded identity for the hybrid cognitive architecture, confirmed
+    for use in arXiv academic publication with the subtitle "An Interpretable Hybrid
+    Cognitive Architecture for Semantic Canonicalization, Conditional Memory, Efficient
+    Sequence Mixing, and Reliability-Governed Reasoning".
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/524
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
