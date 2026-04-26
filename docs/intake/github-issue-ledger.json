@@ -2815,5 +2815,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-009-message-bus-mailroom-architecture.md",
     "draftStatus": "published"
+  },
+  "am-004-mtls-certificate-provisioning.md": {
+    "number": 703,
+    "state": "open",
+    "title": "AM-004: mTLS Certificate Provisioning and Rotation",
+    "url": "https://github.com/entif-ai/rosetta/issues/703",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-004-mtls-certificate-provisioning.md",
+    "draftStatus": "published"
   }
 }

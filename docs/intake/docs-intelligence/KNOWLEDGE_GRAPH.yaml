@@ -3421,6 +3421,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/701
   status: active
+- id: am-004-mtls-certificate-provisioning
+  name: mTLS Certificate Provisioning and Rotation
+  introduced_by: docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md
+  introduced_at: '2026-04-26'
+  definition: Certificate provisioning, rotation, and revocation system for mTLS inter-agent
+    transport in the Entif v0 Agentic Messaging spec. Addresses bootstrap trust, node
+    compromise revocation, and automatic rotation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/703
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
