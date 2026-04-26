@@ -3431,6 +3431,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/703
   status: active
+- id: am-005-guard-decision-api
+  name: Guard Decision API
+  introduced_by: docs/intake/issue-drafts/am-005-guard-decision-api.md
+  introduced_at: '2026-04-26'
+  definition: API endpoint and validation protocol for the GuardLayer to issue iam.decision
+    refs, enabling executors to verify authorization decisions before executing ACTION_REQUESTs.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/630
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
