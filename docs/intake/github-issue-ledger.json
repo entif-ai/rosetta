@@ -1222,5 +1222,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-009-impact-analysis-not-gated.md",
     "draftStatus": "published"
+  },
+  "DCP-010-automation-ceiling-audit-needed.md": {
+    "number": 371,
+    "state": "open",
+    "title": "DCP-010: Automation ceiling audit not done for existing specs",
+    "url": "https://github.com/entif-ai/rosetta/issues/371",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-010-automation-ceiling-audit-needed.md",
+    "draftStatus": "published"
   }
 }
