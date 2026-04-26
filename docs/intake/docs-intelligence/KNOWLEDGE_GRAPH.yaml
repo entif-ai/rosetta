@@ -2807,6 +2807,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/598
   status: active
+- id: REE-006
+  name: 'Jigsaw vs Monkeys: Structured LLM Training Critique'
+  introduced_by: docs/intake/issue-drafts/REE-006-jigsaw-vs-monkeys-training-critique.md
+  introduced_at: '2026-04-26'
+  definition: Critique of brute-force LLM training (shredding text into arbitrary
+    chunks, hoping reasoning emerges) vs cognitively principled "jigsaw" approach
+    using explicit taxonomies, controlled semantic interlingua, graph-structured relations,
+    world models, and curriculum learning.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/600
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
