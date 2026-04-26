@@ -2602,6 +2602,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/560
   status: active
+- id: rosetta-v3-008
+  name: Conjecture nonReplayable Handling
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-008-conjecture-nonreplayable-edge-case.md
+  introduced_at: '2026-04-26'
+  definition: 'Spec gap: no normative definition of nonReplayable justification standard,
+    re-evaluation protocol, or audit fallback for Conjecture tiles that cannot be
+    regenerated.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/563
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
