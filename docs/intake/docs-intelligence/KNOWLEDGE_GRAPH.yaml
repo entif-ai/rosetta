@@ -3605,6 +3605,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/295
   status: active
+- id: ccf-009-no-contrarian-protected-channel-formalization
+  name: Contrarian Protected Channel Formalization
+  introduced_by: docs/intake/issue-drafts/ccf-009-no-contrarian-protected-channel-formalization.md
+  introduced_at: '2026-04-26'
+  definition: 'Formal capture/disposition protocol for contrarian dissent in the Consensus-First
+    framework: mandatory dissent receipts and comprehension attestation before phase
+    transitions proceed.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/733
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4530,7 +4540,8 @@ issue_drafts_inventory:
   issue_id: ccf-009-no-contrarian-protected-channel-formalization
   priority: P2
   type: governance
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/733
 - path: docs/intake/issue-drafts/ccf-010-consensus-first-framework-not-adopted.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-010-consensus-first-framework-not-adopted

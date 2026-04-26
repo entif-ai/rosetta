@@ -2977,5 +2977,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-008-no-anti-motivated-reasoning-automation.md",
     "draftStatus": "published"
+  },
+  "ccf-009-no-contrarian-protected-channel-formalization.md": {
+    "number": 733,
+    "state": "open",
+    "title": "CCF-009: No Contrarian Protected Channel Formalization",
+    "url": "https://github.com/entif-ai/rosetta/issues/733",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-009-no-contrarian-protected-channel-formalization.md",
+    "draftStatus": "published"
   }
 }
