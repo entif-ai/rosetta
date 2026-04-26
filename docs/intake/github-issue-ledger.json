@@ -952,5 +952,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-opportunity-edge-brief.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-phase-transition-handshake": {
+    "number": 302,
+    "state": "open",
+    "title": "CCF: Implement Phase Transition Handshake Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/302",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-phase-transition-handshake.md",
+    "draftStatus": "published"
   }
 }

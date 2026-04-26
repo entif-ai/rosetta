@@ -947,6 +947,7 @@ concepts:
   - consensus-first-framework
   referenced_by:
   - docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
+  - https://github.com/entif-ai/rosetta/issues/302
   status: active
 - id: ccf-anti-motivated-reasoning-guardrails
   name: Anti-Motivated Reasoning Guardrails
