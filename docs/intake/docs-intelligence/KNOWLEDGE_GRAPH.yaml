@@ -1836,6 +1836,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/417
   status: active
+- id: sld-006-skill-vetting-pipeline
+  name: Skill Vetting/Ingestion Pipeline (SLD-006)
+  introduced_by: docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md
+  introduced_at: '2026-04-26'
+  definition: "6-stage gating pipeline (Ingest \u2192 Normalize \u2192 Static lint\
+    \ \u2192 Petri eval pack \u2192 Sign+store \u2192 Enable) that certifies skills\
+    \ before broker visibility."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/419
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

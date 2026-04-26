@@ -1447,5 +1447,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-should-have-owners.md",
     "draftStatus": "published"
+  },
+  "SLD-006-skill-vetting-pipeline.md": {
+    "number": 419,
+    "state": "open",
+    "title": "SLD-006: Skill Vetting/Ingestion Pipeline",
+    "url": "https://github.com/entif-ai/rosetta/issues/419",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-006-skill-vetting-pipeline.md",
+    "draftStatus": "published"
   }
 }
