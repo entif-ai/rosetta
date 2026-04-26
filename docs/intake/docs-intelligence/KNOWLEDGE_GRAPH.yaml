@@ -3353,6 +3353,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/688
   status: active
+- id: df-008-config-upgrade-silent-fail
+  name: Config auto-upgrade silent failure
+  introduced_by: docs/intake/issue-drafts/df-008-config-upgrade-silent-fail.md
+  introduced_at: '2026-04-26'
+  definition: The make config-upgrade command merges config.example.yaml into config.yaml
+    without rollback, backup, or post-merge validation, risking corruption if interrupted.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/690
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
