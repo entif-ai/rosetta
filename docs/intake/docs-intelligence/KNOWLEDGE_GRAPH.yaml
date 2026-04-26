@@ -2346,6 +2346,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/510
   status: active
+- id: ESA-005
+  name: SAFE coordination layer for Villaticus
+  introduced_by: docs/intake/issue-drafts/ESA-005-safe-villaticus-coordination-layer.md
+  introduced_at: '2026-04-26'
+  definition: SAFE (Shared Asset Framework/Ecosystem) is the coordination layer that
+    bridges Villaticus physical exchange lanes, handling custody, condition tracking,
+    trust, security, and logistics for in-person exchanges.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/383
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
