@@ -1213,5 +1213,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-008-coderag-unimplemented.md",
     "draftStatus": "published"
+  },
+  "DCP-009-impact-analysis-not-gated.md": {
+    "number": 369,
+    "state": "open",
+    "title": "DCP-009: Impact analysis not wired as pre-change gate",
+    "url": "https://github.com/entif-ai/rosetta/issues/369",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-009-impact-analysis-not-gated.md",
+    "draftStatus": "published"
   }
 }
