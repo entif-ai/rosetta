@@ -1274,6 +1274,17 @@ concepts:
   referenced_by:
   - https://github.com/entiif-ai/rosetta/issues/295
   status: active
+- id: 2026-04-25-consensus-first-no-fluent-synthesis-rule
+  name: Spec by Fluent Synthesis Prohibition
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-no-fluent-synthesis-rule.md
+  introduced_at: '2026-04-25'
+  definition: A CCF v0.1 rule forbidding the promotion of LLM-synthesized specs that
+    lack Evidence Ledger backing. Requires enforcement mechanism (lint, guard token,
+    or receipt) to prevent hallucinated or overconfident claims from masquerading
+    as authoritative specs.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/297
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
