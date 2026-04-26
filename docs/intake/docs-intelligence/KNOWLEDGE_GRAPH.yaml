@@ -1252,6 +1252,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/290
   status: active
+- id: 2026-04-25-consensus-first-falsification-dissent-packet
+  name: Falsification & Dissent Packet
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-falsification-dissent-packet.md
+  introduced_at: '2026-04-25'
+  definition: 'CCF artifact with three parts: premortem (assumed failure analysis),
+    contrarian challenge (devil''s advocacy / Team A/B), and protected dissent capture
+    (comprehension step + explicit disposition). Anti-silo-god and anti-productivity-theater
+    mechanism.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/292
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
