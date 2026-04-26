@@ -3523,6 +3523,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/720
   status: active
+- id: be-001
+  name: Receipt Law Not Explicit in Bootstrap Governance
+  introduced_by: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
+  introduced_at: '2026-04-26'
+  definition: Bootstrap implements RRP receipts but does not explicitly invoke the
+    Receipt Law (every meaningful step emits receipts; receipt absence = failure condition).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/722
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

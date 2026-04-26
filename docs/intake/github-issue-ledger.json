@@ -2905,5 +2905,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/autobiographical-memory-three-store.md",
     "draftStatus": "published"
+  },
+  "be-001-receipt-law-not-explicit.md": {
+    "number": 722,
+    "state": "open",
+    "title": "BE-001: Receipt Law Not Explicit in Bootstrap Governance",
+    "url": "https://github.com/entif-ai/rosetta/issues/722",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/be-001-receipt-law-not-explicit.md",
+    "draftStatus": "published"
   }
 }
