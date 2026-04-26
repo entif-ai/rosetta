@@ -2126,6 +2126,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/471#issuecomment-4321841855
   status: active
+- id: EML-003
+  name: Nine-Layer Email-to-Agent Defensive Architecture
+  introduced_by: docs/intake/issue-drafts/EML-003-nine-layer-email-agent-architecture.md
+  introduced_at: '2026-04-26'
+  definition: 'Reference architecture for secure email-to-agent pipelines: 9 layers
+    from mail ingress (Postfix/Rspamd/OpenDKIM) through dual representation, multi-signal
+    classification, taint propagation, sandboxed LLM, OPA policy engine, draft/approve/execute
+    ladder, attachment isolation, and audit/rollback.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/471
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
