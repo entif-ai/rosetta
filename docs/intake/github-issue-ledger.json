@@ -988,5 +988,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-sme-prompt-out.md",
     "draftStatus": "published"
+  },
+  "CONS-001-iit-phi-measurement.md": {
+    "number": 312,
+    "state": "open",
+    "title": "CONS-001: Integrate IIT Phi Measurement into Entif's Architecture",
+    "url": "https://github.com/entif-ai/rosetta/issues/312",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-001-iit-phi-measurement.md",
+    "draftStatus": "published"
   }
 }

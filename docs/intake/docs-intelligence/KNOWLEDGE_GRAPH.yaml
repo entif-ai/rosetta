@@ -1328,6 +1328,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/310
   status: active
+- id: CONS-001-iit-phi-measurement
+  name: IIT Phi Measurement
+  introduced_by: docs/intake/issue-drafts/CONS-001-iit-phi-measurement.md
+  introduced_at: '2026-04-25'
+  definition: "IIT proposes phi (\u03A6) as a quantitative measure of consciousness.\
+    \ Entif needs a computational phi-equivalent for its LLM-based tile Pasigraphy\
+    \ substrate."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/312
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
