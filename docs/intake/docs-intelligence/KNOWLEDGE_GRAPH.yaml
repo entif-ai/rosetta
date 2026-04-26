@@ -3010,6 +3010,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/632
   status: active
+- id: 2026-04-25-consensus-first-evidence-ledger-schema
+  name: Evidence Ledger Artifact Schema
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+  introduced_at: '2026-04-25'
+  definition: A first-class artifact in the Consensus-First Commitment Scoping Framework
+    that prevents single-source errors and motivated reasoning drift in commitment
+    sizing. Each entry maps a claim to seven evidence fields including provenance,
+    credibility, and disconfirmers.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/288
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
