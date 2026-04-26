@@ -3372,6 +3372,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/692
   status: active
+- id: YAAC-004-ai-scare-trade-consulting-wedge
+  name: AI Scare Trade Consulting Wedge
+  introduced_by: docs/intake/issue-drafts/YAAC-004-ai-scare-trade-consulting-wedge.md
+  introduced_at: '2026-04-26'
+  definition: Consulting market opportunity around companies panicking about AI disruption;
+    positioning for "domain translator" engagements that replace AI theater with measured,
+    workflow-level results.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/694
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

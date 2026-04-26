@@ -2770,5 +2770,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-003-sow-shield-agentic-consulting.md",
     "draftStatus": "published"
+  },
+  "YAAC-004-ai-scare-trade-consulting-wedge.md": {
+    "number": 694,
+    "state": "open",
+    "title": "YAAC-004: AI Scare Trade Consulting Wedge",
+    "url": "https://github.com/entif-ai/rosetta/issues/694",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-004-ai-scare-trade-consulting-wedge.md",
+    "draftStatus": "published"
   }
 }
