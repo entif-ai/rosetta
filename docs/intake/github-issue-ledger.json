@@ -2680,5 +2680,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-009-openai-function-call-codec.md",
     "draftStatus": "published"
+  },
+  "TXS-001-rosetta-docid-registry.md": {
+    "number": 676,
+    "state": "open",
+    "title": "TXS-001: Rosetta DocID Registry Implementation",
+    "url": "https://github.com/entif-ai/rosetta/issues/676",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-001-rosetta-docid-registry.md",
+    "draftStatus": "published"
   }
 }
