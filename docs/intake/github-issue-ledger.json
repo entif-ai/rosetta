@@ -2527,5 +2527,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-005-mixture-of-archetypes-scoring.md",
     "draftStatus": "published"
+  },
+  "SCT-006-interpreter-failure-detection.md": {
+    "number": 643,
+    "state": "open",
+    "title": "SCT-006: Interpreter-Failure Detection \u2014 Frame Persistence and Ontology Violation Tracking",
+    "url": "https://github.com/entif-ai/rosetta/issues/643",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-006-interpreter-failure-detection.md",
+    "draftStatus": "published"
   }
 }
