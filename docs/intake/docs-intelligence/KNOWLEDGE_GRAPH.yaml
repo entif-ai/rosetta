@@ -3553,6 +3553,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/302
   status: active
+- id: ccf-002-no-formal-consensus-protocol
+  name: No Formal Consensus-Verification Protocol
+  introduced_by: docs/intake/issue-drafts/ccf-002-no-formal-consensus-protocol.md
+  introduced_at: '2026-04-26'
+  definition: The CCF framework requires verifying three operational consensus conditions
+    (group understanding, strongest objection articulated and understood, explicit
+    readiness agreement), but no formal protocol exists to verify these conditions
+    at commitment gates.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/727
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4434,7 +4445,8 @@ issue_drafts_inventory:
   issue_id: ccf-002-no-formal-consensus-protocol
   priority: P1
   type: governance
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/727
 - path: docs/intake/issue-drafts/ccf-003-no-board-state-formalization.md
   source_doc: docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md
   issue_id: ccf-003-no-board-state-formalization

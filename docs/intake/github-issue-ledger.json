@@ -2932,5 +2932,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-001-no-phase-transition-enforcement.md",
     "draftStatus": "published"
+  },
+  "ccf-002-no-formal-consensus-protocol.md": {
+    "number": 727,
+    "state": "open",
+    "title": "CCF-002: No Formal Consensus-Verification Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/727",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-002-no-formal-consensus-protocol.md",
+    "draftStatus": "published"
   }
 }
