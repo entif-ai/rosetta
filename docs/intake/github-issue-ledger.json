@@ -2995,5 +2995,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/constitutional-primitives-prose-not-law.md",
     "draftStatus": "published"
+  },
+  "cts-001-semantic-codec-forge-fullscope.md": {
+    "number": 737,
+    "state": "open",
+    "title": "CTS-001: SemanticCodecForge Fullscope Implementation",
+    "url": "https://github.com/entif-ai/rosetta/issues/737",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-001-semantic-codec-forge-fullscope.md",
+    "draftStatus": "published"
   }
 }
