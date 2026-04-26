@@ -1510,5 +1510,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-3-briefing-signal-normalization-unspecified.md",
     "draftStatus": "published"
+  },
+  "BIP-006-4-briefing-parallel-review-isolation": {
+    "number": 433,
+    "state": "open",
+    "title": "BIP-006-4: Parallel Persona Review Cannot See Other Reviews",
+    "url": "https://github.com/entif-ai/rosetta/issues/433",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-4-briefing-parallel-review-isolation.md",
+    "draftStatus": "published"
   }
 }
