@@ -1636,5 +1636,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-010-100m-arr-month-six-challenged.md",
     "draftStatus": "published"
+  },
+  "PSD-002-implement-skill-broker-pipeline.md": {
+    "number": 461,
+    "state": "open",
+    "title": "PSD-002: Implement Skill Broker Pipeline",
+    "url": "https://github.com/entif-ai/rosetta/issues/461",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-002-implement-skill-broker-pipeline.md",
+    "draftStatus": "published"
   }
 }
