@@ -1606,6 +1606,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/373
   status: active
+- id: EEH-002
+  name: Adversarial Empathy Test Pack
+  introduced_by: docs/intake/issue-drafts/EEH-002-adversarial-empathy-test-pack.md
+  introduced_at: '2026-04-26'
+  definition: "Test pack for stress-testing HEART empathy axes under adversarial user\
+    \ conditions (sarcastic, dismissive, contradictory, emotionally volatile) \u2014\
+    \ scored separately from standard conversational empathy to detect regressions."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/375
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
