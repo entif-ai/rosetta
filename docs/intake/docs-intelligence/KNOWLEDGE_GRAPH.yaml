@@ -2858,6 +2858,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/608
   status: active
+- id: REE-011-kv-cache-long-context-economics
+  name: KV Cache Long-Context Inference Economics
+  introduced_by: docs/intake/issue-drafts/REE-011-kv-cache-long-context-economics.md
+  introduced_at: '2026-04-26'
+  definition: 'KV cache dynamics during autoregressive generation impose fundamental
+    economic trade-offs in long-context inference: memory footprint and attention
+    cost grow linearly with context length.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/610
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

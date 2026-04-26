@@ -2347,5 +2347,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-010-qkv-layer-head-specificity.md",
     "draftStatus": "published"
+  },
+  "REE-011-kv-cache-long-context-economics.md": {
+    "number": 610,
+    "state": "open",
+    "title": "REE-011: KV Cache Growth and Long-Context Inference Economics",
+    "url": "https://github.com/entif-ai/rosetta/issues/610",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-011-kv-cache-long-context-economics.md",
+    "draftStatus": "published"
   }
 }
