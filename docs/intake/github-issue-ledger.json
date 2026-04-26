@@ -1141,5 +1141,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-002-orchestrator-core-not-built.md",
     "draftStatus": "published"
+  },
+  "DCP-003-model-broker-nim-unimplemented.md": {
+    "number": 353,
+    "state": "open",
+    "title": "DCP-003: Model broker (NIM adapter) not implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/353",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-003-model-broker-nim-unimplemented.md",
+    "draftStatus": "published"
   }
 }

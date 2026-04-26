@@ -1498,6 +1498,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/351
   status: active
+- id: DCP-003-model-broker
+  name: Model Broker (NIM adapter)
+  introduced_by: docs/intake/issue-drafts/DCP-003-model-broker-nim-unimplemented.md
+  introduced_at: '2026-04-26'
+  definition: "Adapter layer abstracting run_model(task, prompt, schema) \u2192 ParsedResult\
+    \ calls away from orchestrator, enabling model swapping and routing between NIM\
+    \ endpoints."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/353
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
