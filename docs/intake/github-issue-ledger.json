@@ -1744,5 +1744,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/python-module-boundary-contract.md",
     "draftStatus": "published"
+  },
+  "entif-v0-002-middleware-escalation-dlq.md": {
+    "number": 479,
+    "state": "open",
+    "title": "ENTIF-v0-002: Deterministic middleware lacks escalation queue, retry policy, and DLQ semantics",
+    "url": "https://github.com/entif-ai/rosetta/issues/479",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-002-middleware-escalation-dlq.md",
+    "draftStatus": "published"
   }
 }

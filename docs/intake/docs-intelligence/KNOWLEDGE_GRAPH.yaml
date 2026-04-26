@@ -2168,6 +2168,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/164
   status: active
+- id: entif-v0-002
+  name: Escalation Queue DLQ Semantics
+  introduced_by: docs/intake/issue-drafts/entif-v0-002-middleware-escalation-dlq.md
+  introduced_at: '2026-04-26'
+  definition: Deterministic middleware emits escalation candidates but lacks queue
+    depth limits, retry/backoff policy, and dead-letter queue semantics for failed
+    escalations.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/479
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
