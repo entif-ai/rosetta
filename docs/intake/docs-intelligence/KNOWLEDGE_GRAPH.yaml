@@ -3333,6 +3333,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/685
   status: active
+- id: TXS-008
+  name: Self-Consistency Checklist for Rosetta Profile Implementers
+  introduced_by: docs/intake/issue-drafts/TXS-008-self-consistency-checklist.md
+  introduced_at: '2026-04-26'
+  definition: A per-profile (Light/Full/Auditor/Forge) checklist + SHACL shapes +
+    validation runner enabling Rosetta implementers to self-certify compliance with
+    a conformance profile.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/240
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
