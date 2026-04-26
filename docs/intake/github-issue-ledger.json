@@ -2266,5 +2266,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-activation-store-score-calibration.md",
     "draftStatus": "published"
+  },
+  "REE-002-semantic-layer-before-tokenizer.md": {
+    "number": 592,
+    "state": "open",
+    "title": "REE-002: Build Semantic Layer First, Custom Tokenizer Second",
+    "url": "https://github.com/entif-ai/rosetta/issues/592",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-002-semantic-layer-before-tokenizer.md",
+    "draftStatus": "published"
   }
 }
