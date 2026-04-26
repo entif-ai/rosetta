@@ -2968,5 +2968,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-007-no-spec-by-fluent-synthesis-enforcement.md",
     "draftStatus": "published"
+  },
+  "ccf-008-no-anti-motivated-reasoning-automation.md": {
+    "number": 295,
+    "state": "open",
+    "title": "CCF: Enforce Anti-Motivated-Reasoning Guardrails (4 Required Guardrails)",
+    "url": "https://github.com/entif-ai/rosetta/issues/295",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-008-no-anti-motivated-reasoning-automation.md",
+    "draftStatus": "published"
   }
 }

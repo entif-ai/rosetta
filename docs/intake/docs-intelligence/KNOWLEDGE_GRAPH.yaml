@@ -3594,6 +3594,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/297
   status: active
+- id: ccf-008
+  name: No Anti-Motivated Reasoning Automation
+  introduced_by: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
+  introduced_at: '2026-04-26'
+  definition: "The four anti-motivated reasoning guardrails in the Consensus-First\
+    \ Commitment Scoping Framework have no tooling or automation \u2014 incentive/bias\
+    \ notes, premortems, Team A/Team B, and disconfirmers all depend on manual process\
+    \ and will degrade to checkbox exercises."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/295
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
