@@ -2401,5 +2401,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-SLICE-repo-comprehension-vertical-slice.md",
     "draftStatus": "published"
+  },
+  "RLM-001-TILES-rosetta-rlm-tile-extensions.md": {
+    "number": 612,
+    "state": "open",
+    "title": "RLM-001-TILES: Extend Rosetta/Tiles to support RLM operation emits",
+    "url": "https://github.com/entif-ai/rosetta/issues/612",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-TILES-rosetta-rlm-tile-extensions.md",
+    "draftStatus": "published"
   }
 }
