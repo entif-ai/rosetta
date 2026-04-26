@@ -2163,6 +2163,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-3.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rosetta-v3-core-spine-specification.md",
       "sourcePath": "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
       "title": "Docs Intelligence Extraction — Rosetta v3.0.0 Core Spine Specification",
@@ -4214,6 +4220,30 @@
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-003-ADM-ada-roma-compatibility-model-repl-competence.md",
+      "title": "RLM-003-ADM — Ada/ROMA Compatibility + Model REPL Competence for RLM",
+      "labels": [],
+      "signature": "003-ada-adm-compatibility-competence"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-003-ARCH-async-subcall-pattern-mcp-contract.md",
+      "title": "RLM-003-ARCH — Async Subcall Pattern + MCP Contract for RLMRuntime",
+      "labels": [],
+      "signature": "003-arch-async-contract-mcp"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-003-SEC-GuardLayer-rlm-repl-governance.md",
+      "title": "RLM-003-SEC — GuardLayer Policy Instantiation for RLM REPL",
+      "labels": [],
+      "signature": "003-guardlayer-instantiation-policy-repl"
+    },
+    {
+      "path": "docs/intake/issue-drafts/RLM-003-TERM-termination-protocol-brittleness.md",
+      "title": "RLM-003-TERM — RLM Termination Protocol Brittleness",
+      "labels": [],
+      "signature": "003-brittleness-protocol-rlm-rlm"
     },
     {
       "path": "docs/intake/issue-drafts/rosetta-acp-interop-strategy.md",
