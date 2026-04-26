@@ -1461,6 +1461,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/343
   status: active
+- id: CW-007-search-capabilities-mcp-unimplemented
+  name: search_capabilities MCP tool
+  introduced_by: docs/intake/issue-drafts/CW-007-search-capabilities-mcp-unimplemented.md
+  introduced_at: '2026-04-25'
+  definition: MCP server tool for searching capability tiles by text query and structured
+    filters; defined in Code Wiki integration spec but not yet implemented.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/345
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

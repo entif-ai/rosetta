@@ -1105,5 +1105,14 @@
     "activeDraftPath": "docs/intake/issue-drafts/CW-006-capability-tile-schema-rosetta-catalog.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-006-capability-tile-schema-rosetta-catalog.md",
     "draftStatus": "published"
+  },
+  "CW-007-search-capabilities-mcp-unimplemented": {
+    "number": 345,
+    "state": "open",
+    "title": "CW-007: search_capabilities MCP tool interface only, no implementation",
+    "url": "https://github.com/entif-ai/rosetta/issues/345",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-007-search-capabilities-mcp-unimplemented.md",
+    "draftStatus": "published"
   }
 }
