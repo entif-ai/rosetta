@@ -2671,5 +2671,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-008-yamnet-audio-prototypes-etl.md",
     "draftStatus": "published"
+  },
+  "TB-009-openai-function-call-codec.md": {
+    "number": 674,
+    "state": "open",
+    "title": "OpenAI function-call codec: bundle\u2192function-call JSON adapter and reverse",
+    "url": "https://github.com/entif-ai/rosetta/issues/674",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-009-openai-function-call-codec.md",
+    "draftStatus": "published"
   }
 }
