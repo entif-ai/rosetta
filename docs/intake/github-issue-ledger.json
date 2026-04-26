@@ -2824,5 +2824,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-004-mtls-certificate-provisioning.md",
     "draftStatus": "published"
+  },
+  "am-005-guard-decision-api.md": {
+    "number": 630,
+    "state": "open",
+    "title": "AM-005: Guard Decision API \u2014 enriches SCRU-002 (existing #630)",
+    "url": "https://github.com/entif-ai/rosetta/issues/630",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-005-guard-decision-api.md",
+    "draftStatus": "published"
   }
 }
