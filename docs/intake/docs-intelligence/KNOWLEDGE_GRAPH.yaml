@@ -2703,6 +2703,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/461
   status: active
+- id: PSD-003
+  name: Skill Eval Harness
+  introduced_by: docs/intake/issue-drafts/PSD-003-implement-skill-eval-harness.md
+  introduced_at: '2026-04-26'
+  definition: Grading harness for running 2-5 canonical eval prompts per skill, asserting
+    file existence, schema validity, diff patterns, and output content. Benchmark
+    receipts feed broker ranking.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/581
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
