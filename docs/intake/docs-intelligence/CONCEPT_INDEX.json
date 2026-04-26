@@ -1956,6 +1956,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-holistic-entif-redesign.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-holistic-entif-redesign.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-huggingface-research-integration.md",
       "sourcePath": "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
       "title": "Docs Intelligence Extraction",
@@ -4111,6 +4117,30 @@
       "title": "Issue: harness-platform-mismatch-root-cause",
       "labels": [],
       "signature": "cause-harness-mismatch-platform-root"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-001-event-driven-consciousness.md",
+      "title": "HEA-001: Event-Driven Consciousness — Retire Nightly Consolidation Model",
+      "labels": [],
+      "signature": "001-consciousness-consolidation-driven-event"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-002-draft-prune-rosetta-equivalence.md",
+      "title": "HEA-002: Draft-and-Prune Equivalence Gap — Rosetta as Canonical Aggregation Substrate",
+      "labels": [],
+      "signature": "002-aggregation-canonical-draft-equivalence"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-003-engram-rosetta-semantic-keys.md",
+      "title": "HEA-003: ENGRAM + Rosetta — Semantic Slugs as Conditional Memory Lookup Keys",
+      "labels": [],
+      "signature": "003-conditional-engram-hea-keys"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HEA-004-mr-tech-lead-acrostic-publication.md",
+      "title": "HEA-004: MR. TECH LEAD — Publish Hybrid Architecture with Acrostic Brand",
+      "labels": [],
+      "signature": "004-acrostic-architecture-brand-hea"
     },
     {
       "path": "docs/intake/issue-drafts/HF-001-huggingface-daily-trending-papers-sweep.md",
