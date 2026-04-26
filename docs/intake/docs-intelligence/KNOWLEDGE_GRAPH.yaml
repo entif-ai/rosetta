@@ -3051,6 +3051,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/637
   status: active
+- id: SCT-004-tulpa-stamp-comparator-architecture
+  name: Tulpa Stamp Five-Layer Comparator
+  introduced_by: docs/intake/issue-drafts/SCT-004-tulpa-stamp-comparator-architecture.md
+  introduced_at: '2026-04-26'
+  definition: Bounded, instantiated, versioned comparator construct modeling an archetype's
+    discourse patterns, dialogic moves, strategic topology, ethics profile, and longitudinal
+    consistency for deterministic scoring.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/639
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
