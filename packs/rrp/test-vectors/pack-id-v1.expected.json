@@ -1,0 +1,20 @@
+{
+  "vector_id": "pack-id-v1-synthetic",
+  "algorithm": "rosetta-pack-id-v1",
+  "input": {
+    "algorithm": "rosetta-pack-id-v1",
+    "manifest": {
+      "doc_id": "EXAMPLE-PACK",
+      "namespace": "example",
+      "version": "0.1.0"
+    },
+    "files": [
+      {
+        "path": "examples/example.md",
+        "sha256": "b6a98d9ce9a2d9149288fa3df42d377c3e42737afdcdaf714e33c0a100b51060",
+        "size": 6
+      }
+    ]
+  },
+  "expected_pack_id": "cidv1-sha256-95fca7b3518b727fb47af60439aeab5ddeb720c04af9f44fe704a0da92530b34"
+}
