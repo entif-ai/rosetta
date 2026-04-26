@@ -2219,6 +2219,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/483
   status: active
+- id: EML-009
+  name: RBL/DNSBL Ingress Provenance Signals
+  introduced_by: docs/intake/issue-drafts/EML-009-rbl-dnsbl-infrastructure-reputation.md
+  introduced_at: '2026-04-26'
+  definition: Infrastructure reputation signals (RBL/DNSBL, mail-auth, ASN, reverse
+    DNS, domain age) fed as provenance features into ingress.* layer. Low-cost, deterministic,
+    but limited against clean-infrastructure BEC and legitimate SaaS senders.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/488
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

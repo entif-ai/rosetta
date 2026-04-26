@@ -1789,5 +1789,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-008-small-model-suitability-routing.md",
     "draftStatus": "published"
+  },
+  "EML-009-rbl-dnsbl-infrastructure-reputation.md": {
+    "number": 488,
+    "state": "open",
+    "title": "EML-009: RBL/DNSBL and Infrastructure Reputation as Ingress Provenance Features",
+    "url": "https://github.com/entif-ai/rosetta/issues/488",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-009-rbl-dnsbl-infrastructure-reputation.md",
+    "draftStatus": "published"
   }
 }
