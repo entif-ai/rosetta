@@ -2229,6 +2229,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/488
   status: active
+- id: EML-010
+  name: Rosetta-Native Model Training Requirements
+  introduced_by: docs/intake/issue-drafts/EML-010-rosetta-native-model-training-requirements.md
+  introduced_at: '2026-04-26'
+  definition: Four-wave training ladder for adapting a host model into Rosetta space
+    via codec-and-alignment, proceeding through Rosetta-aware adaptation, D&P-refined
+    post-training, mixed corpora continued pretraining, and deeper architecture adaptation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/490
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

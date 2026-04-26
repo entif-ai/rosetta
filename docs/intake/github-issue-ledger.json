@@ -1798,5 +1798,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-009-rbl-dnsbl-infrastructure-reputation.md",
     "draftStatus": "published"
+  },
+  "EML-010-rosetta-native-model-training-requirements.md": {
+    "number": 490,
+    "state": "open",
+    "title": "EML-010: Rosetta-Native Cognitive Model Training Requirements and Four-Wave Training Ladder",
+    "url": "https://github.com/entif-ai/rosetta/issues/490",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-010-rosetta-native-model-training-requirements.md",
+    "draftStatus": "published"
   }
 }
