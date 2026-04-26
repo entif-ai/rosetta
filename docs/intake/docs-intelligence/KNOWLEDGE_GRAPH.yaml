@@ -3451,6 +3451,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/706
   status: active
+- id: am-007-message-size-limit-dos
+  name: "Message Size Limit \u2014 DoS Prevention at Ingress"
+  introduced_by: docs/intake/issue-drafts/am-007-message-size-limit-dos.md
+  introduced_at: '2026-04-26'
+  definition: Define max_message_size threshold (1 MB typical, 10 MB for artifact
+    refs) to prevent DoS via message size amplification, enforced at Stage 1 ingest
+    before any processing.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/701
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

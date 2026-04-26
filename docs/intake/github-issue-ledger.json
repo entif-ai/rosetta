@@ -2842,5 +2842,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-006-data-control-plane-spoofing.md",
     "draftStatus": "published"
+  },
+  "am-007-message-size-limit-dos.md": {
+    "number": 701,
+    "state": "open",
+    "title": "AM-007: Message Size Limit \u2014 DoS Prevention at Ingress",
+    "url": "https://github.com/entif-ai/rosetta/issues/701",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/am-007-message-size-limit-dos.md",
+    "draftStatus": "published"
   }
 }
