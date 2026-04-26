@@ -1648,6 +1648,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/381
   status: active
+- id: ESA-004
+  name: Villaticus physical allocation proof-of-work gate
+  introduced_by: docs/intake/issue-drafts/ESA-004-villaticus-physical-allocation-proof-of-work.md
+  introduced_at: '2026-04-26'
+  definition: Counter-infrastructure design that changes scarce-goods allocation from
+    compute speed race (bots dominate) to human throughput (labor arbitrage is ceiling),
+    using physical presence as proof-of-work.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/383
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
