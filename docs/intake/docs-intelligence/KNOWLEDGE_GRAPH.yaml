@@ -1201,6 +1201,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/276
   status: active
+- id: ccf-calibration-loop
+  name: Commitment Calibration Loop
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
+  introduced_at: '2026-04-25'
+  definition: "Continuous four-component loop that prevents static commitments from\
+    \ becoming sunk costs: update board state \u2192 update commitment canvas; update\
+    \ evidence ledger \u2192 update confidence; run periodic premortems; re-check\
+    \ exit/pivot triggers."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/278
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

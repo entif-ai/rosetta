@@ -871,5 +871,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-subagent-context-budget-limits.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-calibration-loop.md": {
+    "number": 278,
+    "state": "open",
+    "title": "CCF: Implement Commitment Calibration Loop Automation",
+    "url": "https://github.com/entif-ai/rosetta/issues/278",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-calibration-loop.md",
+    "draftStatus": "published"
   }
 }
