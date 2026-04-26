@@ -2181,6 +2181,12 @@
       "concepts": []
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-reasoning-efficiency-encoding.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
       "sourcePath": "docs/intake/docs-intelligence/2026-04-25-rlm-1.md",
       "title": "Docs Intelligence Extraction",
@@ -4430,6 +4436,72 @@
       "title": "recovery-rule-no-enforcement",
       "labels": [],
       "signature": "enforcement-recovery-rule"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-001-reasoning-efficiency-language-independence.md",
+      "title": "REE-001 — Reasoning Efficiency Is Not Married to English",
+      "labels": [],
+      "signature": "001-efficiency-english-married-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-002-semantic-layer-before-tokenizer.md",
+      "title": "REE-002 — Build Semantic Layer First, Custom Tokenizer Second",
+      "labels": [],
+      "signature": "002-build-custom-first-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-003-lora-qlora-dora-infrastructure.md",
+      "title": "REE-003 — QLoRA/DoRA Infrastructure Clarification for Entif Stack",
+      "labels": [],
+      "signature": "003-clarification-dora-entif-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-004-roma-hardware-qora-accelerator.md",
+      "title": "REE-004 — ROMA Hardware Accelerator for QLoRA Inference",
+      "labels": [],
+      "signature": "004-accelerator-hardware-inference-qlora"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-005-neural-architecture-primer.md",
+      "title": "REE-005 — Neural Network Architecture Primer Completeness",
+      "labels": [],
+      "signature": "005-architecture-completeness-network-neural"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-006-jigsaw-vs-monkeys-training-critique.md",
+      "title": "REE-006 — Jigsaw vs Monkeys: Critique of Brute-Force LLM Training",
+      "labels": [],
+      "signature": "006-brute-critique-force-jigsaw"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-007-ithkuil-lexeme-initialization.md",
+      "title": "REE-007 — Ithkuil Lexeme Curriculum as Structured Initialization Seed",
+      "labels": [],
+      "signature": "007-curriculum-initialization-ithkuil-lexeme"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-008-semantic-exoskeleton-concept.md",
+      "title": "REE-008 — Semantic Exoskeleton vs Host Model Internals",
+      "labels": [],
+      "signature": "008-exoskeleton-host-internals-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-009-comparative-training-experiment.md",
+      "title": "REE-009 — Comparative Training Experiment for Structured Initialization",
+      "labels": [],
+      "signature": "009-comparative-experiment-initialization-ree"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-010-qkv-layer-head-specificity.md",
+      "title": "REE-010 — Q/K/V Projection Specificity Across Layers and Heads",
+      "labels": [],
+      "signature": "010-across-heads-layers-projection"
+    },
+    {
+      "path": "docs/intake/issue-drafts/REE-011-kv-cache-long-context-economics.md",
+      "title": "REE-011 — KV Cache Growth and Long-Context Inference Economics",
+      "labels": [],
+      "signature": "011-cache-context-economics-growth"
     },
     {
       "path": "docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md",
