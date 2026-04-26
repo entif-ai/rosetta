@@ -2768,6 +2768,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/590
   status: active
+- id: REE-002-semantic-layer-before-tokenizer
+  name: Semantic Layer Before Tokenizer Phase Priority
+  introduced_by: docs/intake/issue-drafts/REE-002-semantic-layer-before-tokenizer.md
+  introduced_at: '2026-04-26'
+  definition: 'Phase-priority roadmap: build semantic IR registry (Phase 1) before
+    custom tokenizer work (Phase 5). Embedding model is conditional on being concept/frame-aware.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/592
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
