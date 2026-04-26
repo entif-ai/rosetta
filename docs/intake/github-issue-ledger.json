@@ -2761,5 +2761,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-008-config-upgrade-silent-fail.md",
     "draftStatus": "published"
+  },
+  "YAAC-003-sow-shield-agentic-consulting.md": {
+    "number": 692,
+    "state": "open",
+    "title": "YAAC-003: SOW shield for agentic AI consulting",
+    "url": "https://github.com/entif-ai/rosetta/issues/692",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-003-sow-shield-agentic-consulting.md",
+    "draftStatus": "published"
   }
 }

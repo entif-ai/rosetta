@@ -3362,6 +3362,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/690
   status: active
+- id: YAAC-003-sow-shield
+  name: SOW Shield for Agentic AI Consulting
+  introduced_by: docs/intake/issue-drafts/YAAC-003-sow-shield-agentic-consulting.md
+  introduced_at: '2026-04-26'
+  definition: A 6-section contract structure (deliverables, acceptance criteria, assumptions,
+    out of scope, change control, limitations) that indemnifies AI consulting engagements
+    against scope creep and transforms disputes into billable change orders.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/692
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
