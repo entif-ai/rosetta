@@ -3305,6 +3305,15 @@ concepts:
   referenced_by:
   - https://github.com/atif-ai/rosetta/issues/680
   status: active
+- id: TXS-005
+  name: Design Tokens + WCAG 2.2 + WAI-ARIA 1.2 StdPacks
+  introduced_by: docs/intake/issue-drafts/TXS-005-design-tokens-wcag-stdpacks.md
+  introduced_at: '2026-04-26'
+  definition: Tile mappings and pack specs for W3C Design Tokens (2025.10), WCAG 2.2,
+    and WAI-ARIA 1.2 as Pasigraphy accessibility and theming StdPacks
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/678
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
