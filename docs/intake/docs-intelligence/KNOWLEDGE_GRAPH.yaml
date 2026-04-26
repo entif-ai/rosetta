@@ -3229,6 +3229,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/672
   status: active
+- id: TB-009-openai-function-call-codec
+  name: OpenAI function-call codec
+  introduced_by: docs/intake/issue-drafts/TB-009-openai-function-call-codec.md
+  introduced_at: '2026-04-26'
+  definition: Codec adapter that bidirectionally transforms RPP bundles and OpenAI
+    function-call JSON format, enabling cross-model interoperability for the skateboard
+    demo.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/674
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4446,5 +4456,8 @@ issue_drafts_inventory:
   priority: P1
   type: feature
   url: https://github.com/entif-ai/rosetta/issues/670
+  status: published
+- issue_id: TB-009-openai-function-call-codec
+  url: https://github.com/entif-ai/rosetta/issues/674
   status: published
 
