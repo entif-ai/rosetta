@@ -2374,5 +2374,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-007-client-artifact-conformance.md",
     "draftStatus": "published"
+  },
+  "RLM-001-CONTEXT-ROT-context-rot-address.md": {
+    "number": 612,
+    "state": "open",
+    "title": "Address context rot in agentic sessions \u2014 evaluate RLM approach for memory/orchestration layer",
+    "url": "https://github.com/entif-ai/rosetta/issues/612",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-CONTEXT-ROT-context-rot-address.md",
+    "draftStatus": "published"
   }
 }

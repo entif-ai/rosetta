@@ -2888,6 +2888,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/614
   status: active
+- id: RLM-001-CONTEXT-ROT
+  name: "Context Rot \u2014 Memory/Orchestration Layer Resolution"
+  introduced_by: docs/intake/issue-drafts/RLM-001-CONTEXT-ROT-context-rot-address.md
+  introduced_at: '2026-04-26'
+  definition: Context rot degrades agentic performance over long sessions as irrelevant
+    tokens accumulate. RLM-style programmatic attention (external memory substrate,
+    pointer-based access, CID/query addressing) proposed as resolution for Entif memory/orchestration
+    layer.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/612
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
