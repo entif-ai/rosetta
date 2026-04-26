@@ -907,5 +907,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-evidence-ledger-schema.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-exit-pivot-salvage-plan.md": {
+    "number": 290,
+    "state": "open",
+    "title": "CCF: Implement Exit/Pivot/Salvage Plan Artifact",
+    "url": "https://github.com/entif-ai/rosetta/issues/290",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-exit-pivot-salvage-plan.md",
+    "draftStatus": "published"
   }
 }
