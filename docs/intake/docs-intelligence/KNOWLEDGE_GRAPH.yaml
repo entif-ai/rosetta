@@ -1717,6 +1717,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/394
   status: active
+- id: BIP-002-1-kb-sentence-split-abbreviations
+  name: Sentence Split Regex Fails on Common English Abbreviations
+  introduced_by: docs/intake/issue-drafts/BIP-002-1-kb-sentence-split-abbreviations.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-002 chunking regex (?<=[.!?])\s+ splits on all punctuation including
+    abbreviation periods, corrupting chunk semantics for inputs like "Dr.", "e.g.",
+    "Fig. 1".
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/396
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
