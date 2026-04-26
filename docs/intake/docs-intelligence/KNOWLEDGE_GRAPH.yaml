@@ -1975,6 +1975,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/445
   status: active
+- id: APC-004-entif-inference-firewall-semantic-cache-router-provenance
+  name: Entif Inference Firewall + Semantic Cache Router + Provenance Engine
+  introduced_by: docs/intake/issue-drafts/APC-004-entif-inference-firewall-semantic-cache-router-provenance.md
+  introduced_at: '2026-04-26'
+  definition: 'Entif product category as a three-part braided control plane: inference
+    firewall (admission controller/privacy membrane/ABAC/RBAC), semantic cache router
+    (intent classification/deduplication/cache domain governance), and provenance-native
+    governance (receipts/audit trail/Tripwire/challengeability).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/447
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

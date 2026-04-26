@@ -1573,5 +1573,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-003-gemini-vertex-named-cache-resources-iam.md",
     "draftStatus": "published"
+  },
+  "APC-004-entif-inference-firewall-semantic-cache-router-provenance.md": {
+    "number": 447,
+    "state": "open",
+    "title": "APC-004: Entif Inference Firewall + Semantic Cache Router + Provenance Engine (Product Category)",
+    "url": "https://github.com/entif-ai/rosetta/issues/447",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-004-entif-inference-firewall-semantic-cache-router-provenance.md",
+    "draftStatus": "published"
   }
 }
