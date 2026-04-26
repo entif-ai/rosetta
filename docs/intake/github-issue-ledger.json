@@ -1987,5 +1987,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-002-relevance-scoring-threshold-calibration.md",
     "draftStatus": "published"
+  },
+  "HF-003-universal-content-intake-envelope-schema.md": {
+    "number": 532,
+    "state": "open",
+    "title": "HF-003: Implement universal content intake envelope schema across all source types",
+    "url": "https://github.com/entif-ai/rosetta/issues/532",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-003-universal-content-intake-envelope-schema.md",
+    "draftStatus": "published"
   }
 }
