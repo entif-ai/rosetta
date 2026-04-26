@@ -3200,6 +3200,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/665
   status: active
+- id: TB-006-bundle-validator-explainer
+  name: Bundle Validator and Explainer
+  introduced_by: docs/intake/issue-drafts/TB-006-bundle-validator-explainer.md
+  introduced_at: '2026-04-26'
+  definition: jsonschema validation and per-criterion explanation layer for RPP meaning
+    bundles, ensuring disambiguation decisions are auditable and explainable.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/668
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

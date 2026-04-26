@@ -2644,5 +2644,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-005-personalized-pagerank-wsd.md",
     "draftStatus": "published"
+  },
+  "TB-006-bundle-validator-explainer.md": {
+    "number": 668,
+    "state": "open",
+    "title": "Bundle validator and explainer: implement jsonschema validation and per-criterion explanation for meaning bundles",
+    "url": "https://github.com/entif-ai/rosetta/issues/668",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-006-bundle-validator-explainer.md",
+    "draftStatus": "published"
   }
 }
