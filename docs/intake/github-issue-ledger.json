@@ -1069,5 +1069,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-003-structured-output-format-unknown.md",
     "draftStatus": "published"
+  },
+  "CW-004-reuse-enforcement-not-wired.md": {
+    "number": 337,
+    "state": "open",
+    "title": "CW-004: Reuse enforcement not wired into planning loop",
+    "url": "https://github.com/entif-ai/rosetta/issues/337",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CW-004-reuse-enforcement-not-wired.md",
+    "draftStatus": "published"
   }
 }
