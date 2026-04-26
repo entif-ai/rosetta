@@ -1852,5 +1852,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-014-compute-cost-trajectory-risk.md",
     "draftStatus": "published"
+  },
+  "ESA-001-canonical-entif-one-liner.md": {
+    "number": 502,
+    "state": "open",
+    "title": "ESA-001: Canonical one-liner for Entif positioning",
+    "url": "https://github.com/entif-ai/rosetta/issues/502",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-001-canonical-entif-one-liner.md",
+    "draftStatus": "published"
   }
 }

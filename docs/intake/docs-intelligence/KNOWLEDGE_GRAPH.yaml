@@ -2292,6 +2292,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/500
   status: active
+- id: ESA-001-canonical-entif-one-liner
+  name: Canonical Entif One-Liner
+  introduced_by: docs/intake/issue-drafts/ESA-001-canonical-entif-one-liner.md
+  introduced_at: '2026-04-26'
+  definition: 'A canonical positioning statement for Entif: "Entif is a governed,
+    local-first cognition OS whose entire job is to turn messy reality into auditable,
+    content-addressed meaning and then (optionally) into constrained action, with
+    Rosetta as the semantic spine and Tiles as the portable knowledge substrate."'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/502
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
