@@ -2250,6 +2250,16 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/492
   - https://github.com/entif-ai/rosetta/issues/490#issuecomment-4321941295
   status: active
+- id: EML-012
+  name: Gemma 4 Intelligence-per-Parameter Calibration
+  introduced_by: docs/intake/issue-drafts/EML-012-gemma-4-efficiency-calibration.md
+  introduced_at: '2026-04-26'
+  definition: "Gemma 4 31B/26B demonstrates that \"smaller active footprint, larger\
+    \ effective intelligence\" is already real in production \u2014 serves as empirical\
+    \ calibration point for Rosetta efficiency claims."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/494
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

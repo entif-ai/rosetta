@@ -1816,5 +1816,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-011-megatrain-training-economics.md",
     "draftStatus": "published"
+  },
+  "EML-012-gemma-4-efficiency-calibration.md": {
+    "number": 494,
+    "state": "open",
+    "title": "EML-012: Gemma 4 as Calibration Point for Intelligence-per-Parameter Efficiency",
+    "url": "https://github.com/entif-ai/rosetta/issues/494",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-012-gemma-4-efficiency-calibration.md",
+    "draftStatus": "published"
   }
 }
