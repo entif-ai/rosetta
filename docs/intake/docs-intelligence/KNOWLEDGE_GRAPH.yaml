@@ -1965,6 +1965,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/443
   status: active
+- id: APC-003
+  name: Gemini/Vertex Named Cache Resources with IAM
+  introduced_by: docs/intake/issue-drafts/APC-003-gemini-vertex-named-cache-resources-iam.md
+  introduced_at: '2026-04-26'
+  definition: "Google Vertex AI provides named cache resources (cachedContents/{id})\
+    \ governed by IAM, enabling seat-level separation while sharing a single context\
+    \ cache \u2014 the closest to a shareable cache ID primitive among major LLM providers."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/445
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

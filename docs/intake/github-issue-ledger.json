@@ -1564,5 +1564,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-002-anthropic-workspace-isolation-no-cache-id.md",
     "draftStatus": "published"
+  },
+  "APC-003-gemini-vertex-named-cache-resources-iam.md": {
+    "number": 445,
+    "state": "open",
+    "title": "APC-003: Google Gemini/Vertex AI \u2014 Named Cache Resources with IAM",
+    "url": "https://github.com/entif-ai/rosetta/issues/445",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-003-gemini-vertex-named-cache-resources-iam.md",
+    "draftStatus": "published"
   }
 }
