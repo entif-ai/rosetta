@@ -1378,6 +1378,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/322
   status: active
+- id: cw-001-capability-registry
+  name: Cross-repo CapabilityRegistry
+  introduced_by: docs/intake/issue-drafts/CW-001-cross-repo-capability-registry-undefined.md
+  introduced_at: '2026-04-25'
+  definition: A unified capability registry that aggregates and deduplicates capabilities
+    across all repos, enabling cross-repo questions like "what are all auth implementations
+    across Entif, VieDay, Mislead.Us."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/325
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2542,4 +2552,7 @@ issue_drafts_inventory:
   type: architecture
   status: published
   url: https://github.com/enti-ai/rosetta/issues/267
+- issue_id: CW-001
+  url: https://github.com/entif-ai/rosetta/issues/325
+  status: published
 
