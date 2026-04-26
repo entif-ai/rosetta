@@ -2471,6 +2471,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/534
   status: active
+- id: HF-005
+  name: Deep Ingest Pipeline
+  introduced_by: docs/intake/issue-drafts/HF-005-deep-ingest-pipeline.md
+  introduced_at: '2026-04-26'
+  definition: Multi-stage pipeline that fetches full text for above-threshold content
+    items, extracts clean body text, chunks and embeds content, and produces structured
+    outputs (summary, key claims, tools/techniques, action ideas, risks, links).
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/536
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
