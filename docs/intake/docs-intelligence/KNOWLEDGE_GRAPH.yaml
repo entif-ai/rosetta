@@ -2919,6 +2919,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/285
   status: active
+- id: RLM-001-SLICE
+  name: RLM Repo Comprehension Vertical Slice
+  introduced_by: docs/intake/issue-drafts/RLM-001-SLICE-repo-comprehension-vertical-slice.md
+  introduced_at: '2026-04-26'
+  definition: 'A concrete validation experiment to prove or disprove the ContextRuntime
+    core premise: that context can scale by procedure, not by prompt size. Proposes
+    mounting the Rosetta corpus and running a bounded RLM program to produce a structured
+    repo comprehension map.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/612
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
