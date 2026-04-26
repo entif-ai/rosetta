@@ -2626,5 +2626,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-003-align-sim-stress-tests.md",
     "draftStatus": "published"
+  },
+  "TB-004-orthogonal-procrustes-alignment.md": {
+    "number": 663,
+    "state": "open",
+    "title": "TB-004: Implement orthogonal Procrustes alignment for cross-vendor RPP embedding projection",
+    "url": "https://github.com/entif-ai/rosetta/issues/663",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-004-orthogonal-procrustes-alignment.md",
+    "draftStatus": "published"
   }
 }
