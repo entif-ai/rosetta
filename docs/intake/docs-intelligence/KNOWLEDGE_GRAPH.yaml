@@ -2481,6 +2481,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/536
   status: active
+- id: HF-006-synthesis-engine
+  name: Synthesis Engine
+  introduced_by: docs/intake/issue-drafts/HF-006-synthesis-engine.md
+  introduced_at: '2026-04-26'
+  definition: Three-synthesizer pipeline (Entif/Rosetta mapper, backlog generator,
+    cross-linker) that converts deeply ingested content into actionable next steps.
+    Not yet implemented.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/538
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
