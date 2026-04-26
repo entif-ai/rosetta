@@ -2122,5 +2122,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-002-supply-chain-community-skills-risk.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-008-conjecture-nonreplayable-edge-case.md": {
+    "number": 563,
+    "state": "open",
+    "title": "ROSETTA-v3-008: Conjecture nonReplayable Edge Case Not Handled",
+    "url": "https://github.com/entif-ai/rosetta/issues/563",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-008-conjecture-nonreplayable-edge-case.md",
+    "draftStatus": "published"
   }
 }
