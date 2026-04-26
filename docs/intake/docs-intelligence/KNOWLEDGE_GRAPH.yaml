@@ -3032,6 +3032,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/632
   status: active
+- id: SLD-001
+  name: "SkillCard Schema \u2014 Tier 0 Metadata Stub"
+  introduced_by: docs/intake/issue-drafts/SLD-001-skillcard-schema-tier0.md
+  introduced_at: '2026-04-26'
+  definition: Compact ~100-token metadata stub per skill, indexed by the skill broker
+    for first-pass relevance decisions and Guard pre-authorization.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/419
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

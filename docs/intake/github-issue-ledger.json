@@ -2491,5 +2491,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-002-empathy-overaffirmation-discrimination.md",
     "draftStatus": "published"
+  },
+  "SLD-001-skillcard-schema-tier0.md": {
+    "number": 419,
+    "state": "open",
+    "title": "SLD-006: Skill Vetting/Ingestion Pipeline (complemented by SLD-001 SkillCard schema)",
+    "url": "https://github.com/entif-ai/rosetta/issues/419",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-001-skillcard-schema-tier0.md",
+    "draftStatus": "published"
   }
 }
