@@ -1537,6 +1537,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/359
   status: active
+- id: memory-adapter-certification-harness
+  name: Memory Adapter Certification Harness
+  introduced_by: docs/intake/issue-drafts/memory-adapter-certification-harness.md
+  introduced_at: '2026-04-26'
+  definition: '8-class test harness that certifies memory adapters (OB1, QMD, Honcho,
+    Graphiti, MuninnDB, Markdown) before granting them authority in the memory stack.
+    Tests: ingest, retrieval, tags, score variance, noise rejection, round-trip provenance,
+    replay, and policy compliance.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/361
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -2141,6 +2152,8 @@ issue_drafts_inventory:
   issue_id: memory-adapter-certification-harness
   priority: P1
   type: reliability
+  url: https://github.com/entif-ai/rosetta/issues/361
+  status: published
 - path: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50

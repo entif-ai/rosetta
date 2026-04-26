@@ -1177,5 +1177,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-006-coherence-scoring-unimplemented.md",
     "draftStatus": "published"
+  },
+  "memory-adapter-certification-harness": {
+    "number": 361,
+    "state": "open",
+    "title": "Memory Adapter Certification Harness \u2014 Before Any Adapter Gets Power",
+    "url": "https://github.com/entif-ai/rosetta/issues/361",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/memory-adapter-certification-harness.md",
+    "draftStatus": "published"
   }
 }
