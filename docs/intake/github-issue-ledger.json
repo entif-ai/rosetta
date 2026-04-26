@@ -1195,5 +1195,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-008-workflow-state-transition-criteria.md",
     "draftStatus": "published"
+  },
+  "DCP-007-self-building-not-planned.md": {
+    "number": 365,
+    "state": "open",
+    "title": "DCP-007: Self-building bootstrap path not planned",
+    "url": "https://github.com/entif-ai/rosetta/issues/365",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-007-self-building-not-planned.md",
+    "draftStatus": "published"
   }
 }
