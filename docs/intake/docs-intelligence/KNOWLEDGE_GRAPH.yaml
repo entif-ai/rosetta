@@ -1777,6 +1777,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/406
   status: active
+- id: BIP-003-3-content-idea-id-collision
+  name: BIP-003 Idea ID Collision Risk
+  introduced_by: docs/intake/issue-drafts/BIP-003-3-content-idea-id-collision.md
+  introduced_at: '2026-04-26'
+  definition: The YYYY-MM-DD-NNN sequential counter for content idea IDs has no atomic
+    generation, risking collisions under concurrent writes and hitting a 999/day ceiling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/408
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

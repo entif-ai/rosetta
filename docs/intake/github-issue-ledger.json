@@ -1393,5 +1393,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-2-content-hybrid-weights-unvalidated.md",
     "draftStatus": "published"
+  },
+  "BIP-003-3-content-idea-id-collision.md": {
+    "number": 408,
+    "state": "open",
+    "title": "BIP-003-3: Idea ID Sequential Counter Has Collision Risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/408",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-003-3-content-idea-id-collision.md",
+    "draftStatus": "published"
   }
 }
