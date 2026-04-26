@@ -1856,6 +1856,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/421
   status: active
+- id: BIP-006-1-briefing-policy-weight-update-unspecified
+  name: BIP-006 Policy Table Weight Update Mechanism
+  introduced_by: docs/intake/issue-drafts/BIP-006-1-briefing-policy-weight-update-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-006 nightly briefing system uses weighted priority scoring but
+    lacks a specified mechanism for collecting feedback and updating the weight values
+    over time.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/423
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

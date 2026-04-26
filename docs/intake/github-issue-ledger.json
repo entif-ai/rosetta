@@ -1465,5 +1465,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-005-1-youtube-quota-exhaustion.md",
     "draftStatus": "published"
+  },
+  "BIP-006-1-briefing-policy-weight-update-unspecified.md": {
+    "number": 423,
+    "state": "open",
+    "title": "BIP-006-1: Policy Table Weight Update Mechanism Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/423",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-1-briefing-policy-weight-update-unspecified.md",
+    "draftStatus": "published"
   }
 }
