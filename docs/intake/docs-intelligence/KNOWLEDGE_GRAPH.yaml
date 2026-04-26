@@ -1508,6 +1508,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/353
   status: active
+- id: DCP-004-code-atlas
+  name: Code Atlas data model
+  introduced_by: docs/intake/issue-drafts/DCP-004-code-atlas-not-implemented.md
+  introduced_at: '2026-04-26'
+  definition: A 6-entity project knowledge graph with SpecDoc, ModuleSpec, FileSpec,
+    InterfaceSpec, BuildArtifact, and Issue types. No persistence layer currently
+    exists.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/355
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
