@@ -1285,6 +1285,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/297
   status: active
+- id: 2026-04-25-consensus-first-opportunity-edge-brief
+  name: Opportunity & Edge Brief
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-opportunity-edge-brief.md
+  introduced_at: '2026-04-25'
+  definition: Strategic positioning artifact that establishes why the organization
+    wins or can plausibly win, and what kind of play a commitment is. Part of the
+    CCF five-artifact workflow.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/300
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

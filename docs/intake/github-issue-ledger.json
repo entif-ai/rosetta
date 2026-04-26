@@ -943,5 +943,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-no-fluent-synthesis-rule.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-opportunity-edge-brief": {
+    "number": 300,
+    "state": "open",
+    "title": "CCF: Implement Opportunity & Edge Brief Artifact",
+    "url": "https://github.com/entif-ai/rosetta/issues/300",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-opportunity-edge-brief.md",
+    "draftStatus": "published"
   }
 }
