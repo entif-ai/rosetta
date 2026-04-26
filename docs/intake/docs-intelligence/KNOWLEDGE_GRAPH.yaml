@@ -3502,6 +3502,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/716
   status: active
+- id: AM-012
+  name: GuardLayer vs Mailroom Call Sequence
+  introduced_by: docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md
+  introduced_at: '2026-04-26'
+  definition: "Unspecified call sequence between Mailroom (coarse policy enforcement)\
+    \ and GuardLayer (fine policy RBAC/budget checks) in the Entif v0 agentic messaging\
+    \ pipeline \u2014 including invocation point, sync/async semantics, timeout behavior,\
+    \ error propagation, and retry/idempotency."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/718
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
