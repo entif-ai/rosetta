@@ -1737,6 +1737,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/398
   status: active
+- id: BIP-002-3-kb-near-duplicate-detection-missing
+  name: 'BIP-002-3: Near-Duplicate Detection Gap'
+  introduced_by: docs/intake/issue-drafts/BIP-002-3-kb-near-duplicate-detection-missing.md
+  introduced_at: '2026-04-26'
+  definition: Content deduplication using SHA-256 handles exact duplicates but misses
+    near-duplicates (A/B tested pages, geo-personalized, paywall variants, AMP vs
+    canonical). A semantic dedup layer at embedding stage is needed.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/400
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
