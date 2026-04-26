@@ -1303,5 +1303,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-004-song-parody-self-model.md",
     "draftStatus": "published"
+  },
+  "BIP-001-1-crm-learning-feedback-loop.md": {
+    "number": 389,
+    "state": "open",
+    "title": "BIP-001-1: CRM Learning Feedback Loop Is Underspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/389",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-001-1-crm-learning-feedback-loop.md",
+    "draftStatus": "published"
   }
 }

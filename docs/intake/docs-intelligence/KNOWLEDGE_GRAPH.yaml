@@ -1678,6 +1678,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/387
   status: active
+- id: bip-001-1-crm-learning-feedback-loop
+  name: CRM Learning Feedback Loop
+  introduced_by: docs/intake/issue-drafts/BIP-001-1-crm-learning-feedback-loop.md
+  introduced_at: '2026-04-26'
+  definition: Mechanism by which user rejections of CRM contacts are communicated
+    back to the learning system to update skip_domains and other exclusion lists.
+    Currently underspecified in BIP-001.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/389
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
