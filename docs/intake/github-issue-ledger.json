@@ -2608,5 +2608,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-001-path2vec-trainer-implementation.md",
     "draftStatus": "published"
+  },
+  "TB-002-mcda-disambiguator-implementation.md": {
+    "number": 659,
+    "state": "open",
+    "title": "MCDA disambiguator: implement multi-criteria decision function with configurable weights and explain trace",
+    "url": "https://github.com/entif-ai/rosetta/issues/659",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-002-mcda-disambiguator-implementation.md",
+    "draftStatus": "published"
   }
 }
