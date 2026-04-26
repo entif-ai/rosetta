@@ -2707,5 +2707,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-004-schema-pack-artifact.md",
     "draftStatus": "published"
+  },
+  "TXS-005-design-tokens-wcag-stdpacks.md": {
+    "number": 678,
+    "state": "open",
+    "title": "TXS-005: Design Tokens StdPack: WCAG 2.2 + WAI-ARIA 1.2 + Design Tokens 2025.10",
+    "url": "https://github.com/entif-ai/rosetta/issues/678",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-005-design-tokens-wcag-stdpacks.md",
+    "draftStatus": "published"
   }
 }
