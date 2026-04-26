@@ -3392,6 +3392,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/696
   status: active
+- id: yaac-006
+  name: Claude subscription vs API key policy boundary
+  introduced_by: docs/intake/issue-drafts/YAAC-006-claude-subscription-vs-api-key.md
+  introduced_at: '2026-04-26'
+  definition: Policy boundary clarifying that Claude subscriptions (Pro/Max) are for
+    interactive use while Anthropic API keys are required for OpenClaw automation
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/698
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
