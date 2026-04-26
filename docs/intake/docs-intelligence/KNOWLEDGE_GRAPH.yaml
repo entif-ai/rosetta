@@ -1758,6 +1758,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/402
   status: active
+- id: BIP-003-1-content-40pct-threshold-unvalidated
+  name: "40% Content Similarity Threshold \u2014 Unvalidated"
+  introduced_by: docs/intake/issue-drafts/BIP-003-1-content-40pct-threshold-unvalidated.md
+  introduced_at: '2026-04-26'
+  definition: The 40% combined similarity score (semantic 0.7 + keyword 0.3) used
+    as a hard gate in BIP-003 content idea deduplication is arbitrary and unvalidated
+    against ground-truth duplicate/non-duplicate datasets.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/404
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
