@@ -3471,6 +3471,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/709
   status: active
+- id: am-009-domain-ref-schema
+  name: Domain Ref Schema (Agentic Messaging)
+  introduced_by: docs/intake/issue-drafts/am-009-domain-ref-schema.md
+  introduced_at: '2026-04-26'
+  definition: "Schema for the four-tuple domain identifier: tenant_id \xD7 classification\
+    \ \xD7 ABAC labels \xD7 vendor_route. Unblocks automated domain authorization\
+    \ checks and cross-domain reuse enforcement."
+  referenced_by:
+  - https://github.com/gentif-ai/rosetta/issues/711
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
