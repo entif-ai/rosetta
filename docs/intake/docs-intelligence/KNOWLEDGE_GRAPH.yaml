@@ -1192,6 +1192,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/273
   status: active
+- id: omc-subagent-context-budget-limits
+  name: OMC Sub-Agent Context Budget Limits
+  introduced_by: docs/intake/issue-drafts/omc-subagent-context-budget-limits.md
+  introduced_at: '2026-04-25'
+  definition: Layer-specific L1/L2/L3 token budget limits for OMC sub-agent handoffs,
+    with escalation rules and budget-exhaustion handoff format.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/276
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

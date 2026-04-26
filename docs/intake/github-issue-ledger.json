@@ -862,5 +862,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-001-youtube-ingest-pipeline.md",
     "draftStatus": "published"
+  },
+  "omc-subagent-context-budget-limits.md": {
+    "number": 276,
+    "state": "open",
+    "title": "Define OMC sub-agent context budget limits by layer",
+    "url": "https://github.com/entif-ai/rosetta/issues/276",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-subagent-context-budget-limits.md",
+    "draftStatus": "published"
   }
 }
