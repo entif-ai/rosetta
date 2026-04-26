@@ -2798,6 +2798,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/596
   status: active
+- id: REE-005-neural-architecture-primer
+  name: Neural Network Architecture Primer
+  introduced_by: docs/intake/issue-drafts/REE-005-neural-architecture-primer.md
+  introduced_at: '2026-04-26'
+  definition: Canonical transformer architecture primer covering Q/K/V mechanics,
+    attention vs MLP, training vs inference, and LoRA/QLoRA.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/598
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
