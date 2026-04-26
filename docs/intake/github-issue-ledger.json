@@ -2653,5 +2653,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-006-bundle-validator-explainer.md",
     "draftStatus": "published"
+  },
+  "TB-007-clip-image-prototypes-etl.md": {
+    "number": 670,
+    "state": "open",
+    "title": "CLIP image prototypes ETL: generate CLIP vectors for 100 imageable WordNet synsets",
+    "url": "https://github.com/entif-ai/rosetta/issues/670",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-007-clip-image-prototypes-etl.md",
+    "draftStatus": "published"
   }
 }
