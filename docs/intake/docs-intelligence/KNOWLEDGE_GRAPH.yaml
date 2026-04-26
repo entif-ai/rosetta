@@ -2570,6 +2570,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/553
   status: active
+- id: LSC-005
+  name: Reflective Density Instrumentation
+  introduced_by: docs/intake/issue-drafts/LSC-005-reflective-density-instrumentation.md
+  introduced_at: '2026-04-26'
+  definition: "Measurement protocol for the compression ratio \u03C1 = effective_recalled_structure\
+    \ / current_token_budget, tracking how prior session outputs compress present\
+    \ ones."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/555
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
