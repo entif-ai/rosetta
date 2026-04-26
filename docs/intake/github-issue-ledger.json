@@ -2725,5 +2725,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-006-otel-cloudevents-stdpacks.md",
     "draftStatus": "published"
+  },
+  "TXS-007-vocabpacks-wordnet-babelnet.md": {
+    "number": 685,
+    "state": "open",
+    "title": "TXS-007: VocabPack Format \u2014 WordNet + BabelNet + Ontolex Integration Spec",
+    "url": "https://github.com/entif-ai/rosetta/issues/685",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-007-vocabpacks-wordnet-babelnet.md",
+    "draftStatus": "published"
   }
 }
