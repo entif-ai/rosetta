@@ -835,5 +835,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/enti-fv0-016-domain-intelligence-plane-no-algorithms.md",
     "draftStatus": "published"
+  },
+  "AGR-001-agentwallet-eoa-key-prohibition": {
+    "number": 269,
+    "state": "open",
+    "title": "AGR-001: Enforce EOA Key Handoff Prohibition for Agent Wallets \u2014 Require Smart Contract Wallet or HSM Enclave",
+    "url": "https://github.com/entif-ai/rosetta/issues/269",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-001-agentwallet-eoa-key-prohibition.md",
+    "draftStatus": "published"
   }
 }
