@@ -1735,5 +1735,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-011-mcpforge-routing-extension.md",
     "draftStatus": "published"
+  },
+  "python-module-boundary-contract.md": {
+    "number": 164,
+    "state": "open",
+    "title": "Missing: Python package boundary enforcement mechanism",
+    "url": "https://github.com/entif-ai/rosetta/issues/164",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/python-module-boundary-contract.md",
+    "draftStatus": "published"
   }
 }
