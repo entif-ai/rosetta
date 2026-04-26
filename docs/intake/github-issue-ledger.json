@@ -1978,5 +1978,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-008-deterministic-canonicalization.md",
     "draftStatus": "published"
+  },
+  "HF-002-relevance-scoring-threshold-calibration.md": {
+    "number": 530,
+    "state": "open",
+    "title": "HF-002: Define and calibrate relevance scoring threshold and six-dimension score vector",
+    "url": "https://github.com/entif-ai/rosetta/issues/530",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-002-relevance-scoring-threshold-calibration.md",
+    "draftStatus": "published"
   }
 }
