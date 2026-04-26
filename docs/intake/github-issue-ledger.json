@@ -2077,5 +2077,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-002-four-scaffolds-standardization.md",
     "draftStatus": "published"
+  },
+  "LSC-003-elastic-stability-mathematical-apparatus.md": {
+    "number": 551,
+    "state": "open",
+    "title": "LSC-003: Develop Mathematical Apparatus for Elastic Stability",
+    "url": "https://github.com/entif-ai/rosetta/issues/551",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/LSC-003-elastic-stability-mathematical-apparatus.md",
+    "draftStatus": "published"
   }
 }
