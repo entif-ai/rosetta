@@ -1616,6 +1616,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/375
   status: active
+- id: EEH-003-attunement-diagnostic-bridge
+  name: Attunement Axis Diagnostic Bridge
+  introduced_by: docs/intake/issue-drafts/EEH-003-attunement-diagnostic-bridge.md
+  introduced_at: '2026-04-26'
+  definition: 'Diagnostic bridge connecting Attunement (A) axis drops to internal
+    system failures: noisy retrieval, salience model errors, and emotional state estimator
+    misbinding.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/377
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
