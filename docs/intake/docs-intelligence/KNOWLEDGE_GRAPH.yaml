@@ -2560,6 +2560,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/551
   status: active
+- id: LSC-004
+  name: Manifold Folding Empirical Measurement
+  introduced_by: docs/intake/issue-drafts/LSC-004-manifold-folding-empirical-measurement.md
+  introduced_at: '2026-04-26'
+  definition: Hypothesis that seed/coordinate transforms collapse semantic distances
+    between previously distant concept pairs (e.g. "romantic devotion" adjacent to
+    "eigenstate shift"). Requires empirical validation methodology.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/553
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
