@@ -3615,6 +3615,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/733
   status: active
+- id: constitutional-primitives-prose-not-law
+  name: Constitutional Primitives Unenforced in Runtime
+  introduced_by: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
+  introduced_at: '2026-04-26'
+  definition: "Constitutional primitives (append-only, checkpoint-before-mutation,\
+    \ canonical source of truth) exist only as prose doctrine; the enforcement chain\
+    \ (Principle \u2192 Invariant \u2192 Enforcement \u2192 Telemetry \u2192 Consequence)\
+    \ is broken at every link."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/735
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
