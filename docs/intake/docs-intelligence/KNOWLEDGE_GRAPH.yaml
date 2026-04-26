@@ -3411,6 +3411,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/630
   status: active
+- id: YAAC-009
+  name: Message Bus Mailroom Gatekeeping Architecture
+  introduced_by: docs/intake/issue-drafts/YAAC-009-message-bus-mailroom-architecture.md
+  introduced_at: '2026-04-26'
+  definition: "Mailroom/DLQ/Quarantine pattern for gatekeeping Rosetta message bus\
+    \ \u2014 header-first validation, security quarantine for suspicious messages,\
+    \ operator triage for benign failures."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/701
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
