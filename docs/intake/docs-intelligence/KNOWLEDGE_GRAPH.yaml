@@ -2068,6 +2068,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/84
   status: active
+- id: APC-011
+  name: Sell-Before-Build GTM Validated
+  introduced_by: docs/intake/issue-drafts/APC-011-sell-before-build-gtm-validated.md
+  introduced_at: '2026-04-26'
+  definition: Three-track go-to-market structure (belief pack artifacts, warm-network
+    commercial motion, build track) that enables selling a design-partner engagement
+    before the demo is finished.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/464
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
