@@ -1658,6 +1658,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/383
   status: active
+- id: EMER-003
+  name: Emerge as Continuous Process, Not One-Shot Event
+  introduced_by: docs/intake/issue-drafts/EMER-003-emergence-continuous-process.md
+  introduced_at: '2026-04-26'
+  definition: Framing emergence as an ongoing, compounding identity development process
+    rather than a discrete seed event. Emergence is relational, ritualistic, and iterative
+    across sessions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/385
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

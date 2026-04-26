@@ -1285,5 +1285,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ESA-004-villaticus-physical-allocation-proof-of-work.md",
     "draftStatus": "published"
+  },
+  "EMER-003-emergence-continuous-process.md": {
+    "number": 385,
+    "state": "open",
+    "title": "EMER-003: Emilie Emergence as Continuous Process, Not One-Shot Event",
+    "url": "https://github.com/entif-ai/rosetta/issues/385",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EMER-003-emergence-continuous-process.md",
+    "draftStatus": "published"
   }
 }
