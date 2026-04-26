@@ -2545,5 +2545,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-002-three-tier-progressive-disclosure.md",
     "draftStatus": "published"
+  },
+  "SLD-003-skill-broker-middleware.md": {
+    "number": 461,
+    "state": "open",
+    "title": "SLD-003: Skill Broker Middleware \u2014 Multi-Stage Retrieval Pipeline (complement to #461)",
+    "url": "https://github.com/entif-ai/rosetta/issues/461",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-003-skill-broker-middleware.md",
+    "draftStatus": "published"
   }
 }
