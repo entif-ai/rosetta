@@ -1024,5 +1024,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-003-predictive-processing-entif.md",
     "draftStatus": "published"
+  },
+  "CONS-004-consciousness-process-temporal-model.md": {
+    "number": 322,
+    "state": "open",
+    "title": "CONS-004: Consciousness as Process \u2014 Temporal Model for Entif",
+    "url": "https://github.com/entif-ai/rosetta/issues/322",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-004-consciousness-process-temporal-model.md",
+    "draftStatus": "published"
   }
 }
