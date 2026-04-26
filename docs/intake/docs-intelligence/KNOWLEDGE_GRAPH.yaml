@@ -1232,6 +1232,26 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/285
   status: active
+- id: ccf-evidence-ledger-schema
+  name: Evidence Ledger Artifact Schema
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-evidence-ledger-schema.md
+  introduced_at: '2026-04-25'
+  definition: A first-class CCF artifact containing seven required fields per claim
+    (claim_statement, evidence_type, source_provenance, credibility_score, incentive_bias_notes,
+    confidence_level, disconfirmers) to counter hallucination and overconfident synthesis.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/288
+  status: active
+- id: ccf-exit-pivot-salvage-plan
+  name: Exit/Pivot/Salvage Plan Artifact
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-exit-pivot-salvage-plan.md
+  introduced_at: '2026-04-25'
+  definition: 'CCF artifact with four trigger sets (enter, continue, pivot, exit),
+    each with five fields: metric/signal, threshold, decision owner, containment steps,
+    salvage paths. Implements discovery-driven planning to stop sunk-cost worship.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/290
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
