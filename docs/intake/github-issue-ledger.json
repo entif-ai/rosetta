@@ -1771,5 +1771,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-006-rosetta-module-map-content-risk.md",
     "draftStatus": "published"
+  },
+  "EML-007-ensemble-scoring-architecture": {
+    "number": 485,
+    "state": "open",
+    "title": "EML-007: Three-Tier Ensemble Scoring Architecture for Content Risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/485",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-007-ensemble-scoring-architecture.md",
+    "draftStatus": "published"
   }
 }

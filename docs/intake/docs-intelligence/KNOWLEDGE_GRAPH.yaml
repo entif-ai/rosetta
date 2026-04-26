@@ -2198,6 +2198,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/483
   status: active
+- id: EML-007-ensemble-scoring-architecture
+  name: Three-Tier Ensemble Scoring Architecture
+  introduced_by: docs/intake/issue-drafts/EML-007-ensemble-scoring-architecture.md
+  introduced_at: '2026-04-26'
+  definition: "Multi-layer ensemble of non-agentic ML models across three tiers \u2014\
+    \ cheap high-recall detectors, semantic classifiers, and graph/meta anomaly models\
+    \ \u2014 with calibrated stacked logistic aggregation feeding structured routing\
+    \ and policy decisions."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/485
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
