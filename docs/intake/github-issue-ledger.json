@@ -2950,5 +2950,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-004-no-premortem-practice.md",
     "draftStatus": "published"
+  },
+  "ccf-005-no-evidence-ledger-implementation.md": {
+    "number": 288,
+    "state": "open",
+    "title": "CCF: Implement Evidence Ledger Artifact Schema (ccf-005 enrichment)",
+    "url": "https://github.com/enti-ai/rosetta/issues/288",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/ccf-005-no-evidence-ledger-implementation.md",
+    "draftStatus": "published"
   }
 }
