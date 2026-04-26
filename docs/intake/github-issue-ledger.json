@@ -889,5 +889,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-commitment-canvas.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-credibility-scoring-rubric.md": {
+    "number": 285,
+    "state": "open",
+    "title": "CCF: Define Credibility Scoring Rubric for Evidence Ledger",
+    "url": "https://github.com/entif-ai/rosetta/issues/285",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-credibility-scoring-rubric.md",
+    "draftStatus": "published"
   }
 }

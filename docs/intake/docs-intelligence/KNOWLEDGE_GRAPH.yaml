@@ -1222,6 +1222,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/282
   status: active
+- id: 2026-04-25-consensus-first-credibility-scoring-rubric
+  name: CCF Credibility Scoring Rubric
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-credibility-scoring-rubric.md
+  introduced_at: '2026-04-25'
+  definition: "A contextual credibility scoring system for the Evidence Ledger artifact,\
+    \ scoring sources on \"positioned to know\" rather than general reputation \u2014\
+    \ covering scale, decision procedure, and anti-gaming."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/285
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
