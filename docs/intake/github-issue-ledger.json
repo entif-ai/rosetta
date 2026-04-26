@@ -1186,5 +1186,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/memory-adapter-certification-harness.md",
     "draftStatus": "published"
+  },
+  "entif-v0-008-workflow-state-transition-criteria.md": {
+    "number": 363,
+    "state": "open",
+    "title": "ENTIF-v0-008: Workflow State Transition Criteria (Draft\u2192Certified\u2192Released) Not Defined",
+    "url": "https://github.com/entif-ai/rosetta/issues/363",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-008-workflow-state-transition-criteria.md",
+    "draftStatus": "published"
   }
 }

@@ -1548,6 +1548,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/361
   status: active
+- id: entif-v0-008-workflow-state-transition-criteria
+  name: Workflow State Transition Criteria
+  introduced_by: docs/intake/issue-drafts/entif-v0-008-workflow-state-transition-criteria.md
+  introduced_at: '2026-04-26'
+  definition: 'The acceptance criteria that must be satisfied to move an Entif workflow
+    between lifecycle states: Draft, Certified, Released, Deprecated, and Retired.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/363
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
