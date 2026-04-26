@@ -1231,5 +1231,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/DCP-010-automation-ceiling-audit-needed.md",
     "draftStatus": "published"
+  },
+  "EEH-001-HEART-eval-receipt-schema": {
+    "number": 373,
+    "state": "open",
+    "title": "EEH-001: HEART Evaluation Receipt Schema",
+    "url": "https://github.com/entif-ai/rosetta/issues/373",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-001-HEART-eval-receipt-schema.md",
+    "draftStatus": "published"
   }
 }
