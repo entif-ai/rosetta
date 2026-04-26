@@ -2212,5 +2212,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-001-implement-skill-registry-v0.md",
     "draftStatus": "published"
+  },
+  "PSD-003-implement-skill-eval-harness.md": {
+    "number": 581,
+    "state": "open",
+    "title": "PSD-003: Implement Eval Harness for Skills",
+    "url": "https://github.com/entif-ai/rosetta/issues/581",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/PSD-003-implement-skill-eval-harness.md",
+    "draftStatus": "published"
   }
 }
