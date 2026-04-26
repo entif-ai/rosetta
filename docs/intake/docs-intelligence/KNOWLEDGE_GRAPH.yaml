@@ -1817,6 +1817,15 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/290
   - https://github.com/entif-ai/rosetta/issues/278
   status: active
+- id: bip-004-3-cache-key-unspecified
+  name: 'BIP-004-3: Social Cache Key Unspecified'
+  introduced_by: docs/intake/issue-drafts/BIP-004-3-social-cache-key-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: BIP-004 Social Media Research System lacks a defined cache key scheme,
+    risking cache misses and semantically identical query collisions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/415
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
