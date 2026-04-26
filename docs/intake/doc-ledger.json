@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T23:35:37.449Z",
+  "generatedAt": "2026-04-26T01:03:27.290Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
@@ -19,8 +19,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-25",
-            "isoDateTime": "2026-03-25T10:57:10.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.211Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -39,7 +39,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-03-25T10:57:10.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.211Z",
       "bytes": 4690,
       "contentFingerprint": "eff46959258962344499d598060ea3c6261b25e8536e3393dd757440f11d2ca3",
       "words": 640,
@@ -70,8 +70,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-15",
-            "isoDateTime": "2025-11-15T06:24:20.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.212Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -90,7 +90,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-11-15T06:24:20.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.212Z",
       "bytes": 217750,
       "contentFingerprint": "16cb3cda96d6326398e4dabea5c40bfa4236f617a92f30335c4d3108ef418b22",
       "words": 32829,
@@ -140,8 +140,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-10",
-            "isoDateTime": "2026-04-10T22:23:36.804Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.212Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -161,7 +161,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-10T22:23:36.804Z",
+      "modifiedAt": "2026-04-26T01:03:27.212Z",
       "bytes": 38310,
       "contentFingerprint": "dcf4f35a7291592968f8bc32182ce2db6b152dddebe0e3d0bba923ac901b956d",
       "words": 4929,
@@ -231,8 +231,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:45:13.506Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.213Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -252,7 +252,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:45:13.506Z",
+      "modifiedAt": "2026-04-26T01:03:27.213Z",
       "bytes": 9245,
       "contentFingerprint": "1704e8cce2ff489fc9ea7324ae2b7219da259a20e98f36897afa05dc8bb9f311",
       "words": 1282,
@@ -298,8 +298,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T12:41:30.431Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.213Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -319,7 +319,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T12:41:30.431Z",
+      "modifiedAt": "2026-04-26T01:03:27.213Z",
       "bytes": 10812,
       "contentFingerprint": "de8a80c90a545bd727084433a5cb8baac4880741b5a8889ab746db4530b9ab22",
       "words": 1405,
@@ -354,15 +354,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.213Z",
             "source": "filesystem-mtime"
           }
         },
@@ -371,12 +371,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.213Z",
       "bytes": 910,
       "contentFingerprint": "c969b6b24822ebdbd3edb1d02bd1b99db85bd5fc917740ec48010ae42fba9625",
       "words": 130,
@@ -404,15 +404,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2025-10-20",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-20",
-            "isoDateTime": "2025-10-20T17:28:46.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.215Z",
             "source": "filesystem-mtime"
           }
         },
@@ -421,12 +421,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-10-20",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-10-20T17:28:46.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.215Z",
       "bytes": 481984,
       "contentFingerprint": "2c4b5667514ea897c47b4d609f3a357cb06b71527b41c916908dae14b6000c8f",
       "words": 69121,
@@ -461,15 +461,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-02-25",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T17:47:04.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.215Z",
             "source": "filesystem-mtime"
           }
         },
@@ -478,12 +478,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-02-25",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-02-25T17:47:04.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.215Z",
       "bytes": 58060,
       "contentFingerprint": "9453b850fb0e47064b953d75769e0fb1aac39f4b15f01e723f62a9f050cb40ec",
       "words": 7106,
@@ -547,8 +547,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-29",
-            "isoDateTime": "2025-11-29T18:15:34.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.216Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -568,7 +568,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2025-11-29T18:15:34.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.216Z",
       "bytes": 284302,
       "contentFingerprint": "f47147ddd01642f61e64b87e296e3506b59ca15ee26c3dab26b6a44d5fe40bbf",
       "words": 43827,
@@ -632,8 +632,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-12-01",
-            "isoDateTime": "2025-12-01T03:56:50.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.217Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -653,7 +653,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2025-12-01T03:56:50.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.217Z",
       "bytes": 169235,
       "contentFingerprint": "1258647162423c3dac56b431f6900b2268b246860c1460e0f3177c698de4295a",
       "words": 25322,
@@ -717,8 +717,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-12-23",
-            "isoDateTime": "2025-12-23T13:52:18.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.217Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -738,7 +738,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2025-12-23T13:52:18.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.217Z",
       "bytes": 134072,
       "contentFingerprint": "2a64e39297c682a26eb4f756c488d100829a789642c9e7525e568d88ebe27b83",
       "words": 16868,
@@ -795,8 +795,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-12-26",
-            "isoDateTime": "2025-12-26T07:12:14.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.218Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -816,7 +816,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2025-12-26T07:12:14.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.218Z",
       "bytes": 174524,
       "contentFingerprint": "c3b5e33f6a5b5f5f4848999113ef5ca8c2fb9b642511693c69bd4086b9a331ab",
       "words": 27647,
@@ -880,8 +880,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-18",
-            "isoDateTime": "2026-01-18T19:18:06.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.219Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -901,7 +901,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-18T19:18:06.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.219Z",
       "bytes": 263522,
       "contentFingerprint": "914a333d44f80e51853c27856ebea96558c1a96130dfe9064bb5b897f95826a3",
       "words": 34945,
@@ -965,8 +965,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-21",
-            "isoDateTime": "2026-01-21T22:17:20.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.219Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -986,7 +986,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-21T22:17:20.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.219Z",
       "bytes": 155363,
       "contentFingerprint": "b82cdb30ac5b44473a0bea683ca5e6197f872e4a111b8f931abd653097ada324",
       "words": 21221,
@@ -1050,8 +1050,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-22",
-            "isoDateTime": "2026-01-22T13:37:13.595Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.220Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1071,7 +1071,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-22T13:37:13.595Z",
+      "modifiedAt": "2026-04-26T01:03:27.220Z",
       "bytes": 54041,
       "contentFingerprint": "efc344baad8e9d27402db8dee5afad6fb1b4eb369aaf5c74ceeadfb32e3a4014",
       "words": 6744,
@@ -1135,8 +1135,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-30",
-            "isoDateTime": "2026-01-30T07:35:56.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.220Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1156,7 +1156,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-30T07:35:56.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.220Z",
       "bytes": 16251,
       "contentFingerprint": "3c221c76e94e078c7038701f316d3c9d83277709b6221c941e6ab769122704d9",
       "words": 2355,
@@ -1220,8 +1220,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-30",
-            "isoDateTime": "2026-01-30T07:41:48.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.220Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1241,7 +1241,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-30T07:41:48.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.220Z",
       "bytes": 124294,
       "contentFingerprint": "b9823eec16da3317e8fb13e8df2b826fdd35f7c7f8056fd9dcda9230e0ef4455",
       "words": 20316,
@@ -1305,8 +1305,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:29:07.344Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.221Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1326,7 +1326,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:29:07.344Z",
+      "modifiedAt": "2026-04-26T01:03:27.221Z",
       "bytes": 95455,
       "contentFingerprint": "fa0aaecf0e40f0d790ee27afb792cf8af021370107a674fbe028de06e7f9e6f7",
       "words": 12940,
@@ -1390,8 +1390,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-23",
-            "isoDateTime": "2026-02-23T05:24:40.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.221Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1411,7 +1411,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-23T05:24:40.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.221Z",
       "bytes": 20256,
       "contentFingerprint": "04a5e5cbfdd62c44ad628f9c6f77c75b39d0f32b6f9b764bf1ba4ec3576487d2",
       "words": 2179,
@@ -1475,8 +1475,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-23",
-            "isoDateTime": "2026-02-23T10:27:20.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.222Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1496,7 +1496,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-23T10:27:20.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.222Z",
       "bytes": 149728,
       "contentFingerprint": "389a8353abfafcb60364fa0c3783d55bc1e1ceb4a6c8b869bda57bd0b9e3be1c",
       "words": 19270,
@@ -1560,8 +1560,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-23",
-            "isoDateTime": "2026-02-23T10:25:16.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.222Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1581,7 +1581,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-23T10:25:16.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.222Z",
       "bytes": 11183,
       "contentFingerprint": "31c96de3255bdab9a84f92c535bce5d8015dbb13de7f1637b73f428b199561d3",
       "words": 1625,
@@ -1639,8 +1639,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T12:56:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.222Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1660,7 +1660,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T12:56:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.222Z",
       "bytes": 71232,
       "contentFingerprint": "6865e0c67ea5be12bca0b25cef0b0647236eed354f9d9749f862603e9ef04883",
       "words": 8382,
@@ -1724,8 +1724,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T13:04:18.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.223Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1745,7 +1745,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T13:04:18.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.223Z",
       "bytes": 33113,
       "contentFingerprint": "9b03fc513142e23fe58df48804cd05ae2af428ac8d647b3903fb069066b15ac0",
       "words": 3935,
@@ -1804,8 +1804,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T13:01:48.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.223Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1825,7 +1825,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T13:01:48.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.223Z",
       "bytes": 142207,
       "contentFingerprint": "3fceb488c6873da2bb5567d95dddfafd58dc9430c868304947ceffcbbda8973d",
       "words": 21995,
@@ -1889,8 +1889,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T13:06:32.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.224Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1910,7 +1910,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T13:06:32.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.224Z",
       "bytes": 342266,
       "contentFingerprint": "33b0c3c2b72a2051ffee9641f8a5c02fe749aa1b633fb532484a02f270983698",
       "words": 46872,
@@ -1974,8 +1974,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:29:37.529Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.225Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1995,7 +1995,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:29:37.529Z",
+      "modifiedAt": "2026-04-26T01:03:27.225Z",
       "bytes": 93968,
       "contentFingerprint": "30533e8b2a2c396ed5afd8878f747609b2c23aa29e832d92fbed995f61fde5e9",
       "words": 13475,
@@ -2059,8 +2059,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-26",
-            "isoDateTime": "2026-02-26T21:33:22.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.225Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2080,7 +2080,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-26T21:33:22.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.225Z",
       "bytes": 160307,
       "contentFingerprint": "daa03b0b9a88a659ff6c37d648569ee8ecfd79df23237d70ca9a42c7820a65f9",
       "words": 21985,
@@ -2144,8 +2144,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-27",
-            "isoDateTime": "2026-02-27T05:55:06.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.227Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2165,7 +2165,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-27T05:55:06.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.227Z",
       "bytes": 73149,
       "contentFingerprint": "960c7cff09189bf96a058174d23e0e240f1bb99aa7ff9dd13e0c557549f12767",
       "words": 8806,
@@ -2229,8 +2229,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-28",
-            "isoDateTime": "2026-02-28T12:28:58.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.228Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2250,7 +2250,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-28T12:28:58.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.228Z",
       "bytes": 461460,
       "contentFingerprint": "9158779446acd65afd4fb74ddb8ca48d671c15e080fc258605719aa264671e43",
       "words": 63018,
@@ -2314,8 +2314,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-27",
-            "isoDateTime": "2026-02-27T21:51:36.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.229Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2335,7 +2335,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-27T21:51:36.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.229Z",
       "bytes": 287092,
       "contentFingerprint": "fd100349b4a19474e1757cbff31631542b6ab9982c28993ff2334746d416fc1a",
       "words": 39223,
@@ -2399,8 +2399,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-27",
-            "isoDateTime": "2026-02-27T21:45:18.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.230Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2420,7 +2420,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-27T21:45:18.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.230Z",
       "bytes": 17511,
       "contentFingerprint": "fc9074332cf384bce7561b2c54d1b512ee082d4e8fead7c398841fde5eaa92f9",
       "words": 2298,
@@ -2483,8 +2483,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-27",
-            "isoDateTime": "2026-02-27T22:39:22.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.230Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2504,7 +2504,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-27T22:39:22.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.230Z",
       "bytes": 94198,
       "contentFingerprint": "ea18d0d076e943a9262e95b934ef15fdbb549559ed8c70bdd05f4fb55b908802",
       "words": 14648,
@@ -2568,8 +2568,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T04:58:06.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.231Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2589,7 +2589,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T04:58:06.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.231Z",
       "bytes": 8237,
       "contentFingerprint": "42ed7f5377905bda08780826e0888939fd2556c2356f559b7dfca91e2346d279",
       "words": 1095,
@@ -2647,8 +2647,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T04:57:42.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.231Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2668,7 +2668,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T04:57:42.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.231Z",
       "bytes": 6030,
       "contentFingerprint": "df43f61ecf10076e7cbfc11d98cac47eba8ae66f5707f793846448a9fcbb28c6",
       "words": 812,
@@ -2722,8 +2722,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T04:59:54.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.231Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2743,7 +2743,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T04:59:54.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.231Z",
       "bytes": 8437,
       "contentFingerprint": "ec8ff70fe09a51f9aef1a38ef715d1fc30c279300a4bb606f081e89f2e33e549",
       "words": 1160,
@@ -2805,8 +2805,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T04:37:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2826,7 +2826,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T04:37:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 12239,
       "contentFingerprint": "59e2ea420732b1d074f1a41342068c1d84c6829985b4d2bd011eebba70581838",
       "words": 1722,
@@ -2885,8 +2885,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T05:07:34.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2906,7 +2906,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T05:07:34.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 7009,
       "contentFingerprint": "b6b3b306e725d2c0b2ff74d66937d72b462de2ad6650b8a2368bfa9aa5476a18",
       "words": 937,
@@ -2965,8 +2965,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T05:06:56.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2986,7 +2986,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T05:06:56.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 8381,
       "contentFingerprint": "2f88726eecd911507cc93adb5d200a0b1b7e372dd2014631305f00b2e10dd75d",
       "words": 1139,
@@ -3047,8 +3047,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T05:07:14.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3068,7 +3068,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T05:07:14.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 7076,
       "contentFingerprint": "e797fafe78cd41290577b78ffdd4f679f155d19aaaa1a4c7edf522566a6b79ef",
       "words": 931,
@@ -3126,8 +3126,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T05:07:48.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3147,7 +3147,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T05:07:48.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 7579,
       "contentFingerprint": "673532a00c41f0d7bd2c1d2dd403d826f393fcafc51ff39bbb88c22dff6c2199",
       "words": 1024,
@@ -3207,8 +3207,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T16:44:46.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.232Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3228,7 +3228,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T16:44:46.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.232Z",
       "bytes": 9206,
       "contentFingerprint": "6e365f6c2ff1cda6e947826b211b699ea66f71acf5fc51137aed06bb09385497",
       "words": 1149,
@@ -3282,8 +3282,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T13:44:24.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.233Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3303,7 +3303,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T13:44:24.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.233Z",
       "bytes": 7509,
       "contentFingerprint": "3acf71d603878ef3eee2e82c3ae8478206c2aaadcf101c460c051bdcf4e809ef",
       "words": 978,
@@ -3362,8 +3362,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T10:32:58.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.233Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3383,7 +3383,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T10:32:58.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.233Z",
       "bytes": 9145,
       "contentFingerprint": "fd3b0652bb45b82dbcc87fa05e1808ee366c016fe80b6ed1118e388ba50591be",
       "words": 1179,
@@ -3437,8 +3437,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T10:33:22.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.233Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3458,7 +3458,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T10:33:22.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.233Z",
       "bytes": 10986,
       "contentFingerprint": "9e15768ef94371cd323dcb70001c6ecdb1fda1759c36fdf5e1b2f49b797daf4c",
       "words": 1449,
@@ -3517,8 +3517,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-02",
-            "isoDateTime": "2026-03-02T10:51:10.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.233Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3538,7 +3538,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-02T10:51:10.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.233Z",
       "bytes": 12896,
       "contentFingerprint": "173a7815927bcb7d5a2a10f7ea83334b4495db9b506cd28488213480481a5d09",
       "words": 1676,
@@ -3599,8 +3599,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-20",
-            "isoDateTime": "2026-03-20T02:35:50.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.234Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3620,7 +3620,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-20T02:35:50.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.234Z",
       "bytes": 38350,
       "contentFingerprint": "c39aad9fd2987b14da005c6a71e7348e51441b4565ecd4e483f936733f2d5501",
       "words": 5263,
@@ -3679,8 +3679,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T17:47:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.234Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3700,7 +3700,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-22T17:47:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.234Z",
       "bytes": 30498,
       "contentFingerprint": "1442c93c3aa9b33fb9db623311ff92de82ba970c6febc3512c72278a3b643fa3",
       "words": 4792,
@@ -3753,8 +3753,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T09:25:44.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.234Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3774,7 +3774,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-23T09:25:44.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.234Z",
       "bytes": 20036,
       "contentFingerprint": "5ef81e35af16f1229ccb487a392871f17f0887bd9e53f78b6949cecfea06b7dd",
       "words": 2563,
@@ -3838,8 +3838,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T07:47:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.235Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3859,7 +3859,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-23T07:47:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.235Z",
       "bytes": 12967,
       "contentFingerprint": "fa8330ed2d2cfc9e72169d42c9d836fc77d3d42c5225250235ba80b4a621f3dd",
       "words": 1810,
@@ -3910,8 +3910,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T08:08:32.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.235Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3931,7 +3931,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-23T08:08:32.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.235Z",
       "bytes": 11889,
       "contentFingerprint": "b8f6396f8f75c3ab126def662cd6a071fa4331c6b8fece0373d9249333963539",
       "words": 1479,
@@ -3989,8 +3989,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T07:51:32.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.235Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4010,7 +4010,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-23T07:51:32.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.235Z",
       "bytes": 16311,
       "contentFingerprint": "0e024c0b9a9977d5ed97d8c9f6ec8d6772b30db283caf78925e4a9054d11ddda",
       "words": 2354,
@@ -4063,8 +4063,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T07:52:42.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.236Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4084,7 +4084,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-23T07:52:42.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.236Z",
       "bytes": 97688,
       "contentFingerprint": "fe401071e69db63d029c382902119d01be85c97bf846693966c761147f373430",
       "words": 14572,
@@ -4148,8 +4148,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T17:47:29.095Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.236Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4169,7 +4169,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-12T17:47:29.095Z",
+      "modifiedAt": "2026-04-26T01:03:27.236Z",
       "bytes": 120765,
       "contentFingerprint": "1d617c919d9efe8f4cee2540720222827ec4af27e78ed2dfa8ffa039d3b0bc8d",
       "words": 19023,
@@ -4233,8 +4233,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-26",
-            "isoDateTime": "2026-03-26T03:28:56.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.237Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4254,7 +4254,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-03-26T03:28:56.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.237Z",
       "bytes": 162120,
       "contentFingerprint": "953c471c5d5e24e28cd6bae2a97a3f63cca413eec58e81c42c5af9b35a433ef7",
       "words": 22314,
@@ -4296,8 +4296,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-26",
-            "isoDateTime": "2026-03-26T08:37:12.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.237Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4316,7 +4316,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-03-26T08:37:12.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.237Z",
       "bytes": 136903,
       "contentFingerprint": "565b89dd95cef01244594dd61bdb6189fb3fe7a2780eb93bd8e2cab91776c4bb",
       "words": 21224,
@@ -4380,8 +4380,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-01",
-            "isoDateTime": "2026-04-01T19:58:44.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.238Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4401,7 +4401,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-01T19:58:44.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.238Z",
       "bytes": 53761,
       "contentFingerprint": "6b8626d057dbc7800eb30efdf64cd822b923d2901bf566f72f7fb4424cba3754",
       "words": 7724,
@@ -4465,8 +4465,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-09",
-            "isoDateTime": "2026-04-09T03:33:11.947Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.239Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4486,7 +4486,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-09T03:33:11.947Z",
+      "modifiedAt": "2026-04-26T01:03:27.239Z",
       "bytes": 237328,
       "contentFingerprint": "aa446ab0c4f36bb5b8887820b6fac6ce50fdb28d7f78a04925297151d425301b",
       "words": 30665,
@@ -4550,8 +4550,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-10",
-            "isoDateTime": "2026-04-10T14:46:13.806Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.239Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4571,7 +4571,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-10T14:46:13.806Z",
+      "modifiedAt": "2026-04-26T01:03:27.239Z",
       "bytes": 151570,
       "contentFingerprint": "153e5591d4c0fcd2b3848b084da5e43f7add938e0b83645b88aefacdea0d57ca",
       "words": 21270,
@@ -4630,8 +4630,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-10",
-            "isoDateTime": "2026-04-10T15:03:58.281Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.239Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4651,7 +4651,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-10T15:03:58.281Z",
+      "modifiedAt": "2026-04-26T01:03:27.239Z",
       "bytes": 23194,
       "contentFingerprint": "113e10959f78145571d3033153b2db4565b57bd2171be3474e10312b2cb1ef62",
       "words": 2954,
@@ -4685,8 +4685,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-10",
-            "isoDateTime": "2026-04-10T14:55:14.106Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.240Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4705,7 +4705,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-10T14:55:14.106Z",
+      "modifiedAt": "2026-04-26T01:03:27.240Z",
       "bytes": 54654,
       "contentFingerprint": "b60d03815b4cfa8ee74c6a2b8141df2f0a937064932cdddd64ea7d4e8b2ba34a",
       "words": 6093,
@@ -4769,8 +4769,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T10:10:41.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.240Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4790,7 +4790,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-11T10:10:41.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.240Z",
       "bytes": 64891,
       "contentFingerprint": "5b885613045d9f2ca6edd5cc4caf47b1004e2dc73a3f2fbbd05854b695c5c418",
       "words": 9148,
@@ -4851,8 +4851,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T10:00:53.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.241Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4872,7 +4872,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-11T10:00:53.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.241Z",
       "bytes": 44552,
       "contentFingerprint": "8337bfd64cec041a874068a04a2f431d32bb00952e1561ad1975a050d5165265",
       "words": 6636,
@@ -4931,8 +4931,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T13:59:08.858Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.242Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4952,7 +4952,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-11T13:59:08.858Z",
+      "modifiedAt": "2026-04-26T01:03:27.242Z",
       "bytes": 136676,
       "contentFingerprint": "865511102afc4104e4ea519b3e983e87459e3adbb46244aa8a6a881bc26f6039",
       "words": 21094,
@@ -5016,8 +5016,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T00:23:18.730Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.242Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5037,7 +5037,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-13T00:23:18.730Z",
+      "modifiedAt": "2026-04-26T01:03:27.242Z",
       "bytes": 202637,
       "contentFingerprint": "69c9b10bb9d508102f55a4b285f15af493d3f65a32a94b22a96e81d1402b415e",
       "words": 30952,
@@ -5103,8 +5103,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T22:12:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.244Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5124,7 +5124,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-12T22:12:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.244Z",
       "bytes": 41890,
       "contentFingerprint": "e21211d4000f4266a6a977555b89fc2436aa7fe7a06067b1930df37e807a8ff4",
       "words": 5608,
@@ -5175,8 +5175,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:31:48.099Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.245Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5196,7 +5196,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:31:48.099Z",
+      "modifiedAt": "2026-04-26T01:03:27.245Z",
       "bytes": 60925,
       "contentFingerprint": "fedb6a613a5cc57f1082e0c9d5862813de1169e04438f041f0b8c8ab99538508",
       "words": 8075,
@@ -5247,8 +5247,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:19:09.047Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.245Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5268,7 +5268,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:19:09.047Z",
+      "modifiedAt": "2026-04-26T01:03:27.245Z",
       "bytes": 98303,
       "contentFingerprint": "6d99727a6c81f2643362a211bfbd24ef237578a4158e50d4f76593e936e9b965",
       "words": 14610,
@@ -5303,15 +5303,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-22",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T22:14:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.251Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5320,12 +5320,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-22",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-22T22:14:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.251Z",
       "bytes": 17544,
       "contentFingerprint": "b7d34cef5ca2490ad84b46ebb0ee44763fe731863b040a7acc10450c0cad2c88",
       "words": 2066,
@@ -5360,15 +5360,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-22",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T22:06:10.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.246Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5377,12 +5377,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-22",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-22T22:06:10.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.246Z",
       "bytes": 5383,
       "contentFingerprint": "038b6e7441da1d5ad6d174180770adfabec0b2cf3b07762814a1d741fa5e339f",
       "words": 624,
@@ -5413,15 +5413,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-23",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-23",
-            "isoDateTime": "2026-03-23T09:34:02.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.246Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5430,12 +5430,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-23",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-23T09:34:02.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.246Z",
       "bytes": 5997,
       "contentFingerprint": "6567f4a5aeba122c12df3997530bc4c7dcb728355fcd8d27bab074ae0104bfa7",
       "words": 778,
@@ -5461,15 +5461,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:17:12.636Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.246Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5478,12 +5478,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:17:12.636Z",
+      "modifiedAt": "2026-04-26T01:03:27.246Z",
       "bytes": 16652,
       "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
@@ -5503,15 +5503,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:17:30.259Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.246Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5520,12 +5520,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:17:30.259Z",
+      "modifiedAt": "2026-04-26T01:03:27.246Z",
       "bytes": 24058,
       "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
@@ -5556,15 +5556,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:18:05.034Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.247Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5573,12 +5573,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:18:05.034Z",
+      "modifiedAt": "2026-04-26T01:03:27.247Z",
       "bytes": 3051,
       "contentFingerprint": "287a90060402d85a7e578a01b01600d7fa4532c2297dacacb4daefe50dc449d5",
       "words": 509,
@@ -5596,15 +5596,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:16:06.633Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.247Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5613,12 +5613,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:16:06.633Z",
+      "modifiedAt": "2026-04-26T01:03:27.247Z",
       "bytes": 21481,
       "contentFingerprint": "84688f2626832051cb4343c3eb81685b54b0b7e9473f904e0e38c029029cd088",
       "words": 3143,
@@ -5653,15 +5653,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:10:16.033Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.248Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5670,12 +5670,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:10:16.033Z",
+      "modifiedAt": "2026-04-26T01:03:27.248Z",
       "bytes": 24058,
       "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
@@ -5706,15 +5706,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:16:42.042Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.248Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5723,12 +5723,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:16:42.042Z",
+      "modifiedAt": "2026-04-26T01:03:27.248Z",
       "bytes": 16652,
       "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
@@ -5748,15 +5748,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-02-28",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-28",
-            "isoDateTime": "2026-02-28T07:29:12.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.247Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5765,12 +5765,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-02-28",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-02-28T07:29:12.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.247Z",
       "bytes": 82870,
       "contentFingerprint": "f4b8b22010aa86fe3479262a9215810361f703498013f121b33f6e7da98a5cc0",
       "words": 10795,
@@ -5805,15 +5805,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-11",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-11",
-            "isoDateTime": "2026-04-11T07:16:23.379Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.248Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5822,12 +5822,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-11",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-11T07:16:23.379Z",
+      "modifiedAt": "2026-04-26T01:03:27.248Z",
       "bytes": 37814,
       "contentFingerprint": "064f7fee6784103c0424cac7adf5ceb08b9c550a2991caf2a0a8371352d0cca0",
       "words": 5411,
@@ -5862,15 +5862,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-22",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T21:58:48.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.248Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5879,12 +5879,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-22",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-22T21:58:48.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.248Z",
       "bytes": 29223,
       "contentFingerprint": "1b0e2469cb20f6f0b80c8efee4e49538fbe4baff37af75e565f1ba9738491ffe",
       "words": 3428,
@@ -5926,8 +5926,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-17",
-            "isoDateTime": "2025-10-17T05:56:38.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.250Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5946,7 +5946,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-10-17T05:56:38.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.250Z",
       "bytes": 742051,
       "contentFingerprint": "8f1963e5d5033686fdd90bb4d75ea5d24476a654f4f7961bf21da24039940181",
       "words": 94763,
@@ -5981,15 +5981,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-22",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T22:09:28.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.250Z",
             "source": "filesystem-mtime"
           }
         },
@@ -5998,12 +5998,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-22",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-22T22:09:28.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.250Z",
       "bytes": 10211,
       "contentFingerprint": "69348110863476288cee7b31d98b74347d9716ccee15ead9960f46d75019dfbf",
       "words": 1535,
@@ -6038,15 +6038,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-03-22",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-22",
-            "isoDateTime": "2026-03-22T22:11:50.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.251Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6055,12 +6055,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-03-22",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-03-22T22:11:50.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.251Z",
       "bytes": 17082,
       "contentFingerprint": "e31f4bb770a41fe3e098fdd9193a50a813b4ee4bdd549fdc2b9ca3a3ccb69d2e",
       "words": 2066,
@@ -6096,8 +6096,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-15",
-            "isoDateTime": "2025-11-15T04:07:44.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.252Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6116,7 +6116,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-11-15T04:07:44.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.252Z",
       "bytes": 73468,
       "contentFingerprint": "c33ea7702470a3d0c800586082c01fe016058a830bc17dc27d4a8f6fdcfcbd83",
       "words": 10116,
@@ -6152,8 +6152,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-15",
-            "isoDateTime": "2025-11-15T04:54:28.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.252Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6172,7 +6172,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-11-15T04:54:28.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.252Z",
       "bytes": 49549,
       "contentFingerprint": "cbbacf51dcfb8b13972abe43842b617abda6aa23050be28c0cadfadb1f5fb5da",
       "words": 6913,
@@ -6214,8 +6214,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-28",
-            "isoDateTime": "2025-11-28T15:18:36.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.252Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6234,7 +6234,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-11-28T15:18:36.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.252Z",
       "bytes": 145959,
       "contentFingerprint": "5d75f5bcd873cb67225657271566f9f8d5dea37418db24c3008dce21fe42f092",
       "words": 17926,
@@ -6273,8 +6273,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-28",
-            "isoDateTime": "2025-11-28T12:00:38.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.253Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6293,7 +6293,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-11-28T12:00:38.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.253Z",
       "bytes": 128321,
       "contentFingerprint": "7171be13579b164e26722d26b2bf98bc5f9b6d4235689527355ebf5276eeca48",
       "words": 16415,
@@ -6335,8 +6335,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-07-10",
-            "isoDateTime": "2025-07-10T16:57:08.159Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.253Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6355,7 +6355,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-07-10T16:57:08.159Z",
+      "modifiedAt": "2026-04-26T01:03:27.253Z",
       "bytes": 109645,
       "contentFingerprint": "65af4ea6cc08df14cbf7d40124266eeb73abb1ef7da740120108040a0065117a",
       "words": 15341,
@@ -6397,8 +6397,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-27",
-            "isoDateTime": "2025-10-27T03:47:14.421Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.254Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6417,7 +6417,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-10-27T03:47:14.421Z",
+      "modifiedAt": "2026-04-26T01:03:27.254Z",
       "bytes": 167388,
       "contentFingerprint": "d9edc01ce9cab278bca9af20c120d63f71886aa754d497ac027c3f0d84f4237f",
       "words": 22462,
@@ -6467,8 +6467,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:46:24.649Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.255Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6488,7 +6488,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:46:24.649Z",
+      "modifiedAt": "2026-04-26T01:03:27.255Z",
       "bytes": 14844,
       "contentFingerprint": "513d329747ac4de6f27babb73227f2305d149583aa71f5cc4164a45cbcd60a9d",
       "words": 1937,
@@ -6540,8 +6540,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:47:29.653Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.255Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6561,7 +6561,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-24T02:47:29.653Z",
+      "modifiedAt": "2026-04-26T01:03:27.255Z",
       "bytes": 10602,
       "contentFingerprint": "f25689d1c8b272329da885e56064972ff8db1583f7edcf1d79f93c759e390908",
       "words": 1419,
@@ -6611,8 +6611,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T22:12:56.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.256Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6632,7 +6632,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-12T22:12:56.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.256Z",
       "bytes": 43076,
       "contentFingerprint": "3bd664c6d39a4c479debbea99f2730c478b2665abff717b5580ae9662580439d",
       "words": 6124,
@@ -6684,8 +6684,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T22:12:58.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.256Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6705,7 +6705,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-12T22:12:58.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.256Z",
       "bytes": 9011,
       "contentFingerprint": "3f23973a5930a9c58cd5c478964bb5fff4cc999f9604f7a3a830dcbbfe3d8a15",
       "words": 1288,
@@ -6740,15 +6740,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.256Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6757,12 +6757,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.256Z",
       "bytes": 1475,
       "contentFingerprint": "452cd5f5b4b4169cb784ee548dd71b721c780035a87af902c03b5644875eb7b0",
       "words": 210,
@@ -6785,15 +6785,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.256Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6802,12 +6802,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.256Z",
       "bytes": 588,
       "contentFingerprint": "0b9a5941c2e5f49566d927dc45a8df60c9f2f5e997ef0c0558381bacb589542e",
       "words": 92,
@@ -6830,15 +6830,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2025-10-20",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-20",
-            "isoDateTime": "2025-10-20T21:50:38.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.257Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6847,12 +6847,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-10-20",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-10-20T21:50:38.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.257Z",
       "bytes": 62904,
       "contentFingerprint": "bc9108060baad56dfc1e4f5202249d0548af99fcbbb6148250436309f87667a1",
       "words": 9433,
@@ -6877,15 +6877,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.257Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6894,12 +6894,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.257Z",
       "bytes": 1207,
       "contentFingerprint": "619ba5cfa1e14d911e24d50193ff4dfd630d62fe157ebd8b65ce6ef956995472",
       "words": 147,
@@ -6950,8 +6950,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-24",
-            "isoDateTime": "2026-02-24T09:06:52.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.257Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6971,7 +6971,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-24T09:06:52.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.257Z",
       "bytes": 83812,
       "contentFingerprint": "89f263001753d21618a3b1da85a1288031a15965e04be38c351a11cdd0f54133",
       "words": 10828,
@@ -7006,15 +7006,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-01",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-01",
-            "isoDateTime": "2026-04-01T08:23:24.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.258Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7023,12 +7023,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-01",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-01T08:23:24.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.258Z",
       "bytes": 24547,
       "contentFingerprint": "46b6e19c2f0ef3990b234a6c751facbec7fc424fb7490a05dca2fbc7bc255492",
       "words": 3154,
@@ -7063,15 +7063,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.258Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7080,12 +7080,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.258Z",
       "bytes": 1314,
       "contentFingerprint": "3be2d557771ef6911b0098cafb1c8d73105fe8f3e0bef4ff4bf48164c1d67ac7",
       "words": 166,
@@ -7107,15 +7107,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.258Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7124,12 +7124,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.258Z",
       "bytes": 924,
       "contentFingerprint": "1df9f182842bfa18c6a4bbd50881b8f6018cfbddb4e344db7ee862f01348599d",
       "words": 129,
@@ -7159,8 +7159,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T22:48:37.175Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.258Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7179,7 +7179,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-13T22:48:37.175Z",
+      "modifiedAt": "2026-04-26T01:03:27.258Z",
       "bytes": 7945,
       "contentFingerprint": "e92f1b8865fe7d66b6187169bc0a97c67386291e0afd7384c958c8d4729d0390",
       "words": 1071,
@@ -7286,8 +7286,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-16",
-            "isoDateTime": "2025-10-16T14:27:26.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.259Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7306,7 +7306,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-10-16T14:27:26.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.259Z",
       "bytes": 72204,
       "contentFingerprint": "4410ab59ee75ecbd262d1bd280d08a4a3cde197c20d5528004f1c50b963ed531",
       "words": 11211,
@@ -7370,8 +7370,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T12:58:44.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.259Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7391,7 +7391,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T12:58:44.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.259Z",
       "bytes": 9425,
       "contentFingerprint": "593b4071f2b5f42047d9e1b2f82964f2585046ad3faf99eaa26c08e63b5f9545",
       "words": 1202,
@@ -7445,8 +7445,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T12:41:14.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.260Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7466,7 +7466,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T12:41:14.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.260Z",
       "bytes": 176420,
       "contentFingerprint": "2e78fafd6b881d79f8af7cbf63ce9f770ea15ce25000e51e8099709b7bd23ed1",
       "words": 24905,
@@ -7530,8 +7530,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-25",
-            "isoDateTime": "2026-02-25T13:03:10.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.260Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7551,7 +7551,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-02-25T13:03:10.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.260Z",
       "bytes": 58399,
       "contentFingerprint": "98da14313903e34ec319bed8c0f1a439794713e2d10b579ec42abedf5b4505ab",
       "words": 7964,
@@ -7586,15 +7586,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2025-07-10",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-07-10",
-            "isoDateTime": "2025-07-10T16:57:40.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.261Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7603,12 +7603,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-07-10",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-07-10T16:57:40.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.261Z",
       "bytes": 217589,
       "contentFingerprint": "089830bdc651743d83fa1952a05ee55a83c1d715cd3846e1800e753b61153799",
       "words": 32556,
@@ -7672,8 +7672,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-01",
-            "isoDateTime": "2026-04-01T08:25:02.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.261Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7688,7 +7688,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-01T08:25:02.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.261Z",
       "bytes": 57898,
       "contentFingerprint": "4e245b85d0fdf2e8a7bbe038215c21e1d0d8744d06e004f3aa5bf1a4f8fab3fb",
       "words": 7641,
@@ -7752,8 +7752,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-29",
-            "isoDateTime": "2026-01-29T04:34:14.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.262Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7768,7 +7768,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-01-29T04:34:14.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.262Z",
       "bytes": 110793,
       "contentFingerprint": "b6880a41c72f861b1c0c9c578b1f8be7a27a13eb5f4da3b782d35f89e30ac296",
       "words": 15521,
@@ -7803,15 +7803,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2025-11-04",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-11-04",
-            "isoDateTime": "2025-11-04T09:18:44.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.265Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7820,12 +7820,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-11-04",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-11-04T09:18:44.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.265Z",
       "bytes": 4938,
       "contentFingerprint": "8b352c85e96d8c805400f3f28496a99ff5d82ebef9c4615945b763921809cfb4",
       "words": 650,
@@ -7861,8 +7861,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-01-29",
-            "isoDateTime": "2026-01-29T03:36:12.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.262Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7881,7 +7881,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-01-29T03:36:12.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.262Z",
       "bytes": 122795,
       "contentFingerprint": "78be735fcedd490ad3d90474480336295542f3275524d89746c67c0f469872f5",
       "words": 17089,
@@ -7945,8 +7945,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-05-15",
-            "isoDateTime": "2025-05-15T13:39:54.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.264Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7961,7 +7961,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2025-05-15T13:39:54.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.264Z",
       "bytes": 41765,
       "contentFingerprint": "50dc656400cb07a9bdb5e069627590c761903488872dad434ee5091b7f7c845b",
       "words": 5434,
@@ -7996,15 +7996,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2025-05-05",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-05-05",
-            "isoDateTime": "2025-05-05T17:28:38.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.264Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8013,12 +8013,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-05-05",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-05-05T17:28:38.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.264Z",
       "bytes": 3459,
       "contentFingerprint": "66a669c1bf03a3b257a1b6b5e64f664cde152ef1ab9db526ebc3914a07198f39",
       "words": 457,
@@ -8044,15 +8044,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2025-05-29",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-05-29",
-            "isoDateTime": "2025-05-29T20:09:54.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.264Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8061,12 +8061,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-05-29",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-05-29T20:09:54.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.264Z",
       "bytes": 7980,
       "contentFingerprint": "e5a359e53fbcc48e7bf4afff437bc57e2456594ea5d411a413622c52d38936c5",
       "words": 1247,
@@ -8084,15 +8084,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2025-07-10",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-07-10",
-            "isoDateTime": "2025-07-10T17:01:58.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.264Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8101,12 +8101,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2025-07-10",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2025-07-10T17:01:58.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.264Z",
       "bytes": 54796,
       "contentFingerprint": "eca41c095382bef2e6d4bc3de29244101350e8200de1293d8b2c82ad5ba0b7bc",
       "words": 8346,
@@ -8141,15 +8141,15 @@
       "category": "live",
       "authorityTier": "live",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T23:29:13.572Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.290Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8158,12 +8158,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T23:29:13.572Z",
+      "modifiedAt": "2026-04-26T01:03:27.290Z",
       "bytes": 4587,
       "contentFingerprint": "93223256cfc45315c4cb4ba7f25caee1317a33c5a793c56f83ea0fba1d05a5cc",
       "words": 643,
@@ -8195,15 +8195,15 @@
       "category": "live",
       "authorityTier": "live",
       "freshness": "undated-import",
-      "docDate": "2026-04-13",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T17:11:02.719Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.290Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8212,12 +8212,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-13",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-13T17:11:02.719Z",
+      "modifiedAt": "2026-04-26T01:03:27.290Z",
       "bytes": 676,
       "contentFingerprint": "bf0c6f587ba40f01a4081fc8397ffd4662de45d14fed1cc884f604c42ade0d72",
       "words": 84,
@@ -8240,15 +8240,15 @@
       "category": "packs",
       "authorityTier": "pack-contract",
       "freshness": "undated-import",
-      "docDate": "2026-04-24",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T04:17:56.987Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.290Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8257,12 +8257,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-24",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-24T04:17:56.987Z",
+      "modifiedAt": "2026-04-26T01:03:27.290Z",
       "bytes": 241,
       "contentFingerprint": "79da01f94692333d9257804796e3bbbb25a18d0ba585ec509547b4919a19ec18",
       "words": 35,
@@ -8289,8 +8289,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-24",
-            "isoDateTime": "2025-10-24T16:51:10.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.207Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8309,7 +8309,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-10-24T16:51:10.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.207Z",
       "bytes": 42103,
       "contentFingerprint": "215c8f19a3dc07bcbd6532e28c67b558f0f985ad60802ff3b47fb346370f2961",
       "words": 5575,
@@ -8344,8 +8344,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-26",
-            "isoDateTime": "2026-03-26T03:16:06.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.207Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8364,7 +8364,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-03-26T03:16:06.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.207Z",
       "bytes": 20225,
       "contentFingerprint": "db21d928d3ebe5a59e66e68c124e0fc21caefe4355dcb4ae12f7ecd738f657cd",
       "words": 2331,
@@ -8406,8 +8406,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-24",
-            "isoDateTime": "2026-04-24T02:54:52.094Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.208Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8426,7 +8426,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-24T02:54:52.094Z",
+      "modifiedAt": "2026-04-26T01:03:27.208Z",
       "bytes": 56449,
       "contentFingerprint": "cd84221865ac6944d81fe10dac788a4b440fc1b2890f72187f4c06d5aaa04345",
       "words": 7758,
@@ -8468,8 +8468,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2025-10-24",
-            "isoDateTime": "2025-10-24T17:52:42.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.209Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8488,7 +8488,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2025-10-24T17:52:42.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.209Z",
       "bytes": 153229,
       "contentFingerprint": "c028fd4940ef391fd213c96637f41d135205502eb36b35e9ecb41b7657966c57",
       "words": 18472,
@@ -8528,8 +8528,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-02-28",
-            "isoDateTime": "2026-02-28T10:17:32.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.209Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8548,7 +8548,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-02-28T10:17:32.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.209Z",
       "bytes": 6164,
       "contentFingerprint": "5cf3695bd96ce10c2138a562f04ba51b4d3bf30b2d864bba03ffe61d718dd28b",
       "words": 868,
@@ -8590,8 +8590,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-03-24",
-            "isoDateTime": "2026-03-24T21:27:12.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.209Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8610,7 +8610,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-03-24T21:27:12.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.209Z",
       "bytes": 45840,
       "contentFingerprint": "fb971b5833ef0b1cd430db7371d4e85fc04f48cd6caa3d06d5b18829a84d56f5",
       "words": 5192,
@@ -8652,8 +8652,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T18:42:55.662Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.210Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8672,7 +8672,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-12T18:42:55.662Z",
+      "modifiedAt": "2026-04-26T01:03:27.210Z",
       "bytes": 55122,
       "contentFingerprint": "eabe8791810b1844040a61fd07ea90cf5d64017a306901e315c10dd483672486",
       "words": 7515,
@@ -8707,15 +8707,15 @@
       "category": "RFCs",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-12",
+      "docDate": "2026-04-26",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-12",
-            "isoDateTime": "2026-04-12T17:59:09.636Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.211Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8724,12 +8724,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-12",
+          "date": "2026-04-26",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-12T17:59:09.636Z",
+      "modifiedAt": "2026-04-26T01:03:27.211Z",
       "bytes": 37368,
       "contentFingerprint": "7b8f345945f9da7951a5668ba9edf29e7537590f20fe9016ba15fb62f9b611db",
       "words": 5365,
@@ -8836,8 +8836,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-13",
-            "isoDateTime": "2026-04-13T13:15:17.000Z",
+            "date": "2026-04-26",
+            "isoDateTime": "2026-04-26T01:03:27.210Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8852,7 +8852,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-13T13:15:17.000Z",
+      "modifiedAt": "2026-04-26T01:03:27.210Z",
       "bytes": 173562,
       "contentFingerprint": "9d3d80c7653f9874ba5c43088391d6808a29dcb451da67a566ca803414d80fef",
       "words": 23493,

@@ -34,7 +34,7 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 - Current April 2026 docs: 24
 - Governing/planning/live docs: 36
 - Docs dated by canonical top matter: 73
-- Generated at: 2026-04-25T23:35:37.449Z
+- Generated at: 2026-04-26T01:03:27.290Z
 
 ## Policy
 

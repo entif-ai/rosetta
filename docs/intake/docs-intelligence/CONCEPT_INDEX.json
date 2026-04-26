@@ -1062,6 +1062,12 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-empathy-eval-harness.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-04-25-empathy-eval-harness.md",
+      "title": "Docs Intelligence Extraction: Empathy Eval Harness",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-2-0-enriched.md",
       "sourcePath": "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
       "title": "Entif 2.0 — Enriched by External Advancements",
@@ -3356,6 +3362,24 @@
       "signature": "003-eal-fine-implement-intrinsic"
     },
     {
+      "path": "docs/intake/issue-drafts/EEH-001-HEART-eval-receipt-schema.md",
+      "title": "EEH-001: HEART Evaluation Receipt Schema",
+      "labels": [],
+      "signature": "001-eeh-evaluation-heart-receipt"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EEH-002-adversarial-empathy-test-pack.md",
+      "title": "EEH-002: Adversarial Empathy Test Pack",
+      "labels": [],
+      "signature": "002-adversarial-eeh-empathy-pack"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EEH-003-attunement-diagnostic-bridge.md",
+      "title": "EEH-003: Attunement Axis Diagnostic Bridge",
+      "labels": [],
+      "signature": "003-attunement-axis-bridge-diagnostic"
+    },
+    {
       "path": "docs/intake/issue-drafts/elixir-nightly-coach-loop.md",
       "title": "ELIXIR Nightly Coach Loop",
       "labels": [],
@@ -3648,6 +3672,12 @@
       "title": "Issue: harness-platform-mismatch-root-cause",
       "labels": [],
       "signature": "cause-harness-mismatch-platform-root"
+    },
+    {
+      "path": "docs/intake/issue-drafts/HF-010-newsletter-google-alerts-intake-adapters.md",
+      "title": "HF-010 — Newsletter and Google Alerts Intake Adapters",
+      "labels": [],
+      "signature": "010-adapters-alerts-google-intake"
     },
     {
       "path": "docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md",
