@@ -1896,6 +1896,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/429
   status: active
+- id: BIP-006-3-signal-normalization
+  name: BIP-006-3 Signal Normalization Layer
+  introduced_by: docs/intake/issue-drafts/BIP-006-3-briefing-signal-normalization-unspecified.md
+  introduced_at: '2026-04-26'
+  definition: The BIP-006 nightly briefing spec normalizes heterogeneous signal sources
+    into a standard schema but leaves the normalization transforms, confidence scoring
+    methodology, direction comparison window, and source catalog unspecified.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/431
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
