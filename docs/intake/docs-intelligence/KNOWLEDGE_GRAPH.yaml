@@ -1906,6 +1906,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/431
   status: active
+- id: BIP-006-4-briefing-parallel-review-isolation
+  name: Parallel Persona Review Isolation
+  introduced_by: docs/intake/issue-drafts/BIP-006-4-briefing-parallel-review-isolation.md
+  introduced_at: '2026-04-26'
+  definition: "Phase 2 of BIP-006 runs 4 personas in parallel via Promise.all, preventing\
+    \ each reviewer from seeing other reviewers outputs \u2014 limiting cross-review\
+    \ value and deliberative consensus."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/433
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
