@@ -1546,5 +1546,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-001-openai-no-shareable-cache-id.md",
     "draftStatus": "published"
+  },
+  "SLD-004-extend-vs-author-policy": {
+    "number": 441,
+    "state": "open",
+    "title": "SLD-004: Extend vs Author-New Decision Policy",
+    "url": "https://github.com/entif-ai/rosetta/issues/441",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-004-extend-vs-author-policy.md",
+    "draftStatus": "published"
   }
 }
