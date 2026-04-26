@@ -3636,6 +3636,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/737
   status: active
+- id: cts-002-optical-codec-deepseek-ocr-vq-vae
+  name: "Optical Codec \u2014 DeepSeek-OCR + VQ-VAE"
+  introduced_by: docs/intake/issue-drafts/cts-002-optical-codec-deepseek-ocr-vq-vae.md
+  introduced_at: '2026-04-26'
+  definition: Perceptual-layer codec that compresses rendered documents into VQ-VAE
+    discrete latent codes via SAM + CLIP two-stage DeepEncoder, and rehydrates via
+    DeepSeek-MoE decoder.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/739
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -3004,5 +3004,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-001-semantic-codec-forge-fullscope.md",
     "draftStatus": "published"
+  },
+  "cts-002-optical-codec-deepseek-ocr-vq-vae.md": {
+    "number": 739,
+    "state": "open",
+    "title": "CTS-002: Optical Codec \u2014 DeepSeek-OCR Integration + VQ-VAE Quantization",
+    "url": "https://github.com/entif-ai/rosetta/issues/739",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-002-optical-codec-deepseek-ocr-vq-vae.md",
+    "draftStatus": "published"
   }
 }
