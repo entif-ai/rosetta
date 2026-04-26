@@ -1263,6 +1263,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/292
   status: active
+- id: 2026-04-25-consensus-first-motivated-reasoning-guardrails
+  name: Anti-Motivated-Reasoning Guardrails
+  introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-motivated-reasoning-guardrails.md
+  introduced_at: '2026-04-25'
+  definition: 'Four structural countermeasures against motivated reasoning in consensus-first
+    commitment workflows: incentive notes in Evidence Ledger, premortems at bet-size
+    increases, Team A/Team B or devil advocacy on contested decisions, and explicit
+    "what would change our mind" disconfirmer statements.'
+  referenced_by:
+  - https://github.com/entiif-ai/rosetta/issues/295
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -925,5 +925,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-falsification-dissent-packet.md",
     "draftStatus": "published"
+  },
+  "2026-04-25-consensus-first-motivated-reasoning-guardrails": {
+    "number": 295,
+    "state": "open",
+    "title": "CCF: Enforce Anti-Motivated-Reasoning Guardrails (4 Required Guardrails)",
+    "url": "https://github.com/entiif-ai/rosetta/issues/295",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-consensus-first-motivated-reasoning-guardrails.md",
+    "draftStatus": "published"
   }
 }
