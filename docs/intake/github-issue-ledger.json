@@ -2788,5 +2788,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-005-shared-caching-architecture.md",
     "draftStatus": "published"
+  },
+  "YAAC-006-claude-subscription-vs-api-key.md": {
+    "number": 698,
+    "state": "open",
+    "title": "YAAC-006: Clarify Claude subscription vs API key policy for OpenClaw automation",
+    "url": "https://github.com/entif-ai/rosetta/issues/698",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-006-claude-subscription-vs-api-key.md",
+    "draftStatus": "published"
   }
 }
