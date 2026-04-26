@@ -2302,5 +2302,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-005-neural-architecture-primer.md",
     "draftStatus": "published"
+  },
+  "REE-006-jigsaw-vs-monkeys-training-critique.md": {
+    "number": 600,
+    "state": "open",
+    "title": "REE-006: Critique of Brute-Force LLM Training \u2014 Jigsaw vs Monkeys",
+    "url": "https://github.com/entif-ai/rosetta/issues/600",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-006-jigsaw-vs-monkeys-training-critique.md",
+    "draftStatus": "published"
   }
 }
