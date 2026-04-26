@@ -3440,6 +3440,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/630
   status: active
+- id: am-006-data-control-plane-spoofing
+  name: 'AM-006: Data/Control Plane Anti-Spoofing'
+  introduced_by: docs/intake/issue-drafts/am-006-data-control-plane-spoofing.md
+  introduced_at: '2026-04-26'
+  definition: A compromised worker can bypass Guard by labeling a privileged-action
+    message as data plane type (e.g., TASK_RECEIPT). The msg_type field is sender-set
+    and not cryptographically bound to message intent. Requires cryptographic binding
+    or Guard-level content inspection.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/706
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
