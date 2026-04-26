@@ -1876,6 +1876,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/425
   status: active
+- id: df-005-config-mtime-race-condition
+  name: Config mtime reload race condition
+  introduced_by: docs/intake/issue-drafts/df-005-config-mtime-race-condition.md
+  introduced_at: '2026-04-26'
+  definition: get_app_config() uses mtime-based cache invalidation with no file locking
+    or atomic operations, allowing Gateway and LangGraph to diverge when config.yaml
+    changes during concurrent reload.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/427
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
