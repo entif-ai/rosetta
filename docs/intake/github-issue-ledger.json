@@ -3769,5 +3769,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/persona-strength-instrumentation.md",
     "draftStatus": "published"
+  },
+  "petri-sandbox-testing-framework.md": {
+    "number": 911,
+    "state": "open",
+    "title": "PETRI-001: Petri Sandbox Testing Framework \u2014 Architecture and Promotion Gates Unspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/911",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/petri-sandbox-testing-framework.md",
+    "draftStatus": "published"
   }
 }
