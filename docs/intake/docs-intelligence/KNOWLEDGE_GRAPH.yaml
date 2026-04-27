@@ -4719,6 +4719,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/948
   status: active
+- id: sba-006-media-attention-engine-platform-apis
+  name: "Media & Attention Engine M1\u2013M6 (SBA-006)"
+  introduced_by: docs/intake/issue-drafts/sba-006-media-attention-engine-platform-apis.md
+  introduced_at: '2026-04-27'
+  definition: "Six-module content flywheel (M1\u2013M6) for multi-platform content\
+    \ creation and distribution. Operates in suggestion/simulation mode in v0 with\
+    \ HITL gate before live API calls."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/950
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
