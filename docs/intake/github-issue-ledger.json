@@ -3688,5 +3688,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-routescore-calibration-harness.md",
     "draftStatus": "published"
+  },
+  "omc-swarm-reputation-metrics.md": {
+    "number": 896,
+    "state": "open",
+    "title": "Define OMC swarm reputation metrics",
+    "url": "https://github.com/entif-ai/rosetta/issues/896",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-swarm-reputation-metrics.md",
+    "draftStatus": "published"
   }
 }
