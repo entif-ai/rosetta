@@ -4036,6 +4036,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/818
   status: active
+- id: entaffirm-alignment-oracle
+  name: EntAffirm Alignment Oracle
+  introduced_by: docs/intake/issue-drafts/entaffirm-alignment-oracle.md
+  introduced_at: '2026-04-26'
+  definition: Gatekeeper for slow-tier commits and self-modifications that verifies
+    content against known facts and policies, catches hallucinations, and blocks commits
+    on failure.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/720
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
