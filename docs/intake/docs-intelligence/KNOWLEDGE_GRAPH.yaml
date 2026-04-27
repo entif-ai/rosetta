@@ -4967,6 +4967,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
+- id: veracity-emotional-geometry-scope
+  name: Veracity Vectors and Emotional Geometry
+  introduced_by: docs/intake/issue-drafts/veracity-emotional-geometry-scope.md
+  introduced_at: '2026-04-27'
+  definition: 'Epistemic layer features: Veracity Vectors (per-statement truth confidence
+    via evidence chains) and Emotional Geometry (emotional tone mapped to geometric
+    space), reserved as protocol slots in Entif 2.0.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/992
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

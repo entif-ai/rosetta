@@ -4210,5 +4210,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-phase-1-mvp-pipeline.md",
     "draftStatus": "published"
+  },
+  "veracity-emotional-geometry-scope.md": {
+    "number": 992,
+    "state": "open",
+    "title": "Define Veracity Vectors and Emotional Geometry implementation scope",
+    "url": "https://github.com/entif-ai/rosetta/issues/992",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/veracity-emotional-geometry-scope.md",
+    "draftStatus": "published"
   }
 }
