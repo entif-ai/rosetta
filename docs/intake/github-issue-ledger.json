@@ -3643,5 +3643,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-crdt-overlay-library-choice.md",
     "draftStatus": "published"
+  },
+  "omc-datamuse-rate-limits-and-cache.md": {
+    "number": 887,
+    "state": "open",
+    "title": "Define Datamuse rate limits and cache policy for OMC lexical expansion",
+    "url": "https://github.com/entif-ai/rosetta/issues/887",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-datamuse-rate-limits-and-cache.md",
+    "draftStatus": "published"
   }
 }
