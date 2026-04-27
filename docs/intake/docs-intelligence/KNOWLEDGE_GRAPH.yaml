@@ -4637,6 +4637,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/934
   status: active
+- id: sac-001
+  name: Prosodic Signature vs Biometric Fingerprinting
+  introduced_by: docs/intake/issue-drafts/sac-001-audio-source-identity-prosodic-vs-biometric.md
+  introduced_at: '2026-04-27'
+  definition: Distinction between permissible prosodic signature (statistical behavioral
+    attributes) and restricted biometric fingerprinting (deterministic identity matching)
+    for speaker attributes in audio cognition.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/425
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
