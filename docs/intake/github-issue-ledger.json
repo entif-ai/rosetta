@@ -3724,5 +3724,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-contributing-done-language.md",
     "draftStatus": "published"
+  },
+  "omoc-lean-vs-learned.md": {
+    "number": 81,
+    "state": "open",
+    "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
+    "url": "https://github.com/entif-ai/rosetta/issues/81",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned.md",
+    "draftStatus": "published"
   }
 }
