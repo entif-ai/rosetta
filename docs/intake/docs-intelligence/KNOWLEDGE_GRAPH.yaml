@@ -3687,6 +3687,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/747
   status: active
+- id: cts-009-zkp-evidence-bundles-optical-refs
+  name: ZKP-Signed EvidenceBundles with Optical Refs
+  introduced_by: docs/intake/issue-drafts/cts-009-zkp-evidence-bundles-optical-refs.md
+  introduced_at: '2026-04-26'
+  definition: ZKP attestation for optical decompression derivation chains, enabling
+    compact irrefutable audit trails using compressed image hashes instead of full
+    text.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/749
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4910,5 +4920,8 @@ issue_drafts_inventory:
   status: published
 - issue_id: TB-009-openai-function-call-codec
   url: https://github.com/entif-ai/rosetta/issues/674
+  status: published
+- issue_id: cts-009-zkp-evidence-bundles-optical-refs
+  url: https://github.com/entif-ai/rosetta/issues/749
   status: published
 

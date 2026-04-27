@@ -3049,5 +3049,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-006-egc-ithkuil-graphemic-core.md",
     "draftStatus": "published"
+  },
+  "cts-009-zkp-evidence-bundles-optical-refs": {
+    "number": 749,
+    "state": "open",
+    "title": "CTS-009: ZKP-Signed EvidenceBundles with Optical Refs + Provenance Integration",
+    "url": "https://github.com/entif-ai/rosetta/issues/749",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-009-zkp-evidence-bundles-optical-refs.md",
+    "draftStatus": "published"
   }
 }
