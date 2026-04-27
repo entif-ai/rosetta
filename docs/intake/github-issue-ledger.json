@@ -3148,5 +3148,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-009-skill-versioning-contract.md",
     "draftStatus": "published"
+  },
+  "df-010-json-store-scaling-bottleneck.md": {
+    "number": 770,
+    "state": "open",
+    "title": "DF-010: Redis-free JSON file persistence will bottleneck under high concurrency",
+    "url": "https://github.com/entif-ai/rosetta/issues/770",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-010-json-store-scaling-bottleneck.md",
+    "draftStatus": "published"
   }
 }
