@@ -3885,6 +3885,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/171
   status: active
+- id: prd-001-pack-conformance-release-gate
+  name: Pack Conformance Release Gate
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-001-pack-conformance-release-gate.md
+  introduced_at: '2026-04-26'
+  definition: Mandatory CI gate requiring all Rosetta packs to pass deterministic
+    pack_id verification, cycle detection, entrypoint validation, and conformance
+    testing before release.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/790
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
