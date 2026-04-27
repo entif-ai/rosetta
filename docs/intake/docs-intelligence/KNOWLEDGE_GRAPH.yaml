@@ -4927,6 +4927,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/889
   status: active
+- id: trend-technicals-friston-cultural-modeling
+  name: Friston Free Energy for Cultural Modeling
+  introduced_by: docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md
+  introduced_at: '2026-04-27'
+  definition: 'Research question: whether Karl Friston''s free energy principle and
+    active inference can provide actionable modeling value for cultural trend analysis,
+    or whether it remains at the metaphor level.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/986
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

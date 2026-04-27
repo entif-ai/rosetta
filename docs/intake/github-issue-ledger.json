@@ -4174,5 +4174,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-fluid-dynamics-simulation.md",
     "draftStatus": "published"
+  },
+  "trend-technicals-friston-cultural-modeling.md": {
+    "number": 986,
+    "state": "open",
+    "title": "Research: Karl Friston free energy principle for cultural modeling",
+    "url": "https://github.com/entif-ai/rosetta/issues/986",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-friston-cultural-modeling.md",
+    "draftStatus": "published"
   }
 }
