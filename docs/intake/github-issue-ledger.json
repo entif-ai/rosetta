@@ -3265,5 +3265,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-004-docs-intelligence-productization.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-005-live-source-adapter": {
+    "number": 799,
+    "state": "open",
+    "title": "PRD-005: Live-Source Adapter \u2014 GitHub + Google Drive Behind Refinery Boundary",
+    "url": "https://github.com/entif-ai/rosetta/issues/799",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-005-live-source-adapter.md",
+    "draftStatus": "published"
   }
 }

@@ -3925,6 +3925,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/795
   status: active
+- id: prd-005-live-source-adapter
+  name: "Live-Source Adapter \u2014 GitHub + Google Drive"
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-005-live-source-adapter.md
+  introduced_at: '2026-04-26'
+  definition: Adapter interface and implementations for fetching live GitHub and Google
+    Drive content behind the ingress-refinery boundary, producing identical receipt
+    structures to fixture-backed fetches.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/799
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
