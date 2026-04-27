@@ -4403,6 +4403,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/896
   status: active
+- id: omc-tiny-specialist-model-selection
+  name: Tiny Specialist Model Selection for OMC Routing
+  introduced_by: docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md
+  introduced_at: '2026-04-27'
+  definition: Decision tree and criteria for when L3 should spawn a tiny specialist
+    model versus delegating to L1/L2 in OMC orchestration.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/898
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
