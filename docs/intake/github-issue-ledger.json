@@ -3625,5 +3625,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/moral-patienthood-four-criteria-rubric.md",
     "draftStatus": "published"
+  },
+  "omc-constitutional-memory-mutation-policy": {
+    "number": 883,
+    "state": "open",
+    "title": "Define governance for OMC constitutional memory mutation",
+    "url": "https://github.com/entif-ai/rosetta/issues/883",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-constitutional-memory-mutation-policy.md",
+    "draftStatus": "published"
   }
 }
