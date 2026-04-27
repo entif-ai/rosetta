@@ -4461,6 +4461,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/907
   status: active
+- id: pasigraphy-trust-matrix-transition-criteria
+  name: Trust Matrix Transition Criteria
+  introduced_by: docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md
+  introduced_at: '2026-04-25'
+  definition: Criteria, milestones, and triggers for transitioning from bootstrap
+    trust values to evidence-driven scoring in Rosetta.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/803
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5213,6 +5222,8 @@ issue_drafts_inventory:
   issue_id: pasigraphy-trust-matrix-transition-criteria
   priority: P2
   type: governance
+  url: https://github.com/entif-ai/rosetta/issues/803
+  status: published
 - path: docs/intake/issue-drafts/pasigraphy-contributing-done-language.md
   source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
   source_pr: 60

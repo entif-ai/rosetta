@@ -3751,5 +3751,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-009-profile-negotiation-protocol.md",
     "draftStatus": "published"
+  },
+  "pasigraphy-trust-matrix-transition-criteria.md": {
+    "number": 803,
+    "state": "open",
+    "title": "Define Transition Criteria for Moving Trust Matrices from Bootstrap Values to Evidence-Driven Scoring",
+    "url": "https://github.com/entif-ai/rosetta/issues/803",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-trust-matrix-transition-criteria.md",
+    "draftStatus": "published"
   }
 }
