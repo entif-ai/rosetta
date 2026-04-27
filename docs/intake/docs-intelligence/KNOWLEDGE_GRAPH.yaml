@@ -4412,6 +4412,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/898
   status: active
+- id: omoc-lean-vs-learned-routing-paradigm
+  name: "OMOC Lean vs Learned \u2014 Routing Paradigm"
+  introduced_by: docs/intake/issue-drafts/omoc-lean-vs-learned-routing-paradigm.md
+  introduced_at: '2026-04-27'
+  definition: "Open question: should OMOC routing be fully deterministic (rule-based\
+    \ over concept signatures), fully learned (from outcome data), or hybrid? The\
+    \ RFC \xA78.4 utility formula weights are unspecified, making this a build-order\
+    \ decision blocking Tack 3."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/81
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

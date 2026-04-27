@@ -3706,5 +3706,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-tiny-specialist-model-selection.md",
     "draftStatus": "published"
+  },
+  "omoc-lean-vs-learned-routing-paradigm.md": {
+    "number": 81,
+    "state": "open",
+    "title": "OMOC Lean vs Learned \u2014 Routing Paradigm (\u00a78.4 evidence)",
+    "url": "https://github.com/entif-ai/rosetta/issues/81",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-routing-paradigm.md",
+    "draftStatus": "published"
   }
 }
