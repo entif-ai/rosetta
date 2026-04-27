@@ -3742,5 +3742,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-layer-dependency-direction.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-009-profile-negotiation-protocol.md": {
+    "number": 907,
+    "state": "open",
+    "title": "ROSETTA-v3-009: Profile Negotiation Protocol Not Specified",
+    "url": "https://github.com/entif-ai/rosetta/issues/907",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-009-profile-negotiation-protocol.md",
+    "draftStatus": "published"
   }
 }
