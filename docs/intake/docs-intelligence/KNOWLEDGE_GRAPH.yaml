@@ -4328,6 +4328,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/330
   status: active
+- id: omc-constitutional-memory-mutation-policy
+  name: OMC Constitutional Memory Mutation Policy
+  introduced_by: docs/intake/issue-drafts/omc-constitutional-memory-mutation-policy.md
+  introduced_at: '2026-04-27'
+  definition: Policy and review path for self-improvement loops that propose changes
+    to constitutional memory. Defines proposal, review, acceptance, and receipt requirements.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/883
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4761,6 +4770,8 @@ issue_drafts_inventory:
   issue_id: omc-constitutional-memory-mutation-policy
   priority: P2
   type: blocked-by-authority
+  url: https://github.com/entif-ai/rosetta/issues/883
+  status: published
 - path: docs/intake/issue-drafts/omc-crdt-overlay-library-choice.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
