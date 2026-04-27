@@ -4947,6 +4947,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
+- id: trend-technicals-influencer-equity-scoring
+  name: Influencer Equity Scoring Model
+  introduced_by: docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md
+  introduced_at: '2026-04-27'
+  definition: 'A model for scoring influencers by equity-like dimensions: intrinsic
+    value, volatility, and Black Swan event potential. Designed for the Trend Technicals
+    cultural intelligence platform.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/989
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5771,6 +5781,8 @@ issue_drafts_inventory:
   issue_id: trend-technicals-influencer-equity-scoring
   priority: P3
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/989
+  status: published
 - path: docs/intake/issue-drafts/trend-technicals-graph-database-schema.md
   source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   source_pr: 64
