@@ -3931,5 +3931,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-002-emotional-geometry-schema.md",
     "draftStatus": "published"
+  },
+  "sac-003-stem-isolation-source-separation.md": {
+    "number": 938,
+    "state": "open",
+    "title": "SAC-003: Stem Isolation Preprocessing \u2014 Neural Source Separation Evaluation",
+    "url": "https://github.com/entif-ai/rosetta/issues/938",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-003-stem-isolation-source-separation.md",
+    "draftStatus": "published"
   }
 }

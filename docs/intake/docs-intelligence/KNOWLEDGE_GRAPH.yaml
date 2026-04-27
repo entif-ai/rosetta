@@ -4657,6 +4657,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/425
   status: active
+- id: sac-003-stem-isolation
+  name: 'SAC-003: Stem Isolation Preprocessing'
+  introduced_by: docs/intake/issue-drafts/sac-003-stem-isolation-source-separation.md
+  introduced_at: '2026-04-27'
+  definition: Neural source separation evaluation for decomposing composite audio
+    tracks into constituent stems (drums, bass, vocals, other) for per-stem semantic
+    analysis in the Semantic Audio Cognition pipeline.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/938
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
