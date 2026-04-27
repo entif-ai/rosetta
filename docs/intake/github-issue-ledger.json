@@ -3940,5 +3940,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-003-stem-isolation-source-separation.md",
     "draftStatus": "published"
+  },
+  "sac-004-cross-modal-parity-benchmark.md": {
+    "number": 940,
+    "state": "open",
+    "title": "SAC-004: Cross-Modal Audio-Visual Parity Benchmark",
+    "url": "https://github.com/entif-ai/rosetta/issues/940",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-004-cross-modal-parity-benchmark.md",
+    "draftStatus": "published"
   }
 }
