@@ -3274,5 +3274,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-005-live-source-adapter.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-006-receipt-semantics-hardening.md": {
+    "number": 801,
+    "state": "open",
+    "title": "PRD-006: Receipt Semantics Hardening \u2014 Evidence Typing, Policy Linkage, Key Lifecycle",
+    "url": "https://github.com/entif-ai/rosetta/issues/801",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-006-receipt-semantics-hardening.md",
+    "draftStatus": "published"
   }
 }
