@@ -4346,6 +4346,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/885
   status: active
+- id: omc-datamuse-rate-limits-and-cache
+  name: Datamuse rate limits and cache policy for OMC
+  introduced_by: docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md
+  introduced_at: '2026-04-27'
+  definition: 'Operational baseline for Datamuse-backed deterministic lexical expansion
+    stages: rate limits, retry policy, offline cache, and provenance fields.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/887
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4797,6 +4806,8 @@ issue_drafts_inventory:
   issue_id: omc-datamuse-rate-limits-and-cache
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/887
+  status: published
 - path: docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
