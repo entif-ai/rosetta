@@ -3814,5 +3814,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/real-acquisition-adapters-behind-refinery-boundary.md",
     "draftStatus": "published"
+  },
+  "receipt-ledger-sqlite.md": {
+    "number": 158,
+    "state": "open",
+    "title": "Receipt Ledger SQLite + Console Sink Implementation",
+    "url": "https://github.com/entif-ai/rosetta/issues/158",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/receipt-ledger-sqlite.md",
+    "draftStatus": "published"
   }
 }
