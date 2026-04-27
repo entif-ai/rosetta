@@ -4789,6 +4789,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/961
   status: active
+- id: semantic-audio-stem-isolation
+  name: Semantic Audio Stem Isolation
+  introduced_by: docs/intake/issue-drafts/semantic-audio-stem-isolation.md
+  introduced_at: '2026-04-27'
+  definition: Preprocessing step for semantic audio cognition requiring neural source
+    separation of composite audio into constituent instrument and stem signals for
+    independent analysis.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/938
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5567,6 +5577,8 @@ issue_drafts_inventory:
   issue_id: semantic-audio-stem-isolation
   priority: P2
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/938
+  status: published
 - path: docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md
   source_doc: docs/ideas/Semantic Audio Cognition Framework.md
   source_pr: 62

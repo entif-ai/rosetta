@@ -4048,5 +4048,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-speaker-diarization-fingerprinting.md",
     "draftStatus": "published"
+  },
+  "semantic-audio-stem-isolation.md": {
+    "number": 938,
+    "state": "open",
+    "title": "SAC-003: Stem Isolation Preprocessing \u2014 Neural Source Separation Evaluation",
+    "url": "https://github.com/entif-ai/rosetta/issues/938",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-stem-isolation.md",
+    "draftStatus": "published"
   }
 }
