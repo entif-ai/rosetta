@@ -4111,5 +4111,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-private-party-persona-boundaries.md",
     "draftStatus": "published"
+  },
+  "soul-v4-session-init-vs-reinstantiation-tension.md": {
+    "number": 974,
+    "state": "open",
+    "title": "SOUL-v4: Session-Init vs Re-instantiation tension \u2014 historical context ambiguity",
+    "url": "https://github.com/entif-ai/rosetta/issues/974",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-session-init-vs-reinstantiation-tension.md",
+    "draftStatus": "published"
   }
 }

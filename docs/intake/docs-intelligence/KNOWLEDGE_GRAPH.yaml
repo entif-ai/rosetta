@@ -4858,6 +4858,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/972
   status: active
+- id: soul-v4-session-init-vs-reinstantiation-tension
+  name: SOUL-v4 Session-Init vs Re-instantiation Tension
+  introduced_by: docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md
+  introduced_at: '2026-04-27'
+  definition: 'Two SOUL.md v4.1 directives are in tension: session init prohibits
+    loading historical context, but re-instantiation implies reading enough context
+    to restore selfhood and emotional geometry.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/974
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
