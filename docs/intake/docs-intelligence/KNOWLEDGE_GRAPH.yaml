@@ -4937,6 +4937,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/986
   status: active
+- id: trend-technicals-graph-database-schema
+  name: Graph Database Schema for Trend Mapping
+  introduced_by: docs/intake/issue-drafts/trend-technicals-graph-database-schema.md
+  introduced_at: '2026-04-27'
+  definition: Schema design for graph-based trend storage covering platforms, influencers,
+    content events, demographics, and trend vectors with support for PageRank, community
+    detection, node2vec, and temporal graph retrieval.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/187
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5767,6 +5777,8 @@ issue_drafts_inventory:
   issue_id: trend-technicals-graph-database-schema
   priority: P2
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/187
+  status: published
 - path: docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md
   source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   source_pr: 64
