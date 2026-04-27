@@ -3598,5 +3598,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/mac-studio-control-two-tier-guard.md",
     "draftStatus": "published"
+  },
+  "moltron-claims-verification.md": {
+    "number": 879,
+    "state": "open",
+    "title": "Evaluate Moltron's Claims vs. Reality",
+    "url": "https://github.com/entif-ai/rosetta/issues/879",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/moltron-claims-verification.md",
+    "draftStatus": "published"
   }
 }
