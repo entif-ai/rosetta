@@ -4229,6 +4229,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/856
   status: active
+- id: glyph-schema-design
+  name: Glyph Schema Design (LABEL/DEFINITION/RELATIONS + WordNet Synset IDs)
+  introduced_by: docs/intake/issue-drafts/glyph-schema-design.md
+  introduced_at: '2026-04-25'
+  definition: 'Canonical schema for GraphRAG glyph nodes and edges: LABEL (canonical
+    name), DEFINITION (semantic description), RELATIONS (typed edges to other glyphs),
+    with WordNet/BabelNet synset IDs for semantic grounding.'
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/154
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
