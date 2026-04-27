@@ -3956,6 +3956,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/803
   status: active
+- id: prd-008-rights-guard-hardening
+  name: 'PRD-008: Rights/Guard Hardening'
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-008-rights-guard-hardening.md
+  introduced_at: '2026-04-26'
+  definition: 'Phase 1 constitutional hardening of rosetta-guard: actor-aware and
+    tenant-aware policy evaluation, capability tokens for side-effecting ops, policy
+    version binding, replay refusal, audience binding, and temporal policy context.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/805
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
