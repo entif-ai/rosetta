@@ -4677,6 +4677,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/940
   status: active
+- id: sba-001
+  name: "Entif v0 Tri-Tier Memory Architecture \u2014 formal specification"
+  introduced_by: docs/intake/issue-drafts/sba-001-entif-v0-memory-architecture.md
+  introduced_at: '2026-04-27'
+  definition: 'Formal specification for Entif v0 tri-tier memory: Redis key schema
+    + TTL + context window; PostgreSQL sessions/messages schema; Turso vs Qdrant evaluation
+    criteria; Neo4j property graph schema; cross-tier promotion/demotion policy; hybrid
+    query routing.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/720
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
