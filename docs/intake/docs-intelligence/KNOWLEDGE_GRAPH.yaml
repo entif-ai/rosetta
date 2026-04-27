@@ -4148,6 +4148,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/840
   status: active
+- id: entify-v0-012
+  name: Phase roadmap accountability (ENTIF-v0-012)
+  introduced_by: docs/intake/issue-drafts/entify-v0-012-phase-roadmap-accountability.md
+  introduced_at: '2026-04-27'
+  definition: "The phased roadmap (v0/v0.1/v1) lacks owner assignments, milestone\
+    \ acceptance criteria, and dependency chain \u2014 making it a wish list rather\
+    \ than an accountable plan."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/842
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
