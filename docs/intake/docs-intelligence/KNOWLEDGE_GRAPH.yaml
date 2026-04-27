@@ -3697,6 +3697,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/749
   status: active
+- id: cts-010-graphrag-slug-output
+  name: GraphRAG Slug-Output Upgrade (CTS-010)
+  introduced_by: docs/intake/issue-drafts/cts-010-graphrag-slug-output.md
+  introduced_at: '2026-04-26'
+  definition: Upgrade GraphRAG retrieval to return ranked SlugURI lists instead of
+    text chunks, increasing agent prompt context density.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/751
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
