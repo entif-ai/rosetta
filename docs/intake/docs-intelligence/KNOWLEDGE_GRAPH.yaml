@@ -4239,6 +4239,17 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/154
   status: active
+- id: entify-v0-019
+  name: Transferability Scorer Plane API
+  introduced_by: docs/intake/issue-drafts/entif-v0-019-transferability-scorer-plane-unspecified.md
+  introduced_at: '2026-04-27'
+  definition: The Transferability Scorer Plane is named in Entif v0 doctrine but has
+    no defined API contract, input schema, or output schema beyond the standalone
+    transferability_score.v0 example. No POST /transferability/score endpoint, scoring
+    trigger, or timeout is specified.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/867
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5478,5 +5489,8 @@ issue_drafts_inventory:
   status: published
 - issue_id: entify-v0-005
   url: https://github.com/entif-ai/rosetta/issues/827
+  status: published
+- issue_id: entify-v0-019
+  url: https://github.com/enti-ai/rosetta/issues/867
   status: published
 
