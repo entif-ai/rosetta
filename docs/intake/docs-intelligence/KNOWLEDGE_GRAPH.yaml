@@ -4384,6 +4384,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/892
   status: active
+- id: omc-routescore-calibration-harness
+  name: OMC RouteScore Calibration Harness
+  introduced_by: docs/intake/issue-drafts/omc-routescore-calibration-harness.md
+  introduced_at: '2026-04-27'
+  definition: An eval harness for calibrating the c1-c8 coefficients in the OMC RouteScore
+    routing formula.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/894
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4862,6 +4871,8 @@ issue_drafts_inventory:
   issue_id: omc-routescore-calibration-harness
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/894
+  status: published
 - path: docs/intake/issue-drafts/omc-subagent-context-budget-limits.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
