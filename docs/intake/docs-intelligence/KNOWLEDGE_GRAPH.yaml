@@ -3716,6 +3716,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/753
   status: active
+- id: cts-013-egc-combinatorics-risk
+  name: EGC Combinatorics / Address Space Explosion Risk
+  introduced_by: docs/intake/issue-drafts/cts-013-egc-combinatorics-risk.md
+  introduced_at: '2026-04-26'
+  definition: Risk that EGC compositional design (stems+modifiers+binders) devolves
+    into rainbow table enumeration or becomes computationally intractable. Depends
+    on CTS-006 EGC spec.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/747
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
