@@ -4165,5 +4165,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-postgres-pgvector-operational-baseline.md",
     "draftStatus": "published"
+  },
+  "trend-technicals-fluid-dynamics-simulation.md": {
+    "number": 889,
+    "state": "open",
+    "title": "Trend Technicals: Explore Fluid Dynamics for Trend Flow Simulation",
+    "url": "https://github.com/entif-ai/rosetta/issues/889",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-fluid-dynamics-simulation.md",
+    "draftStatus": "published"
   }
 }
