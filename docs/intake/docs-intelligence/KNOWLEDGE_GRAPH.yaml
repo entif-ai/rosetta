@@ -4178,6 +4178,16 @@ concepts:
   referenced_by:
   - https://github.com/entify-ai/rosetta/issues/848
   status: active
+- id: entify-v0-015
+  name: Model Routing Decision Thresholds
+  introduced_by: docs/intake/issue-drafts/entify-v0-015-model-routing-thresholds.md
+  introduced_at: '2026-04-27'
+  definition: "Three uncalibrated decision thresholds in the model-routing flowchart:\
+    \ context-burden token count, impact classification rubric (blast_radius \xD7\
+    \ probability), and policy gate trigger conditions."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/851
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
