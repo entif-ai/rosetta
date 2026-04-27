@@ -3774,6 +3774,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/764
   status: active
+- id: df-004-memory-dedup-false-collisions
+  name: Memory fact dedup false collisions
+  introduced_by: docs/intake/issue-drafts/df-004-memory-dedup-false-collisions.md
+  introduced_at: '2026-04-26'
+  definition: DeerFlow memory system deduplicates facts using whitespace-trimmed string
+    comparison, risking false collisions between semantically distinct facts that
+    differ only in leading/trailing whitespace.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/766
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
