@@ -3580,5 +3580,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/langgraph-workflow-not-constitutional.md",
     "draftStatus": "published"
+  },
+  "limitless-connector.md": {
+    "number": 875,
+    "state": "open",
+    "title": "Implement Limitless connector with cursor polling and idempotency",
+    "url": "https://github.com/entif-ai/rosetta/issues/875",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/limitless-connector.md",
+    "draftStatus": "published"
   }
 }
