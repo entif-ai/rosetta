@@ -3382,5 +3382,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-001-voi-threshold-calibration.md",
     "draftStatus": "published"
+  },
+  "entif-v0-003-constitutional-pack-signing.md": {
+    "number": 823,
+    "state": "open",
+    "title": "ENTIF-v0-003: Constitutional Pack Signing \u2014 Algorithm, Key Rotation, and Provisioning Unspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/823",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-003-constitutional-pack-signing.md",
+    "draftStatus": "published"
   }
 }
