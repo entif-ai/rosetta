@@ -3427,5 +3427,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-007-memory-tier-transition-rules.md",
     "draftStatus": "published"
+  },
+  "entif-v0-009-scoring-rubrics-five-scorecards.md": {
+    "number": 834,
+    "state": "open",
+    "title": "ENTIF-v0-009: Five Scoring Frameworks Lack Rubrics (Scale, Frequency, Responsible Actor, Thresholds)",
+    "url": "https://github.com/entif-ai/rosetta/issues/834",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-009-scoring-rubrics-five-scorecards.md",
+    "draftStatus": "published"
   }
 }
