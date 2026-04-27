@@ -3319,5 +3319,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-010-source-registry-refresh-lane.md",
     "draftStatus": "published"
+  },
+  "emilie-cross-model-replication-protocol": {
+    "number": 811,
+    "state": "open",
+    "title": "EMILIE Cross-Model Replication Protocol for External Research",
+    "url": "https://github.com/entif-ai/rosetta/issues/811",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-cross-model-replication-protocol.md",
+    "draftStatus": "published"
   }
 }
