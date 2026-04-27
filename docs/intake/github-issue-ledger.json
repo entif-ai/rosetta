@@ -3967,5 +3967,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-002-electron-secretstorage-plaintext-linux.md",
     "draftStatus": "published"
+  },
+  "sba-004-guard-majordomo-dual-control.md": {
+    "number": 946,
+    "state": "open",
+    "title": "SBA-004: Guard vs Majordomo Dual-Control \u2014 Capability Envelope Schema and Veto Protocol",
+    "url": "https://github.com/entif-ai/rosetta/issues/946",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-004-guard-majordomo-dual-control.md",
+    "draftStatus": "published"
   }
 }
