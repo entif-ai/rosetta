@@ -4442,6 +4442,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/81
   status: active
+- id: pasigraphy-layer-dependency-direction
+  name: Pasigraphy Layer Dependency Direction Rules
+  introduced_by: docs/intake/issue-drafts/pasigraphy-layer-dependency-direction.md
+  introduced_at: '2026-04-27'
+  definition: Clarify whether dependency direction in the five-layer Pasigraphy architecture
+    is upward-only, and whether Layer 4 projections depend on Layer 2 at runtime or
+    only at schema level.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/904
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5186,6 +5196,8 @@ issue_drafts_inventory:
   issue_id: pasigraphy-layer-dependency-direction
   priority: P1
   type: architecture
+  url: https://github.com/entif-ai/rosetta/issues/904
+  status: published
 - path: docs/intake/issue-drafts/pasigraphy-trust-matrix-transition-criteria.md
   source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md
   source_pr: 60
