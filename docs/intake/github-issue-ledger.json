@@ -3976,5 +3976,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-004-guard-majordomo-dual-control.md",
     "draftStatus": "published"
+  },
+  "sba-005-coach-module-safety-harness.md": {
+    "number": 948,
+    "state": "open",
+    "title": "SBA-005: Coach Module Safety Harness \u2014 Infinite Loop Prevention and Human Override",
+    "url": "https://github.com/entif-ai/rosetta/issues/948",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-005-coach-module-safety-harness.md",
+    "draftStatus": "published"
   }
 }
