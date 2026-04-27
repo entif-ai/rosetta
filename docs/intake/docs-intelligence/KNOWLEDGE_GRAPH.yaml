@@ -4355,6 +4355,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/887
   status: active
+- id: trend-technicals-content-characteristic-ontology
+  name: Content Characteristic Ontology
+  introduced_by: docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md
+  introduced_at: '2026-04-27'
+  definition: Ontology of orthogonal content dimensions (platform, medium, temporality,
+    breadth, acceleration, political lean, persona, motivator, novelty, production
+    style, interactivity) for trend modeling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/889
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5145,6 +5155,8 @@ issue_drafts_inventory:
   issue_id: trend-technicals-content-characteristic-ontology
   priority: P2
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/889
+  status: published
 - path: docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md
   source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   source_pr: 64
