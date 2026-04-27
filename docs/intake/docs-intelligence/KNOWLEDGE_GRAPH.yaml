@@ -3825,6 +3825,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/774
   status: active
+- id: df-014-mcp-oauth-refresh-timing
+  name: MCP OAuth token refresh timing unspecified
+  introduced_by: docs/intake/issue-drafts/df-014-mcp-oauth-refresh-timing.md
+  introduced_at: '2026-04-26'
+  definition: MCP OAuth supports automatic token refresh but the refresh timing strategy
+    (preemptive vs reactive) is unspecified, causing potential latency from expired
+    tokens and no visibility into token state.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/776
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
