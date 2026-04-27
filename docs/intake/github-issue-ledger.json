@@ -3409,5 +3409,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-005-graph-router-join-strategy.md",
     "draftStatus": "published"
+  },
+  "entif-v0-006-engram-act-r-parameterization.md": {
+    "number": 829,
+    "state": "open",
+    "title": "ENTIF-v0-006: ACT-R Parameterization for Engram Base-Level Activation Unspecified",
+    "url": "https://github.com/entif-ai/rosetta/issues/829",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-006-engram-act-r-parameterization.md",
+    "draftStatus": "published"
   }
 }
