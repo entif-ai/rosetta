@@ -3805,5 +3805,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/r8s-net-integration.md",
     "draftStatus": "published"
+  },
+  "real-acquisition-adapters-behind-refinery-boundary.md": {
+    "number": 799,
+    "state": "open",
+    "title": "PRD-005: Live-Source Adapter \u2014 GitHub + Google Drive Behind Refinery Boundary",
+    "url": "https://github.com/entif-ai/rosetta/issues/799",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/real-acquisition-adapters-behind-refinery-boundary.md",
+    "draftStatus": "published"
   }
 }
