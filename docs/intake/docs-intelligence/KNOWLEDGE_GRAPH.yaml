@@ -4878,6 +4878,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/976
   status: active
+- id: summarization-styles
+  name: Domain-specific summarization style templates
+  introduced_by: docs/intake/issue-drafts/summarization-styles.md
+  introduced_at: '2026-04-27'
+  definition: Three domain-specific summarization templates (Family/MoM/YouTube) with
+    distinct output formats and trigger conditions, implemented as a map-reduce summary
+    pyramid with abstractive and extractive variants.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/978
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
