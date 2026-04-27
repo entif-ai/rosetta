@@ -4977,6 +4977,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/992
   status: active
+- id: write-admission-gate-nine-step-state-machine
+  name: Write-Admission Gate State Machine
+  introduced_by: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
+  introduced_at: '2026-04-24'
+  definition: "9-step fail-closed state machine (Propose\u2192Normalize\u2192Authorize\u2192\
+    Ground\u2192Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project) governing\
+    \ all writes to canonical memory layers."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/994
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5621,6 +5631,8 @@ issue_drafts_inventory:
   issue_id: write-admission-gate-nine-step-state-machine
   priority: P1
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/994
+  status: published
 - path: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50

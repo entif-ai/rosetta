@@ -4219,5 +4219,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/veracity-emotional-geometry-scope.md",
     "draftStatus": "published"
+  },
+  "write-admission-gate-nine-step-state-machine.md": {
+    "number": 994,
+    "state": "open",
+    "title": "Write-Admission Gate \u2014 9-Step State Machine, Fail-Closed",
+    "url": "https://github.com/entif-ai/rosetta/issues/994",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/write-admission-gate-nine-step-state-machine.md",
+    "draftStatus": "published"
   }
 }
