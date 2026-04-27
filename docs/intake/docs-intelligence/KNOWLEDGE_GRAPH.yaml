@@ -4480,6 +4480,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/818
   status: active
+- id: petri-sandbox-testing-framework
+  name: Petri Sandbox Testing Framework
+  introduced_by: docs/intake/issue-drafts/petri-sandbox-testing-framework.md
+  introduced_at: '2026-04-27'
+  definition: A concrete test harness and adversarial scenario taxonomy for automatically
+    generating capability test cases and gating capability promotion behind alignment
+    tests in the Rosetta system.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/911
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
