@@ -3310,5 +3310,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-009-three-memory-planes-implementation.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-010-source-registry-refresh-lane.md": {
+    "number": 809,
+    "state": "open",
+    "title": "PRD-010: Source Registry Refresh Lane \u2014 DataCite, Crossref, ORCID, ROR Live Fetch",
+    "url": "https://github.com/entif-ai/rosetta/issues/809",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-010-source-registry-refresh-lane.md",
+    "draftStatus": "published"
   }
 }
