@@ -3958,5 +3958,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-001-entif-v0-memory-architecture.md",
     "draftStatus": "published"
+  },
+  "sba-002-electron-secretstorage-plaintext-linux.md": {
+    "number": 944,
+    "state": "open",
+    "title": "SBA-002: Electron SecretStorage plaintext credential vulnerability on Linux",
+    "url": "https://github.com/entif-ai/rosetta/issues/944",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-002-electron-secretstorage-plaintext-linux.md",
+    "draftStatus": "published"
   }
 }
