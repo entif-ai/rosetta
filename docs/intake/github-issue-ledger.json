@@ -3715,5 +3715,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-routing-paradigm.md",
     "draftStatus": "published"
+  },
+  "pasigraphy-contributing-done-language": {
+    "number": 901,
+    "state": "open",
+    "title": "CONTRIBUTING.md does not reference Done Language vocabulary",
+    "url": "https://github.com/entif-ai/rosetta/issues/901",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-contributing-done-language.md",
+    "draftStatus": "published"
   }
 }
