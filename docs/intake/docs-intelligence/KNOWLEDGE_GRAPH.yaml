@@ -4729,6 +4729,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/950
   status: active
+- id: sba-007
+  name: Icosagon Ideology Engineering Translation
+  introduced_by: docs/intake/issue-drafts/sba-007-icosagon-ideology-engineering-translation.md
+  introduced_at: '2026-04-27'
+  definition: Formal engineering requirements encoding for six Icosagon Ideology commandments
+    (VIII, IX, X, II, III, XVIII) mapping to system requirements with acceptance criteria,
+    conflict resolution, and privacy policy.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/952
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
