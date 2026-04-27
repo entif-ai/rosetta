@@ -3517,5 +3517,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/genesis-anchor-constitution.md",
     "draftStatus": "published"
+  },
+  "entify-v0-018-signal-event-idempotency.md": {
+    "number": 861,
+    "state": "open",
+    "title": "ENTIF-v0-018: Signal Event Idempotency \u2014 No Dedup Window, Polling Interval, or Idempotency Key Defined",
+    "url": "https://github.com/enti-ai/rosetta/issues/861",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-018-signal-event-idempotency.md",
+    "draftStatus": "published"
   }
 }
