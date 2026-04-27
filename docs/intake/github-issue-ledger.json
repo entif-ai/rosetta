@@ -3499,5 +3499,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-016-domain-intelligence-plane-no-algorithms.md",
     "draftStatus": "published"
+  },
+  "entify-v0-017-jcs-canonicalization-algorithm.md": {
+    "number": 854,
+    "state": "open",
+    "title": "ENTIF-v0-017: JCS Canonicalization Procedure Not Specified as a Deterministic Algorithm",
+    "url": "https://github.com/enti-ai/rosetta/issues/854",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-017-jcs-canonicalization-algorithm.md",
+    "draftStatus": "published"
   }
 }
