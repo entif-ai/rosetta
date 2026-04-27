@@ -4759,6 +4759,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/956
   status: active
+- id: semantic-audio-emotional-geometry-timeline
+  name: Semantic Audio Emotional Geometry Timeline
+  introduced_by: docs/intake/issue-drafts/semantic-audio-emotional-geometry-timeline.md
+  introduced_at: '2026-04-27'
+  definition: Temporal evolution of affective geometry across an audio clip timeline,
+    tracking how emotion unfolds over time and how multiple clips form an affective
+    narrative arc.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/425
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5553,6 +5563,8 @@ issue_drafts_inventory:
   issue_id: semantic-audio-emotional-geometry-timeline
   priority: P3
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/425
+  status: published
 - path: docs/intake/issue-drafts/semantic-audio-semantic-emotive-graph-integration.md
   source_doc: docs/ideas/Semantic Audio Cognition Framework.md
   source_pr: 62
