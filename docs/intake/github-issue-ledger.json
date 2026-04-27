@@ -4003,5 +4003,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-007-icosagon-ideology-engineering-translation.md",
     "draftStatus": "published"
+  },
+  "sba-008-tailscale-exit-node-vpn-compatibility.md": {
+    "number": 954,
+    "state": "open",
+    "title": "SBA-008: Tailscale exit node \u2014 corporate VPN compatibility and asymmetric routing design",
+    "url": "https://github.com/entif-ai/rosetta/issues/954",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-008-tailscale-exit-node-vpn-compatibility.md",
+    "draftStatus": "published"
   }
 }
