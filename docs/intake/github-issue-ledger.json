@@ -3022,5 +3022,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-003-symbolic-codec-gnn-decisionreceipts.md",
     "draftStatus": "published"
+  },
+  "cts-004-memory-lifecycle-workflow-forgetting-tiers": {
+    "number": 743,
+    "state": "open",
+    "title": "CTS-004: Implement memory.lifecycle.workflow \u2014 4-Tier Bio-Inspired Forgetting System",
+    "url": "https://github.com/entif-ai/rosetta/issues/743",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-004-memory-lifecycle-workflow-forgetting-tiers.md",
+    "draftStatus": "published"
   }
 }
