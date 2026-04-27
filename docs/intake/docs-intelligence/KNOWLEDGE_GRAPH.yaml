@@ -4108,6 +4108,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/832
   status: active
+- id: entify-v0-009
+  name: Five Scoring Frameworks Rubrics
+  introduced_by: docs/intake/issue-drafts/entif-v0-009-scoring-rubrics-five-scorecards.md
+  introduced_at: '2026-04-27'
+  definition: The five Entif v0 scorecards (Output, Workflow, Capability, Transferability,
+    Persona) lack defined rubrics specifying scale, frequency, responsible actor,
+    and threshold values.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/834
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
