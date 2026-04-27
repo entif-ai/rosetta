@@ -3655,6 +3655,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/741
   status: active
+- id: cts-004-memory-lifecycle-workflow-forgetting-tiers
+  name: MemoryForge 4-Tier Forgetting System
+  introduced_by: docs/intake/issue-drafts/cts-004-memory-lifecycle-workflow-forgetting-tiers.md
+  introduced_at: '2026-04-26'
+  definition: 'Bio-inspired 4-tier memory system: Tier 0 (hot/working text), Tier
+    1 (warm/episodic optical, 0-7d, perfect fidelity), Tier 2 (cool/long-term, 7-90d,
+    50% downsample), Tier 3 (cold/archival, 90+d, gist only). Transitions driven by
+    memory.amu.aged_out events via memory.lifecycle.workflow ADK.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/743
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
