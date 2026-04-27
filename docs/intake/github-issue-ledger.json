@@ -3859,5 +3859,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-traceability-header-enforcement.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-001-append-only-enforcement.md": {
+    "number": 735,
+    "state": "open",
+    "title": "Rosetta-v3-001: Append-Only Ledger Enforcement Gap",
+    "url": "https://github.com/entif-ai/rosetta/issues/735",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-001-append-only-enforcement.md",
+    "draftStatus": "published"
   }
 }
