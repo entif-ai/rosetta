@@ -3784,6 +3784,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/766
   status: active
+- id: df-009-skill-versioning-contract
+  name: DeerFlow Skill Version Stability Contract
+  introduced_by: docs/intake/issue-drafts/df-009-skill-versioning-contract.md
+  introduced_at: '2026-04-25'
+  definition: "DeerFlow skills lack required semver versioning, changelog enforcement,\
+    \ deprecation policy, and API version stability \u2014 consuming agents can break\
+    \ silently when skills update."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/768
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

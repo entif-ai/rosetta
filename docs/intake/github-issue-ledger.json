@@ -3139,5 +3139,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-004-memory-dedup-false-collisions.md",
     "draftStatus": "published"
+  },
+  "df-009-skill-versioning-contract.md": {
+    "number": 768,
+    "state": "open",
+    "title": "DF-009: DeerFlow Skills Need Version Stability Contract, Changelog, and Migration Path",
+    "url": "https://github.com/entif-ai/rosetta/issues/768",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-009-skill-versioning-contract.md",
+    "draftStatus": "published"
   }
 }
