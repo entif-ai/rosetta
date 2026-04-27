@@ -4627,6 +4627,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/932
   status: active
+- id: rosetta-v3-010-translator-tile-versioning
+  name: Translator Tile Versioning
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
+  introduced_at: '2026-04-27'
+  definition: Translator tiles (rosetta.concept_translator, rosetta.axis_translator)
+    are versioned artifacts but the versioning model (ULID/semver/CID) is unspecified,
+    leaving migration triggers and compatibility guarantees undefined.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/934
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5663,7 +5673,8 @@ issue_drafts_inventory:
   issue_id: rosetta-v3-010-translator-tile-versioning
   priority: P2
   type: implementation
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/934
 - path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
   source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
   source_pr: 197
