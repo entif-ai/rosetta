@@ -4192,5 +4192,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-graph-database-schema.md",
     "draftStatus": "published"
+  },
+  "trend-technicals-influencer-equity-scoring.md": {
+    "number": 989,
+    "state": "open",
+    "title": "Trend Technicals: Design Influencer Equity Scoring Model",
+    "url": "https://github.com/entif-ai/rosetta/issues/989",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-influencer-equity-scoring.md",
+    "draftStatus": "published"
   }
 }
