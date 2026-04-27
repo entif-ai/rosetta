@@ -3666,6 +3666,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/743
   status: active
+- id: cts-005-mediaforge-text-to-image
+  name: MediaForge text_to_image Rendering Tool
+  introduced_by: docs/intake/issue-drafts/cts-005-mediaforge-text-to-image.md
+  introduced_at: '2026-04-26'
+  definition: MCP tool for rendering Markdown/HTML/plain text to high-resolution PNG
+    using sandboxed Playwright; supports ArticleForge layout templates and VizForge
+    chart integration for Tier 1 optical memory storage.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/745
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
