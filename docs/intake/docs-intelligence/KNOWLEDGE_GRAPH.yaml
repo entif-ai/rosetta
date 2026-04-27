@@ -3935,6 +3935,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/799
   status: active
+- id: 2026-04-26-prd-006-receipt-semantics-hardening
+  name: "Receipt Semantics Hardening \u2014 PRD-006"
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-006-receipt-semantics-hardening.md
+  introduced_at: '2026-04-26'
+  definition: 'Hardening of receipt semantics: richer evidence typing taxonomy (direct-observation,
+    derived-inference, corroborating-testimony, authority-citation), policy artifact
+    linkage (specific version binding), and key lifecycle management (rotation, revocation,
+    multi-signer).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/801
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
