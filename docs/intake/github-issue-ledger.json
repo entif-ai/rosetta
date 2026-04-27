@@ -3985,5 +3985,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-005-coach-module-safety-harness.md",
     "draftStatus": "published"
+  },
+  "sba-006-media-attention-engine-platform-apis.md": {
+    "number": 950,
+    "state": "open",
+    "title": "SBA-006: Media & Attention Engine M1\u2013M6 \u2014 platform API integration design and phased build plan",
+    "url": "https://github.com/entif-ai/rosetta/issues/950",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-006-media-attention-engine-platform-apis.md",
+    "draftStatus": "published"
   }
 }
