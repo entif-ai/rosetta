@@ -4698,6 +4698,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/944
   status: active
+- id: sba-004-guard-majordomo-dual-control
+  name: Guard vs Majordomo Dual-Control
+  introduced_by: docs/intake/issue-drafts/sba-004-guard-majordomo-dual-control.md
+  introduced_at: '2026-04-27'
+  definition: Security pattern where a generative Majordomo agent is cryptographically
+    denied direct I/O execution; all sensitive actions must be submitted as Capability
+    Envelopes to a read-only Guard for rosetta.policy compliance review and veto.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/946
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
