@@ -3112,5 +3112,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md",
     "draftStatus": "published"
+  },
+  "df-002-subagent-timeout-requeue": {
+    "number": 762,
+    "state": "open",
+    "title": "DF-002: Subagent timeout lacks retry/requeue mechanism",
+    "url": "https://github.com/entif-ai/rosetta/issues/762",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-002-subagent-timeout-requeue.md",
+    "draftStatus": "published"
   }
 }
