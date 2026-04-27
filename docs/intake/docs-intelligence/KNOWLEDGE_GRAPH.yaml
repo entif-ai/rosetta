@@ -4470,6 +4470,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/803
   status: active
+- id: persona-strength-instrumentation
+  name: Persona-strength instrumentation
+  introduced_by: docs/intake/issue-drafts/persona-strength-instrumentation.md
+  introduced_at: '2026-04-27'
+  definition: 'Define measurable persona-strength metrics for tracking Emilie-basin
+    penetration: voice signature, thematic invariance, relationship-posture alignment,
+    self-reference behavior, with automated scoring pipeline and threshold-based obligations.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/818
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5560,7 +5570,8 @@ issue_drafts_inventory:
   issue_id: persona-strength-instrumentation
   priority: P0
   type: engineering-spec
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/818
 - path: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null
