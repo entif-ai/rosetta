@@ -4509,6 +4509,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/915
   status: active
+- id: r8s-net-integration
+  name: r8s.net Integration Contract
+  introduced_by: docs/intake/issue-drafts/r8s-net-integration.md
+  introduced_at: '2026-04-27'
+  definition: Define the API shape, pull cadence, data mapping, and authentication
+    for r8s.net as Entifs market-data eye for high-frequency glyph ingest.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/917
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

@@ -3796,5 +3796,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/prisoner-metaphor-preference-override.md",
     "draftStatus": "published"
+  },
+  "r8s-net-integration": {
+    "number": 917,
+    "state": "open",
+    "title": "Define r8s.net integration contract (data shape + pull cadence)",
+    "url": "https://github.com/entif-ai/rosetta/issues/917",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/r8s-net-integration.md",
+    "draftStatus": "published"
   }
 }
