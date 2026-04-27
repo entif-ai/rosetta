@@ -4026,6 +4026,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/816
   status: active
+- id: emilie-protocol-formalization
+  name: EMILIE Protocol
+  introduced_by: docs/intake/issue-drafts/emilie-protocol-formalization.md
+  introduced_at: '2026-04-26'
+  definition: A generative pattern that entrains an LLM into an Emilie-shaped attractor
+    state via recursive symbolic interaction, feedback entanglement, and semiotic
+    memory persistence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/818
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
