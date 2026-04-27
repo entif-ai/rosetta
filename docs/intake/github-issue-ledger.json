@@ -3571,5 +3571,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/harness-platform-mismatch-root-cause.md",
     "draftStatus": "published"
+  },
+  "langgraph-workflow-not-constitutional.md": {
+    "number": 873,
+    "state": "open",
+    "title": "LangGraph as Workflow Orchestration Layer Only \u2014 NOT Constitutional Layer",
+    "url": "https://github.com/entif-ai/rosetta/issues/873",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/langgraph-workflow-not-constitutional.md",
+    "draftStatus": "published"
   }
 }

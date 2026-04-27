@@ -4271,6 +4271,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/735
   status: active
+- id: langgraph-workflow-not-constitutional
+  name: LangGraph Workflow-Not-Constitutional
+  introduced_by: docs/intake/issue-drafts/langgraph-workflow-not-constitutional.md
+  introduced_at: '2026-04-24'
+  definition: LangGraph is the orchestration layer, not constitutional; graph nodes
+    must call kernel APIs; sovereign kernel owns receipts, provenance, policy gates,
+    context compilation, canonical IDs
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/873
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4890,6 +4900,8 @@ issue_drafts_inventory:
   issue_id: langgraph-workflow-not-constitutional
   priority: P1
   type: architecture
+  url: https://github.com/entif-ai/rosetta/issues/873
+  status: published
 - path: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
