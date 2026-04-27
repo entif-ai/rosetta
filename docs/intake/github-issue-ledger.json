@@ -3697,5 +3697,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-swarm-reputation-metrics.md",
     "draftStatus": "published"
+  },
+  "omc-tiny-specialist-model-selection.md": {
+    "number": 898,
+    "state": "open",
+    "title": "Define tiny specialist model selection criteria for OMC routing",
+    "url": "https://github.com/entif-ai/rosetta/issues/898",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-tiny-specialist-model-selection.md",
+    "draftStatus": "published"
   }
 }
