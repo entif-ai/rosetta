@@ -4118,6 +4118,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/834
   status: active
+- id: ENTIF-v0-010
+  name: Model Routing Matrix Staleness
+  introduced_by: docs/intake/issue-drafts/entif-v0-010-model-routing-matrix-stale.md
+  introduced_at: '2026-04-27'
+  definition: The model routing matrix is defined as static guidance with no version,
+    review cadence, or ownership for updates. As model capabilities and pricing evolve
+    quarterly, the matrix becomes stale, degrading routing quality and cost control.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/836
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
