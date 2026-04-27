@@ -4290,6 +4290,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/875
   status: active
+- id: mac-studio-control-two-tier-guard
+  name: Mac Studio M3 Ultra Two-Tier Guard Architecture
+  introduced_by: docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md
+  introduced_at: '2026-04-24'
+  definition: 'Two-tier guard architecture for Mac Studio control: Tier A (Playwright
+    headless browser automation) and Tier B (AppleEvents/Accessibility desktop control
+    with step-up authorization, session recording, kill switch, and app allowlist).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/877
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4932,6 +4942,8 @@ issue_drafts_inventory:
   issue_id: mac-studio-control-two-tier-guard
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/877
+  status: published
 - path: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
