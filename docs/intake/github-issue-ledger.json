@@ -3670,5 +3670,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-four-zone-compaction-thresholds.md",
     "draftStatus": "published"
+  },
+  "omc-nerdm-jsonld-context-version.md": {
+    "number": 892,
+    "state": "open",
+    "title": "Choose NERDm JSON-LD context and schema version",
+    "url": "https://github.com/entif-ai/rosetta/issues/892",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-nerdm-jsonld-context-version.md",
+    "draftStatus": "published"
   }
 }
