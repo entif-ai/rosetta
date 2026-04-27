@@ -3535,5 +3535,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/genesis-document-drift.md",
     "draftStatus": "published"
+  },
+  "glyph-schema-design.md": {
+    "number": 154,
+    "state": "open",
+    "title": "E2E-005: Deprecate Ithkuil Semantics \u2014 Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas",
+    "url": "https://github.com/enti-ai/rosetta/issues/154",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/glyph-schema-design.md",
+    "draftStatus": "published"
   }
 }
