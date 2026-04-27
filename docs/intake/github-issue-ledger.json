@@ -3994,5 +3994,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-006-media-attention-engine-platform-apis.md",
     "draftStatus": "published"
+  },
+  "sba-007-icosagon-ideology-engineering-translation.md": {
+    "number": 952,
+    "state": "open",
+    "title": "SBA-007: Icosagon Ideology \u2014 formal engineering requirements encoding",
+    "url": "https://github.com/entif-ai/rosetta/issues/952",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-007-icosagon-ideology-engineering-translation.md",
+    "draftStatus": "published"
   }
 }
