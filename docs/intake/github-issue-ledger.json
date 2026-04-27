@@ -3886,5 +3886,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-003-trust-bootstrap-model.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-005-delta-capsule-propagation.md": {
+    "number": 930,
+    "state": "open",
+    "title": "ROSETTA-v3-005: Delta Capsule Propagation Protocol Incomplete",
+    "url": "https://github.com/entif-ai/rosetta/issues/930",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-005-delta-capsule-propagation.md",
+    "draftStatus": "published"
   }
 }
