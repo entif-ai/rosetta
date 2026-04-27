@@ -3130,5 +3130,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-003-sandbox-singleton-state.md",
     "draftStatus": "published"
+  },
+  "df-004-memory-dedup-false-collisions": {
+    "number": 766,
+    "state": "open",
+    "title": "DF-004: Memory fact dedup via whitespace trim risks false collisions",
+    "url": "https://github.com/entif-ai/rosetta/issues/766",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-004-memory-dedup-false-collisions.md",
+    "draftStatus": "published"
   }
 }
