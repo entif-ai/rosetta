@@ -3436,5 +3436,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-009-scoring-rubrics-five-scorecards.md",
     "draftStatus": "published"
+  },
+  "entif-v0-010-model-routing-matrix-stale.md": {
+    "number": 836,
+    "state": "open",
+    "title": "ENTIF-v0-010: Model Routing Matrix Is Static \u2014 No Update Process as Model Landscape Evolves",
+    "url": "https://github.com/entif-ai/rosetta/issues/836",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-010-model-routing-matrix-stale.md",
+    "draftStatus": "published"
   }
 }
