@@ -4452,6 +4452,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/904
   status: active
+- id: rosetta-v3-009-profile-negotiation-protocol
+  name: Profile Negotiation Protocol
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-009-profile-negotiation-protocol.md
+  introduced_at: '2026-04-27'
+  definition: Specification for how Rosetta nodes discover peer conformance profiles
+    (Light/Full/Auditor/Forge) and negotiate interoperable data exchange.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/907
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5474,7 +5483,8 @@ issue_drafts_inventory:
   issue_id: rosetta-v3-009-profile-negotiation-protocol
   priority: P2
   type: implementation
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/907
 - path: docs/intake/issue-drafts/rosetta-v3-010-translator-tile-versioning.md
   source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
   source_pr: null
