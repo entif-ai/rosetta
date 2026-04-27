@@ -3706,6 +3706,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/751
   status: active
+- id: cts-012-roma-multi-pass-financial-pdf-poc
+  name: ROMA Multi-Pass Financial PDF POC
+  introduced_by: docs/intake/issue-drafts/cts-012-roma-multi-pass-financial-pdf-poc.md
+  introduced_at: '2026-04-26'
+  definition: "Proof-of-concept demonstrating ROMA multi-pass workflow: triage \u2192\
+    \ chart detection \u2192 VOI calculation \u2192 deep_parse_chart extraction on\
+    \ financial PDFs."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/753
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
