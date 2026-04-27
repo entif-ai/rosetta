@@ -4201,5 +4201,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-influencer-equity-scoring.md",
     "draftStatus": "published"
+  },
+  "trend-technicals-phase-1-mvp-pipeline.md": {
+    "number": 187,
+    "state": "open",
+    "title": "AC-002: Graph Database Retrieval Pipeline for Relational Trend Modeling",
+    "url": "https://github.com/entif-ai/rosetta/issues/187",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-phase-1-mvp-pipeline.md",
+    "draftStatus": "published"
   }
 }

@@ -4957,6 +4957,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/989
   status: active
+- id: trend-technicals-phase-1-mvp-pipeline
+  name: Trend Technicals Phase 1 MVP Pipeline
+  introduced_by: docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md
+  introduced_at: '2026-04-27'
+  definition: 'Defines the first build slice for operationalizing the trend-technicals
+    framework: MVP pipeline from data collection through graph storage to dashboard
+    output, distinguishing core Rosetta requirements from product exploration.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/187
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5811,6 +5821,8 @@ issue_drafts_inventory:
   issue_id: trend-technicals-phase-1-mvp-pipeline
   priority: P2
   type: planning
+  url: https://github.com/entif-ai/rosetta/issues/187
+  status: published
 - issue_id: 2026-04-25-pro-ext-research-authoritative-baselines-adr-missing
   url: https://github.com/entif-ai/rosetta/issues/98
   status: published
