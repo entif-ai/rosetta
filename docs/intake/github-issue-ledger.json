@@ -3904,5 +3904,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-006-episteme-layer-4-scope.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-010-translator-tile-versioning.md": {
+    "number": 934,
+    "state": "open",
+    "title": "ROSETTA-v3-010: Translator Tile Versioning Model Ambiguous",
+    "url": "https://github.com/entif-ai/rosetta/issues/934",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-010-translator-tile-versioning.md",
+    "draftStatus": "published"
   }
 }
