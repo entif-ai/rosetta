@@ -4219,6 +4219,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/861
   status: active
+- id: genesis-document-drift
+  name: Genesis Document drift detector
+  introduced_by: docs/intake/issue-drafts/genesis-document-drift.md
+  introduced_at: '2026-04-27'
+  definition: Nightly automated drift detector that compares Entif summaries, router
+    policies, and agent role boundaries against the immutable Genesis Document root
+    node. Deviations exceeding a threshold are flagged for human review.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/856
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
