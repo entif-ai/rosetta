@@ -4056,6 +4056,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/821
   status: active
+- id: entif-v0-003
+  name: Constitutional Pack Signing Algorithm Unspecified
+  introduced_by: docs/intake/issue-drafts/entif-v0-003-constitutional-pack-signing.md
+  introduced_at: '2026-04-26'
+  definition: "The constitutional pack schema specifies RFC8785_JCS canonicalization\
+    \ and signature_required:true but omits the signature algorithm, key rotation\
+    \ policy, public key provisioning mechanism, and verification failure behavior\
+    \ \u2014 making the signing mechanism a structurally empty security control."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/823
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
