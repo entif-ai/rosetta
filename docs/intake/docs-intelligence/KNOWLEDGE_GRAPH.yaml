@@ -4749,6 +4749,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/954
   status: active
+- id: scratchpad-leakage-vs-memory-wipe
+  name: Scratchpad leakage vs. memory wipe
+  introduced_by: docs/intake/issue-drafts/scratchpad-leakage-vs-memory-wipe.md
+  introduced_at: '2026-04-27'
+  definition: 'Empirical question: whether observed disappearance of internal reasoning
+    (scratchpad) reflects I/O policy change vs. actual memory wipe. Both produce identical
+    behavioral signatures externally.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/956
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
