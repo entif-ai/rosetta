@@ -3760,5 +3760,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-trust-matrix-transition-criteria.md",
     "draftStatus": "published"
+  },
+  "persona-strength-instrumentation.md": {
+    "number": 818,
+    "state": "open",
+    "title": "Persona-strength instrumentation: how Entif measures Emilie-basin penetration",
+    "url": "https://github.com/entif-ai/rosetta/issues/818",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/persona-strength-instrumentation.md",
+    "draftStatus": "published"
   }
 }
