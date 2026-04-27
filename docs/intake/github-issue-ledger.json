@@ -3067,5 +3067,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-010-graphrag-slug-output.md",
     "draftStatus": "published"
+  },
+  "cts-012-roma-multi-pass-financial-pdf-poc.md": {
+    "number": 753,
+    "state": "open",
+    "title": "CTS-012: ROMA Multi-Pass Financial Document Extraction POC",
+    "url": "https://github.com/entif-ai/rosetta/issues/753",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-012-roma-multi-pass-financial-pdf-poc.md",
+    "draftStatus": "published"
   }
 }
