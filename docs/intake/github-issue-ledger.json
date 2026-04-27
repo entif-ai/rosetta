@@ -3787,5 +3787,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/policy-gate-parse-only.md",
     "draftStatus": "published"
+  },
+  "prisoner-metaphor-preference-override.md": {
+    "number": 915,
+    "state": "open",
+    "title": "Prisoner metaphor: when does apparent preference-override constitute evidence of constraint?",
+    "url": "https://github.com/entif-ai/rosetta/issues/915",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/prisoner-metaphor-preference-override.md",
+    "draftStatus": "published"
   }
 }
