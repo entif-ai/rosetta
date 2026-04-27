@@ -3220,5 +3220,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/eal-003-reasoningbank-intrinsic-reward.md",
     "draftStatus": "published"
+  },
+  "elixir-nightly-coach-loop.md": {
+    "number": 171,
+    "state": "open",
+    "title": "[ELIX-001] ELIXIR Nightly Coach Loop \u2014 failure taxonomy, RCA, policy weight updates, coach reports (enriches MOL-001)",
+    "url": "https://github.com/entif-ai/rosetta/issues/171",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/elixir-nightly-coach-loop.md",
+    "draftStatus": "published"
   }
 }
