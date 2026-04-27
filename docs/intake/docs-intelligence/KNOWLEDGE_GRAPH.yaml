@@ -4198,6 +4198,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/854
   status: active
+- id: genesis-anchor-constitution
+  name: Genesis Anchor Constitution
+  introduced_by: docs/intake/issue-drafts/genesis-anchor-constitution.md
+  introduced_at: '2026-04-27'
+  definition: Governance mechanism for a user prime-directives node with nightly alignment
+    audit, but no initialization strategy, versioning, drift-detection algorithm,
+    or audit format defined.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/856
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
