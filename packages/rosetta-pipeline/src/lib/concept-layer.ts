@@ -27,6 +27,7 @@ export function runConceptLayer(ctx: PipelineContext): Layer3Concepts {
   const concepts: TileEnvelope<unknown>[] = [];
   const latticeEdges: TileEnvelope<unknown>[] = [];
   const conjectures: TileEnvelope<unknown>[] = [];
+  const lexemeCids: string[] = [];
 
   for (const lexTile of L2.lexemes) {
     const pl = lexTile.payload as { lemma?: string; pos?: string; lexemeId?: string };
@@ -41,6 +42,7 @@ export function runConceptLayer(ctx: PipelineContext): Layer3Concepts {
 
     concepts.push(concept);
     ctx.addToTrace(concept);
+    lexemeCids.push(concept.cid);
 
     // Lexeme → Concept edge (provenance)
     const edge = createLatticeEdge(

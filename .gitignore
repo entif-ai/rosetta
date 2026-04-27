@@ -27,6 +27,10 @@ node_modules
 
 # misc
 /.sass-cache
+/memory
+memory
+memory/*.md
+memory/*
 /connect.lock
 /coverage
 /libpeerconnection.log
@@ -46,3 +50,4 @@ vite.config.*.timestamp*
 vitest.config.*.timestamp*
 .claude/worktrees
 .claude/settings.local.json
+Code

@@ -4,6 +4,11 @@ Issue draft id: `real-acquisition-adapters-behind-refinery-boundary`
 Priority: `P1`
 Effort: `L`
 Labels: `ingress-refinery`, `adapters`, `source-registry`
+Status: `deferred`
+
+## Deferral Note
+
+Overlaps TC-007 and should wait until TC-005 promotion outputs and TC-006 storage/retrieval boundaries are explicit.
 
 ## Problem
 
@@ -34,8 +39,8 @@ The current refinery is parse-only and demo-backed; Text-Core needs real text-so
 
 ## Publishing Notes
 
-- Local status: `candidate`
+- Local status: `deferred`
 - Active draft path: `docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md`
 - Archived draft path: `not archived`
 - GitHub issue: `pending`
-- Recommended publish command shape: `gh issue create --title "Add real acquisition adapters behind the refinery boundary" --body-file docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md --label ingress-refinery,adapters,source-registry`
+- Recommended publish command shape: `not applicable; draft deferred`

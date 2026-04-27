@@ -1,10 +1,10 @@
 # Current Handoff
 
 Status: active baton-pass for Codex and agent sessions
-Date: 2026-04-24
-Last updated: 2026-04-24
-Current branch at time of update: `codex/docs-intelligence-workflow`
-Current PR at time of update: https://github.com/entif-ai/rosetta/pull/24
+Date: 2026-04-25
+Last updated: 2026-04-25
+Current branch at time of update: `codex/pack-conformance-foundation`
+Current PR at time of update: pending publication
 
 ## Purpose
 
@@ -91,13 +91,24 @@ Merged:
 
 Open at time of update:
 
-- PR #24: `docs(intake): define docs intelligence workflow`
-- Issue #23: `DI-001 First docs-intelligence extraction pass`
+- Issue #33: `DI-009 Internal knowledge graph from DI extractions — cross-doc concept linking and issue refinement`
+- Issue #69: `ROCK-3111-C: Define and enforce content-addressed pack_id algorithm`
+- Issue #71: `ROCK-3111-C: Automated enforcement for the refinement-first rule`
+- Issue #74: `ROCK-3111-C: Define and enforce dependency cycle detection for RRP packs`
+- Issue #79: `RRP recipes/ and skills/ subtrees lack CI/schema enforcement`
 - Issue #10: `TC-005 Promotion state machine and structured extracts`
 - Issues #11, #12: follow-up Text-Core implementation issues
+- Several newer docs-intelligence issues are also open from CT, OMOC, AC, and ROCK extractions; refresh with `gh issue list --repo entif-ai/rosetta --state open --limit 100` before selecting the next slice.
 
 Closed at time of update:
 
+- PR #61: `docs(intake): salvage unique PR 58 drafts`
+- PR #59: `docs(intake): refresh docs intelligence graph state`
+- PR #58: superseded duplicate OMOC extraction, closed without merge
+- PR #56: `docs(attention-as-capital): extract Attention-as-Capital Analytics Platform`
+- PR #55: `docs(rosetta-prd): pro-ext-research extraction v2`
+- PR #54: `docs(intake): 20260410 Entif Rosetta PRDs Pro-Extended Research`
+- PR #53: `docs(intelligence): extract omoc-swarm-gnosis-protocol`
 - PR #22: `feat(text-core): add source observation transform receipts`
 - PR #21: `docs(intake): archive canonical cache draft`
 - PR #20: `fix(rosetta-pipeline): stabilize pipeline slice`
@@ -116,26 +127,31 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/docs-intelligence-workflow`
-Source issue: https://github.com/entif-ai/rosetta/issues/23
+Current branch: `codex/pack-conformance-foundation`
+Source issues:
 
-This branch corrects the repository workflow: source documents are now explicitly treated as docs-intelligence inputs for planning, issue generation, dependency mapping, and project coordination. They are not blocked on Rosetta runtime ingestion readiness.
+- https://github.com/entif-ai/rosetta/issues/69
+- https://github.com/entif-ai/rosetta/issues/74
+
+This branch implements the first pack conformance foundation from the ROCK-3111-C issue cluster. Issue #69 is the primary target because #71 depends on deterministic pack manifest identity. Issue #74 is included only where it shares the same validator surface: `depends_on` self-reference and cycle detection.
 
 Changed behavior:
 
-- `README.md` clarifies that the runtime-ingest freeze does not block requirements extraction from repository docs.
-- `docs/intake/README.md` now separates ledgering from docs intelligence.
-- `docs/intake/DOCS_INTELLIGENCE_WORKFLOW.md` defines agent startup, extraction outputs, prioritization, GitHub issue workflow, and done criteria.
-- `docs/intake/docs-intelligence/PRIORITY_QUEUE.md` defines the first extraction batches.
-- `docs/intake/docs-intelligence/EXTRACTION_TEMPLATE.md` gives agents a consistent extraction shape.
-- `tools/doc-intake/build-doc-intake.mjs` now regenerates the intake README with the docs-intelligence lane intact.
-- Issue #23 starts the first high-authority docs-intelligence extraction pass.
+- `tools/pack-conformance/validate-packs.mjs` computes `rosetta-pack-id-v1` IDs from pack metadata plus sorted file hashes, verifies declared `pack_id`, checks declared entrypoint/export paths, and rejects self/cyclic `depends_on`.
+- `packs/rrp/project.json` exposes `nx run packs-rrp:conformance`.
+- `tools/pack-conformance/project.json` exposes the focused Vitest target for affected validation.
+- `packs/*/pack.json` now carry RFC-aligned `pack_id`, `doc_id`, `category`, `namespace`, `depends_on`, owner, export, and source-of-truth metadata while retaining the legacy `id`/`kind` fields required by current bootstrap tests.
+- `packs/rrp/test-vectors/pack-id-v1.expected.json` records a deterministic pack-id algorithm vector.
+- `ROCK-3111-C` now specifies the pack-id hash input, verification rule, edge cases, and `depends_on` acyclicity.
 
 ## Validation State
 
 - `pnpm run docs:intake` passed.
-- `pnpm exec vitest run tools/doc-intake/build-doc-intake.spec.mjs` passed.
-- `pnpm exec eslint tools/doc-intake/build-doc-intake.mjs` passed.
+- `pnpm exec vitest run tools/pack-conformance/validate-packs.spec.mjs` passed.
+- `pnpm exec nx run packs-rrp:conformance` passed.
+- `pnpm run packs:conformance -- --skip-nx-cache` passed.
+- `pnpm exec eslint tools/pack-conformance/validate-packs.mjs tools/pack-conformance/validate-packs.spec.mjs tools/doc-intake/validate-docs-intelligence.mjs` passed.
+- `pnpm run affected:verify` passed.
 - `git diff --check` passed.
 
 Known non-failing warnings:
@@ -147,7 +163,9 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Merge PR #24 after review.
+1. Publish a draft PR for issue #69 and mention partial #74 coverage.
+2. Keep #71 open until a core glossary and explicit `extends` metadata rule are added on top of this validator.
+3. Consider a follow-up PR to enforce required root files and traceability headers across all packs.
 
 For Text-Core:
 

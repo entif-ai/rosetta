@@ -25,6 +25,23 @@
         "{workspaceRoot}/docs/intake/issue-drafts/archive/*.md"
       ]
     },
+    "intelligence": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/doc-intake/docs-intelligence-graph.mjs"
+      },
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/docs-intelligence-graph.mjs",
+        "{workspaceRoot}/docs/intake/docs-intelligence/*.md",
+        "{workspaceRoot}/docs/intake/issue-drafts/*.md"
+      ],
+      "outputs": [
+        "{workspaceRoot}/docs/intake/docs-intelligence/CONCEPT_INDEX.json",
+        "{workspaceRoot}/docs/intake/docs-intelligence/CYCLE_SUMMARY.md"
+      ]
+    },
     "test": {
       "executor": "nx:run-commands",
       "options": {
@@ -44,6 +61,21 @@
       "outputs": [
         "{projectRoot}/coverage"
       ]
+    },
+    "validate-intelligence": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "node tools/doc-intake/validate-docs-intelligence.mjs --base origin/main"
+      },
+      "cache": false,
+      "inputs": [
+        "{projectRoot}/validate-docs-intelligence.mjs",
+        "{workspaceRoot}/docs/intake/docs-intelligence/*.md",
+        "{workspaceRoot}/docs/intake/issue-drafts/*.md",
+        "{workspaceRoot}/docs/intake/doc-ledger.json"
+      ],
+      "outputs": []
     }
   },
   "tags": [
