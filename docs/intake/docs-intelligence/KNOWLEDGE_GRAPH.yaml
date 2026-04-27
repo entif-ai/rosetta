@@ -4528,6 +4528,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/799
   status: active
+- id: receipt-ledger-sqlite
+  name: Receipt Ledger SQLite Sink
+  introduced_by: docs/intake/issue-drafts/receipt-ledger-sqlite.md
+  introduced_at: '2026-04-27'
+  definition: SQLite + Console sink implementation for the canonical receipt ledger,
+    storing run entries with ts/intent/tool/tokens/latency/success. Prerequisite for
+    coach_loop, ELIXIR engine, policy_optimizer, and evaluation loop.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/158
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
