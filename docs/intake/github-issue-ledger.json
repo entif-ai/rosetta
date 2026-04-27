@@ -3508,5 +3508,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-017-jcs-canonicalization-algorithm.md",
     "draftStatus": "published"
+  },
+  "genesis-anchor-constitution.md": {
+    "number": 856,
+    "state": "open",
+    "title": "Genesis Anchor Constitution \u2014 zero initialization, versioning, or drift-detection algorithm",
+    "url": "https://github.com/enti-ai/rosetta/issues/856",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/genesis-anchor-constitution.md",
+    "draftStatus": "published"
   }
 }
