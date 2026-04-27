@@ -4138,6 +4138,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/838
   status: active
+- id: entify-v0-011
+  name: Rosetta Tile Minting API Contract
+  introduced_by: docs/intake/issue-drafts/entif-v0-011-rosetta-tile-minting-api.md
+  introduced_at: '2026-04-25'
+  definition: "The integration contract defining how Entif v0 calls Rosetta to mint\
+    \ a cognitive tile \u2014 endpoint, request/response schema, error handling, and\
+    \ retry policy are undefined."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/840
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

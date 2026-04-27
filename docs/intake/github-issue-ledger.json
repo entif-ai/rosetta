@@ -3454,5 +3454,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entity-resolution-nightly.md",
     "draftStatus": "published"
+  },
+  "entify-v0-011-rosetta-tile-minting-api.md": {
+    "number": 840,
+    "state": "open",
+    "title": "ENTIF-v0-011: Rosetta Tile Minting API Contract Not Defined \u2014 Spine Integration Gap",
+    "url": "https://github.com/entif-ai/rosetta/issues/840",
+    "activeDraftPath": "docs/intake/issue-drafts/entify-v0-011-rosetta-tile-minting-api.md",
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-011-rosetta-tile-minting-api.md",
+    "draftStatus": "published"
   }
 }
