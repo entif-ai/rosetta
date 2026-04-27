@@ -1155,7 +1155,7 @@ concepts:
   status: active
 - id: entify-v0-016-domain-intelligence-plane-no-algorithms
   name: "Domain Intelligence Plane \u2014 Zero Algorithms Specified"
-  introduced_by: docs/intake/issue-drafts/entify-v0-016-domain-intelligence-plane-no-algorithms.md
+  introduced_by: docs/intake/issue-drafts/archive/entify-v0-016-domain-intelligence-plane-no-algorithms.md
   introduced_at: '2026-04-25'
   definition: "The Domain Intelligence Plane is defined as where analysis algorithms\
     \ live but none are actually named, specified, or referenced \u2014 blocking downstream\
