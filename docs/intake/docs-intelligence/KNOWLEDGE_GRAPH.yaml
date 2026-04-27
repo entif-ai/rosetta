@@ -3754,6 +3754,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/759
   status: active
+- id: df-002-subagent-timeout-requeue
+  name: Subagent timeout lacks retry/requeue mechanism
+  introduced_by: docs/intake/issue-drafts/df-002-subagent-timeout-requeue.md
+  introduced_at: '2026-04-26'
+  definition: Subagent tasks time out after 15 minutes with no retry, re-queue, or
+    dead-letter handling. Timed-out tasks are marked task_timed_out with no recovery
+    path.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/762
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
