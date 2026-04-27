@@ -3400,5 +3400,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-004-persona-identity-embedding-cid.md",
     "draftStatus": "published"
+  },
+  "entify-v0-005-graph-router-join-strategy.md": {
+    "number": 827,
+    "state": "open",
+    "title": "ENTIF-v0-005: Graph Router Join Strategy Enumeration Incomplete and Cache TTL Unjustified",
+    "url": "https://github.com/entif-ai/rosetta/issues/827",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-005-graph-router-join-strategy.md",
+    "draftStatus": "published"
   }
 }

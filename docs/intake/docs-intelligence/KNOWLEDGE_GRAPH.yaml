@@ -4076,6 +4076,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/825
   status: active
+- id: entify-v0-005-graph-router-join-strategy
+  name: Graph Router Join Strategy Enumeration
+  introduced_by: docs/intake/issue-drafts/entify-v0-005-graph-router-join-strategy.md
+  introduced_at: '2026-04-27'
+  definition: 'The graph-router API requires a complete enumeration of join_strategy
+    values and a justified cache TTL default. Currently join_strategy is a singular
+    example ("application_layer") with no enumeration of alternatives, and ttl_sec:
+    900 has no stated rationale.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/827
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5312,5 +5323,8 @@ issue_drafts_inventory:
   priority: null
   type: ' defect'
   url: https://github.com/entif-ai/rosetta/issues/772
+  status: published
+- issue_id: entify-v0-005
+  url: https://github.com/entif-ai/rosetta/issues/827
   status: published
 
