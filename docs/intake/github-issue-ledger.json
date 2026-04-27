@@ -3850,5 +3850,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-acp-interop-strategy.md",
     "draftStatus": "published"
+  },
+  "rosetta-traceability-header-enforcement.md": {
+    "number": 160,
+    "state": "open",
+    "title": "Missing: headers-check Nx executor in workspace-generators",
+    "url": "https://github.com/entif-ai/rosetta/issues/160",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-traceability-header-enforcement.md",
+    "draftStatus": "published"
   }
 }

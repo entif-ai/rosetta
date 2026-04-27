@@ -4567,6 +4567,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/243
   status: active
+- id: rosetta-traceability-header-enforcement
+  name: Rosetta Traceability Header Enforcement
+  introduced_by: docs/intake/issue-drafts/rosetta-traceability-header-enforcement.md
+  introduced_at: '2026-04-27'
+  definition: ESLint custom rule, Nx executor, and generator template for enforcing
+    4-field Rosetta traceability headers on protocol-sensitive files
+  extends: []
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/160
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
