@@ -3094,5 +3094,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-014-bio-inspired-forgetting-benchmarks.md",
     "draftStatus": "published"
+  },
+  "cts-015-gnn-decoder-fidelity-benchmark": {
+    "number": 757,
+    "state": "open",
+    "title": "CTS-015: GNN Decoder Fidelity \u2014 Transformer vs GAT vs GIN Benchmark",
+    "url": "https://github.com/entif-ai/rosetta/issues/757",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-015-gnn-decoder-fidelity-benchmark.md",
+    "draftStatus": "published"
   }
 }

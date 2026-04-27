@@ -3736,6 +3736,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/743
   status: active
+- id: cts-015-gnn-decoder-fidelity-benchmark
+  name: GNN Decoder Fidelity Benchmark
+  introduced_by: docs/intake/issue-drafts/cts-015-gnn-decoder-fidelity-benchmark.md
+  introduced_at: '2026-04-26'
+  definition: Benchmark comparing GAT, GIN, and transformer decoders for graph regeneration
+    fidelity in the symbolic codec.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/757
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
