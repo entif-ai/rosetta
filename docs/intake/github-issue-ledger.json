@@ -4183,5 +4183,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-friston-cultural-modeling.md",
     "draftStatus": "published"
+  },
+  "trend-technicals-graph-database-schema.md": {
+    "number": 187,
+    "state": "open",
+    "title": "Trend Technicals: Graph Database Schema for Trend Mapping (enriches AC-002)",
+    "url": "https://github.com/entif-ai/rosetta/issues/187",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-graph-database-schema.md",
+    "draftStatus": "published"
   }
 }
