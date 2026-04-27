@@ -3895,6 +3895,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/790
   status: active
+- id: prd-002-tc-005-promotion-state-machinery
+  name: 'PRD-002 TC-005: Promotion State Machinery'
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-002-tc-005-promotion-state-machinery.md
+  introduced_at: '2026-04-26'
+  definition: State machine for promotion, cooling, revisit, and quarantine transitions
+    with explicit typed receipts and lane-specific ranking.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/10
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
