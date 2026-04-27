@@ -3914,6 +3914,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/793
   status: active
+- id: prd-004-docs-intelligence-productization
+  name: 'PRD-004: Docs Intelligence Productization'
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-004-docs-intelligence-productization.md
+  introduced_at: '2026-04-26'
+  definition: 'Formalization of docs-intelligence as a first-class product capability:
+    structured extraction artifacts with source path, date, locators, confidence,
+    contradiction tags, candidate issue refs, and authority class; plus a promotion
+    pipeline from structured findings to published GitHub issues.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/795
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
