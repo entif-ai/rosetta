@@ -4039,5 +4039,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-fx-dry-signal-differentiation.md",
     "draftStatus": "published"
+  },
+  "semantic-audio-speaker-diarization-fingerprinting.md": {
+    "number": 961,
+    "state": "open",
+    "title": "SAC-001: Speaker Diarization and Fingerprinting",
+    "url": "https://github.com/entif-ai/rosetta/issues/961",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-speaker-diarization-fingerprinting.md",
+    "draftStatus": "published"
   }
 }

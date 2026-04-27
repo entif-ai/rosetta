@@ -4779,6 +4779,16 @@ concepts:
   referenced_by:
   - https://github.com/entify-ai/rosetta/issues/425
   status: active
+- id: semantic-audio-speaker-diarization-fingerprinting
+  name: Speaker Diarization and Fingerprinting
+  introduced_by: docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md
+  introduced_at: '2026-04-27'
+  definition: Research and planning for speaker diarization and voice fingerprinting
+    as foundational components of Entif semantic audio perception, enabling identification
+    of dialect, tone, and identity markers.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/961
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5549,6 +5559,8 @@ issue_drafts_inventory:
   issue_id: semantic-audio-speaker-diarization-fingerprinting
   priority: P2
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/NNN
+  status: published
 - path: docs/intake/issue-drafts/semantic-audio-stem-isolation.md
   source_doc: docs/ideas/Semantic Audio Cognition Framework.md
   source_pr: 62
