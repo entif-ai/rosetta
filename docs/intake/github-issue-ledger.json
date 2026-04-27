@@ -3391,5 +3391,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-003-constitutional-pack-signing.md",
     "draftStatus": "published"
+  },
+  "entif-v0-004-persona-identity-embedding-cid.md": {
+    "number": 825,
+    "state": "open",
+    "title": "ENTIF-v0-004: identity_embedding_cid computation unspecified \u2014 drift measurement unimplementable",
+    "url": "https://github.com/entif-ai/rosetta/issues/825",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-004-persona-identity-embedding-cid.md",
+    "draftStatus": "published"
   }
 }
