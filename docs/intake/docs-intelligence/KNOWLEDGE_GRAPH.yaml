@@ -3976,6 +3976,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/807
   status: active
+- id: prd-010-source-registry-refresh-lane
+  name: 'PRD-010: Source Registry Refresh Lane'
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-010-source-registry-refresh-lane.md
+  introduced_at: '2026-04-26'
+  definition: Live-source adapters for DataCite, Crossref, ORCID, ROR, and OpenAlex
+    registries with drift detection, refresh receipts, and identity resolution.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/809
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
