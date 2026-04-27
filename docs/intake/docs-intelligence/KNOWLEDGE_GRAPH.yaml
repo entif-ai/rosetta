@@ -4617,6 +4617,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/930
   status: active
+- id: rosetta-v3-006-episteme-layer-4-scope
+  name: Episteme Layer 4 Scope Definition
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-006-episteme-layer-4-scope.md
+  introduced_at: '2026-04-27'
+  definition: 'Open question: Layer 4 (Epistemic layer) scope, trigger conditions,
+    and relationship to Evaluation tiles are undefined in Rosetta v3.0.0 Core Spine
+    Spec.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/932
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5623,7 +5633,8 @@ issue_drafts_inventory:
   issue_id: rosetta-v3-006-episteme-layer-4-scope
   priority: P3
   type: open-question
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/932
 - path: docs/intake/issue-drafts/rosetta-v3-007-network-topology-assumptions.md
   source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
   source_pr: null
