@@ -4208,6 +4208,17 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/856
   status: active
+- id: entify-v0-018
+  name: "Signal Event Idempotency \u2014 No Dedup Window, Polling Interval, or Idempotency\
+    \ Key"
+  introduced_by: docs/intake/issue-drafts/entif-v0-018-signal-event-idempotency.md
+  introduced_at: '2026-04-27'
+  definition: "Bulk trend sensors and outlier path sensors are defined in the Entif\
+    \ v0 spec but lack idempotency keys, deduplication windows, and minimum polling\
+    \ intervals \u2014 causing duplicate signal processing and inflated VOI estimates."
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/861
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
