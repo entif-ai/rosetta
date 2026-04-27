@@ -4260,6 +4260,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/870
   status: active
+- id: harness-platform-mismatch-root-cause
+  name: Platform Mismatch as Root Cause of Agentic Failures
+  introduced_by: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
+  introduced_at: '2026-04-24'
+  definition: "LLMs were not designed to enforce rules; harnesses are not built to\
+    \ respect constitutional primitives. This category error explains why every agentic\
+    \ system fails \u2014 the solution is harness-proof architecture with a constitutional\
+    \ kernel."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/735
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4847,6 +4858,8 @@ issue_drafts_inventory:
   issue_id: harness-platform-mismatch-root-cause
   priority: P1
   type: architecture
+  url: https://github.com/entif-ai/rosetta/issues/735
+  status: published
 - path: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
