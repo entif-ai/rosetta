@@ -4066,5 +4066,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-tonal-distinction-extraction.md",
     "draftStatus": "published"
+  },
+  "skillpack-importer-quarantine-flow": {
+    "number": 419,
+    "state": "open",
+    "title": "Skillpack Importer \u2014 Parse \u2192 Classify \u2192 Quarantine \u2192 Certify \u2192 Promote",
+    "url": "https://github.com/entif-ai/rosetta/issues/419",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/skillpack-importer-quarantine-flow.md",
+    "draftStatus": "published"
   }
 }

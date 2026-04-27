@@ -4808,6 +4808,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/964
   status: active
+- id: skillpack-importer-quarantine-flow
+  name: "SkillPack Importer \u2014 Quarantine Flow"
+  introduced_by: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
+  introduced_at: '2026-04-24'
+  definition: "Five-phase skillpack import flow: Parse \u2192 Classify \u2192 Quarantine\
+    \ \u2192 Certify \u2192 Promote. Skills from Claude/Codex/OpenClaw are absorbed\
+    \ via quarantine rather than direct execution, with dry-run validation in sandboxed\
+    \ fixtures before promotion to trusted internal pack registry."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/419
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5459,6 +5470,8 @@ issue_drafts_inventory:
   issue_id: skillpack-importer-quarantine-flow
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/419
+  status: published
 - path: docs/intake/issue-drafts/mac-studio-control-two-tier-guard.md
   source_doc: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   source_pr: 50
