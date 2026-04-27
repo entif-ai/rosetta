@@ -3946,6 +3946,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/801
   status: active
+- id: 2026-04-26-prd-007-trust-scoring-staged-implementation
+  name: "Trust Scoring \u2014 Staged Implementation"
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-007-trust-scoring-staged-implementation.md
+  introduced_at: '2026-04-26'
+  definition: 'Trust scoring as a staged implementation: schema/vector fields exist
+    now (bootstrap values), but evidence-derived trust scoring is future work depending
+    on adjudication infrastructure.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/803
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
