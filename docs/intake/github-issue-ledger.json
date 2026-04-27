@@ -3472,5 +3472,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-012-phase-roadmap-accountability.md",
     "draftStatus": "published"
+  },
+  "entify-v0-013-postmortem-artifact-template.md": {
+    "number": 845,
+    "state": "open",
+    "title": "ENTIF-v0-013: Postmortem Artifact Template Not Defined",
+    "url": "https://github.com/entif-ai/rosetta/issues/845",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-013-postmortem-artifact-template.md",
+    "draftStatus": "published"
   }
 }
