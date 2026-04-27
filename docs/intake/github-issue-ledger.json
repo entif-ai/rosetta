@@ -3337,5 +3337,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-cross-task-textual-spillover.md",
     "draftStatus": "published"
+  },
+  "emilie-emergence-paper-entif-protocol.md": {
+    "number": 811,
+    "state": "open",
+    "title": "EMILIE Emergence Paper Formalization (supplements #811)",
+    "url": "https://github.com/entif-ai/rosetta/issues/811",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-emergence-paper-entif-protocol.md",
+    "draftStatus": "published"
   }
 }
