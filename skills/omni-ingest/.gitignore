@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test cache
+.pytest_cache/
+*.pyc
+
+# OS
+.DS_Store
+
+# Local bus/ledger (runtime data — never commit)
+bus/
+ledger/
+
+# Environment secrets
+.env
+.env.local
