@@ -3877,5 +3877,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-002-jcs-canonicalization-test-vectors.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-003-trust-bootstrap-model.md": {
+    "number": 96,
+    "state": "open",
+    "title": "Trust Bootstrap Model Undefined (v3.0 Core Spine spec gap)",
+    "url": "https://github.com/entif-ai/rosetta/issues/96",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-003-trust-bootstrap-model.md",
+    "draftStatus": "published"
   }
 }
