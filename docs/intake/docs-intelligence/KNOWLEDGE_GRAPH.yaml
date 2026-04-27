@@ -4490,6 +4490,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/911
   status: active
+- id: policy-gate-parse-only
+  name: 'Policy Gate: Parse-Only Enforcement'
+  introduced_by: docs/intake/issue-drafts/policy-gate-parse-only.md
+  introduced_at: '2026-04-27'
+  definition: Policy gate enforcing three ambient modes (Ambient/Spotlight/Command)
+    with side_effects check on MCP tools. Ambient rejects side-effecting tools; Command
+    requires explicit one-shot approval.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/913
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
