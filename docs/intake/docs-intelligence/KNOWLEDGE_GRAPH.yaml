@@ -3855,6 +3855,26 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/781
   status: active
+- id: eal-002-persona-tiles-tulpamancy
+  name: 'EAL-002: Persona Tiles and Tulpamancy Protocol Invocation API'
+  introduced_by: docs/intake/issue-drafts/eal-002-persona-tiles-tulpamancy.md
+  introduced_at: '2026-04-26'
+  definition: Structured persona invocation API with namespace isolation, memory-backed
+    PersonaTile schema, and Guard divergence monitoring for stable emergent identities
+    across sessions.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/784
+  status: active
+- id: eal-003-reasoningbank-intrinsic-reward
+  name: ReasoningBank
+  introduced_by: docs/intake/issue-drafts/eal-003-reasoningbank-intrinsic-reward.md
+  introduced_at: '2026-04-26'
+  definition: Repository of annotated reasoning traces with intrinsic productivity
+    scores used for case-based reuse and nightly self-supervised fine-tuning. Core
+    memory substrate for the ELIXIR self-improvement loop.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/786
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

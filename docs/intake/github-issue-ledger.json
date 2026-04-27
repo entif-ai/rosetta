@@ -3202,5 +3202,23 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/eal-001-trm-kernel-capsule.md",
     "draftStatus": "published"
+  },
+  "eal-002-persona-tiles-tulpamancy": {
+    "number": 784,
+    "state": "open",
+    "title": "EAL-002: Implement Persona Tiles and Tulpamancy Protocol Invocation API",
+    "url": "https://github.com/entif-ai/rosetta/issues/784",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/eal-002-persona-tiles-tulpamancy.md",
+    "draftStatus": "published"
+  },
+  "eal-003-reasoningbank-intrinsic-reward.md": {
+    "number": 786,
+    "state": "open",
+    "title": "EAL-003: Implement ReasoningBank with Intrinsic Reward Scoring and Nightly Fine-Tune",
+    "url": "https://github.com/entif-ai/rosetta/issues/786",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/eal-003-reasoningbank-intrinsic-reward.md",
+    "draftStatus": "published"
   }
 }
