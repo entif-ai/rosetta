@@ -3040,5 +3040,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-005-mediaforge-text-to-image.md",
     "draftStatus": "published"
+  },
+  "cts-006-egc-ithkuil-graphemic-core.md": {
+    "number": 747,
+    "state": "open",
+    "title": "CTS-006: EGC Spec \u2014 Ithkuil-Inspired Graphemic Core with Guidebook Cipher",
+    "url": "https://github.com/entif-ai/rosetta/issues/747",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-006-egc-ithkuil-graphemic-core.md",
+    "draftStatus": "published"
   }
 }
