@@ -4708,6 +4708,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/946
   status: active
+- id: sba-005-coach-module-safety-harness
+  name: Coach Module Safety Harness
+  introduced_by: docs/intake/issue-drafts/sba-005-coach-module-safety-harness.md
+  introduced_at: '2026-04-27'
+  definition: 'Safety constraints for the Coach Module autonomous self-improvement
+    loop: max-iteration limits, oscillation detection, git-backed rollback, human
+    escape hatch, data quality gate, alignment check boundary, and bandit cold-start
+    policy.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/948
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
