@@ -4547,6 +4547,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/921
   status: active
+- id: recovery-rule-no-enforcement
+  name: Recovery Rule No Enforcement
+  introduced_by: docs/intake/issue-drafts/recovery-rule-no-enforcement.md
+  introduced_at: '2026-04-27'
+  definition: "The Recovery Rule in UPSTREAM_AND_BACKUP_PLAN is advisory only \u2014\
+    \ no machine-checkable mechanism enforces local authority preference over ad hoc\
+    \ reinterpretation."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/923
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5134,6 +5144,8 @@ issue_drafts_inventory:
   issue_id: recovery-rule-no-enforcement
   priority: P3
   type: risk-flag
+  url: https://github.com/entif-ai/rosetta/issues/923
+  status: published
 - path: docs/intake/issue-drafts/backup-strategy-no-automation.md
   source_doc: docs/governance/UPSTREAM_AND_BACKUP_PLAN.md
   source_pr: 29

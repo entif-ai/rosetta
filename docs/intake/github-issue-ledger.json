@@ -3832,5 +3832,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/receipts-ledger-schema.md",
     "draftStatus": "published"
+  },
+  "recovery-rule-no-enforcement.md": {
+    "number": 923,
+    "state": "open",
+    "title": "Recovery rule is a declaration with no enforcement mechanism",
+    "url": "https://github.com/entif-ai/rosetta/issues/923",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/recovery-rule-no-enforcement.md",
+    "draftStatus": "published"
   }
 }
