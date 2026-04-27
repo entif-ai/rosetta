@@ -4138,5 +4138,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/summarization-styles.md",
     "draftStatus": "published"
+  },
+  "swarm-federation-governance-complexity.md": {
+    "number": 980,
+    "state": "open",
+    "title": "Swarm Federation Governance Complexity",
+    "url": "https://github.com/entif-ai/rosetta/issues/980",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-federation-governance-complexity.md",
+    "draftStatus": "published"
   }
 }

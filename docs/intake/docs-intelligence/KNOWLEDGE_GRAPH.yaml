@@ -4888,6 +4888,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/978
   status: active
+- id: swarm-federation-governance-complexity
+  name: Swarm Federation Governance Complexity
+  introduced_by: docs/intake/issue-drafts/swarm-federation-governance-complexity.md
+  introduced_at: '2026-04-27'
+  definition: "Risk that 5-layer federation model (single-tenant \u2192 multi-agent\
+    \ \u2192 org-scoped \u2192 inter-org \u2192 public commons) creates unmitigated\
+    \ governance complexity across trust boundaries, abuse-handling asymmetry, and\
+    \ receipt chain integrity gaps."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/980
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
