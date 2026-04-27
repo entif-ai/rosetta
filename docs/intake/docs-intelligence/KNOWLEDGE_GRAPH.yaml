@@ -4158,6 +4158,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/842
   status: active
+- id: entify-v0-013
+  name: Postmortem Artifact Template
+  introduced_by: docs/intake/issue-drafts/entify-v0-013-postmortem-artifact-template.md
+  introduced_at: '2026-04-27'
+  definition: The Entif v0 doctrine requires postmortem artifacts for all scored workflow
+    steps, but no schema is defined. Required fields (root cause, reproduction steps,
+    receipt chain, rubric change suggestions) are listed in prose only.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/845
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
