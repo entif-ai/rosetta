@@ -3166,5 +3166,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-011-memory-fact-expiration.md",
     "draftStatus": "published"
+  },
+  "df-012-thread-state-restart-persistence": {
+    "number": 774,
+    "state": "open",
+    "title": "DF-012: No thread state persistence strategy documented for server restarts",
+    "url": "https://github.com/entif-ai/rosetta/issues/774",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-012-thread-state-restart-persistence.md",
+    "draftStatus": "published"
   }
 }

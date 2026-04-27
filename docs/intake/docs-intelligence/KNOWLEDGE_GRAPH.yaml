@@ -3815,6 +3815,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/772
   status: active
+- id: df-012
+  name: Thread State Restart Persistence
+  introduced_by: docs/intake/issue-drafts/df-012-thread-state-restart-persistence.md
+  introduced_at: '2026-04-25'
+  definition: No documented checkpointer configuration for LangGraph thread state.
+    Server restarts cause thread state loss including artifacts, todos, and in-flight
+    subagent tasks.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/774
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
