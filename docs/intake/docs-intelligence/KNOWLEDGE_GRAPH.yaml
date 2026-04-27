@@ -4908,6 +4908,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/510
   status: active
+- id: text-core-postgres-pgvector-operational-baseline
+  name: Text-Core Postgres/pgvector Operational Baseline
+  introduced_by: docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md
+  introduced_at: '2026-04-27'
+  definition: Separable implementation surface for Postgres and pgvector as the operational
+    baseline for Text-Core storage and retrieval, separable from tapestry v1 and rights
+    retrieval scope in TC-006.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/11
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
