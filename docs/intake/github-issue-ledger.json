@@ -3247,5 +3247,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-002-tc-005-promotion-state-machinery.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-003-durable-canonical-cache": {
+    "number": 793,
+    "state": "open",
+    "title": "PRD-003: Durable Canonical Cache \u2014 Postgres JSONB + pgvector Migration",
+    "url": "https://github.com/entif-ai/rosetta/issues/793",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-003-durable-canonical-cache.md",
+    "draftStatus": "published"
   }
 }
