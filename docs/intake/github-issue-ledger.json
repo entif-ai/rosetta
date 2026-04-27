@@ -3292,5 +3292,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-007-trust-scoring-staged-implementation.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-008-rights-guard-hardening.md": {
+    "number": 805,
+    "state": "open",
+    "title": "PRD-008: Rights/Guard Hardening \u2014 Actor-Aware Policy, Capability Tokens, Replay Refusal",
+    "url": "https://github.com/entif-ai/rosetta/issues/805",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-008-rights-guard-hardening.md",
+    "draftStatus": "published"
   }
 }
