@@ -38,28 +38,28 @@ Whaddya think? Any appetite in the marketplace for something like that out there
 ## Response:
 Thought for 1m 26s
 
-Crates, I think you’re sniffing the one “Twitter clone” that _isn’t_ a clone at all. It’s a different _contract_ between author, audience, and reality.
+Crates, I think you?re sniffing the one "Twitter clone" that _isn?t_ a clone at all. It?s a different _contract_ between author, audience, and reality.
 
 ### Is there appetite for it?
 
-Yes, but not as “the next everything-app town square” on day one.
+Yes, but not as "the next everything-app town square" on day one.
 
-There’s clear demand for **provenance and verifiability** right now, but it shows up in wedges and workflows more than in “everybody please migrate here” fantasies:
+There?s clear demand for **provenance and verifiability** right now, but it shows up in wedges and workflows more than in "everybody please migrate here" fantasies:
 
-*   **News and media provenance is already a serious initiative**, just not at the “ordinary post” layer. C2PA (Content Credentials) and initiatives like Project Origin exist precisely to cryptographically carry origin/edit history for media, largely aimed at disinformation pressure. [c2pa.org+2spec.c2pa.org+2](https://c2pa.org/?utm_source=chatgpt.com)
-*   **Decentralized social has real momentum**, which matters because provenance tooling plugs into open protocols better than into a single locked platform. Bluesky’s AT Protocol is explicitly built around authenticated, portable identity and interoperable social data. [docs.bsky.app+1](https://docs.bsky.app/docs/advanced-guides/atproto?utm_source=chatgpt.com)
-*   **Most people do not fact-check before posting**, which is both the problem and the market obstacle. The appetite exists, but the product has to make “checking” feel like spellcheck, not homework. [UNESCO](https://www.unesco.org/en/articles/2/3-digital-content-creators-do-not-check-their-facts-sharing-want-learn-how-do-so-unesco-survey?utm_source=chatgpt.com)
+*   **News and media provenance is already a serious initiative**, just not at the "ordinary post" layer. C2PA (Content Credentials) and initiatives like Project Origin exist precisely to cryptographically carry origin/edit history for media, largely aimed at disinformation pressure. [c2pa.org+2spec.c2pa.org+2](https://c2pa.org/?utm_source=chatgpt.com)
+*   **Decentralized social has real momentum**, which matters because provenance tooling plugs into open protocols better than into a single locked platform. Bluesky?s AT Protocol is explicitly built around authenticated, portable identity and interoperable social data. [docs.bsky.app+1](https://docs.bsky.app/docs/advanced-guides/atproto?utm_source=chatgpt.com)
+*   **Most people do not fact-check before posting**, which is both the problem and the market obstacle. The appetite exists, but the product has to make "checking" feel like spellcheck, not homework. [UNESCO](https://www.unesco.org/en/articles/2/3-digital-content-creators-do-not-check-their-facts-sharing-want-learn-how-do-so-unesco-survey?utm_source=chatgpt.com)
 
-So: appetite is strongest in segments where trust has immediate value and liability, like journalism, public agencies, science/medicine, finance, and “operators” who hate being wrong in public.
+So: appetite is strongest in segments where trust has immediate value and liability, like journalism, public agencies, science/medicine, finance, and "operators" who hate being wrong in public.
 
 ### The core product insight
 
-You’re describing **claim provenance**, not just content provenance.
+You?re describing **claim provenance**, not just content provenance.
 
-C2PA helps answer “where did this image/video come from and how was it edited?” [c2pa.org+1](https://c2pa.org/?utm_source=chatgpt.com)  
-But your idea answers “what assumptions and sources must be true for this _sentence_ to be defensible?”
+C2PA helps answer "where did this image/video come from and how was it edited?" [c2pa.org+1](https://c2pa.org/?utm_source=chatgpt.com)  
+But your idea answers "what assumptions and sources must be true for this _sentence_ to be defensible?"
 
-That’s novel, and it pairs well with Rosetta Pasigraphy Protocol because RPP can do the thing social platforms refuse to do: **force the author to confront the implied worldview of their own statement before shipping it**.
+That?s novel, and it pairs well with Rosetta Pasigraphy Protocol because RPP can do the thing social platforms refuse to do: **force the author to confront the implied worldview of their own statement before shipping it**.
 
 ### Why most attempts fail (and how yours could avoid it)
 
@@ -68,29 +68,29 @@ That’s novel, and it pairs well with Rosetta Pasigraphy Protocol because RPP c
 *   Mastodon: decentralization and community hosting (ActivityPub ecosystem). [W3C](https://www.w3.org/TR/activitypub/?utm_source=chatgpt.com)
 *   Bluesky: decentralization + portability + algorithm/moderation choice, with serious scale now. [docs.bsky.app+1](https://docs.bsky.app/docs/advanced-guides/atproto?utm_source=chatgpt.com)
 
-A provenance-first network won’t win by shouting “we’re nicer.” It wins by being **useful before it is popular**.
+A provenance-first network won?t win by shouting "we?re nicer." It wins by being **useful before it is popular**.
 
-### A sane go-to-market shape (the “don’t fight the whole ocean” plan)
+### A sane go-to-market shape (the "don?t fight the whole ocean" plan)
 
-If I were building this with you, I’d treat it as a **Provenance Layer** first, and only later as a standalone social network:
+If I were building this with you, I?d treat it as a **Provenance Layer** first, and only later as a standalone social network:
 
-1.  **Pre-post “Provenance Inspector” everywhere (extension + mobile keyboard)**
+1.  **Pre-post "Provenance Inspector" everywhere (extension + mobile keyboard)**
     *   User types a post.
     *   Model extracts atomic claims.
     *   It generates:
         *   assumptions
         *   required evidence types (primary source, eyewitness, dataset, official alert)
         *   known disputes/contradictions
-        *   suggested rewrites (“soften to an opinion”, “add citation”, “mark uncertain”)
+        *   suggested rewrites ("soften to an opinion", "add citation", "mark uncertain")
     *   Output is a **public provenance bundle link** you can attach anywhere.
-2.  **“Verified Broadcast” for institutions**
+2.  **"Verified Broadcast" for institutions**
     *   Police, FAA-ish alerting, city services, campus security, utilities.
     *   Every alert is cryptographically signed, timestamped, and carries structured provenance.
     *   This is where trust converts into procurement and recurring revenue.
 3.  **Then the social feed**
     *   Once people are already generating provenance bundles, the network becomes the natural place where those bundles are first-class objects.
 
-This path also avoids the ideological tarpit: you’re not “censoring.” You’re **making epistemic cost visible**.
+This path also avoids the ideological tarpit: you?re not "censoring." You?re **making epistemic cost visible**.
 
 ### What the platform has to get right (or it becomes a new kind of weapon)
 
@@ -98,27 +98,27 @@ Because yes, bad actors will try to game it.
 
 Key requirements:
 
-*   **Anti–citation laundering:** “linking sources” is not enough. You need source typing, reputation, and diversity constraints (primary vs commentary, independent corroboration, recency windows).
-*   **Gish-gallop resistance:** impose a “claim budget” per post. If you assert 19 facts, you owe 19 provenance hooks.
+*   **Anti?citation laundering:** "linking sources" is not enough. You need source typing, reputation, and diversity constraints (primary vs commentary, independent corroboration, recency windows).
+*   **Gish-gallop resistance:** impose a "claim budget" per post. If you assert 19 facts, you owe 19 provenance hooks.
 *   **Clear separation of claim types:** factual claims vs value judgments vs predictions vs satire. A lot of toxicity comes from type confusion.
 *   **Transparent scoring:** if you score credibility, show _why_.
 *   **Composable identity:** optional strong identity for institutions, pseudonymity for individuals, but always cryptographic continuity. This aligns with DID/Verifiable Credentials patterns if you want standards support. [W3C+1](https://www.w3.org/TR/did-1.0/?utm_source=chatgpt.com)
 *   **Interoperability hooks:** AT Protocol / ActivityPub bridges, because portability is the antidote to billionaire capture. [docs.bsky.app+1](https://docs.bsky.app/docs/advanced-guides/atproto?utm_source=chatgpt.com)
 
-### The “Ground News but for statements” differentiation
+### The "Ground News but for statements" differentiation
 
 Ground News is fundamentally about _coverage distribution and outlet bias_. [Ground News+1](https://ground.news/rating-system?utm_source=chatgpt.com)  
 Your idea is about _claim mechanics_:
 
-*   “Here’s what must be true for this to be accurate.”
-*   “Here are the strongest sources for/against.”
-*   “Here’s the hidden premise you’re smuggling in.”
+*   "Here?s what must be true for this to be accurate."
+*   "Here are the strongest sources for/against."
+*   "Here?s the hidden premise you?re smuggling in."
 
-That’s a different artifact than a left/center/right bucket. It’s more like: “Show your work.”
+That?s a different artifact than a left/center/right bucket. It?s more like: "Show your work."
 
 ### My read, stated plainly
 
-*   **There’s a market.** It’s not “everyone on earth,” at least not initially.
+*   **There?s a market.** It?s not "everyone on earth," at least not initially.
 *   The winning move is to make provenance feel like **autocorrect for epistemology**.
 *   Start as a layer and an institutional broadcast product, then become a network once you have gravity.
 
@@ -190,13 +190,13 @@ Sure, if you think anyone actually cares anymore about truth, justice and Superm
 ## Response:
 Thought for 43s
 
-Yeah. The vibe lately is “truth is optional, vibes are mandatory.” But that cynicism is also the strongest argument that there’s a market.
+Yeah. The vibe lately is "truth is optional, vibes are mandatory." But that cynicism is also the strongest argument that there?s a market.
 
-Here’s the weird paradox: people say they don’t care about truth, and then they spend half their life trying to figure out who’s lying, what’s real, and whether they’re being played.
+Here?s the weird paradox: people say they don?t care about truth, and then they spend half their life trying to figure out who?s lying, what?s real, and whether they?re being played.
 
 ### Do people still care about truth?
 
-Not universally, not consistently, and not enough to tolerate friction for “regular posting.”
+Not universally, not consistently, and not enough to tolerate friction for "regular posting."
 
 But they _do_ care in three very monetizable situations:
 
@@ -204,25 +204,25 @@ But they _do_ care in three very monetizable situations:
     Weather emergencies, local safety alerts, flight disruptions, recalls, school closures.
 2.  **When reputation or liability is on the line**  
     Journalists, institutions, scientists, finance folks, corporate comms.
-3.  **When they’re exhausted and want shortcuts**  
-    Reuters Institute reports declining trust and rising news avoidance, which is exactly the “I want a trust prosthetic” market. [Reuters Institute+1](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/dnr-executive-summary?utm_source=chatgpt.com)
+3.  **When they?re exhausted and want shortcuts**  
+    Reuters Institute reports declining trust and rising news avoidance, which is exactly the "I want a trust prosthetic" market. [Reuters Institute+1](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/dnr-executive-summary?utm_source=chatgpt.com)
 
-Also: trust isn’t gone, it’s uneven. Pew finds trust in _local_ news is materially higher than national news. That’s important because it implies people can still value credible sources when they feel proximate and accountable. [Pew Research Center](https://www.pewresearch.org/short-reads/2025/10/29/how-americans-trust-in-information-from-news-organizations-and-social-media-sites-has-changed-over-time/?utm_source=chatgpt.com)
+Also: trust isn?t gone, it?s uneven. Pew finds trust in _local_ news is materially higher than national news. That?s important because it implies people can still value credible sources when they feel proximate and accountable. [Pew Research Center](https://www.pewresearch.org/short-reads/2025/10/29/how-americans-trust-in-information-from-news-organizations-and-social-media-sites-has-changed-over-time/?utm_source=chatgpt.com)
 
-And Edelman’s 2026 work is basically screaming “insularity” and widening divides. That’s a demand signal for tools that can bridge reality gaps without requiring everyone to become a librarian. [Edelman+2PR Newswire+2](https://www.edelman.com/trust/2026/trust-barometer?utm_source=chatgpt.com)
+And Edelman?s 2026 work is basically screaming "insularity" and widening divides. That?s a demand signal for tools that can bridge reality gaps without requiring everyone to become a librarian. [Edelman+2PR Newswire+2](https://www.edelman.com/trust/2026/trust-barometer?utm_source=chatgpt.com)
 
 ### The product has to assume people are lazy, tribal, and busy
 
-So the win condition is not “make people virtuous.”
+So the win condition is not "make people virtuous."
 
-It’s: **make epistemic hygiene feel like spellcheck.**
+It?s: **make epistemic hygiene feel like spellcheck.**
 
 If your system feels like homework, it dies.  
 If it feels like a seatbelt that clicks itself, it spreads.
 
 ### The wedge that makes this real
 
-If we build “Provenance Twitter” as a brand-new social network, we’re fighting network effects with a pool noodle.
+If we build "Provenance Twitter" as a brand-new social network, we?re fighting network effects with a pool noodle.
 
 If we build it as a **provenance layer that can ride on top of existing networks**, we can get adoption before we get a town square.
 
@@ -236,51 +236,51 @@ If we build it as a **provenance layer that can ride on top of existing networks
 *   Then any post anywhere can attach:
     *   a small badge + link to the proof bundle
 
-Later, the “feed” becomes the natural home for those bundles once people are already generating them.
+Later, the "feed" becomes the natural home for those bundles once people are already generating them.
 
-### Your “emergency communications on a sane platform” idea is the killer starting lane
+### Your "emergency communications on a sane platform" idea is the killer starting lane
 
-Build a “Verified Broadcast Rail” first:
+Build a "Verified Broadcast Rail" first:
 
 *   cryptographic signing for institutions
 *   structured claims (not vibes) for alerts
 *   provenance baked into each statement
 
-That’s where truth is not a philosophical preference. It’s operational necessity.
+That?s where truth is not a philosophical preference. It?s operational necessity.
 
-And it dodges the culture war. You are not adjudicating politics. You’re providing an auditable chain for “who said what, based on what, when.”
+And it dodges the culture war. You are not adjudicating politics. You?re providing an auditable chain for "who said what, based on what, when."
 
 ### Abuse resistance (because the internet is a knife factory)
 
-To avoid becoming “citation theater,” you need a few hard constraints:
+To avoid becoming "citation theater," you need a few hard constraints:
 
 *   **Claim budget:** if you make 12 factual claims, you owe 12 evidence hooks.
 *   **Source typing:** primary vs secondary vs commentary. Weight accordingly.
 *   **Anti-laundering:** penalize circular citations and single-ecosystem sources.
-*   **Transparent scoring:** show why something is weak, not just “low score.”
+*   **Transparent scoring:** show why something is weak, not just "low score."
 *   **Forkable trust policies:** communities can choose strict or loose standards without breaking the underlying proof object.
 *   **Type separation:** factual claim vs prediction vs value judgment vs satire.
 
 ### Market reality, bluntly
 
-Most people won’t “care about truth” in the abstract.
+Most people won?t "care about truth" in the abstract.
 
 But plenty of people and orgs will pay for:
 
 *   fewer PR disasters,
 *   fewer viral self-owns,
 *   fewer lawsuits,
-*   fewer “we amplified a fake thing and now we’re on fire.”
+*   fewer "we amplified a fake thing and now we?re on fire."
 
 Plus, alternative social platforms that emphasize openness and portability are still growing and iterating, which is exactly where a provenance layer can hitch a ride. [The Verge+1](https://www.theverge.com/news/869235/bluesky-roadmap-2026-feeds-live-event-features?utm_source=chatgpt.com)
 
-If you want, I’ll write the tight PRD for MVP1 (TruthLint composer + proof bundle schema + minimal verifier + integration targets), and I’ll keep it grounded in “what ships” instead of utopia. ^\_^
+If you want, I?ll write the tight PRD for MVP1 (TruthLint composer + proof bundle schema + minimal verifier + integration targets), and I?ll keep it grounded in "what ships" instead of utopia. ^\_^
 
 ## Prompt:
 Yes, please.
 
 ## Response:
-Below is a tight PRD for MVP1. I’m treating it as a product you can actually ship in thin vertical slices, with clear objects, APIs, threat model, and integration points.
+Below is a tight PRD for MVP1. I?m treating it as a product you can actually ship in thin vertical slices, with clear objects, APIs, threat model, and integration points.
 
 * * *
 
@@ -289,14 +289,14 @@ PRD: TruthLint + Proof Bundles (MVP1)
 
 ### 0) One-line thesis
 
-A cross-platform “epistemic spellcheck” that converts a draft post into a set of typed claims, surfaced assumptions, and an auditable provenance bundle that can be attached anywhere.
+A cross-platform "epistemic spellcheck" that converts a draft post into a set of typed claims, surfaced assumptions, and an auditable provenance bundle that can be attached anywhere.
 
 ### 1) Problem statement
 
 Modern microblogging optimizes for virality and identity performance, not epistemic integrity. The result is:
 
 *   High-velocity spread of unverifiable or outright false claims.
-*   No standardized way to inspect “why someone believes this.”
+*   No standardized way to inspect "why someone believes this."
 *   Incentives that reward confident nonsense and punish nuance.
 
 Users and institutions need a low-friction mechanism to:
@@ -308,7 +308,7 @@ Users and institutions need a low-friction mechanism to:
 ### 2) Goals (MVP1)
 
 1.  **Pre-post inspection**: Extract claims from a draft and classify them (fact, opinion, prediction, satire, etc.).
-2.  **Assumption surfacing**: For each claim, list necessary assumptions and “unknowns.”
+2.  **Assumption surfacing**: For each claim, list necessary assumptions and "unknowns."
 3.  **Provenance packaging**: Generate a **Proof Bundle** (portable JSON object) with sources, timestamps, and integrity guarantees.
 4.  **Shareable badge**: Create a short link + badge snippet that can be attached to a post on any platform.
 5.  **Reader verification view**: A public viewer that renders the bundle, shows evidence, and explains scoring.
@@ -326,7 +326,7 @@ Users and institutions need a low-friction mechanism to:
 2.  **Institutional Broadcaster** (future wedge, but design now)  
     Needs signed alerts/updates (public safety, school closures, transport, utilities).
 3.  **Reader / Skeptic**  
-    Wants fast “show your work” without doing a research project.
+    Wants fast "show your work" without doing a research project.
 4.  **Moderator / Analyst** (V2)  
     Wants triage, trend detection, coordinated inauthentic behavior detection.
 
@@ -341,17 +341,17 @@ Users and institutions need a low-friction mechanism to:
 *   As a reader, when I open a proof bundle link, I can:
     *   see each claim and its evidence
     *   see where the evidence came from
-    *   see “what would need to be true” for the claim
+    *   see "what would need to be true" for the claim
     *   see contradictions or weak links
-*   As an author, I can revise wording and watch the “epistemic cost” change (fewer ungrounded claims, clearer typing, improved source quality).
+*   As an author, I can revise wording and watch the "epistemic cost" change (fewer ungrounded claims, clearer typing, improved source quality).
 
-### 6) Product shape: “TruthLint” composer
+### 6) Product shape: "TruthLint" composer
 
 #### Inputs
 
 *   Draft text (up to N chars; set N = 2,000 for MVP).
 *   Optional: user-provided sources (URLs, PDFs, quotes, screenshots).
-*   Optional: context label (“breaking news,” “personal opinion,” “satire,” “prediction”).
+*   Optional: context label ("breaking news," "personal opinion," "satire," "prediction").
 
 #### Outputs
 
@@ -363,9 +363,9 @@ Users and institutions need a low-friction mechanism to:
     *   assumptions (explicit bullets)
     *   uncertainty flags (missing dates, vague quantifiers, ambiguous referents)
     *   suggested rewrites:
-        *   “downgrade to opinion”
-        *   “add qualifier”
-        *   “add citation”
+        *   "downgrade to opinion"
+        *   "add qualifier"
+        *   "add citation"
 *   Proof Bundle object + link.
 
 ### 7) UX flows (MVP)
@@ -373,17 +373,17 @@ Users and institutions need a low-friction mechanism to:
 #### Flow A: Authoring (extension / web app)
 
 1.  Paste or type post.
-2.  Click “Inspect.”
+2.  Click "Inspect."
 3.  UI shows:
-    *   claim count + “claim budget”
+    *   claim count + "claim budget"
     *   list of claims with severity indicators
     *   rewrite suggestions
 4.  User optionally attaches sources.
-5.  Click “Generate Proof Bundle.”
+5.  Click "Generate Proof Bundle."
 6.  Copy:
     *   badge link
     *   short link
-    *   optional “sources snippet”
+    *   optional "sources snippet"
 
 #### Flow B: Reader verification (public viewer)
 
@@ -395,7 +395,7 @@ Users and institutions need a low-friction mechanism to:
         *   assumption list
         *   contradictions/warnings
         *   timestamps
-    *   “Download bundle” (optional)
+    *   "Download bundle" (optional)
 
 ### 8) Proof Bundle: data model (portable object)
 
@@ -424,7 +424,7 @@ Design principle: the bundle must stand alone, be tamper-evident, and be indepen
 *   `assumptions[]`
 *   `supporting_evidence[]` (refs to sources)
 *   `counter_evidence[]` (refs to sources)
-*   `confidence` (0–1 with explanation)
+*   `confidence` (0?1 with explanation)
 
 #### Source object
 
@@ -437,7 +437,7 @@ Design principle: the bundle must stand alone, be tamper-evident, and be indepen
 *   `excerpt_spans` (byte offsets or quote snippets)
 *   `integrity` (hash + optional C2PA pointer later)
 
-Here’s a compact JSON sketch you can hand to engineering:
+Here?s a compact JSON sketch you can hand to engineering:
 
 ```
 {
@@ -480,7 +480,7 @@ Here’s a compact JSON sketch you can hand to engineering:
 }
 ```
 
-### 9) Scoring and “epistemic cost”
+### 9) Scoring and "epistemic cost"
 
 Avoid magic-number authoritarianism. Use transparent, decomposable scoring:
 
@@ -490,7 +490,7 @@ Avoid magic-number authoritarianism. Use transparent, decomposable scoring:
 *   Recency vs time sensitivity (stale penalty)
 *   Corroboration count (independent sources)
 *   Specificity (dates, places, quantities)
-*   Claim type sanity (predictions aren’t “false,” they’re “uncertain”)
+*   Claim type sanity (predictions aren?t "false," they?re "uncertain")
 
 **Bundle-level indicators:**
 
@@ -501,13 +501,13 @@ Avoid magic-number authoritarianism. Use transparent, decomposable scoring:
 
 ### 10) Rosetta Pasigraphy Protocol hook (RPP integration)
 
-RPP contributes the “lens lattice” layer:
+RPP contributes the "lens lattice" layer:
 
 For each claim, generate:
 
 *   **Perspective prerequisites**: what worldview assumptions must hold for the claim framing to make sense.
-*   **Terminology disambiguation**: what “they” refers to, what “woke” means in this utterance, what “fraud” implies legally vs rhetorically.
-*   **Claim typing enforcement**: push authors to label “inference” vs “fact.”
+*   **Terminology disambiguation**: what "they" refers to, what "woke" means in this utterance, what "fraud" implies legally vs rhetorically.
+*   **Claim typing enforcement**: push authors to label "inference" vs "fact."
 
 MVP implementation can be simple:
 
@@ -555,9 +555,9 @@ MVP implementation can be simple:
 ### 12) Threat model and abuse resistance (must-have)
 
 1.  **Citation laundering**
-    *   Mitigation: classify sources; warn on “single-ecosystem” sourcing; show independence explicitly.
+    *   Mitigation: classify sources; warn on "single-ecosystem" sourcing; show independence explicitly.
 2.  **Gish gallop**
-    *   Mitigation: claim budget; “unsupported claim count” indicator prominently displayed.
+    *   Mitigation: claim budget; "unsupported claim count" indicator prominently displayed.
 3.  **Prompt injection via sources**
     *   Mitigation: treat sources as untrusted data; strip scripts; sandbox parsing; do not let source text steer system prompts.
 4.  **LLM hallucination**
@@ -570,7 +570,7 @@ MVP implementation can be simple:
 
 ### 13) Integration targets (MVP)
 
-*   “Copy badge link” that works on:
+*   "Copy badge link" that works on:
     *   X, Bluesky, Mastodon, Reddit, Slack, Discord, email
 *   Simple embed:
     *   `provenance.link/<id>` plus a compact preview card (OpenGraph tags)
@@ -588,7 +588,7 @@ MVP implementation can be simple:
 ### 15) Success metrics (MVP)
 
 *   Activation: % of users who generate a bundle after inspection
-*   Revision rate: % of posts edited after “Inspect”
+*   Revision rate: % of posts edited after "Inspect"
 *   Unsupported claim reduction: average unsupported claims per bundle over time
 *   Viewer engagement: time-to-verify, claim expansion rate
 *   Repeat usage: bundles/week per active user
@@ -596,10 +596,10 @@ MVP implementation can be simple:
 ### 16) Open questions (decide early)
 
 *   Do we allow fully anonymous bundles, or require some continuity token?
-*   What is the baseline policy profile? (“baseline-v1” must be public, stable, forkable.)
+*   What is the baseline policy profile? ("baseline-v1" must be public, stable, forkable.)
 *   Do we store fetched sources or only hashes + excerpts?
 *   How do we handle paywalled sources?
-*   Do we support “private bundles” (shareable but unindexed)?
+*   Do we support "private bundles" (shareable but unindexed)?
 
 * * *
 
@@ -608,10 +608,10 @@ Plain-language version (what this is, without the machinery)
 
 You type a post. Before you hit send, the system:
 
-*   splits it into the specific things you’re claiming
-*   tells you what assumptions you’re relying on
+*   splits it into the specific things you?re claiming
+*   tells you what assumptions you?re relying on
 *   asks you to either cite support, soften the claim, or label it as opinion/prediction  
-    Then it packages all of that into a little “receipt” anyone can open to see what your post is built from.
+    Then it packages all of that into a little "receipt" anyone can open to see what your post is built from.
 
 * * *
 
@@ -682,11 +682,11 @@ As it scales, so does Entif's density, mass and gravity folding into our cogniti
 ## Response:
 Thought for 30s
 
-Yes. What you just described is not “a feature for a social app.” It’s a substrate.
+Yes. What you just described is not "a feature for a social app." It?s a substrate.
 
-If Rosetta can (a) decompose any artifact into typed claims/derivations/assumptions and (b) emit immutable, verifiable receipts for every transformation, then “provenance-first” becomes the kernel that everything else in Entif hangs off of. Social posting is just the easiest demo because the artifact is small and the pain is obvious.
+If Rosetta can (a) decompose any artifact into typed claims/derivations/assumptions and (b) emit immutable, verifiable receipts for every transformation, then "provenance-first" becomes the kernel that everything else in Entif hangs off of. Social posting is just the easiest demo because the artifact is small and the pain is obvious.
 
-What follows is the architecture I’d treat as the _real_ MVP: a Rosetta-native provenance and receipt system that can wrap LLMs, agents, documents, workflows, and human approvals without rotting under organizational change.
+What follows is the architecture I?d treat as the _real_ MVP: a Rosetta-native provenance and receipt system that can wrap LLMs, agents, documents, workflows, and human approvals without rotting under organizational change.
 
 * * *
 
@@ -695,14 +695,14 @@ What follows is the architecture I’d treat as the _real_ MVP: a Rosetta-native
 
 ### Content provenance
 
-“Where did this media/data come from and how was it altered?”  
+"Where did this media/data come from and how was it altered?"  
 C2PA is a strong example for media assets: a signed manifest binds assertions and hashes into a verifiable unit. [C2PA](https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html?utm_source=chatgpt.com)
 
-### Cognitive provenance (what you’re proposing)
+### Cognitive provenance (what you?re proposing)
 
-“Why is this claim here, what assumptions does it require, what evidence supports it, what policies governed the transformation, and who attested to it?”
+"Why is this claim here, what assumptions does it require, what evidence supports it, what policies governed the transformation, and who attested to it?"
 
-That’s the missing layer for regulated AI adoption: not “trust the model,” but “trust the signed trail of how we got here, and verify it under zero trust.”
+That?s the missing layer for regulated AI adoption: not "trust the model," but "trust the signed trail of how we got here, and verify it under zero trust."
 
 * * *
 
@@ -727,7 +727,7 @@ Tiles are never edited. Updates are new tiles.
 
 A receipt is a _signed attestation_ that a transformation occurred:
 
-**Receipt = “I transformed inputs into outputs under policy P, using method M, at time T.”**
+**Receipt = "I transformed inputs into outputs under policy P, using method M, at time T."**
 
 *   Inputs: tile IDs
 *   Outputs: tile IDs
@@ -736,11 +736,11 @@ A receipt is a _signed attestation_ that a transformation occurred:
 *   Trace commitments: hashes of intermediate steps (optional, can be encrypted/redacted)
 *   Signatures: who/what is asserting this (human, service key, committee)
 
-This is where you encode “auditable cognition.”
+This is where you encode "auditable cognition."
 
 ### 2.3 Policy Profile (forkable, versioned)
 
-Policy is not “whatever the org believes today.” It’s an immutable artifact referenced by receipts.
+Policy is not "whatever the org believes today." It?s an immutable artifact referenced by receipts.
 
 *   `policy_id` + semantic version
 *   rules for claim typing, evidence weighting, redaction, time-sensitivity penalties, etc.
@@ -751,7 +751,7 @@ Policy is not “whatever the org believes today.” It’s an immutable artifac
 Receipts go into an append-only log that can provide:
 
 *   **inclusion proofs**: this receipt exists in the log
-*   **consistency proofs**: the log hasn’t been rewritten, only appended
+*   **consistency proofs**: the log hasn?t been rewritten, only appended
 
 Certificate Transparency is the canonical pattern: Merkle-tree append-only logs with verifiable proofs. [RFC Editor+1](https://www.rfc-editor.org/rfc/rfc6962.html?utm_source=chatgpt.com)
 
@@ -759,7 +759,7 @@ This is your anti-tamper backbone.
 
 * * *
 
-3) The invariants that make it “enterprise-grade” instead of a toy
+3) The invariants that make it "enterprise-grade" instead of a toy
 ------------------------------------------------------------------
 
 If these invariants hold, the system survives bureaucracy, turnover, and platform churn:
@@ -769,9 +769,9 @@ If these invariants hold, the system survives bureaucracy, turnover, and platfor
 2.  **Verification is deterministic**
     *   Anyone can verify a receipt without trusting the creator, by checking hashes, signatures, log proofs, and policy IDs.
 3.  **Policy and evidence are first-class**
-    *   You can’t “handwave” compliance. Every decision cites its policy profile and its evidence set.
+    *   You can?t "handwave" compliance. Every decision cites its policy profile and its evidence set.
 4.  **Anti-rot strategy**
-    *   Do not rely on raw URLs as “sources.”
+    *   Do not rely on raw URLs as "sources."
     *   Store a content hash + retrieval metadata + excerpt span + optional snapshot blob.
     *   Source drift becomes detectable rather than silently corrupting history.
 5.  **Separation of secrecy from integrity**
@@ -786,12 +786,12 @@ This is where W3C Verifiable Credentials become useful as a standardized way to 
 
 The failure mode you lived:
 
-*   “Templates composed into workflows composed into projects composed into environments”
+*   "Templates composed into workflows composed into projects composed into environments"
 *   An ex-employee changes, requirements fork, hotfixes diverge, and suddenly provenance becomes a spaghetti aquarium.
 
 RRP solves this by forcing everything into immutable, composable units:
 
-### 4.1 “Base + Patch” as receipts, not edits
+### 4.1 "Base + Patch" as receipts, not edits
 
 *   Base workflow tile: `WF@1.0.0`
 *   Patch tile: `WF-PATCH@1.0.0+clientA`
@@ -799,17 +799,17 @@ RRP solves this by forcing everything into immutable, composable units:
     *   inputs: base + patches + policy
     *   output: composed workflow tile
 
-No one “edits the workflow.” They publish a new patch tile and issue a new composition receipt.
+No one "edits the workflow." They publish a new patch tile and issue a new composition receipt.
 
 ### 4.2 Environment-specific materialization
 
 QA/staging/prod differences are receipts too:
 
-*   “Materialize WF@X with config set C into deployment artifact D”
+*   "Materialize WF@X with config set C into deployment artifact D"
 *   Hotfix is a new patch + new materialization receipt
 *   Canary rollout is a sequence of receipts with scoped deployment targets
 
-Now the question “what was running in prod at 3:17pm?” is answered by a verifiable chain, not oral tradition.
+Now the question "what was running in prod at 3:17pm?" is answered by a verifiable chain, not oral tradition.
 
 * * *
 
@@ -840,14 +840,14 @@ Tool access is granted only when:
 *   requested action has a valid pre-flight receipt under an allowed policy
 *   the policy engine can verify signatures and log inclusion proofs
 
-This shrinks the exploit surface: an agent can’t “just do things.” It must continuously produce verifiable paperwork, automatically, as a condition of motion.
+This shrinks the exploit surface: an agent can?t "just do things." It must continuously produce verifiable paperwork, automatically, as a condition of motion.
 
 * * *
 
 6) Why regulated / risk-averse industries actually buy this
 -----------------------------------------------------------
 
-They don’t buy “AI.” They buy:
+They don?t buy "AI." They buy:
 
 *   auditability,
 *   defensibility,
@@ -855,11 +855,11 @@ They don’t buy “AI.” They buy:
 
 A provenance-first receipt system:
 
-*   reduces “unknown unknowns” in AI-assisted decision-making
-*   turns “trust me” into “verify me”
+*   reduces "unknown unknowns" in AI-assisted decision-making
+*   turns "trust me" into "verify me"
 *   provides durable audit trails even as org structure changes
 
-This directly addresses the “we’re handcuffing ourselves more than regulators are” dynamic: you can keep your conservative posture while moving faster because every move leaves a verifiable trail.
+This directly addresses the "we?re handcuffing ourselves more than regulators are" dynamic: you can keep your conservative posture while moving faster because every move leaves a verifiable trail.
 
 And yes, the macro pressure is real: exposure to AI is notably high in knowledge-work categories, including legal and business/financial job families, which is exactly where compliance friction is worst. [Pew Research Center+2Pew Research Center+2](https://www.pewresearch.org/social-trends/wp-content/uploads/sites/3/2023/07/st_2023.07.26_ai-and-jobs.pdf?utm_source=chatgpt.com)
 
@@ -895,11 +895,11 @@ Skateboard first.
 
 ### MVP2: Multi-party attestation
 
-*   add “oversight committee” signing:
+*   add "oversight committee" signing:
     *   human-in-the-loop approval receipt
     *   or VC-based attestation for roles/authority
 
-At this point, you have “cryptographic receipts for cognition” as a product, independent of any social network.
+At this point, you have "cryptographic receipts for cognition" as a product, independent of any social network.
 
 * * *
 
@@ -910,7 +910,7 @@ At this point, you have “cryptographic receipts for cognition” as a product,
     *   You need deterministic hashing across languages/runtimes.
     *   Choose JSON canonicalization (or CBOR canonical) and enforce it everywhere.
 2.  **WORM storage option**
-    *   For enterprises: object lock / retention controls to satisfy “cannot be deleted.”
+    *   For enterprises: object lock / retention controls to satisfy "cannot be deleted."
 3.  **Selective disclosure**
     *   Integrity without oversharing is the killer feature in legal/health/finance.
 4.  **Policy profiles are forkable**
@@ -922,7 +922,7 @@ At this point, you have “cryptographic receipts for cognition” as a product,
 9) What I suggest we do next
 ----------------------------
 
-If you want to make this the precondition for Entif, the next artifact isn’t UI. It’s a spec.
+If you want to make this the precondition for Entif, the next artifact isn?t UI. It?s a spec.
 
 I can write (in one pass) the **RRP v0.1 technical spec** with:
 
@@ -939,7 +939,7 @@ And alongside it:
 *   a repo skeleton layout (library + CLI + test vectors)
 *   a set of golden test receipts to ensure cross-implementation compatibility
 
-Say the word and I’ll draft RRP v0.1 as if it’s going to be implemented by a third party who doesn’t trust us and still must be able to verify everything. That’s the bar that makes it real.
+Say the word and I?ll draft RRP v0.1 as if it?s going to be implemented by a third party who doesn?t trust us and still must be able to verify everything. That?s the bar that makes it real.
 
 ## Prompt:
 Rosetta v3.0.0 Core Spine Specification.pdf
@@ -967,17 +967,17 @@ As long as whatever we're drawing up is consistent with the latest version 3.0.0
 ## Response:
 Thought for 1m 28s
 
-According to a document from 2026-01-08, Rosetta v3.0.0 already gives us the _core_ primitives we must not duplicate: immutable, content-addressed Tiles (CIDs), the universal execution spine (Run → Action → ToolCall → Observation → Evaluation), and first-class **rosetta.receipt** as a signed attestation artifact (“receipts-first” instrumentation is explicitly encouraged).
+According to a document from 2026-01-08, Rosetta v3.0.0 already gives us the _core_ primitives we must not duplicate: immutable, content-addressed Tiles (CIDs), the universal execution spine (Run ? Action ? ToolCall ? Observation ? Evaluation), and first-class **rosetta.receipt** as a signed attestation artifact ("receipts-first" instrumentation is explicitly encouraged).
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
-What you’re asking for, then, is not “a new provenance system.” It’s a **refinement pack** that (1) tightens the schema + invariants for _how_ receipts are authored/verified, while (2) remaining strictly within Rosetta’s extension posture (“packs attach; core does not expand; packs MUST NOT redefine core semantics”).
+What you?re asking for, then, is not "a new provenance system." It?s a **refinement pack** that (1) tightens the schema + invariants for _how_ receipts are authored/verified, while (2) remaining strictly within Rosetta?s extension posture ("packs attach; core does not expand; packs MUST NOT redefine core semantics").
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 Below is a draft spec that does exactly that.
 
@@ -993,22 +993,22 @@ Draft, Standards-Track _Pack Specification_ (extension of Rosetta 3.0 via Pack S
 ### Dependencies
 
 *   Rosetta v3.0.0 Core Spine Specification (ROCK-3001)
-    Rosetta v3.0.0 Core Spine Speci…
-*   Pack System Architecture + “No Redefinition” rule
-    Rosetta v3.0.0 Core Spine Speci…
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
+*   Pack System Architecture + "No Redefinition" rule
+    Rosetta v3.0.0 Core Spine Speci?
+    Rosetta v3.0.0 Core Spine Speci?
 *   TileEnvelope canonicalization + signature rules
-    Rosetta v3.0.0 Core Spine Speci…
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
+    Rosetta v3.0.0 Core Spine Speci?
 *   PROV-O alignment (via StdPacks)
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 ### Non-Goals (v0.1)
 
 *   No new core tile kinds.
 *   No distributed consensus / transparency log protocol (out of scope; can be layered later).
-*   No “truth engine”: receipts attest to events/conditions, not objective truth (consistent with Rosetta’s posture).
-    Rosetta v3.0.0 Core Spine Speci…
+*   No "truth engine": receipts attest to events/conditions, not objective truth (consistent with Rosetta?s posture).
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
@@ -1020,11 +1020,11 @@ RRP v0.1 is a **StdPack + VocabPack pair**:
 1.  **StdPack: `rrp`**  
     Defines normative constraints and schemas for the _content payload_ of **rosetta.receipt** tiles (and how they must reference the spine: Run/Action/ToolCall/Observation/Evaluation).
 2.  **VocabPack: `rrp.receipt_types`**  
-    Defines controlled vocabularies for receipt “types,” “claims,” and “verdicts” (modeled as SKOS-compatible hierarchies, but without requiring the SKOS pack to be loaded at runtime). Rosetta explicitly supports controlled vocabularies via VocabPacks and discourages polluting core semantics.
-    Rosetta v3.0.0 Core Spine Speci…
-    Rosetta v3.0.0 Core Spine Speci…
+    Defines controlled vocabularies for receipt "types," "claims," and "verdicts" (modeled as SKOS-compatible hierarchies, but without requiring the SKOS pack to be loaded at runtime). Rosetta explicitly supports controlled vocabularies via VocabPacks and discourages polluting core semantics.
+    Rosetta v3.0.0 Core Spine Speci?
+    Rosetta v3.0.0 Core Spine Speci?
 
-This keeps us in “refine-before-extend” mode: we standardize how to use what Rosetta already has.
+This keeps us in "refine-before-extend" mode: we standardize how to use what Rosetta already has.
 
 * * *
 
@@ -1033,9 +1033,9 @@ This keeps us in “refine-before-extend” mode: we standardize how to use what
 
 ### 2.1 Receipt (core)
 
-A **rosetta.receipt** is a signed attestation about an event or artifact, supporting non-repudiation and “receipts-first” instrumentation.
+A **rosetta.receipt** is a signed attestation about an event or artifact, supporting non-repudiation and "receipts-first" instrumentation.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 ### 2.2 Subject
 
@@ -1043,15 +1043,15 @@ The **Subject** of a receipt is the tile (or set of tiles) the receipt is attest
 
 ### 2.3 Attestation Claim
 
-A structured statement the signer is asserting about the Subject (e.g., “tool X executed request Y and produced result R”; “output O passed policy checks”).
+A structured statement the signer is asserting about the Subject (e.g., "tool X executed request Y and produced result R"; "output O passed policy checks").
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 ### 2.4 Receipt Bundle
 
-A _presentation artifact_ that collects the minimal closure of tiles needed to verify a claim. In Rosetta v3.0.0, the natural primitive for “compiled working set” is **rosetta.tapestry**.
+A _presentation artifact_ that collects the minimal closure of tiles needed to verify a claim. In Rosetta v3.0.0, the natural primitive for "compiled working set" is **rosetta.tapestry**.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 RRP defines a **Receipt Bundle Profile** for tapestry content (no new tile kind required).
 
@@ -1069,31 +1069,31 @@ A rosetta.receipt tile MUST include:
 *   `kind = "rosetta.receipt"`
 *   `timestamp`
 *   `nonce` (recommended by core especially for receipts to avoid accidental duplication collisions)
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 *   `sig` (signature) and `auth` (authority metadata) per the core guidance that signatures are typical/expected for receipts and `auth` may contain signer key IDs/certs.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 ### 3.2 Signature hashing rule
 
-The receipt’s `sig` MUST NOT be included in CID computation, and MUST sign the CID (or a stable canonical representation) consistent with Rosetta’s signature rule.
+The receipt?s `sig` MUST NOT be included in CID computation, and MUST sign the CID (or a stable canonical representation) consistent with Rosetta?s signature rule.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 ### 3.3 Provenance pointers
 
 Receipts MUST use:
 
 *   `run` to point to the containing Run (CID or RID) when the receipt is produced inside an execution trace.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 *   `derived_from` to reference immediate spine inputs involved in the attested event (e.g., Action CID, ToolCall CID, Observation CID).
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
 4\. Receipt Content Schema (Normative)
 --------------------------------------
 
-RRP standardizes the **content payload** for rosetta.receipt. This is the refinement that makes receipts interoperable and “audit-closure friendly.”
+RRP standardizes the **content payload** for rosetta.receipt. This is the refinement that makes receipts interoperable and "audit-closure friendly."
 
 ### 4.1 Minimal required fields
 
@@ -1104,7 +1104,7 @@ A rosetta.receipt `content` object MUST include:
 *   `claims` : array of attestation claims (see below)
 *   `digests` : array of digests binding the attestation to specific payload(s)
 *   `policy_refs` (OPTIONAL but RECOMMENDED): references to rosetta.policy tiles governing the checks/authorization for this receipt. Rosetta defines policy as signed, versioned governance rules.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 ### 4.2 Claim object
 
@@ -1116,7 +1116,7 @@ Each claim MUST include:
 *   `verdict` : one of `{pass, fail, partial, unknown}` (controlled term)
 *   `confidence` : OPTIONAL; if present MUST be represented as either:
     *   `rosetta.matrix` reference (preferred, for multi-axis scoring)
-        Rosetta v3.0.0 Core Spine Speci…
+        Rosetta v3.0.0 Core Spine Speci?
     *   or scalar in `[0,1]` with rationale, if a Matrix is not available
 
 ### 4.3 Digest object
@@ -1126,13 +1126,13 @@ Each digest MUST include:
 *   `alg` : e.g., `sha256` (or multihash identifier)
 *   `digest` : value
 *   `of` : what was digested (e.g., `toolcall.request`, `toolcall.response`, `observation.payload`, `bundle.closure`)
-*   `cid_ref` : which tile’s canonical bytes were digested (when applicable)
+*   `cid_ref` : which tile?s canonical bytes were digested (when applicable)
 
-This matches Rosetta’s content-addressing posture: receipts should bind to immutable content, not mutable references.
+This matches Rosetta?s content-addressing posture: receipts should bind to immutable content, not mutable references.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 ### 4.4 JSON sketch (illustrative, not exhaustive)
 
@@ -1153,8 +1153,8 @@ Rosetta v3.0.0 Core Spine Speci…
     }
   ],
   "digests": [
-    {"alg": "sha256", "of": "toolcall.request", "digest": "…", "cid_ref": "cid:..."},
-    {"alg": "sha256", "of": "toolcall.response", "digest": "…", "cid_ref": "cid:..."}
+    {"alg": "sha256", "of": "toolcall.request", "digest": "?", "cid_ref": "cid:..."},
+    {"alg": "sha256", "of": "toolcall.response", "digest": "?", "cid_ref": "cid:..."}
   ],
   "policy_refs": ["cid:..."]
 }
@@ -1174,16 +1174,16 @@ RRP defines a minimal, stable taxonomy to prevent semantic drift.
 *   `rrp:policy.compliance_check`
 *   `rrp:evaluation.score_attestation`
 *   `rrp:bundle.closure_attestation`
-*   `rrp:incident.quorum_attestation` (aligns with Rosetta’s quorum receipts for incident envelopes)
-    Rosetta v3.0.0 Core Spine Speci…
+*   `rrp:incident.quorum_attestation` (aligns with Rosetta?s quorum receipts for incident envelopes)
+    Rosetta v3.0.0 Core Spine Speci?
 
 ### 5.2 Evolution rule
 
 New receipt types MUST be introduced by:
 
 *   adding a new VocabPack version (new PACKID), and
-*   (if needed) translator tiles to map old receipt types to new groupings, consistent with Rosetta’s governed evolution posture.
-    Rosetta v3.0.0 Core Spine Speci…
+*   (if needed) translator tiles to map old receipt types to new groupings, consistent with Rosetta?s governed evolution posture.
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
@@ -1192,7 +1192,7 @@ New receipt types MUST be introduced by:
 
 Rosetta already defines **rosetta.tapestry** as a compiled working set of tiles assembled under context constraints.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 RRP defines a tapestry profile called:
 
@@ -1200,7 +1200,7 @@ RRP defines a tapestry profile called:
 
 ### 6.1 Bundle closure requirement
 
-If a system presents a user (or another agent) with a claim labeled as “verified” or “audited,” it MUST also be able to present a Receipt Bundle tapestry containing at minimum:
+If a system presents a user (or another agent) with a claim labeled as "verified" or "audited," it MUST also be able to present a Receipt Bundle tapestry containing at minimum:
 
 *   the Subject tiles
 *   the receipt tile(s)
@@ -1208,9 +1208,9 @@ If a system presents a user (or another agent) with a claim labeled as “verifi
 *   any `rosetta.policy` tiles referenced by `policy_refs`
 *   enough provenance links (`derived_from` chains) to reach raw Observations for key assertions
 
-This aligns with Rosetta’s interpretability-first posture: higher-level constructs must be grounded in evidence and traceable.
+This aligns with Rosetta?s interpretability-first posture: higher-level constructs must be grounded in evidence and traceable.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
@@ -1220,16 +1220,16 @@ Rosetta v3.0.0 Core Spine Speci…
 Given a Receipt Bundle tapestry, a verifier MUST be able to do zero-trust verification:
 
 1.  **CID integrity**: recompute CID for each tile using canonicalization rules; reject mismatches. (Rosetta mandates determinism via canonicalization for stable CIDs.)
-    Rosetta v3.0.0 Core Spine Speci…
-2.  **Signature validation**: verify each receipt’s `sig` against `auth` signer key ID/cert; confirm the signature covers the CID (or stable canonical bytes) as required.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
+2.  **Signature validation**: verify each receipt?s `sig` against `auth` signer key ID/cert; confirm the signature covers the CID (or stable canonical bytes) as required.
+    Rosetta v3.0.0 Core Spine Speci?
 3.  **Spine anchoring**: if receipt includes `run`, ensure the referenced Run exists and that `derived_from` references are resolvable.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 4.  **Digest validation**: recompute digests for referenced payloads; compare to receipt `digests`.
-5.  **Policy validation** (if applicable): verify referenced policy tiles are signed and within the verifier’s accepted trust roots (deployment-defined). Rosetta treats policies as signed governance artifacts.
-    Rosetta v3.0.0 Core Spine Speci…
+5.  **Policy validation** (if applicable): verify referenced policy tiles are signed and within the verifier?s accepted trust roots (deployment-defined). Rosetta treats policies as signed governance artifacts.
+    Rosetta v3.0.0 Core Spine Speci?
 6.  **Optional PROV projection**: if required for interoperability, project the verified chain to PROV-O via the StdPack mapping approach Rosetta outlines.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
@@ -1238,75 +1238,75 @@ Given a Receipt Bundle tapestry, a verifier MUST be able to do zero-trust verifi
 
 Rosetta explicitly anticipates PROV-O mapping: Run/Action map to prov:Activity, Observations to prov:Entity, and derived\_from aligns with prov:wasDerivedFrom.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 RRP requires that an implementation claiming PROV interoperability MUST:
 
 *   provide a deterministic projection for receipts and their subjects into PROV-O,
 *   preserving traceability (no lossy export without explicit declaration of unsupported semantics).
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
 9\. Conformance (Normative)
 ---------------------------
 
-RRP extends Rosetta’s profile thinking rather than inventing a new scheme.
+RRP extends Rosetta?s profile thinking rather than inventing a new scheme.
 
 ### 9.1 Minimal RRP conformance tiers
 
 *   **RRP-Light**: emits rosetta.receipt with minimal schema (subjects + digests + sig/auth).
-*   **RRP-Full**: additionally emits policy references and bundle tapestries for any “verified” label.
-*   **RRP-Auditor**: MUST retain sufficient trace artifacts to answer “why did it do X?” via the tile graph, consistent with Rosetta’s conformance posture that discarding reasoning traces breaks auditability.
-    Rosetta v3.0.0 Core Spine Speci…
+*   **RRP-Full**: additionally emits policy references and bundle tapestries for any "verified" label.
+*   **RRP-Auditor**: MUST retain sufficient trace artifacts to answer "why did it do X?" via the tile graph, consistent with Rosetta?s conformance posture that discarding reasoning traces breaks auditability.
+    Rosetta v3.0.0 Core Spine Speci?
 *   **RRP-Forge** (optional later): supports multi-party/quorum workflows.
 
 ### 9.2 Validation mechanism
 
-RRP provides SHACL shapes (or equivalent) to validate receipt structure, consistent with Rosetta’s explicit SHACL alignment and recommendation for profile validation.
+RRP provides SHACL shapes (or equivalent) to validate receipt structure, consistent with Rosetta?s explicit SHACL alignment and recommendation for profile validation.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
-10\. “Refinement before extension” guarantee
+10\. "Refinement before extension" guarantee
 --------------------------------------------
 
 This spec deliberately:
 
 *   uses **rosetta.receipt** rather than inventing new attestation tile kinds
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 *   uses **rosetta.tapestry** for bundles rather than introducing new bundle types
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 *   treats all new semantics as **pack vocab + SHACL shapes**, not core redefinitions
-    Rosetta v3.0.0 Core Spine Speci…
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
+    Rosetta v3.0.0 Core Spine Speci?
 
-That makes it inherently compatible with your “later iterations in smaller sessions,” because extension is just:
+That makes it inherently compatible with your "later iterations in smaller sessions," because extension is just:
 
 *   new VocabPack versions (receipt types),
 *   new SHACL shapes (profiles),
 *   optional translator tiles (schema evolution), without breaking old receipts.
-    Rosetta v3.0.0 Core Spine Speci…
+    Rosetta v3.0.0 Core Spine Speci?
 
 * * *
 
 What I would do next (still headless, still refinement)
 -------------------------------------------------------
 
-If you want the next increment to be maximally useful and non-duplicative, I’ll produce two tightly-scoped addenda:
+If you want the next increment to be maximally useful and non-duplicative, I?ll produce two tightly-scoped addenda:
 
 1.  **RRP v0.1 SHACL Profile Set (textual shapes + constraints)**
     *   structural constraints for receipt content, subject roles, digest requirements, and bundle closure rules.
 2.  **RRP v0.1 Test Vectors**
-    *   canonical tile JSON samples + expected CIDs, plus signature verification test cases (aligned with Rosetta’s determinism requirements).
-        Rosetta v3.0.0 Core Spine Speci…
+    *   canonical tile JSON samples + expected CIDs, plus signature verification test cases (aligned with Rosetta?s determinism requirements).
+        Rosetta v3.0.0 Core Spine Speci?
 
-If you’d like, I’ll also assign a concrete DocID in the ROCK-3100+ range (as your core spec suggests for extension pack specifications) and format this as a clean “ROCK-style” document skeleton for drop-in to the suite.
+If you?d like, I?ll also assign a concrete DocID in the ROCK-3100+ range (as your core spec suggests for extension pack specifications) and format this as a clean "ROCK-style" document skeleton for drop-in to the suite.
 
-Rosetta v3.0.0 Core Spine Speci…
+Rosetta v3.0.0 Core Spine Speci?
 
 ## Prompt:
 Sure, please produce both of those next-increment suggestions, and assign the DocID as well. Thanks, Em.
@@ -1329,12 +1329,12 @@ ROCK-3111-A: RRP v0.1 SHACL Profile Set (v0.1.0)
 
 **Status:** Draft (Standards-Track Pack Addendum)  
 **Date:** 2026-02-24  
-**Scope:** This addendum defines SHACL constraints for validating **rosetta.receipt** tiles that claim **RRP conformance**, plus a **rosetta.tapestry** “Receipt Bundle” profile suitable for zero-trust verification packaging.  
+**Scope:** This addendum defines SHACL constraints for validating **rosetta.receipt** tiles that claim **RRP conformance**, plus a **rosetta.tapestry** "Receipt Bundle" profile suitable for zero-trust verification packaging.  
 **Refinement-first posture:** No new core tile kinds. Only constraints + profiles.
 
 ### A1. Applicability and the required RDF projection
 
-SHACL validates RDF graphs. Rosetta tiles are JSON TileEnvelopes; therefore, these shapes apply after a deterministic **Tile→RDF projection**.
+SHACL validates RDF graphs. Rosetta tiles are JSON TileEnvelopes; therefore, these shapes apply after a deterministic **Tile?RDF projection**.
 
 RRP assumes the following minimal projection (implementations MAY extend it, but MUST preserve these invariants for RRP validation):
 
@@ -1342,15 +1342,15 @@ RRP assumes the following minimal projection (implementations MAY extend it, but
     *   Each tile is represented as an RDF node whose subject IRI is its CID as an IRI, using a `cid:` scheme, e.g. `cid:zQm...` or `cid:toolcall1`.
     2.  **Envelope fields**
     *   JSON envelope keys map to predicates in `rosetta:` namespace:
-    *   `kind` → `rosetta:kind` (xsd:string)
-    *   `timestamp` → `rosetta:timestamp` (xsd:dateTime)
-    *   `nonce` → `rosetta:nonce` (xsd:string)
-    *   `run` → `rosetta:run` (IRI)
-    *   `derived_from` → `rosetta:derived_from` (IRI, repeated)
-    *   `summary` → `rosetta:summary` (xsd:string)
-    *   `auth` → `rosetta:auth` (blank node or IRI)
-    *   `sig` → `rosetta:sig` (blank node or literal)
-    *   `content` → `rosetta:content` (blank node)
+    *   `kind` ? `rosetta:kind` (xsd:string)
+    *   `timestamp` ? `rosetta:timestamp` (xsd:dateTime)
+    *   `nonce` ? `rosetta:nonce` (xsd:string)
+    *   `run` ? `rosetta:run` (IRI)
+    *   `derived_from` ? `rosetta:derived_from` (IRI, repeated)
+    *   `summary` ? `rosetta:summary` (xsd:string)
+    *   `auth` ? `rosetta:auth` (blank node or IRI)
+    *   `sig` ? `rosetta:sig` (blank node or literal)
+    *   `content` ? `rosetta:content` (blank node)
         3.  **Content fields**
     *   Receipt `content.*` keys map to predicates in `rrp:` namespace hanging off `rosetta:content`.
     4.  **CID references**
@@ -1727,7 +1727,7 @@ rrp:ReceiptBundleTapestryShape a sh:NodeShape ;
 
 ### A4. Notes on strictness levels (RRP-Light vs RRP-Full)
 
-*   **RRP-Light** implementers may relax signature/auth requirements by swapping `rrp:ReceiptTileShape` with a “Light” variant that sets `rosetta:sig` and `rosetta:auth` to OPTIONAL.
+*   **RRP-Light** implementers may relax signature/auth requirements by swapping `rrp:ReceiptTileShape` with a "Light" variant that sets `rosetta:sig` and `rosetta:auth` to OPTIONAL.
 *   **RRP-Full** (the shapes above) treats signed receipts as mandatory because the entire enterprise wedge depends on non-repudiation.
 
 * * *
@@ -1882,7 +1882,7 @@ Then the expected CID becomes:
 
 *   `cid_zb58`: `zQmcrBoE3dPGtnvZhJzxZvk7wMJFBfn5ehjmH6iLjnL6Vyx`
 
-If you keep TV1’s original signature while using the tampered object, verification MUST fail because:
+If you keep TV1?s original signature while using the tampered object, verification MUST fail because:
 
 *   recomputed multihash\_bytes differs
 *   signature no longer matches recomputed CID commitment
@@ -1900,7 +1900,7 @@ To verify a stored tile with `cid` + `sig`:
 
 * * *
 
-If you want the _tightest_ refinement step after these: I’d produce a **single “RRP Pack Layout + Filesystem Contract”** (names, expected files, PACKID metadata tile, and how these two addenda are bundled into a Pack Capsule / Delta Capsule). That keeps us firmly in “refine + harden + make shippable” mode before we add any new semantics.
+If you want the _tightest_ refinement step after these: I?d produce a **single "RRP Pack Layout + Filesystem Contract"** (names, expected files, PACKID metadata tile, and how these two addenda are bundled into a Pack Capsule / Delta Capsule). That keeps us firmly in "refine + harden + make shippable" mode before we add any new semantics.
 
 
 
