@@ -4423,6 +4423,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/81
   status: active
+- id: pasigraphy-contributing-done-language
+  name: CONTRIBUTING Done Language Vocabulary Gap
+  introduced_by: docs/intake/issue-drafts/pasigraphy-contributing-done-language.md
+  introduced_at: '2026-04-27'
+  definition: CONTRIBUTING.md does not reference the four-term Done Language vocabulary
+    (implemented, modeled, fixture-backed, not yet implemented) defined in the Pasigraphy
+    Protocol v3 Architecture doc.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/901
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5179,6 +5189,8 @@ issue_drafts_inventory:
   issue_id: pasigraphy-contributing-done-language
   priority: P2
   type: documentation
+  url: https://github.com/entif-ai/rosetta/issues/901
+  status: published
 - path: docs/intake/issue-drafts/semantic-audio-speaker-diarization-fingerprinting.md
   source_doc: docs/ideas/Semantic Audio Cognition Framework.md
   source_pr: 62
