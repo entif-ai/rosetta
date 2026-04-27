@@ -4688,6 +4688,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/720
   status: active
+- id: sba-002-electron-secretstorage-plaintext-linux
+  name: Electron SecretStorage plaintext credential vulnerability on Linux
+  introduced_by: docs/intake/issue-drafts/sba-002-electron-secretstorage-plaintext-linux.md
+  introduced_at: '2026-04-27'
+  definition: Electron-based apps (including Obsidian) using Linux SecretStorage API
+    store credentials in plaintext within LevelDB, defeating LUKS disk encryption
+    once the system is booted and user is logged in.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/944
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
