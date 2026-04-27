@@ -3841,5 +3841,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/recovery-rule-no-enforcement.md",
     "draftStatus": "published"
+  },
+  "rosetta-acp-interop-strategy.md": {
+    "number": 243,
+    "state": "open",
+    "title": "Enrich ACP-001: Evaluate ACP as Rosetta's Agent-Delegation Protocol Layer",
+    "url": "https://github.com/entif-ai/rosetta/issues/243",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-acp-interop-strategy.md",
+    "draftStatus": "published"
   }
 }
