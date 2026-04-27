@@ -4160,7 +4160,7 @@ concepts:
   status: active
 - id: entify-v0-013
   name: Postmortem Artifact Template
-  introduced_by: docs/intake/issue-drafts/entify-v0-013-postmortem-artifact-template.md
+  introduced_by: docs/intake/issue-drafts/entif-v0-013-postmortem-artifact-template.md
   introduced_at: '2026-04-27'
   definition: The Entif v0 doctrine requires postmortem artifacts for all scored workflow
     steps, but no schema is defined. Required fields (root cause, reproduction steps,
