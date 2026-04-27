@@ -3904,6 +3904,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/10
   status: active
+- id: prd-003-durable-canonical-cache
+  name: 'PRD-003: Durable Canonical Cache'
+  introduced_by: docs/intake/issue-drafts/2026-04-26-prd-003-durable-canonical-cache.md
+  introduced_at: '2026-04-26'
+  definition: Migration of canonical-cache from in-memory + JSON file persistence
+    to Postgres JSONB with pgvector, preserving four-index semantics and adding row-level
+    rights enforcement at storage boundary
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/793
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
