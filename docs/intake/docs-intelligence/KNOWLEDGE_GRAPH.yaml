@@ -4918,6 +4918,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/11
   status: active
+- id: trend-technicals-fluid-dynamics-simulation
+  name: Fluid Dynamics for Trend Flow Simulation
+  introduced_by: docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md
+  introduced_at: '2026-04-27'
+  definition: Research probe evaluating whether fluid dynamics analogy (pressure/viscosity/turbulence)
+    can produce testable variables for cultural trend propagation modeling.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/889
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5760,6 +5769,8 @@ issue_drafts_inventory:
   issue_id: trend-technicals-fluid-dynamics-simulation
   priority: P3
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/889
+  status: published
 - path: docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md
   source_doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
   source_pr: 64
