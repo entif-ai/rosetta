@@ -4647,6 +4647,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/425
   status: active
+- id: sac-002-emotional-geometry-schema
+  name: Emotional Geometry Schema
+  introduced_by: docs/intake/issue-drafts/sac-002-emotional-geometry-schema.md
+  introduced_at: '2026-04-27'
+  definition: "A formal data schema for representing affective arcs in audio clips\
+    \ \u2014 VAD-based emotional segments with arc-level summaries, graph node integration\
+    \ for semantic-emotive graph."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/425
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

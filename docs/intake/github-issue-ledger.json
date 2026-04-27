@@ -3922,5 +3922,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-001-audio-source-identity-prosodic-vs-biometric.md",
     "draftStatus": "published"
+  },
+  "sac-002-emotional-geometry-schema.md": {
+    "number": 425,
+    "state": "open",
+    "title": "SAC-002: Emotional Geometry Schema \u2014 Formal Definition and Graph Integration (enriches #425)",
+    "url": "https://github.com/entif-ai/rosetta/issues/425",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-002-emotional-geometry-schema.md",
+    "draftStatus": "published"
   }
 }
