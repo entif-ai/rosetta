@@ -4899,6 +4899,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/980
   status: active
+- id: swarmkit-relevance-assessment
+  name: SwarmKit Relevance Assessment
+  introduced_by: docs/intake/issue-drafts/swarmkit-relevance-assessment.md
+  introduced_at: '2026-04-25'
+  definition: Assessment of whether the dormant SwarmKit project is a valid architectural
+    reference for Entif engineering, or should be treated as historical context only.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/510
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
