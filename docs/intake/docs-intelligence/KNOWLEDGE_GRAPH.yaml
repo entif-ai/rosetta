@@ -4098,6 +4098,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/829
   status: active
+- id: entify-v0-007
+  name: 'ENTIF-v0-007: Memory Tier Transition Rules'
+  introduced_by: docs/intake/issue-drafts/entify-v0-007-memory-tier-transition-rules.md
+  introduced_at: '2026-04-27'
+  definition: Promotion/demotion rules between Hot/Warm/Cool/Cold memory tiers are
+    not formally specified in the Entif doctrine. ACT-R activation thresholds and
+    compaction algorithms are undefined.
+  referenced_by:
+  - https://github.com/enti-ai/rosetta/issues/832
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
