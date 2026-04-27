@@ -4168,6 +4168,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/845
   status: active
+- id: entify-v0-014
+  name: Constitution Scope Delta Matrix
+  introduced_by: docs/intake/issue-drafts/entify-v0-014-constitution-scope-delta-matrix.md
+  introduced_at: '2026-04-27'
+  definition: The Entif v0 spec defines scope_profiles for single_tenant_personal
+    and multi_tenant_enterprise but only provides one policy difference (pii_allowed).
+    The full scope difference matrix across all policy dimensions is undefined.
+  referenced_by:
+  - https://github.com/entify-ai/rosetta/issues/848
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
