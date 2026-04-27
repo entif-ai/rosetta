@@ -4281,6 +4281,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/873
   status: active
+- id: limitless-connector
+  name: Limitless Connector
+  introduced_by: docs/intake/issue-drafts/limitless-connector.md
+  introduced_at: '2026-04-27'
+  definition: Poll/stream Limitless API with cursor-based backfill, idempotency guarantees,
+    and diarized segment emission. First ingest node in the pipeline.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/875
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
