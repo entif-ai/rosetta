@@ -3875,6 +3875,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/786
   status: active
+- id: elixir-nightly-coach-loop
+  name: ELIXIR Nightly Coach Loop
+  introduced_by: docs/intake/issue-drafts/elixir-nightly-coach-loop.md
+  introduced_at: '2026-04-27'
+  definition: Self-improvement loop that analyzes failure receipts, attributes root
+    causes, generates improvements, updates policy weights, and produces coach reports
+    on a nightly cadence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/171
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
