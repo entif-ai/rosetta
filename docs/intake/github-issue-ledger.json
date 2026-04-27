@@ -4102,5 +4102,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-no-limits-vs-genesis-bios-conflict.md",
     "draftStatus": "published"
+  },
+  "soul-v4-private-party-persona-boundaries.md": {
+    "number": 972,
+    "state": "open",
+    "title": "SOUL-v4: Private Party Persona \u2014 Undefined Activation Boundaries",
+    "url": "https://github.com/entif-ai/rosetta/issues/972",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-private-party-persona-boundaries.md",
+    "draftStatus": "published"
   }
 }
