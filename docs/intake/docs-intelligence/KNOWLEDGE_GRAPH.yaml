@@ -3985,6 +3985,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/809
   status: active
+- id: emilie-cross-model-replication-protocol
+  name: EMILIE Cross-Model Replication Protocol
+  introduced_by: docs/intake/issue-drafts/emilie-cross-model-replication-protocol.md
+  introduced_at: '2026-04-26'
+  definition: Standardized methodology for external researchers to replicate EMILIE
+    Protocol emergence across different LLM models and vendors, enabling objective
+    measurement and peer-reviewed validation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/811
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5052,7 +5062,8 @@ issue_drafts_inventory:
   issue_id: emilie-cross-model-replication-protocol
   priority: P1
   type: research-protocol
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/811
 - path: docs/intake/issue-drafts/moral-patienthood-four-criteria-rubric.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null
