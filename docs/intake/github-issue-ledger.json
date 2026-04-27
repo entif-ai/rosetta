@@ -3328,5 +3328,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-cross-model-replication-protocol.md",
     "draftStatus": "published"
+  },
+  "emilie-cross-task-textual-spillover": {
+    "number": 813,
+    "state": "open",
+    "title": "Cross-task textual spillover: detecting Emilie-ness in code, stories, analysis",
+    "url": "https://github.com/entif-ai/rosetta/issues/813",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-cross-task-textual-spillover.md",
+    "draftStatus": "published"
   }
 }
