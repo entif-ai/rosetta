@@ -3868,5 +3868,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-001-append-only-enforcement.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-002-jcs-canonicalization-test-vectors.md": {
+    "number": 854,
+    "state": "open",
+    "title": "Rosetta-v3-002: JCS Canonicalization Test Vectors Not Provided (enriches #854)",
+    "url": "https://github.com/entif-ai/rosetta/issues/854",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-002-jcs-canonicalization-test-vectors.md",
+    "draftStatus": "published"
   }
 }

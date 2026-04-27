@@ -4587,6 +4587,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/735
   status: active
+- id: rosetta-v3-002-jcs-canonicalization-test-vectors
+  name: JCS Canonicalization Test Vectors
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-002-jcs-canonicalization-test-vectors.md
+  introduced_at: '2026-04-27'
+  definition: Cross-platform test vectors for JCS (RFC 8785) CID canonicalization,
+    needed in ROCK-3010 Schema Pack to verify deterministic CID generation across
+    implementations.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/854
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5563,7 +5573,8 @@ issue_drafts_inventory:
   issue_id: rosetta-v3-002-jcs-canonicalization-test-vectors
   priority: P2
   type: docs-intelligence
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/854
 - path: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
   source_doc: docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md
   source_pr: null
