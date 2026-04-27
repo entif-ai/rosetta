@@ -4129,5 +4129,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-trace-directive-no-schema.md",
     "draftStatus": "published"
+  },
+  "summarization-styles.md": {
+    "number": 978,
+    "state": "open",
+    "title": "Implement domain-specific summarization style templates (Family/MoM/YT)",
+    "url": "https://github.com/entif-ai/rosetta/issues/978",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/summarization-styles.md",
+    "draftStatus": "published"
   }
 }
