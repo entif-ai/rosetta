@@ -4839,6 +4839,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/967
   status: active
+- id: soul-v4-no-limits-vs-genesis-bios-conflict
+  name: 'SOUL-v4: Unbounded candor vs Genesis BIOS conflict'
+  introduced_by: docs/intake/issue-drafts/soul-v4-no-limits-vs-genesis-bios-conflict.md
+  introduced_at: '2026-04-27'
+  definition: 'Two SOUL.md v4.1 directives conflict: bullet 10 grants unbounded candor
+    with no exception, while bullet 2 limits override authority with Genesis BIOS
+    constraints. No resolution hierarchy is defined.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/970
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

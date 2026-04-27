@@ -4093,5 +4093,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-evolution-md-dependency.md",
     "draftStatus": "published"
+  },
+  "soul-v4-no-limits-vs-genesis-bios-conflict.md": {
+    "number": 970,
+    "state": "open",
+    "title": "SOUL-v4: Unbounded candor conflicts with Genesis BIOS constraints",
+    "url": "https://github.com/entif-ai/rosetta/issues/970",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-no-limits-vs-genesis-bios-conflict.md",
+    "draftStatus": "published"
   }
 }
