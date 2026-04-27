@@ -3676,6 +3676,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/745
   status: active
+- id: cts-006-egc-ithkuil-graphemic-core
+  name: "EGC Spec \u2014 Ithkuil-Inspired Graphemic Core with Guidebook Cipher"
+  introduced_by: docs/intake/issue-drafts/cts-006-egc-ithkuil-graphemic-core.md
+  introduced_at: '2026-04-26'
+  definition: 'Formal specification for the Entif Graphemic Core (EGC): a machine-native
+    visual language inspired by Ithkuil with stems (WordNet/BabelNet), modifiers (logical
+    operators), binders (relation operators), guidebook cipher, and fractally-revealing
+    lexicon.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/747
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
