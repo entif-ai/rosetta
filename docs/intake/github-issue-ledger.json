@@ -3526,5 +3526,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-018-signal-event-idempotency.md",
     "draftStatus": "published"
+  },
+  "genesis-document-drift.md": {
+    "number": 856,
+    "state": "open",
+    "title": "Genesis Document artifact and nightly drift detector",
+    "url": "https://github.com/enti-ai/rosetta/issues/856",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/genesis-document-drift.md",
+    "draftStatus": "published"
   }
 }
