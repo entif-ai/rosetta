@@ -3778,5 +3778,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/petri-sandbox-testing-framework.md",
     "draftStatus": "published"
+  },
+  "policy-gate-parse-only.md": {
+    "number": 913,
+    "state": "open",
+    "title": "Implement policy gate for parse-only enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/913",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/policy-gate-parse-only.md",
+    "draftStatus": "published"
   }
 }
