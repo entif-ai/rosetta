@@ -3835,6 +3835,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/776
   status: active
+- id: donor-fit-verification
+  name: Donor Fit Map Exclusion Verification
+  introduced_by: docs/intake/issue-drafts/donor-fit-verification.md
+  introduced_at: '2026-04-26'
+  definition: 'Ablation issue to verify DONOR_FIT_MAP governance exclusions are being
+    enforced: no donor tarball imports, no donor ontology promoted over Rosetta, no
+    donor memory stack replacing constitutional cache or receipt bundle logic.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/778
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
