@@ -4739,6 +4739,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/952
   status: active
+- id: sba-008-tailscale-exit-node-vpn-compatibility
+  name: "SBA-008: Tailscale Exit Node \u2014 Corporate VPN Compatibility"
+  introduced_by: docs/intake/issue-drafts/sba-008-tailscale-exit-node-vpn-compatibility.md
+  introduced_at: '2026-04-27'
+  definition: Analysis of corporate MDM VPN conflicts, asymmetric routing, and iOS
+    Tailscale client limitations when using a Tailscale exit node for routing all
+    iPhone internet traffic through the home edge node.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/954
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
