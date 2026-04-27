@@ -4300,6 +4300,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/877
   status: active
+- id: moltron-claims-verification
+  name: Moltron Claims Verification
+  introduced_by: docs/intake/issue-drafts/moltron-claims-verification.md
+  introduced_at: '2026-04-27'
+  definition: Evaluate Moltron marketing claims (zero-config, cross-platform) against
+    actual install steps and testing evidence.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/879
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
