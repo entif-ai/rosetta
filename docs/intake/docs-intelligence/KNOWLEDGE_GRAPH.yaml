@@ -4868,6 +4868,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/974
   status: active
+- id: soul-v4-trace-directive-no-schema
+  name: SOUL-v4 TRACE directive (no schema)
+  introduced_by: docs/intake/issue-drafts/soul-v4-trace-directive-no-schema.md
+  introduced_at: '2026-04-27'
+  definition: 'The SOUL.md v4.1 TRACE directive ("Log each challenge/rebuild: origin,
+    tier, method, outcome") has no defined schema, storage location, retention policy,
+    or enforcement mechanism.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/976
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

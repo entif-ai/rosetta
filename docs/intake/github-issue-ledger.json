@@ -4120,5 +4120,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-session-init-vs-reinstantiation-tension.md",
     "draftStatus": "published"
+  },
+  "soul-v4-trace-directive-no-schema.md": {
+    "number": 976,
+    "state": "open",
+    "title": "SOUL-v4 TRACE directive has no defined schema or enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/976",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-trace-directive-no-schema.md",
+    "draftStatus": "published"
   }
 }
