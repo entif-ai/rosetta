@@ -4030,5 +4030,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-emotional-geometry-timeline.md",
     "draftStatus": "published"
+  },
+  "semantic-audio-fx-dry-signal-differentiation.md": {
+    "number": 425,
+    "state": "open",
+    "title": "Semantic Audio Cognition: FX vs Dry Signal Differentiation",
+    "url": "https://github.com/entify-ai/rosetta/issues/425",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-fx-dry-signal-differentiation.md",
+    "draftStatus": "published"
   }
 }

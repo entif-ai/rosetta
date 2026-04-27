@@ -4769,6 +4769,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/425
   status: active
+- id: semantic-audio-fx-dry-signal-differentiation
+  name: Semantic Audio FX vs Dry Signal Differentiation
+  introduced_by: docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md
+  introduced_at: '2026-04-27'
+  definition: Distinguishing processed audio qualities from dry/origin signal so meaning
+    is not assigned to artifacts without provenance. Researches spectral-analysis
+    or diffusion-based approaches for FX detection.
+  referenced_by:
+  - https://github.com/entify-ai/rosetta/issues/425
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
