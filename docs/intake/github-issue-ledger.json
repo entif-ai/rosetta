@@ -3607,5 +3607,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/moltron-claims-verification.md",
     "draftStatus": "published"
+  },
+  "moltron-crypto-disclaimer.md": {
+    "number": 879,
+    "state": "open",
+    "title": "Moltron Crypto Non-Endorsement (enriches #879)",
+    "url": "https://github.com/entif-ai/rosetta/issues/879",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/moltron-crypto-disclaimer.md",
+    "draftStatus": "published"
   }
 }
