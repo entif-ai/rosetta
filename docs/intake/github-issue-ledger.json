@@ -3076,5 +3076,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-012-roma-multi-pass-financial-pdf-poc.md",
     "draftStatus": "published"
+  },
+  "cts-013-egc-combinatorics-risk.md": {
+    "number": 747,
+    "state": "open",
+    "title": "CTS-013: EGC Combinatorics/Esoteric Risk \u2014 Address Space Explosion Prevention (complements #747)",
+    "url": "https://github.com/entif-ai/rosetta/issues/747",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-013-egc-combinatorics-risk.md",
+    "draftStatus": "published"
   }
 }
