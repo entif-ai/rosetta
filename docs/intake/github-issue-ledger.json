@@ -3562,5 +3562,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-020-structured-refusal-detection.md",
     "draftStatus": "published"
+  },
+  "harness-platform-mismatch-root-cause.md": {
+    "number": 735,
+    "state": "open",
+    "title": "Platform Mismatch as Root Cause of All Agentic Failures",
+    "url": "https://github.com/entif-ai/rosetta/issues/735",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/harness-platform-mismatch-root-cause.md",
+    "draftStatus": "published"
   }
 }
