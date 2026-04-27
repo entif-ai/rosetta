@@ -3745,6 +3745,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/757
   status: active
+- id: cts-016-swarm-gnosis-zk-proof-trust-bootstrap
+  name: Swarm Gnosis ZK-Proof Validation + Trust Bootstrap Mechanism
+  introduced_by: docs/intake/issue-drafts/cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md
+  introduced_at: '2026-04-26'
+  definition: ZK-proof validation per tile at ingestion is required, but the trust
+    bootstrap mechanism for peers to establish trust without a centralized CA is undefined.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/759
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
