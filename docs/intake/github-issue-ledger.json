@@ -3661,5 +3661,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/trend-technicals-content-characteristic-ontology.md",
     "draftStatus": "published"
+  },
+  "omc-four-zone-compaction-thresholds.md": {
+    "number": 832,
+    "state": "open",
+    "title": "OMC Four-Zone Compaction Thresholds",
+    "url": "https://github.com/entif-ai/rosetta/issues/832",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-four-zone-compaction-thresholds.md",
+    "draftStatus": "published"
   }
 }
