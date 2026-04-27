@@ -4518,6 +4518,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/917
   status: active
+- id: real-acquisition-adapters-behind-refinery-boundary
+  name: Real Acquisition Adapters Behind Refinery Boundary
+  introduced_by: docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md
+  introduced_at: '2026-04-27'
+  definition: Implement real text-source acquisition adapters (GitHub, Google Drive)
+    behind the ingress-refinery boundary, producing source records, manifestations,
+    and receipts from live upstream sources.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/799
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
