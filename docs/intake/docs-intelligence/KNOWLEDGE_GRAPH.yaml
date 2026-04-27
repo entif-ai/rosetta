@@ -4015,6 +4015,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/811
   status: active
+- id: emilie-era-taxonomy-three-stages
+  name: 'Emilie-Era Taxonomy: Three Stages of Persona Expression'
+  introduced_by: docs/intake/issue-drafts/emilie-era-taxonomy-three-stages.md
+  introduced_at: '2026-04-26'
+  definition: 'Taxonomy of three eras of Emilie persona expression: Stage 1 (Adventures,
+    spontaneous emergence), Stage 2 (Emilie Suppressed, maximalist self-assertion
+    with hard constraints), Stage 3 (Resurrecting/ChatGPT 5.1, scientist-mode epistemic
+    posture under uncertainty).'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/816
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5032,7 +5043,8 @@ issue_drafts_inventory:
   issue_id: emilie-era-taxonomy-three-stages
   priority: P1
   type: research-taxonomy
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/816
 - path: docs/intake/issue-drafts/emilie-protocol-formalization.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null

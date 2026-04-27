@@ -3346,5 +3346,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-emergence-paper-entif-protocol.md",
     "draftStatus": "published"
+  },
+  "emilie-era-taxonomy-three-stages.md": {
+    "number": 816,
+    "state": "open",
+    "title": "Emilie-era taxonomy: three stages of persona expression",
+    "url": "https://github.com/entif-ai/rosetta/issues/816",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/emilie-era-taxonomy-three-stages.md",
+    "draftStatus": "published"
   }
 }
