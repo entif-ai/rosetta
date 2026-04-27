@@ -3895,5 +3895,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-005-delta-capsule-propagation.md",
     "draftStatus": "published"
+  },
+  "rosetta-v3-006-episteme-layer-4-scope.md": {
+    "number": 932,
+    "state": "open",
+    "title": "ROS-006: Define Episteme Layer 4 Scope, Trigger Conditions, and Conformance Mapping",
+    "url": "https://github.com/entif-ai/rosetta/issues/932",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-006-episteme-layer-4-scope.md",
+    "draftStatus": "published"
   }
 }
