@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes.entificorp.ai/schemas/omni-ingest/workflow-manifest.json",
+  "title": "Omni-Ingest Workflow Manifest",
+  "description": "Schema for Stage 1 (Detect) workflow manifest — the intake record for every content entering the omni-ingest pipeline. Produced by detectors (webhook, cron_rss, file_drop, email, arxiv, user_submit). Consumed by all downstream stages.",
+  "type": "object",
+  "required": ["workflowId", "stage", "triggeredAt", "trigger"],
+  "properties": {
+    "workflowId": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "minLength": 1,
+      "description": "Unique workflow identifier. Used as the primary key for all bus/ledger files."
+    },
+    "stage": {
+      "type": "string",
+      "const": "01-detect",
+      "description": "Stage that emitted this manifest. Always '01-detect' for new workflows."
+    },
+    "triggeredAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp in UTC when the trigger was fired."
+    },
+    "trigger": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["webhook", "cron_rss", "file_drop", "email", "arxiv", "user_submit"],
+          "description": "Detector that produced this manifest."
+        },
+        "sourceRef": {
+          "type": ["string", "null"],
+          "description": "Canonical reference to the original content (URL, file path, IMAP UID, arXiv ID, etc.)."
+        },
+        "contentTypeHint": {
+          "type": ["string", "null"],
+          "description": "MIME type hint from the detector (may be overridden by Stage 2 normalization).",
+          "examples": ["text/html", "application/pdf", "text/plain", "message/rfc822"]
+        },
+        "userInstructions": {
+          "type": ["string", "null"],
+          "description": "Optional human instructions passed through from user_submit or webhook payload."
+        },
+        "signature": {
+          "type": ["string", "null"],
+          "description": "HMAC signature from webhook for payload verification."
+        }
+      }
+    },
+    "contentMeta": {
+      "type": "object",
+      "properties": {
+        "originalFilename": {
+          "type": ["string", "null"],
+          "description": "Original filename if applicable (email attachment, uploaded file, etc.)."
+        },
+        "mtime": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Last-modified time of the source content."
+        },
+        "mimeType": {
+          "type": ["string", "null"],
+          "description": "Detected or declared MIME type."
+        },
+        "sizeBytes": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Content size in bytes."
+        },
+        "checksum": {
+          "type": ["string", "null"],
+          "description": "SHA-256 hex digest of the raw content for deduplication."
+        }
+      }
+    },
+    "retryCount": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Number of times this workflow has been retried."
+    },
+    "parentWorkflowId": {
+      "type": ["string", "null"],
+      "description": "If this workflow was spawned by another (e.g., sub-agent result processing), reference to the parent."
+    }
+  },
+  "additionalProperties": true
+}

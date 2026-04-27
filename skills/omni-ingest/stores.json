@@ -1,0 +1,59 @@
+{
+  "stores": [
+    {
+      "name": "markdown",
+      "enabled": true,
+      "planes": ["semantic", "episodic"],
+      "handler": "store_markdown.py",
+      "description": "Date-based Markdown files under ~/.hermes/memory/",
+      "config": {
+        "basePath": "~/.hermes/memory",
+        "dateBasedDirs": true
+      }
+    },
+    {
+      "name": "qmd",
+      "enabled": true,
+      "planes": ["semantic"],
+      "handler": "store_qmd.py",
+      "description": "Appends structured entries to QMD corpus",
+      "config": {
+        "corpusPath": "~/.hermes/QMD"
+      }
+    },
+    {
+      "name": "hindsight",
+      "enabled": true,
+      "planes": ["semantic", "episodic", "procedural"],
+      "handler": "store_hindsight.py",
+      "description": "Hindsight semantic memory bank via CLI",
+      "config": {
+        "bankId": "hermes",
+        "useEmbedCli": true
+      }
+    },
+    {
+      "name": "openbrain_ob1",
+      "enabled": true,
+      "planes": ["semantic", "episodic"],
+      "handler": "store_ob1.py",
+      "description": "OpenBrain OB1 assimilation store",
+      "config": {
+        "endpoint": "http://localhost:8080",
+        "timeoutSeconds": 30
+      }
+    },
+    {
+      "name": "honcho",
+      "enabled": false,
+      "planes": ["truth", "temporal"],
+      "handler": "store_honcho.py",
+      "description": "Honcho Postgres/pgvector canonical store (receipts, envelopes, tiles)",
+      "config": {
+        "daemonEndpoint": "http://localhost:8977",
+        "writeChunkSize": 1400
+      }
+    }
+  ],
+  "version": "0.1.0"
+}
