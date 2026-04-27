@@ -1,0 +1,14 @@
+@prefix entif: <https://entif.ai/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+entif:RrpReceipt a rdfs:Class ;
+  rdfs:label "RRP receipt" .
+
+entif:claimType a rdfs:Property ;
+  rdfs:label "claim type" .
+
+entif:receiptType a rdfs:Property ;
+  rdfs:label "receipt type" .
+
+entif:subjectCid a rdfs:Property ;
+  rdfs:label "subject cid" .

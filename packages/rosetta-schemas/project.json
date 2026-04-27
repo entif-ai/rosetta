@@ -1,0 +1,31 @@
+{
+  "name": "rosetta-schemas",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rosetta-schemas/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project rosetta-schemas --web",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": ".",
+        "command": "vitest run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts packages/rosetta-schemas/src/lib/workspace-contract.spec.ts"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/vitest.config.ts",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    }
+  }
+}

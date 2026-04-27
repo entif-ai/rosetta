@@ -1,0 +1,10 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix entif: <https://entif.ai/ns#> .
+
+entif:RrpReceiptShape
+  a sh:NodeShape ;
+  sh:targetClass entif:RrpReceipt ;
+  sh:property [ sh:path entif:claims ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:digests ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:receiptType ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:subjects ; sh:minCount 1 ] .

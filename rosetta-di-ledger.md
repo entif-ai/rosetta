@@ -6,7 +6,7 @@
 
 ## Meta
 
-- repo: /Users/cr8s/.openclaw/workspace/Code/rosetta
+- repo: ~/.openclaw/workspace/Code/rosetta
 - last_updated: 2026-04-25T09:16Z
 - total_docs_known: 119
 - total_processed: 30

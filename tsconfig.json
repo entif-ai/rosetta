@@ -1,0 +1,58 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/rosetta-api"
+    },
+    {
+      "path": "./apps/rosetta-cli"
+    },
+    {
+      "path": "./apps/rosetta-operator"
+    },
+    {
+      "path": "./packages/canonical-cache"
+    },
+    {
+      "path": "./packages/ingress-refinery"
+    },
+    {
+      "path": "./packages/projection-adapters"
+    },
+    {
+      "path": "./packages/rosetta-canon"
+    },
+    {
+      "path": "./packages/rosetta-cid"
+    },
+    {
+      "path": "./packages/rosetta-core"
+    },
+    {
+      "path": "./packages/rosetta-guard"
+    },
+    {
+      "path": "./packages/rosetta-pipeline"
+    },
+    {
+      "path": "./packages/rosetta-receipts"
+    },
+    {
+      "path": "./packages/rosetta-schemas"
+    },
+    {
+      "path": "./packages/rosetta-store"
+    },
+    {
+      "path": "./packages/rosetta-tapestry"
+    },
+    {
+      "path": "./packages/source-registry"
+    },
+    {
+      "path": "./packages/source-substrate"
+    }
+  ]
+}
