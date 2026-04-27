@@ -4597,6 +4597,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/854
   status: active
+- id: rosetta-v3-003-trust-bootstrap-model
+  name: Trust Bootstrap Model
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-003-trust-bootstrap-model.md
+  introduced_at: '2026-04-25'
+  definition: 'Specification gap: Rosetta v3.0 tile signatures (Receipt, Policy) reference
+    genesis keys and attestation chains but do not define how a new node establishes
+    trust before any receipts exist.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/96
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
