@@ -3794,6 +3794,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/768
   status: active
+- id: df-010-json-store-scaling-bottleneck
+  name: DeerFlow JSON Store Scaling Bottleneck
+  introduced_by: docs/intake/issue-drafts/df-010-json-store-scaling-bottleneck.md
+  introduced_at: '2026-04-26'
+  definition: "DeerFlow uses JSON files for thread/memory persistence with no transactions,\
+    \ locking, or compaction \u2014 under high concurrency this serializes on I/O\
+    \ and risks state corruption."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/770
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
