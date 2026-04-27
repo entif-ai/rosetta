@@ -4337,6 +4337,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/883
   status: active
+- id: omc-crdt-overlay-library-choice
+  name: OMC CRDT Overlay Library Choice
+  introduced_by: docs/intake/issue-drafts/omc-crdt-overlay-library-choice.md
+  introduced_at: '2026-04-27'
+  definition: Select a CRDT library and data model for OMC mutable overlay layer,
+    defining merge boundaries and persistence contracts.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/885
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -4779,6 +4788,8 @@ issue_drafts_inventory:
   issue_id: omc-crdt-overlay-library-choice
   priority: P2
   type: implementation
+  url: https://github.com/entif-ai/rosetta/issues/885
+  status: published
 - path: docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
