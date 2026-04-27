@@ -3481,5 +3481,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-013-postmortem-artifact-template.md",
     "draftStatus": "published"
+  },
+  "entify-v0-014-constitution-scope-delta-matrix.md": {
+    "number": 848,
+    "state": "open",
+    "title": "ENTIF-v0-014: Constitutions Scope Difference Matrix \u2014 Single-Tenant vs Multi-Tenant Incomplete",
+    "url": "https://github.com/entify-ai/rosetta/issues/848",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-014-constitution-scope-delta-matrix.md",
+    "draftStatus": "published"
   }
 }
