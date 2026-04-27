@@ -3103,5 +3103,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-015-gnn-decoder-fidelity-benchmark.md",
     "draftStatus": "published"
+  },
+  "cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md": {
+    "number": 759,
+    "state": "open",
+    "title": "CTS-016: Swarm Gnosis ZK-Proof Validation + Trust Bootstrap Mechanism",
+    "url": "https://github.com/entif-ai/rosetta/issues/759",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-016-swarm-gnosis-zk-proof-trust-bootstrap.md",
+    "draftStatus": "published"
   }
 }
