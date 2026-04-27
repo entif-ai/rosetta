@@ -3490,5 +3490,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-014-constitution-scope-delta-matrix.md",
     "draftStatus": "published"
+  },
+  "entify-v0-015-model-routing-thresholds.md": {
+    "number": 851,
+    "state": "open",
+    "title": "ENTIF-v0-015: Model Routing Decision Flow \u2014 Threshold Values Not Provided",
+    "url": "https://github.com/entif-ai/rosetta/issues/851",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-015-model-routing-thresholds.md",
+    "draftStatus": "published"
   }
 }
