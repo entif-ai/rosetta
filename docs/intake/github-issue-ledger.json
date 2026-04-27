@@ -3913,5 +3913,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/rosetta-v3-010-translator-tile-versioning.md",
     "draftStatus": "published"
+  },
+  "sac-001-audio-source-identity-prosodic-vs-biometric.md": {
+    "number": 425,
+    "state": "open",
+    "title": "SAC-001: Audio Source Identity \u2014 Prosodic Signature vs Biometric Fingerprinting",
+    "url": "https://github.com/entif-ai/rosetta/issues/425",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-001-audio-source-identity-prosodic-vs-biometric.md",
+    "draftStatus": "published"
   }
 }
