@@ -3256,5 +3256,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-003-durable-canonical-cache.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-004-docs-intelligence-productization.md": {
+    "number": 795,
+    "state": "open",
+    "title": "PRD-004: Docs Intelligence Productization \u2014 Extraction Artifacts and Issue Promotion Pipeline",
+    "url": "https://github.com/entif-ai/rosetta/issues/795",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-004-docs-intelligence-productization.md",
+    "draftStatus": "published"
   }
 }
