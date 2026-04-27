@@ -4190,7 +4190,7 @@ concepts:
   status: active
 - id: entify-v0-017-jcs-canonicalization-algorithm
   name: "JCS Canonicalization \u2014 Deterministic Algorithm Unspecified"
-  introduced_by: docs/intake/issue-drafts/entify-v0-017-jcs-canonicalization-algorithm.md
+  introduced_by: docs/intake/issue-drafts/entif-v0-017-jcs-canonicalization-algorithm.md
   introduced_at: '2026-04-27'
   definition: JCS (JSON Canonicalization Scheme, RFC 8785) canonicalization procedure
     is not specified as a deterministic algorithm with test vectors, breaking the
