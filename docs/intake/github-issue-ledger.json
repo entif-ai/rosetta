@@ -3733,5 +3733,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned.md",
     "draftStatus": "published"
+  },
+  "pasigraphy-layer-dependency-direction.md": {
+    "number": 904,
+    "state": "open",
+    "title": "Clarify Layer Dependency Direction Rules Across Rosetta's Five Layers",
+    "url": "https://github.com/entif-ai/rosetta/issues/904",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/pasigraphy-layer-dependency-direction.md",
+    "draftStatus": "published"
   }
 }
