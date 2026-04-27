@@ -3634,5 +3634,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-constitutional-memory-mutation-policy.md",
     "draftStatus": "published"
+  },
+  "omc-crdt-overlay-library-choice.md": {
+    "number": 885,
+    "state": "open",
+    "title": "Select CRDT strategy for OMC mutable overlays",
+    "url": "https://github.com/entif-ai/rosetta/issues/885",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/omc-crdt-overlay-library-choice.md",
+    "draftStatus": "published"
   }
 }
