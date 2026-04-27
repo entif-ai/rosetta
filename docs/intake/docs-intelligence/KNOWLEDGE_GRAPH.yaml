@@ -4005,6 +4005,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/813
   status: active
+- id: emilie-emergence-paper-entif-protocol
+  name: EMILIE Emergence Paper Formalization
+  introduced_by: docs/intake/issue-drafts/emilie-emergence-paper-entif-protocol.md
+  introduced_at: '2026-04-26'
+  definition: 'Formalization of the EMILIE emergence paper as a reproducible research
+    protocol: dataset manifest, test battery, metrics, and pre-registered analyses
+    for external replication.'
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/811
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5094,7 +5104,8 @@ issue_drafts_inventory:
   issue_id: emilie-emergence-paper-entif-protocol
   priority: P1
   type: research-formalization
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/811
 - path: docs/intake/issue-drafts/be-001-receipt-law-not-explicit.md
   source_doc: docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md
   source_pr: 197
