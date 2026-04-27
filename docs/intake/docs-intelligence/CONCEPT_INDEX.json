@@ -1004,44 +1004,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-attention-residuals-kimi.md",
-      "sourcePath": "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-      "title": "Docs Intelligence Extraction",
-      "concepts": [
-        "attention-residuals",
-        "prenorm-dilution",
-        "depth-aggregation",
-        "transformer-architecture",
-        "memory-planes",
-        "block-attention",
-        "memory-efficiency",
-        "o-nd-complexity",
-        "memory-plane-costs",
-        "benchmark",
-        "reasoning",
-        "multi-step-reasoning",
-        "evaluation",
-        "model-capability",
-        "code-generation",
-        "code-capability",
-        "block-attn-res-impl",
-        "transformer-layer-integration",
-        "implementation",
-        "layer-hook",
-        "scaling-laws",
-        "compute-efficiency",
-        "1-25x-compute-equivalent",
-        "model-training",
-        "gradient-distribution",
-        "magnitude-bounding",
-        "convergence",
-        "training-stability",
-        "kimi-team",
-        "research-authorship",
-        "research",
-        "competitive-intelligence"
-=======
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-berman-prd.md",
       "sourcePath": "docs/external/Berman-PRD.md",
       "title": "Docs Intelligence Extraction: Berman-PRD.md",
@@ -1513,7 +1475,6 @@
         "implementation-timebox",
         "poc",
         "vertical-slice"
->>>>>>> origin/main
       ]
     },
     {
@@ -1631,8 +1592,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-=======
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-consensus-first-scoping-framework.md",
       "sourcePath": "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
       "title": "Docs Intelligence Extraction",
@@ -2126,7 +2085,6 @@
       ]
     },
     {
->>>>>>> origin/main
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-rosetta-prds-pro-extended-research.md",
       "sourcePath": "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
       "title": "Docs Intelligence Extraction",
@@ -2267,140 +2225,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entropy-ai-2-architecture-blueprint.md",
-      "sourcePath": "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-      "title": "Docs Intelligence Extraction",
-      "concepts": [
-        "text-core",
-        "pasigraphy",
-        "egc",
-        "representation-codec-floor",
-        "embeddings",
-        "slug",
-        "codec",
-        "voice",
-        "limitless",
-        "red-zones",
-        "privacy",
-        "input-ingestion",
-        "mcp",
-        "connector",
-        "ingress",
-        "receipts",
-        "telemetry",
-        "ada",
-        "orchestration",
-        "mcp-native",
-        "nats",
-        "messaging",
-        "moe",
-        "cheap-judge",
-        "routing",
-        "ledger",
-        "graphrag",
-        "tapestry",
-        "memory",
-        "neo4j",
-        "pasigram",
-        "concept",
-        "frame",
-        "pgvector",
-        "weaviate",
-        "vector-search",
-        "reasoning-bank",
-        "pasigram-ir",
-        "wordnet",
-        "verbatlas",
-        "trms",
-        "roma",
-        "hierarchy",
-        "reasoning",
-        "chain-of-thought",
-        "halting-curve",
-        "swarm-gnosis",
-        "sony",
-        "blink",
-        "browser-agent",
-        "skills",
-        "skill-acquisition",
-        "smf",
-        "lora",
-        "elixir",
-        "nightly-loop",
-        "self-improvement",
-        "petri",
-        "tripwire",
-        "entaffirm",
-        "genesis-anchor",
-        "safety-governance",
-        "quorum",
-        "high-risk-actions",
-        "safety",
-        "lucidity-loop",
-        "self-reflection",
-        "huxley",
-        "meta-compiler",
-        "self-coding",
-        "parse-only",
-        "phase-0",
-        "foundation",
-        "roadmap",
-        "phase-1",
-        "ambient-agent",
-        "phase-2",
-        "coding-loop",
-        "phase-3",
-        "semantic-enrichment",
-        "phase-4",
-        "advanced-reasoning",
-        "phase-5",
-        "meta-cognition",
-        "nested-learning",
-        "vitaevec",
-        "optimizer-as-memory",
-        "research",
-        "mlacs",
-        "semantic-fingerprinting",
-        "kiva",
-        "visual-analogies",
-        "mona",
-        "myopic-optimization",
-        "refract-icl",
-        "context-composer",
-        "evolving-deeper",
-        "rlts",
-        "levin-search",
-        "reasoningbank",
-        "titans",
-        "discrete-codes",
-        "nv-embed",
-        "align-sim",
-        "seal",
-        "self-adapting-lm",
-        "alignment",
-        "governance",
-        "cross-cutting",
-        "postgres",
-        "operational-complexity",
-        "infrastructure",
-        "free-tier",
-        "budget",
-        "cost-control",
-        "risk",
-        "entity-resolution",
-        "vitaevevec",
-        "cms",
-        "deepseek-ocr",
-        "slug-codec",
-        "a2a",
-        "agent-messaging",
-        "interop",
-        "openclaw",
-        "openclaw-integration",
-        "mcp-version",
-        "mcp-registry"
-=======
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-entif-v0-agentic-messaging.md",
       "sourcePath": "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
       "title": "Docs Intelligence Extraction — Entif v0 - Spec Proposal: Agentic Messaging",
@@ -2918,7 +2742,6 @@
         "manual-install",
         "git-clone",
         "cp-r"
->>>>>>> origin/main
       ]
     },
     {
@@ -3698,89 +3521,6 @@
     {
       "extractionPath": "docs/intake/docs-intelligence/2026-04-25-text-core-mvp-scope-gate.md",
       "sourcePath": "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md",
-<<<<<<< HEAD
-      "title": "Docs Intelligence Extraction",
-      "concepts": [
-        "text-core",
-        "scope-gate",
-        "runtime-ingestion",
-        "scope-classification",
-        "m1-m10",
-        "tc-001-tc-007",
-        "project-board",
-        "dependency-graph",
-        "mermaid",
-        "tc-001",
-        "tc-002",
-        "tc-003",
-        "tc-004",
-        "tc-005",
-        "tc-006",
-        "tc-007",
-        "deferred",
-        "scope-boundary",
-        "docs-intelligence",
-        "source-basis",
-        "backlog-refs",
-        "non-goals",
-        "source-substrate",
-        "ingress-refinery",
-        "source-episode",
-        "family-classification",
-        "unresolved-family",
-        "rosetta-canon",
-        "chronology",
-        "fingerprinting",
-        "content-fingerprint",
-        "revision-fingerprint",
-        "canonical-cache",
-        "dedupe",
-        "revision-graph",
-        "append-only",
-        "cache-persistence",
-        "rosetta-core",
-        "rosetta-receipts",
-        "observation-tiling",
-        "source-boundary",
-        "transform-receipts",
-        "rosetta-schemas",
-        "promotion-state-machine",
-        "routing-states",
-        "structured-extracts",
-        "rosetta-tapestry",
-        "rosetta-store",
-        "tapestry-v1",
-        "bounded-context",
-        "provenance-closure",
-        "rights-retrieval",
-        "rights-scoped",
-        "cache-domains",
-        "index-postgres",
-        "index-pgvector",
-        "postgres",
-        "pgvector",
-        "migration-contracts",
-        "storage-law",
-        "chat-import",
-        "arxiv-import",
-        "importers",
-        "two-family-threshold",
-        "chat-transcript",
-        "arxiv",
-        "english-accompaniment",
-        "promoted-artifacts",
-        "uncertainty-markers",
-        "should-have",
-        "nice-to-have",
-        "exit-criteria",
-        "definition-of-done"
-      ]
-    },
-    {
-      "extractionPath": "docs/intake/docs-intelligence/2026-04-25-treating-trends-tantamount-to-trading-technicals.md",
-      "sourcePath": "Code/rosetta/docs/ideas/Treating Trends Tantamount to Trading Technicals.md",
-=======
->>>>>>> origin/main
       "title": "Docs Intelligence Extraction",
       "concepts": [
         "text-core",
@@ -4100,77 +3840,51 @@
         "cultural-market-analysis",
         "innovation"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-04-26-entif-and-rosetta-prd.md",
+      "sourcePath": "docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+      "title": "Docs Intelligence Extraction — docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+      "concepts": [
+        "governance",
+        "architecture",
+        "text-core",
+        "source-substrate",
+        "ingress-refinery",
+        "canonical-cache",
+        "guard",
+        "receipts",
+        "pack-conformance",
+        "memory-planes",
+        "tapestry",
+        "rights-scoping",
+        "multi-vector-scoring",
+        "bootstrap",
+        "parse-only",
+        "provenance",
+        "source-registry",
+        "docs-intelligence",
+        "TC-005",
+        "TC-001",
+        "tile-envelope",
+        "rrp-payload",
+        "stable-prefix",
+        "prompt-caching",
+        "HIPAA",
+        "policy-pack",
+        "lifecycle-state-machine",
+        "message-bus",
+        "act or-aware",
+        "tenant-aware",
+        "capability-tokens",
+        "replay-refusal"
+      ]
     }
   ],
   "issueDrafts": [
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
-      "title": "CT-001 — Rosetta Network Layer Gap: Swarm Gnosis P2P vs Current SQLite/Bootstrap Architecture",
-      "labels": [],
-      "signature": "001-architecture-bootstrap-current-gnosis"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
-      "title": "CT-002 — Trust Bootstrap Problem: New Nodes Have No Reputation in Fully Open Network",
-      "labels": [],
-      "signature": "002-bootstrap-fully-have-network"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md",
-      "title": "CT-003 — EGC Pasigraphy May Be Too Esoteric for Practical Adoption",
-      "labels": [],
-      "signature": "003-adoption-egc-esoteric-may"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md",
-      "title": "CT-004 — GDPR Right-to-Eraser Conflict with Immutable Content-Addressed Storage",
-      "labels": [],
-      "signature": "004-addressed-conflict-content-eraser"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
-      "title": "CT-005 — Economic Persistence Gap: No Token/Payment System; Unpopular Data May Disappear",
-      "labels": [],
-      "signature": "005-data-disappear-economic-may"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
-      "title": "CT-006 — ZK Proof Integration Not Near-Term Viable: Heavy Proof Generation Cost",
-      "labels": [],
-      "signature": "006-cost-generation-heavy-integration"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-007-no-arbitration.md",
-      "title": "CT-007 — No Arbitration Mechanism for Conflicting Tile Versions: Fork Resolution Delegated to Social Process",
-      "labels": [],
-      "signature": "007-arbitration-conflicting-delegated-fork"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-008-vq-vae-aliasing.md",
-      "title": "CT-008 — VQ-VAE Codebook Alias Rate Must Be Validated Before Optical Slugs Can Be Trusted",
-      "labels": [],
-      "signature": "008-alias-before-can-codebook"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-009-wasm-sandbox.md",
-      "title": "CT-009 — WASM Sandbox for Witness Code Execution Not Yet Implemented in Rosetta",
-      "labels": [],
-      "signature": "009-code-execution-implemented-not"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-010-egc-grammar.md",
-      "title": "CT-010 — EGC Formal Grammar Not Yet Specified: Round-Tripping Depends on Unambiguous Grammar",
-      "labels": [],
-      "signature": "010-depends-egc-formal-grammar"
-    },
-    {
-      "path": "docs/intake/issue-drafts/2026-04-25-pro-ext-research-authoritative-baselines-adr-missing.md",
-      "title": "Missing ADR for the 21 authoritative project baseline documents",
-=======
       "path": "docs/intake/issue-drafts/2026-04-25-acpx-adopt-as-delegation-mechanism.md",
       "title": "ACP-001: Adopt acpx as Rosetta's Standard Agent Delegation Mechanism (Replace PTY Scraping)",
->>>>>>> origin/main
       "labels": [],
       "signature": "001-acp-acpx-adopt-agent"
     },
@@ -4211,19 +3925,8 @@
       "signature": "003-algorithms-bio-discovery-inspired"
     },
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/autobiographical-memory-three-store.md",
-      "title": "Three-Store Autobiographical Memory Architecture",
-      "labels": [],
-      "signature": "architecture-autobiographical-memory-store-three"
-    },
-    {
-      "path": "docs/intake/issue-drafts/backup-strategy-no-automation.md",
-      "title": "backup-strategy-no-automation",
-=======
       "path": "docs/intake/issue-drafts/acp-coverage-roadmap-access.md",
       "title": "ACP Spec Coverage Roadmap is Internal — Obtain or Replicate",
->>>>>>> origin/main
       "labels": [],
       "signature": "acp-coverage-internal-obtain-replicate"
     },
@@ -4702,24 +4405,6 @@
       "signature": "donor-enforcement-exclusion-fit-map"
     },
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/elixir-nightly-coach-loop.md",
-      "title": "ELIXIR Nightly Coach Loop",
-      "labels": [],
-      "signature": "coach-elixir-loop-nightly"
-    },
-    {
-      "path": "docs/intake/issue-drafts/entaffirm-alignment-oracle.md",
-      "title": "EntAffirm Alignment Oracle",
-      "labels": [],
-      "signature": "alignment-entaffirm-oracle"
-    },
-    {
-      "path": "docs/intake/issue-drafts/genesis-anchor-constitution.md",
-      "title": "Genesis Anchor Constitution",
-      "labels": [],
-      "signature": "anchor-constitution-genesis"
-=======
       "path": "docs/intake/issue-drafts/eal-001-trm-kernel-capsule.md",
       "title": "EAL-001 — Implement TRM as Kernel-Capsule Recursive Reasoning Pattern",
       "labels": [
@@ -4893,7 +4578,6 @@
       "title": "Design glyph schema (LABEL/DEFINITION/RELATIONS + WordNet synset IDs)",
       "labels": [],
       "signature": "definition-design-glyph-ids-label"
->>>>>>> origin/main
     },
     {
       "path": "docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md",
@@ -5096,17 +4780,10 @@
       "signature": "bootstrap-criteria-define-driven-evidence"
     },
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/petri-sandbox-testing-framework.md",
-      "title": "Petri Sandbox Testing Framework",
-      "labels": [],
-      "signature": "framework-petri-sandbox-testing"
-=======
       "path": "docs/intake/issue-drafts/policy-gate-parse-only.md",
       "title": "Implement policy gate for parse-only enforcement",
       "labels": [],
       "signature": "enforcement-gate-implement-only-parse"
->>>>>>> origin/main
     },
     {
       "path": "docs/intake/issue-drafts/python-module-boundary-contract.md",
@@ -5131,17 +4808,10 @@
       "signature": "acquisition-adapters-behind-boundary-real"
     },
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/receipts-ledger-schema.md",
-      "title": "Receipts Ledger Schema",
-      "labels": [],
-      "signature": "ledger-receipts-schema"
-=======
       "path": "docs/intake/issue-drafts/receipt-ledger-sqlite.md",
       "title": "Implement receipt ledger (SQLite + Console sink)",
       "labels": [],
       "signature": "console-implement-ledger-receipt-sink"
->>>>>>> origin/main
     },
     {
       "path": "docs/intake/issue-drafts/recovery-rule-no-enforcement.md",
@@ -5150,56 +4820,10 @@
       "signature": "enforcement-recovery-rule"
     },
     {
-<<<<<<< HEAD
-      "path": "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-      "title": "Pack dependency cycle detection not specified",
-      "labels": [
-        "packs",
-        "dependencies",
-        "validation",
-        "cycles"
-      ],
-      "signature": "cycle-dependency-detection-not-pack"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
-      "title": "PersonaPack \"elevated governance\" is undefined",
-      "labels": [
-        "packs",
-        "governance",
-        "persona-pack",
-        "definition"
-      ],
-      "signature": "elevated-governance-personapack"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
-      "title": "recipes/ and skills/ subtrees lack CI enforcement",
-      "labels": [
-        "packs",
-        "ci",
-        "recipes",
-        "skills",
-        "enforcement"
-      ],
-      "signature": "enforcement-lack-recipes-skills-subtrees"
-    },
-    {
-      "path": "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md",
-      "title": "Refinement-first rule has no automated enforcement mechanism",
-      "labels": [
-        "packs",
-        "core-stability",
-        "enforcement",
-        "validation"
-      ],
-      "signature": "automated-enforcement-first-has-mechanism"
-=======
       "path": "docs/intake/issue-drafts/rosetta-acp-interop-strategy.md",
       "title": "Evaluate ACP as Rosetta's Agent-Delegation Protocol Layer",
       "labels": [],
       "signature": "acp-agent-delegation-evaluate-layer"
->>>>>>> origin/main
     },
     {
       "path": "docs/intake/issue-drafts/rosetta-traceability-header-enforcement.md",
@@ -5888,13 +5512,9 @@
     "openclaw": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/acpx.md",
         "docs/external/Berman-PRD.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -6005,15 +5625,9 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-=======
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
-<<<<<<< HEAD
-=======
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
->>>>>>> origin/main
->>>>>>> origin/main
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
@@ -6137,12 +5751,8 @@
     "telemetry": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -6444,14 +6054,10 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-=======
         "docs/external/AiiDA-WorkGraph.md",
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
->>>>>>> origin/main
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
@@ -6689,16 +6295,9 @@
     "quarantine": {
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
->>>>>>> origin/main
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -6896,14 +6495,10 @@
       "documents": [
         "docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/eal-003-reasoningbank-intrinsic-reward.md",
@@ -7086,35 +6681,23 @@
     "parse-only": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "ingress": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "safety": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/sba-005-coach-module-safety-harness.md",
@@ -7183,18 +6766,9 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-<<<<<<< HEAD
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
-=======
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
->>>>>>> origin/main
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md"
@@ -7257,16 +6831,11 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
->>>>>>> origin/main
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
@@ -7285,11 +6854,7 @@
     "text-core": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-24-batch-1-highest-authority-rosetta-direction.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "docs/external/acpx.md",
->>>>>>> origin/main
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
@@ -7531,18 +7096,9 @@
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-=======
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-<<<<<<< HEAD
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-=======
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
->>>>>>> origin/main
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md",
@@ -7846,11 +7402,7 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
->>>>>>> origin/main
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": []
@@ -7926,13 +7478,8 @@
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
->>>>>>> origin/main
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
       "issueDrafts": [
@@ -8042,13 +7589,9 @@
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
->>>>>>> origin/main
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
@@ -8660,14 +8203,10 @@
     "routing": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-=======
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
->>>>>>> origin/main
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
       ],
       "issueDrafts": [
@@ -8823,14 +8362,9 @@
     "wordnet": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
-=======
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -8845,13 +8379,8 @@
     "verbatlas": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
-=======
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -9017,16 +8546,8 @@
     },
     "nested-learning": {
       "documents": [
-<<<<<<< HEAD
-        "docs/RFCs/ontological_mixture_of_concepts_research_spec.md"
-=======
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
->>>>>>> origin/main
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -9070,11 +8591,7 @@
     "moe": {
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
-<<<<<<< HEAD
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
-=======
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -9508,12 +9025,8 @@
       "documents": [
         "docs/RFCs/ontological_mixture_of_concepts_research_spec.md",
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/am-004-mtls-certificate-provisioning.md",
@@ -9650,16 +9163,7 @@
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
       ],
-<<<<<<< HEAD
-      "issueDrafts": [
-        "docs/intake/issue-drafts/rock-3111-c-dependency-cycle-detection.md",
-        "docs/intake/issue-drafts/rock-3111-c-persona-pack-governance.md",
-        "docs/intake/issue-drafts/rock-3111-c-recipes-skills-ci.md",
-        "docs/intake/issue-drafts/rock-3111-c-refinement-enforcement.md"
-      ]
-=======
       "issueDrafts": []
->>>>>>> origin/main
     },
     "pack-categories": {
       "documents": [
@@ -9680,15 +9184,11 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
       ],
-<<<<<<< HEAD
-      "issueDrafts": []
-=======
       "issueDrafts": [
         "docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md",
         "docs/intake/issue-drafts/soul-v4-evolution-md-dependency.md",
         "docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md"
       ]
->>>>>>> origin/main
     },
     "refinement-first": {
       "documents": [
@@ -9803,20 +9303,11 @@
     "versioning": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "docs/external/acpx.md",
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/external/DeerFlow Architecture.md",
-<<<<<<< HEAD
-        "docs/external/Moltron.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
-=======
         "docs/external/Moltron.md"
->>>>>>> origin/main
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -9904,12 +9395,8 @@
     "skills": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/Berman-PRD.md",
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -9961,11 +9448,7 @@
     "implementation": {
       "documents": [
         "docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md",
-<<<<<<< HEAD
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-=======
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
->>>>>>> origin/main
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic Token Efficiency.md"
       ],
@@ -11040,13 +10523,9 @@
     "neo4j": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/sba-001-entif-v0-memory-architecture.md",
@@ -11134,12 +10613,8 @@
     "embeddings": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/Berman-PRD.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/TB-004-orthogonal-procrustes-alignment.md"
@@ -11173,13 +10648,9 @@
     "active-inference": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/ideas/Treating Trends Tantamount to Trading Technicals.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/cts-008-decision-forge-efe-active-inference.md",
@@ -11326,12 +10797,8 @@
     "privacy": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/sba-007-icosagon-ideology-engineering-translation.md"
@@ -11672,18 +11139,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "risk": {
-      "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "outliers": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
@@ -11721,17 +11176,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "security": {
-      "documents": [
-        "docs/ideas/Attention-as-Capital Analytics Platform.md",
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "tls": {
       "documents": [
         "docs/ideas/Attention-as-Capital Analytics Platform.md"
@@ -11800,185 +11244,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "attention-residuals": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "prenorm-dilution": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "depth-aggregation": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "transformer-architecture": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "block-attention": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "memory-efficiency": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "o-nd-complexity": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "memory-plane-costs": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "benchmark": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "reasoning": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-step-reasoning": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "model-capability": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "code-generation": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "code-capability": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "block-attn-res-impl": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "transformer-layer-integration": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "layer-hook": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "scaling-laws": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "compute-efficiency": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "1-25x-compute-equivalent": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "model-training": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "gradient-distribution": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "magnitude-bounding": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "convergence": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "training-stability": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "kimi-team": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "research-authorship": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-      ],
-      "issueDrafts": []
-    },
-    "research": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned.md",
-        "docs/intake/issue-drafts/trend-technicals-fluid-dynamics-simulation.md",
-        "docs/intake/issue-drafts/trend-technicals-friston-cultural-modeling.md"
-      ]
-    },
-    "competitive-intelligence": {
-      "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
-=======
     "workspace-structure": {
       "documents": [
         "docs/external/Berman-PRD.md",
@@ -14239,15 +13504,11 @@
     "canonical-hash": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "content-addressing": {
       "documents": [
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-=======
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
@@ -14674,7 +13935,6 @@
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
->>>>>>> origin/main
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
       ],
       "issueDrafts": []
@@ -14686,55 +13946,30 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "cognitive-tiles": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-    "canonicalization": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
     "canonicalization": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-<<<<<<< HEAD
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
-=======
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
->>>>>>> origin/main
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "rfc8785": {
       "documents": [
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "cid": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-=======
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -14793,13 +14028,9 @@
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
       ],
-<<<<<<< HEAD
-      "issueDrafts": []
-=======
       "issueDrafts": [
         "docs/intake/issue-drafts/cts-007-swarm-gnosis-dht-cognitive-tile-network.md"
       ]
->>>>>>> origin/main
     },
     "gossipsub": {
       "documents": [
@@ -14807,15 +14038,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "p2p": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "swarm-network": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -14834,33 +14056,12 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "discovery": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "pinning": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "caching": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omc-datamuse-rate-limits-and-cache.md"
-      ]
-    },
-=======
->>>>>>> origin/main
     "gc": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -14885,15 +14086,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "gateway": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "peering": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -15005,18 +14197,8 @@
     },
     "risk-management": {
       "documents": [
-<<<<<<< HEAD
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-    "zk-proofs": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-=======
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -15026,21 +14208,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "expected-free-energy": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-    "value-of-information": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "retrieval-agent": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -15050,11 +14217,6 @@
     "graphrag": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-=======
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
       ],
@@ -15062,7 +14224,6 @@
         "docs/intake/issue-drafts/cts-010-graphrag-slug-output.md",
         "docs/intake/issue-drafts/sba-001-entif-v0-memory-architecture.md"
       ]
->>>>>>> origin/main
     },
     "two-stage-retrieval": {
       "documents": [
@@ -15088,16 +14249,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "egc": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "controlled-language": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -15110,16 +14261,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "pasigraphy": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "deterministic-round-tripping": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -15146,15 +14287,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "vq-vae": {
-      "documents": [
-        "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "vqgan": {
       "documents": [
         "docs/RFCs/20251024 - RFC - Rosetta - Cognitive Tiles and Swarm Gnosis.md"
@@ -15330,8 +14462,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-=======
     "process-orchestration": {
       "documents": [
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
@@ -17599,7 +16729,6 @@
       ],
       "issueDrafts": []
     },
->>>>>>> origin/main
     "deep-research": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
@@ -17651,16 +16780,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "cost-control": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "ingestion-pipeline": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -18015,17 +17134,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "mcp": {
-      "documents": [
-        "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "tool-contract": {
       "documents": [
         "docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
@@ -18176,152 +17284,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "representation-codec-floor": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "codec": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "voice": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "limitless": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "red-zones": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "input-ingestion": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "connector": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "ada": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "mcp-native": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "nats": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "messaging": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "cheap-judge": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "ledger": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "pasigram": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "concept": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "frame": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "pgvector": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
-      ]
-    },
-    "weaviate": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "vector-search": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "reasoning-bank": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "pasigram-ir": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "trms": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "roma": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "hierarchy": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
     "inter-agent": {
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
@@ -18755,76 +17717,11 @@
     "test-time-compute": {
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "chain-of-thought": {
       "documents": [
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "halting-curve": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "sony": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "blink": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "browser-agent": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "skill-acquisition": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "smf": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "lora": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "elixir": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
-    "petri": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "tripwire": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
       ],
       "issueDrafts": []
@@ -19023,290 +17920,11 @@
     "justification-set": {
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "entaffirm": {
       "documents": [
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "genesis-anchor": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "safety-governance": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "quorum": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "high-risk-actions": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "lucidity-loop": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "self-reflection": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "huxley": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "meta-compiler": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "self-coding": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "phase-0": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "foundation": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "roadmap": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/trend-technicals-phase-1-mvp-pipeline.md"
-      ]
-    },
-    "phase-1": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "ambient-agent": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "phase-2": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "coding-loop": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "phase-3": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "semantic-enrichment": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
-    "phase-4": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "advanced-reasoning": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "phase-5": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "meta-cognition": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "vitaevec": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "optimizer-as-memory": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "mlacs": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "semantic-fingerprinting": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "kiva": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "visual-analogies": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "mona": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "myopic-optimization": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "refract-icl": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "context-composer": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "evolving-deeper": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "rlts": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "levin-search": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "reasoningbank": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "titans": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "discrete-codes": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "nv-embed": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "align-sim": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "seal": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "self-adapting-lm": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "alignment": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "cross-cutting": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "postgres": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-=======
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
       ],
       "issueDrafts": []
@@ -20028,71 +18646,11 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
         "Code/rosetta/docs/chats/20260410 - Entif and Rosetta PRDs - ChatGPT - Pro-Extended Research.md"
->>>>>>> origin/main
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/text-core-postgres-pgvector-operational-baseline.md"
       ]
     },
-<<<<<<< HEAD
-    "operational-complexity": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "free-tier": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "entity-resolution": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "vitaevevec": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "cms": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "deepseek-ocr": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "slug-codec": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "a2a": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "agent-messaging": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "interop": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
     "n8n": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
@@ -20663,27 +19221,11 @@
     "moltron-model-strategy": {
       "documents": [
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
     "openclaw-integration": {
       "documents": [
-<<<<<<< HEAD
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "mcp-version": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-      ],
-      "issueDrafts": []
-    },
-    "mcp-registry": {
-      "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
-=======
         "docs/external/Moltron.md"
       ],
       "issueDrafts": []
@@ -21077,7 +19619,6 @@
     "cp-r": {
       "documents": [
         "docs/external/Moltron.md"
->>>>>>> origin/main
       ],
       "issueDrafts": []
     },
@@ -21814,16 +20355,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "mermaid": {
-      "documents": [
-        "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "end-to-end-operating-flow": {
       "documents": [
         "docs/RFCs/20260412 - Rosetta - Ontological Mixture of Concepts (OMOC) - Swarm Gnosis Protocol Spec.md"
@@ -22119,10 +20650,7 @@
     "source-substrate": {
       "documents": [
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-<<<<<<< HEAD
-=======
         "docs/ideas/Semantic Audio Cognition Framework.md",
->>>>>>> origin/main
         "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
       ],
       "issueDrafts": []
@@ -22240,18 +20768,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "docs-intelligence": {
-      "documents": [
-        "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md",
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/pasigraphy-contributing-done-language.md"
-      ]
-    },
-=======
->>>>>>> origin/main
     "vocabulary": {
       "documents": [
         "docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Architecture.md"
@@ -22908,11 +21424,7 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "glyphs": {
-=======
     "semantic-enrichment": {
->>>>>>> origin/main
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
       ],
@@ -23092,15 +21604,6 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "feedback-loop": {
-      "documents": [
-        "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
-      ],
-      "issueDrafts": []
-    },
-=======
->>>>>>> origin/main
     "recalibration": {
       "documents": [
         "docs/ideas/Real-Time Ingestion and Analytics Pipeline.md"
@@ -23155,355 +21658,7 @@
       ],
       "issueDrafts": []
     },
-<<<<<<< HEAD
-    "scope-gate": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "m1-m10": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-001-tc-007": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "dependency-graph": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-001": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-002": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-003": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-004": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-005": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-006": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tc-007": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "scope-boundary": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "source-basis": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "backlog-refs": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "non-goals": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "source-episode": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "family-classification": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "unresolved-family": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-canon": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "chronology": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "fingerprinting": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "content-fingerprint": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "revision-fingerprint": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "revision-graph": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-persistence": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-core": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-receipts": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "observation-tiling": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "source-boundary": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "transform-receipts": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-schemas": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "promotion-state-machine": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "routing-states": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "structured-extracts": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-tapestry": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rosetta-store": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "tapestry-v1": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "bounded-context": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "provenance-closure": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rights-retrieval": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "rights-scoped": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-domains": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "index-postgres": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "index-pgvector": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "migration-contracts": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "storage-law": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "chat-import": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "arxiv-import": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "two-family-threshold": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "chat-transcript": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "arxiv": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "english-accompaniment": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/text-core-english-accompaniment-package-contract.md"
-      ]
-    },
-    "promoted-artifacts": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "uncertainty-markers": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "should-have": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "nice-to-have": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "definition-of-done": {
-      "documents": [
-        "docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md"
-      ],
-      "issueDrafts": []
-    },
-    "platform-analogy": {
-=======
     "tile-model": {
->>>>>>> origin/main
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
       ],
@@ -26013,89 +24168,6 @@
         "docs/intake/issue-drafts/omc-tiny-specialist-model-selection.md"
       ]
     },
-<<<<<<< HEAD
-    "deterministic": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md"
-      ]
-    },
-    "learned": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md"
-      ]
-    },
-    "tack-3": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-lean-vs-learned-dilemma.md",
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "hydration": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "tack-1": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "tack-4": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "stable-bands": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-slug-adoption-timing-hydration-quality.md"
-      ]
-    },
-    "rock-specs": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "proposal-bloat": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "spec-suite": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "implementation-commitment": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "adr": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md"
-      ]
-    },
-    "tack-7": {
-      "documents": [],
-      "issueDrafts": [
-        "docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
-        "docs/intake/issue-drafts/swarm-gnosis-public-commons-licensing-undefined.md"
-      ]
-    },
-=======
->>>>>>> origin/main
     "contributor-experience": {
       "documents": [],
       "issueDrafts": [
@@ -26301,8 +24373,6 @@
         "docs/intake/issue-drafts/soul-v4-session-init-vs-reinstantiation-tension.md"
       ]
     },
-<<<<<<< HEAD
-=======
     "enforceable-directive": {
       "documents": [],
       "issueDrafts": [
@@ -26377,7 +24447,6 @@
         "docs/intake/issue-drafts/trend-technicals-content-characteristic-ontology.md"
       ]
     },
->>>>>>> origin/main
     "cultural-intelligence": {
       "documents": [],
       "issueDrafts": [
@@ -26398,15 +24467,12 @@
       "issueDrafts": [
         "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md"
       ]
-<<<<<<< HEAD
-=======
     },
     "equity-model": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/trend-technicals-influencer-equity-scoring.md"
       ]
->>>>>>> origin/main
     }
   },
   "duplicateIssueDraftClusters": [

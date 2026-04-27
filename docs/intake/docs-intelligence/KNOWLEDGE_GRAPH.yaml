@@ -1,8 +1,8 @@
 meta:
   version: '0.8'
   generated: '2026-04-25T23:20:00Z'
-  total_docs_processed: 32
-  active_issue_drafts: 127
+  total_docs_processed: 33
+  active_issue_drafts: NaN
   archived_issue_drafts: 23
   total_issue_drafts_inventory: 151
   docs_intelligence_files: 31
