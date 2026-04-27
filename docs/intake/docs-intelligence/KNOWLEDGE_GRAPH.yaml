@@ -3845,6 +3845,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/778
   status: active
+- id: eal-001-trm-kernel-capsule
+  name: TRM Kernel-Capsule Recursive Reasoning Pattern
+  introduced_by: docs/intake/issue-drafts/eal-001-trm-kernel-capsule.md
+  introduced_at: '2026-04-25'
+  definition: A self-reflective scratchpad loop with iterative refinement and halting
+    check, implemented as a Kernel-Capsule pattern. Serves as the core recursive reasoning
+    primitive for ReasoningBank trace collection and persona CoT anchoring.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/781
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
