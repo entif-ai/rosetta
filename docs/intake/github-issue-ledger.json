@@ -3553,5 +3553,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-019-transferability-scorer-plane-unspecified.md",
     "draftStatus": "published"
+  },
+  "entif-v0-020-structured-refusal-detection.md": {
+    "number": 870,
+    "state": "open",
+    "title": "ENTIF-v0-020: Structured Refusal Detection and Enforcement Mechanism Not Implemented",
+    "url": "https://github.com/entif-ai/rosetta/issues/870",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-020-structured-refusal-detection.md",
+    "draftStatus": "published"
   }
 }

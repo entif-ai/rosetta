@@ -4250,6 +4250,16 @@ concepts:
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/867
   status: active
+- id: entify-v0-020
+  name: 'ENTIF-v0-020: Structured Refusal Detection'
+  introduced_by: docs/intake/issue-drafts/entif-v0-020-structured-refusal-detection.md
+  introduced_at: '2026-04-27'
+  definition: The constitutional policy evaluation step lacks a defined mechanism
+    for detecting, classifying, logging, and enforcing consequences when a tool or
+    model refusal occurs during envelope execution.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/870
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
