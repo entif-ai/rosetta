@@ -4799,6 +4799,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/938
   status: active
+- id: semantic-audio-tonal-distinction-extraction
+  name: Tonal Distinction Extraction
+  introduced_by: docs/intake/issue-drafts/semantic-audio-tonal-distinction-extraction.md
+  introduced_at: '2026-04-27'
+  definition: Extraction of intonation, pitch changes, inflection, and tonal distinctions
+    per stem or speaker source for semantic audio cognition.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/964
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5585,6 +5594,8 @@ issue_drafts_inventory:
   issue_id: semantic-audio-tonal-distinction-extraction
   priority: P2
   type: research-spike
+  url: https://github.com/entif-ai/rosetta/issues/964
+  status: published
 - path: docs/intake/issue-drafts/semantic-audio-fx-dry-signal-differentiation.md
   source_doc: docs/ideas/Semantic Audio Cognition Framework.md
   source_pr: 62

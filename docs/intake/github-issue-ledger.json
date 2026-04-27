@@ -4057,5 +4057,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-stem-isolation.md",
     "draftStatus": "published"
+  },
+  "semantic-audio-tonal-distinction-extraction.md": {
+    "number": 964,
+    "state": "open",
+    "title": "SAC: Tonal Distinction Extraction (Pitch, Intonation, Inflection)",
+    "url": "https://github.com/entif-ai/rosetta/issues/964",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-tonal-distinction-extraction.md",
+    "draftStatus": "published"
   }
 }
