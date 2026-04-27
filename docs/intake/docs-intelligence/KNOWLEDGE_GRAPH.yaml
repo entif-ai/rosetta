@@ -4667,6 +4667,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/938
   status: active
+- id: sac-004-cross-modal-parity-benchmark
+  name: Cross-Modal Audio-Visual Parity Benchmark
+  introduced_by: docs/intake/issue-drafts/sac-004-cross-modal-parity-benchmark.md
+  introduced_at: '2026-04-27'
+  definition: Benchmark framework (SEDS) for measuring whether audio comprehension
+    in Entif achieves parity with visual comprehension, defined as SEDS_audio within
+    10% of SEDS_visual.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/940
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
