@@ -3544,5 +3544,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/glyph-schema-design.md",
     "draftStatus": "published"
+  },
+  "entify-v0-019-transferability-scorer-plane-unspecified.md": {
+    "number": 867,
+    "state": "open",
+    "title": "ENTIF-v0-019: Transferability Scorer Plane \u2014 No API, Input Schema, or Output Schema Defined",
+    "url": "https://github.com/enti-ai/rosetta/issues/867",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-019-transferability-scorer-plane-unspecified.md",
+    "draftStatus": "published"
   }
 }
