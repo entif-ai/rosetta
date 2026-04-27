@@ -3193,5 +3193,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/donor-fit-verification.md",
     "draftStatus": "published"
+  },
+  "eal-001-trm-kernel-capsule.md": {
+    "number": 781,
+    "state": "open",
+    "title": "EAL-001: Implement TRM as Kernel-Capsule Recursive Reasoning Pattern",
+    "url": "https://github.com/entif-ai/rosetta/issues/781",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/eal-001-trm-kernel-capsule.md",
+    "draftStatus": "published"
   }
 }
