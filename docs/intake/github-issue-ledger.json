@@ -3445,5 +3445,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-010-model-routing-matrix-stale.md",
     "draftStatus": "published"
+  },
+  "entity-resolution-nightly.md": {
+    "number": 838,
+    "state": "open",
+    "title": "DF-013: Implement Nightly Entity Resolution (MinHash/LSH + Embeddings)",
+    "url": "https://github.com/entif-ai/rosetta/issues/838",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entity-resolution-nightly.md",
+    "draftStatus": "published"
   }
 }
