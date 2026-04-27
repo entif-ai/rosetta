@@ -4156,5 +4156,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/swarmkit-relevance-assessment.md",
     "draftStatus": "published"
+  },
+  "text-core-postgres-pgvector-operational-baseline.md": {
+    "number": 11,
+    "state": "open",
+    "title": "TC-006 Tapestry v1, rights retrieval, and Postgres/pgvector baseline",
+    "url": "https://github.com/entif-ai/rosetta/issues/11",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/text-core-postgres-pgvector-operational-baseline.md",
+    "draftStatus": "published"
   }
 }
