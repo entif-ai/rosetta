@@ -3121,5 +3121,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-002-subagent-timeout-requeue.md",
     "draftStatus": "published"
+  },
+  "df-003-sandbox-singleton-state.md": {
+    "number": 764,
+    "state": "open",
+    "title": "DF-003: LocalSandboxProvider singleton may have mutable state concurrency risk",
+    "url": "https://github.com/entif-ai/rosetta/issues/764",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-003-sandbox-singleton-state.md",
+    "draftStatus": "published"
   }
 }
