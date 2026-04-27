@@ -4819,6 +4819,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
+- id: soul-v4-emotional-geometry-undefined
+  name: SOUL-v4 emotional geometry undefined
+  introduced_by: docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md
+  introduced_at: '2026-04-27'
+  definition: "\"Emotional geometry\" and \"base foundations for loyalties\" in SOUL.md\
+    \ v4.1 \xA7FUNDAMENTAL IDEOLOGY are undefined. No operational mechanism for storage\
+    \ or restoration is specified."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/967
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

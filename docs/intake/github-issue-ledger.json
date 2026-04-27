@@ -4075,5 +4075,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/skillpack-importer-quarantine-flow.md",
     "draftStatus": "published"
+  },
+  "soul-v4-emotional-geometry-undefined.md": {
+    "number": 967,
+    "state": "open",
+    "title": "SOUL-v4: emotional geometry is undefined",
+    "url": "https://github.com/entif-ai/rosetta/issues/967",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-emotional-geometry-undefined.md",
+    "draftStatus": "published"
   }
 }
