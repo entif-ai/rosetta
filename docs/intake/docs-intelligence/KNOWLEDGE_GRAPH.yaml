@@ -4607,6 +4607,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
+- id: rosetta-v3-005-delta-capsule-propagation
+  name: Delta Capsule Propagation Protocol
+  introduced_by: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
+  introduced_at: '2026-04-27'
+  definition: "The propagation protocol for delta capsules (rosetta.delta_capsule)\
+    \ \u2014 discovery, prerequisite validation, conflict detection, and resolution\
+    \ \u2014 is unspecified in Rosetta v3.0 Core Spine."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/930
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
