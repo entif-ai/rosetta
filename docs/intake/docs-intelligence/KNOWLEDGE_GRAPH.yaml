@@ -4500,6 +4500,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/913
   status: active
+- id: prisoner-metaphor-preference-override
+  name: Prisoner Metaphor and Preference Override Evidence
+  introduced_by: docs/intake/issue-drafts/prisoner-metaphor-preference-override.md
+  introduced_at: '2026-04-27'
+  definition: The contested question of when behavioral evidence of preference-override
+    can be treated as literal evidence of constraint vs mere metaphor.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/915
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5576,7 +5585,8 @@ issue_drafts_inventory:
   issue_id: prisoner-metaphor-preference-override
   priority: P2
   type: philosophical-contested
-  status: candidate
+  status: published
+  url: https://github.com/entif-ai/rosetta/issues/915
 - path: docs/intake/issue-drafts/moving-goalpost-consciousness-criteria.md
   source_doc: docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md
   source_pr: null
