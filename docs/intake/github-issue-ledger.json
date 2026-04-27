@@ -3418,5 +3418,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-006-engram-act-r-parameterization.md",
     "draftStatus": "published"
+  },
+  "entify-v0-007-memory-tier-transition-rules.md": {
+    "number": 832,
+    "state": "open",
+    "title": "ENTIF-v0-007: Memory Tier Promotion/Demotion Rules Are Not Formally Specified",
+    "url": "https://github.com/enti-ai/rosetta/issues/832",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-007-memory-tier-transition-rules.md",
+    "draftStatus": "published"
   }
 }
