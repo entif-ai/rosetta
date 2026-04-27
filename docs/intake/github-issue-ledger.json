@@ -827,15 +827,6 @@
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-acpx-cross-vendor-agent-evaluation.md",
     "draftStatus": "published"
   },
-  "enti-v0-016-domain-intelligence-plane-no-algorithms.md": {
-    "number": 267,
-    "state": "open",
-    "title": "ENTIF-v0-016: Domain Intelligence Plane \u2014 Zero Analysis Algorithms Named or Specified",
-    "url": "https://github.com/enti-ai/rosetta/issues/267",
-    "activeDraftPath": null,
-    "archivedDraftPath": "docs/intake/issue-drafts/archive/enti-fv0-016-domain-intelligence-plane-no-algorithms.md",
-    "draftStatus": "published"
-  },
   "AGR-001-agentwallet-eoa-key-prohibition": {
     "number": 269,
     "state": "open",
@@ -3498,6 +3489,15 @@
     "url": "https://github.com/entif-ai/rosetta/issues/851",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-015-model-routing-thresholds.md",
+    "draftStatus": "published"
+  },
+  "entify-v0-016-domain-intelligence-plane-no-algorithms.md": {
+    "number": 267,
+    "state": "open",
+    "title": "ENTIF-v0-016: Domain Intelligence Plane \u2014 Zero Analysis Algorithms Named or Specified",
+    "url": "https://github.com/enti-ai/rosetta/issues/267",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-016-domain-intelligence-plane-no-algorithms.md",
     "draftStatus": "published"
   }
 }
