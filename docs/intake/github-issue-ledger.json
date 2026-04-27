@@ -3283,5 +3283,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-006-receipt-semantics-hardening.md",
     "draftStatus": "published"
+  },
+  "2026-04-26-prd-007-trust-scoring-staged-implementation": {
+    "number": 803,
+    "state": "open",
+    "title": "PRD-007: Trust Scoring \u2014 Staged Implementation (Schema Now, Evidence Future)",
+    "url": "https://github.com/entif-ai/rosetta/issues/803",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-007-trust-scoring-staged-implementation.md",
+    "draftStatus": "published"
   }
 }
