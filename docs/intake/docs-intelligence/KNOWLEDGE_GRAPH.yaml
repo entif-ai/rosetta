@@ -4046,6 +4046,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/720
   status: active
+- id: entif-v0-001
+  name: VOI Threshold Calibration
+  introduced_by: docs/intake/issue-drafts/entif-v0-001-voi-threshold-calibration.md
+  introduced_at: '2026-04-26'
+  definition: The VOI (value-of-information) threshold is the numeric calibration
+    point that gates escalation from deterministic middleware to agentic deep analysis.
+    It is referenced throughout the Entif v0 spec but never specified.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/821
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
