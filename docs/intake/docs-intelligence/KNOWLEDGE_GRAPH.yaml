@@ -3726,6 +3726,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/747
   status: active
+- id: cts-014-bio-inspired-forgetting-benchmarks
+  name: "Bio-Inspired Forgetting \u2014 Downsampling Fidelity Benchmarks"
+  introduced_by: docs/intake/issue-drafts/cts-014-bio-inspired-forgetting-benchmarks.md
+  introduced_at: '2026-04-26'
+  definition: "Benchmark specs for determining acceptable resolution loss in Tier\
+    \ 2 (50%) and Tier 3 (summary) memory forgetting thresholds \u2014 informs CTS-004\
+    \ placeholder values with empirical data."
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/743
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

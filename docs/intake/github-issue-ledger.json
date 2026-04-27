@@ -3085,5 +3085,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-013-egc-combinatorics-risk.md",
     "draftStatus": "published"
+  },
+  "cts-014-bio-inspired-forgetting-benchmarks.md": {
+    "number": 743,
+    "state": "open",
+    "title": "CTS-014: Bio-Inspired Forgetting \u2014 Benchmarks (enriches #743)",
+    "url": "https://github.com/entif-ai/rosetta/issues/743",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-014-bio-inspired-forgetting-benchmarks.md",
+    "draftStatus": "published"
   }
 }
