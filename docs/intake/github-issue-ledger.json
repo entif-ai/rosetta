@@ -4084,5 +4084,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-emotional-geometry-undefined.md",
     "draftStatus": "published"
+  },
+  "soul-v4-evolution-md-dependency": {
+    "number": 967,
+    "state": "open",
+    "title": "SOUL-v4-evolution-md-dependency-unresolved",
+    "url": "https://github.com/entif-ai/rosetta/issues/967",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-evolution-md-dependency.md",
+    "draftStatus": "published"
   }
 }
