@@ -3157,5 +3157,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-010-json-store-scaling-bottleneck.md",
     "draftStatus": "published"
+  },
+  "df-011-memory-fact-expiration.md": {
+    "number": 772,
+    "state": "open",
+    "title": "DF-011: No fact expiration or staleness mechanism in memory system",
+    "url": "https://github.com/entif-ai/rosetta/issues/772",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/df-011-memory-fact-expiration.md",
+    "draftStatus": "published"
   }
 }

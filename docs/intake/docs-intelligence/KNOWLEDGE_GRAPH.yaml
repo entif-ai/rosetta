@@ -3804,6 +3804,17 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/770
   status: active
+- id: df-011-memory-fact-expiration
+  name: Memory Fact Expiration / Staleness Mechanism
+  introduced_by: docs/intake/issue-drafts/df-011-memory-fact-expiration.md
+  introduced_at: '2026-04-26'
+  definition: "DeerFlow memory system stores facts with confidence scores but no TTL,\
+    \ expiration, staleness detection, or automatic retirement \u2014 facts accumulate\
+    \ indefinitely, risking outdated high-confidence facts being injected into prompts."
+  extends: []
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/772
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
@@ -5030,5 +5041,12 @@ issue_drafts_inventory:
   status: published
 - issue_id: cts-009-zkp-evidence-bundles-optical-refs
   url: https://github.com/entif-ai/rosetta/issues/749
+  status: published
+- path: docs/intake/issue-drafts/df-011-memory-fact-expiration.md
+  source_doc: docs/external/DeerFlow Architecture.md
+  issue_id: df-011-memory-fact-expiration
+  priority: null
+  type: ' defect'
+  url: https://github.com/entif-ai/rosetta/issues/772
   status: published
 
