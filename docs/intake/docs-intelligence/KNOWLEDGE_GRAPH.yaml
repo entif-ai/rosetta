@@ -4538,6 +4538,15 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/158
   status: active
+- id: receipts-ledger-schema
+  name: Receipt Ledger Schema Formalization
+  introduced_by: docs/intake/issue-drafts/receipts-ledger-schema.md
+  introduced_at: '2026-04-27'
+  definition: Formal schema, Typedoc/JSON Schema, and API specification for Receipt.record()
+    including retention policy and telemetry instrumentation.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/921
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"

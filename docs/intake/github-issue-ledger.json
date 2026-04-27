@@ -3823,5 +3823,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/receipt-ledger-sqlite.md",
     "draftStatus": "published"
+  },
+  "receipts-ledger-schema.md": {
+    "number": 921,
+    "state": "open",
+    "title": "REC-001: Formalize Receipt.record() API Schema and Instrumentation",
+    "url": "https://github.com/entif-ai/rosetta/issues/921",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/receipts-ledger-schema.md",
+    "draftStatus": "published"
   }
 }
