@@ -3184,5 +3184,14 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/df-014-mcp-oauth-refresh-timing.md",
     "draftStatus": "published"
+  },
+  "donor-fit-verification.md": {
+    "number": 778,
+    "state": "open",
+    "title": "Verify DONOR_FIT_MAP Exclusion Enforcement",
+    "url": "https://github.com/entif-ai/rosetta/issues/778",
+    "activeDraftPath": null,
+    "archivedDraftPath": "docs/intake/issue-drafts/archive/donor-fit-verification.md",
+    "draftStatus": "published"
   }
 }
