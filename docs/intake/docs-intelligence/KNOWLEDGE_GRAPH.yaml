@@ -3764,6 +3764,16 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/762
   status: active
+- id: df-003-sandbox-singleton-state
+  name: LocalSandboxProvider concurrency risk
+  introduced_by: docs/intake/issue-drafts/df-003-sandbox-singleton-state.md
+  introduced_at: '2026-04-26'
+  definition: LocalSandboxProvider is a singleton with no documented thread-safety,
+    posing race condition risk for any mutable shared state under concurrent thread
+    access.
+  referenced_by:
+  - https://github.com/entif-ai/rosetta/issues/764
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
