@@ -4228,5 +4228,65 @@
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/write-admission-gate-nine-step-state-machine.md",
     "draftStatus": "published"
+  },
+  "ainl-001-rosetta-agent-workflow-graph-ir": {
+    "title": "AINL-001: Define Rosetta agent workflow graph IR profile",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-001-rosetta-agent-workflow-graph-ir.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-002-strict-valid-workflow-profile": {
+    "title": "AINL-002: Add strict-valid conformance profile for Rosetta workflow artifacts",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-002-strict-valid-workflow-profile.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-003-adapter-capability-privilege-manifest": {
+    "title": "AINL-003: Add adapter capability and privilege manifest",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-003-adapter-capability-privilege-manifest.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-004-execution-tape-receipts": {
+    "title": "AINL-004: Emit execution tape receipts for deterministic replay and evaluation",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-004-execution-tape-receipts.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-005-portable-agent-workflow-bundle": {
+    "title": "AINL-005: Define portable agent workflow bundle manifest",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-005-portable-agent-workflow-bundle.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-006-mcp-validate-compile-run-inspect": {
+    "title": "AINL-006: Refine MCP validate/compile/run/inspect contract for Rosetta",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-006-mcp-validate-compile-run-inspect.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-007-graph-memory-project-isolation": {
+    "title": "AINL-007: Preserve graph-memory project isolation and typed memory-plane mapping",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-007-graph-memory-project-isolation.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-008-trajectory-pattern-promotion": {
+    "title": "AINL-008: Require receipts before trajectory-to-pattern promotion",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-008-trajectory-pattern-promotion.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-009-token-economics-benchmark-harness": {
+    "title": "AINL-009: Add token-economics benchmark harness for compile-once/run-many workflows",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-009-token-economics-benchmark-harness.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
+  },
+  "ainl-010-external-workflow-import-quarantine": {
+    "title": "AINL-010: Quarantine external workflow and agent imports before certification",
+    "activeDraftPath": "docs/intake/issue-drafts/ainl-010-external-workflow-import-quarantine.md",
+    "archivedDraftPath": null,
+    "draftStatus": "candidate"
   }
 }
