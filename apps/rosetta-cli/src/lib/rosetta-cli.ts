@@ -1,4 +1,4 @@
-import { buildBootstrapDemoSnapshot, createIngressJob } from '@entif-ai/ingress-refinery';
+import { buildBootstrapDemoSnapshot, buildBootstrapGateSnapshot, createIngressJob } from '@entif-ai/ingress-refinery';
 import { projectToMissionControl, projectToOb1Sidecar, projectToPrismShadow } from '@entif-ai/projection-adapters';
 import { verifyReceiptBundle, verifySignedReceipt } from '@entif-ai/rosetta-receipts';
 import { InMemoryTileStore } from '@entif-ai/rosetta-store';
@@ -26,7 +26,7 @@ export function buildRosettaCliOutput() {
     action: snapshot.action,
     canonicalArtifact: snapshot.canonicalArtifact,
     conformanceBundle: snapshot.conformanceBundle,
-    guardlessNote: 'This slice proves parse-only ingress, receipts, cache, and projections before side-effectful execution.',
+    bootstrapGate: buildBootstrapGateSnapshot(),
     ingressJob,
     missionControl: projectToMissionControl(snapshot.canonicalArtifact, ingressJob, snapshot.receiptBundle),
     ob1: projectToOb1Sidecar(snapshot.canonicalArtifact, snapshot.receiptBundle),

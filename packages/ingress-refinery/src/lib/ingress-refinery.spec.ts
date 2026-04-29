@@ -1,11 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
-import type { TileEnvelope } from '@entif-ai/rosetta-core';
+import { createPolicy, type TileEnvelope } from '@entif-ai/rosetta-core';
 import { verifyReceiptBundle } from '@entif-ai/rosetta-receipts';
 import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 
 import {
   buildBootstrapDemoSnapshot,
+  buildBootstrapGateSnapshot,
   createIngressJob,
   createParseOnlySourceEpisode,
   refineTextArtifact,
@@ -165,5 +166,98 @@ describe('ingress-refinery', () => {
         rightsScope: ['local-private']
       })
     ).toThrow(/parse-only/iu);
+  });
+
+  it('passes Bootstrap Green only with the ordered guarded builtin.echo proof path', () => {
+    const result = buildBootstrapGateSnapshot();
+    const repeated = buildBootstrapGateSnapshot();
+
+    expect(result.status).toBe('pass');
+    expect(result.verdict).toBe('pass');
+    expect(result.steps.map((step) => step.id)).toEqual([
+      'canonicalize-input',
+      'compute-cid',
+      'guard-decision',
+      'execute-builtin-echo',
+      'mint-observation',
+      'emit-receipt',
+      'compile-closure',
+      'verify-chain'
+    ]);
+    expect(result.steps.every((step) => step.status === 'pass')).toBe(true);
+    expect(result.steps.every((step) => typeof step.artifactCid === 'string' && step.artifactCid.length > 0)).toBe(true);
+    expect(result.guard.effect).toBe('allow');
+    expect(result.echoOutput).toBe(result.canonicalInput);
+    expect(result.receiptBundleVerification.ok).toBe(true);
+    expect(result.closureArtifact.exists).toBe(true);
+    expect(result.tapestry).toBeDefined();
+    expect(result.closureArtifact.cid).toBe(result.tapestry?.cid);
+    expect(result.steps.map((step) => step.artifactCid)).toEqual(repeated.steps.map((step) => step.artifactCid));
+    expect(result.receiptBundle.closureCids).toEqual(repeated.receiptBundle.closureCids);
+  });
+
+  it('denies Bootstrap Green when the builtin.echo guard denies execution', () => {
+    const result = buildBootstrapGateSnapshot({
+      guardRules: [
+        {
+          actionPattern: 'builtin.echo',
+          effect: 'deny',
+          id: 'policy.bootstrap.echo.denied',
+          mode: 'parse-only',
+          resourcePattern: 'builtin://echo'
+        }
+      ]
+    });
+
+    expect(result.status).toBe('deny');
+    expect(result.verdict).toBe('deny');
+    expect(result.guard.effect).toBe('deny');
+    expect(result.steps.find((step) => step.id === 'guard-decision')?.status).toBe('deny');
+    expect(result.steps.find((step) => step.id === 'execute-builtin-echo')?.status).toBe('block');
+    expect(result.receiptBundleVerification.ok).toBe(false);
+  });
+
+  it('blocks Bootstrap Green when receipt-bundle closure verification is missing a member', () => {
+    const missingPolicy = createPolicy('bootstrap echo missing external policy', 'allow', [], ['builtin.echo']);
+    const result = buildBootstrapGateSnapshot({ additionalPolicyCids: [missingPolicy.cid] });
+
+    expect(result.status).toBe('block');
+    expect(result.verdict).toBe('block');
+    expect(result.receiptBundle.closureCids).toContain(missingPolicy.cid);
+    expect(result.receiptBundleVerification.ok).toBe(false);
+    expect(result.receiptBundleVerification.errors).toContain(`Missing closure member: ${missingPolicy.cid}`);
+    expect(result.steps.find((step) => step.id === 'verify-chain')?.status).toBe('block');
+  });
+
+  it('blocks Bootstrap Green when the guard allow decision falls back to an unmatched default policy', () => {
+    const result = buildBootstrapGateSnapshot({ guardRules: [] });
+
+    expect(result.guard.effect).toBe('allow');
+    expect(result.status).toBe('block');
+    expect(result.verdict).toBe('block');
+    expect(result.errors).toContain('Guard allow decision is not backed by the bootstrap policy artifact.');
+    expect(result.steps.find((step) => step.id === 'guard-decision')?.status).toBe('block');
+    expect(result.steps.find((step) => step.id === 'execute-builtin-echo')?.status).toBe('block');
+  });
+
+  it('blocks Bootstrap Green when the guard allow decision references an unverified policy id', () => {
+    const result = buildBootstrapGateSnapshot({
+      guardRules: [
+        {
+          actionPattern: 'builtin.echo',
+          effect: 'allow',
+          id: 'policy.fake.allow',
+          mode: 'parse-only',
+          resourcePattern: 'builtin://echo'
+        }
+      ]
+    });
+
+    expect(result.guard.effect).toBe('allow');
+    expect(result.guard.policyIds).toEqual(['policy.fake.allow']);
+    expect(result.status).toBe('block');
+    expect(result.verdict).toBe('block');
+    expect(result.errors).toContain('Guard allow decision is not backed by the bootstrap policy artifact.');
+    expect(result.steps.find((step) => step.id === 'guard-decision')?.status).toBe('block');
   });
 });

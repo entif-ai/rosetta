@@ -19,6 +19,7 @@
     "@entif-ai/rosetta-canon": "workspace:*",
     "@entif-ai/rosetta-cid": "workspace:*",
     "@entif-ai/rosetta-core": "workspace:*",
+    "@entif-ai/rosetta-guard": "workspace:*",
     "@entif-ai/rosetta-receipts": "workspace:*",
     "@entif-ai/rosetta-schemas": "workspace:*",
     "@entif-ai/rosetta-store": "workspace:*",
