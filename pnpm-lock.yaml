@@ -217,6 +217,9 @@ importers:
       '@entif-ai/rosetta-core':
         specifier: workspace:*
         version: link:../rosetta-core
+      '@entif-ai/rosetta-guard':
+        specifier: workspace:*
+        version: link:../rosetta-guard
       '@entif-ai/rosetta-receipts':
         specifier: workspace:*
         version: link:../rosetta-receipts

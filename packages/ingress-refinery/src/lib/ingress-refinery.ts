@@ -1,10 +1,11 @@
-import { buildTextFingerprints, normalizePlainText } from '@entif-ai/rosetta-canon';
-import { sha256Hex } from '@entif-ai/rosetta-cid';
+import { buildTextFingerprints, canonicalizeJson, normalizePlainText, type JsonValue } from '@entif-ai/rosetta-canon';
+import { makeContentId, sha256Hex } from '@entif-ai/rosetta-cid';
 import {
   buildTile,
   createAction,
   createEvaluation,
   createObservation,
+  createPolicy,
   createRun,
   createSourceObservation,
   createToolCall,
@@ -12,8 +13,18 @@ import {
   type SourceSpanRef,
   type TileEnvelope
 } from '@entif-ai/rosetta-core';
-import { buildReceiptBundle, createReceipt, createSigningKeyPair, digestTile, signReceiptEd25519, type ReceiptPayload } from '@entif-ai/rosetta-receipts';
+import { evaluateGuard, type GuardRule } from '@entif-ai/rosetta-guard';
+import {
+  buildReceiptBundle,
+  createReceipt,
+  createSigningKeyPair,
+  digestTile,
+  signReceiptEd25519,
+  verifyReceiptBundle,
+  type ReceiptPayload
+} from '@entif-ai/rosetta-receipts';
 import { emitConformanceBundle } from '@entif-ai/rosetta-schemas';
+import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 import { compileReceiptBundleTapestry } from '@entif-ai/rosetta-tapestry';
 import {
   createSourceRecordTile,
@@ -140,6 +151,72 @@ export interface SourceObservationArtifacts {
   trustMatrix: TileEnvelope<TrustMatrix>;
 }
 
+export type BootstrapGateStatus = 'block' | 'deny' | 'fail' | 'pass';
+
+export type BootstrapGateStepId =
+  | 'canonicalize-input'
+  | 'compute-cid'
+  | 'guard-decision'
+  | 'execute-builtin-echo'
+  | 'mint-observation'
+  | 'emit-receipt'
+  | 'compile-closure'
+  | 'verify-chain';
+
+export interface BootstrapGateStepSnapshot {
+  artifactCid?: string;
+  errors: string[];
+  id: BootstrapGateStepId;
+  status: BootstrapGateStatus;
+}
+
+export interface BootstrapGateOptions {
+  additionalPolicyCids?: string[];
+  guardRules?: GuardRule[];
+  input?: JsonValue;
+  maxEchoBytes?: number;
+}
+
+export interface BootstrapGateInputPayload {
+  canonicalInput: string;
+  input: JsonValue;
+  inputCid: string;
+  purpose: 'bootstrap-gate.builtin-echo';
+}
+
+export interface BootstrapGateSnapshot {
+  canonicalInput: string;
+  closureArtifact: {
+    cid?: string;
+    exists: boolean;
+    kind: 'rosetta.tapestry';
+  };
+  echoOutput?: string;
+  errors: string[];
+  guard: {
+    decisionCid: string;
+    effect: 'allow' | 'deny';
+    policyIds: string[];
+    reason: string;
+  };
+  guardDecision: ReturnType<typeof evaluateGuard>;
+  inputArtifact: TileEnvelope<BootstrapGateInputPayload>;
+  inputCid: string;
+  policy: ReturnType<typeof createPolicy>;
+  receipt?: TileEnvelope<ReceiptPayload>;
+  receiptBundle: ReturnType<typeof buildReceiptBundle>;
+  receiptBundleVerification: {
+    errors: string[];
+    ok: boolean;
+  };
+  status: BootstrapGateStatus;
+  steps: BootstrapGateStepSnapshot[];
+  tapestry?: ReturnType<typeof compileReceiptBundleTapestry>;
+  toolCall?: ReturnType<typeof createToolCall>;
+  observation?: TileEnvelope<ObservationPayload>;
+  verdict: BootstrapGateStatus;
+}
+
 function defaultTrustAxes() {
   return {
     affiliation: 0.8,
@@ -156,6 +233,263 @@ function defaultTrustAxes() {
     recordIdentity: 0.85,
     reviewRigor: 0.6,
     stewardship: 0.85
+  };
+}
+
+const DEFAULT_BOOTSTRAP_GATE_INPUT: JsonValue = {
+  message: 'Bootstrap Green requires guarded builtin.echo receipt closure.',
+  tool: 'builtin.echo'
+};
+
+function emptyBlockedReceiptBundle(inputCid: string): ReturnType<typeof buildReceiptBundle> {
+  return {
+    bundleId: `bundle.${inputCid.slice(-12)}.blocked`,
+    closureCids: [],
+    evidenceCids: [],
+    policyCids: [],
+    receiptCid: '',
+    subjectCids: []
+  };
+}
+
+function blockedSteps(ids: BootstrapGateStepId[], error: string): BootstrapGateStepSnapshot[] {
+  return ids.map((id) => ({
+    errors: [error],
+    id,
+    status: 'block'
+  }));
+}
+
+export function buildBootstrapGateSnapshot(options: BootstrapGateOptions = {}): BootstrapGateSnapshot {
+  const input = options.input ?? DEFAULT_BOOTSTRAP_GATE_INPUT;
+  const canonicalInput = canonicalizeJson(input);
+  const inputCid = makeContentId(canonicalInput);
+  const inputArtifact = buildTile<BootstrapGateInputPayload>(
+    'rosetta.bootstrap.input',
+    {
+      canonicalInput,
+      input,
+      inputCid,
+      purpose: 'bootstrap-gate.builtin-echo'
+    },
+    { pack: 'bootstrap.gate' }
+  );
+  const policy = createPolicy(
+    'bootstrap builtin.echo no-side-effect gate',
+    'allow',
+    [
+      { field: 'action', operator: 'eq', value: 'builtin.echo' },
+      { field: 'sideEffect', operator: 'eq', value: false }
+    ],
+    ['builtin.echo']
+  );
+  const guardDecision = evaluateGuard(
+    {
+      action: 'builtin.echo',
+      mode: 'parse-only',
+      resource: 'builtin://echo',
+      sideEffect: false
+    },
+    options.guardRules ?? [
+      {
+        actionPattern: 'builtin.echo',
+        effect: 'allow',
+        id: policy.payload.policyId,
+        mode: 'parse-only',
+        resourcePattern: 'builtin://echo'
+      }
+    ]
+  );
+  const guard = {
+    decisionCid: guardDecision.cid,
+    effect: guardDecision.payload.effect,
+    policyIds: guardDecision.payload.policyIds,
+    reason: guardDecision.payload.reason
+  };
+  const guardPolicyBacked = guard.effect !== 'allow' || guard.policyIds.includes(policy.payload.policyId);
+  const guardPolicyError = 'Guard allow decision is not backed by the bootstrap policy artifact.';
+  const initialSteps: BootstrapGateStepSnapshot[] = [
+    { artifactCid: inputArtifact.cid, errors: [], id: 'canonicalize-input', status: 'pass' },
+    { artifactCid: inputCid, errors: [], id: 'compute-cid', status: 'pass' },
+    {
+      artifactCid: guardDecision.cid,
+      errors:
+        guard.effect === 'deny'
+          ? [`Guard denied builtin.echo: ${guard.reason}`]
+          : guardPolicyBacked
+            ? []
+            : [guardPolicyError],
+      id: 'guard-decision',
+      status: guard.effect === 'deny' ? 'deny' : guardPolicyBacked ? 'pass' : 'block'
+    }
+  ];
+
+  if (guard.effect !== 'allow') {
+    const errors = [`Guard denied builtin.echo: ${guard.reason}`];
+
+    return {
+      canonicalInput,
+      closureArtifact: { exists: false, kind: 'rosetta.tapestry' },
+      errors,
+      guard,
+      guardDecision,
+      inputArtifact,
+      inputCid,
+      policy,
+      receiptBundle: emptyBlockedReceiptBundle(inputCid),
+      receiptBundleVerification: { errors, ok: false },
+      status: 'deny',
+      steps: [
+        ...initialSteps,
+        ...blockedSteps(
+          ['execute-builtin-echo', 'mint-observation', 'emit-receipt', 'compile-closure', 'verify-chain'],
+          'Guard denied builtin.echo before execution.'
+        )
+      ],
+      verdict: 'deny'
+    };
+  }
+
+  if (!guardPolicyBacked) {
+    const errors = [guardPolicyError];
+
+    return {
+      canonicalInput,
+      closureArtifact: { exists: false, kind: 'rosetta.tapestry' },
+      errors,
+      guard,
+      guardDecision,
+      inputArtifact,
+      inputCid,
+      policy,
+      receiptBundle: emptyBlockedReceiptBundle(inputCid),
+      receiptBundleVerification: { errors, ok: false },
+      status: 'block',
+      steps: [
+        ...initialSteps,
+        ...blockedSteps(
+          ['execute-builtin-echo', 'mint-observation', 'emit-receipt', 'compile-closure', 'verify-chain'],
+          guardPolicyError
+        )
+      ],
+      verdict: 'block'
+    };
+  }
+
+  const maxEchoBytes = options.maxEchoBytes ?? 4096;
+  if (Buffer.byteLength(canonicalInput, 'utf8') > maxEchoBytes) {
+    const errors = [`builtin.echo input exceeds ${maxEchoBytes} byte bound.`];
+
+    return {
+      canonicalInput,
+      closureArtifact: { exists: false, kind: 'rosetta.tapestry' },
+      errors,
+      guard,
+      guardDecision,
+      inputArtifact,
+      inputCid,
+      policy,
+      receiptBundle: emptyBlockedReceiptBundle(inputCid),
+      receiptBundleVerification: { errors, ok: false },
+      status: 'fail',
+      steps: [
+        ...initialSteps,
+        { errors, id: 'execute-builtin-echo', status: 'fail' },
+        ...blockedSteps(['mint-observation', 'emit-receipt', 'compile-closure', 'verify-chain'], 'builtin.echo did not execute.')
+      ],
+      verdict: 'fail'
+    };
+  }
+
+  const toolCall = createToolCall(
+    'builtin.echo',
+    {
+      canonicalInput,
+      inputCid,
+      maxBytes: maxEchoBytes
+    },
+    [inputArtifact.cid, guardDecision.cid]
+  );
+  const echoOutput = canonicalInput;
+  const observation = createObservation('builtin.echo', echoOutput, [toolCall.cid, inputArtifact.cid]);
+  const evaluation = createEvaluation('builtin.echo output matches canonical input under allow guard.', 'pass', [
+    guardDecision.cid,
+    observation.cid
+  ]);
+  const receipt = createReceipt({
+    claims: [
+      {
+        claimType: 'rrp:claim.bootstrap-gate.guarded-echo',
+        confidence: 1,
+        evidence: [{ cid: guardDecision.cid }, { cid: toolCall.cid }, { cid: observation.cid }, { cid: evaluation.cid }],
+        statement: 'Guarded builtin.echo executed without side effects and emitted the canonical input.',
+        verdict: 'pass'
+      }
+    ],
+    digests: [
+      digestTile(inputArtifact, 'bootstrap-gate.input'),
+      digestTile(guardDecision, 'bootstrap-gate.guard'),
+      digestTile(observation, 'bootstrap-gate.observation')
+    ],
+    policyRefs: [policy.cid, ...(options.additionalPolicyCids ?? [])],
+    receiptType: 'rrp:bootstrap-gate.builtin-echo',
+    subjects: [
+      { cid: inputArtifact.cid, role: 'rrp:subject.canonical-input' },
+      { cid: observation.cid, role: 'rrp:subject.echo-observation' }
+    ]
+  });
+  const receiptBundle = buildReceiptBundle(receipt);
+  const tapestry = compileReceiptBundleTapestry(
+    receipt.cid,
+    receiptBundle.subjectCids,
+    receiptBundle.evidenceCids,
+    receiptBundle.policyCids
+  );
+  const store = new InMemoryTileStore();
+
+  const closureTiles: TileEnvelope[] = [inputArtifact, policy, guardDecision, toolCall, observation, evaluation, receipt, tapestry];
+  closureTiles.forEach((tile) => store.put(tile));
+
+  const receiptBundleVerification = verifyReceiptBundle(receiptBundle, store);
+  const closureArtifact = {
+    cid: tapestry.cid,
+    exists: store.has(tapestry.cid),
+    kind: 'rosetta.tapestry' as const
+  };
+  const errors = [
+    ...(guard.effect === 'allow' ? [] : [`Guard denied builtin.echo: ${guard.reason}`]),
+    ...(echoOutput === canonicalInput ? [] : ['builtin.echo output drifted from canonical input.']),
+    ...receiptBundleVerification.errors,
+    ...(closureArtifact.exists ? [] : [`Missing closure artifact: ${tapestry.cid}`])
+  ];
+  const status: BootstrapGateStatus = errors.length === 0 ? 'pass' : 'block';
+
+  return {
+    canonicalInput,
+    closureArtifact,
+    echoOutput,
+    errors,
+    guard,
+    guardDecision,
+    inputArtifact,
+    inputCid,
+    observation,
+    policy,
+    receipt,
+    receiptBundle,
+    receiptBundleVerification,
+    status,
+    steps: [
+      ...initialSteps,
+      { artifactCid: toolCall.cid, errors: [], id: 'execute-builtin-echo', status: 'pass' },
+      { artifactCid: observation.cid, errors: [], id: 'mint-observation', status: 'pass' },
+      { artifactCid: receipt.cid, errors: [], id: 'emit-receipt', status: 'pass' },
+      { artifactCid: tapestry.cid, errors: [], id: 'compile-closure', status: 'pass' },
+      { artifactCid: tapestry.cid, errors, id: 'verify-chain', status }
+    ],
+    tapestry,
+    toolCall,
+    verdict: status
   };
 }
 
