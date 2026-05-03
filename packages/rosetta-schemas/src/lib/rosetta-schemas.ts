@@ -6,6 +6,74 @@ export interface ValidationResult {
   ok: boolean;
 }
 
+export const INTAKE_SOURCE_TYPES = [
+  'magazine',
+  'newsletter',
+  'rss',
+  'discord',
+  'email',
+  'manual',
+  'google-alert'
+] as const;
+
+export type IntakeSourceType = (typeof INTAKE_SOURCE_TYPES)[number];
+
+export interface IntakeEnvelopeReceipts {
+  cost_usd?: number;
+  item_hash: string;
+  request_id?: string;
+  runtime_ms?: number;
+  tokens_used?: number;
+}
+
+export interface IntakeEnvelope {
+  author?: string;
+  content_pointer: string;
+  item_url: string;
+  published_at?: string;
+  raw_excerpt: string;
+  receipts: IntakeEnvelopeReceipts;
+  retrieved_at: string;
+  source_name: string;
+  source_type: IntakeSourceType;
+  title: string;
+}
+
+export interface IntakeEnvelopeInput extends Omit<IntakeEnvelope, 'item_url' | 'receipts'> {
+  item_url: string;
+  receipts?: Omit<IntakeEnvelopeReceipts, 'item_hash'> & { item_hash?: string };
+}
+
+export const INTAKE_ENVELOPE_SCHEMA = {
+  $id: 'entif.intake-envelope.v1',
+  additionalProperties: false,
+  properties: {
+    author: { type: 'string' },
+    content_pointer: { type: 'string' },
+    item_url: { type: 'string' },
+    published_at: { type: 'string' },
+    raw_excerpt: { type: 'string' },
+    receipts: {
+      additionalProperties: false,
+      properties: {
+        cost_usd: { type: 'number' },
+        item_hash: { type: 'string' },
+        request_id: { type: 'string' },
+        runtime_ms: { type: 'number' },
+        tokens_used: { type: 'number' }
+      },
+      required: ['item_hash'],
+      type: 'object'
+    },
+    retrieved_at: { type: 'string' },
+    source_name: { type: 'string' },
+    source_type: { enum: [...INTAKE_SOURCE_TYPES] },
+    title: { type: 'string' }
+  },
+  required: ['content_pointer', 'item_url', 'raw_excerpt', 'receipts', 'retrieved_at', 'source_name', 'source_type', 'title'],
+  type: 'object'
+} as const;
+
 export interface ConformanceEntry {
   cid: string;
   conforms: boolean;
@@ -60,10 +128,117 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'source.trust_matrix': ['axes', 'notes', 'subjectCid', 'trustClass']
 };
 
+const REQUIRED_INTAKE_FIELDS = [
+  'content_pointer',
+  'item_url',
+  'raw_excerpt',
+  'receipts',
+  'retrieved_at',
+  'source_name',
+  'source_type',
+  'title'
+] as const;
+
+const TRACKING_QUERY_PARAMS = new Set([
+  'fbclid',
+  'gclid',
+  'mc_cid',
+  'mc_eid',
+  'ref',
+  'source',
+  'utm_campaign',
+  'utm_content',
+  'utm_id',
+  'utm_medium',
+  'utm_name',
+  'utm_source',
+  'utm_term'
+]);
+
 export function validatePayload(kind: string, payload: object): ValidationResult {
   const errors = (REQUIRED_FIELDS[kind] ?? [])
     .filter((field) => !(field in payload))
     .map((field) => `Missing required field: ${field}`);
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function canonicalizeIntakeUrl(input: string): string {
+  try {
+    const url = new URL(input);
+
+    for (const key of [...url.searchParams.keys()]) {
+      if (TRACKING_QUERY_PARAMS.has(key)) {
+        url.searchParams.delete(key);
+      }
+    }
+
+    url.hash = '';
+    return url.toString();
+  } catch {
+    return input;
+  }
+}
+
+export function computeIntakeItemHash(input: {
+  author?: string;
+  item_url: string;
+  published_at?: string;
+  source_name: string;
+  title: string;
+}): string {
+  return makeContentId(
+    JSON.stringify({
+      author: input.author ?? null,
+      item_url: canonicalizeIntakeUrl(input.item_url),
+      published_at: input.published_at ?? null,
+      source_name: input.source_name,
+      title: input.title
+    })
+  );
+}
+
+export function normalizeIntakeEnvelope(input: IntakeEnvelopeInput): IntakeEnvelope {
+  const item_url = canonicalizeIntakeUrl(input.item_url);
+
+  return {
+    ...input,
+    item_url,
+    receipts: {
+      ...input.receipts,
+      item_hash:
+        input.receipts?.item_hash ??
+        computeIntakeItemHash({
+          author: input.author,
+          item_url,
+          published_at: input.published_at,
+          source_name: input.source_name,
+          title: input.title
+        })
+    }
+  };
+}
+
+export function validateIntakeEnvelope(
+  payload: Partial<Omit<IntakeEnvelope, 'receipts' | 'source_type'>> & {
+    receipts?: Partial<IntakeEnvelopeReceipts>;
+    source_type?: string;
+  }
+): ValidationResult {
+  const errors = REQUIRED_INTAKE_FIELDS
+    .filter((field) => payload[field] === undefined || payload[field] === null || payload[field] === '')
+    .map((field) => `Missing required field: ${field}`);
+
+  if (payload.source_type && !INTAKE_SOURCE_TYPES.includes(payload.source_type as IntakeSourceType)) {
+    errors.push(`Unsupported source_type: ${payload.source_type}`);
+  }
+
+  if (payload.receipts && !payload.receipts.item_hash) {
+    errors.push('Missing required field: receipts.item_hash');
+  }
 
   return {
     errors,
