@@ -52,6 +52,42 @@ This layer exposes read-only views for OB1, Prism, and Mission Control without g
 
 These apps expose the bootstrap slice for local verification and human inspection.
 
+## Dependency Direction
+
+The five layers are ordered from constitutional center to outward-facing surfaces.
+
+- Higher-numbered layers may depend on lower-numbered layers.
+- Lower-numbered layers must not depend on higher-numbered layers.
+- Sibling-layer coupling should be avoided unless one layer is explicitly acting as a consumer of another layer's published artifacts or types.
+
+In practice, that means:
+
+- the Rosetta kernel is the lowest dependency layer and does not import app or projection concerns
+- the source substrate may depend on kernel primitives, but not on refinery, projection, or app code
+- the refinery and cache may depend on kernel and source-substrate contracts, but not on projection or app code
+- projection adapters may consume source-substrate, refinery, and cache outputs to build read-only views, but they do not become authorities over those layers
+- app surfaces may consume any lower layer through stable package APIs, but must not invert ownership by pushing app-specific concerns back into the kernel
+
+## Projection Runtime Boundary
+
+`projection-adapters` are runtime consumers, not just schema-level annotations.
+
+They may read Layer 2 and Layer 3 artifacts in order to project them into OB1, Prism, or Mission Control views. They must do so without mutating source-substrate records, rewriting canonical artifacts, or invoking refinery/cache logic as a side-effecting authority path. The projection contract is therefore:
+
+- read from lower layers
+- transform into view-specific output
+- never treat the projection surface as the constitutional source of truth
+
+## Constitutional Ownership
+
+"No constitutional ownership" is primarily an architectural and governance rule in this repo.
+
+It means OB1, Prism, Mission Control, and any future projection/app surface may inspect or render Rosetta state, but they are not the authority that defines canonical artifact meaning, provenance, or lifecycle rules. The current repo posture reinforces that rule through package boundaries and read-only projection contracts, but it does not yet claim a universal static-enforcement gate across every possible future integration. Contributors should therefore treat this as:
+
+- a hard architecture rule for package and API design
+- a governance rule for future extensions and reviews
+- only partially code-enforced today, where read-only adapters and package separation already express the boundary
+
 ## What Is Truly Functional
 
 The following are executable mechanics, not just concepts:
