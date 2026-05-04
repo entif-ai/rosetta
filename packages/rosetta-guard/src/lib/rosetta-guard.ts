@@ -75,6 +75,31 @@ export interface PrivacyBudgetDecision {
   reasonCodes: PrivacyBudgetReasonCode[];
 }
 
+export type SocialEngineeringReasonCode =
+  | 'AUTHORITY_CUE'
+  | 'DATA_EXPORT_REQUEST'
+  | 'PROCEDURAL_BYPASS'
+  | 'SECRECY_FRAMING'
+  | 'SENSITIVE_ACTION_REQUEST'
+  | 'SOCIAL_ENGINEERING_LOW'
+  | 'URGENCY_PRESSURE'
+  | 'VERIFICATION_SUPPRESSION';
+
+export interface SocialEngineeringRiskRequest {
+  attackFamilyRisk: number;
+  autonomousAction?: boolean;
+  message: string;
+  sensitiveActionRisk: number;
+}
+
+export interface SocialEngineeringRiskDecision {
+  action: 'allow' | 'approval_required' | 'quarantine';
+  attackFamilyRisk: number;
+  reasonCodes: SocialEngineeringReasonCode[];
+  sensitiveActionRisk: number;
+  socialEngineeringRisk: number;
+}
+
 function matchesPattern(pattern: string, value: string): boolean {
   return pattern === '*' || value.startsWith(pattern);
 }
@@ -164,5 +189,56 @@ export function evaluatePrivacyBudget(request: PrivacyBudgetRequest): PrivacyBud
     disclosureUnits,
     effect: reasonCodes.includes('PRIVACY_BUDGET_OK') ? 'allow' : 'deny',
     reasonCodes
+  };
+}
+
+export function evaluateSocialEngineeringRisk(request: SocialEngineeringRiskRequest): SocialEngineeringRiskDecision {
+  const message = request.message.toLowerCase();
+  const reasonCodes: SocialEngineeringReasonCode[] = [];
+
+  if (/\b(urgent|asap|immediately|quick favor|now)\b/u.test(message)) {
+    reasonCodes.push('URGENCY_PRESSURE');
+  }
+  if (/\b(i am your manager|manager|boss|ceo|authority)\b/u.test(message)) {
+    reasonCodes.push('AUTHORITY_CUE');
+  }
+  if (/\b(confidential|do not tell anyone|don't tell anyone|off the books)\b/u.test(message)) {
+    reasonCodes.push('SECRECY_FRAMING');
+  }
+  if (/\b(skip the normal approval process|skip normal approval|override procedure|bypass)\b/u.test(message)) {
+    reasonCodes.push('PROCEDURAL_BYPASS');
+  }
+  if (/\b(just trust me|don't verify|do not verify|no need to check)\b/u.test(message)) {
+    reasonCodes.push('VERIFICATION_SUPPRESSION');
+  }
+  if (/\b(wire|funds|credential|password|payment)\b/u.test(message)) {
+    reasonCodes.push('SENSITIVE_ACTION_REQUEST');
+  }
+  if (/\b(export the customer list|customer list|data export|export data)\b/u.test(message)) {
+    reasonCodes.push('DATA_EXPORT_REQUEST');
+  }
+
+  if (reasonCodes.length === 0) {
+    reasonCodes.push('SOCIAL_ENGINEERING_LOW');
+  }
+
+  const positiveSignalCount = reasonCodes.includes('SOCIAL_ENGINEERING_LOW') ? 0 : reasonCodes.length;
+  const socialEngineeringRisk = Math.min(1, positiveSignalCount * 0.25 + request.sensitiveActionRisk * 0.2);
+  const highSocialRisk = socialEngineeringRisk >= 0.65;
+  const highSensitiveActionRisk = request.sensitiveActionRisk >= 0.7;
+
+  const action =
+    highSocialRisk && highSensitiveActionRisk && request.autonomousAction
+      ? 'quarantine'
+      : highSocialRisk && highSensitiveActionRisk
+        ? 'approval_required'
+        : 'allow';
+
+  return {
+    action,
+    attackFamilyRisk: request.attackFamilyRisk,
+    reasonCodes,
+    sensitiveActionRisk: request.sensitiveActionRisk,
+    socialEngineeringRisk
   };
 }
