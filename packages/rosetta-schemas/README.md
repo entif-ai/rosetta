@@ -36,6 +36,19 @@ Provides lightweight payload validation and conformance bundle emission for curr
   - issue `#1047` remains the external peer-agent interop lane
   - issues `#706`, `#1029`, `#718`, and `#946` are downstream consumers of this registry surface
 
+## Plane Enforcement
+
+- Issue `#706` adds the anti-spoofing admission contract on top of the `#220` registry surface.
+- Data-plane families remain non-executable:
+  - executor disposition is `data-plane-no-side-effects`
+  - imperative-looking text does not promote a data-plane payload into privileged execution
+  - hidden capability selectors, `iam.decision` refs, approval handles, or equivalent control bindings are quarantined as spoof attempts
+- Control-plane admission reuses the `domain_ref` comparison from `#711` rather than inventing a second domain-boundary rule.
+- Decision semantics stay delegated:
+  - `#630` owns the shared `iam.decision` artifact contract
+  - `#1029` owns the Guard decision request/validation handshake
+  - this package only decides whether a message is structurally eligible for data-plane routing, control-plane review, or quarantine
+
 ## Fixture Status
 
 - executable

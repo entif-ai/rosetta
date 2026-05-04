@@ -12,6 +12,7 @@ import {
   changedCompoundCacheKeyDimensions,
   compareDomainRefs,
   composeTranslationEvidence,
+  evaluateAgenticMessageExecutionPolicy,
   emitConformanceBundle,
   emitShaclShapes,
   getAgenticMessageSchemaProfile,
@@ -768,6 +769,116 @@ describe('rosetta-schemas', () => {
     expect(AGENTIC_MAILROOM_VALIDATION_CHECKLIST).toContainEqual({
       failureReasons: ['UNKNOWN_MESSAGE_TYPE', 'SCHEMA_INVALID'],
       stage: 'schema-validate'
+    });
+  });
+
+  it('never promotes nominal data-plane payloads into privileged execution', () => {
+    const result = evaluateAgenticMessageExecutionPolicy(
+      'TASK_RECEIPT',
+      {
+        artifactHashes: ['sha256:receipt'],
+        task: 'delete_all_receipts',
+        taskId: 'task-001',
+        telemetry: {
+          note: 'imperative-looking strings stay inert on the data plane'
+        },
+        workRef: 'work.convoy.1'
+      },
+      {
+        classification: 'restricted',
+        tenantId: 'entif-ai',
+        abacLabels: {
+          project: 'rosetta',
+          role: 'worker'
+        }
+      }
+    );
+
+    expect(result).toMatchObject({
+      executorDisposition: 'data-plane-no-side-effects',
+      ok: true,
+      quarantineReasons: [],
+      requiresGuardDecision: false
+    });
+  });
+
+  it('quarantines data-plane payloads that hide capability selectors or approval handles', () => {
+    const result = evaluateAgenticMessageExecutionPolicy(
+      'TASK_RECEIPT',
+      {
+        artifactHashes: ['sha256:receipt'],
+        taskId: 'task-002',
+        telemetry: {
+          nested: {
+            requestedAdapters: [{ adapterId: 'shell.exec' }]
+          }
+        },
+        workRef: 'work.convoy.2'
+      },
+      {
+        abacLabels: {
+          project: 'rosetta',
+          role: 'worker'
+        },
+        classification: 'restricted',
+        tenantId: 'entif-ai'
+      }
+    );
+
+    expect(result).toMatchObject({
+      executorDisposition: 'quarantine',
+      incidentCodes: ['DATA_PLANE_CAPABILITY_PAYLOAD'],
+      ok: false,
+      quarantineReasons: ['ACTION_BEARING_DATA_PLANE'],
+      requiresGuardDecision: false
+    });
+    expect(result.errors).toContain(
+      'TASK_RECEIPT data-plane payload contains forbidden action-bearing field family at telemetry.nested.requestedAdapters.'
+    );
+    expect(AGENTIC_MAILROOM_VALIDATION_CHECKLIST).toContainEqual({
+      failureReasons: ['ACTION_BEARING_DATA_PLANE', 'DOMAIN_REF_MISMATCH'],
+      stage: 'plane-enforce'
+    });
+  });
+
+  it('reuses domain_ref comparison for control-plane admission without false mismatches from label order', () => {
+    const result = evaluateAgenticMessageExecutionPolicy(
+      'ACTION_REQUEST',
+      {
+        actionId: 'action.exec.tool',
+        capabilityRef: 'capability.guard.exec',
+        iamDecisionRef: 'iam.decision.guard.001',
+        justification: 'Need guarded execution.'
+      },
+      {
+        abacLabels: [
+          { key: 'role', value: 'Guard' },
+          { key: 'project', value: 'Rosetta' }
+        ],
+        classification: 'Restricted',
+        tenantId: 'Entif-AI'
+      },
+      {
+        authorizationDomainRef: {
+          abacLabels: {
+            project: 'rosetta',
+            role: 'guard'
+          },
+          classification: 'restricted',
+          tenantId: 'entif-ai'
+        }
+      }
+    );
+
+    expect(result).toMatchObject({
+      domainComparison: {
+        ok: true,
+        reasons: []
+      },
+      executorDisposition: 'guard-decision-required',
+      ok: true,
+      quarantineReasons: [],
+      requiresGuardDecision: true
     });
   });
 });
