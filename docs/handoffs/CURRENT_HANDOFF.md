@@ -127,28 +127,27 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/am-001-schema-registry`
+Current branch: `codex/am-006-plane-spoofing-guards`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/220
+- https://github.com/entif-ai/rosetta/issues/706
 
-This branch implements the internal Agentic Messaging schema registry for AM-001 using the existing `packages/rosetta-schemas` validation surface. The slice stays on internal mailroom validation and leaves external peer-agent interop to #1047.
+This branch implements the narrow anti-spoofing admission rules for Agentic Messaging using the existing `packages/rosetta-schemas` registry surface. The slice stays structural and fail-closed: it does not redefine `iam.decision` semantics, Guard APIs, or external peer-agent interop.
 
 Changed behavior:
 
-- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` now exports a canonical registry for all nine internal Agentic Messaging message families plus the signed envelope schema ID and deterministic mailroom `schema-validate` mapping.
-- `validateAgenticMessageEnvelope` validates required envelope fields, sender shape, ISO timestamps, nested `domain_ref`, and unknown message types with explicit quarantine reasons.
-- `validateAgenticMessagePayload` validates per-`msg_type` payload profiles and returns deterministic `schemaId` plus `SCHEMA_INVALID` versus `UNKNOWN_MESSAGE_TYPE`.
-- `packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` adds red/green tests covering registry completeness, envelope validation, and deterministic quarantine mapping.
-- `packages/rosetta-schemas/README.md` now records the normative registry location, versioning/migration posture, the `domain_ref` dependency on #711, and downstream/internal-only boundaries.
+- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` now exports a structural execution-admission helper for Agentic Messaging plus explicit executor dispositions for each message family.
+- Data-plane payloads remain non-executable even when they contain imperative-looking text; they route as `data-plane-no-side-effects` and are never promoted into privileged execution.
+- Hidden capability selectors, `iam.decision` refs, approval handles, and equivalent control bindings inside nominal data-plane payloads now quarantine with deterministic incident/quarantine codes.
+- Control-plane admission can optionally reuse `compareDomainRefs` from the `#711` `domain_ref` surface, so benign ABAC label ordering differences do not false-positive while real boundary drift fails closed.
+- `packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` adds red/green adversarial tests for relabeling attempts, hidden capability selectors, and control-plane domain-bound admission.
+- `packages/rosetta-schemas/README.md` now documents the `#706` anti-spoofing contract and keeps `#220`, `#711`, `#630`, and `#1029` ownership boundaries explicit.
 
 ## Validation State
 
 - `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
 - `npx -y node@22 node_modules/nx/bin/nx.js run rosetta-schemas:test --skip-nx-cache` passed.
-- `npx -y node@22 node_modules/nx/bin/nx.js affected -t typecheck --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
 - `npx -y node@22 node_modules/nx/bin/nx.js affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
-- `git diff --check` passed.
 
 Known non-failing warnings:
 
@@ -159,9 +158,9 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Publish a ready PR for issue #220 with the Node 22 validation commands and the explicit `#711` / `#1047` boundary notes.
-2. Keep #711 as the nested `domain_ref` child surface; this branch only consumes that contract.
-3. Follow with mailroom/runtime consumers in #706, #1029, #718, and #946 rather than extending the schema registry locally.
+1. Publish a ready PR for issue #706 with the Node 22 validation commands and the explicit `#220` / `#711` / `#630` / `#1029` boundary notes.
+2. Keep `iam.decision` artifact semantics in #630 and Guard request/validation flow in #1029; this branch only enforces structural admission and quarantine behavior.
+3. Follow with runtime/mailroom consumers in #718 and #946 rather than expanding the schema-layer admission contract.
 
 For Text-Core:
 
@@ -178,6 +177,6 @@ For Text-Core:
 - Text-Core TC-002 normalization fingerprints are merged.
 - Text-Core TC-003 cache dedupe/revision/local persistence is merged.
 - Text-Core TC-004 source-to-observation tiling and transform receipts is merged.
-- Internal Agentic Messaging schema registry now exists in `packages/rosetta-schemas`; mailroom-facing validation can consume it without inventing per-issue payload rules.
+- Internal Agentic Messaging schema registry now exists in `packages/rosetta-schemas`, and the same package now defines fail-closed anti-spoofing admission rules for data-plane vs control-plane routing.
 - Docs intelligence is now the intended next planning lane before further broad Text-Core prioritization.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.

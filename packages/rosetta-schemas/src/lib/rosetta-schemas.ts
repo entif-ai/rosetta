@@ -119,7 +119,11 @@ export type AgenticMessageType =
 
 export type AgenticMessagePlane = 'control' | 'data';
 
-export type AgenticMessageQuarantineReason = 'SCHEMA_INVALID' | 'UNKNOWN_MESSAGE_TYPE';
+export type AgenticMessageQuarantineReason =
+  | 'ACTION_BEARING_DATA_PLANE'
+  | 'DOMAIN_REF_MISMATCH'
+  | 'SCHEMA_INVALID'
+  | 'UNKNOWN_MESSAGE_TYPE';
 
 export interface AgenticMessageSender {
   node_id: string;
@@ -163,12 +167,32 @@ export interface AgenticMessageSchemaProfile {
 
 export interface AgenticMailroomValidationStage {
   failureReasons: AgenticMessageQuarantineReason[];
-  stage: 'schema-validate';
+  stage: 'plane-enforce' | 'schema-validate';
 }
 
 export interface AgenticMessageValidationResult extends ValidationResult {
   quarantineReasons: AgenticMessageQuarantineReason[];
   schemaId: string;
+}
+
+export type AgenticMessageExecutorDisposition =
+  | 'control-plane-no-execution'
+  | 'data-plane-no-side-effects'
+  | 'guard-decision-required'
+  | 'quarantine';
+
+export type AgenticMessageSecurityIncidentCode = 'DATA_PLANE_CAPABILITY_PAYLOAD' | 'DOMAIN_REF_MISMATCH';
+
+export interface AgenticMessageExecutionPolicyOptions {
+  authorizationDomainRef?: DomainRefInput | DomainRef;
+}
+
+export interface AgenticMessageExecutionPolicyResult extends AgenticMessageValidationResult {
+  domainComparison?: DomainCompareResult;
+  executorDisposition: AgenticMessageExecutorDisposition;
+  incidentCodes: AgenticMessageSecurityIncidentCode[];
+  plane: AgenticMessagePlane | 'unknown';
+  requiresGuardDecision: boolean;
 }
 
 export interface IntakeEnvelopeReceipts {
@@ -556,8 +580,30 @@ export const AGENTIC_MAILROOM_VALIDATION_CHECKLIST: AgenticMailroomValidationSta
   {
     failureReasons: ['UNKNOWN_MESSAGE_TYPE', 'SCHEMA_INVALID'],
     stage: 'schema-validate'
+  },
+  {
+    failureReasons: ['ACTION_BEARING_DATA_PLANE', 'DOMAIN_REF_MISMATCH'],
+    stage: 'plane-enforce'
   }
 ];
+
+export const AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES = {
+  approvalHandles: ['approvalId', 'approvalRequestId', 'decisionRef', 'iamDecisionRef'],
+  capabilitySelectors: ['capabilityRef', 'requestedAdapters', 'requestedEffects', 'requestedPrivilegeTiers'],
+  responseBindings: ['responseKind:iam.decision']
+} as const;
+
+export const AGENTIC_MESSAGE_EXECUTOR_CONTRACT: Record<AgenticMessageType, AgenticMessageExecutorDisposition> = {
+  ACTION_DECISION: 'control-plane-no-execution',
+  ACTION_REQUEST: 'guard-decision-required',
+  APPROVAL_REQUEST: 'control-plane-no-execution',
+  APPROVAL_RESPONSE: 'control-plane-no-execution',
+  ARTIFACT_PUBLISH: 'data-plane-no-side-effects',
+  HEALTH_REPORT: 'data-plane-no-side-effects',
+  INCIDENT_ENVELOPE: 'data-plane-no-side-effects',
+  TASK_RECEIPT: 'data-plane-no-side-effects',
+  WORK_UNIT_UPDATE: 'data-plane-no-side-effects'
+};
 
 const AGENTIC_MESSAGE_ENVELOPE_REQUIRED_FIELDS = [
   'domain_ref',
@@ -672,6 +718,39 @@ function isUrl(value: string): boolean {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function dedupeList<T>(items: readonly T[]): T[] {
+  return [...new Set(items)];
+}
+
+function findActionBearingFieldPaths(value: unknown, path: string[] = []): string[] {
+  if (Array.isArray(value)) {
+    return value.flatMap((entry, index) => findActionBearingFieldPaths(entry, [...path, `[${index}]`]));
+  }
+  if (!isRecord(value)) {
+    return [];
+  }
+
+  const matches: string[] = [];
+  for (const [key, nestedValue] of Object.entries(value)) {
+    const nextPath = [...path, key];
+    if (
+      AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES.approvalHandles.includes(
+        key as (typeof AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES.approvalHandles)[number]
+      ) ||
+      AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES.capabilitySelectors.includes(
+        key as (typeof AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES.capabilitySelectors)[number]
+      ) ||
+      (key === 'responseKind' && nestedValue === 'iam.decision')
+    ) {
+      matches.push(nextPath.join('.'));
+    }
+
+    matches.push(...findActionBearingFieldPaths(nestedValue, nextPath));
+  }
+
+  return dedupeList(matches);
 }
 
 function validateAgenticSender(sender: unknown, errors: string[]): void {
@@ -962,6 +1041,73 @@ export function validateAgenticMessagePayload(msgType: string, payload: Record<s
     quarantineReasons: errors.length === 0 ? [] : ['SCHEMA_INVALID'],
     schemaId: profile.schemaId
   };
+}
+
+export function evaluateAgenticMessageExecutionPolicy(
+  msgType: string,
+  payload: Record<string, unknown>,
+  envelopeDomainRef: DomainRefInput | DomainRef,
+  options: AgenticMessageExecutionPolicyOptions = {}
+): AgenticMessageExecutionPolicyResult {
+  const profile = getAgenticMessageSchemaProfile(msgType);
+
+  if (profile === undefined) {
+    return {
+      errors: ['Agentic message type is not registered.'],
+      executorDisposition: 'quarantine',
+      incidentCodes: [],
+      ok: false,
+      plane: 'unknown',
+      quarantineReasons: ['UNKNOWN_MESSAGE_TYPE'],
+      requiresGuardDecision: false,
+      schemaId: 'entif.agentic-messaging.unregistered'
+    };
+  }
+
+  const payloadValidation = validateAgenticMessagePayload(msgType, payload);
+  const errors = [...payloadValidation.errors];
+  const incidentCodes: AgenticMessageSecurityIncidentCode[] = [];
+  const quarantineReasons = [...payloadValidation.quarantineReasons];
+  let domainComparison: DomainCompareResult | undefined;
+
+  if (profile.plane === 'data') {
+    const actionBearingPaths = findActionBearingFieldPaths(payload);
+    if (actionBearingPaths.length > 0) {
+      errors.push(
+        ...actionBearingPaths.map(
+          (path) => `${msgType} data-plane payload contains forbidden action-bearing field family at ${path}.`
+        )
+      );
+      incidentCodes.push('DATA_PLANE_CAPABILITY_PAYLOAD');
+      quarantineReasons.push('ACTION_BEARING_DATA_PLANE');
+    }
+  }
+
+  if (profile.plane === 'control' && options.authorizationDomainRef) {
+    domainComparison = compareDomainRefs(options.authorizationDomainRef, envelopeDomainRef);
+    if (!domainComparison.ok) {
+      errors.push(`Control-plane domain_ref mismatch: ${domainComparison.reasons.join(', ')}`);
+      incidentCodes.push('DOMAIN_REF_MISMATCH');
+      quarantineReasons.push('DOMAIN_REF_MISMATCH');
+    }
+  }
+
+  const ok = errors.length === 0;
+  return {
+    domainComparison,
+    errors,
+    executorDisposition: ok ? AGENTIC_MESSAGE_EXECUTOR_CONTRACT[profileMsgType(msgType)] : 'quarantine',
+    incidentCodes: dedupeList(incidentCodes),
+    ok,
+    plane: profile.plane,
+    quarantineReasons: dedupeList(quarantineReasons),
+    requiresGuardDecision: AGENTIC_MESSAGE_EXECUTOR_CONTRACT[profileMsgType(msgType)] === 'guard-decision-required',
+    schemaId: profile.schemaId
+  };
+}
+
+function profileMsgType(msgType: string): AgenticMessageType {
+  return msgType as AgenticMessageType;
 }
 
 export function compareDomainRefs(
