@@ -19,6 +19,39 @@
     "trustMatrix": {
       "type": "object",
       "required": ["axes", "notes", "subjectCid", "trustClass"]
+    },
+    "fetchReceipt": {
+      "type": "object",
+      "required": ["fetchedAt", "method", "requestedLocator", "resolvedLocator", "snapshotHash", "sourceManifestationCid"]
+    },
+    "normalizationReceipt": {
+      "type": "object",
+      "required": ["canonicalTextHash", "contentFingerprint", "normalizationProfile", "parserProfile", "revisionFingerprint", "sourceManifestationCid"]
+    },
+    "evaluationReceipt": {
+      "type": "object",
+      "required": ["evaluatedAt", "policyRefs", "subjectCid", "trustMatrixCid"]
+    },
+    "canonicalArtifact": {
+      "type": "object",
+      "required": [
+        "artifactId",
+        "byteHash",
+        "contentFingerprint",
+        "dedupe",
+        "normalizedText",
+        "normalizedTextHash",
+        "pidFamily",
+        "provenanceRefs",
+        "revisionFingerprint",
+        "rightsScopes",
+        "sourceManifestationCid",
+        "sourceRecordCid"
+      ]
+    },
+    "derivedArtifact": {
+      "type": "object",
+      "required": ["artifactId", "derivationKind", "payloadText", "sourceObservationCid", "sourceSpans"]
     }
   },
   "additionalProperties": false

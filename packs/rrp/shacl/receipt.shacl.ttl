@@ -6,5 +6,6 @@ entif:RrpReceiptShape
   sh:targetClass entif:RrpReceipt ;
   sh:property [ sh:path entif:claims ; sh:minCount 1 ] ;
   sh:property [ sh:path entif:digests ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:policyRefs ; sh:minCount 1 ] ;
   sh:property [ sh:path entif:receiptType ; sh:minCount 1 ] ;
   sh:property [ sh:path entif:subjects ; sh:minCount 1 ] .
