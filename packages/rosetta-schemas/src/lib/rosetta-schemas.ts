@@ -1,4 +1,5 @@
 import { makeContentId } from '@entif-ai/rosetta-cid';
+import { splitSentences } from '@entif-ai/rosetta-canon';
 import type { TileEnvelope } from '@entif-ai/rosetta-core';
 
 export interface ValidationResult {
@@ -380,7 +381,8 @@ function extractHighSignalImperatives(text: string): string[] {
   const imperativeStarters = new Set(['add', 'build', 'check', 'consider', 'create', 'do', 'implement', 'make', 'read', 'run', 'use']);
 
   return text
-    .split(/(?<=[.!?])\s+/u)
+    .split(/\n+/u)
+    .flatMap((line) => splitSentences(line))
     .map((sentence) => sentence.trim())
     .filter((sentence) => {
       const firstWord = sentence.match(/^[A-Za-z]+/u)?.[0].toLowerCase();

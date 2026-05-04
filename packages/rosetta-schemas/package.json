@@ -16,6 +16,7 @@
     }
   },
   "dependencies": {
+    "@entif-ai/rosetta-canon": "workspace:*",
     "@entif-ai/rosetta-cid": "workspace:*",
     "@entif-ai/rosetta-core": "workspace:*",
     "tslib": "^2.3.0"

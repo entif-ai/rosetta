@@ -277,6 +277,23 @@ describe('rosetta-schemas', () => {
     expect(envelope.normalized.highSignalImperatives).toEqual(['Read this immediately.', 'Consider using receipts.']);
   });
 
+  it('does not fragment imperative signals across abbreviation periods', () => {
+    const envelope = buildIntakeEnvelope({
+      contentPointer: 'https://example.com/report',
+      itemUrl: 'https://example.com/report',
+      rawExcerpt: 'Read Dr. Smith et al. before acting. Use p. 42 as source.',
+      retrievedAt: '2026-05-04T03:40:00.000Z',
+      sourceName: 'manual-drop',
+      sourceType: 'manual',
+      title: 'Abbreviation report'
+    });
+
+    expect(envelope.normalized.highSignalImperatives).toEqual([
+      'Read Dr. Smith et al. before acting.',
+      'Use p. 42 as source.'
+    ]);
+  });
+
   it('retains content pointers for pending deep ingest and rejects missing receipt metadata', () => {
     const result = validateIntakeEnvelope({
       contentPointer: '',
