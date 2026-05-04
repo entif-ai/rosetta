@@ -25,6 +25,46 @@ export interface CompoundCacheKey {
 
 export type CompoundCacheKeyDimension = keyof Omit<CompoundCacheKey, 'lookupKey'>;
 
+export interface CompositionProviderSource {
+  challengePath: string[];
+  freshnessVerifiedAt: string;
+  normalizedUserMetadataCid: string;
+  providerId: string;
+  providerResponseCid: string;
+  providerResponseTimestamp: string;
+  providerResponseVersion: string;
+  rightsDecisionCid: string;
+  subQueryReceiptCid: string;
+}
+
+export interface CompositionSourceAttribution {
+  answerFragmentId: string;
+  providerId: string;
+  providerResponseCid: string;
+}
+
+export interface CompositionProvenanceInput {
+  answerCid: string;
+  composedAt: string;
+  compositionLogic: string;
+  compositionReceiptCid: string;
+  providers: CompositionProviderSource[];
+  recordId: string;
+  sourceAttributions: CompositionSourceAttribution[];
+}
+
+export interface CompositionProvenanceRecord extends CompositionProvenanceInput {
+  recordCid: string;
+}
+
+export interface CompositionTrace {
+  answerFragmentId: string;
+  challengePath: string[];
+  providerId: string;
+  providerResponseCid: string;
+  subQueryReceiptCid: string;
+}
+
 export interface ConformanceEntry {
   cid: string;
   conforms: boolean;
@@ -48,6 +88,16 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'rosetta.action': ['actionId', 'intent', 'runCid'],
   'rosetta.evaluation': ['evaluationId', 'summary', 'verdict'],
   'rosetta.observation': ['observationId', 'signal', 'source'],
+  'rosetta.composition_provenance': [
+    'answerCid',
+    'composedAt',
+    'compositionLogic',
+    'compositionReceiptCid',
+    'providers',
+    'recordCid',
+    'recordId',
+    'sourceAttributions'
+  ],
   'rosetta.receipt': ['claims', 'digests', 'receiptType', 'subjects'],
   'rosetta.run': ['runId', 'summary', 'tags'],
   'rosetta.tapestry': ['dynamicTail', 'requiredScope', 'stablePrefix', 'tapestries', 'tenant', 'totalTokens'],
@@ -103,6 +153,27 @@ const COMPOUND_CACHE_KEY_LOOKUP_NAMES: Record<CompoundCacheKeyDimension, string>
   sourceBundleHash: 'source_bundle_hash'
 };
 
+const COMPOSITION_PROVIDER_REQUIRED_FIELDS = [
+  'freshnessVerifiedAt',
+  'normalizedUserMetadataCid',
+  'providerId',
+  'providerResponseCid',
+  'providerResponseTimestamp',
+  'providerResponseVersion',
+  'rightsDecisionCid',
+  'subQueryReceiptCid'
+] as const satisfies ReadonlyArray<keyof CompositionProviderSource>;
+
+const COMPOSITION_INPUT_REQUIRED_FIELDS = [
+  'answerCid',
+  'composedAt',
+  'compositionLogic',
+  'compositionReceiptCid',
+  'providers',
+  'recordId',
+  'sourceAttributions'
+] as const satisfies ReadonlyArray<keyof CompositionProvenanceInput>;
+
 function requiredString(value: string | undefined): value is string {
   return typeof value === 'string' && value.trim().length > 0;
 }
@@ -155,6 +226,86 @@ export function changedCompoundCacheKeyDimensions(
   after: Pick<CompoundCacheKey, CompoundCacheKeyDimension>
 ): CompoundCacheKeyDimension[] {
   return COMPOUND_CACHE_KEY_DIMENSIONS.filter((dimension) => before[dimension] !== after[dimension]);
+}
+
+export function validateCompositionProvenanceRecord(input: CompositionProvenanceInput): ValidationResult {
+  const errors = COMPOSITION_INPUT_REQUIRED_FIELDS.filter((field) => !(field in input)).map(
+    (field) => `Missing required field: ${field}`
+  );
+
+  if (input.providers.length === 0) {
+    errors.push('Composition provenance must include at least one provider source.');
+  }
+
+  for (const provider of input.providers) {
+    for (const field of COMPOSITION_PROVIDER_REQUIRED_FIELDS) {
+      if (!provider[field]) {
+        errors.push(`Provider ${provider.providerId || '<unknown>'} missing required field: ${field}`);
+      }
+    }
+    if (provider.challengePath.length === 0) {
+      errors.push(`Provider ${provider.providerId || '<unknown>'} must include a challengeability path.`);
+    }
+  }
+
+  for (const attribution of input.sourceAttributions) {
+    const provider = input.providers.find((candidate) => candidate.providerId === attribution.providerId);
+    if (!provider) {
+      errors.push(`Attribution ${attribution.answerFragmentId} references unknown provider: ${attribution.providerId}`);
+    } else if (provider.providerResponseCid !== attribution.providerResponseCid) {
+      errors.push(`Attribution ${attribution.answerFragmentId} provider response does not match provider source.`);
+    }
+  }
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function buildCompositionProvenanceRecord(input: CompositionProvenanceInput): CompositionProvenanceRecord {
+  const validation = validateCompositionProvenanceRecord(input);
+  if (!validation.ok) {
+    throw new Error(validation.errors.join('; '));
+  }
+
+  const recordWithoutCid = {
+    answerCid: input.answerCid,
+    composedAt: input.composedAt,
+    compositionLogic: input.compositionLogic,
+    compositionReceiptCid: input.compositionReceiptCid,
+    providers: input.providers,
+    recordId: input.recordId,
+    sourceAttributions: input.sourceAttributions
+  };
+
+  return {
+    ...recordWithoutCid,
+    recordCid: makeContentId(JSON.stringify(recordWithoutCid))
+  };
+}
+
+export function traceCompositionSource(
+  record: CompositionProvenanceRecord,
+  answerFragmentId: string
+): CompositionTrace | undefined {
+  const attribution = record.sourceAttributions.find((candidate) => candidate.answerFragmentId === answerFragmentId);
+  if (!attribution) {
+    return undefined;
+  }
+
+  const provider = record.providers.find((candidate) => candidate.providerId === attribution.providerId);
+  if (!provider) {
+    return undefined;
+  }
+
+  return {
+    answerFragmentId,
+    challengePath: [...provider.challengePath],
+    providerId: provider.providerId,
+    providerResponseCid: provider.providerResponseCid,
+    subQueryReceiptCid: provider.subQueryReceiptCid
+  };
 }
 
 export function emitShaclShapes(kinds = Object.keys(REQUIRED_FIELDS)): string {
