@@ -188,6 +188,104 @@ export interface SocialEngineeringRiskDecision {
   socialEngineeringRisk: number;
 }
 
+export interface WorkflowAdapterRequest {
+  adapterId: string;
+  capabilityFamily?: string;
+  locator?: string;
+}
+
+export interface WorkflowEffectRequest {
+  effectClass: string;
+  effectTier?: string;
+  locator?: string;
+}
+
+export interface WorkflowPrivilegeRequest {
+  locator?: string;
+  tier: string;
+}
+
+export interface WorkflowStatementRequest {
+  family: string;
+  locator?: string;
+}
+
+export interface WorkflowPolicyArtifact {
+  artifactId: string;
+  requestedAdapters: WorkflowAdapterRequest[];
+  requestedEffects?: WorkflowEffectRequest[];
+  requestedPrivilegeTiers?: WorkflowPrivilegeRequest[];
+  statements?: WorkflowStatementRequest[];
+}
+
+export interface WorkflowPolicyObject {
+  allowedStatementFamilies?: string[];
+  forbiddenAdapters?: string[];
+  forbiddenCapabilityFamilies?: string[];
+  forbiddenEffectClasses?: string[];
+  forbiddenEffectTiers?: string[];
+  forbiddenPrivilegeTiers?: string[];
+  policyId: string;
+}
+
+export interface WorkflowStartupProfileSnapshot {
+  allowedAdapters?: string[];
+  allowedCapabilityFamilies?: string[];
+  allowedEffectClasses?: string[];
+  allowedEffectTiers?: string[];
+  allowedPrivilegeTiers?: string[];
+}
+
+export interface WorkflowPolicyGateRequest {
+  evaluatedAt: string;
+  policy: WorkflowPolicyObject;
+  policySnapshotId: string;
+  startupGrantSnapshotId?: string;
+  startupProfile?: WorkflowStartupProfileSnapshot;
+  workflow: WorkflowPolicyArtifact;
+}
+
+export type WorkflowPolicyViolationCode =
+  | 'ADAPTER_FORBIDDEN'
+  | 'CAPABILITY_FAMILY_FORBIDDEN'
+  | 'EFFECT_CLASS_FORBIDDEN'
+  | 'EFFECT_TIER_FORBIDDEN'
+  | 'MALFORMED_POLICY'
+  | 'PRIVILEGE_TIER_FORBIDDEN'
+  | 'STARTUP_AUTHORITY_REJECTION'
+  | 'STATEMENT_FAMILY_FORBIDDEN';
+
+export type WorkflowPolicyViolationClass = 'malformed_policy' | 'policy_violation' | 'startup_profile_rejection';
+
+export interface WorkflowPolicyViolation {
+  code: WorkflowPolicyViolationCode;
+  locator: string;
+  message: string;
+  metadataRef?: string;
+  ruleId: string;
+  severity: 'fail_closed';
+  source: 'malformed_policy' | 'startup_profile' | 'workflow_policy';
+}
+
+export interface WorkflowPolicyDecisionPayload {
+  boundaries: {
+    executionDecisionValidation: 'separate_iam_decision_required';
+    requestPolicyAuthority: 'narrows_startup_authority_only';
+  };
+  decisionId: string;
+  evaluatedAt: string;
+  policyIds: string[];
+  provenance: {
+    evaluatedWorkflowArtifactId: string;
+    policySnapshotId: string;
+    startupGrantSnapshotId?: string;
+  };
+  receiptExpectations: DecisionReceiptExpectation[];
+  status: 'allowed' | 'denied';
+  violationClass?: WorkflowPolicyViolationClass;
+  violations: WorkflowPolicyViolation[];
+}
+
 function matchesPattern(pattern: string, value: string): boolean {
   return pattern === '*' || value.startsWith(pattern);
 }
@@ -212,6 +310,53 @@ function earliestTimestamp(left: string, right: string): string {
 function buildDecisionId(binding: IamDecisionBinding, issuedAt: string): string {
   const raw = `${binding.principalId}:${binding.actionId}:${binding.action}:${binding.resource}:${binding.envelopeId ?? 'local'}:${issuedAt}`;
   return `iam.decision.${raw.replace(/[^a-zA-Z0-9]+/g, '.').replace(/(^\.+|\.+$)/g, '').toLowerCase()}`;
+}
+
+function buildWorkflowPolicyDecisionId(workflowArtifactId: string, policySnapshotId: string, evaluatedAt: string): string {
+  const raw = `${workflowArtifactId}:${policySnapshotId}:${evaluatedAt}`;
+  return `workflow.policy.${raw.replace(/[^a-zA-Z0-9]+/g, '.').replace(/(^\.+|\.+$)/g, '').toLowerCase()}`;
+}
+
+function includesDefined(values: string[] | undefined, value: string | undefined): boolean {
+  return value !== undefined && (values ?? []).includes(value);
+}
+
+function isOutsideAllowedSet(allowed: string[] | undefined, value: string | undefined): boolean {
+  return allowed !== undefined && !includesDefined(allowed, value);
+}
+
+function addWorkflowViolation(
+  violations: WorkflowPolicyViolation[],
+  violation: Omit<WorkflowPolicyViolation, 'severity'>
+): void {
+  violations.push({
+    ...violation,
+    severity: 'fail_closed'
+  });
+}
+
+function policyRuleId(policyId: string, field: keyof WorkflowPolicyObject): string {
+  return `${policyId}:${field}`;
+}
+
+function startupRuleId(field: keyof WorkflowStartupProfileSnapshot): string {
+  return `startupProfile:${field}`;
+}
+
+function classifyWorkflowPolicyViolations(violations: WorkflowPolicyViolation[]): WorkflowPolicyViolationClass | undefined {
+  if (violations.length === 0) {
+    return undefined;
+  }
+
+  if (violations.some((violation) => violation.source === 'malformed_policy')) {
+    return 'malformed_policy';
+  }
+
+  if (violations.some((violation) => violation.source === 'startup_profile')) {
+    return 'startup_profile_rejection';
+  }
+
+  return 'policy_violation';
 }
 
 export function evaluateGuard(request: GuardRequest, rules: GuardRule[]): TileEnvelope<GuardDecisionPayload> {
@@ -363,6 +508,182 @@ export function buildApprovalHandoff(request: ApprovalHandoffRequest): TileEnvel
       responseKind: 'iam.decision'
     },
     { createdAt: request.requestedAt, pack: 'rosetta.guard' }
+  );
+}
+
+export function evaluateWorkflowPolicyGate(request: WorkflowPolicyGateRequest): TileEnvelope<WorkflowPolicyDecisionPayload> {
+  const evaluatedAt = new Date(parseTimestamp(request.evaluatedAt)).toISOString();
+  const violations: WorkflowPolicyViolation[] = [];
+  const policyId = request.policy.policyId;
+
+  if (policyId.trim() === '') {
+    addWorkflowViolation(violations, {
+      code: 'MALFORMED_POLICY',
+      locator: 'policy.policyId',
+      message: 'workflow policy must declare a non-empty policyId',
+      ruleId: 'workflowPolicy:policyId',
+      source: 'malformed_policy'
+    });
+  }
+
+  for (const adapter of request.workflow.requestedAdapters) {
+    if (includesDefined(request.policy.forbiddenAdapters, adapter.adapterId)) {
+      addWorkflowViolation(violations, {
+        code: 'ADAPTER_FORBIDDEN',
+        locator: adapter.locator ?? request.workflow.artifactId,
+        message: `adapter ${adapter.adapterId} is forbidden by workflow policy`,
+        metadataRef: adapter.adapterId,
+        ruleId: policyRuleId(policyId, 'forbiddenAdapters'),
+        source: 'workflow_policy'
+      });
+    }
+
+    if (includesDefined(request.policy.forbiddenCapabilityFamilies, adapter.capabilityFamily)) {
+      addWorkflowViolation(violations, {
+        code: 'CAPABILITY_FAMILY_FORBIDDEN',
+        locator: adapter.locator ?? request.workflow.artifactId,
+        message: `capability family ${adapter.capabilityFamily} is forbidden by workflow policy`,
+        metadataRef: adapter.capabilityFamily,
+        ruleId: policyRuleId(policyId, 'forbiddenCapabilityFamilies'),
+        source: 'workflow_policy'
+      });
+    }
+
+    if (isOutsideAllowedSet(request.startupProfile?.allowedAdapters, adapter.adapterId)) {
+      addWorkflowViolation(violations, {
+        code: 'STARTUP_AUTHORITY_REJECTION',
+        locator: adapter.locator ?? request.workflow.artifactId,
+        message: `adapter ${adapter.adapterId} is outside startup-granted authority`,
+        metadataRef: adapter.adapterId,
+        ruleId: startupRuleId('allowedAdapters'),
+        source: 'startup_profile'
+      });
+    }
+
+    if (isOutsideAllowedSet(request.startupProfile?.allowedCapabilityFamilies, adapter.capabilityFamily)) {
+      addWorkflowViolation(violations, {
+        code: 'STARTUP_AUTHORITY_REJECTION',
+        locator: adapter.locator ?? request.workflow.artifactId,
+        message: `capability family ${adapter.capabilityFamily} is outside startup-granted authority`,
+        metadataRef: adapter.capabilityFamily,
+        ruleId: startupRuleId('allowedCapabilityFamilies'),
+        source: 'startup_profile'
+      });
+    }
+  }
+
+  for (const effect of request.workflow.requestedEffects ?? []) {
+    if (includesDefined(request.policy.forbiddenEffectClasses, effect.effectClass)) {
+      addWorkflowViolation(violations, {
+        code: 'EFFECT_CLASS_FORBIDDEN',
+        locator: effect.locator ?? request.workflow.artifactId,
+        message: `effect class ${effect.effectClass} is forbidden by workflow policy`,
+        metadataRef: effect.effectClass,
+        ruleId: policyRuleId(policyId, 'forbiddenEffectClasses'),
+        source: 'workflow_policy'
+      });
+    }
+
+    if (includesDefined(request.policy.forbiddenEffectTiers, effect.effectTier)) {
+      addWorkflowViolation(violations, {
+        code: 'EFFECT_TIER_FORBIDDEN',
+        locator: effect.locator ?? request.workflow.artifactId,
+        message: `effect tier ${effect.effectTier} is forbidden by workflow policy`,
+        metadataRef: effect.effectTier,
+        ruleId: policyRuleId(policyId, 'forbiddenEffectTiers'),
+        source: 'workflow_policy'
+      });
+    }
+
+    if (isOutsideAllowedSet(request.startupProfile?.allowedEffectClasses, effect.effectClass)) {
+      addWorkflowViolation(violations, {
+        code: 'STARTUP_AUTHORITY_REJECTION',
+        locator: effect.locator ?? request.workflow.artifactId,
+        message: `effect class ${effect.effectClass} is outside startup-granted authority`,
+        metadataRef: effect.effectClass,
+        ruleId: startupRuleId('allowedEffectClasses'),
+        source: 'startup_profile'
+      });
+    }
+
+    if (isOutsideAllowedSet(request.startupProfile?.allowedEffectTiers, effect.effectTier)) {
+      addWorkflowViolation(violations, {
+        code: 'STARTUP_AUTHORITY_REJECTION',
+        locator: effect.locator ?? request.workflow.artifactId,
+        message: `effect tier ${effect.effectTier} is outside startup-granted authority`,
+        metadataRef: effect.effectTier,
+        ruleId: startupRuleId('allowedEffectTiers'),
+        source: 'startup_profile'
+      });
+    }
+  }
+
+  for (const privilege of request.workflow.requestedPrivilegeTiers ?? []) {
+    if (includesDefined(request.policy.forbiddenPrivilegeTiers, privilege.tier)) {
+      addWorkflowViolation(violations, {
+        code: 'PRIVILEGE_TIER_FORBIDDEN',
+        locator: privilege.locator ?? request.workflow.artifactId,
+        message: `privilege tier ${privilege.tier} is forbidden by workflow policy`,
+        metadataRef: privilege.tier,
+        ruleId: policyRuleId(policyId, 'forbiddenPrivilegeTiers'),
+        source: 'workflow_policy'
+      });
+    }
+
+    if (isOutsideAllowedSet(request.startupProfile?.allowedPrivilegeTiers, privilege.tier)) {
+      addWorkflowViolation(violations, {
+        code: 'STARTUP_AUTHORITY_REJECTION',
+        locator: privilege.locator ?? request.workflow.artifactId,
+        message: `privilege tier ${privilege.tier} is outside startup-granted authority`,
+        metadataRef: privilege.tier,
+        ruleId: startupRuleId('allowedPrivilegeTiers'),
+        source: 'startup_profile'
+      });
+    }
+  }
+
+  for (const statement of request.workflow.statements ?? []) {
+    if (isOutsideAllowedSet(request.policy.allowedStatementFamilies, statement.family)) {
+      addWorkflowViolation(violations, {
+        code: 'STATEMENT_FAMILY_FORBIDDEN',
+        locator: statement.locator ?? request.workflow.artifactId,
+        message: `statement family ${statement.family} is not allowed by workflow policy`,
+        metadataRef: statement.family,
+        ruleId: policyRuleId(policyId, 'allowedStatementFamilies'),
+        source: 'workflow_policy'
+      });
+    }
+  }
+
+  const violationClass = classifyWorkflowPolicyViolations(violations);
+  const status: WorkflowPolicyDecisionPayload['status'] = violations.length === 0 ? 'allowed' : 'denied';
+  const receiptExpectations: DecisionReceiptExpectation[] = [
+    'decision.issue',
+    'decision.deny',
+    'decision.validation_failure'
+  ];
+
+  return buildTile(
+    'workflow.policy_decision',
+    {
+      boundaries: {
+        executionDecisionValidation: 'separate_iam_decision_required',
+        requestPolicyAuthority: 'narrows_startup_authority_only'
+      },
+      decisionId: buildWorkflowPolicyDecisionId(request.workflow.artifactId, request.policySnapshotId, evaluatedAt),
+      evaluatedAt,
+      policyIds: [policyId],
+      provenance: {
+        evaluatedWorkflowArtifactId: request.workflow.artifactId,
+        policySnapshotId: request.policySnapshotId,
+        ...(request.startupGrantSnapshotId === undefined ? {} : { startupGrantSnapshotId: request.startupGrantSnapshotId })
+      },
+      receiptExpectations,
+      status,
+      ...(violationClass === undefined ? {} : { violationClass }),
+      violations
+    },
+    { createdAt: evaluatedAt, pack: 'rosetta.guard' }
   );
 }
 

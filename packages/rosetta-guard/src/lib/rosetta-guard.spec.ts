@@ -5,6 +5,7 @@ import {
   evaluateGuard,
   evaluatePrivacyBudget,
   evaluateSocialEngineeringRisk,
+  evaluateWorkflowPolicyGate,
   issueIamDecision,
   revokeIamDecision,
   validateIamDecision
@@ -192,6 +193,115 @@ describe('rosetta-guard', () => {
       responseKind: 'iam.decision',
       timeoutAt: '2026-05-04T15:10:00.000Z'
     });
+  });
+
+  it('denies forbidden workflow adapters, effect tiers, and privilege tiers with stable locators', () => {
+    const decision = evaluateWorkflowPolicyGate({
+      evaluatedAt: '2026-05-04T18:00:00.000Z',
+      policy: {
+        forbiddenAdapters: ['shell.exec'],
+        forbiddenEffectTiers: ['external_write'],
+        forbiddenPrivilegeTiers: ['admin'],
+        policyId: 'policy.workflow.sandbox'
+      },
+      policySnapshotId: 'policy-snapshot-1',
+      startupGrantSnapshotId: 'startup-profile-1',
+      workflow: {
+        artifactId: 'workflow.artifact.1',
+        requestedAdapters: [{ adapterId: 'shell.exec', locator: 'graph.nodes[2]' }],
+        requestedEffects: [{ effectClass: 'filesystem', effectTier: 'external_write', locator: 'graph.nodes[3]' }],
+        requestedPrivilegeTiers: [{ locator: 'graph.nodes[4]', tier: 'admin' }]
+      }
+    });
+
+    expect(decision.kind).toBe('workflow.policy_decision');
+    expect(decision.payload.status).toBe('denied');
+    expect(decision.payload.violationClass).toBe('policy_violation');
+    expect(decision.payload.violations).toEqual([
+      expect.objectContaining({ code: 'ADAPTER_FORBIDDEN', locator: 'graph.nodes[2]', ruleId: 'policy.workflow.sandbox:forbiddenAdapters' }),
+      expect.objectContaining({ code: 'EFFECT_TIER_FORBIDDEN', locator: 'graph.nodes[3]', ruleId: 'policy.workflow.sandbox:forbiddenEffectTiers' }),
+      expect.objectContaining({ code: 'PRIVILEGE_TIER_FORBIDDEN', locator: 'graph.nodes[4]', ruleId: 'policy.workflow.sandbox:forbiddenPrivilegeTiers' })
+    ]);
+    expect(decision.payload.provenance).toMatchObject({
+      evaluatedWorkflowArtifactId: 'workflow.artifact.1',
+      policySnapshotId: 'policy-snapshot-1',
+      startupGrantSnapshotId: 'startup-profile-1'
+    });
+    expect(decision.payload.receiptExpectations).toContain('decision.deny');
+  });
+
+  it('admits a workflow with a reusable policy decision artifact without replacing iam.decision validation', () => {
+    const decision = evaluateWorkflowPolicyGate({
+      evaluatedAt: '2026-05-04T18:00:00.000Z',
+      policy: {
+        allowedStatementFamilies: ['read_model'],
+        forbiddenAdapters: ['shell.exec'],
+        forbiddenPrivilegeTiers: ['admin'],
+        policyId: 'policy.workflow.readonly'
+      },
+      policySnapshotId: 'policy-snapshot-2',
+      workflow: {
+        artifactId: 'workflow.artifact.2',
+        requestedAdapters: [{ adapterId: 'vector.search', capabilityFamily: 'retrieval', locator: 'graph.nodes[1]' }],
+        requestedEffects: [{ effectClass: 'read', effectTier: 'local_read', locator: 'graph.nodes[1]' }],
+        requestedPrivilegeTiers: [{ locator: 'graph.nodes[1]', tier: 'reader' }],
+        statements: [{ family: 'read_model', locator: 'graph.nodes[1]' }]
+      }
+    });
+
+    expect(decision.payload.status).toBe('allowed');
+    expect(decision.payload.violations).toEqual([]);
+    expect(decision.payload.boundaries.executionDecisionValidation).toBe('separate_iam_decision_required');
+    expect(decision.payload.receiptExpectations).toContain('decision.issue');
+  });
+
+  it('fails closed for malformed policy input and request attempts outside startup ceilings', () => {
+    const malformed = evaluateWorkflowPolicyGate({
+      evaluatedAt: '2026-05-04T18:00:00.000Z',
+      policy: {
+        forbiddenAdapters: ['shell.exec'],
+        policyId: ''
+      },
+      policySnapshotId: 'policy-snapshot-3',
+      workflow: {
+        artifactId: 'workflow.artifact.3',
+        requestedAdapters: []
+      }
+    });
+
+    expect(malformed.payload.status).toBe('denied');
+    expect(malformed.payload.violationClass).toBe('malformed_policy');
+    expect(malformed.payload.violations).toEqual([
+      expect.objectContaining({ code: 'MALFORMED_POLICY', source: 'malformed_policy' })
+    ]);
+
+    const narrowed = evaluateWorkflowPolicyGate({
+      evaluatedAt: '2026-05-04T18:00:00.000Z',
+      policy: {
+        policyId: 'policy.workflow.narrow'
+      },
+      policySnapshotId: 'policy-snapshot-4',
+      startupGrantSnapshotId: 'startup-profile-2',
+      startupProfile: {
+        allowedAdapters: ['vector.search'],
+        allowedEffectTiers: ['local_read'],
+        allowedPrivilegeTiers: ['reader']
+      },
+      workflow: {
+        artifactId: 'workflow.artifact.4',
+        requestedAdapters: [{ adapterId: 'shell.exec', locator: 'graph.nodes[2]' }],
+        requestedEffects: [{ effectClass: 'filesystem', effectTier: 'external_write', locator: 'graph.nodes[2]' }],
+        requestedPrivilegeTiers: [{ locator: 'graph.nodes[2]', tier: 'admin' }]
+      }
+    });
+
+    expect(narrowed.payload.status).toBe('denied');
+    expect(narrowed.payload.violationClass).toBe('startup_profile_rejection');
+    expect(narrowed.payload.violations.map((violation) => violation.code)).toEqual([
+      'STARTUP_AUTHORITY_REJECTION',
+      'STARTUP_AUTHORITY_REJECTION',
+      'STARTUP_AUTHORITY_REJECTION'
+    ]);
   });
 
   it('blocks disclosures whose cumulative privacy budget exceeds the policy threshold', () => {
