@@ -26,6 +26,55 @@ export interface GuardDecisionPayload {
   tokenId: string;
 }
 
+export interface PrivacyBudgetField {
+  dataClass: 'financial' | 'phi' | 'pii' | 'proprietary';
+  field: string;
+  risk: number;
+}
+
+export interface PrivacyBudgetCorrelationGroup {
+  fields: string[];
+  groupId: string;
+  risk: number;
+}
+
+export interface PrivacyBudgetBoundaryRule {
+  dataClass: PrivacyBudgetField['dataClass'];
+  deniedCombinations: string[][];
+}
+
+export interface PrivacyBudgetTrafficPattern {
+  frequencyRisk: number;
+  window: string;
+}
+
+export type PrivacyBudgetReasonCode =
+  | 'DENIED_FIELD_COMBINATION'
+  | 'PRIVACY_BUDGET_EXCEEDED'
+  | 'PRIVACY_BUDGET_OK'
+  | 'TRAFFIC_PATTERN_RISK';
+
+export interface PrivacyBudgetRequest {
+  boundaryRules?: PrivacyBudgetBoundaryRule[];
+  correlationGroups?: PrivacyBudgetCorrelationGroup[];
+  fields: PrivacyBudgetField[];
+  maxCumulativeRisk: number;
+  trafficPattern?: PrivacyBudgetTrafficPattern;
+}
+
+export interface PrivacyBudgetDisclosureUnit {
+  fields: string[];
+  id: string;
+  risk: number;
+}
+
+export interface PrivacyBudgetDecision {
+  cumulativeRisk: number;
+  disclosureUnits: PrivacyBudgetDisclosureUnit[];
+  effect: 'allow' | 'deny';
+  reasonCodes: PrivacyBudgetReasonCode[];
+}
+
 function matchesPattern(pattern: string, value: string): boolean {
   return pattern === '*' || value.startsWith(pattern);
 }
@@ -60,4 +109,60 @@ export function evaluateGuard(request: GuardRequest, rules: GuardRule[]): TileEn
     },
     { pack: 'rosetta.guard' }
   );
+}
+
+export function evaluatePrivacyBudget(request: PrivacyBudgetRequest): PrivacyBudgetDecision {
+  const correlatedFields = new Set(request.correlationGroups?.flatMap((group) => group.fields) ?? []);
+  const disclosureUnits: PrivacyBudgetDisclosureUnit[] = [
+    ...(request.correlationGroups ?? []).map((group) => ({
+      fields: [...group.fields],
+      id: group.groupId,
+      risk: group.risk
+    })),
+    ...request.fields
+      .filter((field) => !correlatedFields.has(field.field))
+      .map((field) => ({
+        fields: [field.field],
+        id: field.field,
+        risk: field.risk
+      }))
+  ];
+
+  const trafficRisk = request.trafficPattern?.frequencyRisk ?? 0;
+  const cumulativeRisk = disclosureUnits.reduce((sum, unit) => sum + unit.risk, trafficRisk);
+  const reasonCodes: PrivacyBudgetReasonCode[] = [];
+
+  if (cumulativeRisk > request.maxCumulativeRisk) {
+    reasonCodes.push('PRIVACY_BUDGET_EXCEEDED');
+  }
+
+  if (trafficRisk > 0 && cumulativeRisk > request.maxCumulativeRisk) {
+    reasonCodes.push('TRAFFIC_PATTERN_RISK');
+  }
+
+  const fieldNamesByDataClass = new Map<PrivacyBudgetField['dataClass'], Set<string>>();
+  for (const field of request.fields) {
+    const fieldNames = fieldNamesByDataClass.get(field.dataClass) ?? new Set<string>();
+    fieldNames.add(field.field);
+    fieldNamesByDataClass.set(field.dataClass, fieldNames);
+  }
+
+  for (const rule of request.boundaryRules ?? []) {
+    const fieldNames = fieldNamesByDataClass.get(rule.dataClass) ?? new Set<string>();
+    if (rule.deniedCombinations.some((combination) => combination.every((field) => fieldNames.has(field)))) {
+      reasonCodes.push('DENIED_FIELD_COMBINATION');
+      break;
+    }
+  }
+
+  if (reasonCodes.length === 0) {
+    reasonCodes.push('PRIVACY_BUDGET_OK');
+  }
+
+  return {
+    cumulativeRisk,
+    disclosureUnits,
+    effect: reasonCodes.includes('PRIVACY_BUDGET_OK') ? 'allow' : 'deny',
+    reasonCodes
+  };
 }
