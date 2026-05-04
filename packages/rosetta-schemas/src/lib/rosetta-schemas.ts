@@ -85,6 +85,46 @@ export interface TranslationEvidenceArtifact extends TranslationEvidenceInput {
   artifactCid: string;
 }
 
+export type PostmortemOutcomeClass = 'FAIL' | 'PARTIAL' | 'PASS';
+
+export interface PostmortemRubricChange {
+  dimension: string;
+  proposedNewThreshold: number;
+  scorecard: string;
+}
+
+export interface PostmortemEvolution {
+  change: string;
+  target: string;
+  type: 'skill' | 'workflow';
+}
+
+export interface PostmortemArtifactInput {
+  attachments?: string[];
+  envelopeId: string;
+  outcomeClass: PostmortemOutcomeClass;
+  proposedEvolution?: PostmortemEvolution[];
+  receiptChain: string[];
+  reproductionSteps: string[];
+  rootCause: string;
+  stepId: string;
+  suggestedRubricChanges?: PostmortemRubricChange[];
+  timestamp: string;
+  workflowId: string;
+}
+
+export interface PostmortemArtifact extends PostmortemArtifactInput {
+  artifactCid: string;
+  retention: {
+    archive: 'cold';
+    warmDays: 90;
+  };
+  review: {
+    generatedBy: 'orchestrator';
+    humanReviewRequired: boolean;
+  };
+}
+
 export interface TranslationEvidenceValidation {
   composition: ValidationResult;
   numerical: ValidationResult;
@@ -114,6 +154,19 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'rosetta.action': ['actionId', 'intent', 'runCid'],
   'rosetta.evaluation': ['evaluationId', 'summary', 'verdict'],
   'rosetta.observation': ['observationId', 'signal', 'source'],
+  'entif.postmortem_artifact': [
+    'artifactCid',
+    'envelopeId',
+    'outcomeClass',
+    'receiptChain',
+    'reproductionSteps',
+    'retention',
+    'review',
+    'rootCause',
+    'stepId',
+    'timestamp',
+    'workflowId'
+  ],
   'rosetta.composition_provenance': [
     'answerCid',
     'composedAt',
@@ -227,8 +280,23 @@ const TRANSLATION_EVIDENCE_REQUIRED_FIELDS = [
   'validationProfile'
 ] as const satisfies ReadonlyArray<keyof TranslationEvidenceInput>;
 
+const POSTMORTEM_REQUIRED_FIELDS = [
+  'envelopeId',
+  'outcomeClass',
+  'receiptChain',
+  'reproductionSteps',
+  'rootCause',
+  'stepId',
+  'timestamp',
+  'workflowId'
+] as const satisfies ReadonlyArray<keyof PostmortemArtifactInput>;
+
 function requiredString(value: string | undefined): value is string {
   return typeof value === 'string' && value.trim().length > 0;
+}
+
+function isIsoTimestamp(value: string): boolean {
+  return !Number.isNaN(Date.parse(value)) && value.includes('T');
 }
 
 export function validatePayload(kind: string, payload: object): ValidationResult {
@@ -358,6 +426,71 @@ export function traceCompositionSource(
     providerId: provider.providerId,
     providerResponseCid: provider.providerResponseCid,
     subQueryReceiptCid: provider.subQueryReceiptCid
+  };
+}
+
+export function validatePostmortemArtifact(input: PostmortemArtifactInput): ValidationResult {
+  const errors = POSTMORTEM_REQUIRED_FIELDS.filter((field) => !(field in input)).map(
+    (field) => `Missing required field: ${field}`
+  );
+
+  if (input.outcomeClass !== 'FAIL' && input.outcomeClass !== 'PARTIAL' && input.outcomeClass !== 'PASS') {
+    errors.push('Postmortem outcomeClass must be PASS, FAIL, or PARTIAL.');
+  }
+  if (!requiredString(input.rootCause)) {
+    errors.push('Postmortem rootCause is required.');
+  }
+  if (!Array.isArray(input.reproductionSteps) || input.reproductionSteps.length === 0) {
+    errors.push('Postmortem reproductionSteps must include at least one step.');
+  }
+  if (!Array.isArray(input.receiptChain) || input.receiptChain.length === 0) {
+    errors.push('Postmortem receiptChain must include at least one receipt id.');
+  }
+  if (!requiredString(input.timestamp) || !isIsoTimestamp(input.timestamp)) {
+    errors.push('Postmortem timestamp must be an ISO-8601 timestamp.');
+  }
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function shouldGeneratePostmortem(outcomeClass: PostmortemOutcomeClass): boolean {
+  return outcomeClass === 'FAIL' || outcomeClass === 'PARTIAL';
+}
+
+export function buildPostmortemArtifact(input: PostmortemArtifactInput): PostmortemArtifact {
+  const validation = validatePostmortemArtifact(input);
+  if (!validation.ok) {
+    throw new Error(validation.errors.join('; '));
+  }
+
+  const artifactWithoutCid = {
+    attachments: input.attachments ?? [],
+    envelopeId: input.envelopeId,
+    outcomeClass: input.outcomeClass,
+    proposedEvolution: input.proposedEvolution ?? [],
+    receiptChain: input.receiptChain,
+    reproductionSteps: input.reproductionSteps,
+    retention: {
+      archive: 'cold' as const,
+      warmDays: 90 as const
+    },
+    review: {
+      generatedBy: 'orchestrator' as const,
+      humanReviewRequired: input.outcomeClass === 'FAIL'
+    },
+    rootCause: input.rootCause,
+    stepId: input.stepId,
+    suggestedRubricChanges: input.suggestedRubricChanges ?? [],
+    timestamp: input.timestamp,
+    workflowId: input.workflowId
+  };
+
+  return {
+    ...artifactWithoutCid,
+    artifactCid: makeContentId(JSON.stringify(artifactWithoutCid))
   };
 }
 

@@ -3,14 +3,17 @@ import { describe, expect, it } from 'vitest';
 import {
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
+  buildPostmortemArtifact,
   buildTranslationEvidence,
   changedCompoundCacheKeyDimensions,
   composeTranslationEvidence,
   emitConformanceBundle,
+  shouldGeneratePostmortem,
   traceCompositionSource,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
   validatePayload,
+  validatePostmortemArtifact,
   validateTranslationEvidence
 } from './rosetta-schemas.js';
 
@@ -223,6 +226,54 @@ describe('rosetta-schemas', () => {
     expect(validateTranslationEvidence(artifact).numerical.ok).toBe(true);
     expect(artifact.artifactCid).toMatch(/^cidv1-sha256-/u);
     expect(artifact.ambiguity.entropy).toBeGreaterThan(0);
+  });
+
+  it('models Entif workflow postmortems as scored lifecycle artifacts', () => {
+    const artifact = buildPostmortemArtifact({
+      envelopeId: 'env.workflow.step.1',
+      outcomeClass: 'FAIL',
+      receiptChain: ['cidv1-receipt-start', 'cidv1-receipt-eval'],
+      reproductionSteps: ['Replay envelope env.workflow.step.1', 'Run evaluator profile entif.v0'],
+      rootCause: 'Evaluator confidence fell below the release threshold.',
+      stepId: 'step.evaluate',
+      suggestedRubricChanges: [
+        {
+          dimension: 'confidence',
+          proposedNewThreshold: 0.92,
+          scorecard: 'entif.v0.release'
+        }
+      ],
+      timestamp: '2026-05-04T03:20:00.000Z',
+      workflowId: 'workflow.release-check'
+    });
+
+    expect(validatePayload('entif.postmortem_artifact', artifact).ok).toBe(true);
+    expect(validatePostmortemArtifact(artifact).ok).toBe(true);
+    expect(artifact.artifactCid).toMatch(/^cidv1-sha256-/u);
+    expect(artifact.review.humanReviewRequired).toBe(true);
+    expect(artifact.retention.warmDays).toBe(90);
+    expect(shouldGeneratePostmortem('FAIL')).toBe(true);
+    expect(shouldGeneratePostmortem('PARTIAL')).toBe(true);
+    expect(shouldGeneratePostmortem('PASS')).toBe(false);
+  });
+
+  it('rejects incomplete Entif postmortems', () => {
+    const result = validatePostmortemArtifact({
+      envelopeId: 'env.workflow.step.1',
+      outcomeClass: 'PARTIAL',
+      receiptChain: [],
+      reproductionSteps: [],
+      rootCause: '',
+      stepId: 'step.evaluate',
+      timestamp: 'not-a-date',
+      workflowId: 'workflow.release-check'
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('Postmortem rootCause is required.');
+    expect(result.errors).toContain('Postmortem reproductionSteps must include at least one step.');
+    expect(result.errors).toContain('Postmortem receiptChain must include at least one receipt id.');
+    expect(result.errors).toContain('Postmortem timestamp must be an ISO-8601 timestamp.');
   });
 
   it('rejects translation evidence with negative transport mass', () => {
