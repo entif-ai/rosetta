@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildTextFingerprints, canonicalizeJson, normalizePlainText } from './rosetta-canon.js';
+import { buildCanonicalJsonVector, buildTextFingerprints, canonicalizeJson, normalizePlainText } from './rosetta-canon.js';
 
 describe('rosetta-canon', () => {
   it('keeps object key order deterministic', () => {
@@ -14,6 +14,29 @@ describe('rosetta-canon', () => {
     });
 
     expect(left).toBe(right);
+  });
+
+  it('uses JCS-compatible lexical key ordering for Entif canonical JSON', () => {
+    expect(canonicalizeJson({ z: 1, ä: 2, a: 3 })).toBe('{"a":3,"z":1,"ä":2}');
+  });
+
+  it('rejects non-JSON finite numbers before hashing or signing', () => {
+    expect(() => canonicalizeJson({ bad: Number.NaN })).toThrow('JCS canonicalization only accepts finite JSON numbers.');
+    expect(() => canonicalizeJson({ bad: Number.POSITIVE_INFINITY })).toThrow('JCS canonicalization only accepts finite JSON numbers.');
+  });
+
+  it('publishes a replayable Entif canonicalization vector', () => {
+    const vector = buildCanonicalJsonVector({
+      b: true,
+      a: ['Rosetta', { version: 1 }]
+    });
+
+    expect(vector).toEqual({
+      canonicalization: 'RFC8785_JCS',
+      canonicalJson: '{"a":["Rosetta",{"version":1}],"b":true}',
+      cid: 'cidv1-sha256-1a1cf9c1931a64e6d8288c5335f8a26a56405e3d023eac3a0971ea70df7494b6',
+      sha256: '1a1cf9c1931a64e6d8288c5335f8a26a56405e3d023eac3a0971ea70df7494b6'
+    });
   });
 
   it('normalizes whitespace for refinery text promotion', () => {
