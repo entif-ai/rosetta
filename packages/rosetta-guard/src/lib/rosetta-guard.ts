@@ -26,6 +26,94 @@ export interface GuardDecisionPayload {
   tokenId: string;
 }
 
+export interface IamDecisionRequest extends GuardRequest {
+  actionId: string;
+  envelopeId?: string;
+  principalId: string;
+  requestedAt: string;
+  validUntil?: string;
+}
+
+export interface IamDecisionOptions {
+  maxTtlSeconds?: number;
+  policyVersionSet?: string;
+}
+
+export interface IamDecisionBinding {
+  action: string;
+  actionId: string;
+  envelopeId?: string;
+  principalId: string;
+  resource: string;
+}
+
+export interface IamDecisionPayload {
+  binding: IamDecisionBinding;
+  compatibility: {
+    sourceKind: 'guard.decision_token';
+    transition: 'projected';
+  };
+  constraints: Record<string, string>;
+  decisionId: string;
+  effect: 'allow' | 'deny';
+  expiresAt: string;
+  issuedAt: string;
+  mode: 'live' | 'parse-only';
+  policyIds: string[];
+  policyVersionSet: string;
+  reason: string;
+  receiptExpectations: DecisionReceiptExpectation[];
+}
+
+export type DecisionReceiptExpectation =
+  | 'decision.deny'
+  | 'decision.expiry'
+  | 'decision.issue'
+  | 'decision.revocation'
+  | 'decision.validation_failure';
+
+export interface IamDecisionRevocation {
+  decisionId: string;
+  reason: string;
+  revokedAt: string;
+}
+
+export interface IamDecisionValidationRequest {
+  action: string;
+  actionId: string;
+  now: string;
+  policyVersionSet: string;
+  principalId: string;
+  resource: string;
+  revokedDecisions?: IamDecisionRevocation[];
+}
+
+export type IamDecisionValidationReasonCode =
+  | 'DECISION_DENIED'
+  | 'DECISION_EXPIRED'
+  | 'DECISION_REVOKED'
+  | 'DECISION_VALID'
+  | 'POLICY_VERSION_MISMATCH'
+  | 'REQUEST_BINDING_MISMATCH';
+
+export interface IamDecisionValidationResult {
+  effect: 'allow' | 'deny';
+  incident?: DecisionReceiptExpectation;
+  reasonCodes: IamDecisionValidationReasonCode[];
+}
+
+export interface ApprovalHandoffRequest {
+  action: string;
+  actionId: string;
+  approvalRequestId: string;
+  requestedAt: string;
+  timeoutAt: string;
+}
+
+export interface ApprovalHandoffPayload extends ApprovalHandoffRequest {
+  responseKind: 'iam.decision';
+}
+
 export interface PrivacyBudgetField {
   dataClass: 'financial' | 'phi' | 'pii' | 'proprietary';
   field: string;
@@ -104,6 +192,28 @@ function matchesPattern(pattern: string, value: string): boolean {
   return pattern === '*' || value.startsWith(pattern);
 }
 
+function parseTimestamp(timestamp: string): number {
+  const parsed = Date.parse(timestamp);
+  if (!Number.isFinite(parsed)) {
+    throw new Error(`Invalid timestamp: ${timestamp}`);
+  }
+
+  return parsed;
+}
+
+function addSeconds(timestamp: string, seconds: number): string {
+  return new Date(parseTimestamp(timestamp) + seconds * 1000).toISOString();
+}
+
+function earliestTimestamp(left: string, right: string): string {
+  return parseTimestamp(left) <= parseTimestamp(right) ? new Date(parseTimestamp(left)).toISOString() : new Date(parseTimestamp(right)).toISOString();
+}
+
+function buildDecisionId(binding: IamDecisionBinding, issuedAt: string): string {
+  const raw = `${binding.principalId}:${binding.actionId}:${binding.action}:${binding.resource}:${binding.envelopeId ?? 'local'}:${issuedAt}`;
+  return `iam.decision.${raw.replace(/[^a-zA-Z0-9]+/g, '.').replace(/(^\.+|\.+$)/g, '').toLowerCase()}`;
+}
+
 export function evaluateGuard(request: GuardRequest, rules: GuardRule[]): TileEnvelope<GuardDecisionPayload> {
   const matched = rules.find(
     (rule) =>
@@ -133,6 +243,126 @@ export function evaluateGuard(request: GuardRequest, rules: GuardRule[]): TileEn
       tokenId: `guard.${request.action}.${effect}`
     },
     { pack: 'rosetta.guard' }
+  );
+}
+
+export function issueIamDecision(
+  request: IamDecisionRequest,
+  rules: GuardRule[],
+  options: IamDecisionOptions = {}
+): TileEnvelope<IamDecisionPayload> {
+  const guardDecision = evaluateGuard(request, rules);
+  const binding: IamDecisionBinding = {
+    action: request.action,
+    actionId: request.actionId,
+    ...(request.envelopeId === undefined ? {} : { envelopeId: request.envelopeId }),
+    principalId: request.principalId,
+    resource: request.resource
+  };
+  const issuedAt = new Date(parseTimestamp(request.requestedAt)).toISOString();
+  const maxTtlExpiresAt = addSeconds(issuedAt, options.maxTtlSeconds ?? 300);
+  const expiresAt = request.validUntil === undefined ? maxTtlExpiresAt : earliestTimestamp(request.validUntil, maxTtlExpiresAt);
+
+  return buildTile(
+    'iam.decision',
+    {
+      binding,
+      compatibility: {
+        sourceKind: 'guard.decision_token',
+        transition: 'projected'
+      },
+      constraints: {},
+      decisionId: buildDecisionId(binding, issuedAt),
+      effect: guardDecision.payload.effect,
+      expiresAt,
+      issuedAt,
+      mode: request.mode,
+      policyIds: guardDecision.payload.policyIds,
+      policyVersionSet: options.policyVersionSet ?? 'unversioned',
+      reason: guardDecision.payload.reason,
+      receiptExpectations: [
+        'decision.issue',
+        'decision.deny',
+        'decision.expiry',
+        'decision.revocation',
+        'decision.validation_failure'
+      ]
+    },
+    { createdAt: issuedAt, pack: 'rosetta.guard' }
+  );
+}
+
+export function revokeIamDecision(decisionId: string, reason: string, revokedAt: string): IamDecisionRevocation {
+  return {
+    decisionId,
+    reason,
+    revokedAt: new Date(parseTimestamp(revokedAt)).toISOString()
+  };
+}
+
+export function validateIamDecision(
+  decision: TileEnvelope<IamDecisionPayload>,
+  request: IamDecisionValidationRequest
+): IamDecisionValidationResult {
+  if (
+    decision.payload.binding.action !== request.action ||
+    decision.payload.binding.actionId !== request.actionId ||
+    decision.payload.binding.principalId !== request.principalId ||
+    decision.payload.binding.resource !== request.resource
+  ) {
+    return {
+      effect: 'deny',
+      incident: 'decision.validation_failure',
+      reasonCodes: ['REQUEST_BINDING_MISMATCH']
+    };
+  }
+
+  if (decision.payload.policyVersionSet !== request.policyVersionSet) {
+    return {
+      effect: 'deny',
+      incident: 'decision.validation_failure',
+      reasonCodes: ['POLICY_VERSION_MISMATCH']
+    };
+  }
+
+  if (decision.payload.effect === 'deny') {
+    return {
+      effect: 'deny',
+      incident: 'decision.deny',
+      reasonCodes: ['DECISION_DENIED']
+    };
+  }
+
+  if (parseTimestamp(request.now) > parseTimestamp(decision.payload.expiresAt)) {
+    return {
+      effect: 'deny',
+      incident: 'decision.expiry',
+      reasonCodes: ['DECISION_EXPIRED']
+    };
+  }
+
+  if ((request.revokedDecisions ?? []).some((revocation) => revocation.decisionId === decision.payload.decisionId)) {
+    return {
+      effect: 'deny',
+      incident: 'decision.revocation',
+      reasonCodes: ['DECISION_REVOKED']
+    };
+  }
+
+  return {
+    effect: 'allow',
+    reasonCodes: ['DECISION_VALID']
+  };
+}
+
+export function buildApprovalHandoff(request: ApprovalHandoffRequest): TileEnvelope<ApprovalHandoffPayload> {
+  return buildTile(
+    'iam.approval_handoff',
+    {
+      ...request,
+      responseKind: 'iam.decision'
+    },
+    { createdAt: request.requestedAt, pack: 'rosetta.guard' }
   );
 }
 
