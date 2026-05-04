@@ -123,4 +123,100 @@ describe('canonical-cache', () => {
       rmSync(tmp, { force: true, recursive: true });
     }
   });
+
+  it('invalidates policy cache entries on TTL, version, hash, entitlement, and supersession changes', () => {
+    const cache = new CanonicalCorpusCache();
+
+    cache.putPolicyCacheEntry({
+      answerCid: 'cidv1-answer-handbook',
+      cacheKey: 'cache-key-v1:handbook-benefits',
+      createdAt: '2026-05-04T00:00:00.000Z',
+      expiresAt: '2026-05-04T01:00:00.000Z',
+      metadata: {
+        authoritativeTimestamp: '2026-05-03T12:00:00.000Z',
+        entitlementFingerprint: 'entitlements:plan-a',
+        policyVersion: 'policy-v1',
+        sourceBundleHash: 'sha256:source-a',
+        sourceVersion: 'handbook-v1'
+      }
+    });
+
+    expect(cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', { now: '2026-05-04T00:30:00.000Z' }).serveable).toBe(
+      true
+    );
+    expect(cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', { now: '2026-05-04T01:00:01.000Z' })).toMatchObject({
+      reasonCode: 'TTL_EXPIRED',
+      serveable: false
+    });
+    expect(cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', { policyVersion: 'policy-v2' })).toMatchObject({
+      reasonCode: 'POLICY_VERSION_CHANGED',
+      serveable: false
+    });
+    expect(cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', { sourceBundleHash: 'sha256:source-b' })).toMatchObject({
+      reasonCode: 'SOURCE_BUNDLE_HASH_CHANGED',
+      serveable: false
+    });
+    expect(cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', { entitlementFingerprint: 'entitlements:plan-b' })).toMatchObject({
+      reasonCode: 'ENTITLEMENT_CHANGED',
+      serveable: false
+    });
+    expect(
+      cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', {
+        supersededSourceVersions: ['handbook-v1']
+      })
+    ).toMatchObject({
+      reasonCode: 'SOURCE_SUPERSEDED',
+      serveable: false
+    });
+  });
+
+  it('records served versus recomputed cache audit evidence and reloads it from persistence', () => {
+    const tmp = mkdtempSync(join(tmpdir(), 'rosetta-cache-'));
+    const cachePath = join(tmp, 'cache.json');
+    try {
+      const cache = new CanonicalCorpusCache({ persistencePath: cachePath });
+      cache.putPolicyCacheEntry({
+        answerCid: 'cidv1-answer-handbook',
+        cacheKey: 'cache-key-v1:handbook-benefits',
+        createdAt: '2026-05-04T00:00:00.000Z',
+        expiresAt: '2026-05-04T01:00:00.000Z',
+        metadata: {
+          authoritativeTimestamp: '2026-05-03T12:00:00.000Z',
+          entitlementFingerprint: 'entitlements:plan-a',
+          policyVersion: 'policy-v1',
+          sourceBundleHash: 'sha256:source-a',
+          sourceVersion: 'handbook-v1'
+        }
+      });
+
+      cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', {
+        now: '2026-05-04T00:30:00.000Z',
+        requestId: 'req-served'
+      });
+      cache.evaluatePolicyCacheEntry('cache-key-v1:handbook-benefits', {
+        now: '2026-05-04T01:30:00.000Z',
+        requestId: 'req-recomputed'
+      });
+      cache.save();
+
+      const reloaded = CanonicalCorpusCache.load({ persistencePath: cachePath });
+
+      expect(reloaded.getPolicyCacheAudit()).toEqual([
+        {
+          cacheKey: 'cache-key-v1:handbook-benefits',
+          decision: 'served',
+          reasonCode: 'CACHE_HIT',
+          requestId: 'req-served'
+        },
+        {
+          cacheKey: 'cache-key-v1:handbook-benefits',
+          decision: 'recomputed',
+          reasonCode: 'TTL_EXPIRED',
+          requestId: 'req-recomputed'
+        }
+      ]);
+    } finally {
+      rmSync(tmp, { force: true, recursive: true });
+    }
+  });
 });

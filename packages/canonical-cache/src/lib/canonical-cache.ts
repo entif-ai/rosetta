@@ -16,6 +16,53 @@ export interface CanonicalCacheOptions {
   persistencePath?: string;
 }
 
+export interface PolicyCacheMetadata {
+  authoritativeTimestamp: string;
+  entitlementFingerprint: string;
+  policyVersion: string;
+  sourceBundleHash: string;
+  sourceVersion: string;
+}
+
+export interface PolicyCacheEntry {
+  answerCid: string;
+  cacheKey: string;
+  createdAt: string;
+  expiresAt: string;
+  metadata: PolicyCacheMetadata;
+}
+
+export type PolicyCacheReasonCode =
+  | 'CACHE_HIT'
+  | 'CACHE_MISS'
+  | 'ENTITLEMENT_CHANGED'
+  | 'POLICY_VERSION_CHANGED'
+  | 'SOURCE_BUNDLE_HASH_CHANGED'
+  | 'SOURCE_SUPERSEDED'
+  | 'TTL_EXPIRED';
+
+export interface PolicyCacheEvaluationContext {
+  entitlementFingerprint?: string;
+  now?: string;
+  policyVersion?: string;
+  requestId?: string;
+  sourceBundleHash?: string;
+  supersededSourceVersions?: string[];
+}
+
+export interface PolicyCacheEvaluation {
+  entry?: PolicyCacheEntry;
+  reasonCode: PolicyCacheReasonCode;
+  serveable: boolean;
+}
+
+export interface PolicyCacheAuditEntry {
+  cacheKey: string;
+  decision: 'recomputed' | 'served';
+  reasonCode: PolicyCacheReasonCode;
+  requestId?: string;
+}
+
 export interface RevisionGraphNode {
   artifactCid: string;
   parentArtifactCid?: string;
@@ -30,6 +77,8 @@ interface PersistedCanonicalCacheState {
   contentIndex: [string, string][];
   lifecycleEvents: [string, CorrectionEvent[]][];
   manifestationIndex: [string, string[]][];
+  policyCacheAudit?: PolicyCacheAuditEntry[];
+  policyCacheEntries?: [string, PolicyCacheEntry][];
   rawEvidenceByCanonicalCid: [string, string[]][];
   recordFamilyIndex: [string, string[]][];
   revisionChains: [string, RevisionGraphNode[]][];
@@ -46,6 +95,8 @@ export class CanonicalCorpusCache {
   private readonly recordFamilyIndex = new Map<string, string[]>();
   private readonly revisionChains = new Map<string, RevisionGraphNode[]>();
   private readonly lifecycleEvents = new Map<string, CorrectionEvent[]>();
+  private readonly policyCacheAudit: PolicyCacheAuditEntry[] = [];
+  private readonly policyCacheEntries = new Map<string, PolicyCacheEntry>();
 
   constructor(private readonly options: CanonicalCacheOptions = {}) {}
 
@@ -68,6 +119,8 @@ export class CanonicalCorpusCache {
     for (const [key, value] of state.contentIndex) cache.contentIndex.set(key, value);
     for (const [key, value] of state.lifecycleEvents) cache.lifecycleEvents.set(key, value);
     for (const [key, value] of state.manifestationIndex) cache.manifestationIndex.set(key, value);
+    cache.policyCacheAudit.push(...(state.policyCacheAudit ?? []));
+    for (const [key, value] of state.policyCacheEntries ?? []) cache.policyCacheEntries.set(key, value);
     for (const [key, value] of state.rawEvidenceByCanonicalCid) cache.rawEvidenceByCanonicalCid.set(key, value);
     for (const [key, value] of state.recordFamilyIndex) cache.recordFamilyIndex.set(key, value);
     for (const [key, value] of state.revisionChains) cache.revisionChains.set(key, value);
@@ -177,6 +230,63 @@ export class CanonicalCorpusCache {
     return (this.revisionChains.get(recordFamilyKey) ?? []).map((node) => ({ ...node }));
   }
 
+  putPolicyCacheEntry(entry: PolicyCacheEntry): void {
+    this.policyCacheEntries.set(entry.cacheKey, {
+      ...entry,
+      metadata: { ...entry.metadata }
+    });
+  }
+
+  evaluatePolicyCacheEntry(cacheKey: string, context: PolicyCacheEvaluationContext = {}): PolicyCacheEvaluation {
+    const entry = this.policyCacheEntries.get(cacheKey);
+    if (!entry) {
+      return this.recordPolicyCacheAudit(cacheKey, 'CACHE_MISS', context.requestId);
+    }
+
+    if (context.now && Date.parse(context.now) > Date.parse(entry.expiresAt)) {
+      return this.recordPolicyCacheAudit(cacheKey, 'TTL_EXPIRED', context.requestId, entry);
+    }
+    if (context.policyVersion && context.policyVersion !== entry.metadata.policyVersion) {
+      return this.recordPolicyCacheAudit(cacheKey, 'POLICY_VERSION_CHANGED', context.requestId, entry);
+    }
+    if (context.sourceBundleHash && context.sourceBundleHash !== entry.metadata.sourceBundleHash) {
+      return this.recordPolicyCacheAudit(cacheKey, 'SOURCE_BUNDLE_HASH_CHANGED', context.requestId, entry);
+    }
+    if (context.entitlementFingerprint && context.entitlementFingerprint !== entry.metadata.entitlementFingerprint) {
+      return this.recordPolicyCacheAudit(cacheKey, 'ENTITLEMENT_CHANGED', context.requestId, entry);
+    }
+    if (context.supersededSourceVersions?.includes(entry.metadata.sourceVersion)) {
+      return this.recordPolicyCacheAudit(cacheKey, 'SOURCE_SUPERSEDED', context.requestId, entry);
+    }
+
+    return this.recordPolicyCacheAudit(cacheKey, 'CACHE_HIT', context.requestId, entry);
+  }
+
+  getPolicyCacheAudit(): PolicyCacheAuditEntry[] {
+    return this.policyCacheAudit.map((entry) => ({ ...entry }));
+  }
+
+  private recordPolicyCacheAudit(
+    cacheKey: string,
+    reasonCode: PolicyCacheReasonCode,
+    requestId?: string,
+    entry?: PolicyCacheEntry
+  ): PolicyCacheEvaluation {
+    const serveable = reasonCode === 'CACHE_HIT';
+    this.policyCacheAudit.push({
+      cacheKey,
+      decision: serveable ? 'served' : 'recomputed',
+      reasonCode,
+      ...(requestId ? { requestId } : {})
+    });
+
+    return {
+      ...(entry ? { entry: { ...entry, metadata: { ...entry.metadata } } } : {}),
+      reasonCode,
+      serveable
+    };
+  }
+
   save(): void {
     if (!this.options.persistencePath) {
       throw new Error('Canonical cache persistence requires a persistencePath.');
@@ -190,6 +300,8 @@ export class CanonicalCorpusCache {
       contentIndex: [...this.contentIndex.entries()],
       lifecycleEvents: [...this.lifecycleEvents.entries()],
       manifestationIndex: [...this.manifestationIndex.entries()],
+      policyCacheAudit: [...this.policyCacheAudit],
+      policyCacheEntries: [...this.policyCacheEntries.entries()],
       rawEvidenceByCanonicalCid: [...this.rawEvidenceByCanonicalCid.entries()],
       recordFamilyIndex: [...this.recordFamilyIndex.entries()],
       revisionChains: [...this.revisionChains.entries()]
