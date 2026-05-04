@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest';
 
-import { evaluateGuard, evaluatePrivacyBudget, evaluateSocialEngineeringRisk } from './rosetta-guard.js';
+import {
+  buildApprovalHandoff,
+  evaluateGuard,
+  evaluatePrivacyBudget,
+  evaluateSocialEngineeringRisk,
+  issueIamDecision,
+  revokeIamDecision,
+  validateIamDecision
+} from './rosetta-guard.js';
 
 describe('rosetta-guard', () => {
   it('denies side effects under parse-only default', () => {
@@ -30,6 +38,160 @@ describe('rosetta-guard', () => {
 
     expect(decision.payload.effect).toBe('allow');
     expect(decision.payload.policyIds).toContain('policy.read-only');
+  });
+
+  it('issues an iam.decision bound to one execution attempt with action-aligned lifetime', () => {
+    const decision = issueIamDecision(
+      {
+        action: 'write.file',
+        actionId: 'action-123',
+        envelopeId: 'msg-456',
+        mode: 'live',
+        principalId: 'principal.alice',
+        requestedAt: '2026-05-04T14:00:00.000Z',
+        resource: 'workspace://entif-ai/notes.md',
+        sideEffect: true,
+        validUntil: '2026-05-04T14:03:00.000Z'
+      },
+      [{ actionPattern: 'write.', effect: 'allow', id: 'policy.write-workspace', mode: 'live', resourcePattern: 'workspace://' }],
+      {
+        maxTtlSeconds: 600,
+        policyVersionSet: 'policies@2026-05-04'
+      }
+    );
+
+    expect(decision.kind).toBe('iam.decision');
+    expect(decision.payload.compatibility.sourceKind).toBe('guard.decision_token');
+    expect(decision.payload.binding).toMatchObject({
+      action: 'write.file',
+      actionId: 'action-123',
+      envelopeId: 'msg-456',
+      principalId: 'principal.alice',
+      resource: 'workspace://entif-ai/notes.md'
+    });
+    expect(decision.payload.effect).toBe('allow');
+    expect(decision.payload.issuedAt).toBe('2026-05-04T14:00:00.000Z');
+    expect(decision.payload.expiresAt).toBe('2026-05-04T14:03:00.000Z');
+    expect(decision.payload.policyVersionSet).toBe('policies@2026-05-04');
+    expect(decision.payload.receiptExpectations).toContain('decision.issue');
+  });
+
+  it('validates iam.decision execution attempts fail-closed for expiry, mismatch, revocation, and denies', () => {
+    const decision = issueIamDecision(
+      {
+        action: 'read.file',
+        actionId: 'action-123',
+        mode: 'live',
+        principalId: 'principal.alice',
+        requestedAt: '2026-05-04T14:00:00.000Z',
+        resource: 'workspace://entif-ai/notes.md',
+        sideEffect: false,
+        validUntil: '2026-05-04T14:05:00.000Z'
+      },
+      [{ actionPattern: 'read.', effect: 'allow', id: 'policy.read-workspace', mode: 'live', resourcePattern: 'workspace://' }],
+      { policyVersionSet: 'policies@2026-05-04' }
+    );
+
+    expect(
+      validateIamDecision(decision, {
+        action: 'read.file',
+        actionId: 'action-123',
+        now: '2026-05-04T14:04:00.000Z',
+        policyVersionSet: 'policies@2026-05-04',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md'
+      })
+    ).toMatchObject({ effect: 'allow', reasonCodes: ['DECISION_VALID'] });
+
+    expect(
+      validateIamDecision(decision, {
+        action: 'write.file',
+        actionId: 'action-123',
+        now: '2026-05-04T14:04:00.000Z',
+        policyVersionSet: 'policies@2026-05-04',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md'
+      })
+    ).toMatchObject({ effect: 'deny', incident: 'decision.validation_failure', reasonCodes: ['REQUEST_BINDING_MISMATCH'] });
+
+    expect(
+      validateIamDecision(decision, {
+        action: 'read.file',
+        actionId: 'action-123',
+        now: '2026-05-04T14:06:00.000Z',
+        policyVersionSet: 'policies@2026-05-04',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md'
+      })
+    ).toMatchObject({ effect: 'deny', incident: 'decision.expiry', reasonCodes: ['DECISION_EXPIRED'] });
+
+    expect(
+      validateIamDecision(decision, {
+        action: 'read.file',
+        actionId: 'action-123',
+        now: '2026-05-04T14:04:00.000Z',
+        policyVersionSet: 'policies@2026-05-04',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md',
+        revokedDecisions: [revokeIamDecision(decision.payload.decisionId, 'operator rescinded approval', '2026-05-04T14:02:00.000Z')]
+      })
+    ).toMatchObject({ effect: 'deny', incident: 'decision.revocation', reasonCodes: ['DECISION_REVOKED'] });
+
+    expect(
+      validateIamDecision(decision, {
+        action: 'read.file',
+        actionId: 'action-123',
+        now: '2026-05-04T14:04:00.000Z',
+        policyVersionSet: 'policies@stale',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md'
+      })
+    ).toMatchObject({ effect: 'deny', incident: 'decision.validation_failure', reasonCodes: ['POLICY_VERSION_MISMATCH'] });
+
+    const denied = issueIamDecision(
+      {
+        action: 'delete.file',
+        actionId: 'action-456',
+        mode: 'live',
+        principalId: 'principal.alice',
+        requestedAt: '2026-05-04T14:00:00.000Z',
+        resource: 'workspace://entif-ai/notes.md',
+        sideEffect: true
+      },
+      [{ actionPattern: 'delete.', effect: 'deny', id: 'policy.deny-delete', mode: 'live', resourcePattern: 'workspace://' }],
+      { policyVersionSet: 'policies@2026-05-04' }
+    );
+
+    expect(
+      validateIamDecision(denied, {
+        action: 'delete.file',
+        actionId: 'action-456',
+        now: '2026-05-04T14:01:00.000Z',
+        policyVersionSet: 'policies@2026-05-04',
+        principalId: 'principal.alice',
+        resource: 'workspace://entif-ai/notes.md'
+      })
+    ).toMatchObject({ effect: 'deny', incident: 'decision.deny', reasonCodes: ['DECISION_DENIED'] });
+  });
+
+  it('models bounded async approval handoff on the same decision contract', () => {
+    const handoff = buildApprovalHandoff({
+      action: 'deploy.release',
+      actionId: 'action-789',
+      approvalRequestId: 'approval-1',
+      requestedAt: '2026-05-04T15:00:00.000Z',
+      timeoutAt: '2026-05-04T15:10:00.000Z'
+    });
+
+    expect(handoff.kind).toBe('iam.approval_handoff');
+    expect(handoff.payload).toEqual({
+      action: 'deploy.release',
+      actionId: 'action-789',
+      approvalRequestId: 'approval-1',
+      requestedAt: '2026-05-04T15:00:00.000Z',
+      responseKind: 'iam.decision',
+      timeoutAt: '2026-05-04T15:10:00.000Z'
+    });
   });
 
   it('blocks disclosures whose cumulative privacy budget exceeds the policy threshold', () => {
