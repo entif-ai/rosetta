@@ -65,6 +65,32 @@ export interface CompositionTrace {
   subQueryReceiptCid: string;
 }
 
+export interface TranslationEvidenceInput {
+  evidenceRefs: string[];
+  lineageRefs: string[];
+  normalizationProfile: string;
+  receiptBundleCid: string;
+  sourceConceptRefs: string[];
+  supersedesRefs: string[];
+  targetConceptRefs: string[];
+  tolerance: number;
+  transport: number[][];
+  validationProfile: string;
+}
+
+export interface TranslationEvidenceArtifact extends TranslationEvidenceInput {
+  ambiguity: {
+    entropy: number;
+  };
+  artifactCid: string;
+}
+
+export interface TranslationEvidenceValidation {
+  composition: ValidationResult;
+  numerical: ValidationResult;
+  structural: ValidationResult;
+}
+
 export interface ConformanceEntry {
   cid: string;
   conforms: boolean;
@@ -97,6 +123,20 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'recordCid',
     'recordId',
     'sourceAttributions'
+  ],
+  'rosetta.translation_evidence': [
+    'ambiguity',
+    'artifactCid',
+    'evidenceRefs',
+    'lineageRefs',
+    'normalizationProfile',
+    'receiptBundleCid',
+    'sourceConceptRefs',
+    'supersedesRefs',
+    'targetConceptRefs',
+    'tolerance',
+    'transport',
+    'validationProfile'
   ],
   'rosetta.receipt': ['claims', 'digests', 'receiptType', 'subjects'],
   'rosetta.run': ['runId', 'summary', 'tags'],
@@ -173,6 +213,19 @@ const COMPOSITION_INPUT_REQUIRED_FIELDS = [
   'recordId',
   'sourceAttributions'
 ] as const satisfies ReadonlyArray<keyof CompositionProvenanceInput>;
+
+const TRANSLATION_EVIDENCE_REQUIRED_FIELDS = [
+  'evidenceRefs',
+  'lineageRefs',
+  'normalizationProfile',
+  'receiptBundleCid',
+  'sourceConceptRefs',
+  'supersedesRefs',
+  'targetConceptRefs',
+  'tolerance',
+  'transport',
+  'validationProfile'
+] as const satisfies ReadonlyArray<keyof TranslationEvidenceInput>;
 
 function requiredString(value: string | undefined): value is string {
   return typeof value === 'string' && value.trim().length > 0;
@@ -306,6 +359,113 @@ export function traceCompositionSource(
     providerResponseCid: provider.providerResponseCid,
     subQueryReceiptCid: provider.subQueryReceiptCid
   };
+}
+
+function sum(values: number[]): number {
+  return values.reduce((total, value) => total + value, 0);
+}
+
+function differsFromOne(value: number, tolerance: number): boolean {
+  return Math.abs(value - 1) > tolerance;
+}
+
+function computeTransportEntropy(transport: number[][]): number {
+  const masses = transport.flat().filter((entry) => entry > 0);
+  return -masses.reduce((entropy, mass) => entropy + mass * Math.log2(mass), 0);
+}
+
+export function validateTranslationEvidence(input: TranslationEvidenceInput): TranslationEvidenceValidation {
+  const structuralErrors = TRANSLATION_EVIDENCE_REQUIRED_FIELDS.filter((field) => !(field in input)).map(
+    (field) => `Missing required field: ${field}`
+  );
+  if (input.transport.length !== input.sourceConceptRefs.length) {
+    structuralErrors.push('Transport row count must match source concept refs.');
+  }
+  if (input.transport.some((row) => row.length !== input.targetConceptRefs.length)) {
+    structuralErrors.push('Each transport row must match target concept refs.');
+  }
+
+  const numericalErrors: string[] = [];
+  input.transport.forEach((row, rowIndex) => {
+    row.forEach((entry, columnIndex) => {
+      if (entry < 0) {
+        numericalErrors.push(`Transport entry [${rowIndex},${columnIndex}] must be nonnegative.`);
+      }
+    });
+    const rowMass = sum(row);
+    if (differsFromOne(rowMass, input.tolerance)) {
+      numericalErrors.push(`Row ${rowIndex} mass ${rowMass} differs from 1 by more than tolerance ${input.tolerance}.`);
+    }
+  });
+
+  for (let columnIndex = 0; columnIndex < input.targetConceptRefs.length; columnIndex += 1) {
+    const columnMass = sum(input.transport.map((row) => row[columnIndex] ?? 0));
+    if (differsFromOne(columnMass, input.tolerance)) {
+      numericalErrors.push(`Column ${columnIndex} mass ${columnMass} differs from 1 by more than tolerance ${input.tolerance}.`);
+    }
+  }
+
+  const numerical = {
+    errors: numericalErrors,
+    ok: numericalErrors.length === 0
+  };
+
+  return {
+    composition: numerical,
+    numerical,
+    structural: {
+      errors: structuralErrors,
+      ok: structuralErrors.length === 0
+    }
+  };
+}
+
+export function buildTranslationEvidence(input: TranslationEvidenceInput): TranslationEvidenceArtifact {
+  const validation = validateTranslationEvidence(input);
+  const errors = [...validation.structural.errors, ...validation.numerical.errors];
+  if (errors.length > 0) {
+    throw new Error(errors.join('; '));
+  }
+
+  const artifactWithoutCid = {
+    ...input,
+    ambiguity: {
+      entropy: computeTransportEntropy(input.transport)
+    }
+  };
+
+  return {
+    ...artifactWithoutCid,
+    artifactCid: makeContentId(JSON.stringify(artifactWithoutCid))
+  };
+}
+
+export function composeTranslationEvidence(
+  first: TranslationEvidenceArtifact,
+  second: TranslationEvidenceArtifact
+): TranslationEvidenceArtifact {
+  if (first.targetConceptRefs.join('\0') !== second.sourceConceptRefs.join('\0')) {
+    throw new Error('TranslationEvidence composition requires first targets to match second sources.');
+  }
+
+  const transport = first.transport.map((firstRow) =>
+    second.targetConceptRefs.map((_, targetColumnIndex) =>
+      sum(firstRow.map((firstMass, midIndex) => firstMass * second.transport[midIndex][targetColumnIndex]))
+    )
+  );
+
+  return buildTranslationEvidence({
+    evidenceRefs: [...new Set([...first.evidenceRefs, ...second.evidenceRefs])],
+    lineageRefs: [first.artifactCid, second.artifactCid],
+    normalizationProfile: first.normalizationProfile,
+    receiptBundleCid: first.receiptBundleCid,
+    sourceConceptRefs: [...first.sourceConceptRefs],
+    supersedesRefs: [],
+    targetConceptRefs: [...second.targetConceptRefs],
+    tolerance: Math.max(first.tolerance, second.tolerance),
+    transport,
+    validationProfile: first.validationProfile
+  });
 }
 
 export function emitShaclShapes(kinds = Object.keys(REQUIRED_FIELDS)): string {

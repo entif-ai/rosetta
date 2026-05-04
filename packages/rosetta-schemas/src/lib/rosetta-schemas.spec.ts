@@ -3,12 +3,15 @@ import { describe, expect, it } from 'vitest';
 import {
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
+  buildTranslationEvidence,
   changedCompoundCacheKeyDimensions,
+  composeTranslationEvidence,
   emitConformanceBundle,
   traceCompositionSource,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
-  validatePayload
+  validatePayload,
+  validateTranslationEvidence
 } from './rosetta-schemas.js';
 
 describe('rosetta-schemas', () => {
@@ -197,5 +200,107 @@ describe('rosetta-schemas', () => {
       providerResponseCid: 'cidv1-dental-response',
       subQueryReceiptCid: 'cidv1-dental-query-receipt'
     });
+  });
+
+  it('models translation evidence as an ambiguity-preserving transport artifact', () => {
+    const artifact = buildTranslationEvidence({
+      evidenceRefs: ['cidv1-source-evidence'],
+      lineageRefs: ['translation-evidence.previous'],
+      normalizationProfile: 'doubly-stochastic-v1',
+      receiptBundleCid: 'cidv1-receipt-bundle',
+      sourceConceptRefs: ['source.a', 'source.b'],
+      supersedesRefs: [],
+      targetConceptRefs: ['target.x', 'target.y'],
+      tolerance: 0.001,
+      transport: [
+        [0.7, 0.3],
+        [0.3, 0.7]
+      ],
+      validationProfile: 'translation-evidence.v1'
+    });
+
+    expect(validatePayload('rosetta.translation_evidence', artifact).ok).toBe(true);
+    expect(validateTranslationEvidence(artifact).numerical.ok).toBe(true);
+    expect(artifact.artifactCid).toMatch(/^cidv1-sha256-/u);
+    expect(artifact.ambiguity.entropy).toBeGreaterThan(0);
+  });
+
+  it('rejects translation evidence with negative transport mass', () => {
+    const result = validateTranslationEvidence({
+      evidenceRefs: ['cidv1-source-evidence'],
+      lineageRefs: [],
+      normalizationProfile: 'doubly-stochastic-v1',
+      receiptBundleCid: 'cidv1-receipt-bundle',
+      sourceConceptRefs: ['source.a'],
+      supersedesRefs: [],
+      targetConceptRefs: ['target.x', 'target.y'],
+      tolerance: 0.001,
+      transport: [[1.1, -0.1]],
+      validationProfile: 'translation-evidence.v1'
+    });
+
+    expect(result.numerical.ok).toBe(false);
+    expect(result.numerical.errors).toContain('Transport entry [0,1] must be nonnegative.');
+  });
+
+  it('separates structural validation from numerical mass validation', () => {
+    const result = validateTranslationEvidence({
+      evidenceRefs: ['cidv1-source-evidence'],
+      lineageRefs: [],
+      normalizationProfile: 'doubly-stochastic-v1',
+      receiptBundleCid: 'cidv1-receipt-bundle',
+      sourceConceptRefs: ['source.a', 'source.b'],
+      supersedesRefs: [],
+      targetConceptRefs: ['target.x', 'target.y'],
+      tolerance: 0.001,
+      transport: [
+        [0.9, 0.1],
+        [0.9, 0.1]
+      ],
+      validationProfile: 'translation-evidence.v1'
+    });
+
+    expect(result.structural.ok).toBe(true);
+    expect(result.numerical.ok).toBe(false);
+    expect(result.numerical.errors).toContain('Column 0 mass 1.8 differs from 1 by more than tolerance 0.001.');
+  });
+
+  it('composes compatible translation evidence and revalidates closure', () => {
+    const first = buildTranslationEvidence({
+      evidenceRefs: ['cidv1-source-evidence-a'],
+      lineageRefs: [],
+      normalizationProfile: 'doubly-stochastic-v1',
+      receiptBundleCid: 'cidv1-receipt-a',
+      sourceConceptRefs: ['source.a', 'source.b'],
+      supersedesRefs: [],
+      targetConceptRefs: ['mid.x', 'mid.y'],
+      tolerance: 0.001,
+      transport: [
+        [0.8, 0.2],
+        [0.2, 0.8]
+      ],
+      validationProfile: 'translation-evidence.v1'
+    });
+    const second = buildTranslationEvidence({
+      evidenceRefs: ['cidv1-source-evidence-b'],
+      lineageRefs: [],
+      normalizationProfile: 'doubly-stochastic-v1',
+      receiptBundleCid: 'cidv1-receipt-b',
+      sourceConceptRefs: ['mid.x', 'mid.y'],
+      supersedesRefs: [],
+      targetConceptRefs: ['target.m', 'target.n'],
+      tolerance: 0.001,
+      transport: [
+        [0.6, 0.4],
+        [0.4, 0.6]
+      ],
+      validationProfile: 'translation-evidence.v1'
+    });
+
+    const composed = composeTranslationEvidence(first, second);
+
+    expect(composed.sourceConceptRefs).toEqual(['source.a', 'source.b']);
+    expect(composed.targetConceptRefs).toEqual(['target.m', 'target.n']);
+    expect(validateTranslationEvidence(composed).composition.ok).toBe(true);
   });
 });
