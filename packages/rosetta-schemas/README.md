@@ -9,6 +9,32 @@ Provides lightweight payload validation and conformance bundle emission for curr
 - validates required fields for supported tile kinds
 - emits SHACL-like Turtle text describing those required fields
 - emits conformance bundles summarizing conforming versus violating tiles
+- exposes the internal Agentic Messaging schema registry and mailroom validation mapping
+
+## Agentic Messaging Registry
+
+- Normative location: `packages/rosetta-schemas/src/lib/rosetta-schemas.ts`
+- Envelope schema: `entif.agentic-messaging.envelope.v1`
+- Message-family schema IDs:
+  - `TASK_RECEIPT`
+  - `INCIDENT_ENVELOPE`
+  - `WORK_UNIT_UPDATE`
+  - `ARTIFACT_PUBLISH`
+  - `HEALTH_REPORT`
+  - `ACTION_REQUEST`
+  - `ACTION_DECISION`
+  - `APPROVAL_REQUEST`
+  - `APPROVAL_RESPONSE`
+- `domain_ref` is treated as a nested component owned by issue `#711`; the registry consumes that shape rather than redefining it.
+- The mailroom mapping is deterministic: `msg_type -> schema_id -> validation result -> quarantine reason`.
+- Migration posture:
+  - additive changes stay minor-compatible
+  - breaking changes require a new schema ID / major lane
+  - readers should tolerate the current and previous major during rollout
+- Scope boundary:
+  - this registry covers internal Agentic Messaging only
+  - issue `#1047` remains the external peer-agent interop lane
+  - issues `#706`, `#1029`, `#718`, and `#946` are downstream consumers of this registry surface
 
 ## Fixture Status
 

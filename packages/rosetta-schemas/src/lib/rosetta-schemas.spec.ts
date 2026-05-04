@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
 import {
+  AGENTIC_MAILROOM_VALIDATION_CHECKLIST,
+  AGENTIC_MESSAGE_TYPE_PROFILES,
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
   buildDailyTopShelfDigest,
@@ -12,9 +14,12 @@ import {
   composeTranslationEvidence,
   emitConformanceBundle,
   emitShaclShapes,
+  getAgenticMessageSchemaProfile,
   normalizeDomainRef,
   shouldGeneratePostmortem,
   traceCompositionSource,
+  validateAgenticMessageEnvelope,
+  validateAgenticMessagePayload,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
   validateDailyTopShelfDigest,
@@ -677,5 +682,92 @@ describe('rosetta-schemas', () => {
     expect(composed.sourceConceptRefs).toEqual(['source.a', 'source.b']);
     expect(composed.targetConceptRefs).toEqual(['target.m', 'target.n']);
     expect(validateTranslationEvidence(composed).composition.ok).toBe(true);
+  });
+
+  it('registers canonical internal Agentic Messaging schemas for every RFC message family', () => {
+    expect(Object.keys(AGENTIC_MESSAGE_TYPE_PROFILES)).toEqual([
+      'ACTION_DECISION',
+      'ACTION_REQUEST',
+      'APPROVAL_REQUEST',
+      'APPROVAL_RESPONSE',
+      'ARTIFACT_PUBLISH',
+      'HEALTH_REPORT',
+      'INCIDENT_ENVELOPE',
+      'TASK_RECEIPT',
+      'WORK_UNIT_UPDATE'
+    ]);
+
+    expect(getAgenticMessageSchemaProfile('ACTION_REQUEST')).toMatchObject({
+      plane: 'control',
+      schemaId: 'entif.agentic-messaging.action-request.v1',
+      version: '1.0.0'
+    });
+    expect(getAgenticMessageSchemaProfile('ACTION_REQUEST')?.nestedComponents).toEqual([
+      { field: 'domain_ref', owner: '#711' }
+    ]);
+    expect(getAgenticMessageSchemaProfile('ACTION_REQUEST')?.migration).toMatchObject({
+      additiveChangePolicy: 'minor-compatible',
+      breakingChangePolicy: 'new-schema-id-major'
+    });
+  });
+
+  it('validates signed Agentic Messaging envelopes and rejects unknown types with explicit quarantine reasons', () => {
+    const envelope = {
+      domain_ref: {
+        abacLabels: { project: 'rosetta', role: 'guard' },
+        classification: 'restricted',
+        tenantId: 'entif-ai',
+        vendorRoute: 'openai'
+      },
+      expires_at: '2026-05-04T15:10:00.000Z',
+      issued_at: '2026-05-04T15:00:00.000Z',
+      msg_id: '550e8400-e29b-41d4-a716-446655440000',
+      msg_type: 'ACTION_REQUEST',
+      nonce: 'nonce-001',
+      payload_hash: 'sha256:abc123',
+      routing_key: 'guard.action.request',
+      schema_version: '1.0.0',
+      sender: {
+        node_id: 'node.guard.mailroom',
+        principal_ref: 'iam.principal.guard'
+      },
+      sig: 'ed25519:signature'
+    };
+
+    expect(validateAgenticMessageEnvelope(envelope)).toEqual({
+      errors: [],
+      ok: true,
+      quarantineReasons: [],
+      schemaId: 'entif.agentic-messaging.envelope.v1'
+    });
+
+    expect(
+      validateAgenticMessageEnvelope({
+        ...envelope,
+        msg_type: 'UNKNOWN_MESSAGE'
+      })
+    ).toMatchObject({
+      ok: false,
+      quarantineReasons: ['UNKNOWN_MESSAGE_TYPE']
+    });
+  });
+
+  it('maps msg_type to schema validation results and mailroom quarantine reasons deterministically', () => {
+    const result = validateAgenticMessagePayload('ACTION_REQUEST', {
+      actionId: 'action.exec.tool',
+      capabilityRef: 'capability.guard.exec',
+      justification: 'Need guarded execution.'
+    });
+
+    expect(result).toMatchObject({
+      ok: false,
+      quarantineReasons: ['SCHEMA_INVALID'],
+      schemaId: 'entif.agentic-messaging.action-request.v1'
+    });
+    expect(result.errors).toContain('ACTION_REQUEST missing required field: iamDecisionRef');
+    expect(AGENTIC_MAILROOM_VALIDATION_CHECKLIST).toContainEqual({
+      failureReasons: ['UNKNOWN_MESSAGE_TYPE', 'SCHEMA_INVALID'],
+      stage: 'schema-validate'
+    });
   });
 });

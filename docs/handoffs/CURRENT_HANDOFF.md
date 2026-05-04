@@ -1,9 +1,9 @@
 # Current Handoff
 
 Status: active baton-pass for Codex and agent sessions
-Date: 2026-04-25
-Last updated: 2026-04-25
-Current branch at time of update: `codex/pack-conformance-foundation`
+Date: 2026-05-04
+Last updated: 2026-05-04
+Current branch at time of update: `codex/am-001-schema-registry`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,31 +127,27 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/pack-conformance-foundation`
+Current branch: `codex/am-001-schema-registry`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/69
-- https://github.com/entif-ai/rosetta/issues/74
+- https://github.com/entif-ai/rosetta/issues/220
 
-This branch implements the first pack conformance foundation from the ROCK-3111-C issue cluster. Issue #69 is the primary target because #71 depends on deterministic pack manifest identity. Issue #74 is included only where it shares the same validator surface: `depends_on` self-reference and cycle detection.
+This branch implements the internal Agentic Messaging schema registry for AM-001 using the existing `packages/rosetta-schemas` validation surface. The slice stays on internal mailroom validation and leaves external peer-agent interop to #1047.
 
 Changed behavior:
 
-- `tools/pack-conformance/validate-packs.mjs` computes `rosetta-pack-id-v1` IDs from pack metadata plus sorted file hashes, verifies declared `pack_id`, checks declared entrypoint/export paths, and rejects self/cyclic `depends_on`.
-- `packs/rrp/project.json` exposes `nx run packs-rrp:conformance`.
-- `tools/pack-conformance/project.json` exposes the focused Vitest target for affected validation.
-- `packs/*/pack.json` now carry RFC-aligned `pack_id`, `doc_id`, `category`, `namespace`, `depends_on`, owner, export, and source-of-truth metadata while retaining the legacy `id`/`kind` fields required by current bootstrap tests.
-- `packs/rrp/test-vectors/pack-id-v1.expected.json` records a deterministic pack-id algorithm vector.
-- `ROCK-3111-C` now specifies the pack-id hash input, verification rule, edge cases, and `depends_on` acyclicity.
+- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` now exports a canonical registry for all nine internal Agentic Messaging message families plus the signed envelope schema ID and deterministic mailroom `schema-validate` mapping.
+- `validateAgenticMessageEnvelope` validates required envelope fields, sender shape, ISO timestamps, nested `domain_ref`, and unknown message types with explicit quarantine reasons.
+- `validateAgenticMessagePayload` validates per-`msg_type` payload profiles and returns deterministic `schemaId` plus `SCHEMA_INVALID` versus `UNKNOWN_MESSAGE_TYPE`.
+- `packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` adds red/green tests covering registry completeness, envelope validation, and deterministic quarantine mapping.
+- `packages/rosetta-schemas/README.md` now records the normative registry location, versioning/migration posture, the `domain_ref` dependency on #711, and downstream/internal-only boundaries.
 
 ## Validation State
 
-- `pnpm run docs:intake` passed.
-- `pnpm exec vitest run tools/pack-conformance/validate-packs.spec.mjs` passed.
-- `pnpm exec nx run packs-rrp:conformance` passed.
-- `pnpm run packs:conformance -- --skip-nx-cache` passed.
-- `pnpm exec eslint tools/pack-conformance/validate-packs.mjs tools/pack-conformance/validate-packs.spec.mjs tools/doc-intake/validate-docs-intelligence.mjs` passed.
-- `pnpm run affected:verify` passed.
+- `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
+- `npx -y node@22 node_modules/nx/bin/nx.js run rosetta-schemas:test --skip-nx-cache` passed.
+- `npx -y node@22 node_modules/nx/bin/nx.js affected -t typecheck --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- `npx -y node@22 node_modules/nx/bin/nx.js affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
 - `git diff --check` passed.
 
 Known non-failing warnings:
@@ -163,9 +159,9 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Publish a draft PR for issue #69 and mention partial #74 coverage.
-2. Keep #71 open until a core glossary and explicit `extends` metadata rule are added on top of this validator.
-3. Consider a follow-up PR to enforce required root files and traceability headers across all packs.
+1. Publish a ready PR for issue #220 with the Node 22 validation commands and the explicit `#711` / `#1047` boundary notes.
+2. Keep #711 as the nested `domain_ref` child surface; this branch only consumes that contract.
+3. Follow with mailroom/runtime consumers in #706, #1029, #718, and #946 rather than extending the schema registry locally.
 
 For Text-Core:
 
@@ -182,5 +178,6 @@ For Text-Core:
 - Text-Core TC-002 normalization fingerprints are merged.
 - Text-Core TC-003 cache dedupe/revision/local persistence is merged.
 - Text-Core TC-004 source-to-observation tiling and transform receipts is merged.
+- Internal Agentic Messaging schema registry now exists in `packages/rosetta-schemas`; mailroom-facing validation can consume it without inventing per-issue payload rules.
 - Docs intelligence is now the intended next planning lane before further broad Text-Core prioritization.
 - Large-scale corpus ingest remains blocked until the Ingress Refinery and canonical corpus cache are ready.
