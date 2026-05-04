@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { createFrame, createObservation } from "../../../rosetta-core/src/index.js";
+import { dedupeMemoryFacts, fingerprintMemoryFact } from "./memory-facts.js";
 import {
   PipelineContext,
   runConceptLayer,
@@ -13,6 +14,47 @@ import { entiSkillFromFrame, observationFromToolResult } from "./enti-skill.js";
 import { runPipeline } from "./pipeline-runner.js";
 
 describe("rosetta-pipeline", () => {
+  it("fingerprints memory facts without whitespace-trim false collisions", () => {
+    expect(fingerprintMemoryFact("User prefers dark mode")).not.toBe(fingerprintMemoryFact(" User prefers dark mode"));
+    expect(fingerprintMemoryFact("User prefers dark mode")).not.toBe(fingerprintMemoryFact("User prefers dark mode\n"));
+    expect(fingerprintMemoryFact("User prefers dark mode")).not.toBe(fingerprintMemoryFact("User\tprefers dark mode"));
+    expect(fingerprintMemoryFact("User prefers dark mode")).toMatch(/^sha256:[a-f0-9]{64}$/u);
+  });
+
+  it("logs memory fact dedup decisions and flags confidence collisions for review", () => {
+    const result = dedupeMemoryFacts([
+      { fact: "User prefers dark mode", confidence: 0.95, sourceRef: "obs.high" },
+      { fact: "User prefers dark mode", confidence: 0.35, sourceRef: "obs.low" },
+      { fact: " User prefers dark mode", confidence: 0.9, sourceRef: "obs.leading-space" },
+    ]);
+
+    expect(result.facts.map((fact) => fact.sourceRef)).toEqual(["obs.high", "obs.leading-space"]);
+    expect(result.decisions).toEqual([
+      {
+        action: "kept",
+        incomingFingerprint: result.facts[0].fingerprint,
+        incomingConfidence: 0.95,
+        incomingSourceRef: "obs.high",
+      },
+      {
+        action: "flagged_for_review",
+        existingFingerprint: result.facts[0].fingerprint,
+        incomingFingerprint: result.facts[0].fingerprint,
+        existingConfidence: 0.95,
+        incomingConfidence: 0.35,
+        existingSourceRef: "obs.high",
+        incomingSourceRef: "obs.low",
+        reason: "confidence_collision",
+      },
+      {
+        action: "kept",
+        incomingFingerprint: result.facts[1].fingerprint,
+        incomingConfidence: 0.9,
+        incomingSourceRef: "obs.leading-space",
+      },
+    ]);
+  });
+
   it("initializes pipeline context defaults and tracks trace/errors/layer count", () => {
     const observation = createObservation("user", "Hello");
     const ctx = new PipelineContext(observation, {
