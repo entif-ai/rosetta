@@ -1,9 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
 import {
+  buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
   changedCompoundCacheKeyDimensions,
   emitConformanceBundle,
+  traceCompositionSource,
+  validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
   validatePayload
 } from './rosetta-schemas.js';
@@ -96,5 +99,103 @@ describe('rosetta-schemas', () => {
       'policyVersion',
       'sourceBundleHash'
     ]);
+  });
+
+  it('models multi-provider composition provenance as a first-class payload', () => {
+    const record = buildCompositionProvenanceRecord({
+      answerCid: 'cidv1-answer-benefits',
+      composedAt: '2026-05-04T03:00:00.000Z',
+      compositionLogic: 'Merge provider-scoped benefit facts without exposing raw employee metadata.',
+      compositionReceiptCid: 'cidv1-receipt-composition',
+      providers: [
+        {
+          challengePath: ['cidv1-answer-benefits#medical-summary', 'cidv1-medical-response'],
+          freshnessVerifiedAt: '2026-05-03T12:00:00.000Z',
+          normalizedUserMetadataCid: 'cidv1-medical-metadata',
+          providerId: 'medical',
+          providerResponseCid: 'cidv1-medical-response',
+          providerResponseTimestamp: '2026-05-03T12:01:00.000Z',
+          providerResponseVersion: 'medical-v3',
+          rightsDecisionCid: 'cidv1-medical-rights',
+          subQueryReceiptCid: 'cidv1-medical-query-receipt'
+        }
+      ],
+      recordId: 'composition.benefits.20260504',
+      sourceAttributions: [
+        {
+          answerFragmentId: 'medical-summary',
+          providerId: 'medical',
+          providerResponseCid: 'cidv1-medical-response'
+        }
+      ]
+    });
+
+    expect(validatePayload('rosetta.composition_provenance', record).ok).toBe(true);
+    expect(record.recordCid).toMatch(/^cidv1-sha256-/u);
+  });
+
+  it('rejects provider composition records without challengeability paths', () => {
+    const result = validateCompositionProvenanceRecord({
+      answerCid: 'cidv1-answer-benefits',
+      composedAt: '2026-05-04T03:00:00.000Z',
+      compositionLogic: 'Merge provider facts.',
+      compositionReceiptCid: 'cidv1-receipt-composition',
+      providers: [
+        {
+          challengePath: [],
+          freshnessVerifiedAt: '2026-05-03T12:00:00.000Z',
+          normalizedUserMetadataCid: 'cidv1-medical-metadata',
+          providerId: 'medical',
+          providerResponseCid: 'cidv1-medical-response',
+          providerResponseTimestamp: '2026-05-03T12:01:00.000Z',
+          providerResponseVersion: 'medical-v3',
+          rightsDecisionCid: 'cidv1-medical-rights',
+          subQueryReceiptCid: 'cidv1-medical-query-receipt'
+        }
+      ],
+      recordId: 'composition.benefits.20260504',
+      sourceAttributions: []
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('Provider medical must include a challengeability path.');
+  });
+
+  it('traces composed answer fragments back to their provider response', () => {
+    const record = buildCompositionProvenanceRecord({
+      answerCid: 'cidv1-answer-benefits',
+      composedAt: '2026-05-04T03:00:00.000Z',
+      compositionLogic: 'Merge provider facts.',
+      compositionReceiptCid: 'cidv1-receipt-composition',
+      providers: [
+        {
+          challengePath: ['cidv1-answer-benefits#dental-summary', 'cidv1-dental-response'],
+          freshnessVerifiedAt: '2026-05-03T12:00:00.000Z',
+          normalizedUserMetadataCid: 'cidv1-dental-metadata',
+          providerId: 'dental',
+          providerResponseCid: 'cidv1-dental-response',
+          providerResponseTimestamp: '2026-05-03T12:01:00.000Z',
+          providerResponseVersion: 'dental-v2',
+          rightsDecisionCid: 'cidv1-dental-rights',
+          subQueryReceiptCid: 'cidv1-dental-query-receipt'
+        }
+      ],
+      recordId: 'composition.benefits.20260504',
+      sourceAttributions: [
+        {
+          answerFragmentId: 'dental-summary',
+          providerId: 'dental',
+          providerResponseCid: 'cidv1-dental-response'
+        }
+      ]
+    });
+
+    expect(traceCompositionSource(record, 'dental-summary')).toEqual({
+      answerFragmentId: 'dental-summary',
+      challengePath: ['cidv1-answer-benefits#dental-summary', 'cidv1-dental-response'],
+      providerId: 'dental',
+      providerResponseCid: 'cidv1-dental-response',
+      subQueryReceiptCid: 'cidv1-dental-query-receipt'
+    });
   });
 });
