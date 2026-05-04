@@ -6,6 +6,25 @@ export interface ValidationResult {
   ok: boolean;
 }
 
+export interface CompoundCacheKeyInput {
+  dataClassification?: string;
+  policyVersion?: string;
+  rightsDomain?: string;
+  semanticIntent?: string;
+  sourceBundleHash?: string;
+}
+
+export interface CompoundCacheKey {
+  dataClassification: string;
+  lookupKey: string;
+  policyVersion: string;
+  rightsDomain: string;
+  semanticIntent: string;
+  sourceBundleHash: string;
+}
+
+export type CompoundCacheKeyDimension = keyof Omit<CompoundCacheKey, 'lookupKey'>;
+
 export interface ConformanceEntry {
   cid: string;
   conforms: boolean;
@@ -60,6 +79,34 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'source.trust_matrix': ['axes', 'notes', 'subjectCid', 'trustClass']
 };
 
+const COMPOUND_CACHE_KEY_DIMENSIONS = [
+  'semanticIntent',
+  'rightsDomain',
+  'dataClassification',
+  'policyVersion',
+  'sourceBundleHash'
+] as const satisfies readonly CompoundCacheKeyDimension[];
+
+const COMPOUND_CACHE_KEY_LOOKUP_ORDER = [
+  'dataClassification',
+  'policyVersion',
+  'rightsDomain',
+  'semanticIntent',
+  'sourceBundleHash'
+] as const satisfies readonly CompoundCacheKeyDimension[];
+
+const COMPOUND_CACHE_KEY_LOOKUP_NAMES: Record<CompoundCacheKeyDimension, string> = {
+  dataClassification: 'data_classification',
+  policyVersion: 'policy_version',
+  rightsDomain: 'rights_domain',
+  semanticIntent: 'semantic_intent',
+  sourceBundleHash: 'source_bundle_hash'
+};
+
+function requiredString(value: string | undefined): value is string {
+  return typeof value === 'string' && value.trim().length > 0;
+}
+
 export function validatePayload(kind: string, payload: object): ValidationResult {
   const errors = (REQUIRED_FIELDS[kind] ?? [])
     .filter((field) => !(field in payload))
@@ -69,6 +116,45 @@ export function validatePayload(kind: string, payload: object): ValidationResult
     errors,
     ok: errors.length === 0
   };
+}
+
+export function validateCompoundCacheKey(input: CompoundCacheKeyInput): ValidationResult {
+  const errors = COMPOUND_CACHE_KEY_DIMENSIONS.filter((dimension) => !requiredString(input[dimension])).map(
+    (dimension) => `Missing required cache key dimension: ${dimension}`
+  );
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function buildCompoundCacheKey(input: CompoundCacheKeyInput): CompoundCacheKey {
+  const validation = validateCompoundCacheKey(input);
+  if (!validation.ok) {
+    throw new Error(validation.errors.join('; '));
+  }
+
+  const key = input as Required<CompoundCacheKeyInput>;
+  const lookupKey = COMPOUND_CACHE_KEY_LOOKUP_ORDER.map((dimension) => {
+    return `${COMPOUND_CACHE_KEY_LOOKUP_NAMES[dimension]}=${encodeURIComponent(key[dimension])}`;
+  }).join('|');
+
+  return {
+    dataClassification: key.dataClassification,
+    lookupKey: `cache-key-v1:${lookupKey}`,
+    policyVersion: key.policyVersion,
+    rightsDomain: key.rightsDomain,
+    semanticIntent: key.semanticIntent,
+    sourceBundleHash: key.sourceBundleHash
+  };
+}
+
+export function changedCompoundCacheKeyDimensions(
+  before: Pick<CompoundCacheKey, CompoundCacheKeyDimension>,
+  after: Pick<CompoundCacheKey, CompoundCacheKeyDimension>
+): CompoundCacheKeyDimension[] {
+  return COMPOUND_CACHE_KEY_DIMENSIONS.filter((dimension) => before[dimension] !== after[dimension]);
 }
 
 export function emitShaclShapes(kinds = Object.keys(REQUIRED_FIELDS)): string {
