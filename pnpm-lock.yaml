@@ -322,6 +322,9 @@ importers:
 
   packages/rosetta-schemas:
     dependencies:
+      '@entif-ai/rosetta-canon':
+        specifier: workspace:*
+        version: link:../rosetta-canon
       '@entif-ai/rosetta-cid':
         specifier: workspace:*
         version: link:../rosetta-cid

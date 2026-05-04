@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildCanonicalJsonVector, buildTextFingerprints, canonicalizeJson, normalizePlainText } from './rosetta-canon.js';
+import { buildCanonicalJsonVector, buildTextFingerprints, canonicalizeJson, normalizePlainText, splitSentences } from './rosetta-canon.js';
 
 describe('rosetta-canon', () => {
   it('keeps object key order deterministic', () => {
@@ -41,6 +41,21 @@ describe('rosetta-canon', () => {
 
   it('normalizes whitespace for refinery text promotion', () => {
     expect(normalizePlainText('alpha   beta\r\n\r\ngamma')).toBe('alpha beta\n\ngamma');
+  });
+
+  it('splits sentences without fragmenting common abbreviations', () => {
+    expect(splitSentences('Dr. Smith met John F. Kennedy in the U.S. Read this next.')).toEqual([
+      'Dr. Smith met John F. Kennedy in the U.S.',
+      'Read this next.'
+    ]);
+    expect(splitSentences('Compare e.g. Fig. 1 vs. Fig. 2. Use p. 42 as source.')).toEqual([
+      'Compare e.g. Fig. 1 vs. Fig. 2.',
+      'Use p. 42 as source.'
+    ]);
+  });
+
+  it('preserves ellipses instead of splitting before the next clause', () => {
+    expect(splitSentences('Wait... hello world. Run the check.')).toEqual(['Wait... hello world.', 'Run the check.']);
   });
 
   it('keeps content fingerprints stable across formatting-only changes', () => {
