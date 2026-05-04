@@ -323,30 +323,40 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'transport',
     'validationProfile'
   ],
-  'rosetta.receipt': ['claims', 'digests', 'receiptType', 'subjects'],
+  'rosetta.receipt': ['claims', 'digests', 'policyRefs', 'receiptType', 'subjects'],
   'rosetta.run': ['runId', 'summary', 'tags'],
   'rosetta.tapestry': ['dynamicTail', 'requiredScope', 'stablePrefix', 'tapestries', 'tenant', 'totalTokens'],
   'rosetta.toolcall': ['args', 'tool', 'toolCallId'],
   'source.canonical_artifact': [
     'artifactId',
     'byteHash',
+    'contentFingerprint',
     'dedupe',
     'normalizedText',
     'normalizedTextHash',
     'pidFamily',
     'provenanceRefs',
+    'revisionFingerprint',
     'rightsScopes',
     'sourceManifestationCid',
     'sourceRecordCid'
   ],
   'source.correction_event': ['eventKind', 'recordedAt', 'subjectCid', 'summary'],
+  'source.derived_artifact': ['artifactId', 'derivationKind', 'payloadText', 'sourceObservationCid', 'sourceSpans'],
   'source.evaluation_receipt': ['evaluatedAt', 'policyRefs', 'subjectCid', 'trustMatrixCid'],
   'source.episode': ['chronology', 'classification', 'episodeId', 'family', 'locator', 'mode', 'rawEvidenceRefs', 'rightsScope'],
   'source.fetch_receipt': ['fetchedAt', 'method', 'requestedLocator', 'resolvedLocator', 'snapshotHash', 'sourceManifestationCid'],
   'source.identity_resolution_receipt': ['confidence', 'entityType', 'evidenceSources', 'subjectCid'],
   'source.ingress_job': ['jobId', 'mode', 'parserProfile', 'policyRefs', 'sourceManifestationCid', 'sourceRecordCid', 'status'],
   'source.manifestation': ['accessRequirements', 'byteHashes', 'manifestationId', 'manifestationKind', 'mediaType', 'sourceRecordCid', 'structureProfile'],
-  'source.normalization_receipt': ['canonicalTextHash', 'normalizationProfile', 'parserProfile', 'sourceManifestationCid'],
+  'source.normalization_receipt': [
+    'canonicalTextHash',
+    'contentFingerprint',
+    'normalizationProfile',
+    'parserProfile',
+    'revisionFingerprint',
+    'sourceManifestationCid'
+  ],
   'source.package': ['members', 'packageId', 'packageKind', 'profileRefs', 'sourceRecordCid'],
   'source.record': ['metadataBlob', 'publicationStatus', 'recordLocalId', 'recordType', 'sourceSystemId', 'stableLocators'],
   'source.registry_entry': ['defaultTrustClass', 'entryId', 'priorityTier', 'sourceSystemId'],
@@ -482,6 +492,10 @@ function isUrl(value: string): boolean {
   }
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
 function canonicalizeItemUrl(itemUrl: string): string {
   const url = new URL(itemUrl);
   const trackingParams = ['fbclid', 'gclid', 'mc_cid', 'mc_eid'];
@@ -509,10 +523,101 @@ function extractHighSignalImperatives(text: string): string[] {
     });
 }
 
+function validateReceiptPayload(payload: object, errors: string[]): void {
+  const receipt = payload as Record<string, unknown>;
+  const claims = Array.isArray(receipt.claims) ? receipt.claims : [];
+  const digests = Array.isArray(receipt.digests) ? receipt.digests : [];
+
+  claims.forEach((claim, claimIndex) => {
+    if (!isRecord(claim)) {
+      errors.push(`Receipt claim ${claimIndex} must be an object.`);
+      return;
+    }
+
+    const evidence = Array.isArray(claim.evidence) ? claim.evidence : [];
+    evidence.forEach((entry, evidenceIndex) => {
+      if (!isRecord(entry) || !requiredString(entry.cid as string | undefined)) {
+        errors.push(`Receipt claim ${claimIndex} evidence ${evidenceIndex} missing required field: cid`);
+      }
+    });
+  });
+
+  digests.forEach((digest, digestIndex) => {
+    if (!isRecord(digest)) {
+      errors.push(`Receipt digest ${digestIndex} must be an object.`);
+      return;
+    }
+
+    for (const field of ['alg', 'digest', 'of']) {
+      if (!requiredString(digest[field] as string | undefined)) {
+        errors.push(`Receipt digest ${digestIndex} missing required field: ${field}`);
+      }
+    }
+  });
+}
+
+function validateCanonicalArtifactPayload(payload: object, errors: string[]): void {
+  const artifact = payload as Record<string, unknown>;
+  const rightsScopes = artifact.rightsScopes;
+  const provenanceRefs = artifact.provenanceRefs;
+
+  if (!Array.isArray(rightsScopes) || rightsScopes.length === 0) {
+    errors.push('source.canonical_artifact rightsScopes must include at least one scope.');
+  }
+
+  if (!isRecord(provenanceRefs)) {
+    errors.push('source.canonical_artifact provenanceRefs must be an object.');
+    return;
+  }
+
+  for (const field of ['evaluationReceiptCid', 'fetchReceiptCid', 'normalizationReceiptCid']) {
+    if (!requiredString(provenanceRefs[field] as string | undefined)) {
+      errors.push(`source.canonical_artifact provenanceRefs missing required field: ${field}`);
+    }
+  }
+}
+
+function validateSourceSpanRefs(kind: string, sourceSpans: unknown, errors: string[]): void {
+  if (!Array.isArray(sourceSpans) || sourceSpans.length === 0) {
+    errors.push(`${kind} sourceSpans must include at least one span.`);
+    return;
+  }
+
+  sourceSpans.forEach((span, index) => {
+    if (!isRecord(span)) {
+      errors.push(`${kind} sourceSpans ${index} must be an object.`);
+      return;
+    }
+
+    for (const field of ['endOffset', 'sourceManifestationCid', 'sourceRecordCid', 'startOffset', 'textHash']) {
+      if (!(field in span)) {
+        errors.push(`${kind} sourceSpans ${index} missing required field: ${field}`);
+      }
+    }
+  });
+}
+
+function validateDerivedArtifactPayload(payload: object, errors: string[]): void {
+  const artifact = payload as Record<string, unknown>;
+  if (artifact.derivationKind !== 'summary' && artifact.derivationKind !== 'extract') {
+    errors.push('source.derived_artifact derivationKind must be summary or extract.');
+  }
+
+  validateSourceSpanRefs('source.derived_artifact', artifact.sourceSpans, errors);
+}
+
 export function validatePayload(kind: string, payload: object): ValidationResult {
   const errors = (REQUIRED_FIELDS[kind] ?? [])
     .filter((field) => !(field in payload))
     .map((field) => `Missing required field: ${field}`);
+
+  if (kind === 'rosetta.receipt') {
+    validateReceiptPayload(payload, errors);
+  } else if (kind === 'source.canonical_artifact') {
+    validateCanonicalArtifactPayload(payload, errors);
+  } else if (kind === 'source.derived_artifact') {
+    validateDerivedArtifactPayload(payload, errors);
+  }
 
   return {
     errors,

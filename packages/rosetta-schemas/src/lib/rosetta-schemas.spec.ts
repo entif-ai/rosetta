@@ -11,6 +11,7 @@ import {
   compareDomainRefs,
   composeTranslationEvidence,
   emitConformanceBundle,
+  emitShaclShapes,
   normalizeDomainRef,
   shouldGeneratePostmortem,
   traceCompositionSource,
@@ -61,6 +62,94 @@ describe('rosetta-schemas', () => {
     expect(result.errors).toContain('Missing required field: rawEvidenceRefs');
     expect(result.errors).toContain('Missing required field: chronology');
     expect(result.errors).toContain('Missing required field: rightsScope');
+  });
+
+  it('aligns receipt validation and SHACL coverage with policyRefs and nested evidence/digests', () => {
+    const validReceipt = {
+      claims: [
+        {
+          claimType: 'rrp:claim.verified',
+          evidence: [{ cid: 'cidv1-evidence', span: 'bytes:0-12' }],
+          statement: 'Source artifact validated.',
+          verdict: 'pass'
+        }
+      ],
+      digests: [{ alg: 'sha256', digest: 'abc123', of: 'payload' }],
+      policyRefs: ['policy.parse-only.default'],
+      receiptType: 'rrp:validation',
+      subjects: [{ cid: 'cidv1-subject', role: 'rrp:subject.artifact' }]
+    };
+
+    expect(validatePayload('rosetta.receipt', validReceipt).ok).toBe(true);
+    expect(emitShaclShapes(['rosetta.receipt'])).toContain('entif:policyRefs');
+
+    const invalidReceipt = {
+      claims: [{ claimType: 'rrp:claim.verified', evidence: [{}], statement: 'Missing evidence cid.', verdict: 'fail' }],
+      digests: [{ alg: 'sha256', of: 'payload' }],
+      receiptType: 'rrp:validation',
+      subjects: [{ cid: 'cidv1-subject' }]
+    };
+
+    expect(validatePayload('rosetta.receipt', invalidReceipt).errors).toEqual([
+      'Missing required field: policyRefs',
+      'Receipt claim 0 evidence 0 missing required field: cid',
+      'Receipt digest 0 missing required field: digest'
+    ]);
+  });
+
+  it('validates live source artifacts including derived artifacts, provenance refs, and rights scopes', () => {
+    expect(
+      validatePayload('source.derived_artifact', {
+        artifactId: 'derived.summary.1',
+        derivationKind: 'summary',
+        payloadText: 'Alpha beta.',
+        sourceObservationCid: 'cidv1-observation',
+        sourceSpans: [
+          {
+            endOffset: 11,
+            sourceManifestationCid: 'cidv1-manifestation',
+            sourceRecordCid: 'cidv1-record',
+            startOffset: 0,
+            textHash: 'sha256:abc'
+          }
+        ]
+      }).ok
+    ).toBe(true);
+
+    expect(
+      validatePayload('source.canonical_artifact', {
+        artifactId: 'canonical.1',
+        byteHash: 'sha256:abc',
+        contentFingerprint: 'cidv1-content',
+        dedupe: {},
+        normalizedText: 'Alpha beta.',
+        normalizedTextHash: 'sha256:def',
+        pidFamily: [],
+        provenanceRefs: {
+          fetchReceiptCid: 'cidv1-fetch',
+          normalizationReceiptCid: 'cidv1-normalization'
+        },
+        revisionFingerprint: 'cidv1-revision',
+        rightsScopes: [],
+        sourceManifestationCid: 'cidv1-manifestation',
+        sourceRecordCid: 'cidv1-record'
+      }).errors
+    ).toEqual([
+      'source.canonical_artifact rightsScopes must include at least one scope.',
+      'source.canonical_artifact provenanceRefs missing required field: evaluationReceiptCid'
+    ]);
+
+    expect(
+      validatePayload('source.derived_artifact', {
+        artifactId: 'derived.extract.1',
+        derivationKind: 'extract',
+        payloadText: 'Alpha beta.',
+        sourceSpans: []
+      }).errors
+    ).toEqual([
+      'Missing required field: sourceObservationCid',
+      'source.derived_artifact sourceSpans must include at least one span.'
+    ]);
   });
 
   it('builds stable compound cache lookup keys across all authorization dimensions', () => {

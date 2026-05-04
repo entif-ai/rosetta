@@ -18,3 +18,34 @@ entif:SourceManifestationShape
   sh:targetClass entif:SourceManifestation ;
   sh:property [ sh:path entif:manifestationId ; sh:minCount 1 ] ;
   sh:property [ sh:path entif:sourceRecordCid ; sh:minCount 1 ] .
+
+entif:SourceTrustMatrixShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceTrustMatrix ;
+  sh:property [ sh:path entif:axes ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:subjectCid ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:trustClass ; sh:minCount 1 ] .
+
+entif:SourceCanonicalArtifactShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceCanonicalArtifact ;
+  sh:property [ sh:path entif:artifactId ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:contentFingerprint ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:provenanceRefs ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:rightsScopes ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceManifestationCid ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceRecordCid ; sh:minCount 1 ] .
+
+entif:SourceDerivedArtifactShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceDerivedArtifact ;
+  sh:property [ sh:path entif:artifactId ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:derivationKind ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceObservationCid ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceSpans ; sh:minCount 1 ] .
+
+entif:SourceReceiptShape
+  a sh:NodeShape ;
+  sh:targetClass entif:SourceReceipt ;
+  sh:property [ sh:path entif:policyRefs ; sh:minCount 1 ] ;
+  sh:property [ sh:path entif:sourceManifestationCid ; sh:minCount 1 ] .
