@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
+  buildIntakeEnvelope,
   buildPostmortemArtifact,
   buildTranslationEvidence,
   changedCompoundCacheKeyDimensions,
@@ -12,6 +13,7 @@ import {
   traceCompositionSource,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
+  validateIntakeEnvelope,
   validatePayload,
   validatePostmortemArtifact,
   validateTranslationEvidence
@@ -255,6 +257,43 @@ describe('rosetta-schemas', () => {
     expect(shouldGeneratePostmortem('FAIL')).toBe(true);
     expect(shouldGeneratePostmortem('PARTIAL')).toBe(true);
     expect(shouldGeneratePostmortem('PASS')).toBe(false);
+  });
+
+  it('builds universal intake envelopes with canonical URLs and receipt hashes', () => {
+    const envelope = buildIntakeEnvelope({
+      contentPointer: 'https://example.com/article?utm_source=feed',
+      itemUrl: 'https://example.com/article?utm_source=newsletter&fbclid=abc&ref=keep',
+      rawExcerpt: 'Read this immediately. Consider using receipts.',
+      retrievedAt: '2026-05-04T03:30:00.000Z',
+      sourceName: 'example-feed',
+      sourceType: 'rss',
+      title: 'Receipts-first intake'
+    });
+
+    expect(validatePayload('entif.intake_envelope', envelope).ok).toBe(true);
+    expect(validateIntakeEnvelope(envelope).ok).toBe(true);
+    expect(envelope.itemUrl).toBe('https://example.com/article?ref=keep');
+    expect(envelope.receipts.itemHash).toMatch(/^cidv1-sha256-/u);
+    expect(envelope.normalized.highSignalImperatives).toEqual(['Read this immediately.', 'Consider using receipts.']);
+  });
+
+  it('retains content pointers for pending deep ingest and rejects missing receipt metadata', () => {
+    const result = validateIntakeEnvelope({
+      contentPointer: '',
+      itemUrl: 'not-a-url',
+      rawExcerpt: 'Preview only.',
+      receipts: {},
+      retrievedAt: 'not-a-date',
+      sourceName: 'manual-drop',
+      sourceType: 'manual',
+      title: 'Manual note'
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('IntakeEnvelope contentPointer is required even when full-text fetch fails.');
+    expect(result.errors).toContain('IntakeEnvelope receipts.itemHash is required.');
+    expect(result.errors).toContain('IntakeEnvelope itemUrl must be a URL.');
+    expect(result.errors).toContain('IntakeEnvelope retrievedAt must be an ISO-8601 timestamp.');
   });
 
   it('rejects incomplete Entif postmortems', () => {
