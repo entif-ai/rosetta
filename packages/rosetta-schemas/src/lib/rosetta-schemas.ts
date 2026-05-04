@@ -99,6 +99,54 @@ export interface IntakeEnvelope extends IntakeEnvelopeInput {
   };
 }
 
+export interface DailyTopShelfActionItem {
+  action: string;
+  source: string;
+  title: string;
+  why: string;
+}
+
+export interface DailyTopShelfStoreItem {
+  source: string;
+  title: string;
+  why: string;
+}
+
+export interface DailyTopShelfDecisionChange {
+  decision: string;
+  source: string;
+  title: string;
+  why: string;
+}
+
+export interface DailyTopShelfRisk {
+  source: string;
+  title: string;
+  watch: string;
+  why: string;
+}
+
+export interface DailyTopShelfSlots {
+  actThisWeek: DailyTopShelfActionItem[];
+  designDecisionChange: DailyTopShelfDecisionChange;
+  riskToTrack: DailyTopShelfRisk;
+  storeForLater: DailyTopShelfStoreItem[];
+}
+
+export interface DailyTopShelfDigestInput {
+  date: string;
+  deliveredTo?: string;
+  escalated?: DailyTopShelfActionItem[];
+  generatedAt: string;
+  slots: DailyTopShelfSlots;
+}
+
+export interface DailyTopShelfDigest extends DailyTopShelfDigestInput {
+  artifactCid: string;
+  artifactName: string;
+  escalated: DailyTopShelfActionItem[];
+}
+
 export interface TranslationEvidenceInput {
   evidenceRefs: string[];
   lineageRefs: string[];
@@ -199,6 +247,7 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'sourceType',
     'title'
   ],
+  'entif.daily_top_shelf_digest': ['artifactCid', 'artifactName', 'date', 'escalated', 'generatedAt', 'slots'],
   'entif.postmortem_artifact': [
     'artifactCid',
     'envelopeId',
@@ -321,6 +370,8 @@ const INTAKE_ENVELOPE_REQUIRED_FIELDS = [
   'sourceType',
   'title'
 ] as const satisfies ReadonlyArray<keyof IntakeEnvelopeInput>;
+
+const DAILY_TOP_SHELF_REQUIRED_FIELDS = ['date', 'generatedAt', 'slots'] as const satisfies ReadonlyArray<keyof DailyTopShelfDigestInput>;
 
 const TRANSLATION_EVIDENCE_REQUIRED_FIELDS = [
   'evidenceRefs',
@@ -497,6 +548,84 @@ export function buildIntakeEnvelope(input: IntakeEnvelopeInput): IntakeEnvelope 
   }
 
   return envelope;
+}
+
+function hasText(value: string): boolean {
+  return value.trim().length > 0;
+}
+
+function validateActionItem(item: DailyTopShelfActionItem, label: string, errors: string[]): void {
+  if (!hasText(item.why) || !hasText(item.action)) {
+    errors.push(`${label} must include why and action.`);
+  }
+  if (!hasText(item.title) || !hasText(item.source)) {
+    errors.push(`${label} must include title and source.`);
+  }
+}
+
+function validateStoreItem(item: DailyTopShelfStoreItem, label: string, errors: string[]): void {
+  if (!hasText(item.title) || !hasText(item.source) || !hasText(item.why)) {
+    errors.push(`${label} must include title, source, and why.`);
+  }
+}
+
+export function validateDailyTopShelfDigest(
+  input: DailyTopShelfDigestInput & Partial<Pick<DailyTopShelfDigest, 'artifactCid' | 'artifactName'>>
+): ValidationResult {
+  const errors = DAILY_TOP_SHELF_REQUIRED_FIELDS.filter((field) => !(field in input)).map(
+    (field) => `Missing required field: ${field}`
+  );
+
+  if (!/^\d{4}-\d{2}-\d{2}$/u.test(input.date)) {
+    errors.push('DailyTopShelfDigest date must use YYYY-MM-DD.');
+  }
+  if (!requiredString(input.generatedAt) || !isIsoTimestamp(input.generatedAt)) {
+    errors.push('DailyTopShelfDigest generatedAt must be an ISO-8601 timestamp.');
+  }
+  if (input.slots.actThisWeek.length !== 3) {
+    errors.push('DailyTopShelfDigest must include exactly 3 actThisWeek items.');
+  }
+  if (input.slots.storeForLater.length !== 2) {
+    errors.push('DailyTopShelfDigest must include exactly 2 storeForLater items.');
+  }
+
+  input.slots.actThisWeek.forEach((item, index) => validateActionItem(item, `Act item ${index}`, errors));
+  input.slots.storeForLater.forEach((item, index) => validateStoreItem(item, `Store item ${index}`, errors));
+  (input.escalated ?? []).forEach((item, index) => validateActionItem(item, `Escalated item ${index}`, errors));
+
+  if (!hasText(input.slots.designDecisionChange.decision)) {
+    errors.push('Design decision change must name the changed decision.');
+  }
+  validateStoreItem(input.slots.designDecisionChange, 'Design decision change', errors);
+
+  if (!hasText(input.slots.riskToTrack.watch)) {
+    errors.push('Risk to track must identify what is being watched.');
+  }
+  validateStoreItem(input.slots.riskToTrack, 'Risk to track', errors);
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function buildDailyTopShelfDigest(input: DailyTopShelfDigestInput): DailyTopShelfDigest {
+  const validation = validateDailyTopShelfDigest(input);
+  if (!validation.ok) {
+    throw new Error(validation.errors.join('; '));
+  }
+
+  const artifactName = `daily-top-shelf-${input.date}`;
+  const digestWithoutCid = {
+    ...input,
+    artifactName,
+    escalated: input.escalated ?? []
+  };
+
+  return {
+    ...digestWithoutCid,
+    artifactCid: makeContentId(JSON.stringify(digestWithoutCid))
+  };
 }
 
 export function validateCompositionProvenanceRecord(input: CompositionProvenanceInput): ValidationResult {

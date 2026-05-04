@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
+  buildDailyTopShelfDigest,
   buildIntakeEnvelope,
   buildPostmortemArtifact,
   buildTranslationEvidence,
@@ -13,6 +14,7 @@ import {
   traceCompositionSource,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
+  validateDailyTopShelfDigest,
   validateIntakeEnvelope,
   validatePayload,
   validatePostmortemArtifact,
@@ -292,6 +294,91 @@ describe('rosetta-schemas', () => {
       'Read Dr. Smith et al. before acting.',
       'Use p. 42 as source.'
     ]);
+  });
+
+  it('builds daily top shelf digests with the required 3/2/1/1 structure', () => {
+    const digest = buildDailyTopShelfDigest({
+      date: '2026-05-04',
+      deliveredTo: 'telegram:crates',
+      generatedAt: '2026-05-04T10:00:00.000Z',
+      slots: {
+        actThisWeek: [
+          { action: 'Prototype the adapter.', source: 'HF sweep', title: 'Adapter paper', why: 'It removes an integration blocker.' },
+          { action: 'Open a design note.', source: 'HF sweep', title: 'Routing result', why: 'It changes route scoring.' },
+          { action: 'Add to backlog.', source: 'HF sweep', title: 'Eval harness', why: 'It gives a cheap validation path.' }
+        ],
+        designDecisionChange: {
+          decision: 'Prefer parse-only intake before deep ingest.',
+          source: 'HF sweep',
+          title: 'Pipeline study',
+          why: 'It reduces wasted full-text fetches.'
+        },
+        riskToTrack: {
+          source: 'HF sweep',
+          title: 'Provider pricing shift',
+          watch: 'Token cost changes over the next two sweeps.',
+          why: 'It could make the daily sweep exceed budget.'
+        },
+        storeForLater: [
+          { source: 'HF sweep', title: 'Long horizon model', why: 'Relevant but not actionable this week.' },
+          { source: 'HF sweep', title: 'Reference implementation', why: 'Useful as a future fixture.' }
+        ]
+      }
+    });
+
+    expect(validatePayload('entif.daily_top_shelf_digest', digest).ok).toBe(true);
+    expect(validateDailyTopShelfDigest(digest).ok).toBe(true);
+    expect(digest.artifactName).toBe('daily-top-shelf-2026-05-04');
+    expect(digest.artifactCid).toMatch(/^cidv1-sha256-/u);
+    expect(digest.slots.actThisWeek).toHaveLength(3);
+    expect(digest.slots.storeForLater).toHaveLength(2);
+  });
+
+  it('keeps escalated daily digest items outside the 3/2/1/1 slots', () => {
+    const digest = buildDailyTopShelfDigest({
+      date: '2026-05-04',
+      escalated: [{ action: 'Page the operator.', source: 'watchlist', title: 'Critical provider outage', why: 'Sweep input is unavailable.' }],
+      generatedAt: '2026-05-04T10:00:00.000Z',
+      slots: {
+        actThisWeek: [
+          { action: 'A', source: 's', title: 'a', why: 'w' },
+          { action: 'B', source: 's', title: 'b', why: 'w' },
+          { action: 'C', source: 's', title: 'c', why: 'w' }
+        ],
+        designDecisionChange: { decision: 'Change decision.', source: 's', title: 'd', why: 'w' },
+        riskToTrack: { source: 's', title: 'r', watch: 'Watch the constraint.', why: 'w' },
+        storeForLater: [
+          { source: 's', title: 'x', why: 'w' },
+          { source: 's', title: 'y', why: 'w' }
+        ]
+      }
+    });
+
+    expect(digest.escalated).toHaveLength(1);
+    expect(digest.slots.actThisWeek).toHaveLength(3);
+  });
+
+  it('rejects daily digests that degrade into incomplete link lists', () => {
+    const result = validateDailyTopShelfDigest({
+      artifactCid: 'cidv1-sha256-demo',
+      artifactName: 'daily-top-shelf-2026-05-04',
+      date: '2026-05-04',
+      generatedAt: 'bad-date',
+      slots: {
+        actThisWeek: [{ action: '', source: 's', title: 'only one', why: '' }],
+        designDecisionChange: { decision: '', source: 's', title: 'd', why: 'w' },
+        riskToTrack: { source: 's', title: 'r', watch: '', why: 'w' },
+        storeForLater: [{ source: 's', title: 'x', why: 'w' }]
+      }
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('DailyTopShelfDigest must include exactly 3 actThisWeek items.');
+    expect(result.errors).toContain('DailyTopShelfDigest must include exactly 2 storeForLater items.');
+    expect(result.errors).toContain('DailyTopShelfDigest generatedAt must be an ISO-8601 timestamp.');
+    expect(result.errors).toContain('Act item 0 must include why and action.');
+    expect(result.errors).toContain('Design decision change must name the changed decision.');
+    expect(result.errors).toContain('Risk to track must identify what is being watched.');
   });
 
   it('retains content pointers for pending deep ingest and rejects missing receipt metadata', () => {
