@@ -65,6 +65,39 @@ export interface CompositionTrace {
   subQueryReceiptCid: string;
 }
 
+export type IntakeSourceType = 'discord' | 'email' | 'google-alert' | 'magazine' | 'manual' | 'newsletter' | 'rss';
+
+export interface IntakeEnvelopeReceipts {
+  costUsd?: number;
+  itemHash?: string;
+  requestId?: string;
+  runtimeMs?: number;
+  tokensUsed?: number;
+}
+
+export interface IntakeEnvelopeInput {
+  author?: string;
+  contentPointer: string;
+  itemUrl: string;
+  publishedAt?: string;
+  rawExcerpt: string;
+  receipts?: IntakeEnvelopeReceipts;
+  retrievedAt: string;
+  sourceName: string;
+  sourceType: IntakeSourceType;
+  title: string;
+}
+
+export interface IntakeEnvelope extends IntakeEnvelopeInput {
+  itemUrl: string;
+  normalized: {
+    highSignalImperatives: string[];
+  };
+  receipts: IntakeEnvelopeReceipts & {
+    itemHash: string;
+  };
+}
+
 export interface TranslationEvidenceInput {
   evidenceRefs: string[];
   lineageRefs: string[];
@@ -154,6 +187,17 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'rosetta.action': ['actionId', 'intent', 'runCid'],
   'rosetta.evaluation': ['evaluationId', 'summary', 'verdict'],
   'rosetta.observation': ['observationId', 'signal', 'source'],
+  'entif.intake_envelope': [
+    'contentPointer',
+    'itemUrl',
+    'normalized',
+    'rawExcerpt',
+    'receipts',
+    'retrievedAt',
+    'sourceName',
+    'sourceType',
+    'title'
+  ],
   'entif.postmortem_artifact': [
     'artifactCid',
     'envelopeId',
@@ -267,6 +311,16 @@ const COMPOSITION_INPUT_REQUIRED_FIELDS = [
   'sourceAttributions'
 ] as const satisfies ReadonlyArray<keyof CompositionProvenanceInput>;
 
+const INTAKE_ENVELOPE_REQUIRED_FIELDS = [
+  'contentPointer',
+  'itemUrl',
+  'rawExcerpt',
+  'retrievedAt',
+  'sourceName',
+  'sourceType',
+  'title'
+] as const satisfies ReadonlyArray<keyof IntakeEnvelopeInput>;
+
 const TRANSLATION_EVIDENCE_REQUIRED_FIELDS = [
   'evidenceRefs',
   'lineageRefs',
@@ -297,6 +351,41 @@ function requiredString(value: string | undefined): value is string {
 
 function isIsoTimestamp(value: string): boolean {
   return !Number.isNaN(Date.parse(value)) && value.includes('T');
+}
+
+function isUrl(value: string): boolean {
+  try {
+    new URL(value);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function canonicalizeItemUrl(itemUrl: string): string {
+  const url = new URL(itemUrl);
+  const trackingParams = ['fbclid', 'gclid', 'mc_cid', 'mc_eid'];
+
+  for (const key of [...url.searchParams.keys()]) {
+    if (key.startsWith('utm_') || trackingParams.includes(key)) {
+      url.searchParams.delete(key);
+    }
+  }
+
+  url.hash = '';
+  return url.toString();
+}
+
+function extractHighSignalImperatives(text: string): string[] {
+  const imperativeStarters = new Set(['add', 'build', 'check', 'consider', 'create', 'do', 'implement', 'make', 'read', 'run', 'use']);
+
+  return text
+    .split(/(?<=[.!?])\s+/u)
+    .map((sentence) => sentence.trim())
+    .filter((sentence) => {
+      const firstWord = sentence.match(/^[A-Za-z]+/u)?.[0].toLowerCase();
+      return firstWord ? imperativeStarters.has(firstWord) : false;
+    });
 }
 
 export function validatePayload(kind: string, payload: object): ValidationResult {
@@ -347,6 +436,65 @@ export function changedCompoundCacheKeyDimensions(
   after: Pick<CompoundCacheKey, CompoundCacheKeyDimension>
 ): CompoundCacheKeyDimension[] {
   return COMPOUND_CACHE_KEY_DIMENSIONS.filter((dimension) => before[dimension] !== after[dimension]);
+}
+
+export function validateIntakeEnvelope(input: IntakeEnvelopeInput): ValidationResult {
+  const errors = INTAKE_ENVELOPE_REQUIRED_FIELDS.filter((field) => !(field in input)).map(
+    (field) => `Missing required field: ${field}`
+  );
+
+  if (!requiredString(input.contentPointer)) {
+    errors.push('IntakeEnvelope contentPointer is required even when full-text fetch fails.');
+  }
+  if (!input.receipts?.itemHash) {
+    errors.push('IntakeEnvelope receipts.itemHash is required.');
+  }
+  if (!requiredString(input.itemUrl) || !isUrl(input.itemUrl)) {
+    errors.push('IntakeEnvelope itemUrl must be a URL.');
+  }
+  if (!requiredString(input.retrievedAt) || !isIsoTimestamp(input.retrievedAt)) {
+    errors.push('IntakeEnvelope retrievedAt must be an ISO-8601 timestamp.');
+  }
+  if (input.publishedAt && !isIsoTimestamp(input.publishedAt)) {
+    errors.push('IntakeEnvelope publishedAt must be an ISO-8601 timestamp.');
+  }
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function buildIntakeEnvelope(input: IntakeEnvelopeInput): IntakeEnvelope {
+  const itemUrl = canonicalizeItemUrl(input.itemUrl);
+  const itemHash =
+    input.receipts?.itemHash ??
+    makeContentId(
+      JSON.stringify({
+        author: input.author ?? '',
+        itemUrl,
+        publishedAt: input.publishedAt ?? '',
+        sourceName: input.sourceName,
+        title: input.title
+      })
+    );
+  const envelope = {
+    ...input,
+    itemUrl,
+    normalized: {
+      highSignalImperatives: extractHighSignalImperatives(input.rawExcerpt)
+    },
+    receipts: {
+      ...input.receipts,
+      itemHash
+    }
+  };
+  const validation = validateIntakeEnvelope(envelope);
+  if (!validation.ok) {
+    throw new Error(validation.errors.join('; '));
+  }
+
+  return envelope;
 }
 
 export function validateCompositionProvenanceRecord(input: CompositionProvenanceInput): ValidationResult {
