@@ -106,6 +106,71 @@ export interface DomainCompareResult {
   reasons: DomainCompareReason[];
 }
 
+export type AgenticMessageType =
+  | 'ACTION_DECISION'
+  | 'ACTION_REQUEST'
+  | 'APPROVAL_REQUEST'
+  | 'APPROVAL_RESPONSE'
+  | 'ARTIFACT_PUBLISH'
+  | 'HEALTH_REPORT'
+  | 'INCIDENT_ENVELOPE'
+  | 'TASK_RECEIPT'
+  | 'WORK_UNIT_UPDATE';
+
+export type AgenticMessagePlane = 'control' | 'data';
+
+export type AgenticMessageQuarantineReason = 'SCHEMA_INVALID' | 'UNKNOWN_MESSAGE_TYPE';
+
+export interface AgenticMessageSender {
+  node_id: string;
+  principal_ref: string;
+}
+
+export interface AgenticMessageEnvelope {
+  domain_ref: DomainRefInput | DomainRef;
+  expires_at: string;
+  issued_at: string;
+  msg_id: string;
+  msg_type: AgenticMessageType;
+  nonce: string;
+  payload_hash: string;
+  routing_key: string;
+  schema_version: string;
+  sender: AgenticMessageSender;
+  sig: string;
+}
+
+export interface AgenticMessageSchemaMigration {
+  additiveChangePolicy: 'minor-compatible';
+  breakingChangePolicy: 'new-schema-id-major';
+  dualReadWindow: 'current-and-previous-major';
+}
+
+export interface AgenticNestedComponentRef {
+  field: string;
+  owner: string;
+}
+
+export interface AgenticMessageSchemaProfile {
+  description: string;
+  migration: AgenticMessageSchemaMigration;
+  nestedComponents: AgenticNestedComponentRef[];
+  plane: AgenticMessagePlane;
+  requiredFields: string[];
+  schemaId: string;
+  version: string;
+}
+
+export interface AgenticMailroomValidationStage {
+  failureReasons: AgenticMessageQuarantineReason[];
+  stage: 'schema-validate';
+}
+
+export interface AgenticMessageValidationResult extends ValidationResult {
+  quarantineReasons: AgenticMessageQuarantineReason[];
+  schemaId: string;
+}
+
 export interface IntakeEnvelopeReceipts {
   costUsd?: number;
   itemHash?: string;
@@ -395,6 +460,119 @@ const DOMAIN_CLASSIFICATION_RANK: Record<DomainClassification, number> = {
   restricted: 3
 };
 
+const AGENTIC_MESSAGE_MIGRATION: AgenticMessageSchemaMigration = {
+  additiveChangePolicy: 'minor-compatible',
+  breakingChangePolicy: 'new-schema-id-major',
+  dualReadWindow: 'current-and-previous-major'
+};
+
+const AGENTIC_MESSAGE_NESTED_COMPONENTS: AgenticNestedComponentRef[] = [{ field: 'domain_ref', owner: '#711' }];
+
+export const AGENTIC_MESSAGE_TYPE_PROFILES: Record<AgenticMessageType, AgenticMessageSchemaProfile> = {
+  ACTION_DECISION: {
+    description: 'Guard-issued control-plane decision artifact.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'control',
+    requiredFields: ['actionId', 'decisionRef', 'effect', 'issuedBy'],
+    schemaId: 'entif.agentic-messaging.action-decision.v1',
+    version: '1.0.0'
+  },
+  ACTION_REQUEST: {
+    description: 'Privileged capability request requiring an iam.decision reference.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'control',
+    requiredFields: ['actionId', 'capabilityRef', 'iamDecisionRef', 'justification'],
+    schemaId: 'entif.agentic-messaging.action-request.v1',
+    version: '1.0.0'
+  },
+  APPROVAL_REQUEST: {
+    description: 'Human-in-the-loop approval request.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'control',
+    requiredFields: ['approvalId', 'reason', 'requestedBy', 'subjectRef'],
+    schemaId: 'entif.agentic-messaging.approval-request.v1',
+    version: '1.0.0'
+  },
+  APPROVAL_RESPONSE: {
+    description: 'Human approval outcome bound to a prior approval request.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'control',
+    requiredFields: ['approvalId', 'decision', 'reviewedBy'],
+    schemaId: 'entif.agentic-messaging.approval-response.v1',
+    version: '1.0.0'
+  },
+  ARTIFACT_PUBLISH: {
+    description: 'Reference-only artifact publication notice.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'data',
+    requiredFields: ['artifactCid', 'artifactType', 'publisherRef'],
+    schemaId: 'entif.agentic-messaging.artifact-publish.v1',
+    version: '1.0.0'
+  },
+  HEALTH_REPORT: {
+    description: 'Node health status report.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'data',
+    requiredFields: ['nodeId', 'observedAt', 'status'],
+    schemaId: 'entif.agentic-messaging.health-report.v1',
+    version: '1.0.0'
+  },
+  INCIDENT_ENVELOPE: {
+    description: 'Typed suspicious-event report for quarantine and incident routing.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'data',
+    requiredFields: ['incidentId', 'severity', 'summary', 'trigger'],
+    schemaId: 'entif.agentic-messaging.incident-envelope.v1',
+    version: '1.0.0'
+  },
+  TASK_RECEIPT: {
+    description: 'Work-performed receipt with hashes and telemetry.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'data',
+    requiredFields: ['artifactHashes', 'taskId', 'telemetry', 'workRef'],
+    schemaId: 'entif.agentic-messaging.task-receipt.v1',
+    version: '1.0.0'
+  },
+  WORK_UNIT_UPDATE: {
+    description: 'Convoy or work-unit status heartbeat.',
+    migration: AGENTIC_MESSAGE_MIGRATION,
+    nestedComponents: AGENTIC_MESSAGE_NESTED_COMPONENTS,
+    plane: 'data',
+    requiredFields: ['progress', 'status', 'workUnitId'],
+    schemaId: 'entif.agentic-messaging.work-unit-update.v1',
+    version: '1.0.0'
+  }
+};
+
+export const AGENTIC_MAILROOM_VALIDATION_CHECKLIST: AgenticMailroomValidationStage[] = [
+  {
+    failureReasons: ['UNKNOWN_MESSAGE_TYPE', 'SCHEMA_INVALID'],
+    stage: 'schema-validate'
+  }
+];
+
+const AGENTIC_MESSAGE_ENVELOPE_REQUIRED_FIELDS = [
+  'domain_ref',
+  'expires_at',
+  'issued_at',
+  'msg_id',
+  'msg_type',
+  'nonce',
+  'payload_hash',
+  'routing_key',
+  'schema_version',
+  'sender',
+  'sig'
+] as const satisfies ReadonlyArray<keyof AgenticMessageEnvelope>;
+
 const COMPOSITION_PROVIDER_REQUIRED_FIELDS = [
   'freshnessVerifiedAt',
   'normalizedUserMetadataCid',
@@ -494,6 +672,19 @@ function isUrl(value: string): boolean {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function validateAgenticSender(sender: unknown, errors: string[]): void {
+  if (!isRecord(sender)) {
+    errors.push('AgenticMessageEnvelope sender must be an object.');
+    return;
+  }
+
+  for (const field of ['node_id', 'principal_ref']) {
+    if (!requiredString(sender[field] as string | undefined)) {
+      errors.push(`AgenticMessageEnvelope sender missing required field: ${field}`);
+    }
+  }
 }
 
 function canonicalizeItemUrl(itemUrl: string): string {
@@ -700,6 +891,76 @@ export function validateDomainRef(input: DomainRefInput | DomainRef): Validation
   return {
     errors,
     ok: errors.length === 0
+  };
+}
+
+export function getAgenticMessageSchemaProfile(msgType: string): AgenticMessageSchemaProfile | undefined {
+  return AGENTIC_MESSAGE_TYPE_PROFILES[msgType as AgenticMessageType];
+}
+
+export function validateAgenticMessageEnvelope(envelope: Record<string, unknown>): AgenticMessageValidationResult {
+  const errors = AGENTIC_MESSAGE_ENVELOPE_REQUIRED_FIELDS.filter((field) => !(field in envelope)).map(
+    (field) => `AgenticMessageEnvelope missing required field: ${field}`
+  );
+  const quarantineReasons: AgenticMessageQuarantineReason[] = [];
+
+  if ('sender' in envelope) {
+    validateAgenticSender(envelope.sender, errors);
+  }
+
+  if ('issued_at' in envelope && !isIsoTimestamp(envelope.issued_at as string)) {
+    errors.push('AgenticMessageEnvelope issued_at must be an ISO-8601 timestamp.');
+  }
+  if ('expires_at' in envelope && !isIsoTimestamp(envelope.expires_at as string)) {
+    errors.push('AgenticMessageEnvelope expires_at must be an ISO-8601 timestamp.');
+  }
+
+  const msgType = envelope.msg_type;
+  if (!requiredString(msgType as string | undefined) || getAgenticMessageSchemaProfile(msgType as string) === undefined) {
+    errors.push('AgenticMessageEnvelope msg_type must be one of the registered internal Agentic Messaging families.');
+    quarantineReasons.push('UNKNOWN_MESSAGE_TYPE');
+  }
+
+  if ('domain_ref' in envelope && isRecord(envelope.domain_ref)) {
+    const domainValidation = validateDomainRef(envelope.domain_ref as unknown as DomainRefInput | DomainRef);
+    errors.push(...domainValidation.errors.map((error) => `AgenticMessageEnvelope ${error}`));
+  } else if ('domain_ref' in envelope) {
+    errors.push('AgenticMessageEnvelope domain_ref must be an object.');
+  }
+
+  if (errors.length > 0 && quarantineReasons.length === 0) {
+    quarantineReasons.push('SCHEMA_INVALID');
+  }
+
+  return {
+    errors,
+    ok: errors.length === 0,
+    quarantineReasons,
+    schemaId: 'entif.agentic-messaging.envelope.v1'
+  };
+}
+
+export function validateAgenticMessagePayload(msgType: string, payload: Record<string, unknown>): AgenticMessageValidationResult {
+  const profile = getAgenticMessageSchemaProfile(msgType);
+
+  if (profile === undefined) {
+    return {
+      errors: ['Agentic message type is not registered.'],
+      ok: false,
+      quarantineReasons: ['UNKNOWN_MESSAGE_TYPE'],
+      schemaId: 'entif.agentic-messaging.unregistered'
+    };
+  }
+
+  const errors = profile.requiredFields
+    .filter((field) => !(field in payload))
+    .map((field) => `${msgType} missing required field: ${field}`);
+
+  return {
+    errors,
+    ok: errors.length === 0,
+    quarantineReasons: errors.length === 0 ? [] : ['SCHEMA_INVALID'],
+    schemaId: profile.schemaId
   };
 }
 
