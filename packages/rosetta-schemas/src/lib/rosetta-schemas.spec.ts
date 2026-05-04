@@ -8,13 +8,16 @@ import {
   buildPostmortemArtifact,
   buildTranslationEvidence,
   changedCompoundCacheKeyDimensions,
+  compareDomainRefs,
   composeTranslationEvidence,
   emitConformanceBundle,
+  normalizeDomainRef,
   shouldGeneratePostmortem,
   traceCompositionSource,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
   validateDailyTopShelfDigest,
+  validateDomainRef,
   validateIntakeEnvelope,
   validatePayload,
   validatePostmortemArtifact,
@@ -109,6 +112,95 @@ describe('rosetta-schemas', () => {
       'policyVersion',
       'sourceBundleHash'
     ]);
+  });
+
+  it('normalizes domain_ref labels without losing the structured boundary tuple', () => {
+    const domain = normalizeDomainRef({
+      abacLabels: {
+        project: 'Rosetta',
+        role: 'Researcher'
+      },
+      classification: 'Confidential',
+      tenantId: ' Entif-AI ',
+      vendorRoute: ' OpenAI '
+    });
+
+    expect(validateDomainRef(domain).ok).toBe(true);
+    expect(domain).toEqual({
+      abacLabels: [
+        { key: 'project', value: 'rosetta' },
+        { key: 'role', value: 'researcher' }
+      ],
+      classification: 'confidential',
+      tenantId: 'entif-ai',
+      vendorRoute: 'openai'
+    });
+  });
+
+  it('compares domain_ref authorization with exact tenant, no-widening classification, subset labels, and exact vendor route', () => {
+    const authorization = normalizeDomainRef({
+      abacLabels: [
+        { key: 'project', value: 'rosetta' },
+        { key: 'role', value: 'researcher' }
+      ],
+      classification: 'restricted',
+      tenantId: 'entif-ai',
+      vendorRoute: 'openai'
+    });
+    const request = normalizeDomainRef({
+      abacLabels: { project: 'rosetta' },
+      classification: 'confidential',
+      tenantId: 'entif-ai',
+      vendorRoute: 'openai'
+    });
+
+    expect(compareDomainRefs(authorization, request)).toEqual({ ok: true, reasons: [] });
+  });
+
+  it('denies cross-domain reuse unless an explicit bridge policy is supplied', () => {
+    const authorization = normalizeDomainRef({
+      abacLabels: { project: 'rosetta' },
+      classification: 'confidential',
+      tenantId: 'entif-ai'
+    });
+    const request = normalizeDomainRef({
+      abacLabels: { project: 'rosetta' },
+      classification: 'confidential',
+      tenantId: 'other-tenant'
+    });
+
+    expect(compareDomainRefs(authorization, request)).toEqual({
+      ok: false,
+      reasons: ['TENANT_MISMATCH', 'CROSS_DOMAIN_REUSE_DENIED']
+    });
+    expect(compareDomainRefs(authorization, request, { bridgePolicyRef: 'policy.cross-domain.entif-to-other' })).toEqual({
+      ok: true,
+      reasons: ['CROSS_DOMAIN_BRIDGE_AUTHORIZED']
+    });
+  });
+
+  it('denies classification widening, missing ABAC labels, and vendor-route mismatch', () => {
+    const authorization = normalizeDomainRef({
+      abacLabels: { project: 'rosetta' },
+      classification: 'internal',
+      tenantId: 'entif-ai',
+      vendorRoute: 'openai'
+    });
+
+    expect(
+      compareDomainRefs(
+        authorization,
+        normalizeDomainRef({
+          abacLabels: { project: 'rosetta', role: 'operator' },
+          classification: 'confidential',
+          tenantId: 'entif-ai',
+          vendorRoute: 'anthropic'
+        })
+      )
+    ).toEqual({
+      ok: false,
+      reasons: ['CLASSIFICATION_WIDENING', 'ABAC_LABEL_MISSING:role=operator', 'VENDOR_ROUTE_MISMATCH', 'CROSS_DOMAIN_REUSE_DENIED']
+    });
   });
 
   it('models multi-provider composition provenance as a first-class payload', () => {

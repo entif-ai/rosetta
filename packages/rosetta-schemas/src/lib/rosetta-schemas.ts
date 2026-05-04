@@ -68,6 +68,44 @@ export interface CompositionTrace {
 
 export type IntakeSourceType = 'discord' | 'email' | 'google-alert' | 'magazine' | 'manual' | 'newsletter' | 'rss';
 
+export type DomainClassification = 'public' | 'internal' | 'confidential' | 'restricted';
+
+export interface DomainLabel {
+  key: string;
+  value: string;
+}
+
+export interface DomainRefInput {
+  abacLabels?: DomainLabel[] | Record<string, string>;
+  classification: string;
+  tenantId: string;
+  vendorRoute?: string;
+}
+
+export interface DomainRef {
+  abacLabels: DomainLabel[];
+  classification: DomainClassification;
+  tenantId: string;
+  vendorRoute?: string;
+}
+
+export type DomainCompareReason =
+  | 'CLASSIFICATION_WIDENING'
+  | 'CROSS_DOMAIN_BRIDGE_AUTHORIZED'
+  | 'CROSS_DOMAIN_REUSE_DENIED'
+  | 'TENANT_MISMATCH'
+  | 'VENDOR_ROUTE_MISMATCH'
+  | `ABAC_LABEL_MISSING:${string}`;
+
+export interface DomainCompareOptions {
+  bridgePolicyRef?: string;
+}
+
+export interface DomainCompareResult {
+  ok: boolean;
+  reasons: DomainCompareReason[];
+}
+
 export interface IntakeEnvelopeReceipts {
   costUsd?: number;
   itemHash?: string;
@@ -340,6 +378,13 @@ const COMPOUND_CACHE_KEY_LOOKUP_NAMES: Record<CompoundCacheKeyDimension, string>
   sourceBundleHash: 'source_bundle_hash'
 };
 
+const DOMAIN_CLASSIFICATION_RANK: Record<DomainClassification, number> = {
+  public: 0,
+  internal: 1,
+  confidential: 2,
+  restricted: 3
+};
+
 const COMPOSITION_PROVIDER_REQUIRED_FIELDS = [
   'freshnessVerifiedAt',
   'normalizedUserMetadataCid',
@@ -399,6 +444,29 @@ const POSTMORTEM_REQUIRED_FIELDS = [
 
 function requiredString(value: string | undefined): value is string {
   return typeof value === 'string' && value.trim().length > 0;
+}
+
+function normalizeToken(value: string): string {
+  return value.trim().toLowerCase();
+}
+
+function isDomainClassification(value: string): value is DomainClassification {
+  return value in DOMAIN_CLASSIFICATION_RANK;
+}
+
+function normalizeLabels(labels: DomainRefInput['abacLabels']): DomainLabel[] {
+  const entries = Array.isArray(labels) ? labels : Object.entries(labels ?? {}).map(([key, value]) => ({ key, value }));
+  const normalized = entries.map((label) => ({
+    key: normalizeToken(label.key),
+    value: normalizeToken(label.value)
+  }));
+  const deduped = new Map(normalized.map((label) => [`${label.key}=${label.value}`, label]));
+
+  return [...deduped.values()].sort((left, right) => {
+    const leftKey = `${left.key}=${left.value}`;
+    const rightKey = `${right.key}=${right.value}`;
+    return leftKey.localeCompare(rightKey);
+  });
 }
 
 function isIsoTimestamp(value: string): boolean {
@@ -489,6 +557,89 @@ export function changedCompoundCacheKeyDimensions(
   after: Pick<CompoundCacheKey, CompoundCacheKeyDimension>
 ): CompoundCacheKeyDimension[] {
   return COMPOUND_CACHE_KEY_DIMENSIONS.filter((dimension) => before[dimension] !== after[dimension]);
+}
+
+export function normalizeDomainRef(input: DomainRefInput): DomainRef {
+  const classification = normalizeToken(input.classification);
+  if (!isDomainClassification(classification)) {
+    throw new Error(`Unsupported domain_ref classification: ${input.classification}`);
+  }
+
+  return {
+    abacLabels: normalizeLabels(input.abacLabels),
+    classification,
+    tenantId: normalizeToken(input.tenantId),
+    ...(input.vendorRoute === undefined ? {} : { vendorRoute: normalizeToken(input.vendorRoute) })
+  };
+}
+
+export function validateDomainRef(input: DomainRefInput | DomainRef): ValidationResult {
+  const errors: string[] = [];
+  const tenantId = input.tenantId;
+  const classification = normalizeToken(input.classification);
+
+  if (!requiredString(tenantId)) {
+    errors.push('domain_ref.tenantId is required.');
+  }
+  if (!isDomainClassification(classification)) {
+    errors.push(`domain_ref.classification must be one of: ${Object.keys(DOMAIN_CLASSIFICATION_RANK).join(', ')}.`);
+  }
+
+  for (const label of normalizeLabels(input.abacLabels)) {
+    if (!requiredString(label.key) || !requiredString(label.value)) {
+      errors.push('domain_ref.abacLabels entries must include key and value.');
+      break;
+    }
+  }
+
+  return {
+    errors,
+    ok: errors.length === 0
+  };
+}
+
+export function compareDomainRefs(
+  authorization: DomainRefInput | DomainRef,
+  request: DomainRefInput | DomainRef,
+  options: DomainCompareOptions = {}
+): DomainCompareResult {
+  const authorized = normalizeDomainRef(authorization);
+  const requested = normalizeDomainRef(request);
+  const reasons: DomainCompareReason[] = [];
+
+  if (authorized.tenantId !== requested.tenantId) {
+    reasons.push('TENANT_MISMATCH');
+  }
+  if (DOMAIN_CLASSIFICATION_RANK[authorized.classification] < DOMAIN_CLASSIFICATION_RANK[requested.classification]) {
+    reasons.push('CLASSIFICATION_WIDENING');
+  }
+
+  const authorizedLabels = new Set(authorized.abacLabels.map((label) => `${label.key}=${label.value}`));
+  for (const label of requested.abacLabels) {
+    const labelKey = `${label.key}=${label.value}`;
+    if (!authorizedLabels.has(labelKey)) {
+      reasons.push(`ABAC_LABEL_MISSING:${labelKey}`);
+    }
+  }
+
+  if ((authorized.vendorRoute ?? requested.vendorRoute) !== undefined && authorized.vendorRoute !== requested.vendorRoute) {
+    reasons.push('VENDOR_ROUTE_MISMATCH');
+  }
+
+  if (reasons.length > 0 && options.bridgePolicyRef) {
+    return {
+      ok: true,
+      reasons: ['CROSS_DOMAIN_BRIDGE_AUTHORIZED']
+    };
+  }
+  if (reasons.length > 0) {
+    reasons.push('CROSS_DOMAIN_REUSE_DENIED');
+  }
+
+  return {
+    ok: reasons.length === 0,
+    reasons
+  };
 }
 
 export function validateIntakeEnvelope(input: IntakeEnvelopeInput): ValidationResult {
