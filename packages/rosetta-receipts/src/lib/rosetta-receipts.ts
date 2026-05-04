@@ -62,6 +62,49 @@ export interface ReceiptBundle {
   subjectCids: string[];
 }
 
+export type RlmTerminationType = 'error' | 'hard-stop' | 'normal' | 'timeout';
+
+export interface FinalizeAnswerArgs {
+  guard_decision_cid: string;
+  tile_cid: string;
+  termination_type: RlmTerminationType;
+}
+
+export interface FinalizeAnswerPayload {
+  args: FinalizeAnswerArgs;
+  tool: 'FinalizeAnswer';
+  toolCallId: string;
+}
+
+export interface CreateFinalizeAnswerEventInput {
+  guardDecisionCid: string;
+  tileCid: string;
+  terminationType: RlmTerminationType;
+}
+
+export interface PartialResultPayload {
+  completed: string[];
+  outstandingWork: string[];
+  partialTrace: string[];
+  reason: string;
+  runCid: string;
+  terminationType: 'hard-stop' | 'timeout';
+}
+
+export interface CreatePartialResultInput {
+  completed: string[];
+  outstandingWork: string[];
+  partialTrace: string[];
+  reason: string;
+  runCid: string;
+  terminationType?: 'hard-stop' | 'timeout';
+}
+
+export interface CreateTerminationReceiptInput {
+  answerTileCid: string;
+  finalizeEvent: TileEnvelope<FinalizeAnswerPayload>;
+}
+
 function normalizeKeyObject(key: KeyObject | string, kind: 'private' | 'public'): KeyObject {
   if (typeof key !== 'string') {
     return key;
@@ -89,6 +132,57 @@ export function createSigningKeyPair(): { privateKey: KeyObject; publicKeyPem: s
     privateKey,
     publicKeyPem: publicKey.export({ format: 'pem', type: 'spki' }).toString()
   };
+}
+
+export function createFinalizeAnswerEvent(input: CreateFinalizeAnswerEventInput): TileEnvelope<FinalizeAnswerPayload> {
+  return buildTile(
+    'rosetta.toolcall',
+    {
+      args: {
+        guard_decision_cid: input.guardDecisionCid,
+        tile_cid: input.tileCid,
+        termination_type: input.terminationType
+      },
+      tool: 'FinalizeAnswer',
+      toolCallId: `FinalizeAnswer.${input.tileCid.slice(-12)}`
+    },
+    { pack: 'rrp.rlm' }
+  );
+}
+
+export function createPartialResultTile(input: CreatePartialResultInput): TileEnvelope<PartialResultPayload> {
+  return buildTile(
+    'rosetta.rlm_partial_result',
+    {
+      completed: [...input.completed],
+      outstandingWork: [...input.outstandingWork],
+      partialTrace: [...input.partialTrace],
+      reason: input.reason,
+      runCid: input.runCid,
+      terminationType: input.terminationType ?? 'hard-stop'
+    },
+    { pack: 'rrp.rlm' }
+  );
+}
+
+export function createTerminationReceipt(input: CreateTerminationReceiptInput): TileEnvelope<ReceiptPayload> {
+  const terminationType = input.finalizeEvent.payload.args.termination_type;
+  const hardStop = terminationType !== 'normal';
+
+  return createReceipt({
+    claims: [
+      {
+        claimType: hardStop ? `rlm.${terminationType.replace('-', '_')}` : 'rlm.finalized',
+        evidence: [{ cid: input.finalizeEvent.cid }],
+        statement: hardStop ? `RLM trajectory terminated with ${terminationType}.` : 'RLM trajectory finalized with FinalizeAnswer.',
+        verdict: hardStop ? 'partial' : 'pass'
+      }
+    ],
+    digests: [digestTile(input.finalizeEvent, 'rlm.finalize_answer_event')],
+    policyRefs: [input.finalizeEvent.payload.args.guard_decision_cid],
+    receiptType: 'rlm.termination',
+    subjects: [{ cid: input.answerTileCid, role: 'rlm.subject.answer' }]
+  });
 }
 
 export function signReceiptEd25519(
