@@ -122,6 +122,7 @@ export type AgenticMessagePlane = 'control' | 'data';
 export type AgenticMessageQuarantineReason =
   | 'ACTION_BEARING_DATA_PLANE'
   | 'DOMAIN_REF_MISMATCH'
+  | 'MESSAGE_SIZE_EXCEEDED'
   | 'SCHEMA_INVALID'
   | 'UNKNOWN_MESSAGE_TYPE';
 
@@ -167,7 +168,7 @@ export interface AgenticMessageSchemaProfile {
 
 export interface AgenticMailroomValidationStage {
   failureReasons: AgenticMessageQuarantineReason[];
-  stage: 'plane-enforce' | 'schema-validate';
+  stage: 'plane-enforce' | 'schema-validate' | 'size-enforce';
 }
 
 export interface AgenticMessageValidationResult extends ValidationResult {
@@ -181,7 +182,44 @@ export type AgenticMessageExecutorDisposition =
   | 'guard-decision-required'
   | 'quarantine';
 
-export type AgenticMessageSecurityIncidentCode = 'DATA_PLANE_CAPABILITY_PAYLOAD' | 'DOMAIN_REF_MISMATCH';
+export type AgenticMessageSecurityIncidentCode =
+  | 'DATA_PLANE_CAPABILITY_PAYLOAD'
+  | 'DOMAIN_REF_MISMATCH'
+  | 'INLINE_ARTIFACT_PAYLOAD'
+  | 'MESSAGE_SIZE_LIMIT_EXCEEDED';
+
+export interface AgenticMessageSizePolicy {
+  artifactTransferPosture: 'reference-or-future-chunking-required';
+  defaultMaxMessageBytes: number;
+  issueOwner: '#1142';
+  parentGatekeepingIssue: '#701';
+  replayStorageIssue: '#226';
+  schemaRegistryIssue: '#220';
+}
+
+export interface AgenticMessageSizePolicyInput {
+  envelope?: Record<string, unknown>;
+  envelopeBytes?: number;
+  msgType: string;
+  payload?: Record<string, unknown>;
+  payloadBytes?: number;
+}
+
+export interface AgenticMessageSizeTelemetryEvidence {
+  artifactTransferPosture: AgenticMessageSizePolicy['artifactTransferPosture'];
+  issueOwner: '#1142';
+  maxMessageBytes: number;
+  observedBytes: number;
+  policyRef: 'agentic-message-size-policy.v1';
+  stage: 'size-enforce';
+}
+
+export interface AgenticMessageSizePolicyResult extends ValidationResult {
+  incidentCodes: AgenticMessageSecurityIncidentCode[];
+  quarantineReasons: AgenticMessageQuarantineReason[];
+  schemaId: 'entif.agentic-messaging.size-policy.v1';
+  telemetryEvidence: AgenticMessageSizeTelemetryEvidence;
+}
 
 export interface AgenticMessageExecutionPolicyOptions {
   authorizationDomainRef?: DomainRefInput | DomainRef;
@@ -580,6 +618,10 @@ export const AGENTIC_MESSAGE_TYPE_PROFILES: Record<AgenticMessageType, AgenticMe
 
 export const AGENTIC_MAILROOM_VALIDATION_CHECKLIST: AgenticMailroomValidationStage[] = [
   {
+    failureReasons: ['MESSAGE_SIZE_EXCEEDED'],
+    stage: 'size-enforce'
+  },
+  {
     failureReasons: ['UNKNOWN_MESSAGE_TYPE', 'SCHEMA_INVALID'],
     stage: 'schema-validate'
   },
@@ -589,11 +631,29 @@ export const AGENTIC_MAILROOM_VALIDATION_CHECKLIST: AgenticMailroomValidationSta
   }
 ];
 
+export const AGENTIC_MESSAGE_SIZE_POLICY: AgenticMessageSizePolicy = {
+  artifactTransferPosture: 'reference-or-future-chunking-required',
+  defaultMaxMessageBytes: 1_048_576,
+  issueOwner: '#1142',
+  parentGatekeepingIssue: '#701',
+  replayStorageIssue: '#226',
+  schemaRegistryIssue: '#220'
+};
+
 export const AGENTIC_DATA_PLANE_FORBIDDEN_FIELD_FAMILIES = {
   approvalHandles: ['approvalId', 'approvalRequestId', 'decisionRef', 'iamDecisionRef'],
   capabilitySelectors: ['capabilityRef', 'requestedAdapters', 'requestedEffects', 'requestedPrivilegeTiers'],
   responseBindings: ['responseKind:iam.decision']
 } as const;
+
+export const ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS = [
+  'artifactBody',
+  'artifactBytes',
+  'artifactContent',
+  'contentBytes',
+  'inlineArtifact',
+  'rawContent'
+] as const;
 
 export const AGENTIC_MESSAGE_EXECUTOR_CONTRACT: Record<AgenticMessageType, AgenticMessageExecutorDisposition> = {
   ACTION_DECISION: 'control-plane-no-execution',
@@ -750,6 +810,26 @@ function findActionBearingFieldPaths(value: unknown, path: string[] = []): strin
     }
 
     matches.push(...findActionBearingFieldPaths(nestedValue, nextPath));
+  }
+
+  return dedupeList(matches);
+}
+
+function findInlineArtifactFieldPaths(value: unknown, path: string[] = []): string[] {
+  if (Array.isArray(value)) {
+    return value.flatMap((entry, index) => findInlineArtifactFieldPaths(entry, [...path, `[${index}]`]));
+  }
+  if (!isRecord(value)) {
+    return [];
+  }
+
+  const matches: string[] = [];
+  for (const [key, nestedValue] of Object.entries(value)) {
+    const nextPath = [...path, key];
+    if (ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS.includes(key as (typeof ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS)[number])) {
+      matches.push(nextPath.join('.'));
+    }
+    matches.push(...findInlineArtifactFieldPaths(nestedValue, nextPath));
   }
 
   return dedupeList(matches);
@@ -1042,6 +1122,55 @@ export function validateAgenticMessagePayload(msgType: string, payload: Record<s
     ok: errors.length === 0,
     quarantineReasons: errors.length === 0 ? [] : ['SCHEMA_INVALID'],
     schemaId: profile.schemaId
+  };
+}
+
+function byteLengthOfJson(value: Record<string, unknown> | undefined): number {
+  if (value === undefined) {
+    return 0;
+  }
+  return Buffer.byteLength(JSON.stringify(value), 'utf8');
+}
+
+export function evaluateAgenticMessageSizePolicy(input: AgenticMessageSizePolicyInput): AgenticMessageSizePolicyResult {
+  const observedBytes =
+    (input.envelopeBytes ?? byteLengthOfJson(input.envelope)) + (input.payloadBytes ?? byteLengthOfJson(input.payload));
+  const maxMessageBytes = AGENTIC_MESSAGE_SIZE_POLICY.defaultMaxMessageBytes;
+  const errors: string[] = [];
+  const incidentCodes: AgenticMessageSecurityIncidentCode[] = [];
+  const quarantineReasons: AgenticMessageQuarantineReason[] = [];
+
+  if (observedBytes > maxMessageBytes) {
+    errors.push(`${input.msgType} message size ${observedBytes} bytes exceeds max_message_size ${maxMessageBytes} bytes.`);
+    incidentCodes.push('MESSAGE_SIZE_LIMIT_EXCEEDED');
+    quarantineReasons.push('MESSAGE_SIZE_EXCEEDED');
+  }
+
+  if (input.msgType === 'ARTIFACT_PUBLISH' && input.payload) {
+    const inlineArtifactPaths = findInlineArtifactFieldPaths(input.payload);
+    if (inlineArtifactPaths.length > 0) {
+      errors.push(
+        ...inlineArtifactPaths.map((path) => `ARTIFACT_PUBLISH must stay reference-only; inline artifact field ${path} is not allowed.`)
+      );
+      incidentCodes.push('INLINE_ARTIFACT_PAYLOAD');
+      quarantineReasons.push('MESSAGE_SIZE_EXCEEDED');
+    }
+  }
+
+  return {
+    errors,
+    incidentCodes: dedupeList(incidentCodes),
+    ok: errors.length === 0,
+    quarantineReasons: dedupeList(quarantineReasons),
+    schemaId: 'entif.agentic-messaging.size-policy.v1',
+    telemetryEvidence: {
+      artifactTransferPosture: AGENTIC_MESSAGE_SIZE_POLICY.artifactTransferPosture,
+      issueOwner: AGENTIC_MESSAGE_SIZE_POLICY.issueOwner,
+      maxMessageBytes,
+      observedBytes,
+      policyRef: 'agentic-message-size-policy.v1',
+      stage: 'size-enforce'
+    }
   };
 }
 
