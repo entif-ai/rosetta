@@ -191,6 +191,25 @@ const BOUNDARY_CATALOG_ENTRIES: RosettaSchemaCatalogEntry[] = [
     validator: 'evaluateAgenticMessageExecutionPolicy'
   },
   {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'validation-entrypoint',
+    consumerPackages: ['mailroom-runtime'],
+    docs: [SCHEMA_README, AGENTIC_MESSAGING_RFC],
+    exposureStatus: 'downstream-contract',
+    family: 'agentic-messaging',
+    knownGaps: [
+      'First-wave policy uses one 1 MiB ceiling and requires artifact references or future chunking for larger transfers.',
+      'Runtime custody, replay storage, and telemetry aggregation remain downstream mailroom responsibilities.'
+    ],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.agentic-messaging.size-policy.v1',
+    sourceIssues: ['#1142', '#701', '#220', '#226'],
+    sourcePrs: [],
+    tests: [SCHEMA_SPEC],
+    validator: 'evaluateAgenticMessageSizePolicy'
+  },
+  {
     authorityTier: 'core-spine',
     boundaryKind: 'validation-entrypoint',
     consumerPackages: ['@entif-ai/rosetta-schemas'],

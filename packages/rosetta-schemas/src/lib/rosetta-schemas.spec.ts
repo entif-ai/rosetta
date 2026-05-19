@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest';
 
 import {
   AGENTIC_MAILROOM_VALIDATION_CHECKLIST,
+  AGENTIC_MESSAGE_SIZE_POLICY,
   AGENTIC_MESSAGE_TYPE_PROFILES,
+  ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS,
   SUPPORTED_TILE_KIND_REQUIRED_FIELDS,
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
@@ -14,6 +16,7 @@ import {
   compareDomainRefs,
   composeTranslationEvidence,
   evaluateAgenticMessageExecutionPolicy,
+  evaluateAgenticMessageSizePolicy,
   emitConformanceBundle,
   emitShaclShapes,
   getAgenticMessageSchemaProfile,
@@ -889,6 +892,71 @@ describe('rosetta-schemas', () => {
     });
   });
 
+  it('defines a first-wave mailroom size ceiling before schema and plane enforcement', () => {
+    expect(AGENTIC_MESSAGE_SIZE_POLICY).toMatchObject({
+      defaultMaxMessageBytes: 1_048_576,
+      issueOwner: '#1142',
+      parentGatekeepingIssue: '#701',
+      replayStorageIssue: '#226',
+      schemaRegistryIssue: '#220'
+    });
+    expect(AGENTIC_MAILROOM_VALIDATION_CHECKLIST[0]).toEqual({
+      failureReasons: ['MESSAGE_SIZE_EXCEEDED'],
+      stage: 'size-enforce'
+    });
+  });
+
+  it('quarantines oversized Agentic Messaging payloads with inspectable size evidence', () => {
+    const result = evaluateAgenticMessageSizePolicy({
+      msgType: 'TASK_RECEIPT',
+      payload: {
+        artifactHashes: ['sha256:receipt'],
+        telemetry: {
+          blob: 'x'.repeat(AGENTIC_MESSAGE_SIZE_POLICY.defaultMaxMessageBytes)
+        },
+        taskId: 'task-large',
+        workRef: 'work.large'
+      }
+    });
+
+    expect(result).toMatchObject({
+      incidentCodes: ['MESSAGE_SIZE_LIMIT_EXCEEDED'],
+      ok: false,
+      quarantineReasons: ['MESSAGE_SIZE_EXCEEDED']
+    });
+    expect(result.errors[0]).toContain('exceeds max_message_size');
+    expect(result.telemetryEvidence).toMatchObject({
+      issueOwner: '#1142',
+      policyRef: 'agentic-message-size-policy.v1',
+      stage: 'size-enforce'
+    });
+    expect(result.telemetryEvidence.observedBytes).toBeGreaterThan(AGENTIC_MESSAGE_SIZE_POLICY.defaultMaxMessageBytes);
+  });
+
+  it('keeps ARTIFACT_PUBLISH reference-only instead of allowing inline artifact bodies', () => {
+    expect(ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS).toContain('artifactBytes');
+
+    const result = evaluateAgenticMessageSizePolicy({
+      msgType: 'ARTIFACT_PUBLISH',
+      payload: {
+        artifactBytes: 'inline-content',
+        artifactCid: 'cidv1-artifact',
+        artifactType: 'source.canonical_artifact',
+        publisherRef: 'node.publisher'
+      }
+    });
+
+    expect(result).toMatchObject({
+      incidentCodes: ['INLINE_ARTIFACT_PAYLOAD'],
+      ok: false,
+      quarantineReasons: ['MESSAGE_SIZE_EXCEEDED']
+    });
+    expect(result.errors).toContain(
+      'ARTIFACT_PUBLISH must stay reference-only; inline artifact field artifactBytes is not allowed.'
+    );
+    expect(result.telemetryEvidence.artifactTransferPosture).toBe('reference-or-future-chunking-required');
+  });
+
   it('catalogs every supported tile-kind validator and conformance surface', () => {
     const catalogIds = new Set(ROSETTA_SCHEMA_CATALOG.map((entry) => entry.schemaId));
 
@@ -925,6 +993,10 @@ describe('rosetta-schemas', () => {
     expect(getSchemaCatalogEntry('entif.agentic-messaging.execution-admission.v1')).toMatchObject({
       authorityTier: 'governance-admission',
       validator: 'evaluateAgenticMessageExecutionPolicy'
+    });
+    expect(getSchemaCatalogEntry('entif.agentic-messaging.size-policy.v1')).toMatchObject({
+      authorityTier: 'governance-admission',
+      validator: 'evaluateAgenticMessageSizePolicy'
     });
   });
 

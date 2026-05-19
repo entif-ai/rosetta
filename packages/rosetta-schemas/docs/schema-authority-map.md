@@ -25,6 +25,7 @@
 - `iam.decision` references are cataloged as a reserved external contract, not redefined.
 - Guard request/validation and mailroom runtime custody are downstream consumer boundaries.
 - Agentic Messaging execution admission only classifies structural eligibility for routing, review, or quarantine. It does not execute privileged actions.
+- Agentic Messaging size policy is the first mailroom validation stage. It defines one 1 MiB first-wave ceiling and requires artifact references or future chunking instead of oversized inline payloads.
 
 ## Maintenance Rule
 

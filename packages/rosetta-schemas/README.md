@@ -60,6 +60,11 @@ When adding a schema family, add or update a catalog entry in the same change. N
   - `APPROVAL_RESPONSE`
 - `domain_ref` is treated as a nested component owned by issue `#711`; the registry consumes that shape rather than redefining it.
 - The mailroom mapping is deterministic: `msg_type -> schema_id -> validation result -> quarantine reason`.
+- First-wave mailroom size policy:
+  - `AGENTIC_MESSAGE_SIZE_POLICY.defaultMaxMessageBytes` is `1_048_576` bytes.
+  - `evaluateAgenticMessageSizePolicy()` runs at `size-enforce`, before schema and plane enforcement.
+  - Oversized messages quarantine with `MESSAGE_SIZE_EXCEEDED` and `MESSAGE_SIZE_LIMIT_EXCEEDED` evidence.
+  - `ARTIFACT_PUBLISH` stays reference-only; inline artifact body fields quarantine as a size/payload-shape violation.
 - Migration posture:
   - additive changes stay minor-compatible
   - breaking changes require a new schema ID / major lane

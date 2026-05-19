@@ -3,7 +3,7 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
 Last updated: 2026-05-19
-Current branch at time of update: `codex/api-001-schema-catalog-surfaces`
+Current branch at time of update: `codex/am-007-message-size-policy`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,32 +127,28 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/api-001-schema-catalog-surfaces`
+Current branch: `codex/am-007-message-size-policy`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1115
+- https://github.com/entif-ai/rosetta/issues/1142
 
-This branch exposes the merged `rosetta-schemas` catalog through app inspection surfaces. The slice is read-only and visibility-focused: it does not add runtime message handling, mutation endpoints, or schema validation endpoints.
+This branch implements the first-wave Agentic Messaging message-size policy in `rosetta-schemas`. The slice is mailroom-contract focused: it defines a small, testable pre-schema `size-enforce` check and keeps large artifact transfer out of raw inline messages.
 
 Changed behavior:
 
-- `apps/rosetta-api` now serves `GET /schemas` with catalog entries from `@entif-ai/rosetta-schemas`.
-- Existing `/health`, `/registry`, `/demo`, missing URL, and unknown route behavior remains covered by tests.
-- `apps/rosetta-cli` now includes a top-level `schemaCatalog` field from the same package export.
-- API and CLI tests assert Agentic Messaging entries appear and reserved IAM interfaces remain labeled `reserved-interface`.
-- App-local READMEs document the schema catalog surfaces as inspection-only, not operational runtime support.
+- `AGENTIC_MESSAGE_SIZE_POLICY` defines one first-wave `defaultMaxMessageBytes` ceiling of `1_048_576` bytes.
+- `AGENTIC_MAILROOM_VALIDATION_CHECKLIST` now starts with `size-enforce`, before schema validation and plane enforcement.
+- `evaluateAgenticMessageSizePolicy()` returns deterministic quarantine reasons, incident codes, and telemetry evidence for oversize messages.
+- `ARTIFACT_PUBLISH` is explicitly reference-only; inline artifact body fields quarantine as a payload-shape/size violation.
+- The schema catalog now includes `entif.agentic-messaging.size-policy.v1` as a downstream contract boundary.
 
 ## Validation State
 
-- `npx -y node@22 node_modules/vitest/vitest.mjs run apps/rosetta-api/src/lib/rosetta-api.spec.ts apps/rosetta-cli/src/lib/rosetta-cli.spec.ts` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-api:test --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-cli:test --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-api:typecheck --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-cli:typecheck --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-api:lint --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-cli:lint --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-api:build --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-cli:build --skip-nx-cache` passed.
+- `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:lint --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:build --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
 
 Known non-failing warnings:
@@ -164,8 +160,8 @@ Known non-failing warnings:
 For this branch:
 
 1. Run affected validation before publishing.
-2. Publish a ready PR for issue #1115.
-3. Keep future runtime validation or mutation endpoints in separate issues; this branch is inspection-only.
+2. Publish a ready PR for issue #1142.
+3. Keep runtime custody, replay storage, and telemetry aggregation in downstream mailroom issues; this branch only defines the schema-layer size policy.
 
 For Text-Core:
 
