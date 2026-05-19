@@ -32,4 +32,21 @@ describe('rosetta-cli', () => {
       'verify-chain'
     ]);
   });
+
+  it('includes schema catalog inspection data without promoting reserved interfaces', () => {
+    const output = buildRosettaCliOutput();
+
+    expect(output.schemaCatalog).toMatchObject({
+      entries: expect.arrayContaining([
+        expect.objectContaining({
+          exposureStatus: 'downstream-contract',
+          schemaId: 'entif.agentic-messaging.envelope.v1'
+        }),
+        expect.objectContaining({
+          exposureStatus: 'reserved-interface',
+          schemaId: 'entif.iam.decision.ref'
+        })
+      ])
+    });
+  });
 });

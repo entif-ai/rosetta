@@ -6,6 +6,7 @@
     "@entif-ai/ingress-refinery": "workspace:*",
     "@entif-ai/projection-adapters": "workspace:*",
     "@entif-ai/rosetta-receipts": "workspace:*",
+    "@entif-ai/rosetta-schemas": "workspace:*",
     "@entif-ai/rosetta-store": "workspace:*"
   }
 }

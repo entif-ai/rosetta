@@ -3,7 +3,7 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
 Last updated: 2026-05-19
-Current branch at time of update: `codex/rs-001-schema-catalog`
+Current branch at time of update: `codex/api-001-schema-catalog-surfaces`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,27 +127,32 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/rs-001-schema-catalog`
+Current branch: `codex/api-001-schema-catalog-surfaces`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1114
+- https://github.com/entif-ai/rosetta/issues/1115
 
-This branch implements the package-local `rosetta-schemas` schema catalog and authority map. The slice is code-backed and visibility-focused: it catalogs the existing schema families, validators, Agentic Messaging registry entries, conformance emitters, and downstream ownership boundaries without promoting reserved interfaces into runtime support.
+This branch exposes the merged `rosetta-schemas` catalog through app inspection surfaces. The slice is read-only and visibility-focused: it does not add runtime message handling, mutation endpoints, or schema validation endpoints.
 
 Changed behavior:
 
-- `packages/rosetta-schemas/src/lib/schema-catalog.ts` exports typed catalog entries plus `listSchemaCatalogEntries()`, `getSchemaCatalogEntry()`, and `validateSchemaCatalogCoverage()`.
-- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` exports `SUPPORTED_TILE_KIND_REQUIRED_FIELDS` so catalog coverage checks follow the active validator surface.
-- Catalog tests fail when supported tile-kind validators or registered Agentic Messaging profiles are missing, or when non-reserved entries lack docs/tests.
-- `packages/rosetta-schemas/docs/schema-authority-map.md` and the package README document authority tiers, exposure statuses, and ownership boundaries for `domain_ref`, IAM, Guard, mailroom, and execution admission.
+- `apps/rosetta-api` now serves `GET /schemas` with catalog entries from `@entif-ai/rosetta-schemas`.
+- Existing `/health`, `/registry`, `/demo`, missing URL, and unknown route behavior remains covered by tests.
+- `apps/rosetta-cli` now includes a top-level `schemaCatalog` field from the same package export.
+- API and CLI tests assert Agentic Messaging entries appear and reserved IAM interfaces remain labeled `reserved-interface`.
+- App-local READMEs document the schema catalog surfaces as inspection-only, not operational runtime support.
 
 ## Validation State
 
-- `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:build --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:lint --skip-nx-cache` passed.
+- `npx -y node@22 node_modules/vitest/vitest.mjs run apps/rosetta-api/src/lib/rosetta-api.spec.ts apps/rosetta-cli/src/lib/rosetta-cli.spec.ts` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-api:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-cli:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-api:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-cli:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-api:lint --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-cli:lint --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-api:build --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-cli:build --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
 
 Known non-failing warnings:
@@ -159,8 +164,8 @@ Known non-failing warnings:
 For this branch:
 
 1. Run affected validation before publishing.
-2. Publish a ready PR for issue #1114.
-3. Follow with issue #1115 to expose the catalog through API and CLI inspection surfaces.
+2. Publish a ready PR for issue #1115.
+3. Keep future runtime validation or mutation endpoints in separate issues; this branch is inspection-only.
 
 For Text-Core:
 

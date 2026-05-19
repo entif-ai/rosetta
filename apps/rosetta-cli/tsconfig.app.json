@@ -16,6 +16,9 @@
       "path": "../../packages/rosetta-receipts/tsconfig.lib.json"
     },
     {
+      "path": "../../packages/rosetta-schemas/tsconfig.lib.json"
+    },
+    {
       "path": "../../packages/projection-adapters/tsconfig.lib.json"
     },
     {

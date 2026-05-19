@@ -138,6 +138,9 @@ importers:
       '@entif-ai/ingress-refinery':
         specifier: workspace:*
         version: link:../../packages/ingress-refinery
+      '@entif-ai/rosetta-schemas':
+        specifier: workspace:*
+        version: link:../../packages/rosetta-schemas
       '@entif-ai/source-registry':
         specifier: workspace:*
         version: link:../../packages/source-registry
@@ -153,6 +156,9 @@ importers:
       '@entif-ai/rosetta-receipts':
         specifier: workspace:*
         version: link:../../packages/rosetta-receipts
+      '@entif-ai/rosetta-schemas':
+        specifier: workspace:*
+        version: link:../../packages/rosetta-schemas
       '@entif-ai/rosetta-store':
         specifier: workspace:*
         version: link:../../packages/rosetta-store
