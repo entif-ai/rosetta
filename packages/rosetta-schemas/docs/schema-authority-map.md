@@ -26,6 +26,7 @@
 - Guard request/validation and mailroom runtime custody are downstream consumer boundaries.
 - Agentic Messaging execution admission only classifies structural eligibility for routing, review, or quarantine. It does not execute privileged actions.
 - Agentic Messaging size policy is the first mailroom validation stage. It defines one 1 MiB first-wave ceiling and requires artifact references or future chunking instead of oversized inline payloads.
+- `skill.card` is the broker-facing Tier 0 skill metadata contract. It stays bounded, manifest-backed, and data-plane only; full playbooks, broker ranking, certification, runtime materialization, lineage, and Guard authorization remain downstream.
 
 ## Maintenance Rule
 
