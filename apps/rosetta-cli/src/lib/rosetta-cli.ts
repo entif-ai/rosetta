@@ -1,6 +1,7 @@
 import { buildBootstrapDemoSnapshot, buildBootstrapGateSnapshot, createIngressJob } from '@entif-ai/ingress-refinery';
 import { projectToMissionControl, projectToOb1Sidecar, projectToPrismShadow } from '@entif-ai/projection-adapters';
 import { verifyReceiptBundle, verifySignedReceipt } from '@entif-ai/rosetta-receipts';
+import { listSchemaCatalogEntries } from '@entif-ai/rosetta-schemas';
 import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 
 export function buildRosettaCliOutput() {
@@ -32,6 +33,10 @@ export function buildRosettaCliOutput() {
     ob1: projectToOb1Sidecar(snapshot.canonicalArtifact, snapshot.receiptBundle),
     prism: projectToPrismShadow(snapshot.canonicalArtifact, snapshot.trustMatrix, snapshot.receiptBundle),
     receiptBundleVerification: verifyReceiptBundle(snapshot.receiptBundle, store),
+    schemaCatalog: {
+      entries: listSchemaCatalogEntries(),
+      note: 'Inspection output only; exposureStatus values describe catalog visibility and do not imply runtime support.'
+    },
     signedReceiptVerification: verifySignedReceipt(snapshot.signedReceipt),
     sourceSystem: snapshot.sourceSystem
   };

@@ -14,6 +14,9 @@
     },
     {
       "path": "../../packages/ingress-refinery/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/rosetta-schemas/tsconfig.lib.json"
     }
   ]
 }

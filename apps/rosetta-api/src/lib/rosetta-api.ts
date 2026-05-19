@@ -1,6 +1,7 @@
 import { createServer, type IncomingMessage, type Server, type ServerResponse } from 'node:http';
 
 import { buildBootstrapDemoSnapshot } from '@entif-ai/ingress-refinery';
+import { listSchemaCatalogEntries } from '@entif-ai/rosetta-schemas';
 import { loadBootstrapSourceRegistry } from '@entif-ai/source-registry';
 
 export interface RosettaApiRouteResult {
@@ -35,6 +36,16 @@ export function routeRosettaApi(url?: string): RosettaApiRouteResult {
   if (url === '/demo') {
     return {
       body: buildBootstrapDemoSnapshot(),
+      statusCode: 200
+    };
+  }
+
+  if (url === '/schemas') {
+    return {
+      body: {
+        entries: listSchemaCatalogEntries(),
+        note: 'Inspection endpoint only; exposureStatus values describe catalog visibility and do not imply runtime support.'
+      },
       statusCode: 200
     };
   }
