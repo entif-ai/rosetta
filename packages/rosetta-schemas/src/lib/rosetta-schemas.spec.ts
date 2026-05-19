@@ -5,6 +5,9 @@ import {
   AGENTIC_MESSAGE_SIZE_POLICY,
   AGENTIC_MESSAGE_TYPE_PROFILES,
   ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS,
+  SKILL_CARD_AUTHORITY_FIELD_NAMES,
+  SKILL_CARD_MAX_BYTES,
+  SKILL_CARD_RISK_CLASSES,
   SUPPORTED_TILE_KIND_REQUIRED_FIELDS,
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
@@ -32,6 +35,7 @@ import {
   validateIntakeEnvelope,
   validatePayload,
   validatePostmortemArtifact,
+  validateSkillCard,
   validateTranslationEvidence
 } from './rosetta-schemas.js';
 import {
@@ -166,6 +170,85 @@ describe('rosetta-schemas', () => {
       'Missing required field: sourceObservationCid',
       'source.derived_artifact sourceSpans must include at least one span.'
     ]);
+  });
+
+  it('validates broker-facing skill.card Tier 0 stubs without loading playbooks or grants', () => {
+    const validCard = {
+      io: 'markdown, repo path -> patched files and validation receipts',
+      name: 'repo-hygiene',
+      one_line: 'Keeps a repo branch clean, tested, and ready for review.',
+      provenance: {
+        origin: 'packs/skills/repo-hygiene/SKILL.md',
+        trust_ref: 'receipt:skill.certification.repo-hygiene.v1'
+      },
+      risk_class: 'write_local',
+      skill_id: 'skill.repo-hygiene',
+      subject: {
+        doc_id: 'skill.repo-hygiene',
+        export_ref: 'exports.skill-card',
+        pack_id: 'cidv1-sha256-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+        profile_ref: 'profiles.codex',
+        version: '1.0.0'
+      },
+      tool_scopes: ['git', 'pnpm', 'nx'],
+      triggers: ['repo hygiene', 'tests', 'pull request'],
+      version: '1.0.0'
+    };
+
+    expect(SKILL_CARD_MAX_BYTES).toBeGreaterThan(0);
+    expect(SKILL_CARD_RISK_CLASSES).toContain('write_local');
+    expect(validatePayload('skill.card', validCard).ok).toBe(true);
+    expect(validateSkillCard(validCard)).toEqual({ errors: [], ok: true, schemaId: 'skill.card.v1' });
+  });
+
+  it('rejects oversized or authority-bearing skill.card metadata', () => {
+    const result = validateSkillCard({
+      capability_selector: 'dangerous.runtime.grant',
+      io: 'input -> output',
+      name: 'grant-smuggler',
+      one_line: 'Attempts to turn broker metadata into an execution grant.',
+      provenance: {
+        origin: 'unknown',
+        trust_ref: 'receipt:untrusted'
+      },
+      risk_class: 'admin',
+      skill_id: 'skill.grant-smuggler',
+      subject: {
+        doc_id: 'skill.grant-smuggler',
+        pack_id: 'not-a-cid',
+        version: '1.0.0'
+      },
+      tool_scopes: ['*'],
+      triggers: ['grant', 'authority', 'runtime'],
+      version: '1.0.0'
+    });
+
+    expect(SKILL_CARD_AUTHORITY_FIELD_NAMES).toContain('capability_selector');
+    expect(result.ok).toBe(false);
+    expect(result.errors).toEqual([
+      'skill.card tool_scopes entries must be broker-facing tool family hints, not wildcards.',
+      'skill.card subject.pack_id must match cidv1-sha256-<64 hex>.',
+      'skill.card contains forbidden Tier 0 authority field: capability_selector'
+    ]);
+
+    expect(
+      validateSkillCard({
+        io: 'input -> output',
+        name: 'too-large',
+        one_line: 'x'.repeat(SKILL_CARD_MAX_BYTES),
+        provenance: { origin: 'fixture', trust_ref: 'receipt:fixture' },
+        risk_class: 'read_only',
+        skill_id: 'skill.too-large',
+        subject: {
+          doc_id: 'skill.too-large',
+          pack_id: 'cidv1-sha256-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+          version: '1.0.0'
+        },
+        tool_scopes: ['read'],
+        triggers: ['large', 'budget', 'broker'],
+        version: '1.0.0'
+      }).errors
+    ).toContain(`skill.card exceeds Tier 0 byte budget of ${SKILL_CARD_MAX_BYTES} bytes.`);
   });
 
   it('builds stable compound cache lookup keys across all authorization dimensions', () => {
@@ -970,6 +1053,11 @@ describe('rosetta-schemas', () => {
     expect(getSchemaCatalogEntry('rosetta.shacl_shapes')).toMatchObject({
       family: 'conformance',
       validator: 'emitShaclShapes'
+    });
+    expect(getSchemaCatalogEntry('skill.card')).toMatchObject({
+      exposureStatus: 'downstream-contract',
+      sourceIssues: ['#1057'],
+      validator: 'validateSkillCard'
     });
   });
 

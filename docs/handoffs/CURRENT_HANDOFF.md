@@ -3,7 +3,7 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
 Last updated: 2026-05-19
-Current branch at time of update: `codex/am-007-message-size-policy`
+Current branch at time of update: `codex/sld-001-skill-card-schema`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,29 +127,31 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/am-007-message-size-policy`
+Current branch: `codex/sld-001-skill-card-schema`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1142
+- https://github.com/entif-ai/rosetta/issues/1057
 
-This branch implements the first-wave Agentic Messaging message-size policy in `rosetta-schemas`. The slice is mailroom-contract focused: it defines a small, testable pre-schema `size-enforce` check and keeps large artifact transfer out of raw inline messages.
+This branch implements the first-wave broker-facing `skill.card` Tier 0 schema in `rosetta-schemas`. The slice is skill-library-contract focused: it defines a bounded, manifest-backed metadata stub that downstream broker, certification, lineage, and runtime materialization issues can consume without each inventing a local card dialect.
 
 Changed behavior:
 
-- `AGENTIC_MESSAGE_SIZE_POLICY` defines one first-wave `defaultMaxMessageBytes` ceiling of `1_048_576` bytes.
-- `AGENTIC_MAILROOM_VALIDATION_CHECKLIST` now starts with `size-enforce`, before schema validation and plane enforcement.
-- `evaluateAgenticMessageSizePolicy()` returns deterministic quarantine reasons, incident codes, and telemetry evidence for oversize messages.
-- `ARTIFACT_PUBLISH` is explicitly reference-only; inline artifact body fields quarantine as a payload-shape/size violation.
-- The schema catalog now includes `entif.agentic-messaging.size-policy.v1` as a downstream contract boundary.
+- `skill.card` is now a supported schema kind with required Tier 0 fields: `skill_id`, `name`, `one_line`, `triggers`, `io`, `risk_class`, `tool_scopes`, `version`, `provenance`, and manifest-backed `subject`.
+- `validateSkillCard()` enforces the first-wave `SKILL_CARD_MAX_BYTES` budget, risk-class enum, trigger/tool hint shape, `subject.pack_id` CID posture, provenance shape, and forbidden authority fields.
+- Tier 0 cards reject approval handles, capability selectors, IAM decision refs, Guard tokens, runtime grants, and wildcard tool scopes so broker metadata cannot masquerade as an execution grant.
+- The schema catalog now includes `skill.card` as a downstream contract for future skill-broker runtime work.
 
 ## Validation State
 
-- `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
+- Red: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` failed before implementation on missing SkillCard exports/validator.
+- Green: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:lint --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:build --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
+- `NX_DAEMON=false pnpm exec nx affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- `git diff --check` passed.
 
 Known non-failing warnings:
 
@@ -159,9 +161,8 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Run affected validation before publishing.
-2. Publish a ready PR for issue #1142.
-3. Keep runtime custody, replay storage, and telemetry aggregation in downstream mailroom issues; this branch only defines the schema-layer size policy.
+1. Publish a ready PR for issue #1057.
+2. Keep playbook loading, broker ranking, certification flow, lineage/rollback, and runtime authorization in downstream skill-library issues; this branch only defines the schema-layer SkillCard contract.
 
 For Text-Core:
 

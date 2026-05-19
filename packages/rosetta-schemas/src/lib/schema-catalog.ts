@@ -50,6 +50,8 @@ const AUTHORITY_MAP = 'packages/rosetta-schemas/docs/schema-authority-map.md';
 const AGENTIC_MESSAGING_RFC = 'docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md';
 const ROSETTA_CORE_SPEC = 'docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md';
 const ENTIF_ROSETTA_PRD = 'docs/PRDs/20260426 - Entif and Rosetta PRD.md';
+const SKILL_LIBRARY_DESIGN = 'docs/chats/20260323 - Chat GPT - Entif Skill Library Design.md';
+const PROGRESSIVE_DISCLOSURE_SKILLS = 'docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md';
 
 function tileAuthorityTier(schemaId: string): SchemaAuthorityTier {
   if (schemaId === 'guard.decision_token') {
@@ -82,6 +84,9 @@ function tileExposureStatus(schemaId: string): SchemaExposureStatus {
 }
 
 function tileDocs(schemaId: string): string[] {
+  if (schemaId === 'skill.card') {
+    return [SCHEMA_README, SKILL_LIBRARY_DESIGN, PROGRESSIVE_DISCLOSURE_SKILLS];
+  }
   if (schemaId.startsWith('source.')) {
     return [SCHEMA_README, ENTIF_ROSETTA_PRD];
   }
@@ -92,6 +97,9 @@ function tileDocs(schemaId: string): string[] {
 }
 
 function tileConsumerPackages(schemaId: string): string[] {
+  if (schemaId === 'skill.card') {
+    return ['skill-broker-runtime', '@entif-ai/rosetta-schemas'];
+  }
   if (schemaId.startsWith('source.')) {
     return ['@entif-ai/source-substrate', '@entif-ai/source-registry', '@entif-ai/ingress-refinery'];
   }
@@ -111,6 +119,27 @@ function tileConsumerPackages(schemaId: string): string[] {
 }
 
 function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
+  if (schemaId === 'skill.card') {
+    return {
+      authorityTier: 'core-spine',
+      boundaryKind: 'owned-schema',
+      consumerPackages: tileConsumerPackages(schemaId),
+      docs: tileDocs(schemaId),
+      exposureStatus: 'downstream-contract',
+      family: 'skill',
+      knownGaps: [
+        'Defines the broker-facing Tier 0 card only; playbook loading, certification flow, broker ranking, and runtime grants remain downstream issues.'
+      ],
+      ownerPackage: '@entif-ai/rosetta-schemas',
+      rfcPrdAnchors: [ROSETTA_CORE_SPEC],
+      schemaId,
+      sourceIssues: ['#1057'],
+      sourcePrs: [],
+      tests: [SCHEMA_SPEC],
+      validator: 'validateSkillCard'
+    };
+  }
+
   return {
     authorityTier: tileAuthorityTier(schemaId),
     boundaryKind: 'owned-schema',

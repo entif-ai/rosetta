@@ -233,6 +233,39 @@ export interface AgenticMessageExecutionPolicyResult extends AgenticMessageValid
   requiresGuardDecision: boolean;
 }
 
+export type SkillCardRiskClass = 'admin' | 'financial' | 'identity' | 'read_only' | 'write_external' | 'write_local';
+
+export interface SkillCardSubjectRef {
+  doc_id: string;
+  export_ref?: string;
+  pack_id: string;
+  profile_ref?: string;
+  version: string;
+}
+
+export interface SkillCardProvenance {
+  origin: string;
+  trust_ref: string;
+}
+
+export interface SkillCardInput {
+  certification_ref?: string;
+  io: string;
+  name: string;
+  one_line: string;
+  provenance: SkillCardProvenance;
+  risk_class: SkillCardRiskClass;
+  skill_id: string;
+  subject: SkillCardSubjectRef;
+  tool_scopes: string[];
+  triggers: string[];
+  version: string;
+}
+
+export interface SkillCardValidationResult extends ValidationResult {
+  schemaId: 'skill.card.v1';
+}
+
 export interface IntakeEnvelopeReceipts {
   costUsd?: number;
   itemHash?: string;
@@ -426,6 +459,7 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'timestamp',
     'workflowId'
   ],
+  'skill.card': ['io', 'name', 'one_line', 'provenance', 'risk_class', 'skill_id', 'subject', 'tool_scopes', 'triggers', 'version'],
   'rosetta.composition_provenance': [
     'answerCid',
     'composedAt',
@@ -516,6 +550,32 @@ const COMPOUND_CACHE_KEY_LOOKUP_NAMES: Record<CompoundCacheKeyDimension, string>
   semanticIntent: 'semantic_intent',
   sourceBundleHash: 'source_bundle_hash'
 };
+
+export const SKILL_CARD_MAX_BYTES = 2048;
+
+export const SKILL_CARD_RISK_CLASSES = [
+  'read_only',
+  'write_local',
+  'write_external',
+  'financial',
+  'identity',
+  'admin'
+] as const satisfies readonly SkillCardRiskClass[];
+
+export const SKILL_CARD_AUTHORITY_FIELD_NAMES = [
+  'approval_handle',
+  'approvalHandle',
+  'capability_selector',
+  'capabilitySelector',
+  'guard_decision_token',
+  'guardDecisionToken',
+  'iam_decision_ref',
+  'iamDecisionRef',
+  'runtime_grant',
+  'runtimeGrant'
+] as const;
+
+const SKILL_CARD_PACK_ID_PATTERN = /^cidv1-sha256-[a-f0-9]{64}$/u;
 
 const DOMAIN_CLASSIFICATION_RANK: Record<DomainClassification, number> = {
   public: 0,
@@ -835,6 +895,26 @@ function findInlineArtifactFieldPaths(value: unknown, path: string[] = []): stri
   return dedupeList(matches);
 }
 
+function findSkillCardAuthorityFieldPaths(value: unknown, path: string[] = []): string[] {
+  if (Array.isArray(value)) {
+    return value.flatMap((entry, index) => findSkillCardAuthorityFieldPaths(entry, [...path, `[${index}]`]));
+  }
+  if (!isRecord(value)) {
+    return [];
+  }
+
+  const matches: string[] = [];
+  for (const [key, nestedValue] of Object.entries(value)) {
+    const nextPath = [...path, key];
+    if (SKILL_CARD_AUTHORITY_FIELD_NAMES.includes(key as (typeof SKILL_CARD_AUTHORITY_FIELD_NAMES)[number])) {
+      matches.push(nextPath.join('.'));
+    }
+    matches.push(...findSkillCardAuthorityFieldPaths(nestedValue, nextPath));
+  }
+
+  return dedupeList(matches);
+}
+
 function validateAgenticSender(sender: unknown, errors: string[]): void {
   if (!isRecord(sender)) {
     errors.push('AgenticMessageEnvelope sender must be an object.');
@@ -873,6 +953,58 @@ function extractHighSignalImperatives(text: string): string[] {
       const firstWord = sentence.match(/^[A-Za-z]+/u)?.[0].toLowerCase();
       return firstWord ? imperativeStarters.has(firstWord) : false;
     });
+}
+
+function validateSkillCardPayload(payload: object, errors: string[]): void {
+  const card = payload as Record<string, unknown>;
+  const byteLength = Buffer.byteLength(JSON.stringify(payload), 'utf8');
+
+  if (byteLength > SKILL_CARD_MAX_BYTES) {
+    errors.push(`skill.card exceeds Tier 0 byte budget of ${SKILL_CARD_MAX_BYTES} bytes.`);
+  }
+  if (!SKILL_CARD_RISK_CLASSES.includes(card.risk_class as SkillCardRiskClass)) {
+    errors.push(`skill.card risk_class must be one of: ${SKILL_CARD_RISK_CLASSES.join(', ')}.`);
+  }
+  if (requiredString(card.one_line as string | undefined) && (card.one_line as string).length > 140) {
+    errors.push('skill.card one_line must be 140 characters or fewer.');
+  }
+  if (!Array.isArray(card.triggers) || card.triggers.length < 3 || card.triggers.length > 8) {
+    errors.push('skill.card triggers must include 3 to 8 broker-facing trigger hints.');
+  }
+  if (!Array.isArray(card.tool_scopes)) {
+    errors.push('skill.card tool_scopes must be an array of broker-facing tool family hints.');
+  } else if (card.tool_scopes.some((scope) => !requiredString(scope as string | undefined) || scope === '*')) {
+    errors.push('skill.card tool_scopes entries must be broker-facing tool family hints, not wildcards.');
+  }
+
+  const subject = card.subject;
+  if (!isRecord(subject)) {
+    errors.push('skill.card subject must be an object.');
+  } else {
+    for (const field of ['doc_id', 'pack_id', 'version']) {
+      if (!requiredString(subject[field] as string | undefined)) {
+        errors.push(`skill.card subject missing required field: ${field}`);
+      }
+    }
+    if (requiredString(subject.pack_id as string | undefined) && !SKILL_CARD_PACK_ID_PATTERN.test(subject.pack_id as string)) {
+      errors.push('skill.card subject.pack_id must match cidv1-sha256-<64 hex>.');
+    }
+  }
+
+  const provenance = card.provenance;
+  if (!isRecord(provenance)) {
+    errors.push('skill.card provenance must be an object.');
+  } else {
+    for (const field of ['origin', 'trust_ref']) {
+      if (!requiredString(provenance[field] as string | undefined)) {
+        errors.push(`skill.card provenance missing required field: ${field}`);
+      }
+    }
+  }
+
+  errors.push(
+    ...findSkillCardAuthorityFieldPaths(payload).map((fieldPath) => `skill.card contains forbidden Tier 0 authority field: ${fieldPath}`)
+  );
 }
 
 function validateReceiptPayload(payload: object, errors: string[]): void {
@@ -965,6 +1097,8 @@ export function validatePayload(kind: string, payload: object): ValidationResult
 
   if (kind === 'rosetta.receipt') {
     validateReceiptPayload(payload, errors);
+  } else if (kind === 'skill.card') {
+    validateSkillCardPayload(payload, errors);
   } else if (kind === 'source.canonical_artifact') {
     validateCanonicalArtifactPayload(payload, errors);
   } else if (kind === 'source.derived_artifact') {
@@ -974,6 +1108,15 @@ export function validatePayload(kind: string, payload: object): ValidationResult
   return {
     errors,
     ok: errors.length === 0
+  };
+}
+
+export function validateSkillCard(input: Record<string, unknown>): SkillCardValidationResult {
+  const result = validatePayload('skill.card', input);
+
+  return {
+    ...result,
+    schemaId: 'skill.card.v1'
   };
 }
 

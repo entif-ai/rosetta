@@ -74,6 +74,16 @@ When adding a schema family, add or update a catalog entry in the same change. N
   - issue `#1047` remains the external peer-agent interop lane
   - issues `#706`, `#1029`, `#718`, and `#946` are downstream consumers of this registry surface
 
+## SkillCard Schema
+
+- Schema kind: `skill.card`
+- Validator: `validateSkillCard()`
+- First-wave Tier 0 budget: `SKILL_CARD_MAX_BYTES` is `2_048` bytes.
+- Required broker-facing fields: `skill_id`, `name`, `one_line`, `triggers`, `io`, `risk_class`, `tool_scopes`, `version`, `provenance`, and manifest-backed `subject`.
+- `subject.pack_id` must point at a pack manifest CID (`cidv1-sha256-<64 hex>`), with `doc_id` and `version`; `export_ref` and `profile_ref` may identify the broker-visible surface.
+- Tier 0 may carry bounded risk, provenance, certification, trigger, and tool-family hints. It must not carry approval handles, capability selectors, IAM decision refs, Guard tokens, runtime grants, or wildcard tool scopes.
+- Runtime materialization, broker ranking, certification flow, lineage/rollback, and Guard authorization remain owned by downstream skill-library issues.
+
 ## Plane Enforcement
 
 - Issue `#706` adds the anti-spoofing admission contract on top of the `#220` registry surface.
