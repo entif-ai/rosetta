@@ -1,0 +1,333 @@
+import {
+  AGENTIC_MESSAGE_TYPE_PROFILES,
+  SUPPORTED_TILE_KIND_REQUIRED_FIELDS,
+  type AgenticMessageSchemaProfile
+} from './rosetta-schemas.js';
+
+export type SchemaAuthorityTier =
+  | 'core-spine'
+  | 'governance-admission'
+  | 'memory-context-cache'
+  | 'projection-product-ops'
+  | 'source-ingest';
+
+export type SchemaExposureStatus =
+  | 'api-visible'
+  | 'cli-visible'
+  | 'demo-visible'
+  | 'deprecated'
+  | 'downstream-contract'
+  | 'fixture-only'
+  | 'package-internal'
+  | 'reserved-interface';
+
+export type SchemaBoundaryKind =
+  | 'consumed-nested-component'
+  | 'owned-schema'
+  | 'referenced-external-contract'
+  | 'validation-entrypoint';
+
+export interface RosettaSchemaCatalogEntry {
+  authorityTier: SchemaAuthorityTier;
+  boundaryKind: SchemaBoundaryKind;
+  consumerPackages: string[];
+  docs: string[];
+  exposureStatus: SchemaExposureStatus;
+  family: string;
+  knownGaps: string[];
+  ownerPackage: '@entif-ai/rosetta-schemas' | string;
+  rfcPrdAnchors: string[];
+  schemaId: string;
+  sourceIssues: string[];
+  sourcePrs: string[];
+  tests: string[];
+  validator?: string;
+}
+
+const SCHEMA_README = 'packages/rosetta-schemas/README.md';
+const SCHEMA_SPEC = 'packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts';
+const AUTHORITY_MAP = 'packages/rosetta-schemas/docs/schema-authority-map.md';
+const AGENTIC_MESSAGING_RFC = 'docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md';
+const ROSETTA_CORE_SPEC = 'docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md';
+const ENTIF_ROSETTA_PRD = 'docs/PRDs/20260426 - Entif and Rosetta PRD.md';
+
+function tileAuthorityTier(schemaId: string): SchemaAuthorityTier {
+  if (schemaId === 'guard.decision_token') {
+    return 'governance-admission';
+  }
+  if (schemaId.startsWith('source.') || schemaId === 'entif.intake_envelope') {
+    return 'source-ingest';
+  }
+  if (
+    schemaId === 'entif.daily_top_shelf_digest' ||
+    schemaId === 'entif.postmortem_artifact' ||
+    schemaId === 'rosetta.composition_provenance'
+  ) {
+    return 'memory-context-cache';
+  }
+  if (schemaId === 'rosetta.tapestry' || schemaId === 'rosetta.translation_evidence') {
+    return 'projection-product-ops';
+  }
+  return 'core-spine';
+}
+
+function tileExposureStatus(schemaId: string): SchemaExposureStatus {
+  if (schemaId.startsWith('source.') || schemaId === 'entif.intake_envelope') {
+    return 'fixture-only';
+  }
+  if (schemaId === 'guard.decision_token') {
+    return 'downstream-contract';
+  }
+  return 'package-internal';
+}
+
+function tileDocs(schemaId: string): string[] {
+  if (schemaId.startsWith('source.')) {
+    return [SCHEMA_README, ENTIF_ROSETTA_PRD];
+  }
+  if (schemaId.startsWith('rosetta.')) {
+    return [SCHEMA_README, ROSETTA_CORE_SPEC];
+  }
+  return [SCHEMA_README];
+}
+
+function tileConsumerPackages(schemaId: string): string[] {
+  if (schemaId.startsWith('source.')) {
+    return ['@entif-ai/source-substrate', '@entif-ai/source-registry', '@entif-ai/ingress-refinery'];
+  }
+  if (schemaId === 'guard.decision_token') {
+    return ['@entif-ai/rosetta-guard'];
+  }
+  if (schemaId === 'rosetta.receipt') {
+    return ['@entif-ai/rosetta-receipts', '@entif-ai/rosetta-tapestry'];
+  }
+  if (schemaId === 'rosetta.tapestry') {
+    return ['@entif-ai/rosetta-tapestry', '@entif-ai/projection-adapters'];
+  }
+  if (schemaId.startsWith('rosetta.')) {
+    return ['@entif-ai/rosetta-core'];
+  }
+  return ['@entif-ai/rosetta-schemas'];
+}
+
+function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
+  return {
+    authorityTier: tileAuthorityTier(schemaId),
+    boundaryKind: 'owned-schema',
+    consumerPackages: tileConsumerPackages(schemaId),
+    docs: tileDocs(schemaId),
+    exposureStatus: tileExposureStatus(schemaId),
+    family: schemaId.split('.')[0] ?? 'unknown',
+    knownGaps: ['Lightweight required-field validation only; full SHACL/RDF execution is not implemented.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [ROSETTA_CORE_SPEC, ENTIF_ROSETTA_PRD],
+    schemaId,
+    sourceIssues: ['#1114'],
+    sourcePrs: [],
+    tests: [SCHEMA_SPEC],
+    validator: 'validatePayload'
+  };
+}
+
+function agenticMessageCatalogEntry(msgType: string, profile: AgenticMessageSchemaProfile): RosettaSchemaCatalogEntry {
+  return {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'owned-schema',
+    consumerPackages: ['@entif-ai/rosetta-guard', 'apps/rosetta-api'],
+    docs: [SCHEMA_README, AGENTIC_MESSAGING_RFC],
+    exposureStatus: 'downstream-contract',
+    family: 'agentic-messaging',
+    knownGaps: [
+      'Structural schema validation does not imply runtime authorization.',
+      profile.plane === 'control' ? 'Guard and IAM semantics remain delegated to owning contracts.' : 'Data-plane routing stays side-effect free.'
+    ],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: profile.schemaId,
+    sourceIssues: ['#220', '#1114'],
+    sourcePrs: ['#1108'],
+    tests: [SCHEMA_SPEC],
+    validator: 'validateAgenticMessagePayload'
+  };
+}
+
+const TILE_CATALOG_ENTRIES = Object.keys(SUPPORTED_TILE_KIND_REQUIRED_FIELDS).map(tileCatalogEntry);
+
+const AGENTIC_MESSAGE_CATALOG_ENTRIES = Object.entries(AGENTIC_MESSAGE_TYPE_PROFILES).map(([msgType, profile]) =>
+  agenticMessageCatalogEntry(msgType, profile)
+);
+
+const BOUNDARY_CATALOG_ENTRIES: RosettaSchemaCatalogEntry[] = [
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'owned-schema',
+    consumerPackages: ['@entif-ai/rosetta-guard', 'apps/rosetta-api'],
+    docs: [SCHEMA_README, AGENTIC_MESSAGING_RFC],
+    exposureStatus: 'downstream-contract',
+    family: 'agentic-messaging',
+    knownGaps: ['Envelope validation is structural; replay storage and transport custody are owned by downstream mailroom work.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.agentic-messaging.envelope.v1',
+    sourceIssues: ['#220', '#1114'],
+    sourcePrs: ['#1108'],
+    tests: [SCHEMA_SPEC],
+    validator: 'validateAgenticMessageEnvelope'
+  },
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'validation-entrypoint',
+    consumerPackages: ['@entif-ai/rosetta-guard'],
+    docs: [SCHEMA_README, AGENTIC_MESSAGING_RFC],
+    exposureStatus: 'downstream-contract',
+    family: 'agentic-messaging',
+    knownGaps: ['Does not execute Guard decisions or IAM semantics; it only classifies structural routing eligibility.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.agentic-messaging.execution-admission.v1',
+    sourceIssues: ['#706', '#1114'],
+    sourcePrs: ['#1109'],
+    tests: [SCHEMA_SPEC],
+    validator: 'evaluateAgenticMessageExecutionPolicy'
+  },
+  {
+    authorityTier: 'core-spine',
+    boundaryKind: 'validation-entrypoint',
+    consumerPackages: ['@entif-ai/rosetta-schemas'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'package-internal',
+    family: 'conformance',
+    knownGaps: ['Summary bundles are local conformance receipts, not a full standards conformance engine.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [ROSETTA_CORE_SPEC],
+    schemaId: 'rosetta.conformance_bundle',
+    sourceIssues: ['#1114'],
+    sourcePrs: [],
+    tests: [SCHEMA_SPEC],
+    validator: 'emitConformanceBundle'
+  },
+  {
+    authorityTier: 'core-spine',
+    boundaryKind: 'validation-entrypoint',
+    consumerPackages: ['@entif-ai/rosetta-schemas'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'package-internal',
+    family: 'conformance',
+    knownGaps: ['Emits SHACL-like Turtle only; it does not run a SHACL engine.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [ROSETTA_CORE_SPEC],
+    schemaId: 'rosetta.shacl_shapes',
+    sourceIssues: ['#1114'],
+    sourcePrs: [],
+    tests: [SCHEMA_SPEC],
+    validator: 'emitShaclShapes'
+  },
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'consumed-nested-component',
+    consumerPackages: ['@entif-ai/rosetta-schemas'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'downstream-contract',
+    family: 'domain-ref',
+    knownGaps: ['`rosetta-schemas` normalizes and compares domain_ref values but does not own every future domain policy.'],
+    ownerPackage: '@entif-ai/rosetta-schemas',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.domain_ref.v1',
+    sourceIssues: ['#711'],
+    sourcePrs: ['#1105'],
+    tests: [SCHEMA_SPEC],
+    validator: 'validateDomainRef'
+  },
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'referenced-external-contract',
+    consumerPackages: ['@entif-ai/rosetta-schemas', '@entif-ai/rosetta-guard'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'reserved-interface',
+    family: 'iam',
+    knownGaps: ['`iam.decision` artifact semantics are intentionally out of scope for this package.'],
+    ownerPackage: 'external-iam-contract',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.iam.decision.ref',
+    sourceIssues: ['#630'],
+    sourcePrs: [],
+    tests: [],
+    validator: undefined
+  },
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'referenced-external-contract',
+    consumerPackages: ['@entif-ai/rosetta-guard'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'reserved-interface',
+    family: 'guard',
+    knownGaps: ['Guard request/validation flow is a downstream consumer boundary, not redefined here.'],
+    ownerPackage: '@entif-ai/rosetta-guard',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.guard.decision-request.ref',
+    sourceIssues: ['#1029'],
+    sourcePrs: [],
+    tests: [],
+    validator: undefined
+  },
+  {
+    authorityTier: 'governance-admission',
+    boundaryKind: 'referenced-external-contract',
+    consumerPackages: ['mailroom-runtime'],
+    docs: [SCHEMA_README, AUTHORITY_MAP],
+    exposureStatus: 'reserved-interface',
+    family: 'mailroom',
+    knownGaps: ['Runtime mailroom custody, replay storage, and routing are downstream of the schema registry.'],
+    ownerPackage: 'mailroom-runtime',
+    rfcPrdAnchors: [AGENTIC_MESSAGING_RFC],
+    schemaId: 'entif.mailroom.consumer-boundary.ref',
+    sourceIssues: ['#718', '#946'],
+    sourcePrs: [],
+    tests: [],
+    validator: undefined
+  }
+];
+
+export const ROSETTA_SCHEMA_CATALOG = [...TILE_CATALOG_ENTRIES, ...AGENTIC_MESSAGE_CATALOG_ENTRIES, ...BOUNDARY_CATALOG_ENTRIES].sort(
+  (left, right) => left.schemaId.localeCompare(right.schemaId)
+) satisfies RosettaSchemaCatalogEntry[];
+
+export function listSchemaCatalogEntries(): RosettaSchemaCatalogEntry[] {
+  return [...ROSETTA_SCHEMA_CATALOG];
+}
+
+export function getSchemaCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry | undefined {
+  return ROSETTA_SCHEMA_CATALOG.find((entry) => entry.schemaId === schemaId);
+}
+
+export function validateSchemaCatalogCoverage(): string[] {
+  const errors: string[] = [];
+  const catalogIds = new Set(ROSETTA_SCHEMA_CATALOG.map((entry) => entry.schemaId));
+
+  for (const schemaId of Object.keys(SUPPORTED_TILE_KIND_REQUIRED_FIELDS)) {
+    if (!catalogIds.has(schemaId)) {
+      errors.push(`Missing supported tile-kind catalog entry: ${schemaId}`);
+    }
+  }
+  if (!catalogIds.has('entif.agentic-messaging.envelope.v1')) {
+    errors.push('Missing Agentic Messaging envelope catalog entry.');
+  }
+  for (const profile of Object.values(AGENTIC_MESSAGE_TYPE_PROFILES)) {
+    if (!catalogIds.has(profile.schemaId)) {
+      errors.push(`Missing Agentic Messaging catalog entry: ${profile.schemaId}`);
+    }
+  }
+
+  for (const entry of ROSETTA_SCHEMA_CATALOG) {
+    if (entry.exposureStatus !== 'deprecated' && entry.exposureStatus !== 'reserved-interface') {
+      if (entry.tests.length === 0) {
+        errors.push(`Catalog entry lacks tests: ${entry.schemaId}`);
+      }
+      if (entry.docs.length === 0) {
+        errors.push(`Catalog entry lacks docs: ${entry.schemaId}`);
+      }
+    }
+  }
+
+  return errors;
+}

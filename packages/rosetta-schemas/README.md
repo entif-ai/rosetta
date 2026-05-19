@@ -10,6 +10,39 @@ Provides lightweight payload validation and conformance bundle emission for curr
 - emits SHACL-like Turtle text describing those required fields
 - emits conformance bundles summarizing conforming versus violating tiles
 - exposes the internal Agentic Messaging schema registry and mailroom validation mapping
+- exports a package-local schema catalog for maintainer and inspection workflows
+
+## Schema Catalog
+
+- Machine-readable source: `src/lib/schema-catalog.ts`
+- Human authority map: `docs/schema-authority-map.md`
+- Main exports:
+  - `ROSETTA_SCHEMA_CATALOG`
+  - `listSchemaCatalogEntries()`
+  - `getSchemaCatalogEntry(schemaId)`
+  - `validateSchemaCatalogCoverage()`
+- Each catalog entry records `schemaId`, family, authority tier, exposure status, owner package, validator or entrypoint, tests, docs, source issues and PRs, RFC/PRD anchors, consumer packages, boundary kind, and known gaps.
+
+Authority tiers keep ownership visible:
+
+- `core-spine`
+- `governance-admission`
+- `source-ingest`
+- `memory-context-cache`
+- `projection-product-ops`
+
+Exposure statuses prevent schema existence from masquerading as runtime support:
+
+- `package-internal`
+- `downstream-contract`
+- `fixture-only`
+- `reserved-interface`
+- `api-visible`
+- `cli-visible`
+- `demo-visible`
+- `deprecated`
+
+When adding a schema family, add or update a catalog entry in the same change. Non-reserved entries must cite at least one test and doc reference, and the test suite checks that every supported tile-kind validator plus every registered Agentic Messaging profile appears in the catalog.
 
 ## Agentic Messaging Registry
 

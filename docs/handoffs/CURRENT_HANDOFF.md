@@ -2,8 +2,8 @@
 
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
-Last updated: 2026-05-04
-Current branch at time of update: `codex/am-001-schema-registry`
+Last updated: 2026-05-19
+Current branch at time of update: `codex/rs-001-schema-catalog`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,40 +127,40 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/am-006-plane-spoofing-guards`
+Current branch: `codex/rs-001-schema-catalog`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/706
+- https://github.com/entif-ai/rosetta/issues/1114
 
-This branch implements the narrow anti-spoofing admission rules for Agentic Messaging using the existing `packages/rosetta-schemas` registry surface. The slice stays structural and fail-closed: it does not redefine `iam.decision` semantics, Guard APIs, or external peer-agent interop.
+This branch implements the package-local `rosetta-schemas` schema catalog and authority map. The slice is code-backed and visibility-focused: it catalogs the existing schema families, validators, Agentic Messaging registry entries, conformance emitters, and downstream ownership boundaries without promoting reserved interfaces into runtime support.
 
 Changed behavior:
 
-- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` now exports a structural execution-admission helper for Agentic Messaging plus explicit executor dispositions for each message family.
-- Data-plane payloads remain non-executable even when they contain imperative-looking text; they route as `data-plane-no-side-effects` and are never promoted into privileged execution.
-- Hidden capability selectors, `iam.decision` refs, approval handles, and equivalent control bindings inside nominal data-plane payloads now quarantine with deterministic incident/quarantine codes.
-- Control-plane admission can optionally reuse `compareDomainRefs` from the `#711` `domain_ref` surface, so benign ABAC label ordering differences do not false-positive while real boundary drift fails closed.
-- `packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` adds red/green adversarial tests for relabeling attempts, hidden capability selectors, and control-plane domain-bound admission.
-- `packages/rosetta-schemas/README.md` now documents the `#706` anti-spoofing contract and keeps `#220`, `#711`, `#630`, and `#1029` ownership boundaries explicit.
+- `packages/rosetta-schemas/src/lib/schema-catalog.ts` exports typed catalog entries plus `listSchemaCatalogEntries()`, `getSchemaCatalogEntry()`, and `validateSchemaCatalogCoverage()`.
+- `packages/rosetta-schemas/src/lib/rosetta-schemas.ts` exports `SUPPORTED_TILE_KIND_REQUIRED_FIELDS` so catalog coverage checks follow the active validator surface.
+- Catalog tests fail when supported tile-kind validators or registered Agentic Messaging profiles are missing, or when non-reserved entries lack docs/tests.
+- `packages/rosetta-schemas/docs/schema-authority-map.md` and the package README document authority tiers, exposure statuses, and ownership boundaries for `domain_ref`, IAM, Guard, mailroom, and execution admission.
 
 ## Validation State
 
 - `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
-- `npx -y node@22 node_modules/nx/bin/nx.js run rosetta-schemas:test --skip-nx-cache` passed.
-- `npx -y node@22 node_modules/nx/bin/nx.js affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:build --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:lint --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
 
 Known non-failing warnings:
 
-- Nx may emit `MaxListenersExceededWarning` during large dependent builds.
 - Nx/Vitest may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
 
 ## Next Actions
 
 For this branch:
 
-1. Publish a ready PR for issue #706 with the Node 22 validation commands and the explicit `#220` / `#711` / `#630` / `#1029` boundary notes.
-2. Keep `iam.decision` artifact semantics in #630 and Guard request/validation flow in #1029; this branch only enforces structural admission and quarantine behavior.
-3. Follow with runtime/mailroom consumers in #718 and #946 rather than expanding the schema-layer admission contract.
+1. Run affected validation before publishing.
+2. Publish a ready PR for issue #1114.
+3. Follow with issue #1115 to expose the catalog through API and CLI inspection surfaces.
 
 For Text-Core:
 

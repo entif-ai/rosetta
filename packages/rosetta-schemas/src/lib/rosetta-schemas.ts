@@ -453,6 +453,8 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
   'source.trust_matrix': ['axes', 'notes', 'subjectCid', 'trustClass']
 };
 
+export const SUPPORTED_TILE_KIND_REQUIRED_FIELDS: Readonly<Record<string, readonly string[]>> = REQUIRED_FIELDS;
+
 const COMPOUND_CACHE_KEY_DIMENSIONS = [
   'semanticIntent',
   'rightsDomain',

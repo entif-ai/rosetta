@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   AGENTIC_MAILROOM_VALIDATION_CHECKLIST,
   AGENTIC_MESSAGE_TYPE_PROFILES,
+  SUPPORTED_TILE_KIND_REQUIRED_FIELDS,
   buildCompositionProvenanceRecord,
   buildCompoundCacheKey,
   buildDailyTopShelfDigest,
@@ -30,6 +31,12 @@ import {
   validatePostmortemArtifact,
   validateTranslationEvidence
 } from './rosetta-schemas.js';
+import {
+  ROSETTA_SCHEMA_CATALOG,
+  getSchemaCatalogEntry,
+  listSchemaCatalogEntries,
+  validateSchemaCatalogCoverage
+} from './schema-catalog.js';
 
 describe('rosetta-schemas', () => {
   it('rejects incomplete source profiles', () => {
@@ -880,5 +887,56 @@ describe('rosetta-schemas', () => {
       quarantineReasons: [],
       requiresGuardDecision: true
     });
+  });
+
+  it('catalogs every supported tile-kind validator and conformance surface', () => {
+    const catalogIds = new Set(ROSETTA_SCHEMA_CATALOG.map((entry) => entry.schemaId));
+
+    for (const kind of Object.keys(SUPPORTED_TILE_KIND_REQUIRED_FIELDS)) {
+      expect(catalogIds.has(kind), `${kind} missing from schema catalog`).toBe(true);
+    }
+    expect(getSchemaCatalogEntry('rosetta.conformance_bundle')).toMatchObject({
+      family: 'conformance',
+      validator: 'emitConformanceBundle'
+    });
+    expect(getSchemaCatalogEntry('rosetta.shacl_shapes')).toMatchObject({
+      family: 'conformance',
+      validator: 'emitShaclShapes'
+    });
+  });
+
+  it('catalogs every registered Agentic Messaging family and boundary contract', () => {
+    const catalogIds = new Set(ROSETTA_SCHEMA_CATALOG.map((entry) => entry.schemaId));
+
+    expect(catalogIds.has('entif.agentic-messaging.envelope.v1')).toBe(true);
+    for (const profile of Object.values(AGENTIC_MESSAGE_TYPE_PROFILES)) {
+      expect(catalogIds.has(profile.schemaId), `${profile.schemaId} missing from schema catalog`).toBe(true);
+    }
+
+    expect(getSchemaCatalogEntry('entif.domain_ref.v1')).toMatchObject({
+      boundaryKind: 'consumed-nested-component',
+      sourceIssues: ['#711']
+    });
+    expect(getSchemaCatalogEntry('entif.iam.decision.ref')).toMatchObject({
+      boundaryKind: 'referenced-external-contract',
+      exposureStatus: 'reserved-interface',
+      sourceIssues: ['#630']
+    });
+    expect(getSchemaCatalogEntry('entif.agentic-messaging.execution-admission.v1')).toMatchObject({
+      authorityTier: 'governance-admission',
+      validator: 'evaluateAgenticMessageExecutionPolicy'
+    });
+  });
+
+  it('keeps schema catalog entries documented, tested, and coverage-checked', () => {
+    const catalog = listSchemaCatalogEntries();
+
+    expect(catalog).toEqual([...catalog].sort((left, right) => left.schemaId.localeCompare(right.schemaId)));
+    expect(validateSchemaCatalogCoverage()).toEqual([]);
+
+    for (const entry of catalog.filter((candidate) => candidate.exposureStatus !== 'deprecated' && candidate.exposureStatus !== 'reserved-interface')) {
+      expect(entry.tests.length, `${entry.schemaId} must cite tests`).toBeGreaterThan(0);
+      expect(entry.docs.length, `${entry.schemaId} must cite docs`).toBeGreaterThan(0);
+    }
   });
 });
