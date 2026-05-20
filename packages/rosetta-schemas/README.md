@@ -84,6 +84,18 @@ When adding a schema family, add or update a catalog entry in the same change. N
 - Tier 0 may carry bounded risk, provenance, certification, trigger, and tool-family hints. It must not carry approval handles, capability selectors, IAM decision refs, Guard tokens, runtime grants, or wildcard tool scopes.
 - Runtime materialization, broker ranking, certification flow, lineage/rollback, and Guard authorization remain owned by downstream skill-library issues.
 
+## Adapter Capability Manifest
+
+- Schema kind: `adapter.capability_manifest`
+- Schema version: `adapter-capability-manifest-v1`
+- Validator: `validateAdapterCapabilityManifest()`
+- Required fields include capability identity/version, verb and operation family, privilege tier, effect class, posture flags, idempotency, replay-safety, Guard requirements, request/response schema refs, fixture refs, and host-hint treatment.
+- First-wave privilege tiers: `read-only`, `write-local`, `write-external`, `operator-sensitive`, and `admin`.
+- First-wave effect classes: `pure-transform`, `source-read`, `local-write`, `external-write`, and `payment`.
+- Side-effecting, destructive, sandbox-unsafe, payment-sensitive, local-write, external-write, or payment capabilities must declare Guard decision and receipt requirements plus at least one policy ref.
+- Imported host/runtime hints are recorded as `advisory-only`, `normalized`, or `rejected-inconsistent`; host annotations do not become Rosetta policy authority unless explicitly normalized.
+- Startup exposure profiles, runtime modes, paid execution lifecycle, and bridge transport behavior remain downstream consumer issues.
+
 ## Plane Enforcement
 
 - Issue `#706` adds the anti-spoofing admission contract on top of the `#220` registry surface.

@@ -5,6 +5,9 @@ import {
   AGENTIC_MESSAGE_SIZE_POLICY,
   AGENTIC_MESSAGE_TYPE_PROFILES,
   ARTIFACT_PUBLISH_INLINE_CONTENT_FIELDS,
+  CAPABILITY_EFFECT_CLASSES,
+  CAPABILITY_HINT_TREATMENTS,
+  CAPABILITY_PRIVILEGE_TIERS,
   SKILL_CARD_AUTHORITY_FIELD_NAMES,
   SKILL_CARD_MAX_BYTES,
   SKILL_CARD_RISK_CLASSES,
@@ -28,6 +31,7 @@ import {
   traceCompositionSource,
   validateAgenticMessageEnvelope,
   validateAgenticMessagePayload,
+  validateAdapterCapabilityManifest,
   validateCompositionProvenanceRecord,
   validateCompoundCacheKey,
   validateDailyTopShelfDigest,
@@ -249,6 +253,154 @@ describe('rosetta-schemas', () => {
         version: '1.0.0'
       }).errors
     ).toContain(`skill.card exceeds Tier 0 byte budget of ${SKILL_CARD_MAX_BYTES} bytes.`);
+  });
+
+  it('validates adapter capability manifests for pure, source-read, and operator-sensitive capability classes', () => {
+    const pureTransform = {
+      capability_id: 'capability.markdown.normalize',
+      effect_class: 'pure-transform',
+      fixture_refs: ['fixtures/capabilities/markdown-normalize.json'],
+      guard: {
+        decision_required: false,
+        policy_refs: [],
+        receipt_required: true
+      },
+      host_hints: {
+        imported_refs: ['mcp.tool.annotations.readOnlyHint'],
+        treatment: 'advisory-only'
+      },
+      idempotency: 'idempotent',
+      input_schema_ref: 'schema:markdown-normalize.input.v1',
+      manifest_id: 'adapter-capability-manifest.markdown-normalize',
+      operation_class: 'local-transform',
+      output_schema_ref: 'schema:markdown-normalize.output.v1',
+      posture: {
+        destructive: false,
+        network_facing: false,
+        payment_sensitive: false,
+        sandbox_safe: true,
+        side_effecting: false
+      },
+      privilege_tier: 'read-only',
+      replay_safety: 'replay-safe',
+      schema_version: 'adapter-capability-manifest-v1',
+      verb_family: 'transform',
+      version: '1.0.0'
+    };
+
+    const sourceRead = {
+      ...pureTransform,
+      capability_id: 'capability.github.issue.read',
+      effect_class: 'source-read',
+      fixture_refs: ['fixtures/capabilities/github-issue-read.json'],
+      guard: {
+        decision_required: false,
+        policy_refs: ['policy.source-read.github.v1'],
+        receipt_required: true
+      },
+      host_hints: {
+        imported_refs: ['mcp.server.github.tools.issue.read'],
+        normalized_refs: ['capability.github.issue.read'],
+        treatment: 'normalized'
+      },
+      input_schema_ref: 'schema:github-issue-read.input.v1',
+      manifest_id: 'adapter-capability-manifest.github-issue-read',
+      output_schema_ref: 'schema:github-issue-read.output.v1',
+      posture: {
+        destructive: false,
+        network_facing: true,
+        payment_sensitive: false,
+        sandbox_safe: true,
+        side_effecting: false
+      },
+      verb_family: 'source-read'
+    };
+
+    const operatorSensitive = {
+      ...pureTransform,
+      capability_id: 'capability.filesystem.patch',
+      effect_class: 'local-write',
+      fixture_refs: ['fixtures/capabilities/filesystem-patch.json'],
+      guard: {
+        decision_required: true,
+        policy_refs: ['policy.guard.write-local.v1'],
+        receipt_required: true
+      },
+      host_hints: {
+        imported_refs: ['host.filesystem.write'],
+        normalized_refs: ['capability.filesystem.patch'],
+        treatment: 'normalized'
+      },
+      idempotency: 'non-idempotent',
+      input_schema_ref: 'schema:filesystem-patch.input.v1',
+      manifest_id: 'adapter-capability-manifest.filesystem-patch',
+      output_schema_ref: 'schema:filesystem-patch.output.v1',
+      posture: {
+        destructive: false,
+        network_facing: false,
+        payment_sensitive: false,
+        sandbox_safe: true,
+        side_effecting: true
+      },
+      privilege_tier: 'write-local',
+      replay_safety: 'replay-requires-guard',
+      verb_family: 'write'
+    };
+
+    expect(CAPABILITY_PRIVILEGE_TIERS).toContain('operator-sensitive');
+    expect(CAPABILITY_EFFECT_CLASSES).toContain('source-read');
+    expect(CAPABILITY_HINT_TREATMENTS).toContain('rejected-inconsistent');
+    expect(validateAdapterCapabilityManifest(pureTransform)).toEqual({
+      errors: [],
+      ok: true,
+      schemaId: 'adapter-capability-manifest-v1'
+    });
+    expect(validatePayload('adapter.capability_manifest', sourceRead).ok).toBe(true);
+    expect(validateAdapterCapabilityManifest(operatorSensitive).ok).toBe(true);
+  });
+
+  it('fails closed when side-effecting capability manifests omit Guard, schema, safety, or host-hint treatment', () => {
+    const result = validateAdapterCapabilityManifest({
+      capability_id: 'capability.bridge.pay',
+      effect_class: 'payment',
+      fixture_refs: [],
+      guard: {
+        decision_required: false,
+        policy_refs: [],
+        receipt_required: false
+      },
+      host_hints: {
+        treatment: 'normalized'
+      },
+      idempotency: 'unknown',
+      input_schema_ref: '',
+      manifest_id: 'adapter-capability-manifest.bridge-pay',
+      operation_class: 'external-payment',
+      output_schema_ref: 'schema:bridge-pay.output.v1',
+      posture: {
+        destructive: true,
+        network_facing: true,
+        payment_sensitive: true,
+        sandbox_safe: false,
+        side_effecting: true
+      },
+      privilege_tier: 'write-external',
+      replay_safety: 'replay-safe',
+      schema_version: 'adapter-capability-manifest-v1',
+      verb_family: 'payment',
+      version: '1.0.0'
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toEqual([
+      'adapter.capability_manifest input_schema_ref is required.',
+      'adapter.capability_manifest fixture_refs must include at least one conformance fixture reference.',
+      'adapter.capability_manifest side-effecting capabilities require guard.decision_required=true.',
+      'adapter.capability_manifest side-effecting capabilities require at least one guard.policy_refs entry.',
+      'adapter.capability_manifest side-effecting capabilities require guard.receipt_required=true.',
+      'adapter.capability_manifest destructive capabilities cannot declare replay_safety=replay-safe.',
+      'adapter.capability_manifest normalized host hints require at least one normalized_refs entry.'
+    ]);
   });
 
   it('builds stable compound cache lookup keys across all authorization dimensions', () => {
@@ -1058,6 +1210,11 @@ describe('rosetta-schemas', () => {
       exposureStatus: 'downstream-contract',
       sourceIssues: ['#1057'],
       validator: 'validateSkillCard'
+    });
+    expect(getSchemaCatalogEntry('adapter.capability_manifest')).toMatchObject({
+      authorityTier: 'governance-admission',
+      sourceIssues: ['#1037', '#201', '#513', '#913', '#1049', '#1053', '#1076'],
+      validator: 'validateAdapterCapabilityManifest'
     });
   });
 
