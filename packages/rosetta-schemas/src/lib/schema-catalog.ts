@@ -50,6 +50,7 @@ const AUTHORITY_MAP = 'packages/rosetta-schemas/docs/schema-authority-map.md';
 const AGENTIC_MESSAGING_RFC = 'docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md';
 const ROSETTA_CORE_SPEC = 'docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md';
 const ENTIF_ROSETTA_PRD = 'docs/PRDs/20260426 - Entif and Rosetta PRD.md';
+const ROSETTA_GUARD_README = 'packages/rosetta-guard/README.md';
 const SKILL_LIBRARY_DESIGN = 'docs/chats/20260323 - Chat GPT - Entif Skill Library Design.md';
 const PROGRESSIVE_DISCLOSURE_SKILLS = 'docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md';
 
@@ -84,6 +85,9 @@ function tileExposureStatus(schemaId: string): SchemaExposureStatus {
 }
 
 function tileDocs(schemaId: string): string[] {
+  if (schemaId === 'adapter.capability_manifest') {
+    return [SCHEMA_README, AUTHORITY_MAP, ROSETTA_GUARD_README, ENTIF_ROSETTA_PRD];
+  }
   if (schemaId === 'skill.card') {
     return [SCHEMA_README, SKILL_LIBRARY_DESIGN, PROGRESSIVE_DISCLOSURE_SKILLS];
   }
@@ -97,6 +101,9 @@ function tileDocs(schemaId: string): string[] {
 }
 
 function tileConsumerPackages(schemaId: string): string[] {
+  if (schemaId === 'adapter.capability_manifest') {
+    return ['@entif-ai/rosetta-guard', 'apps/rosetta-api', 'mcp-runtime-surfaces'];
+  }
   if (schemaId === 'skill.card') {
     return ['skill-broker-runtime', '@entif-ai/rosetta-schemas'];
   }
@@ -119,6 +126,27 @@ function tileConsumerPackages(schemaId: string): string[] {
 }
 
 function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
+  if (schemaId === 'adapter.capability_manifest') {
+    return {
+      authorityTier: 'governance-admission',
+      boundaryKind: 'owned-schema',
+      consumerPackages: tileConsumerPackages(schemaId),
+      docs: tileDocs(schemaId),
+      exposureStatus: 'downstream-contract',
+      family: 'adapter-capability',
+      knownGaps: [
+        'Defines the shared capability vocabulary only; startup exposure profiles, runtime modes, paid execution, and bridge transport behavior remain downstream issues.'
+      ],
+      ownerPackage: '@entif-ai/rosetta-schemas',
+      rfcPrdAnchors: [ROSETTA_CORE_SPEC, ENTIF_ROSETTA_PRD],
+      schemaId,
+      sourceIssues: ['#1037', '#201', '#513', '#913', '#1049', '#1053', '#1076'],
+      sourcePrs: [],
+      tests: [SCHEMA_SPEC],
+      validator: 'validateAdapterCapabilityManifest'
+    };
+  }
+
   if (schemaId === 'skill.card') {
     return {
       authorityTier: 'core-spine',

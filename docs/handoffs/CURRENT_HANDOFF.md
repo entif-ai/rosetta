@@ -2,8 +2,8 @@
 
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
-Last updated: 2026-05-19
-Current branch at time of update: `codex/sld-001-skill-card-schema`
+Last updated: 2026-05-20
+Current branch at time of update: `codex/ainl-003-capability-manifest`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,23 +127,24 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/sld-001-skill-card-schema`
+Current branch: `codex/ainl-003-capability-manifest`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1057
+- https://github.com/entif-ai/rosetta/issues/1037
 
-This branch implements the first-wave broker-facing `skill.card` Tier 0 schema in `rosetta-schemas`. The slice is skill-library-contract focused: it defines a bounded, manifest-backed metadata stub that downstream broker, certification, lineage, and runtime materialization issues can consume without each inventing a local card dialect.
+This branch implements the first-wave `adapter-capability-manifest-v1` schema in `rosetta-schemas`. The slice is capability-vocabulary focused: it defines a compact manifest that downstream Guard, runtime mode, startup exposure, MCP, payment, and bridge lanes can consume without inventing local effect/privilege taxonomies.
 
 Changed behavior:
 
-- `skill.card` is now a supported schema kind with required Tier 0 fields: `skill_id`, `name`, `one_line`, `triggers`, `io`, `risk_class`, `tool_scopes`, `version`, `provenance`, and manifest-backed `subject`.
-- `validateSkillCard()` enforces the first-wave `SKILL_CARD_MAX_BYTES` budget, risk-class enum, trigger/tool hint shape, `subject.pack_id` CID posture, provenance shape, and forbidden authority fields.
-- Tier 0 cards reject approval handles, capability selectors, IAM decision refs, Guard tokens, runtime grants, and wildcard tool scopes so broker metadata cannot masquerade as an execution grant.
-- The schema catalog now includes `skill.card` as a downstream contract for future skill-broker runtime work.
+- `adapter.capability_manifest` is now a supported schema kind with required capability identity, version, verb/operation family, privilege tier, effect class, posture flags, idempotency, replay-safety, Guard requirements, schema refs, fixture refs, and host-hint treatment.
+- `validateAdapterCapabilityManifest()` validates pure/local transform, source/read, and operator-sensitive/write capability classes without granting runtime authority.
+- Side-effecting, destructive, sandbox-unsafe, payment-sensitive, local-write, external-write, or payment capabilities fail closed unless they declare Guard decision, policy, and receipt requirements.
+- Host/runtime hints are represented as `advisory-only`, `normalized`, or `rejected-inconsistent` so external annotations do not silently become Rosetta policy authority.
+- The schema catalog now includes `adapter.capability_manifest` as a downstream contract boundary for issues #201, #513, #913, #1049, #1053, and #1076.
 
 ## Validation State
 
-- Red: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` failed before implementation on missing SkillCard exports/validator.
+- Red: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` failed before implementation on missing adapter capability manifest exports/validator.
 - Green: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
 - `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
@@ -161,8 +162,8 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Publish a ready PR for issue #1057.
-2. Keep playbook loading, broker ranking, certification flow, lineage/rollback, and runtime authorization in downstream skill-library issues; this branch only defines the schema-layer SkillCard contract.
+1. Publish a ready PR for issue #1037.
+2. Keep startup exposure profiles, runtime modes, paid execution lifecycle, MCP runtime surface, and bridge transport behavior in downstream issues; this branch only defines the schema-layer capability vocabulary.
 
 For Text-Core:
 

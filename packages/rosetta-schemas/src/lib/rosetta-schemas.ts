@@ -266,6 +266,62 @@ export interface SkillCardValidationResult extends ValidationResult {
   schemaId: 'skill.card.v1';
 }
 
+export type CapabilityPrivilegeTier =
+  | 'admin'
+  | 'operator-sensitive'
+  | 'read-only'
+  | 'write-external'
+  | 'write-local';
+
+export type CapabilityEffectClass = 'external-write' | 'local-write' | 'payment' | 'pure-transform' | 'source-read';
+export type CapabilityHintTreatment = 'advisory-only' | 'normalized' | 'rejected-inconsistent';
+export type CapabilityIdempotency = 'idempotent' | 'non-idempotent' | 'unknown';
+export type CapabilityReplaySafety = 'not-replay-safe' | 'replay-requires-guard' | 'replay-safe';
+
+export interface AdapterCapabilityPosture {
+  destructive: boolean;
+  network_facing: boolean;
+  payment_sensitive: boolean;
+  sandbox_safe: boolean;
+  side_effecting: boolean;
+}
+
+export interface AdapterCapabilityGuardRequirements {
+  decision_required: boolean;
+  policy_refs: string[];
+  receipt_required: boolean;
+}
+
+export interface AdapterCapabilityHostHints {
+  imported_refs?: string[];
+  normalized_refs?: string[];
+  rejection_reasons?: string[];
+  treatment: CapabilityHintTreatment;
+}
+
+export interface AdapterCapabilityManifestInput {
+  capability_id: string;
+  effect_class: CapabilityEffectClass;
+  fixture_refs: string[];
+  guard: AdapterCapabilityGuardRequirements;
+  host_hints: AdapterCapabilityHostHints;
+  idempotency: CapabilityIdempotency;
+  input_schema_ref: string;
+  manifest_id: string;
+  operation_class: string;
+  output_schema_ref: string;
+  posture: AdapterCapabilityPosture;
+  privilege_tier: CapabilityPrivilegeTier;
+  replay_safety: CapabilityReplaySafety;
+  schema_version: 'adapter-capability-manifest-v1';
+  verb_family: string;
+  version: string;
+}
+
+export interface AdapterCapabilityManifestValidationResult extends ValidationResult {
+  schemaId: 'adapter-capability-manifest-v1';
+}
+
 export interface IntakeEnvelopeReceipts {
   costUsd?: number;
   itemHash?: string;
@@ -459,6 +515,24 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'timestamp',
     'workflowId'
   ],
+  'adapter.capability_manifest': [
+    'capability_id',
+    'effect_class',
+    'fixture_refs',
+    'guard',
+    'host_hints',
+    'idempotency',
+    'input_schema_ref',
+    'manifest_id',
+    'operation_class',
+    'output_schema_ref',
+    'posture',
+    'privilege_tier',
+    'replay_safety',
+    'schema_version',
+    'verb_family',
+    'version'
+  ],
   'skill.card': ['io', 'name', 'one_line', 'provenance', 'risk_class', 'skill_id', 'subject', 'tool_scopes', 'triggers', 'version'],
   'rosetta.composition_provenance': [
     'answerCid',
@@ -576,6 +650,40 @@ export const SKILL_CARD_AUTHORITY_FIELD_NAMES = [
 ] as const;
 
 const SKILL_CARD_PACK_ID_PATTERN = /^cidv1-sha256-[a-f0-9]{64}$/u;
+
+export const CAPABILITY_PRIVILEGE_TIERS = [
+  'read-only',
+  'write-local',
+  'write-external',
+  'operator-sensitive',
+  'admin'
+] as const satisfies readonly CapabilityPrivilegeTier[];
+
+export const CAPABILITY_EFFECT_CLASSES = [
+  'pure-transform',
+  'source-read',
+  'local-write',
+  'external-write',
+  'payment'
+] as const satisfies readonly CapabilityEffectClass[];
+
+export const CAPABILITY_HINT_TREATMENTS = [
+  'advisory-only',
+  'normalized',
+  'rejected-inconsistent'
+] as const satisfies readonly CapabilityHintTreatment[];
+
+export const CAPABILITY_IDEMPOTENCY_VALUES = [
+  'idempotent',
+  'non-idempotent',
+  'unknown'
+] as const satisfies readonly CapabilityIdempotency[];
+
+export const CAPABILITY_REPLAY_SAFETY_VALUES = [
+  'replay-safe',
+  'replay-requires-guard',
+  'not-replay-safe'
+] as const satisfies readonly CapabilityReplaySafety[];
 
 const DOMAIN_CLASSIFICATION_RANK: Record<DomainClassification, number> = {
   public: 0,
@@ -1007,6 +1115,122 @@ function validateSkillCardPayload(payload: object, errors: string[]): void {
   );
 }
 
+function validateStringArray(value: unknown, errorMessage: string, errors: string[]): void {
+  if (!Array.isArray(value) || value.length === 0 || value.some((entry) => !requiredString(entry as string | undefined))) {
+    errors.push(errorMessage);
+  }
+}
+
+function validateAdapterCapabilityManifestPayload(payload: object, errors: string[]): void {
+  const manifest = payload as Record<string, unknown>;
+
+  if (manifest.schema_version !== 'adapter-capability-manifest-v1') {
+    errors.push('adapter.capability_manifest schema_version must be adapter-capability-manifest-v1.');
+  }
+  if (!CAPABILITY_PRIVILEGE_TIERS.includes(manifest.privilege_tier as CapabilityPrivilegeTier)) {
+    errors.push(`adapter.capability_manifest privilege_tier must be one of: ${CAPABILITY_PRIVILEGE_TIERS.join(', ')}.`);
+  }
+  if (!CAPABILITY_EFFECT_CLASSES.includes(manifest.effect_class as CapabilityEffectClass)) {
+    errors.push(`adapter.capability_manifest effect_class must be one of: ${CAPABILITY_EFFECT_CLASSES.join(', ')}.`);
+  }
+  if (!CAPABILITY_IDEMPOTENCY_VALUES.includes(manifest.idempotency as CapabilityIdempotency)) {
+    errors.push(`adapter.capability_manifest idempotency must be one of: ${CAPABILITY_IDEMPOTENCY_VALUES.join(', ')}.`);
+  }
+  if (!CAPABILITY_REPLAY_SAFETY_VALUES.includes(manifest.replay_safety as CapabilityReplaySafety)) {
+    errors.push(`adapter.capability_manifest replay_safety must be one of: ${CAPABILITY_REPLAY_SAFETY_VALUES.join(', ')}.`);
+  }
+
+  if (!requiredString(manifest.input_schema_ref as string | undefined)) {
+    errors.push('adapter.capability_manifest input_schema_ref is required.');
+  }
+  if (!requiredString(manifest.output_schema_ref as string | undefined)) {
+    errors.push('adapter.capability_manifest output_schema_ref is required.');
+  }
+  validateStringArray(
+    manifest.fixture_refs,
+    'adapter.capability_manifest fixture_refs must include at least one conformance fixture reference.',
+    errors
+  );
+
+  const posture = manifest.posture;
+  if (!isRecord(posture)) {
+    errors.push('adapter.capability_manifest posture must be an object.');
+  }
+
+  const guard = manifest.guard;
+  if (!isRecord(guard)) {
+    errors.push('adapter.capability_manifest guard must be an object.');
+  }
+
+  const hostHints = manifest.host_hints;
+  if (!isRecord(hostHints)) {
+    errors.push('adapter.capability_manifest host_hints must be an object.');
+  }
+
+  if (!isRecord(posture) || !isRecord(guard) || !isRecord(hostHints)) {
+    return;
+  }
+
+  for (const field of ['destructive', 'network_facing', 'payment_sensitive', 'sandbox_safe', 'side_effecting']) {
+    if (typeof posture[field] !== 'boolean') {
+      errors.push(`adapter.capability_manifest posture.${field} must be boolean.`);
+    }
+  }
+  if (typeof guard.decision_required !== 'boolean') {
+    errors.push('adapter.capability_manifest guard.decision_required must be boolean.');
+  }
+  if (typeof guard.receipt_required !== 'boolean') {
+    errors.push('adapter.capability_manifest guard.receipt_required must be boolean.');
+  }
+  if (!Array.isArray(guard.policy_refs)) {
+    errors.push('adapter.capability_manifest guard.policy_refs must be an array.');
+  }
+  if (!CAPABILITY_HINT_TREATMENTS.includes(hostHints.treatment as CapabilityHintTreatment)) {
+    errors.push(`adapter.capability_manifest host_hints.treatment must be one of: ${CAPABILITY_HINT_TREATMENTS.join(', ')}.`);
+  }
+
+  const requiresGuard =
+    posture.side_effecting === true ||
+    posture.destructive === true ||
+    posture.payment_sensitive === true ||
+    posture.sandbox_safe === false ||
+    manifest.effect_class === 'local-write' ||
+    manifest.effect_class === 'external-write' ||
+    manifest.effect_class === 'payment';
+
+  if (requiresGuard && guard.decision_required !== true) {
+    errors.push('adapter.capability_manifest side-effecting capabilities require guard.decision_required=true.');
+  }
+  if (
+    requiresGuard &&
+    (!Array.isArray(guard.policy_refs) || guard.policy_refs.length === 0 || guard.policy_refs.some((entry) => !requiredString(entry as string | undefined)))
+  ) {
+    errors.push('adapter.capability_manifest side-effecting capabilities require at least one guard.policy_refs entry.');
+  }
+  if (requiresGuard && guard.receipt_required !== true) {
+    errors.push('adapter.capability_manifest side-effecting capabilities require guard.receipt_required=true.');
+  }
+  if (posture.destructive === true && manifest.replay_safety === 'replay-safe') {
+    errors.push('adapter.capability_manifest destructive capabilities cannot declare replay_safety=replay-safe.');
+  }
+  if (
+    hostHints.treatment === 'normalized' &&
+    (!Array.isArray(hostHints.normalized_refs) ||
+      hostHints.normalized_refs.length === 0 ||
+      hostHints.normalized_refs.some((entry) => !requiredString(entry as string | undefined)))
+  ) {
+    errors.push('adapter.capability_manifest normalized host hints require at least one normalized_refs entry.');
+  }
+  if (
+    hostHints.treatment === 'rejected-inconsistent' &&
+    (!Array.isArray(hostHints.rejection_reasons) ||
+      hostHints.rejection_reasons.length === 0 ||
+      hostHints.rejection_reasons.some((entry) => !requiredString(entry as string | undefined)))
+  ) {
+    errors.push('adapter.capability_manifest rejected host hints require at least one rejection_reasons entry.');
+  }
+}
+
 function validateReceiptPayload(payload: object, errors: string[]): void {
   const receipt = payload as Record<string, unknown>;
   const claims = Array.isArray(receipt.claims) ? receipt.claims : [];
@@ -1097,6 +1321,8 @@ export function validatePayload(kind: string, payload: object): ValidationResult
 
   if (kind === 'rosetta.receipt') {
     validateReceiptPayload(payload, errors);
+  } else if (kind === 'adapter.capability_manifest') {
+    validateAdapterCapabilityManifestPayload(payload, errors);
   } else if (kind === 'skill.card') {
     validateSkillCardPayload(payload, errors);
   } else if (kind === 'source.canonical_artifact') {
@@ -1108,6 +1334,15 @@ export function validatePayload(kind: string, payload: object): ValidationResult
   return {
     errors,
     ok: errors.length === 0
+  };
+}
+
+export function validateAdapterCapabilityManifest(input: Record<string, unknown>): AdapterCapabilityManifestValidationResult {
+  const result = validatePayload('adapter.capability_manifest', input);
+
+  return {
+    ...result,
+    schemaId: 'adapter-capability-manifest-v1'
   };
 }
 
