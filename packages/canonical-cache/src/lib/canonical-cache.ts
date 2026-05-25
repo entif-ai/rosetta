@@ -13,6 +13,7 @@ export interface DedupeProposal {
 }
 
 export interface CanonicalCacheOptions {
+  backend?: CanonicalCacheBackend;
   persistencePath?: string;
 }
 
@@ -69,7 +70,7 @@ export interface RevisionGraphNode {
   revisionFingerprint: string;
 }
 
-interface PersistedCanonicalCacheState {
+export interface PersistedCanonicalCacheState {
   artifacts: [string, TileEnvelope<CanonicalArtifact>][];
   byteIndex: [string, string[]][];
   canonicalArtifactCids: string[];
@@ -82,6 +83,28 @@ interface PersistedCanonicalCacheState {
   rawEvidenceByCanonicalCid: [string, string[]][];
   recordFamilyIndex: [string, string[]][];
   revisionChains: [string, RevisionGraphNode[]][];
+}
+
+export interface CanonicalCacheBackend {
+  load(): PersistedCanonicalCacheState | undefined;
+  save(state: PersistedCanonicalCacheState): void;
+}
+
+export class JsonFileCanonicalCacheBackend implements CanonicalCacheBackend {
+  constructor(private readonly persistencePath: string) {}
+
+  load(): PersistedCanonicalCacheState | undefined {
+    if (!existsSync(this.persistencePath)) {
+      return undefined;
+    }
+
+    return JSON.parse(readFileSync(this.persistencePath, 'utf8')) as PersistedCanonicalCacheState;
+  }
+
+  save(state: PersistedCanonicalCacheState): void {
+    mkdirSync(dirname(this.persistencePath), { recursive: true });
+    writeFileSync(this.persistencePath, `${JSON.stringify(state, null, 2)}\n`);
+  }
 }
 
 export class CanonicalCorpusCache {
@@ -99,6 +122,16 @@ export class CanonicalCorpusCache {
   private readonly policyCacheEntries = new Map<string, PolicyCacheEntry>();
 
   constructor(private readonly options: CanonicalCacheOptions = {}) {}
+
+  private static backendFromOptions(options: CanonicalCacheOptions): CanonicalCacheBackend | undefined {
+    if (options.backend) {
+      return options.backend;
+    }
+    if (options.persistencePath) {
+      return new JsonFileCanonicalCacheBackend(options.persistencePath);
+    }
+    return undefined;
+  }
 
   private static addToIndex(index: Map<string, string[]>, key: string, artifactCid: string): string[] {
     const next = [...(index.get(key) ?? [])];
@@ -129,14 +162,13 @@ export class CanonicalCorpusCache {
   }
 
   static load(options: CanonicalCacheOptions): CanonicalCorpusCache {
-    if (!options.persistencePath || !existsSync(options.persistencePath)) {
+    const backend = CanonicalCorpusCache.backendFromOptions(options);
+    const state = backend?.load();
+    if (!state) {
       return new CanonicalCorpusCache(options);
     }
 
-    return CanonicalCorpusCache.fromState(
-      JSON.parse(readFileSync(options.persistencePath, 'utf8')) as PersistedCanonicalCacheState,
-      options
-    );
+    return CanonicalCorpusCache.fromState(state, options);
   }
 
   private addRawEvidence(canonicalArtifactCid: string, evidenceArtifactCid: string): void {
@@ -288,8 +320,9 @@ export class CanonicalCorpusCache {
   }
 
   save(): void {
-    if (!this.options.persistencePath) {
-      throw new Error('Canonical cache persistence requires a persistencePath.');
+    const backend = CanonicalCorpusCache.backendFromOptions(this.options);
+    if (!backend) {
+      throw new Error('Canonical cache persistence requires a backend or persistencePath.');
     }
 
     const state: PersistedCanonicalCacheState = {
@@ -307,7 +340,6 @@ export class CanonicalCorpusCache {
       revisionChains: [...this.revisionChains.entries()]
     };
 
-    mkdirSync(dirname(this.options.persistencePath), { recursive: true });
-    writeFileSync(this.options.persistencePath, `${JSON.stringify(state, null, 2)}\n`);
+    backend.save(state);
   }
 }

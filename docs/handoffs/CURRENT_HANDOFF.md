@@ -2,8 +2,8 @@
 
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
-Last updated: 2026-05-20
-Current branch at time of update: `codex/ainl-003-capability-manifest`
+Last updated: 2026-05-25
+Current branch at time of update: `codex/cache-001-durable-backend`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,43 +127,43 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/ainl-003-capability-manifest`
+Current branch: `codex/cache-001-durable-backend`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1037
+- https://github.com/entif-ai/rosetta/issues/1120
 
-This branch implements the first-wave `adapter-capability-manifest-v1` schema in `rosetta-schemas`. The slice is capability-vocabulary focused: it defines a compact manifest that downstream Guard, runtime mode, startup exposure, MCP, payment, and bridge lanes can consume without inventing local effect/privilege taxonomies.
+This branch implements the first durable backend adapter boundary for `canonical-cache` while preserving the package's existing in-memory and local-path bootstrap behavior.
 
 Changed behavior:
 
-- `adapter.capability_manifest` is now a supported schema kind with required capability identity, version, verb/operation family, privilege tier, effect class, posture flags, idempotency, replay-safety, Guard requirements, schema refs, fixture refs, and host-hint treatment.
-- `validateAdapterCapabilityManifest()` validates pure/local transform, source/read, and operator-sensitive/write capability classes without granting runtime authority.
-- Side-effecting, destructive, sandbox-unsafe, payment-sensitive, local-write, external-write, or payment capabilities fail closed unless they declare Guard decision, policy, and receipt requirements.
-- Host/runtime hints are represented as `advisory-only`, `normalized`, or `rejected-inconsistent` so external annotations do not silently become Rosetta policy authority.
-- The schema catalog now includes `adapter.capability_manifest` as a downstream contract boundary for issues #201, #513, #913, #1049, #1053, and #1076.
+- `CanonicalCacheBackend` is now the explicit package-level persistence adapter contract.
+- `JsonFileCanonicalCacheBackend` provides deterministic local/dev durability behind that adapter boundary.
+- Existing `persistencePath` callers remain supported by wrapping the path in the JSON backend internally.
+- Backend-backed reload tests prove canonical artifact CIDs, raw-evidence retention, record-family revision chains, correction events, and merge-eligibility semantics survive persistence and replay.
+- `packages/canonical-cache/README.md` now labels the backend as a first durable step, not the final database-backed corpus cache.
 
 ## Validation State
 
-- Red: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` failed before implementation on missing adapter capability manifest exports/validator.
-- Green: `npx -y node@22 node_modules/vitest/vitest.mjs run packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:typecheck --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:lint --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:build --skip-nx-cache` passed.
-- `NX_DAEMON=false pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
-- `NX_DAEMON=false pnpm exec nx affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- Red: `NX_DAEMON=false pnpm exec nx run canonical-cache:test --skip-nx-cache` failed before implementation on missing `JsonFileCanonicalCacheBackend` constructor.
+- Green: `NX_DAEMON=false pnpm exec nx run canonical-cache:test --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:lint --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:build --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx affected -t lint,test,typecheck,build --base=origin/main --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
 - `git diff --check` passed.
 
 Known non-failing warnings:
 
 - Nx/Vitest may warn that `NO_COLOR` is ignored when `FORCE_COLOR` is set.
+- Nx may emit `MaxListenersExceededWarning` during parallel dependent build/typecheck execution.
 
 ## Next Actions
 
 For this branch:
 
-1. Publish a ready PR for issue #1037.
-2. Keep startup exposure profiles, runtime modes, paid execution lifecycle, MCP runtime surface, and bridge transport behavior in downstream issues; this branch only defines the schema-layer capability vocabulary.
+1. Publish a ready PR for issue #1120.
+2. Keep database-backed storage, richer query APIs, broad corpus operations, and evidence-gated merge workflows downstream; this branch only defines the durable backend boundary and local JSON backend.
 
 For Text-Core:
 
