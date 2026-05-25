@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest';
 
 import {
+  createBoundedListingSnapshotPackageTile,
   createSourceEpisodeTile,
   createSourceManifestationTile,
+  createSourcePackageTile,
   createSourceRecordTile,
   createSourceSystemProfileTile,
   createTrustMatrixTile
@@ -107,5 +109,57 @@ describe('source-substrate', () => {
     expect(episode.payload.rawEvidenceRefs[0].locator).toContain('20260423');
     expect(episode.payload.rightsScope).toContain('local-private');
     expect(episode.payload.chronology.primary.kind).toBe('updatedAt');
+  });
+
+  it('models bounded acquisition listing snapshots separately from discovered records and manifestations', () => {
+    const listing = createBoundedListingSnapshotPackageTile({
+      boundedness: {
+        incompleteSearch: false,
+        isComplete: true,
+        itemCount: 2,
+        maxItems: 10,
+        pagination: { mode: 'single-page' },
+        signals: ['github.tree.truncated=false'],
+        truncated: false
+      },
+      discoveredRecordCids: ['cidv1-record-readme', 'cidv1-record-rfc'],
+      members: ['cidv1-record-readme', 'cidv1-record-rfc'],
+      packageId: 'github.tree.entif-ai.rosetta.main.docs',
+      profileRefs: ['source-profile.github'],
+      scope: {
+        authorityRef: 'refs/heads/main',
+        capturedAt: '2026-05-25T10:00:00.000Z',
+        locator: 'https://github.com/entif-ai/rosetta/tree/main/docs',
+        scope: {
+          owner: 'entif-ai',
+          path: 'docs',
+          ref: 'main',
+          repo: 'rosetta',
+          treeSha: 'tree-sha-demo'
+        },
+        sourceKind: 'github-tree',
+        sourceSystemId: 'github'
+      }
+    });
+
+    expect(listing.kind).toBe('source.package');
+    expect(listing.payload.packageKind).toBe('bounded-listing-snapshot');
+    expect(listing.payload.lineageRole).toBe('bounded-acquisition-snapshot');
+    expect(listing.payload.sourceRecordCid).toBeUndefined();
+    expect(listing.payload.scope?.sourceKind).toBe('github-tree');
+    expect(listing.payload.boundedness?.truncated).toBe(false);
+    expect(listing.payload.discoveredRecordCids).toEqual(['cidv1-record-readme', 'cidv1-record-rfc']);
+  });
+
+  it('still supports record-scoped source packages for existing bootstrap callers', () => {
+    const sourcePackage = createSourcePackageTile({
+      members: ['cidv1-manifestation-a'],
+      packageId: 'record-scoped-package',
+      packageKind: 'source-record-manifestations',
+      profileRefs: ['source-profile.zenodo'],
+      sourceRecordCid: 'cidv1-record-a'
+    });
+
+    expect(sourcePackage.payload.sourceRecordCid).toBe('cidv1-record-a');
   });
 });

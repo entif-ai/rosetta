@@ -99,6 +99,19 @@ export const bootstrapSourceProfiles: SourceSystemProfile[] = [
     sourceSystemId: 'openalex'
   },
   {
+    canonicalName: 'GitHub',
+    capabilityFacets: ['api', 'git-repository', 'source-tree', 'text-files'],
+    curationPosture: 'repository-host',
+    evidenceRefs: ['github-api', 'source-registry-annex'],
+    operatorOrgs: ['GitHub'],
+    pidSupport: { DOI: false, ORCID: false, ROR: false, SWHID: true },
+    preservationPosture: 'platform',
+    reviewPosture: 'repository-owner-controlled',
+    rightsPosture: 'public-and-private-repositories',
+    sourceRoles: ['software-repository-host', 'text-source-host'],
+    sourceSystemId: 'github'
+  },
+  {
     canonicalName: 'Software Heritage',
     capabilityFacets: ['intrinsic-software-identity', 'api', 'archive'],
     curationPosture: 'archive',
@@ -182,7 +195,8 @@ export const bootstrapRegistryEntries: SourceRegistryEntry[] = bootstrapSourcePr
     profile.sourceSystemId === 'figshare' ||
     profile.sourceSystemId === 'harvard-dataverse' ||
     profile.sourceSystemId === 'swissubase' ||
-    profile.sourceSystemId === 'dasch'
+    profile.sourceSystemId === 'dasch' ||
+    profile.sourceSystemId === 'github'
       ? 'repository'
       : 'infrastructure',
   entryId: `registry.${profile.sourceSystemId}`,
@@ -191,7 +205,8 @@ export const bootstrapRegistryEntries: SourceRegistryEntry[] = bootstrapSourcePr
     profile.sourceSystemId === 'figshare' ||
     profile.sourceSystemId === 'harvard-dataverse' ||
     profile.sourceSystemId === 'swissubase' ||
-    profile.sourceSystemId === 'dasch'
+    profile.sourceSystemId === 'dasch' ||
+    profile.sourceSystemId === 'github'
       ? 'P1'
       : 'P0',
   sourceSystemId: profile.sourceSystemId

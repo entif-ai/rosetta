@@ -7,6 +7,7 @@ import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 import {
   buildBootstrapDemoSnapshot,
   buildBootstrapGateSnapshot,
+  acquireGitHubTextThroughRefinery,
   createIngressJob,
   createParseOnlySourceEpisode,
   refineTextArtifact,
@@ -166,6 +167,94 @@ describe('ingress-refinery', () => {
         rightsScope: ['local-private']
       })
     ).toThrow(/parse-only/iu);
+  });
+
+  it('threads bounded listing snapshot lineage through episodes, receipts, and canonical artifacts', () => {
+    const snapshot = buildBootstrapDemoSnapshot();
+    const listingSnapshotCid = 'cidv1-source-package-github-tree-docs';
+    const episode = createParseOnlySourceEpisode(snapshot.record, snapshot.manifestation, {
+      chronology: {
+        primary: {
+          date: '2026-05-25',
+          kind: 'fetchedAt',
+          source: 'github-tree'
+        }
+      },
+      locator: 'https://github.com/entif-ai/rosetta/blob/main/README.md',
+      rawEvidenceRefs: [{ evidenceId: 'raw.github.readme', evidenceKind: 'remote-fetch', locator: 'https://raw.githubusercontent.com/entif-ai/rosetta/main/README.md' }],
+      rightsScope: ['public'],
+      sourcePackageCid: listingSnapshotCid
+    });
+    const refined = refineTextArtifact(snapshot.record, snapshot.manifestation, 'GitHub markdown text.', ['policy.parse-only.default'], {
+      sourcePackageCid: listingSnapshotCid
+    });
+
+    expect(episode.parents).toContain(listingSnapshotCid);
+    expect(episode.payload.sourcePackageCid).toBe(listingSnapshotCid);
+    expect(refined.fetchReceipt.parents).toContain(listingSnapshotCid);
+    expect(refined.fetchReceipt.payload.sourcePackageCid).toBe(listingSnapshotCid);
+    expect(refined.normalizationReceipt.payload.sourcePackageCid).toBe(listingSnapshotCid);
+    expect(refined.evaluationReceipt.payload.sourcePackageCid).toBe(listingSnapshotCid);
+    expect(refined.canonicalArtifact.parents).toContain(listingSnapshotCid);
+    expect(refined.canonicalArtifact.payload.sourcePackageCid).toBe(listingSnapshotCid);
+    expect(refined.canonicalArtifact.payload.provenanceRefs.sourcePackageCid).toBe(listingSnapshotCid);
+  });
+
+  it('acquires a pinned GitHub markdown file through listing snapshot and refinery lineage', () => {
+    const acquired = acquireGitHubTextThroughRefinery({
+      acquisitionMode: 'fixture',
+      blobSha: 'blob-sha-readme',
+      capturedAt: '2026-05-25T10:30:00.000Z',
+      mediaType: 'text/markdown',
+      owner: 'entif-ai',
+      path: 'README.md',
+      ref: 'main',
+      repo: 'rosetta',
+      text: '# rosetta\n\nRepository profiles should stay separate from records.',
+      treeEntries: [{ path: 'README.md', sha: 'blob-sha-readme', size: 62, type: 'blob' }],
+      treeSha: 'tree-sha-root'
+    });
+
+    expect(acquired.sourceSystem.payload.sourceSystemId).toBe('github');
+    expect(acquired.listingSnapshot.payload.packageKind).toBe('bounded-listing-snapshot');
+    expect(acquired.listingSnapshot.payload.scope?.scope).toMatchObject({
+      owner: 'entif-ai',
+      path: '',
+      ref: 'main',
+      repo: 'rosetta',
+      treeSha: 'tree-sha-root'
+    });
+    expect(acquired.listingSnapshot.payload.discoveredRecordCids).toEqual([acquired.record.cid]);
+    expect(acquired.record.payload.sourceSystemId).toBe('github');
+    expect(acquired.record.payload.recordLocalId).toBe('entif-ai/rosetta:main:README.md');
+    expect(acquired.manifestation.payload.byteHashes).toMatchObject({
+      githubBlobSha: 'blob-sha-readme'
+    });
+    expect(acquired.episode.payload.family).toBe('github-text');
+    expect(acquired.episode.payload.sourcePackageCid).toBe(acquired.listingSnapshot.cid);
+    expect(acquired.fetchReceipt.payload.method).toBe('github-fixture-fetch');
+    expect(acquired.fetchReceipt.payload.sourcePackageCid).toBe(acquired.listingSnapshot.cid);
+    expect(acquired.canonicalArtifact.payload.sourcePackageCid).toBe(acquired.listingSnapshot.cid);
+    expect(acquired.canonicalArtifact.payload.provenanceRefs.sourcePackageCid).toBe(acquired.listingSnapshot.cid);
+  });
+
+  it('fails closed when a GitHub tree listing is truncated before item fetch', () => {
+    expect(() =>
+      acquireGitHubTextThroughRefinery({
+        acquisitionMode: 'fixture',
+        blobSha: 'blob-sha-readme',
+        capturedAt: '2026-05-25T10:30:00.000Z',
+        mediaType: 'text/markdown',
+        owner: 'entif-ai',
+        path: 'README.md',
+        ref: 'main',
+        repo: 'rosetta',
+        text: '# rosetta',
+        treeEntries: [{ path: 'README.md', sha: 'blob-sha-readme', type: 'blob' }],
+        treeSha: 'tree-sha-root',
+        truncated: true
+      })
+    ).toThrow(/truncated GitHub listing/iu);
   });
 
   it('passes Bootstrap Green only with the ordered guarded builtin.echo proof path', () => {

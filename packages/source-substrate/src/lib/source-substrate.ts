@@ -38,12 +38,48 @@ export interface SourceManifestation {
   fetchableUrl?: string;
 }
 
+export type BoundedAcquisitionSourceKind =
+  | 'drive-folder'
+  | 'drive-query'
+  | 'drive-revision-list'
+  | 'generic-listing'
+  | 'github-contents'
+  | 'github-tree';
+
+export interface BoundedAcquisitionScope {
+  authorityRef?: string;
+  capturedAt: string;
+  locator: string;
+  scope: Record<string, string>;
+  sourceKind: BoundedAcquisitionSourceKind;
+  sourceSystemId: string;
+}
+
+export interface BoundedAcquisitionPagination {
+  mode: 'not-applicable' | 'paginated' | 'single-page';
+  nextPageToken?: string;
+}
+
+export interface BoundedAcquisitionSignals {
+  incompleteSearch: boolean;
+  isComplete: boolean;
+  itemCount: number;
+  maxItems?: number;
+  pagination: BoundedAcquisitionPagination;
+  signals: string[];
+  truncated: boolean;
+}
+
 export interface SourcePackage {
-  sourceRecordCid: string;
+  sourceRecordCid?: string;
   packageId: string;
   packageKind: string;
   members: string[];
   profileRefs: string[];
+  boundedness?: BoundedAcquisitionSignals;
+  discoveredRecordCids?: string[];
+  lineageRole?: 'bounded-acquisition-snapshot' | 'record-scoped-package';
+  scope?: BoundedAcquisitionScope;
 }
 
 export type SourceFamily =
@@ -90,6 +126,7 @@ export interface SourceEpisode {
     reasons: string[];
   };
   sourceManifestationCid?: string;
+  sourcePackageCid?: string;
   sourceRecordCid?: string;
 }
 
@@ -141,6 +178,22 @@ export function createSourceManifestationTile(
 
 export function createSourcePackageTile(sourcePackage: SourcePackage, parents: string[] = []): TileEnvelope<SourcePackage> {
   return buildTile('source.package', sourcePackage, { pack: 'source-substrate', parents });
+}
+
+export function createBoundedListingSnapshotPackageTile(
+  sourcePackage: Omit<SourcePackage, 'lineageRole' | 'packageKind' | 'sourceRecordCid'> & {
+    packageKind?: 'bounded-listing-snapshot';
+  },
+  parents: string[] = []
+): TileEnvelope<SourcePackage> {
+  return createSourcePackageTile(
+    {
+      ...sourcePackage,
+      lineageRole: 'bounded-acquisition-snapshot',
+      packageKind: sourcePackage.packageKind ?? 'bounded-listing-snapshot'
+    },
+    parents
+  );
 }
 
 export function createSourceEpisodeTile(episode: SourceEpisode, parents: string[] = []): TileEnvelope<SourceEpisode> {

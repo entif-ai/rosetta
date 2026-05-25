@@ -592,7 +592,7 @@ const REQUIRED_FIELDS: Record<string, string[]> = {
     'revisionFingerprint',
     'sourceManifestationCid'
   ],
-  'source.package': ['members', 'packageId', 'packageKind', 'profileRefs', 'sourceRecordCid'],
+  'source.package': ['members', 'packageId', 'packageKind', 'profileRefs'],
   'source.record': ['metadataBlob', 'publicationStatus', 'recordLocalId', 'recordType', 'sourceSystemId', 'stableLocators'],
   'source.registry_entry': ['defaultTrustClass', 'entryId', 'priorityTier', 'sourceSystemId'],
   'source.system_profile': ['canonicalName', 'capabilityFacets', 'curationPosture', 'evidenceRefs', 'rightsPosture', 'sourceRoles', 'sourceSystemId'],

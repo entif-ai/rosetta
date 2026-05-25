@@ -3,7 +3,7 @@
 Status: active baton-pass for Codex and agent sessions
 Date: 2026-05-04
 Last updated: 2026-05-25
-Current branch at time of update: `codex/cache-001-durable-backend`
+Current branch at time of update: `codex/adapt-000-001-github-source-adapter`
 Current PR at time of update: pending publication
 
 ## Purpose
@@ -127,29 +127,38 @@ Closed at time of update:
 
 ## Current Work Product
 
-Current branch: `codex/cache-001-durable-backend`
+Current branch: `codex/adapt-000-001-github-source-adapter`
 Source issues:
 
-- https://github.com/entif-ai/rosetta/issues/1120
+- https://github.com/entif-ai/rosetta/issues/1141
+- https://github.com/entif-ai/rosetta/issues/1121
 
-This branch implements the first durable backend adapter boundary for `canonical-cache` while preserving the package's existing in-memory and local-path bootstrap behavior.
+This branch implements the shared bounded listing-snapshot contract needed by first-wave live-source adapters, then consumes it in a narrow GitHub parse-only text acquisition proof through `ingress-refinery`.
 
 Changed behavior:
 
-- `CanonicalCacheBackend` is now the explicit package-level persistence adapter contract.
-- `JsonFileCanonicalCacheBackend` provides deterministic local/dev durability behind that adapter boundary.
-- Existing `persistencePath` callers remain supported by wrapping the path in the JSON backend internally.
-- Backend-backed reload tests prove canonical artifact CIDs, raw-evidence retention, record-family revision chains, correction events, and merge-eligibility semantics survive persistence and replay.
-- `packages/canonical-cache/README.md` now labels the backend as a first durable step, not the final database-backed corpus cache.
+- `source.package` can now represent bounded acquisition listing snapshots without flattening them under one synthetic source record.
+- Bounded listing snapshots preserve source scope, tree/query identity, pagination/truncation/incomplete-search signals, discovered record refs, and replay posture.
+- `source.episode`, ingress jobs, fetch receipts, normalization receipts, evaluation receipts, and canonical artifacts can carry `sourcePackageCid` lineage.
+- `ingress-refinery` now exposes `acquireGitHubTextThroughRefinery()` for pinned GitHub markdown/plain-text blobs using deterministic supplied acquisition payloads.
+- GitHub acquisition creates separate source-system, listing-snapshot package, source-record, manifestation, episode, ingress-job, receipt, trust, and canonical-artifact tiles.
+- GitHub listings fail closed before item fetch when truncated, incomplete, over-bounded, path-missing, non-blob, or blob-SHA-mismatched.
+- `source-registry` now includes a first-wave GitHub source-system profile.
 
 ## Validation State
 
-- Red: `NX_DAEMON=false pnpm exec nx run canonical-cache:test --skip-nx-cache` failed before implementation on missing `JsonFileCanonicalCacheBackend` constructor.
-- Green: `NX_DAEMON=false pnpm exec nx run canonical-cache:test --skip-nx-cache` passed.
-- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:lint --skip-nx-cache` passed.
-- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:typecheck --skip-nx-cache` passed.
-- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run canonical-cache:build --skip-nx-cache` passed.
-- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx affected -t lint,test,typecheck,build --base=origin/main --skip-nx-cache --outputStyle=static --parallel=3` passed.
+- Red #1141: `NX_DAEMON=false pnpm exec nx run source-substrate:test --skip-nx-cache` failed before implementation on missing `createBoundedListingSnapshotPackageTile`.
+- Red #1141: `NX_DAEMON=false pnpm exec nx run ingress-refinery:test --skip-nx-cache` failed before implementation because `sourcePackageCid` was not threaded into episode parents/provenance.
+- Green #1141: `NX_DAEMON=false pnpm exec nx run source-substrate:test --skip-nx-cache` passed.
+- Green #1141: `NX_DAEMON=false pnpm exec nx run ingress-refinery:test --skip-nx-cache` passed.
+- Red #1121: `NX_DAEMON=false pnpm exec nx run ingress-refinery:test --skip-nx-cache` failed before implementation on missing `acquireGitHubTextThroughRefinery`.
+- Green #1121: `NX_DAEMON=false pnpm exec nx run ingress-refinery:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run source-registry:test --skip-nx-cache` passed.
+- `NX_DAEMON=false pnpm exec nx run rosetta-schemas:test --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run source-substrate:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run ingress-refinery:build --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx run ingress-refinery:typecheck --skip-nx-cache` passed.
+- `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm exec nx affected -t lint,test,typecheck,build --base=origin/main --exclude @entif-ai/source --skip-nx-cache --outputStyle=static --parallel=3` passed.
 - `NX_DAEMON=false NX_SOCKET_DIR=/tmp/nx-sock pnpm run docs:intake` passed, but generated broad unrelated intake-ledger churn; those generated intake changes were intentionally not kept in this branch.
 - `git diff --check` passed.
 
@@ -162,8 +171,8 @@ Known non-failing warnings:
 
 For this branch:
 
-1. Publish a ready PR for issue #1120.
-2. Keep database-backed storage, richer query APIs, broad corpus operations, and evidence-gated merge workflows downstream; this branch only defines the durable backend boundary and local JSON backend.
+1. Publish a ready PR for issues #1141 and #1121.
+2. Keep built-in network fetch clients, Google Drive acquisition, broad crawler behavior, durable cache writes, trust scoring, and promotion-state behavior downstream.
 
 For Text-Core:
 
