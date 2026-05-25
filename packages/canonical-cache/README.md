@@ -10,14 +10,15 @@ Provides the first canonical corpus cache behavior for clustering and lifecycle 
 - indexes artifacts by byte identity, manifestation identity, record family, and conceptual cluster
 - dedupes repeated normalized content by content fingerprint while retaining each raw evidence artifact CID
 - links materially changed content into a record-family revision chain
-- persists and reloads bootstrap cache state from a local JSON path
+- persists and reloads bootstrap cache state through a narrow backend interface
+- ships a deterministic JSON-file backend for local/dev durability and fixture replay
 - marks only byte and manifestation matches as merge-eligible
 - retains correction events without deleting prior state
 
 ## Fixture Status
 
 - executable
-- local-file persistence and in-memory operation are exercised through bootstrap fixtures
+- in-memory operation, backend-backed persistence, and legacy local-path persistence are exercised through bootstrap fixtures
 
 ## Not Yet
 
@@ -28,4 +29,5 @@ Provides the first canonical corpus cache behavior for clustering and lifecycle 
 
 ## Roadmap
 
-- back the cache with database storage and richer query interfaces before bulk ingest begins
+- add a database-backed backend behind the same adapter boundary before bulk ingest begins
+- add richer query interfaces once durable storage semantics are broader than bootstrap replay

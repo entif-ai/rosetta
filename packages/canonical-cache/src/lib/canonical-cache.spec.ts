@@ -1,13 +1,13 @@
 import { describe, expect, it } from 'vitest';
 
-import { mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 import { buildBootstrapDemoSnapshot, refineTextArtifact } from '@entif-ai/ingress-refinery';
 import { createCorrectionEventTile } from '@entif-ai/source-substrate';
 
-import { CanonicalCorpusCache } from './canonical-cache.js';
+import { CanonicalCorpusCache, JsonFileCanonicalCacheBackend } from './canonical-cache.js';
 
 describe('canonical-cache', () => {
   it('clusters artifacts without auto-merging conceptual or record-family matches', () => {
@@ -215,6 +215,60 @@ describe('canonical-cache', () => {
           requestId: 'req-recomputed'
         }
       ]);
+    } finally {
+      rmSync(tmp, { force: true, recursive: true });
+    }
+  });
+
+  it('persists and reloads cache semantics through a durable backend adapter', () => {
+    const tmp = mkdtempSync(join(tmpdir(), 'rosetta-cache-backend-'));
+    const cachePath = join(tmp, 'cache.json');
+    try {
+      const snapshot = buildBootstrapDemoSnapshot();
+      const base = refineTextArtifact(snapshot.record, snapshot.manifestation, 'Rosetta keeps source evidence.');
+      const formatted = refineTextArtifact(snapshot.record, snapshot.manifestation, '  Rosetta keeps source evidence.  ');
+      const revised = refineTextArtifact(snapshot.record, snapshot.manifestation, 'Rosetta keeps source evidence and revision traces.');
+      const correction = createCorrectionEventTile({
+        eventKind: 'correction',
+        recordedAt: '2026-05-05T00:00:00.000Z',
+        subjectCid: revised.canonicalArtifact.cid,
+        summary: 'Revision metadata corrected upstream.'
+      });
+      const backend = new JsonFileCanonicalCacheBackend(cachePath);
+      const cache = CanonicalCorpusCache.load({ backend });
+
+      cache.ingest(base.canonicalArtifact);
+      cache.ingest(formatted.canonicalArtifact);
+      const revisedProposals = cache.ingest(revised.canonicalArtifact);
+      cache.applyCorrectionEvent(correction);
+      cache.save();
+
+      const reloaded = CanonicalCorpusCache.load({ backend: new JsonFileCanonicalCacheBackend(cachePath) });
+      const replayedProposals = reloaded.ingest(revised.canonicalArtifact);
+
+      expect(existsSync(cachePath)).toBe(true);
+      expect(reloaded.getCanonicalArtifactCids()).toEqual([base.canonicalArtifact.cid, revised.canonicalArtifact.cid]);
+      expect(reloaded.getRawEvidenceCids(base.canonicalArtifact.cid)).toEqual([
+        base.canonicalArtifact.cid,
+        formatted.canonicalArtifact.cid
+      ]);
+      expect(reloaded.getRevisionChain(base.canonicalArtifact.payload.dedupe.recordFamilyKey)).toEqual([
+        {
+          artifactCid: base.canonicalArtifact.cid,
+          revisionFingerprint: base.canonicalArtifact.payload.revisionFingerprint
+        },
+        {
+          artifactCid: revised.canonicalArtifact.cid,
+          parentArtifactCid: base.canonicalArtifact.cid,
+          revisionFingerprint: revised.canonicalArtifact.payload.revisionFingerprint
+        }
+      ]);
+      expect(reloaded.getLifecycleEvents(revised.canonicalArtifact.cid)).toEqual([correction.payload]);
+      expect(revisedProposals.map(({ layer, mergeEligible }) => ({ layer, mergeEligible }))).toEqual(
+        replayedProposals.map(({ layer, mergeEligible }) => ({ layer, mergeEligible }))
+      );
+      expect(replayedProposals.find((proposal) => proposal.layer === 'record-family')?.mergeEligible).toBe(false);
+      expect(replayedProposals.find((proposal) => proposal.layer === 'conceptual')?.mergeEligible).toBe(false);
     } finally {
       rmSync(tmp, { force: true, recursive: true });
     }
