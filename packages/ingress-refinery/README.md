@@ -10,16 +10,19 @@ Turns source-aware inputs into canonical artifacts plus linked provenance receip
 - normalizes supplied text
 - generates fetch, normalization, and evaluation receipts
 - builds canonical artifacts with PID, rights, and dedupe metadata
+- threads bounded listing-snapshot package lineage through episodes, receipts, and canonical-artifact provenance
+- provides a narrow GitHub text acquisition API for pinned markdown/plain-text blobs using injected fixture/local/live payloads
 - emits a bootstrap demo snapshot stitching the whole flow together
 
 ## Fixture Status
 
 - the mechanics are executable
-- the current flow is fixture-backed because records, manifestations, and raw text are supplied locally rather than fetched from live sources
+- the current GitHub adapter boundary is executable with deterministic supplied payloads
+- network-backed upstream fetch clients remain outside this package for now
 
 ## Not Yet
 
-- live upstream fetching
+- built-in network fetch clients for upstream APIs
 - HTML/PDF/document parsing
 - durable job orchestration
 - revision and correction polling against real sources

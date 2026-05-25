@@ -27,6 +27,7 @@ import { emitConformanceBundle } from '@entif-ai/rosetta-schemas';
 import { InMemoryTileStore } from '@entif-ai/rosetta-store';
 import { compileReceiptBundleTapestry } from '@entif-ai/rosetta-tapestry';
 import {
+  createBoundedListingSnapshotPackageTile,
   createSourceRecordTile,
   createSourceManifestationTile,
   createSourceSystemProfileTile,
@@ -36,13 +37,16 @@ import {
   type SourceEpisode,
   type SourceFamily,
   type SourceManifestation,
+  type SourcePackage,
   type SourceRecord,
+  type SourceSystemProfile,
   type TrustMatrix
 } from '@entif-ai/source-substrate';
 import { bootstrapSourceProfiles } from '@entif-ai/source-registry';
 
 export interface IngressJob {
   jobId: string;
+  sourcePackageCid?: string;
   sourceRecordCid: string;
   sourceManifestationCid: string;
   parserProfile: string;
@@ -57,6 +61,7 @@ export interface SourceEpisodeRequest {
   rawEvidenceRefs: RawEvidenceRef[];
   requestedMode?: 'parse-only' | 'side-effect';
   rightsScope: string[];
+  sourcePackageCid?: string;
 }
 
 export interface FetchReceiptPayload {
@@ -66,6 +71,7 @@ export interface FetchReceiptPayload {
   method: string;
   snapshotHash: string;
   sourceManifestationCid: string;
+  sourcePackageCid?: string;
 }
 
 export interface NormalizationReceiptPayload {
@@ -75,6 +81,7 @@ export interface NormalizationReceiptPayload {
   parserProfile: string;
   revisionFingerprint: string;
   sourceManifestationCid: string;
+  sourcePackageCid?: string;
 }
 
 export interface EvaluationReceiptPayload {
@@ -82,6 +89,7 @@ export interface EvaluationReceiptPayload {
   trustMatrixCid: string;
   evaluatedAt: string;
   policyRefs: string[];
+  sourcePackageCid?: string;
 }
 
 export interface CanonicalArtifact {
@@ -94,10 +102,12 @@ export interface CanonicalArtifact {
   normalizedTextHash: string;
   pidFamily: string[];
   rightsScopes: string[];
+  sourcePackageCid?: string;
   provenanceRefs: {
     evaluationReceiptCid: string;
     fetchReceiptCid: string;
     normalizationReceiptCid: string;
+    sourcePackageCid?: string;
   };
   dedupe: {
     byteIdentityKey: string;
@@ -150,6 +160,57 @@ export interface SourceObservationArtifacts {
   transformReceiptBundle: ReturnType<typeof buildReceiptBundle>;
   trustMatrix: TileEnvelope<TrustMatrix>;
 }
+
+export interface RefineryLineageOptions {
+  fetchedAt?: string;
+  fetchMethod?: string;
+  requestedLocator?: string;
+  resolvedLocator?: string;
+  sourcePackageCid?: string;
+}
+
+export interface GitHubTreeEntry {
+  path: string;
+  sha: string;
+  size?: number;
+  type: 'blob' | 'tree';
+}
+
+export type GitHubAcquisitionMode = 'fixture' | 'live' | 'local';
+
+export interface GitHubTextAcquisitionRequest {
+  acquisitionMode: GitHubAcquisitionMode;
+  blobSha: string;
+  capturedAt: string;
+  incompleteSearch?: boolean;
+  maxItems?: number;
+  mediaType: 'text/markdown' | 'text/plain';
+  owner: string;
+  path: string;
+  ref: string;
+  repo: string;
+  text: string;
+  treeEntries: GitHubTreeEntry[];
+  treeSha: string;
+  truncated?: boolean;
+}
+
+export interface GitHubTextAcquisitionResult {
+  acquisitionMode: GitHubAcquisitionMode;
+  canonicalArtifact: TileEnvelope<CanonicalArtifact>;
+  episode: TileEnvelope<SourceEpisode>;
+  evaluationReceipt: TileEnvelope<EvaluationReceiptPayload>;
+  fetchReceipt: TileEnvelope<FetchReceiptPayload>;
+  ingressJob: TileEnvelope<IngressJob>;
+  listingSnapshot: TileEnvelope<SourcePackage>;
+  manifestation: TileEnvelope<SourceManifestation>;
+  normalizationReceipt: TileEnvelope<NormalizationReceiptPayload>;
+  record: TileEnvelope<SourceRecord>;
+  sourceSystem: TileEnvelope<SourceSystemProfile>;
+  trustMatrix: TileEnvelope<TrustMatrix>;
+}
+
+const SUPPORTED_GITHUB_TEXT_MEDIA_TYPES = new Set<string>(['text/markdown', 'text/plain']);
 
 export type BootstrapGateStatus = 'block' | 'deny' | 'fail' | 'pass';
 
@@ -493,7 +554,11 @@ export function buildBootstrapGateSnapshot(options: BootstrapGateOptions = {}): 
   };
 }
 
-export function createIngressJob(sourceRecordCid: string, sourceManifestationCid: string): TileEnvelope<IngressJob> {
+export function createIngressJob(
+  sourceRecordCid: string,
+  sourceManifestationCid: string,
+  lineage: RefineryLineageOptions = {}
+): TileEnvelope<IngressJob> {
   return buildTile(
     'source.ingress_job',
     {
@@ -502,10 +567,14 @@ export function createIngressJob(sourceRecordCid: string, sourceManifestationCid
       parserProfile: 'text/plain@v1',
       policyRefs: ['policy.parse-only.default'],
       sourceManifestationCid,
+      ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {}),
       sourceRecordCid,
       status: 'parsed'
     },
-    { pack: 'ingress-refinery' }
+    {
+      pack: 'ingress-refinery',
+      parents: [sourceRecordCid, sourceManifestationCid, ...(lineage.sourcePackageCid ? [lineage.sourcePackageCid] : [])]
+    }
   );
 }
 
@@ -561,6 +630,7 @@ export function createParseOnlySourceEpisode(
 
   const classification = classifySourceFamily(record, manifestation);
   const locator = request.locator ?? manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unresolved';
+  const parents = [record.cid, manifestation.cid, ...(request.sourcePackageCid ? [request.sourcePackageCid] : [])];
 
   return buildTile(
     'source.episode',
@@ -577,9 +647,10 @@ export function createParseOnlySourceEpisode(
       rawEvidenceRefs: request.rawEvidenceRefs,
       rightsScope: request.rightsScope,
       sourceManifestationCid: manifestation.cid,
+      ...(request.sourcePackageCid ? { sourcePackageCid: request.sourcePackageCid } : {}),
       sourceRecordCid: record.cid
     },
-    { pack: 'source-substrate', parents: [record.cid, manifestation.cid] }
+    { pack: 'source-substrate', parents }
   );
 }
 
@@ -587,7 +658,8 @@ export function refineTextArtifact(
   record: TileEnvelope<SourceRecord>,
   manifestation: TileEnvelope<SourceManifestation>,
   rawText: string,
-  policyRefs: string[] = ['policy.parse-only.default']
+  policyRefs: string[] = ['policy.parse-only.default'],
+  lineage: RefineryLineageOptions = {}
 ): {
   canonicalArtifact: TileEnvelope<CanonicalArtifact>;
   evaluationReceipt: TileEnvelope<EvaluationReceiptPayload>;
@@ -599,17 +671,19 @@ export function refineTextArtifact(
   const normalizedText = fingerprints.normalizedText;
   const byteHash = sha256Hex(rawText);
   const normalizedTextHash = fingerprints.contentFingerprint;
+  const lineageParents = lineage.sourcePackageCid ? [lineage.sourcePackageCid] : [];
   const fetchReceipt = buildTile(
     'source.fetch_receipt',
     {
-      fetchedAt: new Date('2026-04-13T00:15:00.000Z').toISOString(),
-      method: 'bootstrap-import',
-      requestedLocator: manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unknown',
-      resolvedLocator: manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unknown',
+      fetchedAt: lineage.fetchedAt ?? new Date('2026-04-13T00:15:00.000Z').toISOString(),
+      method: lineage.fetchMethod ?? 'bootstrap-import',
+      requestedLocator: lineage.requestedLocator ?? manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unknown',
+      resolvedLocator: lineage.resolvedLocator ?? manifestation.payload.fetchableUrl ?? record.payload.stableLocators[0] ?? 'local://unknown',
       snapshotHash: byteHash,
-      sourceManifestationCid: manifestation.cid
+      sourceManifestationCid: manifestation.cid,
+      ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {})
     },
-    { pack: 'ingress-refinery', parents: [manifestation.cid] }
+    { pack: 'ingress-refinery', parents: [manifestation.cid, ...lineageParents] }
   );
   const normalizationReceipt = buildTile(
     'source.normalization_receipt',
@@ -619,9 +693,10 @@ export function refineTextArtifact(
       normalizationProfile: fingerprints.normalizationProfile,
       parserProfile: 'text/plain@v1',
       revisionFingerprint: fingerprints.revisionFingerprint,
-      sourceManifestationCid: manifestation.cid
+      sourceManifestationCid: manifestation.cid,
+      ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {})
     },
-    { pack: 'ingress-refinery', parents: [fetchReceipt.cid] }
+    { pack: 'ingress-refinery', parents: [fetchReceipt.cid, ...lineageParents] }
   );
   const trustMatrix = createTrustMatrixTile(
     {
@@ -638,9 +713,10 @@ export function refineTextArtifact(
       evaluatedAt: new Date('2026-04-13T00:20:00.000Z').toISOString(),
       policyRefs,
       subjectCid: manifestation.cid,
+      ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {}),
       trustMatrixCid: trustMatrix.cid
     },
-    { pack: 'ingress-refinery', parents: [trustMatrix.cid] }
+    { pack: 'ingress-refinery', parents: [trustMatrix.cid, ...lineageParents] }
   );
   const identifiers = Object.values(record.payload.metadataBlob)
     .flatMap((value) => (Array.isArray(value) ? value : [value]))
@@ -664,14 +740,19 @@ export function refineTextArtifact(
       provenanceRefs: {
         evaluationReceiptCid: evaluationReceipt.cid,
         fetchReceiptCid: fetchReceipt.cid,
-        normalizationReceiptCid: normalizationReceipt.cid
+        normalizationReceiptCid: normalizationReceipt.cid,
+        ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {})
       },
       rightsScopes: manifestation.payload.accessRequirements,
       revisionFingerprint: fingerprints.revisionFingerprint,
       sourceManifestationCid: manifestation.cid,
+      ...(lineage.sourcePackageCid ? { sourcePackageCid: lineage.sourcePackageCid } : {}),
       sourceRecordCid: record.cid
     },
-    { pack: 'ingress-refinery', parents: [fetchReceipt.cid, normalizationReceipt.cid, evaluationReceipt.cid] }
+    {
+      pack: 'ingress-refinery',
+      parents: [fetchReceipt.cid, normalizationReceipt.cid, evaluationReceipt.cid, ...lineageParents]
+    }
   );
 
   return {
@@ -680,6 +761,171 @@ export function refineTextArtifact(
     fetchReceipt,
     normalizationReceipt,
     trustMatrix
+  };
+}
+
+function githubPathUrlSegment(path: string): string {
+  return path
+    .split('/')
+    .filter((part) => part.length > 0)
+    .map((part) => encodeURIComponent(part))
+    .join('/');
+}
+
+function githubRootPath(path: string): string {
+  const parts = path.split('/').filter((part) => part.length > 0);
+  parts.pop();
+  return parts.join('/');
+}
+
+function assertRequiredGitHubTextRequest(request: GitHubTextAcquisitionRequest): void {
+  for (const field of ['blobSha', 'capturedAt', 'owner', 'path', 'ref', 'repo', 'treeSha'] as const) {
+    if (request[field].trim().length === 0) {
+      throw new Error(`GitHub parse-only acquisition requires ${field}.`);
+    }
+  }
+}
+
+export function acquireGitHubTextThroughRefinery(request: GitHubTextAcquisitionRequest): GitHubTextAcquisitionResult {
+  assertRequiredGitHubTextRequest(request);
+
+  const incompleteSearch = request.incompleteSearch === true;
+  const truncated = request.truncated === true;
+
+  if (truncated) {
+    throw new Error('Refusing truncated GitHub listing before item fetch.');
+  }
+  if (incompleteSearch) {
+    throw new Error('Refusing incomplete GitHub listing before item fetch.');
+  }
+  if (request.maxItems !== undefined && request.treeEntries.length > request.maxItems) {
+    throw new Error('Refusing over-bounded GitHub listing before item fetch.');
+  }
+  if (!SUPPORTED_GITHUB_TEXT_MEDIA_TYPES.has(request.mediaType)) {
+    throw new Error(`Unsupported GitHub text media type: ${request.mediaType}`);
+  }
+
+  const treeEntry = request.treeEntries.find((entry) => entry.path === request.path);
+  if (!treeEntry) {
+    throw new Error(`GitHub listing does not include requested path: ${request.path}`);
+  }
+  if (treeEntry.type !== 'blob') {
+    throw new Error(`GitHub requested path is not a text blob: ${request.path}`);
+  }
+  if (treeEntry.sha !== request.blobSha) {
+    throw new Error(`GitHub listing blob SHA does not match fetched blob for path: ${request.path}`);
+  }
+
+  const sourceProfile = bootstrapSourceProfiles.find((profile) => profile.sourceSystemId === 'github');
+  if (!sourceProfile) {
+    throw new Error('GitHub source-system profile is not registered.');
+  }
+
+  const sourceSystem = createSourceSystemProfileTile(sourceProfile);
+  const encodedPath = githubPathUrlSegment(request.path);
+  const rootPath = githubRootPath(request.path);
+  const blobUrl = `https://github.com/${request.owner}/${request.repo}/blob/${request.ref}/${encodedPath}`;
+  const rawUrl = `https://raw.githubusercontent.com/${request.owner}/${request.repo}/${request.ref}/${encodedPath}`;
+  const record = createSourceRecordTile(
+    {
+      metadataBlob: {
+        acquisitionMode: request.acquisitionMode,
+        blobSha: request.blobSha,
+        owner: request.owner,
+        path: request.path,
+        ref: request.ref,
+        repo: request.repo,
+        title: `${request.owner}/${request.repo}/${request.path}`,
+        treeSha: request.treeSha
+      },
+      publicationStatus: 'published',
+      recordLocalId: `${request.owner}/${request.repo}:${request.ref}:${request.path}`,
+      recordType: 'github-text-file',
+      sourceSystemId: 'github',
+      stableLocators: [blobUrl]
+    },
+    [sourceSystem.cid]
+  );
+  const listingSnapshot = createBoundedListingSnapshotPackageTile(
+    {
+      boundedness: {
+        incompleteSearch,
+        isComplete: true,
+        itemCount: request.treeEntries.length,
+        ...(request.maxItems !== undefined ? { maxItems: request.maxItems } : {}),
+        pagination: { mode: 'single-page' },
+        signals: [`github.tree.truncated=${truncated}`, `github.tree.sha=${request.treeSha}`],
+        truncated
+      },
+      discoveredRecordCids: [record.cid],
+      members: [record.cid],
+      packageId: `github.tree.${request.owner}.${request.repo}.${request.ref}.${rootPath || 'root'}`,
+      profileRefs: [sourceSystem.cid],
+      scope: {
+        authorityRef: request.ref,
+        capturedAt: request.capturedAt,
+        locator: `https://github.com/${request.owner}/${request.repo}/tree/${request.ref}/${githubPathUrlSegment(rootPath)}`,
+        scope: {
+          owner: request.owner,
+          path: rootPath,
+          ref: request.ref,
+          repo: request.repo,
+          treeSha: request.treeSha
+        },
+        sourceKind: 'github-tree',
+        sourceSystemId: 'github'
+      }
+    },
+    [sourceSystem.cid]
+  );
+  const manifestation = createSourceManifestationTile(
+    {
+      accessRequirements: ['public'],
+      byteHashes: {
+        githubBlobSha: request.blobSha,
+        sha256: sha256Hex(request.text)
+      },
+      contentLanguage: 'en',
+      fetchableUrl: rawUrl,
+      manifestationId: `github.blob.${request.blobSha}`,
+      manifestationKind: 'github-blob',
+      mediaType: request.mediaType,
+      sourceRecordCid: record.cid,
+      structureProfile: request.mediaType === 'text/markdown' ? 'markdown' : 'plain-text'
+    },
+    [record.cid, listingSnapshot.cid]
+  );
+  const episode = createParseOnlySourceEpisode(record, manifestation, {
+    chronology: {
+      primary: {
+        date: request.capturedAt.slice(0, 10),
+        kind: 'fetchedAt',
+        source: 'github-tree'
+      }
+    },
+    locator: blobUrl,
+    rawEvidenceRefs: [{ evidenceId: `raw.github.${request.blobSha}`, evidenceKind: 'remote-fetch', locator: rawUrl, sha256: sha256Hex(request.text) }],
+    rightsScope: ['public'],
+    sourcePackageCid: listingSnapshot.cid
+  });
+  const ingressJob = createIngressJob(record.cid, manifestation.cid, { sourcePackageCid: listingSnapshot.cid });
+  const refined = refineTextArtifact(record, manifestation, request.text, ['policy.parse-only.default'], {
+    fetchedAt: request.capturedAt,
+    fetchMethod: `github-${request.acquisitionMode}-fetch`,
+    requestedLocator: blobUrl,
+    resolvedLocator: rawUrl,
+    sourcePackageCid: listingSnapshot.cid
+  });
+
+  return {
+    acquisitionMode: request.acquisitionMode,
+    episode,
+    ingressJob,
+    listingSnapshot,
+    manifestation,
+    record,
+    sourceSystem,
+    ...refined
   };
 }
 

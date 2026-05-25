@@ -88,6 +88,34 @@ describe('rosetta-schemas', () => {
     expect(result.errors).toContain('Missing required field: rightsScope');
   });
 
+  it('allows bounded source packages without flattening them under one source record', () => {
+    const result = validatePayload('source.package', {
+      boundedness: {
+        incompleteSearch: false,
+        isComplete: true,
+        itemCount: 1,
+        pagination: { mode: 'single-page' },
+        signals: ['github.tree.truncated=false'],
+        truncated: false
+      },
+      discoveredRecordCids: ['cidv1-record-readme'],
+      lineageRole: 'bounded-acquisition-snapshot',
+      members: ['cidv1-record-readme'],
+      packageId: 'github.tree.entif-ai.rosetta.main.root',
+      packageKind: 'bounded-listing-snapshot',
+      profileRefs: ['cidv1-source-profile-github'],
+      scope: {
+        capturedAt: '2026-05-25T10:00:00.000Z',
+        locator: 'https://github.com/entif-ai/rosetta/tree/main',
+        scope: { owner: 'entif-ai', path: '', ref: 'main', repo: 'rosetta', treeSha: 'tree-sha-root' },
+        sourceKind: 'github-tree',
+        sourceSystemId: 'github'
+      }
+    });
+
+    expect(result.ok).toBe(true);
+  });
+
   it('aligns receipt validation and SHACL coverage with policyRefs and nested evidence/digests', () => {
     const validReceipt = {
       claims: [

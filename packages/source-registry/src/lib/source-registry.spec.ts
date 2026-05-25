@@ -13,6 +13,7 @@ describe('source-registry', () => {
         're3data',
         'openaire',
         'openalex',
+        'github',
         'software-heritage',
         'zenodo',
         'figshare',
