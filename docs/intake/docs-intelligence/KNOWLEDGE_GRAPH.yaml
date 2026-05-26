@@ -11,6 +11,99 @@ meta:
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
     Token Efficiency.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
+- id: tripwire-protocol
+  name: Tripwire Protocol
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Privacy-preserving, zero-trust ethical escalation mechanism for AGI/AI-enabled systems. Live-only detection + encrypted escalation envelope + randomized quorum validation + threshold unlock + auto-shred. Designed to react to rare catastrophic input without enabling surveillance or persistent logging.
+  extends: []
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: dcp-inspired-quorum
+  name: DCP-Inspired Anonymous Quorum
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Quorum validation inspired by the Dining Cryptographers Problem. Anonymous confirmation of a dangerous input signal by a cohort of validators without revealing who voted or how. Uses cryptographic commitments, threshold aggregation, and ring signatures to preserve anonymity while enabling verifiable collective decision.
+  extends:
+  - tripwire-protcript
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: randomized-validator-cohort
+  name: Randomized Validator Cohort
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Like jury duty for digital ethics. Each tripwire event triggers random selection of N validators from a larger eligible pool using cryptographically verifiable random functions (VRF). Cohort is unique, unpredictable, and anti-collusion by design. Prevents fixed-committee capture, bias, and political manipulation.
+  extends:
+  - tripwire-protocol
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: trigger-entropy
+  name: Trigger Entropy
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Measure of sudden deviation from a user's behavioral baseline. High entropy = unexpected use of rare, complex, or tactical language. Combined with semantic risk score to raise tripwire confidence and reduce false positives. Analyzes surprise level relative to rolling behavioral profile.
+  extends:
+  - tripwire-protocol
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: semantic-risk-graph
+  name: Semantic Risk Graph
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Graph-based threat detection where input is embedded as nodes (concepts) and edges (temporal/causal/intent relationships). Scored by proximity of violent verbs to sensitive targets, first-person intent pronouns, future time markers, specificity of means. Provides explainable activation paths back to known threat structures.
+  extends:
+  - tripwire-protocol
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: federated-validator-pools
+  name: Federated Validator Pools
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Cross-organization validator pool architecture. Each org maintains a signed manifest of eligible validators. Inter-org selection uses VRF across combined pool. Enables global 24/7 coverage, cultural diversity, anti-collusion, and shared Sybil intelligence across otherwise isolated pools.
+  extends:
+  - tripwire-protocol
+  - randomized-validator-cohort
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: moe-moa-validator-swarm
+  name: MoE/MoA Validator Swarms
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: AI agents as valid primary quorum participants. MoE submodels (legal, compliance, ethics specialists) and MoA swarms (in-device agents) evaluate encrypted tripwire envelopes alongside or instead of humans. First-class design choice; not a compromise. Enables scale, consistency, and privacy-preserving 24/7 validation.
+  extends:
+  - tripwire-protocol
+  - dcp-inspired-quorum
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: threshold-cryptography-escalation
+  name: Threshold Cryptography Escalation
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Cryptographic pattern where decryption key is released only when k-of-n threshold quorum votes are collected. Validators contribute masked commitments; aggregation reveals pass/fail without individual attribution. Uses BLS threshold signatures, Shamir secret sharing, or ring signatures.
+  extends:
+  - tripwire-protocol
+  - dcp-inspired-quorum
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+- id: ethics-os
+  name: Ethics OS
+  introduced_by: docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  introduced_at: '2025-07-10'
+  definition: Proposed overarching protocol layer governing: tripwire signaling, multi-agent ethical validation, distributed escalation, quorum-bound access to trace data, and irrefutable but untraceable verification. Compares to OAuth for identity or TLS for communication — but for ethical escalation. Name EntEthos was rejected; concept remains.
+  extends:
+  - tripwire-protocol
+  referenced_by:
+  - docs/governance/20250710 - Tripwire Protocol - EntifAI.md
+  status: active
+
 concepts:
 - id: authority-chain
   name: Authority Chain

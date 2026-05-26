@@ -25,7 +25,7 @@ The cache currently clusters artifacts in memory, so dedupe/lifecycle state disa
 
 - `docs/backlog/BOOTSTRAP_EXECUTION_TRACK.md`; hash 530e57773eaf: Names cache persistence as the third next execution item.
 - `docs/backlog/20260410 - Entif.AI - Rosetta - Phased Backlog (v0.1).md`; hash 2baec5fab6f5: Separates truth/provenance from cache/index and calls for Postgres/pgvector later.
-- `docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md`; hash c14775852b6b: Defines storage and memory-plane separation doctrine.
+- `docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md`; hash 4446ed6522fb: Defines storage and memory-plane separation doctrine.
 
 ## Non-Goals
 
