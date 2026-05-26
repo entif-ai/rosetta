@@ -128,7 +128,7 @@
     "omoc-lean-vs-learned-dilemma": {
       "number": 81,
       "state": "open",
-      "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
+      "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
       "url": "https://github.com/entif-ai/rosetta/issues/81",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-dilemma.md",
@@ -137,7 +137,7 @@
     "swarm-gnosis-public-commons-licensing-undefined": {
       "number": 87,
       "state": "open",
-      "title": "[RFC \u00a718 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
+      "title": "[RFC §18 OQ-6] Swarm Gnosis Public Commons: undefined licensing and governance model",
       "url": "https://github.com/entif-ai/rosetta/issues/87",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/swarm-gnosis-public-commons-licensing-undefined.md",
@@ -155,7 +155,7 @@
     "omoc-slug-adoption-timing-hydration-quality": {
       "number": 92,
       "state": "open",
-      "title": "OQ-4: Slug Adoption Timing vs Hydration Quality \u2014 Unresolved",
+      "title": "OQ-4: Slug Adoption Timing vs Hydration Quality — Unresolved",
       "url": "https://github.com/entif-ai/rosetta/issues/92",
       "activeDraftPath": null,
       "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-slug-adoption-timing-hydration-quality.md",
@@ -209,7 +209,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap": {
     "number": 84,
     "state": "open",
-    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "title": "CT-001: Rosetta network layer gap — Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
     "url": "https://github.com/entifik-ai/rosetta/issues/84",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md",
@@ -218,7 +218,7 @@
   "omoc-swarm-gnosis-eight-spec-proposal-bloat": {
     "number": 94,
     "state": "open",
-    "title": "OMOC Swarm Gnosis \u00a717: 8 Proposed Specs Uncommitted \u2014 Proposal Bloat Risk",
+    "title": "OMOC Swarm Gnosis §17: 8 Proposed Specs Uncommitted — Proposal Bloat Risk",
     "url": "https://github.com/entif-ai/rosetta/issues/94",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-swarm-gnosis-eight-spec-proposal-bloat.md",
@@ -236,7 +236,7 @@
   "ac-001-attention-capital-integration": {
     "number": 100,
     "state": "open",
-    "title": "AC-001: Attention Capital Platform \u2014 Integration Design Needed Before Commitment",
+    "title": "AC-001: Attention Capital Platform — Integration Design Needed Before Commitment",
     "url": "https://github.com/entif-ai/rosetta/issues/100",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-integration.md",
@@ -245,7 +245,7 @@
   "ct-002-trust-bootstrap": {
     "number": 96,
     "state": "open",
-    "title": "CT-002: Trust bootstrap problem \u2014 new nodes have no reputation in fully open network",
+    "title": "CT-002: Trust bootstrap problem — new nodes have no reputation in fully open network",
     "url": "https://github.com/entif-ai/rosetta/issues/96",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md",
@@ -281,7 +281,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap": {
     "number": 109,
     "state": "open",
-    "title": "CT-005: Economic persistence gap \u2014 no token/payment system; unpopular data may disappear",
+    "title": "CT-005: Economic persistence gap — no token/payment system; unpopular data may disappear",
     "url": "https://github.com/entif-ai/rosetta/issues/109",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-005-persistence-gap.md",
@@ -290,7 +290,7 @@
   "2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs": {
     "number": 117,
     "state": "open",
-    "title": "CT-006: ZK proof integration not near-term viable \u2014 heavy proof generation cost",
+    "title": "CT-006: ZK proof integration not near-term viable — heavy proof generation cost",
     "url": "https://github.com/enti-ai/rosetta/issues/117",
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md",
@@ -362,7 +362,7 @@
   "RPP-task-numbering-reference.md": {
     "number": 182,
     "state": "open",
-    "title": "Define RPP Task Numbering Reference (Tasks 1\u201319)",
+    "title": "Define RPP Task Numbering Reference (Tasks 1–19)",
     "url": "https://github.com/entif-ai/rosetta/issues/182",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RPP-task-numbering-reference.md",
@@ -371,7 +371,7 @@
   "2026-04-25-berman-e2e-tier3-cost-tracking": {
     "number": 124,
     "state": "open",
-    "title": "E2E Tier 3 cost tracking missing \u2014 ~$2-3/run could reach $100-150/month",
+    "title": "E2E Tier 3 cost tracking missing — ~$2-3/run could reach $100-150/month",
     "url": "https://github.com/entif-ai/rosetta/issues/124",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-e2e-tier3-cost-tracking.md",
@@ -380,7 +380,7 @@
   "ac-001-attention-capital-prior-art": {
     "number": 185,
     "state": "open",
-    "title": "AC-001: Attention Capital Platform \u2014 Prior Art Search",
+    "title": "AC-001: Attention Capital Platform — Prior Art Search",
     "url": "https://github.com/entif-ai/rosetta/issues/185",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/ac-001-attention-capital-prior-art.md",
@@ -389,7 +389,7 @@
   "2026-04-25-berman-env-symlink-ambiguity.md": {
     "number": 126,
     "state": "open",
-    "title": "Credential symlink ambiguity \u2014 which .env is authoritative?",
+    "title": "Credential symlink ambiguity — which .env is authoritative?",
     "url": "https://github.com/entif-ai/rosetta/issues/126",
     "activeDraftPath": "docs/intake/issue-drafts/2026-04-25-berman-env-symlink-ambiguity.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-25-berman-env-symlink-ambiguity.md",
@@ -830,7 +830,7 @@
   "AGR-001-agentwallet-eoa-key-prohibition": {
     "number": 269,
     "state": "open",
-    "title": "AGR-001: Enforce EOA Key Handoff Prohibition for Agent Wallets \u2014 Require Smart Contract Wallet or HSM Enclave",
+    "title": "AGR-001: Enforce EOA Key Handoff Prohibition for Agent Wallets — Require Smart Contract Wallet or HSM Enclave",
     "url": "https://github.com/entif-ai/rosetta/issues/269",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-001-agentwallet-eoa-key-prohibition.md",
@@ -839,7 +839,7 @@
   "AGR-002-quarantine-pipeline-agent-sourced-code.md": {
     "number": 271,
     "state": "open",
-    "title": "AGR-002: Build Quarantine Pipeline for Agent-Sourced Code \u2014 License Check, Dependency Scan, Static Grep, Sandbox Run",
+    "title": "AGR-002: Build Quarantine Pipeline for Agent-Sourced Code — License Check, Dependency Scan, Static Grep, Sandbox Run",
     "url": "https://github.com/entif-ai/rosetta/issues/271",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/AGR-002-quarantine-pipeline-agent-sourced-code.md",
@@ -1019,7 +1019,7 @@
   "CONS-004-consciousness-process-temporal-model.md": {
     "number": 322,
     "state": "open",
-    "title": "CONS-004: Consciousness as Process \u2014 Temporal Model for Entif",
+    "title": "CONS-004: Consciousness as Process — Temporal Model for Entif",
     "url": "https://github.com/entif-ai/rosetta/issues/322",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/CONS-004-consciousness-process-temporal-model.md",
@@ -1082,7 +1082,7 @@
   "sba-003-rosetta-2-0-protocol-specification.md": {
     "number": 341,
     "state": "open",
-    "title": "SBA-003: Rosetta 2.0 Protocol \u2014 implementation-ready specification for Layer 0\u20133 tiles and genesis key management",
+    "title": "SBA-003: Rosetta 2.0 Protocol — implementation-ready specification for Layer 0–3 tiles and genesis key management",
     "url": "https://github.com/entif-ai/rosetta/issues/341",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-003-rosetta-2-0-protocol-specification.md",
@@ -1172,7 +1172,7 @@
   "memory-adapter-certification-harness": {
     "number": 361,
     "state": "open",
-    "title": "Memory Adapter Certification Harness \u2014 Before Any Adapter Gets Power",
+    "title": "Memory Adapter Certification Harness — Before Any Adapter Gets Power",
     "url": "https://github.com/entif-ai/rosetta/issues/361",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/memory-adapter-certification-harness.md",
@@ -1181,7 +1181,7 @@
   "entif-v0-008-workflow-state-transition-criteria.md": {
     "number": 363,
     "state": "open",
-    "title": "ENTIF-v0-008: Workflow State Transition Criteria (Draft\u2192Certified\u2192Released) Not Defined",
+    "title": "ENTIF-v0-008: Workflow State Transition Criteria (Draft→Certified→Released) Not Defined",
     "url": "https://github.com/entif-ai/rosetta/issues/363",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-008-workflow-state-transition-criteria.md",
@@ -1244,7 +1244,7 @@
   "EEH-003-attunement-diagnostic-bridge.md": {
     "number": 377,
     "state": "open",
-    "title": "EEH-003: Attunement Axis Diagnostic Bridge \u2014 Connect A-axis drops to internal system diagnostics",
+    "title": "EEH-003: Attunement Axis Diagnostic Bridge — Connect A-axis drops to internal system diagnostics",
     "url": "https://github.com/entif-ai/rosetta/issues/377",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EEH-003-attunement-diagnostic-bridge.md",
@@ -1406,7 +1406,7 @@
   "BIP-004-2-social-engagement-ranking-not-normalized.md": {
     "number": 412,
     "state": "open",
-    "title": "BIP-004-2 \u2014 Engagement Ranking Ignores Follower Count Normalization",
+    "title": "BIP-004-2 — Engagement Ranking Ignores Follower Count Normalization",
     "url": "https://github.com/entif-ai/rosetta/issues/412",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-004-2-social-engagement-ranking-not-normalized.md",
@@ -1496,7 +1496,7 @@
   "BIP-006-3-briefing-signal-normalization-unspecified.md": {
     "number": 431,
     "state": "open",
-    "title": "BIP-006-3 \u2014 Signal Normalization Layer Is Underspecified",
+    "title": "BIP-006-3 — Signal Normalization Layer Is Underspecified",
     "url": "https://github.com/entif-ai/rosetta/issues/431",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-006-3-briefing-signal-normalization-unspecified.md",
@@ -1514,7 +1514,7 @@
   "BIP-007-1-crm-nl-intent-classification-unspecified.md": {
     "number": 435,
     "state": "open",
-    "title": "BIP-007-1 \u2014 Intent Classification Mechanism Not Specified",
+    "title": "BIP-007-1 — Intent Classification Mechanism Not Specified",
     "url": "https://github.com/entif-ai/rosetta/issues/435",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-007-1-crm-nl-intent-classification-unspecified.md",
@@ -1550,7 +1550,7 @@
   "APC-002-anthropic-workspace-isolation-no-cache-id": {
     "number": 443,
     "state": "open",
-    "title": "APC-002: Anthropic Prompt Caching \u2014 No Shareable Cache ID Primitive",
+    "title": "APC-002: Anthropic Prompt Caching — No Shareable Cache ID Primitive",
     "url": "https://github.com/entif-ai/rosetta/issues/443",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-002-anthropic-workspace-isolation-no-cache-id.md",
@@ -1559,7 +1559,7 @@
   "APC-003-gemini-vertex-named-cache-resources-iam.md": {
     "number": 445,
     "state": "open",
-    "title": "APC-003: Google Gemini/Vertex AI \u2014 Named Cache Resources with IAM",
+    "title": "APC-003: Google Gemini/Vertex AI — Named Cache Resources with IAM",
     "url": "https://github.com/entif-ai/rosetta/issues/445",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-003-gemini-vertex-named-cache-resources-iam.md",
@@ -1577,7 +1577,7 @@
   "APC-005-compound-semantic-cache-key.md": {
     "number": 449,
     "state": "open",
-    "title": "APC-005: Semantic Equivalence Cache Keys Require Compound Structure (Intent \u00d7 Rights Domain \u00d7 Classification \u00d7 Version)",
+    "title": "APC-005: Semantic Equivalence Cache Keys Require Compound Structure (Intent × Rights Domain × Classification × Version)",
     "url": "https://github.com/entif-ai/rosetta/issues/449",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-005-compound-semantic-cache-key.md",
@@ -1586,7 +1586,7 @@
   "APC-006-privacy-budget-transliteration-leakage.md": {
     "number": 451,
     "state": "open",
-    "title": "APC-006: Transliteration Can Leak by Joins \u2014 Privacy Budget Discipline Required",
+    "title": "APC-006: Transliteration Can Leak by Joins — Privacy Budget Discipline Required",
     "url": "https://github.com/entif-ai/rosetta/issues/451",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-006-privacy-budget-transliteration-leakage.md",
@@ -1595,7 +1595,7 @@
   "APC-007-cache-poisoning-stale-answers.md": {
     "number": 453,
     "state": "open",
-    "title": "APC-007: Cache Poisoning \u2014 Stale Certainty Is More Dangerous Than No Answer",
+    "title": "APC-007: Cache Poisoning — Stale Certainty Is More Dangerous Than No Answer",
     "url": "https://github.com/entif-ai/rosetta/issues/453",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-007-cache-poisoning-stale-answers.md",
@@ -1622,7 +1622,7 @@
   "APC-010-100m-arr-month-six-challenged.md": {
     "number": 459,
     "state": "open",
-    "title": "APC-010: $100M ARR by Month Six Is Champagne Hallucination \u2014 Category Winability Affirmed",
+    "title": "APC-010: $100M ARR by Month Six Is Champagne Hallucination — Category Winability Affirmed",
     "url": "https://github.com/entif-ai/rosetta/issues/459",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-010-100m-arr-month-six-challenged.md",
@@ -1640,7 +1640,7 @@
   "cts-007-swarm-gnosis-dht-cognitive-tile-network.md": {
     "number": 84,
     "state": "open",
-    "title": "CT-001: Rosetta network layer gap \u2014 Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
+    "title": "CT-001: Rosetta network layer gap — Swarm Gnosis P2P vs current SQLite/Bootstrap architecture",
     "url": "https://github.com/entif-ai/rosetta/issues/84",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-007-swarm-gnosis-dht-cognitive-tile-network.md",
@@ -1649,7 +1649,7 @@
   "APC-011-sell-before-build-gtm-validated.md": {
     "number": 464,
     "state": "open",
-    "title": "APC-011: Sell-Before-Build GTM \u2014 Parallelize Market + Build, Lead with Design Partner Offer",
+    "title": "APC-011: Sell-Before-Build GTM — Parallelize Market + Build, Lead with Design Partner Offer",
     "url": "https://github.com/entif-ai/rosetta/issues/464",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/APC-011-sell-before-build-gtm-validated.md",
@@ -1667,7 +1667,7 @@
   "BIP-010-1-task-crm-crossref-unspecified.md": {
     "number": 468,
     "state": "open",
-    "title": "BIP-010-1 \u2014 CRM Cross-Reference Lookup Strategy Not Specified",
+    "title": "BIP-010-1 — CRM Cross-Reference Lookup Strategy Not Specified",
     "url": "https://github.com/entif-ai/rosetta/issues/468",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/BIP-010-1-task-crm-crossref-unspecified.md",
@@ -1712,7 +1712,7 @@
   "EML-004-content-risk-middleware-generalizes.md": {
     "number": 471,
     "state": "open",
-    "title": "EML-004: Content-Risk Middleware Generalizes Beyond Email \u2014 Skill-Pack Modularization Needed",
+    "title": "EML-004: Content-Risk Middleware Generalizes Beyond Email — Skill-Pack Modularization Needed",
     "url": "https://github.com/entif-ai/rosetta/issues/471",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-004-content-risk-middleware-generalizes.md",
@@ -1721,7 +1721,7 @@
   "cts-011-mcpforge-routing-extension.md": {
     "number": 476,
     "state": "open",
-    "title": "CTS-011: MCPForge Routing Table Extension \u2014 compression_ratio + required_precision",
+    "title": "CTS-011: MCPForge Routing Table Extension — compression_ratio + required_precision",
     "url": "https://github.com/entif-ai/rosetta/issues/476",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-011-mcpforge-routing-extension.md",
@@ -1829,7 +1829,7 @@
   "EML-013-semantic-efficiency-sapir-whorf.md": {
     "number": 498,
     "state": "open",
-    "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency \u2014 The Sapir-Whorf Argument",
+    "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency — The Sapir-Whorf Argument",
     "url": "https://github.com/entif-ai/rosetta/issues/498",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/EML-013-semantic-efficiency-sapir-whorf.md",
@@ -1919,7 +1919,7 @@
   "HEA-001-event-driven-consciousness": {
     "number": 517,
     "state": "open",
-    "title": "HEA-001: Event-Driven Consciousness \u2014 Retire Nightly Consolidation Model",
+    "title": "HEA-001: Event-Driven Consciousness — Retire Nightly Consolidation Model",
     "url": "https://github.com/entif-ai/rosetta/issues/517",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-001-event-driven-consciousness.md",
@@ -1928,7 +1928,7 @@
   "HEA-002-draft-prune-rosetta-equivalence.md": {
     "number": 519,
     "state": "open",
-    "title": "HEA-002: Draft-and-Prune Equivalence Gap \u2014 Rosetta as Canonical Aggregation Substrate",
+    "title": "HEA-002: Draft-and-Prune Equivalence Gap — Rosetta as Canonical Aggregation Substrate",
     "url": "https://github.com/entif-ai/rosetta/issues/519",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-002-draft-prune-rosetta-equivalence.md",
@@ -1937,7 +1937,7 @@
   "HEA-003-engram-rosetta-semantic-keys.md": {
     "number": 521,
     "state": "open",
-    "title": "HEA-003: ENGRAM + Rosetta \u2014 Semantic Slugs as Conditional Memory Lookup Keys",
+    "title": "HEA-003: ENGRAM + Rosetta — Semantic Slugs as Conditional Memory Lookup Keys",
     "url": "https://github.com/entif-ai/rosetta/issues/521",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-003-engram-rosetta-semantic-keys.md",
@@ -1946,7 +1946,7 @@
   "HEA-004-mr-tech-lead-acrostic-publication.md": {
     "number": 524,
     "state": "open",
-    "title": "MR. TECH LEAD \u2014 Publish Hybrid Architecture with Acrostic arXiv Identity",
+    "title": "MR. TECH LEAD — Publish Hybrid Architecture with Acrostic arXiv Identity",
     "url": "https://github.com/entif-ai/rosetta/issues/524",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HEA-004-mr-tech-lead-acrostic-publication.md",
@@ -2009,7 +2009,7 @@
   "HF-006-synthesis-engine.md": {
     "number": 538,
     "state": "open",
-    "title": "HF-006: Implement synthesis engine \u2014 Entif/Rosetta mapping, backlog generator, cross-linker",
+    "title": "HF-006: Implement synthesis engine — Entif/Rosetta mapping, backlog generator, cross-linker",
     "url": "https://github.com/entif-ai/rosetta/issues/538",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-006-synthesis-engine.md",
@@ -2045,7 +2045,7 @@
   "HF-010-newsletter-google-alerts-intake-adapters.md": {
     "number": 532,
     "state": "open",
-    "title": "HF-010: Newsletter and Google Alerts Intake Adapters \u2014 enriched by HF-003 #532 comment",
+    "title": "HF-010: Newsletter and Google Alerts Intake Adapters — enriched by HF-003 #532 comment",
     "url": "https://github.com/entif-ai/rosetta/issues/532",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/HF-010-newsletter-google-alerts-intake-adapters.md",
@@ -2099,7 +2099,7 @@
   "MCST-001-data-retention-ambiguity-risk.md": {
     "number": 558,
     "state": "open",
-    "title": "MCST-001: MaxClaw Data Retention Risk \u2014 Zero-Retention Boundary Needed",
+    "title": "MCST-001: MaxClaw Data Retention Risk — Zero-Retention Boundary Needed",
     "url": "https://github.com/entif-ai/rosetta/issues/558",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/MCST-001-data-retention-ambiguity-risk.md",
@@ -2243,7 +2243,7 @@
   "REE-001-reasoning-efficiency-language-independence.md": {
     "number": 498,
     "state": "open",
-    "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency \u2014 The Sapir-Whorf Argument",
+    "title": "EML-013: Semantic Efficiency as Distinct from Parameter Efficiency — The Sapir-Whorf Argument",
     "url": "https://github.com/entif-ai/rosetta/issues/498",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-001-reasoning-efficiency-language-independence.md",
@@ -2297,7 +2297,7 @@
   "REE-006-jigsaw-vs-monkeys-training-critique.md": {
     "number": 600,
     "state": "open",
-    "title": "REE-006: Critique of Brute-Force LLM Training \u2014 Jigsaw vs Monkeys",
+    "title": "REE-006: Critique of Brute-Force LLM Training — Jigsaw vs Monkeys",
     "url": "https://github.com/entif-ai/rosetta/issues/600",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-006-jigsaw-vs-monkeys-training-critique.md",
@@ -2315,7 +2315,7 @@
   "REE-008-semantic-exoskeleton-concept.md": {
     "number": 604,
     "state": "open",
-    "title": "REE-008: Semantic Exoskeleton \u2014 Host Model Independence Principle",
+    "title": "REE-008: Semantic Exoskeleton — Host Model Independence Principle",
     "url": "https://github.com/entif-ai/rosetta/issues/604",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-008-semantic-exoskeleton-concept.md",
@@ -2333,7 +2333,7 @@
   "REE-010-qkv-layer-head-specificity.md": {
     "number": 608,
     "state": "open",
-    "title": "REE-010: Q/K/V Layer-Head Specificity \u2014 Architectural Clarification",
+    "title": "REE-010: Q/K/V Layer-Head Specificity — Architectural Clarification",
     "url": "https://github.com/entif-ai/rosetta/issues/608",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/REE-010-qkv-layer-head-specificity.md",
@@ -2369,7 +2369,7 @@
   "RLM-001-CONTEXT-ROT-context-rot-address.md": {
     "number": 612,
     "state": "open",
-    "title": "Address context rot in agentic sessions \u2014 evaluate RLM approach for memory/orchestration layer",
+    "title": "Address context rot in agentic sessions — evaluate RLM approach for memory/orchestration layer",
     "url": "https://github.com/entif-ai/rosetta/issues/612",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/RLM-001-CONTEXT-ROT-context-rot-address.md",
@@ -2450,7 +2450,7 @@
   "SCRU-002-rock-3005-iam-stdpack.md": {
     "number": 630,
     "state": "open",
-    "title": "SCRU-002: Define ROCK-3005-IAM StdPack \u2014 iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+    "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
     "url": "https://github.com/entif-ai/rosetta/issues/630",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCRU-002-rock-3005-iam-stdpack.md",
@@ -2459,7 +2459,7 @@
   "SCT-001-social-cognition-benchmark-clinical-psychology.md": {
     "number": 632,
     "state": "open",
-    "title": "SCT-001: Social Cognition Benchmark \u2014 Clinical Psychology as Stress-Test Framework",
+    "title": "SCT-001: Social Cognition Benchmark — Clinical Psychology as Stress-Test Framework",
     "url": "https://github.com/entif-ai/rosetta/issues/632",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-001-social-cognition-benchmark-clinical-psychology.md",
@@ -2495,7 +2495,7 @@
   "SCT-003-violent-language-idiom-detection.md": {
     "number": 637,
     "state": "open",
-    "title": "SCT-003: Violent Language Idiom Detection \u2014 Threshold Marker vs Literal Violence",
+    "title": "SCT-003: Violent Language Idiom Detection — Threshold Marker vs Literal Violence",
     "url": "https://github.com/entif-ai/rosetta/issues/637",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-003-violent-language-idiom-detection.md",
@@ -2522,7 +2522,7 @@
   "SCT-006-interpreter-failure-detection.md": {
     "number": 643,
     "state": "open",
-    "title": "SCT-006: Interpreter-Failure Detection \u2014 Frame Persistence and Ontology Violation Tracking",
+    "title": "SCT-006: Interpreter-Failure Detection — Frame Persistence and Ontology Violation Tracking",
     "url": "https://github.com/entif-ai/rosetta/issues/643",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SCT-006-interpreter-failure-detection.md",
@@ -2540,7 +2540,7 @@
   "SLD-003-skill-broker-middleware.md": {
     "number": 461,
     "state": "open",
-    "title": "SLD-003: Skill Broker Middleware \u2014 Multi-Stage Retrieval Pipeline (complement to #461)",
+    "title": "SLD-003: Skill Broker Middleware — Multi-Stage Retrieval Pipeline (complement to #461)",
     "url": "https://github.com/entif-ai/rosetta/issues/461",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-003-skill-broker-middleware.md",
@@ -2549,7 +2549,7 @@
   "SLD-005-hot-cold-skill-library.md": {
     "number": 648,
     "state": "open",
-    "title": "SLD-005: Hot Skills Pack vs Cold Library \u2014 Two-Level Skill Registry",
+    "title": "SLD-005: Hot Skills Pack vs Cold Library — Two-Level Skill Registry",
     "url": "https://github.com/entif-ai/rosetta/issues/648",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-005-hot-cold-skill-library.md",
@@ -2576,7 +2576,7 @@
   "SLD-008-skill-safety-posture.md": {
     "number": 653,
     "state": "open",
-    "title": "SLD-008: Skill Safety Posture \u2014 Guard Enforcement of Risk Class and Tool Scopes",
+    "title": "SLD-008: Skill Safety Posture — Guard Enforcement of Risk Class and Tool Scopes",
     "url": "https://github.com/entif-ai/rosetta/issues/653",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/SLD-008-skill-safety-posture.md",
@@ -2666,7 +2666,7 @@
   "TB-009-openai-function-call-codec.md": {
     "number": 674,
     "state": "open",
-    "title": "OpenAI function-call codec: bundle\u2192function-call JSON adapter and reverse",
+    "title": "OpenAI function-call codec: bundle→function-call JSON adapter and reverse",
     "url": "https://github.com/entif-ai/rosetta/issues/674",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TB-009-openai-function-call-codec.md",
@@ -2711,7 +2711,7 @@
   "TXS-006-otel-cloudevents-stdpacks.md": {
     "number": 683,
     "state": "open",
-    "title": "TXS-006: Telemetry StdPack \u2014 OpenTelemetry + CloudEvents Mapping",
+    "title": "TXS-006: Telemetry StdPack — OpenTelemetry + CloudEvents Mapping",
     "url": "https://github.com/entif-ai/rosetta/issues/683",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-006-otel-cloudevents-stdpacks.md",
@@ -2720,7 +2720,7 @@
   "TXS-007-vocabpacks-wordnet-babelnet.md": {
     "number": 685,
     "state": "open",
-    "title": "TXS-007: VocabPack Format \u2014 WordNet + BabelNet + Ontolex Integration Spec",
+    "title": "TXS-007: VocabPack Format — WordNet + BabelNet + Ontolex Integration Spec",
     "url": "https://github.com/entif-ai/rosetta/issues/685",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/TXS-007-vocabpacks-wordnet-babelnet.md",
@@ -2792,7 +2792,7 @@
   "YAAC-007-rock-3005-iam-profile.md": {
     "number": 630,
     "state": "open",
-    "title": "SCRU-002: Define ROCK-3005-IAM StdPack \u2014 iam.principal, iam.delegation, iam.cache_domain, iam.decision",
+    "title": "SCRU-002: Define ROCK-3005-IAM StdPack — iam.principal, iam.delegation, iam.cache_domain, iam.decision",
     "url": "https://github.com/entif-ai/rosetta/issues/630",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/YAAC-007-rock-3005-iam-profile.md",
@@ -2819,7 +2819,7 @@
   "am-005-guard-decision-api.md": {
     "number": 630,
     "state": "open",
-    "title": "AM-005: Guard Decision API \u2014 enriches SCRU-002 (existing #630)",
+    "title": "AM-005: Guard Decision API — enriches SCRU-002 (existing #630)",
     "url": "https://github.com/entif-ai/rosetta/issues/630",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-005-guard-decision-api.md",
@@ -2828,7 +2828,7 @@
   "am-006-data-control-plane-spoofing.md": {
     "number": 706,
     "state": "open",
-    "title": "AM-006: Data/Control Plane Type Enforcement \u2014 Anti-Spoofing",
+    "title": "AM-006: Data/Control Plane Type Enforcement — Anti-Spoofing",
     "url": "https://github.com/entif-ai/rosetta/issues/706",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-006-data-control-plane-spoofing.md",
@@ -2837,7 +2837,7 @@
   "am-007-message-size-limit-dos.md": {
     "number": 701,
     "state": "open",
-    "title": "AM-007: Message Size Limit \u2014 DoS Prevention at Ingress",
+    "title": "AM-007: Message Size Limit — DoS Prevention at Ingress",
     "url": "https://github.com/entif-ai/rosetta/issues/701",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-007-message-size-limit-dos.md",
@@ -2846,7 +2846,7 @@
   "am-008-data-plane-prompt-injection-mitigation.md": {
     "number": 709,
     "state": "open",
-    "title": "AM-008: Data Plane Prompt Injection \u2014 Missing In-Spec Mitigation",
+    "title": "AM-008: Data Plane Prompt Injection — Missing In-Spec Mitigation",
     "url": "https://github.com/entif-ai/rosetta/issues/709",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-008-data-plane-prompt-injection-mitigation.md",
@@ -2855,7 +2855,7 @@
   "am-009-domain-ref-schema.md": {
     "number": 711,
     "state": "open",
-    "title": "AM-009: Domain Ref Schema \u2014 tenant_id, Classification, ABAC, and vendor_route Format",
+    "title": "AM-009: Domain Ref Schema — tenant_id, Classification, ABAC, and vendor_route Format",
     "url": "https://github.com/gentif-ai/rosetta/issues/711",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-009-domain-ref-schema.md",
@@ -2864,7 +2864,7 @@
   "am-010-rosetta-integration-alignment.md": {
     "number": 714,
     "state": "open",
-    "title": "AM-010: Rosetta Architecture Alignment \u2014 Agentic Messaging Spec vs Current Rosetta",
+    "title": "AM-010: Rosetta Architecture Alignment — Agentic Messaging Spec vs Current Rosetta",
     "url": "https://github.com/entif-ai/rosetta/issues/714",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-010-rosetta-integration-alignment.md",
@@ -2873,7 +2873,7 @@
   "am-011-mailroom-scope-boundary.md": {
     "number": 716,
     "state": "open",
-    "title": "AM-011: Mailroom Scope \u2014 Bus Ingress vs General Rosetta Ingress Pattern",
+    "title": "AM-011: Mailroom Scope — Bus Ingress vs General Rosetta Ingress Pattern",
     "url": "https://github.com/entif-ai/rosetta/issues/716",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/am-011-mailroom-scope-boundary.md",
@@ -2999,7 +2999,7 @@
   "cts-002-optical-codec-deepseek-ocr-vq-vae.md": {
     "number": 739,
     "state": "open",
-    "title": "CTS-002: Optical Codec \u2014 DeepSeek-OCR Integration + VQ-VAE Quantization",
+    "title": "CTS-002: Optical Codec — DeepSeek-OCR Integration + VQ-VAE Quantization",
     "url": "https://github.com/entif-ai/rosetta/issues/739",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-002-optical-codec-deepseek-ocr-vq-vae.md",
@@ -3008,7 +3008,7 @@
   "cts-003-symbolic-codec-gnn-decisionreceipts": {
     "number": 741,
     "state": "open",
-    "title": "CTS-003: Symbolic Codec \u2014 GNN Encoder/Decoder for DecisionReceipt Slugs",
+    "title": "CTS-003: Symbolic Codec — GNN Encoder/Decoder for DecisionReceipt Slugs",
     "url": "https://github.com/entif-ai/rosetta/issues/741",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-003-symbolic-codec-gnn-decisionreceipts.md",
@@ -3017,7 +3017,7 @@
   "cts-004-memory-lifecycle-workflow-forgetting-tiers": {
     "number": 743,
     "state": "open",
-    "title": "CTS-004: Implement memory.lifecycle.workflow \u2014 4-Tier Bio-Inspired Forgetting System",
+    "title": "CTS-004: Implement memory.lifecycle.workflow — 4-Tier Bio-Inspired Forgetting System",
     "url": "https://github.com/entif-ai/rosetta/issues/743",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-004-memory-lifecycle-workflow-forgetting-tiers.md",
@@ -3035,7 +3035,7 @@
   "cts-006-egc-ithkuil-graphemic-core.md": {
     "number": 747,
     "state": "open",
-    "title": "CTS-006: EGC Spec \u2014 Ithkuil-Inspired Graphemic Core with Guidebook Cipher",
+    "title": "CTS-006: EGC Spec — Ithkuil-Inspired Graphemic Core with Guidebook Cipher",
     "url": "https://github.com/entif-ai/rosetta/issues/747",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-006-egc-ithkuil-graphemic-core.md",
@@ -3053,7 +3053,7 @@
   "cts-010-graphrag-slug-output.md": {
     "number": 751,
     "state": "open",
-    "title": "CTS-010: GraphRAG Slug-Output Upgrade \u2014 Return Ranked SlugURI Lists",
+    "title": "CTS-010: GraphRAG Slug-Output Upgrade — Return Ranked SlugURI Lists",
     "url": "https://github.com/entif-ai/rosetta/issues/751",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-010-graphrag-slug-output.md",
@@ -3071,7 +3071,7 @@
   "cts-013-egc-combinatorics-risk.md": {
     "number": 747,
     "state": "open",
-    "title": "CTS-013: EGC Combinatorics/Esoteric Risk \u2014 Address Space Explosion Prevention (complements #747)",
+    "title": "CTS-013: EGC Combinatorics/Esoteric Risk — Address Space Explosion Prevention (complements #747)",
     "url": "https://github.com/entif-ai/rosetta/issues/747",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-013-egc-combinatorics-risk.md",
@@ -3080,7 +3080,7 @@
   "cts-014-bio-inspired-forgetting-benchmarks.md": {
     "number": 743,
     "state": "open",
-    "title": "CTS-014: Bio-Inspired Forgetting \u2014 Benchmarks (enriches #743)",
+    "title": "CTS-014: Bio-Inspired Forgetting — Benchmarks (enriches #743)",
     "url": "https://github.com/entif-ai/rosetta/issues/743",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-014-bio-inspired-forgetting-benchmarks.md",
@@ -3089,7 +3089,7 @@
   "cts-015-gnn-decoder-fidelity-benchmark": {
     "number": 757,
     "state": "open",
-    "title": "CTS-015: GNN Decoder Fidelity \u2014 Transformer vs GAT vs GIN Benchmark",
+    "title": "CTS-015: GNN Decoder Fidelity — Transformer vs GAT vs GIN Benchmark",
     "url": "https://github.com/entif-ai/rosetta/issues/757",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/cts-015-gnn-decoder-fidelity-benchmark.md",
@@ -3215,7 +3215,7 @@
   "elixir-nightly-coach-loop.md": {
     "number": 171,
     "state": "open",
-    "title": "[ELIX-001] ELIXIR Nightly Coach Loop \u2014 failure taxonomy, RCA, policy weight updates, coach reports (enriches MOL-001)",
+    "title": "[ELIX-001] ELIXIR Nightly Coach Loop — failure taxonomy, RCA, policy weight updates, coach reports (enriches MOL-001)",
     "url": "https://github.com/entif-ai/rosetta/issues/171",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/elixir-nightly-coach-loop.md",
@@ -3242,7 +3242,7 @@
   "2026-04-26-prd-003-durable-canonical-cache": {
     "number": 793,
     "state": "open",
-    "title": "PRD-003: Durable Canonical Cache \u2014 Postgres JSONB + pgvector Migration",
+    "title": "PRD-003: Durable Canonical Cache — Postgres JSONB + pgvector Migration",
     "url": "https://github.com/entif-ai/rosetta/issues/793",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-003-durable-canonical-cache.md",
@@ -3251,7 +3251,7 @@
   "2026-04-26-prd-004-docs-intelligence-productization.md": {
     "number": 795,
     "state": "open",
-    "title": "PRD-004: Docs Intelligence Productization \u2014 Extraction Artifacts and Issue Promotion Pipeline",
+    "title": "PRD-004: Docs Intelligence Productization — Extraction Artifacts and Issue Promotion Pipeline",
     "url": "https://github.com/entif-ai/rosetta/issues/795",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-004-docs-intelligence-productization.md",
@@ -3260,7 +3260,7 @@
   "2026-04-26-prd-005-live-source-adapter": {
     "number": 799,
     "state": "open",
-    "title": "PRD-005: Live-Source Adapter \u2014 GitHub + Google Drive Behind Refinery Boundary",
+    "title": "PRD-005: Live-Source Adapter — GitHub + Google Drive Behind Refinery Boundary",
     "url": "https://github.com/entif-ai/rosetta/issues/799",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-005-live-source-adapter.md",
@@ -3269,7 +3269,7 @@
   "2026-04-26-prd-006-receipt-semantics-hardening.md": {
     "number": 801,
     "state": "open",
-    "title": "PRD-006: Receipt Semantics Hardening \u2014 Evidence Typing, Policy Linkage, Key Lifecycle",
+    "title": "PRD-006: Receipt Semantics Hardening — Evidence Typing, Policy Linkage, Key Lifecycle",
     "url": "https://github.com/entif-ai/rosetta/issues/801",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-006-receipt-semantics-hardening.md",
@@ -3278,7 +3278,7 @@
   "2026-04-26-prd-007-trust-scoring-staged-implementation": {
     "number": 803,
     "state": "open",
-    "title": "PRD-007: Trust Scoring \u2014 Staged Implementation (Schema Now, Evidence Future)",
+    "title": "PRD-007: Trust Scoring — Staged Implementation (Schema Now, Evidence Future)",
     "url": "https://github.com/entif-ai/rosetta/issues/803",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-007-trust-scoring-staged-implementation.md",
@@ -3287,7 +3287,7 @@
   "2026-04-26-prd-008-rights-guard-hardening.md": {
     "number": 805,
     "state": "open",
-    "title": "PRD-008: Rights/Guard Hardening \u2014 Actor-Aware Policy, Capability Tokens, Replay Refusal",
+    "title": "PRD-008: Rights/Guard Hardening — Actor-Aware Policy, Capability Tokens, Replay Refusal",
     "url": "https://github.com/entif-ai/rosetta/issues/805",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-008-rights-guard-hardening.md",
@@ -3296,7 +3296,7 @@
   "2026-04-26-prd-009-three-memory-planes-implementation.md": {
     "number": 807,
     "state": "open",
-    "title": "PRD-009: Three Memory Planes \u2014 Truth / Temporal / Activation Separation and Implementation",
+    "title": "PRD-009: Three Memory Planes — Truth / Temporal / Activation Separation and Implementation",
     "url": "https://github.com/entif-ai/rosetta/issues/807",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-009-three-memory-planes-implementation.md",
@@ -3305,7 +3305,7 @@
   "2026-04-26-prd-010-source-registry-refresh-lane.md": {
     "number": 809,
     "state": "open",
-    "title": "PRD-010: Source Registry Refresh Lane \u2014 DataCite, Crossref, ORCID, ROR Live Fetch",
+    "title": "PRD-010: Source Registry Refresh Lane — DataCite, Crossref, ORCID, ROR Live Fetch",
     "url": "https://github.com/entif-ai/rosetta/issues/809",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/2026-04-26-prd-010-source-registry-refresh-lane.md",
@@ -3368,7 +3368,7 @@
   "entif-v0-001-voi-threshold-calibration.md": {
     "number": 821,
     "state": "open",
-    "title": "ENTIF-v0-001: VOI threshold is never specified \u2014 escalation gate is uncalibrated",
+    "title": "ENTIF-v0-001: VOI threshold is never specified — escalation gate is uncalibrated",
     "url": "https://github.com/entif-ai/rosetta/issues/821",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-001-voi-threshold-calibration.md",
@@ -3377,7 +3377,7 @@
   "entif-v0-003-constitutional-pack-signing.md": {
     "number": 823,
     "state": "open",
-    "title": "ENTIF-v0-003: Constitutional Pack Signing \u2014 Algorithm, Key Rotation, and Provisioning Unspecified",
+    "title": "ENTIF-v0-003: Constitutional Pack Signing — Algorithm, Key Rotation, and Provisioning Unspecified",
     "url": "https://github.com/entif-ai/rosetta/issues/823",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-003-constitutional-pack-signing.md",
@@ -3386,7 +3386,7 @@
   "entif-v0-004-persona-identity-embedding-cid.md": {
     "number": 825,
     "state": "open",
-    "title": "ENTIF-v0-004: identity_embedding_cid computation unspecified \u2014 drift measurement unimplementable",
+    "title": "ENTIF-v0-004: identity_embedding_cid computation unspecified — drift measurement unimplementable",
     "url": "https://github.com/entif-ai/rosetta/issues/825",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-004-persona-identity-embedding-cid.md",
@@ -3431,7 +3431,7 @@
   "entif-v0-010-model-routing-matrix-stale.md": {
     "number": 836,
     "state": "open",
-    "title": "ENTIF-v0-010: Model Routing Matrix Is Static \u2014 No Update Process as Model Landscape Evolves",
+    "title": "ENTIF-v0-010: Model Routing Matrix Is Static — No Update Process as Model Landscape Evolves",
     "url": "https://github.com/entif-ai/rosetta/issues/836",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-010-model-routing-matrix-stale.md",
@@ -3449,7 +3449,7 @@
   "entify-v0-011-rosetta-tile-minting-api.md": {
     "number": 840,
     "state": "open",
-    "title": "ENTIF-v0-011: Rosetta Tile Minting API Contract Not Defined \u2014 Spine Integration Gap",
+    "title": "ENTIF-v0-011: Rosetta Tile Minting API Contract Not Defined — Spine Integration Gap",
     "url": "https://github.com/entif-ai/rosetta/issues/840",
     "activeDraftPath": "docs/intake/issue-drafts/entify-v0-011-rosetta-tile-minting-api.md",
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-011-rosetta-tile-minting-api.md",
@@ -3476,7 +3476,7 @@
   "entify-v0-014-constitution-scope-delta-matrix.md": {
     "number": 848,
     "state": "open",
-    "title": "ENTIF-v0-014: Constitutions Scope Difference Matrix \u2014 Single-Tenant vs Multi-Tenant Incomplete",
+    "title": "ENTIF-v0-014: Constitutions Scope Difference Matrix — Single-Tenant vs Multi-Tenant Incomplete",
     "url": "https://github.com/entify-ai/rosetta/issues/848",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-014-constitution-scope-delta-matrix.md",
@@ -3485,7 +3485,7 @@
   "entify-v0-015-model-routing-thresholds.md": {
     "number": 851,
     "state": "open",
-    "title": "ENTIF-v0-015: Model Routing Decision Flow \u2014 Threshold Values Not Provided",
+    "title": "ENTIF-v0-015: Model Routing Decision Flow — Threshold Values Not Provided",
     "url": "https://github.com/entif-ai/rosetta/issues/851",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-015-model-routing-thresholds.md",
@@ -3494,7 +3494,7 @@
   "entify-v0-016-domain-intelligence-plane-no-algorithms.md": {
     "number": 267,
     "state": "open",
-    "title": "ENTIF-v0-016: Domain Intelligence Plane \u2014 Zero Analysis Algorithms Named or Specified",
+    "title": "ENTIF-v0-016: Domain Intelligence Plane — Zero Analysis Algorithms Named or Specified",
     "url": "https://github.com/enti-ai/rosetta/issues/267",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-016-domain-intelligence-plane-no-algorithms.md",
@@ -3512,7 +3512,7 @@
   "genesis-anchor-constitution.md": {
     "number": 856,
     "state": "open",
-    "title": "Genesis Anchor Constitution \u2014 zero initialization, versioning, or drift-detection algorithm",
+    "title": "Genesis Anchor Constitution — zero initialization, versioning, or drift-detection algorithm",
     "url": "https://github.com/enti-ai/rosetta/issues/856",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/genesis-anchor-constitution.md",
@@ -3521,7 +3521,7 @@
   "entify-v0-018-signal-event-idempotency.md": {
     "number": 861,
     "state": "open",
-    "title": "ENTIF-v0-018: Signal Event Idempotency \u2014 No Dedup Window, Polling Interval, or Idempotency Key Defined",
+    "title": "ENTIF-v0-018: Signal Event Idempotency — No Dedup Window, Polling Interval, or Idempotency Key Defined",
     "url": "https://github.com/enti-ai/rosetta/issues/861",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entify-v0-018-signal-event-idempotency.md",
@@ -3539,7 +3539,7 @@
   "glyph-schema-design.md": {
     "number": 154,
     "state": "open",
-    "title": "E2E-005: Deprecate Ithkuil Semantics \u2014 Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas",
+    "title": "E2E-005: Deprecate Ithkuil Semantics — Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas",
     "url": "https://github.com/enti-ai/rosetta/issues/154",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/glyph-schema-design.md",
@@ -3548,7 +3548,7 @@
   "entify-v0-019-transferability-scorer-plane-unspecified.md": {
     "number": 867,
     "state": "open",
-    "title": "ENTIF-v0-019: Transferability Scorer Plane \u2014 No API, Input Schema, or Output Schema Defined",
+    "title": "ENTIF-v0-019: Transferability Scorer Plane — No API, Input Schema, or Output Schema Defined",
     "url": "https://github.com/enti-ai/rosetta/issues/867",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/entif-v0-019-transferability-scorer-plane-unspecified.md",
@@ -3575,7 +3575,7 @@
   "langgraph-workflow-not-constitutional.md": {
     "number": 873,
     "state": "open",
-    "title": "LangGraph as Workflow Orchestration Layer Only \u2014 NOT Constitutional Layer",
+    "title": "LangGraph as Workflow Orchestration Layer Only — NOT Constitutional Layer",
     "url": "https://github.com/entif-ai/rosetta/issues/873",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/langgraph-workflow-not-constitutional.md",
@@ -3593,7 +3593,7 @@
   "mac-studio-control-two-tier-guard.md": {
     "number": 877,
     "state": "open",
-    "title": "Mac Studio M3 Ultra Control \u2014 Two-Tier Guard (Browser + Desktop)",
+    "title": "Mac Studio M3 Ultra Control — Two-Tier Guard (Browser + Desktop)",
     "url": "https://github.com/entif-ai/rosetta/issues/877",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/mac-studio-control-two-tier-guard.md",
@@ -3710,7 +3710,7 @@
   "omoc-lean-vs-learned-routing-paradigm.md": {
     "number": 81,
     "state": "open",
-    "title": "OMOC Lean vs Learned \u2014 Routing Paradigm (\u00a78.4 evidence)",
+    "title": "OMOC Lean vs Learned — Routing Paradigm (§8.4 evidence)",
     "url": "https://github.com/entif-ai/rosetta/issues/81",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned-routing-paradigm.md",
@@ -3728,7 +3728,7 @@
   "omoc-lean-vs-learned.md": {
     "number": 81,
     "state": "open",
-    "title": "OMOC Lean vs Learned \u2014 Routing Mechanism Unresolved Before Tack 3",
+    "title": "OMOC Lean vs Learned — Routing Mechanism Unresolved Before Tack 3",
     "url": "https://github.com/entif-ai/rosetta/issues/81",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/omoc-lean-vs-learned.md",
@@ -3773,7 +3773,7 @@
   "petri-sandbox-testing-framework.md": {
     "number": 911,
     "state": "open",
-    "title": "PETRI-001: Petri Sandbox Testing Framework \u2014 Architecture and Promotion Gates Unspecified",
+    "title": "PETRI-001: Petri Sandbox Testing Framework — Architecture and Promotion Gates Unspecified",
     "url": "https://github.com/entif-ai/rosetta/issues/911",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/petri-sandbox-testing-framework.md",
@@ -3809,7 +3809,7 @@
   "real-acquisition-adapters-behind-refinery-boundary.md": {
     "number": 799,
     "state": "open",
-    "title": "PRD-005: Live-Source Adapter \u2014 GitHub + Google Drive Behind Refinery Boundary",
+    "title": "PRD-005: Live-Source Adapter — GitHub + Google Drive Behind Refinery Boundary",
     "url": "https://github.com/entif-ai/rosetta/issues/799",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -3917,7 +3917,7 @@
   "sac-001-audio-source-identity-prosodic-vs-biometric.md": {
     "number": 425,
     "state": "open",
-    "title": "SAC-001: Audio Source Identity \u2014 Prosodic Signature vs Biometric Fingerprinting",
+    "title": "SAC-001: Audio Source Identity — Prosodic Signature vs Biometric Fingerprinting",
     "url": "https://github.com/entif-ai/rosetta/issues/425",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-001-audio-source-identity-prosodic-vs-biometric.md",
@@ -3926,7 +3926,7 @@
   "sac-002-emotional-geometry-schema.md": {
     "number": 425,
     "state": "open",
-    "title": "SAC-002: Emotional Geometry Schema \u2014 Formal Definition and Graph Integration (enriches #425)",
+    "title": "SAC-002: Emotional Geometry Schema — Formal Definition and Graph Integration (enriches #425)",
     "url": "https://github.com/entif-ai/rosetta/issues/425",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-002-emotional-geometry-schema.md",
@@ -3935,7 +3935,7 @@
   "sac-003-stem-isolation-source-separation.md": {
     "number": 938,
     "state": "open",
-    "title": "SAC-003: Stem Isolation Preprocessing \u2014 Neural Source Separation Evaluation",
+    "title": "SAC-003: Stem Isolation Preprocessing — Neural Source Separation Evaluation",
     "url": "https://github.com/entif-ai/rosetta/issues/938",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sac-003-stem-isolation-source-separation.md",
@@ -3971,7 +3971,7 @@
   "sba-004-guard-majordomo-dual-control.md": {
     "number": 946,
     "state": "open",
-    "title": "SBA-004: Guard vs Majordomo Dual-Control \u2014 Capability Envelope Schema and Veto Protocol",
+    "title": "SBA-004: Guard vs Majordomo Dual-Control — Capability Envelope Schema and Veto Protocol",
     "url": "https://github.com/entif-ai/rosetta/issues/946",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-004-guard-majordomo-dual-control.md",
@@ -3980,7 +3980,7 @@
   "sba-005-coach-module-safety-harness.md": {
     "number": 948,
     "state": "open",
-    "title": "SBA-005: Coach Module Safety Harness \u2014 Infinite Loop Prevention and Human Override",
+    "title": "SBA-005: Coach Module Safety Harness — Infinite Loop Prevention and Human Override",
     "url": "https://github.com/entif-ai/rosetta/issues/948",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-005-coach-module-safety-harness.md",
@@ -3989,7 +3989,7 @@
   "sba-006-media-attention-engine-platform-apis.md": {
     "number": 950,
     "state": "open",
-    "title": "SBA-006: Media & Attention Engine M1\u2013M6 \u2014 platform API integration design and phased build plan",
+    "title": "SBA-006: Media & Attention Engine M1–M6 — platform API integration design and phased build plan",
     "url": "https://github.com/entif-ai/rosetta/issues/950",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-006-media-attention-engine-platform-apis.md",
@@ -3998,7 +3998,7 @@
   "sba-007-icosagon-ideology-engineering-translation.md": {
     "number": 952,
     "state": "open",
-    "title": "SBA-007: Icosagon Ideology \u2014 formal engineering requirements encoding",
+    "title": "SBA-007: Icosagon Ideology — formal engineering requirements encoding",
     "url": "https://github.com/entif-ai/rosetta/issues/952",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-007-icosagon-ideology-engineering-translation.md",
@@ -4007,7 +4007,7 @@
   "sba-008-tailscale-exit-node-vpn-compatibility.md": {
     "number": 954,
     "state": "open",
-    "title": "SBA-008: Tailscale exit node \u2014 corporate VPN compatibility and asymmetric routing design",
+    "title": "SBA-008: Tailscale exit node — corporate VPN compatibility and asymmetric routing design",
     "url": "https://github.com/entif-ai/rosetta/issues/954",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/sba-008-tailscale-exit-node-vpn-compatibility.md",
@@ -4052,7 +4052,7 @@
   "semantic-audio-stem-isolation.md": {
     "number": 938,
     "state": "open",
-    "title": "SAC-003: Stem Isolation Preprocessing \u2014 Neural Source Separation Evaluation",
+    "title": "SAC-003: Stem Isolation Preprocessing — Neural Source Separation Evaluation",
     "url": "https://github.com/entif-ai/rosetta/issues/938",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/semantic-audio-stem-isolation.md",
@@ -4070,7 +4070,7 @@
   "skillpack-importer-quarantine-flow": {
     "number": 419,
     "state": "open",
-    "title": "Skillpack Importer \u2014 Parse \u2192 Classify \u2192 Quarantine \u2192 Certify \u2192 Promote",
+    "title": "Skillpack Importer — Parse → Classify → Quarantine → Certify → Promote",
     "url": "https://github.com/entif-ai/rosetta/issues/419",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/skillpack-importer-quarantine-flow.md",
@@ -4106,7 +4106,7 @@
   "soul-v4-private-party-persona-boundaries.md": {
     "number": 972,
     "state": "open",
-    "title": "SOUL-v4: Private Party Persona \u2014 Undefined Activation Boundaries",
+    "title": "SOUL-v4: Private Party Persona — Undefined Activation Boundaries",
     "url": "https://github.com/entif-ai/rosetta/issues/972",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-private-party-persona-boundaries.md",
@@ -4115,7 +4115,7 @@
   "soul-v4-session-init-vs-reinstantiation-tension.md": {
     "number": 974,
     "state": "open",
-    "title": "SOUL-v4: Session-Init vs Re-instantiation tension \u2014 historical context ambiguity",
+    "title": "SOUL-v4: Session-Init vs Re-instantiation tension — historical context ambiguity",
     "url": "https://github.com/entif-ai/rosetta/issues/974",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/soul-v4-session-init-vs-reinstantiation-tension.md",
@@ -4223,7 +4223,7 @@
   "write-admission-gate-nine-step-state-machine.md": {
     "number": 994,
     "state": "open",
-    "title": "Write-Admission Gate \u2014 9-Step State Machine, Fail-Closed",
+    "title": "Write-Admission Gate — 9-Step State Machine, Fail-Closed",
     "url": "https://github.com/entif-ai/rosetta/issues/994",
     "activeDraftPath": null,
     "archivedDraftPath": "docs/intake/issue-drafts/archive/write-admission-gate-nine-step-state-machine.md",
