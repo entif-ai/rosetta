@@ -4987,6 +4987,123 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/994
   status: active
+- id: guard-layer
+  name: Guard Layer
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Independent policy enforcement service between Majordomo and executors; evaluates Task proposals and emits signed decision tokens (allow/modify/quarantine/deny). Core role separation: MCP=context, Majordomo=decisions, Guard=referee, Executors=dumb/fast.
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: genesis-protocol
+  name: Genesis Protocol
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Immutable root of trust: human-defined constitutional charter and cryptographic keys anchoring all agent governance. Changes require M-of-N multisig with HSM-backed ceremony. Nothing — human or AI — runs code or accepts governance directives without Genesis-signed authorization.
+  extends: []
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: guard-decision-token
+  name: Guard Decision Token
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Signed admission credential for executor task intake. Fields: task_id, mcp_uris[], policy_version, nonce (non-replayable), signature, otel_trace_id. Executors must verify token before admitting tasks.
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: zero-trust-node
+  name: Zero-Trust Node Design
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Node design philosophy where every component and peer is treated as untrusted until verified. TPM-attested sealed components, mutual TLS, signed API contracts, ZK proofs for computation verification without data exposure.
+  extends: []
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: self-monitoring-threat-intelligence
+  name: Self-Monitoring Threat Intelligence
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Guard Intelligence subsystem that continuously ingests CVE/CWE/EPSS/KEV feeds, LLM-augumented triage, cross-references against SBOM, synthesizes auto-deployment rules. Response classes: Hot (<60s), Warm (<15min), Cool (<1h), Reflective (nightly).
+  extends:
+  - guard-layer
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: constitutional-amendment-protocol
+  name: Constitutional Amendment Protocol
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: M-of-N multisig-based protocol for modifying constitutional rules. Proposal → review period → multisig approval → state hash chain update. Immutable rules (safety-critical) require unanimous consent; amendable rules require M-of-N threshold.
+  extends:
+  - genesis-protocol
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: air-gapped-red-team-sandbox
+  name: Air-Gapped Red-Team Sandbox
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Isolated fuzzing/red-team environment mirroring production topology but fully air-gapped from prod credentials and control plane. Produces signed evidence bundles for Guard Intelligence pipeline. No lateral movement risk to production.
+  extends:
+  - guard-layer
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: majordomo-guard-executor-separation
+  name: Majordomo–Guard–Executor Role Separation
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Core architectural contract: MCP=context-only plumbing (no policy authority), Majordomo=policy brain (what/when decisions), Guard=independent referee (enforcement), Executors=dumb/fast (only accept Guard-signed tasks). Violation of this separation destabilizes the trust model.
+  extends: []
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: decentralized-audit-trail
+  name: Decentralized Audit Trail
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Blockchain-based append-only ledger for agent action audit. Note: NOT LAME PRD specifies PostgreSQL as canonical; this doc specifies blockchain. Conflict identified — see SEC-007.
+  extends: []
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: proof-of-personhood-validator-selection
+  name: Proof-of-Personhood Validator Selection
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Mechanism to prevent Sybil attacks by requiring validators to prove unique human/organization identity. One person cannot run hundreds of validators. Part of the anti-capture design.
+  extends:
+  - genesis-protocol
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: guard-intelligence-living-subsystem
+  name: Guard Intelligence (Living Subsystem)
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Adaptive Guard sub-system: continuous threat telemetry ingest → vectorization → correlation against Entif topology → policy synthesis → hot-reload signed policies. Closes the ELIXIR-style feedback loop within Guard Layer itself.
+  extends:
+  - guard-layer
+  - self-monitoring-threat-intelligence
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
+- id: structural-anti-capturability
+  name: Structural Anti-Capturability
+  introduced_by: docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  introduced_at: '2026-05-26'
+  definition: Ten-component anti-capture architecture: immutable genesis, multi-stakeholder governance, cryptographic separation of duties, Byzantine-resilient consensus, hardware attestation, continuous internal red-team, economic/social defenses, fail-safe escrow, formal verification, governance hard-stops.
+  extends:
+  - genesis-protocol
+  referenced_by:
+  - docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md
+  status: active
 issue_candidates:
 - id: DI-007
   title: "Sub-agent context isolation \u2014 clean boot per cycle"
