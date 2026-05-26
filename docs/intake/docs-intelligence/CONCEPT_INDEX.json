@@ -4033,6 +4033,126 @@
         "emergency-halt-mechanism-requirement",
         "threat-intelligence-vs-runtime-safety"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-26-normative-staging-doctrine-v0-2.md",
+      "sourcePath": "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md",
+      "title": "Docs Intelligence Extraction: Normative Staging Doctrine v0.2",
+      "concepts": [
+        "authority-hierarchy",
+        "constitutional-law",
+        "four-constitutional-sources",
+        "expansion-authority",
+        "2026-04-09-prd-docs",
+        "orchestrator-material",
+        "entif-2-0-broader-docs",
+        "design-donors",
+        "ob1",
+        "graphiti",
+        "zep",
+        "muninn",
+        "paperclip",
+        "supersession",
+        "chronology-tiebreaker",
+        "terminology",
+        "semantic-latticing",
+        "cognitive-tapestry",
+        "receipt-bundle-tapestry",
+        "forbidden-conflations",
+        "six-forbidden-pairs",
+        "three-rung-staircase",
+        "bootstrap",
+        "text-core",
+        "alpha-rc",
+        "rung-a-b-c-scope",
+        "non-goals",
+        "what-bootstrap-does-not-include",
+        "mandatory-scope",
+        "what-text-core-mvp-must-include",
+        "what-mvp-alpha-rc-must-include",
+        "receipt-law",
+        "receipts",
+        "failure-condition",
+        "what-requires-receipts",
+        "rrp",
+        "rrp-content-model",
+        "rrp-standard-payload-shape",
+        "storage",
+        "sqlite",
+        "postgresql",
+        "pgvector",
+        "storage-trajectory",
+        "memory-planes",
+        "plane-1",
+        "plane-2",
+        "plane-3",
+        "truth",
+        "temporal",
+        "activation",
+        "three-plane-memory-architecture",
+        "pruning",
+        "memory-plane-1",
+        "truth-store",
+        "constitutional",
+        "never-delete-truth-tiles",
+        "text-only-first",
+        "multimodal",
+        "binding",
+        "video-audio-image-restriction",
+        "ingress-refinery",
+        "pillar-zero",
+        "deterministic-cheap-first",
+        "raw-capture",
+        "source-episode",
+        "evidence-preservation",
+        "raw-source-never-overwritten",
+        "ambiguity",
+        "conjectures",
+        "pending-confirmation",
+        "ambiguity-handling",
+        "parse-only",
+        "guard",
+        "side-effects",
+        "deny-by-default",
+        "parse-only-default-posture",
+        "guard-law",
+        "decision-tokens",
+        "guard-requirements",
+        "rights",
+        "retrieval-boundary",
+        "no-retrieve-then-filter",
+        "rights-at-boundary",
+        "identity-sensitive",
+        "personhood",
+        "cognitive-twin",
+        "elevated-policy",
+        "identity-sensitive-workflows",
+        "typescript-first",
+        "ts-first",
+        "nx",
+        "pnpm",
+        "ts-constitutional-implementation-lane",
+        "python-specialist",
+        "python-exceptions",
+        "python-allowed-exceptions",
+        "ai-readable-repo",
+        "machine-legible",
+        "explicit-prerequisites",
+        "machine-legibility-requirement",
+        "tool-budget",
+        "routing-ambiguity",
+        "context-waste",
+        "tool-surface-as-systems-concern",
+        "adr",
+        "decision-log",
+        "binding-decisions",
+        "14-binding-adrs",
+        "directives",
+        "immediate-actions",
+        "5-immediate-directives",
+        "adr-process",
+        "how-doctrine-can-be-changed"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4145,6 +4265,42 @@
       "signature": "008-design-edg-horizon-infrastructure"
     },
     {
+      "path": "docs/intake/issue-drafts/nsd-001-author-14-adrs.md",
+      "title": "NSD-001: Author all 14 ADRs as individual files",
+      "labels": [],
+      "signature": "001-adrs-all-author-files"
+    },
+    {
+      "path": "docs/intake/issue-drafts/nsd-002-doctrine-canonical-path.md",
+      "title": "NSD-002: Freeze doctrine at canonical path `docs/doctrine/Doctrine-v0.2.md`",
+      "labels": [],
+      "signature": "002-canonical-docs-doctrine-doctrine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/nsd-003-sqlite-postgres-migration.md",
+      "title": "NSD-003: Clarify SQLite → PostgreSQL migration timeline for Bootstrap → Text-Core",
+      "labels": [],
+      "signature": "003-bootstrap-clarify-core-migration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/nsd-004-ingress-refinery-pillar-zero.md",
+      "title": "NSD-004: Ingress refinery (Pillar Zero) must be operational before Text-Core claims",
+      "labels": [],
+      "signature": "004-before-claims-core-ingress"
+    },
+    {
+      "path": "docs/intake/issue-drafts/nsd-005-tool-budget-doctrine.md",
+      "title": "NSD-005: Implement tool-budget doctrine with measurable per-role budgets",
+      "labels": [],
+      "signature": "005-budget-budgets-doctrine-implement"
+    },
+    {
+      "path": "docs/intake/issue-drafts/nsd-006-alpha-demotion-propagation.md",
+      "title": "NSD-006: Propagate \"alpha demotion\" correction to prior PRD/backlog docs",
+      "labels": [],
+      "signature": "006-alpha-backlog-correction-demotion"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4167,7 +4323,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4182,7 +4339,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4215,7 +4373,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4255,7 +4414,8 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -4343,7 +4503,8 @@
     },
     "receipt-law": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4486,7 +4647,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4721,7 +4883,8 @@
     "nx": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md"
+        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4816,7 +4979,8 @@
     },
     "pnpm": {
       "documents": [
-        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md"
+        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -4979,7 +5143,8 @@
         "docs/external/acpx.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -6026,7 +6191,8 @@
     "memory-planes": {
       "documents": [
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -7350,7 +7516,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -7918,7 +8085,8 @@
     },
     "semantic-latticing": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -8740,7 +8908,8 @@
     },
     "multimodal": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -10215,7 +10384,8 @@
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -11269,7 +11439,8 @@
     },
     "muninn": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -11425,7 +11596,8 @@
     "pgvector": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -11513,7 +11685,8 @@
     "temporal": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -12655,7 +12828,8 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -14675,7 +14849,8 @@
     "sqlite": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -15742,7 +15917,8 @@
     },
     "non-goals": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -15791,7 +15967,8 @@
     "terminology": {
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -18397,7 +18574,8 @@
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -19810,7 +19988,8 @@
     },
     "evidence-preservation": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -20251,7 +20430,8 @@
     },
     "truth": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -20263,7 +20443,8 @@
     },
     "pruning": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -20962,7 +21143,8 @@
     },
     "pillar-zero": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -21034,7 +21216,8 @@
     },
     "deny-by-default": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -22402,7 +22585,8 @@
     },
     "postgresql": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     },
@@ -22511,6 +22695,516 @@
     "threat-intelligence-vs-runtime-safety": {
       "documents": [
         "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+      ],
+      "issueDrafts": []
+    },
+    "authority-hierarchy": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "constitutional-law": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "four-constitutional-sources": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "expansion-authority": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "2026-04-09-prd-docs": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "orchestrator-material": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-2-0-broader-docs": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "design-donors": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ob1": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "graphiti": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "zep": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "paperclip": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "supersession": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "chronology-tiebreaker": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-tapestry": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "receipt-bundle-tapestry": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "forbidden-conflations": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "six-forbidden-pairs": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "three-rung-staircase": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "rung-a-b-c-scope": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "what-bootstrap-does-not-include": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "mandatory-scope": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "what-text-core-mvp-must-include": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "what-mvp-alpha-rc-must-include": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "failure-condition": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "what-requires-receipts": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp-content-model": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp-standard-payload-shape": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "storage-trajectory": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "plane-1": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "plane-2": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "plane-3": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "three-plane-memory-architecture": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "memory-plane-1": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "truth-store": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "never-delete-truth-tiles": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "text-only-first": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "binding": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "video-audio-image-restriction": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "deterministic-cheap-first": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "raw-capture": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "source-episode": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "raw-source-never-overwritten": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ambiguity": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "conjectures": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "pending-confirmation": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ambiguity-handling": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "side-effects": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "parse-only-default-posture": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-law": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "decision-tokens": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-requirements": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval-boundary": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "no-retrieve-then-filter": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "rights-at-boundary": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-sensitive": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "personhood": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-twin": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "elevated-policy": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-sensitive-workflows": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "typescript-first": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ts-first": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ts-constitutional-implementation-lane": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "python-specialist": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "python-exceptions": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "python-allowed-exceptions": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-readable-repo": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "machine-legible": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "explicit-prerequisites": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "machine-legibility-requirement": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-budget": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-ambiguity": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "context-waste": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-surface-as-systems-concern": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "adr": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "decision-log": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "binding-decisions": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "14-binding-adrs": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "directives": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "immediate-actions": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "5-immediate-directives": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "adr-process": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
+      ],
+      "issueDrafts": []
+    },
+    "how-doctrine-can-be-changed": {
+      "documents": [
+        "docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md"
       ],
       "issueDrafts": []
     }
