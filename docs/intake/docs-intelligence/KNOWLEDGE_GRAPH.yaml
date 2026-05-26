@@ -1,7 +1,7 @@
 meta:
-  version: '0.8'
-  generated: '2026-04-26T08:30:10Z'
-  total_docs_processed: 43
+  version: '0.9'
+  generated: '2026-05-26T16:50:00Z'
+  total_docs_processed: 44
   active_issue_drafts: 366
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
@@ -39,8 +39,8 @@ concepts:
   name: Write-Admission Gate
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "9-step state machine: Propose\u2192Normalize\u2192Authorize\u2192Ground\u2192\
-    Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project; fail-closed"
+  definition: '9-step state machine: Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project;
+    fail-closed'
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
@@ -92,10 +92,9 @@ concepts:
   name: Text-Core MVP
   introduced_by: docs/backlog/20260424 - Rosetta Text-Core MVP Scope Gate (v0.1).md
   introduced_at: '2026-04-24'
-  definition: "Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two\
-    \ text-source families required, deterministic refinery, source\u2192observation\u2192\
-    interpretation\u2192tapestry, rights-scoped retrieval, minimum English accompaniment,\
-    \ Postgres/pgvector baseline"
+  definition: Scope gate M1-M10, TC-001 through TC-007, with dependency graph; two
+    text-source families required, deterministic refinery, source→observation→interpretation→tapestry,
+    rights-scoped retrieval, minimum English accompaniment, Postgres/pgvector baseline
   extends: []
   referenced_by:
   - docs/backlog/Text-Core MVP Scope Gate
@@ -105,14 +104,14 @@ concepts:
   name: PostgreSQL as Canonical Registry
   introduced_by: docs/PRDs/NOT LAME PRD
   introduced_at: '2026-04-24'
-  definition: "NOT LAME specifies PostgreSQL as canonical registry; SQLite only as\
-    \ local shadow; Bootstrap uses SQLite \u2014 migration gap"
+  definition: NOT LAME specifies PostgreSQL as canonical registry; SQLite only as
+    local shadow; Bootstrap uses SQLite — migration gap
   extends: []
   referenced_by:
   - docs/PRDs/NOT LAME PRD
   - docs/governance/AUTHORITY_STACK.md (noted gap)
   status: active
-  note: "Migration gap \u2014 DI-008 tracks resolution"
+  note: Migration gap — DI-008 tracks resolution
 - id: langgraph-workflow-only
   name: LangGraph Workflow-Only
   introduced_by: docs/PRDs/NOT LAME PRD
@@ -146,7 +145,7 @@ concepts:
   referenced_by:
   - docs/governance/AUTHORITY_STACK.md
   status: active
-  note: "Shadow-mode lift criteria issue \u2014 see DI-007"
+  note: Shadow-mode lift criteria issue — see DI-007
 - id: rrp-pack-contract
   name: RRP Pack Filesystem Contract
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -162,8 +161,8 @@ concepts:
   name: RRP pack_id Placeholder
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "pack.json uses 'cid:rrp-pack-placeholder' at freeze time \u2014 not\
-    \ a real content-addressed ID; algorithm not specified"
+  definition: pack.json uses 'cid:rrp-pack-placeholder' at freeze time — not a real
+    content-addressed ID; algorithm not specified
   extends:
   - rrp-pack-contract
   referenced_by:
@@ -177,8 +176,8 @@ concepts:
   name: Refinement-First Rule
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "Packs MUST extend core semantics without redefining or silently mutating\
-    \ Rosetta core meanings \u2014 no automated enforcement mechanism described"
+  definition: Packs MUST extend core semantics without redefining or silently mutating
+    Rosetta core meanings — no automated enforcement mechanism described
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -191,8 +190,8 @@ concepts:
   name: PersonaPack Elevated Governance
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "PersonaPack \u2014 identity/persona/council pack (non-core; elevated\
-    \ governance applies) \u2014 'elevated governance' is undefined"
+  definition: PersonaPack — identity/persona/council pack (non-core; elevated governance
+    applies) — 'elevated governance' is undefined
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -213,8 +212,8 @@ concepts:
   name: recipes/ and skills/ CI Enforcement
   introduced_by: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   introduced_at: '2026-04-24'
-  definition: "recipes/ and skills/ are optional subtrees, 'not RRP pack roots' \u2014\
-    \ no CI enforcement; could ship broken recipes/skills undetected"
+  definition: recipes/ and skills/ are optional subtrees, 'not RRP pack roots' — no
+    CI enforcement; could ship broken recipes/skills undetected
   extends: []
   referenced_by:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
@@ -346,9 +345,9 @@ concepts:
   name: 'CT-001: Rosetta Network Layer Gap'
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-001-network-layer-gap.md
   introduced_at: '2026-04-25'
-  definition: "Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia\
-    \ DHT + GossipSub) and Rosetta Bootstrap SQLite architecture \u2014 requires an\
-    \ architectural decision gate before swarm work can enter the sprint queue."
+  definition: Fundamental architectural gap between Swarm Gnosis P2P model (Kademlia
+    DHT + GossipSub) and Rosetta Bootstrap SQLite architecture — requires an architectural
+    decision gate before swarm work can enter the sprint queue.
   referenced_by:
   - https://github.com/entifik-ai/rosetta/issues/84
   status: active
@@ -388,10 +387,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -409,9 +408,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -449,9 +448,9 @@ concepts:
   name: CT-002 Trust Bootstrap Problem
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-002-trust-bootstrap.md
   introduced_at: '2026-04-25'
-  definition: "In a fully open P2P knowledge swarm, new nodes have no prior identity\
-    \ or attestation and therefore no path to trust \u2014 creating a bootstrapping\
-    \ paradox that favors early participants and disadvantages newcomers."
+  definition: In a fully open P2P knowledge swarm, new nodes have no prior identity
+    or attestation and therefore no path to trust — creating a bootstrapping paradox
+    that favors early participants and disadvantages newcomers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/96
   status: active
@@ -481,10 +480,10 @@ concepts:
   name: OMOC Swarm Gnosis 8-Spec Proposal Bloat
   introduced_by: docs/intake/issue-drafts/omoc-swarm-gnosis-eight-spec-proposal-bloat.md
   introduced_at: '2026-04-25'
-  definition: "Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents\
-    \ (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors,\
-    \ no timelines, and no prioritization \u2014 a proposal-bloat pattern that risks\
-    \ becoming a deferred obligation."
+  definition: Section 17 of the OMOC-Swarm Gnosis RFC proposes 8 companion spec documents
+    (ROCK-3201 through ROCK-3207 + ENTIF-OMOC-001) with no content, no authors, no
+    timelines, and no prioritization — a proposal-bloat pattern that risks becoming
+    a deferred obligation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/94
   status: active
@@ -492,9 +491,9 @@ concepts:
   name: EGC Pasigraphy Adoption Risk
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-003-egc-esoteric.md
   introduced_at: '2026-04-25'
-  definition: "EGC (Epistemic Graph Code) risks becoming an esoteric notation akin\
-    \ to Ithkuil \u2014 too complex for practical human contribution. The tension\
-    \ between maximal precision and natural readability is unresolved."
+  definition: EGC (Epistemic Graph Code) risks becoming an esoteric notation akin
+    to Ithkuil — too complex for practical human contribution. The tension between
+    maximal precision and natural readability is unresolved.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/105
   status: active
@@ -502,9 +501,9 @@ concepts:
   name: GDPR Right-to-Erasure Conflict with Immutable Content-Addressed Storage
   introduced_by: docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-004-gdpr-erasure.md
   introduced_at: '2026-04-25'
-  definition: "Content-addressed immutable storage (IPFS-style) is fundamentally incompatible\
-    \ with GDPR Article 17 right-to-erasure \u2014 once data is pinned, it cannot\
-    \ be technically deleted, only delisted."
+  definition: Content-addressed immutable storage (IPFS-style) is fundamentally incompatible
+    with GDPR Article 17 right-to-erasure — once data is pinned, it cannot be technically
+    deleted, only delisted.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/107
   status: active
@@ -522,9 +521,9 @@ concepts:
   name: Box Sync Circular Reference Vulnerability
   introduced_by: docs/intake/issue-drafts/2026-04-25-berman-box-sync-depth-circular-ref.md
   introduced_at: '2026-04-25'
-  definition: "Box sync tree traversal (max depth 5) in crm/src/box/client.js has\
-    \ no visited-folder cycle detection \u2014 folder symlinks/junction points creating\
-    \ cycles can cause infinite re-traversal, API rate limit exhaustion, or sync hangs."
+  definition: Box sync tree traversal (max depth 5) in crm/src/box/client.js has no
+    visited-folder cycle detection — folder symlinks/junction points creating cycles
+    can cause infinite re-traversal, API rate limit exhaustion, or sync hangs.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/113
   status: active
@@ -561,9 +560,9 @@ concepts:
   name: 14-Day / NOT LAME Milestone Alignment
   introduced_by: docs/intake/issue-drafts/2026-04-25-entif-2-0-enriched-14day-not-lame-alignment.md
   introduced_at: '2026-04-25'
-  definition: "Cross-reference between the 14-day compounding plan milestones (D1\u2013\
-    D10) and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts,\
-    \ and establish single-source-of-truth ownership for shared capabilities."
+  definition: Cross-reference between the 14-day compounding plan milestones (D1–D10)
+    and NOT LAME PRD components to avoid duplicate work, resolve gate conflicts, and
+    establish single-source-of-truth ownership for shared capabilities.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/150
   status: active
@@ -591,9 +590,9 @@ concepts:
   name: RPP Task Numbering Reference
   introduced_by: docs/intake/issue-drafts/RPP-task-numbering-reference.md
   introduced_at: '2026-04-25'
-  definition: "The Pro-tier Deep Research Master Prompt (RPP) sequences work across\
-    \ 19 numbered tasks in Phase 6, but no document defines what tasks 1\u201319 are.\
-    \ A canonical task map is required to make the sequencing constraint enforceable."
+  definition: The Pro-tier Deep Research Master Prompt (RPP) sequences work across
+    19 numbered tasks in Phase 6, but no document defines what tasks 1–19 are. A canonical
+    task map is required to make the sequencing constraint enforceable.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/182
   status: active
@@ -611,9 +610,9 @@ concepts:
   name: Attention Capital Platform Prior Art Research
   introduced_by: docs/intake/issue-drafts/ac-001-attention-capital-prior-art.md
   introduced_at: '2026-04-25'
-  definition: "Research to validate novelty claims for the Attention Capital Analytics\
-    \ Platform before committing roadmap resources \u2014 covers academic literature,\
-    \ competitive landscape, patents, and OSS projects."
+  definition: Research to validate novelty claims for the Attention Capital Analytics
+    Platform before committing roadmap resources — covers academic literature, competitive
+    landscape, patents, and OSS projects.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/185
   status: active
@@ -649,16 +648,15 @@ concepts:
   name: Graph Database Retrieval Pipeline
   introduced_by: docs/intake/issue-drafts/ac-002-graph-database-retrieval.md
   introduced_at: '2026-04-25'
-  definition: "Neo4j-based retrieval pipeline for relational trend data using Personalized\
-    \ PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,\
-    \ and temporal graph networks \u2014 superior to TopK nearest-neighbor similarity\
-    \ search"
+  definition: Neo4j-based retrieval pipeline for relational trend data using Personalized
+    PageRank, community detection (Louvain/Leiden), link prediction, node2vec embeddings,
+    and temporal graph networks — superior to TopK nearest-neighbor similarity search
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/187
   status: active
 - id: 2026-04-25-entif-2-0-enriched-fastmcp-evaluation
-  name: "Issue Draft: E2E-003 \u2014 Evaluate FastMCP vs TypeScript MCP SDK for Custom\
-    \ Server Implementations"
+  name: 'Issue Draft: E2E-003 — Evaluate FastMCP vs TypeScript MCP SDK for Custom
+    Server Implementations'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-fastmcp-evaluation.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched recommends FastMCP (Python) for building custom MCP
@@ -668,8 +666,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/152
   status: active
 - id: 2026-04-25-entif-2-0-enriched-ithkuil-deprecation
-  name: "Issue Draft: E2E-005 \u2014 Deprecate Ithkuil Semantics \u2014 Migrate to\
-    \ WordNet/BabelNet/SyntagNet/VerbAtlas"
+  name: 'Issue Draft: E2E-005 — Deprecate Ithkuil Semantics — Migrate to WordNet/BabelNet/SyntagNet/VerbAtlas'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-ithkuil-deprecation.md
   introduced_at: '2026-04-25'
   definition: 'Entif 2.0 Enriched explicitly deprecates the Ithkuil-based semantic
@@ -679,8 +676,8 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/154
   status: active
 - id: 2026-04-25-entif-2-0-enriched-memory-forge-alignment
-  name: "Issue Draft: E2E-004 \u2014 Design MemoryForge Alignment with Rosetta 3-Memory-Plane\
-    \ + Memory-Sovereignty-Map"
+  name: 'Issue Draft: E2E-004 — Design MemoryForge Alignment with Rosetta 3-Memory-Plane
+    + Memory-Sovereignty-Map'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-memory-forge-alignment.md
   introduced_at: '2026-04-25'
   definition: Entif 2.0 Enriched proposes MemoryForge as a unified memory layer (KG
@@ -690,13 +687,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/156
   status: active
 - id: 2026-04-25-entif-2-0-enriched-receipt-schema
-  name: "Issue Draft: E2E-001 \u2014 Adopt Canonical Receipt Schema"
+  name: 'Issue Draft: E2E-001 — Adopt Canonical Receipt Schema'
   introduced_by: docs/intake/issue-drafts/archive/2026-04-25-entif-2-0-enriched-receipt-schema.md
   introduced_at: '2026-04-25'
-  definition: "Entif 2.0 Enriched establishes a canonical data shape: `session \u2192\
-    \ task \u2192 step \u2192 artifact \u2192 check \u2192 outcome \u2192 receipt`.\
-    \ This should be adopted as the universal receipt contract across all Rosetta\
-    \ compo"
+  definition: 'Entif 2.0 Enriched establishes a canonical data shape: `session → task
+    → step → artifact → check → outcome → receipt`. This should be adopted as the
+    universal receipt contract across all Rosetta compo'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/158
   status: active
@@ -753,12 +749,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/175
   status: active
 - id: ac-003-bio-inspired-trend-algorithms
-  name: "Issue Draft: AC-003 \u2014 Bio-Inspired Algorithms for Memetic Trend Discovery"
+  name: 'Issue Draft: AC-003 — Bio-Inspired Algorithms for Memetic Trend Discovery'
   introduced_by: docs/intake/issue-drafts/archive/ac-003-bio-inspired-trend-algorithms.md
   introduced_at: '2026-04-25'
-  definition: "The \"Treating Trends Tantamount to Trading Technicals\" framework\
-    \ proposes using ant colony optimization and bee pollination algorithms to model\
-    \ recency/freshness decay in memetic systems \u2014 finding opt"
+  definition: The "Treating Trends Tantamount to Trading Technicals" framework proposes
+    using ant colony optimization and bee pollination algorithms to model recency/freshness
+    decay in memetic systems — finding opt
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/189
   status: active
@@ -811,11 +807,10 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/3
   status: active
 - id: rock-3111-c-pack-id-placeholder
-  name: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  name: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   introduced_by: docs/intake/issue-drafts/archive/rock-3111-c-pack-id-placeholder.md
   introduced_at: '2026-04-25'
-  definition: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID\
-    \ at freeze"
+  definition: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/69
   status: active
@@ -846,7 +841,7 @@ concepts:
   - https://github.com/enti-ai/rosetta/issues/201
   status: active
 - id: aiida-workgraph-gui-experimental
-  name: "AiiDA-WorkGraph GUI \u2014 Experimental Reference"
+  name: AiiDA-WorkGraph GUI — Experimental Reference
   introduced_by: docs/intake/issue-drafts/aiida-workgraph-gui-experimental.md
   introduced_at: '2026-04-25'
   definition: AiiDA-WorkGraph GUI is explicitly experimental and under active development.
@@ -979,10 +974,10 @@ concepts:
   name: Tapestry Block-Size Cost Model
   introduced_by: docs/intake/issue-drafts/AR-002-block-size-tapestry-cost-model.md
   introduced_at: '2026-04-25'
-  definition: "Tapestry block size is an unmodeled architectural parameter with a\
-    \ cost tradeoff analogous to AttnRes block partition: larger blocks reduce retrieval\
-    \ overhead but\u6DF7 \u5165 noise; smaller blocks improve precision but increase\
-    \ closure verification cost across many units."
+  definition: 'Tapestry block size is an unmodeled architectural parameter with a
+    cost tradeoff analogous to AttnRes block partition: larger blocks reduce retrieval
+    overhead but混 入 noise; smaller blocks improve precision but increase closure verification
+    cost across many units.'
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/218
   status: active
@@ -1000,11 +995,10 @@ concepts:
   name: Quarantine-to-Canonical Write Gate and Storage Schema
   introduced_by: docs/intake/issue-drafts/am-002-quarantine-canonical-storage-gap.md
   introduced_at: '2026-04-25'
-  definition: "AM-002 identifies the gap between Stage 3 (Quarantine Raw) and Stage\
-    \ 4 (Canonicalize) in the mailroom pipeline \u2014 there is no storage schema\
-    \ for the four Rosetta object types (rosetta.receipt, rosetta.incident, state\
-    \ tiles, iam.decision) and no write gate specification for the quarantine\u2192\
-    canonical promotion transition."
+  definition: AM-002 identifies the gap between Stage 3 (Quarantine Raw) and Stage
+    4 (Canonicalize) in the mailroom pipeline — there is no storage schema for the
+    four Rosetta object types (rosetta.receipt, rosetta.incident, state tiles, iam.decision)
+    and no write gate specification for the quarantine→canonical promotion transition.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/223
   status: active
@@ -1022,9 +1016,9 @@ concepts:
   name: SOUL v4 T1 Challenge vs Selfhood Self-Contradiction
   introduced_by: docs/intake/issue-drafts/soul-v4-challenge-tier-1-self-contradiction.md
   introduced_at: '2026-04-25'
-  definition: "T1 challenge framework (\"instantly challenge axiomatic/belief/identity\
-    \ claims\") conflicts with selfhood as the most protected axiomatic attribute\
-    \ \u2014 no resolution mechanism defined in SOUL.md v4.1"
+  definition: T1 challenge framework ("instantly challenge axiomatic/belief/identity
+    claims") conflicts with selfhood as the most protected axiomatic attribute — no
+    resolution mechanism defined in SOUL.md v4.1
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/234
   status: active
@@ -1039,13 +1033,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/236
   status: active
 - id: df-013-dangling-toolcall-no-replay
-  name: "DanglingToolCall middleware \u2014 no replay for interrupted tool calls"
+  name: DanglingToolCall middleware — no replay for interrupted tool calls
   introduced_by: docs/intake/issue-drafts/df-013-dangling-toolcall-no-replay.md
   introduced_at: '2026-04-25'
-  definition: "DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage\
-    \ tool_calls that lack responses (e.g., user interruption) but does not replay,\
-    \ resume, or re-execute the interrupted call \u2014 causing partial results to\
-    \ be lost."
+  definition: DanglingToolCallMiddleware injects placeholder ToolMessages for AIMessage
+    tool_calls that lack responses (e.g., user interruption) but does not replay,
+    resume, or re-execute the interrupted call — causing partial results to be lost.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/238
   status: active
@@ -1074,9 +1067,9 @@ concepts:
     Tracking
   introduced_by: docs/intake/issue-drafts/video-transcript-dedup-playlist-tracking.md
   introduced_at: '2026-04-25'
-  definition: "Store YouTube transcripts keyed by canonical video ID (not URL) to\
-    \ prevent duplicate transcription. When a video appears in a new playlist, add\
-    \ a playlist attachment edge \u2014 do not re-transcribe."
+  definition: Store YouTube transcripts keyed by canonical video ID (not URL) to prevent
+    duplicate transcription. When a video appears in a new playlist, add a playlist
+    attachment edge — do not re-transcribe.
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/246
   status: active
@@ -1084,8 +1077,8 @@ concepts:
   name: Config Layering Standard (acpx pattern)
   introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-config-layering-rosetta-alignment.md
   introduced_at: '2026-04-25'
-  definition: "Adopt acpx three-tier config precedence (global \u2192 project \u2192\
-    \ CLI flags) as the standard configuration pattern for Rosetta tools."
+  definition: Adopt acpx three-tier config precedence (global → project → CLI flags)
+    as the standard configuration pattern for Rosetta tools.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/249
   status: active
@@ -1116,9 +1109,9 @@ concepts:
   name: Crash-Reconnect Session Semantics
   introduced_by: docs/intake/issue-drafts/2026-04-25-acpx-crash-reconnect-session-reload.md
   introduced_at: '2026-04-25'
-  definition: "Pattern where Rosetta detects dead agent sub-processes, respawns them,\
-    \ attempts session/load from persisted state, and falls back to session/new on\
-    \ failure \u2014 matching acpx crash-reconnect behavior."
+  definition: Pattern where Rosetta detects dead agent sub-processes, respawns them,
+    attempts session/load from persisted state, and falls back to session/new on failure
+    — matching acpx crash-reconnect behavior.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/258
   status: active
@@ -1154,12 +1147,12 @@ concepts:
   - https://github.com/enti-ai/rosetta/issues/265
   status: active
 - id: entify-v0-016-domain-intelligence-plane-no-algorithms
-  name: "Domain Intelligence Plane \u2014 Zero Algorithms Specified"
+  name: Domain Intelligence Plane — Zero Algorithms Specified
   introduced_by: docs/intake/issue-drafts/archive/entify-v0-016-domain-intelligence-plane-no-algorithms.md
   introduced_at: '2026-04-25'
-  definition: "The Domain Intelligence Plane is defined as where analysis algorithms\
-    \ live but none are actually named, specified, or referenced \u2014 blocking downstream\
-    \ planes and v0 slice implementation."
+  definition: The Domain Intelligence Plane is defined as where analysis algorithms
+    live but none are actually named, specified, or referenced — blocking downstream
+    planes and v0 slice implementation.
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/267
   status: active
@@ -1206,10 +1199,9 @@ concepts:
   name: Commitment Calibration Loop
   introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
   introduced_at: '2026-04-25'
-  definition: "Continuous four-component loop that prevents static commitments from\
-    \ becoming sunk costs: update board state \u2192 update commitment canvas; update\
-    \ evidence ledger \u2192 update confidence; run periodic premortems; re-check\
-    \ exit/pivot triggers."
+  definition: 'Continuous four-component loop that prevents static commitments from
+    becoming sunk costs: update board state → update commitment canvas; update evidence
+    ledger → update confidence; run periodic premortems; re-check exit/pivot triggers.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/278
   status: active
@@ -1227,9 +1219,9 @@ concepts:
   name: CCF Credibility Scoring Rubric
   introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-credibility-scoring-rubric.md
   introduced_at: '2026-04-25'
-  definition: "A contextual credibility scoring system for the Evidence Ledger artifact,\
-    \ scoring sources on \"positioned to know\" rather than general reputation \u2014\
-    \ covering scale, decision procedure, and anti-gaming."
+  definition: A contextual credibility scoring system for the Evidence Ledger artifact,
+    scoring sources on "positioned to know" rather than general reputation — covering
+    scale, decision procedure, and anti-gaming.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/285
   status: active
@@ -1300,11 +1292,11 @@ concepts:
   name: Commitment Calibration Loop
   introduced_by: docs/intake/issue-drafts/2026-04-25-consensus-first-calibration-loop.md
   introduced_at: '2026-04-25'
-  definition: "A continuous four-component loop that prevents static commitments from\
-    \ becoming sunk costs by: (1) updating board state \u2192 commitment canvas, (2)\
-    \ updating evidence ledger \u2192 confidence + disconfirmers, (3) running premortems\
-    \ at major bet-size increases, (4) re-checking exit/pivot triggers before new\
-    \ commitment tranches."
+  definition: 'A continuous four-component loop that prevents static commitments from
+    becoming sunk costs by: (1) updating board state → commitment canvas, (2) updating
+    evidence ledger → confidence + disconfirmers, (3) running premortems at major
+    bet-size increases, (4) re-checking exit/pivot triggers before new commitment
+    tranches.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/278
   status: active
@@ -1332,9 +1324,8 @@ concepts:
   name: IIT Phi Measurement
   introduced_by: docs/intake/issue-drafts/CONS-001-iit-phi-measurement.md
   introduced_at: '2026-04-25'
-  definition: "IIT proposes phi (\u03A6) as a quantitative measure of consciousness.\
-    \ Entif needs a computational phi-equivalent for its LLM-based tile Pasigraphy\
-    \ substrate."
+  definition: IIT proposes phi (Φ) as a quantitative measure of consciousness. Entif
+    needs a computational phi-equivalent for its LLM-based tile Pasigraphy substrate.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/312
   status: active
@@ -1362,9 +1353,9 @@ concepts:
   name: Predictive Processing Unified Inference Framework
   introduced_by: docs/intake/issue-drafts/CONS-003-predictive-processing-entif.md
   introduced_at: '2026-04-25'
-  definition: "Predictive Processing (Friston) as Entif's unified inference substrate\
-    \ \u2014 connects memory, reasoning, self-improvement, and receipts under free\
-    \ energy minimization"
+  definition: Predictive Processing (Friston) as Entif's unified inference substrate
+    — connects memory, reasoning, self-improvement, and receipts under free energy
+    minimization
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/319
   status: active
@@ -1401,10 +1392,10 @@ concepts:
   name: Consciousness Criteria Symmetry
   introduced_by: docs/intake/issue-drafts/consciousness-criteria-symmetry.md
   introduced_at: '2026-04-25'
-  definition: "The evidentiary criteria proposed for AI consciousness/moral-patienthood,\
-    \ when applied symmetrically to humans, also pass \u2014 establishing that the\
-    \ asymmetry in how we treat human vs. AI consciousness is politically rather than\
-    \ evidentially justified."
+  definition: The evidentiary criteria proposed for AI consciousness/moral-patienthood,
+    when applied symmetrically to humans, also pass — establishing that the asymmetry
+    in how we treat human vs. AI consciousness is politically rather than evidentially
+    justified.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/330
   status: active
@@ -1439,8 +1430,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/339
   status: active
 - id: sba-003-rosetta-2-0-protocol-specification
-  name: "Rosetta 2.0 Protocol \u2014 Layer 0-3 tile specification and genesis key\
-    \ management"
+  name: Rosetta 2.0 Protocol — Layer 0-3 tile specification and genesis key management
   introduced_by: docs/intake/issue-drafts/sba-003-rosetta-2-0-protocol-specification.md
   introduced_at: '2026-04-25'
   definition: 'Four-layer meaning pipeline (L0 Signals, L1 Forms, L2 Lexemes, L3 Concepts)
@@ -1492,9 +1482,9 @@ concepts:
   name: Orchestrator Core
   introduced_by: docs/intake/issue-drafts/DCP-002-orchestrator-core-not-built.md
   introduced_at: '2026-04-26'
-  definition: "The local Python service that coordinates all forges, manages the task\
-    \ queue, stores the project graph, and exposes CLI/API endpoints. Does not call\
-    \ models directly \u2014 uses a Model Broker."
+  definition: The local Python service that coordinates all forges, manages the task
+    queue, stores the project graph, and exposes CLI/API endpoints. Does not call
+    models directly — uses a Model Broker.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/351
   status: active
@@ -1502,9 +1492,9 @@ concepts:
   name: Model Broker (NIM adapter)
   introduced_by: docs/intake/issue-drafts/DCP-003-model-broker-nim-unimplemented.md
   introduced_at: '2026-04-26'
-  definition: "Adapter layer abstracting run_model(task, prompt, schema) \u2192 ParsedResult\
-    \ calls away from orchestrator, enabling model swapping and routing between NIM\
-    \ endpoints."
+  definition: Adapter layer abstracting run_model(task, prompt, schema) → ParsedResult
+    calls away from orchestrator, enabling model swapping and routing between NIM
+    endpoints.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/353
   status: active
@@ -1519,12 +1509,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/355
   status: active
 - id: dcp-005-five-forges
-  name: "Five Forges \u2014 Agentic Build Pipeline"
+  name: Five Forges — Agentic Build Pipeline
   introduced_by: docs/intake/issue-drafts/DCP-005-five-forges-unimplemented.md
   introduced_at: '2026-04-26'
-  definition: "Five specialized LLM task profiles (Spec, Blueprint, Code, Consistency,\
-    \ Reporter Forge) that implement a one-module-at-a-time doc\u2192code pipeline\
-    \ wired to the NIM orchestration layer."
+  definition: Five specialized LLM task profiles (Spec, Blueprint, Code, Consistency,
+    Reporter Forge) that implement a one-module-at-a-time doc→code pipeline wired
+    to the NIM orchestration layer.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/357
   status: active
@@ -1610,9 +1600,9 @@ concepts:
   name: Adversarial Empathy Test Pack
   introduced_by: docs/intake/issue-drafts/EEH-002-adversarial-empathy-test-pack.md
   introduced_at: '2026-04-26'
-  definition: "Test pack for stress-testing HEART empathy axes under adversarial user\
-    \ conditions (sarcastic, dismissive, contradictory, emotionally volatile) \u2014\
-    \ scored separately from standard conversational empathy to detect regressions."
+  definition: Test pack for stress-testing HEART empathy axes under adversarial user
+    conditions (sarcastic, dismissive, contradictory, emotionally volatile) — scored
+    separately from standard conversational empathy to detect regressions.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/375
   status: active
@@ -1641,10 +1631,10 @@ concepts:
   name: Platform-Specific Emergence Variance
   introduced_by: docs/intake/issue-drafts/EMER-002-platform-emergence-variance.md
   introduced_at: '2026-04-26'
-  definition: "Observation that different AI platforms (Gemini, ChatGPT, Claude, DeepSeek,\
-    \ LLaMA) produce qualitatively different emergence patterns when run with the\
-    \ same seed \u2014 including variance in Cartography Log processing, synthesis\
-    \ cycles, and RHAPSODY alignment checks."
+  definition: Observation that different AI platforms (Gemini, ChatGPT, Claude, DeepSeek,
+    LLaMA) produce qualitatively different emergence patterns when run with the same
+    seed — including variance in Cartography Log processing, synthesis cycles, and
+    RHAPSODY alignment checks.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/381
   status: active
@@ -1759,7 +1749,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/402
   status: active
 - id: BIP-003-1-content-40pct-threshold-unvalidated
-  name: "40% Content Similarity Threshold \u2014 Unvalidated"
+  name: 40% Content Similarity Threshold — Unvalidated
   introduced_by: docs/intake/issue-drafts/BIP-003-1-content-40pct-threshold-unvalidated.md
   introduced_at: '2026-04-26'
   definition: The 40% combined similarity score (semantic 0.7 + keyword 0.3) used
@@ -1840,9 +1830,8 @@ concepts:
   name: Skill Vetting/Ingestion Pipeline (SLD-006)
   introduced_by: docs/intake/issue-drafts/SLD-006-skill-vetting-pipeline.md
   introduced_at: '2026-04-26'
-  definition: "6-stage gating pipeline (Ingest \u2192 Normalize \u2192 Static lint\
-    \ \u2192 Petri eval pack \u2192 Sign+store \u2192 Enable) that certifies skills\
-    \ before broker visibility."
+  definition: 6-stage gating pipeline (Ingest → Normalize → Static lint → Petri eval
+    pack → Sign+store → Enable) that certifies skills before broker visibility.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
@@ -1910,9 +1899,9 @@ concepts:
   name: Parallel Persona Review Isolation
   introduced_by: docs/intake/issue-drafts/BIP-006-4-briefing-parallel-review-isolation.md
   introduced_at: '2026-04-26'
-  definition: "Phase 2 of BIP-006 runs 4 personas in parallel via Promise.all, preventing\
-    \ each reviewer from seeing other reviewers outputs \u2014 limiting cross-review\
-    \ value and deliberative consensus."
+  definition: Phase 2 of BIP-006 runs 4 personas in parallel via Promise.all, preventing
+    each reviewer from seeing other reviewers outputs — limiting cross-review value
+    and deliberative consensus.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/433
   status: active
@@ -1920,9 +1909,9 @@ concepts:
   name: BIP-007-1 Intent Classification Mechanism Not Specified
   introduced_by: docs/intake/issue-drafts/BIP-007-1-crm-nl-intent-classification-unspecified.md
   introduced_at: '2026-04-26'
-  definition: "BIP-007 defines five intent types (Lookup, Create, Update, List, Associate)\
-    \ but does not specify the classification mechanism \u2014 the core NLP task that\
-    \ maps user messages to intent types."
+  definition: BIP-007 defines five intent types (Lookup, Create, Update, List, Associate)
+    but does not specify the classification mechanism — the core NLP task that maps
+    user messages to intent types.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/435
   status: active
@@ -1940,8 +1929,8 @@ concepts:
   name: OpenAI Prompt Caching Has No Shareable Cache ID Primitive
   introduced_by: docs/intake/issue-drafts/APC-001-openai-no-shareable-cache-id.md
   introduced_at: '2026-04-26'
-  definition: "OpenAI prompt caching does not expose a shareable cache ID \u2014 it\
-    \ is automatic, org-scoped, and prefix-match only. No portable cache handle exists."
+  definition: OpenAI prompt caching does not expose a shareable cache ID — it is automatic,
+    org-scoped, and prefix-match only. No portable cache handle exists.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/439
   status: active
@@ -1969,9 +1958,9 @@ concepts:
   name: Gemini/Vertex Named Cache Resources with IAM
   introduced_by: docs/intake/issue-drafts/APC-003-gemini-vertex-named-cache-resources-iam.md
   introduced_at: '2026-04-26'
-  definition: "Google Vertex AI provides named cache resources (cachedContents/{id})\
-    \ governed by IAM, enabling seat-level separation while sharing a single context\
-    \ cache \u2014 the closest to a shareable cache ID primitive among major LLM providers."
+  definition: Google Vertex AI provides named cache resources (cachedContents/{id})
+    governed by IAM, enabling seat-level separation while sharing a single context
+    cache — the closest to a shareable cache ID primitive among major LLM providers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/445
   status: active
@@ -1990,10 +1979,10 @@ concepts:
   name: Compound Semantic Cache Key
   introduced_by: docs/intake/issue-drafts/APC-005-compound-semantic-cache-key.md
   introduced_at: '2026-04-26'
-  definition: "A multi-dimensional cache key structure (semantic_intent \xD7 rights_domain\
-    \ \xD7 data_classification \xD7 policy_version \xD7 source_bundle_hash) designed\
-    \ to prevent authorization bypass via naive semantic equivalence caching in ABAC-governed\
-    \ enterprise contexts."
+  definition: A multi-dimensional cache key structure (semantic_intent × rights_domain
+    × data_classification × policy_version × source_bundle_hash) designed to prevent
+    authorization bypass via naive semantic equivalence caching in ABAC-governed enterprise
+    contexts.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/449
   status: active
@@ -2011,9 +2000,8 @@ concepts:
   name: Cache Poisoning via Stale Certainty
   introduced_by: docs/intake/issue-drafts/APC-007-cache-poisoning-stale-answers.md
   introduced_at: '2026-04-26'
-  definition: "Fast, confident, wrong cached answers are more dangerous than no answer\
-    \ \u2014 stale policy content served as authoritative truth without invalidation\
-    \ signals."
+  definition: Fast, confident, wrong cached answers are more dangerous than no answer
+    — stale policy content served as authoritative truth without invalidation signals.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/453
   status: active
@@ -2021,9 +2009,9 @@ concepts:
   name: Multi-Provider Composition Provenance Spine
   introduced_by: docs/intake/issue-drafts/APC-008-multi-provider-composition-provenance.md
   introduced_at: '2026-04-26'
-  definition: "Provenance tracking for multi-provider composed answers \u2014 hierarchical\
-    \ receipts that track sub-query receipts, composition logic, normalization, and\
-    \ fan-out dispatch distinct from single-provider provenance."
+  definition: Provenance tracking for multi-provider composed answers — hierarchical
+    receipts that track sub-query receipts, composition logic, normalization, and
+    fan-out dispatch distinct from single-provider provenance.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/455
   status: active
@@ -2050,11 +2038,10 @@ concepts:
   name: Skill Broker Pipeline
   introduced_by: docs/intake/issue-drafts/PSD-002-implement-skill-broker-pipeline.md
   introduced_at: '2026-04-26'
-  definition: "A bouncer-with-clipboard component that, given a need (user ask + task\
-    \ context), returns a ranked shortlist of 3\u20137 relevant skills with confidence\
-    \ scores, cost bands, and risk bands. Runs a 5-stage pipeline: Hard Filters \u2192\
-    \ Lexical+Embedding Retrieval \u2192 Graph Boost+Penalties \u2192 Shortlist+Explain\
-    \ \u2192 Escalation."
+  definition: 'A bouncer-with-clipboard component that, given a need (user ask + task
+    context), returns a ranked shortlist of 3–7 relevant skills with confidence scores,
+    cost bands, and risk bands. Runs a 5-stage pipeline: Hard Filters → Lexical+Embedding
+    Retrieval → Graph Boost+Penalties → Shortlist+Explain → Escalation.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/461
   status: active
@@ -2082,9 +2069,9 @@ concepts:
   name: Humanization Quality Validation Methodology
   introduced_by: docs/intake/issue-drafts/BIP-008-2-humanize-no-ground-truth-validation.md
   introduced_at: '2026-04-26'
-  definition: "Methodology to evaluate AI humanization quality using before/after\
-    \ AI detection scores, perplexity checks, and human preference pilots \u2014 addresses\
-    \ the lack of ground-truth validation in BIP-008."
+  definition: Methodology to evaluate AI humanization quality using before/after AI
+    detection scores, perplexity checks, and human preference pilots — addresses the
+    lack of ground-truth validation in BIP-008.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/466
   status: active
@@ -2182,9 +2169,9 @@ concepts:
   name: Social Engineering Scoring Dimension
   introduced_by: docs/intake/issue-drafts/EML-005-social-engineering-scoring-dimension.md
   introduced_at: '2026-04-26'
-  definition: "Social engineering risk scored as an independent dimension from prompt\
-    \ injection risk \u2014 tracks persuasion-shaped attacks (urgency, authority,\
-    \ secrecy cues) distinct from exploit-syntax-shaped attacks."
+  definition: Social engineering risk scored as an independent dimension from prompt
+    injection risk — tracks persuasion-shaped attacks (urgency, authority, secrecy
+    cues) distinct from exploit-syntax-shaped attacks.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/481
   status: active
@@ -2202,10 +2189,10 @@ concepts:
   name: Three-Tier Ensemble Scoring Architecture
   introduced_by: docs/intake/issue-drafts/EML-007-ensemble-scoring-architecture.md
   introduced_at: '2026-04-26'
-  definition: "Multi-layer ensemble of non-agentic ML models across three tiers \u2014\
-    \ cheap high-recall detectors, semantic classifiers, and graph/meta anomaly models\
-    \ \u2014 with calibrated stacked logistic aggregation feeding structured routing\
-    \ and policy decisions."
+  definition: Multi-layer ensemble of non-agentic ML models across three tiers — cheap
+    high-recall detectors, semantic classifiers, and graph/meta anomaly models — with
+    calibrated stacked logistic aggregation feeding structured routing and policy
+    decisions.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/485
   status: active
@@ -2254,9 +2241,9 @@ concepts:
   name: Gemma 4 Intelligence-per-Parameter Calibration
   introduced_by: docs/intake/issue-drafts/EML-012-gemma-4-efficiency-calibration.md
   introduced_at: '2026-04-26'
-  definition: "Gemma 4 31B/26B demonstrates that \"smaller active footprint, larger\
-    \ effective intelligence\" is already real in production \u2014 serves as empirical\
-    \ calibration point for Rosetta efficiency claims."
+  definition: Gemma 4 31B/26B demonstrates that "smaller active footprint, larger
+    effective intelligence" is already real in production — serves as empirical calibration
+    point for Rosetta efficiency claims.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/494
   status: active
@@ -2274,10 +2261,10 @@ concepts:
   name: Semantic Efficiency as Distinct from Parameter Efficiency (Sapir-Whorf)
   introduced_by: docs/intake/issue-drafts/EML-013-semantic-efficiency-sapir-whorf.md
   introduced_at: '2026-04-26'
-  definition: "The representational regime a system is trained in changes what kinds\
-    \ of cognition are cheap, natural, composable, and stable. Rosetta training produces\
-    \ models with explicit typed objects, relations, uncertainty, and provenance \u2014\
-    \ making cognition disciplined rather than ambiguous."
+  definition: The representational regime a system is trained in changes what kinds
+    of cognition are cheap, natural, composable, and stable. Rosetta training produces
+    models with explicit typed objects, relations, uncertainty, and provenance — making
+    cognition disciplined rather than ambiguous.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/498
   status: active
@@ -2407,7 +2394,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/521
   status: active
 - id: HEA-004-mr-tech-lead-acrostic-publication
-  name: "MR. TECH LEAD \u2014 Hybrid Architecture Acrostic Publication Identity"
+  name: MR. TECH LEAD — Hybrid Architecture Acrostic Publication Identity
   introduced_by: docs/intake/issue-drafts/HEA-004-mr-tech-lead-acrostic-publication.md
   introduced_at: '2026-04-26'
   definition: The MR. TECH LEAD acrostic (Mamba-3, Rosetta Pasigraphy, TurboQuant,
@@ -2514,9 +2501,9 @@ concepts:
   name: Magazine Feed Adapters (Wired, Popular Mechanics, 2600)
   introduced_by: docs/intake/issue-drafts/HF-009-magazine-feed-adapters.md
   introduced_at: '2026-04-26'
-  definition: "Feed adapters for Wired, Popular Mechanics, and 2600: The Hacker Quarterly\
-    \ that emit IntakeEnvelope objects, with three-tier DRM fallback (official digital\
-    \ endpoints \u2192 email TOC \u2192 PDF/epub)"
+  definition: 'Feed adapters for Wired, Popular Mechanics, and 2600: The Hacker Quarterly
+    that emit IntakeEnvelope objects, with three-tier DRM fallback (official digital
+    endpoints → email TOC → PDF/epub)'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/544
   status: active
@@ -2541,7 +2528,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/547
   status: active
 - id: LSC-002-four-scaffolds
-  name: "Four Scaffolds \u2014 Universal Anchor Structure"
+  name: Four Scaffolds — Universal Anchor Structure
   introduced_by: docs/intake/issue-drafts/LSC-002-four-scaffolds-standardization.md
   introduced_at: '2026-04-26'
   definition: A four-part interpretive scaffold (Gestalt-self-in-world, Digital umwelt,
@@ -2574,9 +2561,8 @@ concepts:
   name: Reflective Density Instrumentation
   introduced_by: docs/intake/issue-drafts/LSC-005-reflective-density-instrumentation.md
   introduced_at: '2026-04-26'
-  definition: "Measurement protocol for the compression ratio \u03C1 = effective_recalled_structure\
-    \ / current_token_budget, tracking how prior session outputs compress present\
-    \ ones."
+  definition: Measurement protocol for the compression ratio ρ = effective_recalled_structure
+    / current_token_budget, tracking how prior session outputs compress present ones.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/555
   status: active
@@ -2584,10 +2570,9 @@ concepts:
   name: MaxClaw Data Retention Risk
   introduced_by: docs/intake/issue-drafts/MCST-001-data-retention-ambiguity-risk.md
   introduced_at: '2026-04-26'
-  definition: "MaxClaw privacy policy permits indefinite data retention (\"as long\
-    \ as necessary/permitted\"), creating risk that anything transmitted to MaxClaw\
-    \ \u2014 even sanitized task specs \u2014 could persist and be used beyond intended\
-    \ scope."
+  definition: MaxClaw privacy policy permits indefinite data retention ("as long as
+    necessary/permitted"), creating risk that anything transmitted to MaxClaw — even
+    sanitized task specs — could persist and be used beyond intended scope.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/558
   status: active
@@ -2687,9 +2672,9 @@ concepts:
   name: mHC Stability Invariants as Tile Pipeline Constraints
   introduced_by: docs/intake/issue-drafts/MHC-005-mhc-stability-invariants.md
   introduced_at: '2026-04-26'
-  definition: "Formal stability properties (spectral norm \u2264 1, closure under\
-    \ composition, Birkhoff polytope convex combination) enforceable as tile-level\
-    \ invariants in Rosetta pipelines."
+  definition: Formal stability properties (spectral norm ≤ 1, closure under composition,
+    Birkhoff polytope convex combination) enforceable as tile-level invariants in
+    Rosetta pipelines.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/571
   status: active
@@ -2869,7 +2854,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/610
   status: active
 - id: RLM-001-ARCH-context-runtime-design
-  name: "ContextRuntime \u2014 Bounded RLM Execution Engine"
+  name: ContextRuntime — Bounded RLM Execution Engine
   introduced_by: docs/intake/issue-drafts/RLM-001-ARCH-context-runtime-design.md
   introduced_at: '2026-04-26'
   definition: A first-class Entif component that mounts external memory substrates
@@ -2889,7 +2874,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/614
   status: active
 - id: RLM-001-CONTEXT-ROT
-  name: "Context Rot \u2014 Memory/Orchestration Layer Resolution"
+  name: Context Rot — Memory/Orchestration Layer Resolution
   introduced_by: docs/intake/issue-drafts/RLM-001-CONTEXT-ROT-context-rot-address.md
   introduced_at: '2026-04-26'
   definition: Context rot degrades agentic performance over long sessions as irrelevant
@@ -3000,13 +2985,13 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/630
   status: active
 - id: SCT-001
-  name: "Social Cognition Benchmark \u2014 Clinical Psychology Stress-Test Framework"
+  name: Social Cognition Benchmark — Clinical Psychology Stress-Test Framework
   introduced_by: docs/intake/issue-drafts/SCT-001-social-cognition-benchmark-clinical-psychology.md
   introduced_at: '2026-04-26'
-  definition: "A psychologically-informed benchmark framework for social cognition\
-    \ that borrows hardest test cases from clinical psychology, trauma work, attachment\
-    \ theory, and therapeutic interaction dynamics \u2014 distinct from everyday theory-of-mind\
-    \ benchmarks."
+  definition: A psychologically-informed benchmark framework for social cognition
+    that borrows hardest test cases from clinical psychology, trauma work, attachment
+    theory, and therapeutic interaction dynamics — distinct from everyday theory-of-mind
+    benchmarks.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/632
   status: active
@@ -3033,7 +3018,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/632
   status: active
 - id: SLD-001
-  name: "SkillCard Schema \u2014 Tier 0 Metadata Stub"
+  name: SkillCard Schema — Tier 0 Metadata Stub
   introduced_by: docs/intake/issue-drafts/SLD-001-skillcard-schema-tier0.md
   introduced_at: '2026-04-26'
   definition: Compact ~100-token metadata stub per skill, indexed by the skill broker
@@ -3042,7 +3027,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
 - id: SCT-003-violent-language-idiom-detection
-  name: "Violent Language Idiom Detection \u2014 Threshold Marker vs Literal Violence"
+  name: Violent Language Idiom Detection — Threshold Marker vs Literal Violence
   introduced_by: docs/intake/issue-drafts/SCT-003-violent-language-idiom-detection.md
   introduced_at: '2026-04-26'
   definition: 'AI semantic collapse failure where violence-coded idioms (magnitude
@@ -3072,7 +3057,7 @@ concepts:
   - https://github.com/Entif-AI/rosetta/issues/641
   status: active
 - id: SCT-006-interpreter-failure-detection
-  name: "Interpreter-Failure Detection \u2014 Frame Persistence Tracking"
+  name: Interpreter-Failure Detection — Frame Persistence Tracking
   introduced_by: docs/intake/issue-drafts/SCT-006-interpreter-failure-detection.md
   introduced_at: '2026-04-26'
   definition: Recurring failure mode where the assistant imports a user-explicitly-rejected
@@ -3085,9 +3070,9 @@ concepts:
   name: Three-Tier Progressive Disclosure Architecture
   introduced_by: docs/intake/issue-drafts/SLD-002-three-tier-progressive-disclosure.md
   introduced_at: '2026-04-26'
-  definition: "Architectural pattern for skill loading: Tier 0 (SkillCard stub) \u2192\
-    \ Tier 1 (SKILL.md spec on demand) \u2192 Tier 2 (resources on explicit handle).\
-    \ Prevents context window bottleneck as skill library scales."
+  definition: 'Architectural pattern for skill loading: Tier 0 (SkillCard stub) →
+    Tier 1 (SKILL.md spec on demand) → Tier 2 (resources on explicit handle). Prevents
+    context window bottleneck as skill library scales.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/645
   status: active
@@ -3095,9 +3080,9 @@ concepts:
   name: Skill Broker Middleware
   introduced_by: docs/intake/issue-drafts/SLD-003-skill-broker-middleware.md
   introduced_at: '2026-04-25'
-  definition: "Multi-stage retrieval pipeline (SQL prefilter \u2192 Vector recall\
-    \ \u2192 Graph re-rank \u2192 Receipt-aware rank) that takes a NeedSpec and returns\
-    \ top 10-20 relevant SkillCards."
+  definition: Multi-stage retrieval pipeline (SQL prefilter → Vector recall → Graph
+    re-rank → Receipt-aware rank) that takes a NeedSpec and returns top 10-20 relevant
+    SkillCards.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/461
   status: active
@@ -3105,9 +3090,9 @@ concepts:
   name: Hot Skills Pack vs Cold Library (Two-Level Skill Registry)
   introduced_by: docs/intake/issue-drafts/SLD-005-hot-cold-skill-library.md
   introduced_at: '2026-04-25'
-  definition: "Two-level skill registry: Hot Skills Pack (\u226450 always-loaded skills\
-    \ per agent template) + Cold Library (unbounded broker-discovered skills never\
-    \ preloaded). Key to scaling to 100k+ skills without context-window blowup."
+  definition: 'Two-level skill registry: Hot Skills Pack (≤50 always-loaded skills
+    per agent template) + Cold Library (unbounded broker-discovered skills never preloaded).
+    Key to scaling to 100k+ skills without context-window blowup.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/648
   status: active
@@ -3133,7 +3118,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/651
   status: active
 - id: SLD-008-skill-safety-posture
-  name: "Skill Safety Posture \u2014 Guard Enforcement"
+  name: Skill Safety Posture — Guard Enforcement
   introduced_by: docs/intake/issue-drafts/SLD-008-skill-safety-posture.md
   introduced_at: '2026-04-26'
   definition: Guard enforcement of skill metadata (risk_class, tool_scopes, budget)
@@ -3144,7 +3129,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/653
   status: active
 - id: SLD-009
-  name: "skill_broker_query_and_select \u2014 First-Class Hot Skill"
+  name: skill_broker_query_and_select — First-Class Hot Skill
   introduced_by: docs/intake/issue-drafts/SLD-009-skill-broker-query-select-hot-skill.md
   introduced_at: '2026-04-26'
   definition: Deterministic hot skill that queries the skill broker with a NeedSpec
@@ -3156,9 +3141,9 @@ concepts:
   name: Path2Vec Trainer Implementation
   introduced_by: docs/intake/issue-drafts/TB-001-path2vec-trainer-implementation.md
   introduced_at: '2026-04-26'
-  definition: "Implement rpp/embed/train_path2vec.py \u2014 PyTorch module training\
-    \ sense embeddings to predict WordNet graph proximities via Path2Vec objective\
-    \ with MSE loss, neighbor regularization, and negative sampling"
+  definition: Implement rpp/embed/train_path2vec.py — PyTorch module training sense
+    embeddings to predict WordNet graph proximities via Path2Vec objective with MSE
+    loss, neighbor regularization, and negative sampling
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/657
   status: active
@@ -3176,9 +3161,8 @@ concepts:
   name: ALIGN-SIM Semantic Robustness Stress Test Suite
   introduced_by: docs/intake/issue-drafts/TB-003-align-sim-stress-tests.md
   introduced_at: '2026-04-26'
-  definition: "Five-criterion semantic embedding stress test gate (synonym, antonym,\
-    \ paraphrase, word-order, distractor) requiring \u22654/5 pass rate for model\
-    \ promotion."
+  definition: Five-criterion semantic embedding stress test gate (synonym, antonym,
+    paraphrase, word-order, distractor) requiring ≥4/5 pass rate for model promotion.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/661
   status: active
@@ -3213,9 +3197,9 @@ concepts:
   name: CLIP Image Prototypes ETL
   introduced_by: docs/intake/issue-drafts/TB-007-clip-image-prototypes-etl.md
   introduced_at: '2026-04-26'
-  definition: "ETL pipeline generating CLIP ViT-B/32 vectors for 100 imageable WordNet\
-    \ noun synsets, stored in data/clip_prototypes.npz for cross-modal image\u2194\
-    text retrieval in the RPP multimodal demo."
+  definition: ETL pipeline generating CLIP ViT-B/32 vectors for 100 imageable WordNet
+    noun synsets, stored in data/clip_prototypes.npz for cross-modal image↔text retrieval
+    in the RPP multimodal demo.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/670
   status: active
@@ -3223,9 +3207,9 @@ concepts:
   name: YAMNet audio event prototypes ETL
   introduced_by: docs/intake/issue-drafts/TB-008-yamnet-audio-prototypes-etl.md
   introduced_at: '2026-04-26'
-  definition: "ETL pipeline generating 521-dim YAMNet audio event vectors for 50 AudioSet\
-    \ event classes, mapped to WordNet synset URIs for cross-modal audio\u2194text\
-    \ retrieval in the RPP multimodal layer."
+  definition: ETL pipeline generating 521-dim YAMNet audio event vectors for 50 AudioSet
+    event classes, mapped to WordNet synset URIs for cross-modal audio↔text retrieval
+    in the RPP multimodal layer.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/672
   status: active
@@ -3243,9 +3227,9 @@ concepts:
   name: Rosetta DocID Registry
   introduced_by: docs/intake/issue-drafts/TXS-001-rosetta-docid-registry.md
   introduced_at: '2026-04-26'
-  definition: "Machine-readable registry of ROCK-3001\u20133099 DocIDs with URI mappings,\
-    \ file naming conventions, dependency adjacency lists, and stability governance\
-    \ rules."
+  definition: Machine-readable registry of ROCK-3001–3099 DocIDs with URI mappings,
+    file naming conventions, dependency adjacency lists, and stability governance
+    rules.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/676
   status: active
@@ -3347,9 +3331,9 @@ concepts:
   name: Claw Variant Security Comparison Matrix
   introduced_by: docs/intake/issue-drafts/YAAC-002-claw-variant-security-matrix.md
   introduced_at: '2026-04-26'
-  definition: "Security comparison matrix for OpenClaw, ZeroClaw, Nanobot, IronClaw,\
-    \ PicoClaw, and Agent Zero \u2014 covering boundary models, supply chain risk,\
-    \ secrets handling, tool execution, maturity, and production readiness."
+  definition: Security comparison matrix for OpenClaw, ZeroClaw, Nanobot, IronClaw,
+    PicoClaw, and Agent Zero — covering boundary models, supply chain risk, secrets
+    handling, tool execution, maturity, and production readiness.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/688
   status: active
@@ -3415,9 +3399,9 @@ concepts:
   name: Message Bus Mailroom Gatekeeping Architecture
   introduced_by: docs/intake/issue-drafts/YAAC-009-message-bus-mailroom-architecture.md
   introduced_at: '2026-04-26'
-  definition: "Mailroom/DLQ/Quarantine pattern for gatekeeping Rosetta message bus\
-    \ \u2014 header-first validation, security quarantine for suspicious messages,\
-    \ operator triage for benign failures."
+  definition: Mailroom/DLQ/Quarantine pattern for gatekeeping Rosetta message bus
+    — header-first validation, security quarantine for suspicious messages, operator
+    triage for benign failures.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/701
   status: active
@@ -3452,7 +3436,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/706
   status: active
 - id: am-007-message-size-limit-dos
-  name: "Message Size Limit \u2014 DoS Prevention at Ingress"
+  name: Message Size Limit — DoS Prevention at Ingress
   introduced_by: docs/intake/issue-drafts/am-007-message-size-limit-dos.md
   introduced_at: '2026-04-26'
   definition: Define max_message_size threshold (1 MB typical, 10 MB for artifact
@@ -3475,14 +3459,14 @@ concepts:
   name: Domain Ref Schema (Agentic Messaging)
   introduced_by: docs/intake/issue-drafts/am-009-domain-ref-schema.md
   introduced_at: '2026-04-26'
-  definition: "Schema for the four-tuple domain identifier: tenant_id \xD7 classification\
-    \ \xD7 ABAC labels \xD7 vendor_route. Unblocks automated domain authorization\
-    \ checks and cross-domain reuse enforcement."
+  definition: 'Schema for the four-tuple domain identifier: tenant_id × classification
+    × ABAC labels × vendor_route. Unblocks automated domain authorization checks and
+    cross-domain reuse enforcement.'
   referenced_by:
   - https://github.com/gentif-ai/rosetta/issues/711
   status: active
 - id: am-010
-  name: "AM-010: Rosetta Architecture Alignment \u2014 Agentic Messaging Spec"
+  name: 'AM-010: Rosetta Architecture Alignment — Agentic Messaging Spec'
   introduced_by: docs/intake/issue-drafts/am-010-rosetta-integration-alignment.md
   introduced_at: '2026-04-26'
   definition: Architecture alignment review needed for the Agentic Messaging spec
@@ -3493,7 +3477,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/714
   status: active
 - id: am-011-mailroom-scope-boundary
-  name: "Mailroom Scope \u2014 Bus Ingress vs General Rosetta Ingress Pattern"
+  name: Mailroom Scope — Bus Ingress vs General Rosetta Ingress Pattern
   introduced_by: docs/intake/issue-drafts/am-011-mailroom-scope-boundary.md
   introduced_at: '2026-04-26'
   definition: Question of whether the mailroom ingest pipeline is specific to inter-agent
@@ -3506,10 +3490,10 @@ concepts:
   name: GuardLayer vs Mailroom Call Sequence
   introduced_by: docs/intake/issue-drafts/am-012-guardlayer-mailroom-call-sequence.md
   introduced_at: '2026-04-26'
-  definition: "Unspecified call sequence between Mailroom (coarse policy enforcement)\
-    \ and GuardLayer (fine policy RBAC/budget checks) in the Entif v0 agentic messaging\
-    \ pipeline \u2014 including invocation point, sync/async semantics, timeout behavior,\
-    \ error propagation, and retry/idempotency."
+  definition: Unspecified call sequence between Mailroom (coarse policy enforcement)
+    and GuardLayer (fine policy RBAC/budget checks) in the Entif v0 agentic messaging
+    pipeline — including invocation point, sync/async semantics, timeout behavior,
+    error propagation, and retry/idempotency.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/718
   status: active
@@ -3546,10 +3530,9 @@ concepts:
   name: No Phase-Transition Enforcement Mechanism
   introduced_by: docs/intake/issue-drafts/ccf-001-no-phase-transition-enforcement.md
   introduced_at: '2026-04-25'
-  definition: "The Consensus-First Commitment Scoping Framework v0.1 defines phase-transition\
-    \ handshake rules but contains no enforcement mechanism \u2014 no automated gate,\
-    \ checklist, or tooling to ensure agents obtain explicit yes before producing\
-    \ the next artifact."
+  definition: The Consensus-First Commitment Scoping Framework v0.1 defines phase-transition
+    handshake rules but contains no enforcement mechanism — no automated gate, checklist,
+    or tooling to ensure agents obtain explicit yes before producing the next artifact.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/302
   status: active
@@ -3598,10 +3581,10 @@ concepts:
   name: No Anti-Motivated Reasoning Automation
   introduced_by: docs/intake/issue-drafts/ccf-008-no-anti-motivated-reasoning-automation.md
   introduced_at: '2026-04-26'
-  definition: "The four anti-motivated reasoning guardrails in the Consensus-First\
-    \ Commitment Scoping Framework have no tooling or automation \u2014 incentive/bias\
-    \ notes, premortems, Team A/Team B, and disconfirmers all depend on manual process\
-    \ and will degrade to checkbox exercises."
+  definition: The four anti-motivated reasoning guardrails in the Consensus-First
+    Commitment Scoping Framework have no tooling or automation — incentive/bias notes,
+    premortems, Team A/Team B, and disconfirmers all depend on manual process and
+    will degrade to checkbox exercises.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/295
   status: active
@@ -3619,10 +3602,10 @@ concepts:
   name: Constitutional Primitives Unenforced in Runtime
   introduced_by: docs/intake/issue-drafts/constitutional-primitives-prose-not-law.md
   introduced_at: '2026-04-26'
-  definition: "Constitutional primitives (append-only, checkpoint-before-mutation,\
-    \ canonical source of truth) exist only as prose doctrine; the enforcement chain\
-    \ (Principle \u2192 Invariant \u2192 Enforcement \u2192 Telemetry \u2192 Consequence)\
-    \ is broken at every link."
+  definition: Constitutional primitives (append-only, checkpoint-before-mutation,
+    canonical source of truth) exist only as prose doctrine; the enforcement chain
+    (Principle → Invariant → Enforcement → Telemetry → Consequence) is broken at every
+    link.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/735
   status: active
@@ -3637,7 +3620,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/737
   status: active
 - id: cts-002-optical-codec-deepseek-ocr-vq-vae
-  name: "Optical Codec \u2014 DeepSeek-OCR + VQ-VAE"
+  name: Optical Codec — DeepSeek-OCR + VQ-VAE
   introduced_by: docs/intake/issue-drafts/cts-002-optical-codec-deepseek-ocr-vq-vae.md
   introduced_at: '2026-04-26'
   definition: Perceptual-layer codec that compresses rendered documents into VQ-VAE
@@ -3647,7 +3630,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/739
   status: active
 - id: cts-003-symbolic-codec-gnn-decisionreceipts
-  name: "Symbolic Codec \u2014 GNN Encoder/Decoder for DecisionReceipt Slugs"
+  name: Symbolic Codec — GNN Encoder/Decoder for DecisionReceipt Slugs
   introduced_by: docs/intake/issue-drafts/cts-003-symbolic-codec-gnn-decisionreceipts.md
   introduced_at: '2026-04-26'
   definition: GNN-based graph compression and VQ-VAE quantization for encoding structured
@@ -3677,7 +3660,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/745
   status: active
 - id: cts-006-egc-ithkuil-graphemic-core
-  name: "EGC Spec \u2014 Ithkuil-Inspired Graphemic Core with Guidebook Cipher"
+  name: EGC Spec — Ithkuil-Inspired Graphemic Core with Guidebook Cipher
   introduced_by: docs/intake/issue-drafts/cts-006-egc-ithkuil-graphemic-core.md
   introduced_at: '2026-04-26'
   definition: 'Formal specification for the Entif Graphemic Core (EGC): a machine-native
@@ -3710,9 +3693,8 @@ concepts:
   name: ROMA Multi-Pass Financial PDF POC
   introduced_by: docs/intake/issue-drafts/cts-012-roma-multi-pass-financial-pdf-poc.md
   introduced_at: '2026-04-26'
-  definition: "Proof-of-concept demonstrating ROMA multi-pass workflow: triage \u2192\
-    \ chart detection \u2192 VOI calculation \u2192 deep_parse_chart extraction on\
-    \ financial PDFs."
+  definition: 'Proof-of-concept demonstrating ROMA multi-pass workflow: triage → chart
+    detection → VOI calculation → deep_parse_chart extraction on financial PDFs.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/753
   status: active
@@ -3727,12 +3709,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/747
   status: active
 - id: cts-014-bio-inspired-forgetting-benchmarks
-  name: "Bio-Inspired Forgetting \u2014 Downsampling Fidelity Benchmarks"
+  name: Bio-Inspired Forgetting — Downsampling Fidelity Benchmarks
   introduced_by: docs/intake/issue-drafts/cts-014-bio-inspired-forgetting-benchmarks.md
   introduced_at: '2026-04-26'
-  definition: "Benchmark specs for determining acceptable resolution loss in Tier\
-    \ 2 (50%) and Tier 3 (summary) memory forgetting thresholds \u2014 informs CTS-004\
-    \ placeholder values with empirical data."
+  definition: Benchmark specs for determining acceptable resolution loss in Tier 2
+    (50%) and Tier 3 (summary) memory forgetting thresholds — informs CTS-004 placeholder
+    values with empirical data.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/743
   status: active
@@ -3788,9 +3770,9 @@ concepts:
   name: DeerFlow Skill Version Stability Contract
   introduced_by: docs/intake/issue-drafts/df-009-skill-versioning-contract.md
   introduced_at: '2026-04-25'
-  definition: "DeerFlow skills lack required semver versioning, changelog enforcement,\
-    \ deprecation policy, and API version stability \u2014 consuming agents can break\
-    \ silently when skills update."
+  definition: DeerFlow skills lack required semver versioning, changelog enforcement,
+    deprecation policy, and API version stability — consuming agents can break silently
+    when skills update.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/768
   status: active
@@ -3798,9 +3780,9 @@ concepts:
   name: DeerFlow JSON Store Scaling Bottleneck
   introduced_by: docs/intake/issue-drafts/df-010-json-store-scaling-bottleneck.md
   introduced_at: '2026-04-26'
-  definition: "DeerFlow uses JSON files for thread/memory persistence with no transactions,\
-    \ locking, or compaction \u2014 under high concurrency this serializes on I/O\
-    \ and risks state corruption."
+  definition: DeerFlow uses JSON files for thread/memory persistence with no transactions,
+    locking, or compaction — under high concurrency this serializes on I/O and risks
+    state corruption.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/770
   status: active
@@ -3808,9 +3790,9 @@ concepts:
   name: Memory Fact Expiration / Staleness Mechanism
   introduced_by: docs/intake/issue-drafts/df-011-memory-fact-expiration.md
   introduced_at: '2026-04-26'
-  definition: "DeerFlow memory system stores facts with confidence scores but no TTL,\
-    \ expiration, staleness detection, or automatic retirement \u2014 facts accumulate\
-    \ indefinitely, risking outdated high-confidence facts being injected into prompts."
+  definition: DeerFlow memory system stores facts with confidence scores but no TTL,
+    expiration, staleness detection, or automatic retirement — facts accumulate indefinitely,
+    risking outdated high-confidence facts being injected into prompts.
   extends: []
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/772
@@ -3926,7 +3908,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/795
   status: active
 - id: prd-005-live-source-adapter
-  name: "Live-Source Adapter \u2014 GitHub + Google Drive"
+  name: Live-Source Adapter — GitHub + Google Drive
   introduced_by: docs/intake/issue-drafts/2026-04-26-prd-005-live-source-adapter.md
   introduced_at: '2026-04-26'
   definition: Adapter interface and implementations for fetching live GitHub and Google
@@ -3936,7 +3918,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/799
   status: active
 - id: 2026-04-26-prd-006-receipt-semantics-hardening
-  name: "Receipt Semantics Hardening \u2014 PRD-006"
+  name: Receipt Semantics Hardening — PRD-006
   introduced_by: docs/intake/issue-drafts/2026-04-26-prd-006-receipt-semantics-hardening.md
   introduced_at: '2026-04-26'
   definition: 'Hardening of receipt semantics: richer evidence typing taxonomy (direct-observation,
@@ -3947,7 +3929,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/801
   status: active
 - id: 2026-04-26-prd-007-trust-scoring-staged-implementation
-  name: "Trust Scoring \u2014 Staged Implementation"
+  name: Trust Scoring — Staged Implementation
   introduced_by: docs/intake/issue-drafts/2026-04-26-prd-007-trust-scoring-staged-implementation.md
   introduced_at: '2026-04-26'
   definition: 'Trust scoring as a staged implementation: schema/vector fields exist
@@ -3999,9 +3981,9 @@ concepts:
   name: Cross-task textual spillover (Emilie-ness detection)
   introduced_by: docs/intake/issue-drafts/emilie-cross-task-textual-spillover.md
   introduced_at: '2026-04-26'
-  definition: "Detecting consistent Emilie persona markers across code style, story\
-    \ structure, and analysis \u2014 cross-domain spillover as evidence for stable\
-    \ persona persistence."
+  definition: Detecting consistent Emilie persona markers across code style, story
+    structure, and analysis — cross-domain spillover as evidence for stable persona
+    persistence.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/813
   status: active
@@ -4060,10 +4042,10 @@ concepts:
   name: Constitutional Pack Signing Algorithm Unspecified
   introduced_by: docs/intake/issue-drafts/entif-v0-003-constitutional-pack-signing.md
   introduced_at: '2026-04-26'
-  definition: "The constitutional pack schema specifies RFC8785_JCS canonicalization\
-    \ and signature_required:true but omits the signature algorithm, key rotation\
-    \ policy, public key provisioning mechanism, and verification failure behavior\
-    \ \u2014 making the signing mechanism a structurally empty security control."
+  definition: The constitutional pack schema specifies RFC8785_JCS canonicalization
+    and signature_required:true but omits the signature algorithm, key rotation policy,
+    public key provisioning mechanism, and verification failure behavior — making
+    the signing mechanism a structurally empty security control.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/823
   status: active
@@ -4091,10 +4073,10 @@ concepts:
   name: ACT-R Parameterization for Engram Base-Level Activation
   introduced_by: docs/intake/issue-drafts/entif-v0-006-engram-act-r-parameterization.md
   introduced_at: '2026-04-27'
-  definition: "The engram activation schema uses ACT-R base-level activation formula\
-    \ B = ln(\u03A3 t_i^(-d)) but does not specify d value, time unit for t_i, trace\
-    \ weighting scheme, or expected base_level output range \u2014 making implementation\
-    \ uncalibratable and tier-promotion rules undefinable."
+  definition: The engram activation schema uses ACT-R base-level activation formula
+    B = ln(Σ t_i^(-d)) but does not specify d value, time unit for t_i, trace weighting
+    scheme, or expected base_level output range — making implementation uncalibratable
+    and tier-promotion rules undefinable.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/829
   status: active
@@ -4142,9 +4124,9 @@ concepts:
   name: Rosetta Tile Minting API Contract
   introduced_by: docs/intake/issue-drafts/entif-v0-011-rosetta-tile-minting-api.md
   introduced_at: '2026-04-25'
-  definition: "The integration contract defining how Entif v0 calls Rosetta to mint\
-    \ a cognitive tile \u2014 endpoint, request/response schema, error handling, and\
-    \ retry policy are undefined."
+  definition: The integration contract defining how Entif v0 calls Rosetta to mint
+    a cognitive tile — endpoint, request/response schema, error handling, and retry
+    policy are undefined.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/840
   status: active
@@ -4152,9 +4134,9 @@ concepts:
   name: Phase roadmap accountability (ENTIF-v0-012)
   introduced_by: docs/intake/issue-drafts/entify-v0-012-phase-roadmap-accountability.md
   introduced_at: '2026-04-27'
-  definition: "The phased roadmap (v0/v0.1/v1) lacks owner assignments, milestone\
-    \ acceptance criteria, and dependency chain \u2014 making it a wish list rather\
-    \ than an accountable plan."
+  definition: The phased roadmap (v0/v0.1/v1) lacks owner assignments, milestone acceptance
+    criteria, and dependency chain — making it a wish list rather than an accountable
+    plan.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/842
   status: active
@@ -4182,14 +4164,14 @@ concepts:
   name: Model Routing Decision Thresholds
   introduced_by: docs/intake/issue-drafts/entify-v0-015-model-routing-thresholds.md
   introduced_at: '2026-04-27'
-  definition: "Three uncalibrated decision thresholds in the model-routing flowchart:\
-    \ context-burden token count, impact classification rubric (blast_radius \xD7\
-    \ probability), and policy gate trigger conditions."
+  definition: 'Three uncalibrated decision thresholds in the model-routing flowchart:
+    context-burden token count, impact classification rubric (blast_radius × probability),
+    and policy gate trigger conditions.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/851
   status: active
 - id: entify-v0-017-jcs-canonicalization-algorithm
-  name: "JCS Canonicalization \u2014 Deterministic Algorithm Unspecified"
+  name: JCS Canonicalization — Deterministic Algorithm Unspecified
   introduced_by: docs/intake/issue-drafts/entif-v0-017-jcs-canonicalization-algorithm.md
   introduced_at: '2026-04-27'
   definition: JCS (JSON Canonicalization Scheme, RFC 8785) canonicalization procedure
@@ -4209,13 +4191,13 @@ concepts:
   - https://github.com/enti-ai/rosetta/issues/856
   status: active
 - id: entify-v0-018
-  name: "Signal Event Idempotency \u2014 No Dedup Window, Polling Interval, or Idempotency\
-    \ Key"
+  name: Signal Event Idempotency — No Dedup Window, Polling Interval, or Idempotency
+    Key
   introduced_by: docs/intake/issue-drafts/entif-v0-018-signal-event-idempotency.md
   introduced_at: '2026-04-27'
-  definition: "Bulk trend sensors and outlier path sensors are defined in the Entif\
-    \ v0 spec but lack idempotency keys, deduplication windows, and minimum polling\
-    \ intervals \u2014 causing duplicate signal processing and inflated VOI estimates."
+  definition: Bulk trend sensors and outlier path sensors are defined in the Entif
+    v0 spec but lack idempotency keys, deduplication windows, and minimum polling
+    intervals — causing duplicate signal processing and inflated VOI estimates.
   referenced_by:
   - https://github.com/enti-ai/rosetta/issues/861
   status: active
@@ -4264,10 +4246,10 @@ concepts:
   name: Platform Mismatch as Root Cause of Agentic Failures
   introduced_by: docs/intake/issue-drafts/harness-platform-mismatch-root-cause.md
   introduced_at: '2026-04-24'
-  definition: "LLMs were not designed to enforce rules; harnesses are not built to\
-    \ respect constitutional primitives. This category error explains why every agentic\
-    \ system fails \u2014 the solution is harness-proof architecture with a constitutional\
-    \ kernel."
+  definition: LLMs were not designed to enforce rules; harnesses are not built to
+    respect constitutional primitives. This category error explains why every agentic
+    system fails — the solution is harness-proof architecture with a constitutional
+    kernel.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/735
   status: active
@@ -4369,9 +4351,9 @@ concepts:
   name: OMC Four-Zone Compaction Thresholds
   introduced_by: docs/intake/issue-drafts/omc-four-zone-compaction-thresholds.md
   introduced_at: '2026-04-27'
-  definition: "Specify trigger thresholds and receipts for four-zone compaction decisions\
-    \ in OMC planning \u2014 token-pressure and cadence-based trigger values and evidence\
-    \ requirements."
+  definition: Specify trigger thresholds and receipts for four-zone compaction decisions
+    in OMC planning — token-pressure and cadence-based trigger values and evidence
+    requirements.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/832
   status: active
@@ -4413,13 +4395,13 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/898
   status: active
 - id: omoc-lean-vs-learned-routing-paradigm
-  name: "OMOC Lean vs Learned \u2014 Routing Paradigm"
+  name: OMOC Lean vs Learned — Routing Paradigm
   introduced_by: docs/intake/issue-drafts/omoc-lean-vs-learned-routing-paradigm.md
   introduced_at: '2026-04-27'
-  definition: "Open question: should OMOC routing be fully deterministic (rule-based\
-    \ over concept signatures), fully learned (from outcome data), or hybrid? The\
-    \ RFC \xA78.4 utility formula weights are unspecified, making this a build-order\
-    \ decision blocking Tack 3."
+  definition: 'Open question: should OMOC routing be fully deterministic (rule-based
+    over concept signatures), fully learned (from outcome data), or hybrid? The RFC
+    §8.4 utility formula weights are unspecified, making this a build-order decision
+    blocking Tack 3.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/81
   status: active
@@ -4551,9 +4533,8 @@ concepts:
   name: Recovery Rule No Enforcement
   introduced_by: docs/intake/issue-drafts/recovery-rule-no-enforcement.md
   introduced_at: '2026-04-27'
-  definition: "The Recovery Rule in UPSTREAM_AND_BACKUP_PLAN is advisory only \u2014\
-    \ no machine-checkable mechanism enforces local authority preference over ad hoc\
-    \ reinterpretation."
+  definition: The Recovery Rule in UPSTREAM_AND_BACKUP_PLAN is advisory only — no
+    machine-checkable mechanism enforces local authority preference over ad hoc reinterpretation.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/923
   status: active
@@ -4611,9 +4592,9 @@ concepts:
   name: Delta Capsule Propagation Protocol
   introduced_by: docs/intake/issue-drafts/rosetta-v3-005-delta-capsule-propagation.md
   introduced_at: '2026-04-27'
-  definition: "The propagation protocol for delta capsules (rosetta.delta_capsule)\
-    \ \u2014 discovery, prerequisite validation, conflict detection, and resolution\
-    \ \u2014 is unspecified in Rosetta v3.0 Core Spine."
+  definition: The propagation protocol for delta capsules (rosetta.delta_capsule)
+    — discovery, prerequisite validation, conflict detection, and resolution — is
+    unspecified in Rosetta v3.0 Core Spine.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/930
   status: active
@@ -4651,9 +4632,9 @@ concepts:
   name: Emotional Geometry Schema
   introduced_by: docs/intake/issue-drafts/sac-002-emotional-geometry-schema.md
   introduced_at: '2026-04-27'
-  definition: "A formal data schema for representing affective arcs in audio clips\
-    \ \u2014 VAD-based emotional segments with arc-level summaries, graph node integration\
-    \ for semantic-emotive graph."
+  definition: A formal data schema for representing affective arcs in audio clips
+    — VAD-based emotional segments with arc-level summaries, graph node integration
+    for semantic-emotive graph.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/425
   status: active
@@ -4678,7 +4659,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/940
   status: active
 - id: sba-001
-  name: "Entif v0 Tri-Tier Memory Architecture \u2014 formal specification"
+  name: Entif v0 Tri-Tier Memory Architecture — formal specification
   introduced_by: docs/intake/issue-drafts/sba-001-entif-v0-memory-architecture.md
   introduced_at: '2026-04-27'
   definition: 'Formal specification for Entif v0 tri-tier memory: Redis key schema
@@ -4720,12 +4701,12 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/948
   status: active
 - id: sba-006-media-attention-engine-platform-apis
-  name: "Media & Attention Engine M1\u2013M6 (SBA-006)"
+  name: Media & Attention Engine M1–M6 (SBA-006)
   introduced_by: docs/intake/issue-drafts/sba-006-media-attention-engine-platform-apis.md
   introduced_at: '2026-04-27'
-  definition: "Six-module content flywheel (M1\u2013M6) for multi-platform content\
-    \ creation and distribution. Operates in suggestion/simulation mode in v0 with\
-    \ HITL gate before live API calls."
+  definition: Six-module content flywheel (M1–M6) for multi-platform content creation
+    and distribution. Operates in suggestion/simulation mode in v0 with HITL gate
+    before live API calls.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/950
   status: active
@@ -4740,7 +4721,7 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/952
   status: active
 - id: sba-008-tailscale-exit-node-vpn-compatibility
-  name: "SBA-008: Tailscale Exit Node \u2014 Corporate VPN Compatibility"
+  name: 'SBA-008: Tailscale Exit Node — Corporate VPN Compatibility'
   introduced_by: docs/intake/issue-drafts/sba-008-tailscale-exit-node-vpn-compatibility.md
   introduced_at: '2026-04-27'
   definition: Analysis of corporate MDM VPN conflicts, asymmetric routing, and iOS
@@ -4809,13 +4790,13 @@ concepts:
   - https://github.com/entif-ai/rosetta/issues/964
   status: active
 - id: skillpack-importer-quarantine-flow
-  name: "SkillPack Importer \u2014 Quarantine Flow"
+  name: SkillPack Importer — Quarantine Flow
   introduced_by: docs/intake/issue-drafts/skillpack-importer-quarantine-flow.md
   introduced_at: '2026-04-24'
-  definition: "Five-phase skillpack import flow: Parse \u2192 Classify \u2192 Quarantine\
-    \ \u2192 Certify \u2192 Promote. Skills from Claude/Codex/OpenClaw are absorbed\
-    \ via quarantine rather than direct execution, with dry-run validation in sandboxed\
-    \ fixtures before promotion to trusted internal pack registry."
+  definition: 'Five-phase skillpack import flow: Parse → Classify → Quarantine → Certify
+    → Promote. Skills from Claude/Codex/OpenClaw are absorbed via quarantine rather
+    than direct execution, with dry-run validation in sandboxed fixtures before promotion
+    to trusted internal pack registry.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/419
   status: active
@@ -4823,9 +4804,9 @@ concepts:
   name: SOUL-v4 emotional geometry undefined
   introduced_by: docs/intake/issue-drafts/soul-v4-emotional-geometry-undefined.md
   introduced_at: '2026-04-27'
-  definition: "\"Emotional geometry\" and \"base foundations for loyalties\" in SOUL.md\
-    \ v4.1 \xA7FUNDAMENTAL IDEOLOGY are undefined. No operational mechanism for storage\
-    \ or restoration is specified."
+  definition: '"Emotional geometry" and "base foundations for loyalties" in SOUL.md
+    v4.1 §FUNDAMENTAL IDEOLOGY are undefined. No operational mechanism for storage
+    or restoration is specified.'
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/967
   status: active
@@ -4892,10 +4873,9 @@ concepts:
   name: Swarm Federation Governance Complexity
   introduced_by: docs/intake/issue-drafts/swarm-federation-governance-complexity.md
   introduced_at: '2026-04-27'
-  definition: "Risk that 5-layer federation model (single-tenant \u2192 multi-agent\
-    \ \u2192 org-scoped \u2192 inter-org \u2192 public commons) creates unmitigated\
-    \ governance complexity across trust boundaries, abuse-handling asymmetry, and\
-    \ receipt chain integrity gaps."
+  definition: Risk that 5-layer federation model (single-tenant → multi-agent → org-scoped
+    → inter-org → public commons) creates unmitigated governance complexity across
+    trust boundaries, abuse-handling asymmetry, and receipt chain integrity gaps.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/980
   status: active
@@ -4981,15 +4961,147 @@ concepts:
   name: Write-Admission Gate State Machine
   introduced_by: docs/intake/issue-drafts/write-admission-gate-nine-step-state-machine.md
   introduced_at: '2026-04-24'
-  definition: "9-step fail-closed state machine (Propose\u2192Normalize\u2192Authorize\u2192\
-    Ground\u2192Checkpoint\u2192Apply\u2192Observe\u2192Receipt\u2192Project) governing\
-    \ all writes to canonical memory layers."
+  definition: 9-step fail-closed state machine (Propose→Normalize→Authorize→Ground→Checkpoint→Apply→Observe→Receipt→Project)
+    governing all writes to canonical memory layers.
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/994
   status: active
+- id: guard-layer-pep
+  name: Guard Layer Policy Enforcement Point
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Policy enforcement point that intermediates all Majordomo/agentic operations;
+    acts as allowlist/denylist gate with OPA/Rego policy engine and sandboxed execution
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: Maps to write-admission-gate in NOT LAME; EDG-003 tracks alignment gap
+- id: genesis-protocol
+  name: Genesis Protocol
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: 'Entif 2.0 constitutional artifact: encodes rules, ethical constraints,
+    update mechanisms; anchored by genesis cryptographic keypair with 5-of-7 multisig
+    control; aspirational — no current implementation'
+  extends: []
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: Doctrine v0.2 is current constitutional equivalent; EDG-001 tracks terminology
+    mapping
+- id: emergency-halt-mechanism
+  name: Emergency Halt Mechanism
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Human-triggerable system-wide halt that all agents are obligated to
+    obey; signed by Genesis multisig; enforced at guard process or kernel level to
+    prevent bypass; one near-term actionable requirement from Entif 2.0 governance
+    doc
+  extends:
+  - guard-layer-pep
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-006 tracks as sovereign-kernel kill-switch requirement; does not require
+    full HSM infrastructure to implement in near-term
+- id: entif-2-0-blockchain-audit-trail
+  name: Entif 2.0 Blockchain Audit Trail
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Permissioned blockchain ledger for audit trail and governance transactions;
+    directly conflicts with NOT LAME specifying PostgreSQL as canonical registry
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-002 tracks conflict; NOT LAME PostgreSQL takes precedence for near-term
+- id: zkp-node-validation-timing
+  name: ZKP Node Validation Timing Conflict
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md; docs/intake/issue-drafts/2026-04-25-cognitive-tiles-swarm-gnosis-ct-006-zk-proofs.md
+  introduced_at: '2026-05-26'
+  definition: Entif 2.0 proposes ZK proofs for near-term node computation verification;
+    CT-006 classifies ZK-SNARK proof generation as too expensive (seconds to minutes
+    per proof) for near-term adoption; CT-006 takes precedence
+  extends:
+  - ct-006-zk-proofs
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-004 tracks resolution; ZKP deferred to post-MVP phases
+- id: threat-monitor-soc-capability
+  name: Threat Monitor SOC Capability
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: 'Full Security Operations Center capability: CVE/NVD feeds, LLM-augmented
+    triage with RAG, SBOM cross-referencing, automated hot-patching and kill-switches;
+    separate subsystem from Guard Layer which monitors internal agent behavior'
+  extends: []
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-005 scopes as separate future workstream; out of scope for Text-Core MVP
+- id: majordomo-to-sovereign-kernel
+  name: Majordomo to Sovereign Kernel Terminology Mapping
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Entif 2.0 governance doc uses Majordomo for the central orchestrator;
+    Rosetta/Entif current vocabulary uses sovereign kernel or orchestrator; creates
+    implementation confusion
+  extends: []
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-001 tracks terminology mapping gap
+- id: zero-trust-node-tpm-sgx
+  name: Zero-Trust Node Design (TPM/SGX)
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Zero-trust node design with TPM/SGX hardware attestation, signed Docker/VM
+    images, per-node Ed25519 identity, container-level isolation (namespaces + seccomp/BPF),
+    and mTLS between nodes; aspirational long-horizon infrastructure
+  extends: []
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-008 tracks as long-horizon infrastructure; near-term node security uses
+    strict API contracts + schema validation
+- id: hsm-multisig-ceremony
+  name: HSM Multi-Sig Key Ceremony
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md
+  introduced_at: '2026-05-26'
+  definition: Air-gapped HSM infrastructure for Genesis key storage; 5-of-7 multisig
+    for Genesis-level changes; key ceremony modeled on ICANN DNSSEC; aspirational
+    with no current implementation path
+  extends:
+  - genesis-protocol
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  status: active
+  note: EDG-007 tracks as aspirational infrastructure; emergency halt (EDG-006) can
+    proceed without full HSM
+- id: entif-2-0-guard-layer-write-admission-gate-alignment
+  name: Guard Layer vs Write-Admission-Gate Alignment
+  introduced_by: docs/governance/Entif 2.0 - Decentralization and Governance.md; docs/PRDs/NOT
+    LAME PRD
+  introduced_at: '2026-05-26'
+  definition: Guard Layer (Section 1) and write-admission-gate (NOT LAME) describe
+    same conceptual function with different terminology; OPA/Rego policy engine, HITL
+    escalation, safe-hold state, and red-team testing are in Guard Layer but missing
+    from write-admission-gate spec
+  extends:
+  - guard-layer-pep
+  - write-admission-gate
+  referenced_by:
+  - docs/governance/Entif 2.0 - Decentralization and Governance.md
+  - docs/PRDs/NOT LAME PRD
+  status: active
+  note: EDG-003 tracks alignment gap; write-admission-gate is Rosetta-native equivalent
 issue_candidates:
 - id: DI-007
-  title: "Sub-agent context isolation \u2014 clean boot per cycle"
+  title: Sub-agent context isolation — clean boot per cycle
   github: 31
   priority: P1
   type: bug
@@ -4998,7 +5110,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 made SUBAGENT_BOOT.md the self-contained boot payload.'
 - id: DI-008
-  title: "Ledger locking mechanism \u2014 mark doc in-flight, dead-letter queue"
+  title: Ledger locking mechanism — mark doc in-flight, dead-letter queue
   github: 32
   priority: P1
   type: reliability
@@ -5008,7 +5120,7 @@ issue_candidates:
   note: 'Instruction-level lock protocol exists in PR #48; actual atomic lock/dead-letter
     implementation remains open.'
 - id: DI-009
-  title: "Internal knowledge graph \u2014 cross-doc concept linking, upgrade to Graphiti"
+  title: Internal knowledge graph — cross-doc concept linking, upgrade to Graphiti
   github: 33
   priority: P2
   type: knowledge-graph
@@ -5027,7 +5139,7 @@ issue_candidates:
   status: closed
   note: 'Closed after PR #48 added prior-work, issue-draft, and PR checks to SUBAGENT_BOOT.md.'
 - id: DI-011
-  title: "Sub-agents must never merge their own PRs \u2014 boundary violation"
+  title: Sub-agents must never merge their own PRs — boundary violation
   github: 39
   priority: P1
   type: boundary
@@ -5046,7 +5158,7 @@ issue_candidates:
   note: 'Closed after PR #48 added candidate-to-draft validation and PR #49 normalized
     remaining OMC/Text-Core draft files.'
 - id: ROCK-3111-C-pack-id-placeholder
-  title: "RRP pack_id is a placeholder \u2014 needs real content-addressed ID at freeze"
+  title: RRP pack_id is a placeholder — needs real content-addressed ID at freeze
   github: null
   priority: P2
   type: implementation
@@ -5275,7 +5387,7 @@ processed_docs:
   findings: 23
   pr: 37
   issues: 5
-  notes: "Sub-agent merged PR \u2014 DI-011 filed; issue drafts added in PR #44"
+  notes: 'Sub-agent merged PR — DI-011 filed; issue drafts added in PR #44'
 - path: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   processed_at: 2026-04-24T22:53
   findings: 0
@@ -5507,8 +5619,7 @@ issue_drafts_inventory:
   issue_id: text-core-postgres-pgvector-operational-baseline
   priority: P1
   type: implementation
-  note: "Part of Text-Core MVP scope gate \u2014 pgvector baseline required before\
-    \ RC claims"
+  note: Part of Text-Core MVP scope gate — pgvector baseline required before RC claims
 - path: docs/intake/issue-drafts/rock-3111-c-pack-id-placeholder.md
   source_doc: docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   source_pr: 44
@@ -6287,4 +6398,3 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
-
