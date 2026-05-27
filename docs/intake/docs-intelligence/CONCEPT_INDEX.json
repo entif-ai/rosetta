@@ -4033,6 +4033,109 @@
         "emergency-halt-mechanism-requirement",
         "threat-intelligence-vs-runtime-safety"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "governance",
+        "ob1",
+        "import-scope",
+        "architectural-decision",
+        "ob1-import-rule",
+        "process-vs-constitution",
+        "repo-structure",
+        "contribution-taxonomy",
+        "contribution-classes",
+        "folder-contract",
+        "agent-design",
+        "tool-surface",
+        "hot-tools",
+        "tool-budget",
+        "routing-ambiguity",
+        "context-cost",
+        "storage",
+        "dedupe",
+        "ingest",
+        "receipts",
+        "dedupe-low",
+        "normalization-fingerprint",
+        "revision-detect",
+        "idempotent-import",
+        "routing",
+        "ingress",
+        "ambiguity",
+        "policy",
+        "schema-aware-routing",
+        "pending-confirmation",
+        "metadata-first-routing",
+        "retrieval",
+        "ux",
+        "behavior",
+        "quiet-retrieval",
+        "terse-output",
+        "refusal-safe",
+        "ci",
+        "contribution-contract",
+        "metadata-json",
+        "ci-validators",
+        "recipes",
+        "skills",
+        "integrations",
+        "recipe-spec",
+        "skill-spec",
+        "integration-spec",
+        "implementation-targets",
+        "recipe-list",
+        "receipt-bearing",
+        "dry-run-first",
+        "behavior-packs",
+        "skill-list",
+        "skill-vs-persona",
+        "refinery",
+        "content-fingerprinting",
+        "revision-chain",
+        "source-type-receipts",
+        "metrics",
+        "tool-budget-metrics",
+        "routing-tests",
+        "regression-tracking",
+        "exclusion-list",
+        "ob1-exclusions",
+        "thoughts-table",
+        "storage-stack",
+        "mcp-assumptions",
+        "memory-planes",
+        "temporal",
+        "activation",
+        "graphiti",
+        "muninn",
+        "temporal-plane",
+        "activation-plane",
+        "graphiti-import",
+        "muninn-import",
+        "merge-gate",
+        "merge-refusal",
+        "contribution-gate",
+        "implementation-track",
+        "7-actions",
+        "implementation-backlog",
+        "ai-readability",
+        "documentation",
+        "ai-readable-repo",
+        "agent-understandable",
+        "stepwise-docs",
+        "docs",
+        "build-order",
+        "education",
+        "progressive-learning",
+        "compounding-verticals",
+        "10-step-path",
+        "integrity",
+        "dedupe-receipts",
+        "receipt-law"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4145,6 +4248,46 @@
       "signature": "008-design-edg-horizon-infrastructure"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
+      "title": "OB1-001: Section 10 Implementation Actions Not Tracked",
+      "labels": [
+        "governance",
+        "tracking",
+        "implementation"
+      ],
+      "signature": "001-actions-implementation-not-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
+      "title": "OB1-002: Tool-Budget CI Enforcement Missing",
+      "labels": [
+        "governance",
+        "ci",
+        "tool-surface"
+      ],
+      "signature": "002-budget-enforcement-ob1-tool"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
+      "title": "OB1-003: Contribution Folder Contract CI Not Enforcing metadata.json",
+      "labels": [
+        "governance",
+        "ci",
+        "contribution-contract"
+      ],
+      "signature": "003-contract-contribution-enforcing-folder"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md",
+      "title": "OB1-004: OB1 Exclusion List Not Enforced in CI",
+      "labels": [
+        "governance",
+        "ci",
+        "ob1-exclusions"
+      ],
+      "signature": "004-enforced-exclusion-list-not"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4223,7 +4366,8 @@
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -4343,7 +4487,8 @@
     },
     "receipt-law": {
       "documents": [
-        "docs/governance/AUTHORITY_STACK.md"
+        "docs/governance/AUTHORITY_STACK.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -4368,13 +4513,20 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
+        "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
+        "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
+        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md"
+      ]
     },
     "repo-structure": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md"
+        "docs/intake/docs-intelligence/2026-04-24-batch-2-governance-and-prd.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -4486,7 +4638,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -5253,7 +5406,8 @@
       "documents": [
         "docs/external/acpx.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -5617,9 +5771,12 @@
     },
     "tool-surface": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md"
+      ]
     },
     "codegraphforge": {
       "documents": [
@@ -6026,7 +6183,8 @@
     "memory-planes": {
       "documents": [
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -6109,7 +6267,9 @@
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+      ]
     },
     "layer-hook": {
       "documents": [
@@ -6209,7 +6369,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -6788,7 +6949,8 @@
     },
     "integrations": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -6903,9 +7065,14 @@
     "ci": {
       "documents": [
         "docs/external/Berman-PRD.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
+        "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
+        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md"
+      ]
     },
     "3-tiers": {
       "documents": [
@@ -7350,7 +7517,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -8376,7 +8544,8 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10215,7 +10384,8 @@
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10462,7 +10632,8 @@
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10625,7 +10796,8 @@
     },
     "integrity": {
       "documents": [
-        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md"
+        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10846,7 +11018,8 @@
     "ingest": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10912,7 +11085,8 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -11269,7 +11443,8 @@
     },
     "muninn": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -11513,7 +11688,8 @@
     "temporal": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -11918,7 +12094,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -18442,14 +18619,16 @@
     "temporal-plane": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
     "activation-plane": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -18612,7 +18791,8 @@
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -20408,7 +20588,8 @@
     },
     "build-order": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -21592,7 +21773,8 @@
     },
     "refinery": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -22513,6 +22695,436 @@
         "docs/governance/Entif 2.0 - Decentralization and Governance.md"
       ],
       "issueDrafts": []
+    },
+    "ob1": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "import-scope": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "architectural-decision": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ob1-import-rule": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "process-vs-constitution": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "contribution-taxonomy": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "contribution-classes": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "folder-contract": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-design": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "hot-tools": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-budget": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-ambiguity": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-cost": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "dedupe-low": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "normalization-fingerprint": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "revision-detect": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "idempotent-import": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ambiguity": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "schema-aware-routing": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "pending-confirmation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "metadata-first-routing": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ux": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "behavior": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "quiet-retrieval": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "terse-output": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "refusal-safe": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "contribution-contract": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md"
+      ]
+    },
+    "metadata-json": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ci-validators": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "recipes": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "recipe-spec": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-spec": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "integration-spec": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-targets": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "recipe-list": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "receipt-bearing": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "dry-run-first": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "behavior-packs": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-list": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-vs-persona": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-fingerprinting": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "revision-chain": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-type-receipts": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-budget-metrics": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-tests": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "regression-tracking": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "exclusion-list": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ob1-exclusions": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md"
+      ]
+    },
+    "thoughts-table": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "storage-stack": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-assumptions": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "graphiti": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "graphiti-import": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "muninn-import": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "merge-gate": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "merge-refusal": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "contribution-gate": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-track": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "7-actions": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "implementation-backlog": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-readability": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-readable-repo": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-understandable": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "stepwise-docs": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "docs": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "education": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "progressive-learning": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "compounding-verticals": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "10-step-path": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "dedupe-receipts": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "tracking": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+      ]
     }
   },
   "duplicateIssueDraftClusters": []
