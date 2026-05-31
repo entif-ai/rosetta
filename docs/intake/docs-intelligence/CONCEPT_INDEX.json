@@ -4136,6 +4136,185 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-31-agentic-workflow-media-generation.md",
+      "sourcePath": "docs/ideas/20251004 - Agentic Workflow for Media Generation.md",
+      "title": "Docs Intelligence Extraction — Agentic Workflow for Media Generation",
+      "concepts": [
+        "ffmpeg",
+        "reverse-filter",
+        "vlc",
+        "vlc-s-built-in-reverse-filter-can-corrupt-output",
+        "ffmpeg-is-the-reliable-alternative",
+        "youtube-algorithm",
+        "release-cadence",
+        "3-per-day",
+        "youtube-s-algorithm-stops-meaningfully-distributing-a-channel-s-uploads-beyond-3-public-videos-per-24-hour-period",
+        "loop",
+        "video-edit",
+        "forward-reversed-duplicate-concatenated-to-audio-length-creates-seamless-visual-ping-pong-without-recompressing-each-round-trip",
+        "concat-demuxer-list-avoids-quality-degradation",
+        "aeneas",
+        "srt-generation",
+        "lyrics-timing",
+        "aeneas-produces-srt-timecodes-from-audio-lyrics-txt-one-line-per-on-screen-cue-via-forced-alignment",
+        "is-text-type-plain-respects-line-breaks",
+        "task-adjust-boundary-percent-value-15-adds-forgiveness-for-fast-passages",
+        "n8n",
+        "workflow-automation",
+        "opal",
+        "mcp",
+        "opal-does-not-reliably-expose-mcp-client",
+        "n8n-in-queue-mode-with-redis-is-the-recommended-production-orchestrator",
+        "opal-can-be-used-for-rapid-prototyping-only",
+        "synology",
+        "nas",
+        "inotifywait",
+        "watcher",
+        "inotifywait-monitors-volume1-mediafactory-incoming-for-track-mp3-lyrics-txt-pairs",
+        "triggers-aeneas-ffmpeg-pipeline",
+        "runs-as-systemd-service",
+        "paid-ads",
+        "organic-growth",
+        "paid-traffic-generates-weak-retention-signals-skip-reflex",
+        "video-appears-shadowbanned-after-ad-spend-stops-because-early-retention-data-is-poor-not-malice",
+        "just-math",
+        "ctr",
+        "retention",
+        "youtube-s-algorithm-reads-ctr-and-watch-time-at-the-video-channel-level",
+        "warm-traffic-newsletter",
+        "discord",
+        "existing-fans-generates-stronger-signals-than-cold-paid-clicks",
+        "consistency-in-posting-builds-channel-level-session-time",
+        "audio-normalization",
+        "loudnorm",
+        "ffmpeg-loudnorm-filter-for-broadcast-ready-output-i-14-lufs",
+        "tp-1-5-true-peak",
+        "lra-11-loudness-range",
+        "fade-in-out-300ms-prevents-audio-pops",
+        "9x16",
+        "shorts",
+        "crop",
+        "ffmpeg-i-master-16x9-mp4-vf-crop-1080-1920-in-w-1080-2-0",
+        "scale-1080-1920-c-a-copy-centers-crop-for-vertical-output",
+        "blog",
+        "wordpress",
+        "hugo",
+        "jekyll",
+        "astro",
+        "blog-autopost-hugo-jekyll-astro-via-git-commit-pr-pipeline",
+        "wordpress-via-rest-api-post-with-jwt-auth",
+        "json-ld-schema-musicrecording",
+        "videoobject-boosts-seo",
+        "newsletter",
+        "email",
+        "html-email",
+        "mailgun",
+        "weekly-digest-query-all-publish-at-in-last-7-days",
+        "render-html-plaintext-from-template",
+        "send-via-mailgun-ses-resend-api",
+        "cross-post-to-blog-as-week-n-roundup",
+        "google-opal",
+        "opal-withgoogle-com-does-not-reliably-ship-a-first-class-mcp-client",
+        "adk-agent-development-kit-does-support-mcp-to-external-servers",
+        "but-opal-does-not",
+        "http-webhook-is-the-reliable-interface",
+        "job-broker",
+        "folder-watch",
+        "synology-nas-is-the-physical-job-broker-drop-audio-art-lyrics-into-incoming-trackslug-folder",
+        "watcher-triggers-entire-pipeline",
+        "eliminates-need-for-google-form-or-opal-intake",
+        "veo-3",
+        "gemini-api",
+        "video-generation",
+        "init-image",
+        "veo-3-fast-can-accept-an-init-image-the-existing-track-art-to-generate-subtle-background-animation",
+        "prompt-guides-not-too-distracting",
+        "effectively-a-video-lora-on-the-artwork",
+        "json-artifact",
+        "release-state",
+        "source-of-truth",
+        "each-completed-release-emits-a-json-file-with-artist",
+        "title",
+        "slug",
+        "yt-id",
+        "publish-at",
+        "duration",
+        "aspect-ratios",
+        "tags",
+        "description",
+        "asset-urls",
+        "sheet-json-is-source-of-truth-for-all-downstream-steps-blog",
+        "analytics",
+        "track-art",
+        "featured-image",
+        "using-existing-track-art-as-hero-image-for-both-blog-posts-and-newsletter-avoids-need-for-og-image-generation",
+        "llm-drafts-title-description-text",
+        "human-approves",
+        "youtube-api",
+        "scheduled-publish",
+        "youtube-data-api-v3-videos-insert-resumable-upload-videos-update-to-set-publishat",
+        "n8n-http-request-node-with-oauth2-creds-handles-both",
+        "slots-at-09-00",
+        "13-00",
+        "17-00-et",
+        "folder-contract",
+        "media-factory",
+        "naming-hygiene",
+        "folder-contract-audio-artist-trackslug",
+        "art-artist-trackslug",
+        "veo-artist-trackslug",
+        "masters-artist-trackslug",
+        "lyrics-artist-trackslug",
+        "kits",
+        "published",
+        "paid-traffic",
+        "retention-cliff",
+        "apparent-shadowban-after-stopping-paid-ads-is-an-artifact-of-poor-retention-signals-from-cold-paid-traffic",
+        "the-algo-has-no-concept-of-paid-vs-organic-only-behavioral-signals",
+        "docker",
+        "subtitle-alignment",
+        "aeneas-can-run-in-docker-on-synology-docker-run-rm-v-volume1-mediafactory-work-aeneas-image-python3-m-aeneas-tools-execute-task",
+        "no-native-python-needed-on-nas",
+        "srt",
+        "karaoke",
+        "subtitle-granularity",
+        "aeneas-in-plain-text-mode-produces-one-srt-cue-per-lyric-line-video-ready",
+        "word-level-karaoke-requires-aeneas-in-words-mode-ass-ssa-post-processing",
+        "line-level-is-the-practical-sweet-spot-at-3-day-cadence",
+        "release-timing",
+        "slot-spacing",
+        "4-6-hour-spacing-between-the-3-daily-uploads-keeps-channel-alive-all-day-and-avoids-algo-burying-second-third-video-of-a-flood-drop",
+        "09-00-13-00-17-00-et-is-suggested",
+        "community-seeding",
+        "warm-traffic",
+        "early-traffic-from-genre-relevant-reddit",
+        "soundcloud-scenes-drives-better-retention-than-cold-paid",
+        "micro-influencer-reaction-channels-1-20k-subs-provide-authentic-spillover",
+        "security",
+        "supply-chain",
+        "a-compromised-mcp-server-package-has-been-documented-exfiltrating-email-data",
+        "mcp-dependencies-must-be-pinned-and-verified",
+        "mtls-or-signed-jwts-between-mcp-client-and-server",
+        "youtube",
+        "end-screen",
+        "playlist",
+        "session-chaining",
+        "end-screens-pointing-from-shorts-long-form",
+        "and-song-a-song-b",
+        "playlists-grouped-by-vibe-cause-algorithm-to-chain-viewing-sessions",
+        "whisperx",
+        "asr",
+        "whisperx-uses-asr-to-generate-timestamps-from-audio-alone",
+        "useful-when-performed-lyrics-deviate-from-the-lyric-sheet-freestyle-ad-libs",
+        "fuzzy-match-to-sheet-lines-after",
+        "weekly-digest",
+        "blog-week-nn",
+        "2025-releases-notes-post-is-generated-from-the-same-template-as-the-email-digest",
+        "both-consume-the-same-json-artifact",
+        "eliminates-duplicate-drafting"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4198,6 +4377,36 @@
       "title": "AINL-010: Quarantine external workflow and agent imports before certification",
       "labels": [],
       "signature": "010-agent-ainl-before-certification"
+    },
+    {
+      "path": "docs/intake/issue-drafts/awm-001-media-factory-pack.md",
+      "title": "AWM-001 — Media Factory Pack: n8n + Synology Video Pipeline",
+      "labels": [],
+      "signature": "001-awm-factory-media-n8n"
+    },
+    {
+      "path": "docs/intake/issue-drafts/awm-002-youtube-slot-scheduler.md",
+      "title": "AWM-002 — YouTube Upload Slot Scheduler: n8n Cron with 3/Day Hard Cap",
+      "labels": [],
+      "signature": "002-awm-cap-cron-day"
+    },
+    {
+      "path": "docs/intake/issue-drafts/awm-003-aeneas-synology-docker.md",
+      "title": "AWM-003 — aeneas Docker Service on Synology for SRT Generation",
+      "labels": [],
+      "signature": "003-aeneas-awm-docker-generation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/awm-004-newsletter-digest-automation.md",
+      "title": "AWM-004 — Newsletter Digest Automation: n8n Weekly Cron + Blog Cross-Post",
+      "labels": [],
+      "signature": "004-automation-awm-blog-cron"
+    },
+    {
+      "path": "docs/intake/issue-drafts/awm-005-blog-autopost-pipeline.md",
+      "title": "AWM-005 — Blog Autopost Pipeline: Git Commit or WP REST API",
+      "labels": [],
+      "signature": "005-api-autopost-awm-blog"
     },
     {
       "path": "docs/intake/issue-drafts/edg-001-terminology-mapping.md",
@@ -4286,6 +4495,36 @@
         "ob1-exclusions"
       ],
       "signature": "004-enforced-exclusion-list-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -5273,7 +5512,8 @@
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -5793,7 +6033,8 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -5823,7 +6064,8 @@
     },
     "supply-chain": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -6788,7 +7030,8 @@
     },
     "youtube": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -10252,7 +10495,8 @@
       "documents": [
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -10964,7 +11208,8 @@
     "asr": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -11110,7 +11355,8 @@
     },
     "loop": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -13711,7 +13957,8 @@
     },
     "slug": {
       "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -14510,7 +14757,8 @@
     },
     "n8n": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -14518,7 +14766,8 @@
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -14734,7 +14983,8 @@
     },
     "analytics": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -15015,14 +15265,16 @@
     },
     "newsletter": {
       "documents": [
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
     "email": {
       "documents": [
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -15211,7 +15463,8 @@
     "discord": {
       "documents": [
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -18964,7 +19217,8 @@
     },
     "source-of-truth": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -19166,7 +19420,8 @@
     },
     "tags": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -22740,7 +22995,8 @@
     },
     "folder-contract": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23373,936 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ffmpeg": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "reverse-filter": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "vlc": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "vlc-s-built-in-reverse-filter-can-corrupt-output": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "ffmpeg-is-the-reliable-alternative": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-algorithm": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "release-cadence": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "3-per-day": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-s-algorithm-stops-meaningfully-distributing-a-channel-s-uploads-beyond-3-public-videos-per-24-hour-period": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-edit": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "forward-reversed-duplicate-concatenated-to-audio-length-creates-seamless-visual-ping-pong-without-recompressing-each-round-trip": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "concat-demuxer-list-avoids-quality-degradation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "aeneas": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "srt-generation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "lyrics-timing": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "aeneas-produces-srt-timecodes-from-audio-lyrics-txt-one-line-per-on-screen-cue-via-forced-alignment": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "is-text-type-plain-respects-line-breaks": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "task-adjust-boundary-percent-value-15-adds-forgiveness-for-fast-passages": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "workflow-automation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "opal": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "opal-does-not-reliably-expose-mcp-client": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "n8n-in-queue-mode-with-redis-is-the-recommended-production-orchestrator": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "opal-can-be-used-for-rapid-prototyping-only": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "synology": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "nas": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "inotifywait": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "watcher": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "inotifywait-monitors-volume1-mediafactory-incoming-for-track-mp3-lyrics-txt-pairs": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "triggers-aeneas-ffmpeg-pipeline": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "runs-as-systemd-service": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "paid-ads": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "organic-growth": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "paid-traffic-generates-weak-retention-signals-skip-reflex": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-appears-shadowbanned-after-ad-spend-stops-because-early-retention-data-is-poor-not-malice": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "just-math": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "ctr": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-s-algorithm-reads-ctr-and-watch-time-at-the-video-channel-level": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "warm-traffic-newsletter": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "existing-fans-generates-stronger-signals-than-cold-paid-clicks": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "consistency-in-posting-builds-channel-level-session-time": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio-normalization": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "loudnorm": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "ffmpeg-loudnorm-filter-for-broadcast-ready-output-i-14-lufs": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "tp-1-5-true-peak": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "lra-11-loudness-range": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "fade-in-out-300ms-prevents-audio-pops": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "9x16": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "shorts": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "crop": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "ffmpeg-i-master-16x9-mp4-vf-crop-1080-1920-in-w-1080-2-0": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "scale-1080-1920-c-a-copy-centers-crop-for-vertical-output": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "blog": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "wordpress": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "hugo": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "jekyll": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "astro": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "blog-autopost-hugo-jekyll-astro-via-git-commit-pr-pipeline": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "wordpress-via-rest-api-post-with-jwt-auth": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-ld-schema-musicrecording": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "videoobject-boosts-seo": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "html-email": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "mailgun": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "weekly-digest-query-all-publish-at-in-last-7-days": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "render-html-plaintext-from-template": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "send-via-mailgun-ses-resend-api": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-post-to-blog-as-week-n-roundup": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "google-opal": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "opal-withgoogle-com-does-not-reliably-ship-a-first-class-mcp-client": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "adk-agent-development-kit-does-support-mcp-to-external-servers": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "but-opal-does-not": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "http-webhook-is-the-reliable-interface": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "job-broker": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "folder-watch": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "synology-nas-is-the-physical-job-broker-drop-audio-art-lyrics-into-incoming-trackslug-folder": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "watcher-triggers-entire-pipeline": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "eliminates-need-for-google-form-or-opal-intake": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "veo-3": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "gemini-api": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "video-generation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "init-image": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "veo-3-fast-can-accept-an-init-image-the-existing-track-art-to-generate-subtle-background-animation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-guides-not-too-distracting": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "effectively-a-video-lora-on-the-artwork": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-artifact": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "release-state": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "each-completed-release-emits-a-json-file-with-artist": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "title": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "yt-id": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "publish-at": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "duration": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "aspect-ratios": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "description": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "asset-urls": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "sheet-json-is-source-of-truth-for-all-downstream-steps-blog": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "track-art": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "featured-image": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "using-existing-track-art-as-hero-image-for-both-blog-posts-and-newsletter-avoids-need-for-og-image-generation": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-drafts-title-description-text": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "human-approves": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-api": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "scheduled-publish": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "youtube-data-api-v3-videos-insert-resumable-upload-videos-update-to-set-publishat": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "n8n-http-request-node-with-oauth2-creds-handles-both": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "slots-at-09-00": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "13-00": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "17-00-et": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "media-factory": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "naming-hygiene": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "folder-contract-audio-artist-trackslug": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "art-artist-trackslug": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "veo-artist-trackslug": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "masters-artist-trackslug": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "lyrics-artist-trackslug": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "kits": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "published": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "paid-traffic": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "retention-cliff": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "apparent-shadowban-after-stopping-paid-ads-is-an-artifact-of-poor-retention-signals-from-cold-paid-traffic": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "the-algo-has-no-concept-of-paid-vs-organic-only-behavioral-signals": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "subtitle-alignment": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "aeneas-can-run-in-docker-on-synology-docker-run-rm-v-volume1-mediafactory-work-aeneas-image-python3-m-aeneas-tools-execute-task": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-native-python-needed-on-nas": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "srt": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "karaoke": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "subtitle-granularity": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "aeneas-in-plain-text-mode-produces-one-srt-cue-per-lyric-line-video-ready": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "word-level-karaoke-requires-aeneas-in-words-mode-ass-ssa-post-processing": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "line-level-is-the-practical-sweet-spot-at-3-day-cadence": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "release-timing": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "slot-spacing": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "4-6-hour-spacing-between-the-3-daily-uploads-keeps-channel-alive-all-day-and-avoids-algo-burying-second-third-video-of-a-flood-drop": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "09-00-13-00-17-00-et-is-suggested": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "community-seeding": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "warm-traffic": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "early-traffic-from-genre-relevant-reddit": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "soundcloud-scenes-drives-better-retention-than-cold-paid": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "micro-influencer-reaction-channels-1-20k-subs-provide-authentic-spillover": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "a-compromised-mcp-server-package-has-been-documented-exfiltrating-email-data": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-dependencies-must-be-pinned-and-verified": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "mtls-or-signed-jwts-between-mcp-client-and-server": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "end-screen": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "playlist": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "session-chaining": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "end-screens-pointing-from-shorts-long-form": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "and-song-a-song-b": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "playlists-grouped-by-vibe-cause-algorithm-to-chain-viewing-sessions": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "whisperx": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "whisperx-uses-asr-to-generate-timestamps-from-audio-alone": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "useful-when-performed-lyrics-deviate-from-the-lyric-sheet-freestyle-ad-libs": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "fuzzy-match-to-sheet-lines-after": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "weekly-digest": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "blog-week-nn": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "2025-releases-notes-post-is-generated-from-the-same-template-as-the-email-digest": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "both-consume-the-same-json-artifact": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
+      ],
+      "issueDrafts": []
+    },
+    "eliminates-duplicate-drafting": {
+      "documents": [
+        "docs/ideas/20251004 - Agentic Workflow for Media Generation.md"
       ],
       "issueDrafts": []
     },

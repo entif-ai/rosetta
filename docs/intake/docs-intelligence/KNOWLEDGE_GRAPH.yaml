@@ -5204,6 +5204,10 @@ issue_candidates:
   notes: 'From PR #37 extraction; drafted in PR #44'
 pr_state:
   open:
+  - pr: TBD
+    branch: docs-intelligence/agentic-workflow-media-generation
+    doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+    note: 28 findings, 5 issue drafts AWM-001 through AWM-005 (media factory, slot scheduler, aeneas, newsletter, blog autopost)
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -5515,6 +5519,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  processed_at: '2026-05-31T19:31:00Z'
+  findings: 28
+  pr: TBD
+  issues: 5
+  notes: 5 issue drafts AWM-001 (media factory pack) through AWM-005 (blog autopost pipeline)
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6408,33 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/awm-001-media-factory-pack.md
+  source_doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  issue_id: awm-001-media-factory-pack
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/awm-002-youtube-slot-scheduler.md
+  source_doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  issue_id: awm-002-youtube-slot-scheduler
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/awm-003-aeneas-synology-docker.md
+  source_doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  issue_id: awm-003-aeneas-synology-docker
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/awm-004-newsletter-digest-automation.md
+  source_doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  issue_id: awm-004-newsletter-digest-automation
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/awm-005-blog-autopost-pipeline.md
+  source_doc: docs/ideas/20251004 - Agentic Workflow for Media Generation.md
+  issue_id: awm-005-blog-autopost-pipeline
+  priority: P2
+  type: implementation
+  status: candidate
