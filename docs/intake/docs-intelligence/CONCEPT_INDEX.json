@@ -4136,6 +4136,103 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-31-entif-source-substrate-repository-provenance-addendum.md",
+      "sourcePath": "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md",
+      "title": "Docs Intelligence Extraction — docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md",
+      "concepts": [
+        "source-substrate",
+        "constitutional-domain",
+        "architecture",
+        "source-model",
+        "constitutional",
+        "non-collapse-rule",
+        "external-authority",
+        "provenance",
+        "multi-provenance",
+        "provenance-lattice",
+        "zenodo",
+        "repository-model",
+        "source-taxonomy",
+        "figshare",
+        "dataverse",
+        "re3data",
+        "registry",
+        "meta-source",
+        "source-registry",
+        "scholarly-graph",
+        "crossref",
+        "datacite",
+        "orcid",
+        "ror",
+        "openalex",
+        "identity",
+        "ro-crate",
+        "croissant",
+        "packaging",
+        "portability",
+        "source-packaging",
+        "swhid",
+        "intrinsic-id",
+        "content-addressing",
+        "responsibilities",
+        "prohibitions",
+        "source-system",
+        "object-model",
+        "graph-infrastructure",
+        "source-record",
+        "source-manifestation",
+        "source-package",
+        "fetch-receipt",
+        "receipt",
+        "normalization-receipt",
+        "identity-resolution-receipt",
+        "evaluation-receipt",
+        "agency-claims",
+        "authorship-claims",
+        "custody-claims",
+        "identity-evidence",
+        "personhood",
+        "governance",
+        "correction-event",
+        "lifecycle",
+        "facet-classification",
+        "identity-resolution",
+        "trust-vector",
+        "trust-model",
+        "trust-routing",
+        "trust-separation",
+        "invalidation",
+        "anti-rot",
+        "source-drift",
+        "deduplication",
+        "four-layer-dedupe",
+        "identity-family",
+        "pid-model",
+        "source-priority",
+        "tiering",
+        "ingestion-order",
+        "ingestion",
+        "pack-suites",
+        "pack-suite",
+        "ingestion-pipeline",
+        "workflow",
+        "retrieval-workflow",
+        "source-query",
+        "retrieval",
+        "repository-profiles",
+        "identity-escalation",
+        "anti-personhood-correlation",
+        "acceptance-criteria",
+        "testing",
+        "next-documents",
+        "rock-31ya-31yg",
+        "planning",
+        "conceptual-contribution",
+        "trust-not-scalar",
+        "rossetta-v3-alignment"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4385,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4423,84 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-001-source-substrate-constitutional-domain.md",
+      "title": "SSP-001: Define Source Substrate as a Constitutional Protocol Domain",
+      "labels": [],
+      "signature": "001-constitutional-define-domain-protocol"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-002-non-collapse-rule.md",
+      "title": "SSP-002: Implement Non-Collapse Rule for Source Objects",
+      "labels": [],
+      "signature": "002-collapse-implement-non-objects"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-003-multi-provenance-lattice.md",
+      "title": "SSP-003: Define 8-Dimension Multi-Provenance Lattice",
+      "labels": [],
+      "signature": "003-define-dimension-lattice-multi"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-004-trust-vector-model.md",
+      "title": "SSP-004: Implement 15-Axis Trust-as-Vector Model",
+      "labels": [],
+      "signature": "004-axis-implement-model-ssp"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-005-facet-classification.md",
+      "title": "SSP-005: Implement 9-Facet Orthogonal Source Classification",
+      "labels": [],
+      "signature": "005-classification-facet-implement-orthogonal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-006-four-layer-deduplication.md",
+      "title": "SSP-006: Implement 4-Layer Deduplication Strategy",
+      "labels": [],
+      "signature": "006-deduplication-implement-layer-ssp"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-007-identity-sensitive-escalation.md",
+      "title": "SSP-007: Implement Identity-Sensitive Escalation Path",
+      "labels": [],
+      "signature": "007-escalation-identity-implement-path"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-008-source-substrate-pack-suite.md",
+      "title": "SSP-008: Define and Implement Source Substrate Pack Suite (11 Packs)",
+      "labels": [],
+      "signature": "008-define-implement-pack-packs"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-009-ingestion-pipeline.md",
+      "title": "SSP-009: Implement 12-Step Source Ingestion Pipeline",
+      "labels": [],
+      "signature": "009-implement-ingestion-pipeline-source"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-010-lifecycle-event-tracking.md",
+      "title": "SSP-010: Implement Lifecycle Event Tracking and Invalidation Model",
+      "labels": [],
+      "signature": "010-event-implement-invalidation-lifecycle"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-011-repository-capability-profiles.md",
+      "title": "SSP-011: Define and Implement Repository Capability Profiles",
+      "labels": [],
+      "signature": "011-capability-define-implement-profiles"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-012-ingest-tier0-scholarly-infrastructure.md",
+      "title": "SSP-012: Ingest Tier 0 Scholarly Infrastructure Sources",
+      "labels": [],
+      "signature": "012-infrastructure-ingest-scholarly-sources"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ssp-013-anti-rot-rule.md",
+      "title": "SSP-013: Implement Anti-Rot Rule for Source References",
+      "labels": [],
+      "signature": "013-anti-implement-references-rot"
     }
   ],
   "concepts": {
@@ -4325,7 +4530,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -4514,7 +4720,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4815,7 +5022,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -4994,7 +5202,8 @@
     },
     "external-authority": {
       "documents": [
-        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md"
+        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -5039,7 +5248,8 @@
       "documents": [
         "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
         "docs/external/Berman-PRD.md",
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -5450,7 +5660,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -5842,7 +6053,8 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -7422,7 +7634,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -8055,7 +8268,8 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -8979,7 +9193,8 @@
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -9955,7 +10170,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10488,7 +10704,8 @@
     "portability": {
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -11077,7 +11294,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -11463,7 +11681,8 @@
     "registry": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -12095,7 +12314,8 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -15064,7 +15284,8 @@
     },
     "deduplication": {
       "documents": [
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -16445,7 +16666,8 @@
     },
     "trust-model": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -18551,7 +18773,8 @@
     "ingestion-pipeline": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -18598,7 +18821,8 @@
     },
     "source-substrate": {
       "documents": [
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -18769,7 +18993,8 @@
     "source-registry": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -19020,7 +19245,8 @@
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -19964,7 +20190,8 @@
     "invalidation": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -21870,13 +22097,15 @@
     },
     "datacite": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
     "crossref": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23346,402 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitutional-domain": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-model": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "non-collapse-rule": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-provenance": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-lattice": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "zenodo": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "repository-model": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-taxonomy": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "figshare": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "dataverse": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "re3data": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "meta-source": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "scholarly-graph": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "orcid": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ror": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "openalex": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ro-crate": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "croissant": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "packaging": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-packaging": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "swhid": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "intrinsic-id": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "responsibilities": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "prohibitions": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-system": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "object-model": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-infrastructure": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-record": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-manifestation": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-package": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "fetch-receipt": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "normalization-receipt": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-resolution-receipt": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "evaluation-receipt": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "agency-claims": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "authorship-claims": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "custody-claims": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-evidence": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "personhood": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "correction-event": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "facet-classification": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-resolution": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-vector": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-routing": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-separation": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-rot": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-drift": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "four-layer-dedupe": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-family": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "pid-model": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-priority": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "tiering": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingestion-order": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingestion": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "pack-suites": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "pack-suite": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval-workflow": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-query": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "repository-profiles": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-escalation": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-personhood-correlation": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "next-documents": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "rock-31ya-31yg": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "conceptual-contribution": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-not-scalar": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "rossetta-v3-alignment": {
+      "documents": [
+        "docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md"
       ],
       "issueDrafts": []
     },
