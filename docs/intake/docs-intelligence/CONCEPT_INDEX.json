@@ -4136,6 +4136,74 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-31-source-registry-repository-profile-annex.md",
+      "sourcePath": "docs/governance/20260412 - Source Registry and Repository Profile Annex.md",
+      "title": "Docs Intelligence Extraction — Source Registry and Repository Profile Annex",
+      "concepts": [
+        "source-substrate",
+        "source-families",
+        "pid",
+        "ingestion-priority",
+        "15-source-families-defined",
+        "schema",
+        "metadata-profile",
+        "22-minimal-profile-fields",
+        "extended-profile",
+        "10-extended-profile-fields",
+        "p0-p3",
+        "4-tier-ingestion-priority",
+        "trust-vector",
+        "trust-defaults",
+        "6-trust-classes-with-overridable-defaults",
+        "repository-profile",
+        "zenodo",
+        "zenodo-worked-example",
+        "figshare",
+        "figshare-worked-example",
+        "dataverse",
+        "dataverse-worked-example",
+        "cross-referencing",
+        "single-dataset-spans-10-source-systems",
+        "graph-schema",
+        "json-ld",
+        "predicate-catalogue",
+        "20-recommended-predicates",
+        "implementation-order",
+        "source-registry",
+        "receipt-law",
+        "6-implementation-advice-items",
+        "source-subamilies",
+        "identity",
+        "metadata",
+        "datacite-limitation",
+        "orcid",
+        "orcid-profile-completeness-varies",
+        "graph-aggregator",
+        "openalex-is-a-derived-graph",
+        "re3data",
+        "repository-discovery",
+        "re3data-is-not-dataset-content-evidence",
+        "curation",
+        "curation-rigor-is-uneven",
+        "deposition-quality-uneven",
+        "instance-policies",
+        "dataverse-instance-policies-differ",
+        "dedupe",
+        "single-artifact-spans-multiple-source-systems",
+        "provenance",
+        "evidence",
+        "evidencerefs-field-in-minimal-profile",
+        "overridable",
+        "trust-defaults-are-overridable-by-evidence",
+        "curation-posture",
+        "review-posture",
+        "preservation-posture",
+        "rights-posture",
+        "4-posture-fields",
+        "metadataprofile-is-underspecified"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4356,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4394,66 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-001-source-registry-first-class-artifact.md",
+      "title": "SRP-001: Define source-registry as a first-class Rosetta artifact before ingestion adapters",
+      "labels": [],
+      "signature": "001-adapters-artifact-before-class"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-002-source-profile-schema.md",
+      "title": "SRP-002: Define source-profile schema (22 minimal + 10 extended fields) in Rosetta schema",
+      "labels": [],
+      "signature": "002-define-extended-fields-minimal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-003-posture-taxonomy.md",
+      "title": "SRP-003: Define posture taxonomy (curationPosture, reviewPosture, preservationPosture, rightsPosture)",
+      "labels": [],
+      "signature": "003-curationposture-define-posture-preservationposture"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-004-metadata-profile-schema.md",
+      "title": "SRP-004: Define metadataProfile[] field schema and controlled vocabulary",
+      "labels": [],
+      "signature": "004-controlled-define-field-metadataprofile"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-005-json-ld-predicate-mapping.md",
+      "title": "SRP-005: Map 20 JSON-LD predicates to Rosetta graph schema; file ADR for vocabulary reconciliation",
+      "labels": [],
+      "signature": "005-adr-file-graph-json"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-006-trust-override-mechanism.md",
+      "title": "SRP-006: Define trust-override mechanism (who authorizes, what evidence, scope)",
+      "labels": [],
+      "signature": "006-authorizes-define-evidence-mechanism"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-007-zenodo-adapter-priority.md",
+      "title": "SRP-007: Zenodo repository adapter as first-priority adapter implementation",
+      "labels": [],
+      "signature": "007-adapter-adapter-first-implementation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-008-multi-source-identity-resolution.md",
+      "title": "SRP-008: Identity resolution strategy for multi-source scholarly objects",
+      "labels": [],
+      "signature": "008-identity-multi-objects-resolution"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-009-evidence-refs-invalidation.md",
+      "title": "SRP-009: evidenceRefs[] storage and invalidation semantics",
+      "labels": [],
+      "signature": "009-evidencerefs-invalidation-semantics-srp"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-010-p0-ingestion-priority-matrix.md",
+      "title": "SRP-010: Implement P0 ingestion priority matrix (DataCite/Crossref/ORCID/ROR/re3data as identity spine)",
+      "labels": [],
+      "signature": "010-crossref-datacite-identity-implement"
     }
   ],
   "concepts": {
@@ -4488,7 +4646,8 @@
     "receipt-law": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -5842,7 +6001,8 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -6120,7 +6280,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -7607,7 +7768,8 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -8055,7 +8217,8 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -8500,7 +8663,8 @@
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -13591,7 +13755,8 @@
     },
     "json-ld": {
       "documents": [
-        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
+        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -18598,7 +18763,8 @@
     },
     "source-substrate": {
       "documents": [
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -18769,7 +18935,8 @@
     "source-registry": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -18792,7 +18959,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -19386,7 +19554,8 @@
     "metadata": {
       "documents": [
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23286,306 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-families": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "pid": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "ingestion-priority": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "15-source-families-defined": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "metadata-profile": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "22-minimal-profile-fields": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "extended-profile": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "10-extended-profile-fields": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "p0-p3": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "4-tier-ingestion-priority": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-vector": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-defaults": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "6-trust-classes-with-overridable-defaults": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "repository-profile": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "zenodo": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "zenodo-worked-example": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "figshare": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "figshare-worked-example": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "dataverse": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "dataverse-worked-example": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-referencing": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "single-dataset-spans-10-source-systems": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-schema": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "predicate-catalogue": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "20-recommended-predicates": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "6-implementation-advice-items": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "source-subamilies": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "datacite-limitation": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "orcid": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "orcid-profile-completeness-varies": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-aggregator": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "openalex-is-a-derived-graph": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "re3data": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "repository-discovery": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "re3data-is-not-dataset-content-evidence": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "curation": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "curation-rigor-is-uneven": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "deposition-quality-uneven": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "instance-policies": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "dataverse-instance-policies-differ": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "single-artifact-spans-multiple-source-systems": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "evidencerefs-field-in-minimal-profile": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "overridable": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "trust-defaults-are-overridable-by-evidence": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "curation-posture": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "review-posture": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "preservation-posture": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "rights-posture": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "4-posture-fields": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
+      ],
+      "issueDrafts": []
+    },
+    "metadataprofile-is-underspecified": {
+      "documents": [
+        "docs/governance/20260412 - Source Registry and Repository Profile Annex.md"
       ],
       "issueDrafts": []
     },
