@@ -5214,7 +5214,7 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
-  - pr: null
+  - pr: 1187
     branch: docs-intelligence/source-registry-repository-profile-annex
     doc: docs/governance/20260412 - Source Registry and Repository Profile Annex.md
     findings: 24
@@ -5525,7 +5525,7 @@ processed_docs:
 - path: docs/governance/20260412 - Source Registry and Repository Profile Annex.md
   processed_at: '2026-05-31T17:01:00Z'
   findings: 24
-  pr: null
+  pr: 1187
   issues: 10
   notes: 'Full extraction; 10 issue candidates SRP-001 through SRP-010; companion doc
     to SSP (PR #1186).'
