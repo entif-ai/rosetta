@@ -4136,6 +4136,138 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-web-3-0-semantic-web.md",
+      "sourcePath": "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md",
+      "title": "Docs Intelligence Extraction — 20260225 - Chat GPT - Web 3.0 and Semantic Web",
+      "concepts": [
+        "semantic-web",
+        "history",
+        "w3c",
+        "rdf",
+        "schema-org",
+        "semantic-web-vs-modern-graph-rag",
+        "ai-browser",
+        "atlas",
+        "comet",
+        "copilot",
+        "competitive",
+        "ai-native-browsers-as-new-distribution-channel",
+        "semantic-sdk",
+        "json-ld",
+        "aria",
+        "wcag",
+        "accessibility",
+        "dual-output-paradigm-for-human-machine",
+        "context",
+        "content-negotiation",
+        "standard-machine-readable-vocabulary",
+        "http-headers",
+        "application-ld-json",
+        "agent-discovery-without-scraping",
+        "semantic-contract",
+        "props",
+        "entity-id",
+        "component-level-semantic-declarations",
+        "cross-app",
+        "canonical-id",
+        "idempotency",
+        "cross-app-entity-resolution",
+        "agent-manifest",
+        "affordances",
+        "typed-actions",
+        "mcp",
+        "typed-action-declarations-for-agents",
+        "sitemap-ld",
+        "machine-feed",
+        "discovery",
+        "entity-index",
+        "machine-first-sitemap-variant",
+        "hydra",
+        "hypermedia",
+        "openapi",
+        "machine-actions",
+        "hypermedia-api-for-agent-navigation",
+        "verifiable-credentials",
+        "data-integrity",
+        "jws",
+        "bbs",
+        "signatures",
+        "signing-important-json-ld-documents",
+        "json-ld-helper",
+        "react",
+        "component",
+        "sdk",
+        "developer-ergonomic-for-json-ld-emission",
+        "usea11y",
+        "hook",
+        "ci",
+        "auto-apply-accessibility-contracts",
+        "public-context",
+        "private-context",
+        "ip-protection",
+        "ontology",
+        "ip-protection-via-context-boundary",
+        "agent-delegation",
+        "tool-schema",
+        "entity-tools",
+        "insight-tools",
+        "mcp-server-as-universal-agent-doorway",
+        "beachhead",
+        "dollahs",
+        "vieday",
+        "thin-slice",
+        "validation",
+        "first-vertical-slice-for-compounding",
+        "compounding",
+        "knowledge-graph",
+        "portable-graph",
+        "apps-sharing-entity-ids-and-contexts",
+        "code-atlas",
+        "artifact-registry",
+        "fm-files",
+        "context-weaver",
+        "graph-index",
+        "graph-indexed-artifact-registry-for-reuse",
+        "feature-map",
+        "fm-md",
+        "contract",
+        "determinism",
+        "llm-ready-artifact-summary-format",
+        "atlas-registry",
+        "graphql",
+        "sqlite",
+        "registry-for-artifact-upsert-and-query",
+        "context-weave",
+        "context-compression",
+        "llm-context",
+        "budget",
+        "building-compact-context-for-llms",
+        "effect-modules",
+        "side-effects",
+        "trust-boundary",
+        "capability-tags",
+        "isolating-side-effects-from-pure-logic",
+        "design-tokens",
+        "theming",
+        "tokens-json",
+        "preference-set",
+        "theme-standardization-across-apps",
+        "slsa",
+        "sigstore",
+        "sbom",
+        "supply-chain",
+        "provenance",
+        "supply-chain-integrity-for-artifacts",
+        "business-model",
+        "force-multiplier",
+        "one-person-unicorn",
+        "business-thesis-for-semantic-first-strategy",
+        "90-day-plan",
+        "rollout-phases",
+        "phased-rollout-timeline"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4420,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4458,161 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-001-public-context.md",
+      "title": "SEM-001: Define Entif Public JSON-LD Context (schema.org Mapping)",
+      "labels": [
+        "semantic-web",
+        "json-ld",
+        "schema-org",
+        "public-context",
+        "spec-gap"
+      ],
+      "signature": "001-context-define-entif-json"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-002-semantic-sdk.md",
+      "title": "SEM-002: Semantic SDK — React JsonLd Helper and useA11y Hook",
+      "labels": [
+        "semantic-sdk",
+        "react",
+        "json-ld",
+        "accessibility",
+        "ci",
+        "implementation"
+      ],
+      "signature": "002-helper-hook-jsonld-react"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-003-mcp-server.md",
+      "title": "SEM-003: MCP Server — Public Tool Schema and Wire to Effect Modules",
+      "labels": [
+        "mcp",
+        "agent-tooling",
+        "public-context",
+        "implementation"
+      ],
+      "signature": "003-effect-mcp-modules-public"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-004-entity-id-policy.md",
+      "title": "SEM-004: Entity ID Policy Across Apps — Canonical @id Scheme",
+      "labels": [
+        "entity-id",
+        "cross-app",
+        "canonical-id",
+        "architecture"
+      ],
+      "signature": "004-across-apps-canonical-entity"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-005-content-negotiation.md",
+      "title": "SEM-005: Content Negotiation on Canonical Resource URLs",
+      "labels": [
+        "content-negotiation",
+        "http",
+        "application-ld-json",
+        "discovery",
+        "implementation"
+      ],
+      "signature": "005-canonical-content-negotiation-resource"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-006-sitemap-ld.md",
+      "title": "SEM-006: sitemap-ld.json Generator",
+      "labels": [
+        "sitemap-ld",
+        "machine-feed",
+        "discovery",
+        "implementation"
+      ],
+      "signature": "006-generator-json-sem-sitemap"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-007-vc-signing.md",
+      "title": "SEM-007: VC Signing for JSON-LD Provenance",
+      "labels": [
+        "verifiable-credentials",
+        "data-integrity",
+        "provenance",
+        "jws",
+        "implementation"
+      ],
+      "signature": "007-json-provenance-sem-signing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-008-feature-map.md",
+      "title": "SEM-008: Feature Map (FM) File Schema and atlas-sync.ts",
+      "labels": [
+        "feature-map",
+        "code-atlas",
+        "artifact-registry",
+        "fm-md",
+        "implementation"
+      ],
+      "signature": "008-atlas-feature-file-map"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-009-code-atlas-registry.md",
+      "title": "SEM-009: Code Atlas Registry — GraphQL Schema + SQLite Migration",
+      "labels": [
+        "code-atlas",
+        "graphql",
+        "sqlite",
+        "artifact-registry",
+        "implementation"
+      ],
+      "signature": "009-atlas-code-graphql-migration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-010-context-weave.md",
+      "title": "SEM-010: Context Weave CLI for Compact LLM Context Packs",
+      "labels": [
+        "context-weave",
+        "llm-context",
+        "context-compression",
+        "implementation"
+      ],
+      "signature": "010-cli-compact-context-context"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md",
+      "title": "SEM-011: Thin Slice — Dollahs Product/Offer + VieDay Task/Goal Semantic Emission",
+      "labels": [
+        "beachhead",
+        "dollahs",
+        "vieday",
+        "thin-slice",
+        "semantic-default",
+        "implementation"
+      ],
+      "signature": "011-dollahs-emission-goal-offer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-012-effect-modules.md",
+      "title": "SEM-012: Effect Modules as Architectural Trust Boundary Pattern",
+      "labels": [
+        "effect-modules",
+        "side-effects",
+        "trust-boundary",
+        "architecture",
+        "parse-only-default"
+      ],
+      "signature": "012-architectural-boundary-effect-modules"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sem-013-design-tokens.md",
+      "title": "SEM-013: Design Tokens and PreferenceSet for Cross-App Theming",
+      "labels": [
+        "design-tokens",
+        "theming",
+        "preferences",
+        "cross-app",
+        "accessibility",
+        "implementation"
+      ],
+      "signature": "013-app-cross-design-preferenceset"
     }
   ],
   "concepts": {
@@ -4817,7 +5134,10 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-004-entity-id-policy.md",
+        "docs/intake/issue-drafts/sem-012-effect-modules.md"
+      ]
     },
     "monorepo": {
       "documents": [
@@ -4914,7 +5234,8 @@
     "ontology": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -5413,7 +5734,8 @@
     },
     "agent-delegation": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -5793,9 +6115,12 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-003-mcp-server.md"
+      ]
     },
     "pattern": {
       "documents": [
@@ -5823,7 +6148,8 @@
     },
     "supply-chain": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -6268,7 +6594,17 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
       ],
       "issueDrafts": [
-        "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+        "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md",
+        "docs/intake/issue-drafts/sem-003-mcp-server.md",
+        "docs/intake/issue-drafts/sem-005-content-negotiation.md",
+        "docs/intake/issue-drafts/sem-006-sitemap-ld.md",
+        "docs/intake/issue-drafts/sem-007-vc-signing.md",
+        "docs/intake/issue-drafts/sem-008-feature-map.md",
+        "docs/intake/issue-drafts/sem-009-code-atlas-registry.md",
+        "docs/intake/issue-drafts/sem-010-context-weave.md",
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md",
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
       ]
     },
     "layer-hook": {
@@ -6396,7 +6732,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -7066,12 +7403,14 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
         "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
-        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md"
+        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md",
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md"
       ]
     },
     "3-tiers": {
@@ -7696,9 +8035,12 @@
     "context-compression": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-010-context-weave.md"
+      ]
     },
     "deepencoder": {
       "documents": [
@@ -8055,9 +8397,12 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-007-vc-signing.md"
+      ]
     },
     "zk-proofs": {
       "documents": [
@@ -8551,9 +8896,13 @@
     },
     "discovery": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-005-content-negotiation.md",
+        "docs/intake/issue-drafts/sem-006-sitemap-ld.md"
+      ]
     },
     "glyph-tags": {
       "documents": [
@@ -9916,9 +10265,12 @@
     },
     "vieday": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md"
+      ]
     },
     "automation-potential": {
       "documents": [
@@ -9999,9 +10351,13 @@
     },
     "code-atlas": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-008-feature-map.md",
+        "docs/intake/issue-drafts/sem-009-code-atlas-registry.md"
+      ]
     },
     "project-knowledge-graph": {
       "documents": [
@@ -10744,7 +11100,9 @@
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
+      ]
     },
     "prisoner": {
       "documents": [
@@ -10760,7 +11118,8 @@
     },
     "history": {
       "documents": [
-        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md"
+        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -10951,9 +11310,12 @@
     },
     "thin-slice": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md"
+      ]
     },
     "vad": {
       "documents": [
@@ -11049,7 +11411,8 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -11245,7 +11608,8 @@
     },
     "determinism": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -12055,7 +12419,9 @@
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-012-effect-modules.md"
+      ]
     },
     "command-mode-opt-in": {
       "documents": [
@@ -12739,7 +13105,8 @@
     "validation": {
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -13591,9 +13958,13 @@
     },
     "json-ld": {
       "documents": [
-        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
+        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-001-public-context.md",
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md"
+      ]
     },
     "openai-atlas": {
       "documents": [
@@ -14196,7 +14567,8 @@
     },
     "budget": {
       "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -14852,9 +15224,12 @@
     "sqlite": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-009-code-atlas-registry.md"
+      ]
     },
     "normalization": {
       "documents": [
@@ -16143,7 +16518,8 @@
     },
     "rdf": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -16169,7 +16545,8 @@
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -16451,7 +16828,8 @@
     },
     "signatures": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -18134,7 +18512,8 @@
     "contract": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -18213,7 +18592,8 @@
     "sdk": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -19430,7 +19810,8 @@
     "idempotency": {
       "documents": [
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -22272,7 +22653,8 @@
     },
     "sbom": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
       ],
       "issueDrafts": []
     },
@@ -23120,10 +23502,690 @@
       ],
       "issueDrafts": []
     },
+    "semantic-web": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-001-public-context.md"
+      ]
+    },
+    "w3c": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "schema-org": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-001-public-context.md"
+      ]
+    },
+    "semantic-web-vs-modern-graph-rag": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-browser": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "atlas": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "comet": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "copilot": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "competitive": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-native-browsers-as-new-distribution-channel": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-sdk": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md"
+      ]
+    },
+    "aria": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "wcag": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "accessibility": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md",
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
+      ]
+    },
+    "dual-output-paradigm-for-human-machine": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-negotiation": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-005-content-negotiation.md"
+      ]
+    },
+    "standard-machine-readable-vocabulary": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "http-headers": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "application-ld-json": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-005-content-negotiation.md"
+      ]
+    },
+    "agent-discovery-without-scraping": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-contract": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "props": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-id": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-004-entity-id-policy.md"
+      ]
+    },
+    "component-level-semantic-declarations": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-app": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-004-entity-id-policy.md",
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
+      ]
+    },
+    "canonical-id": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-004-entity-id-policy.md"
+      ]
+    },
+    "cross-app-entity-resolution": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "agent-manifest": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "affordances": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "typed-actions": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "typed-action-declarations-for-agents": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "sitemap-ld": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-006-sitemap-ld.md"
+      ]
+    },
+    "machine-feed": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-006-sitemap-ld.md"
+      ]
+    },
+    "entity-index": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "machine-first-sitemap-variant": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "hydra": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "hypermedia": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "machine-actions": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "hypermedia-api-for-agent-navigation": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "verifiable-credentials": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-007-vc-signing.md"
+      ]
+    },
+    "data-integrity": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-007-vc-signing.md"
+      ]
+    },
+    "jws": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-007-vc-signing.md"
+      ]
+    },
+    "bbs": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "signing-important-json-ld-documents": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-ld-helper": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "react": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-002-semantic-sdk.md"
+      ]
+    },
+    "component": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "developer-ergonomic-for-json-ld-emission": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "usea11y": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "hook": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-apply-accessibility-contracts": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "public-context": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-001-public-context.md",
+        "docs/intake/issue-drafts/sem-003-mcp-server.md"
+      ]
+    },
+    "private-context": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "ip-protection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "ip-protection-via-context-boundary": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-schema": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-tools": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "insight-tools": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcp-server-as-universal-agent-doorway": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "beachhead": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md"
+      ]
+    },
+    "dollahs": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md"
+      ]
+    },
+    "first-vertical-slice-for-compounding": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "compounding": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "portable-graph": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "apps-sharing-entity-ids-and-contexts": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "artifact-registry": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-008-feature-map.md",
+        "docs/intake/issue-drafts/sem-009-code-atlas-registry.md"
+      ]
+    },
+    "fm-files": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-weaver": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-index": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-indexed-artifact-registry-for-reuse": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "feature-map": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-008-feature-map.md"
+      ]
+    },
+    "fm-md": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-008-feature-map.md"
+      ]
+    },
+    "llm-ready-artifact-summary-format": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "atlas-registry": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "graphql": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-009-code-atlas-registry.md"
+      ]
+    },
+    "registry-for-artifact-upsert-and-query": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-weave": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-010-context-weave.md"
+      ]
+    },
+    "llm-context": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-010-context-weave.md"
+      ]
+    },
+    "building-compact-context-for-llms": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "effect-modules": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-012-effect-modules.md"
+      ]
+    },
+    "side-effects": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-012-effect-modules.md"
+      ]
+    },
+    "trust-boundary": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-012-effect-modules.md"
+      ]
+    },
+    "capability-tags": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "isolating-side-effects-from-pure-logic": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "design-tokens": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
+      ]
+    },
+    "theming": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-013-design-tokens.md"
+      ]
+    },
+    "tokens-json": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "preference-set": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "theme-standardization-across-apps": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "slsa": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "sigstore": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "supply-chain-integrity-for-artifacts": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-model": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "force-multiplier": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "one-person-unicorn": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-thesis-for-semantic-first-strategy": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "90-day-plan": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "rollout-phases": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
+    "phased-rollout-timeline": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md"
+      ],
+      "issueDrafts": []
+    },
     "tracking": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+      ]
+    },
+    "spec-gap": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-001-public-context.md"
+      ]
+    },
+    "agent-tooling": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-003-mcp-server.md"
+      ]
+    },
+    "http": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-005-content-negotiation.md"
+      ]
+    },
+    "semantic-default": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sem-011-dollahs-vieday-thin-slice.md"
       ]
     }
   },

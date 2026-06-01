@@ -6398,3 +6398,27 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+
+# --- Doc intelligence cycle 2026-06-01 ---
+processed_documents:
+  - path: docs/ideas/20260225 - Chat GPT - Web 3.0 and Semantic Web.md
+    extraction: docs/intake/docs-intelligence/2026-06-01-web-3-0-semantic-web.md
+    processed_at: 2026-06-01T04:30:51Z
+    findings: 26
+    issues_drafted: 13
+    concepts:
+      - semantic-web
+      - json-ld
+      - schema.org
+      - ai-browser
+      - mcp
+      - code-atlas
+      - feature-map
+      - context-weave
+      - effect-modules
+      - design-tokens
+      - vc-signing
+      - content-negotiation
+      - sitemap-ld
+    pr: pending
+    notes: 13 SEM-series issue drafts; thin slice validation plan for Dollahs+VieDay
