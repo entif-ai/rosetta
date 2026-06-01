@@ -5515,6 +5515,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/packs/PACK_SUITE_INDEX.md
+  processed_at: '2026-06-01T06:52:00Z'
+  findings: 8
+  pr: null
+  issues: 2
+  notes: 'Short doc; PACK_SUITE_INDEX.md is routing-only. Three pack roots defined (rrp, stdpack-source-substrate, vocabpack-source-taxonomy). pack-manifest.schema.json exists but CI validation missing. Dual canonical location creates routing ambiguity.'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6404,17 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/PSI-001-pack-schema-validation-ci-missing.md
+  source_doc: docs/packs/PACK_SUITE_INDEX.md
+  source_pr: null
+  issue_id: PSI-001
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/PSI-002-pack-index-dual-canonical.md
+  source_doc: docs/packs/PACK_SUITE_INDEX.md
+  source_pr: null
+  issue_id: PSI-002
+  priority: P3
+  type: architecture
+  status: candidate
