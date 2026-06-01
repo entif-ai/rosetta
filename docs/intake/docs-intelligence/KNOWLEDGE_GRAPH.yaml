@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 374
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -5202,6 +5202,88 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+- id: sdialog
+  name: SDialog Dialog Simulation Toolkit
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Idiap Python toolkit for building, simulating, and evaluating LLM-based conversational agents. Provides Persona/Agent/BaseOrchestrator primitives, sdialog.server REST API (OpenAI/Ollama-compatible), built-in LLM-judge evaluation and mechanistic interpretability hooks.
+  extends: []
+  referenced_by:
+  - docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  - docs/intake/issue-drafts/TULP-001-tulpamancy-protocol-v0-sdialog-schema.md
+  status: active
+- id: tulpamancy-protocol
+  name: Tulpamancy Protocol
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Entif named-persona management system defining traits, goals, constraints, voice, emotional style, alignment, safety, and long-running identity for persona (tulpa) entities. No formal v0 spec exists yet; SDialog Persona model proposed as starting schema.
+  extends:
+  - receipt-law
+  - write-admission-gate
+  referenced_by:
+  - docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  - docs/intake/issue-drafts/TULP-001-tulpamancy-protocol-v0-sdialog-schema.md
+  - docs/intake/issue-drafts/TULP-002-sdialog-entif-bridge-sidecar-rest.md
+  - docs/intake/issue-drafts/TULP-003-tulpa-lab-persona-gym.md
+  - docs/intake/issue-drafts/TULP-004-persona-promotion-gate-governance.md
+  - docs/intake/issue-drafts/TULP-005-persona-drift-tracking-longitudinal.md
+  - docs/intake/issue-drafts/TULP-006-parse-only-persona-mode-safety-boundary.md
+  - docs/intake/issue-drafts/TULP-008-emilie-tulpa-lab-simulation-only.md
+  status: active
+- id: tulpa-lab
+  name: Tulpa Lab / Persona Gym
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Controlled simulation environment where personas (tulpas) are instantiated, run through structured scenes, evaluated for behavior alignment, and only then considered for live deployment. SDialog provides the runtime; Entif provides measurement scaffold and memory.
+  extends:
+  - tulpamancy-protocol
+  - sdialog
+  referenced_by:
+  - docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  - docs/intake/issue-drafts/TULP-003-tulpa-lab-persona-gym.md
+  status: active
+- id: promotion-gate
+  name: Persona Promotion Gate
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Explicit governance gate requiring pinned configuration, locked constraints, and defined authority scope in Guard/Tripwire before a persona can be promoted from simulation-only mode to live mode. Uses same 9-step state machine pattern as Write-Admission Gate.
+  extends:
+  - write-admission-gate
+  - receipt-law
+  referenced_by:
+  - docs/intake/issue-drafts/TULP-004-persona-promotion-gate-governance.md
+  status: active
+- id: tulpa-simulation-mode
+  name: Tulpa Simulation Mode
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Safety posture where a persona is active but has no tool-call capability. Enforces parse-only behavior; SDialog outputs are collected but persona cannot initiate real actions. Distinct from tulpa-live-mode.
+  extends:
+  - parse-only-default
+  referenced_by:
+  - docs/intake/issue-drafts/TULP-006-parse-only-persona-mode-safety-boundary.md
+  status: active
+- id: tulpa-live-mode
+  name: Tulpa Live Mode
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Post-promotion mode where a persona CAN initiate actions through Guard/Tripwire. Always mediated by Entif kernel. Requires explicit opt-in via promotion gate. Reverts to tulpa-simulation-mode if drift exceeds threshold.
+  extends:
+  - promotion-gate
+  - guard
+  referenced_by:
+  - docs/intake/issue-drafts/TULP-006-parse-only-persona-mode-safety-boundary.md
+  status: active
+- id: persona-drift-tracking
+  name: Persona Drift Tracking
+  introduced_by: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  introduced_at: '2026-06-01'
+  definition: Longitudinal tracking of persona coherence, alignment, and novelty scores across multiple gym runs and live sessions. Uses behavioral embedding similarity vs. pinned baseline to compute drift. Implemented via Memory Plane 2 (temporal) + Plane 3 (adaptive) in the 5-layer memory sovereignty map.
+  extends:
+  - memory-sovereignty-map
+  referenced_by:
+  - docs/intake/issue-drafts/TULP-005-persona-drift-tracking-longitudinal.md
+  status: active
 pr_state:
   open:
   - pr: 62
@@ -5515,6 +5597,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  processed_at: '2026-06-01T00:00:00Z'
+  findings: 14
+  pr: null
+  issues: 8
+  notes: 'SDialog library as Tulpamancy Protocol stand-in; 14 findings; 8 TULP issue drafts (TULP-001 through TULP-008)'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6486,59 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/TULP-001-tulpamancy-protocol-v0-sdialog-schema.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-001-tulpamancy-protocol-v0-sdialog-schema
+  priority: P1
+  type: spec-gap
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-002-sdialog-entif-bridge-sidecar-rest.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-002-sdialog-entif-bridge-sidecar-rest
+  priority: P2
+  type: integration
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-003-tulpa-lab-persona-gym.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-003-tulpa-lab-persona-gym
+  priority: P1
+  type: capability
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-004-persona-promotion-gate-governance.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-004-persona-promotion-gate-governance
+  priority: P1
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-005-persona-drift-tracking-longitudinal.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-005-persona-drift-tracking-longitudinal
+  priority: P1
+  type: memory-lifecycle
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-006-parse-only-persona-mode-safety-boundary.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-006-parse-only-persona-mode-safety-boundary
+  priority: P1
+  type: safety
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-007-sdialog-eval-hooks-tripwire-alignment.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-007-sdialog-eval-hooks-tripwire-alignment
+  priority: P2
+  type: observability
+  status: candidate
+- path: docs/intake/issue-drafts/TULP-008-emilie-tulpa-lab-simulation-only.md
+  source_doc: docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md
+  source_pr: null
+  issue_id: tulp-008-emilie-tulpa-lab-simulation-only
+  priority: P0
+  type: ethics/safety
+  status: candidate
