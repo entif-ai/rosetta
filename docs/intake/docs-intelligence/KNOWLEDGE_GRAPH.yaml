@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
-  generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  generated: '2026-06-01T04:41:00Z'
+  total_docs_processed: 45
+  active_issue_drafts: 378
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  total_issue_drafts_inventory: 540
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -5515,6 +5515,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  processed_at: '2026-06-01T04:41:00Z'
+  findings: 36
+  pr: null
+  issues: 12
+  notes: 'Full extraction: cognitive phylogenetics theory + governance addendum normative spec. 4 hypotheses (layer corridor, broadcast register, human lineage, fingerprint divergence). 12 issue drafts (CRT-001 through CRT-012). Sister doc to PR #1190 personhood provenance addendum.'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6404,75 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/crt-001-cognitive-phylogenetics-research-program.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-001-cognitive-phylogenetics-research-program
+  priority: P1
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/crt-002-rrp-identity-conformance-tiers.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-002-rrp-identity-conformance-tiers
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-003-personhood-provenance-receipt-vocabulary.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-003-personhood-provenance-receipt-vocabulary
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-004-guard-layer-identity-escalation-routing.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-004-guard-layer-identity-escalation-routing
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-005-default-deny-identity-policy.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-005-default-deny-identity-policy
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-006-bundle-viewer-personhood-claim-separation.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-006-bundle-viewer-personhood-claim-separation
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-007-person-model-retention-expiry.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-007-person-model-retention-expiry
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-008-anti-impersonation-evaluation-suite.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-008-anti-impersonation-evaluation-suite
+  priority: P1
+  type: testing
+  status: candidate
+- path: docs/intake/issue-drafts/crt-009-longitudinal-behavioral-phenotype-study.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-009-longitudinal-behavioral-phenotype-study
+  priority: P2
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/crt-010-rpp-lens-identity-risk-notes.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-010-rpp-lens-identity-risk-notes
+  priority: P2
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-011-predictive-manipulation-block-receipt.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-011-predictive-manipulation-block-receipt
+  priority: P1
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/crt-012-c2pa-insufficient-identity-assurance.md
+  source_doc: docs/ideas/Chat GPT - LLM Reasoning Theory.md
+  issue_id: crt-012-c2pa-insufficient-identity-assurance
+  priority: P2
+  type: gap
+  status: candidate
