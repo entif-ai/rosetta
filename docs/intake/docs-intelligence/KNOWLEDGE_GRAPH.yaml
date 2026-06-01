@@ -5204,6 +5204,10 @@ issue_candidates:
   notes: 'From PR #37 extraction; drafted in PR #44'
 pr_state:
   open:
+  - pr: TBD
+    branch: docs-intelligence/Chat-GPT-Context-Management-Techniques
+    doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+    note: 12 findings, 7 issue drafts (CMT-001 through CMT-007); white paper 2602.20478v1.pdf as upstream authority.
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -5515,6 +5519,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  processed_at: '2026-06-01T06:35:00Z'
+  findings: 12
+  pr: TBD
+  issues: 7
+  notes: 3-tier context architecture (Constitution/Specialist Agents/Knowledge Base), trigger-based routing, context router as MCP service, 7 issue drafts CMT-001 through CMT-007.
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6408,45 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/CMT-001-3-tier-context-architecture.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-001
+  priority: P1
+  type: architecture
+  status: draft
+- path: docs/intake/issue-drafts/CMT-002-project-constitution.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-002
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/CMT-003-context-router-mcp.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-003
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/CMT-004-trigger-routing-table.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-004
+  priority: P2
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/CMT-005-specialist-agents.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-005
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/CMT-006-retrieval-as-policy.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-006
+  priority: P2
+  type: requirement
+  status: draft
+- path: docs/intake/issue-drafts/CMT-007-context-governance.md
+  source_doc: docs/chats/20260301 - Chat GPT - Context Management Techniques.md
+  issue_id: CMT-007
+  priority: P2
+  type: governance
+  status: draft
