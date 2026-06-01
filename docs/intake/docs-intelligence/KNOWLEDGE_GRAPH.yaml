@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 378
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -5099,6 +5099,211 @@ concepts:
   - docs/PRDs/NOT LAME PRD
   status: active
   note: EDG-003 tracks alignment gap; write-admission-gate is Rosetta-native equivalent
+- id: sdf
+  name: Spatial Data Fabric
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Venue-scale distributed spatial sensing fabric using anchored UWB/WiFi/BLE/IMU/camera/microphone telemetry, factor-graph estimation, and compressed Venue State Vector output; Guardian Mode operational variant enforces ephemeral/privacy-preserving defaults
+  extends: []
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: guardian-mode
+  name: Guardian Mode
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: SDF operational mode for threat detection in controlled venues; local-first inference, ephemeral feature extraction, quorum-gated SSIE disclosure, zero identity retention by default
+  extends:
+  - sdf
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: sdf-gm
+  name: SDF-GM (Spatial Data Fabric Guardian Mode)
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: SDF-GM v0.1 spec; port of Tripwire Protocol to physical telemetry; SensoryForge + Guard Layer + Swarm Quorum + SSIE + Rosetta Sealed Incident Tiles
+  extends:
+  - guardian-mode
+  - tripwire-protocol
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: crowd-slam
+  name: Crowd-SLAM
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Using a dense swarm of partially-instrumented humans as a moving sensor array; factor-graph estimator fuses heterogeneous measurements into a coherent spatial map; reduces required anchor density
+  extends:
+  - sdf
+  - factor-graph
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: uwb-ranging
+  name: UWB Ranging Radio
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Consumer UWB radio (IEEE 802.15.4a/4z, FiRa/CCC ecosystem) for peer-to-peer distance/angle estimation; OS-gated access restricts CIR/phase exposure; not the same as UWB radar imaging
+  extends: []
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: uwb-radar
+  name: UWB Radar / Impulse Sensing
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: High-PRF controlled-geometry UWB radar for volume illumination and reflection tracking; requires specialized hardware (Detex Pro, DepLife, Camero Xaver, ReTwis); distinct from consumer UWB ranging
+  extends: []
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: wifi-csi
+  name: WiFi Channel State Information
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Phase+amplitude data across subcarriers in a WiFi channel; much richer than RSSI; enables DensePose-from-WiFi pose inference; requires enterprise-grade AP access not available from consumer OS
+  extends:
+  - wifi-sensing
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: wifi-rssi
+  name: WiFi RSSI
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Coarse WiFi received signal strength; useful for zone-level RF fingerprinting and coarse clustering; not sufficient for sub-meter geometry
+  extends:
+  - wifi-sensing
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: wifi-rtt
+  name: WiFi RTT (Round-Trip Time)
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: IEEE 802.11mc time-of-flight WiFi ranging; provides distance estimates more precise than RSSI; requires RTT-capable APs
+  extends:
+  - wifi-sensing
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: sensory-forge
+  name: SensoryForge
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: SDF module for ephemeral sensor ingestion; converts raw telemetry to anonymous lossy feature tensors; RAM-only ring buffer with no disk persistence unless Tripwire fires
+  extends:
+  - sdf
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: vsv
+  name: Venue State Vector
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Compressed SDF output format at 10-30 Hz; contains occupancy grid + flow field + tracked entities + event map + health metrics; low-bandwidth wire format for downstream consumers
+  extends:
+  - sdf
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: ssie
+  name: Sealed Spatial Incident Envelope
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: sdf.ssie.v1 schema; minimal one-time-opened encrypted payload on Guardian Mode Tripwire fire; contains spatial threat class + location + evidence digests; governed by quorum policy and TTL
+  extends:
+  - sdf-gm
+  - sealed-incident
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: factor-graph-estimator
+  name: Factor-Graph Estimator (SDF)
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Robust factor graph optimization for crowd-SLAM spatial fabric; nodes=poses; edges=UWB/WiFi/BLE/IMU/barometer/RF-fingerprint constraints; Huber/Cauchy losses; iSAM2-style incremental smoothing
+  extends:
+  - sdf
+  - factor-graph
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: anchor-synchronization
+  name: Anchor Time Synchronization
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Anchors emit known RF or acoustic pilot sequences; devices estimate clock offset/drift/latency relative to anchor time; per-device clock parameters treated as latent variables in factor graph
+  extends:
+  - clock-sync
+  - sdf
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: clock-latent-variable
+  name: Per-Device Clock as Latent Variable
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Each device has offset(t), drift(t), pipeline_latency(t) estimated continuously in factor graph alongside pose; GPS-grade timekeeping is not sufficient for instrument-grade TDOA
+  extends:
+  - clock-sync
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: audio-tdoa
+  name: Audio TDOA (Time-Difference-of-Arrival)
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Sound source localization via time-difference-of-arrival across distributed microphones; challenged by reverberation, multi-source, AGC, sample rate drift; requires anchor-emitted reference pilots for stable alignment
+  extends:
+  - clock-sync
+  - localization
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: densepose-from-wifi
+  name: DensePose-from-WiFi
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: CMU arXiv 2301.00250; learned inference of 24-body-region DensePose UV map from WiFi CSI using 3x3 MIMO 100Hz 30 subcarriers; requires per-venue calibration; degrades with 3+ subjects and unseen layouts
+  extends:
+  - wifi-csi
+  - pose-inference
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: anti-panopticon
+  name: Anti-Panopticon / Blind Watchman
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Guardian Mode design ethos: system knows what is happening without storing who did it; ephemeral by default; quorum-gated minimal disclosure; resolves the security-vs-privacy paradox
+  extends:
+  - guardian-mode
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: aliro
+  name: Aliro Standard
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: CSA Connectivity Standards Alliance standard for NFC+BLE+UWB digital access; launching Q1 2026; multiple lock makers planning support; potential distributed anchor layer for SDF
+  extends:
+  - uwb
+  - standards
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
+- id: nlos-detection
+  name: NLoS Detection and Mitigation
+  introduced_by: docs/ideas/Chat GPT - UWB Devices Overview.md
+  introduced_at: '2026-06-01'
+  definition: Detecting non-line-of-sight conditions in UWB/WiFi ranging; correlated multipath bias does not average away; requires CIR feature analysis, robust losses, and explicit bias modeling
+  extends:
+  - factor-graph-estimator
+  referenced_by:
+  - docs/ideas/Chat GPT - UWB Devices Overview.md
+  status: active
 issue_candidates:
 - id: DI-007
   title: Sub-agent context isolation — clean boot per cycle
@@ -5214,6 +5419,12 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
+  - pr: TBD
+    branch: docs-intelligence/Chat-GPT---UWB-Devices-Overview
+    doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+    findings: 20
+    issues: 12
+    note: Crowd-SLAM spatial sensing, Guardian Mode SDF-GM v0.1, SSIE schema, SensoryForge, factor-graph estimator, VSV format. 12 issue drafts SDF-001 through SDF-012.
   closed_superseded_dirty:
   - pr: 50
     branch: docs-intelligence/agentic-orchestration-failures
@@ -5515,7 +5726,85 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/ideas/Chat GPT - UWB Devices Overview.md
+  processed_at: '2026-06-01T05:30:00Z'
+  findings: 20
+  pr: TBD
+  issues: 12
+  notes: 'Crowd-SLAM spatial sensing, Guardian Mode SDF-GM v0.1, SSIE schema, SensoryForge, factor-graph estimator, VSV format. 12 issue drafts SDF-001 through SDF-012.'
 issue_drafts_inventory:
+- path: docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-001
+  priority: null
+  type: architecture/spec-gap
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-002
+  priority: null
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-003-ssie-schema.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-003
+  priority: null
+  type: architecture/spec-gap
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-004
+  priority: null
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-005
+  priority: null
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-006
+  priority: null
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-007
+  priority: null
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-008-aliro-integration.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-008
+  priority: null
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-009
+  priority: null
+  type: research
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-010
+  priority: null
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-011
+  priority: null
+  type: ethics/governance
+  status: candidate
+- path: docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md
+  source_doc: docs/ideas/Chat GPT - UWB Devices Overview.md
+  issue_id: sdf-012
+  priority: null
+  type: research
+  status: candidate
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46

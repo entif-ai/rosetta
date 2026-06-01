@@ -4136,6 +4136,71 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-uwb-devices-overview.md",
+      "sourcePath": "docs/ideas/Chat GPT - UWB Devices Overview.md",
+      "title": "Docs Intelligence Extraction — Chat GPT - UWB Devices Overview.md",
+      "concepts": [
+        "uwb",
+        "sensing-modality",
+        "uwb-ranging-vs-uwb-radar",
+        "ranging-precision",
+        "uwb-precision-claims",
+        "wifi",
+        "privacy",
+        "wifi-sensing-fidelity",
+        "security",
+        "specialized-through-wall-uwb-radar",
+        "passive-wifi-based-through-wall-sensing",
+        "cmv",
+        "pose-inference",
+        "learned-wifi-pose-inference",
+        "spatial-mapping",
+        "localization",
+        "anchor-free-spatial-mapping-limitation",
+        "crowd-slam",
+        "sw-arm-intelligence",
+        "n-device-redundancy-analysis",
+        "clock-sync",
+        "timing",
+        "estimation",
+        "continuous-clock-offset-drift-estimation",
+        "audio",
+        "tdoa",
+        "distributed-mic-array-tdoa-challenges",
+        "venue-sensing",
+        "achievable-spatial-sensing-tiers",
+        "phones-as-tags",
+        "phone-uwb-as-primary-sensor-vs-cooperative-tag",
+        "guardian-mode",
+        "sdf-gm",
+        "spatial-threat-detection",
+        "guardian-mode-for-spatial-tripwire",
+        "ssie-schema",
+        "sealed-incident",
+        "sealed-spatial-incident-envelope-schema",
+        "vsv",
+        "venue-state-vector",
+        "sdf-output",
+        "compressed-spatial-state-output-format",
+        "factor-graph",
+        "estimator",
+        "slam",
+        "factor-graph-architecture-for-sdf",
+        "aliro",
+        "smart-lock",
+        "access-control",
+        "csa-aliro-standard-for-uwb-access",
+        "device-inventory",
+        "uwb-capable-device-landscape-jan-2026",
+        "sensory-forge",
+        "sdf-module",
+        "ephemeral-ingestion",
+        "ephemeral-sensor-ingestion-module",
+        "spatial-diversity",
+        "fundamental-limit-phones-as-array-vs-phones-as-viewpoints"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4353,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4391,155 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md",
+      "title": "SDF-001: Guardian Mode for Spatial Tripwire — SDF-GM v0.1",
+      "labels": [
+        "sdf",
+        "guardian-mode",
+        "spatial-threat-detection",
+        "tripwire"
+      ],
+      "signature": "001-guardian-mode-sdf-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md",
+      "title": "SDF-002: Venue State Vector (VSV) Schema and Wire Format",
+      "labels": [
+        "sdf",
+        "vsv",
+        "output-format",
+        "compression",
+        "wire-format"
+      ],
+      "signature": "002-format-schema-sdf-state"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-003-ssie-schema.md",
+      "title": "SDF-003: SSIE (Sealed Spatial Incident Envelope) Schema — `sdf.ssie.v1`",
+      "labels": [
+        "sdf",
+        "ssie",
+        "sealed-incident",
+        "governance",
+        "tile-kind"
+      ],
+      "signature": "003-envelope-incident-schema-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md",
+      "title": "SDF-004: SensoryForge — Ephemeral Sensor Ingestion Module",
+      "labels": [
+        "sdf",
+        "sensory-forge",
+        "ephemeral",
+        "privacy-by-default",
+        "sensor-ingestion"
+      ],
+      "signature": "004-ephemeral-ingestion-module-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md",
+      "title": "SDF-005: Factor-Graph Estimator for Crowd-SLAM Spatial Fabric",
+      "labels": [
+        "sdf",
+        "factor-graph",
+        "estimator",
+        "slam",
+        "crowd-slam",
+        "optimization"
+      ],
+      "signature": "005-crowd-estimator-fabric-factor"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md",
+      "title": "SDF-006: Per-Device Clock Offset/Drift as Latent Variable in SDF Estimator",
+      "labels": [
+        "sdf",
+        "clock-sync",
+        "timing",
+        "estimation",
+        "latent-variable"
+      ],
+      "signature": "006-clock-device-drift-estimator"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md",
+      "title": "SDF-007: Anchor Deployment Minimal Topology for Venue SDF",
+      "labels": [
+        "sdf",
+        "anchors",
+        "deployment",
+        "localization",
+        "topology"
+      ],
+      "signature": "007-anchor-deployment-minimal-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-008-aliro-integration.md",
+      "title": "SDF-008: SDF Integration with Aliro UWB Access Standard",
+      "labels": [
+        "sdf",
+        "uwb",
+        "aliro",
+        "smart-lock",
+        "access-control",
+        "standards"
+      ],
+      "signature": "008-access-aliro-integration-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md",
+      "title": "SDF-009: CMU DensePose-from-WiFi as SDF Sensing Modality — Feasibility and Constraints",
+      "labels": [
+        "sdf",
+        "wifi",
+        "csi",
+        "pose-inference",
+        "cmv",
+        "research",
+        "densepose"
+      ],
+      "signature": "009-cmu-constraints-densepose-feasibility"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md",
+      "title": "SDF-010: VSV Output Wire Format — Compression Ratio and Update Rate Targets",
+      "labels": [
+        "sdf",
+        "vsv",
+        "compression",
+        "latency",
+        "bandwidth",
+        "wire-format"
+      ],
+      "signature": "010-compression-format-output-rate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md",
+      "title": "SDF-011: Privacy / Anti-Surveillance Governance for Guardian Mode",
+      "labels": [
+        "sdf",
+        "guardian-mode",
+        "privacy",
+        "anti-panopticon",
+        "governance",
+        "constitutional"
+      ],
+      "signature": "011-anti-governance-guardian-mode"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md",
+      "title": "SDF-012: UWB Device Compatibility Matrix for SDF Swarm Participation Modeling",
+      "labels": [
+        "sdf",
+        "uwb",
+        "device-inventory",
+        "swarm",
+        "compatibility"
+      ],
+      "signature": "012-compatibility-device-matrix-modeling"
     }
   ],
   "concepts": {
@@ -4327,7 +4571,9 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/governance/Entif 2.0 - Decentralization and Governance.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md"
+      ]
     },
     "bootstrap-authority-hierarchy": {
       "documents": [
@@ -4520,7 +4766,9 @@
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
         "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
         "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
-        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md"
+        "docs/intake/issue-drafts/OB1-004-ob1-exclusion-list-unenforced.md",
+        "docs/intake/issue-drafts/sdf-003-ssie-schema.md",
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md"
       ]
     },
     "repo-structure": {
@@ -5273,7 +5521,8 @@
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
       ],
       "issueDrafts": []
     },
@@ -5345,7 +5594,9 @@
       "documents": [
         "docs/external/acpx.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md"
+      ]
     },
     "agent-adapters": {
       "documents": [
@@ -6345,7 +6596,9 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
     },
     "competitive-intelligence": {
       "documents": [
@@ -8905,7 +9158,10 @@
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md",
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md"
+      ]
     },
     "multimodal": {
       "documents": [
@@ -10941,7 +11197,9 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md"
+      ]
     },
     "voice-mcp": {
       "documents": [
@@ -10970,7 +11228,8 @@
     },
     "audio": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
       ],
       "issueDrafts": []
     },
@@ -11028,9 +11287,12 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md"
+      ]
     },
     "entity-resolution": {
       "documents": [
@@ -12030,7 +12292,9 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md"
+      ]
     },
     "standards-alignment": {
       "documents": [
@@ -13471,7 +13735,9 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md"
+      ]
     },
     "mona": {
       "documents": [
@@ -15194,7 +15460,9 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md"
+      ]
     },
     "daily-digest": {
       "documents": [
@@ -15324,7 +15592,9 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md"
+      ]
     },
     "cross-agent": {
       "documents": [
@@ -20317,9 +20587,12 @@
     },
     "access-control": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md"
+      ]
     },
     "systemic-description": {
       "documents": [
@@ -23120,10 +23393,485 @@
       ],
       "issueDrafts": []
     },
+    "uwb": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md",
+        "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md"
+      ]
+    },
+    "sensing-modality": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "uwb-ranging-vs-uwb-radar": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "ranging-precision": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "uwb-precision-claims": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "wifi": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
+    },
+    "wifi-sensing-fidelity": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "specialized-through-wall-uwb-radar": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "passive-wifi-based-through-wall-sensing": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "cmv": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
+    },
+    "pose-inference": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
+    },
+    "learned-wifi-pose-inference": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-mapping": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "localization": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md"
+      ]
+    },
+    "anchor-free-spatial-mapping-limitation": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "crowd-slam": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md"
+      ]
+    },
+    "sw-arm-intelligence": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "n-device-redundancy-analysis": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "clock-sync": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md"
+      ]
+    },
+    "timing": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md"
+      ]
+    },
+    "estimation": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md"
+      ]
+    },
+    "continuous-clock-offset-drift-estimation": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "tdoa": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "distributed-mic-array-tdoa-challenges": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "venue-sensing": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "achievable-spatial-sensing-tiers": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "phones-as-tags": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "phone-uwb-as-primary-sensor-vs-cooperative-tag": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "guardian-mode": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md",
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md"
+      ]
+    },
+    "sdf-gm": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-threat-detection": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md"
+      ]
+    },
+    "guardian-mode-for-spatial-tripwire": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "ssie-schema": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "sealed-incident": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-003-ssie-schema.md"
+      ]
+    },
+    "sealed-spatial-incident-envelope-schema": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "vsv": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md",
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md"
+      ]
+    },
+    "venue-state-vector": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "sdf-output": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "compressed-spatial-state-output-format": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "factor-graph": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md"
+      ]
+    },
+    "estimator": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md"
+      ]
+    },
+    "slam": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md"
+      ]
+    },
+    "factor-graph-architecture-for-sdf": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "aliro": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md"
+      ]
+    },
+    "smart-lock": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md"
+      ]
+    },
+    "csa-aliro-standard-for-uwb-access": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "device-inventory": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md"
+      ]
+    },
+    "uwb-capable-device-landscape-jan-2026": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "sensory-forge": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md"
+      ]
+    },
+    "sdf-module": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "ephemeral-ingestion": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "ephemeral-sensor-ingestion-module": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-diversity": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
+    "fundamental-limit-phones-as-array-vs-phones-as-viewpoints": {
+      "documents": [
+        "docs/ideas/Chat GPT - UWB Devices Overview.md"
+      ],
+      "issueDrafts": []
+    },
     "tracking": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+      ]
+    },
+    "sdf": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-001-guardian-mode-spatial-tripwire.md",
+        "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md",
+        "docs/intake/issue-drafts/sdf-003-ssie-schema.md",
+        "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md",
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md",
+        "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md",
+        "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md",
+        "docs/intake/issue-drafts/sdf-008-aliro-integration.md",
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md",
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md",
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md",
+        "docs/intake/issue-drafts/sdf-012-uwb-device-compatibility-matrix.md"
+      ]
+    },
+    "wire-format": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-002-venue-state-vector-schema.md",
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md"
+      ]
+    },
+    "ssie": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-003-ssie-schema.md"
+      ]
+    },
+    "tile-kind": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-003-ssie-schema.md"
+      ]
+    },
+    "ephemeral": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md"
+      ]
+    },
+    "privacy-by-default": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md"
+      ]
+    },
+    "sensor-ingestion": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-004-sensory-forge-ephemeral-ingestion.md"
+      ]
+    },
+    "optimization": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-005-factor-graph-estimator-crowd-slam.md"
+      ]
+    },
+    "latent-variable": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-006-per-device-clock-latent-variable.md"
+      ]
+    },
+    "anchors": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md"
+      ]
+    },
+    "deployment": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md"
+      ]
+    },
+    "topology": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-007-anchor-deployment-topology.md"
+      ]
+    },
+    "csi": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
+    },
+    "densepose": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-009-densepose-wifi-feasibility.md"
+      ]
+    },
+    "bandwidth": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-010-vsv-compression-targets.md"
+      ]
+    },
+    "anti-panopticon": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/sdf-011-guardian-mode-privacy-governance.md"
       ]
     }
   },
