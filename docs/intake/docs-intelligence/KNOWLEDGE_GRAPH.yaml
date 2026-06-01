@@ -1,10 +1,10 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 374
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
+  total_issue_drafts_inventory: 536
   docs_intelligence_files: 43
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
@@ -5214,6 +5214,12 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
+  - pr: TBD
+    branch: docs-intelligence/Entif-Viral-Media-Mirror-Systems-Diagram
+    doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+    findings: 12
+    issues: 8
+    note: 8 VM issue drafts; VM-001 through VM-008; extraction 2026-06-01.
   closed_superseded_dirty:
   - pr: 50
     branch: docs-intelligence/agentic-orchestration-failures
@@ -5515,6 +5521,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  processed_at: '2026-06-01T06:01:00Z'
+  findings: 12
+  pr: TBD
+  issues: 8
+  notes: 'Extraction: 12 findings, 8 VM issue drafts VM-001 through VM-008; viral media mirror 7-layer pipeline spec; glyph/EECG/cadence- emulator architecture; governance guardrails underspecified.'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6336,6 +6348,62 @@ issue_drafts_inventory:
   type: architecture
   status: published
   url: https://github.com/enti-ai/rosetta/issues/267
+- path: docs/intake/issue-drafts/vmm-001-glyph-data-model.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-001-glyph-data-model
+  priority: P2
+  type: data-model
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-002-eecg-affect-trace-canonical-format.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-002-eecg-affect-trace-canonical-format
+  priority: P2
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-003-cadence-emulator-interface.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-003-cadence-emulator-interface
+  priority: P2
+  type: interface
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-004-impersonation-guardrail-technical-spec.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-004-impersonation-guardrail-technical-spec
+  priority: P1
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-005-attribution-enforcement-hardening.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-005-attribution-enforcement-hardening
+  priority: P1
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-006-watermarking-technology-spec.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-006-watermarking-technology-spec
+  priority: P2
+  type: technology
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-007-synthesis-plan-schema-modality-compiler.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-007-synthesis-plan-schema-modality-compiler
+  priority: P2
+  type: data-model
+  status: candidate
+- path: docs/intake/issue-drafts/vmm-008-rosetta-integration-path.md
+  source_doc: docs/ideas/Entif Viral Media Mirror Systems Diagram.md
+  source_pr: TBD
+  issue_id: vmm-008-rosetta-integration-path
+  priority: P1
+  type: architecture
+  status: candidate
 - issue_id: CW-001
   url: https://github.com/entif-ai/rosetta/issues/325
   status: published
