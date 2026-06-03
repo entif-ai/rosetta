@@ -4136,6 +4136,72 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-05-31-rosetta-governance-addendum-personhood-provenance-cognitive-twin-risk.md",
+      "sourcePath": "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md",
+      "title": "Docs Intelligence Extraction — rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md",
+      "concepts": [
+        "personhood-provenance",
+        "threat-model",
+        "core-principle",
+        "rosetta",
+        "personhood",
+        "governance",
+        "escalation-gate",
+        "cognitive-fingerprint",
+        "constitutional",
+        "policy",
+        "identity-sensitive",
+        "rrp",
+        "receipts",
+        "conformance",
+        "identity-aware",
+        "classification",
+        "workflow",
+        "tapestry",
+        "bundle-viewer",
+        "guard-layer",
+        "authorization",
+        "simulation",
+        "impersonation",
+        "disclosure",
+        "tracking",
+        "correlation",
+        "predictive-manipulation",
+        "coercion",
+        "retention",
+        "decay",
+        "export-control",
+        "storage",
+        "verifier",
+        "evaluation",
+        "metrics",
+        "identity-risk",
+        "testing",
+        "failsafe",
+        "ambiguity",
+        "default-deny",
+        "definitions",
+        "vocabulary",
+        "strategic",
+        "positioning",
+        "entaffirm",
+        "lens",
+        "governance-log",
+        "audit",
+        "roadmap",
+        "quasi-biometric",
+        "biometric",
+        "privacy",
+        "pseudonymity",
+        "selective-disclosure",
+        "cryptography",
+        "identity",
+        "continuity",
+        "mission",
+        "synthetic-personhood"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4354,126 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-001-personhood-provenance-governance-domain.md",
+      "title": "PPN-001 — Personhood Provenance Governance Domain",
+      "labels": [],
+      "signature": "001-domain-governance-personhood-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-002-rrp-identity-receipt-families.md",
+      "title": "PPN-002 — RRP Identity Receipt Families",
+      "labels": [],
+      "signature": "002-families-identity-ppn-receipt"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-003-guard-layer-identity-sensitive-routing.md",
+      "title": "PPN-003 — Guard-Layer Identity-Sensitive Routing",
+      "labels": [],
+      "signature": "003-guard-identity-layer-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-004-bundle-viewer-personhood-claims.md",
+      "title": "PPN-004 — Bundle Viewer: Separate Content and Personhood Claims",
+      "labels": [],
+      "signature": "004-bundle-claims-content-personhood"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-005-person-model-retention-expiry.md",
+      "title": "PPN-005 — Person Model Retention and Expiry Semantics",
+      "labels": [],
+      "signature": "005-expiry-model-person-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-006-identity-simulation-red-team-harness.md",
+      "title": "PPN-006 — Identity Simulation Red Team Harness",
+      "labels": [],
+      "signature": "006-harness-identity-ppn-red"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-007-rrp-lens-identity-risk-notes.md",
+      "title": "PPN-007 — RRP Lens: Identity-Risk Framing Notes",
+      "labels": [],
+      "signature": "007-framing-identity-lens-notes"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-008-default-deny-identity-policies.md",
+      "title": "PPN-008 — Default-Deny Identity Policies in Guard-Layer",
+      "labels": [],
+      "signature": "008-default-deny-guard-identity"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-009-rrp-identity-conformance-levels.md",
+      "title": "PPN-009 — RRP-Identity Conformance Levels",
+      "labels": [],
+      "signature": "009-conformance-identity-levels-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-010-governance-log-personhood-events.md",
+      "title": "PPN-010 — Governance Log: Personhood Provenance Event Class",
+      "labels": [],
+      "signature": "010-class-event-governance-log"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-011-policy-profile-relaxation-declaration.md",
+      "title": "PPN-011 — Policy Profile Relaxation Declaration Mechanism",
+      "labels": [],
+      "signature": "011-declaration-mechanism-policy-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-012-failsafe-ambiguity-classification.md",
+      "title": "PPN-012 — Failsafe Ambiguity Classification Rule",
+      "labels": [],
+      "signature": "012-ambiguity-classification-failsafe-ppn"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-013-cross-platform-linkage-sensitivity.md",
+      "title": "PPN-013 — Cross-Platform Identity Linkage Treated as Identity-Sensitive",
+      "labels": [],
+      "signature": "013-cross-identity-identity-linkage"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-014-selective-disclosure-personhood-proofs.md",
+      "title": "PPN-014 — Selective Disclosure for Personhood Provenance Proofs",
+      "labels": [],
+      "signature": "014-disclosure-personhood-ppn-proofs"
+    },
+    {
+      "path": "docs/intake/issue-drafts/PPN-015-anti-personhood-correlation-dI-012-coordination.md",
+      "title": "PPN-015 — Anti-Personhood-Correlation Governance: Coordinate DI-012 and This Addendum",
+      "labels": [],
+      "signature": "012-015-addendum-anti-coordinate"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4482,12 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/srp-010-p0-ingestion-priority-matrix.md",
+      "title": "SRP-010: Implement P0 ingestion priority matrix (DataCite/Crossref/ORCID/ROR/re3data as identity spine)",
+      "labels": [],
+      "signature": "010-crossref-datacite-identity-implement"
     }
   ],
   "concepts": {
@@ -4325,7 +4517,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/governance/DONOR_FIT_MAP.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -4439,7 +4632,8 @@
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -4514,7 +4708,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4639,7 +4834,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -5039,7 +5235,8 @@
       "documents": [
         "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
         "docs/external/Berman-PRD.md",
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -5610,7 +5807,8 @@
         "docs/external/acpx.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -5842,7 +6040,8 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -5948,7 +6147,8 @@
     },
     "impersonation": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -7518,7 +7718,8 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -8080,7 +8281,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -9097,7 +9299,8 @@
     },
     "simulation": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -9955,7 +10158,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -10252,14 +10456,16 @@
       "documents": [
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
     "continuity": {
       "documents": [
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
-        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md"
+        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -10633,7 +10839,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -11028,7 +11235,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -11086,7 +11294,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -11123,7 +11332,8 @@
     "classification": {
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -11430,7 +11640,8 @@
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -12133,7 +12344,8 @@
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -12549,7 +12761,8 @@
     },
     "threat-model": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -12670,7 +12883,8 @@
     },
     "cryptography": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -12815,7 +13029,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -13242,7 +13457,8 @@
     "entaffirm": {
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -13796,7 +14012,8 @@
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -16119,7 +16336,8 @@
     "conformance": {
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -18103,7 +18321,8 @@
     },
     "positioning": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -18507,7 +18726,8 @@
     },
     "vocabulary": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -22800,7 +23020,8 @@
     },
     "ambiguity": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
       ],
       "issueDrafts": []
     },
@@ -23120,11 +23341,187 @@
       ],
       "issueDrafts": []
     },
+    "personhood-provenance": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "core-principle": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "personhood": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "escalation-gate": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-fingerprint": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-sensitive": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-aware": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "bundle-viewer": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "authorization": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "disclosure": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
     "tracking": {
-      "documents": [],
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
       ]
+    },
+    "correlation": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "predictive-manipulation": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "coercion": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "export-control": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "verifier": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "identity-risk": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "failsafe": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "default-deny": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "definitions": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "strategic": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "lens": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "governance-log": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "quasi-biometric": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "biometric": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "pseudonymity": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "selective-disclosure": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "mission": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
+    },
+    "synthetic-personhood": {
+      "documents": [
+        "docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md"
+      ],
+      "issueDrafts": []
     }
   },
   "duplicateIssueDraftClusters": []

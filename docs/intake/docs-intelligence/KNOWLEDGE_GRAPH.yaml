@@ -1,15 +1,14 @@
 meta:
   version: '0.9'
-  generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  generated: '2026-05-31T18:11:00Z'
+  total_docs_processed: 45
+  active_issue_drafts: 381
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  total_issue_drafts_inventory: 543
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
-  next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
-    Token Efficiency.md
+  next_doc_to_process: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
 concepts:
 - id: authority-chain
@@ -5214,6 +5213,12 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
+  - pr: 65
+    branch: docs-intelligence/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk
+    doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+    findings: 35
+    issues: 15
+    note: 'PPN-001 through PPN-015; 15 issue drafts; personhood provenance governance domain, RRP identity receipts, guard-layer extensions, bundle viewer separation, retention/expiry, conformance levels'
   closed_superseded_dirty:
   - pr: 50
     branch: docs-intelligence/agentic-orchestration-failures
@@ -6398,3 +6403,133 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/docs-intelligence/2026-05-31-rosetta-governance-addendum-personhood-provenance-cognitive-twin-risk.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  processed_at: '2026-05-31T18:11:00Z'
+  findings: 35
+  pr: 65
+  issues: 15
+  concepts:
+  - personhood-provenance
+  - cognitive-fingerprint
+  - person-model
+  - identity-grade-signal
+  - quasi-biometric
+  - high-fidelity-simulation
+  - identity-sensitive-operation
+  - digital-twinning
+  - cognitive-twin
+  - rrp-identity-aware
+  - rrp-identity-restricted
+  - rrp-identity-auditor
+  - default-deny-identity
+  - simulation-disclosure
+  - predictive-manipulation
+  - cross-platform-linkage
+  - failsafe-ambiguity-rule
+  - selective-disclosure
+- path: docs/intake/issue-drafts/PPN-001-personhood-provenance-governance-domain.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-001
+  priority: critical
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-002-rrp-identity-receipt-families.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-002
+  priority: critical
+  type: rrp
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-003-guard-layer-identity-sensitive-routing.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-003
+  priority: critical
+  type: guard-layer
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-004-bundle-viewer-personhood-claims.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-004
+  priority: high
+  type: tapestry
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-005-person-model-retention-expiry.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-005
+  priority: high
+  type: storage
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-006-identity-simulation-red-team-harness.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-006
+  priority: medium
+  type: testing
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-007-rrp-lens-identity-risk-notes.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-007
+  priority: medium
+  type: rrp
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-008-default-deny-identity-policies.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-008
+  priority: critical
+  type: policy
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-009-rrp-identity-conformance-levels.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-009
+  priority: high
+  type: conformance
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-010-governance-log-personhood-events.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-010
+  priority: medium
+  type: governance-log
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-011-policy-profile-relaxation-declaration.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-011
+  priority: medium
+  type: policy
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-012-failsafe-ambiguity-classification.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-012
+  priority: high
+  type: guard-layer
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-013-cross-platform-linkage-sensitivity.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-013
+  priority: high
+  type: policy
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-014-selective-disclosure-personhood-proofs.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-014
+  priority: medium
+  type: privacy
+  status: candidate
+- path: docs/intake/issue-drafts/PPN-015-anti-personhood-correlation-dI-012-coordination.md
+  source_doc: docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md
+  source_pr: 65
+  issue_id: PPN-015
+  priority: high
+  type: ethics
+  status: candidate
