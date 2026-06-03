@@ -4136,6 +4136,172 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-uwb-sdf-non-profits.md",
+      "sourcePath": "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md",
+      "title": "Docs Intelligence Extraction — 20260225 - Chat GPT - UWB, SDF and Non-Profits",
+      "concepts": [
+        "uwb",
+        "device-ecosystem",
+        "apple-u1",
+        "fi-ra",
+        "ccc",
+        "phone-uwb",
+        "tracking",
+        "ranging",
+        "android-uwb",
+        "motorola",
+        "xiaomi",
+        "sharp",
+        "pixel-watch",
+        "aliro",
+        "smart-lock",
+        "csa",
+        "nfc",
+        "ble",
+        "access-control",
+        "standard",
+        "laptop-radar",
+        "novelda",
+        "presence-detection",
+        "human-presence-detection",
+        "laptop-sensors",
+        "crowd-slam",
+        "factor-graph",
+        "relative-geometry",
+        "dynamic-state",
+        "swarm-localization",
+        "anchors",
+        "floating-map",
+        "rf-hell",
+        "multipath",
+        "platform-access-limits",
+        "localization",
+        "constraints",
+        "isam2",
+        "robust-optimization",
+        "nlos-detection",
+        "huber-loss",
+        "cauchy-loss",
+        "estimator",
+        "uwb-ranging",
+        "uwb-radar",
+        "cir",
+        "phase-history",
+        "duty-cycle",
+        "platform-access",
+        "uwb-modality-split",
+        "anchor-deployment",
+        "static-structure",
+        "dynamic-occupancy",
+        "micro-motion",
+        "spatial-mapping",
+        "factor-graph-estimator",
+        "nlos-classifier",
+        "multi-target-tracking",
+        "anchor-self-calibration",
+        "occupancy-grid",
+        "differential-privacy",
+        "estimator-components",
+        "clock-sync",
+        "ntp-style",
+        "gps-disciplined",
+        "oscillator-drift",
+        "latent-variable",
+        "clock-correction",
+        "timing",
+        "phase-coherence",
+        "virtual-array",
+        "spatial-diversity",
+        "multi-device-sensing",
+        "n-sqrt",
+        "constraint-density",
+        "correlated-bias",
+        "independent-noise",
+        "swarm-scaling",
+        "through-wall-radar",
+        "depex-pro",
+        "retwis-5",
+        "camero-xaver-1000",
+        "uplft",
+        "impulse-uwb-radar",
+        "specialized-radar",
+        "sensing-modalities",
+        "wifi-sensing",
+        "csi",
+        "channel-state-information",
+        "wifi-rtt",
+        "mimo",
+        "densepose-from-wifi",
+        "privacy-preserving",
+        "cmu-2301-00250",
+        "learned-mapping",
+        "same-layout-assumption",
+        "camera-pseudo-gt",
+        "wifi-pose-inference",
+        "anti-panopticon",
+        "ephemeral-panopticon",
+        "sensory-forge",
+        "guardian-mode",
+        "anonymous-vector-streams",
+        "privacy-preserving-sensing",
+        "sdf-gm",
+        "spatial-tripwire",
+        "ssie",
+        "sealed-spatial-incident-envelope",
+        "quorum-gated",
+        "venue-state-vector",
+        "compressed-state",
+        "flow-field",
+        "entity-tracking",
+        "spatial-output-format",
+        "entif-phone",
+        "local-inference",
+        "ram-only",
+        "threat-scanning",
+        "product-concept",
+        "tripwire-protocol",
+        "sealed-incident",
+        "quorum",
+        "shred",
+        "one-time-open",
+        "tripwire",
+        "existing-primitives",
+        "501c3",
+        "church-automatic-exemption",
+        "form-1023-not-required",
+        "irs",
+        "nonprofit-formation",
+        "church",
+        "fiscal-sponsorship",
+        "model-c",
+        "pre-approved-grant",
+        "discretion-and-control",
+        "mere-conduit",
+        "nonprofit-structure",
+        "arm-length-vendor",
+        "private-inurement",
+        "impermissible-private-benefit",
+        "fmv",
+        "conflict-of-interest",
+        "nonprofit-governance",
+        "syndicate",
+        "audio-tdoa",
+        "speed-of-sound",
+        "sample-rate-drift",
+        "agc",
+        "gcc-phat",
+        "anchor-time-pilots",
+        "audio-localization",
+        "times-square",
+        "dense-crowd",
+        "stampede-detection",
+        "threat-detection",
+        "counterflow",
+        "use-case",
+        "venue"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4454,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4492,84 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-001-spatial-tripwire-guardian-mode.md",
+      "title": "SDF-001: Spatial Data Fabric Guardian Mode — Formal Rosetta Tile Kind",
+      "labels": [],
+      "signature": "001-data-fabric-formal-guardian"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-002-factor-graph-estimator.md",
+      "title": "SDF-002: Factor Graph Estimator for Multi-Modal Venue Localization",
+      "labels": [],
+      "signature": "002-estimator-factor-graph-localization"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-003-anchor-time-pilot-sync.md",
+      "title": "SDF-003: Anchor Time-Pilot System for Clock Synchronization",
+      "labels": [],
+      "signature": "003-anchor-clock-pilot-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-004-venue-state-vector-format.md",
+      "title": "SDF-004: Venue State Vector (VSV) Compressed Output Format",
+      "labels": [],
+      "signature": "004-compressed-format-output-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-005-sensory-forge-ephemeral-extraction.md",
+      "title": "SDF-005: SensoryForge — Ephemeral Feature Extraction Module",
+      "labels": [],
+      "signature": "005-ephemeral-extraction-feature-module"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-006-multi-target-tracking-venue.md",
+      "title": "SDF-006: Multi-Target Tracking and Association for Venue Occupancy",
+      "labels": [],
+      "signature": "006-association-multi-occupancy-sdf"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-007-nlos-multipath-classifier.md",
+      "title": "SDF-007: NLoS/Multipath Classifier Using CIR Features",
+      "labels": [],
+      "signature": "007-cir-classifier-features-multipath"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-008-cmu-densepose-domain-shift-risk.md",
+      "title": "SDF-008: CMU DensePose-from-WiFi Domain Generalization Gap",
+      "labels": [],
+      "signature": "008-cmu-densepose-domain-from"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-009-church-501c3-counterparty-friction.md",
+      "title": "SDF-009: Church 501(c)(3) Automatic Exemption — Counterparty Verification Strategy",
+      "labels": [],
+      "signature": "009-501-automatic-church-counterparty"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-010-model-c-fiscal-sponsorship-vieDay-villaticus.md",
+      "title": "SDF-010: Model C Fiscal Sponsorship Structure for VieDay/Villaticus",
+      "labels": [],
+      "signature": "010-fiscal-model-sdf-sponsorship"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-011-syndicate-nonprofit-arm-length-compliance.md",
+      "title": "SDF-011: For-Profit Syndicate Vendor Relationships with Nonprofits — Arm's-Length Compliance",
+      "labels": [],
+      "signature": "011-arm-compliance-length-nonprofits"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-012-entif-phone-hardware-access.md",
+      "title": "SDF-012: Entif-Phone Hardware Access Requirements for Guardian Mode",
+      "labels": [],
+      "signature": "012-access-entif-guardian-hardware"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sdf-013-audio-tdoa-reverberant-environments.md",
+      "title": "SDF-013: Audio TDOA in Reverberant Multi-Source Environments — Anchor Pilot Required",
+      "labels": [],
+      "signature": "013-anchor-audio-environments-multi"
     }
   ],
   "concepts": {
@@ -10238,7 +10512,8 @@
         "docs/external/Moltron.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
       ],
       "issueDrafts": []
     },
@@ -13469,7 +13744,8 @@
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
       ],
       "issueDrafts": []
     },
@@ -13937,7 +14213,8 @@
     },
     "quorum": {
       "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
       ],
       "issueDrafts": []
     },
@@ -20317,7 +20594,8 @@
     },
     "access-control": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
       ],
       "issueDrafts": []
     },
@@ -23120,11 +23398,937 @@
       ],
       "issueDrafts": []
     },
+    "uwb": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "device-ecosystem": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "apple-u1": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "fi-ra": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ccc": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "phone-uwb": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
     "tracking": {
-      "documents": [],
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
       ]
+    },
+    "ranging": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "android-uwb": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "motorola": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "xiaomi": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sharp": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "pixel-watch": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "aliro": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "smart-lock": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "csa": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nfc": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ble": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "standard": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "laptop-radar": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "novelda": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "presence-detection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "human-presence-detection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "laptop-sensors": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "crowd-slam": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "factor-graph": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "relative-geometry": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "dynamic-state": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm-localization": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anchors": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "floating-map": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "rf-hell": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "multipath": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-access-limits": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "localization": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "isam2": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "robust-optimization": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nlos-detection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "huber-loss": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "cauchy-loss": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "estimator": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "uwb-ranging": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "uwb-radar": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "cir": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-history": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "duty-cycle": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "platform-access": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "uwb-modality-split": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anchor-deployment": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "static-structure": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "dynamic-occupancy": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "micro-motion": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-mapping": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "factor-graph-estimator": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nlos-classifier": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-target-tracking": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anchor-self-calibration": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "occupancy-grid": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "differential-privacy": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "estimator-components": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "clock-sync": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ntp-style": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "gps-disciplined": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "oscillator-drift": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "latent-variable": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "clock-correction": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "timing": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-coherence": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "virtual-array": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-diversity": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-device-sensing": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "n-sqrt": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "constraint-density": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "correlated-bias": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "independent-noise": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "swarm-scaling": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "through-wall-radar": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "depex-pro": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "retwis-5": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "camero-xaver-1000": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "uplft": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "impulse-uwb-radar": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "specialized-radar": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sensing-modalities": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "wifi-sensing": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "csi": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "channel-state-information": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "wifi-rtt": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "mimo": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "densepose-from-wifi": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-preserving": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "cmu-2301-00250": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "learned-mapping": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "same-layout-assumption": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "camera-pseudo-gt": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "wifi-pose-inference": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-panopticon": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ephemeral-panopticon": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sensory-forge": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "guardian-mode": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anonymous-vector-streams": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-preserving-sensing": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sdf-gm": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-tripwire": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ssie": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sealed-spatial-incident-envelope": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "quorum-gated": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "venue-state-vector": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "compressed-state": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "flow-field": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "entity-tracking": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "spatial-output-format": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-phone": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "local-inference": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "ram-only": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "threat-scanning": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "product-concept": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "tripwire-protocol": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sealed-incident": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "shred": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "one-time-open": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "existing-primitives": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "501c3": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "church-automatic-exemption": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "form-1023-not-required": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "irs": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nonprofit-formation": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "church": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "fiscal-sponsorship": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-c": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "pre-approved-grant": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "discretion-and-control": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "mere-conduit": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nonprofit-structure": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "arm-length-vendor": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "private-inurement": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "impermissible-private-benefit": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "fmv": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "conflict-of-interest": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "nonprofit-governance": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "syndicate": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio-tdoa": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "speed-of-sound": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "sample-rate-drift": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "agc": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "gcc-phat": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "anchor-time-pilots": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "audio-localization": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "times-square": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "dense-crowd": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "stampede-detection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "threat-detection": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "counterflow": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "use-case": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
+    },
+    "venue": {
+      "documents": [
+        "docs/ideas/20260225 - Chat GPT - UWB, SDF and Non-Profits.md"
+      ],
+      "issueDrafts": []
     }
   },
   "duplicateIssueDraftClusters": []
