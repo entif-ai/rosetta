@@ -4136,6 +4136,60 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-entif-viral-media-mirror-systems-diagram.md",
+      "sourcePath": "docs/ideas/Entif Viral Media Mirror Systems Diagram.md",
+      "title": "Docs Intelligence Extraction — Entif Viral Media Mirror Systems Diagram",
+      "concepts": [
+        "glyph",
+        "data-model",
+        "semantic-unit",
+        "glyph-schema",
+        "affect-trace",
+        "eecg",
+        "emotion-representation",
+        "affect-representation",
+        "cadence-emulator",
+        "synthesis",
+        "beat-map",
+        "synthesis-interface",
+        "impersonation",
+        "guardrails",
+        "governance",
+        "impersonation-risk",
+        "attribution",
+        "licensing",
+        "attribution-enforcement",
+        "attention-order-book",
+        "trend-modeling",
+        "metaphor",
+        "novel-modeling-metaphor",
+        "mvp",
+        "scope",
+        "90-day",
+        "mvp-scope",
+        "graph-db",
+        "feature-store",
+        "tsdb",
+        "storage-topology",
+        "synthesis-plan",
+        "modality-compiler",
+        "variants",
+        "synthesis-architecture",
+        "watermarking",
+        "provenance",
+        "synthetic-content",
+        "provenance-enforcement",
+        "resonance-metrics",
+        "novelty-metrics",
+        "evaluation",
+        "evaluation-framework",
+        "architecture",
+        "7-layers",
+        "pipeline",
+        "architectural-completeness"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4288,6 +4342,36 @@
       "signature": "004-enforced-exclusion-list-not"
     },
     {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4296,6 +4380,54 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-001-glyph-data-model.md",
+      "title": "VM-001 — Glyph Data Model Needs Formal Schema and Rosetta Alignment",
+      "labels": [],
+      "signature": "001-alignment-data-formal-glyph"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-002-eecg-affect-trace-canonical-format.md",
+      "title": "VM-002 — EECG/Affect Trace Has No Canonical Format Across Docs",
+      "labels": [],
+      "signature": "002-across-affect-canonical-docs"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-003-cadence-emulator-interface.md",
+      "title": "VM-003 — Viral Cadence Emulator Interface Is Underspecified",
+      "labels": [],
+      "signature": "003-cadence-emulator-interface-underspecified"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-004-impersonation-guardrail-technical-spec.md",
+      "title": "VM-004 — Style Mirroring vs Creator Impersonation Guardrail Is Policy Without Technical Enforcement",
+      "labels": [],
+      "signature": "004-creator-enforcement-guardrail-impersonation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-005-attribution-enforcement-hardening.md",
+      "title": "VM-005 — Attribution Enforcement Too Weak for Synthesized Variant Governance",
+      "labels": [],
+      "signature": "005-attribution-enforcement-governance-synthesized"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-006-watermarking-technology-spec.md",
+      "title": "VM-006 — Watermarking Synthetic Variants Is Unnamed Technology",
+      "labels": [],
+      "signature": "006-synthetic-technology-unnamed-variants"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-007-synthesis-plan-schema-modality-compiler.md",
+      "title": "VM-007 — Synthesis Plan Schema Unnamed; Modality Compiler Interfaces Undefined",
+      "labels": [],
+      "signature": "007-compiler-interfaces-modality-plan"
+    },
+    {
+      "path": "docs/intake/issue-drafts/vmm-008-rosetta-integration-path.md",
+      "title": "VM-008 — Viral Media Mirror Has No Integration Path to Rosetta/Entif Architecture",
+      "labels": [],
+      "signature": "008-architecture-entif-has-integration"
     }
   ],
   "concepts": {
@@ -4439,7 +4571,8 @@
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -4514,7 +4647,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4815,7 +4949,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -5594,7 +5729,8 @@
         "docs/external/acpx.md",
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/external/Moltron.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -5856,7 +5992,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/external/Berman-PRD.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -5948,7 +6085,8 @@
     },
     "impersonation": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md"
+        "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -8055,7 +8193,8 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -10015,7 +10154,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -10456,7 +10596,8 @@
     },
     "guardrails": {
       "documents": [
-        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md"
+        "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -11159,7 +11300,8 @@
     },
     "glyph": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -11572,7 +11714,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -11626,7 +11769,8 @@
     },
     "storage-topology": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -14607,7 +14751,8 @@
     "synthesis": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -15590,7 +15735,8 @@
     },
     "metaphor": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -17123,7 +17269,8 @@
     "mvp": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -18874,7 +19021,8 @@
     "pipeline": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -19012,7 +19160,8 @@
     },
     "mvp-scope": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23266,186 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-unit": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "glyph-schema": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "affect-trace": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "eecg": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "emotion-representation": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "affect-representation": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "cadence-emulator": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "beat-map": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "synthesis-interface": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "impersonation-risk": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "attribution-enforcement": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "attention-order-book": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "trend-modeling": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "novel-modeling-metaphor": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "90-day": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph-db": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "feature-store": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "tsdb": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "synthesis-plan": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "modality-compiler": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "variants": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "synthesis-architecture": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "watermarking": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "synthetic-content": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-enforcement": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "resonance-metrics": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "novelty-metrics": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "evaluation-framework": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "7-layers": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
+      ],
+      "issueDrafts": []
+    },
+    "architectural-completeness": {
+      "documents": [
+        "docs/ideas/Entif Viral Media Mirror Systems Diagram.md"
       ],
       "issueDrafts": []
     },
