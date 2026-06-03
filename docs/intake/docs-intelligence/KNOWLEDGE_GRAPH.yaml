@@ -1,8 +1,8 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 376
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
   docs_intelligence_files: 43
@@ -5214,6 +5214,13 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
+  - pr: 1187
+    branch: docs-intelligence/source-registry-repository-profile-annex
+    doc: docs/governance/20260412 - Source Registry and Repository Profile Annex.md
+    findings: 24
+    issues: 10
+    note: 'Extracted 2026-05-31; companion doc to SSP (PR #1186); 10 issue drafts SRP-001
+      through SRP-010.'
   closed_superseded_dirty:
   - pr: 50
     branch: docs-intelligence/agentic-orchestration-failures
@@ -5515,6 +5522,13 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/governance/20260412 - Source Registry and Repository Profile Annex.md
+  processed_at: '2026-05-31T17:01:00Z'
+  findings: 24
+  pr: 1187
+  issues: 10
+  notes: 'Full extraction; 10 issue candidates SRP-001 through SRP-010; companion doc
+    to SSP (PR #1186).'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
