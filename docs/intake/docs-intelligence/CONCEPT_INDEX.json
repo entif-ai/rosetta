@@ -4136,6 +4136,93 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-json-optimization-data-lakes.md",
+      "sourcePath": "docs/ideas/JSON Optimization for Data Lakes.md",
+      "title": "Docs Intelligence Extraction — JSON Optimization for Data Lakes",
+      "concepts": [
+        "ingest",
+        "simdjson",
+        "simd",
+        "lazy-parsing",
+        "two-stage-architecture",
+        "on-demand-iterator",
+        "memory",
+        "pointer-based-iterator",
+        "json-iterator",
+        "buffer",
+        "retrieval",
+        "field-level-access",
+        "projection",
+        "streaming-queries",
+        "runtime-cpu-detection",
+        "avx2",
+        "sse",
+        "reusable-parser",
+        "storage",
+        "cold-storage",
+        "archival",
+        "time-sliced-capsules",
+        "secondary-index",
+        "fuse",
+        "bloom-filter",
+        "graph",
+        "sparse-adjacency-list",
+        "content-summary",
+        "delta-summary",
+        "vendors",
+        "aws",
+        "azure",
+        "gcp",
+        "glacier-deep-archive",
+        "archive-storage",
+        "cost-retrieval-time",
+        "dr",
+        "deep-freeze",
+        "cloudendure",
+        "zerto",
+        "cohesity-fortknox",
+        "rto",
+        "iron-mountain",
+        "iosafe",
+        "physical-archival",
+        "operations",
+        "cost",
+        "safety",
+        "ceiling-alerts",
+        "divergence-detection",
+        "cost-simulation",
+        "gtm",
+        "sales",
+        "due-diligence",
+        "pr-kit",
+        "enterprise-qualifying",
+        "governance",
+        "ai-board",
+        "legal",
+        "delaware-142",
+        "natural-person",
+        "fiduciary",
+        "proxy",
+        "aiden-insight",
+        "vital",
+        "g42",
+        "microsoft",
+        "vision",
+        "entif",
+        "epistemic-rigor",
+        "auditability",
+        "explainable-inference",
+        "metaphor",
+        "smell-triggered-memory",
+        "cold-storage-analogy",
+        "tools",
+        "duckdb",
+        "apache-arrow",
+        "flatbuffers",
+        "cap-n-proto"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4248,6 +4335,42 @@
       "signature": "008-design-edg-horizon-infrastructure"
     },
     {
+      "path": "docs/intake/issue-drafts/JDL-001-simdjson-ingest.md",
+      "title": "JDL-001 — simdjson-style Two-Stage Ingest Pipeline for Rosetta",
+      "labels": [],
+      "signature": "001-ingest-jdl-pipeline-rosetta"
+    },
+    {
+      "path": "docs/intake/issue-drafts/JDL-002-cold-archive-index.md",
+      "title": "JDL-002 — Cold Archive Secondary Index and Bloom Filter Strategy",
+      "labels": [],
+      "signature": "002-archive-bloom-cold-filter"
+    },
+    {
+      "path": "docs/intake/issue-drafts/JDL-003-deep-freeze-tier.md",
+      "title": "JDL-003 — Formalize \"Deep Freeze\" as a Third DR Storage Tier",
+      "labels": [],
+      "signature": "003-deep-formalize-freeze-jdl"
+    },
+    {
+      "path": "docs/intake/issue-drafts/JDL-004-cost-safety-kill-switches.md",
+      "title": "JDL-004 — Per-Client Ceiling Alerts and Graph Divergence Detection",
+      "labels": [],
+      "signature": "004-alerts-ceiling-client-detection"
+    },
+    {
+      "path": "docs/intake/issue-drafts/JDL-005-dr-gtm-qualifier.md",
+      "title": "JDL-005 — DR Posture as Enterprise Qualifying Criterion in GTM",
+      "labels": [],
+      "signature": "005-criterion-enterprise-gtm-jdl"
+    },
+    {
+      "path": "docs/intake/issue-drafts/JDL-006-flatbuffers-cold-archive.md",
+      "title": "JDL-006 — Evaluate FlatBuffers/Cap'n Proto for Zero-Copy Cold Archive Rehydration",
+      "labels": [],
+      "signature": "006-archive-cap-cold-copy"
+    },
+    {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
       "title": "OB1-001: Section 10 Implementation Actions Not Tracked",
       "labels": [
@@ -4286,6 +4409,36 @@
         "ob1-exclusions"
       ],
       "signature": "004-enforced-exclusion-list-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -4379,7 +4532,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -4514,7 +4668,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4564,7 +4719,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -4639,7 +4795,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -6776,7 +6933,8 @@
     "tools": {
       "documents": [
         "docs/external/Berman-PRD.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -6851,7 +7009,8 @@
     "operations": {
       "documents": [
         "docs/external/Berman-PRD.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -7708,7 +7867,8 @@
     },
     "two-stage-architecture": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -10976,7 +11136,8 @@
     },
     "cost": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -11019,7 +11180,8 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -12095,7 +12257,8 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -14925,7 +15088,8 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -15590,7 +15754,8 @@
     },
     "metaphor": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -15787,7 +15952,8 @@
     },
     "legal": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -16513,7 +16679,8 @@
       "documents": [
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -17056,7 +17223,8 @@
     },
     "bloom-filter": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -19289,7 +19457,8 @@
     },
     "archival": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -20455,7 +20624,8 @@
     },
     "cold-storage": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -20510,7 +20680,8 @@
     },
     "rto": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23288,378 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "simdjson": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "simd": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "lazy-parsing": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "on-demand-iterator": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "pointer-based-iterator": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "json-iterator": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "buffer": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "field-level-access": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "streaming-queries": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "runtime-cpu-detection": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "avx2": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "sse": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "reusable-parser": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "time-sliced-capsules": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "secondary-index": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "fuse": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "graph": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "sparse-adjacency-list": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-summary": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "delta-summary": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "vendors": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "aws": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "azure": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "gcp": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "glacier-deep-archive": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "archive-storage": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-retrieval-time": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "dr": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "deep-freeze": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cloudendure": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "zerto": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cohesity-fortknox": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "iron-mountain": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "iosafe": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "physical-archival": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "ceiling-alerts": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "divergence-detection": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-simulation": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "gtm": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "sales": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "due-diligence": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "pr-kit": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "enterprise-qualifying": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-board": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "delaware-142": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "natural-person": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "fiduciary": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "proxy": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "aiden-insight": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "vital": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "g42": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "microsoft": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "vision": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "epistemic-rigor": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "auditability": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "explainable-inference": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "smell-triggered-memory": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cold-storage-analogy": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "duckdb": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "apache-arrow": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "flatbuffers": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
+      ],
+      "issueDrafts": []
+    },
+    "cap-n-proto": {
+      "documents": [
+        "docs/ideas/JSON Optimization for Data Lakes.md"
       ],
       "issueDrafts": []
     },

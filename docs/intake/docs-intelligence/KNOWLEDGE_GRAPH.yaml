@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
+  total_docs_processed: 45
   active_issue_drafts: 366
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -5202,6 +5202,145 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+- id: simdjson-two-stage
+  title: simdjson Two-Stage Parse Architecture
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Two-stage JSON parsing architecture: (1) SIMD-accelerated structural index building (64-byte chunks, bitset) and (2) On-Demand lazy iterator that walks the index without building a full DOM. Achieves ~1GB/s parsing with minimal memory footprint.
+  extends: []
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/docs-intelligence/2026-06-01-json-optimization-data-lakes.md
+  - docs/intake/issue-drafts/JDL-001-simdjson-ingest.md
+  status: active
+- id: cold-storage-tiering
+  title: Cold Storage Tiering
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Three-tier storage strategy: (1) cold (cost-optimized, infrequent access, S3 Glacier/Azure Archive), (2) deep freeze (RTO-optimized, rapid recovery, CloudEndure/Zerto/Cohesity FortKnox), (3) woolly mammoth (offsite physical tape for catastrophic scenarios). Partially overlaps with NOT LAME 3-plane memory model but adds explicit deep freeze tier.
+  extends:
+  - memory-sovereignty-map
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/docs-intelligence/2026-06-01-json-optimization-data-lakes.md
+  - docs/intake/issue-drafts/JDL-003-deep-freeze-tier.md
+  status: active
+- id: deep-freeze-tier
+  title: Deep Freeze DR Storage Tier
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: A distinct DR storage tier between cold storage (Glacier) and physical tape archival, providing continuous replication with near-zero RTO (minutes rather than hours). Options include CloudEndure DR, Zerto CDP, and Cohesity FortKnox air-gapped immutable backup.
+  extends:
+  - cold-storage-tiering
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/issue-drafts/JDL-003-deep-freeze-tier.md
+  status: active
+- id: woolly-mammoth-storage
+  title: Woolly Mammoth Offsite Physical Archival Storage
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Tertiary offsite physical tape vaulting tier for catastrophic DR scenarios where digital infrastructure is entirely compromised. Iron Mountain Offsite Tape Vaulting and ioSafe NAS (fireproof/waterproof on-prem) are referenced options.
+  extends:
+  - cold-storage-tiering
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: active
+- id: graph-walker-cold-archive
+  title: Graph Walker Cold Archive Architecture
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Pre-indexed graph cold archive design: (1) sparse adjacency list sorted by node hash; (2) content summary map (top terms, entity tags, timestamps, usage types); (3) delta summary logging what changed per time slice. Enables lazy rehydration of only matching slices without loading the full historical graph.
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/issue-drafts/JDL-002-cold-archive-index.md
+  status: active
+- id: bloom-filter-cold-lookup
+  title: Bloom Filter for Cold Archive Membership Queries
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Probabilistic membership test structure stored alongside cold archive files; enables fast determination of whether a given user/date/entity exists in an archive without loading the archive itself. Accepts false positives (may trigger unnecessary thaw) but zero false negatives.
+  extends:
+  - graph-walker-cold-archive
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/issue-drafts/JDL-002-cold-archive-index.md
+  status: active
+- id: ai-board-proxy-model
+  title: AI Board Participation via Human Proxy
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Viable near-term model for AI governance participation: a human holds the official board seat and votes according to AI recommendations, maintaining legal compliance (Delaware GCL §142 requires natural persons for officers). Precedents: VITAL (2014, HK) and Aiden Insight (2024, Abu Dhabi IHC/G42/Microsoft). Legal trajectory suggests formal AI board seats possible by 2030.
+  extends: []
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: active
+- id: dr-as-gtm-qualifier
+  title: DR Posture as Enterprise Qualifying Criterion
+  introduced_by: docs/ideas/JSON Optimization for Data Lakes.md
+  introduced_at: '2026-06-01'
+  definition: Strategic framing: enterprise DR posture (three-tier storage + tested procedures) functions as a sales and trust instrument before it is a technical requirement — assuages due diligence, signals S-tier engineering, qualifies for picky enterprise RFPs (DoD, McKinsey, Palantir, Point72), populates PR kit, and shortens sales cycles.
+  extends: []
+  referenced_by:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  - docs/intake/issue-drafts/JDL-005-dr-gtm-qualifier.md
+  status: active
+- id: JDL-001-simdjson-ingest
+  title: JDL-001: simdjson-style two-stage ingest pipeline for Rosetta
+  github: null
+  priority: null
+  type: implementation
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
+- id: JDL-002-cold-archive-index
+  title: JDL-002: Cold archive secondary index and bloom filter strategy
+  github: null
+  priority: null
+  type: implementation
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
+- id: JDL-003-deep-freeze-tier
+  title: JDL-003: Formalize deep freeze as a third DR storage tier
+  github: null
+  priority: null
+  type: architecture
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
+- id: JDL-004-cost-safety-kill-switches
+  title: JDL-004: Per-client ceiling alerts and graph divergence detection
+  github: null
+  priority: null
+  type: safety
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
+- id: JDL-005-dr-gtm-qualifier
+  title: JDL-005: Document DR posture as enterprise qualifying criterion in GTM
+  github: null
+  priority: null
+  type: documentation
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
+- id: JDL-006-flatbuffers-cold-archive
+  title: JDL-006: Evaluate FlatBuffers/Capn Proto for zero-copy cold archive rehydration
+  github: null
+  priority: null
+  type: research
+  source_docs:
+  - docs/ideas/JSON Optimization for Data Lakes.md
+  status: candidate
+  notes: 'From 2026-06-01 DI extraction'
 pr_state:
   open:
   - pr: 62
