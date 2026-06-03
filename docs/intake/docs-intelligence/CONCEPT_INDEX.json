@@ -4136,6 +4136,46 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-01-context-management-techniques.md",
+      "sourcePath": "docs/chats/20260301 - Chat GPT - Context Management Techniques.md",
+      "title": "Docs Intelligence Extraction — Context Management Techniques",
+      "concepts": [
+        "context-management",
+        "architecture",
+        "three-tier",
+        "3-tier-context-system",
+        "constitution",
+        "hot-memory",
+        "tier-1-constitution",
+        "specialist-agents",
+        "domain-priming",
+        "tier-2-specialist-agents",
+        "cold-memory",
+        "retrieval",
+        "tier-3-knowledge-base",
+        "mcp",
+        "executable",
+        "retrieval-as-infrastructure",
+        "trigger-routing",
+        "orchestration",
+        "trigger-based-routing",
+        "openclaw-integration",
+        "context-router",
+        "openclaw",
+        "constitution-v0",
+        "guard-layer",
+        "high-correction-agents",
+        "tier-3",
+        "prioritization",
+        "tier-3-prioritization",
+        "enforcement",
+        "enforcement-mindset",
+        "governance",
+        "lifecycle",
+        "context-governance"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4198,6 +4238,48 @@
       "title": "AINL-010: Quarantine external workflow and agent imports before certification",
       "labels": [],
       "signature": "010-agent-ainl-before-certification"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-001-3-tier-context-architecture.md",
+      "title": "CMT-001: Adopt 3-tier Context Architecture as Explicit Rosetta Design Principle",
+      "labels": [],
+      "signature": "001-adopt-architecture-cmt-context"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-002-project-constitution.md",
+      "title": "CMT-002: Build Project Constitution as Hard Dependency of Every Agentic Run",
+      "labels": [],
+      "signature": "002-agentic-build-cmt-constitution"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-003-context-router-mcp.md",
+      "title": "CMT-003: Build Context Router as First-Class MCP Retrieval Service",
+      "labels": [],
+      "signature": "003-build-class-cmt-context"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-004-trigger-routing-table.md",
+      "title": "CMT-004: Implement Trigger-Based Routing Table for Agent Dispatch",
+      "labels": [],
+      "signature": "004-agent-based-cmt-dispatch"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-005-specialist-agents.md",
+      "title": "CMT-005: Design and Ship 6–10 High-Correction Specialist Agents",
+      "labels": [],
+      "signature": "005-agents-cmt-correction-design"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-006-retrieval-as-policy.md",
+      "title": "CMT-006: Enforce Context Retrieval as Mandatory Policy, Not Advisory",
+      "labels": [],
+      "signature": "006-advisory-cmt-context-enforce"
+    },
+    {
+      "path": "docs/intake/issue-drafts/CMT-007-context-governance.md",
+      "title": "CMT-007: Treat Context Maintenance as Production Code — Versioned, Pruned, Governed",
+      "labels": [],
+      "signature": "007-cmt-code-context-governed"
     },
     {
       "path": "docs/intake/issue-drafts/edg-001-terminology-mapping.md",
@@ -4286,6 +4368,36 @@
         "ob1-exclusions"
       ],
       "signature": "004-enforced-exclusion-list-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -4514,7 +4626,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4815,7 +4928,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -4888,7 +5002,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -5213,7 +5328,8 @@
         "docs/external/Berman-PRD.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -5450,7 +5566,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -5793,7 +5910,8 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -9316,7 +9434,8 @@
     },
     "context-management": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -11380,7 +11499,8 @@
     },
     "constitution": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -12095,7 +12215,8 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -12133,7 +12254,8 @@
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -14239,7 +14361,8 @@
     "openclaw-integration": {
       "documents": [
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -17477,7 +17600,8 @@
     },
     "prioritization": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -20576,7 +20700,8 @@
     },
     "enforcement": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
@@ -23117,6 +23242,126 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-tier": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "3-tier-context-system": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "hot-memory": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-1-constitution": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "specialist-agents": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-priming": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-2-specialist-agents": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "cold-memory": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-3-knowledge-base": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "executable": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval-as-infrastructure": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "trigger-routing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "trigger-based-routing": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-router": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "constitution-v0": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "high-correction-agents": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-3": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "tier-3-prioritization": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "enforcement-mindset": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-governance": {
+      "documents": [
+        "docs/chats/20260301 - Chat GPT - Context Management Techniques.md"
       ],
       "issueDrafts": []
     },
