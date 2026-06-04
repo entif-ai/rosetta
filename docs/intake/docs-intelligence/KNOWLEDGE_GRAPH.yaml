@@ -5204,6 +5204,10 @@ issue_candidates:
   notes: 'From PR #37 extraction; drafted in PR #44'
 pr_state:
   open:
+  - pr: null
+    branch: docs-intelligence/prd-revisions-synthesis
+    doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+    note: Extraction in progress; 19 findings, 6 issue candidates
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -5427,6 +5431,10 @@ processed_docs:
   pr: 55
   notes: Second pro-ext extraction slice; reconcile duplicate/overlap before promoting
     drafts.
+- path: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  processed_at: 2026-06-05T03:42
+  pr: null
+  notes: Extraction in progress; 19 findings, 6 issue candidates (PRS-001 through PRS-006)
 - path: docs/ideas/Attention-as-Capital Analytics Platform.md
   processed_at: 2026-04-25T01:18
   findings: 42
@@ -6398,3 +6406,39 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/prs-001-rock-3111-c.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-001
+  priority: P0
+  type: spec
+  status: candidate
+- path: docs/intake/issue-drafts/prs-002-local-cas-sqlite-first.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-002
+  priority: P1
+  type: architecture
+  status: candidate
+- path: docs/intake/issue-drafts/prs-003-python-boundary.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-003
+  priority: P1
+  type: governance
+  status: candidate
+- path: docs/intake/issue-drafts/prs-004-jcs-mvp-gap.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-004
+  priority: P2
+  type: tech-debt
+  status: candidate
+- path: docs/intake/issue-drafts/prs-005-alpha-rc-staircase.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-005
+  priority: P0
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/prs-006-traceability-headers-ci.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: PRS-006
+  priority: P1
+  type: devops
+  status: candidate
