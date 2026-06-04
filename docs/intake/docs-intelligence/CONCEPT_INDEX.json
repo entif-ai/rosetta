@@ -4402,6 +4402,42 @@
         "source-registry"
       ],
       "signature": "acquisition-adapters-behind-boundary-real"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-001-social-cognition-clinical-psychology-benchmark.md",
+      "title": "SCT-001 — Social Cognition Benchmark: Clinical Psychology as Hardest Case Stress Test",
+      "labels": [],
+      "signature": "001-benchmark-case-clinical-cognition"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-002-empathy-overaffirmation-discrimination.md",
+      "title": "SCT-002 — Empathy vs Over-Affirmation Discrimination in AI Systems",
+      "labels": [],
+      "signature": "002-affirmation-discrimination-empathy-over"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-003-violent-language-idiom-detection.md",
+      "title": "SCT-003 — Violent Language Idiom Detection: Threshold Marker vs Literal Violence",
+      "labels": [],
+      "signature": "003-detection-idiom-language-literal"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-004-tulpa-stamp-comparator-architecture.md",
+      "title": "SCT-004 — Tulpa Stamp Five-Layer Comparator Architecture Specification",
+      "labels": [],
+      "signature": "004-architecture-comparator-five-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-005-mixture-of-archetypes-scoring.md",
+      "title": "SCT-005 — Mixture-of-Archetypes Scoring for Diluted Composite Cases",
+      "labels": [],
+      "signature": "005-archetypes-cases-composite-diluted"
+    },
+    {
+      "path": "docs/intake/issue-drafts/sct-006-interpreter-failure-detection.md",
+      "title": "SCT-006 — Interpreter-Failure Detection: Frame Persistence and Ontology Violation Tracking",
+      "labels": [],
+      "signature": "006-detection-failure-frame-interpreter"
     }
   ],
   "concepts": {
