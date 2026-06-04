@@ -5099,6 +5099,79 @@ concepts:
   - docs/PRDs/NOT LAME PRD
   status: active
   note: EDG-003 tracks alignment gap; write-admission-gate is Rosetta-native equivalent
+- id: builtin-echo
+  name: Builtin Echo (Slice-Zero Vertical Slice)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'The smallest honest constitutional proof: a guarded non-side-effect toolcall using builtin.echo, with full RRP receipt-bundle verification. Slice S0; code.scaffold --dry-run is slice S1.'
+  extends:
+  - receipt-law
+  - rrp-pack-contract
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: alpha-rc-build-order
+  name: Alpha RC Build Order
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: '8-step alpha staircase: RC-0 Nx workspace + TV1/tamper-red; RC-1 JCS/CID conformance green; RC-2 Guard denies + builtin.echo passes; RC-3 code.scaffold dry-run + local CAS/SQLite; RC-4 operator UI (non-gating). Followed by P1 Postgres/pgvector and OPA.'
+  extends:
+  - text-core-mvp
+  - rrp-pack-contract
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: rock-3111-c
+  name: RRP Pack Filesystem Contract (ROCK-3111-C)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'First concrete RRP pack filesystem contract spec: defines packs/rrp/ directory structure, required files, pack.json fields, conformance tiers (RRP-Light/Full/Auditor), filesystem rules. Created as draft prose in extended research doc.'
+  extends:
+  - rrp-pack-contract
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: guard-decision-token
+  name: Guard Decision Token
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'Structured guard admission token including policy_version, policy_hash, expiry, subject/tool references, resource caps, and placeholders for constitution_hash/trace IDs. Must be signed and verified before admission.'
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: jcs
+  name: JSON Canonicalization Scheme (JCS)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'RFC 8785 JSON canonicalization for CID-stable receipt content. MVP uses Node built-in JSON.stringify; full compliance requires json-canonicalize npm package. Sig is excluded from CID computation per RRP spec.'
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: traceability-headers
+  name: File-Level Traceability Headers
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'Machine-checkable top-of-file provenance headers: Purpose Summary, Rosetta Relevance, Governing References. Standing requirement confirmed by both competing PRD runs. Enforced via check-traceability-headers.ts CI script.'
+  extends:
+  - authority-chain
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: crypto-nonce
+  name: Cryptographic Nonce for Receipts
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'Nonce generated via CSPRNG for receipt-bundle tapestry artifacts. Must NOT use Math.random(). Required to prevent replay attacks and ensure receipt uniqueness. crypto.randomBytes() or Web Crypto getRandomValues() required.'
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+
 issue_candidates:
 - id: DI-007
   title: Sub-agent context isolation — clean boot per cycle
@@ -5515,7 +5588,57 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  processed_at: '2026-06-04T23:31:33Z'
+  findings: 17
+  pr: null
+  issues: 6
+  notes: 'Subagent extraction: PRD revisions synthesis, RRP pack contract draft, 8-step alpha RC build order, 3 code patches (guard admission, receipt bundle, header checker), 6 issue-drafts PRD-REV-001 through PRD-REV-006.'
+
 issue_drafts_inventory:
+
+- path: docs/intake/issue-drafts/PRD-REV-001-rp-canonicalization-tamper-vectors.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-001-rp-canonicalization-tamper-vectors
+  priority: P0
+  type: conformance
+  status: candidate
+- path: docs/intake/issue-drafts/PRD-REV-002-crypto-nonce-math-random.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-002-crypto-nonce-math-random
+  priority: P0
+  type: security
+  status: candidate
+- path: docs/intake/issue-drafts/PRD-REV-003-guard-signature-verification-stub.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-003-guard-signature-verification-stub
+  priority: P0
+  type: security
+  status: candidate
+- path: docs/intake/issue-drafts/PRD-REV-004-rock-3111-c-pack-contract-formalization.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-004-rock-3111-c-pack-contract-formalization
+  priority: P0
+  type: implementation
+  status: candidate
+- path: docs/intake/issue-drafts/PRD-REV-005-traceability-headers-ci.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-005-traceability-headers-ci
+  priority: P1
+  type: ci
+  status: candidate
+- path: docs/intake/issue-drafts/PRD-REV-006-prd-blueprint-duplicate-extraction-risk.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  issue_id: prd-rev-006-prd-blueprint-duplicate-extraction-risk
+  priority: P1
+  type: docs-intelligence
+  status: candidate
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
