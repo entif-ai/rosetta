@@ -7,9 +7,9 @@
 ## Meta
 
 - repo: ~/.openclaw/workspace/Code/rosetta
-- last_updated: 2026-04-25T09:16Z
+- last_updated: 2026-06-04T18:40Z
 - total_docs_known: 119
-- total_processed: 30
+- total_processed: 31
 - current_batch: batch-3-active
 - telegram_dm_status: failed_2026-04-25T18:20_attempted_signal_not_configured
 - last_telegram_batched_update: 2026-04-25T09:16Z
@@ -219,10 +219,10 @@ One PR per cycle.
 | docs/chats/20260319 - Chat GPT - Rosetta's Metacognitive Atlas via Tulpamancy Archetypes.md | locked:2026-06-04T16:24:08.001Z:heartbeat:1780590247:docs-intelligence/skill-library-design | 0 |  |  |  |  | 2026-06-04T16:24:08.001Z |
 | docs/chats/20260322 - Chat GPT - AI Efficacy and Entif.md | locked:2026-06-04T16:24:35.425Z:heartbeat:1780590275:docs-intelligence/test-claim | 0 |  |  |  |  | 2026-06-04T16:24:35.425Z |
 | docs/chats/20260323 - Chat GPT - Entif Skill Library Design.md | locked:2026-06-04T16:24:53.363Z:heartbeat:1780590293:docs-intelligence/next | 0 |  |  |  |  | 2026-06-04T16:24:53.363Z |
-| docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md | locked:2026-06-04T16:25:24.532Z:heartbeat:1780590324:docs-intelligence/openbrain-project | 0 |  |  |  |  | 2026-06-04T16:25:24.532Z |
+| docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md | processed:2026-06-04T16:27:53.403Z:0 | 0 | 10 | 3 |  |  | 2026-06-04T16:27:53.403Z |
 | docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md | locked:2026-06-04T16:25:27.847Z:heartbeat:1780590327:docs-intelligence/progressive-disclosure | 0 |  |  |  |  | 2026-06-04T16:25:27.847Z |
-| docs/chats/20260323 - Chat GPT - Rosetta Design Strategy.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | no | 0 |  |  |  |  |  |
+| docs/chats/20260323 - Chat GPT - Rosetta Design Strategy.md | locked:2026-06-04T22:40:45.549Z:heartbeat:1780612845:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T22:40:45.549Z |
+| docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | yes | 0 | 11 | 6 | social-cognition, clinical-psychology, tulpa-stamp, empathy-discrimination, violent-language-idiom, interpreter-failure | Recovery: extraction in PR #314; issue-drafts SCT-001 to SCT-006 now created; ledger updated | 2026-06-04T18:40Z |
 | docs/chats/20260325 - Chat GPT - Epistemic Sequencing in Scoping.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
