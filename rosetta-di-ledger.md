@@ -225,8 +225,13 @@ One PR per cycle.
 | docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | yes | 0 | 11 | 6 | social-cognition, clinical-psychology, tulpa-stamp, empathy-discrimination, violent-language-idiom, interpreter-failure | Recovery: extraction in PR #314; issue-drafts SCT-001 to SCT-006 now created; ledger updated | 2026-06-04T18:40Z |
 | docs/chats/20260325 - Chat GPT - Epistemic Sequencing in Scoping.md | locked:2026-06-04T22:50:30.791Z:heartbeat:1780613430:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T22:50:30.791Z |
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
+<<<<<<< Updated upstream
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+=======
+| docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
+| docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
+>>>>>>> Stashed changes
 | docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
