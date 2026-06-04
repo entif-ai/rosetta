@@ -4138,6 +4138,120 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-holistic-entif-ai-redesign-mr-tech-lead.md",
+      "sourcePath": "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md",
+      "title": "Docs Intelligence Extraction",
+      "concepts": [
+        "hybrid-architecture",
+        "attnres",
+        "depth-routing",
+        "block-attnres",
+        "dca",
+        "deepcrossattention",
+        "prior-art",
+        "cca",
+        "compose",
+        "retrofit",
+        "lora",
+        "research",
+        "pasigraphy",
+        "middle-layer-reuse",
+        "format-agnostic",
+        "ng",
+        "bootstrap",
+        "tiles",
+        "semantic-os",
+        "draft-and-prune",
+        "verification",
+        "auto-formalization",
+        "verify-prune-aggregate",
+        "text-core",
+        "d-p",
+        "equivalence-aware",
+        "canonical-objects",
+        "cid",
+        "safety",
+        "self-improvement",
+        "h-neurons",
+        "hallucination",
+        "over-compliance",
+        "risk-sensor",
+        "rosetta",
+        "internal-risk",
+        "external-verification",
+        "phase-a",
+        "registry",
+        "codec",
+        "bundle",
+        "alignment",
+        "phase-b",
+        "procrustes",
+        "adapters",
+        "phase-c",
+        "qlora",
+        "structural-tokens",
+        "hds",
+        "phase-d",
+        "continued-pretraining",
+        "mixed-corpora",
+        "infrastructure",
+        "hardware",
+        "m3-ultra",
+        "mac-studio",
+        "local-eval",
+        "quantization",
+        "cloud",
+        "cloud-rental",
+        "runpod",
+        "lambda",
+        "a100",
+        "h100",
+        "ithkuil",
+        "curriculum",
+        "lexicon",
+        "6000-roots",
+        "seedpack",
+        "concepts",
+        "relations",
+        "operators",
+        "frames",
+        "standards",
+        "standards-as-layers",
+        "rosetta-core",
+        "ithkuil-surface",
+        "external-anchors",
+        "architecture",
+        "semantic-slugs",
+        "bytes-moved",
+        "attention",
+        "efficiency",
+        "pointer-chasing",
+        "hot-tiles",
+        "rehydration",
+        "tapestries",
+        "memory",
+        "kv-cache",
+        "compute",
+        "metacognitive-atlas",
+        "semantic-bios",
+        "governance",
+        "self-proposing",
+        "human-reviewable",
+        "evidence-bound",
+        "self-enrichment",
+        "reasoning-error",
+        "distinction",
+        "zero-init",
+        "pseudo-query",
+        "zyni2001",
+        "repo",
+        "configs",
+        "templates",
+        "semantic-correctness",
+        "formalization-search"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4241,6 +4355,18 @@
       "signature": "010-agent-ainl-before-certification"
     },
     {
+      "path": "docs/intake/issue-drafts/dp-001-draft-and-prune-rosetta-integration.md",
+      "title": "D&P-001: Draft-and-Prune Integration with Rosetta Canonical Bundle Space",
+      "labels": [],
+      "signature": "001-bundle-canonical-draft-integration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/dp-002-equivalence-aware-aggregation.md",
+      "title": "D&P-002: Equivalence-Aware Aggregation for Draft-and-Prune",
+      "labels": [],
+      "signature": "002-aggregation-aware-draft-equivalence"
+    },
+    {
       "path": "docs/intake/issue-drafts/edg-001-terminology-mapping.md",
       "title": "EDG-001 — Terminology Mapping: Entif 2.0 Governance → Rosetta Native Vocabulary",
       "labels": [],
@@ -4287,6 +4413,30 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/hds-001-hds-structural-tokens-bundle-delimiters.md",
+      "title": "HDS-001: High-Density Structural Tokens as Rosetta Bundle Delimiters and Role Markers (Phase C)",
+      "labels": [],
+      "signature": "001-bundle-delimiters-density-hds"
+    },
+    {
+      "path": "docs/intake/issue-drafts/hneuro-001-h-neuron-risk-prior-draft-prune.md",
+      "title": "HNeuro-001: H-Neuron Signals as Path-Risk Prior in Draft-and-Prune",
+      "labels": [],
+      "signature": "001-draft-hneuro-neuron-path"
+    },
+    {
+      "path": "docs/intake/issue-drafts/hybrid-arch-001-block-attnres-plus-cca.md",
+      "title": "HybridArch-001: Block AttnRes + CCA/CCGQA Hybrid Architecture Spec",
+      "labels": [],
+      "signature": "001-architecture-attnres-block-cca"
+    },
+    {
+      "path": "docs/intake/issue-drafts/hybrid-arch-002-attnres-retrofit-procedure.md",
+      "title": "HybridArch-002: AttnRes Retrofit Procedure (Zero-Init + Direct Training)",
+      "labels": [],
+      "signature": "002-attnres-direct-hybridarch-init"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4394,6 +4544,18 @@
       "signature": "012-domain-ob1-openbrain-protocol"
     },
     {
+      "path": "docs/intake/issue-drafts/pasigraphy-001-semantic-os-before-native-alphabet.md",
+      "title": "Pasigraphy-001: Pasigraphy as Semantic OS Before Native Alphabet — Four-Phase Bootstrap Path",
+      "labels": [],
+      "signature": "001-alphabet-before-bootstrap-four"
+    },
+    {
+      "path": "docs/intake/issue-drafts/phase-rent-001-cloud-rental-strategy.md",
+      "title": "PhaseRent-001: Cloud Rental Strategy for Phase C and Phase D with Mac Studio Local Eval",
+      "labels": [],
+      "signature": "001-cloud-eval-local-mac"
+    },
+    {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
       "title": "Add real acquisition adapters behind the refinery boundary",
       "labels": [
@@ -4438,6 +4600,12 @@
       "title": "SCT-006 — Interpreter-Failure Detection: Frame Persistence and Ontology Violation Tracking",
       "labels": [],
       "signature": "006-detection-failure-frame-interpreter"
+    },
+    {
+      "path": "docs/intake/issue-drafts/self-improvement-001-governance-gate.md",
+      "title": "SelfImprovement-001: Self-Proposing Human-Reviewable Evidence-Bound Expansion Governance Gate",
+      "labels": [],
+      "signature": "001-bound-evidence-expansion-gate"
     }
   ],
   "concepts": {
@@ -4452,7 +4620,8 @@
         "docs/governance/AUTHORITY_STACK.md",
         "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -4521,7 +4690,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -4656,7 +4826,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4706,7 +4877,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -4958,6 +5130,7 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -5276,7 +5449,8 @@
         "docs/external/acpx.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -6490,7 +6664,8 @@
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -8423,7 +8598,8 @@
     "ithkuil": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -8462,7 +8638,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -9616,7 +9793,8 @@
     },
     "hallucination": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -9864,7 +10042,8 @@
     },
     "templates": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -10517,7 +10696,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -10599,6 +10779,7 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/external/Moltron.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -11382,7 +11563,8 @@
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -11619,7 +11801,8 @@
     "registry": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -12016,7 +12199,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -12184,7 +12368,8 @@
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -12975,6 +13160,7 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -13124,7 +13310,8 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -13882,7 +14069,8 @@
     "codec": {
       "documents": [
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -14064,7 +14252,8 @@
     },
     "lora": {
       "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -14421,7 +14610,8 @@
     },
     "hardware": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -16377,7 +16567,8 @@
     },
     "lexicon": {
       "documents": [
-        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md"
+        "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -17146,7 +17337,8 @@
     },
     "semantic-slugs": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -17519,7 +17711,8 @@
     },
     "procrustes": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -17609,7 +17802,8 @@
     },
     "bundle": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -19225,7 +19419,8 @@
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md"
@@ -19264,7 +19459,8 @@
     },
     "canonical-objects": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -19314,7 +19510,8 @@
     },
     "relations": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -19491,7 +19688,8 @@
     },
     "repo": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -20009,7 +20207,8 @@
     },
     "verification": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },
@@ -23297,6 +23496,462 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "hybrid-architecture": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "attnres": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "depth-routing": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "block-attnres": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "dca": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "deepcrossattention": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "prior-art": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "cca": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "compose": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "retrofit": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "middle-layer-reuse": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "format-agnostic": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "ng": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-os": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "draft-and-prune": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "auto-formalization": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "verify-prune-aggregate": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "d-p": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "equivalence-aware": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "h-neurons": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "over-compliance": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-sensor": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "internal-risk": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "external-verification": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-a": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-b": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-c": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "qlora": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "structural-tokens": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "hds": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "phase-d": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "continued-pretraining": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "mixed-corpora": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "m3-ultra": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "mac-studio": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "local-eval": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "quantization": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "cloud": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "cloud-rental": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "runpod": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "lambda": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "a100": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "h100": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "curriculum": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "6000-roots": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "seedpack": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "concepts": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "operators": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "frames": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "standards-as-layers": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-core": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "ithkuil-surface": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "external-anchors": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "bytes-moved": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "attention": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "efficiency": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "pointer-chasing": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "hot-tiles": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "rehydration": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "tapestries": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "kv-cache": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "compute": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "metacognitive-atlas": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-bios": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "self-proposing": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "human-reviewable": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "evidence-bound": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "self-enrichment": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "reasoning-error": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "distinction": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "zero-init": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "pseudo-query": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "zyni2001": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "configs": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-correctness": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
+      ],
+      "issueDrafts": []
+    },
+    "formalization-search": {
+      "documents": [
+        "docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md"
       ],
       "issueDrafts": []
     },

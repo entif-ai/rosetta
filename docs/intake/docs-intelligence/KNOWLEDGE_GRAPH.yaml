@@ -6398,3 +6398,59 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+
+# === NEW FROM 2026-06-04 EXTRACTION: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md ===
+- path: docs/intake/issue-drafts/dp-001-draft-and-prune-rosetta-integration.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: DP-001
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/dp-002-equivalence-aware-aggregation.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: DP-002
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/hneuro-001-h-neuron-risk-prior-draft-prune.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: HNEURO-001
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/hybrid-arch-001-block-attnres-plus-cca.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: HYBRIDARCH-001
+  priority: P0
+  type: architecture
+  status: draft
+- path: docs/intake/issue-drafts/hybrid-arch-002-attnres-retrofit-procedure.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: HYBRIDARCH-002
+  priority: P0
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/pasigraphy-001-semantic-os-before-native-alphabet.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: PASIGRAPHY-001
+  priority: P0
+  type: documentation
+  status: draft
+- path: docs/intake/issue-drafts/hds-001-hds-structural-tokens-bundle-delimiters.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: HDS-001
+  priority: P1
+  type: implementation
+  status: draft
+- path: docs/intake/issue-drafts/phase-rent-001-cloud-rental-strategy.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: PHASERENT-001
+  priority: P1
+  type: infrastructure
+  status: draft
+- path: docs/intake/issue-drafts/self-improvement-001-governance-gate.md
+  source_doc: docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md
+  issue_id: SELFIMPROVEMENT-001
+  priority: P1
+  type: governance
+  status: draft
