@@ -5515,7 +5515,85 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  processed_at: '2026-06-04T23:41:00Z'
+  findings: 21
+  pr: null
+  issues: 8
+  notes: 'Deep-research synthesis: 12 unified decisions, alpha RC-0 through RC-4 staircase, ROCK-3111-C draft, 3 code patches, 8 issue drafts (PRDS-001 through PRDS-008). Stale doc (2026-04-10); verification against current branch state needed.'
 issue_drafts_inventory:
+- path: docs/intake/issue-drafts/prds-001-s0-s1-vertical-slice-sequencing.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-001
+  priority: P0
+  type: sequencing
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-002-rock-3111-c-rrp-pack-filesystem-contract.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-002
+  priority: P1
+  type: spec
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-003-guard-decision-token-schema-missing.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-003
+  priority: P0
+  type: schema-gap
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-004-rrp-test-vector-coverage.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-004
+  priority: P1
+  type: testing
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-005-builtin-echo-slice-undefined.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-005
+  priority: P1
+  type: spec-gap
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-006-nonce-store-architecture-missing.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-006
+  priority: P1
+  type: architecture
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-007-rrp-conformance-test-harness.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-007
+  priority: P2
+  type: ci
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/prds-008-alpha-rc-gate-criteria.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  source_pr: null
+  branch: docs-intelligence/2026-04-10-entif-rosetta-prds-revisions-synthesis
+  issue_id: prds-008
+  priority: P1
+  type: tracking
+  url: null
+  status: draft
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
   source_pr: 46
