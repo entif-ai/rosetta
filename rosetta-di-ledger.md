@@ -9,7 +9,7 @@
 - repo: ~/.openclaw/workspace/Code/rosetta
 - last_updated: 2026-06-04T18:40Z
 - total_docs_known: 119
-- total_processed: 31
+- total_processed: 32
 - current_batch: batch-3-active
 - telegram_dm_status: failed_2026-04-25T18:20_attempted_signal_not_configured
 - last_telegram_batched_update: 2026-04-25T09:16Z
@@ -75,6 +75,13 @@ Key concepts seen across docs and how they relate:
 | NOT LAME: Skillpack Importer + Quarantine | implementation | candidate | parse→normalize→quarantine→certify→promote flow |
 | NOT LAME: Adapter Certification Harness | implementation | candidate | 8 test classes: ingest/retrieval/tag/score/provenance/replay/policy/timeout |
 | NOT LAME: Memory Sovereignty Map impl | implementation | candidate | 5-layer map; align with Rosetta 3 memory planes |
+
+| PRD-REV-001: Tamper-negative canonicalization test vectors | implementation | candidate | RRP spec; JCS RFC 8785; ROCK-3111-C |
+| PRD-REV-002: Math.random nonce → CSPRNG in receipt-bundle | security | candidate | receipt-bundle builder in synthesis doc |
+| PRD-REV-003: Guard signature verification stub → full implementation | security | candidate | rosella-guard admission module; fail-closed requirement |
+| PRD-REV-004: ROCK-3111-C formalization | implementation | candidate | v0.1.0 draftspec in synthesis doc |
+| PRD-REV-005: check-traceability-headers.ts CI integration | ci | candidate | code patch in synthesis doc |
+| PRD-REV-006: PRD Blueprint dedup risk | coordination | candidate | docs-intelligence process gap |
 | NOT LAME: LangGraph Integration | implementation | candidate | workflow plane, not constitutional; nodes call kernel APIs |
 | NOT LAME: Connector Adapters (Telegram/Slack/Discord) | implementation | candidate | signature verification, webhook deadlines |
 | NOT LAME: Playwright Browser Adapter | implementation | candidate | context-per-run isolation, trace capture |
@@ -227,8 +234,8 @@ One PR per cycle.
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
-| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | locked:2026-06-04T23:30:28.008Z:heartbeat:1780615827:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:30:28.008Z |
+| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | processed:2026-06-04T23:31:33.656Z:1256 | 0 | 17 | 6 | builtin-echo, alpha-rc-build-order, rock-3111-c, guard-decision-token, jcs, traceability-headers, crypto-nonce | PR #1256 | 2026-06-04T23:31:33.656Z |
 | docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
@@ -261,6 +268,8 @@ One PR per cycle.
 | docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/packs/PACK_SUITE_INDEX.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 
+
+| 10 | 2026-06-04T23:31 | 1 doc: 20260410 PRDs Revisions Synthesis | 32 | yes | Cycle 10: full extraction; 17 findings; 6 issue drafts (PRD-REV-001-006); ROCK-3111-C draft; 3 code patches; PR #1256 |
 ## Telegram Batched Update Template
 
 (Use this format for the hourly digest after every 6th run)
