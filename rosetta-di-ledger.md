@@ -7,9 +7,9 @@
 ## Meta
 
 - repo: ~/.openclaw/workspace/Code/rosetta
-- last_updated: 2026-04-25T09:16Z
+- last_updated: 2026-06-04T18:40Z
 - total_docs_known: 119
-- total_processed: 30
+- total_processed: 31
 - current_batch: batch-3-active
 - telegram_dm_status: failed_2026-04-25T18:20_attempted_signal_not_configured
 - last_telegram_batched_update: 2026-04-25T09:16Z
@@ -222,7 +222,7 @@ One PR per cycle.
 | docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md | locked:2026-06-04T16:25:24.532Z:heartbeat:1780590324:docs-intelligence/openbrain-project | 0 |  |  |  |  | 2026-06-04T16:25:24.532Z |
 | docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md | locked:2026-06-04T16:25:27.847Z:heartbeat:1780590327:docs-intelligence/progressive-disclosure | 0 |  |  |  |  | 2026-06-04T16:25:27.847Z |
 | docs/chats/20260323 - Chat GPT - Rosetta Design Strategy.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | no | 0 |  |  |  |  |  |
+| docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | yes | 0 | 11 | 6 | social-cognition, clinical-psychology, tulpa-stamp, empathy-discrimination, violent-language-idiom, interpreter-failure | Recovery: extraction in PR #314; issue-drafts SCT-001 to SCT-006 now created; ledger updated | 2026-06-04T18:40Z |
 | docs/chats/20260325 - Chat GPT - Epistemic Sequencing in Scoping.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
