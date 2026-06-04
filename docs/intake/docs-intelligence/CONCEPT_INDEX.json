@@ -4138,6 +4138,110 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-memory-stack-recommendations.md",
+      "sourcePath": "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md",
+      "title": "Docs Intelligence Extraction — 20260401 - Chat GPT - Memory Stack Recommendations",
+      "concepts": [
+        "memory-plane",
+        "hebbian",
+        "scoring",
+        "local-first",
+        "muninndb",
+        "portability",
+        "cross-client",
+        "ob1",
+        "openbrain",
+        "temporal",
+        "kg",
+        "graphiti",
+        "zep",
+        "self-improvement",
+        "kpi",
+        "measurement",
+        "autoresearch",
+        "orchestration",
+        "governance",
+        "paperclip",
+        "transport",
+        "acp",
+        "acpx",
+        "protocol",
+        "workers",
+        "claude-code",
+        "gemini-cli",
+        "opencode",
+        "hermes",
+        "multi-agent-workers",
+        "failure-mode",
+        "double-orchestration",
+        "architecture",
+        "membranes",
+        "three-membranes",
+        "spec-framework",
+        "prd-compiler",
+        "spec-frameworks",
+        "openspec",
+        "speckit",
+        "claude-code-plan-mode",
+        "bmad",
+        "gastown",
+        "freedom-envelopes",
+        "chunking",
+        "work-packets",
+        "estimation",
+        "prioritization",
+        "rubric",
+        "cognitive-loop",
+        "rag",
+        "memory",
+        "cognitive-metabolism",
+        "framing",
+        "intake",
+        "source-envelope",
+        "ingest",
+        "observations",
+        "distill",
+        "semantic-lane",
+        "epistemic-lane",
+        "operational-lane",
+        "creative-lane",
+        "distill-lanes",
+        "score-vector",
+        "storage-layers",
+        "five-layer-model",
+        "correlation",
+        "s-path-rag",
+        "nsgd",
+        "correlate",
+        "appropriate",
+        "routing",
+        "integrate",
+        "iteration",
+        "dreaming",
+        "artifact-taxonomy",
+        "artifact-species",
+        "weak-to-strong",
+        "summarization",
+        "generalization",
+        "revised-loop",
+        "v0-slice",
+        "kgqa",
+        "s-path-rag-nsgd",
+        "openclaw",
+        "status",
+        "langchain",
+        "langgraph",
+        "deferral",
+        "langchain-deferral",
+        "evermemos",
+        "evermemos-deferral",
+        "supermemory",
+        "mem0",
+        "benchmark",
+        "supermemory-mem0"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4287,6 +4391,60 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-001-muninn-vs-pg-memory-strategy.md",
+      "title": "MSR-001: MuninnDB vs PostgreSQL memory strategy — clarify canonical substrate",
+      "labels": [],
+      "signature": "001-canonical-clarify-memory-msr"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-002-prd-compiler-layer.md",
+      "title": "MSR-002: Custom PRD compiler layer — requirements extraction from large PRDs",
+      "labels": [],
+      "signature": "002-compiler-custom-extraction-from"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-003-five-layer-memory-model.md",
+      "title": "MSR-003: Five-layer memory model — implement storage layer boundaries",
+      "labels": [],
+      "signature": "003-boundaries-five-implement-layer"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-004-cognitive-loop-implementation.md",
+      "title": "MSR-004: Cognitive loop implementation — frame→intake→distill→score→route→store→correlate→appropriate→integrate→consolidate",
+      "labels": [],
+      "signature": "004-appropriate-cognitive-consolidate-correlate"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-005-artifact-species-taxonomy.md",
+      "title": "MSR-005: Artifact species taxonomy — define and enforce artifact types per stage",
+      "labels": [],
+      "signature": "005-artifact-artifact-define-enforce"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-006-freedom-envelopes-work-packets.md",
+      "title": "MSR-006: Freedom envelopes per work packet — implement three-band constraint model",
+      "labels": [],
+      "signature": "006-band-constraint-envelopes-freedom"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-007-four-tier-chunking.md",
+      "title": "MSR-007: Four-tier chunking implementation — Capability / Change package / Worker brief / Atomic task",
+      "labels": [],
+      "signature": "007-atomic-brief-capability-change"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-008-s-path-rag-nsgd-correlate.md",
+      "title": "MSR-008: S-Path-RAG / NSGD correlate stage — bounded path retrieval with diagnostic refinement",
+      "labels": [],
+      "signature": "008-bounded-correlate-diagnostic-msr"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MSR-009-weak-to-strong-summary-pipeline.md",
+      "title": "MSR-009: Weak-to-strong summary pipeline — implement four-pass summary with verifier stage",
+      "labels": [],
+      "signature": "009-four-implement-msr-pass"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4656,7 +4814,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4706,7 +4865,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -4958,6 +5118,7 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -4991,7 +5152,8 @@
     },
     "intake": {
       "documents": [
-        "docs/governance/DONOR_FIT_MAP.md"
+        "docs/governance/DONOR_FIT_MAP.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -5031,7 +5193,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -5288,7 +5451,8 @@
     },
     "acp": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -5297,13 +5461,15 @@
         "docs/external/acpx.md",
         "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
     "acpx": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -5357,7 +5523,8 @@
         "docs/external/Berman-PRD.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -5854,7 +6021,8 @@
     "hebbian": {
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -6358,7 +6526,8 @@
     },
     "benchmark": {
       "documents": [
-        "docs/external/Attention Residuals (AttnRes) - Kimi.md"
+        "docs/external/Attention Residuals (AttnRes) - Kimi.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -7513,7 +7682,8 @@
     },
     "gemini-cli": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md"
+        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -8699,7 +8869,8 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -10334,7 +10505,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -10517,7 +10689,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -10643,7 +10816,8 @@
     "portability": {
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11174,7 +11348,8 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11296,7 +11471,8 @@
     },
     "summarization": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11593,7 +11769,8 @@
     "memory-plane": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11686,14 +11863,16 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
     "rubric": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11845,7 +12024,8 @@
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -11926,7 +12106,8 @@
     },
     "v0-slice": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -12507,6 +12688,7 @@
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -12748,7 +12930,8 @@
     },
     "transport": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -13031,7 +13214,8 @@
     },
     "kpi": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -15310,7 +15494,8 @@
     },
     "chunking": {
       "documents": [
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -15895,7 +16080,8 @@
     "claude-code": {
       "documents": [
         "docs/external/Moltron.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -17651,7 +17837,8 @@
     },
     "prioritization": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -18842,7 +19029,8 @@
     },
     "source-envelope": {
       "documents": [
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -19715,7 +19903,8 @@
     },
     "status": {
       "documents": [
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -20556,7 +20745,8 @@
     },
     "storage-layers": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -22878,6 +23068,7 @@
     "ob1": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -23188,7 +23379,8 @@
     },
     "graphiti": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
       ],
       "issueDrafts": []
     },
@@ -23300,8 +23492,21 @@
       ],
       "issueDrafts": []
     },
+    "muninndb": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-client": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
     "openbrain": {
       "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": [
@@ -23309,6 +23514,366 @@
         "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md",
         "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md"
       ]
+    },
+    "kg": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "zep": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "measurement": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "autoresearch": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "paperclip": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "workers": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "opencode": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "hermes": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-agent-workers": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "failure-mode": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "double-orchestration": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "membranes": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-membranes": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "spec-framework": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "prd-compiler": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "spec-frameworks": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "openspec": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "speckit": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "claude-code-plan-mode": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "bmad": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "gastown": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "freedom-envelopes": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "work-packets": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "estimation": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-loop": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "cognitive-metabolism": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "framing": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "observations": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "distill": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-lane": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "epistemic-lane": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "operational-lane": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "creative-lane": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "distill-lanes": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "score-vector": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "five-layer-model": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "correlation": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "s-path-rag": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "nsgd": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "correlate": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "appropriate": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "integrate": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "iteration": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "dreaming": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "artifact-taxonomy": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "artifact-species": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "weak-to-strong": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "generalization": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "revised-loop": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "kgqa": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "s-path-rag-nsgd": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "langchain": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "langgraph": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "deferral": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "langchain-deferral": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "evermemos": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "evermemos-deferral": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "supermemory": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "mem0": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
+    },
+    "supermemory-mem0": {
+      "documents": [
+        "docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md"
+      ],
+      "issueDrafts": []
     },
     "moltron": {
       "documents": [
