@@ -4136,6 +4136,47 @@
         "dedupe-receipts",
         "receipt-law"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
+      "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+      "title": "Extraction: OpenBrain Project Analysis",
+      "concepts": [
+        "openbrain",
+        "ob1",
+        "telemetry",
+        "self-evolution",
+        "skill-hardening",
+        "architecture",
+        "receipts",
+        "receipts-law",
+        "adaptive-memory",
+        "moltron",
+        "local-first",
+        "cloud-api",
+        "sovereignty",
+        "risk",
+        "integration",
+        "adapter",
+        "rosetta",
+        "skill-broker",
+        "technology",
+        "bounded-growth",
+        "alignment",
+        "convergence",
+        "agentic-loop",
+        "plan-execute-observe",
+        "self-repair",
+        "auto-repair",
+        "source-substrate",
+        "provenance",
+        "issue-candidate",
+        "telemetry-comparison",
+        "cloud-telemetry",
+        "local-telemetry",
+        "data-privacy",
+        "decision"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4286,6 +4327,71 @@
         "ob1-exclusions"
       ],
       "signature": "004-enforced-exclusion-list-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-005-pending-confirmation-state-machine.md",
+      "title": "OB1-005: Pending-Confirmation State Machine Undefined for Schema-Aware Routing",
+      "labels": [],
+      "signature": "005-aware-confirmation-machine-ob1"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-006-first-recipe-wave-unscaffolded.md",
+      "title": "OB1-006: First Recipe Wave (10 Recipes) Not Scaffolded",
+      "labels": [],
+      "signature": "006-first-not-ob1-recipe"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-007-first-skill-wave-unscaffolded.md",
+      "title": "OB1-007: First Skill Wave (8 Skills) Not Scaffolded",
+      "labels": [],
+      "signature": "007-first-not-ob1-scaffolded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-008-deterministic-dedupe-pillar-zero.md",
+      "title": "OB1-008: Deterministic Dedupe Not Implemented in Pillar Zero",
+      "labels": [],
+      "signature": "008-dedupe-deterministic-implemented-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-009-ob1-addendum-refresh-needed.md",
+      "title": "OB1-009: OB1 Addendum May Need Refresh Against Current Doctrine v0.2",
+      "labels": [],
+      "signature": "009-addendum-against-current-doctrine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md",
+      "title": "OB1-010 — OpenBrain Telemetry Schema Alignment with Rosetta Receipt Schema",
+      "labels": [
+        "integration",
+        "telemetry",
+        "receipts",
+        "openbrain",
+        "schema"
+      ],
+      "signature": "010-alignment-ob1-openbrain-receipt"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md",
+      "title": "OB1-011 — OpenBrain Self-Evolution Bounds Risk",
+      "labels": [
+        "self-evolution",
+        "convergence",
+        "telemetry",
+        "openbrain",
+        "threat-model"
+      ],
+      "signature": "011-bounds-evolution-ob1-openbrain"
+    },
+    {
+      "path": "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md",
+      "title": "OB1-012 — OpenBrain as Source Substrate Protocol Domain",
+      "labels": [
+        "source-substrate",
+        "openbrain",
+        "protocol-domain",
+        "integration"
+      ],
+      "signature": "012-domain-ob1-openbrain-protocol"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -4815,7 +4921,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -5085,7 +5192,8 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -6316,9 +6424,12 @@
     "convergence": {
       "documents": [
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md"
+      ]
     },
     "training-stability": {
       "documents": [
@@ -7518,9 +7629,12 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md"
+      ]
     },
     "capability-id": {
       "documents": [
@@ -7609,7 +7723,9 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md"
+      ]
     },
     "canonical-example": {
       "documents": [
@@ -8055,7 +8171,8 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -8462,7 +8579,8 @@
     "adaptive-memory": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -10444,7 +10562,8 @@
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -11239,7 +11358,8 @@
     },
     "receipts-law": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -12350,7 +12470,8 @@
     "local-first": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
-        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md"
+        "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -12551,7 +12672,9 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md"
+      ]
     },
     "multi-tenancy": {
       "documents": [
@@ -12815,7 +12938,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -12861,9 +12985,13 @@
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/external/Moltron.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md",
+        "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md"
+      ]
     },
     "kpi": {
       "documents": [
@@ -14407,9 +14535,13 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md",
+        "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md"
+      ]
     },
     "ai-tooling": {
       "documents": [
@@ -15277,7 +15409,8 @@
     },
     "skill-hardening": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -15295,13 +15428,15 @@
     },
     "self-repair": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
     "auto-repair": {
       "documents": [
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -15554,9 +15689,12 @@
     "self-evolution": {
       "documents": [
         "docs/external/Moltron.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md"
+      ]
     },
     "text-files": {
       "documents": [
@@ -18393,7 +18531,8 @@
     },
     "decision": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -18598,9 +18737,12 @@
     },
     "source-substrate": {
       "documents": [
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md"
+      ]
     },
     "canonical-cache": {
       "documents": [
@@ -19549,7 +19691,8 @@
     },
     "adapter": {
       "documents": [
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -22698,7 +22841,8 @@
     },
     "ob1": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
     },
@@ -23120,10 +23264,104 @@
       ],
       "issueDrafts": []
     },
+    "openbrain": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md",
+        "docs/intake/issue-drafts/OB1-011-openbrain-self-evolution-bounds.md",
+        "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md"
+      ]
+    },
+    "moltron": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "cloud-api": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "sovereignty": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "skill-broker": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "technology": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "bounded-growth": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-loop": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "plan-execute-observe": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "issue-candidate": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "telemetry-comparison": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "cloud-telemetry": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "local-telemetry": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-privacy": {
+      "documents": [
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
     "tracking": {
       "documents": [],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md"
+      ]
+    },
+    "protocol-domain": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/OB1-012-openbrain-source-substrate.md"
       ]
     }
   },

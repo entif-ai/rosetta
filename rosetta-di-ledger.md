@@ -201,26 +201,26 @@ One PR per cycle.
 | docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md | processed:2026-04-25T23:48:17.082Z:264 | 0 | 49 | 7 |  |  | 2026-04-25T23:48:17.082Z |
 | docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md | processed:2026-04-25T23:48:17.120Z:264 | 0 | 79 | 9 |  |  | 2026-04-25T23:48:17.120Z |
 | docs/chats/20260227 - Chat GPT - AI Rights, Uncertainty and Resets - LSC Log Included.md | locked:2026-04-25T23:41:07.242Z:heartbeat:1777160467:docs-intelligence/2026-04-25-entif-systems-architecture | 0 |  |  |  |  | 2026-04-25T23:41:07.242Z |
-| docs/chats/20260227 - Chat GPT - LLM reasoning vs emergentism.md | no | 0 |  |  |  |  |  |
-| docs/chats/20260227 - Chat GPT - Latent Space Cartography.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260301 - Chat GPT - Context Management Techniques.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260301 - Chat GPT - Empathy Eval Harness.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260301 - Chat GPT - HF Papers Daily Scout.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Context Management in AI.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Context Management in Engineering.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Empathy Evaluation for Entif.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - HEART for Empathy Evaluation.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - MaxClaw Split-Testing Evaluation.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - MaxClaw Split-Testing Strategy.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Recursive Language Models - 1.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Recursive Language Models - 2.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260302 - Chat GPT - Recursive Language Models - 3.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260319 - Chat GPT - Rosetta's Metacognitive Atlas via Tulpamancy Archetypes.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260322 - Chat GPT - AI Efficacy and Entif.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260323 - Chat GPT - Entif Skill Library Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md | no | 0 |  |  |  |  |  |
+| docs/chats/20260227 - Chat GPT - LLM reasoning vs emergentism.md | locked:2026-06-04T04:35:44.083Z:test-49454:test-claim | 0 |  |  |  |  | 2026-06-04T04:35:44.083Z |
+| docs/chats/20260227 - Chat GPT - Latent Space Cartography.md | locked:2026-06-04T04:37:53.811Z:heartbeat-test-49793:test | 0 |  |  |  |  | 2026-06-04T04:37:53.811Z |
+| docs/chats/20260301 - Chat GPT - Context Management Techniques.md | locked:2026-06-04T16:21:08.133Z:heartbeat:1780590068:docs-intelligence/next | 0 |  |  |  |  | 2026-06-04T16:21:08.133Z |
+| docs/chats/20260301 - Chat GPT - Empathy Eval Harness.md | locked:2026-06-04T16:22:10.972Z:heartbeat:1780590130:docs-intelligence/20260301---Chat-GPT---Context-Management-Techniques | 0 |  |  |  |  | 2026-06-04T16:22:10.972Z |
+| docs/chats/20260301 - Chat GPT - HF Papers Daily Scout.md | locked:2026-06-04T16:22:26.481Z:heartbeat:1780590146:docs-intelligence/next | 0 |  |  |  |  | 2026-06-04T16:22:26.481Z |
+| docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md | locked:2026-06-04T16:22:34.737Z:heartbeat:1780590154:docs-intelligence/context-management-ai | 0 |  |  |  |  | 2026-06-04T16:22:34.737Z |
+| docs/chats/20260302 - Chat GPT - Context Management in AI.md | locked:2026-06-04T16:22:39.148Z:heartbeat:1780590159:docs-intelligence/context-management-engineering | 0 |  |  |  |  | 2026-06-04T16:22:39.148Z |
+| docs/chats/20260302 - Chat GPT - Context Management in Engineering.md | locked:2026-06-04T16:22:43.227Z:heartbeat:1780590163:docs-intelligence/recursive-language-models-1 | 0 |  |  |  |  | 2026-06-04T16:22:43.227Z |
+| docs/chats/20260302 - Chat GPT - Empathy Evaluation for Entif.md | locked:2026-06-04T16:23:02.548Z:heartbeat:1780590182:docs-intelligence/rlm-2 | 0 |  |  |  |  | 2026-06-04T16:23:02.548Z |
+| docs/chats/20260302 - Chat GPT - HEART for Empathy Evaluation.md | locked:2026-06-04T16:23:06.546Z:heartbeat:1780590186:docs-intelligence/maxclaw-split-testing-strategy | 0 |  |  |  |  | 2026-06-04T16:23:06.546Z |
+| docs/chats/20260302 - Chat GPT - MaxClaw Split-Testing Evaluation.md | locked:2026-06-04T16:23:18.668Z:heartbeat:1780590198:docs-intelligence/tulpa-maps | 0 |  |  |  |  | 2026-06-04T16:23:18.668Z |
+| docs/chats/20260302 - Chat GPT - MaxClaw Split-Testing Strategy.md | locked:2026-06-04T16:23:26.047Z:heartbeat:1780590206:docs-intelligence/ai-efficacy-entif | 0 |  |  |  |  | 2026-06-04T16:23:26.047Z |
+| docs/chats/20260302 - Chat GPT - Recursive Language Models - 1.md | locked:2026-06-04T16:23:32.981Z:heartbeat:1780590212:docs-intelligence/openbrain-analysis | 0 |  |  |  |  | 2026-06-04T16:23:32.981Z |
+| docs/chats/20260302 - Chat GPT - Recursive Language Models - 2.md | locked:2026-06-04T16:23:49.629Z:heartbeat:1780590229:docs-intelligence/rlm-2-check | 0 |  |  |  |  | 2026-06-04T16:23:49.629Z |
+| docs/chats/20260302 - Chat GPT - Recursive Language Models - 3.md | locked:2026-06-04T16:24:04.325Z:heartbeat:1780590244:docs-intelligence/rlm-3-check | 0 |  |  |  |  | 2026-06-04T16:24:04.325Z |
+| docs/chats/20260319 - Chat GPT - Rosetta's Metacognitive Atlas via Tulpamancy Archetypes.md | locked:2026-06-04T16:24:08.001Z:heartbeat:1780590247:docs-intelligence/skill-library-design | 0 |  |  |  |  | 2026-06-04T16:24:08.001Z |
+| docs/chats/20260322 - Chat GPT - AI Efficacy and Entif.md | locked:2026-06-04T16:24:35.425Z:heartbeat:1780590275:docs-intelligence/test-claim | 0 |  |  |  |  | 2026-06-04T16:24:35.425Z |
+| docs/chats/20260323 - Chat GPT - Entif Skill Library Design.md | locked:2026-06-04T16:24:53.363Z:heartbeat:1780590293:docs-intelligence/next | 0 |  |  |  |  | 2026-06-04T16:24:53.363Z |
+| docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md | locked:2026-06-04T16:25:24.532Z:heartbeat:1780590324:docs-intelligence/openbrain-project | 0 |  |  |  |  | 2026-06-04T16:25:24.532Z |
+| docs/chats/20260323 - Chat GPT - Progressive-Disclosure Skill System.md | locked:2026-06-04T16:25:27.847Z:heartbeat:1780590327:docs-intelligence/progressive-disclosure | 0 |  |  |  |  | 2026-06-04T16:25:27.847Z |
 | docs/chats/20260323 - Chat GPT - Rosetta Design Strategy.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260323 - Chat GPT - Social Cognition and Therapy.md | no | 0 |  |  |  |  |  |
 | docs/chats/20260325 - Chat GPT - Epistemic Sequencing in Scoping.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
