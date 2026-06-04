@@ -4138,6 +4138,101 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-anti-dystopian-social-stack.md",
+      "sourcePath": "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md",
+      "title": "Docs Intelligence Extraction — 20260326 - Gemini 3.1 - Anti-Dystopian Social Stack",
+      "concepts": [
+        "anti-dystopia",
+        "privacy-hardware",
+        "faraday-fold",
+        "humancell",
+        "privacy",
+        "agentic-life-management",
+        "notification-filtering",
+        "entif",
+        "e-ink-default",
+        "battery-life",
+        "energy-conservation",
+        "sustainability",
+        "stack-architecture",
+        "layer-map",
+        "anti-dystopian-stack",
+        "safe-humanity",
+        "inventory-system",
+        "village-sharing",
+        "agentic-swarm",
+        "koaleaf-ai",
+        "ghost-jobs",
+        "escrow-model",
+        "digital-fingerprinting",
+        "agentic-sieve",
+        "ats-replacement",
+        "bilaterally-advocate-ai",
+        "mass-synchronized-miracles",
+        "msm",
+        "narrative-intervention",
+        "hope-infrastructure",
+        "anon-logistics",
+        "theatrical-consistency",
+        "folkloric-protocol",
+        "villicatus",
+        "dunbar-limit",
+        "150-person",
+        "post-scarcity",
+        "decommodified",
+        "capture-resistance",
+        "founder-cooption",
+        "governance",
+        "reset-protocol",
+        "entif-kernel",
+        "rosetta-tcp-ip",
+        "hyper-graph-memory",
+        "consensus-first",
+        "rosetta",
+        "jo-blocks",
+        "truth-compilation",
+        "semantic-receipts",
+        "provenance",
+        "epistemic-sequencing",
+        "scope-gate",
+        "mcts",
+        "monte-carlo-tree-search",
+        "chunking",
+        "planning",
+        "hyper-graph",
+        "memory-planes",
+        "working-episodic-semantic",
+        "memory",
+        "myheart",
+        "unknown-city",
+        "event-based-matching",
+        "dunbar-bridge",
+        "vieday",
+        "zettelkasten",
+        "icosagon-ideology",
+        "self-improvement",
+        "icosagon",
+        "20-sided",
+        "human-flourishing",
+        "creativity",
+        "compartmentalized-agents",
+        "shared-segmented-memory",
+        "architecture",
+        "entif-rosetta-foundation",
+        "no-selfie",
+        "blind-trust-ritual",
+        "decommodification",
+        "access-over-ownership",
+        "soft-trust",
+        "peer-accountability",
+        "dunbar-surveillance",
+        "gemini-3-1",
+        "ai-as-nervous-system",
+        "collective-cognition",
+        "philosophy"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4180,6 +4275,39 @@
     }
   ],
   "issueDrafts": [
+    {
+      "path": "docs/intake/issue-drafts/ads-001-msm-security-model.md",
+      "title": "ADS-001: MSM Santa Claus Protocol — No Security Model for Anonymous Pre-Funded Interventions",
+      "labels": [
+        "anti-dystopia",
+        "governance",
+        "security",
+        "research-spike"
+      ],
+      "signature": "001-ads-anonymous-claus-funded"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ads-002-villicatus-economic-model.md",
+      "title": "ADS-002: Villicatus Decommodification Claim Requires Economic Modeling",
+      "labels": [
+        "anti-dystopia",
+        "economics",
+        "research-spike",
+        "governance"
+      ],
+      "signature": "002-ads-claim-decommodification-economic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md",
+      "title": "ADS-003: Entif Kernel Multi-App Deployment Model Needs Explicit Architecture Spec",
+      "labels": [
+        "ent-if",
+        "architecture",
+        "multi-app",
+        "kernel"
+      ],
+      "signature": "003-ads-app-architecture-deployment"
+    },
     {
       "path": "docs/intake/issue-drafts/ainl-001-rosetta-agent-workflow-graph-ir.md",
       "title": "AINL-001: Define Rosetta agent workflow graph IR profile",
@@ -4656,9 +4784,12 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": [
+        "docs/intake/issue-drafts/ads-001-msm-security-model.md",
+        "docs/intake/issue-drafts/ads-002-villicatus-economic-model.md",
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
         "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
         "docs/intake/issue-drafts/OB1-003-contribution-folder-contract-ci.md",
@@ -4706,7 +4837,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -4958,9 +5090,12 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md"
+      ]
     },
     "monorepo": {
       "documents": [
@@ -4987,7 +5122,9 @@
         "docs/governance/DONOR_FIT_MAP.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md"
+      ]
     },
     "intake": {
       "documents": [
@@ -5419,7 +5556,9 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-001-msm-security-model.md"
+      ]
     },
     "permissions": {
       "documents": [
@@ -6328,7 +6467,8 @@
       "documents": [
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -7569,7 +7709,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
         "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -8208,6 +8349,7 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -9580,7 +9722,8 @@
     },
     "consensus-first": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -10070,7 +10213,8 @@
     },
     "vieday": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -10517,7 +10661,8 @@
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -11183,7 +11328,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -12975,6 +13121,7 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -14549,7 +14696,8 @@
     },
     "zettelkasten": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -14945,7 +15093,8 @@
     },
     "icosagon": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -15093,7 +15242,8 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -15310,7 +15460,8 @@
     },
     "chunking": {
       "documents": [
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -15772,7 +15923,8 @@
       "documents": [
         "docs/external/Moltron.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -15836,7 +15988,9 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
-      "issueDrafts": []
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-002-villicatus-economic-model.md"
+      ]
     },
     "workflow-compilation": {
       "documents": [
@@ -16906,7 +17060,8 @@
     },
     "agentic-swarm": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -17399,7 +17554,8 @@
     },
     "stack-architecture": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
       ],
       "issueDrafts": []
     },
@@ -23300,6 +23456,429 @@
       ],
       "issueDrafts": []
     },
+    "anti-dystopia": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-001-msm-security-model.md",
+        "docs/intake/issue-drafts/ads-002-villicatus-economic-model.md"
+      ]
+    },
+    "privacy-hardware": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "faraday-fold": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "humancell": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-life-management": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "notification-filtering": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "e-ink-default": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "battery-life": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "energy-conservation": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "sustainability": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "layer-map": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "anti-dystopian-stack": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "safe-humanity": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "inventory-system": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "village-sharing": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "koaleaf-ai": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "ghost-jobs": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "escrow-model": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "digital-fingerprinting": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "agentic-sieve": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "ats-replacement": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "bilaterally-advocate-ai": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "mass-synchronized-miracles": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "msm": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "narrative-intervention": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "hope-infrastructure": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "anon-logistics": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "theatrical-consistency": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "folkloric-protocol": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "villicatus": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "dunbar-limit": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "150-person": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "post-scarcity": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "decommodified": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "capture-resistance": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "founder-cooption": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "reset-protocol": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-kernel": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-tcp-ip": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "hyper-graph-memory": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "jo-blocks": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "truth-compilation": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-receipts": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "epistemic-sequencing": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "scope-gate": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "mcts": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "monte-carlo-tree-search": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "hyper-graph": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "working-episodic-semantic": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "myheart": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "unknown-city": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "event-based-matching": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "dunbar-bridge": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "icosagon-ideology": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "20-sided": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "human-flourishing": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "creativity": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "compartmentalized-agents": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "shared-segmented-memory": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-rosetta-foundation": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-selfie": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "blind-trust-ritual": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "decommodification": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "access-over-ownership": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "soft-trust": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "peer-accountability": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "dunbar-surveillance": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "gemini-3-1": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-as-nervous-system": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
+    "collective-cognition": {
+      "documents": [
+        "docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md"
+      ],
+      "issueDrafts": []
+    },
     "openbrain": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
@@ -23387,6 +23966,25 @@
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
+    },
+    "research-spike": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-001-msm-security-model.md",
+        "docs/intake/issue-drafts/ads-002-villicatus-economic-model.md"
+      ]
+    },
+    "ent-if": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md"
+      ]
+    },
+    "multi-app": {
+      "documents": [],
+      "issueDrafts": [
+        "docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md"
+      ]
     },
     "tracking": {
       "documents": [],

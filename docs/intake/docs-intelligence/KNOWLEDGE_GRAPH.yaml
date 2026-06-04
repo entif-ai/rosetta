@@ -635,6 +635,172 @@ concepts:
   referenced_by:
   - https://github.com/entif-ai/rosetta/issues/193
   status: active
+- id: anti-dystopian-stack
+  name: Anti-Dystopian Social Stack
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Seven-layer conceptual architecture: Mind&Memory (VieDay+Entif) → Physical Boundary (HumanCell) → Material Ledger (SAFE Humanity) → Labor Shield (Koaleaf AI) → Social Bridge (MyHeart/Unknown City) → Cultural Spirit (Mass Synchronized Miracles) → Destination (Villicatus). Positions Entif as kernel and Rosetta as semantic protocol.'
+  extends:
+  - entif-kernel
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: human-cell
+  name: HumanCell
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Privacy-first phone concept with physical 180-degree Faraday fold, no front camera, e-Ink default display, AMOLED requiring explicit unlock; agentic notification management; default-off radios. Hardware enforcement of privacy-by-default.
+  extends:
+  - parse-only-default
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: safe-humanity
+  name: SAFE Humanity
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Three-tier inventory system: (1) Agentic Swarm for decluttering via camera/voice AI, (2) Personal SAFE Crates (Stow Anywhere Find Everything), (3) Village-scale tool/resource sharing across 150-person Villicatus nodes using Vitae trust layer.'
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: koaleaf-ai
+  name: Koaleaf AI
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Ghost-job-elimination platform using employer escrow for interview requests, Leaves token compensation for candidate time regardless of outcome, digital fingerprinting for candidate identity verification, and agentic sieve replacing ATS keyword matching with bilateral skill/cultural vetting.
+  extends:
+  - escrow-model
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: mass-synchronized-miracles
+  name: Mass Synchronized Miracles (MSM)
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Narrative intervention system: anonymous agents execute pre-funded interventions at 200+ cities on 6-12 week waves; Santa Claus Protocol with NDAs and theatrical consistency; targets orphanages, cancer wards, disaster relief. Goal: cultural outlook shift from declinist to expectant.'
+  extends: []
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: villicatus
+  name: Villicatus
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Dunbar-capped (150-person) post-scarcity village community node; access replaces excess; land/energy/tools decommodified; SAFE Humanity provides logistics; soft-trust + peer accountability > CCTV/rigidd policing; hard-reboot governance mechanism; explicit capture resistance design.'
+  extends:
+  - safe-humanity
+  - soft-trust
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: vieday
+  name: VieDay
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Personal Knowledge and Growth Engine: Zettelkasten bidirectional linking mapped to Entif hyper-graph; Icosagon Ideology (20-sided framework for human flourishing vs productivity optimization); 7+ years development; book+app going to market. Named View and Improve Every Detail About Yourself plus vie (strive) + day.'
+  extends:
+  - hyper-graph-memory
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: entif-kernel
+  name: Entif as Universal Kernel
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Entif positioned as the kernel for ALL Anti-Dystopian Stack apps; uses hyper-graph memory (working/episodic/semantic + hyper-edges), MCTS planning, consensus-first scoping, Jo Block truth-compilation. Rosetta is the TCP/IP of meaning — universal semantic protocol layer.'
+  extends:
+  - sovereign-kernel
+  - hyper-graph-memory
+  - mcts
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: jo-blocks
+  name: Jo Block Truth-Compilation Paradigm
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Semantic primitive composition paradigm inspired by Johansson Gauge Blocks — primitives snap together mathematically; if logic doesn't interlock, system flags it. Rosetta Pasigraphy is the implementation. Enables hallucination elimination by making incompatibility detectable at composition time.
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: epistemic-sequencing
+  name: Epistemic Sequencing
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: 'Entif consensus-first scoping: refuses to blindly execute; analyzes prompt, maps knowledge boundary (Epistemic Boundary), presents scope of work, requires explicit user consensus before compute commit. User treated as stakeholder, not prompt-monkey.'
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: mcts
+  name: Monte Carlo Tree Search for Long-Horizon Planning
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Entif uses MCTS for planning — simulates multiple future pathways, evaluates outcomes, chunks winning strategy into actionable step nodes. Unlike LLMs that guess next token, this enables genuine multi-step deliberation.
+  extends: []
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: hyper-graph-memory
+  name: Hyper-Graph Memory Doctrine
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Memory architecture separating Working (current context), Episodic (what happened and when), Semantic (universal facts); hyper-edges allow relationships to have relationships. Superior to flat vector databases for modeling intersecting behavioral patterns.
+  extends:
+  - memory-sovereignty-map
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: escrow-model
+  name: Escrow/Gas Model for Trustless Commitment
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: Commitment mechanism where parties place value in escrow that is only released upon verified performance. Used in Koaleaf AI to eliminate ghost jobs — employer must pay for interview, so non-existent jobs cost money. Applicable to any Rosetta commitment protocol.
+  extends: []
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: soft-trust
+  name: Soft-Trust Governance Model
+  introduced_by: docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  introduced_at: '2026-06-04'
+  definition: At Dunbar scale (150 people), social reputation and peer accountability are more effective than CCTV/rigid policing. Villicatus uses soft-trust governance — peer accountability over surveillance.
+  extends: []
+  referenced_by:
+  - docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md
+  status: active
+- id: ads-001-msm-security-model
+  name: 'ADS-001: MSM Santa Claus Protocol — No Security Model'
+  introduced_by: docs/intake/issue-drafts/ads-001-msm-security-model.md
+  introduced_at: '2026-06-04'
+  definition: Mass Synchronized Miracles proposes anonymous agents executing pre-funded interventions at vulnerable locations with no stated agent vetting, fund custody, fraud prevention, or co-option resistance. P1 security gap.
+  referenced_by:
+  - docs/intake/issue-drafts/ads-001-msm-security-model.md
+  status: active
+- id: ads-002-villicatus-economic-model
+  name: 'ADS-002: Villicatus Decommodification Claim Requires Economic Modeling'
+  introduced_by: docs/intake/issue-drafts/ads-002-villicatus-economic-model.md
+  introduced_at: '2026-06-04'
+  definition: Villicatus (150-person post-scarcity village) claims land/energy/tools are decommodified with no economic provisioning model. Access-over-ownership stated as outcome without mechanism. P2 research-spike.
+  referenced_by:
+  - docs/intake/issue-drafts/ads-002-villicatus-economic-model.md
+  status: active
+- id: ads-003-entif-kernel-multi-app-arch
+  name: 'ADS-003: Entif Kernel Multi-App Deployment Architecture Gap'
+  introduced_by: docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md
+  introduced_at: '2026-06-04'
+  definition: Entif positioned as kernel for ALL Anti-Dystopian Stack apps; Rosetta positioned as TCP/IP of meaning for all apps. Current Text-Core MVP scope does not specify multi-app kernel deployment model, shared vs segmented memory boundaries, or kernel API surface. P1 architecture gap.
+  extends:
+  - entif-kernel
+  - sovereign-kernel
+  referenced_by:
+  - docs/intake/issue-drafts/ads-003-entif-kernel-multi-app-arch.md
+  status: active
 - id: acp-coverage-roadmap-access
   name: ACP Spec Coverage Roadmap Access
   introduced_by: docs/intake/issue-drafts/acp-coverage-roadmap-access.md
