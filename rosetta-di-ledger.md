@@ -7,9 +7,9 @@
 ## Meta
 
 - repo: ~/.openclaw/workspace/Code/rosetta
-- last_updated: 2026-06-04T18:40Z
+- last_updated: 2026-06-05T04:59Z
 - total_docs_known: 119
-- total_processed: 31
+- total_processed: 32
 - current_batch: batch-3-active
 - telegram_dm_status: failed_2026-04-25T18:20_attempted_signal_not_configured
 - last_telegram_batched_update: 2026-04-25T09:16Z
@@ -120,6 +120,7 @@ One PR per cycle.
 | 5 | 2026-04-24T23:45 | 1 doc: 20260423 - Chat GPT - Agentic Orchestration Failures.md | 13 | yes (per-cycle) | full extraction; 35 findings; 9 issue candidates; PR #50 |
 | 6 | 2026-04-24T23:58 | 1 doc: 20260412 - ChatGPT - Ontologies and Dataset Repositories.md | 15 | pending | full extraction; 14 findings; 2 issue drafts (Source Substrate domain gap + anti-personhood-correlation governance); PR #51 |
 | 9 | 2026-04-25T04:14 | 1 doc: Semantic Audio Cognition Framework.md | 22 | yes | full extraction; 14 findings; 4 issue drafts (SAC-001 through SAC-004); critical DI-012 collision on voice fingerprinting; PR #86 |
+| 10 | 2026-06-05T04:59 | 1 doc: API-driven Cache Management.md | 17 | no | full extraction; 17 findings; 6 issue drafts (APC-CACHE-001 through APC-CACHE-005, APC-GTM-001); PR #1275 |
 
 ## Per-Document Processing Log
 
@@ -229,7 +230,7 @@ One PR per cycle.
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
 | docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | processed:2026-06-05T04:50:47.022Z:332 | 0 |  |  |  |  | 2026-06-05T04:50:47.022Z |
 | docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | yes | 0 | 19 | 6 | rrp-first, alpha-rc-staircase, rock-3111-c, python-boundary, jcs, build-order | extracted 2026-06-05; PR #1272 | 2026-06-05T03:42Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | locked:2026-06-05T04:52:04.840Z:heartbeat:1780635124:docs-intelligence/model-training-cost-design | 0 |  |  |  |  | 2026-06-05T04:52:04.840Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | processed:2026-06-05T04:59:03Z:1275 | 0 | 17 | 6 | compound-cache-key, privacy-budget, transliteration, tile-invalidation, composition-provenance, auditable-routing, workspace-isolation, vertex-ai, inference-firewall, semantic-cache-router, design-partner-gtm | extracted 2026-06-05; PR #1275 | 2026-06-05T04:59:03Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
