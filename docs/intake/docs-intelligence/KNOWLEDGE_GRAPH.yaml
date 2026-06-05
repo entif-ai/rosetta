@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 372
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -5204,6 +5204,10 @@ issue_candidates:
   notes: 'From PR #37 extraction; drafted in PR #44'
 pr_state:
   open:
+  - pr: 1267
+    branch: docs-intelligence/20260410-prd-revision-synthesis
+    doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+    note: 15 findings, 6 issue candidates (PDR-001 through PDR-006). 8-step Alpha RC staircase, ROCK-3111-C draft, code patches.
   - pr: 62
     branch: docs-intelligence/semantic-audio-cognition-framework
     doc: docs/ideas/Semantic Audio Cognition Framework.md
@@ -5399,6 +5403,11 @@ processed_docs:
   pr: 29
   issues: 2
   notes: Sub-agent ran; extraction done
+- path: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  processed_at: 2026-06-05T02:32:17Z
+  findings: 15
+  issues: 6
+  notes: Synthesizes two PRD blueprint runs into 10 decisions, 8-step Alpha RC staircase, ROCK-3111-C draft, code patches. PDR-001 through PDR-006 drafted.
 - path: docs/chats/20260423 - Chat GPT - Agentic Orchestration Failures.md
   processed_at: 2026-04-24T23:47
   findings: 35

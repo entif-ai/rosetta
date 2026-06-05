@@ -4177,6 +4177,76 @@
         "data-privacy",
         "decision"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-prd-revision-synthesis.md",
+      "sourcePath": "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md",
+      "title": "Docs Intelligence Extraction — 20260410 PRD Revision Synthesis",
+      "concepts": [
+        "rrp",
+        "rrp-first",
+        "scaffold-forge",
+        "nx",
+        "typescript",
+        "mvp-doctrine",
+        "builtin-echo",
+        "dry-run",
+        "slice-zero",
+        "vertical-slice",
+        "pnpm",
+        "monorepo",
+        "build-toolchain",
+        "sqlite",
+        "local-cas",
+        "postgres-later",
+        "storage",
+        "operator-ui",
+        "cli-api",
+        "alpha-gates",
+        "ui",
+        "rrp-content-model",
+        "subjects-claims-digests",
+        "sig-exclusion",
+        "receipt-schema",
+        "guard-decision-token",
+        "policy-hash",
+        "expiry",
+        "constraints",
+        "guard",
+        "traceability-headers",
+        "ci",
+        "header-checks",
+        "provenance",
+        "opa",
+        "rego",
+        "policy-as-code",
+        "minimal-json",
+        "alpha-rc-0",
+        "alpha-rc-1",
+        "alpha-rc-2",
+        "alpha-rc-3",
+        "alpha-rc-4",
+        "mvp-staircase",
+        "rock-3111-c",
+        "pack-filesystem-contract",
+        "rrp-pack",
+        "spec",
+        "admission-ts",
+        "receipt-bundle-ts",
+        "check-traceability-headers",
+        "code-patches",
+        "build-order",
+        "cathedral-stop",
+        "build-sequence",
+        "retrieval-scope",
+        "corpus-support",
+        "nx-posture",
+        "ablation",
+        "run-1-wider",
+        "run-2-sharper",
+        "merge-strategy",
+        "synthesis"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4392,6 +4462,42 @@
         "integration"
       ],
       "signature": "012-domain-ob1-openbrain-protocol"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-001-alpha-rc-staircase.md",
+      "title": "PDR-001: Adopt 8-step Alpha RC Staircase as Binding MVP Gate Criteria",
+      "labels": [],
+      "signature": "001-adopt-alpha-binding-criteria"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-002-rock-3111-c-pack-filesystem-contract.md",
+      "title": "PDR-002: Author and Land ROCK-3111-C RRP Pack Filesystem Contract v0.1.0",
+      "labels": [],
+      "signature": "002-3111-author-contract-filesystem"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-003-rrp-exact-receipt-schema.md",
+      "title": "PDR-003: Implement RRP Exact Receipt Schema (`subjects`, `claims`, `digests`, `policy_refs`) in rosetta.receipt",
+      "labels": [],
+      "signature": "003-claims-digests-exact-implement"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-004-guard-decision-token-structure.md",
+      "title": "PDR-004: Implement GuardDecisionToken with Full Structure (policy_version, policy_hash, expiry, constraints)",
+      "labels": [],
+      "signature": "004-constraints-expiry-full-guarddecisiontoken"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-005-traceability-headers-ci.md",
+      "title": "PDR-005: Integrate check-traceability-headers.ts into CI Pipeline",
+      "labels": [],
+      "signature": "005-check-headers-integrate-into"
+    },
+    {
+      "path": "docs/intake/issue-drafts/pdr-006-builtin-echo-slice-zero.md",
+      "title": "PDR-006: Slice-Zero `builtin.echo` Vertical Slice — Guard/Receipt/Tapestry Verification",
+      "labels": [],
+      "signature": "006-builtin-echo-guard-pdr"
     },
     {
       "path": "docs/intake/issue-drafts/real-acquisition-adapters-behind-refinery-boundary.md",
@@ -4781,7 +4887,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -4965,7 +5072,8 @@
     "monorepo": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -5017,7 +5125,8 @@
     "nx": {
       "documents": [
         "docs/governance/DONOR_FIT_MAP.md",
-        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md"
+        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -5112,7 +5221,8 @@
     },
     "pnpm": {
       "documents": [
-        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md"
+        "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -7213,7 +7323,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
@@ -8208,7 +8319,8 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -9568,7 +9680,8 @@
     "vertical-slice": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -10392,7 +10505,8 @@
         "docs/external/Moltron.md",
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -11154,7 +11268,8 @@
       "documents": [
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -12992,7 +13107,8 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -13044,7 +13160,8 @@
     },
     "build-sequence": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -14775,7 +14892,8 @@
     "synthesis": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -15020,7 +15138,8 @@
     "sqlite": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -16943,7 +17062,8 @@
     "receipt-schema": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -18885,7 +19005,8 @@
     "typescript": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -18922,7 +19043,8 @@
     "ui": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -20768,7 +20890,8 @@
     "build-order": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -22277,19 +22400,22 @@
     },
     "policy-as-code": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
     "opa": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
     "rego": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
@@ -23385,6 +23511,264 @@
     "data-privacy": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp-first": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "scaffold-forge": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "mvp-doctrine": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "builtin-echo": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "slice-zero": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "build-toolchain": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "local-cas": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "postgres-later": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "operator-ui": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "cli-api": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-gates": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp-content-model": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "subjects-claims-digests": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "sig-exclusion": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "guard-decision-token": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy-hash": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "expiry": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "traceability-headers": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "header-checks": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "minimal-json": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc-0": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc-1": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc-2": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc-3": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "alpha-rc-4": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "mvp-staircase": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "rock-3111-c": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "pack-filesystem-contract": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "rrp-pack": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "spec": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "admission-ts": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "receipt-bundle-ts": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "check-traceability-headers": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "code-patches": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "cathedral-stop": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "retrieval-scope": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "corpus-support": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "nx-posture": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "ablation": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "run-1-wider": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "run-2-sharper": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
+      ],
+      "issueDrafts": []
+    },
+    "merge-strategy": {
+      "documents": [
+        "docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md"
       ],
       "issueDrafts": []
     },
