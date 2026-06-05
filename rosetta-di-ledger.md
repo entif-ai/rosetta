@@ -229,7 +229,7 @@ One PR per cycle.
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
 | docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | processed:2026-06-05T05:01:41.584Z:332 | 0 |  |  |  |  | 2026-06-05T05:01:41.584Z |
 | docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | yes | 0 | 19 | 6 | rrp-first, alpha-rc-staircase, rock-3111-c, python-boundary, jcs, build-order | extracted 2026-06-05; PR #1272 | 2026-06-05T03:42Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | locked:2026-06-05T05:03:02.184Z:heartbeat:1780635782:docs-intelligence/Berman---AI-Assistant.txt | 0 |  |  |  |  | 2026-06-05T05:03:02.184Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | processed:2026-06-05T05:10:00Z:1276 | 0 | 20 | 9 | context-fabric, privacy-membrane, inference-firewall, semantic-cache, rights-domain, cache-key, anthropic-workspace-isolation, openai-seat-org | 9 issue drafts IDI-001-IDI-009 | 2026-06-05T05:10:00Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
