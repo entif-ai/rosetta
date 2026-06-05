@@ -1,10 +1,10 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 378
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
+  total_issue_drafts_inventory: 540
   docs_intelligence_files: 43
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
@@ -5099,6 +5099,103 @@ concepts:
   - docs/PRDs/NOT LAME PRD
   status: active
   note: EDG-003 tracks alignment gap; write-admission-gate is Rosetta-native equivalent
+- id: alpha-rc-staircase
+  name: Alpha RC Staircase (RC-0 through RC-4)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Five-stage Alpha release candidate staircase: RC-0=Nx workspace+canon+cid+TV1 tests, RC-1=JCS/CID conformance+receipt schemas, RC-2=Guard+builtin.echo E2E, RC-3=code.scaffold dry-run+local CAS+SQLite, RC-4=operator UI stub non-gating
+  extends:
+  - text-core-mvp
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-001-alpha-rc-staircase.md
+  status: active
+- id: builtin-echo-slice-zero
+  name: builtin.echo Slice Zero
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Minimal guarded non-side-effect toolcall serving as the smallest honest constitutional proof for Rosetta MVP — established as slice zero before code.scaffold S1
+  extends:
+  - rrp-pack-contract
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-002-builtin-echo-slice-zero.md
+  status: active
+- id: rrp-content-model
+  name: RRP Content Model
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Receipt content model with structured fields: subjects, claims, digests, policy_refs, nonce, auth, sig — supersedes generic loose receipt schemas; sig excluded from CID computation
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-003-rrp-content-model-schemas.md
+  - docs/intake/issue-drafts/PRD-REV-007-sig-exclusion-from-cid.md
+  status: active
+- id: guard-decision-token
+  name: Guard Decision Token Richer Structure
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Enhanced guard decision token with policy_version, policy_hash, short-lived expiry, subject/tool references, resource_caps, constitution_hash placeholder, trace_id placeholder — richer than prior loose token descriptions
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-004-guard-decision-token-structure.md
+  status: active
+- id: sqlite-alpha-storage
+  name: SQLite Alpha Storage (Postgres as Adapter)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Alpha storage is Local CAS + SQLite index; Postgres/pgvector is an adapter role, not a prerequisite — affects TC-006 scope; postgresql-canonical still applies for production
+  extends:
+  - postgresql-canonical
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-008-sqlite-alpha-postgres-adapter.md
+  - docs/intake/issue-drafts/PRD-REV-012-tc-006-sqlite-alpha-scope.md
+  status: active
+- id: jcs-canonicalizer-mvp
+  name: JCS Canonicalizer MVP vs RFC 8785 Compliance
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: MVP JCS canonicalizer uses Node built-ins (JSON.stringify+sorted keys) which may not fully comply with RFC 8785; full compliance library deferred to post-alpha
+  extends: []
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-010-jcs-canonicalizer-mvp.md
+  status: active
+- id: rrp-conformance-tiers
+  name: RRP Pack Conformance Tiers (Light/Full/Auditor)
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: Three gradated RRP pack conformance tiers: RRP-Light (minimal), RRP-Full (complete), RRP-Auditor (maximum rigor with third-party verifiable signatures) — defined in ROCK-3111-C
+  extends:
+  - rrp-pack-contract
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-011-rrp-conformance-tiers.md
+  status: active
+- id: two-run-synthesis
+  name: Two-Run PRD Synthesis Method
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: A PRD reconciliation method: run two divergent approaches, find genuine disagreements, resolve producing unified decisions — produces higher-fidelity synthesis than single-pass revision
+  extends: []
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: active
+- id: ui-non-gating-alpha
+  name: Operator UI Non-Alpha-Gating Rule
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: rosetta-operator UI can be scaffolded during alpha but must never gate alpha RC progression — alpha gates are CLI/API, conformance, guard, receipts, replay only
+  extends: []
+  referenced_by:
+  - docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  - docs/intake/issue-drafts/PRD-REV-013-ui-non-gating-alpha.md
+  status: active
 issue_candidates:
 - id: DI-007
   title: Sub-agent context isolation — clean boot per cycle
