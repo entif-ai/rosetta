@@ -1,11 +1,11 @@
 meta:
   version: '0.9'
-  generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  generated: '2026-06-04T20:25:00Z'
+  total_docs_processed: 45
+  active_issue_drafts: 370
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  total_issue_drafts_inventory: 532
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
@@ -6398,3 +6398,34 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+
+
+# Added 2026-06-04
+processed_documents:
+- source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  extraction_artifact: docs/intake/docs-intelligence/2026-06-04-entif-rosetta-prd-revisions-synthesis.md
+  concepts:
+  - rrp-first-mvp
+  - slice-s0-s1
+  - nx-pnpm-typescript-spine
+  - python-specialist-lane
+  - local-first-storage
+  - ui-non-gating
+  - rrp-content-model
+  - guard-decision-token
+  - traceability-headers
+  - rock-3111-c
+  - mvp-staircase
+  - alpha-rc-gates
+  - build-order
+  findings: 17
+  issues_drafted: 4
+  pr: pending
+
+source_pr_state:
+- branch: docs-intelligence/20260411-api-driven-cache
+  pr_url: pending
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  status: in-progress
+  findings: 17
+  issues_drafted: 4
