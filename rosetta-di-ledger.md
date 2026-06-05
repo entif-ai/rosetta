@@ -227,15 +227,15 @@ One PR per cycle.
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
-| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | processed:2026-06-05T05:47:22.021Z:1278 | 0 |  |  |  |  | 2026-06-05T05:47:22.021Z |
 | docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | yes | 0 | 19 | 6 | rrp-first, alpha-rc-staircase, rock-3111-c, python-boundary, jcs, build-order | extracted 2026-06-05; PR #1272 | 2026-06-05T03:42Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman - AI Assistant.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman - OpenClaw Implementation Prompts.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman - Vibe Coding Rules.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | processed:2026-06-05T05:47:26.230Z:1276 | 0 |  |  |  |  | 2026-06-05T05:47:26.230Z |
+| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | processed:2026-06-05T05:47:32.001Z:1279 | 0 |  |  |  |  | 2026-06-05T05:47:32.001Z |
+| docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | processed:2026-06-05T05:47:35.984Z:1279 | 0 |  |  |  |  | 2026-06-05T05:47:35.984Z |
+| docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | processed:2026-06-05T05:47:08.917Z:1264 | 0 |  |  |  |  | 2026-06-05T05:47:08.917Z |
+| docs/external/Berman - AI Assistant.txt | processed:2026-06-05T05:47:08.955Z:1280 | 0 |  |  |  |  | 2026-06-05T05:47:08.955Z |
+| docs/external/Berman - OpenClaw Implementation Prompts.txt | locked:2026-06-05T05:47:36.010Z:heartbeat:1780638455:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T05:47:36.010Z |
+| docs/external/Berman - Vibe Coding Rules.txt | yes | 0 | 19 | 3 | prd-first,fixes-folder,300-line-limit,test-gate,no-mock-prod,env-guard,readme-pattern-tracker | extracted PR #1281; 3 issue drafts BVR-001-BVR-003 | 2026-06-05T05:48:05.367Z |
 | docs/external/Berman-all_files.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/external/Berman-gistfile1.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/external/Berman-oc.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
