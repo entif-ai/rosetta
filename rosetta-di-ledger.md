@@ -228,7 +228,7 @@ One PR per cycle.
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
 | docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | locked:2026-06-05T02:00:37.338Z:heartbeat:1780624837:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T02:00:37.338Z |
-| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | locked:2026-06-05T02:02:05.179Z:heartbeat:1780624925:docs-intelligence/20260410---Entif-and-Rosetta-PRDs---Revisions-and-Synthesis---ChatGPT---Extended-Thinking | 0 |  |  |  |  | 2026-06-05T02:02:05.179Z |
+| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | yes | 0 | 27 | 6 | mvp-staircase,rrp,rock-3111-c,guard,sqlite,postgres,builtin-echo,jcs,canonicalizer,build-order | 10 unified decisions, Alpha RC-0/RC-4 MVP staircase, ROCK-3111-C draft, 3 code patches, 8-step build order; 6 issue drafts PRD-001 through PRD-006; PR #1267 | 2026-06-05T02:02:05Z |
 | docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
