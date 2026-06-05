@@ -4177,6 +4177,106 @@
         "data-privacy",
         "decision"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md",
+      "title": "DI Extraction: LLM API Cache Management",
+      "concepts": [
+        "openai",
+        "cache",
+        "prompt-caching",
+        "prefix-matching",
+        "openai-prompt-caching-is-automatic-for-prompts-1024-tokens-with-exact-prefix-matching",
+        "can-be-nudged-with-prompt-cache-key-for-routing-stickiness",
+        "caches-not-shared-between-organizations",
+        "only-same-organization-members-can-access-identical-caches",
+        "cache-id",
+        "primitive",
+        "openai-has-no-public-shared-cache-id-primitive-no-create-list-pass-around-by-id-capability",
+        "prompt-objects-are-team-shared-config",
+        "not-cache-reuse-handles",
+        "anthropic",
+        "cache-control",
+        "org-isolation",
+        "anthropic-uses-cache-control-breakpoints",
+        "5-min-default-lifetime",
+        "1-hour-option",
+        "100-exact-matching-required",
+        "caches-isolated-between-organizations",
+        "gemini",
+        "vertex",
+        "explicit-cache",
+        "resource-name",
+        "gemini-vertex-is-materially-different-explicit-cache-resource-with-resource-name-like-projects-project-locations-location-cachedcontents-cache-id",
+        "project-level-iam",
+        "closest-to-separate-seats",
+        "shared-cache-handle-model",
+        "comparison",
+        "openai-same-org-shared-benefit",
+        "no-shared-cache-id-anthropic-same-org-shared-benefit",
+        "no-shared-cache-id-gemini-vertex-explicit-shared-cache-resource-with-iam-boundaries",
+        "cache-strategy",
+        "stable-prefix",
+        "composition",
+        "four-layer-composition-1-global-pack-for-invariant-instructions",
+        "2-domain-pack-for-policy-handbook-knowledge",
+        "3-task-pack-for-workflow-class",
+        "4-user-tail-for-volatile-ask-stable-mass-first",
+        "volatile-tail-last",
+        "cost",
+        "economics",
+        "openai-public-docs-describe-repeated-prefix-caching-with-up-to-90-cached-input-token-cost-reduction",
+        "fan-out-sub-questions-against-different-stable-packs-harvest-structured-results-compose-on-prem-vendor-answers-narrow",
+        "repeatable-slices-against-heavily-cached-prefixes",
+        "entif-does-synthesis",
+        "entif",
+        "architecture",
+        "privacy",
+        "middleware",
+        "on-prem-server-anonymizes-transliterates-inputs-before-inference",
+        "routes-intelligently",
+        "composes-multi-provider-answers",
+        "governs-cache-lifecycle-example-company-handbook-queries-intercepted-at-on-prem-layer",
+        "deduplicated",
+        "cached",
+        "anonymization",
+        "only-normalized",
+        "anonymized",
+        "policy-approved-material-belongs-in-shared-prefix-raw-proprietary-entity-specific-pii-data-belongs-in-dynamic-tail-or-stricter-cache-domain",
+        "abac",
+        "domain-key",
+        "cache-domain-key-tenant-workspace-authz-scope-hash-data-classification-policy-version-model-family-region-prompt-template-version-de-identification-schema-version",
+        "memory",
+        "core-doctrine-treat-provider-caches-as-transient-compute-accelerators",
+        "not-as-system-memory",
+        "durable-value-in-rights-scoped-tapestries-tiles",
+        "gtm",
+        "product",
+        "receipts",
+        "governance",
+        "first-demo-that-opens-enterprise-wallets-auditable-tool-using-assistant-with-receipts-incident-envelope",
+        "strategy",
+        "sell-before-build-paid-design-partner-pilots-before-full-productization-market-as-auditable-substrate-that-turns-ai-systems-into-auditable-machines",
+        "objects",
+        "four-formal-objects-proposed-context-block",
+        "tapestry-manifest",
+        "cache-domain-slug",
+        "provider-prefix-plan",
+        "tapestry",
+        "runtime-ingestion",
+        "method-tiles",
+        "compounding-flywheel-repeated-successful-cognition-deterministic-reusable-methods-once-promoted",
+        "vendor-call-disappears-for-that-class-of-work",
+        "vendor-relations",
+        "vendors-prefer-customers-burn-maximum-tokens",
+        "entif-s-cache-optimization-reduces-their-revenue-llm-platform-vendors-would-really-prefer-if-nobody-did-this",
+        "synthesis",
+        "structured-output",
+        "json",
+        "each-shard-query-should-request-normalized-json-or-typed-findings",
+        "merge-locally-keeps-vendor-calls-narrow-and-synthesis-cheap"
+      ]
     }
   ],
   "issueDrafts": [
@@ -4287,6 +4387,42 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-001-vendor-cache-strategy.md",
+      "title": "LLM-API-CACHE-001 — Vendor-Tiered Cache Strategy Missing from NOT LAME PRD",
+      "labels": [],
+      "signature": "001-api-cache-cache-from"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-002-stable-prefix-composition.md",
+      "title": "LLM-API-CACHE-002 — Stable-Prefix Composition Doctrine Needs Formal Spec",
+      "labels": [],
+      "signature": "002-api-cache-composition-doctrine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-003-deidentified-cache-prefix.md",
+      "title": "LLM-API-CACHE-003 — De-Identified Cache Prefix Security Model",
+      "labels": [],
+      "signature": "003-api-cache-cache-identified"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-004-method-tile-promotion.md",
+      "title": "LLM-API-CACHE-004 — Deterministic Method Tile Promotion Criteria",
+      "labels": [],
+      "signature": "004-api-cache-criteria-deterministic"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-005-onpremise-anonymization.md",
+      "title": "LLM-API-CACHE-005 — On-Premise Anonymization/Transliteration Implementation",
+      "labels": [],
+      "signature": "005-anonymization-api-cache-implementation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/LLM-API-CACHE-006-auditable-agent-gateway.md",
+      "title": "LLM-API-CACHE-006 — Auditable Agent Gateway as First GTM Artifact",
+      "labels": [],
+      "signature": "006-agent-api-artifact-auditable"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4553,7 +4689,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -4656,7 +4793,8 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4706,7 +4844,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -4958,7 +5097,8 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -5443,7 +5583,8 @@
     },
     "structured-output": {
       "documents": [
-        "docs/external/acpx.md"
+        "docs/external/acpx.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -5452,7 +5593,8 @@
         "docs/external/acpx.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -7666,7 +7808,8 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md"
@@ -7698,7 +7841,8 @@
     },
     "cache-strategy": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md"
+        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -10571,7 +10715,8 @@
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -11131,7 +11276,8 @@
     },
     "cost": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -11183,7 +11329,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -12730,7 +12877,8 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -13960,7 +14108,8 @@
         "docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -14775,7 +14924,8 @@
     "synthesis": {
       "documents": [
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md"
+        "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -14811,7 +14961,8 @@
     },
     "anonymization": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -15093,7 +15244,8 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -15834,7 +15986,8 @@
       "documents": [
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -16705,7 +16858,8 @@
     },
     "vertex": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -16737,7 +16891,8 @@
     },
     "prefix-matching": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -16763,13 +16918,15 @@
     "anthropic": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
     "cache-control": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -18241,7 +18398,8 @@
     "openai": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -18411,7 +18569,8 @@
     },
     "comparison": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -18531,7 +18690,8 @@
     },
     "middleware": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -18733,7 +18893,8 @@
     "runtime-ingestion": {
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -19407,7 +19568,8 @@
     "strategy": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },
@@ -23385,6 +23547,408 @@
     "data-privacy": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-caching": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-prompt-caching-is-automatic-for-prompts-1024-tokens-with-exact-prefix-matching": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "can-be-nudged-with-prompt-cache-key-for-routing-stickiness": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "caches-not-shared-between-organizations": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "only-same-organization-members-can-access-identical-caches": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-id": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "primitive": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-has-no-public-shared-cache-id-primitive-no-create-list-pass-around-by-id-capability": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-objects-are-team-shared-config": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "not-cache-reuse-handles": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "org-isolation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "anthropic-uses-cache-control-breakpoints": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "5-min-default-lifetime": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "1-hour-option": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "100-exact-matching-required": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "caches-isolated-between-organizations": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "explicit-cache": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "resource-name": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "gemini-vertex-is-materially-different-explicit-cache-resource-with-resource-name-like-projects-project-locations-location-cachedcontents-cache-id": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "project-level-iam": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "closest-to-separate-seats": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "shared-cache-handle-model": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-same-org-shared-benefit": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-shared-cache-id-anthropic-same-org-shared-benefit": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-shared-cache-id-gemini-vertex-explicit-shared-cache-resource-with-iam-boundaries": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "stable-prefix": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "composition": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "four-layer-composition-1-global-pack-for-invariant-instructions": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "2-domain-pack-for-policy-handbook-knowledge": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "3-task-pack-for-workflow-class": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "4-user-tail-for-volatile-ask-stable-mass-first": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "volatile-tail-last": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "openai-public-docs-describe-repeated-prefix-caching-with-up-to-90-cached-input-token-cost-reduction": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "fan-out-sub-questions-against-different-stable-packs-harvest-structured-results-compose-on-prem-vendor-answers-narrow": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "repeatable-slices-against-heavily-cached-prefixes": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-does-synthesis": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "on-prem-server-anonymizes-transliterates-inputs-before-inference": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "routes-intelligently": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "composes-multi-provider-answers": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "governs-cache-lifecycle-example-company-handbook-queries-intercepted-at-on-prem-layer": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "deduplicated": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "cached": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "only-normalized": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "anonymized": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy-approved-material-belongs-in-shared-prefix-raw-proprietary-entity-specific-pii-data-belongs-in-dynamic-tail-or-stricter-cache-domain": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "domain-key": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-domain-key-tenant-workspace-authz-scope-hash-data-classification-policy-version-model-family-region-prompt-template-version-de-identification-schema-version": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "core-doctrine-treat-provider-caches-as-transient-compute-accelerators": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "not-as-system-memory": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "durable-value-in-rights-scoped-tapestries-tiles": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "gtm": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "product": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "first-demo-that-opens-enterprise-wallets-auditable-tool-using-assistant-with-receipts-incident-envelope": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "sell-before-build-paid-design-partner-pilots-before-full-productization-market-as-auditable-substrate-that-turns-ai-systems-into-auditable-machines": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "objects": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "four-formal-objects-proposed-context-block": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "tapestry-manifest": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-domain-slug": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "provider-prefix-plan": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "method-tiles": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "compounding-flywheel-repeated-successful-cognition-deterministic-reusable-methods-once-promoted": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "vendor-call-disappears-for-that-class-of-work": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "vendor-relations": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "vendors-prefer-customers-burn-maximum-tokens": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "entif-s-cache-optimization-reduces-their-revenue-llm-platform-vendors-would-really-prefer-if-nobody-did-this": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "each-shard-query-should-request-normalized-json-or-typed-findings": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
+      ],
+      "issueDrafts": []
+    },
+    "merge-locally-keeps-vendor-calls-narrow-and-synthesis-cheap": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md"
       ],
       "issueDrafts": []
     },

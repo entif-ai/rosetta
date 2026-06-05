@@ -227,10 +227,10 @@ One PR per cycle.
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
-| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | locked:2026-06-05T00:30:36.967Z:heartbeat:1780619436:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T00:30:36.967Z |
+| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | locked:2026-06-05T00:33:45.809Z:heartbeat:1780619625:docs-intelligence/20260411-llm-api-cache | 0 |  |  |  |  | 2026-06-05T00:33:45.809Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | locked:2026-06-05T00:34:08.099Z:heartbeat:1780619648:docs-intelligence/20260411-llm-api-cache-mgmt | 0 |  |  |  |  | 2026-06-05T00:34:08.099Z |
+| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | processed:2026-06-05T00:34:33.695Z | 0 | 17 | 6 | llm-api-cache, vendor-cache, cache-strategy, prefix-composition, anonymization, entif, GTM | extraction: docs/intake/docs-intelligence/2026-06-05-llm-api-cache-management.md; 6 issue drafts (LLM-API-CACHE-001 through LLM-API-CACHE-006); PR pending | 2026-06-05T00:34:33.695Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/external/Berman - AI Assistant.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
