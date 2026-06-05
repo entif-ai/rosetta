@@ -1,7 +1,7 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
+  total_docs_processed: 45
   active_issue_drafts: 366
   archived_issue_drafts: 162
   total_issue_drafts_inventory: 528
@@ -5354,11 +5354,12 @@ processed_docs:
   findings: 2
   pr: null
   notes: Not yet on a per-doc branch
-- path: docs/governance/SERVICE_INVENTORY.md
-  processed_at: 2026-04-24T20:50
-  findings: 2
+- path: docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md
+  processed_at: 2026-06-04T23:29
+  findings: 20
   pr: null
-  notes: Not yet on a per-doc branch
+  issues: 5
+  notes: Full extraction; REE-001 through REE-005 issue drafts created
 - path: docs/PRDs/20260423 - Entif.AI - NOT LAME (v0.1) - PRD - Neurologic Orchestration
     Topology for Layered Agentic Memory and Evolution.md
   processed_at: 2026-04-24T20:50
