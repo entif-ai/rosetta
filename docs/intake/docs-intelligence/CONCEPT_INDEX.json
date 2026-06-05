@@ -4138,6 +4138,121 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-model-training-cost-design.md",
+      "sourcePath": "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md",
+      "title": "Docs Intelligence Extraction — 20260413 - Chat GPT - Model Training Cost and Design",
+      "concepts": [
+        "training-stack",
+        "tokenizer",
+        "embedder",
+        "generator",
+        "three-artifact-stack",
+        "rossettacodec",
+        "rosettaembed-s",
+        "rossettagen-s",
+        "vocab-size",
+        "rosetta-tokens",
+        "structural-tokens",
+        "ithkuil",
+        "curriculum-engine",
+        "grammar-manual",
+        "curriculum",
+        "mamba3",
+        "cca",
+        "engram",
+        "attnres",
+        "architecture-phasing",
+        "depth-routing",
+        "mhc",
+        "ablation-phasing",
+        "ablation",
+        "turboquant",
+        "megatrain",
+        "draft-prune",
+        "h-neurons",
+        "deployment-phasing",
+        "gpu-pricing",
+        "vast-ai",
+        "runpod",
+        "h100",
+        "a100",
+        "h200",
+        "training-costs",
+        "gpu-hours",
+        "compute-budget",
+        "funding-levels",
+        "cost-bands",
+        "program-phases",
+        "model-capabilities",
+        "semantic-normalization",
+        "english-rosetta",
+        "proof-targets",
+        "semantic-stability",
+        "synergy-map",
+        "technology-stack",
+        "architecture-integration",
+        "ithkuil-rosetta-engram-mamba3",
+        "reasoning-memory",
+        "reasoningbank",
+        "zerosearch",
+        "rlm",
+        "recursive-language-models",
+        "glove-v",
+        "hrm",
+        "trm",
+        "intellect-2",
+        "deepcrossattention",
+        "continuous-thought-machines",
+        "nested-learning",
+        "darwin-godel-machine",
+        "huxley-godel-machine",
+        "risk-map",
+        "architectural-risk",
+        "ithkuil-overfit",
+        "biggest-upside",
+        "path-to-funding",
+        "cheapest-viable",
+        "lora-limitations",
+        "peft",
+        "fine-tuning",
+        "three-branches",
+        "ablation-branches",
+        "architecture-variants",
+        "ar-lsat",
+        "prontoqa",
+        "hallucination-rate",
+        "provenance-integrity",
+        "mfu",
+        "flops-utilization",
+        "training-time",
+        "mfu-utilization",
+        "flops",
+        "engram-paper",
+        "deepseek-engram",
+        "github",
+        "megatrain-paper",
+        "single-gpu-training",
+        "megatrain-120b",
+        "cca-attention",
+        "compressed-convolutional-attention",
+        "google",
+        "self-evolving-memory",
+        "alibaba",
+        "search-rl",
+        "tiny-recursive-models",
+        "samsung",
+        "arc-agi",
+        "deterministic-scoring",
+        "metacognitive-atlas",
+        "bootstrap-semantic-bios",
+        "mamba3-accuracy",
+        "mimo-version",
+        "attnres-dropin",
+        "mhc-over-attnres",
+        "first-version-choice"
+      ]
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4287,6 +4402,78 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-001-token-id-arbitrary-semantic-identity.md",
+      "title": "MTC-001: Custom Tokenizer Identity — Token IDs as Arbitrary Handles, Not Semantic Carriers",
+      "labels": [],
+      "signature": "001-arbitrary-carriers-custom-handles"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-002-engram-memory-plane.md",
+      "title": "MTC-002: Engram O(1) Memory Plane — Rosetta Memory Plane 3 Implementation Candidate",
+      "labels": [],
+      "signature": "002-candidate-engram-implementation-memory"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-003-ablation-first-methodology.md",
+      "title": "MTC-003: Ablation-First Methodology — Every Primitive Earns Its Calories",
+      "labels": [],
+      "signature": "003-ablation-calories-earns-every"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-004-funding-path-gated-phases.md",
+      "title": "MTC-004: Funding Path — $50k First Target, Gated Phases, Metric Thresholds",
+      "labels": [],
+      "signature": "004-50k-first-funding-gated"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-005-eval-harness-before-training.md",
+      "title": "MTC-005: Eval Harness Before Training — 4-6 Week Pre-Training Preparation Phase",
+      "labels": [],
+      "signature": "005-before-eval-harness-mtc"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-006-mhc-first-attnres-ablation.md",
+      "title": "MTC-006: Depth-Routing Phase — mHC First, AttnRes as Controlled Ablation",
+      "labels": [],
+      "signature": "006-ablation-attnres-controlled-depth"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-007-ithkuil-curriculum-not-ontology.md",
+      "title": "MTC-007: Ithkuil as Curriculum Engine, Not Sovereign Ontology — Architectural Boundary",
+      "labels": [],
+      "signature": "007-architectural-boundary-curriculum-engine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-008-three-artifact-stack.md",
+      "title": "MTC-008: Three-Artifact Stack Over Unified Model — Architectural Decision",
+      "labels": [],
+      "signature": "008-architectural-artifact-decision-model"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-009-mamba3-cca-hybrid-long-context.md",
+      "title": "MTC-009: Mamba-3 + CCA Hybrid for Long-Context State Tracking",
+      "labels": [],
+      "signature": "009-cca-context-hybrid-long"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-010-semantic-normalization-engine-scope.md",
+      "title": "MTC-010: Semantic Normalization Engine — Scope Definition vs. General Assistant",
+      "labels": [],
+      "signature": "010-assistant-definition-engine-general"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-011-reasoningbank-procedural-memory.md",
+      "title": "MTC-011: ReasoningBank Integration — Procedural Memory Without Weight Updates",
+      "labels": [],
+      "signature": "011-integration-memory-mtc-procedural"
+    },
+    {
+      "path": "docs/intake/issue-drafts/MTC-012-cost-estimation-mfu-5x-overhead.md",
+      "title": "MTC-012: Cost Estimation Methodology — MFU 0.15 + 5x Overhead for Realistic Budgets",
+      "labels": [],
+      "signature": "012-budgets-cost-estimation-methodology"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -5839,7 +6026,8 @@
     "engram": {
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -8423,7 +8611,8 @@
     "ithkuil": {
       "documents": [
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -13228,7 +13417,8 @@
     "trm": {
       "documents": [
         "docs/frontier/20251128 - Chat GPT - Entif's Advanced Lead Among AI Science Labs.md",
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -14218,7 +14408,8 @@
       "documents": [
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -14297,7 +14488,8 @@
     },
     "reasoningbank": {
       "documents": [
-        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md"
+        "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -16793,7 +16985,8 @@
     },
     "google": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -22043,7 +22236,8 @@
     },
     "github": {
       "documents": [
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },
@@ -23297,6 +23491,612 @@
     "dedupe-receipts": {
       "documents": [
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-stack": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "tokenizer": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedder": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "generator": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-artifact-stack": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "rossettacodec": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosettaembed-s": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "rossettagen-s": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "vocab-size": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "rosetta-tokens": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "structural-tokens": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "curriculum-engine": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "grammar-manual": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "curriculum": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mamba3": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "cca": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "attnres": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-phasing": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "depth-routing": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mhc": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ablation-phasing": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ablation": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "turboquant": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "megatrain": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "draft-prune": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "h-neurons": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "deployment-phasing": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "gpu-pricing": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "vast-ai": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "runpod": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "h100": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "a100": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "h200": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-costs": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "gpu-hours": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "compute-budget": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "funding-levels": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "cost-bands": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "program-phases": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-capabilities": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-normalization": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "english-rosetta": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "proof-targets": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "semantic-stability": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "synergy-map": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "technology-stack": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-integration": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ithkuil-rosetta-engram-mamba3": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "reasoning-memory": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "zerosearch": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "rlm": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "recursive-language-models": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "glove-v": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "hrm": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "intellect-2": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "deepcrossattention": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "continuous-thought-machines": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "darwin-godel-machine": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "huxley-godel-machine": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "risk-map": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "architectural-risk": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ithkuil-overfit": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "biggest-upside": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "path-to-funding": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "cheapest-viable": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "lora-limitations": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "peft": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "fine-tuning": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-branches": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ablation-branches": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "architecture-variants": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "ar-lsat": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "prontoqa": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "hallucination-rate": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-integrity": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mfu": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "flops-utilization": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-time": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mfu-utilization": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "flops": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "engram-paper": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "deepseek-engram": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "megatrain-paper": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "single-gpu-training": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "megatrain-120b": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "cca-attention": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "compressed-convolutional-attention": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "self-evolving-memory": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "alibaba": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "search-rl": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "tiny-recursive-models": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "samsung": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "arc-agi": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "deterministic-scoring": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "metacognitive-atlas": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "bootstrap-semantic-bios": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mamba3-accuracy": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mimo-version": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "attnres-dropin": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "mhc-over-attnres": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
+      ],
+      "issueDrafts": []
+    },
+    "first-version-choice": {
+      "documents": [
+        "docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md"
       ],
       "issueDrafts": []
     },

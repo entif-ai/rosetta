@@ -5202,6 +5202,231 @@ issue_candidates:
   - docs/RFCs/ROCK-3111-C-RRP-Pack-Filesystem-Contract-v0.2.0.md
   status: candidate
   notes: 'From PR #37 extraction; drafted in PR #44'
+- id: three-artifact-stack
+  name: Three-Artifact Training Stack
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Architectural decision to build three separate artifacts (tokenizer, embedder, decoder) instead of a single unified model. Each artifact is independently evaluable. 700M decoder is minimum for generally useful experiment; below that is a semantic scalpel.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: token-id-arbitrary
+  name: Token ID Arbitrary Handle
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Token IDs are arbitrary handles within each model's tokenizer — NOT semantic carriers. Semantic identity lives in a separate concept table with opaque RIDs and external XID anchors. Embedding geometry lives in concept prototypes, not in token integer ID adjacency.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: engram-o1-memory
+  name: Engram O(1) Memory Plane
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: DeepSeek paper 2601.07372 conditional memory via scalable lookup. O(1) deterministic lookup for static patterns. 27B-param experiments showing gains in knowledge, reasoning, and context retrieval. Directly relevant to Rosetta memory plane 3 and tapestry.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: ablation-first
+  name: Ablation-First Methodology
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Methodology requiring every architectural primitive to earn its place through controlled ablation against iso-parameter and iso-FLOPs baselines. Core question: does each added primitive earn its calories, not is the full model better than random.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: mhc-depth-routing
+  name: mHC Depth Routing
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Multi-branch mixing/hypothesis circuits for depth routing. Chosen over AttnRes for v0 because Engram already has demonstrated mHC integration path. AttnRes is a controlled ablation after baseline established.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: attnres-ablation
+  name: AttnRes as Ablation Candidate
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Attention Residuals (arXiv 2603.15031) as controlled ablation after mHC+Engram baseline. Drop-in replacement for transformer depth routing with minimal overhead. Not in v0 — too many confounded variables.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: ithkuil-curriculum
+  name: Ithkuil as Curriculum Engine
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Ithkuil is a curriculum engine for ordering distinctions in training — NOT the sovereign ontology. Provides grammar-manual as proto-promethean curriculum for embedder initialization. Rosetta owns identity/provenance; Ithkuil orders distinctions.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: mamba3-cca-hybrid
+  name: Mamba-3 CCA Hybrid
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Hybrid decoder architecture: Mamba-3 blocks for long-sequence state tracking + periodic CCA attention blocks for KV compression. Mamba-3: 1.8pt accuracy improvement at 1.5B. CCA: comparable quality up to 3x faster.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: semantic-normalization-engine
+  name: Semantic Normalization Engine
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Scope framing for custom training stack: compact semantic normalization and reasoning engine — NOT a general assistant. Good at canonicalizing meaning, preserving ambiguity, reusing structure. Not for general chat, code synthesis, or open-ended QA.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: reasoningbank
+  name: ReasoningBank
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Google paper 2509.25140. Strategy-level agent memory framework for test-time self-evolution via reasoning memory. Externalizes procedural knowledge rather than requiring all improvement from weight updates. On-theme with Rosetta memory sovereignty map.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: cost-estimation-mfu-015
+  name: MFU 0.15 Cost Estimation
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Conservative MFU of 0.15 plus 5x experimentation overhead for realistic training budgets. Compute-only estimates are misleading by 5x-10x. Vast.ai consistently cheaper than RunPod.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: mfu-015
+  name: MFU 0.15 Baseline
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Conservative Model FLOPs Utilization baseline of 0.15 for cost estimation — below optimistic 0.3-0.4 estimates commonly used.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: tiny-recursive-models
+  name: Tiny Recursive Models (TRM)
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Samsung Montreal 7M model surpassing DeepSeek-R1, Gemini 2.5-Pro, o3-mini on ARC-AGI and ARC tasks via recursive reasoning. arXiv 2510.04871. Track as eval baseline or ablation candidate.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: zerosearch
+  name: ZeroSearch
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Alibaba-NLP — incentivizes search capability training without live search engine API costs via simulated search rewards. arXiv 2505.04588. Relevant for eval harness to reduce search RL costs.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: turboquant
+  name: TurboQuant
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Near-optimal KV cache compression at 3.5 bits/channel. Quality-neutral at 3.5 bits/channel with marginal degradation at 2 bits. Use post-stability only — optimization, not primary thesis validator.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: megatrain
+  name: MegaTrain
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Single GPU training of 100B+ LLMs at full precision using host memory as authoritative parameter store. arXiv 2604.05091. Relevant for scaling beyond 1B on minimal hardware. Not a bottleneck in 700M-1.3B first model.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: draft-and-prune
+  name: Draft-and-Prune
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: arXiv 2603.17233 — improves auto-formalization reliability on AR-LSAT and logic benchmarks. Use as evaluator/scaffold, not base architecture. Not inside core decoder in v0.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: h-neurons
+  name: H-Neurons
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Sparse circuitry behind LLM hallucinations. xsingular.com/blog/h-neurons-hallucination-llm. Use for targeted anti-hallucination interventions post-training. Not inside core.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: cca-attention
+  name: CCA Compressed Convolutional Attention
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Compressed Convolutional Attention arXiv 2510.04476 (Zyphra). Compresses attention compute and KV burden with comparable quality up to 3x faster. Part of Mamba-3+CCA hybrid for long-context.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: nested-learning
+  name: Nested Learning
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Google Research — ML paradigm for continual learning. Too speculative for first falsifiable Rosetta build. Watch but do not build around yet.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: continuous-thought-machines
+  name: Continuous Thought Machines
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: arXiv 2505.05522. Too speculative for first falsifiable Rosetta build. Watch but do not build around yet.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: darwin-godel-machine
+  name: Darwin Gödel Machine
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Self-improving AI via evolutionary principles. Relevant later for self-improving coding agents and research automation but belongs above base model, not inside it. arXiv 2505.22954.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: huxley-godel-machine
+  name: Huxley Gödel Machine
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Variant self-improving AI approach. Belongs above base model, not inside it. Watch for future research direction.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: intellect-2
+  name: INTELLECT-2
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Decentralized RL training model. Much more relevant to eventual swarm compute vision than to first semantic prototype. Consider when swarm compute vision becomes active.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
+- id: deepcrossattention
+  name: DeepCrossAttention
+  introduced_by: docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  introduced_at: '2026-06-04'
+  definition: Fallback residual family contender if mHC/AttnRes ablations disappoint. arXiv 2502.06785.
+  extends: []
+  referenced_by:
+  - docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md
+  status: active
 pr_state:
   open:
   - pr: 62
