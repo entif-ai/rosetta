@@ -4138,81 +4138,6 @@
       ]
     },
     {
-      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-api-driven-cache-management.md",
-      "sourcePath": "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-      "title": "DI Extraction — API-driven Cache Management",
-      "concepts": [
-        "openai",
-        "prompt-caching",
-        "cache-key",
-        "org-scope",
-        "cache",
-        "cost-reduction",
-        "anthropic",
-        "cache-control",
-        "workspace-isolation",
-        "isolation",
-        "gemini",
-        "vertex-ai",
-        "context-caching",
-        "iam",
-        "project-scope",
-        "google",
-        "cache-boundary",
-        "provider-comparison",
-        "seat-vs-org",
-        "entif",
-        "privacy-membrane",
-        "guard",
-        "rights-scoping",
-        "cache-governance",
-        "security",
-        "privacy",
-        "abac",
-        "semantic-equivalence",
-        "policy-version",
-        "rights",
-        "governance",
-        "inference-cost",
-        "token-burn",
-        "economics",
-        "proof-of-concept",
-        "handbook-workflow",
-        "local-resolution",
-        "product",
-        "demo",
-        "multi-provider",
-        "composition",
-        "provenance-spine",
-        "architecture",
-        "integration",
-        "transliteration",
-        "privacy-budget",
-        "re-identification",
-        "revenue-projection",
-        "enterprise-sales",
-        "sales-cycle",
-        "business",
-        "go-to-market",
-        "design-partner",
-        "belief-pack",
-        "roi-calculator",
-        "sales-motion",
-        "product-definition",
-        "enterprise-category",
-        "inference-firewall",
-        "workspace",
-        "api-org",
-        "billing-boundary",
-        "enterprise",
-        "billing",
-        "weak-to-strong",
-        "routing",
-        "audit",
-        "model-selection"
-      ]
-    },
-    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4252,57 +4177,108 @@
         "data-privacy",
         "decision"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md",
+      "title": "Extraction: Email-driven Security Defenses",
+      "concepts": [
+        "security",
+        "email",
+        "prompt-injection",
+        "attack-surface",
+        "defense-in-depth",
+        "email-driven-attacks",
+        "security-architecture",
+        "bayesian",
+        "classifier",
+        "base-rate",
+        "bayesian-classifier",
+        "detection-limitations",
+        "trusted-source",
+        "allowlist",
+        "compromise",
+        "bec",
+        "trusted-source-weakness",
+        "summarization",
+        "contamination",
+        "taint",
+        "multi-stage",
+        "cross-stage-contamination",
+        "taint-propagation",
+        "policy-engine",
+        "opa",
+        "authorization",
+        "llm-architecture",
+        "policy-enforcement",
+        "approval-workflow",
+        "draft",
+        "execute",
+        "least-privilege",
+        "draft-execute-separation",
+        "embeddings",
+        "svm",
+        "random-forest",
+        "non-agentic",
+        "embedding-classifiers",
+        "non-agentic-detection",
+        "structured-outputs",
+        "taint-metadata",
+        "downstream-agents",
+        "interface-contracts",
+        "provenance-metadata",
+        "untrusted",
+        "untrusted-label",
+        "gpg",
+        "signed-commands",
+        "privileged-lane",
+        "cryptographic-identity",
+        "ensemble",
+        "aggregation",
+        "calibration",
+        "stacked-model",
+        "ensemble-design",
+        "capability-containment",
+        "tool-scoping",
+        "zero-day",
+        "corpus",
+        "detection-gap",
+        "adversarial-evasion",
+        "zero-day-gap",
+        "corpus-detection",
+        "sandbox",
+        "gvisor",
+        "firecracker",
+        "llm-isolation",
+        "threat-intel",
+        "corpus-update",
+        "webhook",
+        "regression-testing",
+        "threat-intelligence",
+        "routing",
+        "score-bands",
+        "quarantine",
+        "approval-required",
+        "routing-logic",
+        "tool-use-restriction",
+        "email-taint",
+        "no-tool-use",
+        "email-derivation",
+        "training-data",
+        "hard-negatives",
+        "classifier-bias",
+        "training-data-design",
+        "dual-representation",
+        "pristine-original",
+        "audit",
+        "evaluation",
+        "metrics",
+        "scenario-slices",
+        "evaluation-metrics"
+      ]
     }
   ],
   "issueDrafts": [
-    {
-      "path": "docs/intake/issue-drafts/acm-001-multi-provider-composition-receipt.md",
-      "title": "ACM-001: Multi-Provider Composition Receipt Format",
-      "labels": [],
-      "signature": "001-acm-composition-format-multi"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-002-rights-aware-cache-key-formula.md",
-      "title": "ACM-002: Rights-Domain-Aware Cache Key Formula",
-      "labels": [],
-      "signature": "002-acm-aware-cache-domain"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-003-privacy-budget-transliteration.md",
-      "title": "ACM-003: Privacy Budget Schema for Transliteration Field Combinations",
-      "labels": [],
-      "signature": "003-acm-budget-combinations-field"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-004-vertex-ai-shared-cache-reference.md",
-      "title": "ACM-004: Vertex AI as Canonical Shared-Cache Reference Architecture",
-      "labels": [],
-      "signature": "004-acm-architecture-cache-canonical"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-005-model-routing-receipt.md",
-      "title": "ACM-005: Model Routing Receipt Schema for Weak-to-Strong Handoffs",
-      "labels": [],
-      "signature": "005-acm-handoffs-model-receipt"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-006-token-cost-reduction-benchmark.md",
-      "title": "ACM-006: Prove 50-90% Token Cost Reduction Claim with Controlled Benchmark",
-      "labels": [],
-      "signature": "006-acm-benchmark-claim-controlled"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-007-belief-pack-artifacts.md",
-      "title": "ACM-007: Design Partner Belief Pack — Five Artifact Deliverables",
-      "labels": [],
-      "signature": "007-acm-artifact-belief-deliverables"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-008-tile-version-driven-cache-invalidation.md",
-      "title": "ACM-008: Stale Cache Poisoning — Tile-Version-Driven Invalidation Required",
-      "labels": [],
-      "signature": "008-acm-cache-driven-invalidation"
-    },
     {
       "path": "docs/intake/issue-drafts/ainl-001-rosetta-agent-workflow-graph-ir.md",
       "title": "AINL-001: Define Rosetta agent workflow graph IR profile",
@@ -4410,6 +4386,48 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-001-email-multi-path-taxonomy.md",
+      "title": "EML-001: Email-driven Prompt Injection Multi-Path Taxonomy",
+      "labels": [],
+      "signature": "001-driven-email-eml-injection"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-002-taint-propagation-system.md",
+      "title": "EML-002: Taint Propagation System for Untrusted Content",
+      "labels": [],
+      "signature": "002-content-eml-propagation-system"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-003-external-policy-engine-authority.md",
+      "title": "EML-003: External Policy Engine (OPA) as Write Gate Authority",
+      "labels": [],
+      "signature": "003-authority-eml-engine-external"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-004-embedding-classifier-scoring-layer.md",
+      "title": "EML-004: Non-Agentic Embedding+Classifier Scoring Layer",
+      "labels": [],
+      "signature": "004-agentic-classifier-embedding-eml"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-005-signed-command-lane.md",
+      "title": "EML-005: Signed-Command Lane for GPG-Authenticated Privileged Actions",
+      "labels": [],
+      "signature": "005-actions-authenticated-command-eml"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-006-ensemble-scoring-routing-table.md",
+      "title": "EML-006: Ensemble Scoring Architecture with Routing Table",
+      "labels": [],
+      "signature": "006-architecture-eml-ensemble-routing"
+    },
+    {
+      "path": "docs/intake/issue-drafts/EML-007-cross-stage-contamination.md",
+      "title": "EML-007: Cross-Stage Contamination Between Pipeline Stages",
+      "labels": [],
+      "signature": "007-between-contamination-cross-eml"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -4676,8 +4694,7 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -4705,7 +4722,8 @@
         "docs/external/Attention Residuals (AttnRes) - Kimi.md",
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -4780,8 +4798,7 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -5083,7 +5100,6 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": []
@@ -5544,7 +5560,7 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -6236,7 +6252,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -6411,7 +6428,8 @@
       "documents": [
         "docs/chats/20260225 - Chat GPT - Agentic GitHub Repos.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -6730,7 +6748,8 @@
     },
     "approval-workflow": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -6953,7 +6972,8 @@
         "docs/external/Berman-PRD.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -8361,7 +8381,7 @@
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -8828,7 +8848,7 @@
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
         "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -10023,7 +10043,8 @@
     },
     "calibration": {
       "documents": [
-        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md"
+        "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -10700,8 +10721,7 @@
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -11313,8 +11333,7 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
       ],
       "issueDrafts": []
     },
@@ -11372,7 +11391,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -11427,7 +11447,8 @@
     },
     "summarization": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -11944,8 +11965,7 @@
     "model-selection": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/external/Moltron.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -12862,8 +12882,7 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -13125,8 +13144,7 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -14706,7 +14724,6 @@
         "docs/external/Moltron.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": [
@@ -14839,7 +14856,8 @@
     },
     "webhook": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -15228,8 +15246,7 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -15326,7 +15343,8 @@
     "email": {
       "documents": [
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -15970,8 +15988,7 @@
       "documents": [
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -16849,8 +16866,7 @@
     "billing": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -16901,15 +16917,13 @@
     "anthropic": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
     "cache-control": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16933,8 +16947,7 @@
     },
     "google": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16948,8 +16961,7 @@
     "enterprise": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -17078,8 +17090,7 @@
     },
     "policy-version": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -18384,8 +18395,7 @@
     "openai": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -18863,8 +18873,7 @@
     },
     "iam": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -18894,8 +18903,7 @@
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -19386,8 +19394,7 @@
     "isolation": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
       ],
       "issueDrafts": []
     },
@@ -22412,7 +22419,8 @@
     },
     "policy-enforcement": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -22430,7 +22438,8 @@
     },
     "opa": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -22454,19 +22463,22 @@
     },
     "sandbox": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
     "firecracker": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
     "gvisor": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -22574,7 +22586,8 @@
     },
     "threat-intelligence": {
       "documents": [
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
@@ -23447,270 +23460,6 @@
       ],
       "issueDrafts": []
     },
-    "prompt-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-key": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "org-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cost-reduction": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace-isolation": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "vertex-ai": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "context-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "project-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provider-comparison": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "seat-vs-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-membrane": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "rights-scoping": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-governance": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "semantic-equivalence": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-cost": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "token-burn": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "proof-of-concept": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "handbook-workflow": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "local-resolution": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "demo": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-provider": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "composition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provenance-spine": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "transliteration": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-budget": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "re-identification": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "revenue-projection": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-sales": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-cycle": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "business": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "go-to-market": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "design-partner": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "belief-pack": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "roi-calculator": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-motion": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product-definition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-category": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-firewall": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "api-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "billing-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "weak-to-strong": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
     "openbrain": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
@@ -23796,6 +23545,444 @@
     "data-privacy": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "attack-surface": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "defense-in-depth": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "email-driven-attacks": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "security-architecture": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "bayesian": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "classifier": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "base-rate": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "bayesian-classifier": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "detection-limitations": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "trusted-source": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "allowlist": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "compromise": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "bec": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "trusted-source-weakness": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "contamination": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "taint": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-stage": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "cross-stage-contamination": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "taint-propagation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy-engine": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "authorization": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-architecture": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "draft": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "execute": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "least-privilege": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "draft-execute-separation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "svm": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "random-forest": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "non-agentic": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "embedding-classifiers": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "non-agentic-detection": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "structured-outputs": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "taint-metadata": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "downstream-agents": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "interface-contracts": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-metadata": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "untrusted": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "untrusted-label": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "gpg": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "signed-commands": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "privileged-lane": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "cryptographic-identity": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "ensemble": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "aggregation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "stacked-model": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "ensemble-design": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "capability-containment": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-scoping": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "zero-day": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "corpus": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "detection-gap": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "adversarial-evasion": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "zero-day-gap": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "corpus-detection": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "llm-isolation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "threat-intel": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "corpus-update": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "regression-testing": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "score-bands": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "approval-required": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "routing-logic": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "tool-use-restriction": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "email-taint": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "no-tool-use": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "email-derivation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-data": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "hard-negatives": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "classifier-bias": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "training-data-design": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "dual-representation": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "pristine-original": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "scenario-slices": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
+      ],
+      "issueDrafts": []
+    },
+    "evaluation-metrics": {
+      "documents": [
+        "docs/intake/docs-intelligence/2026-06-05-email-driven-security-defenses.md"
       ],
       "issueDrafts": []
     },
