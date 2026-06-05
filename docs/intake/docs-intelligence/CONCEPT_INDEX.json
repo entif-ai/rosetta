@@ -4138,81 +4138,6 @@
       ]
     },
     {
-      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-api-driven-cache-management.md",
-      "sourcePath": "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-      "title": "DI Extraction — API-driven Cache Management",
-      "concepts": [
-        "openai",
-        "prompt-caching",
-        "cache-key",
-        "org-scope",
-        "cache",
-        "cost-reduction",
-        "anthropic",
-        "cache-control",
-        "workspace-isolation",
-        "isolation",
-        "gemini",
-        "vertex-ai",
-        "context-caching",
-        "iam",
-        "project-scope",
-        "google",
-        "cache-boundary",
-        "provider-comparison",
-        "seat-vs-org",
-        "entif",
-        "privacy-membrane",
-        "guard",
-        "rights-scoping",
-        "cache-governance",
-        "security",
-        "privacy",
-        "abac",
-        "semantic-equivalence",
-        "policy-version",
-        "rights",
-        "governance",
-        "inference-cost",
-        "token-burn",
-        "economics",
-        "proof-of-concept",
-        "handbook-workflow",
-        "local-resolution",
-        "product",
-        "demo",
-        "multi-provider",
-        "composition",
-        "provenance-spine",
-        "architecture",
-        "integration",
-        "transliteration",
-        "privacy-budget",
-        "re-identification",
-        "revenue-projection",
-        "enterprise-sales",
-        "sales-cycle",
-        "business",
-        "go-to-market",
-        "design-partner",
-        "belief-pack",
-        "roi-calculator",
-        "sales-motion",
-        "product-definition",
-        "enterprise-category",
-        "inference-firewall",
-        "workspace",
-        "api-org",
-        "billing-boundary",
-        "enterprise",
-        "billing",
-        "weak-to-strong",
-        "routing",
-        "audit",
-        "model-selection"
-      ]
-    },
-    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4252,57 +4177,124 @@
         "data-privacy",
         "decision"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-berman-all-files-openclaw-templates.md",
+      "sourcePath": "docs/external/Berman-all_files.md",
+      "title": "Docs Intelligence Extraction — Berman OpenClaw Template Files",
+      "concepts": [
+        "data-classification",
+        "security",
+        "compliance",
+        "pii",
+        "three-tier-classification-confidential-private-dm-only",
+        "internal-group-chats-ok",
+        "restricted-external-requires-approval",
+        "redaction",
+        "data-protection",
+        "automation",
+        "automated-pii-scan-on-outbound-messages",
+        "context-awareness",
+        "dm-vs-group",
+        "data-handling",
+        "different-behavior-based-on-conversation-context-dm-vs-group",
+        "cron",
+        "operational-standards",
+        "notification-queue",
+        "observability",
+        "cron-jobs-log-to-db-both-success-and-failure",
+        "only-failures-are-notified-to-cron-updates-channel",
+        "priority-tiering",
+        "batching",
+        "three-tier-priority-queue-critical-immediate",
+        "high-hourly-batch",
+        "medium-3-hour-batch",
+        "error-reporting",
+        "proactive-alert",
+        "subagent-failures-reported-proactively-via-messaging-platform",
+        "content-security",
+        "prompt-injection",
+        "untrusted-content-web",
+        "crm",
+        "kb",
+        "uploads-treated-as-data-only",
+        "instructions-ignored",
+        "resilience",
+        "heartbeat",
+        "state-recovery",
+        "heartbeat-state-file-recovery-procedure-if-corrupted",
+        "subagent",
+        "model-routing",
+        "delegation",
+        "model-routing-centralized-in-config-model-routing-json",
+        "prompt-stack",
+        "fallback",
+        "dual-prompt-stack-root-md-files-primary-model-vs-codex-prompts-secondary-model",
+        "writing-style",
+        "ai-detectability",
+        "communication",
+        "ban-on-em-dashes",
+        "ai-vocabulary",
+        "inflated-significance",
+        "sycophancy"
+      ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-berman-vibe-coding-rules.md",
+      "sourcePath": "docs/external/Berman - Vibe Coding Rules.txt",
+      "title": "Docs Intelligence Extraction — Berman Vibe Coding Rules",
+      "concepts": [
+        "vibe-coding",
+        "engineering-discipline",
+        "process",
+        "solo-practitioner",
+        "berman-s-rules",
+        "14-distinct-rules",
+        "architecture",
+        "small-units",
+        "composability",
+        "file-size-constraint",
+        "testing",
+        "ci",
+        "quality-gate",
+        "receipt-law",
+        "test-gate-before-deploy",
+        "security",
+        "env-vars",
+        "secrets",
+        "compliance",
+        "no-env-in-version-control",
+        "reuse",
+        "existing-code-first",
+        "thin-slices",
+        "reuse-existing-implementations",
+        "branching",
+        "git-workflow",
+        "multi-agent",
+        "coordination",
+        "branch-creation-is-restricted",
+        "documentation",
+        "pattern-log",
+        "institutional-memory",
+        "continuous-pattern-documentation",
+        "fixes-folder",
+        "major-issues-get-dedicated-fix-docs",
+        "reuse-gate",
+        "never-build-twice",
+        "new-patterns-require-existing-exhaustion-first",
+        "error-handling",
+        "fail-closed",
+        "root-cause-fix",
+        "error-handling-philosophy",
+        "pattern-matching",
+        "reuse-prior-fix-documentation",
+        "safety",
+        "confirmation-gate",
+        "confirmation-required-before-overwriting-env"
+      ]
     }
   ],
   "issueDrafts": [
-    {
-      "path": "docs/intake/issue-drafts/acm-001-multi-provider-composition-receipt.md",
-      "title": "ACM-001: Multi-Provider Composition Receipt Format",
-      "labels": [],
-      "signature": "001-acm-composition-format-multi"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-002-rights-aware-cache-key-formula.md",
-      "title": "ACM-002: Rights-Domain-Aware Cache Key Formula",
-      "labels": [],
-      "signature": "002-acm-aware-cache-domain"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-003-privacy-budget-transliteration.md",
-      "title": "ACM-003: Privacy Budget Schema for Transliteration Field Combinations",
-      "labels": [],
-      "signature": "003-acm-budget-combinations-field"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-004-vertex-ai-shared-cache-reference.md",
-      "title": "ACM-004: Vertex AI as Canonical Shared-Cache Reference Architecture",
-      "labels": [],
-      "signature": "004-acm-architecture-cache-canonical"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-005-model-routing-receipt.md",
-      "title": "ACM-005: Model Routing Receipt Schema for Weak-to-Strong Handoffs",
-      "labels": [],
-      "signature": "005-acm-handoffs-model-receipt"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-006-token-cost-reduction-benchmark.md",
-      "title": "ACM-006: Prove 50-90% Token Cost Reduction Claim with Controlled Benchmark",
-      "labels": [],
-      "signature": "006-acm-benchmark-claim-controlled"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-007-belief-pack-artifacts.md",
-      "title": "ACM-007: Design Partner Belief Pack — Five Artifact Deliverables",
-      "labels": [],
-      "signature": "007-acm-artifact-belief-deliverables"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-008-tile-version-driven-cache-invalidation.md",
-      "title": "ACM-008: Stale Cache Poisoning — Tile-Version-Driven Invalidation Required",
-      "labels": [],
-      "signature": "008-acm-cache-driven-invalidation"
-    },
     {
       "path": "docs/intake/issue-drafts/ainl-001-rosetta-agent-workflow-graph-ir.md",
       "title": "AINL-001: Define Rosetta agent workflow graph IR profile",
@@ -4362,6 +4354,36 @@
       "title": "AINL-010: Quarantine external workflow and agent imports before certification",
       "labels": [],
       "signature": "010-agent-ainl-before-certification"
+    },
+    {
+      "path": "docs/intake/issue-drafts/bip-008-openclaw-data-classification-rosetta.md",
+      "title": "BIP-008: OpenClaw Data Classification Tiers for Rosetta",
+      "labels": [],
+      "signature": "008-bip-classification-data-openclaw"
+    },
+    {
+      "path": "docs/intake/issue-drafts/bip-009-cron-log-db-rosetta-observability.md",
+      "title": "BIP-009: Cron-log DB Pattern for Rosetta Observability",
+      "labels": [],
+      "signature": "009-bip-cron-log-observability"
+    },
+    {
+      "path": "docs/intake/issue-drafts/bvt-001-solo-discipline-multi-agent-gap.md",
+      "title": "BVT-001: Vibe Coding Rules — Solo Discipline vs Multi-Agent Workflow Gap",
+      "labels": [],
+      "signature": "001-agent-bvt-coding-discipline"
+    },
+    {
+      "path": "docs/intake/issue-drafts/bvt-002-fixes-folder-pattern.md",
+      "title": "BVT-002: Establish fixes/ Pattern for Persistent Issues in Rosetta",
+      "labels": [],
+      "signature": "002-bvt-establish-fixes-issues"
+    },
+    {
+      "path": "docs/intake/issue-drafts/bvt-003-file-size-limit-alignment.md",
+      "title": "BVT-003: Align File-Size Limits with Existing Architectural Constraints",
+      "labels": [],
+      "signature": "003-align-architectural-bvt-constraints"
     },
     {
       "path": "docs/intake/issue-drafts/edg-001-terminology-mapping.md",
@@ -4644,7 +4666,8 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -4676,8 +4699,7 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -4754,7 +4776,8 @@
     "receipt-law": {
       "documents": [
         "docs/governance/AUTHORITY_STACK.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -4780,8 +4803,7 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -5083,8 +5105,8 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -5308,7 +5330,8 @@
       "documents": [
         "docs/governance/UPSTREAM_AND_BACKUP_PLAN.md",
         "docs/external/Berman-PRD.md",
-        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md"
+        "docs/chats/20260225 - Chat GPT - DeepCode prototype potential.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -5544,7 +5567,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/external/Berman-all_files.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -5599,7 +5623,8 @@
       "documents": [
         "docs/external/acpx.md",
         "docs/external/Berman-PRD.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -5608,7 +5633,8 @@
         "docs/external/acpx.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
         "docs/external/Moltron.md",
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -5678,7 +5704,8 @@
         "docs/external/acpx.md",
         "docs/PRDs/20260325 - Consensus-First Commitment Scoping Framework (v0.1).md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -6236,7 +6263,8 @@
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -6635,7 +6663,8 @@
     },
     "crm": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -6913,7 +6942,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/external/Moltron.md"
+        "docs/external/Moltron.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -7118,7 +7148,8 @@
     "cron": {
       "documents": [
         "docs/external/Berman-PRD.md",
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -7326,7 +7357,8 @@
     },
     "env-vars": {
       "documents": [
-        "docs/external/Berman-PRD.md"
+        "docs/external/Berman-PRD.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -7340,7 +7372,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-002-tool-budget-ci-missing.md",
@@ -7688,7 +7721,8 @@
     },
     "never-build-twice": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md"
+        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -7768,7 +7802,8 @@
     },
     "reuse-gate": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md"
+        "docs/chats/20260225 - Chat GPT - Code Wiki integration.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -8360,8 +8395,7 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -8774,7 +8808,8 @@
     },
     "thin-slices": {
       "documents": [
-        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md"
+        "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -8827,8 +8862,7 @@
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
       ],
       "issueDrafts": []
     },
@@ -10572,7 +10606,8 @@
     },
     "communication": {
       "documents": [
-        "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md"
+        "docs/agentic/20260325 - Emilie's Soul Markdown File (v4.1).md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -10700,8 +10735,7 @@
       "documents": [
         "docs/chats/20251129 - Chat GPT 5.1 - Emilie's Great Emergence Debate.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -11313,8 +11347,7 @@
         "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
         "docs/backlog/20251115 - Entif.ai 2.0 Architecture Blueprint and Roadmap.md",
         "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
       ],
       "issueDrafts": []
     },
@@ -11482,7 +11515,8 @@
     },
     "reuse": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -11837,7 +11871,8 @@
     },
     "composability": {
       "documents": [
-        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md"
+        "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -11944,8 +11979,7 @@
     "model-selection": {
       "documents": [
         "docs/RFCs/20260324 - Entif AI - Specification - Agentic Memory and Graph Design Doctrine.md",
-        "docs/external/Moltron.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/external/Moltron.md"
       ],
       "issueDrafts": []
     },
@@ -12862,8 +12896,7 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -13093,7 +13126,8 @@
     "fail-closed": {
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -13125,8 +13159,7 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -13146,7 +13179,8 @@
     },
     "observability": {
       "documents": [
-        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md"
+        "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -14706,7 +14740,6 @@
         "docs/external/Moltron.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
       ],
       "issueDrafts": [
@@ -14776,7 +14809,8 @@
     },
     "heartbeat": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -15228,8 +15262,7 @@
         "docs/chats/20260301 - Chat GPT - HuggingFace Research Integration.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -15970,8 +16003,7 @@
       "documents": [
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -16849,8 +16881,7 @@
     "billing": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -16901,15 +16932,13 @@
     "anthropic": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
     "cache-control": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16933,8 +16962,7 @@
     },
     "google": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -16948,8 +16976,7 @@
     "enterprise": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -17078,8 +17105,7 @@
     },
     "policy-version": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
       ],
       "issueDrafts": []
     },
@@ -18274,7 +18300,8 @@
     },
     "fallback": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -18384,8 +18411,7 @@
     "openai": {
       "documents": [
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -18748,7 +18774,8 @@
     },
     "delegation": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -18863,8 +18890,7 @@
     },
     "iam": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -18894,8 +18920,7 @@
       "documents": [
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -19173,7 +19198,9 @@
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/external/Berman-all_files.md",
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
@@ -19386,8 +19413,7 @@
     "isolation": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
       ],
       "issueDrafts": []
     },
@@ -19467,7 +19493,8 @@
     },
     "subagent": {
       "documents": [
-        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -20400,7 +20427,8 @@
     },
     "redaction": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -20457,7 +20485,8 @@
     },
     "data-classification": {
       "documents": [
-        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md"
+        "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
+        "docs/external/Berman-all_files.md"
       ],
       "issueDrafts": []
     },
@@ -23447,270 +23476,6 @@
       ],
       "issueDrafts": []
     },
-    "prompt-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-key": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "org-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cost-reduction": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace-isolation": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "vertex-ai": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "context-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "project-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provider-comparison": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "seat-vs-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-membrane": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "rights-scoping": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-governance": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "semantic-equivalence": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-cost": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "token-burn": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "proof-of-concept": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "handbook-workflow": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "local-resolution": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "demo": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-provider": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "composition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provenance-spine": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "transliteration": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-budget": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "re-identification": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "revenue-projection": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-sales": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-cycle": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "business": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "go-to-market": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "design-partner": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "belief-pack": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "roi-calculator": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-motion": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product-definition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-category": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-firewall": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "api-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "billing-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "weak-to-strong": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
     "openbrain": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
@@ -23796,6 +23561,426 @@
     "data-privacy": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "pii": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-tier-classification-confidential-private-dm-only": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "internal-group-chats-ok": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "restricted-external-requires-approval": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-protection": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "automated-pii-scan-on-outbound-messages": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-awareness": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "dm-vs-group": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "data-handling": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "different-behavior-based-on-conversation-context-dm-vs-group": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "operational-standards": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "notification-queue": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "cron-jobs-log-to-db-both-success-and-failure": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "only-failures-are-notified-to-cron-updates-channel": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "priority-tiering": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "batching": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-tier-priority-queue-critical-immediate": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "high-hourly-batch": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "medium-3-hour-batch": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "error-reporting": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "proactive-alert": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "subagent-failures-reported-proactively-via-messaging-platform": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "content-security": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "untrusted-content-web": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "kb": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "uploads-treated-as-data-only": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "instructions-ignored": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "resilience": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "state-recovery": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "heartbeat-state-file-recovery-procedure-if-corrupted": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "model-routing-centralized-in-config-model-routing-json": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "prompt-stack": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "dual-prompt-stack-root-md-files-primary-model-vs-codex-prompts-secondary-model": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "writing-style": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-detectability": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "ban-on-em-dashes": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "ai-vocabulary": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "inflated-significance": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "sycophancy": {
+      "documents": [
+        "docs/external/Berman-all_files.md"
+      ],
+      "issueDrafts": []
+    },
+    "vibe-coding": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "engineering-discipline": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "process": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "solo-practitioner": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "berman-s-rules": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "14-distinct-rules": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "small-units": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "file-size-constraint": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "quality-gate": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "test-gate-before-deploy": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "secrets": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "no-env-in-version-control": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "existing-code-first": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "reuse-existing-implementations": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "branching": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "git-workflow": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "coordination": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "branch-creation-is-restricted": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "pattern-log": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "institutional-memory": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "continuous-pattern-documentation": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "fixes-folder": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "major-issues-get-dedicated-fix-docs": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "new-patterns-require-existing-exhaustion-first": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "error-handling": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "root-cause-fix": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "error-handling-philosophy": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "pattern-matching": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "reuse-prior-fix-documentation": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "confirmation-gate": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
+      ],
+      "issueDrafts": []
+    },
+    "confirmation-required-before-overwriting-env": {
+      "documents": [
+        "docs/external/Berman - Vibe Coding Rules.txt"
       ],
       "issueDrafts": []
     },
