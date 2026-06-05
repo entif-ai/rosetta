@@ -11,6 +11,43 @@ meta:
   next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
     Token Efficiency.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
+  processed_this_cycle:
+    - path: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+      extraction: docs/intake/docs-intelligence/2026-06-05-api-driven-cache-mgmt.md
+      findings: 27
+      issue_drafts: 5
+      issue_draft_ids:
+        - acm-001-multi-axis-cache-key.md
+        - acm-002-transliteration-privacy-budget.md
+        - acm-003-cache-invalidation-policy-version.md
+        - acm-004-composite-artifact-provenance.md
+        - acm-005-routing-handoff-auditability.md
+      concepts:
+        - semantic-cache-key
+        - multi-axis-cache-key
+        - privacy-membrane
+        - transliteration
+        - join-leakage
+        - privacy-budget
+        - cache-invalidation
+        - policy-tile-supersession
+        - composite-artifact-provenance
+        - routing-handoff-audit
+        - weak-to-strong-routing
+        - inference-firewall
+        - semantic-equalizer
+        - entif-product-positioning
+        - seat-vs-cache-boundary
+        - vendor-caching-semantics
+        - openai-prompt-caching
+        - anthropic-cache-control
+        - gemini-context-caching
+        - vertex-ai-cache
+        - context-fabric
+        - cache-constitution
+        - sell-before-build
+        - gtm-three-track
+        - design-partner-pilot
 concepts:
 - id: authority-chain
   name: Authority Chain
