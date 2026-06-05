@@ -5515,6 +5515,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  processed_at: '2026-06-05T05:10:00Z'
+  findings: 20
+  pr: null
+  issues: 9
+  notes: 'Extraction: provider cache semantics (OpenAI/Anthropic/Gemini), Entif inference firewall product thesis, go-to-market three-track parallelization, 9 issue drafts IDI-001 through IDI-009.'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6404,84 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/idi-001-semantic-cache-key-rights-domain.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-001-semantic-cache-key-rights-domain
+  priority: P1
+  type: architecture/spec-gap
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-002-privacy-membrane-join-attack-risk.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-002-privacy-membrane-join-attack-risk
+  priority: P1
+  type: security/privacy
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-003-cache-invalidation-tile-versioning.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-003-cache-invalidation-tile-versioning
+  priority: P1
+  type: reliability/correctness
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-004-multi-provider-composition-provenance.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-004-multi-provider-composition-provenance
+  priority: P2
+  type: architecture
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-005-weak-strong-routing-audit.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-005-weak-strong-routing-audit
+  priority: P2
+  type: governance
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-006-enrichment-context-policy-schema.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-006-enrichment-context-policy-schema
+  priority: P2
+  type: policy/schema
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-007-vendor-incentive-conflict-positioning.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-007-vendor-incentive-conflict-positioning
+  priority: P2
+  type: market/positioning
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-008-anthropic-workspace-isolation-staleness.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-008-anthropic-workspace-isolation-staleness
+  priority: P1
+  type: documentation
+  url: null
+  status: draft
+- path: docs/intake/issue-drafts/idi-009-openai-seat-org-conflation.md
+  source_doc: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
+  source_pr: null
+  branch: docs-intelligence/20260411-api-driven-cache-management
+  issue_id: idi-009-openai-seat-org-conflation
+  priority: P1
+  type: documentation
+  url: null
+  status: draft

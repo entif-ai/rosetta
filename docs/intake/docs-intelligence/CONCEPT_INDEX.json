@@ -4138,81 +4138,6 @@
       ]
     },
     {
-      "extractionPath": "docs/intake/docs-intelligence/2026-06-04-api-driven-cache-management.md",
-      "sourcePath": "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-      "title": "DI Extraction — API-driven Cache Management",
-      "concepts": [
-        "openai",
-        "prompt-caching",
-        "cache-key",
-        "org-scope",
-        "cache",
-        "cost-reduction",
-        "anthropic",
-        "cache-control",
-        "workspace-isolation",
-        "isolation",
-        "gemini",
-        "vertex-ai",
-        "context-caching",
-        "iam",
-        "project-scope",
-        "google",
-        "cache-boundary",
-        "provider-comparison",
-        "seat-vs-org",
-        "entif",
-        "privacy-membrane",
-        "guard",
-        "rights-scoping",
-        "cache-governance",
-        "security",
-        "privacy",
-        "abac",
-        "semantic-equivalence",
-        "policy-version",
-        "rights",
-        "governance",
-        "inference-cost",
-        "token-burn",
-        "economics",
-        "proof-of-concept",
-        "handbook-workflow",
-        "local-resolution",
-        "product",
-        "demo",
-        "multi-provider",
-        "composition",
-        "provenance-spine",
-        "architecture",
-        "integration",
-        "transliteration",
-        "privacy-budget",
-        "re-identification",
-        "revenue-projection",
-        "enterprise-sales",
-        "sales-cycle",
-        "business",
-        "go-to-market",
-        "design-partner",
-        "belief-pack",
-        "roi-calculator",
-        "sales-motion",
-        "product-definition",
-        "enterprise-category",
-        "inference-firewall",
-        "workspace",
-        "api-org",
-        "billing-boundary",
-        "enterprise",
-        "billing",
-        "weak-to-strong",
-        "routing",
-        "audit",
-        "model-selection"
-      ]
-    },
-    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-04-openbrain-project-analysis.md",
       "sourcePath": "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
       "title": "Extraction: OpenBrain Project Analysis",
@@ -4252,57 +4177,100 @@
         "data-privacy",
         "decision"
       ]
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-api-driven-cache-mgmt.md",
+      "sourcePath": "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
+      "title": "Docs Intelligence Extraction — 20260411 - Chat GPT - API-driven Cache Management.md",
+      "concepts": [
+        "openai",
+        "cache",
+        "org-scope",
+        "caching",
+        "enterprise",
+        "anthropic",
+        "workspace-scope",
+        "workspace",
+        "cache-control",
+        "gemini",
+        "project-scope",
+        "google",
+        "vertex",
+        "vertex-ai",
+        "iam",
+        "cache-key",
+        "rights-domain",
+        "policy-version",
+        "rights",
+        "context-fabric",
+        "privacy-membrane",
+        "transliteration",
+        "join-attack",
+        "privacy",
+        "security",
+        "inference",
+        "cache-invalidation",
+        "policy-tiles",
+        "stale-answer",
+        "invalidation",
+        "correctness",
+        "multi-provider",
+        "composition",
+        "provenance-spine",
+        "architecture",
+        "integration",
+        "provenance",
+        "weak-to-strong",
+        "routing",
+        "audit",
+        "governance",
+        "model-selection",
+        "product-thesis",
+        "inference-firewall",
+        "semantic-cache",
+        "entif",
+        "product",
+        "market-positioning",
+        "value-proposition",
+        "privacy-surface",
+        "token-reduction",
+        "value",
+        "enrichment-context",
+        "privacy-policy",
+        "policy",
+        "vendor-incentive",
+        "business-model",
+        "market",
+        "commercial-angle",
+        "roi",
+        "design-partner",
+        "sales",
+        "business",
+        "go-to-market",
+        "sales-motion",
+        "warm-rolodex",
+        "network",
+        "parallelization",
+        "mvp",
+        "demo-ammo",
+        "engineering",
+        "belt-and-suspenders",
+        "defense-in-depth",
+        "resilience",
+        "token-burn",
+        "context-waste",
+        "efficiency",
+        "cost",
+        "context",
+        "three-tracks",
+        "belief-pack",
+        "commercial-motion",
+        "build-track",
+        "strategy"
+      ]
     }
   ],
   "issueDrafts": [
-    {
-      "path": "docs/intake/issue-drafts/acm-001-multi-provider-composition-receipt.md",
-      "title": "ACM-001: Multi-Provider Composition Receipt Format",
-      "labels": [],
-      "signature": "001-acm-composition-format-multi"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-002-rights-aware-cache-key-formula.md",
-      "title": "ACM-002: Rights-Domain-Aware Cache Key Formula",
-      "labels": [],
-      "signature": "002-acm-aware-cache-domain"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-003-privacy-budget-transliteration.md",
-      "title": "ACM-003: Privacy Budget Schema for Transliteration Field Combinations",
-      "labels": [],
-      "signature": "003-acm-budget-combinations-field"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-004-vertex-ai-shared-cache-reference.md",
-      "title": "ACM-004: Vertex AI as Canonical Shared-Cache Reference Architecture",
-      "labels": [],
-      "signature": "004-acm-architecture-cache-canonical"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-005-model-routing-receipt.md",
-      "title": "ACM-005: Model Routing Receipt Schema for Weak-to-Strong Handoffs",
-      "labels": [],
-      "signature": "005-acm-handoffs-model-receipt"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-006-token-cost-reduction-benchmark.md",
-      "title": "ACM-006: Prove 50-90% Token Cost Reduction Claim with Controlled Benchmark",
-      "labels": [],
-      "signature": "006-acm-benchmark-claim-controlled"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-007-belief-pack-artifacts.md",
-      "title": "ACM-007: Design Partner Belief Pack — Five Artifact Deliverables",
-      "labels": [],
-      "signature": "007-acm-artifact-belief-deliverables"
-    },
-    {
-      "path": "docs/intake/issue-drafts/acm-008-tile-version-driven-cache-invalidation.md",
-      "title": "ACM-008: Stale Cache Poisoning — Tile-Version-Driven Invalidation Required",
-      "labels": [],
-      "signature": "008-acm-cache-driven-invalidation"
-    },
     {
       "path": "docs/intake/issue-drafts/ainl-001-rosetta-agent-workflow-graph-ir.md",
       "title": "AINL-001: Define Rosetta agent workflow graph IR profile",
@@ -4410,6 +4378,60 @@
       "title": "EDG-008 — Zero-Trust Node Design: Long-Horizon Infrastructure Requirements",
       "labels": [],
       "signature": "008-design-edg-horizon-infrastructure"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-001-semantic-cache-key-rights-domain.md",
+      "title": "IDI-001: Semantic Cache Key Must Encode Rights Domain, Not Just Intent",
+      "labels": [],
+      "signature": "001-cache-domain-encode-idi"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-002-privacy-membrane-join-attack-risk.md",
+      "title": "IDI-002: Transliteration Alone Is Insufficient for Privacy Membrane — Join Attack Risk",
+      "labels": [],
+      "signature": "002-alone-attack-idi-insufficient"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-003-cache-invalidation-tile-versioning.md",
+      "title": "IDI-003: Cache Invalidation Must Be Tied to Policy Tile Versioning, Not TTL Alone",
+      "labels": [],
+      "signature": "003-alone-cache-idi-invalidation"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-004-multi-provider-composition-provenance.md",
+      "title": "IDI-004: Multi-Provider Composition Requires Merged-Answer Provenance Schema",
+      "labels": [],
+      "signature": "004-answer-composition-idi-merged"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-005-weak-strong-routing-audit.md",
+      "title": "IDI-005: Weak-to-Strong Routing Requires Auditable Handoff Receipt",
+      "labels": [],
+      "signature": "005-auditable-handoff-idi-receipt"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-006-enrichment-context-policy-schema.md",
+      "title": "IDI-006: EnrichmentContext Policy Schema — Anonymization ≠ Authorization",
+      "labels": [],
+      "signature": "006-anonymization-authorization-enrichmentcontext-idi"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-007-vendor-incentive-conflict-positioning.md",
+      "title": "IDI-007: Vendor Per-Token Incentive Conflict — Competitive Positioning Opportunity",
+      "labels": [],
+      "signature": "007-competitive-conflict-idi-incentive"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-008-anthropic-workspace-isolation-staleness.md",
+      "title": "IDI-008: Anthropic Workspace Isolation Change (Feb 2026) — Rosetta Docs May Be Stale",
+      "labels": [],
+      "signature": "008-2026-anthropic-change-docs"
+    },
+    {
+      "path": "docs/intake/issue-drafts/idi-009-openai-seat-org-conflation.md",
+      "title": "IDI-009: OpenAI ChatGPT Seat vs. API Org Conflation — Existing Docs May Need Correction",
+      "labels": [],
+      "signature": "009-api-chatgpt-conflation-correction"
     },
     {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
@@ -5083,8 +5105,8 @@
         "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -6670,7 +6692,8 @@
       "documents": [
         "docs/external/Berman-PRD.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md"
+        "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -7842,7 +7865,8 @@
         "/Users/cr8s/.openclaw/workspace/Code/rosetta/docs/PRDs/20251024 - PRD - Rosetta - Cognitive Tapestries via Semantic Latticing.md",
         "docs/chats/20260226 - Chat GPT - Entif.AI Systems Architecture Synthesis.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -8335,7 +8359,8 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -10918,7 +10943,8 @@
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
         "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md"
+        "docs/intake/docs-intelligence/2026-05-26-openbrain-ob1-assimilation-addendum.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -11261,7 +11287,8 @@
     },
     "cost": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -11488,7 +11515,8 @@
     },
     "engineering": {
       "documents": [
-        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md"
+        "docs/external/Entif 2.0 - Enriched by External Advancements - 20251016.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -12862,8 +12890,7 @@
       "documents": [
         "docs/RFCs/20260228 - Entif v0 - Spec Proposal - Agentic Messaging.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -13125,8 +13152,7 @@
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "docs/PRDs/20260426 - Entif - PRD - Context CLI and Memory Services.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
       ],
       "issueDrafts": []
     },
@@ -14706,8 +14732,8 @@
         "docs/external/Moltron.md",
         "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md",
-        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+        "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": [
         "docs/intake/issue-drafts/OB1-010-openbrain-telemetry-receipt-alignment.md",
@@ -14934,7 +14960,8 @@
     },
     "inference": {
       "documents": [
-        "docs/backlog/Entif v0 Second Brain Architecture Plan.md"
+        "docs/backlog/Entif v0 Second Brain Architecture Plan.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -15970,8 +15997,7 @@
       "documents": [
         "docs/external/Moltron.md",
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -16842,15 +16868,15 @@
     },
     "vertex": {
       "documents": [
-        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md"
+        "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
     "billing": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
       ],
       "issueDrafts": []
     },
@@ -17440,7 +17466,8 @@
     "mvp": {
       "documents": [
         "docs/chats/20260221 - Chat GPT - Security, Caching and Rosetta Updates.md",
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -17836,7 +17863,8 @@
     },
     "parallelization": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -18040,7 +18068,8 @@
     },
     "semantic-cache": {
       "documents": [
-        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md"
+        "docs/chats/20260225 - Chat GPT - Token boundaries explained.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -18476,7 +18505,8 @@
     },
     "market": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -18814,7 +18844,8 @@
     },
     "cache-invalidation": {
       "documents": [
-        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md"
+        "docs/chats/20260226 - Chat GPT - YT, Agents, Auth and Cache.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -19386,8 +19417,7 @@
     "isolation": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "docs/governance/Entif 2.0 - Decentralization and Governance.md",
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+        "docs/governance/Entif 2.0 - Decentralization and Governance.md"
       ],
       "issueDrafts": []
     },
@@ -19554,7 +19584,8 @@
     "strategy": {
       "documents": [
         "~/.openclaw/workspace/Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
-        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md"
+        "Code/rosetta/docs/PRDs/20260426 - Entif and Rosetta PRD.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -19717,7 +19748,8 @@
     },
     "value": {
       "documents": [
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -20290,7 +20322,8 @@
     "invalidation": {
       "documents": [
         "docs/intake/docs-intelligence/2026-04-26-entif-memory-compiler-CHUNK_4.md",
-        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md"
+        "Code/rosetta/docs/chats/20260426 - ChatGPT - Entif Memory Compiler.md",
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
@@ -23447,270 +23480,6 @@
       ],
       "issueDrafts": []
     },
-    "prompt-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-key": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "org-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cost-reduction": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace-isolation": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "vertex-ai": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "context-caching": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "project-scope": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provider-comparison": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "seat-vs-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-membrane": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "rights-scoping": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "cache-governance": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "semantic-equivalence": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-cost": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "token-burn": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "proof-of-concept": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "handbook-workflow": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "local-resolution": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "demo": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "multi-provider": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "composition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "provenance-spine": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "transliteration": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "privacy-budget": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "re-identification": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "revenue-projection": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-sales": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-cycle": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "business": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "go-to-market": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "design-partner": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "belief-pack": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "roi-calculator": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "sales-motion": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "product-definition": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "enterprise-category": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "inference-firewall": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "workspace": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "api-org": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "billing-boundary": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
-    "weak-to-strong": {
-      "documents": [
-        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
-      ],
-      "issueDrafts": []
-    },
     "openbrain": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
@@ -23796,6 +23565,300 @@
     "data-privacy": {
       "documents": [
         "docs/chats/20260323 - Chat GPT - OpenBrain Project Analysis.md"
+      ],
+      "issueDrafts": []
+    },
+    "org-scope": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "workspace-scope": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "workspace": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "project-scope": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "vertex-ai": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "cache-key": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "rights-domain": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-fabric": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-membrane": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "transliteration": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "join-attack": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "policy-tiles": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "stale-answer": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "correctness": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "multi-provider": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "composition": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "provenance-spine": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "weak-to-strong": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "product-thesis": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "inference-firewall": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "product": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "market-positioning": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "value-proposition": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-surface": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-reduction": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "enrichment-context": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "privacy-policy": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "vendor-incentive": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "business-model": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "commercial-angle": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "roi": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "design-partner": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "sales": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "business": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "go-to-market": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "sales-motion": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "warm-rolodex": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "network": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "demo-ammo": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "belt-and-suspenders": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "defense-in-depth": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "resilience": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "token-burn": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "context-waste": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "efficiency": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "three-tracks": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "belief-pack": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "commercial-motion": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
+      ],
+      "issueDrafts": []
+    },
+    "build-track": {
+      "documents": [
+        "docs/chats/20260411 - Chat GPT - API-driven Cache Management.md"
       ],
       "issueDrafts": []
     },
