@@ -228,7 +228,7 @@ One PR per cycle.
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
 | docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | locked:2026-06-05T00:40:46.143Z:heartbeat:1780620046:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T00:40:46.143Z |
-| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | locked:2026-06-05T00:41:57.302Z:heartbeat:1780620117:docs-intelligence/20260413-model-training-cost-and-design | 0 |  |  |  |  | 2026-06-05T00:41:57.302Z |
+| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | processed:2026-06-05T00:48:42.088Z:1261 | 0 | 22 | 6 |  |  | 2026-06-05T00:48:42.088Z |
 | docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
