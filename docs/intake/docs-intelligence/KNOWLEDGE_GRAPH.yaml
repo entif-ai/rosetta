@@ -1,15 +1,14 @@
 meta:
   version: '0.9'
   generated: '2026-05-26T16:50:00Z'
-  total_docs_processed: 44
-  active_issue_drafts: 366
+  total_docs_processed: 45
+  active_issue_drafts: 372
   archived_issue_drafts: 162
-  total_issue_drafts_inventory: 528
-  docs_intelligence_files: 43
+  total_issue_drafts_inventory: 534
+  docs_intelligence_files: 44
   inventory_note: Counts come from the current filesystem; curated lists below are
     still manual until DI-009 automates graph updates.
-  next_doc_to_process: docs/chats/20260412 - Chat GPT - OMOC, Ontologies and Agentic
-    Token Efficiency.md
+  next_doc_to_process: docs/chats/20260411 - Chat GPT - API-driven Cache Management.md
   reconciliation_source: docs/intake/ISSUE_RECONCILIATION.md
 concepts:
 - id: authority-chain
@@ -6398,3 +6397,97 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+
+# === 2026-06-04 heartbeat cycle additions ===
+
+# Issue-draft inventory additions
+- path: docs/intake/issue-drafts/rrp-001-math-random-nonce.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-001-math-random-nonce
+  priority: P0
+  type: security
+  status: draft
+- path: docs/intake/issue-drafts/rrp-002-guard-signature-stub.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-002-guard-signature-stub
+  priority: P0
+  type: security
+  status: draft
+- path: docs/intake/issue-drafts/rrp-003-pack-id-naming.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-003-pack-id-naming
+  priority: P2
+  type: spec-gap
+  status: draft
+- path: docs/intake/issue-drafts/rrp-004-traceability-headers-not-enforced.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-004-traceability-headers-not-enforced
+  priority: P2
+  type: tooling
+  status: draft
+- path: docs/intake/issue-drafts/rrp-005-jcs-rfc8785-gap.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-005-jcs-rfc8785-gap
+  priority: P1
+  type: risk
+  status: draft
+- path: docs/intake/issue-drafts/rrp-006-sqlite-postgres-migration.md
+  source_doc: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  issue_id: rrp-006-sqlite-postgres-migration
+  priority: P2
+  type: architecture
+  status: draft
+
+# Concept entries for key new concepts
+- id: rrp-first-mvp
+  name: RRP-First MVP
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'Decision: MVP alpha is RRP-first, not app-first. The thing proven first is deterministic canonicalization, CID stability, signed receipts, receipt-bundle tapestries, guard admission, and replay/verification.'
+  extends:
+  - text-core-mvp
+  - receipt-law
+  referenced_by:
+  - docs/intake/docs-intelligence/2026-06-04-prd-revisions-synthesis-extended-thinking.md
+  status: active
+- id: builtin-echo-slice-zero
+  name: Builtin Echo Slice-Zero
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'The smallest honest constitutional proof: builtin.echo with full guard/receipt/tapestry verification, before code.scaffold --dry-run. Slice zero of the alpha staircase.'
+  extends:
+  - rrp-first-mvp
+  - text-core-mvp
+  referenced_by:
+  - docs/intake/docs-intelligence/2026-06-04-prd-revisions-synthesis-extended-thinking.md
+  status: active
+- id: math-random-nonce-bug
+  name: Math.random Nonce Bug
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'CRITICAL: cryptoNonce() in receipt-bundle.ts uses Math.random() which is not cryptographically secure. Predictable nonces undermine receipt uniqueness and replay protection.'
+  extends:
+  - receipt-law
+  referenced_by:
+  - docs/intake/issue-drafts/rrp-001-math-random-nonce.md
+  status: active
+- id: guard-signature-stub
+  name: Guard Signature Verification Stub
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'verifyDecisionSignature() in admission.ts is an MVP stub that only checks for signature object presence (kid and sig_b64), not actual cryptographic validity. Fail-open risk.'
+  extends:
+  - write-admission-gate
+  referenced_by:
+  - docs/intake/issue-drafts/rrp-002-guard-signature-stub.md
+  status: active
+- id: alpha-rc-staircase
+  name: Alpha RC Staircase
+  introduced_by: docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md
+  introduced_at: '2026-06-04'
+  definition: 'Alpha RC-0 through RC-4 build staircase: Nx workspace → JCS/CID + schemas → Guard + builtin.echo → code.scaffold dry-run → local CAS + SQLite retrieval. RC-4 is the Text-Core MVP gate.'
+  extends:
+  - text-core-mvp
+  referenced_by:
+  - docs/intake/docs-intelligence/2026-06-04-prd-revisions-synthesis-extended-thinking.md
+  status: active
