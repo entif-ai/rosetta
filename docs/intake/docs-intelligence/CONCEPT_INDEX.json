@@ -4179,6 +4179,18 @@
       ]
     },
     {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-entif-2-secure-architecture.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-06-05-entif-2-secure-architecture.md",
+      "title": "2026-06-05 — Entif 2.0 Secure Architecture Companion Paper",
+      "concepts": []
+    },
+    {
+      "extractionPath": "docs/intake/docs-intelligence/2026-06-05-normative-staging-doctrine.md",
+      "sourcePath": "docs/intake/docs-intelligence/2026-06-05-normative-staging-doctrine.md",
+      "title": "2026-06-05 — Normative Staging Doctrine",
+      "concepts": []
+    },
+    {
       "extractionPath": "docs/intake/docs-intelligence/2026-06-05-tripwire-protocol.md",
       "sourcePath": "docs/governance/20250710 - Tripwire Protocol - EntifAI.md",
       "title": "2026-06-05 — Tripwire Protocol — EntifAI",
@@ -4364,6 +4376,30 @@
       "signature": "008-design-edg-horizon-infrastructure"
     },
     {
+      "path": "docs/intake/issue-drafts/NSD-001-adr-0001-through-adr-0014-not-authored.md",
+      "title": "[NSD-001] ADR-0001 through ADR-0014 not yet authored",
+      "labels": [],
+      "signature": "0001-001-0014-adr-adr"
+    },
+    {
+      "path": "docs/intake/issue-drafts/NSD-002-doctrine-v0.2-not-frozen.md",
+      "title": "[NSD-002] Doctrine v0.2 not frozen in docs/doctrine/Doctrine-v0.2.md",
+      "labels": [],
+      "signature": "002-docs-doctrine-doctrine-doctrine"
+    },
+    {
+      "path": "docs/intake/issue-drafts/NSD-003-phased-backlog-no-test-stubs.md",
+      "title": "[NSD-003] Phased Backlog v0.1 not expressed as failing tests / package stubs",
+      "labels": [],
+      "signature": "003-backlog-expressed-failing-not"
+    },
+    {
+      "path": "docs/intake/issue-drafts/NSD-004-memory-plane-2-3-no-artifacts.md",
+      "title": "[NSD-004] Plane 2 temporal state and Plane 3 activation/recall — no implementation artifacts",
+      "labels": [],
+      "signature": "004-activation-artifacts-implementation-nsd"
+    },
+    {
       "path": "docs/intake/issue-drafts/OB1-001-section-10-actions-untracked.md",
       "title": "OB1-001: Section 10 Implementation Actions Not Tracked",
       "labels": [
@@ -4513,6 +4549,24 @@
       "title": "SCT-006 — Interpreter-Failure Detection: Frame Persistence and Ontology Violation Tracking",
       "labels": [],
       "signature": "006-detection-failure-frame-interpreter"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SEC-001-blockchain-platform.md",
+      "title": "SEC-001: Blockchain Platform Decision Unresolved",
+      "labels": [],
+      "signature": "001-blockchain-decision-platform-sec"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SEC-002-guard-layer-integration.md",
+      "title": "SEC-002: Guard Layer Implementation Lacks Code-Level Integration Plan",
+      "labels": [],
+      "signature": "002-code-guard-implementation-integration"
+    },
+    {
+      "path": "docs/intake/issue-drafts/SEC-003-tokenomics-absent.md",
+      "title": "SEC-003: Tokenomics Design Completely Absent",
+      "labels": [],
+      "signature": "003-absent-completely-design-sec"
     },
     {
       "path": "docs/intake/issue-drafts/TRP-001-tripwire-activation-threshold.md",
