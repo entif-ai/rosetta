@@ -236,19 +236,19 @@ One PR per cycle.
 | docs/external/Berman - AI Assistant.txt | processed:2026-06-05T05:47:08.955Z:1280 | 0 |  |  |  |  | 2026-06-05T05:47:08.955Z |
 | docs/external/Berman - OpenClaw Implementation Prompts.txt | locked:2026-06-05T05:47:36.010Z:heartbeat:1780638455:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T05:47:36.010Z |
 | docs/external/Berman - Vibe Coding Rules.txt | yes | 0 | 19 | 3 | prd-first,fixes-folder,300-line-limit,test-gate,no-mock-prod,env-guard,readme-pattern-tracker | extracted PR #1281; 3 issue drafts BVR-001-BVR-003 | 2026-06-05T05:48:05.367Z |
-| docs/external/Berman-all_files.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman-gistfile1.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman-oc.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/external/Berman-prompts.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/20250710 - Tripwire Protocol - EntifAI.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md | no | 0 |  |  |  |  |  |
-| docs/governance/20260410 - OpenBrain OB1 Assimilation Addendum (v0.1).md | no | 0 |  |  |  |  |  |
-| docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/20260412 - Source Registry and Repository Profile Annex.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/Entif 2.0 - Decentralization and Governance.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/ROCK-31XX - Rosetta Pasigraphy Protocol - Provenance, Receipts, TruthLint - 20260224.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/external/Berman-all_files.md | processed:2026-06-05T07:03:03.617Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:03.617Z |
+| docs/external/Berman-gistfile1.txt | processed:2026-06-05T07:03:03.642Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:03.642Z |
+| docs/external/Berman-oc.md | processed:2026-06-05T07:03:03.666Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:03.666Z |
+| docs/external/Berman-prompts.md | processed:2026-06-05T07:03:03.689Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:03.689Z |
+| docs/governance/20250710 - Tripwire Protocol - EntifAI.md | processed:2026-06-05T07:03:13.956Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:13.956Z |
+| docs/governance/20251026 - Entif 2.0 - Secure Architecture Companion Paper.md | processed:2026-06-05T07:03:13.981Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:13.981Z |
+| docs/governance/20260410 - Entif.AI - Rosetta - Normative Staging Doctrine (v0.2).md | processed:2026-06-05T07:03:14.005Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:14.005Z |
+| docs/governance/20260410 - OpenBrain OB1 Assimilation Addendum (v0.1).md | processed:2026-06-05T07:03:14.028Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:14.028Z |
+| docs/governance/20260412 - Entif Source Substrate and Repository Provenance Addendum.md | processed:2026-06-05T07:03:14.051Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:14.051Z |
+| docs/governance/20260412 - Source Registry and Repository Profile Annex.md | processed:2026-06-05T07:03:14.074Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:14.074Z |
+| docs/governance/Entif 2.0 - Decentralization and Governance.md | processed:2026-06-05T07:03:14.097Z:1289 | 0 |  |  |  |  | 2026-06-05T07:03:14.097Z |
+| docs/governance/ROCK-31XX - Rosetta Pasigraphy Protocol - Provenance, Receipts, TruthLint - 20260224.md | locked:2026-06-05T07:03:14.122Z:heartbeat:1780642994:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T07:03:14.122Z |
+| docs/governance/rosetta_governance_addendum_personhood_provenance_and_cognitive_twin_risk.md | processed:2026-06-05T07:07:33.045Z:1290 | 0 |  |  |  |  | 2026-06-05T07:07:33.045Z |
 | docs/handoffs/2026-04-13-bootstrap-handoff.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/ideas/20251004 - Agentic Workflow for Media Generation.md | no | 0 |  |  |  |  |  |
 | docs/ideas/20260225 - Chat GPT - SDialog and Tulpamancy.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
