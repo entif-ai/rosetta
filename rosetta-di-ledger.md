@@ -9,7 +9,7 @@
 - repo: ~/.openclaw/workspace/Code/rosetta
 - last_updated: 2026-06-04T18:40Z
 - total_docs_known: 119
-- total_processed: 31
+- total_processed: 32
 - current_batch: batch-3-active
 - telegram_dm_status: failed_2026-04-25T18:20_attempted_signal_not_configured
 - last_telegram_batched_update: 2026-04-25T09:16Z
@@ -227,11 +227,11 @@ One PR per cycle.
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
-| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | processed:2026-06-05T05:35:07.915Z:1278 | 0 |  |  |  |  | 2026-06-05T05:35:07.915Z |
 | docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | yes | 0 | 19 | 6 | rrp-first, alpha-rc-staircase, rock-3111-c, python-boundary, jcs, build-order | extracted 2026-06-05; PR #1272 | 2026-06-05T03:42Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | processed:2026-06-05T05:35:20.222Z:1276 | 0 |  |  |  |  | 2026-06-05T05:35:20.222Z |
+| docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | locked:2026-06-05T05:35:20.248Z:heartbeat:1780637720:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T05:35:20.248Z |
+| docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | processed | 0 | 22 | 4 | reasoning-efficiency, surface-vs-semantic, custom-embedding-model, semantic-control-layer, qlora, lora, dora, kv-cache, roma, transformer-architecture, concept-registry, projection-heads, procrustes-alignment, migration-path, rosetta-native-models | 22 findings incl foundational bets confirmed (surface≠semantic substrate, compression as cognitive lever, machine-native interlingua); QLoRA/DoRA/LoRA mechanics clarified; ROMA hardware confirms stable-substrate pattern; comprehensive NN layering tutorial; 4 issue candidates (REE-001 through REE-004) | 2026-06-05T05:36:20.435Z |
 | docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/external/Berman - AI Assistant.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/external/Berman - OpenClaw Implementation Prompts.txt | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
