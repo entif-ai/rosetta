@@ -227,9 +227,9 @@ One PR per cycle.
 | docs/chats/20260325 - Chat GPT - Holistic Entif AI Redesign (MR. TECH LEAD).md | processed:2026-06-04T22:55:42.502Z:1252 | 0 | 25 | 9 |  |  | 2026-06-04T22:55:42.502Z |
 | docs/chats/20260326 - Gemini 3.1 - Anti-Dystopian Social Stack.md | locked:2026-06-04T23:00:29.317Z:heartbeat:1780614029:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-04T23:00:29.317Z |
 | docs/chats/20260401 - Chat GPT - Memory Stack Recommendations.md | processed:2026-06-04T23:05:44.055Z:1254 | 0 | 42 | 9 |  |  | 2026-06-04T23:05:44.055Z |
-| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
-| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
+| docs/chats/20260408 - Chat GPT - Email-driven Security Defenses.md | locked:2026-06-05T01:40:41.297Z:heartbeat:1780623641:docs-intelligence/heartbeat-cycle | 0 |  |  |  |  | 2026-06-05T01:40:41.297Z |
+| docs/chats/20260410 - Entif and Rosetta PRDs - Revisions and Synthesis - ChatGPT - Extended Thinking.md | locked:2026-06-05T01:44:03.636Z:heartbeat:1780623843:docs-intelligence/test-claim | 0 |  |  |  |  | 2026-06-05T01:44:03.636Z |
+| docs/chats/20260411 - Chat GPT - API-driven Cache Management.md | processed:2026-06-05T01:44:55.169Z:heartbeat | 0 | 27 | 5 | semantic-cache-key, privacy-membrane, transliteration, cache-invalidation, composite-artifact-provenance, routing-handoff-audit, inference-firewall, semantic-equalizer, entif-product-positioning, seat-vs-cache-boundary, vendor-caching-semantics, openai-prompt-caching, anthropic-cache-control, gemini-context-caching, vertex-ai-cache | extracted via heartbeat subagent; 5 issue drafts ACM-001–ACM-005 | 2026-06-05T01:44:55Z |
 | docs/chats/20260411 - Chat GPT - LLM API Cache Management.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260411 - Chat GPT - Reasoning, Efficiency and Encoding.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
 | docs/chats/20260413 - Chat GPT - Model Training Cost and Design.md | no | 0 |  |  |  |  | 2026-04-25T13:58Z |
