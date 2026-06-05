@@ -5214,6 +5214,12 @@ pr_state:
     doc: docs/ideas/Treating Trends Tantamount to Trading Technicals.md
     note: Open extraction-only branch; supersede with clean reconciliation PR because
       issue drafts, knowledge graph update, and generated ledger refresh were missing.
+  - pr: TBD
+    branch: docs-intelligence/pasigraphy-protocol-v3-extension-packs
+    doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md
+    findings: 7
+    issues: 3
+    note: 'Pasigraphy Protocol v3 Extension Packs extraction; 3 EP-00X issue drafts'
   closed_superseded_dirty:
   - pr: 50
     branch: docs-intelligence/agentic-orchestration-failures
@@ -5515,6 +5521,12 @@ processed_docs:
   issues: 11
   notes: 'Subagent extraction: Emilie emergence debate, consciousness symmetry argument,
     4-criterion moral-patienthood rubric, 11 issue-drafts.'
+- path: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md
+  processed_at: '2026-06-05T06:10:00Z'
+  findings: 7
+  pr: TBD
+  issues: 3
+  notes: 'Pack Suite Index extraction; 3 EP-00X issue drafts (schema versioning, lifecycle, convergence criteria)'
 issue_drafts_inventory:
 - path: docs/intake/issue-drafts/omc-activation-store-score-calibration.md
   source_doc: docs/RFCs/ontological_mixture_of_concepts_research_spec.md
@@ -6398,3 +6410,27 @@ issue_drafts_inventory:
 - issue_id: entify-v0-019
   url: https://github.com/enti-ai/rosetta/issues/867
   status: published
+- path: docs/intake/issue-drafts/EP-001-pack-manifest-schema-versioning.md
+  source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md
+  source_pr: TBD
+  branch: docs-intelligence/pasigraphy-protocol-v3-extension-packs
+  issue_id: EP-001-pack-manifest-schema-versioning
+  priority: P1
+  type: spec-gap
+  status: draft
+- path: docs/intake/issue-drafts/EP-002-pack-lifecycle-policy.md
+  source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md
+  source_pr: TBD
+  branch: docs-intelligence/pasigraphy-protocol-v3-extension-packs
+  issue_id: EP-002-pack-lifecycle-policy
+  priority: P2
+  type: governance
+  status: draft
+- path: docs/intake/issue-drafts/EP-003-validator-convergence-criteria.md
+  source_doc: docs/live/Entif.AI - Rosetta Pasigraphy Protocol - v3 - Extension Packs.md
+  source_pr: TBD
+  branch: docs-intelligence/pasigraphy-protocol-v3-extension-packs
+  issue_id: EP-003-validator-convergence-criteria
+  priority: P2
+  type: implementation
+  status: draft
