@@ -31,8 +31,11 @@ jobs:
       - name: Resolve workspace dependencies
         run: pnpm install --no-frozen-lockfile
 
+      - name: Format site sources
+        run: pnpm exec prettier --write "apps/entif-site/**/*.{astro,css,json,md,ts,tsx}" "docs/site/**/*.md"
+
       - name: Install Chromium
-        run: pnpm exec playwright install --with-deps chromium
+        run: pnpm --filter @entif-ai/site exec playwright install --with-deps chromium
 
       - name: Verify static site
         run: pnpm exec nx run entif-site:verify
@@ -40,15 +43,15 @@ jobs:
       - name: Run browser feature tests
         run: pnpm exec nx run entif-site:e2e
 
-      - name: Commit resolved lockfile
+      - name: Commit resolved bootstrap changes
         shell: bash
         run: |
-          if git diff --quiet -- pnpm-lock.yaml; then
-            echo "Lockfile already current."
+          if git diff --quiet -- pnpm-lock.yaml apps/entif-site docs/site; then
+            echo "Bootstrap files already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pnpm-lock.yaml
-          git commit -m "chore(site): update pnpm lockfile"
+          git add pnpm-lock.yaml apps/entif-site docs/site
+          git commit -m "chore(site): resolve lockfile and formatting"
           git push
