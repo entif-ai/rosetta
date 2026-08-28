@@ -39,6 +39,12 @@ yarn-error.log
 testem.log
 /typings
 
+# generated site artifacts
+apps/entif-site/.astro/
+apps/entif-site/e2e-debug.log
+apps/entif-site/playwright-report/
+apps/entif-site/test-results/
+
 # System Files
 .DS_Store
 Thumbs.db
