@@ -1,11 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { TopicExplorer } from '../components/TopicExplorer';
-import {
-  getContentPath,
-  joinBasePath,
-  toContentCard,
-} from '../lib/content';
+import { getContentPath, joinBasePath, toContentCard } from '../lib/content';
 import { getPublishedEntries, toSummary } from '../lib/site-data';
 
 const entries = await getPublishedEntries();
@@ -32,8 +28,9 @@ const featuredSummary =
       </p>
       <div class="hero-actions">
         <a class="button primary" href="#research">Explore the research</a>
-        <a class="button secondary" href={joinBasePath(baseUrl, 'projects/rosetta/')}
-          >Meet Rosetta</a
+        <a
+          class="button secondary"
+          href={joinBasePath(baseUrl, 'projects/rosetta/')}>Meet Rosetta</a
         >
       </div>
     </div>
