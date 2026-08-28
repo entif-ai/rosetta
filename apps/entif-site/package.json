@@ -23,7 +23,6 @@
     "@testing-library/user-event": "14.6.6",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
-    "@vitejs/plugin-react": "4.7.0",
     "jsdom": "~22.1.0",
     "typescript": "5.9.3",
     "vitest": "4.1.4"
