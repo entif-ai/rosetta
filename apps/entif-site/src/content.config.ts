@@ -51,7 +51,7 @@ const siteSchema = z
   });
 
 const site = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: '../../docs/site' }),
+  loader: glob({ pattern: '**/*.md', base: './content' }),
   schema: siteSchema,
 });
 
