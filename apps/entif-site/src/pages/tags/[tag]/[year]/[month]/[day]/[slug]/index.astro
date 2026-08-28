@@ -1,0 +1,40 @@
+---
+import PublishedEntry from '../../../../../../../components/PublishedEntry.astro';
+import { getPublicationDateParts } from '../../../../../../../lib/content';
+import {
+  getPublishedEntries,
+  toSummary,
+  type SiteEntry,
+} from '../../../../../../../lib/site-data';
+
+export async function getStaticPaths() {
+  const entries = await getPublishedEntries();
+
+  return entries
+    .filter(({ data }) => data.kind !== 'project')
+    .map((entry) => {
+      const summary = toSummary(entry);
+      const { year, month, day } = getPublicationDateParts(summary.published);
+
+      return {
+        params: {
+          tag: summary.routeTag,
+          year,
+          month,
+          day,
+          slug: summary.slug,
+        },
+        props: { entry, allEntries: entries },
+      };
+    });
+}
+
+interface RouteProps {
+  entry: SiteEntry;
+  allEntries: readonly SiteEntry[];
+}
+
+const { entry, allEntries } = Astro.props as RouteProps;
+---
+
+<PublishedEntry entry={entry} allEntries={allEntries} />

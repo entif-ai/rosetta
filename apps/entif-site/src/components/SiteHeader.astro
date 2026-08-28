@@ -1,0 +1,37 @@
+---
+import { joinBasePath } from '../lib/content';
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="shell header-inner">
+    <a
+      class="brand"
+      href={joinBasePath(baseUrl, '')}
+      aria-label="Entif AI home"
+    >
+      <img
+        src={joinBasePath(baseUrl, 'brand/entif-logo.webp')}
+        width="44"
+        height="44"
+        alt=""
+        decoding="async"
+      />
+      <span>Entif AI</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href={joinBasePath(baseUrl, 'tags/')}>Tags</a></li>
+        <li><a href={joinBasePath(baseUrl, 'projects/')}>Projects</a></li>
+        <li><a href={joinBasePath(baseUrl, 'team/')}>Team</a></li>
+        <li><a href={joinBasePath(baseUrl, 'contact/')}>Contact</a></li>
+        <li>
+          <a href="https://github.com/entif-ai/rosetta" rel="external">GitHub</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

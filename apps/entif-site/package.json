@@ -1,0 +1,30 @@
+{
+  "name": "@entif-ai/site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "nx": {
+    "name": "entif-site"
+  },
+  "dependencies": {
+    "@astrojs/react": "6.0.4",
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "7.2.9",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.6",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "jsdom": "~22.1.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.4"
+  }
+}

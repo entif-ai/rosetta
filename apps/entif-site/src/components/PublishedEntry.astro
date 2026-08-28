@@ -1,0 +1,112 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentCard from './ContentCard.astro';
+import {
+  getTaxonomyTerms,
+  joinBasePath,
+  rankRelatedContent,
+  toContentCard,
+} from '../lib/content';
+import { toSummary, type SiteEntry } from '../lib/site-data';
+
+interface Props {
+  entry: SiteEntry;
+  allEntries: readonly SiteEntry[];
+}
+
+const { entry, allEntries } = Astro.props;
+const { Content } = await render(entry);
+const summary = toSummary(entry);
+const related = rankRelatedContent(summary, allEntries.map(toSummary));
+const baseUrl = import.meta.env.BASE_URL;
+const taxonomyTerms = getTaxonomyTerms(summary);
+const publishedLabel = entry.data.published.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+const isProject = entry.data.kind === 'project';
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  noindex={entry.data.noindex}
+>
+  <article class="article-shell shell">
+    <header class="article-header">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href={joinBasePath(baseUrl, '')}>Entif AI</a>
+        <span aria-hidden="true">/</span>
+        {
+          isProject ? (
+            <a href={joinBasePath(baseUrl, 'projects/')}>Projects</a>
+          ) : (
+            <>
+              <a href={joinBasePath(baseUrl, 'tags/')}>Tags</a>
+              <span aria-hidden="true">/</span>
+              <a href={joinBasePath(baseUrl, `tags/${summary.routeTag}/`)}>
+                {summary.routeTag}
+              </a>
+            </>
+          )
+        }
+      </nav>
+      <p class="eyebrow">{entry.data.kind} · {publishedLabel}</p>
+      <h1>{entry.data.title}</h1>
+      <p class="lede">{entry.data.description}</p>
+      {
+        taxonomyTerms.length > 0 && (
+          <ul class="tag-list article-tags" aria-label="Topics and projects">
+            {taxonomyTerms.map((term) => (
+              <li>
+                <a href={joinBasePath(baseUrl, `tags/${term}/`)}>{term}</a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </header>
+
+    <div class="article-grid">
+      <div class="article-body prose">
+        <Content />
+      </div>
+      <aside class="article-aside" aria-label="Article metadata">
+        <p class="eyebrow">Repository-native</p>
+        <p>
+          This page is generated from reviewed Markdown. Its public history
+          travels with the Rosetta repository.
+        </p>
+        <dl>
+          <div><dt>Content ID</dt><dd>{entry.data.id}</dd></div>
+          <div><dt>Status</dt><dd>{entry.data.status}</dd></div>
+          <div><dt>Authors</dt><dd>{entry.data.authors.join(', ')}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section
+        class="section shell related-section"
+        aria-labelledby="related-heading"
+      >
+        <div class="section-heading narrow">
+          <div>
+            <p class="eyebrow">Semantic neighbors</p>
+            <h2 id="related-heading">Continue through the lattice.</h2>
+          </div>
+        </div>
+        <div class="card-grid">
+          {related.map((item) => (
+            <ContentCard card={toContentCard(item, baseUrl)} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>

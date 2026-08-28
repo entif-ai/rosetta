@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { countTopics, joinBasePath } from '../../lib/content';
+import { getPublishedEntries, toSummary } from '../../lib/site-data';
+
+const baseUrl = import.meta.env.BASE_URL;
+const entries = await getPublishedEntries();
+const topics = [...countTopics(entries.map(toSummary)).entries()].sort(
+  ([leftTerm, leftCount], [rightTerm, rightCount]) =>
+    rightCount - leftCount || leftTerm.localeCompare(rightTerm)
+);
+---
+
+<BaseLayout
+  title="Tags"
+  description="Browse Entif AI research and projects by topic, protocol, system, and project tag."
+>
+  <section class="section shell topic-page">
+    <p class="eyebrow">Taxonomy</p>
+    <h1>Tags</h1>
+    <p class="lede">
+      The public Entif corpus is cross-linked through shared topics and
+      projects.
+    </p>
+    <ul class="tag-list tag-directory" aria-label="Entif tags">
+      {
+        topics.map(([term, count]) => (
+          <li>
+            <a href={joinBasePath(baseUrl, `tags/${term}/`)}>
+              {term} · {count}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

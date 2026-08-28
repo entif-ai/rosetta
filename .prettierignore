@@ -3,3 +3,7 @@
 /coverage
 /.nx/cache
 /.nx/workspace-data
+**/.astro
+**/dist
+**/playwright-report
+**/test-results

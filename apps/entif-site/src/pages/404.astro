@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Not found"
+  description="The requested Entif AI page does not exist."
+  noindex
+>
+  <section class="section shell not-found">
+    <p class="eyebrow">404 · Unresolved reference</p>
+    <h1>This node is not in the graph.</h1>
+    <p class="lede">
+      The address may have moved, remained private, or never existed.
+    </p>
+    <a class="button primary" href={baseUrl}>Return to Entif AI</a>
+  </section>
+</BaseLayout>
