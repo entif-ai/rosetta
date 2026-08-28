@@ -3,6 +3,7 @@ import {
   countTopics,
   getContentPath,
   isPublished,
+  joinBasePath,
   rankRelatedContent,
   toContentCard,
   type ContentSummary,
@@ -28,6 +29,16 @@ describe('content utilities', () => {
     expect(getContentPath(makeItem())).toBe('research/alpha/');
     expect(getContentPath(makeItem({ kind: 'project' }))).toBe(
       'projects/alpha/'
+    );
+  });
+
+  it('normalizes root and nested base paths without collapsing separators', () => {
+    expect(joinBasePath('/', 'research/alpha/')).toBe('/research/alpha/');
+    expect(joinBasePath('/rosetta', 'research/alpha/')).toBe(
+      '/rosetta/research/alpha/'
+    );
+    expect(joinBasePath('/rosetta/', '/research/alpha/')).toBe(
+      '/rosetta/research/alpha/'
     );
   });
 
