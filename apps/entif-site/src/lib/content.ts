@@ -52,12 +52,20 @@ export const getContentPath = (
   item: Pick<ContentSummary, 'kind' | 'slug'>
 ): string => `${contentSections[item.kind]}/${item.slug}/`;
 
+export const joinBasePath = (baseUrl: string, path: string): string => {
+  const normalizedBase = baseUrl.replace(/^\/+|\/+$/g, '');
+  const normalizedPath = path.replace(/^\/+/, '');
+  const prefix = normalizedBase.length === 0 ? '/' : `/${normalizedBase}/`;
+
+  return `${prefix}${normalizedPath}`;
+};
+
 export const toContentCard = (
   item: ContentSummary,
   baseUrl: string
 ): ContentCardData => ({
   id: item.id,
-  href: `${baseUrl}${getContentPath(item)}`,
+  href: joinBasePath(baseUrl, getContentPath(item)),
   title: item.title,
   description: item.description,
   kind: item.kind,
