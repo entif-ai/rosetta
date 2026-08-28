@@ -1,0 +1,23 @@
+---
+import type { ContentCardData } from '../lib/content';
+
+interface Props {
+  card: ContentCardData;
+}
+
+const { card } = Astro.props;
+---
+
+<article class="content-card">
+  <div class="card-meta">
+    <span class="eyebrow">{card.kind}</span>
+    {card.projects.length > 0 && <span>{card.projects.join(' · ')}</span>}
+  </div>
+  <h3><a href={card.href}>{card.title}</a></h3>
+  <p>{card.description}</p>
+  {card.tags.length > 0 && (
+    <ul class="tag-list" aria-label="Topics">
+      {card.tags.slice(0, 4).map((tag) => <li>{tag}</li>)}
+    </ul>
+  )}
+</article>

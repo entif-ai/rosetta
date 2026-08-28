@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { countTopics, toContentCard } from '../../lib/content';
+import { getPublishedEntries, toSummary } from '../../lib/site-data';
+
+export async function getStaticPaths() {
+  const entries = await getPublishedEntries();
+  const summaries = entries.map(toSummary);
+  return [...countTopics(summaries).keys()].map((topic) => ({
+    params: { topic },
+    props: { topic, entries },
+  }));
+}
+
+const { topic, entries } = Astro.props;
+const matching = entries.map(toSummary).filter((item) => item.tags.includes(topic));
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title={`Topic: ${topic}`}
+  description={`Published Entif AI research connected to the ${topic} topic.`}
+>
+  <section class="section shell topic-page">
+    <p class="eyebrow">Topic</p>
+    <h1>{topic}</h1>
+    <p class="lede">{matching.length} connected {matching.length === 1 ? 'page' : 'pages'} in the public research lattice.</p>
+    <div class="card-grid">
+      {matching.map((item) => <ContentCard card={toContentCard(item, baseUrl)} />)}
+    </div>
+  </section>
+</BaseLayout>

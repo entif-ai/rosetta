@@ -1,0 +1,64 @@
+{
+  "name": "entif-site",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/entif-site/src",
+  "projectType": "application",
+  "tags": ["scope:site", "type:application"],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "pnpm exec astro dev"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/dist"],
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "pnpm exec astro build"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "pnpm exec astro check"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm exec eslint apps/entif-site --max-warnings=0"
+      }
+    },
+    "format:check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm exec prettier --check \"apps/entif-site/**/*.{astro,css,json,md,ts,tsx}\" \"docs/site/**/*.md\""
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "pnpm exec vitest run"
+      }
+    },
+    "e2e": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "pnpm exec playwright test"
+      }
+    },
+    "verify": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm exec nx run entif-site:format:check && pnpm exec nx run entif-site:lint && pnpm exec nx run entif-site:typecheck && pnpm exec nx run entif-site:test && pnpm exec nx run entif-site:build"
+      }
+    }
+  }
+}
