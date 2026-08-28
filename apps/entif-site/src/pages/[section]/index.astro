@@ -19,12 +19,12 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
+interface RouteProps {
   section: string;
   entries: readonly SiteEntry[];
 }
 
-const { section, entries } = Astro.props;
+const { section, entries } = Astro.props as RouteProps;
 const baseUrl = import.meta.env.BASE_URL;
 const summaries = entries.map(toSummary);
 ---
