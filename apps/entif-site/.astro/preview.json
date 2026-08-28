@@ -1,0 +1,14 @@
+{
+	"pid": 5970,
+	"port": 4322,
+	"url": "http://127.0.0.1:4322",
+	"urls": {
+		"local": [
+			"http://127.0.0.1:4322/rosetta"
+		],
+		"network": [],
+		"networkInterfaceNames": []
+	},
+	"background": false,
+	"startedAt": "2026-08-28T09:48:41.668Z"
+}

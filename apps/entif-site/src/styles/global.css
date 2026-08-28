@@ -67,9 +67,8 @@
     min-width: 20rem;
     background: var(--cream-50);
     color: var(--ink);
-    font-family:
-      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      sans-serif;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
   }
@@ -191,8 +190,11 @@
     gap: clamp(3rem, 7vw, 7rem);
     padding-block: clamp(4.5rem, 10vw, 8rem);
     overflow: clip;
-    background:
-      radial-gradient(circle at 84% 42%, rgb(23 104 255 / 24%), transparent 30%),
+    background: radial-gradient(
+        circle at 84% 42%,
+        rgb(23 104 255 / 24%),
+        transparent 30%
+      ),
       linear-gradient(115deg, var(--navy-950), var(--navy-900));
     box-shadow: 0 0 0 100vmax var(--navy-950);
     clip-path: inset(0 -100vmax);
@@ -380,7 +382,7 @@
   }
 
   .topic-controls button:hover,
-  .topic-controls button[aria-pressed="true"] {
+  .topic-controls button[aria-pressed='true'] {
     border-color: var(--navy-900);
     background: var(--navy-900);
     color: var(--white);
@@ -442,7 +444,7 @@
   .content-card h3 a::after {
     margin-left: 0.35em;
     color: var(--orange-500);
-    content: "↗";
+    content: '↗';
     font-size: 0.8em;
   }
 
@@ -610,7 +612,7 @@
   .prose p,
   .prose li {
     color: #283650;
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+    font-family: ui-serif, Georgia, Cambria, 'Times New Roman', serif;
     font-size: 1.08rem;
     line-height: 1.8;
   }

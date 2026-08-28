@@ -19,11 +19,14 @@ export const toSummary = (entry: SiteEntry): ContentSummary => ({
 });
 
 export const getPublishedEntries = async (): Promise<readonly SiteEntry[]> => {
-  const entries = await getCollection('site', ({ data }) => data.status === 'published');
+  const entries = await getCollection(
+    'site',
+    ({ data }) => data.status === 'published'
+  );
 
   return entries.sort(
     (left, right) =>
       (right.data.updated ?? right.data.published).getTime() -
-      (left.data.updated ?? left.data.published).getTime(),
+      (left.data.updated ?? left.data.published).getTime()
   );
 };

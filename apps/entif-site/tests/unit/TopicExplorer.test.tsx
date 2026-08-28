@@ -31,7 +31,9 @@ describe('TopicExplorer', () => {
     expect(screen.getByText('2 results')).toBeTruthy();
     expect(screen.getByText('Memory research')).toBeTruthy();
     expect(screen.getByText('Semantic research')).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'All' }).getAttribute('aria-pressed')).toBe('true');
+    expect(
+      screen.getByRole('button', { name: 'All' }).getAttribute('aria-pressed')
+    ).toBe('true');
   });
 
   it('filters to a selected topic and exposes pressed state', async () => {
@@ -60,6 +62,8 @@ describe('TopicExplorer', () => {
   it('renders an explicit empty state for an empty published corpus', () => {
     render(<TopicExplorer cards={[]} />);
     expect(screen.getByText('0 results')).toBeTruthy();
-    expect(screen.getByText('No published work matches this topic yet.')).toBeTruthy();
+    expect(
+      screen.getByText('No published work matches this topic yet.')
+    ).toBeTruthy();
   });
 });

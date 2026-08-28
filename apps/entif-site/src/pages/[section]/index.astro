@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContentCard from '../../components/ContentCard.astro';
-import { contentSections, toContentCard, type ContentKind } from '../../lib/content';
-import { getPublishedEntries, toSummary, type SiteEntry } from '../../lib/site-data';
+import {
+  contentSections,
+  toContentCard,
+  type ContentKind,
+} from '../../lib/content';
+import {
+  getPublishedEntries,
+  toSummary,
+  type SiteEntry,
+} from '../../lib/site-data';
 
 export async function getStaticPaths() {
   const entries = await getPublishedEntries();
@@ -36,9 +44,15 @@ const summaries = entries.map(toSummary);
   <section class="section shell topic-page">
     <p class="eyebrow">Collection</p>
     <h1>{section}</h1>
-    <p class="lede">{summaries.length} published {summaries.length === 1 ? 'page' : 'pages'}.</p>
+    <p class="lede">
+      {summaries.length} published {summaries.length === 1 ? 'page' : 'pages'}.
+    </p>
     <div class="card-grid">
-      {summaries.map((item) => <ContentCard card={toContentCard(item, baseUrl)} />)}
+      {
+        summaries.map((item) => (
+          <ContentCard card={toContentCard(item, baseUrl)} />
+        ))
+      }
     </div>
   </section>
 </BaseLayout>

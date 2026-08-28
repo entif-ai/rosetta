@@ -39,7 +39,7 @@ const latestDate = (item: ContentSummary): number =>
 
 const intersectionCount = (
   left: readonly string[],
-  right: readonly string[],
+  right: readonly string[]
 ): number => {
   const rightSet = new Set(right);
   return left.reduce((count, value) => count + Number(rightSet.has(value)), 0);
@@ -48,12 +48,13 @@ const intersectionCount = (
 export const isPublished = (item: ContentSummary): boolean =>
   item.status === 'published';
 
-export const getContentPath = (item: Pick<ContentSummary, 'kind' | 'slug'>): string =>
-  `${contentSections[item.kind]}/${item.slug}/`;
+export const getContentPath = (
+  item: Pick<ContentSummary, 'kind' | 'slug'>
+): string => `${contentSections[item.kind]}/${item.slug}/`;
 
 export const toContentCard = (
   item: ContentSummary,
-  baseUrl: string,
+  baseUrl: string
 ): ContentCardData => ({
   id: item.id,
   href: `${baseUrl}${getContentPath(item)}`,
@@ -67,7 +68,7 @@ export const toContentCard = (
 export const rankRelatedContent = (
   current: ContentSummary,
   candidates: readonly ContentSummary[],
-  limit = 4,
+  limit = 4
 ): readonly ContentSummary[] => {
   if (limit <= 0) {
     return [];
@@ -76,7 +77,9 @@ export const rankRelatedContent = (
   const explicit = new Set(current.related);
 
   return candidates
-    .filter((candidate) => candidate.id !== current.id && isPublished(candidate))
+    .filter(
+      (candidate) => candidate.id !== current.id && isPublished(candidate)
+    )
     .map((candidate) => {
       const score =
         Number(explicit.has(candidate.id)) * 100 +
@@ -91,14 +94,14 @@ export const rankRelatedContent = (
       (left, right) =>
         right.score - left.score ||
         latestDate(right.candidate) - latestDate(left.candidate) ||
-        left.candidate.id.localeCompare(right.candidate.id),
+        left.candidate.id.localeCompare(right.candidate.id)
     )
     .slice(0, limit)
     .map(({ candidate }) => candidate);
 };
 
 export const countTopics = (
-  content: readonly ContentSummary[],
+  content: readonly ContentSummary[]
 ): ReadonlyMap<string, number> => {
   const counts = new Map<string, number>();
 

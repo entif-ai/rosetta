@@ -15,9 +15,13 @@ const { card } = Astro.props;
   </div>
   <h3><a href={card.href}>{card.title}</a></h3>
   <p>{card.description}</p>
-  {card.tags.length > 0 && (
-    <ul class="tag-list" aria-label="Topics">
-      {card.tags.slice(0, 4).map((tag) => <li>{tag}</li>)}
-    </ul>
-  )}
+  {
+    card.tags.length > 0 && (
+      <ul class="tag-list" aria-label="Topics">
+        {card.tags.slice(0, 4).map((tag) => (
+          <li>{tag}</li>
+        ))}
+      </ul>
+    )
+  }
 </article>

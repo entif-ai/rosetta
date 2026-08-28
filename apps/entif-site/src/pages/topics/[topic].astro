@@ -14,7 +14,9 @@ export async function getStaticPaths() {
 }
 
 const { topic, entries } = Astro.props;
-const matching = entries.map(toSummary).filter((item) => item.tags.includes(topic));
+const matching = entries
+  .map(toSummary)
+  .filter((item) => item.tags.includes(topic));
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
@@ -25,9 +27,16 @@ const baseUrl = import.meta.env.BASE_URL;
   <section class="section shell topic-page">
     <p class="eyebrow">Topic</p>
     <h1>{topic}</h1>
-    <p class="lede">{matching.length} connected {matching.length === 1 ? 'page' : 'pages'} in the public research lattice.</p>
+    <p class="lede">
+      {matching.length} connected {matching.length === 1 ? 'page' : 'pages'} in the
+      public research lattice.
+    </p>
     <div class="card-grid">
-      {matching.map((item) => <ContentCard card={toContentCard(item, baseUrl)} />)}
+      {
+        matching.map((item) => (
+          <ContentCard card={toContentCard(item, baseUrl)} />
+        ))
+      }
     </div>
   </section>
 </BaseLayout>

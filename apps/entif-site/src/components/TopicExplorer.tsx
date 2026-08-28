@@ -8,7 +8,7 @@ interface TopicExplorerProps {
 export function TopicExplorer({ cards }: TopicExplorerProps): ReactElement {
   const topics = useMemo(
     () => [...new Set(cards.flatMap((card) => card.tags))].sort(),
-    [cards],
+    [cards]
   );
   const [activeTopic, setActiveTopic] = useState<string>('all');
 
@@ -17,12 +17,16 @@ export function TopicExplorer({ cards }: TopicExplorerProps): ReactElement {
       activeTopic === 'all'
         ? cards
         : cards.filter((card) => card.tags.includes(activeTopic)),
-    [activeTopic, cards],
+    [activeTopic, cards]
   );
 
   return (
     <section className="topic-explorer" aria-labelledby="research-heading">
-      <div className="topic-controls" role="group" aria-label="Filter research by topic">
+      <div
+        className="topic-controls"
+        role="group"
+        aria-label="Filter research by topic"
+      >
         <button
           type="button"
           aria-pressed={activeTopic === 'all'}
@@ -53,14 +57,19 @@ export function TopicExplorer({ cards }: TopicExplorerProps): ReactElement {
               <article className="content-card">
                 <div className="card-meta">
                   <span className="eyebrow">{card.kind}</span>
-                  {card.projects.length > 0 ? <span>{card.projects.join(' · ')}</span> : null}
+                  {card.projects.length > 0 ? (
+                    <span>{card.projects.join(' · ')}</span>
+                  ) : null}
                 </div>
                 <h3>
                   <a href={card.href}>{card.title}</a>
                 </h3>
                 <p>{card.description}</p>
                 {card.tags.length > 0 ? (
-                  <ul className="tag-list" aria-label={`Topics for ${card.title}`}>
+                  <ul
+                    className="tag-list"
+                    aria-label={`Topics for ${card.title}`}
+                  >
                     {card.tags.slice(0, 4).map((tag) => (
                       <li key={tag}>{tag}</li>
                     ))}

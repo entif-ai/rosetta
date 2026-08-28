@@ -15,7 +15,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,12 +24,22 @@ const baseUrl = import.meta.env.BASE_URL;
     <meta name="theme-color" content="#071d49" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href={`${baseUrl}brand/entif-logo.webp`} type="image/webp" />
+    <link
+      rel="icon"
+      href={`${baseUrl}brand/entif-logo.webp`}
+      type="image/webp"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL(`${baseUrl}brand/entif-logo.webp`, Astro.site ?? Astro.url.origin)} />
+    <meta
+      property="og:image"
+      content={new URL(
+        `${baseUrl}brand/entif-logo.webp`,
+        Astro.site ?? Astro.url.origin
+      )}
+    />
     <title>{pageTitle}</title>
   </head>
   <body>

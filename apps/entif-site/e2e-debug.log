@@ -1,0 +1,1042 @@
+
+[7m[1m[36m NX [39m[22m[27m  [36mRunning target [1me2e[22m for project entif-site and [1m1[22m task it depends on:[39m
+
+[2m[36m[39m[22m
+
+[2m> [22m[2mnx run[22m entif-site:build
+
+[2m> [22mpnpm exec astro build
+
+[2m09:48:39[22m [34m[content][39m Syncing content
+[2m09:48:39[22m [34m[content][39m Synced content
+[2m09:48:39[22m [34m[types][39m Generated [2m438ms[22m
+[2m09:48:39[22m [34m[build][39m output: [34m"static"[39m
+[2m09:48:39[22m [34m[build][39m mode: [34m"static"[39m
+[2m09:48:39[22m [34m[build][39m directory: [34m/home/runner/work/rosetta/rosetta/apps/entif-site/dist/[39m
+[2m09:48:39[22m [34m[build][39m Collecting build info...
+[2m09:48:39[22m [34m[build][39m [32m✓ Completed in 479ms.[39m
+[2m09:48:39[22m [34m[build][39m Building static entrypoints...
+[2m09:48:39[22m [34m[vite][39m [32m✓ built in 194ms[39m
+[2m09:48:39[22m [34m[vite][39m [32m✓ built in 67ms[39m
+[2m09:48:39[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m09:48:39[22m   [34m├─[39m [2m/404.html[22m [2m(+7ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/robots.txt[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/agentic-systems/index.html[22m [2m(+2ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/memory/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/provenance/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/semantic-representation/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/orchestration/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/governance/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/topics/context/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/research/agentic-memory/index.html[22m [2m(+2ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/research/ontological-mixture-of-concepts/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/projects/rosetta/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/research/semantic-latticing/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/research/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/projects/index.html[22m [2m(+1ms)[22m 
+[2m09:48:39[22m   [34m├─[39m [2m/index.html[22m [2m(+10ms)[22m 
+[2m09:48:39[22m [32m✓ Completed in 64ms.
+[39m
+[2m09:48:39[22m [34m[build][39m [32m✓ Completed in 355ms.[39m
+[2m09:48:40[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m09:48:40[22m [34m[build][39m 15 page(s) built in [1m843ms[22m
+[2m09:48:40[22m [34m[build][39m [1mComplete![22m
+
+[2m> [22m[2mnx run[22m entif-site:e2e
+
+[2m> [22mpnpm exec playwright test
+
+
+[2mRunning [22m7[2m tests using [22m2[2m workers[22m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[90m×[39m[90m×[39m[31mF[39m
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings,line=9,col=19::  1) [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings %0A    Error: expect(received).toEqual(expected) // deep equality%0A%0A    - Expected  -   1%0A    + Received  + 268%0A%0A    - Array []%0A    + Array [%0A    +   Object {%0A    +     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",%0A    +     "help": "Elements must meet minimum color contrast ratio thresholds",%0A    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",%0A    +     "id": "color-contrast",%0A    +     "impact": "serious",%0A    +     "nodes": Array [%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(1) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(2) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(3) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">project</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(4) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",%0A    +                 "target": Array [%0A    +                   ".principle-grid > article:nth-child(1)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>01</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(1) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(2)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>02</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(2) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(3)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>03</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(3) > span",%0A    +         ],%0A    +       },%0A    +     ],%0A    +     "tags": Array [%0A    +       "cat.color",%0A    +       "wcag2aa",%0A    +       "wcag143",%0A    +       "TTv5",%0A    +       "TT13.c",%0A    +       "EN-301-549",%0A    +       "EN-9.1.4.3",%0A    +       "ACT",%0A    +       "RGAAv4",%0A    +       "RGAA-3.2.1",%0A    +     ],%0A    +   },%0A    + ]%0A%0A       7 |     ({ impact }) => impact === 'serious' || impact === 'critical'%0A       8 |   );%0A    >  9 |   expect(serious).toEqual([]);%0A         |                   ^%0A      10 | };%0A      11 |%0A      12 | test('homepage renders the Entif identity and navigable research', async ({%0A        at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings,line=9,col=19::  1) [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings %0A%0A    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────%0A    Error: expect(received).toEqual(expected) // deep equality%0A%0A    - Expected  -   1%0A    + Received  + 268%0A%0A    - Array []%0A    + Array [%0A    +   Object {%0A    +     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",%0A    +     "help": "Elements must meet minimum color contrast ratio thresholds",%0A    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",%0A    +     "id": "color-contrast",%0A    +     "impact": "serious",%0A    +     "nodes": Array [%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(1) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(2) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(3) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">project</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(4) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",%0A    +                 "target": Array [%0A    +                   ".principle-grid > article:nth-child(1)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>01</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(1) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(2)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>02</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(2) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(3)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>03</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(3) > span",%0A    +         ],%0A    +       },%0A    +     ],%0A    +     "tags": Array [%0A    +       "cat.color",%0A    +       "wcag2aa",%0A    +       "wcag143",%0A    +       "TTv5",%0A    +       "TT13.c",%0A    +       "EN-301-549",%0A    +       "EN-9.1.4.3",%0A    +       "ACT",%0A    +       "RGAAv4",%0A    +       "RGAA-3.2.1",%0A    +     ],%0A    +   },%0A    + ]%0A%0A       7 |     ({ impact }) => impact === 'serious' || impact === 'critical'%0A       8 |   );%0A    >  9 |   expect(serious).toEqual([]);%0A         |                   ^%0A      10 | };%0A      11 |%0A      12 | test('homepage renders the Entif identity and navigable research', async ({%0A        at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings,line=9,col=19::  1) [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings %0A%0A    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────%0A    Error: expect(received).toEqual(expected) // deep equality%0A%0A    - Expected  -   1%0A    + Received  + 268%0A%0A    - Array []%0A    + Array [%0A    +   Object {%0A    +     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",%0A    +     "help": "Elements must meet minimum color contrast ratio thresholds",%0A    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",%0A    +     "id": "color-contrast",%0A    +     "impact": "serious",%0A    +     "nodes": Array [%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(1) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(2) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(3) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">project</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.2pt (12.32px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article class=\"content-card\">",%0A    +                 "target": Array [%0A    +                   "li:nth-child(4) > .content-card",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span class=\"eyebrow\">research</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",%0A    +                 "target": Array [%0A    +                   ".principle-grid > article:nth-child(1)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>01</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(1) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(2)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>02</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(2) > span",%0A    +         ],%0A    +       },%0A    +       Object {%0A    +         "all": Array [],%0A    +         "any": Array [%0A    +           Object {%0A    +             "data": Object {%0A    +               "bgColor": "#ffffff",%0A    +               "contrastRatio": 3.01,%0A    +               "expectedContrastRatio": "4.5:1",%0A    +               "fgColor": "#f36c13",%0A    +               "fontSize": "9.4pt (12.48px)",%0A    +               "fontWeight": "bold",%0A    +               "messageKey": null,%0A    +             },%0A    +             "id": "color-contrast",%0A    +             "impact": "serious",%0A    +             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +             "relatedNodes": Array [%0A    +               Object {%0A    +                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",%0A    +                 "target": Array [%0A    +                   "article:nth-child(3)",%0A    +                 ],%0A    +               },%0A    +             ],%0A    +           },%0A    +         ],%0A    +         "failureSummary": "Fix any of the following:%0A    +   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",%0A    +         "html": "<span>03</span>",%0A    +         "impact": "serious",%0A    +         "none": Array [],%0A    +         "target": Array [%0A    +           "article:nth-child(3) > span",%0A    +         ],%0A    +       },%0A    +     ],%0A    +     "tags": Array [%0A    +       "cat.color",%0A    +       "wcag2aa",%0A    +       "wcag143",%0A    +       "TTv5",%0A    +       "TT13.c",%0A    +       "EN-301-549",%0A    +       "EN-9.1.4.3",%0A    +       "ACT",%0A    +       "RGAAv4",%0A    +       "RGAA-3.2.1",%0A    +     ],%0A    +   },%0A    + ]%0A%0A       7 |     ({ impact }) => impact === 'serious' || impact === 'critical'%0A       8 |   );%0A    >  9 |   expect(serious).toEqual([]);%0A         |                   ^%0A      10 | };%0A      11 |%0A      12 | test('homepage renders the Entif identity and navigable research', async ({%0A        at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3
+[90m×[39m[90m×[39m[31mF[39m
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away,line=38,col=24::  2) [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away ────%0A    Error: expect(locator).toHaveAttribute(expected) failed%0A%0A    Locator:  getByRole('button', { name: 'agentic-systems' })%0A    Expected: "true"%0A    Received: "false"%0A    Timeout:  5000ms%0A%0A    Call log:%0A      - Expect "toHaveAttribute" with timeout 5000ms%0A      - waiting for getByRole('button', { name: 'agentic-systems' })%0A        14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>%0A           - unexpected value "false"%0A%0A%0A      36 |   await filter.click();%0A      37 |%0A    > 38 |   await expect(filter).toHaveAttribute('aria-pressed', 'true');%0A         |                        ^%0A      39 |   await expect(page.getByRole('status')).toContainText(/result/);%0A      40 |   await expect(%0A      41 |     page.getByRole('article').filter({ hasText: 'Agentic memory' })%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away,line=38,col=24::  2) [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away ────%0A%0A    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────%0A    Error: expect(locator).toHaveAttribute(expected) failed%0A%0A    Locator:  getByRole('button', { name: 'agentic-systems' })%0A    Expected: "true"%0A    Received: "false"%0A    Timeout:  5000ms%0A%0A    Call log:%0A      - Expect "toHaveAttribute" with timeout 5000ms%0A      - waiting for getByRole('button', { name: 'agentic-systems' })%0A        14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>%0A           - unexpected value "false"%0A%0A%0A      36 |   await filter.click();%0A      37 |%0A    > 38 |   await expect(filter).toHaveAttribute('aria-pressed', 'true');%0A         |                        ^%0A      39 |   await expect(page.getByRole('status')).toContainText(/result/);%0A      40 |   await expect(%0A      41 |     page.getByRole('article').filter({ hasText: 'Agentic memory' })%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24
+::error file=apps/entif-site/tests/features/site.spec.ts,title=[chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away,line=38,col=24::  2) [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away ────%0A%0A    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────%0A    Error: expect(locator).toHaveAttribute(expected) failed%0A%0A    Locator:  getByRole('button', { name: 'agentic-systems' })%0A    Expected: "true"%0A    Received: "false"%0A    Timeout:  5000ms%0A%0A    Call log:%0A      - Expect "toHaveAttribute" with timeout 5000ms%0A      - waiting for getByRole('button', { name: 'agentic-systems' })%0A        14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>%0A           - unexpected value "false"%0A%0A%0A      36 |   await filter.click();%0A      37 |%0A    > 38 |   await expect(filter).toHaveAttribute('aria-pressed', 'true');%0A         |                        ^%0A      39 |   await expect(page.getByRole('status')).toContainText(/result/);%0A      40 |   await expect(%0A      41 |     page.getByRole('article').filter({ hasText: 'Agentic memory' })%0A        at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24
+
+
+[31m  1) [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away [2m────[22m[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveAttribute[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  getByRole('button', { name: 'agentic-systems' })
+    Expected: [32m"[7mtru[27me"[39m
+    Received: [31m"[7mfals[27me"[39m
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toHaveAttribute" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: 'agentic-systems' })[22m
+    [2m    14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>[22m
+    [2m       - unexpected value "false"[22m
+
+
+    [0m [90m 36 |[39m   [36mawait[39m filter[33m.[39mclick()[33m;[39m
+     [90m 37 |[39m
+    [31m[1m>[22m[39m[90m 38 |[39m   [36mawait[39m expect(filter)[33m.[39mtoHaveAttribute([32m'aria-pressed'[39m[33m,[39m [32m'true'[39m)[33m;[39m
+     [90m    |[39m                        [31m[1m^[22m[39m
+     [90m 39 |[39m   [36mawait[39m expect(page[33m.[39mgetByRole([32m'status'[39m))[33m.[39mtoContainText([35m/result/[39m)[33m;[39m
+     [90m 40 |[39m   [36mawait[39m expect(
+     [90m 41 |[39m     page[33m.[39mgetByRole([32m'article'[39m)[33m.[39mfilter({ hasText[33m:[39m [32m'Agentic memory'[39m })[0m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24[22m
+
+[2m    Error Context: test-results/site-topic-filter-works-without-navigating-away-chromium/error-context.md[22m
+
+[90m    Retry #1 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveAttribute[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  getByRole('button', { name: 'agentic-systems' })
+    Expected: [32m"[7mtru[27me"[39m
+    Received: [31m"[7mfals[27me"[39m
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toHaveAttribute" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: 'agentic-systems' })[22m
+    [2m    14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>[22m
+    [2m       - unexpected value "false"[22m
+
+
+    [0m [90m 36 |[39m   [36mawait[39m filter[33m.[39mclick()[33m;[39m
+     [90m 37 |[39m
+    [31m[1m>[22m[39m[90m 38 |[39m   [36mawait[39m expect(filter)[33m.[39mtoHaveAttribute([32m'aria-pressed'[39m[33m,[39m [32m'true'[39m)[33m;[39m
+     [90m    |[39m                        [31m[1m^[22m[39m
+     [90m 39 |[39m   [36mawait[39m expect(page[33m.[39mgetByRole([32m'status'[39m))[33m.[39mtoContainText([35m/result/[39m)[33m;[39m
+     [90m 40 |[39m   [36mawait[39m expect(
+     [90m 41 |[39m     page[33m.[39mgetByRole([32m'article'[39m)[33m.[39mfilter({ hasText[33m:[39m [32m'Agentic memory'[39m })[0m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24[22m
+
+[2m    Error Context: test-results/site-topic-filter-works-without-navigating-away-chromium-retry1/error-context.md[22m
+
+[2m    attachment #2: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/site-topic-filter-works-without-navigating-away-chromium-retry1/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/site-topic-filter-works-without-navigating-away-chromium-retry1/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[90m    Retry #2 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveAttribute[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  getByRole('button', { name: 'agentic-systems' })
+    Expected: [32m"[7mtru[27me"[39m
+    Received: [31m"[7mfals[27me"[39m
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toHaveAttribute" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: 'agentic-systems' })[22m
+    [2m    14 × locator resolved to <button type="button" aria-pressed="false">agentic-systems</button>[22m
+    [2m       - unexpected value "false"[22m
+
+
+    [0m [90m 36 |[39m   [36mawait[39m filter[33m.[39mclick()[33m;[39m
+     [90m 37 |[39m
+    [31m[1m>[22m[39m[90m 38 |[39m   [36mawait[39m expect(filter)[33m.[39mtoHaveAttribute([32m'aria-pressed'[39m[33m,[39m [32m'true'[39m)[33m;[39m
+     [90m    |[39m                        [31m[1m^[22m[39m
+     [90m 39 |[39m   [36mawait[39m expect(page[33m.[39mgetByRole([32m'status'[39m))[33m.[39mtoContainText([35m/result/[39m)[33m;[39m
+     [90m 40 |[39m   [36mawait[39m expect(
+     [90m 41 |[39m     page[33m.[39mgetByRole([32m'article'[39m)[33m.[39mfilter({ hasText[33m:[39m [32m'Agentic memory'[39m })[0m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:38:24[22m
+
+[2m    Error Context: test-results/site-topic-filter-works-without-navigating-away-chromium-retry2/error-context.md[22m
+
+[31m  2) [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings [39m
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -   1[39m
+    [31m+ Received  + 268[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",[39m
+    [31m+     "help": "Elements must meet minimum color contrast ratio thresholds",[39m
+    [31m+     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",[39m
+    [31m+     "id": "color-contrast",[39m
+    [31m+     "impact": "serious",[39m
+    [31m+     "nodes": Array [[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(1) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(2) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(3) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">project</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(4) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".principle-grid > article:nth-child(1)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>01</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(1) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(2)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>02</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(2) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(3)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>03</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(3) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+     ],[39m
+    [31m+     "tags": Array [[39m
+    [31m+       "cat.color",[39m
+    [31m+       "wcag2aa",[39m
+    [31m+       "wcag143",[39m
+    [31m+       "TTv5",[39m
+    [31m+       "TT13.c",[39m
+    [31m+       "EN-301-549",[39m
+    [31m+       "EN-9.1.4.3",[39m
+    [31m+       "ACT",[39m
+    [31m+       "RGAAv4",[39m
+    [31m+       "RGAA-3.2.1",[39m
+    [31m+     ],[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+    [0m [90m  7 |[39m     ({ impact }) [33m=>[39m impact [33m===[39m [32m'serious'[39m [33m||[39m impact [33m===[39m [32m'critical'[39m
+     [90m  8 |[39m   )[33m;[39m
+    [31m[1m>[22m[39m[90m  9 |[39m   expect(serious)[33m.[39mtoEqual([])[33m;[39m
+     [90m    |[39m                   [31m[1m^[22m[39m
+     [90m 10 |[39m }[33m;[39m
+     [90m 11 |[39m
+     [90m 12 |[39m test([32m'homepage renders the Entif identity and navigable research'[39m[33m,[39m [36masync[39m ({[0m
+    [2m    at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)[22m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3[22m
+
+[2m    Error Context: test-results/site-homepage-and-article--d4a1b-us-or-critical-axe-findings-chromium/error-context.md[22m
+
+[90m    Retry #1 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -   1[39m
+    [31m+ Received  + 268[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",[39m
+    [31m+     "help": "Elements must meet minimum color contrast ratio thresholds",[39m
+    [31m+     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",[39m
+    [31m+     "id": "color-contrast",[39m
+    [31m+     "impact": "serious",[39m
+    [31m+     "nodes": Array [[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(1) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(2) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(3) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">project</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(4) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".principle-grid > article:nth-child(1)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>01</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(1) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(2)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>02</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(2) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(3)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>03</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(3) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+     ],[39m
+    [31m+     "tags": Array [[39m
+    [31m+       "cat.color",[39m
+    [31m+       "wcag2aa",[39m
+    [31m+       "wcag143",[39m
+    [31m+       "TTv5",[39m
+    [31m+       "TT13.c",[39m
+    [31m+       "EN-301-549",[39m
+    [31m+       "EN-9.1.4.3",[39m
+    [31m+       "ACT",[39m
+    [31m+       "RGAAv4",[39m
+    [31m+       "RGAA-3.2.1",[39m
+    [31m+     ],[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+    [0m [90m  7 |[39m     ({ impact }) [33m=>[39m impact [33m===[39m [32m'serious'[39m [33m||[39m impact [33m===[39m [32m'critical'[39m
+     [90m  8 |[39m   )[33m;[39m
+    [31m[1m>[22m[39m[90m  9 |[39m   expect(serious)[33m.[39mtoEqual([])[33m;[39m
+     [90m    |[39m                   [31m[1m^[22m[39m
+     [90m 10 |[39m }[33m;[39m
+     [90m 11 |[39m
+     [90m 12 |[39m test([32m'homepage renders the Entif identity and navigable research'[39m[33m,[39m [36masync[39m ({[0m
+    [2m    at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)[22m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3[22m
+
+[2m    Error Context: test-results/site-homepage-and-article--d4a1b-us-or-critical-axe-findings-chromium-retry1/error-context.md[22m
+
+[2m    attachment #2: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/site-homepage-and-article--d4a1b-us-or-critical-axe-findings-chromium-retry1/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/site-homepage-and-article--d4a1b-us-or-critical-axe-findings-chromium-retry1/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[90m    Retry #2 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -   1[39m
+    [31m+ Received  + 268[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",[39m
+    [31m+     "help": "Elements must meet minimum color contrast ratio thresholds",[39m
+    [31m+     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",[39m
+    [31m+     "id": "color-contrast",[39m
+    [31m+     "impact": "serious",[39m
+    [31m+     "nodes": Array [[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(1) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(1) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(2) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(2) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(3) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">project</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(3) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.2pt (12.32px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article class=\"content-card\">",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "li:nth-child(4) > .content-card",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.2pt (12.32px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span class=\"eyebrow\">research</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "li:nth-child(4) > .content-card > .card-meta > .eyebrow",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>01</span><h3>Receipts before rhetoric</h3><p>Claims should remain traceable to evidence, decisions, and the artifacts that produced them.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   ".principle-grid > article:nth-child(1)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>01</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(1) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>02</span><h3>Static where possible</h3><p>The public surface ships as durable HTML. JavaScript earns its place only when interaction needs it.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(2)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>02</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(2) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+       Object {[39m
+    [31m+         "all": Array [],[39m
+    [31m+         "any": Array [[39m
+    [31m+           Object {[39m
+    [31m+             "data": Object {[39m
+    [31m+               "bgColor": "#ffffff",[39m
+    [31m+               "contrastRatio": 3.01,[39m
+    [31m+               "expectedContrastRatio": "4.5:1",[39m
+    [31m+               "fgColor": "#f36c13",[39m
+    [31m+               "fontSize": "9.4pt (12.48px)",[39m
+    [31m+               "fontWeight": "bold",[39m
+    [31m+               "messageKey": null,[39m
+    [31m+             },[39m
+    [31m+             "id": "color-contrast",[39m
+    [31m+             "impact": "serious",[39m
+    [31m+             "message": "Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+             "relatedNodes": Array [[39m
+    [31m+               Object {[39m
+    [31m+                 "html": "<article><span>03</span><h3>Humans own publication</h3><p>Automation may discover, draft, verify, and propose. Public truth changes only through reviewable repository history.</p></article>",[39m
+    [31m+                 "target": Array [[39m
+    [31m+                   "article:nth-child(3)",[39m
+    [31m+                 ],[39m
+    [31m+               },[39m
+    [31m+             ],[39m
+    [31m+           },[39m
+    [31m+         ],[39m
+    [31m+         "failureSummary": "Fix any of the following:[39m
+    [31m+   Element has insufficient color contrast of 3.01 (foreground color: #f36c13, background color: #ffffff, font size: 9.4pt (12.48px), font weight: bold). Expected contrast ratio of 4.5:1",[39m
+    [31m+         "html": "<span>03</span>",[39m
+    [31m+         "impact": "serious",[39m
+    [31m+         "none": Array [],[39m
+    [31m+         "target": Array [[39m
+    [31m+           "article:nth-child(3) > span",[39m
+    [31m+         ],[39m
+    [31m+       },[39m
+    [31m+     ],[39m
+    [31m+     "tags": Array [[39m
+    [31m+       "cat.color",[39m
+    [31m+       "wcag2aa",[39m
+    [31m+       "wcag143",[39m
+    [31m+       "TTv5",[39m
+    [31m+       "TT13.c",[39m
+    [31m+       "EN-301-549",[39m
+    [31m+       "EN-9.1.4.3",[39m
+    [31m+       "ACT",[39m
+    [31m+       "RGAAv4",[39m
+    [31m+       "RGAA-3.2.1",[39m
+    [31m+     ],[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+    [0m [90m  7 |[39m     ({ impact }) [33m=>[39m impact [33m===[39m [32m'serious'[39m [33m||[39m impact [33m===[39m [32m'critical'[39m
+     [90m  8 |[39m   )[33m;[39m
+    [31m[1m>[22m[39m[90m  9 |[39m   expect(serious)[33m.[39mtoEqual([])[33m;[39m
+     [90m    |[39m                   [31m[1m^[22m[39m
+     [90m 10 |[39m }[33m;[39m
+     [90m 11 |[39m
+     [90m 12 |[39m test([32m'homepage renders the Entif identity and navigable research'[39m[33m,[39m [36masync[39m ({[0m
+    [2m    at assertNoSeriousA11yViolations (/home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:9:19)[22m
+    [2m    at /home/runner/work/rosetta/rosetta/apps/entif-site/tests/features/site.spec.ts:93:3[22m
+
+[2m    Error Context: test-results/site-homepage-and-article--d4a1b-us-or-critical-axe-findings-chromium-retry2/error-context.md[22m
+
+[31m  2 failed[39m
+[31m    [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away [2m─────[22m[39m
+[31m    [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings [39m
+[32m  5 passed[39m[2m (19.7s)[22m
+::notice title=🎭 Playwright Run Summary::  2 failed%0A    [chromium] › tests/features/site.spec.ts:33:1 › topic filter works without navigating away ─────%0A    [chromium] › tests/features/site.spec.ts:89:1 › homepage and article have no serious or critical axe findings %0A  5 passed (19.7s)
+Warning: command "pnpm exec playwright test" exited with non-zero status code
+[2m[31m[39m[22m
+
+[7m[1m[31m NX [39m[22m[27m  [31mRunning target [1me2e[22m for project entif-site and [1m1[22m task it depends on failed[39m
+
+[2mFailed tasks:[22m
+
+[2m-[22m entif-site:e2e
+
+[2mHint: run the command with[22m --verbose [2mfor more details.[22m
+
