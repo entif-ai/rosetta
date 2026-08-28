@@ -40,12 +40,16 @@ jobs:
           cache: pnpm
 
       - name: Configure Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build site
+        env:
+          ENTIF_SITE_URL: ${{ steps.pages.outputs.origin }}
+          ENTIF_SITE_BASE: ${{ steps.pages.outputs.base_path }}
         run: pnpm exec nx run entif-site:build
 
       - name: Upload Pages artifact
