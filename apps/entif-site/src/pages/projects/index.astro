@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { toContentCard } from '../../lib/content';
+import { getPublishedEntries, toSummary } from '../../lib/site-data';
+
+const baseUrl = import.meta.env.BASE_URL;
+const projects = (await getPublishedEntries())
+  .filter(({ data }) => data.kind === 'project')
+  .map(toSummary);
+---
+
+<BaseLayout
+  title="Projects"
+  description="Browse Entif AI projects and the research programs organized around them."
+>
+  <section class="section shell topic-page">
+    <p class="eyebrow">Programs</p>
+    <h1>Projects</h1>
+    <p class="lede">
+      Project pages provide stable homes for Entif research and engineering programs.
+    </p>
+    <div class="card-grid">
+      {
+        projects.map((item) => (
+          <ContentCard card={toContentCard(item, baseUrl)} />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

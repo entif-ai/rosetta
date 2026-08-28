@@ -1,6 +1,9 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 
+const articlePath =
+  './tags/rosetta/2026/08/28/agentic-memory/index.html';
+
 const assertNoSeriousA11yViolations = async (page: Page): Promise<void> => {
   const results = await new AxeBuilder({ page }).analyze();
   const serious = results.violations.filter(
@@ -9,7 +12,7 @@ const assertNoSeriousA11yViolations = async (page: Page): Promise<void> => {
   expect(serious).toEqual([]);
 };
 
-test('homepage renders the Entif identity and navigable research', async ({
+test('homepage renders the Entif identity and root navigation', async ({
   page,
 }) => {
   await page.goto('./');
@@ -18,34 +21,21 @@ test('homepage renders the Entif identity and navigable research', async ({
   await expect(page.getByRole('heading', { level: 1 })).toContainText(
     'Meaning should survive'
   );
-  await expect(page.getByRole('link', { name: 'Entif AI home' })).toBeVisible();
-  await expect(page.locator('.hero-mark img')).toHaveAttribute(
-    'src',
-    '/rosetta/brand/entif-logo.webp'
-  );
-  await expect(
-    page.getByRole('heading', {
-      name: 'Ideas that connect instead of pile up.',
-    })
-  ).toBeVisible();
-});
-
-test('primary navigation keeps GitHub Pages base path intact', async ({
-  page,
-}) => {
-  await page.goto('./');
-
   await expect(page.getByRole('link', { name: 'Entif AI home' })).toHaveAttribute(
     'href',
-    '/rosetta/'
+    '/'
   );
-  await expect(page.getByRole('link', { name: 'Rosetta' })).toHaveAttribute(
-    'href',
-    '/rosetta/projects/rosetta/'
+  await expect(page.locator('.hero-mark img')).toHaveAttribute(
+    'src',
+    '/brand/entif-logo.webp'
   );
-  await expect(page.getByRole('link', { name: 'Research' })).toHaveAttribute(
+  await expect(page.getByRole('link', { name: 'Tags' })).toHaveAttribute(
     'href',
-    '/rosetta/#research'
+    '/tags/'
+  );
+  await expect(page.getByRole('link', { name: 'Projects' })).toHaveAttribute(
+    'href',
+    '/projects/'
   );
 });
 
@@ -61,10 +51,10 @@ test('topic filter works without navigating away', async ({ page }) => {
   ).toBeVisible();
 });
 
-test('published article renders repository metadata and related work', async ({
+test('published post uses date-stamped tag routing and renders related work', async ({
   page,
 }) => {
-  await page.goto('./research/agentic-memory/');
+  await page.goto(articlePath);
 
   await expect(
     page.getByRole('heading', {
@@ -73,20 +63,28 @@ test('published article renders repository metadata and related work', async ({
     })
   ).toBeVisible();
   await expect(page.getByText('entif.research.agentic-memory')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'rosetta' }).first()).toHaveAttribute(
+    'href',
+    '/tags/rosetta/'
+  );
   await expect(
     page.getByRole('heading', { name: 'Continue through the lattice.' })
   ).toBeVisible();
-  await expect(page.getByRole('link', { name: 'research' })).toHaveAttribute(
-    'href',
-    '/rosetta/research/'
-  );
-  await expect(
-    page.getByRole('link', { name: 'agentic-systems' })
-  ).toHaveAttribute('href', '/rosetta/topics/agentic-systems/');
 });
 
-test('draft content is not emitted as a public route', async ({ page }) => {
-  const response = await page.goto('./research/editorial-pipeline-draft/');
+test('project, tag, team, and contact routes are generated at the site root', async ({
+  page,
+}) => {
+  for (const route of ['./projects/rosetta/', './tags/', './team/', './contact/']) {
+    const response = await page.goto(route);
+    expect(response?.status()).toBe(200);
+  }
+});
+
+test('draft content is not emitted as a public post route', async ({ page }) => {
+  const response = await page.goto(
+    './tags/rosetta/2026/08/28/editorial-pipeline-draft/index.html'
+  );
   expect(response?.status()).toBe(404);
 });
 
@@ -118,6 +116,6 @@ test('homepage and article have no serious or critical axe findings', async ({
   await page.goto('./');
   await assertNoSeriousA11yViolations(page);
 
-  await page.goto('./research/agentic-memory/');
+  await page.goto(articlePath);
   await assertNoSeriousA11yViolations(page);
 });

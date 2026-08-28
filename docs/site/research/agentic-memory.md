@@ -14,6 +14,7 @@ tags:
   - provenance
 projects:
   - rosetta
+routeTag: rosetta
 related:
   - entif.project.rosetta
 sourceRefs:

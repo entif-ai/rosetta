@@ -1,9 +1,9 @@
-name: Deploy Entif site to GitHub Pages
+name: Preview Entif site on GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - feat/entif-site-scaffold
     paths:
       - 'apps/entif-site/**'
       - 'docs/site/**'
@@ -18,12 +18,15 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: entif-site-preview-pages
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ENTIF_SITE_URL: https://entif-ai.github.io
+      ENTIF_SITE_BASE: /rosetta
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -46,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build site
+      - name: Build preview site
         run: pnpm exec nx run entif-site:build
 
       - name: Upload Pages artifact
@@ -61,6 +64,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy preview to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

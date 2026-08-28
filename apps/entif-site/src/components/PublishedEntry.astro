@@ -1,49 +1,33 @@
 ---
 import { render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ContentCard from '../../components/ContentCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentCard from './ContentCard.astro';
 import {
-  contentSections,
+  getTaxonomyTerms,
   joinBasePath,
   rankRelatedContent,
   toContentCard,
-  type ContentKind,
-} from '../../lib/content';
-import {
-  getPublishedEntries,
-  toSummary,
-  type SiteEntry,
-} from '../../lib/site-data';
+} from '../lib/content';
+import { toSummary, type SiteEntry } from '../lib/site-data';
 
-export async function getStaticPaths() {
-  const entries = await getPublishedEntries();
-  return entries.map((entry) => ({
-    params: {
-      section: contentSections[entry.data.kind],
-      slug: entry.data.slug,
-    },
-    props: { entry, allEntries: entries },
-  }));
-}
-
-interface RouteProps {
+interface Props {
   entry: SiteEntry;
   allEntries: readonly SiteEntry[];
 }
 
-const { entry, allEntries } = Astro.props as RouteProps;
+const { entry, allEntries } = Astro.props;
 const { Content } = await render(entry);
 const summary = toSummary(entry);
-const summaries = allEntries.map(toSummary);
-const related = rankRelatedContent(summary, summaries);
+const related = rankRelatedContent(summary, allEntries.map(toSummary));
 const baseUrl = import.meta.env.BASE_URL;
+const taxonomyTerms = getTaxonomyTerms(summary);
 const publishedLabel = entry.data.published.toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
   timeZone: 'UTC',
 });
-const section = contentSections[entry.data.kind as ContentKind];
+const isProject = entry.data.kind === 'project';
 ---
 
 <BaseLayout
@@ -56,17 +40,29 @@ const section = contentSections[entry.data.kind as ContentKind];
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href={joinBasePath(baseUrl, '')}>Entif AI</a>
         <span aria-hidden="true">/</span>
-        <a href={joinBasePath(baseUrl, `${section}/`)}>{section}</a>
+        {
+          isProject ? (
+            <a href={joinBasePath(baseUrl, 'projects/')}>Projects</a>
+          ) : (
+            <>
+              <a href={joinBasePath(baseUrl, 'tags/')}>Tags</a>
+              <span aria-hidden="true">/</span>
+              <a href={joinBasePath(baseUrl, `tags/${summary.routeTag}/`)}>
+                {summary.routeTag}
+              </a>
+            </>
+          )
+        }
       </nav>
       <p class="eyebrow">{entry.data.kind} · {publishedLabel}</p>
       <h1>{entry.data.title}</h1>
       <p class="lede">{entry.data.description}</p>
       {
-        entry.data.tags.length > 0 && (
-          <ul class="tag-list article-tags" aria-label="Topics">
-            {entry.data.tags.map((tag) => (
+        taxonomyTerms.length > 0 && (
+          <ul class="tag-list article-tags" aria-label="Topics and projects">
+            {taxonomyTerms.map((term) => (
               <li>
-                <a href={joinBasePath(baseUrl, `topics/${tag}/`)}>{tag}</a>
+                <a href={joinBasePath(baseUrl, `tags/${term}/`)}>{term}</a>
               </li>
             ))}
           </ul>

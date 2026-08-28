@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   countTopics,
   getContentPath,
+  getTaxonomyTerms,
   isPublished,
   joinBasePath,
   rankRelatedContent,
@@ -16,7 +17,8 @@ const makeItem = (overrides: Partial<ContentSummary> = {}): ContentSummary => ({
   description: 'A sufficiently descriptive test content summary for Alpha.',
   kind: 'research',
   status: 'published',
-  published: new Date('2026-01-01T00:00:00Z'),
+  published: new Date('2026-01-02T00:00:00Z'),
+  routeTag: 'rosetta',
   tags: ['memory'],
   projects: ['rosetta'],
   related: [],
@@ -25,20 +27,22 @@ const makeItem = (overrides: Partial<ContentSummary> = {}): ContentSummary => ({
 });
 
 describe('content utilities', () => {
-  it('maps content kinds to stable public paths', () => {
-    expect(getContentPath(makeItem())).toBe('research/alpha/');
+  it('maps posts to stable date-stamped tag paths and projects to project paths', () => {
+    expect(getContentPath(makeItem())).toBe(
+      'tags/rosetta/2026/01/02/alpha/'
+    );
     expect(getContentPath(makeItem({ kind: 'project' }))).toBe(
       'projects/alpha/'
     );
   });
 
-  it('normalizes root and nested base paths without collapsing separators', () => {
-    expect(joinBasePath('/', 'research/alpha/')).toBe('/research/alpha/');
-    expect(joinBasePath('/rosetta', 'research/alpha/')).toBe(
-      '/rosetta/research/alpha/'
+  it('normalizes root and preview base paths without collapsing separators', () => {
+    expect(joinBasePath('/', 'tags/rosetta/')).toBe('/tags/rosetta/');
+    expect(joinBasePath('/rosetta', 'tags/rosetta/')).toBe(
+      '/rosetta/tags/rosetta/'
     );
-    expect(joinBasePath('/rosetta/', '/research/alpha/')).toBe(
-      '/rosetta/research/alpha/'
+    expect(joinBasePath('/rosetta/', '/tags/rosetta/')).toBe(
+      '/rosetta/tags/rosetta/'
     );
   });
 
@@ -48,10 +52,18 @@ describe('content utilities', () => {
     expect(isPublished(makeItem({ status: 'deprecated' }))).toBe(false);
   });
 
-  it('builds serializable card data with the configured base path', () => {
-    const card = toContentCard(makeItem(), '/rosetta/');
-    expect(card.href).toBe('/rosetta/research/alpha/');
+  it('builds serializable cards using canonical content routing', () => {
+    const card = toContentCard(makeItem(), '/');
+    expect(card.href).toBe('/tags/rosetta/2026/01/02/alpha/');
     expect(card.tags).toEqual(['memory']);
+  });
+
+  it('deduplicates projects and topics into taxonomy terms', () => {
+    expect(
+      getTaxonomyTerms(
+        makeItem({ tags: ['memory', 'rosetta'], projects: ['rosetta'] })
+      )
+    ).toEqual(['memory', 'rosetta']);
   });
 
   it('prioritizes explicit relations over inferred similarity', () => {
@@ -103,6 +115,7 @@ describe('content utilities', () => {
     const unrelated = makeItem({
       id: 'entif.research.other',
       slug: 'other',
+      routeTag: 'other',
       tags: [],
       projects: [],
       kind: 'essay',
@@ -150,7 +163,7 @@ describe('content utilities', () => {
     ).toEqual([]);
   });
 
-  it('counts each published topic once per page and ignores drafts', () => {
+  it('counts project and topic terms once per published page and ignores drafts', () => {
     const counts = countTopics([
       makeItem({ tags: ['memory', 'memory', 'agents'] }),
       makeItem({ id: 'entif.research.beta', slug: 'beta', tags: ['memory'] }),
@@ -162,6 +175,7 @@ describe('content utilities', () => {
       }),
     ]);
 
+    expect(counts.get('rosetta')).toBe(2);
     expect(counts.get('memory')).toBe(2);
     expect(counts.get('agents')).toBe(1);
     expect(counts.has('private')).toBe(false);

@@ -7,7 +7,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? 'github' : 'list',
   use: {
-    baseURL: 'http://127.0.0.1:4322/rosetta/',
+    baseURL: 'http://127.0.0.1:4322/',
     trace: 'on-first-retry',
   },
   projects: [

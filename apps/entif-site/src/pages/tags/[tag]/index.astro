@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ContentCard from '../../../components/ContentCard.astro';
+import { countTopics, getTaxonomyTerms, toContentCard } from '../../../lib/content';
+import { getPublishedEntries, toSummary, type SiteEntry } from '../../../lib/site-data';
+
+export async function getStaticPaths() {
+  const entries = await getPublishedEntries();
+  const summaries = entries.map(toSummary);
+
+  return [...countTopics(summaries).keys()].map((tag) => ({
+    params: { tag },
+    props: { tag, entries },
+  }));
+}
+
+interface RouteProps {
+  tag: string;
+  entries: readonly SiteEntry[];
+}
+
+const { tag, entries } = Astro.props as RouteProps;
+const baseUrl = import.meta.env.BASE_URL;
+const matching = entries
+  .map(toSummary)
+  .filter((item) => getTaxonomyTerms(item).includes(tag));
+---
+
+<BaseLayout
+  title={`Tag: ${tag}`}
+  description={`Published Entif AI work connected to the ${tag} tag.`}
+>
+  <section class="section shell topic-page">
+    <p class="eyebrow">Tag</p>
+    <h1>{tag}</h1>
+    <p class="lede">
+      {matching.length} connected {matching.length === 1 ? 'page' : 'pages'} in the
+      public Entif corpus.
+    </p>
+    <div class="card-grid">
+      {
+        matching.map((item) => (
+          <ContentCard card={toContentCard(item, baseUrl)} />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

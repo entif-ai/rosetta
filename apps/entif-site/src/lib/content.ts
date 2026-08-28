@@ -18,6 +18,7 @@ export interface ContentSummary {
   readonly status: PublicationStatus;
   readonly published: Date;
   readonly updated?: Date;
+  readonly routeTag: string;
   readonly tags: readonly string[];
   readonly projects: readonly string[];
   readonly related: readonly string[];
@@ -34,6 +35,12 @@ export interface ContentCardData {
   readonly projects: readonly string[];
 }
 
+export interface PublicationDateParts {
+  readonly year: string;
+  readonly month: string;
+  readonly day: string;
+}
+
 const latestDate = (item: ContentSummary): number =>
   (item.updated ?? item.published).getTime();
 
@@ -48,9 +55,27 @@ const intersectionCount = (
 export const isPublished = (item: ContentSummary): boolean =>
   item.status === 'published';
 
+export const getPublicationDateParts = (date: Date): PublicationDateParts => ({
+  year: String(date.getUTCFullYear()),
+  month: String(date.getUTCMonth() + 1).padStart(2, '0'),
+  day: String(date.getUTCDate()).padStart(2, '0'),
+});
+
+export const getTaxonomyTerms = (
+  item: Pick<ContentSummary, 'routeTag' | 'projects' | 'tags'>
+): readonly string[] =>
+  [...new Set([item.routeTag, ...item.projects, ...item.tags])].sort();
+
 export const getContentPath = (
-  item: Pick<ContentSummary, 'kind' | 'slug'>
-): string => `${contentSections[item.kind]}/${item.slug}/`;
+  item: Pick<ContentSummary, 'kind' | 'slug' | 'published' | 'routeTag'>
+): string => {
+  if (item.kind === 'project') {
+    return `projects/${item.slug}/`;
+  }
+
+  const { year, month, day } = getPublicationDateParts(item.published);
+  return `tags/${item.routeTag}/${year}/${month}/${day}/${item.slug}/`;
+};
 
 export const joinBasePath = (baseUrl: string, path: string): string => {
   const normalizedBase = baseUrl.replace(/^\/+|\/+$/g, '');
@@ -114,8 +139,8 @@ export const countTopics = (
   const counts = new Map<string, number>();
 
   for (const item of content.filter(isPublished)) {
-    for (const tag of new Set(item.tags)) {
-      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    for (const term of getTaxonomyTerms(item)) {
+      counts.set(term, (counts.get(term) ?? 0) + 1);
     }
   }
 

@@ -14,6 +14,7 @@ tags:
   - orchestration
 projects:
   - rosetta
+routeTag: rosetta
 related:
   - entif.research.semantic-latticing
 sourceRefs:

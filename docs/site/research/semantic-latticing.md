@@ -14,6 +14,7 @@ tags:
   - agentic-systems
 projects:
   - rosetta
+routeTag: rosetta
 related:
   - entif.project.rosetta
   - entif.research.omoc

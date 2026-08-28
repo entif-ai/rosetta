@@ -1,5 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import type { ContentSummary } from './content';
+import { contentSections, type ContentSummary } from './content';
 
 export type SiteEntry = CollectionEntry<'site'>;
 
@@ -12,6 +12,11 @@ export const toSummary = (entry: SiteEntry): ContentSummary => ({
   status: entry.data.status,
   published: entry.data.published,
   ...(entry.data.updated === undefined ? {} : { updated: entry.data.updated }),
+  routeTag:
+    entry.data.routeTag ??
+    entry.data.projects[0] ??
+    entry.data.tags[0] ??
+    contentSections[entry.data.kind],
   tags: entry.data.tags,
   projects: entry.data.projects,
   related: entry.data.related,
