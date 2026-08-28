@@ -45,6 +45,7 @@
     --navy-800: #0a2f6f;
     --blue-500: #1768ff;
     --cyan-400: #21c7f7;
+    --orange-700: #a83f00;
     --orange-500: #f36c13;
     --orange-400: #ff8433;
     --cream-50: #fbfaf6;
@@ -434,7 +435,7 @@
 
   .card-meta .eyebrow {
     margin: 0;
-    color: var(--orange-500);
+    color: var(--orange-700);
   }
 
   .content-card h3 a {
@@ -443,7 +444,7 @@
 
   .content-card h3 a::after {
     margin-left: 0.35em;
-    color: var(--orange-500);
+    color: var(--orange-700);
     content: '↗';
     font-size: 0.8em;
   }
@@ -516,7 +517,7 @@
   }
 
   .principle-grid article > span {
-    color: var(--orange-500);
+    color: var(--orange-700);
     font-size: 0.78rem;
     font-weight: 800;
   }
