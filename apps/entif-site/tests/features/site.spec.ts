@@ -21,13 +21,32 @@ test('homepage renders the Entif identity and navigable research', async ({
   await expect(page.getByRole('link', { name: 'Entif AI home' })).toBeVisible();
   await expect(page.locator('.hero-mark img')).toHaveAttribute(
     'src',
-    /entif-logo\.webp/
+    '/rosetta/brand/entif-logo.webp'
   );
   await expect(
     page.getByRole('heading', {
       name: 'Ideas that connect instead of pile up.',
     })
   ).toBeVisible();
+});
+
+test('primary navigation keeps GitHub Pages base path intact', async ({
+  page,
+}) => {
+  await page.goto('./');
+
+  await expect(page.getByRole('link', { name: 'Entif AI home' })).toHaveAttribute(
+    'href',
+    '/rosetta/'
+  );
+  await expect(page.getByRole('link', { name: 'Rosetta' })).toHaveAttribute(
+    'href',
+    '/rosetta/projects/rosetta/'
+  );
+  await expect(page.getByRole('link', { name: 'Research' })).toHaveAttribute(
+    'href',
+    '/rosetta/#research'
+  );
 });
 
 test('topic filter works without navigating away', async ({ page }) => {
@@ -57,6 +76,13 @@ test('published article renders repository metadata and related work', async ({
   await expect(
     page.getByRole('heading', { name: 'Continue through the lattice.' })
   ).toBeVisible();
+  await expect(page.getByRole('link', { name: 'research' })).toHaveAttribute(
+    'href',
+    '/rosetta/research/'
+  );
+  await expect(
+    page.getByRole('link', { name: 'agentic-systems' })
+  ).toHaveAttribute('href', '/rosetta/topics/agentic-systems/');
 });
 
 test('draft content is not emitted as a public route', async ({ page }) => {
