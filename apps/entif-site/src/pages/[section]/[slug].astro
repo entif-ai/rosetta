@@ -21,12 +21,12 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
+interface RouteProps {
   entry: SiteEntry;
   allEntries: readonly SiteEntry[];
 }
 
-const { entry, allEntries } = Astro.props;
+const { entry, allEntries } = Astro.props as RouteProps;
 const { Content } = await render(entry);
 const summary = toSummary(entry);
 const summaries = allEntries.map(toSummary);
