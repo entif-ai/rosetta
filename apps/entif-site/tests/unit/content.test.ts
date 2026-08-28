@@ -28,9 +28,7 @@ const makeItem = (overrides: Partial<ContentSummary> = {}): ContentSummary => ({
 
 describe('content utilities', () => {
   it('maps posts to stable date-stamped tag paths and projects to project paths', () => {
-    expect(getContentPath(makeItem())).toBe(
-      'tags/rosetta/2026/01/02/alpha/'
-    );
+    expect(getContentPath(makeItem())).toBe('tags/rosetta/2026/01/02/alpha/');
     expect(getContentPath(makeItem({ kind: 'project' }))).toBe(
       'projects/alpha/'
     );

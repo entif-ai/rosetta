@@ -5,9 +5,7 @@ import { defineConfig } from 'astro/config';
 const configuredSite = process.env.ENTIF_SITE_URL ?? 'https://entif.ai';
 const configuredBase = process.env.ENTIF_SITE_BASE ?? '/';
 const base =
-  configuredBase === '/'
-    ? '/'
-    : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
+  configuredBase === '/' ? '/' : `/${configuredBase.replace(/^\/+|\/+$/g, '')}`;
 
 export default defineConfig({
   site: configuredSite,

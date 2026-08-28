@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ContentCard from '../../../components/ContentCard.astro';
-import { countTopics, getTaxonomyTerms, toContentCard } from '../../../lib/content';
-import { getPublishedEntries, toSummary, type SiteEntry } from '../../../lib/site-data';
+import {
+  countTopics,
+  getTaxonomyTerms,
+  toContentCard,
+} from '../../../lib/content';
+import {
+  getPublishedEntries,
+  toSummary,
+  type SiteEntry,
+} from '../../../lib/site-data';
 
 export async function getStaticPaths() {
   const entries = await getPublishedEntries();
