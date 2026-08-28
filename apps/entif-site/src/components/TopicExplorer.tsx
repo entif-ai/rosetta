@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactElement } from 'react';
 import type { ContentCardData } from '../lib/content';
 
 interface TopicExplorerProps {
   readonly cards: readonly ContentCardData[];
 }
 
-export function TopicExplorer({ cards }: TopicExplorerProps) {
+export function TopicExplorer({ cards }: TopicExplorerProps): ReactElement {
   const topics = useMemo(
     () => [...new Set(cards.flatMap((card) => card.tags))].sort(),
     [cards],

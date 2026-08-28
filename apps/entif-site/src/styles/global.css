@@ -183,24 +183,20 @@
   }
 
   .hero {
+    position: relative;
     display: grid;
     min-height: min(48rem, calc(100svh - 5rem));
     grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.65fr);
     align-items: center;
     gap: clamp(3rem, 7vw, 7rem);
     padding-block: clamp(4.5rem, 10vw, 8rem);
-    color: var(--white);
-  }
-
-  .hero::before {
-    position: absolute;
-    z-index: -1;
-    inset: 5.1rem 0 auto;
-    min-height: min(48rem, calc(100svh - 5rem));
+    overflow: clip;
     background:
       radial-gradient(circle at 84% 42%, rgb(23 104 255 / 24%), transparent 30%),
       linear-gradient(115deg, var(--navy-950), var(--navy-900));
-    content: "";
+    box-shadow: 0 0 0 100vmax var(--navy-950);
+    clip-path: inset(0 -100vmax);
+    color: var(--white);
   }
 
   .hero h1 {
@@ -270,7 +266,9 @@
   .hero-mark {
     position: relative;
     display: grid;
+    min-height: 30rem;
     place-items: center;
+    overflow: clip;
   }
 
   .logo-frame {
@@ -741,11 +739,6 @@
       padding-bottom: 0.3rem;
       overflow-x: auto;
       white-space: nowrap;
-    }
-
-    .hero::before {
-      inset-block-start: 7.8rem;
-      min-height: 60rem;
     }
 
     .hero {
