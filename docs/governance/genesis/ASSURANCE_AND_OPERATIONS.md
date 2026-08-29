@@ -24,6 +24,23 @@ A useful test:
 
 Prefer observable contracts over tests that mirror implementation details. Internal tests are justified when the internal contract itself is important.
 
+### 2.1 Stable selectors for user-interface tests
+
+Automated tests for user-interface elements under project control MUST locate those elements through explicit `data-test-id` attributes rather than user-facing text, translated strings, CSS classes, DOM position, incidental element nesting, or accessibility labels used as test hooks.
+
+`data-test-id` values are test contracts. They SHOULD:
+
+- describe durable semantic identity or responsibility rather than presentation;
+- remain stable across copy edits, localization, hydration strategy changes, and harmless DOM refactors;
+- use domain identity for repeated or dynamic elements where one stable global identifier is insufficient;
+- avoid encoding layout accidents such as left/right position, wrapper depth, CSS utility names, or current visual treatment.
+
+Tests SHOULD assert behavior, state, navigation, structure, and machine-stable attributes independently of localized/editorial wording. Exact text MAY be asserted only when the wording itself is the requirement, such as a legally mandated disclosure or a localization/content-contract test; even then, locate the element through `data-test-id` first.
+
+Test hooks MUST NOT replace or weaken semantic HTML, accessible names, labels, landmarks, or ARIA. Accessibility semantics exist for users and assistive technology. `data-test-id` exists only to give automation a stable, non-user-facing identity surface.
+
+When a third-party or otherwise uncontrolled interface cannot expose a project-owned test hook, use the narrowest stable contract the dependency provides and document the exception.
+
 ## 3. Red, green, refactor
 
 For defect repair or behavior change, contributors SHOULD first demonstrate the incorrect/missing behavior with a failing test or equivalent reproducible evidence, then implement the smallest repair and retain the evidence as a regression guard.

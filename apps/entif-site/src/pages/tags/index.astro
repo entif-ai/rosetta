@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentPageLayout from '../../layouts/ContentPageLayout.astro';
 import { countTopics, joinBasePath } from '../../lib/content';
 import { getPublishedEntries, toSummary } from '../../lib/site-data';
 
@@ -11,27 +11,26 @@ const topics = [...countTopics(entries.map(toSummary)).entries()].sort(
 );
 ---
 
-<BaseLayout
+<ContentPageLayout
   title="Tags"
   description="Browse Entif AI research and projects by topic, protocol, system, and project tag."
+  eyebrow="Taxonomy"
+  heading="Tags"
+  lede="The public Entif corpus is cross-linked through shared topics and projects."
 >
-  <section class="section shell topic-page">
-    <p class="eyebrow">Taxonomy</p>
-    <h1>Tags</h1>
-    <p class="lede">
-      The public Entif corpus is cross-linked through shared topics and
-      projects.
-    </p>
-    <ul class="tag-list tag-directory" aria-label="Entif tags">
-      {
-        topics.map(([term, count]) => (
-          <li>
-            <a href={joinBasePath(baseUrl, `tags/${term}/`)}>
-              {term} · {count}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
-</BaseLayout>
+  <ul
+    class="tag-list tag-directory"
+    aria-label="Entif tags"
+    data-test-id="tags-page-directory"
+  >
+    {
+      topics.map(([term, count]) => (
+        <li>
+          <a href={joinBasePath(baseUrl, `tags/${term}/`)}>
+            {term} · {count}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</ContentPageLayout>

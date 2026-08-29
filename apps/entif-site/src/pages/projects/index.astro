@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContentCard from '../../components/ContentCard.astro';
+import ContentPageLayout from '../../layouts/ContentPageLayout.astro';
 import { toContentCard } from '../../lib/content';
 import { getPublishedEntries, toSummary } from '../../lib/site-data';
 
@@ -10,23 +10,18 @@ const projects = (await getPublishedEntries())
   .map(toSummary);
 ---
 
-<BaseLayout
+<ContentPageLayout
   title="Projects"
   description="Browse Entif AI projects and the research programs organized around them."
+  eyebrow="Programs"
+  heading="Projects"
+  lede="Project pages provide stable homes for Entif research and engineering programs."
 >
-  <section class="section shell topic-page">
-    <p class="eyebrow">Programs</p>
-    <h1>Projects</h1>
-    <p class="lede">
-      Project pages provide stable homes for Entif research and engineering
-      programs.
-    </p>
-    <div class="card-grid">
-      {
-        projects.map((item) => (
-          <ContentCard card={toContentCard(item, baseUrl)} />
-        ))
-      }
-    </div>
-  </section>
-</BaseLayout>
+  <div class="card-grid" data-test-id="projects-page-grid">
+    {
+      projects.map((item) => (
+        <ContentCard card={toContentCard(item, baseUrl)} />
+      ))
+    }
+  </div>
+</ContentPageLayout>

@@ -195,6 +195,28 @@ Popularity does not prove fitness. Evaluate each system by:
 
 A design system is not a substitute for product-specific accessibility testing or user judgment.
 
+### 11.1 Shared layout contracts
+
+When several views implement the same durable page or component anatomy, that anatomy SHOULD have one shared implementation rather than several copies that merely look alike today.
+
+Shared layout primitives SHOULD centralize the invariants that are expected to move together, such as:
+
+- semantic landmarks and heading structure;
+- page-shell geometry and reading widths;
+- gutters and spacing rhythm;
+- responsive stacking and breakpoint behavior;
+- repeated page-header, metadata, aside, or related-content structure;
+- accessibility behavior shared by the pattern;
+- stable test hooks for the shared contract.
+
+Individual views SHOULD supply content and deliberate variation through composition, slots, props, or equivalent narrow seams instead of copying the surrounding structure and changing it locally.
+
+Do not abstract incidental resemblance. Two views that happen to contain similar markup do not justify a universal component if their responsibilities are different or are likely to diverge. Prefer the smallest shared primitive that represents a real design or interaction concept.
+
+Do not solve drift with a configurable mega-component whose option surface becomes harder to understand than the duplication it replaced. If callers routinely disable or override the abstraction's invariants, the boundary is probably wrong.
+
+A repeated local change to equivalent page structure is a signal to inspect whether the shared contract is missing. Layout drift is not merely cosmetic: over time it creates accessibility, responsive, testing, maintenance, and cognitive inconsistencies that become expensive precisely because no single edit can repair them all.
+
 ## 12. Performance-aware interfaces
 
 Front-end code and media must earn their cost.

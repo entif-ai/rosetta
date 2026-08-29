@@ -6,9 +6,11 @@ Static public site for Entif AI, compiled with Astro and deployed from the Roset
 
 - Static HTML by default; React is reserved for interactive islands.
 - Public content is authored in `apps/entif-site/content/**/*.md` and validated at build time.
-- `status: published` is required before a content entry receives a public route.
-- Stable content IDs, topics, project references, and explicit relations are machine-readable frontmatter.
+- Homepage narrative copy lives in `apps/entif-site/content/pages/home.md`; research and project entries remain in their dedicated content subdirectories.
+- `status: published` is required before a content entry receives a public route or homepage publication.
+- Stable content IDs, topics, project references, and explicit relations are machine-readable frontmatter for routed research/project entries.
 - Related-content links are generated deterministically from explicit relations, shared projects, and shared topics.
+- Common index/informational page anatomy is owned by `src/layouts/ContentPageLayout.astro`; individual pages compose content into that shared shell rather than copy its heading, spacing, and responsive structure.
 - The current Entif logo lives at `public/brand/entif-logo.webp` and is derived from the project-provided source artwork.
 - Styling uses local CSS and system fonts. No UI framework or external font request is required.
 
@@ -28,6 +30,8 @@ pnpm exec nx run entif-site:e2e
 ```
 
 `verify` runs every non-browser gate. The feature suite uses Playwright plus axe and checks publication behavior, interactive filtering, keyboard access, responsive overflow, and serious/critical automated accessibility findings.
+
+Project-owned UI tests locate rendered elements through stable `data-test-id` attributes. Test IDs describe semantic responsibility rather than localized copy, CSS, DOM position, or visual treatment. Accessibility semantics remain user-facing contracts and are tested independently; test hooks do not replace them. The cross-project rule is defined in [`../../docs/governance/genesis/ASSURANCE_AND_OPERATIONS.md`](../../docs/governance/genesis/ASSURANCE_AND_OPERATIONS.md).
 
 ## Deployment
 

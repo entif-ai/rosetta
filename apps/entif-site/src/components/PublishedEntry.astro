@@ -35,7 +35,11 @@ const isProject = entry.data.kind === 'project';
   description={entry.data.description}
   noindex={entry.data.noindex}
 >
-  <article class="article-shell shell">
+  <article
+    class="article-shell shell"
+    data-test-id="published-entry"
+    data-content-id={entry.data.id}
+  >
     <header class="article-header">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href={joinBasePath(baseUrl, '')}>Entif AI</a>
@@ -47,7 +51,10 @@ const isProject = entry.data.kind === 'project';
             <>
               <a href={joinBasePath(baseUrl, 'tags/')}>Tags</a>
               <span aria-hidden="true">/</span>
-              <a href={joinBasePath(baseUrl, `tags/${summary.routeTag}/`)}>
+              <a
+                href={joinBasePath(baseUrl, `tags/${summary.routeTag}/`)}
+                data-test-id="published-entry-route-tag"
+              >
                 {summary.routeTag}
               </a>
             </>
@@ -55,7 +62,7 @@ const isProject = entry.data.kind === 'project';
         }
       </nav>
       <p class="eyebrow">{entry.data.kind} · {publishedLabel}</p>
-      <h1>{entry.data.title}</h1>
+      <h1 data-test-id="published-entry-heading">{entry.data.title}</h1>
       <p class="lede">{entry.data.description}</p>
       {
         taxonomyTerms.length > 0 && (
@@ -71,17 +78,24 @@ const isProject = entry.data.kind === 'project';
     </header>
 
     <div class="article-grid">
-      <div class="article-body prose">
+      <div class="article-body prose" data-test-id="published-entry-body">
         <Content />
       </div>
-      <aside class="article-aside" aria-label="Article metadata">
+      <aside
+        class="article-aside"
+        aria-label="Article metadata"
+        data-test-id="published-entry-metadata"
+      >
         <p class="eyebrow">Repository-native</p>
         <p>
           This page is generated from reviewed Markdown. Its public history
           travels with the Rosetta repository.
         </p>
         <dl>
-          <div><dt>Content ID</dt><dd>{entry.data.id}</dd></div>
+          <div>
+            <dt>Content ID</dt>
+            <dd data-test-id="published-entry-content-id">{entry.data.id}</dd>
+          </div>
           <div><dt>Status</dt><dd>{entry.data.status}</dd></div>
           <div><dt>Authors</dt><dd>{entry.data.authors.join(', ')}</dd></div>
         </dl>
@@ -94,6 +108,7 @@ const isProject = entry.data.kind === 'project';
       <section
         class="section shell related-section"
         aria-labelledby="related-heading"
+        data-test-id="related-content"
       >
         <div class="section-heading narrow">
           <div>

@@ -50,9 +50,23 @@ const siteSchema = z
     }
   });
 
+const pageSchema = z.object({
+  slug: z.string().regex(slugPattern),
+  title: z.string().min(3).max(100),
+  eyebrow: z.string().min(2).max(60),
+  description: z.string().min(20).max(280),
+  status: z.enum(['draft', 'published']),
+  sourceRefs: z.array(z.string().min(1)).default([]),
+});
+
 const site = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content' }),
+  loader: glob({ pattern: '{projects,research}/**/*.md', base: './content' }),
   schema: siteSchema,
 });
 
-export const collections = { site };
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './content/pages' }),
+  schema: pageSchema,
+});
+
+export const collections = { site, pages };
