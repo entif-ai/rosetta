@@ -1,27 +1,24 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentPageLayout from '../../layouts/ContentPageLayout.astro';
 ---
 
-<BaseLayout
+<ContentPageLayout
   title="Contact"
   description="Contact Entif AI about Rosetta research, implementation, collaboration, and public technical work."
+  eyebrow="Contact"
+  heading="Start with the work."
 >
-  <section class="section shell topic-page">
-    <p class="eyebrow">Contact</p>
-    <h1>Start with the work.</h1>
-    <div class="prose">
-      <p>
-        For now, GitHub is Entif AI's public coordination surface for Rosetta
-        research, implementation proposals, technical questions, and reviewable
-        collaboration.
-      </p>
-      <p>
-        <a href="https://github.com/entif-ai/rosetta"
-          >Visit the Rosetta repository</a
-        >
-        to inspect the current work, open an issue, or join an existing technical
-        thread.
-      </p>
-    </div>
-  </section>
-</BaseLayout>
+  <div class="prose" data-test-id="contact-page-content">
+    <p>
+      For now, GitHub is Entif AI's public coordination surface for Rosetta
+      research, implementation proposals, technical questions, and reviewable
+      collaboration.
+    </p>
+    <p>
+      <a href="https://github.com/entif-ai/rosetta"
+        >Visit the Rosetta repository</a
+      >
+      to inspect the current work, open an issue, or join an existing technical thread.
+    </p>
+  </div>
+</ContentPageLayout>

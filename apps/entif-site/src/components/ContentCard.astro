@@ -6,9 +6,10 @@ interface Props {
 }
 
 const { card } = Astro.props;
+const testId = `content-card-${encodeURIComponent(card.id)}`;
 ---
 
-<article class="content-card">
+<article class="content-card" data-test-id={testId}>
   <div class="card-meta">
     <span class="eyebrow">{card.kind}</span>
     {card.projects.length > 0 && <span>{card.projects.join(' · ')}</span>}

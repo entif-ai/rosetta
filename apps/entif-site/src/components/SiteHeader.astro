@@ -4,13 +4,16 @@ import { joinBasePath } from '../lib/content';
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
-<header class="site-header">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" data-test-id="site-header">
+  <a class="skip-link" href="#main-content" data-test-id="site-skip-link">
+    Skip to main content
+  </a>
   <div class="shell header-inner">
     <a
       class="brand"
       href={joinBasePath(baseUrl, '')}
       aria-label="Entif AI home"
+      data-test-id="site-brand-home"
     >
       <img
         src={joinBasePath(baseUrl, 'brand/entif-logo.webp')}
@@ -18,17 +21,39 @@ const baseUrl = import.meta.env.BASE_URL;
         height="44"
         alt=""
         decoding="async"
+        data-test-id="site-brand-logo"
       />
       <span>Entif AI</span>
     </a>
-    <nav aria-label="Primary navigation">
+    <nav aria-label="Primary navigation" data-test-id="site-primary-nav">
       <ul class="nav-list">
-        <li><a href={joinBasePath(baseUrl, 'tags/')}>Tags</a></li>
-        <li><a href={joinBasePath(baseUrl, 'projects/')}>Projects</a></li>
-        <li><a href={joinBasePath(baseUrl, 'team/')}>Team</a></li>
-        <li><a href={joinBasePath(baseUrl, 'contact/')}>Contact</a></li>
         <li>
-          <a href="https://github.com/entif-ai/rosetta" rel="external">GitHub</a
+          <a href={joinBasePath(baseUrl, 'tags/')} data-test-id="site-nav-tags"
+            >Tags</a
+          >
+        </li>
+        <li>
+          <a
+            href={joinBasePath(baseUrl, 'projects/')}
+            data-test-id="site-nav-projects">Projects</a
+          >
+        </li>
+        <li>
+          <a href={joinBasePath(baseUrl, 'team/')} data-test-id="site-nav-team"
+            >Team</a
+          >
+        </li>
+        <li>
+          <a
+            href={joinBasePath(baseUrl, 'contact/')}
+            data-test-id="site-nav-contact">Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/entif-ai/rosetta"
+            rel="external"
+            data-test-id="site-nav-github">GitHub</a
           >
         </li>
       </ul>
