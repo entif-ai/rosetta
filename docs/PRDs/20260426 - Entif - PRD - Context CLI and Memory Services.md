@@ -1,5 +1,11 @@
 # Entif SDK CLI and Service Platform PRD
 
+## Semantic authority and terminology status
+
+This PRD owns product/application requirements for Entif SDK, CLI, services, source assimilation, memory, and context compilation. Rosetta v3 remains authoritative for Rosetta terms, artifacts, provenance, Receipts, the operational Spine, and Tapestry semantics.
+
+Source envelopes, assimilation packets, compiled-context payloads, and service contracts in this PRD are Entif application contracts unless a separate Rosetta authority accepts them as extensions. When a compiled context satisfies the v3 **Tapestry** definition, use and validate that canonical construct instead of maintaining a near-synonymous replacement.
+
 ## Research basis and governing posture
 
 This PRD synthesizes the uploaded Entif Memory Compiler transcript, the uploaded Entif and Rosetta PRD draft, the accessible Rosetta/Entif constitutional corpus surfaced through the connected secondary materials, and recent primary-source standards documentation. Across those sources, the overlap is strong on five points: Rosetta is the minimal constitutional substrate; Entif is the governed operating layer built on top of it; ingestion must behave like a compiler rather than a vague “memory bot”; receipts and provenance are first-class artifacts rather than afterthoughts; and selective context injection must be rights-scoped, explainable, and auditable rather than hidden inside prompt glue. fileciteturn7file0 fileciteturn5file1 fileciteturn6file2 fileciteturn8file15 fileciteturn28file0

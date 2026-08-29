@@ -1,3 +1,9 @@
+## Semantic authority and terminology status
+
+This October 2025 research/PRD source predates the Rosetta v3 Terminology Lock. It is preserved for design lineage, optical-compression research, and candidate product ideas. Current meanings of **Tile**, **CID**, **Tapestry**, provenance, and related Rosetta concepts come from [`../RFCs/Rosetta v3.0.0 Core Spine Specification.md`](../RFCs/Rosetta%20v3.0.0%20Core%20Spine%20Specification.md).
+
+Any product or implementation work derived from this document MUST state whether it is exact v3 reuse, an Entif application contract, an accepted extension, or a still-provisional research concept. The historical prose does not independently mint current Rosetta semantics.
+
 ### **1\. The Core Innovation: "Optical Compression" is a New Paradigm**
 
 At its heart, DeepSeek-OCR is not just an OCR model; it's a proof-of-concept for **vision-text context compression**. The central idea is to treat the visual modality (an image) as a highly efficient, compressed representation of the textual modality.

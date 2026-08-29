@@ -30,17 +30,16 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 
 ## Current Snapshot
 
-- Documents indexed: 144
-- Current April 2026 docs: 40
-- Governing/planning/live docs: 42
-- Docs dated by canonical top matter: 84
-- Generated at: 2026-08-29T09:03:07.320Z
+- Documents indexed: 156
+- Current April 2026 docs: 43
+- Governing/planning/live docs: 54
+- Docs dated by canonical top matter: 87
+- Generated at: 2026-08-29T11:24:40.446Z
 
 ## Policy
 
 - Newer files supersede older files by default when they conflict.
 - Top-matter dates are preferred over filename dates; filename dates are preferred over filesystem mtime.
-- When content is unchanged, prior filesystem-modified evidence is preserved so clean checkouts do not rewrite chronology.
 - Chat-style `Created`, `Updated`, and `Exported` stamps are stored separately under each document's `chronology.canonical` object.
 - `docs/live/`, `docs/governance/`, `docs/handoffs/`, `docs/backlog/`, `docs/PRDs/`, and `docs/RFCs/` carry higher authority than chats, ideas, external notes, or frontier research.
 - Local issue drafts are the review gate before GitHub issue creation.

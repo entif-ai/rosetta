@@ -2,6 +2,23 @@
 
 `packages/rosetta-schemas/src/lib/schema-catalog.ts` is the package-local machine-readable catalog for schema families, validators, boundary contracts, consumers, tests, docs, and known gaps.
 
+Its `authorityTier` field describes package ownership and admission lanes. It does not supersede the Rosetta v3 Terminology Lock or grant Rosetta core status.
+
+## Semantic Dispositions
+
+Every schema family should resolve to one of the dispositions defined in [`../../../docs/governance/genesis/SEMANTIC_AUDIT.md`](../../../docs/governance/genesis/SEMANTIC_AUDIT.md):
+
+- core reuse;
+- accepted extension;
+- application contract;
+- projection or derived view;
+- external reference;
+- historical precursor;
+- provisional semantic extension;
+- retired alias.
+
+Current non-core `rosetta.*` IDs remain explicitly listed as semantic debt in the audit until an accepted authority resolves their namespace and relationship to v3.
+
 ## Authority Tiers
 
 - `core-spine`: Rosetta run/action/tool/observation/evaluation/receipt and conformance mechanics.
@@ -32,3 +49,5 @@
 ## Maintenance Rule
 
 When adding a schema family or validator, update `schema-catalog.ts` with source issue, tests, docs, RFC/PRD anchors, consumers, exposure status, and known gaps. The catalog tests intentionally fail when supported tile kinds or registered Agentic Messaging profiles are invisible.
+
+Also update `SEMANTIC_AUDIT.md` when the schema adds a new family, uses the `rosetta.*` namespace outside the v3 core list, or changes the mapping between an application contract and a canonical Rosetta artifact.

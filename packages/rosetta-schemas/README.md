@@ -4,6 +4,12 @@
 
 Provides lightweight payload validation and conformance bundle emission for current tile kinds.
 
+## Semantic authority
+
+[`../../docs/RFCs/Rosetta v3.0.0 Core Spine Specification.md`](../../docs/RFCs/Rosetta%20v3.0.0%20Core%20Spine%20Specification.md) remains the semantic authority for Rosetta core terms. This package is an implementation registry and bootstrap validator, not a replacement Terminology Lock.
+
+Schema registry presence establishes implementation ownership/visibility only. Non-core `rosetta.*` IDs require an explicit disposition in [`../../docs/governance/genesis/SEMANTIC_AUDIT.md`](../../docs/governance/genesis/SEMANTIC_AUDIT.md), and Entif/source/Guard/adapter/skill schemas remain application or accepted-extension contracts according to their owning authorities.
+
 ## Working Today
 
 - validates required fields for supported tile kinds
@@ -46,7 +52,7 @@ When adding a schema family, add or update a catalog entry in the same change. N
 
 ## Agentic Messaging Registry
 
-- Normative location: `packages/rosetta-schemas/src/lib/rosetta-schemas.ts`
+- Implementation registry: `packages/rosetta-schemas/src/lib/rosetta-schemas.ts`
 - Envelope schema: `entif.agentic-messaging.envelope.v1`
 - Message-family schema IDs:
   - `TASK_RECEIPT`
@@ -58,6 +64,7 @@ When adding a schema family, add or update a catalog entry in the same change. N
   - `ACTION_DECISION`
   - `APPROVAL_REQUEST`
   - `APPROVAL_RESPONSE`
+- `TASK_RECEIPT` and `INCIDENT_ENVELOPE` are internal transport-family labels. A payload has canonical Rosetta **Receipt** or **Incident** semantics only when the owning contract explicitly maps and validates it against those v3 artifacts.
 - `domain_ref` is treated as a nested component owned by issue `#711`; the registry consumes that shape rather than redefining it.
 - The mailroom mapping is deterministic: `msg_type -> schema_id -> validation result -> quarantine reason`.
 - First-wave mailroom size policy:
@@ -108,6 +115,17 @@ When adding a schema family, add or update a catalog entry in the same change. N
   - `#630` owns the shared `iam.decision` artifact contract
   - `#1029` owns the Guard decision request/validation handshake
   - this package only decides whether a message is structurally eligible for data-plane routing, control-plane review, or quarantine
+
+## Semantic governance
+
+Before adding a schema family:
+
+1. search the v3 Terminology Lock and accepted extensions;
+2. classify the schema as core reuse, accepted extension, application contract, projection/derived view, external reference, or provisional semantic extension;
+3. update `schema-catalog.ts`, the authority map, tests, and [`SEMANTIC_AUDIT.md`](../../docs/governance/genesis/SEMANTIC_AUDIT.md) in the same change;
+4. run `pnpm run governance:semantic` and the package tests.
+
+Do not place a schema in the `rosetta.*` namespace merely because the package owns its validator.
 
 ## Fixture Status
 

@@ -6,6 +6,8 @@
 **Primary historical corpus:** [`crates/industry-best-practices/Development Book`](https://github.com/crates/industry-best-practices/tree/master/Development%20Book)  
 **Purpose:** Preserve the lineage of the operating doctrine without turning historical tools, terminology, or assumptions into timeless law
 
+> **Historical status note:** This ledger records the Genesis 0.2 synthesis. The current candidate is [`Genesis 0.4-draft`](./Genesis.md), with semantic corrections recorded in [`genesis/V0_4_RECONCILIATION.md`](./genesis/V0_4_RECONCILIATION.md), [`genesis/SEMANTIC_AUDIT.md`](./genesis/SEMANTIC_AUDIT.md), and [`genesis/SESSION_DECISION_COVERAGE.md`](./genesis/SESSION_DECISION_COVERAGE.md). This file remains unchanged in substance so the earlier synthesis is inspectable rather than retroactively rewritten.
+
 ## 1. Why this ledger exists
 
 Genesis 0.2 is a synthesis, not an anthology.
