@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T13:34:47.868Z",
+  "generatedAt": "2026-08-29T09:03:07.320Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
@@ -7622,6 +7622,138 @@
         "**3\\. Genesis Protocol & Immutable Authority Hierarchy** {#3.-genesis-protocol-&-immutable-authority-hierarchy}",
         "**4\\. Decentralization, Node Incentivization, and Anti-Capture Design** {#4.-decentralization,-node-incentivization,-and-anti-capture-design}",
         "**5\\. Zero-Trust Node Design and Local Autonomy** {#5.-zero-trust-node-design-and-local-autonomy}"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/GENESIS_SOURCE_SYNTHESIS.md",
+      "title": "Genesis Source Synthesis and Disposition Ledger",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 4,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T09:03:07.320Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T09:03:13.405Z",
+          "observedAt": "2026-08-29T09:03:13.405Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T09:03:07.320Z",
+      "bytes": 53614,
+      "contentFingerprint": "a2348c1b0e52dd10ddb0551c7592a49cbf7a7b96419f39614306f52f9aa59f1d",
+      "words": 5144,
+      "revisionFingerprint": "a90dbeeee748400a81851de4b169dacb3e6dfef4a849f0fabf11880054a7bfd7",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "57fbae6018c67464d958a2cf5cf76a4eab416752606f0c6e611a4873580e2b6c",
+      "headings": [
+        "Genesis Source Synthesis and Disposition Ledger",
+        "1. Why this ledger exists",
+        "2. Source boundary",
+        "2.1 Historical Development Book",
+        "2.2 Genesis 0.1 and the 2026-08-28/29 design sessions",
+        "2.3 Current Rosetta repository authorities",
+        "3. Disposition vocabulary",
+        "4. Synthesis principles",
+        "4.1 Preserve intent more readily than machinery",
+        "4.2 Convert rules into outcomes and evidence",
+        "4.3 Keep universal doctrine thinner than project profiles",
+        "4.4 Add the missing epistemic and agentic layer",
+        "5. Source-control and integration crosswalk",
+        "Resulting doctrine",
+        "6. Planning, flow, and feedback crosswalk",
+        "Resulting doctrine"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/Genesis.md",
+      "title": "Genesis",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 5,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T09:03:07.169Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T09:03:13.405Z",
+          "observedAt": "2026-08-29T09:03:13.405Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T09:03:07.169Z",
+      "bytes": 85751,
+      "contentFingerprint": "32bc945a7b2d11810e14ae9a590d30646db3cc1075f209b490ffc1a8c43e0685",
+      "words": 11519,
+      "revisionFingerprint": "a4b75ddab7a75e3218351d6b360c98dafb58961b22c4409ab3a4f86ace7bbf03",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "1b784a86c0b863d35e295fc99edada415070b993aa931de56e5efed52d787950",
+      "headings": [
+        "Genesis",
+        "1. Purpose",
+        "2. How to use this document",
+        "3. Normative language and authority",
+        "3.1 Precedence",
+        "3.2 Supersession and conflict",
+        "3.3 Local adaptation",
+        "4. Operating axioms",
+        "4.1 Value before volume",
+        "4.2 Evidence before confidence",
+        "4.3 Preserve evidence and uncertainty",
+        "4.4 Prefer the smallest honest proof",
+        "4.5 Inherit public wisdom before inventing private law",
+        "4.6 Compose behavior and bound mutation",
+        "4.7 Centralize invariants; federate execution",
+        "4.8 Make side effects authorized, bounded, observable, and recoverable"
       ],
       "status": "indexed",
       "githubIssueRefs": [],

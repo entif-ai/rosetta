@@ -1,6 +1,6 @@
 # Docs Intake Ledger
 
-Generated: 2026-05-25T13:34:47.868Z
+Generated: 2026-08-29T09:03:07.320Z
 
 This is the human-readable companion to `docs/intake/doc-ledger.json`. It is intentionally shallow: hashes and issue references live in JSON; this file is for quick orientation.
 
@@ -26,6 +26,8 @@ This is the human-readable companion to `docs/intake/doc-ledger.json`. It is int
 
 | Date | Freshness | Path | Words | Status |
 | --- | --- | --- | ---: | --- |
+| 2026-08-29 | current | `docs/governance/GENESIS_SOURCE_SYNTHESIS.md` | 5144 | indexed |
+| 2026-08-29 | current | `docs/governance/Genesis.md` | 11519 | indexed |
 | 2026-05-04 | current | `docs/handoffs/CURRENT_HANDOFF.md` | 1486 | indexed |
 | 2026-04-27 | undated-import | `docs/governance/AUTHORITY_STACK.md` | 210 | indexed |
 | 2026-04-27 | undated-import | `docs/governance/DONOR_FIT_MAP.md` | 92 | indexed |
