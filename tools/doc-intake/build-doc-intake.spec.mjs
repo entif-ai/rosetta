@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
-import { buildChronology, buildDocumentFingerprints, extractTopMatterDates, inferFreshness, resolveIssueDraftState } from './build-doc-intake.mjs';
+import { buildChronology, buildDocumentFingerprints, extractTopMatterDates, inferFreshness, resolveDocumentModifiedAt, resolveIssueDraftState } from './build-doc-intake.mjs';
 import { claimNextDoc, cli as docsIntelligenceLedgerCli, failDoc } from './docs-intelligence-ledger.mjs';
 import { buildCycleSummary, buildDocsIntelligenceIndex } from './docs-intelligence-graph.mjs';
 import { issueCandidateRows, validateExtractionCoverage } from './validate-docs-intelligence.mjs';
@@ -97,6 +97,45 @@ Date: 2026-04-24
 
     expect(chronology.intake).toEqual(previousDoc.chronology.intake);
   });
+
+  it('preserves prior filesystem chronology when unchanged content is checked out with a new mtime', () => {
+  const previousDoc = {
+    modifiedAt: '2026-04-24T05:02:58.958Z',
+    sha256: 'same-content'
+  };
+  const stats = { mtime: new Date('2026-08-29T08:02:20.977Z') };
+  const modifiedAt = resolveDocumentModifiedAt(stats, previousDoc, 'same-content');
+  const chronology = buildChronology(
+    'docs/governance/undated-example.md',
+    '# Undated example',
+    stats,
+    previousDoc,
+    '2026-08-29T08:02:21.063Z',
+    modifiedAt
+  );
+
+  expect(modifiedAt).toBe('2026-04-24T05:02:58.958Z');
+  expect(chronology.fallback.filesystemModifiedAt).toEqual({
+    date: '2026-04-24',
+    isoDateTime: '2026-04-24T05:02:58.958Z',
+    source: 'filesystem-mtime'
+  });
+  expect(chronology.primary).toMatchObject({
+    date: '2026-04-24',
+    kind: 'filesystemModifiedAt',
+    source: 'filesystem-mtime'
+  });
+});
+
+it('uses the observed filesystem mtime when document content changes', () => {
+  const modifiedAt = resolveDocumentModifiedAt(
+    { mtime: new Date('2026-08-29T08:02:20.977Z') },
+    { modifiedAt: '2026-04-24T05:02:58.958Z', sha256: 'old-content' },
+    'new-content'
+  );
+
+  expect(modifiedAt).toBe('2026-08-29T08:02:20.977Z');
+});
 
   it('marks filesystem-only dating as an undated import', () => {
     expect(inferFreshness('2026-04-24', 'filesystemModifiedAt')).toBe('undated-import');
