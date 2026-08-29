@@ -5,6 +5,12 @@
 **Status:** Working paper and build specification  
 **Scope:** Entif + Rosetta + Prism-style memory + Muninn-style activation + ontology/taxonomy scaffolding + cache-aware orchestration + swarm exchange
 
+## Semantic authority and terminology status
+
+This is a working research precursor. Rosetta v3 controls current Rosetta terms and protocol structure. The later accepted project direction uses **Ontological Mixture of Concepts (OMOC)**; unqualified **OMC** references here are preserved as historical naming unless a current authority explicitly maps or retains them.
+
+Schemas, scoring constructs, memory classes, and orchestration envelopes proposed here are research or Entif application candidates until accepted through their proper RFC/PRD/Pack governance. They do not redefine Rosetta core by repetition.
+
 ---
 
 ## Abstract

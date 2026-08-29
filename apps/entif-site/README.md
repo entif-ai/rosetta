@@ -5,12 +5,14 @@ Static public site for Entif AI, compiled with Astro and deployed from the Roset
 ## Design constraints
 
 - Static HTML by default; React is reserved for interactive islands.
-- Public content is authored in `docs/site/**/*.md` and validated at build time.
+- Public content is authored in `apps/entif-site/content/**/*.md` and validated at build time.
 - `status: published` is required before a content entry receives a public route.
 - Stable content IDs, topics, project references, and explicit relations are machine-readable frontmatter.
 - Related-content links are generated deterministically from explicit relations, shared projects, and shared topics.
 - The current Entif logo lives at `public/brand/entif-logo.webp` and is derived from the project-provided source artwork.
 - Styling uses local CSS and system fonts. No UI framework or external font request is required.
+
+Cross-project design priorities come from [`../../docs/governance/Genesis.md`](../../docs/governance/Genesis.md) and [`../../docs/governance/genesis/INTERFACE_AND_ACCESSIBILITY.md`](../../docs/governance/genesis/INTERFACE_AND_ACCESSIBILITY.md). Site-specific tokens, breakpoints, component decisions, and future light/dark `design.md` artifacts remain local to this application.
 
 ## Quality gates
 
@@ -29,4 +31,4 @@ pnpm exec nx run entif-site:e2e
 
 ## Deployment
 
-The default canonical target is `https://entif-ai.github.io/rosetta/`. Set `ENTIF_SITE_URL` at build time when a custom domain becomes authoritative. Astro derives the required base path from that URL.
+The intended production target is the custom-domain root. Set `ENTIF_SITE_URL` to the authoritative origin, such as `https://entif.ai/`; Astro derives the correct base path from that origin. Repository-subpath URLs are staging/fallback behavior, not the canonical production route model.

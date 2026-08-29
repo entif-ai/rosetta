@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T13:34:47.868Z",
+  "generatedAt": "2026-08-29T11:24:40.446Z",
   "policy": {
     "conflictResolution": "Prefer newer docs within the same authority tier; prefer live/governance/handoff/backlog/PRD/RFC sources over chats, ideas, external notes, and frontier research.",
     "ingestBoundary": "This ledger fingerprints and orients docs. It does not perform large-scale Rosetta-native semantic corpus ingest. Requirements extraction for planning is a separate allowed docs-intelligence workflow.",
@@ -19,8 +19,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.883Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.478Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -39,7 +39,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.883Z",
+      "modifiedAt": "2026-08-29T11:24:26.478Z",
       "bytes": 4690,
       "contentFingerprint": "eff46959258962344499d598060ea3c6261b25e8536e3393dd757440f11d2ca3",
       "words": 640,
@@ -70,8 +70,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.884Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.479Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -90,7 +90,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.884Z",
+      "modifiedAt": "2026-08-29T11:24:26.479Z",
       "bytes": 217750,
       "contentFingerprint": "16cb3cda96d6326398e4dabea5c40bfa4236f617a92f30335c4d3108ef418b22",
       "words": 32829,
@@ -140,8 +140,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.885Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.480Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -161,7 +161,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.885Z",
+      "modifiedAt": "2026-08-29T11:24:26.480Z",
       "bytes": 38310,
       "contentFingerprint": "dcf4f35a7291592968f8bc32182ce2db6b152dddebe0e3d0bba923ac901b956d",
       "words": 4929,
@@ -231,8 +231,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.886Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.480Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -252,7 +252,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.886Z",
+      "modifiedAt": "2026-08-29T11:24:26.480Z",
       "bytes": 9245,
       "contentFingerprint": "1704e8cce2ff489fc9ea7324ae2b7219da259a20e98f36897afa05dc8bb9f311",
       "words": 1282,
@@ -298,8 +298,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.886Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.480Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -319,7 +319,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.886Z",
+      "modifiedAt": "2026-08-29T11:24:26.480Z",
       "bytes": 10812,
       "contentFingerprint": "de8a80c90a545bd727084433a5cb8baac4880741b5a8889ab746db4530b9ab22",
       "words": 1405,
@@ -354,15 +354,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.886Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.480Z",
             "source": "filesystem-mtime"
           }
         },
@@ -371,12 +371,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.886Z",
+      "modifiedAt": "2026-08-29T11:24:26.480Z",
       "bytes": 910,
       "contentFingerprint": "c969b6b24822ebdbd3edb1d02bd1b99db85bd5fc917740ec48010ae42fba9625",
       "words": 130,
@@ -404,15 +404,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.888Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.482Z",
             "source": "filesystem-mtime"
           }
         },
@@ -421,12 +421,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.888Z",
+      "modifiedAt": "2026-08-29T11:24:26.482Z",
       "bytes": 481984,
       "contentFingerprint": "2c4b5667514ea897c47b4d609f3a357cb06b71527b41c916908dae14b6000c8f",
       "words": 69121,
@@ -461,15 +461,15 @@
       "category": "backlog",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.888Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.482Z",
             "source": "filesystem-mtime"
           }
         },
@@ -478,12 +478,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.888Z",
+      "modifiedAt": "2026-08-29T11:24:26.482Z",
       "bytes": 58060,
       "contentFingerprint": "9453b850fb0e47064b953d75769e0fb1aac39f4b15f01e723f62a9f050cb40ec",
       "words": 7106,
@@ -547,8 +547,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.889Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.483Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -568,7 +568,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.889Z",
+      "modifiedAt": "2026-08-29T11:24:26.483Z",
       "bytes": 284302,
       "contentFingerprint": "f47147ddd01642f61e64b87e296e3506b59ca15ee26c3dab26b6a44d5fe40bbf",
       "words": 43827,
@@ -632,8 +632,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.890Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.484Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -653,7 +653,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.890Z",
+      "modifiedAt": "2026-08-29T11:24:26.484Z",
       "bytes": 169235,
       "contentFingerprint": "1258647162423c3dac56b431f6900b2268b246860c1460e0f3177c698de4295a",
       "words": 25322,
@@ -717,8 +717,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.891Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.485Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -738,7 +738,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.891Z",
+      "modifiedAt": "2026-08-29T11:24:26.485Z",
       "bytes": 134072,
       "contentFingerprint": "2a64e39297c682a26eb4f756c488d100829a789642c9e7525e568d88ebe27b83",
       "words": 16868,
@@ -795,8 +795,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.891Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.485Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -816,7 +816,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.891Z",
+      "modifiedAt": "2026-08-29T11:24:26.485Z",
       "bytes": 174524,
       "contentFingerprint": "c3b5e33f6a5b5f5f4848999113ef5ca8c2fb9b642511693c69bd4086b9a331ab",
       "words": 27647,
@@ -880,8 +880,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.892Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.486Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -901,7 +901,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.892Z",
+      "modifiedAt": "2026-08-29T11:24:26.486Z",
       "bytes": 263522,
       "contentFingerprint": "914a333d44f80e51853c27856ebea96558c1a96130dfe9064bb5b897f95826a3",
       "words": 34945,
@@ -965,8 +965,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.893Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.487Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -986,7 +986,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.893Z",
+      "modifiedAt": "2026-08-29T11:24:26.487Z",
       "bytes": 155363,
       "contentFingerprint": "b82cdb30ac5b44473a0bea683ca5e6197f872e4a111b8f931abd653097ada324",
       "words": 21221,
@@ -1050,8 +1050,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.894Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.487Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1071,7 +1071,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.894Z",
+      "modifiedAt": "2026-08-29T11:24:26.487Z",
       "bytes": 54041,
       "contentFingerprint": "efc344baad8e9d27402db8dee5afad6fb1b4eb369aaf5c74ceeadfb32e3a4014",
       "words": 6744,
@@ -1135,8 +1135,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.894Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.487Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1156,7 +1156,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.894Z",
+      "modifiedAt": "2026-08-29T11:24:26.487Z",
       "bytes": 16251,
       "contentFingerprint": "3c221c76e94e078c7038701f316d3c9d83277709b6221c941e6ab769122704d9",
       "words": 2355,
@@ -1220,8 +1220,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.894Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.488Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1241,7 +1241,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.894Z",
+      "modifiedAt": "2026-08-29T11:24:26.488Z",
       "bytes": 124294,
       "contentFingerprint": "b9823eec16da3317e8fb13e8df2b826fdd35f7c7f8056fd9dcda9230e0ef4455",
       "words": 20316,
@@ -1305,8 +1305,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.895Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.488Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1326,7 +1326,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.895Z",
+      "modifiedAt": "2026-08-29T11:24:26.488Z",
       "bytes": 95455,
       "contentFingerprint": "fa0aaecf0e40f0d790ee27afb792cf8af021370107a674fbe028de06e7f9e6f7",
       "words": 12940,
@@ -1390,8 +1390,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.895Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.488Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1411,7 +1411,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.895Z",
+      "modifiedAt": "2026-08-29T11:24:26.488Z",
       "bytes": 20256,
       "contentFingerprint": "04a5e5cbfdd62c44ad628f9c6f77c75b39d0f32b6f9b764bf1ba4ec3576487d2",
       "words": 2179,
@@ -1475,8 +1475,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.896Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.489Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1496,7 +1496,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.896Z",
+      "modifiedAt": "2026-08-29T11:24:26.489Z",
       "bytes": 149728,
       "contentFingerprint": "389a8353abfafcb60364fa0c3783d55bc1e1ceb4a6c8b869bda57bd0b9e3be1c",
       "words": 19270,
@@ -1560,8 +1560,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.898Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.489Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1581,7 +1581,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.898Z",
+      "modifiedAt": "2026-08-29T11:24:26.489Z",
       "bytes": 11183,
       "contentFingerprint": "31c96de3255bdab9a84f92c535bce5d8015dbb13de7f1637b73f428b199561d3",
       "words": 1625,
@@ -1639,8 +1639,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.898Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.489Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1660,7 +1660,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.898Z",
+      "modifiedAt": "2026-08-29T11:24:26.489Z",
       "bytes": 71232,
       "contentFingerprint": "6865e0c67ea5be12bca0b25cef0b0647236eed354f9d9749f862603e9ef04883",
       "words": 8382,
@@ -1724,8 +1724,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.898Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.490Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1745,7 +1745,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.898Z",
+      "modifiedAt": "2026-08-29T11:24:26.490Z",
       "bytes": 33113,
       "contentFingerprint": "9b03fc513142e23fe58df48804cd05ae2af428ac8d647b3903fb069066b15ac0",
       "words": 3935,
@@ -1804,8 +1804,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.899Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.490Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1825,7 +1825,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.899Z",
+      "modifiedAt": "2026-08-29T11:24:26.490Z",
       "bytes": 142207,
       "contentFingerprint": "3fceb488c6873da2bb5567d95dddfafd58dc9430c868304947ceffcbbda8973d",
       "words": 21995,
@@ -1889,8 +1889,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.900Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.491Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1910,7 +1910,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.900Z",
+      "modifiedAt": "2026-08-29T11:24:26.491Z",
       "bytes": 342266,
       "contentFingerprint": "33b0c3c2b72a2051ffee9641f8a5c02fe749aa1b633fb532484a02f270983698",
       "words": 46872,
@@ -1974,8 +1974,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.901Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.492Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -1995,7 +1995,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.901Z",
+      "modifiedAt": "2026-08-29T11:24:26.492Z",
       "bytes": 93968,
       "contentFingerprint": "30533e8b2a2c396ed5afd8878f747609b2c23aa29e832d92fbed995f61fde5e9",
       "words": 13475,
@@ -2059,8 +2059,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.902Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.493Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2080,7 +2080,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.902Z",
+      "modifiedAt": "2026-08-29T11:24:26.493Z",
       "bytes": 160307,
       "contentFingerprint": "daa03b0b9a88a659ff6c37d648569ee8ecfd79df23237d70ca9a42c7820a65f9",
       "words": 21985,
@@ -2144,8 +2144,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.902Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.493Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2165,7 +2165,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.902Z",
+      "modifiedAt": "2026-08-29T11:24:26.493Z",
       "bytes": 73149,
       "contentFingerprint": "960c7cff09189bf96a058174d23e0e240f1bb99aa7ff9dd13e0c557549f12767",
       "words": 8806,
@@ -2229,8 +2229,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.904Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.495Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2250,7 +2250,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.904Z",
+      "modifiedAt": "2026-08-29T11:24:26.495Z",
       "bytes": 461460,
       "contentFingerprint": "9158779446acd65afd4fb74ddb8ca48d671c15e080fc258605719aa264671e43",
       "words": 63018,
@@ -2314,8 +2314,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.905Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.496Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2335,7 +2335,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.905Z",
+      "modifiedAt": "2026-08-29T11:24:26.496Z",
       "bytes": 287092,
       "contentFingerprint": "fd100349b4a19474e1757cbff31631542b6ab9982c28993ff2334746d416fc1a",
       "words": 39223,
@@ -2399,8 +2399,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.909Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.496Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2420,7 +2420,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.909Z",
+      "modifiedAt": "2026-08-29T11:24:26.496Z",
       "bytes": 17511,
       "contentFingerprint": "fc9074332cf384bce7561b2c54d1b512ee082d4e8fead7c398841fde5eaa92f9",
       "words": 2298,
@@ -2483,8 +2483,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.908Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.496Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2504,7 +2504,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.908Z",
+      "modifiedAt": "2026-08-29T11:24:26.496Z",
       "bytes": 94198,
       "contentFingerprint": "ea18d0d076e943a9262e95b934ef15fdbb549559ed8c70bdd05f4fb55b908802",
       "words": 14648,
@@ -2568,8 +2568,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.909Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2589,7 +2589,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.909Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 8237,
       "contentFingerprint": "42ed7f5377905bda08780826e0888939fd2556c2356f559b7dfca91e2346d279",
       "words": 1095,
@@ -2647,8 +2647,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.909Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2668,7 +2668,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.909Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 6030,
       "contentFingerprint": "df43f61ecf10076e7cbfc11d98cac47eba8ae66f5707f793846448a9fcbb28c6",
       "words": 812,
@@ -2722,8 +2722,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.910Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2743,7 +2743,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.910Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 8437,
       "contentFingerprint": "ec8ff70fe09a51f9aef1a38ef715d1fc30c279300a4bb606f081e89f2e33e549",
       "words": 1160,
@@ -2805,8 +2805,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.910Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2826,7 +2826,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.910Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 12239,
       "contentFingerprint": "59e2ea420732b1d074f1a41342068c1d84c6829985b4d2bd011eebba70581838",
       "words": 1722,
@@ -2885,8 +2885,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.910Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2906,7 +2906,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.910Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 7009,
       "contentFingerprint": "b6b3b306e725d2c0b2ff74d66937d72b462de2ad6650b8a2368bfa9aa5476a18",
       "words": 937,
@@ -2965,8 +2965,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.911Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -2986,7 +2986,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.911Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 8381,
       "contentFingerprint": "2f88726eecd911507cc93adb5d200a0b1b7e372dd2014631305f00b2e10dd75d",
       "words": 1139,
@@ -3047,8 +3047,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.911Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3068,7 +3068,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.911Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 7076,
       "contentFingerprint": "e797fafe78cd41290577b78ffdd4f679f155d19aaaa1a4c7edf522566a6b79ef",
       "words": 931,
@@ -3126,8 +3126,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.911Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3147,7 +3147,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.911Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 7579,
       "contentFingerprint": "673532a00c41f0d7bd2c1d2dd403d826f393fcafc51ff39bbb88c22dff6c2199",
       "words": 1024,
@@ -3207,8 +3207,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.911Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3228,7 +3228,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.911Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 9206,
       "contentFingerprint": "6e365f6c2ff1cda6e947826b211b699ea66f71acf5fc51137aed06bb09385497",
       "words": 1149,
@@ -3282,8 +3282,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.912Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3303,7 +3303,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.912Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 7509,
       "contentFingerprint": "3acf71d603878ef3eee2e82c3ae8478206c2aaadcf101c460c051bdcf4e809ef",
       "words": 978,
@@ -3362,8 +3362,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.912Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3383,7 +3383,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.912Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 9145,
       "contentFingerprint": "fd3b0652bb45b82dbcc87fa05e1808ee366c016fe80b6ed1118e388ba50591be",
       "words": 1179,
@@ -3437,8 +3437,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.912Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3458,7 +3458,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.912Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 10986,
       "contentFingerprint": "9e15768ef94371cd323dcb70001c6ecdb1fda1759c36fdf5e1b2f49b797daf4c",
       "words": 1449,
@@ -3517,8 +3517,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.913Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.497Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3538,7 +3538,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.913Z",
+      "modifiedAt": "2026-08-29T11:24:26.497Z",
       "bytes": 12896,
       "contentFingerprint": "173a7815927bcb7d5a2a10f7ea83334b4495db9b506cd28488213480481a5d09",
       "words": 1676,
@@ -3599,8 +3599,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.913Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3620,7 +3620,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.913Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 38350,
       "contentFingerprint": "c39aad9fd2987b14da005c6a71e7348e51441b4565ecd4e483f936733f2d5501",
       "words": 5263,
@@ -3679,8 +3679,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.915Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3700,7 +3700,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.915Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 30498,
       "contentFingerprint": "1442c93c3aa9b33fb9db623311ff92de82ba970c6febc3512c72278a3b643fa3",
       "words": 4792,
@@ -3753,8 +3753,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.915Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3774,7 +3774,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.915Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 20036,
       "contentFingerprint": "5ef81e35af16f1229ccb487a392871f17f0887bd9e53f78b6949cecfea06b7dd",
       "words": 2563,
@@ -3838,8 +3838,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.916Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3859,7 +3859,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.916Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 12967,
       "contentFingerprint": "fa8330ed2d2cfc9e72169d42c9d836fc77d3d42c5225250235ba80b4a621f3dd",
       "words": 1810,
@@ -3910,8 +3910,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.916Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -3931,7 +3931,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.916Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 11889,
       "contentFingerprint": "b8f6396f8f75c3ab126def662cd6a071fa4331c6b8fece0373d9249333963539",
       "words": 1479,
@@ -3989,8 +3989,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.916Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.498Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4010,7 +4010,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.916Z",
+      "modifiedAt": "2026-08-29T11:24:26.498Z",
       "bytes": 16311,
       "contentFingerprint": "0e024c0b9a9977d5ed97d8c9f6ec8d6772b30db283caf78925e4a9054d11ddda",
       "words": 2354,
@@ -4063,8 +4063,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.917Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.499Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4084,7 +4084,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.917Z",
+      "modifiedAt": "2026-08-29T11:24:26.499Z",
       "bytes": 97688,
       "contentFingerprint": "fe401071e69db63d029c382902119d01be85c97bf846693966c761147f373430",
       "words": 14572,
@@ -4148,8 +4148,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.918Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.499Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4169,7 +4169,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.918Z",
+      "modifiedAt": "2026-08-29T11:24:26.499Z",
       "bytes": 120765,
       "contentFingerprint": "1d617c919d9efe8f4cee2540720222827ec4af27e78ed2dfa8ffa039d3b0bc8d",
       "words": 19023,
@@ -4233,8 +4233,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.919Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.500Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4254,7 +4254,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.919Z",
+      "modifiedAt": "2026-08-29T11:24:26.500Z",
       "bytes": 162120,
       "contentFingerprint": "953c471c5d5e24e28cd6bae2a97a3f63cca413eec58e81c42c5af9b35a433ef7",
       "words": 22314,
@@ -4296,8 +4296,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.920Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.500Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4316,7 +4316,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.920Z",
+      "modifiedAt": "2026-08-29T11:24:26.500Z",
       "bytes": 136903,
       "contentFingerprint": "565b89dd95cef01244594dd61bdb6189fb3fe7a2780eb93bd8e2cab91776c4bb",
       "words": 21224,
@@ -4380,8 +4380,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.920Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.501Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4401,7 +4401,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.920Z",
+      "modifiedAt": "2026-08-29T11:24:26.501Z",
       "bytes": 53761,
       "contentFingerprint": "6b8626d057dbc7800eb30efdf64cd822b923d2901bf566f72f7fb4424cba3754",
       "words": 7724,
@@ -4465,8 +4465,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.925Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.502Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4486,7 +4486,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.925Z",
+      "modifiedAt": "2026-08-29T11:24:26.502Z",
       "bytes": 237328,
       "contentFingerprint": "aa446ab0c4f36bb5b8887820b6fac6ce50fdb28d7f78a04925297151d425301b",
       "words": 30665,
@@ -4550,8 +4550,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.925Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.502Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4571,7 +4571,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.925Z",
+      "modifiedAt": "2026-08-29T11:24:26.502Z",
       "bytes": 151570,
       "contentFingerprint": "153e5591d4c0fcd2b3848b084da5e43f7add938e0b83645b88aefacdea0d57ca",
       "words": 21270,
@@ -4630,8 +4630,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.927Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.502Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4651,7 +4651,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.927Z",
+      "modifiedAt": "2026-08-29T11:24:26.502Z",
       "bytes": 23194,
       "contentFingerprint": "113e10959f78145571d3033153b2db4565b57bd2171be3474e10312b2cb1ef62",
       "words": 2954,
@@ -4685,8 +4685,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.927Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.502Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4705,7 +4705,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.927Z",
+      "modifiedAt": "2026-08-29T11:24:26.502Z",
       "bytes": 54654,
       "contentFingerprint": "b60d03815b4cfa8ee74c6a2b8141df2f0a937064932cdddd64ea7d4e8b2ba34a",
       "words": 6093,
@@ -4769,8 +4769,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.928Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.503Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4790,7 +4790,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.928Z",
+      "modifiedAt": "2026-08-29T11:24:26.503Z",
       "bytes": 64891,
       "contentFingerprint": "5b885613045d9f2ca6edd5cc4caf47b1004e2dc73a3f2fbbd05854b695c5c418",
       "words": 9148,
@@ -4851,8 +4851,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.928Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.503Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4872,7 +4872,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.928Z",
+      "modifiedAt": "2026-08-29T11:24:26.503Z",
       "bytes": 44552,
       "contentFingerprint": "8337bfd64cec041a874068a04a2f431d32bb00952e1561ad1975a050d5165265",
       "words": 6636,
@@ -4931,8 +4931,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.929Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.503Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -4952,7 +4952,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.929Z",
+      "modifiedAt": "2026-08-29T11:24:26.503Z",
       "bytes": 136676,
       "contentFingerprint": "865511102afc4104e4ea519b3e983e87459e3adbb46244aa8a6a881bc26f6039",
       "words": 21094,
@@ -5016,8 +5016,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.930Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.504Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5037,7 +5037,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.930Z",
+      "modifiedAt": "2026-08-29T11:24:26.504Z",
       "bytes": 202637,
       "contentFingerprint": "69c9b10bb9d508102f55a4b285f15af493d3f65a32a94b22a96e81d1402b415e",
       "words": 30952,
@@ -5103,8 +5103,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.930Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.504Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5124,7 +5124,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.930Z",
+      "modifiedAt": "2026-08-29T11:24:26.504Z",
       "bytes": 41890,
       "contentFingerprint": "e21211d4000f4266a6a977555b89fc2436aa7fe7a06067b1930df37e807a8ff4",
       "words": 5608,
@@ -5175,8 +5175,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.931Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.505Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5196,7 +5196,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.931Z",
+      "modifiedAt": "2026-08-29T11:24:26.505Z",
       "bytes": 60925,
       "contentFingerprint": "fedb6a613a5cc57f1082e0c9d5862813de1169e04438f041f0b8c8ab99538508",
       "words": 8075,
@@ -5247,8 +5247,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.931Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.505Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5268,7 +5268,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.931Z",
+      "modifiedAt": "2026-08-29T11:24:26.505Z",
       "bytes": 98303,
       "contentFingerprint": "6d99727a6c81f2643362a211bfbd24ef237578a4158e50d4f76593e936e9b965",
       "words": 14610,
@@ -5332,8 +5332,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T02:02:35.387Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.506Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5353,7 +5353,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T02:02:35.387Z",
+      "modifiedAt": "2026-08-29T11:24:26.506Z",
       "bytes": 97848,
       "contentFingerprint": "b651e9e239df28c02e038dbe9db9430f8ab1e3f3e1663f737036ca93f4a0d8e0",
       "words": 12574,
@@ -5417,8 +5417,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.249Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.506Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5438,7 +5438,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.249Z",
+      "modifiedAt": "2026-08-29T11:24:26.506Z",
       "bytes": 6637,
       "contentFingerprint": "bf5b97f5f8be2d2652a54a48ea0ae02bc2f2e72f59f34f52ebbea0862a46b703",
       "words": 899,
@@ -5489,8 +5489,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.250Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.506Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5510,7 +5510,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.250Z",
+      "modifiedAt": "2026-08-29T11:24:26.506Z",
       "bytes": 24825,
       "contentFingerprint": "8c914a2f49f040e062fbbdca2d8b66cb04407720025fe462b736c7322f54a1dd",
       "words": 3197,
@@ -5574,8 +5574,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.250Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.506Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5595,7 +5595,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.250Z",
+      "modifiedAt": "2026-08-29T11:24:26.506Z",
       "bytes": 25101,
       "contentFingerprint": "390916edb3fcd9dfd0f7858161f7e2127503d708405f84ed1ef0b217ad32bfe6",
       "words": 3223,
@@ -5627,8 +5627,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.251Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.507Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5647,7 +5647,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.251Z",
+      "modifiedAt": "2026-08-29T11:24:26.507Z",
       "bytes": 373721,
       "contentFingerprint": "a9cc620bf50797922625837dd2506f2c3c87540759a5238d8aa557e7806156a9",
       "words": 28935,
@@ -5676,8 +5676,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.251Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.507Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5696,7 +5696,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.251Z",
+      "modifiedAt": "2026-08-29T11:24:26.507Z",
       "bytes": 14131,
       "contentFingerprint": "b53d8c40d0b87916424fb53b3b74832f6eb110be450e21a62260fcdc1c61fd6b",
       "words": 1873,
@@ -5760,8 +5760,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.251Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.508Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5781,7 +5781,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.251Z",
+      "modifiedAt": "2026-08-29T11:24:26.508Z",
       "bytes": 203240,
       "contentFingerprint": "a3cfa3c5903d6289e33c9117dcd3cd97400a605069cdd0442e07246ee99636a7",
       "words": 28229,
@@ -5845,8 +5845,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.252Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.509Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5866,7 +5866,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.252Z",
+      "modifiedAt": "2026-08-29T11:24:26.509Z",
       "bytes": 245251,
       "contentFingerprint": "ad019e269a07c5193f1923e53f949db6ae50cd046f4f65a947f5ab370ec02e5c",
       "words": 33314,
@@ -5930,8 +5930,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.252Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.509Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -5951,7 +5951,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.252Z",
+      "modifiedAt": "2026-08-29T11:24:26.509Z",
       "bytes": 52135,
       "contentFingerprint": "234a8708ea9ca47fc962b82db884c99ff41a9d7027332ebcc52ddf4affb353ea",
       "words": 5285,
@@ -6003,8 +6003,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.254Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.509Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6024,7 +6024,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.254Z",
+      "modifiedAt": "2026-08-29T11:24:26.509Z",
       "bytes": 94439,
       "contentFingerprint": "f133d0a9c2a7bc92004eb3a9bb90f8d8c6f4795c90b76388907ea4a83ebe1946",
       "words": 15386,
@@ -6059,15 +6059,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.939Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.514Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6076,12 +6076,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.939Z",
+      "modifiedAt": "2026-08-29T11:24:26.514Z",
       "bytes": 17544,
       "contentFingerprint": "b7d34cef5ca2490ad84b46ebb0ee44763fe731863b040a7acc10450c0cad2c88",
       "words": 2066,
@@ -6116,15 +6116,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.932Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.510Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6133,12 +6133,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.932Z",
+      "modifiedAt": "2026-08-29T11:24:26.510Z",
       "bytes": 5383,
       "contentFingerprint": "038b6e7441da1d5ad6d174180770adfabec0b2cf3b07762814a1d741fa5e339f",
       "words": 624,
@@ -6169,15 +6169,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.932Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6186,12 +6186,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.932Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 5997,
       "contentFingerprint": "6567f4a5aeba122c12df3997530bc4c7dcb728355fcd8d27bab074ae0104bfa7",
       "words": 778,
@@ -6217,15 +6217,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.932Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6234,12 +6234,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.932Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 16652,
       "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
@@ -6259,15 +6259,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.932Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6276,12 +6276,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.932Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 24058,
       "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
@@ -6312,15 +6312,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.933Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6329,12 +6329,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.933Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 3051,
       "contentFingerprint": "287a90060402d85a7e578a01b01600d7fa4532c2297dacacb4daefe50dc449d5",
       "words": 509,
@@ -6352,15 +6352,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.933Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6369,12 +6369,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.933Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 21481,
       "contentFingerprint": "84688f2626832051cb4343c3eb81685b54b0b7e9473f904e0e38c029029cd088",
       "words": 3143,
@@ -6409,15 +6409,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.934Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6426,12 +6426,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.934Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 24058,
       "contentFingerprint": "ad64f5a8ce4c8b6a78773345e4bc870f3ba9da32a09abbfffa9090c13de462f3",
       "words": 3670,
@@ -6462,15 +6462,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.934Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6479,12 +6479,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.934Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 16652,
       "contentFingerprint": "51f7a5b0c4436ed860d36daca6acc63c8a6bc72ab9119c0c6ca8085614f8a181",
       "words": 2493,
@@ -6504,15 +6504,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.933Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6521,12 +6521,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.933Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 82870,
       "contentFingerprint": "f4b8b22010aa86fe3479262a9215810361f703498013f121b33f6e7da98a5cc0",
       "words": 10795,
@@ -6561,15 +6561,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.935Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6578,12 +6578,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.935Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 37814,
       "contentFingerprint": "064f7fee6784103c0424cac7adf5ceb08b9c550a2991caf2a0a8371352d0cca0",
       "words": 5411,
@@ -6618,15 +6618,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.935Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.511Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6635,12 +6635,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.935Z",
+      "modifiedAt": "2026-08-29T11:24:26.511Z",
       "bytes": 29223,
       "contentFingerprint": "1b0e2469cb20f6f0b80c8efee4e49538fbe4baff37af75e565f1ba9738491ffe",
       "words": 3428,
@@ -6682,8 +6682,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.937Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.514Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6702,7 +6702,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.937Z",
+      "modifiedAt": "2026-08-29T11:24:26.514Z",
       "bytes": 742051,
       "contentFingerprint": "8f1963e5d5033686fdd90bb4d75ea5d24476a654f4f7961bf21da24039940181",
       "words": 94763,
@@ -6737,15 +6737,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.938Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.514Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6754,12 +6754,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.938Z",
+      "modifiedAt": "2026-08-29T11:24:26.514Z",
       "bytes": 10211,
       "contentFingerprint": "69348110863476288cee7b31d98b74347d9716ccee15ead9960f46d75019dfbf",
       "words": 1535,
@@ -6794,15 +6794,15 @@
       "category": "external",
       "authorityTier": "research-context",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.938Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.514Z",
             "source": "filesystem-mtime"
           }
         },
@@ -6811,12 +6811,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.938Z",
+      "modifiedAt": "2026-08-29T11:24:26.514Z",
       "bytes": 17082,
       "contentFingerprint": "e31f4bb770a41fe3e098fdd9193a50a813b4ee4bdd549fdc2b9ca3a3ccb69d2e",
       "words": 2066,
@@ -6852,8 +6852,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.939Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.515Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6872,7 +6872,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.939Z",
+      "modifiedAt": "2026-08-29T11:24:26.515Z",
       "bytes": 73468,
       "contentFingerprint": "c33ea7702470a3d0c800586082c01fe016058a830bc17dc27d4a8f6fdcfcbd83",
       "words": 10116,
@@ -6908,8 +6908,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.940Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.516Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6928,7 +6928,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.940Z",
+      "modifiedAt": "2026-08-29T11:24:26.516Z",
       "bytes": 49549,
       "contentFingerprint": "cbbacf51dcfb8b13972abe43842b617abda6aa23050be28c0cadfadb1f5fb5da",
       "words": 6913,
@@ -6970,8 +6970,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.941Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.516Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -6990,7 +6990,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.941Z",
+      "modifiedAt": "2026-08-29T11:24:26.516Z",
       "bytes": 145959,
       "contentFingerprint": "5d75f5bcd873cb67225657271566f9f8d5dea37418db24c3008dce21fe42f092",
       "words": 17926,
@@ -7029,8 +7029,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.942Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.516Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7049,7 +7049,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.942Z",
+      "modifiedAt": "2026-08-29T11:24:26.516Z",
       "bytes": 128321,
       "contentFingerprint": "7171be13579b164e26722d26b2bf98bc5f9b6d4235689527355ebf5276eeca48",
       "words": 16415,
@@ -7091,8 +7091,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.943Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.517Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7111,7 +7111,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.943Z",
+      "modifiedAt": "2026-08-29T11:24:26.517Z",
       "bytes": 109645,
       "contentFingerprint": "65af4ea6cc08df14cbf7d40124266eeb73abb1ef7da740120108040a0065117a",
       "words": 15341,
@@ -7153,8 +7153,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.943Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.517Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7173,7 +7173,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.943Z",
+      "modifiedAt": "2026-08-29T11:24:26.517Z",
       "bytes": 167388,
       "contentFingerprint": "d9edc01ce9cab278bca9af20c120d63f71886aa754d497ac027c3f0d84f4237f",
       "words": 22462,
@@ -7223,8 +7223,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.254Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.517Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7244,7 +7244,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.254Z",
+      "modifiedAt": "2026-08-29T11:24:26.517Z",
       "bytes": 14814,
       "contentFingerprint": "7ed623200452a7bd2412e4e832c224120b4605c0be69cca9baa52437a974b513",
       "words": 1937,
@@ -7296,8 +7296,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7317,7 +7317,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
       "bytes": 10602,
       "contentFingerprint": "f25689d1c8b272329da885e56064972ff8db1583f7edcf1d79f93c759e390908",
       "words": 1419,
@@ -7367,8 +7367,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7388,7 +7388,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
       "bytes": 43076,
       "contentFingerprint": "3bd664c6d39a4c479debbea99f2730c478b2665abff717b5580ae9662580439d",
       "words": 6124,
@@ -7440,8 +7440,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7461,7 +7461,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
       "bytes": 9011,
       "contentFingerprint": "3f23973a5930a9c58cd5c478964bb5fff4cc999f9604f7a3a830dcbbfe3d8a15",
       "words": 1288,
@@ -7496,15 +7496,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7513,23 +7513,26 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
-      "bytes": 1475,
-      "contentFingerprint": "452cd5f5b4b4169cb784ee548dd71b721c780035a87af902c03b5644875eb7b0",
-      "words": 210,
-      "revisionFingerprint": "d1a6454d95d7288a1234e411327bd6c36864dc12c9a8b9315239c152d7d17539",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
+      "bytes": 4362,
+      "contentFingerprint": "9cc06475732f4c4b0ab1537e5e32a17c5b159bfc2d8fe0d9136d59ddd5db0afa",
+      "words": 542,
+      "revisionFingerprint": "4ae86bfccfcb86f4a6673d835a5137e9a57f1f209faa8bb555633ee99083d6eb",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "287a7f260eb2ff326ff332e4b7ca53ee460ffafd49c6c15ecfe878f778e56605",
+      "sha256": "14c0a1ce20538516c2b83c343027c9deff04ed124c96bcce1d2bc501c10dae60",
       "headings": [
         "Authority Stack",
-        "Primary Authorities",
-        "Local Execution Constraints",
-        "Repo Receipts"
+        "Rosetta semantic and protocol authority",
+        "Genesis operating authority",
+        "Semantic duplication protocol",
+        "Bootstrap execution authorities",
+        "Local execution constraints",
+        "Repository evidence"
       ],
       "status": "indexed",
       "githubIssueRefs": [],
@@ -7541,15 +7544,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7558,12 +7561,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
       "bytes": 588,
       "contentFingerprint": "0b9a5941c2e5f49566d927dc45a8df60c9f2f5e997ef0c0558381bacb589542e",
       "words": 92,
@@ -7586,15 +7589,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.944Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7603,12 +7606,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.944Z",
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
       "bytes": 62904,
       "contentFingerprint": "bc9108060baad56dfc1e4f5202249d0548af99fcbbb6148250436309f87667a1",
       "words": 9433,
@@ -7628,20 +7631,853 @@
       "issueCandidateRefs": []
     },
     {
-      "path": "docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md",
-      "title": "Repo Shape And Constraints",
+      "path": "docs/governance/GENESIS_SOURCE_SYNTHESIS.md",
+      "title": "Genesis Source Synthesis and Disposition Ledger",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 4,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.518Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T09:03:13.405Z",
+          "observedAt": "2026-08-29T09:03:13.405Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.518Z",
+      "bytes": 54126,
+      "contentFingerprint": "070a4c1917d8d5f392eedd66dd2e25c16cb76c798528116b9532e478218b830d",
+      "words": 5186,
+      "revisionFingerprint": "2029f403c6e22037606f09ceef8e313a981b50490cf92606e3905e5b2874091e",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "d5cbf8cb178afd383ef121c37b41eb45383e0c74ce74476e03d965ce3b52ac13",
+      "headings": [
+        "Genesis Source Synthesis and Disposition Ledger",
+        "1. Why this ledger exists",
+        "2. Source boundary",
+        "2.1 Historical Development Book",
+        "2.2 Genesis 0.1 and the 2026-08-28/29 design sessions",
+        "2.3 Current Rosetta repository authorities",
+        "3. Disposition vocabulary",
+        "4. Synthesis principles",
+        "4.1 Preserve intent more readily than machinery",
+        "4.2 Convert rules into outcomes and evidence",
+        "4.3 Keep universal doctrine thinner than project profiles",
+        "4.4 Add the missing epistemic and agentic layer",
+        "5. Source-control and integration crosswalk",
+        "Resulting doctrine",
+        "6. Planning, flow, and feedback crosswalk",
+        "Resulting doctrine"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/Genesis.md",
+      "title": "Genesis",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 5,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T09:03:13.405Z",
+          "observedAt": "2026-08-29T09:03:13.405Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
+      "bytes": 38288,
+      "contentFingerprint": "9e41c6e798c69cd67e574cb1044d8742baaa66a1e467799bb9a20beff2bf183d",
+      "words": 4543,
+      "revisionFingerprint": "fabc8e0341d950a4c426c4f38f673e423d2a34968bbee7b5c0766d354a9bdedc",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "eddbf9a5a54c1fab0fc15bf98584a1007f6a4cf0ca53120574d0c03a6f0e05d8",
+      "headings": [
+        "Genesis",
+        "1. Purpose",
+        "2. Authority is scoped by the question",
+        "2.1 Binding external obligations",
+        "2.2 Rosetta semantic and protocol primacy",
+        "2.3 External standards retain their own domain authority",
+        "2.4 Product and project authorities",
+        "2.5 Genesis and its companions",
+        "3. Normative language",
+        "4. Operating axioms",
+        "4.1 Value before volume",
+        "4.2 Evidence before confidence",
+        "4.3 Preserve evidence and uncertainty",
+        "4.4 Terminology is inherited before it is invented",
+        "4.4.1 Reconciliation before expansion",
+        "4.5 Prefer the smallest honest proof"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/ASSURANCE_AND_OPERATIONS.md",
+      "title": "Genesis Assurance and Operations Companion",
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.945Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
+      "bytes": 12769,
+      "contentFingerprint": "e81fbadf20670309647e6102498159f27d8e316bea91bc09c7bead46a906552c",
+      "words": 1701,
+      "revisionFingerprint": "6ae8c352c4bedabf28097849a33f694e92f98ac4a00c19ddc33eecc5c0148d23",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "91f20ab8036c0108f722fcb711a515ebf172ecab7ef605eee388edf7cbd36ed1",
+      "headings": [
+        "Genesis Assurance and Operations Companion",
+        "1. Assurance reduces uncertainty",
+        "2. Tests are executable claims",
+        "3. Red, green, refactor",
+        "4. Tests preserve behavior; comments preserve intent",
+        "5. Coverage law",
+        "6. Critical-path adversarial assurance",
+        "7. Conformance and interoperability testing",
+        "8. Dependency contracts",
+        "9. Flake policy",
+        "10. Test environments",
+        "11. Reliability requirements",
+        "12. Retry discipline",
+        "13. Backpressure and overload",
+        "14. Indeterminate work and quarantine",
+        "15. Observability"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/DELIVERY_AND_COLLABORATION.md",
+      "title": "Genesis Delivery and Collaboration Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 15022,
+      "contentFingerprint": "6157716682c95792739fd1b805e1bdb777d4de7561899f36b2d249ba77118cd7",
+      "words": 2002,
+      "revisionFingerprint": "5a8a450b3b2a11018a71b0bdbd7f079b0f5a8291e9f9c367040289c9d430020b",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "b000c3168e2cac6e373720d6a96bb04a36c9ae8d3b9bfc7b59eaa79f02018840",
+      "headings": [
+        "Genesis Delivery and Collaboration Companion",
+        "1. Progress is evidence-bearing change",
+        "2. Valuable versus currently unblocking",
+        "3. Maintain a small path to the next proof",
+        "4. Minimum sufficient dependency closure",
+        "5. Job contract",
+        "6. Research contract",
+        "7. Evidence-bearing change lifecycle",
+        "8. Small branches and healthy mainline",
+        "9. Commits",
+        "10. Pull-request contract",
+        "11. Review order",
+        "12. Review as knowledge diffusion",
+        "13. Merge authority",
+        "14. Urgent repairs",
+        "15. Estimates are forecasts"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/DOCUMENTATION_AND_PUBLICATION.md",
+      "title": "Genesis Documentation and Publication Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 12237,
+      "contentFingerprint": "c4cfbb124628a5283a009c7520ffbf52687c4faf120e08f9668de46284f2285e",
+      "words": 1644,
+      "revisionFingerprint": "db64bf91eb5005ff08ca57c2375c9719fc8c05e83606607da9dbe692ad1fb9fa",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "d74b3dd38dfa53a5649bf2673b34e9909362c5b541ca6b05a88e44f8e5cfc399",
+      "headings": [
+        "Genesis Documentation and Publication Companion",
+        "1. Documentation is part of the product",
+        "2. Documentation as a graph",
+        "3. Documentation classes",
+        "4. Researcher/contributor doorway",
+        "5. Package/application README contract",
+        "6. Executable documentation",
+        "7. Maturity language",
+        "8. Rosetta semantic language in documentation",
+        "9. Source and evidence discipline",
+        "10. Public claim lineage",
+        "11. Publication pipeline",
+        "12. AI-generated content",
+        "13. Writing quality hierarchy",
+        "14. Style authorities",
+        "15. Vale and deterministic prose linting"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/ENGINEERING_AND_ARCHITECTURE.md",
+      "title": "Genesis Engineering and Architecture Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 12147,
+      "contentFingerprint": "7f875c7bb25ebb493602687ad9dde9332f0318b70e58ae9bc77bf51aaf6f16cf",
+      "words": 1665,
+      "revisionFingerprint": "98eb2234db1941eaee6992f4eead79fde0cae214d9bc26c72d057eb1c13f1b13",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "f9c7a74eadf8cb50bbc847c83510260b7811edfdfae18cdab1da6f75a36d8701",
+      "headings": [
+        "Genesis Engineering and Architecture Companion",
+        "1. Engineering posture",
+        "2. Adopt before inventing",
+        "3. Boundaries make systems trustworthy",
+        "4. Composition before inheritance",
+        "5. Bound mutation",
+        "6. Deterministic core, isolated effects",
+        "7. Validation at trust boundaries",
+        "8. Replaceability is a property, not a label",
+        "9. Dependency discipline",
+        "10. Code clarity",
+        "11. Comments preserve intent; tests preserve behavior",
+        "12. Architecture diagrams",
+        "13. Build once; promote known artifacts",
+        "14. Data evolution and migration",
+        "15. Legacy systems"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/INTERFACE_AND_ACCESSIBILITY.md",
+      "title": "Genesis Interface and Accessibility Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 9868,
+      "contentFingerprint": "47b739a7b06a886eae2241c16514d4c873dfd511fbf451ee5e8a4a1616dc5555",
+      "words": 1388,
+      "revisionFingerprint": "1cb31501b4f0bb342954711563e7a131534f18d58293b756e95335d1a8a5142b",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "e8441d773ca1a0a556520ce88a067eae9c44ad346c144ae068786a00f557830e",
+      "headings": [
+        "Genesis Interface and Accessibility Companion",
+        "1. Priority order",
+        "2. Accessibility baseline",
+        "3. Native semantics first",
+        "4. Interaction affordance must be obvious",
+        "5. State is communicated redundantly enough to understand",
+        "6. Focus, sticky UI, and navigation",
+        "7. Responsive typography and layout",
+        "8. Touch and motor accessibility",
+        "9. Motion",
+        "10. Themes and semantic tokens",
+        "11. Design-system posture",
+        "12. Performance-aware interfaces",
+        "13. Accessibility assurance",
+        "14. Content is part of the interface",
+        "15. Interface change review"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/README.md",
+      "title": "Genesis Companion Index",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 7275,
+      "contentFingerprint": "6660c8a119b72fd340a01467873aa2fe0b22b5ba98db4639bd82d0d24b7d4878",
+      "words": 750,
+      "revisionFingerprint": "50b551d3ed18aabe285185751b94060e3ee36c03c9f5531d00484120f4eb2e81",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "395c1cf29feff6b96d0a2879f580b56eaf85b3073f5fd6814ef1b15085d16d12",
+      "headings": [
+        "Genesis Companion Index",
+        "Purpose",
+        "Authority and composition rules",
+        "Companion map",
+        "Semantic governance checks",
+        "Companion admission test",
+        "Change discipline"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/RESEARCH_AND_INTEROPERABILITY.md",
+      "title": "Genesis Research and Interoperability Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 11687,
+      "contentFingerprint": "71e67e11e6add459f96a675fb05cc0d1d53a81a19ef955517603925949fe14f4",
+      "words": 1592,
+      "revisionFingerprint": "6c2534aefb87529571c1fca24f158a495b6b2c41b96d2ac870b9ef66032b2d83",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "23e33a62782729e83b486f14fd8bc1786a9cc25a3049a21353439cd643e13cb7",
+      "headings": [
+        "Genesis Research and Interoperability Companion",
+        "1. Implementation is a research instrument",
+        "2. Optimize for clone-to-insight",
+        "3. Workbench qualities",
+        "4. CLI philosophy",
+        "5. SDK philosophy",
+        "6. Canonical implementation lane and Python access",
+        "7. Reference implementation versus specification",
+        "8. Researcher contact as an adversarial environment",
+        "9. Collaboration pressure signals",
+        "10. Collaboration record",
+        "11. Interoperability experiment",
+        "12. Earned universality",
+        "13. Pressure-test through attempted falsification",
+        "14. Demo Green versus Rung Green",
+        "15. Small frequent releases"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/SECURITY_RIGHTS_AND_AGENTIC_CONTROL.md",
+      "title": "Genesis Security, Rights, and Agentic Control Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 11163,
+      "contentFingerprint": "1bf46aca4ece20ab29d1fb6d08380016dd50a58e99789c1b04d3db1a4abb3139",
+      "words": 1466,
+      "revisionFingerprint": "02446a9f8b13d18771e2664c21d66e3c25b044e1e7a38b15c41dcf9b869298a5",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "6eb2bd051aa43b6031bb21213a38d1f3dccfd6c64ceb62f19a15b9f22a25888b",
+      "headings": [
+        "Genesis Security, Rights, and Agentic Control Companion",
+        "1. Security is the first product property",
+        "2. Default control posture",
+        "3. Rights before retrieval",
+        "4. Fail closed; degrade honestly",
+        "5. Rosetta-native control composition",
+        "6. Agentic systems",
+        "7. Untrusted text is not executable intent",
+        "8. Identity integrity",
+        "9. Privacy and data rights",
+        "10. Telemetry and analytics",
+        "11. Threat modeling",
+        "12. Supply-chain security",
+        "13. Credentials and compartmentalization",
+        "14. External publication and mutation",
+        "15. Incident handling"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/SEMANTIC_ALIGNMENT.md",
+      "title": "Genesis Semantic Alignment Companion",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "filesystemModifiedAt",
+          "source": "filesystem-mtime"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 19713,
+      "contentFingerprint": "3869b1071990a81f0ff41d34f643ae13a0e7c0d3e7ddebba1d750cc45d3838a3",
+      "words": 2279,
+      "revisionFingerprint": "80fd1bf2cddae011932d2f9c2cd005abf83ff0df1cd3e42918b7fe9187d6a495",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "4c528cbf648ffd746d09e72c068a3b8b23c931d9f068b0fe004818d2abf3caef",
+      "headings": [
+        "Genesis Semantic Alignment Companion",
+        "1. Governing rule",
+        "2. What v3 already owns",
+        "3. Core semantic relationships Genesis inherits",
+        "3.1 Signals are not semantics",
+        "3.2 Uncertainty is first-class",
+        "3.3 Epistemic assessment already has a home",
+        "3.4 Operational process already has a spine",
+        "3.5 Receipts are not a metaphor when protocol meaning is intended",
+        "3.6 Tapestry is the compiled context construct",
+        "3.7 Profile is already a Rosetta conformance term",
+        "3.8 Packs are protocol extension mechanisms",
+        "4. Rectifications from Genesis 0.2",
+        "5. Lower-case prose versus protocol names",
+        "5.1 Five rules for every reconciliation pass",
+        "6. New-term admission procedure"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/SEMANTIC_AUDIT.md",
+      "title": "Genesis Semantic Duplication Audit",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 4,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T11:21:03.328Z",
+          "observedAt": "2026-08-29T11:21:03.328Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 14080,
+      "contentFingerprint": "75049367aa0288a115f2c9e6c4c5f217d88611d582e406aa0d163b7a1470111f",
+      "words": 1520,
+      "revisionFingerprint": "8158ee64e96b0e9138312f561485df4a73296ada605a6072563b85a1bdefe98c",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "445c967981fb076975f0a25fec7128681d1e2a6c966e944c8529772064573791",
+      "headings": [
+        "Genesis Semantic Duplication Audit",
+        "1. Purpose",
+        "2. Audit dispositions",
+        "3. Current implementation-schema crosswalk",
+        "3.1 Rosetta v3 core reuse",
+        "3.2 Accepted source-substrate extensions",
+        "3.3 Entif and project application contracts",
+        "3.4 Provisional or local `rosetta.*` schemas outside the v3 core list",
+        "3.5 Agentic Messaging labels that overlap Rosetta terms",
+        "4. Active-document alignment",
+        "5. Retired aliases from Genesis development",
+        "6. Current semantic debt",
+        "7. Duplication-mitigation workflow",
+        "8. Audit evidence and automation",
+        "9. Review rule"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/SESSION_DECISION_COVERAGE.md",
+      "title": "Genesis Session Decision Coverage Ledger",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 4,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T11:21:03.328Z",
+          "observedAt": "2026-08-29T11:21:03.328Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 48152,
+      "contentFingerprint": "fbdc266d7175e469108598564e76a24a4f605b3ce0b38bcd091313dafc39d3d9",
+      "words": 2991,
+      "revisionFingerprint": "dc872e22bbe83af043009c34801269fd36923cf225857f35c829f81c8e53ee24",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "b6d4361fd65dde15f760ad46c969c1150ddb27c4bfe0e2ba8e024ab7154ae871",
+      "headings": [
+        "Genesis Session Decision Coverage Ledger",
+        "1. Purpose",
+        "2. Coverage method",
+        "3. Priority and trade-off decisions",
+        "4. Standards, reuse, and ownership decisions",
+        "5. Semantic and nomenclature decisions",
+        "6. Parsimony and incremental improvement decisions",
+        "7. Architecture and code decisions",
+        "8. Comments, tests, and assurance decisions",
+        "9. Metrics and Goodhart decisions",
+        "10. Security, rights, and agentic decisions",
+        "11. Interface and design decisions",
+        "12. Documentation, writing, and publication decisions",
+        "13. Roadmap, delivery, and collaboration decisions",
+        "14. Research implementation and interoperability decisions",
+        "15. Project-local and deferred decisions"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/genesis/V0_4_RECONCILIATION.md",
+      "title": "Genesis v0.4 Reconciliation Ledger",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "current",
+      "docDate": "2026-08-29",
+      "dateSource": "top-matter",
+      "dateKind": "declaredAt",
+      "chronology": {
+        "canonical": {
+          "declaredAt": {
+            "date": "2026-08-29",
+            "line": 4,
+            "localDateTime": "2026-08-29",
+            "raw": "2026-08-29",
+            "source": "top-matter"
+          }
+        },
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.520Z",
+            "source": "filesystem-mtime"
+          }
+        },
+        "intake": {
+          "firstIndexedAt": "2026-08-29T10:47:00.997Z",
+          "observedAt": "2026-08-29T10:47:00.997Z"
+        },
+        "primary": {
+          "date": "2026-08-29",
+          "kind": "declaredAt",
+          "localDateTime": "2026-08-29",
+          "source": "top-matter"
+        }
+      },
+      "modifiedAt": "2026-08-29T11:24:26.520Z",
+      "bytes": 18737,
+      "contentFingerprint": "f029b2e8fffe0c4bbd90f70d7b20452bc365746ad7e86f65ad3f6469d9a42db0",
+      "words": 1855,
+      "revisionFingerprint": "d11d7fcfe64d6f8244b22eb71e76ef9dc384459049d1417f9b6d832b41d1a2e0",
+      "normalizationProfile": "plain-text-collapse-v1",
+      "sha256": "6367eaa5933651a724025f6f9f0e977766e6b2cf929e63017f66415ffea5008d",
+      "headings": [
+        "Genesis v0.4 Reconciliation Ledger",
+        "1. Purpose",
+        "2. Why 0.4 was necessary",
+        "3. Authority correction",
+        "0.2 problem",
+        "0.4 disposition",
+        "4. Terminology and artifact reconciliation",
+        "5. Reintroduced decisions from the earlier session",
+        "5.1 Fail closed; degrade honestly",
+        "5.2 Comments preserve intent; tests preserve behavior",
+        "5.3 Strong composition bias",
+        "5.4 Repository/tooling duplication discipline",
+        "5.5 Interaction affordance clarity",
+        "5.6 Performance hierarchy",
+        "5.7 Reference implementation as research instrument",
+        "5.8 Collaboration pressure signals"
+      ],
+      "status": "indexed",
+      "githubIssueRefs": [],
+      "issueCandidateRefs": []
+    },
+    {
+      "path": "docs/governance/REPO_SHAPE_AND_CONSTRAINTS.md",
+      "title": "Repo Shape And Constraints",
+      "category": "governance",
+      "authorityTier": "governing",
+      "freshness": "undated-import",
+      "docDate": "2026-08-29",
+      "dateSource": "filesystem-mtime",
+      "dateKind": "filesystemModifiedAt",
+      "chronology": {
+        "canonical": {},
+        "fallback": {
+          "filesystemModifiedAt": {
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7650,12 +8486,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.945Z",
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
       "bytes": 1207,
       "contentFingerprint": "619ba5cfa1e14d911e24d50193ff4dfd630d62fe157ebd8b65ce6ef956995472",
       "words": 147,
@@ -7706,8 +8542,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.254Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7727,7 +8563,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.254Z",
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
       "bytes": 83014,
       "contentFingerprint": "6fdc6f258c64ad0b399f63b5f981b40e31ea4cc930d8b7650c94b13115c47a1b",
       "words": 10828,
@@ -7762,15 +8598,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.946Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.446Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7779,21 +8615,22 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.946Z",
-      "bytes": 24547,
-      "contentFingerprint": "46b6e19c2f0ef3990b234a6c751facbec7fc424fb7490a05dca2fbc7bc255492",
-      "words": 3154,
-      "revisionFingerprint": "d5d48093b6c846aa1bb972c2cc7f57d1dea60823348ef14d2bec550056208bbb",
+      "modifiedAt": "2026-08-29T11:24:40.446Z",
+      "bytes": 25310,
+      "contentFingerprint": "7739f758e28e4efd626f9ab92bbc74e57031236af8cc57e6df9320bb6d50e828",
+      "words": 3250,
+      "revisionFingerprint": "fdd66596b975a0e6ff20ad2d851e4f5a20c99a9b5ac9cc253e8b2a54c2c1b015",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "1f9a666acb6103c21c6d94a8fa3f000725934371b9912514edc2ff6efaa3cb27",
+      "sha256": "d4ec63fc996892630e0c78bc1b9f1ea3cbb27e49de5244998896a2c73830062a",
       "headings": [
         "Rosetta Governance Addendum",
         "Personhood Provenance, Cognitive Twin Risk, and Identity-Grade Safety Controls",
+        "Semantic authority and terminology status",
         "Status",
         "Purpose",
         "Framing",
@@ -7806,8 +8643,7 @@
         "Receipt and Bundle Extensions",
         "New Conformance Expectations",
         "Technical Control Objectives",
-        "Architecture Hooks",
-        "Default Prohibitions"
+        "Architecture Hooks"
       ],
       "status": "indexed",
       "githubIssueRefs": [],
@@ -7819,15 +8655,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.946Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7836,12 +8672,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.946Z",
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
       "bytes": 1314,
       "contentFingerprint": "3be2d557771ef6911b0098cafb1c8d73105fe8f3e0bef4ff4bf48164c1d67ac7",
       "words": 166,
@@ -7863,15 +8699,15 @@
       "category": "governance",
       "authorityTier": "governing",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.946Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.519Z",
             "source": "filesystem-mtime"
           }
         },
@@ -7880,12 +8716,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.946Z",
+      "modifiedAt": "2026-08-29T11:24:26.519Z",
       "bytes": 924,
       "contentFingerprint": "1df9f182842bfa18c6a4bbd50881b8f6018cfbddb4e344db7ee862f01348599d",
       "words": 129,
@@ -7915,8 +8751,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.946Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.521Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -7935,7 +8771,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.946Z",
+      "modifiedAt": "2026-08-29T11:24:26.521Z",
       "bytes": 7945,
       "contentFingerprint": "e92f1b8865fe7d66b6187169bc0a97c67386291e0afd7384c958c8d4729d0390",
       "words": 1071,
@@ -7990,8 +8826,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-25",
-            "isoDateTime": "2026-05-25T13:34:47.868Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.522Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8006,7 +8842,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-25T13:34:47.868Z",
+      "modifiedAt": "2026-08-29T11:24:26.522Z",
       "bytes": 11511,
       "contentFingerprint": "07c4b1934d68f7d3b84576e6d4ee9fed0950de285c085446b45dbd492ae157fe",
       "words": 1486,
@@ -8042,8 +8878,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.947Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.522Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8062,7 +8898,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.947Z",
+      "modifiedAt": "2026-08-29T11:24:26.522Z",
       "bytes": 72204,
       "contentFingerprint": "4410ab59ee75ecbd262d1bd280d08a4a3cde197c20d5528004f1c50b963ed531",
       "words": 11211,
@@ -8126,8 +8962,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.947Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.522Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8147,7 +8983,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.947Z",
+      "modifiedAt": "2026-08-29T11:24:26.522Z",
       "bytes": 9425,
       "contentFingerprint": "593b4071f2b5f42047d9e1b2f82964f2585046ad3faf99eaa26c08e63b5f9545",
       "words": 1202,
@@ -8201,8 +9037,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.948Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.522Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8222,7 +9058,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.948Z",
+      "modifiedAt": "2026-08-29T11:24:26.522Z",
       "bytes": 176420,
       "contentFingerprint": "2e78fafd6b881d79f8af7cbf63ce9f770ea15ce25000e51e8099709b7bd23ed1",
       "words": 24905,
@@ -8286,8 +9122,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.948Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.522Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8307,7 +9143,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.948Z",
+      "modifiedAt": "2026-08-29T11:24:26.522Z",
       "bytes": 58399,
       "contentFingerprint": "98da14313903e34ec319bed8c0f1a439794713e2d10b579ec42abedf5b4505ab",
       "words": 7964,
@@ -8342,15 +9178,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.949Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.523Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8359,12 +9195,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.949Z",
+      "modifiedAt": "2026-08-29T11:24:26.523Z",
       "bytes": 217589,
       "contentFingerprint": "089830bdc651743d83fa1952a05ee55a83c1d715cd3846e1800e753b61153799",
       "words": 32556,
@@ -8428,8 +9264,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.949Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.523Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8444,7 +9280,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.949Z",
+      "modifiedAt": "2026-08-29T11:24:26.523Z",
       "bytes": 57898,
       "contentFingerprint": "4e245b85d0fdf2e8a7bbe038215c21e1d0d8744d06e004f3aa5bf1a4f8fab3fb",
       "words": 7641,
@@ -8508,8 +9344,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.950Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.523Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8524,7 +9360,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.950Z",
+      "modifiedAt": "2026-08-29T11:24:26.523Z",
       "bytes": 110793,
       "contentFingerprint": "b6880a41c72f861b1c0c9c578b1f8be7a27a13eb5f4da3b782d35f89e30ac296",
       "words": 15521,
@@ -8559,15 +9395,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.952Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.525Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8576,12 +9412,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.952Z",
+      "modifiedAt": "2026-08-29T11:24:26.525Z",
       "bytes": 4938,
       "contentFingerprint": "8b352c85e96d8c805400f3f28496a99ff5d82ebef9c4615945b763921809cfb4",
       "words": 650,
@@ -8617,8 +9453,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.950Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.524Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -8637,7 +9473,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.950Z",
+      "modifiedAt": "2026-08-29T11:24:26.524Z",
       "bytes": 122795,
       "contentFingerprint": "78be735fcedd490ad3d90474480336295542f3275524d89746c67c0f469872f5",
       "words": 17089,
@@ -8701,8 +9537,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.951Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.524Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8717,7 +9553,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.951Z",
+      "modifiedAt": "2026-08-29T11:24:26.524Z",
       "bytes": 41765,
       "contentFingerprint": "50dc656400cb07a9bdb5e069627590c761903488872dad434ee5091b7f7c845b",
       "words": 5434,
@@ -8752,15 +9588,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.951Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.524Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8769,12 +9605,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.951Z",
+      "modifiedAt": "2026-08-29T11:24:26.524Z",
       "bytes": 3459,
       "contentFingerprint": "66a669c1bf03a3b257a1b6b5e64f664cde152ef1ab9db526ebc3914a07198f39",
       "words": 457,
@@ -8800,15 +9636,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.951Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.524Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8817,12 +9653,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.951Z",
+      "modifiedAt": "2026-08-29T11:24:26.524Z",
       "bytes": 7980,
       "contentFingerprint": "e5a359e53fbcc48e7bf4afff437bc57e2456594ea5d411a413622c52d38936c5",
       "words": 1247,
@@ -8840,15 +9676,15 @@
       "category": "ideas",
       "authorityTier": "exploratory",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.951Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.525Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8857,12 +9693,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.951Z",
+      "modifiedAt": "2026-08-29T11:24:26.525Z",
       "bytes": 54796,
       "contentFingerprint": "eca41c095382bef2e6d4bc3de29244101350e8200de1293d8b2c82ad5ba0b7bc",
       "words": 8346,
@@ -8897,15 +9733,15 @@
       "category": "live",
       "authorityTier": "live",
       "freshness": "undated-import",
-      "docDate": "2026-05-20",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.271Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.565Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8914,12 +9750,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-05-20",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.271Z",
+      "modifiedAt": "2026-08-29T11:24:26.565Z",
       "bytes": 7010,
       "contentFingerprint": "5cbffbf696a9dfc7b9092b25416ec8f78bcfd5a5333ddd739482f4e1a1e58896",
       "words": 998,
@@ -8954,15 +9790,15 @@
       "category": "live",
       "authorityTier": "live",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:31.064Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.566Z",
             "source": "filesystem-mtime"
           }
         },
@@ -8971,12 +9807,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:31.064Z",
+      "modifiedAt": "2026-08-29T11:24:26.566Z",
       "bytes": 676,
       "contentFingerprint": "bf0c6f587ba40f01a4081fc8397ffd4662de45d14fed1cc884f604c42ade0d72",
       "words": 84,
@@ -8999,15 +9835,15 @@
       "category": "packs",
       "authorityTier": "pack-contract",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:31.064Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.566Z",
             "source": "filesystem-mtime"
           }
         },
@@ -9016,12 +9852,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:31.064Z",
+      "modifiedAt": "2026-08-29T11:24:26.566Z",
       "bytes": 241,
       "contentFingerprint": "79da01f94692333d9257804796e3bbbb25a18d0ba585ec509547b4919a19ec18",
       "words": 35,
@@ -9048,8 +9884,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.878Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.445Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9068,14 +9904,15 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.878Z",
-      "bytes": 42103,
-      "contentFingerprint": "215c8f19a3dc07bcbd6532e28c67b558f0f985ad60802ff3b47fb346370f2961",
-      "words": 5575,
-      "revisionFingerprint": "15801583de0f79003a11e813519811628c7e9d78763e237d780301c69c227126",
+      "modifiedAt": "2026-08-29T11:24:40.445Z",
+      "bytes": 42820,
+      "contentFingerprint": "a7ef2d16526a4e7f975fb5d1a47ab06fd7513b4da4b5ede689623034f24ed1ca",
+      "words": 5661,
+      "revisionFingerprint": "211041bd917d29d1ceff881f7fb4a2c0e7868f2b04ed2a800b4b9d658abaf188",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "4198cf3fdaf33f420fd7cace264f94876cdb99ca5c68b56a69e771b596f79e82",
+      "sha256": "e80be8227205a2f098298c340245c419e61a63d144562d5b14f8b76cf05b3e9d",
       "headings": [
+        "Semantic authority and terminology status",
         "**1\\. The Core Innovation: \"Optical Compression\" is a New Paradigm**",
         "**2\\. Strategic Integration into the Entif 2.0 Architecture**",
         "**3\\. Thin Vertical Slices to Land This Capability Now**",
@@ -9103,8 +9940,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.879Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.476Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9123,7 +9960,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.879Z",
+      "modifiedAt": "2026-08-29T11:24:26.476Z",
       "bytes": 20225,
       "contentFingerprint": "db21d928d3ebe5a59e66e68c124e0fc21caefe4355dcb4ae12f7ecd738f657cd",
       "words": 2331,
@@ -9165,8 +10002,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.879Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.476Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9185,7 +10022,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.879Z",
+      "modifiedAt": "2026-08-29T11:24:26.476Z",
       "bytes": 56449,
       "contentFingerprint": "cd84221865ac6944d81fe10dac788a4b440fc1b2890f72187f4c06d5aaa04345",
       "words": 7758,
@@ -9227,8 +10064,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T02:02:35.385Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.446Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9247,15 +10084,16 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T02:02:35.385Z",
-      "bytes": 33137,
-      "contentFingerprint": "832c780fb765dd6c86f5acd01ec953e30b59e5ff894b63e4cb649a85d8bb59e4",
-      "words": 3957,
-      "revisionFingerprint": "12f97ee4511743f3c1aba6d0a1754a9326cf08305e9d6e5abca5ab75fe8b3d7b",
+      "modifiedAt": "2026-08-29T11:24:40.446Z",
+      "bytes": 33807,
+      "contentFingerprint": "733e0ae8e94577c71c700c124498c17f3741fe15eea290fe42e362f189f68e18",
+      "words": 4041,
+      "revisionFingerprint": "cb92ae99d2f5d72e849a1de4cdcc8df6875ae32dedb6c400740bac6468f6079d",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "1f254c9c8446494a063e3b9695324a5fdba504911d409a83bea5c4ee07486e3d",
+      "sha256": "4f800e79707f4ed3215ec306c6a7f5771a81858a57add9f367b01cc2c1393987",
       "headings": [
         "Entif SDK CLI and Service Platform PRD",
+        "Semantic authority and terminology status",
         "Research basis and governing posture",
         "Product definition and non-goals",
         "Constitutional architecture",
@@ -9269,8 +10107,7 @@
         "Multi-axis evaluation vectors",
         "Service contracts",
         "SDK and CLI specification",
-        "SDK requirements",
-        "CLI requirements"
+        "SDK requirements"
       ],
       "status": "indexed",
       "githubIssueRefs": [],
@@ -9289,8 +10126,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T02:02:35.386Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.476Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9309,7 +10146,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T02:02:35.386Z",
+      "modifiedAt": "2026-08-29T11:24:26.476Z",
       "bytes": 66582,
       "contentFingerprint": "9c6b688d4726ea2682da903227372d70fd037bed77e4fa1db324886bdcd68499",
       "words": 8413,
@@ -9351,8 +10188,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.249Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.476Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9371,7 +10208,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.249Z",
+      "modifiedAt": "2026-08-29T11:24:26.476Z",
       "bytes": 43062,
       "contentFingerprint": "bd701512b21afec8438ca220c81f207e5ec7d04f79e4a26cf53ef82f5e4ec366",
       "words": 5006,
@@ -9435,8 +10272,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-05-20",
-            "isoDateTime": "2026-05-20T15:23:12.249Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.476Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9456,7 +10293,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-05-20T15:23:12.249Z",
+      "modifiedAt": "2026-08-29T11:24:26.476Z",
       "bytes": 100119,
       "contentFingerprint": "419ff4c4cca1412324818e093dd8a75c5c2bdceb4d80aa2f288d83a949172950",
       "words": 12647,
@@ -9498,8 +10335,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.880Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.445Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9518,16 +10355,17 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.880Z",
-      "bytes": 153229,
-      "contentFingerprint": "c028fd4940ef391fd213c96637f41d135205502eb36b35e9ecb41b7657966c57",
-      "words": 18472,
-      "revisionFingerprint": "aed7777a29841ba264092ef7df9a9be045b6fa290ec6c0ae1151f433ffb1c7a9",
+      "modifiedAt": "2026-08-29T11:24:40.445Z",
+      "bytes": 153889,
+      "contentFingerprint": "71ec4d529398ca0722b656774ad57c2e8c5d3715d810ab04465e0ee258705d4e",
+      "words": 18547,
+      "revisionFingerprint": "0586e6a91aaea138bb77c2be6c8cb3a688de36a0e11d5daf205631b18a4f14ab",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "b79da7b244502ad3968996b8ea23c9453375fe482f4f4b942e204ef71d141e20",
+      "sha256": "fad367df314c8a612c5719c52ac73749b74d25680f5137cd2575c1d67009a140",
       "headings": [
         "Cognitive Tiles and Swarm Gnosis",
         "A Tile-First Knowledge Framework",
+        "Semantic authority and terminology status",
         "**Motivation** {#motivation}",
         "**Tile Schema and Canonicalization** {#tile-schema-and-canonicalization}",
         "**Swarm Design: Discovery, Routing and Replication** {#swarm-design:-discovery,-routing-and-replication}",
@@ -9558,8 +10396,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.881Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.477Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9578,7 +10416,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.881Z",
+      "modifiedAt": "2026-08-29T11:24:26.477Z",
       "bytes": 6164,
       "contentFingerprint": "5cf3695bd96ce10c2138a562f04ba51b4d3bf30b2d864bba03ffe61d718dd28b",
       "words": 868,
@@ -9620,8 +10458,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.881Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.446Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9640,15 +10478,16 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.881Z",
-      "bytes": 45840,
-      "contentFingerprint": "fb971b5833ef0b1cd430db7371d4e85fc04f48cd6caa3d06d5b18829a84d56f5",
-      "words": 5192,
-      "revisionFingerprint": "ec43b3c0217877370fbb54b6fad0a1fda98e98a5ae5423a9d136c244fdfc81ca",
+      "modifiedAt": "2026-08-29T11:24:40.446Z",
+      "bytes": 46585,
+      "contentFingerprint": "d1c3e143d3c997a52689689f32831323c8b437ecc51019919c9cf3038ac6a669",
+      "words": 5279,
+      "revisionFingerprint": "8348b613d469aa77274a803ee630dfb12fc72426b4e8eecf76212e1cb6428ed1",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "aa0736df95da5e6d0c5dea285686c4af242636bb7ea9c337e6ea1fc632523c0c",
+      "sha256": "02d6bfff552883b6f296d708257437294066103bb56b786f7016fc47abeb1021",
       "headings": [
         "Entif v0 Specification Deep Research Synthesis",
+        "Semantic authority and terminology status",
         "Executive Summary",
         "Doctrine and Design Stance",
         "Expanded-Plane Architecture",
@@ -9662,8 +10501,7 @@
         "Runtime/Compute Plane",
         "PersonaForge/Tulpamancy Plane",
         "Deterministic Middleware Plane",
-        "High-Signal Contributor Registry Plane",
-        "Transferability Scorer Plane"
+        "High-Signal Contributor Registry Plane"
       ],
       "status": "indexed",
       "githubIssueRefs": [],
@@ -9682,8 +10520,8 @@
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.881Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.477Z",
             "source": "filesystem-mtime"
           },
           "pathDate": {
@@ -9702,7 +10540,7 @@
           "source": "path"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.881Z",
+      "modifiedAt": "2026-08-29T11:24:26.477Z",
       "bytes": 55122,
       "contentFingerprint": "eabe8791810b1844040a61fd07ea90cf5d64017a306901e315c10dd483672486",
       "words": 7515,
@@ -9737,15 +10575,15 @@
       "category": "RFCs",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.883Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:40.445Z",
             "source": "filesystem-mtime"
           }
         },
@@ -9754,21 +10592,22 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.883Z",
-      "bytes": 37368,
-      "contentFingerprint": "7b8f345945f9da7951a5668ba9edf29e7537590f20fe9016ba15fb62f9b611db",
-      "words": 5365,
-      "revisionFingerprint": "da6b48efca3b3f12628ebbc450ca52243d2a0b1b208c756ec18d0cfadd080a41",
+      "modifiedAt": "2026-08-29T11:24:40.445Z",
+      "bytes": 37979,
+      "contentFingerprint": "96181bf51003b1d79620d419e08a21fd215f2c5105c5907ea321a1b01a36edde",
+      "words": 5446,
+      "revisionFingerprint": "b10d0ffa34e68528ac78f33c79d15c3d0d164274de27fa4bcf663b9da65813ff",
       "normalizationProfile": "plain-text-collapse-v1",
-      "sha256": "1db93d6ca534c5cb4ac6a24149df23a5639176449ed317c5328e9c1c8e04beb2",
+      "sha256": "65bd41870c2b8ab6a2fbabe3948012ccc6a737f8d38626eff1b205106517c55c",
       "headings": [
         "Ontological Mixture of Concepts",
         "A provenance-first research paper and engineering specification for token-efficient agentic cognition",
+        "Semantic authority and terminology status",
         "Abstract",
         "1. Executive thesis",
         "2. The problem, stated precisely",
@@ -9781,8 +10620,7 @@
         "3.3 Ontology and lexical scaffold",
         "3.4 Upper ontology posture",
         "3.5 Thinking tools and meta-reasoning packs",
-        "3.6 Formal reasoning and benchmarking",
-        "3.7 Data/resource metadata adapters"
+        "3.6 Formal reasoning and benchmarking"
       ],
       "status": "indexed",
       "githubIssueRefs": [],
@@ -9794,15 +10632,15 @@
       "category": "RFCs",
       "authorityTier": "planning",
       "freshness": "undated-import",
-      "docDate": "2026-04-27",
+      "docDate": "2026-08-29",
       "dateSource": "filesystem-mtime",
       "dateKind": "filesystemModifiedAt",
       "chronology": {
         "canonical": {},
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:59:54.682Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.477Z",
             "source": "filesystem-mtime"
           }
         },
@@ -9811,12 +10649,12 @@
           "observedAt": "2026-04-25T23:35:41.064Z"
         },
         "primary": {
-          "date": "2026-04-27",
+          "date": "2026-08-29",
           "kind": "filesystemModifiedAt",
           "source": "filesystem-mtime"
         }
       },
-      "modifiedAt": "2026-04-27T01:59:54.682Z",
+      "modifiedAt": "2026-08-29T11:24:26.477Z",
       "bytes": 14738,
       "contentFingerprint": "f21ff9cf9b03739b37852124c9ca670779e232297ed01304dde494e565622cf8",
       "words": 1806,
@@ -9866,8 +10704,8 @@
         },
         "fallback": {
           "filesystemModifiedAt": {
-            "date": "2026-04-27",
-            "isoDateTime": "2026-04-27T01:53:30.882Z",
+            "date": "2026-08-29",
+            "isoDateTime": "2026-08-29T11:24:26.478Z",
             "source": "filesystem-mtime"
           }
         },
@@ -9882,7 +10720,7 @@
           "source": "top-matter"
         }
       },
-      "modifiedAt": "2026-04-27T01:53:30.882Z",
+      "modifiedAt": "2026-08-29T11:24:26.478Z",
       "bytes": 173562,
       "contentFingerprint": "9d3d80c7653f9874ba5c43088391d6808a29dcb451da67a566ca803414d80fef",
       "words": 23493,

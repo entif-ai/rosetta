@@ -1,5 +1,11 @@
 # Entif v0 Specification Deep Research Synthesis
 
+## Semantic authority and terminology status
+
+This document specifies Entif application architecture and candidate extensions above Rosetta. The [`Rosetta v3.0.0 Core Spine Specification`](./Rosetta%20v3.0.0%20Core%20Spine%20Specification.md) remains authoritative for Rosetta meaning, the operational Spine, identity, provenance, **Policy**, **Receipt**, **Profile**, and conformance semantics.
+
+Execution envelopes, planes, persona contracts, registries, scores, and other schemas proposed here MUST be treated as Entif application contracts or provisional extensions unless an accepted Rosetta authority explicitly incorporates them. They compose the v3 Run -> Action -> ToolCall -> Observation -> Evaluation model rather than replacing it.
+
 ## Executive Summary
 
 Entif v0 is best framed as a **governed, receipts-first agentic operating substrate** whose core differentiator is not “more clever prompting,” but a **repeatable, audit-defensible pipeline** that turns signals (web, repos, docs, internal artifacts) into **canonical knowledge objects** (Rosetta cognitive tiles), routed through a **federated knowledge topology** (multiple graphs and indexes), executed via **deterministic middleware + policy-gated orchestration**, and iteratively improved via **measured scoring loops** (workflow/capability/transferability/persona). This stance directly matches your recurring themes: avoiding one-off execution, prioritizing replayability, scoring everything, and treating “more signal” as fuel rather than overload—because deterministic triage and learnable routing keep the system computationally bounded.
