@@ -28,6 +28,20 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 7. Convert extracted requirements and decisions into issue drafts or GitHub issues only after orchestration review.
 8. Update GitHub issue comments and, when available, project-board metadata so parallel agents can see ownership and dependencies.
 
+### Generated Intelligence Views
+
+`docs/intake/docs-intelligence/CONCEPT_INDEX.json` and `docs/intake/docs-intelligence/CYCLE_SUMMARY.md` are deterministic aggregate views, not independently authored source artifacts. They are intentionally ignored by Git so parallel extraction branches do not conflict over rebuildable state.
+
+Generate or restore them through the repository-owned Nx target:
+
+```sh
+pnpm exec nx run doc-intake:intelligence
+```
+
+The target declares the extraction artifacts and issue drafts as inputs and the two aggregate views as outputs, so Nx may cache and restore the computation. Do not commit these two generated files. If a workflow needs them, make the Nx target an explicit prerequisite instead of relying on a checked-in snapshot.
+
+Authored extraction artifacts, issue drafts, orchestration notes, and other intentionally maintained docs-intelligence files remain tracked and must still be reconciled normally when two branches edit the same source artifact.
+
 ## Current Snapshot
 
 - Documents indexed: 156
