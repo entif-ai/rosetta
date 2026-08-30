@@ -277,10 +277,9 @@ function inferPathDate(relativePath) {
   return undefined;
 }
 
-export function buildChronology(relativePath, text, stats, previousDoc, intakeRunAt) {
+export function buildChronology(relativePath, text, stats, previousDoc, intakeRunAt, filesystemModifiedAt = stats.mtime.toISOString()) {
   const topMatter = extractTopMatterDates(text);
   const pathDate = inferPathDate(relativePath);
-  const filesystemModifiedAt = stats.mtime.toISOString();
   const fallbackModified = {
     date: filesystemModifiedAt.slice(0, 10),
     isoDateTime: filesystemModifiedAt,
@@ -324,6 +323,12 @@ export function buildChronology(relativePath, text, stats, previousDoc, intakeRu
       source: primary.source
     }
   };
+}
+
+
+export function resolveDocumentModifiedAt(stats, previousDoc, sha256) {
+  if (previousDoc?.sha256 === sha256 && typeof previousDoc.modifiedAt === 'string') return previousDoc.modifiedAt;
+  return stats.mtime.toISOString();
 }
 
 function inferAuthorityTier(relativePath) {
@@ -611,6 +616,7 @@ Docs intelligence is planning work. It is not Rosetta runtime ingestion, and it 
 
 - Newer files supersede older files by default when they conflict.
 - Top-matter dates are preferred over filename dates; filename dates are preferred over filesystem mtime.
+- When content is unchanged, prior filesystem-modified evidence is preserved so clean checkouts do not rewrite chronology.
 - Chat-style \`Created\`, \`Updated\`, and \`Exported\` stamps are stored separately under each document's \`chronology.canonical\` object.
 - \`docs/live/\`, \`docs/governance/\`, \`docs/handoffs/\`, \`docs/backlog/\`, \`docs/PRDs/\`, and \`docs/RFCs/\` carry higher authority than chats, ideas, external notes, or frontier research.
 - Local issue drafts are the review gate before GitHub issue creation.
@@ -635,8 +641,9 @@ export async function main() {
     const sha256 = createHash('sha256').update(text).digest('hex');
     const fingerprints = buildDocumentFingerprints(relativePath, text);
     const previousDoc = previous.get(relativePath);
+    const modifiedAt = resolveDocumentModifiedAt(stats, previousDoc, sha256);
     const issueDoc = issueLedger.documents?.[relativePath] ?? {};
-    const chronology = buildChronology(relativePath, text, stats, previousDoc, intakeRunAt);
+    const chronology = buildChronology(relativePath, text, stats, previousDoc, intakeRunAt, modifiedAt);
     const docDate = chronology.primary.date;
     const candidateRefs = issueDrafts
       .filter((draft) => draft.sourceRefs.some(([sourcePath]) => sourcePath === relativePath))
@@ -652,7 +659,7 @@ export async function main() {
       dateSource: chronology.primary.source,
       dateKind: chronology.primary.kind,
       chronology,
-      modifiedAt: stats.mtime.toISOString(),
+      modifiedAt,
       bytes: stats.size,
       contentFingerprint: fingerprints.contentFingerprint,
       words: wordCount(text),

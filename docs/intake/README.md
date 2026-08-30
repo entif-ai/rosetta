@@ -54,6 +54,7 @@ Authored extraction artifacts, issue drafts, orchestration notes, and other inte
 
 - Newer files supersede older files by default when they conflict.
 - Top-matter dates are preferred over filename dates; filename dates are preferred over filesystem mtime.
+- When content is unchanged, prior filesystem-modified evidence is preserved so clean checkouts do not rewrite chronology.
 - Chat-style `Created`, `Updated`, and `Exported` stamps are stored separately under each document's `chronology.canonical` object.
 - `docs/live/`, `docs/governance/`, `docs/handoffs/`, `docs/backlog/`, `docs/PRDs/`, and `docs/RFCs/` carry higher authority than chats, ideas, external notes, or frontier research.
 - Local issue drafts are the review gate before GitHub issue creation.
