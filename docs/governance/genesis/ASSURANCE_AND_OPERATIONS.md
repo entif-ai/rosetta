@@ -41,6 +41,23 @@ Test hooks MUST NOT replace or weaken semantic HTML, accessible names, labels, l
 
 When a third-party or otherwise uncontrolled interface cannot expose a project-owned test hook, use the narrowest stable contract the dependency provides and document the exception.
 
+### 2.2 Repeated correction should strengthen the system
+
+Repeated human correction is evidence that a stronger durable control may be missing. When the same class of defect, agent mistake, review finding, operational repair, or contributor intervention recurs, contributors SHOULD ask how to prevent or detect that class of failure before relying on continued vigilance.
+
+Prefer controls in this order when they are reliable and proportionate:
+
+1. eliminate the failure mode structurally through architecture, data modeling, types, interfaces, capability boundaries, safe defaults, or a better foundational tool choice;
+2. detect it mechanically through static analysis, schema validation, lint rules, tests, policy checks, conformance checks, or CI gates;
+3. encode repeatable guidance or automation through repository-native generators, platform tooling, agent skills, workflow rules, templates, or other maintained mechanisms;
+4. rely on human review when contextual judgment is genuinely required or when no stronger control is presently economical.
+
+Do not automate a recurring repair before asking whether the condition requiring repair can be removed. Prefer the lowest durable layer that can enforce the intended invariant correctly.
+
+Human review is not intrinsically weaker than automation. Semantic judgment, security review, publication decisions, product intent, adversarial reasoning, and novel situations may properly require people. The avoidable failure is using scarce human attention as the permanent detector for deterministic recurring mistakes the system could prevent or catch reliably.
+
+When a human intervention cannot yet be eliminated, preserve enough evidence to make recurrence measurable and future strengthening possible.
+
 ## 3. Red, green, refactor
 
 For defect repair or behavior change, contributors SHOULD first demonstrate the incorrect/missing behavior with a failing test or equivalent reproducible evidence, then implement the smallest repair and retain the evidence as a regression guard.

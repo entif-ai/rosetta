@@ -45,6 +45,11 @@ apps/entif-site/e2e-debug.log
 apps/entif-site/playwright-report/
 apps/entif-site/test-results/
 
+# generated docs-intelligence aggregate views
+# Canonical inputs remain tracked; regenerate these through the Nx doc-intake:intelligence target.
+docs/intake/docs-intelligence/CONCEPT_INDEX.json
+docs/intake/docs-intelligence/CYCLE_SUMMARY.md
+
 # System Files
 .DS_Store
 Thumbs.db
