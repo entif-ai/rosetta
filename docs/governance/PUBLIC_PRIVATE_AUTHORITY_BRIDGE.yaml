@@ -205,6 +205,18 @@ bridges:
       - control_order_or_tightening_sequence_changes
       - adaptive_budget_policy_changes
 
+  - public_issue: 1497
+    public_contract: planner_exchange_artifacts
+    protected_authorities: [IPR-0032]
+    relationship: implements
+    protected_review_required_for:
+      - snapshot_selection_or_ranking_changes
+      - artifact_filtering_or_cap_allocation_changes
+      - planner_model_or_provider_selection_changes
+      - fallback_or_replan_selection_changes
+      - adaptive_planner_orchestration_changes
+      - context_value_optimization_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
