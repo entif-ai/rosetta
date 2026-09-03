@@ -193,6 +193,18 @@ bridges:
       - budget_pack_selection_changes
       - retrieval_optimization_changes
 
+  - public_issue: 1495
+    public_contract: rolling_budget_state
+    protected_authorities: [IPR-0031]
+    relationship: implements
+    protected_review_required_for:
+      - cap_staging_policy_changes
+      - consumer_priority_or_resource_allocation_changes
+      - low_budget_action_selection_changes
+      - optional_automation_admission_changes
+      - control_order_or_tightening_sequence_changes
+      - adaptive_budget_policy_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
