@@ -265,6 +265,30 @@ bridges:
       - broker_policy_consequence_changes
       - adaptive_tool_surface_optimization_changes
 
+  - public_issue: 1509
+    public_contract: work_orchestration_lifecycle_record
+    protected_authorities: [IPR-0053]
+    relationship: implements
+    protected_review_required_for:
+      - prioritization_or_frontier_selection_changes
+      - work_shape_or_decomposition_policy_changes
+      - procedure_or_executor_selection_changes
+      - scheduling_or_resource_allocation_changes
+      - escalation_or_repair_routing_changes
+      - production_frontier_learning_changes
+
+  - public_issue: 1510
+    public_contract: persona_drift_evaluation_record
+    protected_authorities: [IPR-0055]
+    relationship: implements
+    protected_review_required_for:
+      - drift_metric_or_feature_composition_changes
+      - normalization_or_axis_weighting_changes
+      - governance_threshold_changes
+      - recenter_or_review_trigger_changes
+      - measurement_cadence_or_baseline_policy_changes
+      - drift_calibration_or_adaptive_control_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
