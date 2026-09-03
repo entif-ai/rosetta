@@ -1,0 +1,155 @@
+version: 0.1-draft
+status: proposed
+purpose: >-
+  Disclosure-safe projection of relationships between public Rosetta contracts and
+  protected Entif implementation authorities. Protected content is referenced only
+  by opaque IPR identifiers. This file MUST NOT contain private-repository URLs or
+  protected mechanism details.
+
+invariants:
+  - public_contracts_are_independently_meaningful
+  - private_implementation_must_not_redefine_public_meaning
+  - protected_references_use_opaque_ipr_ids_only
+  - public_artifacts_must_not_link_directly_to_protected_repository
+  - internal_engineering_resolves_protected_requirements_before_behavioral_changes
+
+relationship_types:
+  - implements
+  - constrains
+  - consumes
+  - supersedes
+  - derived_from
+  - validated_by
+  - represented_by
+  - produces
+  - blocks
+  - requires_review_of
+
+bridges:
+  - public_issue: 1474
+    public_contract: creator_scorecard
+    protected_authorities: [IPR-0009]
+    relationship: implements
+    protected_review_required_for:
+      - weighting_changes
+      - ranking_changes
+      - calibration_changes
+      - prediction_or_action_selection_changes
+
+  - public_issue: 1475
+    public_contract: procedural_memory_promotion_artifact
+    protected_authorities: [IPR-0011]
+    relationship: implements
+    protected_review_required_for:
+      - recurrence_threshold_changes
+      - promotion_scoring_changes
+      - failure_suppression_changes
+      - certification_decision_changes
+
+  - public_issue: 1476
+    public_contract: learned_persona_state
+    protected_authorities: [IPR-0012]
+    relationship: implements
+    protected_review_required_for:
+      - trait_update_policy_changes
+      - signal_weighting_changes
+      - smoothing_or_recentering_changes
+
+  - public_issue: 1477
+    public_contract: runtime_overlay_artifact
+    protected_authorities: [IPR-0013]
+    relationship: implements
+    protected_review_required_for:
+      - activation_policy_changes
+      - installer_or_orchestrator_changes
+      - overlay_selection_changes
+
+  - public_issue: 1478
+    public_contract: omoc_route_plan
+    protected_authorities: [IPR-0014]
+    relationship: implements
+    protected_review_required_for:
+      - route_selection_changes
+      - utility_weight_changes
+      - survivorship_strategy_changes
+      - learned_routing_changes
+
+  - public_issue: 1479
+    public_contract: route_context_budget_record
+    protected_authorities: [IPR-0017]
+    relationship: implements
+    protected_review_required_for:
+      - budget_allocation_policy_changes
+      - context_optimization_changes
+      - low_budget_action_policy_changes
+
+  - public_issue: 1480
+    public_contract: route_evaluation_record
+    protected_authorities: [IPR-0018]
+    relationship: implements
+    protected_review_required_for:
+      - route_score_calculation_changes
+      - calibration_changes
+      - benchmark_selection_changes
+
+  - public_issue: 1481
+    public_contract: specialist_selection_decision
+    protected_authorities: [IPR-0019]
+    relationship: implements
+    protected_review_required_for:
+      - specialist_selection_policy_changes
+      - spawn_resume_policy_changes
+      - candidate_ranking_changes
+
+  - public_issue: 1482
+    public_contract: cognitive_operator_selection_plan
+    protected_authorities: [IPR-0004]
+    relationship: implements
+    protected_review_required_for:
+      - operator_routing_changes
+      - applicability_scoring_changes
+      - operator_selection_policy_changes
+
+  - public_issue: 1483
+    public_contract: strategy_episode
+    protected_authorities: [IPR-0005]
+    relationship: implements
+    protected_review_required_for:
+      - efficacy_scoring_changes
+      - strategy_learning_changes
+      - promotion_or_demotion_changes
+
+  - public_issue: 1484
+    public_contract: retrieval_benchmark_record
+    protected_authorities: [IPR-0021]
+    relationship: implements
+    protected_review_required_for:
+      - retrieval_method_selection_changes
+      - ranking_strategy_changes
+      - vendor_or_engine_selection_changes
+
+  - public_issue: 1485
+    public_contract: external_signal_feed_contract
+    protected_authorities: [IPR-0023]
+    relationship: implements
+    protected_review_required_for:
+      - provider_selection_changes
+      - cadence_or_fallback_strategy_changes
+      - rollout_or_reentry_policy_changes
+
+  - public_issue: 1486
+    public_contract: media_attention_artifact_contracts
+    protected_authorities: [IPR-0024]
+    relationship: implements
+    protected_review_required_for:
+      - rollout_choreography_changes
+      - live_platform_strategy_changes
+      - credential_or_scheduling_strategy_changes
+
+notes:
+  - >-
+    This initial bridge is intentionally incomplete. New edges MUST be added as
+    public/private split work creates or discovers protected implementation authority.
+  - >-
+    Absence of an IPR edge is not proof that no protected requirement exists. Internal
+    engineering still performs authority discovery for material behavioral changes.
