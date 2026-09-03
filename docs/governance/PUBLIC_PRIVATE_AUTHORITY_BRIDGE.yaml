@@ -181,6 +181,18 @@ bridges:
       - provider_handle_coordination_changes
       - expected_savings_or_profile_ranking_changes
 
+  - public_issue: 1493
+    public_contract: repository_code_index
+    protected_authorities: [IPR-0030]
+    relationship: implements
+    protected_review_required_for:
+      - retrieval_ranking_formula_changes
+      - query_mode_or_reranking_changes
+      - dependency_or_centrality_weighting_changes
+      - retrieval_tier_or_full_source_escalation_changes
+      - budget_pack_selection_changes
+      - retrieval_optimization_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
