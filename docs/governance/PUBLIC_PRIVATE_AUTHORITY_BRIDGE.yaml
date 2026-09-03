@@ -146,6 +146,19 @@ bridges:
       - live_platform_strategy_changes
       - credential_or_scheduling_strategy_changes
 
+  - public_issue: 1488
+    public_contract: compiled_context_artifact
+    protected_authorities: [IPR-0027]
+    relationship: implements
+    protected_review_required_for:
+      - context_selection_policy_changes
+      - ordering_or_precedence_policy_changes
+      - compression_strategy_changes
+      - stable_prefix_promotion_changes
+      - cache_planning_changes
+      - adaptive_packing_changes
+      - fallback_or_reuse_policy_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
