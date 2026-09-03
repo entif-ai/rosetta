@@ -159,6 +159,28 @@ bridges:
       - adaptive_packing_changes
       - fallback_or_reuse_policy_changes
 
+  - public_issue: 1490
+    public_contract: cache_domain_reuse_authorization
+    protected_authorities: [IPR-0028]
+    relationship: implements
+    protected_review_required_for:
+      - reuse_economics_changes
+      - keepalive_policy_changes
+      - retention_optimization_changes
+      - cache_candidate_selection_changes
+      - stale_risk_savings_strategy_changes
+
+  - public_issue: 1491
+    public_contract: provider_cache_profile_state
+    protected_authorities: [IPR-0029]
+    relationship: implements
+    protected_review_required_for:
+      - hysteresis_or_switch_threshold_changes
+      - profile_reevaluation_policy_changes
+      - warm_window_optimization_changes
+      - provider_handle_coordination_changes
+      - expected_savings_or_profile_ranking_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
