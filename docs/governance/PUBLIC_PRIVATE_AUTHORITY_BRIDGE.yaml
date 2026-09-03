@@ -217,6 +217,54 @@ bridges:
       - adaptive_planner_orchestration_changes
       - context_value_optimization_changes
 
+  - public_issue: 1505
+    public_contract: memory_activation_evaluation_record
+    protected_authorities: [IPR-0033, IPR-0049]
+    relationship: implements
+    protected_review_required_for:
+      - activation_scoring_or_weighting_changes
+      - normalization_or_calibration_changes
+      - activation_event_semantics_changes
+      - decay_or_history_parameter_changes
+      - event_weighting_or_approximation_changes
+      - adaptive_activation_policy_changes
+
+  - public_issue: 1506
+    public_contract: memory_tier_transition_record
+    protected_authorities: [IPR-0050]
+    relationship: implements
+    protected_review_required_for:
+      - tier_transition_threshold_changes
+      - promotion_or_demotion_policy_changes
+      - compaction_or_downsampling_trigger_changes
+      - retention_or_destructive_action_policy_changes
+      - rehydration_or_review_trigger_changes
+      - adaptive_lifecycle_policy_changes
+
+  - public_issue: 1507
+    public_contract: routing_judgment_record
+    protected_authorities: [IPR-0051]
+    relationship: implements
+    protected_review_required_for:
+      - context_burden_classification_changes
+      - impact_classification_changes
+      - policy_sensitive_escalation_changes
+      - signal_combination_or_threshold_changes
+      - branch_selection_or_budget_tradeoff_changes
+      - routing_calibration_or_adaptive_policy_changes
+
+  - public_issue: 1508
+    public_contract: tool_surface_budget_observation_record
+    protected_authorities: [IPR-0052]
+    relationship: implements
+    protected_review_required_for:
+      - tool_budget_threshold_changes
+      - risk_or_breadth_aggregation_changes
+      - ambiguity_or_context_waste_regression_changes
+      - consolidation_or_profile_tightening_changes
+      - broker_policy_consequence_changes
+      - adaptive_tool_surface_optimization_changes
+
 notes:
   - >-
     This initial bridge is intentionally incomplete. New edges MUST be added as
