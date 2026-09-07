@@ -12,6 +12,8 @@ Implements Rosetta Receipt Pack mechanics for receipt creation, signing, bundlin
 - signs receipt CIDs
 - verifies signed receipts cryptographically
 - builds receipt bundles and verifies bundle closure against a tile store
+- creates deterministic lifecycle receipts over existing run/action/artifact/check tiles;
+  see the [minimum receipt-family contract](../../docs/spec/RECEIPT_FAMILY_CONTRACT.md)
 
 ## Fixture Status
 

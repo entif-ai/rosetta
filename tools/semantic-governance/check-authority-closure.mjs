@@ -118,6 +118,7 @@ export function findDirectPrivateRepositoryReferences(entries) {
             message:
               'Public artifacts must reference protected authority only through opaque IPR-#### identifiers, never a direct protected-repository path or URL.',
           });
+          break;
         }
       }
     }
