@@ -369,6 +369,187 @@
       "state": "closed",
       "state_reason": "not_planned",
       "public_url": "https://github.com/entif-ai/rosetta/issues/429"
+    },
+    {
+      "number": 433,
+      "ipr": "IPR-0154",
+      "successors": [
+        1525
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/433"
+    },
+    {
+      "number": 435,
+      "ipr": "IPR-0155",
+      "successors": [
+        1522
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/435"
+    },
+    {
+      "number": 437,
+      "ipr": "IPR-0156",
+      "successors": [
+        1523
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/437"
+    },
+    {
+      "number": 441,
+      "ipr": "IPR-0157",
+      "successors": [
+        1532
+      ],
+      "status": "redacted_verified",
+      "comment_count": 5,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/441"
+    },
+    {
+      "number": 447,
+      "ipr": "IPR-0158",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 4,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/447"
+    },
+    {
+      "number": 461,
+      "ipr": "IPR-0159",
+      "successors": [
+        1532
+      ],
+      "status": "redacted_verified",
+      "comment_count": 11,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/461"
+    },
+    {
+      "number": 464,
+      "ipr": "IPR-0160",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/464"
+    },
+    {
+      "number": 468,
+      "ipr": "IPR-0161",
+      "successors": [
+        1522
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/468"
+    },
+    {
+      "number": 476,
+      "ipr": "IPR-0162",
+      "successors": [
+        1526
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/476"
+    },
+    {
+      "number": 485,
+      "ipr": "IPR-0163",
+      "successors": [
+        1540
+      ],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/485"
+    },
+    {
+      "number": 490,
+      "ipr": "IPR-0164",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/490"
+    },
+    {
+      "number": 492,
+      "ipr": "IPR-0165",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/492"
+    },
+    {
+      "number": 494,
+      "ipr": "IPR-0166",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/494"
+    },
+    {
+      "number": 500,
+      "ipr": "IPR-0167",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 2,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/500"
+    },
+    {
+      "number": 502,
+      "ipr": "IPR-0168",
+      "successors": [],
+      "status": "redacted_verified",
+      "comment_count": 1,
+      "locked": true,
+      "state": "closed",
+      "state_reason": "not_planned",
+      "public_url": "https://github.com/entif-ai/rosetta/issues/502"
     }
   ],
   "deletion_performed": false,
