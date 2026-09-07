@@ -1,0 +1,153 @@
+name: Rosetta preservation-gated source cleanup
+on:
+  push:
+    branches: [audit/rosetta-roadmap-20260907]
+    paths: [.github/workflows/rosetta-roadmap-cleanup.yml]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: rosetta-roadmap-public-organization
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Verify source checksums, link authority and redact preserved sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUDIT_REF: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import base64,datetime,hashlib,json,os,pathlib,re,time,urllib.error,urllib.parse,urllib.request
+          REPO='entif-ai/rosetta';API='https://api.github.com/';BASE='docs/backlog/roadmap-20260907'
+          H={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Rosetta-preservation-gated-cleanup'}
+          OUT=pathlib.Path('cleanup-results');OUT.mkdir()
+          result={'task':'rosetta-roadmap-20260907','started_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'items':[],'deletion_performed':False,'history_erasure_claimed':False}
+          def sha(b):return hashlib.sha256(b).hexdigest()
+          def enc(v):return json.dumps(v,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()
+          def req(method,path,data=None):
+              assert path=='graphql' or path.startswith('repos/'+REPO+'/')
+              if method!='GET':time.sleep(1.25)
+              request=urllib.request.Request(API+path,headers=H,method=method,data=enc(data) if data is not None else None)
+              if data is not None:request.add_header('Content-Type','application/json')
+              with urllib.request.urlopen(request,timeout=90) as r:
+                  raw=r.read();return json.loads(raw) if raw else None
+          def get(path):return req('GET','repos/'+REPO+'/'+path)
+          def pages(path):
+              out=[]
+              for p in range(1,101):
+                  v=get(path+('&' if '?' in path else '?')+'per_page=100&page='+str(p));out.extend(v)
+                  if len(v)<100:return out
+              raise RuntimeError('Pagination incomplete')
+          def readfile(path,ref='main'):
+              obj=get('contents/'+path+'?ref='+urllib.parse.quote(ref,safe=''));return base64.b64decode(obj['content']).decode(),obj['sha']
+          def writefile(path,text,message):
+              data={'message':message,'content':base64.b64encode(text.encode()).decode(),'branch':'main'}
+              try:_,data['sha']=readfile(path)
+              except urllib.error.HTTPError as e:
+                  if e.code!=404:raise
+              obj=req('PUT','repos/'+REPO+'/contents/'+path,data)
+              actual,_=readfile(path);assert actual==text
+              return obj['commit']['sha']
+          def commenthash(cs):
+              rows=[{'id':c['id'],'body':c.get('body') or '','created_at':c.get('created_at'),'updated_at':c.get('updated_at'),'author':c.get('user',{}).get('login')} for c in cs]
+              return sha(enc(sorted(rows,key=lambda r:r['id'])))
+          try:
+              org=json.loads(readfile(BASE+'/organization-results.json')[0])
+              assert len(org['successors'])==22 and len(org['labels'])==426 and not org.get('error')
+              raw,_=readfile(BASE+'/preserved-source-checksums.txt',os.environ['AUDIT_REF'])
+              plan=[]
+              for line in raw.splitlines():
+                  if not line.strip():continue
+                  n,ipr,digest=line.split();assert re.fullmatch('[a-f0-9]{64}',digest)
+                  plan.append((int(n),'IPR-'+str(int(ipr)).zfill(4),digest))
+              assert len(plan)==91 and len({r[0] for r in plan})==91
+              successors={n:[s['number']] for s in org['successors'] for n in s['sources']}
+              successors.update({254:[457,1495,1507],429:[457,1495,1507],567:[457,1495,1507],743:[1506,1036],739:[1184,143],786:[1483,1035,1490]})
+              titles={s['number']:s['group'].replace('-','_') for s in org['successors']}
+              for n in sorted({v for values in successors.values() for v in values}):
+                  i=get('issues/'+str(n))
+                  assert i['state']=='open' and not {'private','docs-intake','gate:integration-planner-proposal'}.intersection(l['name'] for l in i['labels'])
+                  assert i.get('body'), 'Public successor missing content'
+              bridge_path='docs/governance/PUBLIC_PRIVATE_AUTHORITY_BRIDGE.yaml'
+              bridge,_=readfile(bridge_path)
+              by_public={}
+              for n,ipr,digest in plan:
+                  for s in successors.get(n,[]):by_public.setdefault(s,set()).add(ipr)
+              added=[]
+              for public_id,iprs in sorted(by_public.items()):
+                  pat=r'(?m)^  - public_issue: '+str(public_id)+r'\n(?:(?!  - public_issue:|notes:).*(?:\n|$))*'
+                  match=re.search(pat,bridge)
+                  if match:
+                      block=match.group(0);m=re.search(r'protected_authorities: \[([^\]]*)\]',block);assert m
+                      values=set(re.findall(r'IPR-\d{4}',m.group(1)))|iprs
+                      replacement=block[:m.start(1)]+', '.join(sorted(values))+block[m.end(1):]
+                      bridge=bridge[:match.start()]+replacement+bridge[match.end():]
+                  else:
+                      added.append('  - public_issue: '+str(public_id)+'\n    public_contract: '+titles.get(public_id,'public_contract_'+str(public_id))+'\n    protected_authorities: ['+', '.join(sorted(iprs))+']\n    relationship: implements\n    protected_review_required_for:\n      - implementation_behavior_changes\n    validation_references:\n      - public_schema_and_fixture_contract\n')
+              if added:
+                  assert '\nnotes:' in bridge
+                  bridge=bridge.replace('\nnotes:','\n'+'\n'.join(added)+'\nnotes:',1)
+              assert 'https://github.com/socr8s' not in bridge
+              result['bridge_commit']=writefile(bridge_path,bridge,'governance: link preserved authorities to public roadmap contracts')
+              result['bridge_public_contracts_updated']=len(by_public)
+              for n,ipr,digest in plan:
+                  row={'number':n,'ipr':ipr,'successors':successors.get(n,[]),'status':'preflight'};result['items'].append(row)
+                  issue=get('issues/'+str(n));cs=pages('issues/'+str(n)+'/comments')
+                  text='This historical comment has been preserved under protected authority '+ipr+' and removed from this public source. This is archival cleanup, not implementation completion.'
+                  marker='<!-- roadmap-cleanup:'+str(n)+':'+ipr+' -->'
+                  already=marker in (issue.get('body') or '')
+                  if not already:
+                      if issue['state']!='open' or {'private','docs-intake','gate:integration-planner-proposal'}.intersection(l['name'] for l in issue['labels']):
+                          row.update(status='not_changed',reason='source_state_or_exclusion_changed');continue
+                      observed=sha((sha((issue.get('body') or '').encode())+commenthash(cs)).encode())
+                      if observed!=digest:
+                          row.update(status='not_changed',reason='source_body_or_comments_changed_after_preservation');continue
+                      # All comments are preserved already. Update only this source's exact current comment IDs.
+                      if cs:
+                          fields=[];decl=[];variables={}
+                          for j,c in enumerate(cs):
+                              k='c'+str(j);decl.append('$'+k+':UpdateIssueCommentInput!');variables[k]={'id':c['node_id'],'body':text}
+                              fields.append('m'+str(j)+':updateIssueComment(input:$'+k+'){issueComment{id body}}')
+                          response=req('POST','graphql',{'query':'mutation('+','.join(decl)+'){'+''.join(fields)+'}','variables':variables})
+                          if response.get('errors'):raise RuntimeError('Comment update failed for #'+str(n)+': '+json.dumps(response['errors']))
+                          assert all(v['issueComment']['body']==text for v in response['data'].values())
+                      destination=('Public representational contract(s): '+', '.join('#'+str(s) for s in row['successors'])+'. These public contracts are independently understandable and do not disclose protected implementation.' if row['successors'] else 'This item concerned protected operational work. No replacement public interchange contract is required; existing public semantic authorities remain unchanged.')
+                      body=marker+'\n\n## Archival disposition\n\nThe original body and all '+str(len(cs))+' historical comments were preserved and verified under protected authority `'+ipr+'` before this public source was redacted.\n\n'+destination+'\n\nThis source is closed as not planned in this public repository and labeled `private` for separately authorized deletion. Closure records repository disposition, not completion of the engineering work. No deletion was performed, and redaction does not establish that prior public copies or revision history have been erased.\n\nAudit: `rosetta-roadmap-20260907`.\n'
+                      req('PATCH','repos/'+REPO+'/issues/'+str(n),{'title':'Archived source #'+str(n)+' ('+ipr+')','body':body,'labels':['private'],'state':'closed','state_reason':'not_planned'})
+                  if not issue.get('locked'):
+                      req('PUT','repos/'+REPO+'/issues/'+str(n)+'/lock',{'lock_reason':'resolved'})
+                  final=get('issues/'+str(n));final_cs=pages('issues/'+str(n)+'/comments')
+                  assert final['state']=='closed' and final['state_reason']=='not_planned' and final['locked']
+                  assert {l['name'] for l in final['labels']}=={'private'} and marker in final['body']
+                  assert len(final_cs)==len(cs) and all(c['body']==text for c in final_cs)
+                  assert 'socr8s/' not in final['body'] and all('socr8s/' not in c['body'] for c in final_cs)
+                  row.update(status='redacted_verified',comment_count=len(cs),locked=True,state='closed',state_reason='not_planned',public_url=final['html_url'])
+                  if len(result['items'])%15==0:
+                      writefile(BASE+'/cleanup-results.json',json.dumps(result,indent=2),'audit: checkpoint verified public source cleanup')
+                      print('Verified cleanup checkpoint:',len(result['items']))
+              open_issues=[i for i in pages('issues?state=open') if 'pull_request' not in i]
+              eligible=[i for i in open_issues if not {'private','docs-intake','gate:integration-planner-proposal'}.intersection(l['name'] for l in i['labels'])]
+              bad=[]
+              for i in eligible:
+                  ls=[l['name'] for l in i['labels']]
+                  if len([l for l in ls if l.startswith('priority:')])!=1 or len([l for l in ls if l.startswith('sprint:') or l=='backlog'])!=1:bad.append(i['number'])
+              result.update(completed_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),eligible_public_open_count=len(eligible),eligible_public_numbers=sorted(i['number'] for i in eligible),label_invariant_failures=bad)
+              result['all_planned_sources_verified']=all(r['status']=='redacted_verified' for r in result['items'])
+              result['receipt_commit']=writefile(BASE+'/cleanup-results.json',json.dumps(result,indent=2),'audit: record source redaction readbacks and final issue census')
+              print('Verified sources:',sum(r['status']=='redacted_verified' for r in result['items']))
+              print('Eligible public issues:',len(eligible),'Label invariant failures:',bad)
+          except Exception as e:
+              result['error']=type(e).__name__+': '+str(e);raise
+          finally:(OUT/'cleanup-results.json').write_text(json.dumps(result,indent=2))
+          PY
+      - name: Preserve cleanup result
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: rosetta-roadmap-cleanup
+          path: cleanup-results/
+          retention-days: 30
+          if-no-files-found: error
