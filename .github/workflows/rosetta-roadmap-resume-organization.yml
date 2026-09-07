@@ -1,0 +1,47 @@
+name: Resume reviewed roadmap organization
+on:
+  push:
+    branches: [audit/rosetta-roadmap-20260907]
+    paths: [.github/workflows/rosetta-roadmap-resume-organization.yml]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: rosetta-roadmap-public-organization
+  cancel-in-progress: false
+jobs:
+  resume:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Run reviewed organization with corrected metadata validation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64,json,os,textwrap,urllib.request
+          repo='entif-ai/rosetta'
+          path='.github/workflows/rosetta-roadmap-organize.yml'
+          ref='669132479eb0e5feb425a640476e2cf046e26203'
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'Rosetta-roadmap-resume'}
+          url='https://api.github.com/repos/'+repo+'/contents/'+path+'?ref='+ref
+          with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=45) as r: obj=json.load(r)
+          text=base64.b64decode(obj['content']).decode()
+          old='No committed execution wave. Requires an explicit consumer, prerequisite closure and bounded leaf before admission.'
+          new='Unscheduled. Admit only with a concrete consumer, prerequisite closure and bounded deliverable.'
+          assert len(new)<=100 and old in text
+          text=text.replace(old,new)
+          lines=text.splitlines(True)
+          start=next(j for j,s in enumerate(lines) if s.strip()=="python3 - <<'PY'")
+          end=next(j for j in range(start+1,len(lines)) if lines[j].strip()=='PY')
+          code=textwrap.dedent(''.join(lines[start+1:end]))
+          exec(compile(code,'reviewed-organization.py','exec'),{'__name__':'__main__'})
+          PY
+      - name: Preserve public operation receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: rosetta-roadmap-organization-resumed
+          path: roadmap-result/
+          retention-days: 30
+          if-no-files-found: error
