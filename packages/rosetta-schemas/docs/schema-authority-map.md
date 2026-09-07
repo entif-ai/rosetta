@@ -4,6 +4,38 @@
 
 Its `authorityTier` field describes package ownership and admission lanes. It does not supersede the Rosetta v3 Terminology Lock or grant Rosetta core status.
 
+## Core descent
+
+`coreDescent` is independent of `authorityTier` and `exposureStatus`. The explicit
+identity map in `src/lib/core-descent.ts` follows the existing semantic audit:
+
+- `core-primitive`: one of the seven implemented v3 concepts listed in the audit.
+- `pack-defined-schema`: an explicitly present Source Substrate starter shape.
+- `governed-extension`: a source-substrate contract whose kind is not yet present
+  in that starter schema. This records the packaging gap instead of inventing an export.
+- `implementation-local`: application metadata, transport contracts or provisional
+  local validation artifacts; no claim of v3 core status.
+- `derived-projection`: an implementation's derived digest or conformance summary.
+- `external-contract-ref`: a boundary whose semantics stay with its existing owner.
+
+`descentAuthority` names the source for the classification. `relatedCoreKinds`
+records semantic relationships for review, **not** an inheritance/substitutability
+claim. In particular a source evaluation receipt does not automatically validate
+as an RRP receipt, and a domain trust matrix is not interchangeable with the
+canonical matrix merely because it has axes. An empty list makes no specific
+primitive mapping claim; it does not mean authority is missing.
+
+New supported tile kinds require an explicit identity registration; prefixes and
+ownership tiers cannot supply a default. Registered Agentic Messaging profiles
+remain application contracts regardless of labels such as `TASK_RECEIPT`.
+Coverage validation rejects missing/mismatched descent, authority or related-kind
+metadata, duplicate identities and missing source issues. The API/CLI catalog
+automatically exposes this metadata without changing runtime support or grants.
+
+`skill.card` now belongs to `governance-admission`, consistent with its broker
+metadata boundary. This fixes misleading ownership metadata without changing its
+payload, validator, authority restrictions or downstream exposure.
+
 ## Semantic Dispositions
 
 Every schema family should resolve to one of the dispositions defined in [`../../../docs/governance/genesis/SEMANTIC_AUDIT.md`](../../../docs/governance/genesis/SEMANTIC_AUDIT.md):
