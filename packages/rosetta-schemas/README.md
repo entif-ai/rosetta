@@ -1,5 +1,10 @@
 # rosetta-schemas
 
+Catalog entries distinguish core descent from operational ownership and exposure.
+See [schema authority and descent](docs/schema-authority-map.md#core-descent).
+New supported kinds need an explicit classification in `src/lib/core-descent.ts`;
+catalog presence alone grants neither core status nor runtime authority.
+
 ## Purpose
 
 Provides lightweight payload validation and conformance bundle emission for current tile kinds.
