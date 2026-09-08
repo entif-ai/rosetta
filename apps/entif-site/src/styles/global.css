@@ -18,10 +18,9 @@
   --h2: 1.7rem;
   --h1: 2.5rem;
   --radius: 0.875rem;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', sans-serif;
+  font-family: 'Plantagenet Cherokee', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', Times, serif;
   color: var(--ink);
-  background: var(--canvas);
+  background: #fff;
   line-height: 1.4;
 }
 *,
@@ -106,6 +105,11 @@ sub {
   width: var(--shell);
   margin-inline: auto;
 }
+
+#main-content{
+  background: linear-gradient(0deg, var(--line), #fafbfe 19%, var(--canvas) 90%, transparent);
+}
+
 .skip-link {
   position: absolute;
   z-index: 100;
@@ -115,13 +119,16 @@ sub {
   background: white;
   transform: translateY(-200%);
 }
+
 .skip-link:focus {
   transform: translateY(0);
 }
+
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: #f2eeed;
+  background: linear-gradient(90deg, var(--canvas), var(--surface) 11%, var(--canvas) 19%, var(--surface) 72%, var(--canvas));
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -156,12 +163,15 @@ header .header-inner nav li {
   white-space: normal;
   min-width: 0;
 }
+
 .brand img {
   flex-shrink: 0;
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 0.5rem;
+  border-radius: 57%;
+  border: solid 2px var(--surface);
 }
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -276,6 +286,7 @@ header .header-inner nav li {
   position: relative;
   min-width: 0;
 }
+
 .journey-track > li + li::before {
   content: '';
   position: absolute;
@@ -287,7 +298,7 @@ header .header-inner nav li {
 }
 
 .claim-journey > ol.journey-track > li {
-  background-color: var(--canvas);
+  background-color: #fcfcfe;
 }
 
 /* A fixed front and scrollable receipt share the same card footprint. */
@@ -327,7 +338,7 @@ header .header-inner nav li {
   right: 0;
   width: 3.5rem;
   height: 3.5rem;
-  background: linear-gradient(225deg, var(--canvas) 48%, #e7eefb 50%, #fff 78%);
+  background: linear-gradient(225deg, #fcfcfe 48%, #e7eefb 50%, #fff 78%);
   transform: translate(100%, -100%);
   transition: transform 0.15s;
 }
@@ -425,6 +436,7 @@ header .header-inner nav li {
   padding: 0 1rem 0.5rem;
   font-size: var(--small);
   margin-top: 60px;
+  background: radial-gradient(#fffeef 19%, var(--accent-soft) 91%);
 }
 
 .claim-receipt .eyebrow {
@@ -458,8 +470,9 @@ header .header-inner nav li {
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
-  background: var(--accent-soft);
+  background: linear-gradient(var(--accent-soft), #fcf3f3 93%, #eee7ff 96%, #bebebe5c 100%);
 }
+
 .idle-cue summary::after {
   animation: corner-wink 1200ms ease 1;
 }
@@ -574,10 +587,16 @@ header .header-inner nav li {
   min-height: 2.75rem;
   padding-block: 0.5rem;
 }
+
 .principles-band {
-  background: var(--accent-soft);
+  background: radial-gradient(var(--surface) 57%, var(--canvas) 84%, var(--line));
   border-block: 1px solid var(--line);
 }
+
+.principles-band .section-heading {
+  display: block;
+}
+
 .home-principles-body {
   max-width: var(--reading);
 }
@@ -737,7 +756,7 @@ header .header-inner nav li {
 .site-footer {
   border-top: 1px solid var(--line);
   background: #fff;
-  padding-block: 0.75rem;
+  padding-block-end: 0.75rem;
   color: var(--muted);
   font-size: var(--body);
 }
@@ -749,11 +768,20 @@ header .header-inner nav li {
   justify-content: space-between;
   gap: 1rem;
 }
+
+.footer-inner > p:first-child {
+  display: block;
+  position: relative;
+  top: 20px;
+}
+
 .footer-inner > p:last-child {
   grid-column: 2;
   grid-row: 1 / 3;
   text-align: right;
+  margin-top: -20px;
 }
+
 .footer-inner nav {
   display: flex;
   gap: 1rem;
@@ -1013,29 +1041,37 @@ header .header-inner nav li {
     text-align: left;
   }
 }
+
 .scroll-top {
   position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
+  right: 3rem;
+  bottom: 5rem;
   z-index: 20;
   display: grid;
   place-items: center;
   width: 3rem;
   height: 3rem;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--muted);
   border-radius: 50%;
   background: var(--surface);
-  color: var(--accent);
+  color: var(--muted);
   cursor: pointer;
   box-shadow: 0 3px 12px #01266420;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.15s, visibility 0.15s;
 }
+
+.scroll-top svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .scroll-top.is-visible {
   opacity: 1;
   visibility: visible;
 }
+
 @media print {
   .scroll-top {
     display: none;
