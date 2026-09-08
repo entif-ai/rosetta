@@ -1,19 +1,19 @@
 /* Canonical tokens and usage are documented in Design.MD. */
 :root {
   color-scheme: light;
-  --ink: #111b39;
+  --ink: #012664;
   --muted: #536383;
-  --accent: #493bdd;
-  --accent-soft: #eeedff;
+  --accent: #613535;
+  --accent-soft: #f6e9de;
   --teal: #08786b;
   --line: #d5dbea;
   --surface: #fff;
-  --canvas: #f6f7fc;
+  --canvas: #f6f7fd;
   --shell: min(90rem, calc(100% - 4rem));
   --reading: 46rem;
   --small: 0.8125rem;
   --body: 1rem;
-  --lead: 1.125rem;
+  --lead: 1rem;
   --h3: 1.375rem;
   --h2: 1.875rem;
   --h1: 2.5rem;
@@ -120,15 +120,15 @@ sub {
 }
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: #fff;
+  background: #f2eeed;
 }
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  min-height: 5.5rem;
-  padding-block: 0.75rem;
+  min-height: 4rem;
+  padding-block: 0.25rem;
 }
 .brand {
   display: flex;
@@ -138,11 +138,13 @@ sub {
   text-decoration: none;
   font-size: var(--h3);
   font-weight: 600;
-  white-space: nowrap;
+  white-space: normal;
+  min-width: 0;
 }
 .brand img {
-  width: 2.5rem;
-  height: 2.5rem;
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 0.5rem;
 }
 .nav-list {
@@ -167,7 +169,7 @@ sub {
 }
 .social-links {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.75rem;
 }
 .social-links a {
   display: grid;
@@ -179,21 +181,23 @@ sub {
 }
 .social-links a:hover {
   color: var(--accent);
-  background: var(--accent-soft);
 }
 .social-links svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 2rem;
+  height: 2rem;
 }
 .hero {
   display: grid;
   grid-template-columns: minmax(17rem, 0.95fr) minmax(0, 2fr);
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: center;
-  padding-block: 6rem 4rem;
-  min-height: 36rem;
+  gap: clamp(1rem, 4vw, 1rem);
+  align-items: start;
+  padding-block: 3rem;
+  width: min(82rem, var(--shell));
 }
 .hero h1 {
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 500;
   max-width: 18ch;
   margin-top: 1.25rem;
 }
@@ -239,7 +243,7 @@ sub {
   background: var(--surface);
 }
 .button:hover {
-  box-shadow: 0 4px 12px #493bdd20;
+  box-shadow: 0 4px 12px #61353520;
 }
 .claim-journey {
   min-width: 0;
@@ -266,57 +270,115 @@ sub {
   left: -1.5rem;
   top: 11rem;
 }
+
+.claim-journey > ol.journey-track > li {
+  background-color: var(--canvas);
+}
+
+/* A fixed front and scrollable receipt share the same card footprint. */
 .claim-card {
   position: relative;
+  height: 17.5rem;
   background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
-  box-shadow: 0 6px 16px #1b285408;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: -1px 4px 2px #0126640c;
+  container-type: inline-size;
 }
+
 .claim-card summary {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 22rem;
-  gap: 1rem;
-  padding: 3rem 0.6rem 2rem;
+  justify-content: start;
+  height: 100%;
+  gap: 0.75rem;
+  padding: 3rem 0.25rem 1rem;
   cursor: pointer;
   border-radius: inherit;
   list-style: none;
   overflow: hidden;
 }
+
 .claim-card summary::-webkit-details-marker {
   display: none;
 }
+
 .claim-card summary::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: linear-gradient(225deg, var(--canvas) 48%, #c8c9ed 50%, #fff 78%);
+  width: 3.5rem;
+  height: 3.5rem;
+  background: linear-gradient(225deg, var(--canvas) 48%, #e7eefb 50%, #fff 78%);
   transform: translate(100%, -100%);
-  transition: transform 220ms ease;
+  transition: transform 0.15s;
 }
+
+.claim-card summary > .eyebrow {
+  max-width: 100%;
+  position: absolute;
+  left: 38px;
+  top: 38px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.claim-card summary > .stage-icon {
+  position: absolute;
+  top: 100px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.stage-icon svg {
+  width: 7rem;
+  height: 7rem;
+  color: #48567b;
+  margin-bottom: 0;
+}
+
+.stage-title {
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  left: 37px;
+  font-size: .88rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @media (hover: hover) {
   .claim-card summary:hover::after {
     transform: translate(0, 0);
   }
 }
 .claim-card[open] {
-  border-color: var(--accent);
   background: var(--accent-soft);
 }
+
 .claim-card[open] summary {
-  min-height: 12rem;
+  height: 18rem;
+  position: absolute;
+  width: 100%;
 }
-.claim-card[open] .stage-icon svg {
-  width: 2.5rem;
-  height: 2.5rem;
+
+.claim-card[open] summary::after {
+  transform: translate(0, 0);
 }
+
+.claim-card[open] .stage-icon,
+.claim-card[open] summary > .eyebrow {
+  display: none;
+}
+
 .stage-number {
   position: absolute;
   top: 1.3rem;
@@ -324,43 +386,56 @@ sub {
   font-size: var(--small);
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .info-icon {
   position: absolute;
   top: 1.1rem;
   right: 1rem;
   color: var(--muted);
 }
+
 .info-icon svg {
   width: 1.125rem;
   height: 1.125rem;
 }
-.stage-icon svg {
-  width: 3.5rem;
-  height: 3.5rem;
-  color: #48567b;
-  margin-bottom: 1rem;
-}
-.stage-title {
-  font-size: var(--lead);
-  font-weight: 500;
-}
+
 .claim-receipt {
-  padding: 0 1rem 1.25rem;
+  height: calc(100% - 6rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 0 1rem .5rem;
   font-size: var(--small);
+  margin-top: 60px;
 }
-.claim-receipt > * + * {
-  margin-top: 1rem;
+
+.claim-receipt .eyebrow {
+  display: none;
+  visibility: hidden;
 }
+
 .claim-text {
-  font-size: var(--body);
-  font-weight: 500;
+  font-size: var(--small);
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1.2;
 }
+
+.claim-text + p {
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
 .receipt-id {
   border-top: 1px solid var(--line);
-  padding-top: 1rem;
+  padding-top: .3rem;
+  margin-top: .5rem;
   color: var(--muted);
 }
+
 .demo-note {
   font-size: var(--small);
   color: var(--muted);
@@ -368,7 +443,7 @@ sub {
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
-  background: #eeeff8;
+  background: var(--accent-soft);
 }
 .idle-cue summary::after {
   animation: corner-wink 1200ms ease 1;
@@ -466,7 +541,7 @@ sub {
   padding-block: 0.5rem;
 }
 .principles-band {
-  background: #eeeff8;
+  background: var(--accent-soft);
   border-block: 1px solid var(--line);
 }
 .home-principles-body {
@@ -508,10 +583,10 @@ sub {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   padding: 1rem;
-  background: #eeeff8;
+  background: var(--accent-soft);
 }
 .prose code {
-  background: #eeeff8;
+  background: var(--accent-soft);
 }
 .prose table {
   display: block;
@@ -558,6 +633,10 @@ sub {
   padding-top: 2.5rem;
 }
 .article-aside {
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
   background: white;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -624,16 +703,22 @@ sub {
 .site-footer {
   border-top: 1px solid var(--line);
   background: #fff;
-  padding-block: 2rem;
+  padding-block: 0.75rem;
   color: var(--muted);
-  font-size: var(--small);
+  font-size: var(--body);
 }
 .footer-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
+}
+.footer-inner > p:last-child {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  text-align: right;
 }
 .footer-inner nav {
   display: flex;
@@ -698,9 +783,6 @@ sub {
   .journey-track {
     gap: 1.5rem;
   }
-  .claim-card summary {
-    min-height: 17rem;
-  }
   .journey-track > li + li::before {
     top: 8rem;
   }
@@ -740,37 +822,6 @@ sub {
     left: 2.1rem;
     top: -1rem;
   }
-  .claim-card summary {
-    min-height: 6.25rem;
-    display: grid;
-    grid-template-columns: 3rem 1fr;
-    gap: 0.25rem 1rem;
-    padding: 1rem 3rem 1rem 1rem;
-    justify-items: start;
-  }
-  .stage-icon {
-    grid-row: 1 / 3;
-  }
-  .stage-icon svg {
-    width: 2.75rem;
-    height: 2.75rem;
-    margin: 0;
-  }
-  .stage-number {
-    display: none;
-  }
-  .stage-title {
-    align-self: end;
-  }
-  .claim-card summary > .eyebrow {
-    align-self: start;
-  }
-  .claim-card[open] summary {
-    min-height: 6.25rem;
-  }
-  .claim-receipt {
-    padding: 0 1.25rem 1.25rem;
-  }
   .nav-list {
     gap: 0.25rem 1rem;
   }
@@ -782,9 +833,6 @@ sub {
   }
   .hero {
     padding-top: 2.5rem;
-  }
-  .brand {
-    font-size: var(--lead);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -854,10 +902,6 @@ sub {
   .article-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .brand {
-    white-space: normal;
-    min-width: 0;
-  }
   .brand img {
     flex-shrink: 0;
   }
@@ -881,9 +925,6 @@ sub {
   .explorer-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .claim-card summary {
-    grid-template-columns: 3rem minmax(0, 1fr);
-  }
   .content-card {
     padding: 1.25rem;
   }
@@ -892,19 +933,88 @@ sub {
   max-width: 100%;
   overflow-wrap: anywhere;
 }
-.claim-card {
-  container-type: inline-size;
+
+.brand > span {
+  font-size: var(--h2);
 }
-.claim-card summary > .eyebrow {
-  max-width: 100%;
+@media (width < 54.375rem) {
+  .brand > span {
+    font-size: var(--h3);
+  }
+}
+@media (max-width: 45rem) {
+  .brand > span {
+    font-size: var(--lead);
+  }
+}
+@media (max-width: 85rem) {
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+  .brand {
+    flex: 1;
+  }
+  .header-inner > nav:not(.social-links) {
+    order: 3;
+    width: 100%;
+  }
+}
+@media (max-width: 48rem) {
+  .article-aside {
+    position: static;
+    max-height: none;
+  }
+  .claim-card {
+    height: 16rem;
+  }
+  .footer-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .footer-inner > p:last-child {
+    grid-column: 1;
+    grid-row: auto;
+    text-align: left;
+  }
+}
+.scroll-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 3px 12px #01266420;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+}
+.scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+@media print {
+  .scroll-top {
+    display: none;
+  }
+}
+/* Reflow also applies when browser text size doubles at a narrow viewport. */
+.brand > span {
   overflow-wrap: anywhere;
 }
-@container (max-width: 16rem) {
-  .claim-card summary {
-    grid-template-columns: minmax(0, 1fr);
-    padding: 3rem 1rem 1rem;
-  }
-  .stage-icon {
-    grid-row: auto;
-  }
+.social-links {
+  flex-wrap: wrap;
+}
+.header-inner > * {
+  max-width: 100%;
+}
+.hero + .section {
+  padding-top: 2rem;
 }

@@ -1,3 +1,4 @@
+import { mkdir, copyFile } from 'node:fs/promises';
 import { unified } from '@astrojs/markdown-remark';
 import {
   remarkSiteAssets,
@@ -22,7 +23,22 @@ export default defineConfig({
       rehypePlugins: [rehypeSiteTables],
     }),
   },
-  integrations: [react(), sitemap()],
+  integrations: [
+    react(),
+    sitemap(),
+    {
+      name: 'not-found-direct-route',
+      hooks: {
+        'astro:build:done': async ({ dir }) => {
+          await mkdir(new URL('404/', dir), { recursive: true });
+          await copyFile(
+            new URL('404.html', dir),
+            new URL('404/index.html', dir)
+          );
+        },
+      },
+    },
+  ],
   build: {
     assets: '_assets',
   },

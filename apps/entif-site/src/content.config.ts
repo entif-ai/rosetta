@@ -81,6 +81,9 @@ const ui = defineCollection({
   loader: glob({ pattern: '*.md', base: './content/ui' }),
   schema: z.object({
     breadcrumb: z.string().min(1),
+    brandTagline: z.string().min(1),
+    logoAlt: z.string().min(1),
+    scrollTop: z.string().min(1),
     brand: z.string().min(1),
     homeLabel: z.string().min(1),
     skip: z.string().min(1),

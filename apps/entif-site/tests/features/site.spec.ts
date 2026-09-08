@@ -212,3 +212,51 @@ test('touch cue occurs once and prior card interaction cancels it', async ({
   await expect(page.locator('.idle-cue')).toHaveCount(0);
   await context.close();
 });
+
+test('cards retain their geometry and hero position when opened', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto('/');
+  const cards = page.locator('.claim-card');
+  const hero = await page.locator('.hero-copy').boundingBox();
+  for (const card of await cards.all()) {
+    const before = await card.boundingBox();
+    await card.locator('summary').click();
+    expect((await card.boundingBox())?.height).toBe(before?.height);
+    expect((await page.locator('.hero-copy').boundingBox())?.y).toBe(hero?.y);
+  }
+});
+test('tag date archives and scroll to top work', async ({ page }) => {
+  for (const date of ['2026', '2026/09', '2026/09/07']) {
+    expect((await page.goto(`/tags/research/${date}/`))?.status()).toBe(200);
+    await expect(page.locator('main')).toContainText('After the Inflection');
+  }
+  await page.goto(reports[0] ?? '/');
+  await page.evaluate(() => window.scrollTo(0, innerHeight * 2));
+  const top = page.locator('[data-test-id="scroll-top"]');
+  await expect(top).toBeVisible();
+  await top.click();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+  await expect(top).not.toBeVisible();
+});
+
+test('404 document and direct 404 route retain working site navigation', async ({
+  page,
+}) => {
+  for (const path of ['/404.html', '/404/', '/this-page-does-not-exist/']) {
+    const response = await page.goto(path);
+    expect(response?.status()).toBe(
+      path.includes('does-not-exist') ? 404 : 200
+    );
+    await expect(page.locator('.not-found h1')).toBeVisible();
+    await expect(page.locator('.not-found .button')).toHaveAttribute(
+      'href',
+      '/'
+    );
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+      'content',
+      'noindex, nofollow'
+    );
+  }
+});
