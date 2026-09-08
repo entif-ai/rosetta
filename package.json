@@ -14,6 +14,7 @@
     "docs:intake": "pnpm exec nx run doc-intake:generate",
     "docs:intelligence": "pnpm exec nx run doc-intake:intelligence",
     "docs:intake:validate": "pnpm exec nx run doc-intake:validate-intelligence",
+    "entif-site:dev": "pnpm exec nx run entif-site:dev",
     "graph": "pnpm exec nx graph",
     "lint": "pnpm run affected:lint",
     "lint:full": "pnpm exec nx run-many -t lint --all --parallel=3",

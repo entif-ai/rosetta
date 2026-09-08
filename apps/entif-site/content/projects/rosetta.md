@@ -24,16 +24,29 @@ featured: true
 noindex: false
 ---
 
-## A protocol-shaped research program
+## A shared language for inspectable intelligence
 
-Rosetta explores how machine reasoning systems can represent meaning, evidence, memory, and operational decisions in forms that remain inspectable after a model call ends.
+Rosetta is an open semantic and provenance protocol under active development. It explores how people, models, tools, and institutions can exchange claims while preserving the context needed to interpret and evaluate them.
 
-The work spans semantic representation, provenance receipts, source-aware memory, bounded context construction, agent coordination, and governance. The unifying concern is simple: **important meaning should not disappear into an opaque transcript when the system acts.**
+A document tells you what was written. A provenance record helps you inspect where a claim came from, which transformation produced it, and what evidence or authority was attached. Rosetta aims to make those relationships explicit and interoperable across systems.
 
-## Repository first
+## What the protocol brings together
 
-Rosetta is developed in public through specifications, executable packages, fixtures, issues, and pull requests. The repository is not merely a code dump. It is intended to preserve the trail between an idea, its evidence, its implementation contract, and the proof that a particular behavior actually occurred.
+- **Meaning:** structured representations that make distinctions explicit instead of relying on an opaque transcript.
+- **Provenance:** links between sources, claims, transformations, and records of what occurred.
+- **Memory:** source-aware records that can remain useful beyond an individual interaction.
+- **Governance:** explicit boundaries around authority, policy, and consequential action.
 
-## What is implemented versus proposed
+A receipt is evidence of a recorded event or relationship. It is not a guarantee that a claim is true, that a source is reliable, or that an implementation satisfies a regulatory obligation.
 
-Rosetta contains working foundations alongside research-stage designs. Public Entif pages therefore distinguish current implementation from proposals and hypotheses rather than presenting the entire research program as one homogeneous product claim.
+## Why institutions should care
+
+For enterprises and banks, the research addresses traceability across automated workflows and the human decisions that govern them. For governments, it concerns inspectable information exchange and accountable authority. For academia, it provides public representational contracts and research questions that can be tested independently. For investors, the public repository exposes the distinction between the long-term thesis and the engineering evidence available today.
+
+These are intended application areas, not claims of certified compliance, production deployments, or validated commercial outcomes.
+
+## Evaluate the foundations
+
+The repository contains working foundations alongside proposed designs. Evaluate individual packages, specifications, and conformance fixtures against your requirements; the research program is not a single finished product.
+
+[Inspect Rosetta on GitHub](https://github.com/entif-ai/rosetta) to review the current implementation, contribute a reproducible issue, or propose an interoperability evaluation.
