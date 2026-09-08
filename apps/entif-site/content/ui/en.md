@@ -1,7 +1,7 @@
 ---
 {
   'breadcrumb': 'Breadcrumb',
-  'brandTagline': 'Neurosymbolic Aligned Metacognitive AI',
+  'brandTagline': 'Neurosymbolic Alignment Research by Entif.AI',
   'logoAlt': 'Entif AI logo',
   'scrollTop': 'Scroll to top',
   'brand': 'Entif AI',
@@ -12,7 +12,7 @@
   'footer': 'Open research. Inspectable intelligence.',
   'copyright': 'Entif AI',
   'heroEyebrow': 'Open cognitive infrastructure',
-  'heroTitle': 'So They Claim. WE Keep Receipts.',
+  'heroTitle': 'So they CLAIM...? We keep receipts.',
   'heroDescription': "Know where an answer came from. Rosetta connects claims to their sources, context, and history\u2014so people and AI systems can reason with evidence that remains open to inspection.",
   'explore': 'Explore Rosetta',
   'trace': 'Trace a claim',
