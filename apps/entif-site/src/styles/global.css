@@ -18,7 +18,8 @@
   --h2: 1.7rem;
   --h1: 2.5rem;
   --radius: 0.875rem;
-  font-family: 'Plantagenet Cherokee', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Plantagenet Cherokee', 'Palatino Linotype', Palatino, Georgia,
+    'Times New Roman', Times, serif;
   color: var(--ink);
   background: #fff;
   line-height: 1.4;
@@ -106,8 +107,14 @@ sub {
   margin-inline: auto;
 }
 
-#main-content{
-  background: linear-gradient(0deg, var(--line), #fafbfe 19%, var(--canvas) 90%, transparent);
+#main-content {
+  background: linear-gradient(
+    0deg,
+    var(--line),
+    #fafbfe 19%,
+    var(--canvas) 90%,
+    transparent
+  );
 }
 
 .skip-link {
@@ -126,7 +133,14 @@ sub {
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(90deg, var(--canvas), var(--surface) 11%, var(--canvas) 19%, var(--surface) 72%, var(--canvas));
+  background: linear-gradient(
+    90deg,
+    var(--canvas),
+    var(--surface) 11%,
+    var(--canvas) 19%,
+    var(--surface) 72%,
+    var(--canvas)
+  );
 }
 
 .header-inner {
@@ -470,7 +484,12 @@ header .header-inner nav li {
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
-  background: linear-gradient(var(--accent-soft), #fcf3f3 93%, #eee7ff 96%, #bebebe5c 100%);
+  background: linear-gradient(
+    var(--accent-soft),
+    #fcf3f3 93%,
+    #eee7ff 96%,
+    #bebebe5c 100%
+  );
 }
 
 .idle-cue summary::after {
@@ -589,7 +608,11 @@ header .header-inner nav li {
 }
 
 .principles-band {
-  background: radial-gradient(var(--surface) 57%, var(--canvas) 84%, var(--line));
+  background: radial-gradient(
+    var(--surface) 57%,
+    var(--canvas) 84%,
+    var(--line)
+  );
   border-block: 1px solid var(--line);
 }
 
