@@ -42,7 +42,7 @@ const isProject = entry.data.kind === 'project';
     data-content-id={entry.data.id}
   >
     <header class="article-header">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <nav class="breadcrumbs" aria-label={copy.breadcrumb}>
         <a href={joinBasePath(baseUrl, '')}>{copy.brand}</a>
         <span aria-hidden="true">/</span>
         {
@@ -153,16 +153,18 @@ const isProject = entry.data.kind === 'project';
           headings.length > 0 && (
             <nav aria-label={copy.contents}>
               <>
-                <h2 class="eyebrow">{copy.contents}</h2>
-                <ol class="toc">
-                  {headings
-                    .filter((h) => h.depth === 2)
-                    .map((h) => (
-                      <li>
-                        <a href={`#${h.slug}`}>{h.text}</a>
-                      </li>
-                    ))}
-                </ol>
+                <details class="contents-disclosure">
+                  <summary class="eyebrow">{copy.contents}</summary>
+                  <ol class="toc">
+                    {headings
+                      .filter((h) => h.depth === 2)
+                      .map((h) => (
+                        <li>
+                          <a href={`#${h.slug}`}>{h.text}</a>
+                        </li>
+                      ))}
+                  </ol>
+                </details>
               </>
             </nav>
           )

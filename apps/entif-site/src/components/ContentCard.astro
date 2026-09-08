@@ -1,4 +1,5 @@
 ---
+import { copy } from '../lib/copy';
 import type { ContentCardData } from '../lib/content';
 
 interface Props {
@@ -20,7 +21,7 @@ const testId = `content-card-${encodeURIComponent(card.id)}`;
   <p>{card.description}</p>
   {
     card.tags.length > 0 && (
-      <ul class="tag-list" aria-label="Topics">
+      <ul class="tag-list" aria-label={copy.topics}>
         {card.tags.slice(0, 4).map((tag) => (
           <li>{tag}</li>
         ))}

@@ -21,7 +21,7 @@ test('navigation, social destinations, and card keyboard disclosure', async ({
     ['rosetta', '/projects/rosetta/'],
     ['about', '/about/'],
     ['contact', '/contact/'],
-  ])
+  ] as const)
     await expect(
       page.locator(`[data-test-id="site-nav-${key}"]`)
     ).toHaveAttribute('href', path);
@@ -188,3 +188,27 @@ for (const path of paths)
       .analyze();
     expect(results.violations).toEqual([]);
   });
+
+test('touch cue occurs once and prior card interaction cancels it', async ({
+  browser,
+}) => {
+  const context = await browser.newContext({
+    hasTouch: true,
+    isMobile: true,
+    viewport: { width: 768, height: 1400 },
+  });
+  const page = await context.newPage();
+  await page.clock.install();
+  await page.goto('http://127.0.0.1:4322/');
+  await page.clock.runFor(10001);
+  await expect(page.locator('.idle-cue')).toHaveCount(1);
+  await page.clock.runFor(1500);
+  await expect(page.locator('.idle-cue')).toHaveCount(0);
+  await page.clock.runFor(20000);
+  await expect(page.locator('.idle-cue')).toHaveCount(0);
+  await page.reload();
+  await page.locator('.claim-card summary').first().click();
+  await page.clock.runFor(11000);
+  await expect(page.locator('.idle-cue')).toHaveCount(0);
+  await context.close();
+});

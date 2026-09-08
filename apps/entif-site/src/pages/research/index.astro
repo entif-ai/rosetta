@@ -24,7 +24,10 @@ const entries = (await getPublishedEntries()).filter(
     entries.length ? (
       <div class="card-grid">
         {entries.map((item) => (
-          <ContentCard headingLevel={2} card={toContentCard(toSummary(item), base)} />
+          <ContentCard
+            headingLevel={2}
+            card={toContentCard(toSummary(item), base)}
+          />
         ))}
       </div>
     ) : (

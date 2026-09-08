@@ -1,5 +1,8 @@
 import { unified } from '@astrojs/markdown-remark';
-import { remarkSiteAssets, rehypeSiteTables } from './src/lib/remark-site-assets.mjs';
+import {
+  remarkSiteAssets,
+  rehypeSiteTables,
+} from './src/lib/remark-site-assets.mjs';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
@@ -13,7 +16,12 @@ export default defineConfig({
   site: configuredSite,
   base,
   output: 'static',
-  markdown: { processor: unified({ remarkPlugins: [remarkSiteAssets], rehypePlugins: [rehypeSiteTables] }) },
+  markdown: {
+    processor: unified({
+      remarkPlugins: [remarkSiteAssets],
+      rehypePlugins: [rehypeSiteTables],
+    }),
+  },
   integrations: [react(), sitemap()],
   build: {
     assets: '_assets',

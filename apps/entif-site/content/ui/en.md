@@ -1,5 +1,6 @@
 ---
 {
+  'breadcrumb': 'Breadcrumb',
   'brand': 'Entif AI',
   'homeLabel': 'Entif AI home',
   'skip': 'Skip to main content',

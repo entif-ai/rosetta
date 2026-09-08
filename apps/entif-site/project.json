@@ -50,7 +50,7 @@
     "format:check": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "pnpm exec prettier --check \"apps/entif-site/**/*.{astro,css,json,md,ts,tsx}\""
+        "command": "pnpm exec prettier --check \"apps/entif-site/**/*.{astro,css,json,md,ts,tsx,mjs}\" apps/entif-site/Design.MD"
       }
     },
     "test": {
@@ -71,7 +71,23 @@
     "verify": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "pnpm exec nx run entif-site:format:check && pnpm exec nx run entif-site:lint && pnpm exec nx run entif-site:typecheck && pnpm exec nx run entif-site:test && pnpm exec nx run entif-site:build"
+        "command": "pnpm exec nx run entif-site:format:check && pnpm exec nx run entif-site:lint && pnpm exec nx run entif-site:typecheck && pnpm exec nx run entif-site:test && pnpm exec nx run entif-site:build && pnpm exec nx run entif-site:html"
+      }
+    },
+    "html": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "node tools/validate-output.mjs"
+      }
+    },
+    "lighthouse": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "cwd": "apps/entif-site",
+        "command": "node tools/lighthouse.mjs"
       }
     }
   },

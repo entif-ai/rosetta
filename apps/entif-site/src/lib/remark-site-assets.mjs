@@ -38,12 +38,17 @@ export function remarkSiteAssets() {
 
 export function rehypeSiteTables() {
   return (tree) => {
-    const text = (node) => node.value ?? node.children?.map(text).join(' ') ?? '';
+    const text = (node) =>
+      node.value ?? node.children?.map(text).join(' ') ?? '';
     const walk = (node) => {
       if (node.tagName === 'table') {
         node.properties ??= {};
         node.properties.tabIndex = 0;
-        node.properties.ariaLabel = text(node.children?.find(n=>n.tagName==='thead') ?? node).trim().slice(0,160);
+        node.properties.ariaLabel = text(
+          node.children?.find((n) => n.tagName === 'thead') ?? node
+        )
+          .trim()
+          .slice(0, 160);
       }
       if (node.properties?.align) {
         node.properties.className = ['align-' + node.properties.align];
