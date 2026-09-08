@@ -1,0 +1,17 @@
+---
+import { getEntry, render } from 'astro:content';
+import ContentPageLayout from '../../layouts/ContentPageLayout.astro';
+const entry = await getEntry('pages', 'about');
+if (!entry) throw new Error('Missing page copy');
+const { Content } = await render(entry);
+---
+
+<ContentPageLayout
+  title={entry.data.eyebrow}
+  description={entry.data.description}
+  eyebrow={entry.data.eyebrow}
+  heading={entry.data.title}
+  lede={entry.data.description}
+>
+  <div class="prose"><Content /></div>
+</ContentPageLayout>

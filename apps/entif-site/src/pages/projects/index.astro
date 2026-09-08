@@ -1,4 +1,5 @@
 ---
+import { getEntry } from 'astro:content';
 import ContentCard from '../../components/ContentCard.astro';
 import ContentPageLayout from '../../layouts/ContentPageLayout.astro';
 import { toContentCard } from '../../lib/content';
@@ -8,19 +9,21 @@ const baseUrl = import.meta.env.BASE_URL;
 const projects = (await getPublishedEntries())
   .filter(({ data }) => data.kind === 'project')
   .map(toSummary);
+const page = await getEntry('pages', 'projects');
+if (!page) throw new Error('Missing page copy');
 ---
 
 <ContentPageLayout
-  title="Projects"
-  description="Browse Entif AI projects and the research programs organized around them."
-  eyebrow="Programs"
-  heading="Projects"
-  lede="Project pages provide stable homes for Entif research and engineering programs."
+  title={page.data.eyebrow}
+  description={page.data.description}
+  eyebrow={page.data.eyebrow}
+  heading={page.data.title}
+  lede={page.data.description}
 >
   <div class="card-grid" data-test-id="projects-page-grid">
     {
       projects.map((item) => (
-        <ContentCard card={toContentCard(item, baseUrl)} />
+        <ContentCard headingLevel={2} card={toContentCard(item, baseUrl)} />
       ))
     }
   </div>

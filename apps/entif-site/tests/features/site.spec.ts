@@ -1,131 +1,190 @@
+import { readdirSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test } from '@playwright/test';
+const reports = [
+  '/tags/research/2026/09/06/the-cost-of-learning-too-late/',
+  '/tags/research/2026/09/07/after-the-inflection/',
+];
+const paths = readdirSync('dist', { recursive: true })
+  .filter((p): p is string => typeof p === 'string' && p.endsWith('.html'))
+  .map((p) => '/' + p);
 
-const articlePath = './tags/rosetta/2026/08/28/agentic-memory/index.html';
-
-const byTestId = (page: Page, id: string) =>
-  page.locator(`[data-test-id="${id}"]`);
-
-const assertNoSeriousA11yViolations = async (page: Page): Promise<void> => {
-  const results = await new AxeBuilder({ page }).analyze();
-  const serious = results.violations.filter(
-    ({ impact }) => impact === 'serious' || impact === 'critical'
-  );
-  expect(serious).toEqual([]);
-};
-
-test('homepage renders the Entif identity and root navigation', async ({
+test('navigation, social destinations, and card keyboard disclosure', async ({
   page,
 }) => {
-  await page.goto('./');
-
-  await expect(byTestId(page, 'home-hero-heading')).toBeVisible();
-  await expect(byTestId(page, 'home-philosophy-heading')).toBeVisible();
-  await expect(byTestId(page, 'home-philosophy-body')).toBeVisible();
-  await expect(byTestId(page, 'site-brand-home')).toHaveAttribute('href', '/');
-  await expect(byTestId(page, 'home-hero-logo')).toHaveAttribute(
-    'src',
-    '/brand/entif-logo.webp'
-  );
-  await expect(byTestId(page, 'site-nav-tags')).toHaveAttribute(
-    'href',
-    '/tags/'
-  );
-  await expect(byTestId(page, 'site-nav-projects')).toHaveAttribute(
-    'href',
-    '/projects/'
-  );
-});
-
-test('topic filter works without navigating away', async ({ page }) => {
-  await page.goto('./');
-  const initialUrl = page.url();
-  const filter = byTestId(page, 'topic-filter-agentic-systems');
-
-  await filter.click();
-
-  await expect(filter).toHaveAttribute('aria-pressed', 'true');
-  expect(page.url()).toBe(initialUrl);
-  await expect(byTestId(page, 'topic-result-count')).toBeVisible();
-  await expect(
-    byTestId(page, 'topic-card-entif.research.agentic-memory')
-  ).toBeVisible();
-});
-
-test('published post uses date-stamped tag routing and renders related work', async ({
-  page,
-}) => {
-  await page.goto(articlePath);
-
-  await expect(byTestId(page, 'published-entry')).toHaveAttribute(
-    'data-content-id',
-    'entif.research.agentic-memory'
-  );
-  await expect(byTestId(page, 'published-entry-heading')).toBeVisible();
-  await expect(byTestId(page, 'published-entry-content-id')).toBeVisible();
-  await expect(byTestId(page, 'published-entry-route-tag')).toHaveAttribute(
-    'href',
-    '/tags/rosetta/'
-  );
-  await expect(byTestId(page, 'related-content')).toBeVisible();
-});
-
-test('shared index pages use the common content-page layout', async ({
-  page,
-}) => {
-  for (const route of [
-    './projects/',
-    './tags/',
-    './tags/rosetta/',
-    './team/',
-    './contact/',
-  ]) {
-    const response = await page.goto(route);
-    expect(response?.status()).toBe(200);
-    await expect(byTestId(page, 'content-page-shell')).toBeVisible();
-    await expect(byTestId(page, 'content-page-heading')).toBeVisible();
-  }
-
-  const projectResponse = await page.goto('./projects/rosetta/');
-  expect(projectResponse?.status()).toBe(200);
-  await expect(byTestId(page, 'published-entry')).toBeVisible();
-});
-
-test('draft content is not emitted as a public post route', async ({
-  page,
-}) => {
-  const response = await page.goto(
-    './tags/rosetta/2026/08/28/editorial-pipeline-draft/index.html'
-  );
-  expect(response?.status()).toBe(404);
-});
-
-test('keyboard users can reach the skip link first', async ({ page }) => {
-  await page.goto('./');
+  await page.goto('/');
   await page.keyboard.press('Tab');
-  await expect(byTestId(page, 'site-skip-link')).toBeFocused();
+  await expect(page.locator('[data-test-id="site-skip-link"]')).toBeFocused();
+  for (const [key, path] of [
+    ['research', '/research/'],
+    ['articles', '/articles/'],
+    ['rosetta', '/projects/rosetta/'],
+    ['about', '/about/'],
+    ['contact', '/contact/'],
+  ])
+    await expect(
+      page.locator(`[data-test-id="site-nav-${key}"]`)
+    ).toHaveAttribute('href', path);
+  const social = page.locator('.social-links a');
+  await expect(social).toHaveCount(3);
+  for (const link of await social.all()) {
+    const box = await link.boundingBox();
+    expect(box?.width).toBeGreaterThanOrEqual(44);
+    expect(box?.height).toBeGreaterThanOrEqual(44);
+  }
+  const summaries = page.locator('.claim-card summary');
+  await summaries.nth(2).focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.claim-card').nth(2)).toHaveAttribute('open', '');
+  await summaries.nth(0).click();
+  await expect(page.locator('.claim-card[open]')).toHaveCount(1);
+  await expect(summaries.nth(0)).toBeFocused();
 });
 
-test('mobile viewport does not produce horizontal page overflow', async ({
+test('published manuscripts retain scientific status and working figures', async ({
   page,
 }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('./');
-
-  const overflow = await page.evaluate(
-    () =>
-      document.documentElement.scrollWidth >
-      document.documentElement.clientWidth
-  );
-  expect(overflow).toBe(false);
+  for (const route of reports) {
+    await page.goto(route);
+    await expect(page.locator('h1')).toHaveCount(1);
+    await expect(page.locator('.article-aside')).toContainText(
+      'independent external review pending'
+    );
+    await expect(page.locator('.article-body')).toContainText('Abstract');
+    await expect(page.locator('.article-body')).toContainText('References');
+    for (const img of await page.locator('.article-body img').all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect(img).toHaveJSProperty('complete', true);
+      expect(
+        await img.evaluate((el: HTMLImageElement) => el.naturalWidth)
+      ).toBeGreaterThan(0);
+    }
+    const download = page.locator('a[download]');
+    expect(
+      (
+        await page.request.get((await download.getAttribute('href')) ?? '')
+      ).status()
+    ).toBe(200);
+  }
 });
 
-test('homepage and article have no serious or critical axe findings', async ({
+test('old URLs and date archives remain available; drafts stay private', async ({
   page,
 }) => {
-  await page.goto('./');
-  await assertNoSeriousA11yViolations(page);
-
-  await page.goto(articlePath);
-  await assertNoSeriousA11yViolations(page);
+  for (const path of [
+    '/tags/rosetta/2026/08/28/agentic-memory/',
+    '/tags/rosetta/',
+    '/team/',
+    '/projects/',
+    '/archive/2026/',
+    '/archive/2026/09/',
+    '/archive/2026/09/07/',
+  ])
+    expect((await page.goto(path))?.status()).toBe(200);
+  expect(
+    (
+      await page.goto('/tags/rosetta/2026/08/28/editorial-pipeline-draft/')
+    )?.status()
+  ).toBe(404);
 });
+
+for (const [width, height] of [
+  [320, 568],
+  [390, 844],
+  [768, 1024],
+  [844, 390],
+  [1024, 768],
+  [1366, 768],
+  [1536, 1024],
+]) {
+  test(`reflows at ${width}×${height} with bounded typography`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: width ?? 390, height: height ?? 800 });
+    for (const path of ['/', ...reports, '/about/']) {
+      await page.goto(path);
+      expect(
+        await page.evaluate(
+          () =>
+            document.documentElement.scrollWidth <=
+            document.documentElement.clientWidth
+        )
+      ).toBe(true);
+      const bad = await page.evaluate(() =>
+        Array.from(
+          document.querySelectorAll<HTMLElement>(
+            'h1,h2,h3,p,a,li,dt,dd,summary,span'
+          )
+        )
+          .filter((e) => e.getClientRects().length && e.textContent?.trim())
+          .filter((e) => {
+            const s = getComputedStyle(e);
+            const n = parseFloat(s.fontSize);
+            return n < 13 || n > 40 || parseFloat(s.lineHeight) / n > 1.401;
+          })
+          .map((e) => ({ tag: e.tagName, text: e.textContent?.slice(0, 40) }))
+      );
+      expect(bad).toEqual([]);
+    }
+  });
+}
+
+test('200% text size and WCAG text spacing preserve reflow', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  for (const path of ['/', ...reports]) {
+    await page.goto(path);
+    await page.addStyleTag({
+      content:
+        'html{font-size:200%!important} *{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important} p{margin-bottom:2em!important}',
+    });
+    expect(
+      await page.evaluate(
+        () =>
+          document.documentElement.scrollWidth <=
+          document.documentElement.clientWidth
+      )
+    ).toBe(true);
+  }
+});
+
+test('native disclosure works without JavaScript', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  await page.goto('http://127.0.0.1:4322/');
+  await page.locator('.claim-card summary').first().click();
+  await expect(page.locator('.claim-receipt').first()).toBeVisible();
+  await context.close();
+});
+
+test('reduced motion disables decorative animation', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/');
+  await page
+    .locator('.claim-card')
+    .nth(2)
+    .evaluate((e) => e.classList.add('idle-cue'));
+  expect(
+    await page
+      .locator('.claim-card summary')
+      .nth(2)
+      .evaluate((e) => getComputedStyle(e, '::after').animationName)
+  ).toBe('none');
+});
+
+for (const path of paths)
+  test(`WCAG 2.2 AA automated audit: ${path}`, async ({ page }) => {
+    await page.goto(path);
+    const results = await new AxeBuilder({ page })
+      .withTags([
+        'wcag2a',
+        'wcag2aa',
+        'wcag21a',
+        'wcag21aa',
+        'wcag22aa',
+        'best-practice',
+      ])
+      .analyze();
+    expect(results.violations).toEqual([]);
+  });
