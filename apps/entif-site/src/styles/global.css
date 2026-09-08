@@ -364,7 +364,7 @@ header .header-inner nav li {
   position: absolute;
   top: 20px;
   left: 37px;
-  font-size: .88rem;
+  font-size: 0.88rem;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -422,7 +422,7 @@ header .header-inner nav li {
   height: calc(100% - 6rem);
   overflow: auto;
   overscroll-behavior: contain;
-  padding: 0 1rem .5rem;
+  padding: 0 1rem 0.5rem;
   font-size: var(--small);
   margin-top: 60px;
 }
@@ -446,8 +446,8 @@ header .header-inner nav li {
 
 .receipt-id {
   border-top: 1px solid var(--line);
-  padding-top: .3rem;
-  margin-top: .5rem;
+  padding-top: 0.3rem;
+  margin-top: 0.5rem;
   color: var(--muted);
 }
 
@@ -485,7 +485,7 @@ header .header-inner nav li {
 }
 .section-heading h2 {
   margin-top: 0.6rem;
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
   font-weight: 780;
 }
 .section-heading > p {
@@ -970,7 +970,7 @@ header .header-inner nav li {
 
 .brand > span {
   font-size: var(--h2);
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
   font-weight: 780;
 }
 @media (width < 54.375rem) {
