@@ -485,14 +485,26 @@ sub {
 }
 .content-card {
   height: 100%;
+  text-decoration: none;
   padding: 1.75rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
+  position: relative;
 }
+
 .content-card:hover {
   border-color: #8580c5;
+  text-decoration: none;
 }
+
+.content-card h2 a::after,
+.content-card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
 .card-meta {
   display: flex;
   flex-wrap: wrap;
