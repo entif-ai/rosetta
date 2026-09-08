@@ -1,7 +1,7 @@
 ---
 {
   'breadcrumb': 'Breadcrumb',
-  'brandTagline': 'Neurosymbolic Aligned Metacognitive AI',
+  'brandTagline': 'Neurosymbolic Alignment Research by Entif.AI',
   'logoAlt': 'Entif AI logo',
   'scrollTop': 'Scroll to top',
   'brand': 'Entif AI',
