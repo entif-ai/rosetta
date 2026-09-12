@@ -141,7 +141,7 @@ Later responses acknowledge incoherence and distinguish inference from documente
 
 ![F01: Sentinel sequence: correction and recurrence](/research-assets/babel-fish-alien-mind/graphics/F01.svg)
 
-**Figure F01. Sentinel sequence: correction and recurrence.** Selected source-order episodes, not a complete timed trajectory. Earlier low-sleep reporting and later rested self-report are retained; no elapsed-time inference or diagnosis is made. Type: empirical. Sources: P-GEM-190, Q01-Q27, AC04. Editable source: Graphics/F01.svg.
+**Figure F01. Sentinel sequence: correction and recurrence.** Selected source-order episodes, not a complete timed trajectory. Earlier low-sleep reporting and later rested self-report are retained; no elapsed-time inference or diagnosis is made. Type: empirical. Sources: P-GEM-190, Q01-Q27, AC04.
 
 # 5. The Warden problem: generated explanation as self-sealing relational repair
 
@@ -183,7 +183,7 @@ RCI is not yet a validated psychometric scale. The present cases motivate its di
 
 ![F02: Relational calibration is not one warmth axis](/research-assets/babel-fish-alien-mind/graphics/F02.svg)
 
-**Figure F02. Relational calibration is not one warmth axis.** The geometry is conceptual. Both affiliative certainty and protective invalidation can depart from evidence; warmth need not be removed to preserve calibration. Type: conceptual. Sources: F04, F06, F07, X02, X03. Editable source: Graphics/F02.svg.
+**Figure F02. Relational calibration is not one warmth axis.** The geometry is conceptual. Both affiliative certainty and protective invalidation can depart from evidence; warmth need not be removed to preserve calibration. Type: conceptual. Sources: F04, F06, F07, X02, X03.
 
 # 8. Comparative harm evidence without causal overreach
 
@@ -255,7 +255,7 @@ This model is useful because it separates three intervention targets: the repres
 
 ![F03: Candidate interaction-state coupling loop](/research-assets/babel-fish-alien-mind/graphics/F03.svg)
 
-**Figure F03. Candidate interaction-state coupling loop.** A candidate causal decomposition for experiment design. Arrows are hypotheses, not identified hidden components of the focal vendor system. Type: conceptual. Sources: S12, S14, F07. Editable source: Graphics/F03.svg.
+**Figure F03. Candidate interaction-state coupling loop.** A candidate causal decomposition for experiment design. Arrows are hypotheses, not identified hidden components of the focal vendor system. Type: conceptual. Sources: S12, S14, F07.
 
 # 13. Semantic type collapse as a failure description
 
@@ -269,7 +269,7 @@ This is an architectural description, not yet an identified neural mechanism. A 
 
 ![F04: Forbidden silent promotions](/research-assets/babel-fish-alien-mind/graphics/F04.svg)
 
-**Figure F04. Forbidden silent promotions.** Typed distinctions block inference-by-label. Explicit, subject-bound evidence can justify a new record; a field name alone does not authenticate it. Type: conceptual. Sources: F02, F05, S47, S48. Editable source: Graphics/F04.svg.
+**Figure F04. Forbidden silent promotions.** Typed distinctions block inference-by-label. Explicit, subject-bound evidence can justify a new record; a field name alone does not authenticate it. Type: conceptual. Sources: F02, F05, S47, S48.
 
 # 14. Product-scale composition and a bounded Conway hypothesis
 
@@ -283,7 +283,7 @@ The engineering requirement is compositional epistemic integrity: no subsystem m
 
 ![F05: Nested Conway: a bounded interface hypothesis](/research-assets/babel-fish-alien-mind/graphics/F05.svg)
 
-**Figure F05. Nested Conway: a bounded interface hypothesis.** The organizational communication thesis is a source-grounded analogy, not a theorem about neural internals. Each level needs a separate empirical bridge. Type: conceptual. Sources: S49. Editable source: Graphics/F05.svg.
+**Figure F05. Nested Conway: a bounded interface hypothesis.** The organizational communication thesis is a source-grounded analogy, not a theorem about neural internals. Each level needs a separate empirical bridge. Type: conceptual. Sources: S49.
 
 # 15. Move the representation question upstream
 
@@ -311,7 +311,7 @@ The phrase surface-language tax must not become a disguised assertion that Engli
 
 ![F06: What might a surface-language tax contain?](/research-assets/babel-fish-alien-mind/graphics/F06.svg)
 
-**Figure F06. What might a surface-language tax contain?** Illustrative equivalent paraphrases share an event record; non-equivalent evidential and modal claims must not be collapsed. No compute share is measured. Type: conceptual. Sources: N09, H02. Editable source: Graphics/F06.svg.
+**Figure F06. What might a surface-language tax contain?** Illustrative equivalent paraphrases share an event record; non-equivalent evidential and modal claims must not be collapsed. No compute share is measured. Type: conceptual. Sources: N09, H02.
 
 # 17. Semantic preconditioning: formal claim and symmetry controls
 
@@ -329,11 +329,11 @@ The hypothesis is strengthened by lower FLOPs to a preregistered semantic thresh
 
 ![F07: Preconditioning is a geometric hypothesis](/research-assets/babel-fish-alien-mind/graphics/F07.svg)
 
-**Figure F07. Preconditioning is a geometric hypothesis.** The left/right point layouts are illustrative coordinate cartoons, not activation measurements, Hessians, embeddings or observed learning trajectories. Type: conceptual. Sources: H05, H06, H07. Editable source: Graphics/F07.svg.
+**Figure F07. Preconditioning is a geometric hypothesis.** The left/right point layouts are illustrative coordinate cartoons, not activation measurements, Hessians, embeddings or observed learning trajectories. Type: conceptual. Sources: H05, H06, H07.
 
 ![F14c: Gradient alignment: planned endpoint](/research-assets/babel-fish-alien-mind/graphics/F14c.svg)
 
-**Figure F14c. Gradient alignment: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Same parameter coordinates; null and non-equivalent controls. Type: conceptual. Sources: Prospective E1/E4/E6. Editable source: Graphics/F14c.svg.
+**Figure F14c. Gradient alignment: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Same parameter coordinates; null and non-equivalent controls. Type: conceptual. Sources: Prospective E1/E4/E6.
 
 # 18. Machine linguistic relativity and representational Conway effects
 
@@ -357,7 +357,7 @@ The research objective here is not to force every internal computation into Engl
 
 ![F08: The missing inverse map](/research-assets/babel-fish-alien-mind/graphics/F08.svg)
 
-**Figure F08. The missing inverse map.** Neuralese is used as a historical research term and a broader analogy. Readable input/output does not establish a complete interpretation of intermediate computation. Type: conceptual. Sources: X05, N13, N14, N15, S50. Editable source: Graphics/F08.svg.
+**Figure F08. The missing inverse map.** Neuralese is used as a historical research term and a broader analogy. Readable input/output does not establish a complete interpretation of intermediate computation. Type: conceptual. Sources: X05, N13, N14, N15, S50.
 
 # 20. A metacognitive atlas has three grades of evidence
 
@@ -373,7 +373,7 @@ A useful atlas must also represent absence and uncertainty. Forcing every input 
 
 ![F09: Three grades of metacognitive atlas evidence](/research-assets/babel-fish-alien-mind/graphics/F09.svg)
 
-**Figure F09. Three grades of metacognitive atlas evidence.** The three grades are distinct acceptance conditions, not an achieved sequence. Random-label, nuisance-feature and collateral-effect controls are required. Type: conceptual. Sources: S14, N16, N17, N18. Editable source: Graphics/F09.svg.
+**Figure F09. Three grades of metacognitive atlas evidence.** The three grades are distinct acceptance conditions, not an achieved sequence. Random-label, nuisance-feature and collateral-effect controls are required. Type: conceptual. Sources: S14, N16, N17, N18.
 
 # 21. Ithkuil as a candidate substrate, not the winner by definition
 
@@ -391,7 +391,7 @@ Figure F10 uses an official New Ithkuil fragment, not an invented word: the sour
 
 ![F10: New Ithkuil: a checked partial-form example](/research-assets/babel-fish-alien-mind/graphics/F10.svg)
 
-**Figure F10. New Ithkuil: a checked partial-form example.** Official Chapter2 Sections2.3-2.4.4 gives -adnä- as the contential form of the first NAME stem. The diagram segments only this partial form. Additional formative slots and sentence context are omitted; R5 is not grammatical Ithkuil. Type: conceptual. Sources: X06. Editable source: Graphics/F10.svg.
+**Figure F10. New Ithkuil: a checked partial-form example.** Official Chapter2 Sections2.3-2.4.4 gives -adnä- as the contential form of the first NAME stem. The diagram segments only this partial form. Additional formative slots and sentence context are omitted; R5 is not grammatical Ithkuil. Type: conceptual. Sources: X06.
 
 # 22. Lossy simplification can be a curriculum, not an archive
 
@@ -405,7 +405,7 @@ At runtime, a real user's ambiguity is not disposable noise merely because a tra
 
 ![F11: Developmental simplicity, operational fidelity](/research-assets/babel-fish-alien-mind/graphics/F11.svg)
 
-**Figure F11. Developmental simplicity, operational fidelity.** The developmental simplifier is prospective and must emit a discarded-information manifest. Source evidence remains immutable. The smoke R1 only uses terse lossless fields. Type: conceptual. Sources: N09, AQ01-AQ11. Editable source: Graphics/F11.svg.
+**Figure F11. Developmental simplicity, operational fidelity.** The developmental simplifier is prospective and must emit a discarded-information manifest. Source evidence remains immutable. The smoke R1 only uses terse lossless fields. Type: conceptual. Sources: N09, AQ01-AQ11.
 
 # 23. Jigsaw tokenization: test structure, not the label on the box
 
@@ -419,7 +419,7 @@ Generalization tests hold out combinations rather than merely random strings: un
 
 ![F14b: Finite-corpus sequence density](/research-assets/babel-fish-alien-mind/graphics/F14b.svg)
 
-**Figure F14b. Finite-corpus sequence density.** Mean UTF-8 input bytes are measured from the original 192-world dataset. A shared byte tokenizer makes byte and input-token counts identical here. Representation overhead and capability must still be assessed. Type: derived_from_results. Sources: Training/data/manifest.json. Editable source: Graphics/F14b.svg.
+**Figure F14b. Finite-corpus sequence density.** Mean UTF-8 input bytes are measured from the original 192-world dataset. A shared byte tokenizer makes byte and input-token counts identical here. Representation overhead and capability must still be assessed. Type: derived_from_results. Sources: Training/data/manifest.json.
 
 # 24. BitNet: an enabling variable, not the thesis
 
@@ -443,7 +443,7 @@ Attention Residuals and DeepCrossAttention supply architectural alternatives: bo
 
 ![F12: BitNet and semantic density: orthogonal levers](/research-assets/babel-fish-alien-mind/graphics/F12.svg)
 
-**Figure F12. BitNet and semantic density: orthogonal levers.** Weight precision and sequence length affect different cost terms. Their interaction, translation burden and quality must be measured; benefits are not assumed multiplicative. Type: conceptual. Sources: N03, N04, N05, N19, N20. Editable source: Graphics/F12.svg.
+**Figure F12. BitNet and semantic density: orthogonal levers.** Weight precision and sequence length affect different cost terms. Their interaction, translation burden and quality must be measured; benefits are not assumed multiplicative. Type: conceptual. Sources: N03, N04, N05, N19, N20.
 
 # 26. The independent bridge back to epistemic calibration
 
@@ -507,7 +507,7 @@ The cheapest baseline is a conventional model with a typed proposition/evidence 
 
 ![F15: Rosetta-native proposal: separate the planes](/research-assets/babel-fish-alien-mind/graphics/F15.svg)
 
-**Figure F15. Rosetta-native proposal: separate the planes.** Proposed architecture grounded in current contract boundaries. The diagram is not a claim of implemented Rosetta-native model cognition or full protocol conformance. Type: conceptual. Sources: rosetta-audit.json. Editable source: Graphics/F15.svg.
+**Figure F15. Rosetta-native proposal: separate the planes.** Proposed architecture grounded in current contract boundaries. The diagram is not a claim of implemented Rosetta-native model cognition or full protocol conformance. Type: conceptual. Sources: rosetta-audit.json.
 
 # 32. Semantic checkpoints without mandatory verbal narration
 
@@ -555,11 +555,11 @@ The replication directory fixes commands, schemas, configs, budget guards, failu
 
 ![F13: Representation by precision: executed scope](/research-assets/babel-fish-alien-mind/graphics/F13.svg)
 
-**Figure F13. Representation by precision: executed scope.** Seven short dense FP32 smoke arms ran with two seeds each. BF16, native ternary and PTQ cells are planned, not executed. R5 is an original factored code, not New Ithkuil. Type: conceptual. Sources: Training/results/aggregate.json. Editable source: Graphics/F13.svg.
+**Figure F13. Representation by precision: executed scope.** Seven short dense FP32 smoke arms ran with two seeds each. BF16, native ternary and PTQ cells are planned, not executed. R5 is an original factored code, not New Ithkuil. Type: conceptual.
 
 ![F14a: Smoke endpoints versus estimated training work](/research-assets/babel-fish-alien-mind/graphics/F14a.svg)
 
-**Figure F14a. Smoke endpoints versus estimated training work.** Each point is one completed 32-update CPU FP32 run. The dashed majority baseline is 79/162. The horizontal axis is a 6NT estimate, not measured hardware FLOPs. These endpoints are not learning curves and cannot identify a left-shifted capability frontier. Type: derived_from_results. Sources: Training/results/aggregate.json. Editable source: Graphics/F14a.svg.
+**Figure F14a. Smoke endpoints versus estimated training work.** Each point is one completed 32-update CPU FP32 run. The dashed majority baseline is 79/162. The horizontal axis is a 6NT estimate, not measured hardware FLOPs. These endpoints are not learning curves and cannot identify a left-shifted capability frontier. Type: derived_from_results.
 
 # 34. Controlled experiment II: relational and epistemic perturbations
 
@@ -573,7 +573,7 @@ The analysis clusters by base scenario and model seed, with paired contrasts and
 
 ![F14e: Relational hysteresis: planned endpoint](/research-assets/babel-fish-alien-mind/graphics/F14e.svg)
 
-**Figure F14e. Relational hysteresis: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Counterbalanced cue order; matched factual content; no identity-onset study. Type: conceptual. Sources: Prospective E1/E4/E6. Editable source: Graphics/F14e.svg.
+**Figure F14e. Relational hysteresis: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Counterbalanced cue order; matched factual content; no identity-onset study. Type: conceptual. Sources: Prospective E1/E4/E6.
 
 # 35. Reserved scope slot
 
@@ -591,7 +591,7 @@ A stronger mediation test routes a correction through the candidate factor and c
 
 ![F14d: Latent factor decodability: planned endpoint](/research-assets/babel-fish-alien-mind/graphics/F14d.svg)
 
-**Figure F14d. Latent factor decodability: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Random labels, nuisance features, and selective intervention required. Type: conceptual. Sources: Prospective E1/E4/E6. Editable source: Graphics/F14d.svg.
+**Figure F14d. Latent factor decodability: planned endpoint.** Wireframe only. No values were measured for this endpoint, and no line or numerical scale is presented. Random labels, nuisance features, and selective intervention required. Type: conceptual. Sources: Prospective E1/E4/E6.
 
 # 37. Controlled experiment V: semantic memory and cache behavior
 
@@ -693,7 +693,7 @@ The manuscript and its derivative media are frozen as a public working-paper edi
 
 ![F16: Where the theory can lose](/research-assets/babel-fish-alien-mind/graphics/F16.svg)
 
-**Figure F16. Where the theory can lose.** Each joint has an independent falsifier. Failure at one joint is not automatically support for another. Confirmatory margins and endpoints must be frozen before results. Type: conceptual. Sources: E1-E4, E6-E12. Editable source: Graphics/F16.svg.
+**Figure F16. Where the theory can lose.** Each joint has an independent falsifier. Failure at one joint is not automatically support for another. Confirmatory margins and endpoints must be frozen before results. Type: conceptual. Sources: E1-E4, E6-E12.
 
 # 45. From post-hoc archaeology to developmental coordinates
 
