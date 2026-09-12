@@ -2,7 +2,7 @@ export const contentSections = {
   research: 'research',
   project: 'projects',
   protocol: 'protocols',
-  essay: 'essays',
+  essay: 'articles',
   update: 'updates',
 } as const;
 
