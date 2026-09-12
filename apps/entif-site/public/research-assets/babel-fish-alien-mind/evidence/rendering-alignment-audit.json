@@ -1,8 +1,5 @@
 {
-  "source_ids": [
-    "P-GEM-190",
-    "P-GEM-FULL-MD"
-  ],
+  "source_ids": ["P-GEM-190", "P-GEM-FULL-MD"],
   "ordinal_map_is_derived_not_original_metadata": true,
   "records": [
     {

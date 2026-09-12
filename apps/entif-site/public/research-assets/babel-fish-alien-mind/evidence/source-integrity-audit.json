@@ -24,10 +24,7 @@
   "duplicate_assistant_texts": [
     {
       "sha256": "d8def862be607e327d5951d8e7009543ea715d5bf553d6cc6df96c3d1123d559",
-      "record_ids": [
-        "google_566",
-        "google_568"
-      ]
+      "record_ids": ["google_566", "google_568"]
     }
   ],
   "limitations": [
