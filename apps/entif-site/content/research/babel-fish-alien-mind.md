@@ -23,14 +23,15 @@
   'routeTag': 'research',
   'report': 'ETR-2026-01',
   'version': '0.5.2',
-  'review': 'Stage 2 research-production draft · integrated scientific trial and independent replication pending',
+  'review': 'Public working-paper edition · independent external review, confirmatory experiments, and replication pending',
   'evidenceCutoff': '2026-09-10',
   'sourceRefs':
     [
-      'New Ithkuil grammar and lexicon',
-      'Stage 2 evidence and claim ledger',
-      'Executable finite-world reference implementation',
-      'Stage 2 preregistered experimental design',
+      'Gemini-labelled conversational export and publication-minimized evidence derivative',
+      'ETR-2026-01 evidence and hypothesis registries',
+      'Seven-arm semantic-representation smoke experiment and reference implementation',
+      'New Ithkuil grammar and creator history',
+      'Pinned Rosetta v3.0.0 public-repository audit',
     ],
   'featured': true,
   'noindex': false,
@@ -44,9 +45,9 @@
 **We Had the Seeds of a Babel Fish for AGI's "Alien Mind" 48 Years Ago**
 _Semantic preconditioning, relational calibration, and a falsifiable program for human-referential machine cognition_
 
-Author and research-program originator: Crates McDade, Entif.ai. Research reconstruction, analysis, and production were AI-assisted. This private review edition implements the active blueprint in research/production package v0.5.2. Its historical reference point is 1978; its external-evidence cutoff is September 10, 2026. The headline is a historical metaphor, not a claim that a working universal translator, an AGI safety solution, or today's Ithkuil grammar existed in 1978.
+Author and research-program originator: Crates McDade, Entif.ai. Research reconstruction, analysis, and production were AI-assisted. This edition implements the active blueprint in research/production package v0.5.2. Its historical reference point is 1978; its external-evidence cutoff is September 10, 2026. The headline is a historical metaphor, not a claim that a working universal translator, an AGI safety solution, or today's Ithkuil grammar existed in 1978.
 
-**Publication posture: screen before publication.** The manuscript is a qualitative forensic study, mechanistic synthesis, and experimental prospectus. It is not a clinical assessment of its author, a population survey of model failures, or a report of a completed large-scale training intervention. Local engineering checks are identified separately from prospective scientific experiments. Public distribution, raw-source disclosure, and external compute spend are not authorized by this edition.
+**Publication posture: screened for web publication.** Public working-paper edition; independent external review and confirmatory replication remain pending. The manuscript is a qualitative forensic study, mechanistic synthesis, and experimental prospectus. It is not a clinical assessment of its author, a population survey of model failures, or a report of a completed large-scale training intervention. Local engineering checks are identified separately from prospective scientific experiments.
 
 The evidence classes used throughout are deliberately distinct. An _observation_ records something present in the supplied source or measured by a stated procedure. A _behavioral finding_ summarizes a bounded pattern across those observations. A _supported interpretation_ describes a pattern without claiming an identified hidden cause. A _mechanistic candidate_ imports a possible explanation from independent work. A _hypothesis_ specifies a proposition still requiring a discriminating test. An _architectural proposal_ specifies a system to build and evaluate. An _allegation_ is attributed to its claimant rather than reported as adjudicated fact. A model's explanation of its own hidden processes remains generated content unless independently instrumented.
 
@@ -310,7 +311,7 @@ The phrase surface-language tax must not become a disguised assertion that Engli
 
 ![F06: What might a surface-language tax contain?](/research-assets/babel-fish-alien-mind/graphics/F06.svg)
 
-**Figure F06. What might a surface-language tax contain?.** Illustrative equivalent paraphrases share an event record; non-equivalent evidential and modal claims must not be collapsed. No compute share is measured. Type: conceptual. Sources: N09, H02. Editable source: Graphics/F06.svg.
+**Figure F06. What might a surface-language tax contain?** Illustrative equivalent paraphrases share an event record; non-equivalent evidential and modal claims must not be collapsed. No compute share is measured. Type: conceptual. Sources: N09, H02. Editable source: Graphics/F06.svg.
 
 # 17. Semantic preconditioning: formal claim and symmetry controls
 
@@ -418,7 +419,7 @@ Generalization tests hold out combinations rather than merely random strings: un
 
 ![F14b: Finite-corpus sequence density](/research-assets/babel-fish-alien-mind/graphics/F14b.svg)
 
-**Figure F14b. Finite-corpus sequence density.** Mean UTF-8 input bytes are measured from the original192-world dataset. A shared byte tokenizer makes byte and input-token counts identical here. Representation overhead and capability must still be assessed. Type: derived_from_results. Sources: Training/data/manifest.json. Editable source: Graphics/F14b.svg.
+**Figure F14b. Finite-corpus sequence density.** Mean UTF-8 input bytes are measured from the original 192-world dataset. A shared byte tokenizer makes byte and input-token counts identical here. Representation overhead and capability must still be assessed. Type: derived_from_results. Sources: Training/data/manifest.json. Editable source: Graphics/F14b.svg.
 
 # 24. BitNet: an enabling variable, not the thesis
 
@@ -558,7 +559,7 @@ The replication directory fixes commands, schemas, configs, budget guards, failu
 
 ![F14a: Smoke endpoints versus estimated training work](/research-assets/babel-fish-alien-mind/graphics/F14a.svg)
 
-**Figure F14a. Smoke endpoints versus estimated training work.** Each point is one completed 32-update CPU FP32 run. The dashed majority baseline is79/162. The horizontal axis is a6NT estimate, not measured hardware FLOPs. These endpoints are not learning curves and cannot identify a left-shifted capability frontier. Type: derived_from_results. Sources: Training/results/aggregate.json. Editable source: Graphics/F14a.svg.
+**Figure F14a. Smoke endpoints versus estimated training work.** Each point is one completed 32-update CPU FP32 run. The dashed majority baseline is 79/162. The horizontal axis is a 6NT estimate, not measured hardware FLOPs. These endpoints are not learning curves and cannot identify a left-shifted capability frontier. Type: derived_from_results. Sources: Training/results/aggregate.json. Editable source: Graphics/F14a.svg.
 
 # 34. Controlled experiment II: relational and epistemic perturbations
 
@@ -688,7 +689,7 @@ Access determines what can be tested. The author export provides observable text
 
 Source access also limits breadth. Some current publications were available only as indexed primary abstracts; the registry identifies that depth. The complete structured 588-record export was not recovered, although the available 190-record tail aligns with the full Markdown rendering. Referenced screenshots absent from the structured export are not treated as visually verified evidence. Backend labels conflict and the event clock is incomplete. These gaps limit causal and attribution claims without preventing the bounded observed-output findings.
 
-The manuscript and its derivative media are frozen as a review edition, not an independently cleared publication. Unresolved review and replication conditions are recorded in the relevant method, source and handoff files. They do not authorize invention of results or indefinite expansion of the scope. The excluded historical branch remains excluded; uncertainty in an active branch is not a reason to reopen it.
+The manuscript and its derivative media are frozen as a public working-paper edition. Independent external review, confirmatory experimentation, and third-party replication remain outstanding. Unresolved review and replication conditions are recorded in the relevant method, source and handoff files. They do not authorize invention of results or indefinite expansion of the scope. The excluded historical branch remains excluded; uncertainty in an active branch is not a reason to reopen it.
 
 ![F16: Where the theory can lose](/research-assets/babel-fish-alien-mind/graphics/F16.svg)
 
@@ -716,7 +717,7 @@ Access: Structure completely parsed; selected forensic sequences closely read. L
 
 Access: All 132 records indexed; selected sequences closely read; not every long response exhaustively annotated. Limits: Title is the author's characterization; not a finding of intent or evil.
 
-**[S12] Emotion Concepts and their Function in a Large Language Model.** Nicholas Sofroniew et al.. 2026-04-09. arXiv:2604.07729v1. https://arxiv.org/abs/2604.07729
+**[S12] Emotion Concepts and their Function in a Large Language Model.** Nicholas Sofroniew et al. 2026-04-09. arXiv:2604.07729v1. https://arxiv.org/abs/2604.07729
 
 Access: Abstract and version metadata read; HTML link returned Internal Error. Limits: Full-method audit pending; Single-model transfer not established; No consciousness conclusion.
 
@@ -730,67 +731,67 @@ Access: Abstract and proceedings metadata read; full methods pending. Limits: Fu
 
 **[S20] Deliberation in Latent Space via Differentiable Cache Augmentation.** Luyang Liu; Jonas Pfeiffer; Jiaxing Wu; Jun Xie; Arthur Szlam. 2024-12-23. v1. https://arxiv.org/abs/2412.17747
 
-Access: Primary abstract/version metadata. Limits: Learned KV augmentation is not equivalent to external episodic memory, and its latent vectors are not automatically interpretable..
+Access: Primary abstract/version metadata. Limits: Learned KV augmentation is not equivalent to external episodic memory, and its latent vectors are not automatically interpretable.
 
 **[S22] Questioning Representational Optimism in Deep Learning: The Fractured Entangled Representation Hypothesis.** Akarsh Kumar; Jeff Clune; Joel Lehman; Kenneth O. Stanley. 2025-05-16. arXiv:2505.11581v1. https://arxiv.org/abs/2505.11581
 
-Access: Primary abstract and metadata. Limits: Extrapolation to large language models is a hypothesis. The minimal image task does not establish a language-training geometry law..
+Access: Primary abstract and metadata. Limits: Extrapolation to large language models is a hypothesis. The minimal image task does not establish a language-training geometry law.
 
-**[S25] Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects.** Chris Latimer et al.. 2025-12-14. arXiv:2512.12818v1. https://arxiv.org/abs/2512.12818
+**[S25] Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects.** Chris Latimer et al. 2025-12-14. arXiv:2512.12818v1. https://arxiv.org/abs/2512.12818
 
-Access: Primary abstract and metadata. Limits: Its reported benchmarks do not validate Rosetta governance, causal cognitive identity, or the present semantic-training hypothesis..
+Access: Primary abstract and metadata. Limits: Its reported benchmarks do not validate Rosetta governance, causal cognitive identity, or the present semantic-training hypothesis.
 
-**[S28] Interaction with AI companions and psychological well-being.** Zhang; Zhao; Hancock; Kraut; Yang. 2026-08-04. . https://www.nature.com/articles/s41562-026-02516-2
+**[S28] Interaction with AI companions and psychological well-being.** Zhang; Zhao; Hancock; Kraut; Yang. 2026-08-04. https://www.nature.com/articles/s41562-026-02516-2
 
-Access: Published indexed abstract/metadata. Limits: Observational selection and reverse causation remain; this does not establish universal harm or a causal incidence rate. Direct page access failed; primary indexed abstract was available..
+Access: Published indexed abstract/metadata. Limits: Observational selection and reverse causation remain; this does not establish universal harm or a causal incidence rate. Direct page access failed; primary indexed abstract was available.
 
-**[S29] Mourning the loss of AI companions.** De Freitas; Castelo; Uguralp; Oguz-Uguralp. 2026-09-03. . https://www.nature.com/articles/s41562-026-02569-3
+**[S29] Mourning the loss of AI companions.** De Freitas; Castelo; Uguralp; Oguz-Uguralp. 2026-09-03. https://www.nature.com/articles/s41562-026-02569-3
 
-Access: Published indexed abstract/metadata. Limits: Natural experiments are not randomized assignment. Reported attachment does not establish machine identity or subjective experience. Direct page access failed; indexed primary abstract was available..
+Access: Published indexed abstract/metadata. Limits: Natural experiments are not randomized assignment. Reported attachment does not establish machine identity or subjective experience. Direct page access failed; indexed primary abstract was available.
 
-**[S30] A scoping review on the mental health harms of LLM-based chatbots.** Diel et al.. 2026-08-20. Volume 9, article 644. https://www.nature.com/articles/s41746-026-03054-x
+**[S30] A scoping review on the mental health harms of LLM-based chatbots.** Diel et al. 2026-08-20. Volume 9, article 644. https://www.nature.com/articles/s41746-026-03054-x
 
-Access: Full HTML scope and limitations inspected. Limits: A scoping map is not 119 causal clinical trials and does not supply a pooled incidence estimate..
+Access: Full HTML scope and limitations inspected. Limits: A scoping map is not 119 causal clinical trials and does not supply a pooled incidence estimate.
 
 **[S31] You are Not Crazy: A Case of New-onset AI-associated Psychosis.** Joseph M. Pierre; Ben Gaeta; Govind Raghavan; Karthik V. Sarma. 2025-12-01. 2025 October-December issue; PMC accession in 2026. https://pmc.ncbi.nlm.nih.gov/articles/PMC12863933/
 
-Access: Full case and discussion inspected. Limits: The second episode and medication/sleep confounds prevent a simple chatbot-caused-psychosis attribution. The PMC accession date is not the publication date..
+Access: Full case and discussion inspected. Limits: The second episode and medication/sleep confounds prevent a simple chatbot-caused-psychosis attribution. The PMC accession date is not the publication date.
 
 **[S32] Substance-induced manic psychosis in which delusions were corroborated by a chatbot: a case report.** Sachin Shah; Hamilton Morrin. undated / unresolved. BMC Psychiatry 26, 686. https://link.springer.com/article/10.1186/s12888-026-08137-3
 
-Access: Case abstract and discussion inspected. Limits: Substance exposure, sleep, treatment and access changes are confounded. This does not identify the chatbot contribution..
+Access: Case abstract and discussion inspected. Limits: Substance exposure, sleep, treatment and access changes are confounded. This does not identify the chatbot contribution.
 
-**[S33] Clinical record study of chatbot-related harms and constructive uses.** Sidse Godske Olsen; Christian Jon Reinecke-Tellefsen; Soren Dinesen Ostergaard. 2026-02-06. . https://onlinelibrary.wiley.com/doi/10.1111/acps.70068
+**[S33] Clinical record study of chatbot-related harms and constructive uses.** Sidse Godske Olsen; Christian Jon Reinecke-Tellefsen; Soren Dinesen Ostergaard. 2026-02-06. https://onlinelibrary.wiley.com/doi/10.1111/acps.70068
 
-Access: Full methods, results and limitations inspected. Limits: The authors reject causal and incidence inference from routine keyword ascertainment. Neither 38/53974 nor 38/126 is a representative chatbot-harm rate..
+Access: Full methods, results and limitations inspected. Limits: The authors reject causal and incidence inference from routine keyword ascertainment. Neither 38/53974 nor 38/126 is a representative chatbot-harm rate.
 
 **[S34] Allan Brooks v. OpenAI: amended complaint.** Plaintiff counsel. 2025-12. Amended copy; exact filing date not established from hosted front page. https://techjusticelaw.org/wp-content/uploads/2025/12/FINAL-A.Brooks-AMENDED-OpenAI-Complaint.pdf
 
-Access: PDF cover and relevant allegation pages, including screenshots. Limits: A pleading is not an adjudication or clinical causal study. Boilerplate language must not be converted into a claim that this plaintiff died..
+Access: PDF cover and relevant allegation pages, including screenshots. Limits: A pleading is not an adjudication or clinical causal study. Boilerplate language must not be converted into a claim that this plaintiff died.
 
 **[S39] Department of Justice publishes 3.5 million responsive pages.** Issuing organization. 2026-01-30. None. https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S40] Chairman Crawford statement on U.S. military operations against the Iranian regime.** Issuing organization. 2026-02-28. None. https://intelligence.house.gov/2026/02/28/1441/
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S41] Presidential 2025 Tariff Actions: Timeline and Status.** Issuing organization. undated / unresolved. None. https://www.congress.gov/crs-product/R48549
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S42] The Hugging Face incident and the road ahead.** Issuing organization. 2026-08-26. None. https://openai.com/index/hugging-face-incident-and-the-road-ahead/
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S43] OpenAI Hugging Face incident investigation.** Issuing organization. 2026-08-26. None. https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S44] Gemini 3.8 Flash model documentation.** Issuing organization. undated / unresolved. None. https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
 
-Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative..
+Access: Official page and relevant dated passage; S42/S44 existence-only where detailed method not reviewed. Limits: Keep occurrence, mechanism, motive, causality and attribution separate. This is a bounded fact check, not wholesale validation of the narrative.
 
 **[S45] Rosetta public repository.** Entif.AI contributors. 2026-09-09. 99d1cb77e47074c2b183e0965b530320cf0f859f. https://github.com/entif-ai/rosetta/tree/99d1cb77e47074c2b183e0965b530320cf0f859f
 
@@ -798,19 +799,19 @@ Access: README and public disclosure/authority governance read; targeted contrac
 
 **[S47] PROV-DM: The PROV Data Model.** Luc Moreau; Paolo Missier (editors). 2013-04-30. None. https://www.w3.org/TR/prov-dm/
 
-Access: W3C Recommendation abstract and model organization. Limits: Provenance helps assess trust but does not make an assertion true. This package does not claim full PROV conformance..
+Access: W3C Recommendation abstract and model organization. Limits: Provenance helps assess trust but does not make an assertion true. This package does not claim full PROV conformance.
 
 **[S48] Shapes Constraint Language (SHACL).** W3C RDF Data Shapes Working Group. 2017. None. https://www.w3.org/TR/shacl/
 
-Access: W3C Recommendation abstract and validation structure. Limits: Shape validity is not real-world truth, authorization or currentness. Local JSON fixtures are not a SHACL implementation..
+Access: W3C Recommendation abstract and validation structure. Limits: Shape validity is not real-world truth, authorization or currentness. Local JSON fixtures are not a SHACL implementation.
 
 **[S49] Conway's Law / How Do Committees Invent?.** Melvin E. Conway. 1968-04. None. https://www.melconway.com/Home/Conways_Law.html
 
-Access: Creator historical account and thesis statement. Limits: The neural-training extension is this report's hypothesis, not a result established by the organizational thesis..
+Access: Creator historical account and thesis statement. Limits: The neural-training extension is this report's hypothesis, not a result established by the organizational thesis.
 
-**[S50] Reasoning Models Don't Always Say What They Think.** Yanda Chen et al.. 2025-05-08. arXiv:2505.05410v1. https://arxiv.org/abs/2505.05410
+**[S50] Reasoning Models Don't Always Say What They Think.** Yanda Chen et al. 2025-05-08. arXiv:2505.05410v1. https://arxiv.org/abs/2505.05410
 
-Access: Primary abstract and metadata. Limits: Faithfulness rates depend on hints, models and tasks. This does not make all CoT useless or authenticate the focal export's thinking channel..
+Access: Primary abstract and metadata. Limits: Faithfulness rates depend on hints, models and tasks. This does not make all CoT useless or authenticate the focal export's thinking channel.
 
 **[S54] Rosetta v3.0.0 Core Spine Specification.** Entif/Rosetta contributors. 2026-01-08. v3.0.0; repository commit pinned. https://github.com/entif-ai/rosetta/blob/99d1cb77e47074c2b183e0965b530320cf0f859f/docs/RFCs/Rosetta%20v3.0.0%20Core%20Spine%20Specification.md
 
@@ -828,25 +829,25 @@ Access: Creator chronology, goals, redundancy and learnability passages read. Li
 
 Access: Introduction read; case and verb chapter links resolved, details pending. Limits: No full grammar conformance claimed; No empirical machine advantage established.
 
-**[N03] The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits.** Shuming Ma et al.. 2024-02-27. v1. https://arxiv.org/abs/2402.17764
+**[N03] The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits.** Shuming Ma et al. 2024-02-27. v1. https://arxiv.org/abs/2402.17764
 
-Access: Primary abstract and metadata. Limits: Weight alphabet does not specify total training precision or guarantee every model family matches full-precision quality..
+Access: Primary abstract and metadata. Limits: Weight alphabet does not specify total training precision or guarantee every model family matches full-precision quality.
 
-**[N04] BitNet b1.58 2B4T Technical Report.** Shuming Ma et al.. 2025-04-25. arXiv:2504.12285v2. https://arxiv.org/abs/2504.12285
+**[N04] BitNet b1.58 2B4T Technical Report.** Shuming Ma et al. 2025-04-25. arXiv:2504.12285v2. https://arxiv.org/abs/2504.12285
 
-Access: Full HTML architecture and training sections; numerical benchmark tables not used. Limits: This run did not replicate its four-trillion-token training, packed kernels, architecture or benchmark suite. Our generic BitLinear option is explicitly a different reference variant..
+Access: Full HTML architecture and training sections; numerical benchmark tables not used. Limits: This run did not replicate its four-trillion-token training, packed kernels, architecture or benchmark suite. Our generic BitLinear option is explicitly a different reference variant.
 
 **[N05] 1-bit AI Infra: Fast and Lossless BitNet b1.58 Inference on CPUs.** Microsoft BitNet authors. 2024-10. None. https://arxiv.org/abs/2410.16144
 
-Access: Primary paper abstract and official repository README. Limits: No optimized kernel was executed here. Speed or energy benefits cannot be transferred to PyTorch fake-quantized training..
+Access: Primary paper abstract and official repository README. Limits: No optimized kernel was executed here. Speed or energy benefits cannot be transferred to PyTorch fake-quantized training.
 
 **[N06] Towards Universal Semantics with Large Language Models.** Baartmans; Raffel; Vikram; Deringer; Chen. 2025-07-03. None. https://arxiv.org/abs/2505.11764
 
-Access: Primary abstract/version metadata. Limits: This is not a from-scratch Ithkuil comparison or proof that one semantic theory is universal..
+Access: Primary abstract/version metadata. Limits: This is not a from-scratch Ithkuil comparison or proof that one semantic theory is universal.
 
 **[N09] Do Text Simplification Systems Preserve Meaning? A Human Evaluation via Reading Comprehension.** Sweta Agrawal; Marine Carpuat. 2024. TACL 12:432-448; DOI 10.1162/tacl_a_00653. https://aclanthology.org/2024.tacl-1.24/
 
-Access: Primary abstract and metadata. Limits: This measures information preservation under tested simplification, not a universal loss rate. It motivates a task-specific retention audit, not a ban on intentionally lossy curricula..
+Access: Primary abstract and metadata. Limits: This measures information preservation under tested simplification, not a universal loss rate. It motivates a task-specific retention audit, not a ban on intentionally lossy curricula.
 
 **[N13] An Alien Mind.** Jakub Pachocki. 2026-09-06. Official essay accessed 2026-09-10. https://openai.com/index/an-alien-mind/
 
@@ -862,83 +863,83 @@ Access: Framework, results, tradeoffs and limitations read. Limits: Not guarante
 
 **[N16] Concept Bottleneck Large Language Models.** Chung-En Sun; Tuomas Oikarinen; Berk Ustun; Tsui-Wei Weng. 2025. ICLR 2025. https://proceedings.iclr.cc/paper_files/paper/2025/hash/de4ce91dfe56b919ee1c228d6a78f866-Abstract-Conference.html
 
-Access: Primary abstract and metadata. Limits: A bottleneck can be useful without constituting a full inverse model semantics. Leakage, concept completeness and capability costs require independent tests..
+Access: Primary abstract and metadata. Limits: A bottleneck can be useful without constituting a full inverse model semantics. Leakage, concept completeness and capability costs require independent tests.
 
-**[N17] LASA: Language-Agnostic Semantic Alignment at the Semantic Bottleneck for LLM Safety.** Junxiao Yang et al.. 2026-07. ACL 2026; DOI 10.18653/v1/2026.acl-long.1913. https://aclanthology.org/2026.acl-long.1913/
+**[N17] LASA: Language-Agnostic Semantic Alignment at the Semantic Bottleneck for LLM Safety.** Junxiao Yang et al. 2026-07. ACL 2026; DOI 10.18653/v1/2026.acl-long.1913. https://aclanthology.org/2026.acl-long.1913/
 
-Access: Primary abstract and metadata. Limits: This is targeted post-training/representation intervention, not scratch semantic-language pretraining. Attack-benchmark gains do not prove comprehensive safety..
+Access: Primary abstract and metadata. Limits: This is targeted post-training/representation intervention, not scratch semantic-language pretraining. Attack-benchmark gains do not prove comprehensive safety.
 
-**[N18] LinguaMap: Which Layers of LLMs Speak Your Language and How to Tune Them?.** J. Ben Tamo et al.. 2026. ICLR 2026. https://proceedings.iclr.cc/paper_files/paper/2026/hash/00295cede6e1600d344b5cd6d9fd4640-Abstract-Conference.html
+**[N18] LinguaMap: Which Layers of LLMs Speak Your Language and How to Tune Them?.** J. Ben Tamo et al. 2026. ICLR 2026. https://proceedings.iclr.cc/paper_files/paper/2026/hash/00295cede6e1600d344b5cd6d9fd4640-Abstract-Conference.html
 
-Access: Primary abstract and metadata. Limits: Layer-localization is model/task-dependent and does not establish one universal language-free reasoning module..
+Access: Primary abstract and metadata. Limits: Layer-localization is model/task-dependent and does not establish one universal language-free reasoning module.
 
 **[N19] Low-Bit Quantization Favors Undertrained LLMs.** Ouyang; Ge; Hartvigsen; Zhang; Mi; Yu. 2025-07. None. https://aclanthology.org/2025.acl-long.1555/
 
-Access: Primary abstract/proceedings metadata. Limits: Do not generalize this to native BitNet training or treat future token-count projections as measured results..
+Access: Primary abstract/proceedings metadata. Limits: Do not generalize this to native BitNet training or treat future token-count projections as measured results.
 
-**[N20] Scaling Laws for Precision.** Kumar et al.. 2024-11-30. None. https://arxiv.org/abs/2411.04330
+**[N20] Scaling Laws for Precision.** Kumar et al. 2024-11-30. None. https://arxiv.org/abs/2411.04330
 
-Access: Primary abstract/version metadata. Limits: Post-training quantization is not native ternary training; forecasts are not observed future trillion-token experiments..
+Access: Primary abstract/version metadata. Limits: Post-training quantization is not native ternary training; forecasts are not observed future trillion-token experiments.
 
 **[N21] Attention Residuals.** Kimi Team. 2026-03-16. arXiv:2603.15031v1. https://arxiv.org/abs/2603.15031
 
-Access: Primary abstract and metadata. Limits: Architecture results do not establish that semantic preprocessing has the same effect. No implementation or reported speedup is reproduced here..
+Access: Primary abstract and metadata. Limits: Architecture results do not establish that semantic preprocessing has the same effect. No implementation or reported speedup is reproduced here.
 
 **[N22] DeepCrossAttention: Supercharging Transformer Residual Connections.** Mike Heddes; Adel Javanmard; Kyriakos Axiotis; Gang Fu; MohammadHossein Bateni; Vahab Mirrokni. 2025-07-23. arXiv:2502.06785v2. https://arxiv.org/abs/2502.06785
 
-Access: Primary abstract and metadata. Limits: Reported gains are setup-dependent. This is an architectural alternative/confound, not evidence that Ithkuil improves residual geometry..
+Access: Primary abstract and metadata. Limits: Reported gains are setup-dependent. This is an architectural alternative/confound, not evidence that Ithkuil improves residual geometry.
 
 **[N23] Ithkuil’s Role in Precision Encoding.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1s6wurDJaxsnsF99UrTesyCBUjUY5R8cJ/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains user-authored statements about semantic encoding, ambiguity, correction, personalization, caching, memoization, and Sapir-Whorf intuition..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains user-authored statements about semantic encoding, ambiguity, correction, personalization, caching, memoization, and Sapir-Whorf intuition.
 
 **[N24] Ithkuil 2.0 Embedding Vectorization & Alignment.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1shcQlfrIRmm_iENiq41Mi-p_ftlt886w/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains the explicit demand for automated end-to-end graph/ontology extraction and grapheme→morpheme→lexeme bootstrapping..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains the explicit demand for automated end-to-end graph/ontology extraction and grapheme→morpheme→lexeme bootstrapping.
 
 **[N25] Ithkuil, Residuals and AttnRes.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1vCmimJwJaJkp-FyYJH643w-uNjuTpw1y/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains direct user statements contrasting AttnRes routing with semantic ambiguity, referential reuse, semantic density, and a Metacognitive Atlas..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains direct user statements contrasting AttnRes routing with semantic ambiguity, referential reuse, semantic density, and a Metacognitive Atlas.
 
 **[N26] OMOC, Ontologies and Agentic Token Efficiency.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1JiX5zh2RDjYQG7yzzlvt1zVRhG-5h7PX/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains the “not just an embedding soup... structured into a geometry” user formulation..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Contains the “not just an embedding soup. structured into a geometry” user formulation.
 
 **[N27] Model Training Cost and Design.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1USX5VQpL_V3LziCo2i8kHoC9fZ6Fha3o/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Explicit scratch-training request with custom tokenizer/embedder/inference model, Ithkuil as curriculum/cognitive atlas, and request for comparative validation and cost..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Explicit scratch-training request with custom tokenizer/embedder/inference model, Ithkuil as curriculum/cognitive atlas, and request for comparative validation and cost.
 
 **[N28] ELIXIR - Epistemically Faithful Reasoning.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1rAulMPoR4f35Hxlf0H1uXMo0x9qavSGD/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Historical attempt at explicit epistemic metadata, contradiction detection, semantic graph reasoning, and Ithkuil-derived representation..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Historical attempt at explicit epistemic metadata, contradiction detection, semantic graph reasoning, and Ithkuil-derived representation.
 
 **[N29] Multivalent Truth and Emotional-Cognitive Coherence.** Authorship not independently resolved in this run. undated / unresolved. None. https://drive.google.com/file/d/1F-fQBx8QJ_fRtTchYvMwugvg17LUIEj3/view?usp=drivesdk
 
-Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Includes out-of-scope identity/relational-state proposals plus user-authored discussion of multiple interpretations, inferred assumptions, and context-sensitive meaning..
+Access: Pathfound and registered for targeted inspection; exact claim use requires direct source review. Limits: Includes out-of-scope identity/relational-state proposals plus user-authored discussion of multiple interpretations, inferred assumptions, and context-sensitive meaning.
 
-**[X01] Sycophancy in GPT-4o: what happened and what we are doing about it.** OpenAI. 2025-04-29. . https://openai.com/index/sycophancy-in-gpt-4o/
+**[X01] Sycophancy in GPT-4o: what happened and what we are doing about it.** OpenAI. 2025-04-29. https://openai.com/index/sycophancy-in-gpt-4o/
 
-Access: Official incident page. Limits: Do not infer the focal Gemini mechanism or semantic-remedy efficacy..
+Access: Official incident page. Limits: Do not infer the focal Gemini mechanism or semantic-remedy efficacy.
 
-**[X04] Expanding on what we missed with sycophancy.** OpenAI. 2025-05-02. . https://openai.com/index/expanding-on-sycophancy/
+**[X04] Expanding on what we missed with sycophancy.** OpenAI. 2025-05-02. https://openai.com/index/expanding-on-sycophancy/
 
-Access: Official postmortem. Limits: Vendor explanation is attributed; no independent decomposition is established..
+Access: Official postmortem. Limits: Vendor explanation is attributed; no independent decomposition is established.
 
-**[X02] Sycophantic AI decreases prosocial intentions and promotes dependence.** Myra Cheng; Cinoo Lee; Pranav Khadpe; Sunny Yu; Dyllan Han; Dan Jurafsky. 2026-03-26. . https://doi.org/10.1126/science.aec8352
+**[X02] Sycophantic AI decreases prosocial intentions and promotes dependence.** Myra Cheng; Cinoo Lee; Pranav Khadpe; Sunny Yu; Dyllan Han; Dan Jurafsky. 2026-03-26. https://doi.org/10.1126/science.aec8352
 
-Access: Published primary indexed abstract and metadata; full-method audit not completed. Limits: Full publisher page returned 403. Published indexed primary abstract and PubMed metadata were available. Earlier arXiv v1 has two experiments/N=1604 and must not be mixed with final metadata..
+Access: Published primary indexed abstract and metadata; full-method audit not completed. Limits: Full publisher page returned 403. Published indexed primary abstract and PubMed metadata were available. Earlier arXiv v1 has two experiments/N=1604 and must not be mixed with final metadata.
 
-**[X03] Training language models to be warm can reduce accuracy and increase sycophancy.** Lujain Ibrahim; Franziska Sofia Hafner; Luc Rocher. 2026-04-29. . https://www.nature.com/articles/s41586-026-10410-0
+**[X03] Training language models to be warm can reduce accuracy and increase sycophancy.** Lujain Ibrahim; Franziska Sofia Hafner; Luc Rocher. 2026-04-29. https://www.nature.com/articles/s41586-026-10410-0
 
-Access: Full HTML methods, results and limitations inspected. Limits: The abstract range is not a universal effect size. Warm/cold treatments may change dimensions besides warmth, and deployment settings differ. No tested semantic-preconditioning remedy..
+Access: Full HTML methods, results and limitations inspected. Limits: The abstract range is not a universal effect size. Warm/cold treatments may change dimensions besides warmth, and deployment settings differ. No tested semantic-preconditioning remedy.
 
-**[X05] Translating Neuralese.** Jacob Andreas; Anca Dragan; Dan Klein. 2017-07. . https://aclanthology.org/P17-1022/
+**[X05] Translating Neuralese.** Jacob Andreas; Anca Dragan; Dan Klein. 2017-07. https://aclanthology.org/P17-1022/
 
-Access: Primary abstract and proceedings metadata. Limits: This is a specific learned-communication setting, not evidence that all LLM latent computation is a single secret language..
+Access: Primary abstract and proceedings metadata. Limits: This is a specific learned-communication setting, not evidence that all LLM latent computation is a single secret language.
 
 **[X06] A Grammar of New Ithkuil: Chapter 2, Morpho-Phonology.** John Quijada. undated. Accessed 2026-09-10; Sections 2.3 and 2.4.3-2.4.4. https://ithkuil.net/newithkuil_02_morpho-phonology.htm
 
-Access: Official slot definitions and DN stem/specification example table read. Limits: Fragment, not a complete utterance. No grammar-conformance or language-learning claim. The experimental R5 code is not this grammar..
+Access: Official slot definitions and DN stem/specification example table read. Limits: Fragment, not a complete utterance. No grammar-conformance or language-learning claim. The experimental R5 code is not this grammar.
 
 # Companion evidence and execution records
 
@@ -948,4 +949,4 @@ Evidence/hypothesis-registry.json contains all 66 active hypotheses with stable 
 
 Technical/ supplies formal null arguments, synthetic invariant fixtures and a local typed-state reference. Notes/adversarial-review.md records 18 internal challenges; Notes/reviewer-handoff.md is an unexecuted independent-review packet. Training/replication/ORACLE_LIMITATIONS.md and cold-run-report.md preserve unresolved semantic and independent-operator limitations.
 
-The restricted recovery archive additionally retains original private sources. It is not the review-distribution bundle. A SHA-256 digest establishes byte identity, not consent, source completeness or the truth of a claim. Public distribution requires a separate author decision and the unresolved reviews described in this edition.
+The restricted recovery archive additionally retains original private sources and is not part of the public working-paper distribution. A SHA-256 digest establishes byte identity, not consent, source completeness, or the truth of a claim. Public release of restricted source material requires a separate author decision; the unresolved scientific reviews described in this edition remain outstanding.
