@@ -54,7 +54,7 @@ The primary corpus and the harm literature can establish or motivate failure cla
 
 Source identifiers in square brackets resolve to the reference registry. Q-identifiers resolve to exact, hashed primary excerpts; F-identifiers to the empirical-findings register; AQ-identifiers to source-checked author-history excerpts. These are research locators, not new Rosetta protocol types. Full private source windows and publication-minimized excerpts are distributed separately. A cryptographic digest establishes byte identity, not truth, completeness, legality, or causal explanation.
 
-### Reader navigation
+## Reader navigation
 
 Sections 1-8: question, methods and evidence. Sections 10-28: mechanism candidates and semantic-training thesis. Sections 29-38: architecture and discriminating experiments. Sections 39-45: competing explanations, falsification, limitations and conclusion. Sections 9 and 35 are intentionally reserved. The PDF and editable document expose section headings for navigation; supplementary registers preserve the complete evidence and hypothesis detail.
 
@@ -524,7 +524,7 @@ The scientific comparison begins with semantic worlds, not translations of a mod
 
 Stage A uses the same conventional BF16 architecture, optimization schedule and declared resource envelope across arms. Capability-versus-compute, compositional holdout accuracy, ambiguity false-binding, invalid-output rate and task-specific calibration are primary or prespecified secondary outcomes. Geometry and atlas probes are diagnostic outcomes, not substitutes for task success. Stage B crosses the strongest surviving arms with a native ternary variant only after Stage A shows a worthwhile effect. A negative or neutral interaction is publishable. Neither stage ran in the present work.
 
-### What actually ran
+## What actually ran
 
 A smaller engineering smoke trained a randomly initialized, 77,232-parameter causal transformer for 32 updates in each of fourteen cells: seven renderings by two initialization seeds. It used CPU FP32, one 48-wide layer, four attention heads, a shared 259-symbol byte tokenizer and 768-position context. The task loss combines per-example prompt loss with T/F/U answer loss. This is short task training, not general language pretraining, BF16 confirmation or BitNet training.
 
@@ -544,11 +544,11 @@ The table is descriptive and generated from preserved per-example outputs. Predi
 
 One initial renderer was rejected because its wording could assert occurrence before qualifying modality; its data and initial run are retained outside the comparison. An interrupted cell is retained with an explicit failure record and a distinct recovery run ID. These are engineering findings about the procedure. No failed result was silently renamed into a success.
 
-### Task-oracle qualification
+## Task-oracle qualification
 
 The smoke's coreference oracle deliberately emits U for every multi-candidate referent list, including a query about an entity outside that list. This is a conservative, task-defined uncertainty convention, not exhaustive-set logical entailment. The renderer's phrase “candidate referents” can otherwise invite the latter interpretation. The audit proves consistency with this declared oracle, not that the oracle captures every reasonable reading. Coreference scores therefore cannot establish general false-binding competence. A future exhaustive-candidate interpretation must use a versioned oracle, freshly generated data and separately reported runs; the present data and scores are not retrospectively repaired.
 
-### The confirmatory handoff
+## The confirmatory handoff
 
 The replication directory fixes commands, schemas, configs, budget guards, failure policy, raw-result aggregation and tests. The full scientific extension still requires richer event composition, independent renderer validation, a genuine Ithkuil-derived mapping audit, matched-compute BF16 runs, adequate seeds and cold-operator execution. This delivery is an experimental design plus locally exercised reference implementation, not a turnkey reproduction claim. The smoke prevents a purely verbal proposal; it does not rescue the thesis from the controls.
 
@@ -660,11 +660,11 @@ Epistemic integrity is compositional: a system is only as coherent as the semant
 
 The read-only repository audit pins entif-ai/rosetta at commit 99d1cb77e47074c2b183e0965b530320cf0f859f, dated September 9, 2026. It inspected public governance, the v3.0.0 Core Spine, architecture descriptions, source-aware bootstrap code-search excerpts and sixteen current issue bodies. Repository tests were not run, and issue comments were not comprehensively audited. No protected repository was read and no issue or implementation was changed. [S45, S54, S55; Rosetta audit]
 
-### Present implementation and proposal boundary
+## Present implementation and proposal boundary
 
 The inspected architecture describes canonicalization/content addressing, envelopes, receipt signing and closure, source-aware fixtures, scope/rights surfaces and narrow guarded bootstrap paths. These are not a production semantic interpreter, a trained semantic model, a complete live-adapter network or independently certified standards conformance. Content identity is distinct from semantic identity; a stable logical identity is distinct from a byte digest; a receipt records an event rather than its scientific truth. A current view is current for a declared frontier, not omniscient. Public record compatibility must not require disclosure of private ranking or routing machinery.
 
-### Near-term intersections
+## Near-term intersections
 
 The canonical identity and lookup corridor (#1308, #573, #521, #577) intersects false binding and ambiguous reference. It would gain practical support from fixtures that preserve aliases, ambiguity and correction across implementations, and lose priority if a simpler key scheme meets the same contract. Preflight artifacts (#1130) intersect omitted assumptions and evidence-class collapse. Their usefulness is measurable by catching unsupported promotion before execution, not by adding paperwork to trivial tasks.
 
@@ -672,7 +672,7 @@ Write and local-execution records (#994, #1513) keep a proposal, workflow narrow
 
 Correction and staleness proposals (#1560, #1567) directly intersect the conversational feedback problem. Their useful test is whether an upstream invalidation propagates to definitely or potentially affected dependents while preserving an explicit unknown frontier and irreversible external effects. A byte-valid stale cache must fail a current-evidence requirement. These are public representational contracts; their existence does not show that every store implements them.
 
-### Farther-out intersections and bounded collaboration
+## Farther-out intersections and bounded collaboration
 
 Semantic-layer-first gating (#592) correctly makes custom tokenizer escalation depend on substrate evidence. PEFT terminology hygiene (#594) prevents frozen weights, quantized storage, adapters and zero initialization from becoming one vague training promise. EGC combinatorics (#1231) and authorability (#105) require grammar, collision and adoption evidence before a rich notation is treated as usable infrastructure. The research should return negative results to those gates as readily as positive ones.
 
