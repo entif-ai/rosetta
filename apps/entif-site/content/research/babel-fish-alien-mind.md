@@ -40,7 +40,7 @@
 
 # 0. Front matter and evidentiary contract
 
-**Entif Technical Report ETR-2026-01 v2.0**  
+**Entif Technical Report ETR-2026-01 v0.5.2**
 **We Had the Seeds of a Babel Fish for AGI's "Alien Mind" 48 Years Ago**
 _Semantic preconditioning, relational calibration, and a falsifiable program for human-referential machine cognition_
 
