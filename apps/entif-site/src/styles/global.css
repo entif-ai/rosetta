@@ -661,9 +661,16 @@ header .header-inner nav li {
   padding: 1rem;
   background: var(--accent-soft);
 }
+
 .prose code {
   background: var(--accent-soft);
 }
+
+.prose pre.astro-code,
+.prose pre.astro-code code {
+  background: unset;
+}
+
 .prose table {
   display: block;
   max-width: 100%;

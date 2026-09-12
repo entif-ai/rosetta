@@ -18,7 +18,7 @@ test('navigation, social destinations, and card keyboard disclosure', async ({
   for (const [key, path] of [
     ['research', '/research/'],
     ['articles', '/articles/'],
-    ['rosetta', '/projects/rosetta/'],
+    ['projects', '/projects/'],
     ['about', '/about/'],
     ['contact', '/contact/'],
   ] as const)
