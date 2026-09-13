@@ -1,7 +1,7 @@
 ---
 {
   'slug': 'contact',
-  'title': 'Converse, Comment, Coordinate, Collaborate, Congregate and Connect.',
+  'title': 'Converse, Comment, Coordinate, Collaborate, Congregate and Connect',
   'eyebrow': 'Contact',
   'description': 'Connect with Entif AI about research collaboration, institutional requirements, Rosetta interoperability, and technical evaluation.',
   'status': 'published',
