@@ -15,7 +15,7 @@ if (!home) throw new Error('Missing home copy');
 const { Content } = await render(home);
 ---
 
-<BaseLayout title={copy.brand} description={copy.heroDescription}>
+<BaseLayout title={copy.brandTagline} description={copy.heroDescription}>
   <section class="hero shell" data-test-id="home-hero">
     <div class="hero-copy">
       <p class="eyebrow">{copy.heroEyebrow}</p><h1

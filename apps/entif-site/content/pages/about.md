@@ -1,7 +1,7 @@
 ---
 {
   'slug': 'about',
-  'title': 'Research with consequences.',
+  'title': 'Architecting Advanced, Accountable, Auditable, Accessible, Aspirational Aligned AI',
   'eyebrow': 'About Entif AI',
   'description': 'Entif AI connects open research, semantic infrastructure, and accountable engineering for institutions navigating the development of advanced intelligence.',
   'status': 'published',
