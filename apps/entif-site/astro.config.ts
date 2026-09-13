@@ -25,7 +25,19 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      serialize(item) {
+        const hyphenatedPath = item.url.replaceAll('/', '-');
+        const datePattern = /\d{4}-\d{2}-\d{2}/g;
+        const dateMatch = hyphenatedPath.match(datePattern);
+
+        if (dateMatch?.length) {
+          item.lastmod = new Date(dateMatch[0]).toDateString();
+        }
+
+        return item;
+      },
+    }),
     {
       name: 'not-found-direct-route',
       hooks: {
