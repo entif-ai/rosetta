@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { title, description, noindex = false } = Astro.props;
-const pageTitle = title === 'Entif AI' ? title : `${title} · Entif AI`;
+const pageTitle = title.includes('Entif.AI') ? title : `${title} · Entif.AI`;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
 const logoPath = joinBasePath(
   import.meta.env.BASE_URL,
