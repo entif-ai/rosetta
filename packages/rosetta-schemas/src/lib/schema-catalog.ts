@@ -3,6 +3,8 @@ import {
   SUPPORTED_TILE_KIND_REQUIRED_FIELDS,
   type AgenticMessageSchemaProfile
 } from './rosetta-schemas.js';
+import { getCoreDescent, type CoreDescentMetadata } from './core-descent.js';
+export type { CoreDescent, CoreDescentMetadata } from './core-descent.js';
 
 export type SchemaAuthorityTier =
   | 'core-spine'
@@ -27,7 +29,7 @@ export type SchemaBoundaryKind =
   | 'referenced-external-contract'
   | 'validation-entrypoint';
 
-export interface RosettaSchemaCatalogEntry {
+interface SchemaCatalogSourceEntry {
   authorityTier: SchemaAuthorityTier;
   boundaryKind: SchemaBoundaryKind;
   consumerPackages: string[];
@@ -43,6 +45,8 @@ export interface RosettaSchemaCatalogEntry {
   tests: string[];
   validator?: string;
 }
+
+export interface RosettaSchemaCatalogEntry extends SchemaCatalogSourceEntry, CoreDescentMetadata {}
 
 const SCHEMA_README = 'packages/rosetta-schemas/README.md';
 const SCHEMA_SPEC = 'packages/rosetta-schemas/src/lib/rosetta-schemas.spec.ts';
@@ -125,7 +129,7 @@ function tileConsumerPackages(schemaId: string): string[] {
   return ['@entif-ai/rosetta-schemas'];
 }
 
-function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
+function tileCatalogEntry(schemaId: string): SchemaCatalogSourceEntry {
   if (schemaId === 'adapter.capability_manifest') {
     return {
       authorityTier: 'governance-admission',
@@ -149,7 +153,7 @@ function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
 
   if (schemaId === 'skill.card') {
     return {
-      authorityTier: 'core-spine',
+      authorityTier: 'governance-admission',
       boundaryKind: 'owned-schema',
       consumerPackages: tileConsumerPackages(schemaId),
       docs: tileDocs(schemaId),
@@ -186,7 +190,7 @@ function tileCatalogEntry(schemaId: string): RosettaSchemaCatalogEntry {
   };
 }
 
-function agenticMessageCatalogEntry(msgType: string, profile: AgenticMessageSchemaProfile): RosettaSchemaCatalogEntry {
+function agenticMessageCatalogEntry(msgType: string, profile: AgenticMessageSchemaProfile): SchemaCatalogSourceEntry {
   return {
     authorityTier: 'governance-admission',
     boundaryKind: 'owned-schema',
@@ -214,7 +218,7 @@ const AGENTIC_MESSAGE_CATALOG_ENTRIES = Object.entries(AGENTIC_MESSAGE_TYPE_PROF
   agenticMessageCatalogEntry(msgType, profile)
 );
 
-const BOUNDARY_CATALOG_ENTRIES: RosettaSchemaCatalogEntry[] = [
+const BOUNDARY_CATALOG_ENTRIES: SchemaCatalogSourceEntry[] = [
   {
     authorityTier: 'governance-admission',
     boundaryKind: 'owned-schema',
@@ -364,7 +368,13 @@ const BOUNDARY_CATALOG_ENTRIES: RosettaSchemaCatalogEntry[] = [
   }
 ];
 
-export const ROSETTA_SCHEMA_CATALOG = [...TILE_CATALOG_ENTRIES, ...AGENTIC_MESSAGE_CATALOG_ENTRIES, ...BOUNDARY_CATALOG_ENTRIES].sort(
+const MESSAGE_PROFILE_IDS = Object.values(AGENTIC_MESSAGE_TYPE_PROFILES).map((profile) => profile.schemaId);
+
+export const ROSETTA_SCHEMA_CATALOG = [...TILE_CATALOG_ENTRIES, ...AGENTIC_MESSAGE_CATALOG_ENTRIES, ...BOUNDARY_CATALOG_ENTRIES].map((entry) => {
+  const descent = getCoreDescent(entry.schemaId, MESSAGE_PROFILE_IDS);
+  if (!descent) throw new Error(`Schema requires an explicit core-descent review: ${entry.schemaId}`);
+  return { ...entry, ...descent };
+}).sort(
   (left, right) => left.schemaId.localeCompare(right.schemaId)
 ) satisfies RosettaSchemaCatalogEntry[];
 
@@ -376,9 +386,10 @@ export function getSchemaCatalogEntry(schemaId: string): RosettaSchemaCatalogEnt
   return ROSETTA_SCHEMA_CATALOG.find((entry) => entry.schemaId === schemaId);
 }
 
-export function validateSchemaCatalogCoverage(): string[] {
+export function validateSchemaCatalogCoverage(catalog: readonly (SchemaCatalogSourceEntry & Partial<CoreDescentMetadata>)[] = ROSETTA_SCHEMA_CATALOG): string[] {
   const errors: string[] = [];
-  const catalogIds = new Set(ROSETTA_SCHEMA_CATALOG.map((entry) => entry.schemaId));
+  const catalogIds = new Set(catalog.map((entry) => entry.schemaId));
+  if (catalogIds.size !== catalog.length) errors.push('Duplicate schema catalog identity.');
 
   for (const schemaId of Object.keys(SUPPORTED_TILE_KIND_REQUIRED_FIELDS)) {
     if (!catalogIds.has(schemaId)) {
@@ -394,7 +405,12 @@ export function validateSchemaCatalogCoverage(): string[] {
     }
   }
 
-  for (const entry of ROSETTA_SCHEMA_CATALOG) {
+  for (const entry of catalog) {
+    const expected = getCoreDescent(entry.schemaId, MESSAGE_PROFILE_IDS);
+    if (!expected || entry.coreDescent !== expected.coreDescent) errors.push(`Missing or conflicting core descent: ${entry.schemaId}`);
+    if (!entry.descentAuthority || entry.descentAuthority !== expected?.descentAuthority) errors.push(`Missing or conflicting descent authority: ${entry.schemaId}`);
+    if (JSON.stringify(entry.relatedCoreKinds) !== JSON.stringify(expected?.relatedCoreKinds)) errors.push(`Missing or conflicting related core kinds: ${entry.schemaId}`);
+    if (entry.sourceIssues.length === 0) errors.push(`Catalog entry lacks source issue: ${entry.schemaId}`);
     if (entry.exposureStatus !== 'deprecated' && entry.exposureStatus !== 'reserved-interface') {
       if (entry.tests.length === 0) {
         errors.push(`Catalog entry lacks tests: ${entry.schemaId}`);

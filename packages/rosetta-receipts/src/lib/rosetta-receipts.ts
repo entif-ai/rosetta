@@ -117,6 +117,66 @@ export function createReceipt(payload: ReceiptPayload): TileEnvelope<ReceiptPayl
   return buildTile('rosetta.receipt', payload, { pack: 'rrp' });
 }
 
+/** A reason-qualified lifecycle outcome, not an additional receipt verdict. */
+export type LifecycleOutcome = ReceiptVerdict | 'blocked-precondition';
+
+export interface CreateLifecycleReceiptInput {
+  run: TileEnvelope;
+  step: TileEnvelope;
+  artifacts: TileEnvelope[];
+  check: TileEnvelope;
+  policies: TileEnvelope[];
+  outcome: LifecycleOutcome;
+  statement: string;
+}
+
+/** Attest a bounded check; this neither executes nor authorizes its subject. */
+export function createLifecycleReceipt(input: CreateLifecycleReceiptInput): TileEnvelope<ReceiptPayload> {
+  const verdict: ReceiptVerdict = input.outcome === 'blocked-precondition' ? 'unknown' : input.outcome;
+  if (!['deny', 'fail', 'partial', 'pass', 'unknown'].includes(verdict)) {
+    throw new Error('Unsupported lifecycle verdict.');
+  }
+  if (input.run.kind !== 'rosetta.run' || input.step.kind !== 'rosetta.action') {
+    throw new Error('Lifecycle requires a run and action step.');
+  }
+  if (input.artifacts.length === 0) throw new Error('Lifecycle requires an artifact subject.');
+  if (!input.statement.trim()) throw new Error('Lifecycle requires a statement.');
+  const tiles = [input.run, input.step, ...input.artifacts, input.check, ...input.policies];
+  for (const tile of tiles) {
+    if (typeof tile.payload !== 'object' || tile.payload === null || Array.isArray(tile.payload)) {
+      throw new Error('Lifecycle payload must be an object.');
+    }
+    if (!verifyTileIntegrity(tile).ok) throw new Error(`Lifecycle tile integrity failed: ${tile.cid}`);
+    const validation = validatePayload(tile.kind, tile.payload);
+    if (!validation.ok) throw new Error(`Lifecycle payload invalid: ${validation.errors.join('; ')}`);
+  }
+  if ((input.step.payload as { runCid?: string }).runCid !== input.run.cid) {
+    throw new Error('Lifecycle step must reference its run.');
+  }
+  if (input.check.kind !== 'rosetta.evaluation' || (input.check.payload as { verdict?: string }).verdict !== verdict) {
+    throw new Error('Lifecycle check kind or verdict mismatch.');
+  }
+  if (![input.step.cid, ...input.artifacts.map((tile) => tile.cid)].every((cid) => input.check.parents.includes(cid))) {
+    throw new Error('Lifecycle check parents must bind the step and every artifact subject.');
+  }
+  return createReceipt({
+    claims: [{
+      claimType: `rrp:lifecycle.${input.outcome}`,
+      evidence: [{ cid: input.check.cid }],
+      statement: input.statement,
+      verdict
+    }],
+    digests: [...new Map(tiles.map((tile) => [tile.cid, tile])).values()].map((tile) => digestTile(tile, tile.kind)),
+    policyRefs: input.policies.map((tile) => tile.cid),
+    receiptType: 'rrp:lifecycle.v1',
+    subjects: [
+      { cid: input.run.cid, role: 'rrp:subject.session' },
+      { cid: input.step.cid, role: 'rrp:subject.step' },
+      ...input.artifacts.map((tile) => ({ cid: tile.cid, role: 'rrp:subject.artifact' }))
+    ]
+  });
+}
+
 export function digestTile(tile: TileEnvelope, label: string): ReceiptDigest {
   return {
     alg: 'sha256',

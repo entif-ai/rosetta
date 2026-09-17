@@ -3,6 +3,17 @@ import { describe, expect, it } from 'vitest';
 import { buildRosettaCliOutput } from './rosetta-cli.js';
 
 describe('rosetta-cli', () => {
+  it('demonstrates every bounded lifecycle outcome without claiming execution or certification', () => {
+    const output = buildRosettaCliOutput();
+    expect(output.lifecycleDemo.mode).toBe('synthetic-offline');
+    expect(output.lifecycleDemo.rows.map((row) => row.outcome)).toEqual(['pass', 'fail', 'partial', 'deny', 'blocked-precondition', 'unknown']);
+    for (const row of output.lifecycleDemo.rows) {
+      expect(row.closure.ok).toBe(true);
+      expect(row.replayMatches).toBe(true);
+      expect(row.missingEvidence.ok).toBe(false);
+    }
+    expect(output.lifecycleDemo.rows[4].receipt.payload.claims[0].verdict).toBe('unknown');
+  });
   it('builds a bootstrap output with verified receipts and read-only projections', () => {
     const output = buildRosettaCliOutput();
 

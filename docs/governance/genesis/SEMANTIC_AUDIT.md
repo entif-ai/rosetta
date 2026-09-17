@@ -132,6 +132,34 @@ The following aliases are retired from active operating guidance:
 
 ## 6. Current semantic debt
 
+### Machine-readable audit checkpoint (2026-09-07, #1179/#1180)
+
+The schema catalog now records `coreDescent`, `descentAuthority` and
+`relatedCoreKinds` independently of operational ownership. The identity map is
+explicit for every supported tile kind; no namespace default grants core status.
+This is classification evidence, not formal conformance or a schema migration.
+
+| Surface | Recorded posture | Remaining risk and owner |
+| --- | --- | --- |
+| Seven core-reuse IDs in Section 3.1 | Core primitives | Required-field validators remain a bootstrap subset; #680/#1205 must preserve coverage limits. |
+| Source shapes actually present in the starter schema | Pack-defined schemas | Receipt/evaluation/matrix relationships are semantic references, not proof of structural substitutability; #158/#790. |
+| Source package, episode, correction, identity-resolution receipt, ingress job and registry entry | Governed extensions | Missing starter-schema exports remain explicit; #680/#790 must bind exact exported shapes and compatible-core posture. |
+| `skill.card`, adapter capability and Guard contracts | Implementation-local application contracts | The card's operational tier changes to governance-admission; none become execution grants. |
+| `rosetta.translation_evidence`, `rosetta.composition_provenance` | Implementation-local, with related observation/receipt references | Namespace and migration decisions remain open; no silent rename or core promotion. |
+| `rosetta.conformance_bundle`, `rosetta.shacl_shapes` | Derived summary and local validation output respectively | Neither generated text nor summary counts establishes full conformance; #1205. |
+| Agentic Messaging profiles/envelope | Implementation-local application contracts | Labels do not establish canonical Receipt/Incident equivalence; explicit mappings remain downstream. |
+| IAM, Guard-request and mailroom refs | External contract references | Reserved interfaces remain unsupported here and retain their owning contracts. |
+
+No genuine Core gap is established by this audit. Existing primitives and governed
+extensions provide relationships to review; unresolved mapping or packaging is
+not evidence that a new Core primitive is needed. A future gap requires an
+explicit authority decision, rather than a fallback classification for unknown IDs.
+
+Preflight: Core Spine, this audit, source-substrate schema/vocabulary/manifest,
+schema authority map and public/protected authority maps reviewed. This change
+exposes existing public classification boundaries and does not alter protected
+selection, scoring, policy or runtime behavior. No authority-map edge changes.
+
 The first audit leaves these explicit follow-ups:
 
 1. decide the governed disposition of non-core `rosetta.*` schema IDs listed in Section 3.4;

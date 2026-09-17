@@ -9,6 +9,7 @@
     "name": "entif-site"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.2.4",
     "@astrojs/react": "6.0.4",
     "@astrojs/sitemap": "3.7.3",
     "astro": "7.2.9",
@@ -23,7 +24,9 @@
     "@testing-library/user-event": "14.6.6",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
+    "html-validate": "11.15.0",
     "jsdom": "~22.1.0",
+    "lighthouse": "13.4.1",
     "typescript": "5.9.3",
     "vitest": "4.1.4"
   }
