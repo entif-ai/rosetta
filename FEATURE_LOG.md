@@ -36,6 +36,30 @@ Source acquisition: 16 sections, 12 additions, one registry retrieved by exact i
 Source snapshots currently in local `/tmp/etr-1603`; migrate selected content with
 hashes and addition-inclusion evidence into website-owned content.
 
-Next: narrow red tests for novel series/citation behavior, implement shared system,
-migrate chapters and references, run focused build/type/lint checks, then final site
-accessibility/HTML/link/responsive/performance gates. Record checkpoint evidence here.
+Implementation: all 17 routes, dedicated shell/styles, shared citation transformation,
+native no-JS reference links, enhanced popovers, reference appendix, and index routing.
+Migration provenance is in `content/editorial/accelerating-the-dystopia/migration.json`.
+All 95 registry rows retain every field. Formatting only normalizes whitespace and
+equivalent emphasis delimiters (chapter 5); no prose changes.
+
+Checkpoint proof (2026-09-17):
+- Four novel unit tests: red on missing implementation, then green.
+- Two citation browser tests: red on absent enhancement, then green; caught and fixed
+  focus-transfer dismissal before reference-link navigation.
+- Site build/typecheck/lint/format and 21 unit tests passed.
+- Full browser suite: 214 passed, including all generated page axe audits.
+- HTML/local-link/fragment gate: passed across 194 generated pages after fixing the
+  validator's repeated JSDOM allocation (cache fragment IDs, close DOM windows).
+- All 17 series pages at 320/390/768/1024/1366/1536px: no horizontal overflow.
+- Enlarged text with WCAG spacing exposed 1–4px overflow in two-digit mobile navigation;
+  changed its minimum inline target to 44 CSS px. Final recheck pending.
+- Print hides chapter navigation and retains source links; reduced motion has no animations.
+- Lighthouse opening/references, mobile/desktop: 100 in all four categories.
+- Series-specific inline client module: 1,870 bytes, 818 bytes gzip (8 KiB budget).
+
+Source files were retrieved by exact URLs only; no source folders were enumerated.
+The inherited unrelated planner-skill commit remains on its original branch; an ordinary
+revert excludes that diff from this feature branch without rewriting history.
+
+Next: recheck final reflow fix, no-JS/fragment behavior, finalize validation record and
+publish review-ready PR. Do not merge automatically. Lease tooling remains unavailable.
