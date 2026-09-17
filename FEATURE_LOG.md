@@ -1,5 +1,21 @@
 # ETR-2026-07 editorial series — #1603
 
+## User-review correction: experience incomplete
+
+The user rejected this result as ordinary articles rather than the requested immersive
+editorial experience. Migration, routing, citations, and the shared layout are foundations
+only. The earlier completion/review-ready assessment was wrong. Chapter-specific visual
+storytelling, composition, and meaningful interactive treatments remain unfinished.
+
+Do not run further broad browser suites, W3C/WCAG audits, or performance measurements
+until the actual experience is implemented across all issues. Results below are historical
+foundation checks, not completion evidence. Do not repeat them during implementation.
+Add only necessary novel-logic tests under the user's original constraints.
+
+Next: develop concrete chapter treatments from the already retrieved sources, implement
+a representative immersive chapter, then carry the approach through the other chapters.
+Preserve authored prose and qualifications. Keep the goal open; no review-ready claim.
+
 Branch: `codex/1603_ETR-2026-07`. Children: #1604–#1620.
 
 ## Contract and authority
@@ -61,5 +77,15 @@ Source files were retrieved by exact URLs only; no source folders were enumerate
 The inherited unrelated planner-skill commit remains on its original branch; an ordinary
 revert excludes that diff from this feature branch without rewriting history.
 
-Next: recheck final reflow fix, no-JS/fragment behavior, finalize validation record and
-publish review-ready PR. Do not merge automatically. Lease tooling remains unavailable.
+The former validation/PR closeout step is superseded by the correction above.
+Lease tooling remains unavailable.
+
+## Chapter 1 experience checkpoint
+
+Five authored narrative scenes added: original optimizer schematic; separate economic
+measures; native customer-service objective switch; native productivity-bargain switch;
+personal time ledger. Prose is unchanged; explicit scene comments set placement.
+CSS is split into scene primitives and a chapter-only stylesheet. Direct browser visual
+inspection and the role-consolidation interaction were checked. One new loader-path
+boundary test ran red/green. No broad browser, a11y, HTML or performance suites run.
+Next: differentiated treatments for chapters 2–16 and reference exploration.

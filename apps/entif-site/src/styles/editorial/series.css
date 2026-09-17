@@ -6,22 +6,22 @@
   overflow-wrap: anywhere;
 }
 .editorial-masthead {
-  padding: 1rem 0 3rem;
+  padding: 0.5rem 0 1.5rem;
   max-width: 65rem;
 }
 .editorial-series-title {
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: 1.5rem;
   font-weight: 750;
-  line-height: 1.05;
-  letter-spacing: -0.045em;
-  margin: 1rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0.5rem 0;
 }
 .editorial-subtitle {
   max-width: 40rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .editorial-byline {
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   color: var(--muted);
 }
 .editorial-nav {
@@ -112,9 +112,7 @@
   margin-block: 0 3rem;
 }
 .editorial-beat:nth-child(even) {
-  background: var(--accent-soft);
-  padding-inline: 1.5rem;
-  border-radius: 0.375rem;
+  background: transparent;
 }
 .editorial-beat blockquote {
   border-inline-start: 3px solid var(--accent);
@@ -214,7 +212,7 @@
     font-size: 4rem;
   }
   .editorial-beat:nth-child(even) {
-    padding-inline: 1rem;
+    padding-inline: 0;
   }
   .editorial-ending {
     flex-direction: column;

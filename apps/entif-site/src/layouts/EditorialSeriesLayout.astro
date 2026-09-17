@@ -7,6 +7,8 @@ import { toSummary, type SiteEntry } from '../lib/site-data';
 import sources from '../../content/editorial/accelerating-the-dystopia/sources.json';
 import '../styles/editorial/series.css';
 import '../styles/editorial/citations.css';
+import '../styles/editorial/scenes.css';
+import chapter01Styles from '../styles/editorial/chapters/chapter-01.css?url';
 interface Props {
   entry: SiteEntry;
   chapters: readonly SiteEntry[];
@@ -28,6 +30,11 @@ const href = (item: SiteEntry) =>
   description={entry.data.description}
   noindex={entry.data.noindex}
 >
+  {
+    current === 1 && (
+      <link slot="head" rel="stylesheet" href={chapter01Styles} />
+    )
+  }
   <article
     class="shell article-shell editorial-series"
     data-test-id="editorial-series"

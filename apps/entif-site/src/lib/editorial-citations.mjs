@@ -22,6 +22,19 @@ export function resolveSources(keys, registry = sources) {
   });
 }
 
+export function readEditorialScene(name, reference) {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) {
+    throw new Error('Invalid editorial scene name');
+  }
+  return readFileSync(
+    new URL(`../../content/editorial/scenes/${name}.html`, import.meta.url),
+    'utf8'
+  ).replace(/href="etr-source:(S\d{3})"/g, (_, key) => {
+    resolveSources([key]);
+    return `href="${reference}#source-${key}"`;
+  });
+}
+
 const text = (value) => ({ type: 'text', value });
 const element = (tagName, properties, children) => ({
   type: 'element',
@@ -44,6 +57,13 @@ export function rehypeEditorial() {
     const walk = (node) => {
       if (['a', 'code', 'pre'].includes(node.tagName) || !node.children) return;
       node.children = node.children.flatMap((child) => {
+        if (child.type === 'raw') {
+          const scene = child.value.match(
+            /^<!--\s*editorial:([\s\S]*?)\s*-->$/
+          );
+          if (scene) child.value = readEditorialScene(scene[1], reference);
+          return [child];
+        }
         if (child.type !== 'text') {
           walk(child);
           return [child];

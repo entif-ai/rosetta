@@ -30,6 +30,8 @@ What if we build increasingly capable intelligence, solve enough of the technica
 
 What if it works?
 
+<!-- editorial:01-optimizer -->
+
 What if it becomes an extraordinarily competent advertising optimizer in a system that already monetizes attention and behavioral exhaust? What if it becomes an extraordinarily competent pricing engine in markets already learning to infer willingness to pay from location, browsing history, shopping behavior, mouse movements, and abandoned carts? The Federal Trade Commission has already documented commercial intermediaries offering retailers exactly that class of individualized pricing and product-exposure machinery. [S124]
 
 What if it becomes an extraordinarily competent management consultant inside firms whose incentive systems already reward headcount reduction, margin expansion, labor substitution, short-cycle financial performance, and strategic abstraction of human consequences? What if it becomes a better lobbyist, a better political advertiser, a better financial engineer, a better bureaucratic optimizer, a better persuasion engine, a better union-avoidance strategist, a better dark-pattern designer, a better litigation-risk minimizer, a better debt-market operator, a better attention harvester, and a better producer of language that makes all of those activities sound administratively inevitable?
@@ -58,6 +60,8 @@ Before AI enters the picture, the United States already presents an uncomfortabl
 
 Those facts belong together.
 
+<!-- editorial:01-substrate -->
+
 They are exactly why this argument should not depend on a bumper-sticker claim that everybody gets poorer every year. National medians can rise while asset ownership remains radically concentrated. Productivity can improve while labor's share falls. A household can receive a raise and still lose ground against housing, healthcare, education, debt service, insurance, communications, and the price of entering asset markets. A society can become richer in aggregate while the lived bargain offered to large portions of its population becomes more precarious, more surveilled, more conditional, and less capable of producing wealth of its own.
 
 Then add AI.
@@ -80,6 +84,8 @@ Imagine a customer-service system that resolves a billing mistake in seconds. Th
 
 These are hypothetical designs, not allegations about a named product. Their difference is useful because neither requires a rebellious machine. Each could obey its instructions perfectly. One measures a repaired bill. The other measures a closed case. The word “resolution” could appear on both dashboards.
 
+<!-- editorial:01-resolution -->
+
 That small change contains much of this essay. A word, a metric, a contract, and an ownership arrangement can determine what technological progress means in practice. The model's intelligence matters. So does the translation from a human problem into an institutional target. So does the question of who can reject that translation.
 
 It is possible to make a system fairer within the wrong frame. Suppose an automated process applies an unreasonable fee with perfect consistency. It never discriminates between customers. It explains the fee clearly. It follows every instruction given to it. We have solved several important technical problems while leaving the underlying relationship untouched. Equal treatment describes the application of the rule. It does not establish that the rule serves the people subject to it.
@@ -96,6 +102,8 @@ This is not an argument that gains and losses always cancel. It is an argument t
 
 Consider a simple example. Two workers each gain a tool that lets them finish the same task in half the time. One keeps the same pay and goes home earlier. The other receives twice as much work. A third possible workplace eliminates one of their roles and transfers the remaining work to the other. The technical saving is similar across these arrangements. Its human meaning is not.
 
+<!-- editorial:01-bargain -->
+
 No productivity benchmark alone tells us which arrangement will occur. That depends on demand, bargaining, staffing, ownership, contractual terms, and the choices of the people who control the workplace. Those are not bugs inside the model. They are properties of the environment into which it is deployed. The empirical literature already distinguishes automation that displaces tasks from new tasks that can increase demand for labor. It does not support a universal rule that every technical improvement must either destroy employment or lift everyone together. [S114]
 
 The difference matters to how we talk about “abundance.” Abundance of an output is not the same as secure access to it. An abundant service behind a price gate can be useful and still unavailable to someone who needs it. An abundant supply of persuasive language may lower communication costs while raising the cost of knowing whom to trust. An abundant supply of applications for a scarce job does not create an abundant supply of jobs.
@@ -107,6 +115,8 @@ I do not need to predict the final shape of an AI economy to insist on those dis
 ## The human evidence is not an interruption
 
 I have spent enough time inside corporate systems to know that their appeal is not imaginary. I remember good food, talented colleagues, difficult work that felt worth doing, and experiences that were genuinely exciting. I also remember the ease with which commitment became an open-ended claim on my time. In one September, I logged more than 300 hours. That recollection is evidence about my experience, not a measurement of an entire industry. [S187]
+
+<!-- editorial:01-time -->
 
 The coexistence matters. I cannot tell this story honestly by removing the benefits until the institution looks absurd. Nor can I tell it honestly by treating the benefits as a moral receipt that cancels everything else. A workplace can give a person real opportunity and take more of that person's life than the person understood they were giving. Affection and dependence can coexist. Good intentions can travel through a structure with harmful effects.
 
