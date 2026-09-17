@@ -4,15 +4,7 @@ import { orderSeries } from '../../src/lib/editorial';
 import {
   citationKeys,
   resolveSources,
-  readEditorialScene,
 } from '../../src/lib/editorial-citations.mjs';
-
-it('rejects scene names that could escape the authored scene directory', () => {
-  expect(readEditorialScene).toBeTypeOf('function');
-  for (const name of ['../sources', '/tmp/source', 'chapter/scene', '']) {
-    expect(() => readEditorialScene(name, '/references/')).toThrow();
-  }
-});
 
 describe('editorial ordering', () => {
   const entries = [3, 1, 2].map((order) => ({

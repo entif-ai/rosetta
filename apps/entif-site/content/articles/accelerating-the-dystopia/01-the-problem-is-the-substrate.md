@@ -30,7 +30,29 @@ What if we build increasingly capable intelligence, solve enough of the technica
 
 What if it works?
 
-<!-- editorial:01-optimizer -->
+<figure class="story-scene optimizer-scene" data-test-id="editorial-scene">
+  <div class="scene-overline"><span>01 / The objective comes first</span><span>Conceptual illustration</span></div>
+  <div class="optimizer-heading"><p class="scene-kicker">No rebellion required.</p><h2>A machine can do<br>exactly what we ask.</h2></div>
+  <div class="optimizer-drawing">
+    <div class="optimizer-input"><span class="machine-label">The instruction</span><ul><li>Increase engagement</li><li>Reduce labor costs</li><li>Maximize conversion</li></ul><span class="machine-footnote">Chosen by institutions</span></div>
+    <svg class="optimizer-machine" viewBox="0 0 600 360" role="img" aria-labelledby="optimizer-image-title optimizer-image-desc">
+      <title id="optimizer-image-title">An optimizer follows its institutional objective</title>
+      <desc id="optimizer-image-desc">Three input paths enter a concentric machine and converge into one output. The machine processes the objective; it does not determine whether the objective is worthy.</desc>
+      <defs><pattern id="optimizer-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="currentColor" stroke-opacity=".12"/></pattern></defs>
+      <rect width="600" height="360" fill="url(#optimizer-grid)"/>
+      <g fill="none" stroke="currentColor"><path class="machine-wires" d="M0 90H115L175 150M0 180H156M0 270H115L175 210M425 180H600" stroke-width="2"/>
+      <circle cx="300" cy="180" r="137" stroke-opacity=".25"/>
+      <circle cx="300" cy="180" r="116" stroke-dasharray="2 12" stroke-width="5"/>
+      <circle cx="300" cy="180" r="88" stroke-width="2"/>
+      <path d="M300 29V55M300 305V331M149 180H175M425 180H451" stroke-width="3"/>
+      <path class="machine-rotor" d="M300 108L362 144V216L300 252L238 216V144Z M238 144L300 180L362 144M300 180V252" stroke-width="3"/>
+      <circle cx="300" cy="180" r="9" fill="currentColor"/>
+      <path d="M565 170L580 180L565 190" stroke-width="2"/></g>
+    </svg>
+    <div class="optimizer-output"><span class="machine-label">The result</span><strong>More capable.<br>More obedient.</strong><span class="machine-footnote">The purpose remains a human choice.</span></div>
+  </div>
+  <figcaption><span class="scene-question">Who chose what “better” means?</span><span>The diagram illustrates the chapter’s argument about institutional objectives. It is not a model of any named AI system.</span></figcaption>
+</figure>
 
 What if it becomes an extraordinarily competent advertising optimizer in a system that already monetizes attention and behavioral exhaust? What if it becomes an extraordinarily competent pricing engine in markets already learning to infer willingness to pay from location, browsing history, shopping behavior, mouse movements, and abandoned carts? The Federal Trade Commission has already documented commercial intermediaries offering retailers exactly that class of individualized pricing and product-exposure machinery. [S124]
 
@@ -60,7 +82,16 @@ Before AI enters the picture, the United States already presents an uncomfortabl
 
 Those facts belong together.
 
-<!-- editorial:01-substrate -->
+<figure class="story-scene substrate-scene" data-test-id="editorial-scene">
+  <div class="scene-overline"><span>Before the new intelligence</span><span>Three different measures</span></div>
+  <h2>The world it inherits.</h2>
+  <div class="substrate-measures">
+    <div class="substrate-measure"><p class="measure-name">Labor’s share</p><p class="measure-value">52.8<span>%</span></p><div class="measure-track" aria-hidden="true"><span style="--share:52.8%"></span></div><p>Share of nonfarm business-sector output<br><strong>United States · Q2 2026</strong></p><p class="measure-note">Lowest value in the BLS series beginning in 1947.</p><a href="etr-source:S117">Bureau of Labor Statistics · S117 ↗</a></div>
+    <div class="substrate-measure"><p class="measure-name">Household wealth</p><div class="wealth-row"><span>Top 10%</span><strong>≈68%</strong><div class="measure-track" aria-hidden="true"><span style="--share:68%"></span></div></div><div class="wealth-row"><span>Bottom 50%</span><strong>≈2.5%</strong><div class="measure-track" aria-hidden="true"><span style="--share:2.5%"></span></div></div><p>Share of household net worth<br><strong>United States · Q1 2026</strong></p><p class="measure-note">The two groups do not cover the whole distribution.</p><a href="etr-source:S118">Federal Reserve · S118 ↗</a></div>
+    <div class="substrate-measure"><p class="measure-name">Median household income</p><p class="measure-value">+2.6<span>%</span></p><div class="income-arrow" aria-hidden="true">↗</div><p>Reported increase in median household income<br><strong>United States · 2025</strong></p><p class="measure-note">A rising median can coexist with concentrated ownership.</p><a href="etr-source:S119">U.S. Census Bureau · S119 ↗</a></div>
+  </div>
+  <figcaption>Output share, wealth share, and income growth answer different questions. Values and periods are reproduced from the chapter; the measures are not a common scale or a claim that everyone gets poorer.</figcaption>
+</figure>
 
 They are exactly why this argument should not depend on a bumper-sticker claim that everybody gets poorer every year. National medians can rise while asset ownership remains radically concentrated. Productivity can improve while labor's share falls. A household can receive a raise and still lose ground against housing, healthcare, education, debt service, insurance, communications, and the price of entering asset markets. A society can become richer in aggregate while the lived bargain offered to large portions of its population becomes more precarious, more surveilled, more conditional, and less capable of producing wealth of its own.
 
@@ -84,7 +115,17 @@ Imagine a customer-service system that resolves a billing mistake in seconds. Th
 
 These are hypothetical designs, not allegations about a named product. Their difference is useful because neither requires a rebellious machine. Each could obey its instructions perfectly. One measures a repaired bill. The other measures a closed case. The word “resolution” could appear on both dashboards.
 
-<!-- editorial:01-resolution -->
+<figure class="story-scene resolution-scene" data-test-id="editorial-scene">
+  <div class="scene-overline"><span>Inside the customer-service dashboard</span><span>Hypothetical designs</span></div>
+  <h2>“Resolved.”<br>By whose measure?</h2>
+  <fieldset class="scene-choice"><legend>Choose what the system is rewarded for</legend><label><input type="radio" name="resolution-objective" value="closure" checked data-test-id="resolution-choice"> Close the case</label><label><input type="radio" name="resolution-objective" value="repair" data-test-id="resolution-choice"> Repair the bill</label></fieldset>
+  <div class="resolution-view">
+    <div class="resolution-ticket"><span class="machine-label">The institutional view</span><div class="ticket-stamp" aria-hidden="true">✓</div><strong>Case resolved</strong><p class="resolution-closure">The conversation ended.<br>The ticket left the queue.</p><p class="resolution-repair">The billing error was corrected.<br>The case can close.</p></div>
+    <div class="resolution-join" aria-hidden="true"><span></span><b>≠</b><span></span></div>
+    <div class="resolution-person"><span class="machine-label">The person’s view</span><div class="bill-sheet" aria-hidden="true"><span>BILL</span><i></i><i></i><i></i><strong class="resolution-closure">ERROR REMAINS</strong><strong class="resolution-repair">ERROR CORRECTED</strong></div><p class="resolution-closure">An authoritative answer.<br>An unresolved problem.</p><p class="resolution-repair">A repaired bill.<br>Time returned to the person.</p></div>
+  </div>
+  <figcaption>Both systems could obey their instructions. Changing what “resolution” measures changes what success means. These are illustrative designs from the chapter, not claims about a named product.</figcaption>
+</figure>
 
 That small change contains much of this essay. A word, a metric, a contract, and an ownership arrangement can determine what technological progress means in practice. The model's intelligence matters. So does the translation from a human problem into an institutional target. So does the question of who can reject that translation.
 
@@ -102,7 +143,18 @@ This is not an argument that gains and losses always cancel. It is an argument t
 
 Consider a simple example. Two workers each gain a tool that lets them finish the same task in half the time. One keeps the same pay and goes home earlier. The other receives twice as much work. A third possible workplace eliminates one of their roles and transfers the remaining work to the other. The technical saving is similar across these arrangements. Its human meaning is not.
 
-<!-- editorial:01-bargain -->
+<figure class="story-scene bargain-scene" data-test-id="editorial-scene">
+  <div class="scene-overline"><span>Same capability / different bargain</span><span>Illustrative possibilities, not forecasts</span></div>
+  <h2>The tool saves time.<br>Who gets it?</h2>
+  <div class="bargain-baseline"><span>The same task</span><div class="task-baseline" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>With the tool</span><div class="task-improved" aria-hidden="true"><i></i><i></i><i></i><i></i></div><strong>Half the time.<br>One technical improvement.</strong></div>
+  <fieldset class="scene-choice"><legend>Change the workplace arrangement</legend><label><input type="radio" name="productivity-bargain" value="time" checked data-test-id="bargain-choice"> Return the time</label><label><input type="radio" name="productivity-bargain" value="work" data-test-id="bargain-choice"> Raise the workload</label><label><input type="radio" name="productivity-bargain" value="roles" data-test-id="bargain-choice"> Consolidate the roles</label></fieldset>
+  <div class="bargain-outcomes">
+    <div class="bargain-outcome bargain-time"><div class="bargain-art time-art" aria-hidden="true"><span class="task-block">WORK</span><span class="returned-time">TIME<br>RETURNED ↗</span></div><div><span class="machine-label">The human bargain</span><h3>Same pay.<br>Earlier finish.</h3><p>The worker keeps the gain as time outside work.</p></div></div>
+    <div class="bargain-outcome bargain-work"><div class="bargain-art work-art" aria-hidden="true"><span class="task-block">WORK</span><span class="task-block">MORE<br>WORK</span></div><div><span class="machine-label">The human bargain</span><h3>Same day.<br>Twice the work.</h3><p>The workplace converts the saving into a higher output expectation.</p></div></div>
+    <div class="bargain-outcome bargain-roles"><div class="bargain-art roles-art" aria-hidden="true"><span class="role-outline">ROLE A</span><span class="role-outline">ROLE B</span><span class="role-merge">↓</span><span class="task-block">ONE REMAINING ROLE</span></div><div><span class="machine-label">The human bargain</span><h3>One role removed.<br>The work remains.</h3><p>The remaining worker receives the transferred work.</p></div></div>
+  </div>
+  <figcaption>The chapter’s example holds the technical gain constant. Demand, bargaining, staffing, ownership, and contracts determine its distribution. Task displacement and new labor-demanding tasks are distinct mechanisms. <a href="etr-source:S114">Source context: S114 ↗</a></figcaption>
+</figure>
 
 No productivity benchmark alone tells us which arrangement will occur. That depends on demand, bargaining, staffing, ownership, contractual terms, and the choices of the people who control the workplace. Those are not bugs inside the model. They are properties of the environment into which it is deployed. The empirical literature already distinguishes automation that displaces tasks from new tasks that can increase demand for labor. It does not support a universal rule that every technical improvement must either destroy employment or lift everyone together. [S114]
 
@@ -116,7 +168,10 @@ I do not need to predict the final shape of an AI economy to insist on those dis
 
 I have spent enough time inside corporate systems to know that their appeal is not imaginary. I remember good food, talented colleagues, difficult work that felt worth doing, and experiences that were genuinely exciting. I also remember the ease with which commitment became an open-ended claim on my time. In one September, I logged more than 300 hours. That recollection is evidence about my experience, not a measurement of an entire industry. [S187]
 
-<!-- editorial:01-time -->
+<figure class="story-scene personal-time-scene" data-test-id="editorial-scene">
+  <div><span class="scene-kicker">One September.</span><p class="personal-hours">300<span>+</span></p><p class="personal-unit">hours logged</p></div>
+  <div class="personal-time-note"><span class="machine-label">Personal recollection</span><h2>Opportunity and<br>an open-ended claim<br>on a person’s time.</h2><p>The good food, talented colleagues, and meaningful work remain part of the story. So does the time.</p><figcaption>The author’s remembered experience—not an industry average, verified timesheet, or population statistic. <a href="etr-source:S187">Authorial source · S187 ↗</a></figcaption></div>
+</figure>
 
 The coexistence matters. I cannot tell this story honestly by removing the benefits until the institution looks absurd. Nor can I tell it honestly by treating the benefits as a moral receipt that cancels everything else. A workplace can give a person real opportunity and take more of that person's life than the person understood they were giving. Affection and dependence can coexist. Good intentions can travel through a structure with harmful effects.
 

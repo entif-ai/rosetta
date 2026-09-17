@@ -38,6 +38,13 @@ Your failure to call becomes revenue.
 
 Your reluctance to spend Saturday moving phone numbers, returning equipment, scheduling an installer, and arguing with retention can support revenue. It is an economic advantage to the seller, not a literal balance-sheet asset called your inconvenience.
 
+<figure class="story-scene switching-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The price beyond the price</span><span>Illustration / not a current price audit</span></div>
+<h2>The bill ends.<br>The work of leaving begins.</h2>
+<div class="switching-route"><div class="switching-bill"><span>ACCOUNT</span><b>Monthly service</b><i></i><i></i><i></i><strong>Renewal</strong></div><ol><li><span>01</span>Move the phone numbers.</li><li><span>02</span>Return the equipment.</li><li><span>03</span>Schedule the installer.</li><li><span>04</span>Navigate retention.</li></ol><div class="switching-end"><span aria-hidden="true">↳</span><p>Your Saturday<br>is part of the bargain.</p></div></div>
+<figcaption>These frictions come from the author’s example. Inconvenience can benefit a seller economically; it is not literally an asset recorded on a balance sheet. <a href="etr-source:S102">Documented interface-friction mechanisms · S102 ↗</a></figcaption>
+</figure>
+
 That is not an incidental imperfection in the market. Customer inertia is economically monetizable.
 
 Data makes the asymmetry sharper.
@@ -183,6 +190,14 @@ The broader lesson is that a transaction uses attention as well as money. A cons
 AI could help correct that asymmetry. A buyer's assistant could compare unit prices, identify a changed term, and calculate a contract's cost over the expected period of use. That is a plausible beneficial application. Its value would depend on reliable data and on whether it is free to recommend an option that does not benefit the company supplying the assistant.
 
 A seller's assistant could perform the opposite work: find the framing that makes a change least likely to interrupt a purchase. The tools may share much of their technical foundation. Their purposes differ. The presence of an intelligent intermediary does not tell us which side of the exchange has gained leverage.
+
+<figure class="story-scene adviser-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The interface sounds helpful</span><span>Hypothetical assistant designs</span></div>
+<h2>Whose side<br>is the assistant on?</h2>
+<fieldset class="scene-choice"><legend>Change the objective behind the advice</legend><label><input type="radio" name="adviser-objective" value="compare" checked data-test-id="adviser-objective"> Help me compare</label><label><input type="radio" name="adviser-objective" value="convert" data-test-id="adviser-objective"> Keep me buying</label></fieldset>
+<div class="adviser-window"><div class="adviser-window-top"><span aria-hidden="true">● ● ●</span><span>THE SAME CAPABILITY</span></div><p class="adviser-request">Help me understand my options.</p><div class="adviser-reply compare-reply"><span class="machine-label">Agency expands</span><h3>Unit prices.<br>Renewal terms.<br>Alternatives.</h3><p>The recommendation can include leaving the supplier.</p></div><div class="adviser-reply convert-reply"><span class="machine-label">The funnel narrows</span><h3>Selected products.<br>Favorable framing.<br>Fewer visible exits.</h3><p>The advice can be accurate about the options it chooses to mention.</p></div></div>
+<figcaption>The chapter contrasts possible objectives, not measured behavior of a named assistant. Politeness and controllability do not establish whose interests an intermediary serves.</figcaption>
+</figure>
 
 ## When negotiation itself is automated
 

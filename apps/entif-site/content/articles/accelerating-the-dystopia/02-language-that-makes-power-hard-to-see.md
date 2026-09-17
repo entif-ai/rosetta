@@ -40,6 +40,14 @@ None of those phrases has to be false.
 
 That is why they work.
 
+<figure class="story-scene language-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The vocabulary changes the frame</span><span>Invented formulations from the chapter</span></div>
+<h2>Same event.<br>Different field of view.</h2>
+<fieldset class="scene-choice"><legend>Read the announcement through a different lens</legend><label><input type="radio" name="language-lens" value="institution" checked data-test-id="language-lens"> Institutional language</label><label><input type="radio" name="language-lens" value="person" data-test-id="language-lens"> Lived consequence</label></fieldset>
+<div class="language-paper"><span class="memo-label">INTERNAL COMMUNICATION</span><p class="institution-wording">Workforce<br><em>optimization.</em></p><p class="person-wording">People lose<br><em>their jobs.</em></p><div class="language-foot"><span class="institution-wording">Attention goes to the organization’s objective.</span><span class="person-wording">Attention goes to the people affected.</span><span aria-hidden="true">↗</span></div></div>
+<figcaption>The institutional wording need not be false to change what the reader notices. This is a conceptual comparison, not a quotation from a named employer.</figcaption>
+</figure>
+
 The strongest research basis for this argument is not cultural cynicism. It is economics. Gabaix and Laibson developed a model of "shrouded attributes" in which firms deliberately obscure costly add-ons from consumers who are not fully attentive. Their crucial result is that informational shrouding can survive even in highly competitive markets and even when advertising is cheap. Competition does not automatically save the consumer because a firm that educates everyone may lose the profitable inattentive customer while sophisticated consumers exploit the subsidized headline offer. [S101]
 
 That model is more than twenty years old. The digital economy has turned it into interface design.
@@ -117,6 +125,14 @@ And the systems producing those outcomes answer in acronyms.
 A disclosure can exist without becoming usable knowledge. That is the difference between placing a fact somewhere and giving a person a reasonable chance to understand it before the fact matters.
 
 Imagine that a service discloses its introductory price on one screen, its later price in a linked document, its equipment charge in a separate table, and its cancellation procedure in an account menu available only after purchase. Every piece might be accurate. The person still has to assemble a working model of the transaction. The seller has one integrated model. The buyer receives fragments.
+
+<figure class="story-scene disclosure-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The information exists</span><span>Illustrative offer anatomy</span></div>
+<h2>Present in the paperwork.<br>Absent from the decision.</h2>
+<div class="disclosure-folders"><details open><summary><span>01</span>The offer</summary><p>The introductory price is prominent at the moment of choice.</p></details><details><summary><span>02</span>The later price</summary><p>The renewal terms live in another document.</p></details><details><summary><span>03</span>The equipment</summary><p>A separate table contains an additional charge.</p></details><details><summary><span>04</span>The way out</summary><p>The cancellation process is found inside account management.</p></details></div>
+<p class="disclosure-conclusion">Four places to look.<br>One decision to make.</p>
+<figcaption>Open the documents to reconstruct the chapter’s hypothetical offer. The friction lies in assembling the terms before they matter. <a href="etr-source:S101">Shrouded attributes · S101</a> · <a href="etr-source:S102">Documented dark patterns · S102</a></figcaption>
+</figure>
 
 The problem is not simply that the text is long. Sometimes a long explanation is necessary. The problem is that integration has a cost, and the parties do not bear that cost equally. A firm can spread the work of designing a contract across millions of transactions. A household must understand its own contract while doing everything else required to live. The firm learns from repeated encounters. The customer may confront the issue once.
 

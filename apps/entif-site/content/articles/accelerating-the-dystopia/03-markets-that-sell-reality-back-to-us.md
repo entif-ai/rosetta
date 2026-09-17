@@ -30,6 +30,15 @@ The map becomes part of the terrain.
 
 The Magic Quadrant is almost too elegant an example. Gartner itself describes the two axes as Ability to Execute and Completeness of Vision, and it explicitly warns that the Quadrant should be a starting point rather than a universal declaration that every company in the upper-right "Leaders" box is best for every buyer. [S106]
 
+<figure class="story-scene category-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The boundary helps make the market</span><span>Conceptual diagram / no vendor data</span></div>
+<h2>Change the category.<br>Change who belongs.</h2>
+<fieldset class="scene-choice"><legend>Change the illustrative inclusion rule</legend><label><input type="radio" name="category-rule" value="broad" checked data-test-id="category-rule"> Broad field</label><label><input type="radio" name="category-rule" value="narrow" data-test-id="category-rule"> Narrow category</label></fieldset>
+<div class="category-map"><div class="category-boundary"><span>INCLUDED IN THE COMPARISON</span></div><span class="category-dot dot-a">A</span><span class="category-dot dot-b">B</span><span class="category-dot dot-c">C</span><span class="category-dot dot-d">D</span><span class="category-dot dot-e">E</span><div class="map-axis horizontal-axis">One chosen evaluation dimension →</div><div class="map-axis vertical-axis">Another chosen dimension →</div></div>
+<p class="category-observation">The offerings did not move.<br>The definition did.</p>
+<figcaption>Letters are hypothetical offerings. Their positions carry no empirical scores. This is not a reproduction of Gartner’s visual framework. Gartner describes its research as a starting point, with defined markets, criteria and buyer-specific judgment. <a href="etr-source:S106">Methodology · S106</a> · <a href="etr-source:S207">Process qualifications · S207</a></figcaption>
+</figure>
+
 That caveat is perfectly sensible.
 
 It also cannot undo the visual grammar.
@@ -123,6 +132,13 @@ What the episode does show in my account is how one activity can have more than 
 That distinction is more useful than trying to force each encounter into a binary choice between pure scholarship and criminal corruption. Those are not the only possibilities. An activity can be lawful, informative, enjoyable, commercially strategic, and worthy of scrutiny at the same time. An ethical analysis becomes weaker when it needs the most extreme legal category to be relevant.
 
 ## When everyone buys the same reassurance
+
+<figure class="story-scene reassurance-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>How reassurance travels</span><span>Conceptual institutional loop</span></div>
+<div class="reassurance-loop"><div><span>01</span><h3>A category<br>organizes choice.</h3></div><b aria-hidden="true">→</b><div><span>02</span><h3>A buyer cites<br>the category.</h3></div><b aria-hidden="true">→</b><div><span>03</span><h3>Others inherit<br>the precedent.</h3></div></div>
+<div class="reassurance-return"><span aria-hidden="true">↶</span><p>The reference becomes harder to ignore.</p></div>
+<figcaption>A useful shortcut can become an institutional condition of credibility. The diagram describes a mechanism, not proof of corrupt intent or a pay-to-play relationship. <a href="etr-source:S105">Rankings and reactivity · S105</a></figcaption>
+</figure>
 
 There is a further possibility that matters beyond any one advisory firm. Independent organizations can make individually reasonable decisions that become collectively brittle when they rely on the same reference points.
 

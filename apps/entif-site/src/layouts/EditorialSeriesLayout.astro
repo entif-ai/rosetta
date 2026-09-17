@@ -8,7 +8,9 @@ import sources from '../../content/editorial/accelerating-the-dystopia/sources.j
 import '../styles/editorial/series.css';
 import '../styles/editorial/citations.css';
 import '../styles/editorial/scenes.css';
-import chapter01Styles from '../styles/editorial/chapters/chapter-01.css?url';
+const chapterStyles = import.meta.glob<string>('../styles/editorial/chapters/chapter-*.css', {
+  query: '?url', import: 'default', eager: true,
+});
 interface Props {
   entry: SiteEntry;
   chapters: readonly SiteEntry[];
@@ -16,6 +18,7 @@ interface Props {
 }
 const { entry, chapters, metadata } = Astro.props;
 const current = entry.data.series!.order;
+const chapterStyle = chapterStyles[`../styles/editorial/chapters/chapter-${String(current).padStart(2, '0')}.css`];
 const { Content } = await render(entry);
 const isReferences = current === metadata.chapters;
 const next = chapters[current];
@@ -31,8 +34,8 @@ const href = (item: SiteEntry) =>
   noindex={entry.data.noindex}
 >
   {
-    current === 1 && (
-      <link slot="head" rel="stylesheet" href={chapter01Styles} />
+    chapterStyle && (
+      <link slot="head" rel="stylesheet" href={chapterStyle} />
     )
   }
   <article

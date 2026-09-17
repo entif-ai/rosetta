@@ -1,0 +1,22 @@
+.story-scene.accounting-scene { background:var(--scene-night);color:var(--scene-paper); }
+.accounting-numbers{display:grid;grid-template-columns:1fr auto 1fr;gap:2rem;align-items:center;margin:3rem 0;}
+.accounting-numbers p{font-size:clamp(3rem,6vw,6rem);line-height:1;letter-spacing:-.055em;}
+.accounting-numbers p>span{display:block;font-family:system-ui,sans-serif;font-size:1rem;letter-spacing:0;margin-top:1rem;}
+.accounting-numbers>div:last-child{color:var(--scene-signal);}
+.accounting-not{font-size:4rem;}
+.revenue-strip{height:4rem;background:var(--scene-paper);position:relative;}
+.revenue-strip>span{position:absolute;inset:0 0 0 auto;width:2.945%;background:var(--scene-signal);border-left:2px solid var(--scene-night);}
+.accounting-scene .accounting-ratio{font-family:system-ui,sans-serif;font-size:.875rem;text-align:right;}
+.accounting-note{margin-top:3rem;border-top:1px solid var(--scene-rule);padding-top:1rem;}
+.accounting-note summary{min-height:2.75rem;cursor:pointer;font-size:1.25rem;}
+.accounting-note p{max-width:42rem;}.accounting-scene a{color:var(--scene-signal);}
+.story-scene.productivity-evidence-scene{background:var(--scene-paper);}
+.productivity-evidence{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-block:3rem;}
+.productivity-evidence .evidence-number{font-size:clamp(5rem,12vw,10rem);line-height:1;color:var(--accent);letter-spacing:-.07em;}
+.evidence-number span{font-size:.5em;}
+.productivity-evidence h2{font-size:clamp(1.75rem,3vw,2.75rem);}
+.evidence-boundary{border:1px solid var(--accent);padding:2rem;}
+.evidence-boundary strong{font-size:2.5rem;}
+.evidence-open-question{border-top:1px dashed var(--accent);padding-top:1.5rem;margin-top:2rem;font-size:1.5rem;}
+@media(max-width:50rem){.accounting-numbers{grid-template-columns:1fr;gap:.5rem;}.accounting-not{font-size:2rem;}.productivity-evidence{grid-template-columns:1fr;gap:2rem;}}
+@media print{.accounting-scene{--scene-signal:var(--ink);} .revenue-strip{border:1px solid var(--ink);}}

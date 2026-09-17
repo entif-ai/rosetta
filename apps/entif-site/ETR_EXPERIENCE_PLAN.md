@@ -58,9 +58,8 @@ measured findings, conceptual diagrams, hypotheticals, and personal evidence.
 
 ## Implementation ownership
 
-Authored HTML scenes live under `content/editorial/scenes/`, selected by explicit
-Markdown comments at narrative boundaries. A small build-time include resolves only
-safe local scene names. Existing citation transformation resolves markers in captions.
-Scene CSS is compartmentalized by chapter under `src/styles/editorial/chapters/`.
-Reuse visual/interaction patterns only where they fit; avoid one identical card template
-spread over sixteen chapters. No new client framework or runtime dependency.
+Authored semantic HTML scenes live directly in chapter Markdown so Astro owns content
+compilation and cache invalidation. A source-link placeholder resolves captions through
+the same registry at build time. Chapter styles remain separate under
+`src/styles/editorial/chapters/`. Reuse interaction patterns where they fit, while
+composing each chapter around its actual argument. No new client framework or dependency.

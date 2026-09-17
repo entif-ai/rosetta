@@ -124,6 +124,12 @@ My own account is not that someone explicitly ordered me to treat every spare ho
 
 A time sheet can record the hours. It cannot fully record the bargain a person thinks those hours represent. The formal bargain might be wages for work. The experienced bargain can include loyalty, recognition, security, status, belonging, and an expectation of reciprocity. When those two bargains diverge, a person can discover that years of commitment purchased less security than they thought.
 
+<figure class="story-scene belonging-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>Two accounts of the same relationship</span><span>Conceptual comparison</span></div>
+<div class="belonging-ledgers"><div><span class="machine-label">The formal bargain</span><h2>Wages<br>for work.</h2><div class="ledger-rule"></div><p>Hours, duties, compensation.</p></div><div><span class="machine-label">The experienced bargain</span><h2>A place<br>to belong.</h2><div class="ledger-rule"></div><p>Loyalty, recognition, security,<br>status, reciprocity.</p></div></div>
+<figcaption>The benefit can be real and the relationship unequal. These overlapping bargains help explain why control need not arrive as an explicit order. <a href="etr-source:S107">Normative control · S107</a> · <a href="etr-source:S108">Peer-enforced norms · S108</a></figcaption>
+</figure>
+
 That is not an allegation that every employer makes an explicit promise it later breaks. Often the expectation is produced through a mixture of language, rituals, praise, opportunity, and ordinary relationships. It may never be written down in a form that can be enforced. Its power can still be real in the employee's life.
 
 I find that asymmetry ethically important. An institution can invite a person to relate to it emotionally while retaining the freedom to respond financially. The invitation may be sincere at the level of individual managers. The freedom may be built into the structure. Sincerity does not remove the mismatch.
@@ -133,6 +139,14 @@ I find that asymmetry ethically important. An institution can invite a person to
 Consider a hypothetical chain of work. A leadership team sets a margin target. A finance team translates it into a budget. A manager translates the budget into staffing. A product team translates staffing into a service design. A support agent delivers the result to a customer. Each person may understand their own task. None may feel responsible for the whole experience.
 
 The point is not that dividing work is wrong. Complex organizations could not function without division. The problem appears when responsibility is divided more completely than consequences. The customer receives one outcome. The institution offers five explanations, each pointing to another part of the chain.
+
+<figure class="story-scene handoff-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>Responsibility has to survive the handoff</span><span>The chapter’s hypothetical chain</span></div>
+<h2>Five reasonable tasks.<br>One lived outcome.</h2>
+<div class="handoff-chain"><details><summary><span>01</span>Leadership</summary><p>Sets a margin target.</p></details><details><summary><span>02</span>Finance</summary><p>Translates the target into a budget.</p></details><details><summary><span>03</span>Management</summary><p>Translates the budget into staffing.</p></details><details><summary><span>04</span>Product</summary><p>Translates staffing into a service design.</p></details><details><summary><span>05</span>Support</summary><p>Delivers the result to the customer.</p></details></div>
+<div class="handoff-person"><span aria-hidden="true">↓</span><p>The person at the end<br>receives the whole consequence.</p></div>
+<figcaption>Open each handoff. Division of work is necessary; division of responsibility can leave the outcome unowned. No single-villain explanation is required.</figcaption>
+</figure>
 
 An automated system can fit into any of those handoffs. It can estimate a budget, propose staffing, design a workflow, draft a response, or classify an appeal. It may make the handoff cleaner and faster. It may also make it easier for a human to treat the next step as already settled by an authoritative process.
 

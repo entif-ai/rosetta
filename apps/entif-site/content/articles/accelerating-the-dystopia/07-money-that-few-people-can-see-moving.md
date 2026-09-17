@@ -96,6 +96,13 @@ Expertise is necessary. Dependence on expertise also gives the explanation unusu
 
 The fiscal baseline can be stated more directly. CBO projects federal debt held by the public rising from 101% of GDP in 2026 to 120% in 2036. It projects net interest outlays increasing from about $1.0 trillion and 3.3% of GDP to about $2.1 trillion and 4.6% of GDP. These are conditional baseline projections, not outcomes already observed. [S136]
 
+<figure class="story-scene fiscal-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>Room for future choices</span><span>CBO conditional baseline / not observed outcomes</span></div>
+<h2>Interest competes<br>with everything else.</h2>
+<div class="fiscal-table"><div class="fiscal-years"><span>Projected measure</span><strong>2026</strong><strong>2036</strong></div><div><span>Debt held by the public<br><small>Percent of GDP</small></span><strong>101%</strong><strong>120%</strong></div><div><span>Net interest outlays<br><small>Percent of GDP</small></span><strong>3.3%</strong><strong>4.6%</strong></div><div><span>Net interest outlays<br><small>Nominal dollars</small></span><strong>≈$1.0T</strong><strong>≈$2.1T</strong></div></div>
+<figcaption>Endpoint projections quoted in the chapter; no annual path is interpolated. This is not a claim that the United States is presently unable to service its debt. <a href="etr-source:S136">CBO baseline · S136 ↗</a></figcaption>
+</figure>
+
 The responsible conclusion is not that the United States is presently unable to pay its interest.
 
 The responsible conclusion is that interest increasingly competes with everything else.
@@ -131,6 +138,14 @@ For an illustrative Treasury buyback, suppose Treasury repurchases an outstandin
 If the transaction is paired with an equal amount of short-term issuance, the private sector's exposure to long-duration government debt may decline. If it is paired with comparable long-term issuance, much of that duration can return. If the operation mainly replaces a less liquid security with a more liquid one, its most important effect may concern market functioning rather than a large change in aggregate duration.
 
 These are simplified cases. They show why a headline about the dollar size of buybacks does not identify the whole operation. Gross purchases are not the same as net debt retirement. A maturity bucket is not a complete measure of interest-rate risk. A scheduled maximum is not the amount actually accepted in an operation.
+
+<figure class="story-scene balance-sheet-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>Follow the balance sheets</span><span>Simplified operations / not identical policies</span></div>
+<h2>Similar channel.<br>Different machinery.</h2>
+<div class="balance-lanes"><div class="balance-lane"><span class="machine-label">Treasury buyback</span><div class="balance-transfer"><strong>Outstanding<br>Treasury bond</strong><span aria-hidden="true">→</span><strong>Treasury</strong></div><p>The seller receives payment. Treasury finances its overall cash needs through available cash and financing operations.</p><details><summary>What accompanies the purchase?</summary><p>Short-term issuance can reduce private-sector duration exposure. Comparable long-term issuance can put duration back. Gross purchases alone do not establish net debt retirement.</p></details></div><div class="balance-lane"><span class="machine-label">Federal Reserve purchase</span><div class="balance-transfer"><strong>Security</strong><span aria-hidden="true">→</span><strong>Central-bank<br>balance sheet</strong></div><p>Settlement involves bank reserves; when a nonbank sells, its bank deposit is also part of the chain.</p><details><summary>Is the purchase price a gift?</summary><p>No. The seller exchanges an asset for another claim. Any gain in wealth requires a separate account of price, risk or other financial effects.</p></details></div></div>
+<div class="balance-common"><span aria-hidden="true">↘ &nbsp; ↙</span><p>Both can affect the duration<br>held in private portfolios.</p></div>
+<figcaption>The net effect depends on financing, maturity, timing, scale and the counterfactual. A shared channel does not erase institutional or legal differences. <a href="etr-source:S129">Treasury · S129</a> · <a href="etr-source:S132">Federal Reserve · S132</a> · <a href="etr-source:S134">Maturity transformation · S134</a></figcaption>
+</figure>
 
 For a simplified Federal Reserve purchase, the central bank acquires a security and the banking system receives reserve balances as settlement occurs. When a nonbank sells, the seller's bank deposit and the bank's reserve position are part of the settlement chain. The details matter for liquidity and portfolio choice. They do not mean that the seller receives a gift equal to the purchase price: the seller has exchanged an asset for another claim. [S132][S134]
 

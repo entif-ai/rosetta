@@ -24,6 +24,16 @@ The argument about Costco was useful because I was wrong about the accounting an
 
 I had treated roughly $275 billion as profit. It was revenue. Costco's 2025 net income was about $8.1 billion. [S120] Gross sales are not a pool of profit. Merchandise costs, wages, operating expenses, and taxes reduce earnings. Capital expenditure also uses cash, but it is not simply another current expense in the income statement. You cannot calculate labor's share of "created value" by taking payroll as a percentage of gross sales and calling everything else hoarding.
 
+<figure class="story-scene accounting-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>The correction matters</span><span>Costco / fiscal 2025 / rounded chapter figures</span></div>
+<h2>Revenue is not profit.</h2>
+<div class="accounting-numbers"><div><span class="machine-label">Revenue</span><p>≈$275<span>billion</span></p></div><span class="accounting-not" aria-hidden="true">≠</span><div><span class="machine-label">Net income</span><p>≈$8.1<span>billion</span></p></div></div>
+<div class="revenue-strip" role="img" aria-label="Net income is approximately 2.9 percent of revenue, using the rounded figures quoted in the chapter."><span></span></div>
+<p class="accounting-ratio"><span aria-hidden="true">↳</span> About 2.9% of revenue is net income—not the whole bar.</p>
+<details class="accounting-note"><summary>Where does capital expenditure fit?</summary><p>Capital expenditure uses cash. It is not simply another current expense in the income statement. Revenue, earnings, and cash flow are different accounts.</p></details>
+<figcaption>The ratio is arithmetic from the chapter’s rounded values, not a measure of labor’s share of created value. No cost-category breakdown is inferred. <a href="etr-source:S120">Company filing · S120 ↗</a></figcaption>
+</figure>
+
 That correction matters. I do not want an essay about epistemic manipulation to commit the same sin by using an emotionally satisfying number after the accounting underneath it has failed.
 
 But the deeper question survives intact:
@@ -115,6 +125,12 @@ Imagine a small design business with ten employees. A new tool reduces the time 
 These are possible arrangements, not forecasts. They show why a task-level speedup cannot be read directly as a wage increase, a profit increase, or a job loss. The tool changes what is feasible. Markets and institutions shape which feasible arrangement becomes actual.
 
 The published study _Generative AI at Work_ offers a concrete example of a real gain. Brynjolfsson, Li, and Raymond examine a staggered rollout among 5,172 customer-support agents and report an average increase of about 15% in issues resolved per hour, with larger benefits for less experienced and lower-skilled workers. The rollout provides evidence about that workplace and task. It is not a randomized measurement of the whole economy, and it does not establish that every minute saved became additional pay or leisure. [S201]
+
+<figure class="story-scene productivity-evidence-scene" data-test-id="editorial-scene">
+<div class="scene-overline"><span>A real gain, within its actual scope</span><span>Workplace evidence</span></div>
+<div class="productivity-evidence"><div><p class="evidence-number">≈15<span>%</span></p><h2>More issues resolved<br>per hour.</h2></div><div class="evidence-boundary"><span class="machine-label">The study boundary</span><p><strong>5,172</strong> customer-support agents.</p><p>A staggered rollout in the studied workplace and task; larger benefits for less experienced and lower-skilled workers.</p><div class="evidence-open-question">The result does not tell us<br>who kept every minute saved.</div></div></div>
+<figcaption>Not a randomized measurement of the whole economy, a universal wage effect, or proof of extra leisure. <a href="etr-source:S201">Generative AI at Work · S201 ↗</a></figcaption>
+</figure>
 
 The study is valuable precisely because it does not need to be turned into a universal promise. It shows that useful complementarity is possible. My question begins after that result: through what arrangement does the benefit reach the people whose work changed?
 
