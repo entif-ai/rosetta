@@ -5,7 +5,7 @@
   'title': 'Can Semantically Typed Operands Make Cognition Local?',
   'description': 'A question about KANs opens into a larger architecture: typed semantic state, parallel decisions, local learned functions, cognitive compilation, and governed persistent learning.',
   'kind': 'essay',
-  'status': 'draft',
+  'status': 'published',
   'published': '2026-09-18',
   'authors': ['Crates McDade'],
   'tags':
@@ -27,7 +27,7 @@
     ],
   'sourceRefs':
     [
-      'ETR-2026-05 - Prepaying Semantics',
+      'entif.research.prepaying-semantics',
       'ETR-2026-09 - Forget Me Not - Stage 2 research draft',
       'https://typesafe.ai/blog/introducing-system-one-models-and-jev',
       'https://github.com/NandhaKishorM/laya',
@@ -39,8 +39,7 @@
       'https://arxiv.org/abs/2412.06769',
       'https://arxiv.org/abs/2402.17764',
     ],
-  'featured': false,
-  'noindex': true,
+  'featured': true,
 }
 ---
 
