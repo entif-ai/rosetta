@@ -59,9 +59,6 @@
   color: var(--canvas);
   font-weight: 300;
 }
-.story-scene.category-scene figcaption {
-  color: var(--ink);
-}
 .scene-choice {
   border: 0;
   padding: 0;

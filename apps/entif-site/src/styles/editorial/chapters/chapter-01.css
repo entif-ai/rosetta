@@ -1,4 +1,10 @@
 /* Chapter 1: an institutional machine, incompatible measures, and the human bargain. */
+.story-scene.category-scene figcaption, 
+.story-scene.substrate-scene figcaption, 
+.story-scene.resolution-scene figcaption, 
+.story-scene.bargain-scene figcaption {
+  color: var(--ink);
+}
 .story-scene.optimizer-scene {
   background: var(--scene-night);
   color: var(--scene-paper);
