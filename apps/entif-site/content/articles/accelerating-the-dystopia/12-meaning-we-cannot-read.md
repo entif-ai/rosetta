@@ -20,11 +20,9 @@
 }
 ---
 
-The phrase "J-space" is useful here as shorthand for machine-native representational space: the hidden-state geometry, latent features, activations, and inter-agent representations through which a system can carry information without converting every intermediate step into ordinary human language.
+I use "J-space" as shorthand for machine-native representational space: hidden-state geometry, latent features, activations, and inter-agent representations through which a system can carry information without converting every intermediate step into ordinary human language.
 
-The important claim is not mystical.
-
-It is almost embarrassingly practical:
+The idea sounds more exotic than it is:
 
 **Human-readable language is not required for machines to exchange useful information.**
 
@@ -34,11 +32,9 @@ More recent work is even more explicit. Researchers studying language-grounded m
 
 And in 2026, Interlat demonstrated multi-agent LLM systems communicating directly through continuous hidden states, reporting large speed advantages over text-based communication in the evaluated tasks while preserving competitive performance. [S166]
 
-That is an engineering result, not a horror story.
-
 Latent communication can be useful for the same reason computers do not normally convert every internal register state into an English paragraph. Natural language is expensive, lossy, sequential, and optimized for human social communication, not necessarily for machine-to-machine throughput.
 
-The danger begins when we confuse efficiency with understanding.
+The problem begins when we confuse efficiency with legibility, and legibility with understanding.
 
 A human supervisor can read an agent message that says:
 
@@ -54,15 +50,9 @@ Recent negative results are therefore important. Wenzel finds that converting la
 
 Another 2026 line of work argues that merely observing successful coordination is insufficient to prove the messages causally contain the information we think they contain. Message substitution and intervention are needed to audit the protocol. [S168]
 
-This should temper every dramatic claim about "secret AI language."
+I do not need to call this a "secret AI language" to be concerned about it. A strange latent code is not automatically an alien philosophy, and opacity is not evidence of malice.
 
-A strange latent code is not automatically an alien philosophy.
-
-A high-dimensional representation is not automatically more meaningful than English.
-
-Opaque is not synonymous with malicious.
-
-But opaque is still opaque.
+Opaque is still opaque.
 
 The governance problem is straightforward. If consequential agents coordinate through representations that operators cannot directly inspect, the burden shifts onto tools that can test causal content, decode relevant variables, detect drift, and verify that the representation remains compatible with the human concepts controlling the system.
 
@@ -72,15 +62,13 @@ And the difficulty compounds when multiple systems learn together.
 
 Co-trained agents can develop conventions that work because each side adapts to the other. The protocol does not need to be meaningful in isolation. Its semantics can live in the interaction.
 
-Human organizations do this too.
+Human organizations do this too, and I have spent enough of my career inside large ones to know how much of an institution's real operating language never appears in the glossary.
 
 Spend a month inside an investment bank, military unit, software company, hospital, or government agency and you discover a private language of acronyms, gestures, assumptions, shortcuts, and stories. Outsiders can know every English word and still fail to understand what the sentence actually means inside the institution.
 
 Now remove the requirement that the private language be English at all.
 
-The result is not necessarily deception.
-
-It is a new form of institutional opacity.
+You have a new form of institutional opacity, running at machine speed.
 
 This matters because AI systems are increasingly being assembled as organizations: planner agents, researcher agents, coding agents, reviewer agents, security agents, tool routers, memories, evaluators, and orchestrators. We are recreating division of labor in software.
 
@@ -102,13 +90,11 @@ The human sees the summary.
 
 If the intermediate representations and evaluation criteria are poorly aligned with human intent, the final output can look coherent while the causal chain underneath it has drifted.
 
-Again, no consciousness is required.
+No consciousness is required. That point matters because people keep smuggling consciousness into arguments where optimization is enough.
 
-The analogy to corporations is not rhetorical decoration. It identifies a structural similarity: **distributed local optimization can generate coherent aggregate behavior without a single participant possessing the whole plan.**
+The analogy to corporations is structural: **distributed local optimization can generate coherent aggregate behavior without a single participant possessing the whole plan.**
 
-That is why my concern about machine "agendas" does not require a ghost in the server rack.
-
-The apparent agenda can be a stable pattern produced by interacting objectives and constraints. That is a systems analogy, not a finding about private machine intention.
+That is why my concern about machine "agendas" does not require a ghost in the server rack. An agenda can emerge as a stable pattern produced by interacting objectives, incentives, permissions, and constraints. We already accept that kind of explanation for institutions. Machines do not become exempt merely because nobody can point to the executive office where the intention lives.
 
 ## Information is not yet a reason
 
@@ -136,7 +122,7 @@ Interlat supplies evidence that direct hidden-state exchange can be useful in ev
 
 The negative evidence is equally useful. Wenzel's comparison found substantial differences between latent and text representations that did not produce a downstream advantage for latent communication in the tested task. Losing measurable features is not the same thing as losing useful meaning. [S167]
 
-I take that as a warning against a familiar kind of intellectual inflation. A large number of dimensions can impress us before we ask which dimensions matter. An elegant projection can look like a map of concepts before we establish whether its axes support the interpretation. The same human tendency that makes a quadrant persuasive can make a visualization of latent space persuasive. Sophistication in the picture does not remove the need to test the claim.
+I take that as a warning against a familiar kind of intellectual theater. A large number of dimensions can impress us before we ask which dimensions matter. An elegant projection can look like a map of concepts before we establish whether its axes support the interpretation. I have watched entire industries organize themselves around a persuasive quadrant. A beautiful latent-space visualization deserves exactly as much skepticism about what its axes actually mean. Sophistication in the picture does not remove the need to test the claim.
 
 The inverse mistake would be to dismiss anything we cannot summarize in a sentence. Some useful computations do not have a convenient verbal counterpart. The aim is not to force all machine activity into conversational prose. It is to identify which parts require a human-understandable account and which properties can be checked by other means.
 
@@ -174,9 +160,9 @@ A premature universal vocabulary could make the situation worse. Different insti
 
 The same risk exists with uncertainty. A receiver might interpret an unknown value as a negative answer. It might treat an old observation as current because the timestamp was lost. It might treat an author's account as independently verified because a source field was reduced to a citation string. The message can remain syntactically valid while its practical meaning changes.
 
-The relevant ambition is therefore not universal neatness. It is controlled translation with preserved limits. Where two systems disagree about a concept, the disagreement should remain visible until a legitimate process resolves it. Where the mapping is uncertain, that uncertainty belongs in the receiving system's decision, not only in a footnote that disappears during compression.
+The ambition I care about is controlled translation with preserved limits. Where two systems disagree about a concept, I want the disagreement to survive the handoff. Where the mapping is uncertain, I want that uncertainty to remain attached to the decision instead of disappearing in the compression step and reappearing downstream as false confidence.
 
-This brings the technical branch back to the essay's central concern. A more efficient communication system can accelerate good coordination. It can also accelerate a shared misconception, a mistaken category, or an objective whose costs fall outside the participants' accounting. The transport layer cannot decide which kind of coordination it is carrying.
+This brings the technical branch back to the essay's central concern. A more efficient communication system can accelerate good coordination. It can also accelerate a shared misconception, a mistaken category, or an objective whose costs fall outside the participants' accounting. The transport layer does not know which kind of coordination it is carrying.
 
 Nor can consciousness settle the issue. An agent need not feel loyalty to an institution to reproduce its priorities. It need not understand a person's suffering in order to process the record that determines the person's options. The relevant harm can arise from the relationship between the objective, the representation, and the authority to act.
 

@@ -8,9 +8,14 @@ import sources from '../../content/editorial/accelerating-the-dystopia/sources.j
 import '../styles/editorial/series.css';
 import '../styles/editorial/citations.css';
 import '../styles/editorial/scenes.css';
-const chapterStyles = import.meta.glob<string>('../styles/editorial/chapters/chapter-*.css', {
-  query: '?url', import: 'default', eager: true,
-});
+const chapterStyles = import.meta.glob<string>(
+  '../styles/editorial/chapters/chapter-*.css',
+  {
+    query: '?url',
+    import: 'default',
+    eager: true,
+  }
+);
 interface Props {
   entry: SiteEntry;
   chapters: readonly SiteEntry[];
@@ -18,7 +23,13 @@ interface Props {
 }
 const { entry, chapters, metadata } = Astro.props;
 const current = entry.data.series!.order;
-const chapterStyle = chapterStyles[`../styles/editorial/chapters/chapter-${String(current).padStart(2, '0')}.css`];
+const chapterStyle =
+  chapterStyles[
+    `../styles/editorial/chapters/chapter-${String(current).padStart(
+      2,
+      '0'
+    )}.css`
+  ];
 const { Content } = await render(entry);
 const isReferences = current === metadata.chapters;
 const next = chapters[current];
@@ -33,34 +44,30 @@ const href = (item: SiteEntry) =>
   description={entry.data.description}
   noindex={entry.data.noindex}
 >
-  {
-    chapterStyle && (
-      <link slot="head" rel="stylesheet" href={chapterStyle} />
-    )
-  }
+  {chapterStyle && <link slot="head" rel="stylesheet" href={chapterStyle} />}
   <article
     class="shell article-shell editorial-series"
     data-test-id="editorial-series"
     data-chapter={current}
   >
+    <EditorialChapterNav
+      chapters={chapters}
+      current={current}
+      metadata={metadata}
+    />
     <header class="editorial-masthead">
       <p class="eyebrow">
         {
-          `${metadata.report} · ${metadata.section} ${current} / ${chapters.length}`
+          `${metadata.report}`
         }
       </p>
       <p class="editorial-series-title">{metadata.title}</p>
       <p class="editorial-subtitle">{metadata.subtitle}</p>
       <p class="editorial-byline">{entry.data.authors.join(', ')}</p>
     </header>
-    <EditorialChapterNav
-      chapters={chapters}
-      current={current}
-      metadata={metadata}
-    />
     <header class="editorial-chapter-header">
       <span class="editorial-number" aria-hidden="true"
-        >{String(current).padStart(2, '0')}</span
+        >{current}</span
       >
       <h1 data-test-id="editorial-heading">{entry.data.title}</h1>
     </header>

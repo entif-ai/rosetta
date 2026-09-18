@@ -2,27 +2,46 @@
 .editorial-series {
   --editorial-measure: 44rem;
   --editorial-nav-height: 4.5rem;
-  padding-top: 2rem;
+  padding-top: 0;
   overflow-wrap: anywhere;
 }
 .editorial-masthead {
-  padding: 0.5rem 0 1.5rem;
-  max-width: 65rem;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+}
+.editorial-masthead .eyebrow {
+  font-size: clamp(1.357rem, 4vw, 2.69em);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--line);
 }
 .editorial-series-title {
-  font-size: 1.5rem;
-  font-weight: 750;
+  font-size: clamp(2.34em, 5vw, 5.7em);
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin: 0.5rem 0;
+  padding: 0 0 .5rem 0;
 }
-.editorial-subtitle {
-  max-width: 40rem;
-  font-size: 1rem;
+#main-content .editorial-series .editorial-masthead > .editorial-subtitle {
+  max-width: 60rem;
+  margin-inline: auto;
+  margin-top: -5px;
+  font-weight: 300;
+  font-size: 1.57rem;
+  font-size: clamp(1.44rem, 2vw, 1.57rem);
+  letter-spacing: -0.007em;
+  line-height: 1.19;
+  font-style: italic;
+  color: var(--muted);
 }
 .editorial-byline {
+  font-size: clamp(1.357em, 5vw, 2.69em);
   margin-top: 0.75rem;
   color: var(--muted);
+  text-shadow: 0px 1px 1px var(--line);
+  line-height: 1.19;
 }
 .editorial-nav {
   position: sticky;
@@ -40,6 +59,7 @@
 .editorial-nav a {
   min-width: 2.75rem;
   min-height: 2.75rem;
+  font-size: 1.45rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,13 +67,17 @@
   color: var(--ink);
   text-decoration: none;
   border-radius: 0.25rem;
+  font-family:
+    "Helvetica Neue",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 .editorial-nav a[aria-current='page'] {
   background: var(--ink);
   color: var(--surface);
   font-weight: 750;
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
 }
 .editorial-nav a:hover {
   background: var(--accent-soft);
@@ -63,25 +87,32 @@
   display: none;
 }
 .editorial-chapter-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: start;
-  gap: 2rem;
-  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 2.75rem;
+  text-align: center;
 }
 .editorial-number {
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(5.7rem, 12vw, 9.6rem);
   line-height: 0.9;
-  font-weight: 300;
+  font-weight: 700;
   color: var(--accent);
-  letter-spacing: -0.075em;
+  text-shadow: 0px 1px 1px var(--muted);
+  margin: 0 0 1rem;
 }
 .editorial-chapter-header h1 {
-  max-width: 17ch;
-  font-size: clamp(2rem, 4.5vw, 4rem);
-  line-height: 1.08;
+  color: var(--accent);
+  width: min(100%, 72rem);
+  max-width: none;
+  font-size: clamp(1.357em, 4vw, 3.57em);
+  line-height: 1.19;
   margin: 0;
   text-wrap: balance;
+  letter-spacing: 0.019em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 .editorial-beat {
   padding: 2.5rem 0;
@@ -93,20 +124,22 @@
 }
 .editorial-beat p,
 .editorial-beat li {
-  font-size: 1.125rem;
+  font-size: 1.44rem;
   line-height: 1.7;
 }
 .editorial-beat p {
   margin-block: 1.5rem;
 }
 .editorial-beat h2 {
-  max-width: 25ch;
+  width: min(100%, 56rem);
+  max-width: none;
   font-size: clamp(1.75rem, 3vw, 2.75rem);
   margin-block: 1rem 3rem;
+  margin-inline: auto;
   text-wrap: balance;
 }
 .editorial-beat:first-child > p:first-child {
-  max-width: 48rem;
+  max-width: 54rem;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: 1.4;
   margin-block: 0 3rem;
@@ -148,7 +181,7 @@
 }
 .editorial-reference-intro {
   max-width: var(--editorial-measure);
-  font-size: 1.125rem;
+  font-size: 1.45rem;
 }
 .editorial-references ol {
   list-style: none;
@@ -190,26 +223,31 @@
   .editorial-numbers {
     display: none;
   }
+  .editorial-beat p,
+  .editorial-beat li {
+    font-size: 1.23rem;
+    line-height: 1.4;
+  }
   .editorial-mobile-nav {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     gap: 0.5rem;
+    font-size: 1.44rem;;
   }
   .editorial-mobile-nav a {
-    font-size: 0.875rem;
-    min-width: 44px;
+    font-size: 1.27rem;
+    min-width: 57px;
   }
   .editorial-mobile-nav a:last-child {
     text-align: right;
   }
   .editorial-chapter-header {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding-block: 2.5rem;
+    gap: 0.75rem;
+    padding-block: 1.5rem 2rem;
   }
   .editorial-number {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .editorial-beat:nth-child(even) {
     padding-inline: 0;

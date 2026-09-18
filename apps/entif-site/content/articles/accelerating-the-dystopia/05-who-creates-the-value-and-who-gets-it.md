@@ -20,23 +20,9 @@
 }
 ---
 
-The argument about Costco was useful because I was wrong about the accounting and still right about the question.
+Accounting can tell us where money went under the rules we have.
 
-I had treated roughly $275 billion as profit. It was revenue. Costco's 2025 net income was about $8.1 billion. [S120] Gross sales are not a pool of profit. Merchandise costs, wages, operating expenses, and taxes reduce earnings. Capital expenditure also uses cash, but it is not simply another current expense in the income statement. You cannot calculate labor's share of "created value" by taking payroll as a percentage of gross sales and calling everything else hoarding.
-
-<figure class="story-scene accounting-scene" data-test-id="editorial-scene">
-<div class="scene-overline"><span>The correction matters</span><span>Costco / fiscal 2025 / rounded chapter figures</span></div>
-<h2>Revenue is not profit.</h2>
-<div class="accounting-numbers"><div><span class="machine-label">Revenue</span><p>≈$275<span>billion</span></p></div><span class="accounting-not" aria-hidden="true">≠</span><div><span class="machine-label">Net income</span><p>≈$8.1<span>billion</span></p></div></div>
-<div class="revenue-strip" role="img" aria-label="Net income is approximately 2.9 percent of revenue, using the rounded figures quoted in the chapter."><span></span></div>
-<p class="accounting-ratio"><span aria-hidden="true">↳</span> About 2.9% of revenue is net income—not the whole bar.</p>
-<details class="accounting-note"><summary>Where does capital expenditure fit?</summary><p>Capital expenditure uses cash. It is not simply another current expense in the income statement. Revenue, earnings, and cash flow are different accounts.</p></details>
-<figcaption>The ratio is arithmetic from the chapter’s rounded values, not a measure of labor’s share of created value. No cost-category breakdown is inferred. <a href="etr-source:S120">Company filing · S120 ↗</a></figcaption>
-</figure>
-
-That correction matters. I do not want an essay about epistemic manipulation to commit the same sin by using an emotionally satisfying number after the accounting underneath it has failed.
-
-But the deeper question survives intact:
+It cannot tell us, by itself, whether those rules produce a just claim on what remains.
 
 **Why does the legal residual claim establish the morally correct residual claim?**
 
@@ -128,7 +114,7 @@ The published study _Generative AI at Work_ offers a concrete example of a real 
 
 <figure class="story-scene productivity-evidence-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>A real gain, within its actual scope</span><span>Workplace evidence</span></div>
-<div class="productivity-evidence"><div><p class="evidence-number">≈15<span>%</span></p><h2>More issues resolved<br>per hour.</h2></div><div class="evidence-boundary"><span class="machine-label">The study boundary</span><p><strong>5,172</strong> customer-support agents.</p><p>A staggered rollout in the studied workplace and task; larger benefits for less experienced and lower-skilled workers.</p><div class="evidence-open-question">The result does not tell us<br>who kept every minute saved.</div></div></div>
+<div class="productivity-evidence"><div><p class="evidence-number">≈15<span>%</span></p><h2>More issues resolved per hour.</h2></div><div class="evidence-boundary"><span class="machine-label">The study boundary</span><p><strong>5,172</strong> customer-support agents.</p><p>A staggered rollout in the studied workplace and task; larger benefits for less experienced and lower-skilled workers.</p><div class="evidence-open-question">The result does not tell us who kept every minute saved.</div></div></div>
 <figcaption>Not a randomized measurement of the whole economy, a universal wage effect, or proof of extra leisure. <a href="etr-source:S201">Generative AI at Work · S201 ↗</a></figcaption>
 </figure>
 
@@ -162,9 +148,11 @@ That matters when the worker's knowledge helps train or improve a system. The fi
 
 Nor is contribution always easy to assign. Knowledge accumulates through teams, institutions, tools, and earlier work. A simplistic calculation that credits every output to one person would be as misleading as one that credits everything to the owner of the final interface. Cooperative production makes the attribution problem difficult. It does not make the distributional question disappear.
 
-My mistake about Costco's revenue was an example of what happens when moral urgency outruns accounting. The repair is to use the accounts correctly, not to abandon the ethical question. Revenue is not distributable profit. Net income is not the same as cash available for immediate distribution. Capital spending and working-capital needs matter. None of those distinctions supplies a complete theory of what each participant deserves. [S120]
+The accounting still matters. Revenue is not distributable profit. Net income is not the same as cash available for immediate distribution. Capital spending and working-capital needs matter. If the arithmetic is wrong, fix the arithmetic.
 
-I want the argument to remain uncomfortable after the arithmetic is right.
+Then ask the harder question anyway.
+
+None of those accounting distinctions supplies a complete theory of what each participant deserves. The books can be immaculate while the argument over ownership, bargaining power, risk, time, and contribution remains completely open.
 
 ## Transition has a clock
 
@@ -176,7 +164,7 @@ Those questions are often treated as details after the economic forecast. For a 
 
 The same applies inside a firm. A tool may require new checking, new training, and a period of lower output before it becomes useful. A narrow comparison between the old workflow and an idealized mature workflow can omit the work needed to get from one to the other. A claimed saving should therefore be examined over an appropriate time horizon rather than only at the moment of a successful demonstration.
 
-This is not an argument against adopting useful tools. It is an argument for counting the work and risk of adoption where they actually occur. Otherwise the organization can describe a saving that depends on employees supplying unpaid transition labor or customers tolerating temporary failures.
+Useful tools still have transition costs. Count the work and risk where they actually occur. Otherwise the organization can describe a saving that depends on employees supplying unpaid transition labor or customers tolerating temporary failures.
 
 ## The bargain remains a human question
 
@@ -184,6 +172,6 @@ There is no single distributional arrangement implied by intelligence. A more ca
 
 That last point is easy to miss. AI is not only an input into production. It can become part of negotiation, monitoring, hiring, pricing, and the description of what work is worth. A tool that helps an employee perform a task may be paired with a tool that measures the employee against a moving target. The first capability does not settle the effects of the second.
 
-I return here to the person who works a month of extraordinary hours because the work feels meaningful. I recognize that person because I have been that person. A new tool might have relieved some of the pressure. It might also have raised expectations about what I could deliver. The difference would have depended on the relationship around the tool, not only on the tool's speed. [S187]
+I return here to the month I worked more than 300 hours because the work felt meaningful and I believed the sacrifice would come back to me somehow. A new tool might have relieved some of the pressure. It might also have raised expectations about what I could deliver. The difference would have depended on the relationship around the tool, not only on the tool's speed.
 
 That is the practical meaning of the distributional question. It is not an abstract dispute about whether technology creates value. It asks whether the people participating in that creation gain more control over their lives, or whether the institution simply acquires a more efficient way to ask for more.

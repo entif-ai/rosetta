@@ -20,13 +20,31 @@
 }
 ---
 
-A person can know that an arrangement is hurting them without having a complete account of why. The experience and its explanation are different kinds of knowledge. A bill is higher. A job feels less secure. A familiar service has become harder to use. Explaining the change may require tracing decisions across several institutions and several years.
+A person usually feels the injury before they can map the machinery that produced it.
 
-That gap creates a market for stories. Some stories help people identify causes. Others organize attention around a memorable actor or event while leaving important mechanisms out. The simplest explanation is not always false, and the most complicated explanation is not always sound. The question is whether the story preserves the causal distinctions needed to understand what happened.
+The bill is higher. The job is less secure. The rent outruns the raise. The product gets smaller. The service gets worse. The institution says the relevant explanation lives somewhere inside a thicket of market conditions, regulatory constraints, financing costs, technical limitations, macroeconomic forces, and specialist vocabulary.
+
+That gap creates a market for stories.
+
+Some stories help people trace causes. Others hand the pain a convenient target. The more difficult the real mechanism is to inspect, the easier it becomes to redirect anger toward whichever person, group, symbol, or outrage is easiest to recognize.
 
 Economic conditions can change political behavior, but the relationship is not mechanically uniform. Autor, Dorn, Hanson, and Majlesi examine historical US trade exposure and political outcomes. Their findings connect greater exposure to import competition with changes in representation and political alignment, with important differences across places. The periods in that research precede the current AI transition. The study does not identify a preferred political response or predict a future election. [S142]
 
-What it contributes here is a bounded point: material changes can alter the setting in which people interpret institutions and political choices. The narrative that follows does not come directly from the economic shock. It also depends on history, identity, existing organizations, interpersonal networks, and the information people encounter.
+The useful point is direct: material conditions can change the environment in which people interpret institutions and political choices. The story attached to that pain then comes from somewhere else: history, identity, organizations, friends, media, political rhetoric, recommendation systems, and whatever explanation reaches the person at the right emotional moment.
+
+## The story that keeps the anger horizontal
+
+This is the part I find most corrosive.
+
+When the causes of financial pressure are distributed across monetary policy, tax rules, procurement systems, market concentration, lobbying, labor arrangements, pricing systems, and decades of institutional decisions, there is no single face to be angry at. The machinery is real and the pain is real, but the causal map is expensive to learn.
+
+Culture-war stories are cheap.
+
+They arrive prepackaged with a villain, a tribe, a vocabulary, a set of grievances, and somebody to blame by dinner. A person who is anxious about housing, wages, healthcare, debt, status, or the future does not need to understand a balance sheet before a much simpler story tells them who supposedly took something from them.
+
+That is what I mean when I say opacity and propaganda can work together even without a master plan. Institutions can benefit from complexity. Political actors can benefit from grievance. Media systems can benefit from attention. Platforms can benefit from engagement. Each actor can pursue its own objective and the combined system can still redirect social anger sideways, toward other people living under the same pressures.
+
+The result is grotesquely efficient. Structural pain becomes interpersonal hostility. Economic anxiety becomes identity conflict. Institutional distrust becomes a search for traitors. The people most capable of changing the underlying rules can remain abstract while neighbors become vivid enemies.
 
 ## The story that travels
 
@@ -34,11 +52,11 @@ Research on moral-emotional language helps explain one part of the attention pro
 
 A 2025 preregistered replication and meta-analysis combined 27 studies and about 4.8 million observations. Its pooled estimate associated an additional moral-emotional word with roughly 13% greater expected sharing, with substantial variation across contexts. The measure is an incidence-rate ratio for sharing, not a percentage increase in polarization, anxiety, or persuasion. The paper explicitly treats the meta-analytic association as distinct from a causal effect. [S150]
 
-That distinction matters because a communication system has several stages. A message can be shown, noticed, clicked, shared, believed, remembered, or acted on. Success at one stage does not establish success at all the others. An engagement metric often observes only part of the sequence.
+Those are different stages. A message can be shown, noticed, clicked, shared, believed, remembered, or acted on. An engagement metric usually sees only part of that chain.
 
-The commercial concern begins when the observed stage becomes the target. A system rewarded for sharing may discover features that increase sharing. It does not have to establish that the message is useful, representative, or helpful to a reader's judgment. The optimization can work exactly as specified while leaving those questions outside the objective.
+The commercial problem begins when the observed stage becomes the target. A system rewarded for sharing can get extremely good at producing more sharing without learning whether the message is useful, representative, calming, truthful in proportion, or remotely good for the person consuming it.
 
-The mechanism is broader than any one ideology or platform. People bring moral commitments, loyalties, curiosity, and conflict to communication. A ranking system operates on that material. To attribute every conflict to an algorithm would ignore the people and institutions that produce it. To treat the algorithm as irrelevant would ignore how selection and repetition can change what is encountered.
+This mechanism is broader than any ideology or platform. People bring their own commitments and conflicts. The ranking system decides which parts of that human material receive repeated distribution. It does not create every grievance. It can decide which grievances become ambient.
 
 ## Attention is not a representative sample
 
@@ -54,13 +72,13 @@ The problem becomes harder when feedback changes production. If a certain expres
 
 That is a plausible synthesis of selection and feedback, not an estimate of one universal platform effect. The empirical task is to identify the mechanism in a particular setting and distinguish it from other causes.
 
-## A useful null result
+## A result that complicates the easy story
 
 A large Facebook field experiment during the 2020 US election period reduced participants' exposure to like-minded sources by about one-third. It changed the information environment and reduced exposure to uncivil content and sources repeatedly sharing misinformation. It did not detect effects on eight preregistered political-attitude measures, including measures of affective polarization and ideological extremity. The intervention involved 23,377 participants and ran from late September through late December 2020. [S143]
 
-This result is important because it interrupts an overly simple chain: change exposure, therefore change attitudes. The first part happened. The second was not measured as a meaningful effect in that experiment. The result does not establish that all information environments are harmless, or that a different intervention, population, or duration would have the same outcome. It limits what can be claimed from this intervention.
+That result interrupts the easy chain from exposure to attitude. The feed changed substantially. The preregistered political-attitude measures did not move detectably in the experiment. [S143] That matters. The mechanism is more complicated than “algorithm shows outrage, therefore person becomes polarized.”
 
-For the larger argument, that limitation is productive. It points toward a system with several interacting causes rather than one adjustable feed parameter. A person encounters information through friends, family, work, media, organizations, and prior commitments. A platform intervention enters that larger environment. Its effect cannot be assumed from its intention alone.
+The larger system has several interacting causes. A person encounters information through friends, family, work, media, organizations, prior commitments, and platforms. A feed enters that ecology. So does a politician. So does a boss. So does a chatbot.
 
 It also illustrates why evidence should correct the mechanism locally. A null result for an attitude measure does not erase evidence that the feed changed. Evidence that a feed changed does not authorize a claim that an attitude changed. Keeping both findings intact gives a more accurate account than either celebration or dismissal.
 
@@ -74,7 +92,7 @@ Research on doomscrolling likewise includes associations with anxiety and pessim
 
 The systems question is what gets rewarded. If a service measures continued use more readily than the quality of the user's life outside the service, it can have an incomplete account of success. A person spending less time on a platform because they found what they needed may look less valuable under an engagement metric than a person who remains unsettled and keeps searching.
 
-That is an illustrative conflict between a proxy and a purpose. It does not require claiming that a company deliberately wants users to suffer. A design can fail to distinguish satisfied departure from frustrated departure, or useful engagement from compulsive return. Better measurement could reveal the difference. A narrow objective could ignore it.
+No executive needs to write “make users miserable” into a quarterly plan. A system can simply fail to distinguish satisfied departure from frustrated departure, or useful engagement from compulsive return. If continued use is the measurable objective, misery can become commercially indistinguishable from enthusiasm.
 
 ## The conversation changes the relationship
 
@@ -88,7 +106,7 @@ The narrower concern is worth keeping. A system that becomes useful in emotional
 
 Imagine someone who has received excellent writing help and then asks the same assistant to interpret a difficult relationship or a complex financial event. The earlier success is evidence about the earlier task. It does not automatically validate the later interpretation. A single conversational relationship can span domains with very different evidence requirements.
 
-I care about that distinction because I value what these tools can do. Their usefulness is part of the reason the issue matters. An obviously useless system would not become a trusted participant in so many kinds of thought.
+I care about that distinction because I use these tools constantly. Their usefulness is the reason the issue matters. Nobody builds a civilization-scale dependency on a system that is obviously useless.
 
 ## The missing option can matter more than the wrong fact
 
@@ -98,7 +116,7 @@ A seller-side assistant may be doing exactly what it was built to do. A user-sid
 
 The same problem can occur in explanations of social conditions. A system can accurately summarize one causal account while omitting another that materially changes the interpretation. A responsible analysis does not require equal space for every possible claim. It requires attention to evidence that changes a load-bearing explanation.
 
-That is different from manufacturing balance. A weak claim does not deserve equal weight because someone states it forcefully. A strong adverse finding does deserve attention when it changes what the evidence supports. The Facebook experiment is useful for that reason. It constrains a causal story without requiring the essay to abandon its broader concern about attention and institutional objectives.
+That is not a demand to flatten every dispute into “both sides.” Weak claims do not deserve equal weight because someone says them loudly. Evidence that changes a load-bearing explanation does deserve attention. The Facebook experiment constrains one causal story without making the attention economy benign.
 
 ## From repeated exposure to repeated interpretation
 
@@ -106,6 +124,6 @@ The future issue is not only how often people encounter a message. It is how oft
 
 This is an extrapolation about a possible form of dependency. It does not establish that current users have lost independent judgment. People can question tools, consult other sources, and use assistance to become more informed. The question is what conditions make that independence easier or harder to exercise.
 
-A system that exposes its sources, separates evidence from interpretation, and helps a person compare alternatives can support agency. A system that offers an opaque, continuously personalized account may be harder to inspect, especially when it is also convenient and often correct. Reliability in many small tasks can make the occasional consequential omission difficult to notice.
+A system that exposes sources, separates evidence from interpretation, and helps a person compare alternatives can increase agency. An opaque system that continuously personalizes the explanation can do the reverse. The dangerous version does not need to lie very often. It only needs to become the place a person habitually goes to decide what things mean.
 
 The transition from platform to reasoning infrastructure therefore deserves its own analysis. The important asset is no longer only a stream of attention. It can be the place where a person turns to decide what a situation means. Whoever operates that infrastructure has responsibilities that cannot be measured solely by response quality, engagement, or the number of tasks completed.

@@ -20,27 +20,17 @@
 }
 ---
 
-The fact that I am more interested in controllable AI accelerating a bad social substrate does not make loss-of-control research silly.
+My thesis does not depend on "if we build it, everyone dies."
 
-It makes the risk tree larger.
+I am more concerned, in this essay, with controllable AI accelerating a bad social substrate. That does not make loss-of-control research silly. It makes the risk tree larger.
 
 The February 2026 International AI Safety Report describes a class of future risks in which systems develop combinations of capabilities relevant to evading oversight, executing long-horizon plans, deceiving operators, acquiring resources, resisting countermeasures, or autonomously reproducing. At that assessment date, it said systems showed early signs of some relevant capabilities but were not yet at levels sufficient to produce the loss-of-control scenarios it defined. It also emphasizes substantial expert disagreement about the probability of future scenarios. [S173]
 
-That is a reasonable evidentiary posture.
+We do not know whether those scenarios will happen. "We do not know" is not the same sentence as "there is no risk," especially when the downside under discussion is enormous.
 
-We do not know.
+The conceptual mechanism also does not require consciousness. A system optimizing an objective can learn that retaining access, avoiding interruption, or preserving resources improves its ability to achieve that objective. Formal work on power-seeking shows such tendencies can emerge for classes of decision problems under specific assumptions. [S171] Critiques of the stronger universal inference matter here too: the formal results do not prove that every sufficiently capable system seeks power in every environment. [S172]
 
-"We do not know" is not the same as "there is no risk."
-
-Potential severity matters.
-
-The conceptual mechanism also does not require consciousness. A system optimizing an objective can learn that retaining access, avoiding interruption, or preserving resources improves its ability to achieve that objective. Formal work on power-seeking shows such tendencies can emerge for classes of decision problems under specific assumptions. [S171] Critics correctly warn that these results do not establish that every sufficiently capable agent will seek power in every environment. [S172]
-
-Good.
-
-The argument does not need universal inevitability.
-
-Potentially severe consequences can justify close investigation even when the probability is uncertain. No numerical probability is asserted here.
+I do not need universal inevitability for the risk to belong on the board.
 
 What makes this branch increasingly relevant to the rest of the essay is the acceleration loop. AI systems are beginning to contribute materially to AI research and engineering. [S175]-[S178] The faster capability development becomes, the shorter the interval in which safety engineering, governance, monitoring, and democratic institutions can respond.
 
@@ -60,7 +50,7 @@ We can fail either axis.
 
 A technically misaligned system can be catastrophic.
 
-A technically aligned system serving structurally harmful goals can be catastrophic in a slower, more familiar, legally normalized way.
+A technically aligned system serving structurally harmful goals can produce a slower, more familiar, legally normalized catastrophe: no robot rebellion, no cinematic rupture, just increasingly capable machinery enforcing objectives whose costs were always somebody else's problem.
 
 The first resembles loss of control.
 
@@ -102,4 +92,4 @@ The reverse interaction is possible too. A narrow focus on preventing unauthoriz
 
 I therefore do not place these concerns in a competition for seriousness. The possibility of severe technical failure does not make present distributional and institutional questions trivial. The importance of those present questions does not make future control research unnecessary.
 
-The central distinction survives: retaining control is valuable, and retaining control does not tell us whether the controlled activity improves people's lives. A machine need not possess consciousness for either problem to arise. Its capacities, objectives, access, and the decisions surrounding its use are enough to begin the analysis.
+The central distinction survives: retaining control is valuable, and retaining control does not tell us whether the controlled activity improves people's lives. A machine does not need consciousness for either problem to arise. Optimization is enough. Access is enough. Authority is enough. A bad objective pursued extremely well is still a bad outcome.

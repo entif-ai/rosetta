@@ -54,7 +54,7 @@ Mission becomes psychic compensation.
 
 Flexibility becomes permanent availability.
 
-At Gartner, I watched a corporate culture capable of making extraordinary work feel like privilege. The cafeteria was staffed by terrific chefs and sold high-quality meals at prices that appeared close to ingredient cost. That benefit was real. It also made arriving early and staying late much easier. Symposium could be framed as a reward for high performers even when the rewarded employee then worked punishing hours in a critical conference role. In one September before Symposium, I logged more than 300 hours of work because I had internalized the belief that this sacrifice would be good for the company and ultimately good for me. [S187]
+At Gartner, I watched a corporate culture capable of making extraordinary work feel like privilege. The cafeteria was staffed by terrific chefs and sold high-quality meals at prices that appeared close to ingredient cost. That benefit was real. It also made arriving early and staying late much easier. Symposium could be framed as a reward for high performers even when the rewarded employee then worked punishing hours in a critical conference role. In one September before Symposium, I logged more than 300 hours of work because I had internalized the belief that this sacrifice would be good for the company and ultimately good for me.
 
 Nobody needed to put a gun on the desk. That is the point.
 
@@ -62,7 +62,9 @@ The most sophisticated control systems do not force the worker to violate their 
 
 Then financial logic changes.
 
-Imagine the cost model changing. Work may move elsewhere; teams may be reduced. People who have spent years hearing that the company is a family can discover that the family has a spreadsheet.
+Near the end of my tenure, a new CIO arrived. Technology teams were hit by layoffs, including people who had spent years helping build the systems underneath the company. Design, product, and engineering work began moving toward a shop in Gurgaon. I watched morale crater while people who remained still reached for the old language: this place is a family.
+
+That was one hell of an education in the asymmetry of the word.
 
 The corporation has not necessarily lied in the simple sense. The manager who called the company a family may have sincerely felt that way. The executive who praised the team may have sincerely valued them. The layoff decision can still occur because the institution's survival and reward structures treat labor as a variable cost when conditions change.
 
@@ -94,7 +96,7 @@ At the same time, I no longer find the phrase "good CEO" analytically useful wit
 
 Dyck, Morse, and Zingales used the collapse of Arthur Andersen as a change in scrutiny to estimate securities fraud that ordinary detection misses. For the historical period they studied, their central estimate was roughly 10% of large public firms in a year, with a 7% to 14% interval. It is not a measurement of the present corporate sector. A 2025 correction amended details of one comparison; the authors said it did not change their qualitative conclusion. [S112][S208]
 
-That does not mean 10% of CEOs are cartoon criminals. It means public scandal data are a selected sample of misconduct that becomes visible.
+The estimate is about firms and detectable securities fraud in that historical setting, not a headcount of villainous CEOs. Its relevance here is the selection problem: public scandal data contain the misconduct that becomes visible.
 
 The epistemic asymmetry is brutal:
 
@@ -104,11 +106,11 @@ We generally cannot prove that an apparently ethical executive or institution co
 
 And detection is not random. Whistleblowers, media, auditors, regulators, lawsuits, leadership changes, jurisdiction, document discovery, and luck all affect whether conduct becomes public. [S113]
 
-So when I say an executive appears ethical because I can point to profit sharing, wage increases, philanthropy, or a humane public statement, what I really possess is evidence about observable decisions.
+So when I say an executive appears ethical because I can point to profit sharing, wage increases, philanthropy, or a humane public statement, what I actually possess is evidence about observable decisions.
 
-That evidence can matter. It is not a certificate of character.
+That evidence matters. It tells me what the person did where the record is visible. Character and institutional reality extend beyond that record.
 
-This does not justify nihilism. It just prevents reputation from being mistaken for omniscience.
+Reputation is evidence. It is not omniscience.
 
 It also brings us back to the corporation without a villain. The morally hardest systems are not those that require everyone inside them to be bad. They are those that can take normal ambition, decency, professionalism, loyalty, fear, and intelligence and organize those traits into outcomes no single participant would happily describe in plain language.
 
@@ -118,19 +120,19 @@ That is the institutional pattern I worry about giving AI.
 
 The cafeteria is an important detail because it resists a lazy story. I liked the food. The people preparing it did good work. A useful benefit does not stop being useful because it also serves an employer's interests. I do not need to turn every pleasant memory into evidence of a hidden trap.
 
-The harder question is what the benefit changes in the relationship. A good meal at work can save time and money. It can also make a long day easier to extend. The effect depends on expectations, workload, compensation, and the employee's freedom to leave. The meal is not the whole arrangement. It is one part of an environment that shapes which choices feel natural. [S187]
+The harder question is what the benefit changes in the relationship. A good meal at work can save time and money. It can also make a long day easier to extend. The effect depends on expectations, workload, compensation, and the employee's freedom to leave. The meal is not the whole arrangement. It is one part of an environment that shapes which choices feel natural.
 
-My own account is not that someone explicitly ordered me to treat every spare hour as company property. It is that I came to understand extraordinary effort as a contribution to something I valued, and as an investment in a future I believed the organization would share with me. That belief helped make more than 300 logged hours in one month feel meaningful. [S187]
+Nobody explicitly ordered me to treat every spare hour as company property. I came to understand extraordinary effort as a contribution to something I valued, and as an investment in a future I believed the organization would share with me. That belief helped make more than 300 logged hours in one month feel meaningful.
 
 A time sheet can record the hours. It cannot fully record the bargain a person thinks those hours represent. The formal bargain might be wages for work. The experienced bargain can include loyalty, recognition, security, status, belonging, and an expectation of reciprocity. When those two bargains diverge, a person can discover that years of commitment purchased less security than they thought.
 
 <figure class="story-scene belonging-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>Two accounts of the same relationship</span><span>Conceptual comparison</span></div>
-<div class="belonging-ledgers"><div><span class="machine-label">The formal bargain</span><h2>Wages<br>for work.</h2><div class="ledger-rule"></div><p>Hours, duties, compensation.</p></div><div><span class="machine-label">The experienced bargain</span><h2>A place<br>to belong.</h2><div class="ledger-rule"></div><p>Loyalty, recognition, security,<br>status, reciprocity.</p></div></div>
+<div class="belonging-ledgers"><div><span class="machine-label">The formal bargain</span><h2>Wages for work.</h2><div class="ledger-rule"></div><p>Hours, duties, compensation.</p></div><div><span class="machine-label">The experienced bargain</span><h2>A place to belong.</h2><div class="ledger-rule"></div><p>Loyalty, recognition, security, status, reciprocity.</p></div></div>
 <figcaption>The benefit can be real and the relationship unequal. These overlapping bargains help explain why control need not arrive as an explicit order. <a href="etr-source:S107">Normative control · S107</a> · <a href="etr-source:S108">Peer-enforced norms · S108</a></figcaption>
 </figure>
 
-That is not an allegation that every employer makes an explicit promise it later breaks. Often the expectation is produced through a mixture of language, rituals, praise, opportunity, and ordinary relationships. It may never be written down in a form that can be enforced. Its power can still be real in the employee's life.
+The expectation often emerges without an explicit promise. Language, rituals, praise, opportunity, and ordinary relationships can create it without ever producing a sentence that could be enforced as a contract. Its power in the employee's life can still be real.
 
 I find that asymmetry ethically important. An institution can invite a person to relate to it emotionally while retaining the freedom to respond financially. The invitation may be sincere at the level of individual managers. The freedom may be built into the structure. Sincerity does not remove the mismatch.
 
@@ -142,9 +144,9 @@ The point is not that dividing work is wrong. Complex organizations could not fu
 
 <figure class="story-scene handoff-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>Responsibility has to survive the handoff</span><span>The chapter’s hypothetical chain</span></div>
-<h2>Five reasonable tasks.<br>One lived outcome.</h2>
+<h2>Five reasonable tasks. One lived outcome.</h2>
 <div class="handoff-chain"><details><summary><span>01</span>Leadership</summary><p>Sets a margin target.</p></details><details><summary><span>02</span>Finance</summary><p>Translates the target into a budget.</p></details><details><summary><span>03</span>Management</summary><p>Translates the budget into staffing.</p></details><details><summary><span>04</span>Product</summary><p>Translates staffing into a service design.</p></details><details><summary><span>05</span>Support</summary><p>Delivers the result to the customer.</p></details></div>
-<div class="handoff-person"><span aria-hidden="true">↓</span><p>The person at the end<br>receives the whole consequence.</p></div>
+<div class="handoff-person"><span aria-hidden="true">↓</span><p>The person at the end receives the whole consequence.</p></div>
 <figcaption>Open each handoff. Division of work is necessary; division of responsibility can leave the outcome unowned. No single-villain explanation is required.</figcaption>
 </figure>
 
@@ -154,7 +156,7 @@ To understand the resulting harm, we need to separate several kinds of responsib
 
 The same is true of a record that blames “the AI.” That phrase can hide a chain of human choices just as effectively as blaming the front-line worker. A model did not independently decide what counted as a successful customer interaction unless the surrounding system gave it that authority. A model's error matters. So does the decision to make its output binding, difficult to contest, or cheap enough to apply at scale.
 
-I am not claiming every bad outcome can be traced to one accountable person. Some failures emerge from interactions nobody anticipated. That makes records and revision more important, not less. When a consequence crosses several organizational boundaries, the explanation should preserve those boundaries without using them to dissolve the consequence.
+Some failures emerge from interactions nobody anticipated and cannot be traced to one accountable person. That makes records and revision more important. When a consequence crosses several organizational boundaries, the explanation should preserve those boundaries without using them to dissolve the consequence.
 
 ## The danger of a clean dashboard
 
@@ -168,7 +170,7 @@ The opposite mistake is to treat every favorable report as deception. Some impro
 
 Corporate fraud research makes the visibility problem concrete, but it has to be used with its historical limits intact. The Dyck, Morse, and Zingales study draws on the scrutiny that followed Arthur Andersen's collapse and estimates hidden misconduct in that setting. Its estimated prevalence is not a measurement of all firms in 2026. A 2025 correction addresses the M-Score threshold, missing-value treatment, and a variable label in a comparison table; the authors report that the comparison's main qualitative result remains. [S112][S208]
 
-What I retain from this literature is not a license to suspect a named person without evidence. It is a reason to distinguish visible misconduct from total misconduct, and visible good conduct from complete knowledge of an institution. The distinction cuts both ways. Lack of a public scandal is not proof of perfection. A statistical estimate is not proof of wrongdoing by a particular firm.
+What I retain from this literature is the distinction between visible misconduct and total misconduct, and between visible good conduct and complete knowledge of an institution. Public records can support claims about what they contain. They cannot turn absence from the record into omniscience.
 
 ## A promise needs an operating mechanism
 
@@ -176,7 +178,7 @@ A statement of corporate purpose can describe sincere aspirations. It does not, 
 
 Imagine a hypothetical firm that promises good service and a higher margin. The two may be compatible: better design could reduce waste. But suppose the next available margin increase comes from making refunds harder. Which commitment controls? Who has the authority to say no? What evidence reaches that person? What happens to the employee who raises the issue?
 
-The words in the purpose statement cannot answer those questions unless they connect to decisions, incentives, records, and consequences. This is not a demand for perfect morality. It is a demand that an institution's stated values have some way to affect its behavior when doing so is inconvenient.
+The words in the purpose statement matter only when they connect to decisions, incentives, records, and consequences. An institution's stated values need some way to affect its behavior precisely when doing so is inconvenient.
 
 The same applies to AI principles. A statement that a model should be fair, helpful, and safe leaves open what those words mean in a billing dispute, a hiring process, or a decision to replace a task. A deployment can comply with the model provider's safety rules while pursuing a commercial objective that the affected person considers unfair. The provider's rules and the institution's objectives are different layers.
 
@@ -188,7 +190,7 @@ Automation can bring decision-makers closer to a problem by giving them better i
 
 Imagine a staffing recommendation that reduces a department by a certain number of roles. The model may estimate costs accurately. It may identify tasks that can be automated. The recommendation can still omit informal work that was never recorded: teaching a new colleague, noticing an unusual failure, calming a customer, or remembering why a process has an exception. These examples describe possible omissions, not measured losses in a named deployment.
 
-The omission is not necessarily irrational from the model's point of view. It cannot use evidence it was never given. The risk comes when the absence of a record is treated as the absence of value. Informal care and institutional memory may become visible only after they disappear.
+A model cannot use evidence it was never given. The risk comes when the absence of a record is treated as the absence of value. Informal care and institutional memory may become visible only after they disappear.
 
 This is a difficult measurement problem. Not every unrecorded activity is valuable. Not every appeal to experience justifies retaining a process. The lesson is narrower: a model trained on a formal description of work should not be mistaken for a complete inventory of what workers contribute.
 

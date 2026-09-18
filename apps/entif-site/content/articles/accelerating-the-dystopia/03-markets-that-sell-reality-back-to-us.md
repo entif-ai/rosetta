@@ -32,10 +32,10 @@ The Magic Quadrant is almost too elegant an example. Gartner itself describes th
 
 <figure class="story-scene category-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>The boundary helps make the market</span><span>Conceptual diagram / no vendor data</span></div>
-<h2>Change the category.<br>Change who belongs.</h2>
+<h2>Change the category. Change who belongs.</h2>
 <fieldset class="scene-choice"><legend>Change the illustrative inclusion rule</legend><label><input type="radio" name="category-rule" value="broad" checked data-test-id="category-rule"> Broad field</label><label><input type="radio" name="category-rule" value="narrow" data-test-id="category-rule"> Narrow category</label></fieldset>
 <div class="category-map"><div class="category-boundary"><span>INCLUDED IN THE COMPARISON</span></div><span class="category-dot dot-a">A</span><span class="category-dot dot-b">B</span><span class="category-dot dot-c">C</span><span class="category-dot dot-d">D</span><span class="category-dot dot-e">E</span><div class="map-axis horizontal-axis">One chosen evaluation dimension →</div><div class="map-axis vertical-axis">Another chosen dimension →</div></div>
-<p class="category-observation">The offerings did not move.<br>The definition did.</p>
+<p class="category-observation">The offerings did not move. The definition did.</p>
 <figcaption>Letters are hypothetical offerings. Their positions carry no empirical scores. This is not a reproduction of Gartner’s visual framework. Gartner describes its research as a starting point, with defined markets, criteria and buyer-specific judgment. <a href="etr-source:S106">Methodology · S106</a> · <a href="etr-source:S207">Process qualifications · S207</a></figcaption>
 </figure>
 
@@ -55,11 +55,9 @@ No secret conspiracy is needed. The flywheel is commercially rational.
 
 My criticism becomes sharper because I have lived inside it.
 
-At Gartner Symposium, I saw environments that were nothing like the sterile image suggested by "industry research conference." I saw lavish dinners. I saw extraordinary treatment of senior executives. I saw Disney's Hollywood Studios effectively transformed into a private playground for conference guests. I saw a staged red-carpet experience with professional cameras, interview backdrops, attractive hosts, fake paparazzi, and hired fans asking attendees for autographs. A veteran Disney employee told me he had never seen anything quite like it. [S187]
+At one Barcelona Symposium dinner I attended, roughly two dozen people ate and drank on a bill above €3,000. In Orlando, I attended a Symposium night when Gartner rented Hollywood Studios for several hours. The rides had no lines. The food kiosks were free to guests. The entrance was staged like a Hollywood premiere: a red carpet, television-quality cameras, interview backdrops, models, fake paparazzi, and more than a hundred hired extras crowding around attendees and asking for autographs. I asked a security guard whether this sort of production was normal. He told me that in thirty years working there, he had never seen anything like it.
 
-That is my testimony. It is not a randomized influence study.
-
-But pretending the experience has no analytical significance because no paper assigns an elasticity coefficient to "being treated like a celebrity by your research vendor" would be its own form of silliness.
+Call it a conference perk if you like. The analytical point is that enterprise relationships carry value through more channels than a procurement ledger can record.
 
 Status, access, and belonging among powerful peers all have value.
 
@@ -73,11 +71,11 @@ The result is what I have called a prestige cascade:
 
 **elite attendance legitimizes the event; the event legitimizes the institution; the institution legitimizes the analyst; the analyst legitimizes the recommendation; the recommendation legitimizes the purchase.**
 
-Again, none of those arrows requires corruption in the criminal-law sense.
+The mechanism is subtler than criminal corruption.
 
 Influence is often most durable when nobody experiences themselves as corrupted.
 
-I saw the smaller version of the same mechanism when I was tasked with handing out more than a hundred $50 Amazon gift cards to attendees who spent roughly ten minutes trying a product I had helped build. Some attendees refused the cards because their employers or applicable rules prohibited accepting them. The tracking available to me did not let me reliably check every recipient's eligibility or rule out repeat collection. I cannot establish what records existed elsewhere in the company. [S187]
+I saw the smaller version of the same mechanism when I was tasked with handing out more than a hundred $50 Amazon gift cards to attendees who spent roughly ten minutes trying a product I had helped build. Some attendees refused the cards because their employers' rules did not allow them to accept one. In the process I was given, we did not keep a recipient ledger, not even to make sure the same person did not collect more than one.
 
 It was described as market research.
 
@@ -97,7 +95,7 @@ If the steering committee says, "Vendor X was a Leader in Gartner's Magic Quadra
 
 The research brand can function as corporate Kevlar.
 
-That is not necessarily irrational. Large organizations need repeatable processes and external reference points. But the market for external authority should be understood as a market for political and organizational risk distribution as well as a market for information.
+That behavior can be perfectly rational. Large organizations need repeatable processes and external reference points. Which means the market for external authority is also a market for political and organizational risk distribution, not merely information.
 
 This becomes especially important later, when AI systems begin providing the analysis, recommendations, rankings, category definitions, benchmarking, and executive summaries themselves.
 
@@ -107,7 +105,7 @@ If the consultant's abstraction already shapes reality, what happens when the ab
 
 There is a legitimate need underneath this business. Enterprise buyers cannot personally test every vendor, inspect every claim, or predict every integration failure. A research firm can reduce search costs and organize expertise that would be expensive for each buyer to assemble alone. The existence of influence does not make the information worthless. It makes the relationship worth examining.
 
-Gartner's own account of the Magic Quadrant emphasizes defined markets, evaluation criteria, and buyer-specific judgment. Its FAQ says client status does not determine inclusion or placement, and that a quadrant should not be a buyer's only guide. Those are first-party statements about its process, not my independent audit of every research decision. They belong in the record because a critique of category power should not quietly become an unsupported pay-to-play allegation. [S106][S207]
+Gartner's own account of the Magic Quadrant emphasizes defined markets, evaluation criteria, and buyer-specific judgment. Its FAQ says client status does not determine inclusion or placement, and that a quadrant should not be a buyer's only guide. Those first-party statements define the product's stated limits: a starting point for judgment, not a substitute for the buyer's own requirements. [S106][S207]
 
 The more interesting question survives those distinctions. Even an honestly constructed framework can become too authoritative when users forget its limits. A good map of a market is not a complete specification of one buyer's needs. It may omit a small vendor because the vendor does not fit the defined market. That omission does not establish that the vendor cannot solve a particular problem. It establishes a boundary around the map.
 
@@ -117,25 +115,21 @@ This is why I distinguish expertise from the outsourcing of judgment. Expertise 
 
 That difference becomes important after failure. A defensible process may have been sensible given the available information. Or it may have been a substitute for investigating a known mismatch. The existence of an approved process does not decide between those possibilities. It is evidence about what people did, not a guarantee that they asked the right questions.
 
-## The event and the inference
+## Influence without a discrete influence event
 
-My memories of Symposium are useful precisely because they show more than a price attached to an invitation. The staged celebrity treatment created an experience. I remember the red carpet, the cameras, the backdrops, the hired fans asking for autographs, and the feeling that an ordinary professional conference had become something much more theatrical. I do not have to invent a private conversation or a purchase decision to explain why that stayed with me. [S187]
+The red carpet and the gift cards matter to me for the same reason: neither requires a secret agreement to change the environment in which decisions get made.
 
-The experience demonstrated that enterprise relationships can carry emotional and social value as well as information. The commercial meaning of that value is an inference. The event itself, as I remember it, is testimony. Keeping those categories separate allows the example to illuminate a mechanism without pretending it proves the mechanism's effect size.
+The executive at Symposium can leave better informed, better connected, entertained, flattered, and still acting entirely in good faith. The attendee who accepts fifty dollars for ten minutes of product feedback can give useful research feedback and also leave knowing the product exists. The same event can be educational, enjoyable, commercially useful, and influential at once.
 
-A guest might leave better informed. They might leave with useful professional connections. They might simply have enjoyed themselves. None of those possibilities cancels the fact that the host has become associated with the experience. But the association is not a receipt for a later contract. To claim a particular purchase resulted from it would require evidence I have not supplied.
+That is more interesting than forcing every encounter into a courtroom binary of innocence or bribery. Much of institutional influence works without a discrete moment in which somebody thinks, _I have been bought._ It works by constructing the world in which a recommendation feels obvious, reputable, safe, and already validated by the people who matter.
 
-The gift cards deserve the same treatment. I remember distributing more than a hundred cards worth $50 each in exchange for short product trials. I remember some people declining because of rules that applied to them. I remember the tracking available to me as too weak to reliably establish eligibility or prevent repeats. I cannot turn the limits of what I saw into a claim that no other record existed anywhere in the organization. [S187]
-
-What the episode does show in my account is how one activity can have more than one function. It generated product feedback. It put a product in front of potential users. It offered a small incentive. The label “research” described part of the event, not every relationship created by it.
-
-That distinction is more useful than trying to force each encounter into a binary choice between pure scholarship and criminal corruption. Those are not the only possibilities. An activity can be lawful, informative, enjoyable, commercially strategic, and worthy of scrutiny at the same time. An ethical analysis becomes weaker when it needs the most extreme legal category to be relevant.
+By the time formal procurement begins, the most consequential framing may already have happened.
 
 ## When everyone buys the same reassurance
 
 <figure class="story-scene reassurance-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>How reassurance travels</span><span>Conceptual institutional loop</span></div>
-<div class="reassurance-loop"><div><span>01</span><h3>A category<br>organizes choice.</h3></div><b aria-hidden="true">→</b><div><span>02</span><h3>A buyer cites<br>the category.</h3></div><b aria-hidden="true">→</b><div><span>03</span><h3>Others inherit<br>the precedent.</h3></div></div>
+<div class="reassurance-loop"><div><span>01</span><h3>A category organizes choice.</h3></div><b aria-hidden="true">→</b><div><span>02</span><h3>A buyer cites the category.</h3></div><b aria-hidden="true">→</b><div><span>03</span><h3>Others inherit the precedent.</h3></div></div>
 <div class="reassurance-return"><span aria-hidden="true">↶</span><p>The reference becomes harder to ignore.</p></div>
 <figcaption>A useful shortcut can become an institutional condition of credibility. The diagram describes a mechanism, not proof of corrupt intent or a pay-to-play relationship. <a href="etr-source:S105">Rankings and reactivity · S105</a></figcaption>
 </figure>
@@ -144,7 +138,7 @@ There is a further possibility that matters beyond any one advisory firm. Indepe
 
 Imagine ten firms choosing a supplier. Each uses the same benchmark, receives a similar recommendation, and concludes that choosing the widely endorsed option reduces risk. Each decision may be defensible on its own. Together they may create a dependency on a single service whose failure would affect all ten. The common choice has changed the distribution of risk even if nobody made an obviously foolish decision.
 
-Kleinberg and Raghavan's work on algorithmic monoculture formalizes a related possibility: under their model's conditions, a shared algorithm can improve an individual's prediction while worsening collective outcomes through the correlation it introduces. This is not a finding that shared tools are generally harmful. It is a reason to distinguish the accuracy of one decision from the resilience of many decisions made with the same machinery. [S203]
+Kleinberg and Raghavan's work on algorithmic monoculture formalizes a related possibility: under their model's conditions, a shared algorithm can improve an individual's prediction while worsening collective outcomes through the correlation it introduces. Their result forces a distinction between the accuracy of one decision and the resilience of many decisions made with the same machinery. [S203]
 
 The distinction becomes especially important when an AI adviser draws on sources that are themselves widely shared. Apparent agreement among several outputs may reflect common training material, a shared upstream provider, or the same retrieval source. It need not represent several independent investigations. Five answers can have one ancestor.
 
@@ -152,7 +146,7 @@ That does not make consensus useless. It changes what consensus can establish. A
 
 The failure can be subtle. A market category appears in a research report. Vendors adopt the language. Customers repeat it in case studies. An AI system retrieves the report, vendor pages, and customer stories as separate evidence. The resulting answer describes a mature consensus. Some of that consensus may be real experience. Some may be the echo of the original classification.
 
-This is a hypothetical provenance problem, not a claim that any specific model has performed this sequence. It shows why source independence matters when automated analysis becomes cheap. The system needs to know not only what documents say, but whether their apparent agreement arises from distinct observations or a common chain of influence.
+That is the provenance problem. When automated analysis becomes cheap, the system needs to know not only what documents say, but whether their apparent agreement arises from distinct observations or a common chain of influence.
 
 ## The category can become an entrance fee
 

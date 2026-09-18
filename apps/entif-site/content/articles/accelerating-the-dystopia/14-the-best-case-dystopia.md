@@ -20,15 +20,25 @@
 }
 ---
 
-Imagine that advanced AI remains controllable. It does not secretly pursue power, deceive its operators, or escape the boundaries placed around it. It does what authorized people and institutions ask, with astonishing competence.
+Imagine that we solve the part everybody is terrified of.
 
-That is the favorable technical branch. It is also the branch on which the main argument of this essay rests.
+Advanced AI remains controllable. It does not secretly pursue power, deceive its operators, escape containment, or decide that humanity is an obstacle. It does what authorized people and institutions ask, with astonishing competence.
+
+That is my best-case branch.
+
+And I still think it can become a dystopia.
 
 A retailer asks the system to improve margin and conversion. An employer asks it to optimize staffing. An insurer asks it to estimate costs. A bank asks it to reduce default. An advertising service asks it to increase engagement. A public agency asks it to meet a statutory objective within a budget. A research group asks it to find useful results faster. These objectives have different purposes and different constraints. None becomes an adequate account of every affected person's welfare merely because a machine can pursue it well.
 
 The distinction is between control over a system and the quality of the objective controlling it. A machine can follow the intended instruction while the instruction omits something important. It can improve the operator's result while imposing a cost elsewhere. It can make a process more consistent without making its terms more humane.
 
-That is what I call the best-case dystopia: a conditional future in which the engineering succeeds on control and competence while the surrounding arrangements continue to produce insecurity, alienation, manipulation, or unequal access to the gains. It is not a prediction that every dimension of life will worsen, or that every use of AI serves the same interest. It is a way to make a neglected failure mode visible.
+That is what I mean by the best-case dystopia. The engineering works. The models behave. The operators stay in control. We align the machines to the world we already built.
+
+But the world we already built was not waiting for AI in a state of moral equilibrium.
+
+We were already accelerating socioeconomic stratification. We were already commercializing people's digital footprints, personalizing prices and offers, masking inflation through product changes, and optimizing advertising against increasingly intimate behavioral data. We were already watching social media turn attention into inventory, doomscrolling turn anxiety into engagement, and loneliness create a market for increasingly parasocial relationships with software. AI did not invent those incentive structures. It can make them vastly more adaptive, cheaper to operate, and harder to escape.
+
+That is the failure mode I care about most because it does not require anything to "go wrong" in the narrow technical sense. It requires the machine to become very good at the world we hand it.
 
 ## Alignment has more than one principal
 
@@ -66,11 +76,11 @@ The point is not to deny the productivity prize. It is to stop awarding the priz
 
 ## The baseline can rise as fast as the tool improves
 
-My memory of working more than 300 hours in one September belongs here. It is not an experiment about AI, and it is not evidence that another person's workplace will behave the same way. It records how easily I could experience an extraordinary demand as a contribution I owed the organization. [S187]
+I know what that escalation feels like from the inside. Before one Gartner Symposium launch, I logged more than 300 hours in a single September because I was convinced the extraordinary effort was good for me, good for the launch, and evidence that I was the kind of person who could be trusted with more.
 
 Now imagine a tool that makes each hour more productive. The humane possibility is obvious: the same necessary work could take less of a person's life. But a different possibility is also obvious. The organization can redefine normal output around the new tool. The worker receives assistance and a higher target at the same time.
 
-This is not an argument that productivity tools never help workers. I use them because they help me. It is an argument that a tool does not decide how much work is enough. That decision belongs to the surrounding relationship.
+I use productivity tools constantly because they help me. The point is that the tool does not decide how much work is enough. If every saved hour becomes capacity for another target, the productivity gain can be completely real while the worker's life gains nothing.
 
 A baseline can rise without anyone announcing a punitive policy. Early adopters complete more. Their output enters comparisons. Managers revise expectations. Other workers adopt to keep up. What was once exceptional becomes ordinary. The process can be individually understandable at each step while leaving little of the saved time in the worker's hands.
 
@@ -98,23 +108,21 @@ Current research on moral-emotional sharing and social feedback supports narrowe
 
 That extrapolation is still worth examining. Lowering the cost of generating, testing, and adapting messages can change the scale of an existing incentive. The relevant harm need not be a false sentence. It may be the systematic selection of messages that elicit a response while leaving the recipient less able to consider the whole situation.
 
-## Precision can defend the wrong frame
+## When precision becomes an escape hatch
 
-During the discussion from which this essay developed, some corrections changed my argument in useful ways. I had confused Costco's revenue with profit. Current reserve data did not support a simple story of accelerating de-dollarization. Those errors needed correction. The factual record does not become optional because I care strongly about the conclusion. [S120] [S137] [S187]
+I care about precision. I also care about whether a correction changes the mechanism under discussion or merely gives us a more technically immaculate way to avoid looking at it.
 
-Other distinctions required a different question: did the distinction change the mechanism, or only the label used to describe it? Treasury buybacks and Federal Reserve asset purchases are different operations. That difference matters. It does not prevent both from affecting the duration of assets held by the public under particular financing conditions. The task is to preserve the distinction and analyze the channel, not to use either one to avoid the other. [S128] [S129] [S130] [S131]
+That distinction became a sore point while this essay was taking shape. Again and again, a material argument about incentives, opacity, labor, money, or institutional power could be diverted into a semantic side road. Sometimes the side road matters. Sometimes it is the whole point. But sometimes the technical correction lands, the terminology improves, and the functional outcome remains sitting exactly where it was.
 
-Likewise, the existence of a disclosure does not settle whether a person can use it. A company need not invent every word in a taxonomy for the taxonomy to shape a market. An individual manager need not personally initiate every harmful act for the organization to have a responsibility problem. These are different levels of explanation.
+That is the standard I want applied here. If a distinction changes the mechanism, change the argument. If it changes the magnitude, change the magnitude. If it kills the claim, kill the claim. But if the distinction only changes which technically correct phrase we use to describe the same practical relationship, then make the correction and keep following the relationship.
 
-A reasoning assistant can fail by collapsing distinctions. It can also fail by spending all its effort on distinctions that do not answer the user's material question. The remedy is neither uncritical agreement nor automatic opposition. It is relevance: identify what the correction changes, preserve what remains supported, and continue the analysis at the level where the consequence occurs.
+This matters even more with AI because these systems are exceptionally good at producing plausible distinctions. A reasoning assistant can protect us from sloppy thinking. It can also bury a material question under an infinite mountain of immaculate qualifications until nobody remembers what the question was.
 
-That is especially important for this essay because the argument has many branches. A correction to one estimate does not settle the labor question. A negative result in semantic disambiguation does not settle the ownership question. A null result in one social-media experiment does not settle every claim about information infrastructure. Nor does a strong result in one branch validate all the others.
-
-The discipline is local. Each proposition carries its own evidence and limits. The synthesis then asks how the supported mechanisms can interact. That is harder than accepting or rejecting the whole essay as one indivisible hypothesis, but it is the only way to avoid turning research into a contest over permission to have a concern.
+The answer is not to stop checking facts. It is to stop confusing contrarianism with rigor. The evidence should determine how hard I can push a claim. It should not require me to write the opposition's essay inside my own every time I have a well-supported conclusion.
 
 ## A future can be technically successful and humanly disappointing
 
-The best-case dystopia is not defined by a malfunctioning machine. It is defined by a mismatch between increasing capability and the conditions people hoped that capability would improve.
+The best-case dystopia is not defined by a malfunctioning machine. It is defined by a machine that works beautifully inside a social substrate whose worst incentives were never repaired.
 
 A society could produce more while many people gain little security. A workplace could complete more tasks while its employees gain little control over time. An information service could answer more questions while its users become more dependent on a narrow set of interpreters. A market could offer more personalized treatment while making comparison harder. These are conditional combinations, not claims that every one is happening everywhere now.
 
@@ -126,6 +134,8 @@ The question is whether such benefits remain incidental to the objectives being 
 
 Those questions cannot be answered by a model's benchmark alone. They concern the system in which the model operates.
 
-My best-case fear is therefore specific. The machines behave. The tools become more useful. The operators remain in control. Yet the arrangements governing work, ownership, information, and recourse become more efficient at reproducing the conditions people hoped AI would relieve.
+My best-case fear is therefore specific. The machines behave. The tools become more useful. The operators remain in control. AGI, even ASI, may be aligned perfectly to the world as it exists today.
+
+If we have not changed the world it is aligned to, that can still mean making the divide, discord, extraction, alienation, and manipulation we already tolerate far more efficient.
 
 The machine does not have to overthrow us for that future to arrive. It can help us complete the work we already assigned.

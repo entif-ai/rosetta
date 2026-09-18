@@ -31,16 +31,14 @@
   list-style: none;
 }
 .optimizer-input li {
-  font-family: system-ui, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--scene-rule);
 }
 .machine-footnote {
   display: block;
-  font-family: system-ui, sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-top: 1rem;
 }
@@ -76,7 +74,7 @@
   padding-top: 1rem;
 }
 .substrate-measure .measure-name {
-  font-size: 0.8125rem;
+  font-size: 1.1rem;
   min-height: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -90,11 +88,11 @@
   font-variant-numeric: tabular-nums;
 }
 .measure-value > span {
-  font-size: 0.45em;
+  font-size: .9rem;
   margin-left: 0.1em;
 }
 .measure-track {
-  height: 0.5rem;
+  height: .9rem;
   background: var(--surface);
   margin: 1rem 0;
 }
@@ -120,7 +118,7 @@
 }
 .substrate-measure p,
 .substrate-measure a {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   line-height: 1.55;
 }
 .substrate-measure strong {
@@ -191,10 +189,9 @@
   border: 1px solid var(--ink);
   transform: rotate(-3deg);
   box-shadow: 0.5rem 0.5rem 0 var(--scene-rule);
-  font-family: system-ui, sans-serif;
 }
 .bill-sheet > span {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
@@ -204,9 +201,10 @@
   background: var(--line);
   margin: 1rem 0;
 }
+
 .bill-sheet strong {
   display: block;
-  font-size: 0.75rem;
+  font-size: .9rem;
   border: 2px solid var(--accent);
   padding: 0.5rem;
   color: var(--accent);
@@ -215,7 +213,8 @@
 .story-scene.resolution-scene .resolution-repair {
   display: none;
 }
-.story-scene.resolution-scene:has([value='repair']:checked) .resolution-closure {
+.story-scene.resolution-scene:has([value='repair']:checked)
+  .resolution-closure {
   display: none;
 }
 .story-scene.resolution-scene:has([value='repair']:checked) .resolution-repair {
@@ -224,7 +223,9 @@
 .story-scene.resolution-scene:has([value='repair']:checked) .resolution-join b {
   font-size: 0;
 }
-.story-scene.resolution-scene:has([value='repair']:checked) .resolution-join b::after {
+.story-scene.resolution-scene:has([value='repair']:checked)
+  .resolution-join
+  b::after {
   content: '=';
   font-size: 3rem;
 }
@@ -241,8 +242,7 @@
   border-block: 1px solid var(--scene-rule);
 }
 .bargain-baseline > span {
-  font-family: system-ui, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
 }
 .task-baseline,
 .task-improved {
@@ -284,15 +284,14 @@
   min-height: 15rem;
   display: flex;
   align-items: stretch;
-  gap: 0.75rem;
-  font-family: system-ui, sans-serif;
+  gap: 1rem;
 }
 .bargain-art > span {
   display: grid;
   place-items: center;
   text-align: center;
   flex: 1;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.05em;
@@ -338,34 +337,6 @@
 .story-scene.bargain-scene:has([value='work']:checked) .bargain-work,
 .story-scene.bargain-scene:has([value='roles']:checked) .bargain-roles {
   display: grid;
-}
-.story-scene.personal-time-scene {
-  background: var(--scene-night);
-  color: var(--scene-paper);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 3rem;
-  align-items: center;
-}
-.story-scene.personal-time-scene .personal-hours {
-  font-size: clamp(5rem, 14vw, 12rem);
-  line-height: 1;
-  letter-spacing: -0.07em;
-  color: var(--scene-signal);
-  margin-block: 1rem 0;
-}
-.personal-hours > span {
-  font-size: 0.5em;
-  vertical-align: top;
-}
-.story-scene.personal-time-scene .personal-unit {
-  font-size: 1.5rem;
-}
-.story-scene.personal-time-scene h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-}
-.story-scene.personal-time-scene a {
-  color: var(--scene-signal);
 }
 @media (max-width: 55rem) {
   .optimizer-drawing {
@@ -421,10 +392,6 @@
   .bargain-art {
     min-height: 10rem;
   }
-  .story-scene.personal-time-scene {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
 @media (prefers-reduced-motion: no-preference) {
   .bill-sheet {
@@ -448,8 +415,7 @@
   }
 }
 @media print {
-  .story-scene.optimizer-scene,
-  .story-scene.personal-time-scene {
+  .story-scene.optimizer-scene {
     --scene-signal: var(--ink);
   }
   .story-scene.resolution-scene .resolution-closure,

@@ -20,27 +20,49 @@
 }
 ---
 
-To understand the relationship between economic resources and public decisions, I need to distinguish several things that are often compressed into the word “influence.” Campaign spending is not the same as lobbying. Lobbying is not the same as technical consultation. A disclosed relationship is not proof of a purchased outcome. A legal channel can still have effects that deserve empirical examination.
+I have watched the machinery of “influence” from inside institutions that sell expertise to the people making enormous decisions.
 
-These distinctions matter because the connection between resources and institutions does not depend entirely on unlawful conduct. Money can finance research, legal analysis, staff time, public communication, and sustained participation in a process. Those activities can provide useful information. They can also make some participants more able than others to present their interests. Establishing what effect they have in a particular case requires more than observing that money was spent.
+That does not mean every dinner buys a contract, every lobbyist buys a vote, or every analyst recommendation is corrupt. It means access, prestige, expertise, hospitality, research, procurement, and commercial relationships can reinforce one another long before anything looks like a cash envelope.
+
+I learned that lesson at Gartner.
+
+## The product is also the room
+
+Magic Quadrant always bothered me because of how much authority it compresses into a picture. My crude version of the pitch is: imagine buying a television and receiving a matrix of size and price, then being told the quadrant tells you which one is “best.” The serious version has more methodology than that, of course. The underlying problem still matters. Categories, axes, inclusion rules, and analyst framing help define what the buyer is invited to regard as a serious option.
+
+Then the buyer can purchase more research, more analyst access, and more interpretation from the institution that constructed the frame.
+
+When I worked there, I also saw how strangely the economics could line up. My recollection was that a senior analyst producing the advice could earn roughly what one enterprise user seat cost annually, and less than many junior engineers elsewhere in the industry. At sufficient scale, I remember thinking, you could nearly hire the analyst.
+
+But the research product was only part of what Gartner sold. Symposium made the institution physical.
+
+At a Barcelona Symposium dinner around 2013 or 2014, I was one of roughly two dozen people at a table whose food-and-drink bill exceeded €3,000. At an Orlando event, Gartner rented out Hollywood Studios for several hours. The rides had no normal lines. Food kiosks were free to guests. The entrance was staged as a Hollywood premiere, with television-quality cameras, interview backdrops, models, fake paparazzi, and more than a hundred extras crowding a red carpet. I asked a security guard whether this was normal. He told me that in about thirty years working there, he had never seen anything like it.
+
+That experience matters because “access” is too bloodless a word. The highest-ranking people in an industry can spend several days being treated as unusually important, surrounded by peers and senior analysts, while the people who later build the internal business case move through the same halls. Nobody needs to think, “I owe Gartner.” Influence does not need to be that stupid.
+
+At another Symposium, I was personally tasked with handing out a hundred or more $50 Amazon gift cards to attendees who sat through ten-minute sessions testing a product I had spent the previous six weeks designing and building while still leading my normal engineering work. We called it market research. From where I stood, it was also product exposure. Some attendees refused the cards because their employers prohibited them from accepting gifts. We did not maintain a recipient ledger that would have let me verify who accepted what.
+
+These are firsthand recollections from my time there. They are why I do not treat “legal,” “disclosed,” “research,” “hospitality,” and “influence” as synonyms for one another. The interesting question is how the pieces work together.
+
+The same pattern can appear in less theatrical forms. At PwC, I watched the global digital stack migrate from Google to Microsoft, an enormous operational change. My understanding inside the firm was that a joint-business arrangement included broad reciprocal commercial discounts between PwC and Microsoft. Whether one thinks that arrangement was sensible or not, it illustrates the point: procurement decisions can sit inside commercial relationships much larger than the line item being purchased.
+
+Campaign spending, lobbying, technical consultation, hospitality, procurement, and research are different mechanisms. A disclosed relationship is not proof of a purchased outcome. A legal channel can still change who gets heard, how often, and with what surrounding authority.
 
 The Federal Election Commission states that independent expenditure-only committees, commonly called Super PACs, may accept unlimited contributions from individuals, corporations, labor organizations, and other political committees, subject to restrictions on sources and other rules. The permission to receive contributions is not permission to coordinate spending with a candidate, and it does not eliminate reporting obligations. [S138]
 
 The IRS describes a different disclosure framework for tax-exempt organizations. Contributor names and addresses generally are not required to be made public from annual returns, with important exceptions, including private foundations and certain political organizations. A contributor identified in an exemption application can also be subject to different public-disclosure treatment. The details depend on the type of entity and filing. [S139]
 
-Putting those facts together does not establish that a particular contribution was hidden, unlawful, or responsible for an outcome. It establishes that tracing a flow of funds can require attention to several entities and disclosure regimes. The name of an immediate spender and the identity of an ultimate source are different questions.
+Put those facts together and the practical problem appears: tracing money can require following several entities, filings, dates, and disclosure regimes. The name on the advertisement and the ultimate source of the money are different questions.
 
 ## Visibility is a chain, not a single document
 
-A public filing can be accurate and still leave a reader with work to do. The reader may need to reconcile names, dates, entity types, amendments, and transactions. A missing link can reflect a lawful disclosure limit, incomplete reporting, an inaccessible record, or an error in the reader's reconstruction. Those possibilities should not be treated as interchangeable.
+A public filing can be accurate and still leave an ordinary reader with hours of reconstruction. Names, dates, entity types, amendments, pass-through organizations, and transactions have to be reconciled before the shape of the relationship becomes visible.
 
-The same distinction applies to a claim that a record proves influence. A payment can establish that a relationship existed. It may not establish what information was exchanged, which decision-makers encountered it, or whether it changed a decision. A convincing causal account has to identify the steps between the resource and the outcome.
+A payment can establish that a relationship existed without proving exactly what happened because of it. That is a limit on the claim, not a reason to stop looking at the relationship.
 
-Imagine a hypothetical company that funds a technical study and submits it in a public consultation. The study might be sound, selective, mistaken, or useful only under certain assumptions. Its funding is relevant context. It is not a substitute for examining the methods. Conversely, a technically correct study does not make its choice of question neutral with respect to the funder's interests. Both the substance and the provenance matter.
+If a company funds a technical study and submits it in a public consultation, the methods matter and the provenance matters. A sound result does not make the choice of question neutral. A conflicted sponsor does not make a sound result false. The point is to preserve both facts at once.
 
-The reader's task is therefore twofold: determine what the evidence supports, and understand why that evidence entered the discussion. Neither task should swallow the other. Dismissing a finding solely because of its sponsor can discard useful information. Ignoring sponsorship can conceal incentives that affect what gets studied and emphasized.
-
-AI could help reconstruct such chains by linking filings, identifying amendments, and distinguishing direct records from later summaries. That is a possible analytical use, not evidence that a complete automated system already does it reliably. Entity matching can fail. Similar names can be confused. An absent record can be mistaken for evidence of absence. A useful system would preserve those uncertainties rather than convert an incomplete graph into a confident story.
+AI could make this radically easier to inspect by linking filings, identifying amendments, matching entities, and separating direct records from later summaries. It could also make the opposite mistake at industrial speed: merge two similar names, treat a missing record as proof of absence, or turn an incomplete graph into a confident story.
 
 ## What the lobbying evidence actually measures
 
@@ -48,19 +70,19 @@ Bertrand, Bombardini, and Trebbi studied federal lobbying using data from 1999 t
 
 The finding matters because it identifies more than one thing a client may be buying. Expertise can help explain a technical problem. A relationship can help a message reach someone. Knowledge of process can help determine when and where to present it. A single fee can purchase a mixture of those services.
 
-To say that access has market value is not to say that every use of access changes policy. Some requests fail. Some information is useful to the public decision-maker. Some relationships may facilitate communication without determining the result. The empirical question is which effects occur, for whom, and under what conditions.
+Access having market value does not mean every conversation changes policy. It means access itself is valuable enough that people pay for it. That deserves more attention than the fiction that only explicit quid pro quo matters.
 
 The Government Accountability Office's June 2026 report provides a separate view of disclosure compliance. For the period it examined, most sampled filers could provide documentation for reported lobbying income and expenses. The report also estimated that 22% of quarterly disclosure reports included lobbyists who did not fully disclose relevant prior federal positions. Its sample and period should remain attached to that estimate; it is not a statement that 22% of all lobbying activity was unlawful. [S140]
 
 The GAO report also describes more than twelve thousand filing referrals over 2016–2025 and their subsequent status. A referral is an administrative event, not a conviction or a finding that the underlying policy outcome was corrupt. Treating those categories accurately makes the transparency problem easier to understand rather than more dramatic. [S140]
 
-Together, the studies describe different pieces of a system: the value of relationships in a historical market, and the quality of disclosure in a later reporting period. They should not be combined into a single causal estimate. They do support asking separate questions about access, expertise, reporting, and outcomes.
+Together, the studies illuminate different parts of the machine: relationships have market value, and disclosure systems leave measurable gaps. [S140][S141] Neither finding proves that one named policy was bought. Both make it harder to pretend that money, access, expertise, and public decisions occupy separate worlds.
 
 ## Capacity to participate is not evenly distributed
 
-A document being public does not mean every interested person has the same capacity to use it. Reading a long technical proposal requires time and relevant knowledge. Preparing a detailed response requires more. Sustaining participation across several rounds may require resources beyond either task.
+A document being public does not mean the public can use it. Reading a long technical proposal takes time and relevant knowledge. Preparing a detailed response takes more. Sustaining participation for months or years requires staff, money, and institutional memory.
 
-That observation does not imply that only large organizations can contribute or that their contributions are necessarily unsound. Individuals, researchers, civil-society organizations, smaller firms, and public institutions can provide important expertise. The analytical issue is how the costs of participation affect whose information and concerns are available at each stage.
+Individuals, researchers, civil-society organizations, smaller firms, and public institutions can provide extraordinary expertise. They still do not enter the process with equal capacity. The cost of participation shapes whose concerns remain present at every round.
 
 Consider a hypothetical technical standard with a short comment period. One organization has a team already working on the issue. Another has to find an expert, obtain the relevant documents, and decide whether the proposal affects it. The same formal opportunity can have different practical value. That difference can shape the record even without any participant being excluded by rule.
 
@@ -94,14 +116,14 @@ A system used to analyze a proposed rule might be helpful in several distinct wa
 
 The distinction is especially important when an AI system is used by several sides of a process. The presence of similar technology does not imply equal capacity. Access to data, staff, integration, compute, and time can still differ. At the same time, a lower-cost tool can create opportunities for participants who previously lacked specialized support. Which effect is larger is an empirical question, not a fact determined by the label “AI.”
 
-## What a reader can reasonably conclude
+## What this machinery means for AI
 
-The evidence in this section supports a bounded account. There are legal channels through which resources fund political communication and lobbying. Disclosure rules differ across entities and filings. Historical research finds a market value for connections as well as expertise. A recent compliance review finds substantial documentation alongside specific reporting gaps. These findings do not identify a preferred candidate, party, or policy, and they do not establish a universal story in which money determines every outcome. [S138][S139][S140][S141]
+The evidence here does not require a cartoon in which money mechanically buys every outcome. Legal channels let resources fund political communication and lobbying. Disclosure rules differ across entities and filings. Historical research finds market value in connections as well as expertise. A recent compliance review finds substantial documentation alongside specific reporting gaps. [S138][S139][S140][S141]
 
 They do show why the relationship between intelligence and institutional power deserves more attention than a simple count of who can access a chatbot. A person may have access to a model while lacking the records, time, or authority needed to use its analysis effectively. An organization may have the same model embedded in a continuing process with specialized staff and proprietary information. Access to a tool is one input into capacity, not the entire capacity.
 
 The relevant question is what the tool changes in that relationship. Does it make the provenance of a claim easier to inspect? Does it help compare effects on different groups? Does it reveal assumptions that would otherwise remain hidden? Or does it mainly increase the speed and volume with which an existing participant can advance its account?
 
-Those possibilities connect this section to the rest of the essay without requiring a claim about anyone's private motives. A capable system can faithfully serve an institution's chosen task. The social consequences depend partly on how that task relates to the people outside the institution, and on their ability to understand and respond to it.
+That is exactly why AI capability does not arrive on a level field. A powerful model can faithfully serve the task it is given while massively increasing the speed, reach, and polish of whichever institution already has the data, staff, access, and authority to put it to work.
 
 The next difficulty is cultural. Even when a person has good reason to be concerned about their circumstances, identifying the causes can be hard. The explanations that travel most easily through an attention market are not necessarily the explanations that preserve the most important distinctions.

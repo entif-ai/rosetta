@@ -22,9 +22,9 @@
 
 People sometimes talk about AI bias as if the problem were a list of naughty stereotypes somebody forgot to delete.
 
-The real problem is much deeper.
+That framing is far too small.
 
-A model trained on the record of human civilization learns the record of human civilization.
+A model trained on the record of human civilization learns the record of human civilization. We do not get to pour the whole archive of ourselves into a machine and then act surprised when the archive comes back with our fingerprints all over it.
 
 That includes brilliance, love, science, art, humor, cooperation, invention, and moral progress.
 
@@ -32,7 +32,7 @@ It also includes slavery, colonialism, segregation, exclusion, occupational stra
 
 Bias is therefore not only in what people said.
 
-It is in what got recorded.
+It is in what got recorded, what never got recorded, who had the authority to name the categories, and which parts of human experience were rendered legible to the institutions doing the recording.
 
 Who got named.
 
@@ -70,11 +70,11 @@ For the text input of a language model, tokenization supplies encoded units; con
 
 Recent work on African languages reports a persistent "token tax": languages requiring more tokens for comparable content tend to show lower model accuracy across evaluated systems. [S160] Other research shows subword tokenization remains sensitive to small perturbations such as typos and formatting [S161], and that common tokenization methods can create sampling biases that do not automatically disappear merely by adding more training. [S162]
 
-This is where my Rosetta research question enters, but it must enter carefully.
+This is where my Rosetta research question enters.
 
-I am interested in whether ambiguity in a shared surface form can create representational leakage between senses that humans regard as semantically distinct. The word "bank" can refer to a financial institution or the side of a river. Humans treat the senses as different concepts. A tokenization system may share surface units across both contexts. A Transformer will of course condition representations on context, so the mere existence of a shared token proves nothing by itself.
+I am interested in whether ambiguity in a shared surface form can create representational leakage between senses that humans regard as semantically distinct. The word "bank" can refer to a financial institution or the side of a river. Humans treat those as different concepts. A tokenizer may share surface units across both contexts, while a Transformer develops contextual representations downstream. Shared surface form therefore does not prove shared meaning. It gives me a mechanism worth testing.
 
-The Rosetta research protocol therefore does not assert that token ambiguity causes bias. It proposes an experiment. [S163]
+My hypothesis is that some of the distinctions humans care about may be cheaper to preserve if they are made explicit before information begins moving through a stack of learned representations. The only responsible way to find out is to test it causally.
 
 Construct controlled corpora containing ambiguous surface forms with distinct senses.
 
@@ -100,7 +100,7 @@ A mislabeled concept can become a high-bandwidth error channel.
 
 A human taxonomy can encode the same prejudice or mistaken assumptions as the training data it was meant to correct.
 
-This is why I do not want the larger essay to present Rosetta as a cure. The protocol is useful because it models the kind of epistemic humility the field needs: preserve observations, distinguish interpretations, represent uncertainty, keep candidate meanings separate, and causally test whether an explicit semantic intervention changes behavior. [S163]
+That is the point of Rosetta in this essay. It is not a magic cure for bias. It is an attempt to preserve observations, distinguish interpretations, represent uncertainty, keep candidate meanings separate, and then test whether those distinctions actually change behavior.
 
 The larger AI concern is not dependent on the outcome of that experiment.
 
@@ -144,17 +144,17 @@ That principle is familiar in careful research. It becomes harder to maintain wh
 
 ## What explicit senses would actually test
 
-The Rosetta proposal asks a narrower question than whether a machine understands humanity. It asks whether making selected distinctions explicit can improve behavior under controlled conditions. [S163]
+The Rosetta proposal asks a narrower question than whether a machine understands humanity. It asks whether making selected distinctions explicit can improve behavior under controlled conditions.
 
 Take bank again. In a sentence about depositing a check, a contextual model can already infer the financial sense. In a sentence about erosion, it can infer the river sense. Sharing an input token does not mean the later hidden representations are identical. Any useful experiment must respect that. Otherwise it merely demonstrates a weakness of an oversimplified story about tokenization, not a weakness of the model.
 
 The interesting test is what happens when we control exposure. We can create a small world in which two senses share a surface form but differ in their properties. We can expose the model to a property in one sense and ask whether it transfers that property to the other without justification. We can then compare ordinary text against explicit sense identifiers while keeping the rest of the training conditions as comparable as possible.
 
-The controls determine what an improvement would mean. A system given extra identifiers has extra representational capacity and extra information. It may improve for those reasons alone. Frequency-matched arbitrary identifiers help test the capacity explanation. A simpler lemma-and-part-of-speech condition helps separate basic linguistic disambiguation from a richer semantic intervention. An oracle condition with correct senses establishes an upper bound that a real compiler may never reach. A predicted-sense condition tests the less comfortable world in which the labels can be wrong. [S163]
+The controls determine what an improvement would mean. A system given extra identifiers has extra representational capacity and extra information. It may improve for those reasons alone. Frequency-matched arbitrary identifiers help test the capacity explanation. A simpler lemma-and-part-of-speech condition helps separate basic linguistic disambiguation from a richer semantic intervention. An oracle condition with correct senses establishes an upper bound that a real compiler may never reach. A predicted-sense condition tests the less comfortable world in which the labels can be wrong.
 
 These are different questions. If arbitrary separation performs as well as meaningful labels, the result would support separation or capacity, not the special value of the ontology. If gold labels help but predicted labels fail, the bottleneck may be reliable disambiguation. If corrupt labels make the system more confidently wrong, the semantic layer has introduced a new failure channel. A result can be useful while defeating the preferred explanation.
 
-No such result is being reported here. The supplied protocol is a research plan. Its place in this essay is to make a possible mechanism precise enough to investigate, not to lend experimental authority to an unperformed experiment.
+I am not reporting that result here. I am stating the hypothesis and the experiment I think would discriminate among the plausible explanations.
 
 The distinction matters because a convincing vocabulary can otherwise become its own evidence. Terms such as concept, meaning, sense, and ontology sound explanatory. They can also hide disagreement over what has actually been implemented. A token tagged with a human-readable name is not proof that the model has acquired the corresponding human concept. A cluster in a visualization is not proof that the cluster controls the decision of interest.
 

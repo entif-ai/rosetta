@@ -22,7 +22,9 @@
 
 The grand theories become easier to recognize when the mechanism appears on a phone bill.
 
-I remember paying about $160 a month for internet service and around $120 for cellular service, while seeing lower introductory offers that appeared comparable. These are my recollections, not a current bill audit or proof that every plan term matched. [S187] The broader mechanism can be examined independently of my accounts.
+I was paying about $160 a month for internet service and about $120 for cellular service. New customers were being advertised what I understood to be the same plans for roughly half as much, at least for the introductory period.
+
+That is the kind of thing I mean when I talk about opacity as a business model. The price is technically visible. The penalty for failing to keep checking it is buried inside the relationship.
 
 Economists and regulators have names for it.
 
@@ -36,13 +38,13 @@ In many consumer markets, loyalty is a signal that you can safely be charged mor
 
 Your failure to call becomes revenue.
 
-Your reluctance to spend Saturday moving phone numbers, returning equipment, scheduling an installer, and arguing with retention can support revenue. It is an economic advantage to the seller, not a literal balance-sheet asset called your inconvenience.
+Your reluctance to spend Saturday moving phone numbers, returning equipment, scheduling an installer, and arguing with retention can support revenue. Your inconvenience has economic value to the seller.
 
 <figure class="story-scene switching-scene" data-test-id="editorial-scene">
-<div class="scene-overline"><span>The price beyond the price</span><span>Illustration / not a current price audit</span></div>
-<h2>The bill ends.<br>The work of leaving begins.</h2>
-<div class="switching-route"><div class="switching-bill"><span>ACCOUNT</span><b>Monthly service</b><i></i><i></i><i></i><strong>Renewal</strong></div><ol><li><span>01</span>Move the phone numbers.</li><li><span>02</span>Return the equipment.</li><li><span>03</span>Schedule the installer.</li><li><span>04</span>Navigate retention.</li></ol><div class="switching-end"><span aria-hidden="true">↳</span><p>Your Saturday<br>is part of the bargain.</p></div></div>
-<figcaption>These frictions come from the author’s example. Inconvenience can benefit a seller economically; it is not literally an asset recorded on a balance sheet. <a href="etr-source:S102">Documented interface-friction mechanisms · S102 ↗</a></figcaption>
+<div class="scene-overline"><span>The price beyond the price</span><span>The work hidden behind switching</span></div>
+<h2>The bill ends. The work of leaving begins.</h2>
+<div class="switching-route"><div class="switching-bill"><span>ACCOUNT</span><b>Monthly service</b><i></i><i></i><i></i><strong>Renewal</strong></div><ol><li><span>01</span>Move the phone numbers.</li><li><span>02</span>Return the equipment.</li><li><span>03</span>Schedule the installer.</li><li><span>04</span>Navigate retention.</li></ol><div class="switching-end"><span aria-hidden="true">↳</span><p>Your Saturday is part of the bargain.</p></div></div>
+<figcaption>The bill is only one part of the transaction. Time, confusion, cancellation friction, and switching work can all affect whether a customer leaves. <a href="etr-source:S102">Documented interface-friction mechanisms · S102 ↗</a></figcaption>
 </figure>
 
 That is not an incidental imperfection in the market. Customer inertia is economically monetizable.
@@ -95,25 +97,9 @@ This is the distinction between information availability and cognitive salience 
 
 Digital interfaces industrialize it. Dark patterns can bury fees, turn cancellation into an obstacle course, disguise advertisements as neutral content, or induce users to surrender more personal data than they intended. [S102] Broadband labels now require providers to present standardized pricing information, including introductory and post-introductory rates, precisely because an advertised teaser price is not enough for a consumer to understand the actual economic relationship. [S127]
 
-The defenders of each practice have plausible explanations.
+Each practice has a business rationale. Introductory pricing acquires customers. Personalization can make offers more relevant. Data can improve service. Retention programs reduce churn. Advertising can fund products people do not pay for directly.
 
-Introductory pricing is customer acquisition.
-
-Dynamic pricing improves market efficiency.
-
-Personalization gives consumers relevant offers.
-
-Package-size changes protect price-sensitive buyers.
-
-Data collection improves service.
-
-Retention programs reduce churn.
-
-Advertising funds free products.
-
-Every sentence can be true.
-
-The ethical question concerns the combined objective function.
+The ethical problem appears when those rationales are stacked into one objective function: learn as much as possible about the buyer, reduce the visibility of exits, measure which pressures work, and optimize the transaction around whatever keeps the revenue.
 
 What happens when a company knows more about the consumer than the consumer knows about the company; can experiment on millions of users; can observe clickstream behavior at granular resolution; can estimate switching probability; can infer willingness to pay; can change presentation instantly; and can measure the revenue effect of every additional piece of friction?
 
@@ -143,37 +129,33 @@ That is a qualitatively different form of power.
 
 ## The price of not becoming an expert
 
-My remembered internet and cellular bills are not current price research. They describe what I reported paying at the time of the original discussion. I have not supplied the contracts, promotional terms, equipment charges, taxes, or service characteristics needed to establish an exact like-for-like comparison. The experience that matters here is the sense of having to renegotiate a basic relationship to avoid paying a loyalty penalty. [S187]
+A customer should not have to become a miniature procurement department to keep a household bill honest.
 
-A customer should not have to become a miniature procurement department to understand a household bill. That is my ethical judgment. The economic explanation requires more care. Providers can face different acquisition costs, service costs, competitive pressures, and contract terms. A difference in price is not enough to identify exploitation. A pattern in which less attentive or less mobile customers pay more for comparable service raises a different question about how the market uses those differences.
+The CMA's loyalty-penalty work documents the broader mechanism in specific UK markets: customers who remain with a provider can pay more than customers who actively search or switch. [S122] The details of my American accounts are my own experience. The mechanism is bigger than my bills.
 
-The CMA's loyalty-penalty work concerns particular UK markets and a particular period. It is not a measured explanation of my American accounts. It provides a documented example of the broader mechanism: customers who remain with a provider can pay more than customers who actively search or switch. [S122]
+The common thread is the cost of staying informed and acting on the information. Switching means time, uncertainty, equipment, appointments, account transfers, service risk, and the possibility that the supposedly better offer has its own trapdoor six months later.
 
-The common thread is the cost of becoming informed and acting on the information. A person may know that a better offer exists and still decide that switching is not worth the immediate disruption. That is not necessarily irrational. The time, uncertainty, and risk of losing a service are part of the price of the alternative.
-
-A seller that understands those costs can price against them. Competition may be present, yet its benefit may reach the customers most able to use it. The existence of another provider does not establish that every customer faces an equally practical exit.
+A seller that understands those costs can price against them. Competition can exist on paper while remaining expensive to exercise in practice. The people who benefit most from the competitive market are then the people with enough time, confidence, mobility, and attention to keep forcing the market to compete for them.
 
 ## Personalization has several meanings
 
-“Personalized pricing” is often used as if it names one practice. It can refer to a discount, a different posted price, a different order of products, a different bundle, or a targeted offer. Those differences matter. Showing a person a more expensive product first is not the same as charging them a higher price for an identical item, even though either could affect what they spend.
+“Personalized pricing” covers several practices: a discount, a different posted price, a different order of products, a different bundle, or a targeted offer. The mechanics differ. The common feature is that the transaction increasingly depends on what the seller knows or infers about the person standing on the other side of it.
 
-The FTC's 2025 initial findings describe the capabilities and practices of pricing intermediaries and the kinds of data they use. The agency explicitly used hypothetical examples to protect confidential information. Those examples should not be retold as verified incidents involving a particular retailer and customer. [S124]
+The FTC's 2025 initial findings describe the capabilities and practices of pricing intermediaries and the kinds of data they use. The agency used hypothetical examples to protect confidential information, so the report supports a claim about capability and practice, not a claim about a named shopper being charged a specific amount. [S124]
 
-That boundary does not make the report unimportant. It changes the level of claim the evidence supports. The documented issue is that firms can use detailed information about consumers to tailor prices, discounts, or product exposure. It does not establish that every retailer uses every data field, that every consumer pays more, or that each tailored offer is harmful.
+A lower offer can help someone afford a product. A higher offer can capture more of the buyer's willingness to pay. A change in product ordering can alter what the buyer notices before a price comparison even begins.
 
-A lower offer can help someone obtain a product they otherwise could not afford. A higher offer can transfer more of the buyer's willingness to pay to the seller. A change in product ordering can alter what the buyer notices before a price comparison even begins. To evaluate the practice, we need to know which mechanism is operating and how its effects are distributed.
-
-The Dubé and Misra study makes this distributional issue concrete in its own setting. An improvement in the seller's profit can coexist with gains for some consumers and lower aggregate consumer surplus. It does not follow that each customer is harmed by the same amount or that the result transfers unchanged to a different market. [S123]
+The Dubé and Misra study makes the distributional point concrete in its own setting: higher expected seller profit can coexist with gains for some customers and lower aggregate consumer surplus. [S123] That is enough to reject the fantasy that “personalization” names one neutral benefit.
 
 The ethical question I draw from it concerns the direction in which information works. Does knowing more about a person's circumstances help meet a need at a fairer cost? Or does it help identify how much pressure the person can bear? The data can be similar. The objective can be different.
 
 ## A discount can buy information as well as a sale
 
-Imagine a hypothetical shopping assistant that offers a small discount in exchange for access to purchase history. The immediate exchange may be clear and acceptable to the customer. The longer relationship is harder to see. The data may improve recommendations. It may also improve estimates of urgency, brand attachment, or the likelihood of switching.
+Imagine a shopping assistant that offers a small discount in exchange for purchase history. The first trade is easy to understand. The longer trade is not. The same data that improves recommendations can improve estimates of urgency, brand attachment, willingness to pay, or the likelihood of switching.
 
 The value of the data does not have to be visible in the first transaction. It can appear later, when the firm chooses which offer to show or which customer to pursue. That makes the transaction intertemporal: something traded now changes the terms of future exchanges.
 
-This is one reason consent at a single moment is not a complete description of a continuing relationship. A person can authorize a use without being able to predict every later inference. The issue is not that consent is meaningless. It is that the scope of what was understood may differ from the scope of what a system can derive.
+This is why a single consent screen is a poor description of a continuing relationship. A person can authorize a use without being able to predict every later inference. What the person understood at the moment of consent can be much smaller than what the system eventually learns to derive.
 
 AI can deepen that difference by combining information across encounters. A conversational system might learn that a person is in a hurry, worried about a deadline, or reluctant to switch providers. Those signals could help it provide useful assistance. In a commercial setting, they could also become inputs into a sales strategy. This is a scenario about possible deployment, not evidence that a named assistant currently sells such inferences.
 
@@ -193,9 +175,9 @@ A seller's assistant could perform the opposite work: find the framing that make
 
 <figure class="story-scene adviser-scene" data-test-id="editorial-scene">
 <div class="scene-overline"><span>The interface sounds helpful</span><span>Hypothetical assistant designs</span></div>
-<h2>Whose side<br>is the assistant on?</h2>
+<h2>Whose side is the assistant on?</h2>
 <fieldset class="scene-choice"><legend>Change the objective behind the advice</legend><label><input type="radio" name="adviser-objective" value="compare" checked data-test-id="adviser-objective"> Help me compare</label><label><input type="radio" name="adviser-objective" value="convert" data-test-id="adviser-objective"> Keep me buying</label></fieldset>
-<div class="adviser-window"><div class="adviser-window-top"><span aria-hidden="true">● ● ●</span><span>THE SAME CAPABILITY</span></div><p class="adviser-request">Help me understand my options.</p><div class="adviser-reply compare-reply"><span class="machine-label">Agency expands</span><h3>Unit prices.<br>Renewal terms.<br>Alternatives.</h3><p>The recommendation can include leaving the supplier.</p></div><div class="adviser-reply convert-reply"><span class="machine-label">The funnel narrows</span><h3>Selected products.<br>Favorable framing.<br>Fewer visible exits.</h3><p>The advice can be accurate about the options it chooses to mention.</p></div></div>
+<div class="adviser-window"><div class="adviser-window-top"><span aria-hidden="true">● ● ●</span><span>THE SAME CAPABILITY</span></div><p class="adviser-request">Help me understand my options.</p><div class="adviser-reply compare-reply"><span class="machine-label">Agency expands</span><h3>Unit prices. Renewal terms. Alternatives.</h3><p>The recommendation can include leaving the supplier.</p></div><div class="adviser-reply convert-reply"><span class="machine-label">The funnel narrows</span><h3>Selected products. Favorable framing. Fewer visible exits.</h3><p>The advice can be accurate about the options it chooses to mention.</p></div></div>
 <figcaption>The chapter contrasts possible objectives, not measured behavior of a named assistant. Politeness and controllability do not establish whose interests an intermediary serves.</figcaption>
 </figure>
 

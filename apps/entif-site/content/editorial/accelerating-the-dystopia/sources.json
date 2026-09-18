@@ -209,17 +209,6 @@
     "Notes": "Median household income rose in 2025; useful guard against simplistic claims that all households are continuously getting poorer."
   },
   {
-    "Source_ID": "S120",
-    "Title": "Costco Wholesale Corporation 2025 Form 10-K",
-    "Author_or_Institution": "Costco / SEC",
-    "Year": "2025",
-    "Source_Type": "audited company filing",
-    "Authority_Role": "case accounting",
-    "URL": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
-    "Primary_Families": "AF04",
-    "Notes": "Revenue was about $275B, not profit; net income about $8.1B and employees about 341,000. Preserves the accounting correction while leaving normative surplus-distribution argument open."
-  },
-  {
     "Source_ID": "S121",
     "Title": "Incumbency Advantages and Consumer Search Costs",
     "Author_or_Institution": "Klaus Gugler et al.",
@@ -682,17 +671,6 @@
     "Notes": "Argues common tokenization procedures induce sampling biases that are not automatically eliminated by more training data."
   },
   {
-    "Source_ID": "S163",
-    "Title": "From Surface Forms to Explicit Senses: A Rosetta Research Protocol for Semantic Disambiguation in Language Models",
-    "Author_or_Institution": "Crates McDade / Entif research artifact",
-    "Year": "2026",
-    "Source_Type": "source-locked internal research protocol",
-    "Authority_Role": "method / hypothesis antecedent",
-    "URL": "Input/From_Surface_Forms_to_Explicit_Senses_Rosetta_Research_Protocol.md",
-    "Primary_Families": "AF10;AF11",
-    "Notes": "Directly operationalizes tests for shared-form cross-sense leakage, concept-aware representations, random/corrupted controls, and adverse semantic-side-channel failure modes."
-  },
-  {
     "Source_ID": "S164",
     "Title": "Translating Neuralese",
     "Author_or_Institution": "Jacob Andreas; Anca Dragan; Dan Klein",
@@ -946,17 +924,6 @@
     "Notes": "181 CEOs committed rhetorically to customers, employees, suppliers, communities and shareholders; useful constraint against caricaturing all corporate doctrine as explicitly shareholder-only."
   },
   {
-    "Source_ID": "S187",
-    "Title": "ETR-2026-07 live ideation session and firsthand testimony",
-    "Author_or_Institution": "Crates McDade",
-    "Year": "2026",
-    "Source_Type": "author firsthand testimony / conversation provenance",
-    "Authority_Role": "firsthand institutional evidence",
-    "URL": "Lineage/Authorial_Source_Transcript_20260916.md",
-    "Primary_Families": "AF02;AF03;AF05",
-    "Notes": "Author firsthand testimony / ideation provenance. The unabridged transcript was supplied after the failed Stage 2 run and is now bound locally with a SHA-256 receipt. Treat as attributed firsthand testimony, not independent corroboration of externally verifiable facts."
-  },
-  {
     "Source_ID": "S201",
     "Title": "Generative AI at Work",
     "Author_or_Institution": "Erik Brynjolfsson; Danielle Li; Lindsey Raymond",
@@ -1010,17 +977,6 @@
     "URL": "https://doi.org/10.1093/jopart/muu009",
     "Primary_Families": "AF01;AF16",
     "Notes": "Develops learning, psychological, and compliance costs as components of administrative burden."
-  },
-  {
-    "Source_ID": "S206",
-    "Title": "[Unresolved Stage 2 source slot]",
-    "Author_or_Institution": "[not recoverable from failed-run evidence]",
-    "Year": "",
-    "Source_Type": "recovery placeholder",
-    "Authority_Role": "none - not cited in recovered manuscript",
-    "URL": "",
-    "Primary_Families": "",
-    "Notes": "S206 was not used in the recovered manuscript, and its identity was not recoverable with sufficient confidence from the checkpoint plus failed-run trace. Reserved rather than guessed."
   },
   {
     "Source_ID": "S207",

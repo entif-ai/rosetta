@@ -26,31 +26,35 @@ Social networks mediate attention.
 
 Recommendation systems mediate discovery.
 
-Generative AI increasingly mediates **interpretation**.
+Generative AI increasingly mediates **interpretation, judgment, and action**.
 
 This is not a metaphorical distinction. A search engine historically returned documents. A language model can synthesize documents into an explanation, weigh apparent evidence, construct alternatives, translate technical material, draft a business strategy, write code, suggest a diagnosis to discuss with a doctor, summarize a contract, tutor a student, simulate an adversary, build a spreadsheet, and increasingly use tools to act on the result.
 
 Survey work in 2024 found rapid adoption among US adults, including substantial workplace use. Those early observations are a dated baseline, not a measurement of use in September 2026. [S155] Stanford's 2026 AI Index reports broad organizational AI use while showing that genuinely agentic deployment remains much less common across business functions. [S153]
 
-We are therefore early enough that declaring AI the nervous system of civilization would be premature.
+We are not living inside a single AI nervous system yet.
 
-We are late enough that the direction is visible.
+We are absolutely far enough along to see the anatomy forming.
 
 The infrastructure underneath that transition is concentrated.
 
 Stanford reports that industry produced more than 90% of the notable AI models in 2025. [S152] OECD analysis highlights concentration and entry barriers across AI chips, cloud infrastructure, and related layers, including the specialized hardware and software needed to train and deploy models. [S154] The FTC's January 2025 staff study, based on partner submissions through September 2024 and public information through January 2025, documents equity stakes, revenue-sharing arrangements, cloud-spend commitments, consultation rights, exclusivities, and exchanges of technical or business information. It raises concerns about access to important inputs and switching costs. [S151]
 
-This matters for power because frontier AI is not one product category.
+This matters for power because frontier AI is not one product category. It is becoming an administrative layer.
 
 It is a stack that spans chips, data centers, energy, cloud services, models, developer tools, and the interfaces through which people reach them. Identity, payments, search, advertising, and enterprise software can connect that stack to existing markets.
 
-If the same small set of firms control multiple layers, they gain leverage over who can build, what can be deployed, which models receive distribution, what defaults billions of users encounter, and what kinds of telemetry return from those interactions.
+If the same small set of firms control multiple layers, they gain leverage over who can build, what can be deployed, which models receive distribution, what defaults billions of users encounter, and what telemetry comes back from those interactions.
+
+That is what concerns me about Big Tech's role in the consolidation and wholesale administration of reasoning infrastructure. We are moving from companies that host our files, searches, advertisements, and conversations toward companies that can mediate the reasoning used to interpret all of them.
 
 A price-only account would miss part of that influence. Quality, access, choice, and the framing of information also matter. The question is not whether competition law has ever considered them, but whether our everyday picture of the product makes them visible.
 
-Suppose an assistant is genuinely helpful, free or cheap, and dramatically increases productivity. Traditional consumer welfare can look fantastic.
+Suppose an assistant is genuinely helpful, free or cheap, and dramatically increases productivity. By ordinary consumer metrics, that can look fantastic.
 
 At the same time, the assistant can become a gatekeeper to information, labor-market participation, software creation, education, professional advice, and organizational decision-making. A model provider's defaults around safety, politics, sexuality, mental health, religion, risk, acceptable language, sourcing, uncertainty, and commercial recommendations can then propagate through millions of downstream interactions.
+
+The consequential layer is not merely what the model refuses to say. It is what the model makes easy to think.
 
 Some defaults are unavoidable.
 
@@ -76,7 +80,7 @@ What happens when a government becomes a customer?
 
 What happens when the model is asked to manage workers rather than assist them?
 
-These are not future philosophy questions. They are procurement questions.
+These are not future philosophy questions. They are procurement questions, architecture questions, and governance questions being answered right now.
 
 The FTC partnership report illustrates why concentration multiplies the stakes. Cloud providers are not merely neutral landlords for frontier labs. Partnerships can combine capital, compute commitments, technical integration, information access, and commercial distribution. [S151] A lab's survival can depend on infrastructure from a partner with its own platform interests. A cloud company can obtain preferred access to frontier capability. Enterprise customers then encounter the model through products they already use.
 
@@ -116,6 +120,18 @@ That is why the ethics of Big Tech cannot be reduced to whether a model refuses 
 
 A perfectly safe refusal policy can coexist with a profoundly concentrated cognitive infrastructure.
 
+## An agenda does not require consciousness
+
+Nothing in this concern requires a machine to wake up, become sentient, hate us, love us, or want anything in the human sense.
+
+An optimizer can acquire an agenda in the operational sense because we gave it an objective. A recommender can prefer one outcome because its reward function scores that outcome higher. An agent can protect a plan because the plan is part of the task state. A fleet of systems can develop stable strategies because those strategies keep succeeding under the incentives and feedback available to them.
+
+That is enough.
+
+The more consequential question is what happens when those objectives operate inside systems that mediate finance, employment, procurement, education, media, software, government services, and personal decision-making. A civilization does not need a conscious machine overlord to become dependent on machine-mediated priorities. It only needs optimization embedded deeply enough that its outputs become the default path through ordinary institutions.
+
+This is where alignment to the present world becomes a much less comforting phrase. If the world being modeled and optimized already contains the extraction, opacity, asymmetry, and grievance described in the previous chapters, then perfect fidelity to those incentives can accelerate the problem.
+
 ## When the interface becomes a working relationship
 
 There is a useful way to distinguish a tool from a dependency. Ask what the user must rebuild to leave it.
@@ -126,7 +142,7 @@ This creates several kinds of switching cost. One is financial: the price of a n
 
 These are analytical distinctions, not estimates of how much any named provider currently charges for exit. Their importance is that a low monthly price does not measure the whole dependency. An assistant can be affordable to use and expensive to replace. The commercial value of the accumulated relationship may grow even while inference becomes cheaper.
 
-There is nothing inherently suspect about continuity. I want software to remember the relevant context instead of making me explain the same project every morning. Repetition wastes time and creates errors. The question is whether continuity belongs only to the supplier or can remain meaningfully under the user's control. An export button that preserves text but discards permissions, provenance, uncertainty, and tool state provides a thinner kind of portability than its name suggests.
+I want continuity. I want software to remember the relevant context instead of making me explain the same project every morning. Repetition wastes time and creates errors. The problem is who controls that continuity. An export button that preserves text while discarding permissions, provenance, uncertainty, and tool state is not meaningful portability for a working relationship.
 
 This is where the story about an ordinary customer becomes connected to the story about infrastructure. At each layer, integration can offer a real benefit. Specialized chips can improve performance. A cloud service can reduce the burden of running hardware. A model can make the service useful. An application can make the model accessible. None of those benefits proves that control at the layers below is irrelevant to the user above. The OECD's infrastructure analysis treats the supply chain, its participants, and entry barriers as connected questions rather than treating the chatbot as a self-contained market. [S154]
 
@@ -148,7 +164,9 @@ This is why evaluating an assistant only for factual accuracy is incomplete. An 
 
 The same distinction applies to refusal. A service must set limits on what it will do. A limit can prevent a real harm. But the fact that a refusal exists does not tell us whether the rest of the system distributes attention, access, and opportunity well. Safety at one boundary cannot stand in for an account of the whole institution.
 
-My own work depends heavily on machine assistance. That matters to this argument. I am not describing a tool that I can dismiss without losing anything. The useful part is precisely what creates the dependency. When a system helps me understand a difficult subject, write working software, or keep a complicated project coherent, it becomes part of how I work. Criticism of that relationship is not a claim that the help was fake. It is a reason to examine who can change its terms.
+My own work depends heavily on machine assistance. I use these systems to understand difficult subjects, write working software, coordinate complicated projects, research claims, and keep long chains of work coherent. I am not criticizing a toy I could throw away without consequence. The usefulness is precisely what creates the dependency.
+
+That is why I care who can change the model, the terms, the memory, the available tools, the allowed actions, the price, the defaults, and the surrounding infrastructure. Once the system becomes part of how I think and work, those are no longer ordinary product settings.
 
 Consider a future update that improves most benchmark scores but changes how an assistant handles uncertainty. A research team may prefer more abstention; a sales team may prefer fewer interruptions. A customer-support department may value an answer that sounds settled; a person contesting a bill may need the unresolved possibility kept open. The same model revision could have different consequences in those settings. There is no single word, such as helpfulness, that removes the conflict.
 
@@ -184,6 +202,10 @@ This is the institutional form of the disclosure problem. Formally, the person c
 
 The answer is not to require a human to read every token or approve every harmless operation. That would destroy many of the benefits. It is to know which distinctions the workflow cannot afford to erase: a claim versus an observation, an inference versus an instruction, permission to read versus permission to act, and an unresolved dispute versus an accepted conclusion. Losing those distinctions changes the meaning of the work, not merely its presentation.
 
-A civilization-scale reasoning dependency remains a possibility, not an accomplished fact. But we can examine the smaller dependencies already described in this essay without pretending that the future has arrived all at once. The software subscription, the inherited corporate vocabulary, the shared source, and the unexamined default are ordinary enough. Together, under increasing automation, they can become the channels through which institutions perceive and act.
+The civilization-scale version is still forming, but its components are already mundane: the software subscription, the inherited corporate vocabulary, the shared model, the cloud dependency, the procurement default, the assistant that remembers the project, the agent that can act.
 
-That is what I mean by a nervous system. It is an analogy about mediation and coordination, not a claim that companies or software have become one conscious organism. A useful system of assistance can become a system of institutional perception. Its errors, omissions, and priorities then matter beyond the person who typed the prompt.
+Together, under increasing automation, those components become channels through which institutions perceive and act.
+
+That is what I mean by a nervous system. I do not mean one conscious organism. I mean a system of perception, interpretation, coordination, and action that becomes difficult to separate from the institutions depending on it.
+
+If we do not fix the incentives in the world feeding that system, then making the system smarter does not rescue us from the trajectory. It gives the trajectory better tools.
