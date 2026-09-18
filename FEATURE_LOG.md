@@ -89,3 +89,31 @@ CSS is split into scene primitives and a chapter-only stylesheet. Direct browser
 inspection and the role-consolidation interaction were checked. One new loader-path
 boundary test ran red/green. No broad browser, a11y, HTML or performance suites run.
 Next: differentiated treatments for chapters 2–16 and reference exploration.
+
+## Accessibility closeout checkpoint
+
+User-authorized branch-wide WCAG validation superseded the earlier instruction in this
+log to defer broad accessibility/browser checks. The final implementation pass found a
+route-layout regression on the short `/articles/<slug>/` aliases for editorial-series
+chapters: those URLs rendered through the generic `PublishedEntry` layout instead of the
+series layout, dropping chapter-specific visual CSS. Axe exposed the mismatch as WCAG
+2.2 SC 2.5.8 target-size failures in chapters 02 and 04. Short series routes now render
+through the same `EditorialSeriesLayout` as canonical series URLs; non-series essays keep
+their existing `PublishedEntry` path. A browser regression test verifies the short routes
+retain the editorial treatment. Playwright is also configured not to reuse an unrelated
+preview server on its fixed test port after a stale preview from another worktree produced
+false local failures.
+
+Validation (2026-09-18):
+- `entif-site:verify`: pass; 21 unit tests pass; generated HTML, duplicate IDs, local links,
+  assets, and fragments pass across 217 HTML pages.
+- Playwright: 237/237 pass, including all generated-page axe WCAG 2.0/2.1/2.2 A/AA plus
+  best-practice audits, reflow, 200% text plus WCAG spacing, keyboard/native disclosure,
+  reduced motion, touch behavior, and the short-route editorial regression.
+- `test-results/.last-run.json`: `passed`, no failed tests.
+- Lighthouse configured page/device runs: accessibility, best practices, and SEO all 100;
+  report performance 99–100, homepage desktop 100, homepage mobile 91 in this lab run.
+- `git diff --check`: pass.
+
+PR #1621's pre-fix Entif site CI failure was reproduced locally and matched the two
+short-route SC 2.5.8 failures above. No merge or PR closeout performed.

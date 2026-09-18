@@ -7,6 +7,16 @@ const routes = readdirSync(`dist${prefix}`, { withFileTypes: true })
   .map((entry) => `${prefix}${entry.name}/`)
   .sort();
 
+test('short article routes retain the editorial series treatment', async ({
+  page,
+}) => {
+  for (const route of routes) {
+    const slug = route.slice(prefix.length, -1);
+    await page.goto(`/articles/${slug}/`);
+    await expect(page.getByTestId('editorial-series')).toBeVisible();
+  }
+});
+
 test('citation disclosure opens, dismisses, and follows its registry destination', async ({
   page,
 }) => {
