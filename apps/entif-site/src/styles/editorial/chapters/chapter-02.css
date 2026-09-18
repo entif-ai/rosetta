@@ -1,5 +1,6 @@
 .story-scene.language-scene { background: var(--scene-night); color: var(--scene-paper); }
 .language-scene .scene-choice label { border-color: var(--scene-paper); }
+.story-scene.language-scene figcaption { color: var(--canvas); }
 .language-scene .scene-choice label:has(:checked) { background: var(--scene-paper); color: var(--ink); }
 .language-paper { background: var(--scene-paper); color: var(--ink); margin: 3rem auto; padding: clamp(1.5rem,5vw,5rem); max-width: 60rem; transform: rotate(-1deg); box-shadow: 1rem 1rem 0 var(--scene-rule); }
 .memo-label { font-family: system-ui,sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; }

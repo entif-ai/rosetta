@@ -9,6 +9,7 @@
 .switching-route li span{color:var(--accent);font-family:system-ui,sans-serif;font-size:.75rem;}
 .switching-end>span{font-size:4rem;color:var(--accent);}.switching-end p{font-size:1.75rem;line-height:1.2;}
 .story-scene.adviser-scene{background:var(--scene-night);color:var(--scene-paper);}
+.story-scene.adviser-scene figcaption { color: var(--canvas); }
 .adviser-scene .scene-choice label{border-color:var(--scene-paper);}.adviser-scene .scene-choice label:has(:checked){color:var(--ink);background:var(--scene-paper);}
 .adviser-window{max-width:55rem;margin:3rem auto 1rem;border:1px solid var(--scene-rule);background:var(--surface);color:var(--ink);border-radius:.75rem;overflow:hidden;}
 .adviser-window-top{display:flex;justify-content:space-between;gap:1rem;padding:1rem;border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.6875rem;letter-spacing:.1em;}

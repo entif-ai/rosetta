@@ -10,6 +10,7 @@
   color: var(--scene-paper);
   overflow: clip;
 }
+.story-scene.optimizer-scene figcaption { color: var(--canvas); }
 .optimizer-heading {
   padding-top: 1.5rem;
 }

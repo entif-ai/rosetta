@@ -2,6 +2,7 @@
 .story-scene.category-scene figcaption {
   color: var(--ink);
 }
+.story-scene.reassurance-scene figcaption { color: var(--canvas); }
 .category-map { position:relative; max-width:52rem; height:28rem; margin:3rem auto 1rem; border-left:2px solid var(--ink); border-bottom:2px solid var(--ink); background:repeating-linear-gradient(0deg,transparent,transparent calc(25% - 1px),var(--line) 25%),repeating-linear-gradient(90deg,transparent,transparent calc(25% - 1px),var(--line) 25%); }
 .category-boundary { position:absolute; inset:8% 6% 8% 6%; border:2px dashed var(--accent); background:color-mix(in srgb,var(--surface) 60%,transparent); border-radius:45%; }
 .category-boundary > span { position:absolute; top:1rem; left:0; width:100%; text-align:center; font-family:system-ui,sans-serif; font-size:0.6875rem; letter-spacing:0.05em; }
