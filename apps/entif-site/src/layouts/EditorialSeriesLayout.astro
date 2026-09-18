@@ -57,18 +57,14 @@ const href = (item: SiteEntry) =>
     />
     <header class="editorial-masthead">
       <p class="eyebrow">
-        {
-          `${metadata.report}`
-        }
+        {`${metadata.report}`}
       </p>
       <p class="editorial-series-title">{metadata.title}</p>
       <p class="editorial-subtitle">{metadata.subtitle}</p>
       <p class="editorial-byline">{entry.data.authors.join(', ')}</p>
     </header>
     <header class="editorial-chapter-header">
-      <span class="editorial-number" aria-hidden="true"
-        >{current}</span
-      >
+      <span class="editorial-number" aria-hidden="true">{current}</span>
       <h1 data-test-id="editorial-heading">{entry.data.title}</h1>
     </header>
     {

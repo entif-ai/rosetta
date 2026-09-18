@@ -1,7 +1,7 @@
 /* Chapter 1: an institutional machine, incompatible measures, and the human bargain. */
-.story-scene.category-scene figcaption, 
-.story-scene.substrate-scene figcaption, 
-.story-scene.resolution-scene figcaption, 
+.story-scene.category-scene figcaption,
+.story-scene.substrate-scene figcaption,
+.story-scene.resolution-scene figcaption,
 .story-scene.bargain-scene figcaption {
   color: var(--ink);
 }
@@ -10,7 +10,9 @@
   color: var(--scene-paper);
   overflow: clip;
 }
-.story-scene.optimizer-scene figcaption { color: var(--canvas); }
+.story-scene.optimizer-scene figcaption {
+  color: var(--canvas);
+}
 .optimizer-heading {
   padding-top: 1.5rem;
 }
@@ -95,11 +97,11 @@
   font-variant-numeric: tabular-nums;
 }
 .measure-value > span {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 0.1em;
 }
 .measure-track {
-  height: .9rem;
+  height: 0.9rem;
   background: var(--surface);
   margin: 1rem 0;
 }
@@ -211,7 +213,7 @@
 
 .bill-sheet strong {
   display: block;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border: 2px solid var(--accent);
   padding: 0.5rem;
   color: var(--accent);

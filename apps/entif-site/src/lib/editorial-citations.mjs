@@ -22,7 +22,6 @@ export function resolveSources(keys, registry = sources) {
   });
 }
 
-
 const text = (value) => ({ type: 'text', value });
 const element = (tagName, properties, children) => ({
   type: 'element',
@@ -46,10 +45,13 @@ export function rehypeEditorial() {
       if (['a', 'code', 'pre'].includes(node.tagName) || !node.children) return;
       node.children = node.children.flatMap((child) => {
         if (child.type === 'raw') {
-          child.value = child.value.replace(/href="etr-source:(S\d{3})"/g, (_, key) => {
-            resolveSources([key]);
-            return `href="${reference}#source-${key}"`;
-          });
+          child.value = child.value.replace(
+            /href="etr-source:(S\d{3})"/g,
+            (_, key) => {
+              resolveSources([key]);
+              return `href="${reference}#source-${key}"`;
+            }
+          );
           return [child];
         }
         if (child.type !== 'text') {
