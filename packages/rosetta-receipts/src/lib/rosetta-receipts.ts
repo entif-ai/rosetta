@@ -317,3 +317,231 @@ export function verifyReceiptBundle(bundle: ReceiptBundle, store: InMemoryTileSt
     ok: errors.length === 0
   };
 }
+
+/**
+ * First-wave promotion states. See docs/spec/PROMOTION_TRANSITION_CONTRACT.md.
+ * The set is intentionally narrow; later lanes may extend it through additive schemas.
+ */
+export type PromotionState =
+  | 'pending-confirmation'
+  | 'active'
+  | 'promoted'
+  | 'cooled'
+  | 'quarantined'
+  | 'pending-revisit'
+  | 'superseded';
+
+/**
+ * Allowed transition kinds. A transition is legal only if it appears in
+ * PROMOTION_TRANSITIONS with the expected prior state.
+ */
+export type PromotionTransitionKind =
+  | 'confirm'
+  | 'promote'
+  | 'cool'
+  | 'quarantine'
+  | 'revisit'
+  | 'activate'
+  | 'supersede';
+
+/**
+ * Default-deny transition allow-list. Anything not in this map throws.
+ */
+export const PROMOTION_TRANSITIONS: Readonly<Record<PromotionTransitionKind, readonly PromotionState[]>> = Object.freeze({
+  activate: Object.freeze(['cooled', 'pending-revisit'] as const),
+  confirm: Object.freeze(['pending-confirmation'] as const),
+  cool: Object.freeze(['active'] as const),
+  promote: Object.freeze(['active'] as const),
+  quarantine: Object.freeze(['active'] as const),
+  revisit: Object.freeze(['active', 'quarantined'] as const),
+  supersede: Object.freeze(['active', 'promoted'] as const)
+});
+
+/**
+ * Blocked-precondition is mapped onto the existing verdict union (#158).
+ * - 'soft' closes onto 'unknown' (may resolve through evidence closure)
+ * - 'hard' closes onto 'deny' (rights/policy backing missing)
+ */
+export type PromotionBlockKind = 'soft' | 'hard';
+
+export interface PromotionTransitionBlocked {
+  block: PromotionBlockKind;
+  kind: PromotionTransitionKind;
+  reason: string;
+}
+
+export interface PromotionTransitionApplied {
+  fromState: PromotionState;
+  kind: PromotionTransitionKind;
+  nextState: PromotionState;
+  nextStateTile: TileEnvelope;
+  receipt: TileEnvelope<ReceiptPayload>;
+}
+
+export type PromotionTransitionResult = PromotionTransitionApplied | PromotionTransitionBlocked;
+
+export interface CreatePromotionTransitionInput {
+  /** Subject being transitioned (the derived artifact or the source artifact it points at). */
+  subject: TileEnvelope;
+  /** Current promotion state of the subject. */
+  priorState: PromotionState;
+  /** Transition kind requested. */
+  kind: PromotionTransitionKind;
+  /** Evidence closure: the source observation, canonical artifact, trust matrix, evaluation tiles. */
+  evidenceRefs: TileEnvelope[];
+  /** Policy tiles backing the transition. */
+  policies: TileEnvelope[];
+  /** Lane-local evaluation vectors; preserved as evidence, never collapsed into a scalar. */
+  evaluationVectors?: TileEnvelope[];
+  /** Optional reason the transition is being applied. */
+  reason?: string;
+}
+
+/**
+ * Apply a promotion transition. Emits a typed receipt over the existing receipt family.
+ * Does NOT mutate the subject, the evidence, or any artifact on the closure.
+ */
+export function createPromotionTransition(input: CreatePromotionTransitionInput): PromotionTransitionResult {
+  if (!verifyTileIntegrity(input.subject).ok) {
+    throw new Error('Promotion subject integrity failed.');
+  }
+  if (input.priorState === 'superseded') {
+    return {
+      block: 'hard',
+      kind: input.kind,
+      reason: 'Superseded is a terminal promotion state.'
+    };
+  }
+  const allowedFromStates = PROMOTION_TRANSITIONS[input.kind];
+  if (!allowedFromStates.includes(input.priorState)) {
+    return {
+      block: 'hard',
+      kind: input.kind,
+      reason: `Transition '${input.kind}' is not allowed from state '${input.priorState}'.`
+    };
+  }
+  if (input.evidenceRefs.length === 0) {
+    return {
+      block: 'soft',
+      kind: input.kind,
+      reason: 'Evidence closure is missing; promotion transition cannot be applied.'
+    };
+  }
+  if (input.policies.length === 0) {
+    return {
+      block: 'hard',
+      kind: input.kind,
+      reason: 'Policy backing is missing; promotion transition cannot be applied.'
+    };
+  }
+  const closure = [input.subject, ...input.evidenceRefs, ...input.policies, ...(input.evaluationVectors ?? [])];
+  for (const tile of closure) {
+    if (typeof tile.payload !== 'object' || tile.payload === null || Array.isArray(tile.payload)) {
+      throw new Error(`Promotion closure member payload must be an object: ${tile.cid}`);
+    }
+    if (!verifyTileIntegrity(tile).ok) {
+      throw new Error(`Promotion closure member failed integrity: ${tile.cid}`);
+    }
+    const validation = validatePayload(tile.kind, tile.payload);
+    if (!validation.ok) {
+      throw new Error(`Promotion closure member failed payload validation: ${validation.errors.join('; ')}`);
+    }
+  }
+  const nextState = nextPromotionState(input.kind, input.priorState);
+  if (!nextState) {
+    return {
+      block: 'hard',
+      kind: input.kind,
+      reason: `Transition '${input.kind}' produced no next state from '${input.priorState}'.`
+    };
+  }
+  const newStateTile = buildTile('rosetta.observation', {
+    observationId: `promotion.${input.kind}.${input.subject.cid.slice(-12)}`,
+    signal: `Promotion transition '${input.kind}' applied: ${input.priorState} -> ${nextState}.`,
+    source: 'rosetta.promotion'
+  }, { pack: 'rrp.rlm' });
+  const statement = input.reason?.trim() || `Promotion transition '${input.kind}' applied from '${input.priorState}' to '${nextState}'.`;
+  const receipt = createReceipt({
+    claims: [{
+      claimType: `rrp:promotion.transition.${input.kind}`,
+      evidence: input.evidenceRefs.map((tile) => ({ cid: tile.cid })),
+      statement,
+      verdict: 'pass'
+    }],
+    digests: [
+      digestTile(input.subject, 'rrp:promotion.subject'),
+      digestTile(newStateTile, 'rrp:promotion.next_state'),
+      ...input.evidenceRefs.map((tile) => digestTile(tile, 'rrp:promotion.evidence'))
+    ],
+    policyRefs: input.policies.map((tile) => tile.cid),
+    receiptType: 'rrp:promotion.transition.v1',
+    subjects: [
+      { cid: input.subject.cid, role: 'rrp:promotion.subject' },
+      { cid: newStateTile.cid, role: 'rrp:promotion.next_state' }
+    ]
+  });
+  return {
+    fromState: input.priorState,
+    kind: input.kind,
+    nextState,
+    nextStateTile: newStateTile,
+    receipt
+  };
+}
+
+/**
+ * Emit a typed refusal/denial receipt for a blocked promotion transition.
+ * Maps the block kind onto the existing verdict union (#158).
+ */
+export function createPromotionTransitionRefusal(
+  input: CreatePromotionTransitionInput,
+  block: PromotionBlockKind,
+  reason: string
+): TileEnvelope<ReceiptPayload> {
+  if (input.evidenceRefs.length === 0 && input.policies.length === 0) {
+    throw new Error('Refusal requires at least the attempted transition inputs.');
+  }
+  const verdict: ReceiptVerdict = block === 'hard' ? 'deny' : 'unknown';
+  const suffix = block === 'hard' ? '.denied' : '.blocked';
+  const closure = [input.subject, ...input.evidenceRefs, ...input.policies];
+  for (const tile of closure) {
+    if (typeof tile.payload !== 'object' || tile.payload === null || Array.isArray(tile.payload)) {
+      throw new Error(`Promotion refusal closure member payload must be an object: ${tile.cid}`);
+    }
+    if (!verifyTileIntegrity(tile).ok) {
+      throw new Error(`Promotion refusal closure member failed integrity: ${tile.cid}`);
+    }
+    const validation = validatePayload(tile.kind, tile.payload);
+    if (!validation.ok) {
+      throw new Error(`Promotion refusal closure member failed payload validation: ${validation.errors.join('; ')}`);
+    }
+  }
+  return createReceipt({
+    claims: [{
+      claimType: `rrp:promotion.transition.${input.kind}${suffix}`,
+      evidence: [...input.evidenceRefs, ...input.policies].map((tile) => ({ cid: tile.cid })),
+      statement: reason,
+      verdict
+    }],
+    digests: [
+      digestTile(input.subject, 'rrp:promotion.subject'),
+      ...input.evidenceRefs.map((tile) => digestTile(tile, 'rrp:promotion.evidence')),
+      ...input.policies.map((tile) => digestTile(tile, 'rrp:promotion.policy'))
+    ],
+    policyRefs: input.policies.map((tile) => tile.cid),
+    receiptType: 'rrp:promotion.transition.v1',
+    subjects: [{ cid: input.subject.cid, role: 'rrp:promotion.subject' }]
+  });
+}
+
+function nextPromotionState(kind: PromotionTransitionKind, priorState: PromotionState): PromotionState | null {
+  if (kind === 'confirm' && priorState === 'pending-confirmation') return 'active';
+  if (kind === 'promote' && priorState === 'active') return 'promoted';
+  if (kind === 'cool' && priorState === 'active') return 'cooled';
+  if (kind === 'quarantine' && priorState === 'active') return 'quarantined';
+  if (kind === 'revisit' && priorState === 'active') return 'pending-revisit';
+  if (kind === 'revisit' && priorState === 'quarantined') return 'pending-revisit';
+  if (kind === 'activate' && (priorState === 'cooled' || priorState === 'pending-revisit')) return 'active';
+  if (kind === 'supersede' && (priorState === 'active' || priorState === 'promoted')) return 'superseded';
+  return null;
+}
