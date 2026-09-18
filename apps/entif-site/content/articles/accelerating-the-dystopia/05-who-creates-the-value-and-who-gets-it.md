@@ -20,9 +20,9 @@
 }
 ---
 
-Accounting can tell us where money went under the rules we have.
+Accounting can tell us where money went under the rules we have. That is useful. I would prefer the arithmetic not be vibes.
 
-It cannot tell us, by itself, whether those rules produce a just claim on what remains.
+It cannot tell us, by itself, whether those rules produce a just claim on what remains. A ledger can close perfectly while the moral argument is still standing in the hallway asking why nobody invited it to the meeting.
 
 **Why does the legal residual claim establish the morally correct residual claim?**
 
@@ -32,7 +32,7 @@ Imagine an apple cart.
 
 One person supplies capital and owns the cart. Another person operates it every day, selects inventory, serves customers, maintains equipment, keeps records, and creates the relationships that make the business work. The law can assign the owner the residual after wages and expenses. That tells us what the contract permits. It does not mathematically prove that any particular split of the residual between owner and worker is ethically deserved.
 
-Scale does not cure the philosophical problem. It hides it behind accounting departments.
+Scale does not cure the philosophical problem. It gives the problem an ERP system, a tax department, and several excellent reasons not to call itself philosophical anymore.
 
 Modern enterprise is a cooperative production system involving capital, labor, suppliers, customers, public infrastructure, legal institutions, education systems, communications networks, intellectual property, natural resources, and communities. Capital is indispensable. So is labor. So are the institutions that make property and contracts enforceable. The normative question is not whether investors deserve compensation for risk. Of course investment requires incentives. The question is why the ownership structure receives such presumptive moral priority that every distribution produced by it is treated as a natural fact rather than a political choice.
 
@@ -44,7 +44,7 @@ Automation is therefore not automatically anti-worker. The outcome depends on wh
 
 Their empirical work is sobering. Acemoglu and Restrepo estimate that between 50% and 70% of changes in the US wage structure over four decades can be accounted for by relative wage declines among worker groups specialized in routine tasks in industries experiencing rapid automation, in the framework they develop. [S115] They have also argued that US tax policy can favor capital over labor and induce more automation than would occur under an alternative tax system in their model. [S116]
 
-So the distributional result is not simply "technology happened."
+So the distributional result is not simply "technology happened." Technology is not weather. Somebody owns it, prices it, deploys it, bargains around it, taxes it, and decides which savings become whose gains.
 
 Technology interacts with tax policy, labor bargaining, ownership, task creation, education, market concentration, mobility, and social insurance.
 
@@ -54,11 +54,11 @@ That ownership distribution matters because many AI capabilities depend on asset
 
 A company buys compute, models, software, data, infrastructure, intellectual property, and automation capability. If the resulting system allows the company to produce the same output with fewer labor hours, the initial economic benefit appears where ownership and bargaining rules put it. Workers may receive higher wages because their productivity rises. Consumers may receive lower prices. New industries may emerge. Governments may tax the gains. Owners may capture much of the surplus. Some mixture will occur.
 
-There is no silicon commandment specifying the mixture.
+There is no silicon commandment specifying the mixture. The chip does not descend from the mountain carrying a compensation philosophy.
 
 The IMF's 2025 AI-inequality paper makes this explicit. Depending on displacement and complementarity, AI could reduce wage inequality in some scenarios because higher-paid cognitive jobs are unusually exposed. Yet the same model can increase wealth inequality because high-income households own more capital and firms invest aggressively where expensive labor can be automated. [S179]
 
-This is why the simplistic automation argument fails in both directions.
+This is why the simplistic automation argument fails in both directions. We have somehow managed to compress an economic transformation into two competing bumper stickers.
 
 "AI will make everyone rich" assumes away distribution. "AI will make everyone unemployed" assumes away new tasks, complementarity, prices, demand, and adaptation.
 
@@ -68,7 +68,7 @@ The interesting question is institutional:
 
 The ILO's evidence is refreshingly unsensational. Its 2025 occupational analysis finds one in four workers worldwide is in an occupation with some exposure to generative AI, but most affected jobs are more likely to be transformed than eliminated outright. [S180] Its 2026 review finds productivity gains are real but uneven and economy-wide displacement remains limited so far. It also finds that worker-reported time savings have not automatically translated into higher measured output, earnings, or employment. [S181]
 
-That is exactly the institutional gap I care about.
+That is exactly the institutional gap I care about. The benchmark ends precisely where the bargain begins.
 
 If a worker saves ten hours a week with AI, several futures are possible.
 
@@ -84,13 +84,13 @@ The employer can retain everyone, lower prices, gain market share, and grow.
 
 The employer can capture most of the benefit as profit.
 
-All are compatible with the same technological productivity improvement.
+All are compatible with the same technological productivity improvement. Same tool. Six different bargains.
 
 That is what I mean when I say aligned AI can accelerate a bad system. If the surrounding institution already treats productivity gains primarily as opportunities for cost reduction and capital return, making the optimization engine smarter does not spontaneously create a cooperative economy.
 
 It makes the existing objective easier to achieve.
 
-I am not asking every company to become a charity. I am asking why the phrase "fiduciary discipline" carries more automatic moral authority than "the people creating this value should receive more of it."
+I am not asking every company to become a charity. Charity is not the point. I am asking why the phrase "fiduciary discipline" walks into the room wearing a suit and carrying presumptive moral authority while "the people creating this value should receive more of it" is treated like somebody brought politics to dinner.
 
 Business Roundtable's 2019 statement is useful here because it formally rejected a purely shareholder-only rhetoric and pledged commitments to customers, employees, suppliers, communities, and shareholders. [S186] The language of stakeholder capitalism has therefore entered the boardroom. The harder question is how much authority those stakeholders possess when their interests collide with earnings, margins, or capital returns.
 
@@ -102,7 +102,7 @@ If the outcome is thinner headcount, more intense surveillance, individualized p
 
 ## Three accounts of the same improvement
 
-A productivity gain can appear in three different accounts: the production account, the distribution account, and the account of a person's life. They are connected, but no single one contains the others.
+A productivity gain can appear in three different accounts: the production account, the distribution account, and the account of a person's life. They are connected, but no single one contains the others. The first two fit beautifully in a quarterly deck. The third is where somebody discovers whether getting twice as much done means going home at three or getting assigned twice as much work.
 
 The production account asks how much output is produced for a given input. The distribution account asks how income, cost savings, and ownership claims are divided. The human account asks what the change does to time, security, dignity, and the ability to make plans. A successful transition has to be understood across all three.
 
@@ -118,13 +118,13 @@ The published study _Generative AI at Work_ offers a concrete example of a real 
 <figcaption>Not a randomized measurement of the whole economy, a universal wage effect, or proof of extra leisure. <a href="etr-source:S201">Generative AI at Work · S201 ↗</a></figcaption>
 </figure>
 
-The study is valuable precisely because it does not need to be turned into a universal promise. It shows that useful complementarity is possible. My question begins after that result: through what arrangement does the benefit reach the people whose work changed?
+The study is valuable precisely because it does not need to be turned into a universal promise. It shows that useful complementarity is possible. Good. Now the interesting part starts. Through what arrangement does the benefit reach the people whose work changed?
 
 ## A flow is not a stock
 
 Income and wealth are easy to mix up because both are measured in money. Their roles are different. Income is a flow over a period. Wealth is a stock of assets minus liabilities at a point in time. A household can receive a higher income and remain without a meaningful buffer. Another can receive modest current income while owning substantial assets.
 
-The difference changes what a shock means. A person with a buffer can search longer for a job, repair a car without missing rent, or take time to learn a new skill. A person without one may have to accept the first available arrangement. The same wage offer therefore does not create the same practical freedom for every worker.
+The difference changes what a shock means. A person with a buffer can search longer for a job, repair a car without missing rent, or take time to learn a new skill. A person without one may have to accept the first available arrangement. The same wage offer therefore does not create the same practical freedom for every worker. Money buys things. Wealth also buys time to say no.
 
 This is an analytical point about resources and options. It does not require assuming that everyone without wealth makes the same decision or that wealth removes every constraint. It means that the ability to wait is itself economically consequential.
 
@@ -142,7 +142,7 @@ Task-based analysis is more useful than treating each occupation as one indivisi
 
 But the task description can itself be incomplete. Some work is visible because it produces a document or closes a ticket. Other work prevents a failure that never appears. A colleague may notice a risky assumption before it becomes an incident. Someone may explain a process to a new hire without logging a training session. Someone may know which apparent exception is actually a warning sign.
 
-These are illustrative examples of why an inventory of recorded tasks can understate contribution. They do not establish that every informal practice should be preserved. Some habits are wasteful. Some workarounds conceal a broken process. The point is that eliminating a recorded task and eliminating a person's contribution are different operations.
+These are illustrative examples of why an inventory of recorded tasks can understate contribution. They do not establish that every informal practice should be preserved. Some habits are wasteful. Some workarounds conceal a broken process. But a ticketing system is not an ontology of human usefulness. Eliminating a recorded task and eliminating a person's contribution are different operations.
 
 That matters when the worker's knowledge helps train or improve a system. The firm may capture patterns from past work, customer interactions, or internal documents. A tool can then make some of that knowledge available to others. The resulting capability is real. The question of compensation for the people whose work helped create it is not answered merely by showing that the model can reproduce a useful pattern.
 
@@ -150,7 +150,7 @@ Nor is contribution always easy to assign. Knowledge accumulates through teams, 
 
 The accounting still matters. Revenue is not distributable profit. Net income is not the same as cash available for immediate distribution. Capital spending and working-capital needs matter. If the arithmetic is wrong, fix the arithmetic.
 
-Then ask the harder question anyway.
+Then ask the harder question anyway. A correct spreadsheet does not become a theory of justice merely because all the cells sum to zero.
 
 None of those accounting distinctions supplies a complete theory of what each participant deserves. The books can be immaculate while the argument over ownership, bargaining power, risk, time, and contribution remains completely open.
 
@@ -160,11 +160,11 @@ A long-run gain can coexist with a severe short-run loss. That is not a paradox.
 
 The relevant comparison is not only between two eventual states. It includes the path between them. Who can finance the interval? Who can move? Who can absorb an unsuccessful attempt? Who has care responsibilities that cannot be suspended while a market adjusts?
 
-Those questions are often treated as details after the economic forecast. For a person living through the change, they may be the whole problem. “The economy adapts” describes an aggregate process. It does not name the people who bear the costs of adaptation or the timing of the gains they may receive.
+Those questions are often treated as details after the economic forecast. For a person living through the change, they may be the whole problem. “The economy adapts” describes an aggregate process. It can be completely correct and still arrive six months after somebody ran out of rent. It does not name the people who bear the costs of adaptation or the timing of the gains they may receive.
 
 The same applies inside a firm. A tool may require new checking, new training, and a period of lower output before it becomes useful. A narrow comparison between the old workflow and an idealized mature workflow can omit the work needed to get from one to the other. A claimed saving should therefore be examined over an appropriate time horizon rather than only at the moment of a successful demonstration.
 
-Useful tools still have transition costs. Count the work and risk where they actually occur. Otherwise the organization can describe a saving that depends on employees supplying unpaid transition labor or customers tolerating temporary failures.
+Useful tools still have transition costs. Count the work and risk where they actually occur. Otherwise the organization can describe a saving that depends on employees supplying unpaid transition labor or customers tolerating temporary failures. Costs do not evaporate when they cross the edge of a department. We covered the dimensional portal problem already.
 
 ## The bargain remains a human question
 
@@ -174,4 +174,4 @@ That last point is easy to miss. AI is not only an input into production. It can
 
 I return here to the month I worked more than 300 hours because the work felt meaningful and I believed the sacrifice would come back to me somehow. A new tool might have relieved some of the pressure. It might also have raised expectations about what I could deliver. The difference would have depended on the relationship around the tool, not only on the tool's speed.
 
-That is the practical meaning of the distributional question. It is not an abstract dispute about whether technology creates value. It asks whether the people participating in that creation gain more control over their lives, or whether the institution simply acquires a more efficient way to ask for more.
+That is the practical meaning of the distributional question. It is not an abstract dispute about whether technology creates value. Of course it can create value. The question is whether the people participating in that creation gain more control over their lives, or whether the institution simply acquires a more efficient way to ask for more. A faster engine does not negotiate the destination.

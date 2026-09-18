@@ -22,13 +22,13 @@
 
 I have watched the machinery of “influence” from inside institutions that sell expertise to the people making enormous decisions.
 
-That does not mean every dinner buys a contract, every lobbyist buys a vote, or every analyst recommendation is corrupt. It means access, prestige, expertise, hospitality, research, procurement, and commercial relationships can reinforce one another long before anything looks like a cash envelope.
+A dinner does not need to buy a contract, a lobbyist does not need to buy a vote, and an analyst recommendation does not need to be corrupt for the surrounding machinery to matter. Access, prestige, expertise, hospitality, research, procurement, and commercial relationships can reinforce one another long before anybody is stupid enough to arrive with a cash envelope.
 
 I learned that lesson at Gartner.
 
 ## The product is also the room
 
-Magic Quadrant always bothered me because of how much authority it compresses into a picture. My crude version of the pitch is: imagine buying a television and receiving a matrix of size and price, then being told the quadrant tells you which one is “best.” The serious version has more methodology than that, of course. The underlying problem still matters. Categories, axes, inclusion rules, and analyst framing help define what the buyer is invited to regard as a serious option.
+Magic Quadrant always bothered me because of how much authority it compresses into a picture. My crude version is a television salesman handing you a matrix of size and price, pointing to one corner, and announcing that this is where the best televisions live. Gartner's actual methodology is obviously more elaborate. The structural problem survives the joke: categories, axes, inclusion rules, and analyst framing help define what the buyer is invited to regard as a serious option.
 
 Then the buyer can purchase more research, more analyst access, and more interpretation from the institution that constructed the frame.
 
@@ -56,7 +56,7 @@ Put those facts together and the practical problem appears: tracing money can re
 
 ## Visibility is a chain, not a single document
 
-A public filing can be accurate and still leave an ordinary reader with hours of reconstruction. Names, dates, entity types, amendments, pass-through organizations, and transactions have to be reconciled before the shape of the relationship becomes visible.
+A public filing can be perfectly accurate and still behave like a scavenger hunt printed on government stationery. Names, dates, entity types, amendments, pass-through organizations, and transactions have to be reconciled before the shape of the relationship becomes visible.
 
 A payment can establish that a relationship existed without proving exactly what happened because of it. That is a limit on the claim, not a reason to stop looking at the relationship.
 
@@ -70,7 +70,7 @@ Bertrand, Bombardini, and Trebbi studied federal lobbying using data from 1999 t
 
 The finding matters because it identifies more than one thing a client may be buying. Expertise can help explain a technical problem. A relationship can help a message reach someone. Knowledge of process can help determine when and where to present it. A single fee can purchase a mixture of those services.
 
-Access having market value does not mean every conversation changes policy. It means access itself is valuable enough that people pay for it. That deserves more attention than the fiction that only explicit quid pro quo matters.
+Access having market value does not mean every conversation changes policy. It means access itself is valuable enough that people pay for it. If we only recognize influence after somebody produces an explicit quid pro quo, we have designed an analytical instrument with all the sensitivity of a cinder block.
 
 The Government Accountability Office's June 2026 report provides a separate view of disclosure compliance. For the period it examined, most sampled filers could provide documentation for reported lobbying income and expenses. The report also estimated that 22% of quarterly disclosure reports included lobbyists who did not fully disclose relevant prior federal positions. Its sample and period should remain attached to that estimate; it is not a statement that 22% of all lobbying activity was unlawful. [S140]
 
@@ -80,7 +80,7 @@ Together, the studies illuminate different parts of the machine: relationships h
 
 ## Capacity to participate is not evenly distributed
 
-A document being public does not mean the public can use it. Reading a long technical proposal takes time and relevant knowledge. Preparing a detailed response takes more. Sustaining participation for months or years requires staff, money, and institutional memory.
+A document being public does not mean the public can meaningfully use it. Posting three hundred pages of technical material on a government website is disclosure; it is not the sudden distribution of three hundred-page-reading afternoons. Reading a long proposal takes time and relevant knowledge. Preparing a detailed response takes more. Sustaining participation for months or years requires staff, money, and institutional memory.
 
 Individuals, researchers, civil-society organizations, smaller firms, and public institutions can provide extraordinary expertise. They still do not enter the process with equal capacity. The cost of participation shapes whose concerns remain present at every round.
 
@@ -122,7 +122,7 @@ The evidence here does not require a cartoon in which money mechanically buys ev
 
 They do show why the relationship between intelligence and institutional power deserves more attention than a simple count of who can access a chatbot. A person may have access to a model while lacking the records, time, or authority needed to use its analysis effectively. An organization may have the same model embedded in a continuing process with specialized staff and proprietary information. Access to a tool is one input into capacity, not the entire capacity.
 
-The relevant question is what the tool changes in that relationship. Does it make the provenance of a claim easier to inspect? Does it help compare effects on different groups? Does it reveal assumptions that would otherwise remain hidden? Or does it mainly increase the speed and volume with which an existing participant can advance its account?
+The relevant question is what the tool changes in that relationship. Does it make provenance easier to inspect? Does it help compare effects on different groups? Does it expose assumptions that would otherwise remain hidden? Or have we simply given the participant with the bigger staff a machine gun for PDFs?
 
 That is exactly why AI capability does not arrive on a level field. A powerful model can faithfully serve the task it is given while massively increasing the speed, reach, and polish of whichever institution already has the data, staff, access, and authority to put it to work.
 

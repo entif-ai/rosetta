@@ -54,7 +54,7 @@ Which people appeared mainly in records created by institutions that controlled 
 
 Caliskan, Bryson, and Narayanan demonstrated that distributional representations learned from ordinary web language reproduce human-like historical associations. [S157] Buolamwini and Gebru's Gender Shades audit showed large intersectional accuracy disparities in commercial gender-classification systems, with particularly high errors for darker-skinned women and skewed benchmark representation. [S156] NIST's bias framework accordingly treats AI bias as socio-technical, dividing it into systemic, statistical/computational, and human categories rather than pretending bias begins with an explicitly hateful programmer. [S158]
 
-This distinction matters politically and morally because intention is an unreliable gatekeeper for harm.
+This distinction matters politically and morally because intention is an unreliable gatekeeper for harm. Intent is a terrible checksum for harm.
 
 A mortgage model does not need racism in its source code to reproduce disparities if the proxies and historical outcomes in its data encode segregated opportunity.
 
@@ -66,7 +66,7 @@ Wolfe and Caliskan found minority names were less frequent in studied corpora an
 
 Tokenization makes the issue more technical.
 
-For the text input of a language model, tokenization supplies encoded units; contextual representations are then learned and computed from them. Tokenization is an input interface, not a complete account of understanding. The segmentation procedure decides which character sequences become common atomic units, which are split repeatedly, and how long a string becomes in model input. Those choices affect context length, optimization, frequency, and the pathways through which representations are learned.
+For the text input of a language model, tokenization supplies encoded units; contextual representations are then learned and computed from them. Tokenization is an input interface, not a complete account of understanding. The tokenizer gets a say before the model gets a thought. The segmentation procedure decides which character sequences become common atomic units, which are split repeatedly, and how long a string becomes in model input. Those choices affect context length, optimization, frequency, and the pathways through which representations are learned.
 
 Recent work on African languages reports a persistent "token tax": languages requiring more tokens for comparable content tend to show lower model accuracy across evaluated systems. [S160] Other research shows subword tokenization remains sensitive to small perturbations such as typos and formatting [S161], and that common tokenization methods can create sampling biases that do not automatically disappear merely by adding more training. [S162]
 
@@ -74,7 +74,7 @@ This is where my Rosetta research question enters.
 
 I am interested in whether ambiguity in a shared surface form can create representational leakage between senses that humans regard as semantically distinct. The word "bank" can refer to a financial institution or the side of a river. Humans treat those as different concepts. A tokenizer may share surface units across both contexts, while a Transformer develops contextual representations downstream. Shared surface form therefore does not prove shared meaning. It gives me a mechanism worth testing.
 
-My hypothesis is that some of the distinctions humans care about may be cheaper to preserve if they are made explicit before information begins moving through a stack of learned representations. The only responsible way to find out is to test it causally.
+My hypothesis is that some of the distinctions humans care about may be cheaper to preserve if they are made explicit before information begins moving through a stack of learned representations. The adjective semantic does not exempt the hypothesis from experiment. The only responsible way to find out is to test it causally.
 
 Construct controlled corpora containing ambiguous surface forms with distinct senses.
 
@@ -92,7 +92,7 @@ Also ask whether it makes the model more confidently wrong when the concept laye
 
 That last control is philosophically important.
 
-Interpretability and explicit semantics are not magic.
+Interpretability and explicit semantics are not magic. Naming a thing is not the same as fixing it.
 
 A wrong ontology can be worse than no ontology if the system trusts it.
 
@@ -116,7 +116,7 @@ That brings the question of representation into view.
 
 One of the clearest examples of this distinction comes from health care. Obermeyer and colleagues examined an algorithm used to identify patients for additional care. It predicted health spending as a proxy for health need. In the studied setting, unequal spending meant that equally scored Black patients were, on average, sicker than white patients. The problem was not solved by noting that the program predicted its chosen label well. The label itself failed to represent the intended need equally. [S204]
 
-That example deserves more attention than a generic instruction to remove bias from the data. Spending is an observable event. Need is a harder concept. Replacing one with the other makes the problem easier to calculate while changing what success means. Better prediction of spending can then improve the wrong answer to the original question.
+That example deserves more attention than a generic instruction to remove bias from the data. Spending is an observable event. Need is a harder concept. Replacing one with the other makes the problem easier to calculate while changing what success means. The spreadsheet got cleaner. The question changed. Better prediction of spending can then improve the wrong answer to the original question.
 
 The lesson is not that cost information has no legitimate use. It is that a variable appropriate for one purpose can be an inadequate substitute for another. Forecasting a budget and identifying people who need care are related tasks, not identical tasks. A system can be accurate at the first and inequitable at the second without a numerical malfunction.
 
@@ -130,7 +130,7 @@ NIST's account is useful precisely because it locates bias across the system rat
 
 ## The archive has an author, even when no one signed it
 
-A training collection is not a transparent window onto everything that happened. It is a record assembled through decisions about access, language, format, and relevance. Its absences can matter as much as its entries.
+A training collection is not a transparent window onto everything that happened. An archive is built, not discovered. It is a record assembled through decisions about access, language, format, and relevance. Its absences can matter as much as its entries.
 
 Consider a hypothetical archive of customer disputes. It includes all completed forms but excludes people who abandoned the form, could not understand it, or never learned that an appeal existed. A model trained to explain common disputes will encounter a selected population. If it later helps redesign the process around those cases, the excluded people may remain absent from the next archive as well.
 
@@ -140,7 +140,7 @@ The same limit applies to polished descriptions. A model may become very good at
 
 There is a practical difference between helping someone translate and treating the translation as the whole truth. The first opens a channel. The second can erase what the channel cannot carry. A faithful record needs some way to preserve the original account, the interpretation applied to it, and the uncertainty introduced by that interpretation.
 
-That principle is familiar in careful research. It becomes harder to maintain when a workflow rewards a single clean label. An ambiguous account takes more time to review. A confident category is easier to route. If the latter receives the operational reward, uncertainty can vanish without anyone resolving it.
+That principle is familiar in careful research. It becomes harder to maintain when a workflow rewards a single clean label. An ambiguous account takes more time to review. A confident category is easier to route. Ambiguity is expensive; dropdowns are cheap. If the latter receives the operational reward, uncertainty can vanish without anyone resolving it.
 
 ## What explicit senses would actually test
 
@@ -150,13 +150,13 @@ Take bank again. In a sentence about depositing a check, a contextual model can 
 
 The interesting test is what happens when we control exposure. We can create a small world in which two senses share a surface form but differ in their properties. We can expose the model to a property in one sense and ask whether it transfers that property to the other without justification. We can then compare ordinary text against explicit sense identifiers while keeping the rest of the training conditions as comparable as possible.
 
-The controls determine what an improvement would mean. A system given extra identifiers has extra representational capacity and extra information. It may improve for those reasons alone. Frequency-matched arbitrary identifiers help test the capacity explanation. A simpler lemma-and-part-of-speech condition helps separate basic linguistic disambiguation from a richer semantic intervention. An oracle condition with correct senses establishes an upper bound that a real compiler may never reach. A predicted-sense condition tests the less comfortable world in which the labels can be wrong.
+The controls determine what an improvement would mean. This is where the favorite explanation gets frisked at the door. A system given extra identifiers has extra representational capacity and extra information. It may improve for those reasons alone. Frequency-matched arbitrary identifiers help test the capacity explanation. A simpler lemma-and-part-of-speech condition helps separate basic linguistic disambiguation from a richer semantic intervention. An oracle condition with correct senses establishes an upper bound that a real compiler may never reach. A predicted-sense condition tests the less comfortable world in which the labels can be wrong.
 
 These are different questions. If arbitrary separation performs as well as meaningful labels, the result would support separation or capacity, not the special value of the ontology. If gold labels help but predicted labels fail, the bottleneck may be reliable disambiguation. If corrupt labels make the system more confidently wrong, the semantic layer has introduced a new failure channel. A result can be useful while defeating the preferred explanation.
 
 I am not reporting that result here. I am stating the hypothesis and the experiment I think would discriminate among the plausible explanations.
 
-The distinction matters because a convincing vocabulary can otherwise become its own evidence. Terms such as concept, meaning, sense, and ontology sound explanatory. They can also hide disagreement over what has actually been implemented. A token tagged with a human-readable name is not proof that the model has acquired the corresponding human concept. A cluster in a visualization is not proof that the cluster controls the decision of interest.
+The distinction matters because a convincing vocabulary can otherwise become its own evidence. Nouns can impersonate mechanisms. Terms such as concept, meaning, sense, and ontology sound explanatory. They can also hide disagreement over what has actually been implemented. A token tagged with a human-readable name is not proof that the model has acquired the corresponding human concept. A cluster in a visualization is not proof that the cluster controls the decision of interest.
 
 A causal test asks what changes when the proposed mechanism changes and relevant alternatives are held steady. A descriptive test asks what can be detected in the representation. Both can be valuable. Neither should silently inherit the authority of the other.
 
@@ -168,7 +168,7 @@ Imagine a document that uses the word safe. It might mean physically unlikely to
 
 An explicit representation could help by keeping these senses apart. It could also hurt by assigning the wrong sense too early and then allowing downstream systems to treat that assignment as settled. The point is not to eliminate interpretation. It is to keep interpretation revisable and attached to the evidence that supports it.
 
-This has an institutional analogue. A complaint can become a conduct issue, a conduct issue can become a risk flag, and a risk flag can become a reason for exclusion. Each step may look like ordinary record management. Yet the original uncertainty can be lost as the description travels. Adding machine speed makes the chain faster; it does not make the successive labels equivalent.
+This has an institutional analogue. A complaint can become a conduct issue, a conduct issue can become a risk flag, and a risk flag can become a reason for exclusion. Each step may look like ordinary record management. Bureaucracy is very good at making transformations look like filing. Yet the original uncertainty can be lost as the description travels. Adding machine speed makes the chain faster; it does not make the successive labels equivalent.
 
 A semantic record that preserves the distinction between reported, inferred, disputed, and verified would make that chain easier to inspect. It would not decide whether the institution is using the chain fairly. Representation can expose a decision without legitimizing it.
 
@@ -184,6 +184,6 @@ This distinction is easy to lose in deployment. A system may look efficient on t
 
 The appropriate comparison follows the task and the population. How much information fits in the available context? Does the system preserve the same distinctions? Does it become less certain when evidence is thin? Can a person challenge the output in the language in which they understand the underlying problem? These questions are more informative than treating one aggregate benchmark as a certificate of universal competence.
 
-The past enters the model through language, records, objectives, labels, and the terms of evaluation. A surface-level cleanup cannot reach all those channels. A technical intervention can address one channel without claiming to address them all. That is not a reason to abandon the intervention. It is a reason to keep its actual contribution visible.
+The past enters the model through language, records, objectives, labels, and the terms of evaluation. A surface-level cleanup cannot reach all those channels. The stain is not only on the surface. A technical intervention can address one channel without claiming to address them all. That is not a reason to abandon the intervention. It is a reason to keep its actual contribution visible.
 
 The deeper question remains: once information is represented in forms we did not explicitly name, how do we determine what the machine is carrying from one task, person, or institution to another?

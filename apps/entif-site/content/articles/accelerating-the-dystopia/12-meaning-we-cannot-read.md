@@ -22,7 +22,7 @@
 
 I use "J-space" as shorthand for machine-native representational space: hidden-state geometry, latent features, activations, and inter-agent representations through which a system can carry information without converting every intermediate step into ordinary human language.
 
-The idea sounds more exotic than it is:
+The phrase sounds more exotic than the mechanism is, which is usually where people start smuggling metaphysics into plumbing:
 
 **Human-readable language is not required for machines to exchange useful information.**
 
@@ -34,7 +34,7 @@ And in 2026, Interlat demonstrated multi-agent LLM systems communicating directl
 
 Latent communication can be useful for the same reason computers do not normally convert every internal register state into an English paragraph. Natural language is expensive, lossy, sequential, and optimized for human social communication, not necessarily for machine-to-machine throughput.
 
-The problem begins when we confuse efficiency with legibility, and legibility with understanding.
+The problem begins when we confuse efficiency with legibility, and legibility with understanding. Speed is not an audit trail.
 
 A human supervisor can read an agent message that says:
 
@@ -54,7 +54,7 @@ I do not need to call this a "secret AI language" to be concerned about it. A st
 
 Opaque is still opaque.
 
-The governance problem is straightforward. If consequential agents coordinate through representations that operators cannot directly inspect, the burden shifts onto tools that can test causal content, decode relevant variables, detect drift, and verify that the representation remains compatible with the human concepts controlling the system.
+The governance problem is less exotic and more annoying. If consequential agents coordinate through representations that operators cannot directly inspect, the burden shifts onto tools that can test causal content, decode relevant variables, detect drift, and verify that the representation remains compatible with the human concepts controlling the system.
 
 The current field is nowhere near a guarantee that this will always be possible.
 
@@ -62,7 +62,7 @@ And the difficulty compounds when multiple systems learn together.
 
 Co-trained agents can develop conventions that work because each side adapts to the other. The protocol does not need to be meaningful in isolation. Its semantics can live in the interaction.
 
-Human organizations do this too, and I have spent enough of my career inside large ones to know how much of an institution's real operating language never appears in the glossary.
+Human organizations do this too, and I have spent enough of my career inside large ones to know how much of an institution's real operating language never appears in the glossary. The glossary is usually the polite version.
 
 Spend a month inside an investment bank, military unit, software company, hospital, or government agency and you discover a private language of acronyms, gestures, assumptions, shortcuts, and stories. Outsiders can know every English word and still fail to understand what the sentence actually means inside the institution.
 
@@ -70,7 +70,7 @@ Now remove the requirement that the private language be English at all.
 
 You have a new form of institutional opacity, running at machine speed.
 
-This matters because AI systems are increasingly being assembled as organizations: planner agents, researcher agents, coding agents, reviewer agents, security agents, tool routers, memories, evaluators, and orchestrators. We are recreating division of labor in software.
+This matters because AI systems are increasingly being assembled as organizations: planner agents, researcher agents, coding agents, reviewer agents, security agents, tool routers, memories, evaluators, and orchestrators. We are recreating division of labor in software. Congratulations: the org chart now has millisecond handoffs.
 
 That architecture has familiar advantages. Specialists can improve performance. Independent reviewers can catch mistakes. Separation of duties can reduce risk. Parallelism increases throughput.
 
@@ -104,7 +104,7 @@ Consider a hypothetical two-agent system. One agent reviews an application and s
 
 To distinguish those explanations, we need interventions. Replace the message with one from another case. Keep its presence but alter the information of interest. Remove the message while preserving the rest of the workflow. Change a variable that should matter and another that should not. Compare the effects. The 2026 causal-audit work on latent communication makes precisely this kind of distinction between a message's presence, its content, and its value relative to another agent. [S168]
 
-The result of such a test would remain local to the systems and tasks tested. It would not certify all future communication. But it would tell us more than a fluent description written after the decision. A narrative can be an explanation candidate. It is not automatically a record of the causal process.
+The result of such a test would remain local to the systems and tasks tested. It would not certify all future communication. But it would tell us more than a fluent description written after the decision. A narrative can be an explanation candidate. Post-hoc eloquence is not provenance. It is not automatically a record of the causal process.
 
 This matters even when every intermediate message is written in English. Human-readable text is easier to inspect, but readability does not guarantee faithfulness. An agent can produce a reasonable-sounding rationale that omits the decisive input. Another agent can repeat it. By the time a human sees the summary, the account may have acquired the authority of a transcript without ever being one.
 
@@ -128,13 +128,13 @@ The inverse mistake would be to dismiss anything we cannot summarize in a senten
 
 For example, a data-processing step may be validated through reproducible inputs and outputs. An authorization step may be checked against a permission record. A scientific conclusion may require both reproducible computation and an argument connecting it to the question. Different forms of assurance belong at different points in the workflow.
 
-A single demand for explainability can conceal those differences. A beautiful explanation does not show that access was authorized. A valid permission does not show that the conclusion is true. A reproducible computation does not show that its objective was appropriate. Combining the checks is harder than choosing one attractive label, but the checks are not substitutes.
+A single demand for explainability can conceal those differences. Explainability is not one checkbox. A beautiful explanation does not show that access was authorized. A valid permission does not show that the conclusion is true. A reproducible computation does not show that its objective was appropriate. Combining the checks is harder than choosing one attractive label, but the checks are not substitutes.
 
 ## Division of labor without division of accountability
 
 Multi-agent systems are often described in the language of human organizations: researchers, planners, critics, reviewers, and managers. Those names can help people understand the intended workflow. They can also create confidence that the architecture has not earned.
 
-Calling a component a critic does not make it independent. Calling another a safety reviewer does not show which hazards it can detect. Giving three agents different role descriptions does not establish three independent sources of evidence. They may share a model, a source set, an initial framing, or the same missing context.
+Calling a component a critic does not make it independent. Calling another a safety reviewer does not show which hazards it can detect. Role names are aspirations, not evidence. Giving three agents different role descriptions does not establish three independent sources of evidence. They may share a model, a source set, an initial framing, or the same missing context.
 
 The relevant questions are operational. What information can each component see? What can it change? Which decisions require separate authorization? What happens when two components disagree? Is the disagreement preserved or compressed into an apparently settled answer? Can the system distinguish failure to find evidence from evidence that the claim is false?
 
@@ -142,7 +142,7 @@ These questions are not merely about catching bugs. They define where judgment s
 
 This is the same pattern I recognize in distributed corporate responsibility. One function checks budget, another checks legal form, another checks technical feasibility. Their approvals can all be valid within scope. Together they still may not answer the human question that matters. A collection of local approvals does not automatically become a moral assessment of the whole action.
 
-The machine version can make the problem less visible because the handoffs happen quickly. A hundred small transformations can occur before anyone reads the final paragraph. The benefit is speed. The risk is that each transformation drops a qualification, narrows a meaning, or silently promotes an uncertain claim into a settled one.
+The machine version can make the problem less visible because the handoffs happen quickly. A hundred small transformations can occur before anyone reads the final paragraph. The benefit is speed. The risk is that each transformation drops a qualification, narrows a meaning, or silently promotes an uncertain claim into a settled one. Velocity can make dropped qualifiers look tidy.
 
 A useful architecture would preserve the authority and evidence boundaries across those handoffs. A research component can propose; it cannot authorize merely because its proposal is persuasive. A tool result can establish what the tool returned; it does not authenticate every claim inside the returned document. A reviewer can certify the checks it actually performed; it cannot certify the checks its role name suggests to a reader.
 

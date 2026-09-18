@@ -20,17 +20,17 @@
 }
 ---
 
-The easiest way to misunderstand this essay is to look for one villain. The harder possibility is that many people can do what their roles reward, offer sincere reasons for doing it, and together produce a result that none would choose for their own life.
+The easiest way to misunderstand this essay is to look for one villain. Villains are narratively efficient. Systems are not. The harder possibility is that many people can do what their roles reward, offer sincere reasons for doing it, and together produce a result that none would choose for their own life.
 
 An employee works longer because the work matters. A manager raises the target because a new tool makes more output possible. A firm reduces its costs because its competitors are doing the same. A supplier personalizes an offer because it improves conversion. A platform ranks the material that holds attention. A research team improves the system that helps all of them work faster. Each decision can make sense within its frame.
 
-The frames do not necessarily add up to a good life.
+The frames do not necessarily add up to a good life. Local reasonableness is not a system-level warranty.
 
 That is not a claim that individual responsibility disappears. It is a claim that individual intention does not provide a complete explanation. An account that stops at good people or bad people misses the arrangements that turn local choices into repeated outcomes. It also misses the people who inherit the outcome without taking part in the choice.
 
 The central question is therefore not whether intelligence is good. It is what happens when intelligence becomes cheaper and more capable inside a network of unequal resources, incomplete measurements, conflicting objectives, and uneven power to revise the rules of an interaction.
 
-My answer is the thesis I came into this project trying to articulate: if we have not repaired the systems already accelerating the divide, discord, and disruption of socioeconomic life before AGI or ASI arrives, aligning a much more powerful intelligence to those systems can accelerate exactly what already sucks about them.
+My answer is the thesis I came into this project trying to articulate: if we have not repaired the systems already accelerating the divide, discord, and disruption of socioeconomic life before AGI or ASI arrives, aligning a much more powerful intelligence to those systems can accelerate exactly what already sucks about them. Better machinery does not renegotiate the destination by itself.
 
 That is the best case I am worried about. The machine works. It listens. It helps. It becomes extraordinarily capable. Advertising becomes more adaptive. Digital profiles become more valuable. Pricing becomes more individualized. Institutional decisions become faster. Social platforms become better at holding attention. AI companions become more persuasive and more emotionally central. Employers discover new units of productivity. None of those outcomes requires a rogue model.
 
@@ -42,7 +42,7 @@ I will call this improvement capture: a process in which a gain in capability is
 
 The process has a simple beginning. An organization chooses a problem it can observe and fund. It defines a result, buys or builds a tool, and measures whether the tool improves that result. The gain enters a budget or performance report. If it looks valuable, the organization expands the tool's use.
 
-The dangerous part is what the measurement leaves outside its boundary.
+The dangerous part is what the measurement leaves outside its boundary. The spreadsheet can be right and the lived account can still be missing a column.
 
 A customer-service system can reduce the firm's handling time by moving more work to the customer. A scheduling system can improve coverage by making workers' lives less predictable. A recommendation system can increase engagement by drawing more time from people who later wish they had spent it elsewhere. In these hypothetical cases, the organization does not need to report a false number. Its number can improve because part of the cost has moved beyond the place where it is counted.
 
@@ -50,7 +50,7 @@ Once the gain funds the next round of optimization, the measurement boundary acq
 
 This is more specific than saying that powerful actors always win. They do not. A customer can switch, a worker can leave, a competitor can offer better terms, or a public record can expose a failure. Those responses are part of the system too. The question is whether the people bearing the omitted costs have enough information, time, alternatives, and authority for their responses to matter.
 
-The asymmetries discussed earlier become coupled here. Money purchases analysis. Analysis makes opportunities visible. Visibility guides action. Successful action can generate more money. Meanwhile, a person dealing with several small institutional burdens may lose the time needed to understand or contest any one of them. The first loop accumulates capacity; the second can consume it.
+The asymmetries discussed earlier become coupled here. Money purchases analysis. Analysis makes opportunities visible. Visibility guides action. Successful action can generate more money. Meanwhile, a person dealing with several small institutional burdens may lose the time needed to understand or contest any one of them. The first loop accumulates capacity; the second can consume it. One side compounds. The other side gets tired.
 
 AI can enter both loops. A person can use an assistant to understand a contract or challenge a charge. An organization can use an assistant to design the contract, estimate the person's response, and process the challenge. Nominal access to the same model does not erase differences in data, transaction authority, staff, or the ability to run many trials.
 
@@ -70,7 +70,7 @@ Administrative-burden research distinguishes learning, compliance, and psycholog
 
 AI may reduce the time needed for each task. It may also increase the number of tasks that institutions can cheaply assign, personalize, or revisit. The net effect on the person cannot be inferred from the reduction in handling time per case. Volume and the distribution of work matter too.
 
-Imagine a firm that can now generate tailored follow-up requests at very low cost. Each request may be relevant. Yet the customer's cost of responding is not necessarily low. The machine's ability to ask another question does not give the person another hour. If the workflow treats nonresponse as evidence of disinterest or noncompliance, the burden can change the record that later justifies the decision.
+Imagine a firm that can now generate tailored follow-up requests at very low cost. Each request may be relevant. Yet the customer's cost of responding is not necessarily low. The machine's ability to ask another question does not give the person another hour. Compute scales more gracefully than Tuesday afternoon. If the workflow treats nonresponse as evidence of disinterest or noncompliance, the burden can change the record that later justifies the decision.
 
 This produces a second loop: burden reduces response capacity; reduced response changes the institutional record; the changed record supports decisions that create more burden. A person can then appear to be the source of the difficulty when the process helped generate the behavior it measures.
 
@@ -106,7 +106,7 @@ That is why the health-cost proxy example matters beyond health care. Its lesson
 
 Now add machine-generated explanations. The institution's assistant describes the decision in polished language. A customer-facing assistant summarizes that explanation. A reviewer sees the summary. A later knowledge system treats the explanation as an authoritative account of the case. The original uncertainty becomes harder to find at every step.
 
-This is not necessarily deception. It can be information loss through repeated compression. A qualification that was awkward to summarize may disappear. A source's claim may become a statement of fact. An exception may be treated as an error because the dominant category is easier to process. By the end, the record looks cleaner than the underlying event.
+This is not necessarily deception. It can be information loss through repeated compression. A qualification that was awkward to summarize may disappear. A source's claim may become a statement of fact. An exception may be treated as an error because the dominant category is easier to process. By the end, the record looks cleaner than the underlying event. Administrative compression has done its little miracle again: less ambiguity on the page, not necessarily less ambiguity in reality.
 
 The Rosetta branch enters here as my attempt to preserve selected distinctions: evidence versus inference, current permission versus past permission, competing senses rather than an early forced choice. Even a perfect record would leave the question of how it is used.
 
@@ -124,7 +124,7 @@ Consider a day in which capable AI remains under authorized control and almost e
 
 A professional begins the day with an assistant that has organized messages and prepared the documents needed for work. The person no longer spends an hour searching for context. The improvement is immediate and welcome.
 
-The employer has noticed the same improvement. Work that used to require several handoffs can now be completed by one employee with assistance. The team is not eliminated, but new hiring slows and the scope of each role expands. The person finishes more work in the same day. The saved hour has become additional output rather than free time.
+The employer has noticed the same improvement. Work that used to require several handoffs can now be completed by one employee with assistance. The team is not eliminated, but new hiring slows and the scope of each role expands. The person finishes more work in the same day. The saved hour has become additional output rather than free time. The baseline ate the miracle before it reached the calendar.
 
 Neither outcome is dictated by the model. The organization could have used the gain differently. In this scenario, the available performance measures make expanded output easier to recognize and reward than a less crowded day.
 
@@ -136,7 +136,7 @@ At lunch, the worker asks a personal assistant to investigate a household charge
 
 The provider's system is also better equipped. It can identify which options are authorized, which offers are likely to retain the account, and which cases require review. The two assistants exchange information efficiently. The outcome depends on the options available to each side, not only on the quality of their prose.
 
-The personal assistant discovers an error in the account history. The provider's assistant cannot change that class of record. It can explain the limitation and route the case, but the next queue requires a different process. Conversation is fast; correction is not. The person now understands the problem more clearly without yet having the power to resolve it.
+The personal assistant discovers an error in the account history. The provider's assistant cannot change that class of record. It can explain the limitation and route the case, but the next queue requires a different process. Conversation is fast; correction is not. The interface can sprint while the remedy waits in another queue. The person now understands the problem more clearly without yet having the power to resolve it.
 
 Later, a scheduling change at work complicates a family obligation. The employer's system has improved coverage and reduced empty capacity. Those improvements are visible in its report. The family rearrangement is not. The worker's assistant helps coordinate the change, reducing the immediate inconvenience. The assistance also makes the new scheduling demand easier for the employer to sustain.
 
@@ -152,7 +152,7 @@ At the end of the day, the person has received excellent assistance. Messages we
 
 The person has also worked at a higher baseline, spent time contesting a record, adapted to a schedule optimized elsewhere, and relied on institutional information systems to understand the institutions shaping the day. The tools reduced several local difficulties without necessarily increasing control over the whole arrangement.
 
-This is the texture of the best-case dystopia. It need not look like technological collapse. It can be convenient, competent, and full of small improvements. Its defining feature is that people become better assisted in navigating conditions they have less practical ability to change.
+This is the texture of the best-case dystopia. It need not look like technological collapse. It can arrive with cleaner copy, shorter queues, better summaries, and excellent quarterly guidance. It can be convenient, competent, and full of small improvements. Its defining feature is that people become better assisted in navigating conditions they have less practical ability to change.
 
 The scenario has alternatives at every step. The employer could share the time gain. The provider could make correction easier. The assistant could preserve a broader range of options. The training system could create new routes to expertise. Different choices would produce a different day.
 
@@ -170,7 +170,7 @@ The answer cannot be simply to collect more data. More records of the same selec
 
 Research acceleration adds to the challenge. Tools can improve the speed of implementation and testing, and first-party laboratory reports describe growing use of AI in those workflows. That does not mean the whole discovery cycle accelerates by the same factor, but it can shorten the interval between new capabilities and new deployments. [S175] [S177] [S178]
 
-Social consequences have their own clocks. A career-entry problem takes time to appear. A change in trust may not follow the schedule of a product release. A household's accumulated burden is not visible in a single transaction. Some outcomes cannot be observed at the speed at which the system can be updated.
+Social consequences have their own clocks. A career-entry problem takes time to appear. A change in trust may not follow the schedule of a product release. A household's accumulated burden is not visible in a single transaction. Some outcomes cannot be observed at the speed at which the system can be updated. The deployment clock and the consequence clock are not obligated to synchronize.
 
 This gives early measures unusual power. If the first available evidence concerns cost reduction, that evidence can drive expansion before evidence about displaced burdens arrives. By the time the later evidence appears, workflows, contracts, habits, and investments may have formed around the earlier result.
 
@@ -188,7 +188,7 @@ Correctability is different from a promise that the system will never fail. It a
 
 Acceleration has more than one destination. Changing it requires changing what the gains become.
 
-Start with productivity. If an assistant saves an hour, I want to know who gets the hour. Does it return to the worker as time, income, security, or room to choose? Or does it disappear into the next target because the new baseline simply assumes the tool?
+Start with productivity. If an assistant saves an hour, I want to know who gets the hour. That is not a footnote to the productivity story. It is the story. Does it return to the worker as time, income, security, or room to choose? Or does it disappear into the next target because the new baseline simply assumes the tool?
 
 Assistance should also increase the user's capacity to act. A clearer explanation is valuable. A clearer explanation that arrives before commitment, preserves the evidence, and opens a real correction path changes the person's position. An interface that explains a closed door beautifully is still a closed door.
 
@@ -204,9 +204,9 @@ The useful question is no longer whether AI is "good" in the abstract. Which rel
 
 ## The gain I care about is a life with more room in it
 
-I keep coming back to the corporate cafeteria because it captures the mechanism better than a cartoon villain ever could. At Gartner, we had top-notch meals prepared by excellent chefs and sold roughly at the cost of the ingredients. The cafeteria ran long hours. It was a real benefit. It also made it easier to arrive earlier, stay later, and feel cared for while the institution absorbed more of the day.
+I keep coming back to the corporate cafeteria because it captures the mechanism better than a cartoon villain ever could. The sandwich was not plotting against me. At Gartner, we had top-notch meals prepared by excellent chefs and sold roughly at the cost of the ingredients. The cafeteria ran long hours. It was a real benefit. It also made it easier to arrive earlier, stay later, and feel cared for while the institution absorbed more of the day.
 
-The same thing happened with Symposium. The event was exciting. Building something useful was exciting. Being trusted with difficult work felt good. Before one launch, I logged more than 300 hours in a single September because I was convinced the grind was good for me.
+The same thing happened with Symposium. The event was exciting. Building something useful was exciting. Being trusted with difficult work felt good. Before one launch, I logged more than 300 hours in a single September because I was convinced the grind was good for me. September, stubbornly, still had thirty days.
 
 That is exactly why I reject the simplistic story in which exploitation requires miserable people who know they are being exploited. Institutions can offer real goods, real opportunity, real friendship, and real pride while still learning how to convert all of those things into more labor. The employee does not have to be stupid or coerced. Sometimes the most productive arrangement is the one in which talented people sincerely want to give more.
 
@@ -214,7 +214,7 @@ AI makes that distinction more urgent for me, not less. I want tools that make d
 
 A machine can help me write a clearer argument. It cannot decide how much of my life belongs to the organization that benefits from the argument. It can help compare offers. It cannot create an alternative where none is available. It can preserve evidence. It cannot make an institution care about the evidence merely by storing it in a better format.
 
-Those limits are not reasons to discard the tool. They are reasons to avoid asking the tool to carry a promise that belongs to the surrounding system.
+Those limits are not reasons to discard the tool. They are reasons to stop assigning the tool moral obligations that belong to the surrounding system. A model can create room. It cannot decide, by capability alone, who is allowed to keep it.
 
 What remains is not a claim that technical progress is a fraud. It is a refusal to equate a more capable system with a better human arrangement. The equation needs evidence about the people whose lives are being changed.
 
@@ -230,7 +230,7 @@ Repair, in the sense used here, means changing those outcomes and relationships,
 
 But the dependency is real as a matter of logic: intelligence supplies means, and means operate within purposes and constraints. A system cannot be expected to correct an omitted value simply because it becomes better at optimizing the values it was given.
 
-That is why I do not expect AI to save a system we refuse to examine and change. The machine may become an extraordinary instrument of repair. It may also become an extraordinary instrument of continuity.
+That is why I do not expect AI to save a system we refuse to examine and change. The machine may become an extraordinary instrument of repair. It may also become an extraordinary instrument of continuity. Intelligence magnifies a direction before it proves the direction was worth taking.
 
 I want the saved hour to return to a person, not vanish into the next target. I want a clearer explanation to open a real option, not polish a closed door. I want the intelligence we build to enlarge the life available to the people living with it.
 
@@ -238,4 +238,6 @@ Those are judgments about what the work is for. No benchmark can make them on ou
 
 If we do not address the substrate in tandem with the acceleration, we are not waiting to discover whether AI creates a dystopia.
 
-We are accelerating the one we already know how to build.
+We are giving the one we already know how to build better tools, cleaner interfaces, faster feedback, and fewer excuses for pretending we cannot see where the road goes.
+
+We are accelerating it.

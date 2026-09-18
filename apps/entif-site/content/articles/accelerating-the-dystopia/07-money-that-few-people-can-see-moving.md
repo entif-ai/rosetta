@@ -93,7 +93,7 @@ The fiscal baseline can be stated more directly. CBO projects federal debt held 
 <figcaption>Endpoint projections quoted in the chapter; no annual path is interpolated. This is not a claim that the United States is presently unable to service its debt. <a href="etr-source:S136">CBO baseline · S136 ↗</a></figcaption>
 </figure>
 
-The point is not that the United States is presently unable to pay its interest. The point is that interest increasingly competes with everything else.
+The United States does not need to be presently unable to pay its interest for the constraint to matter. Interest increasingly competes with everything else.
 
 Every dollar devoted to debt service is a dollar that has to be raised, borrowed, or not spent somewhere else. The political choices remain choices, but the feasible set narrows as the interest burden grows.
 
@@ -155,7 +155,7 @@ The August 5 quarterly plan preceded that change. Its purchase caps are therefor
 
 A liquid market allows participants to buy and sell without unusually large price concessions. Better market functioning can reduce costs and improve the reliability of financing. Those benefits are not imaginary merely because financial institutions participate in the market. Treasury's buyback materials describe liquidity support and cash management as program functions. [S128][S129]
 
-The distributional question is separate. A change can improve market functioning and have unequal effects across balance sheets. That is not evidence that the stated purpose is false. It means an evaluation of the operation may need more than one outcome measure.
+Market functioning and distribution are different accounts of the same intervention. A change can improve the first while affecting balance sheets unequally. That does not make the stated purpose false. It means one outcome measure is not enough.
 
 Consider a stylized household comparison. One household owns a home and has a mortgage it can refinance. Another rents and is trying to save a down payment. Lower long-term rates may reduce the first household's financing costs. They may also contribute to higher asset prices, depending on supply, demand, and other conditions. The second household could gain through employment while facing a different entry price for housing. No single sign on an interest-rate change describes both households' whole experience.
 
@@ -201,6 +201,6 @@ The same capability could be used to optimize a narrow target while making the r
 
 That promotion is not prevented by adding more intelligence to the forecasting stage. It requires preserving the assumptions, alternatives, uncertainty, and authority behind the decision. A reader should be able to distinguish “this is what the model estimates under these conditions” from “this is the only responsible choice.” The first is an analytical statement. The second contains a judgment that the model does not independently authorize.
 
-The bridge to the rest of the essay is simple. Complex systems allocate resources through decisions whose effects are hard to see from an ordinary household's position. Better intelligence can illuminate those effects. It can also make an institution's preferred account of them faster, cleaner, more persuasive, and harder to question.
+This is the bridge to the rest of the essay. Complex systems allocate resources through decisions whose effects are difficult to see from an ordinary household's position. Better intelligence can illuminate the machinery. It can also give the institution describing that machinery a faster, cleaner, more persuasive way to tell you what it means.
 
-The difference depends on whether the system is built to preserve the distinction between explanation and persuasion, and between an institution's objective and the lives affected by it.
+The difference lives in two boundaries: explanation versus persuasion, and the institution's objective versus the lives affected by it. Lose either one and a very intelligent explanation can become a very efficient way to make somebody else's priorities sound inevitable.

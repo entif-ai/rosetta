@@ -26,7 +26,7 @@ Social networks mediate attention.
 
 Recommendation systems mediate discovery.
 
-Generative AI increasingly mediates **interpretation, judgment, and action**.
+Generative AI increasingly mediates **interpretation, judgment, and action**. The verb is changing.
 
 This is not a metaphorical distinction. A search engine historically returned documents. A language model can synthesize documents into an explanation, weigh apparent evidence, construct alternatives, translate technical material, draft a business strategy, write code, suggest a diagnosis to discuss with a doctor, summarize a contract, tutor a student, simulate an adversary, build a spreadsheet, and increasingly use tools to act on the result.
 
@@ -34,13 +34,13 @@ Survey work in 2024 found rapid adoption among US adults, including substantial 
 
 We are not living inside a single AI nervous system yet.
 
-We are absolutely far enough along to see the anatomy forming.
+We are absolutely far enough along to see the anatomy forming. The wiring closet is getting crowded.
 
 The infrastructure underneath that transition is concentrated.
 
 Stanford reports that industry produced more than 90% of the notable AI models in 2025. [S152] OECD analysis highlights concentration and entry barriers across AI chips, cloud infrastructure, and related layers, including the specialized hardware and software needed to train and deploy models. [S154] The FTC's January 2025 staff study, based on partner submissions through September 2024 and public information through January 2025, documents equity stakes, revenue-sharing arrangements, cloud-spend commitments, consultation rights, exclusivities, and exchanges of technical or business information. It raises concerns about access to important inputs and switching costs. [S151]
 
-This matters for power because frontier AI is not one product category. It is becoming an administrative layer.
+This matters for power because frontier AI is not one product category. It is becoming an administrative layer. That is a much more consequential thing to centralize than a clever app.
 
 It is a stack that spans chips, data centers, energy, cloud services, models, developer tools, and the interfaces through which people reach them. Identity, payments, search, advertising, and enterprise software can connect that stack to existing markets.
 
@@ -54,7 +54,7 @@ Suppose an assistant is genuinely helpful, free or cheap, and dramatically incre
 
 At the same time, the assistant can become a gatekeeper to information, labor-market participation, software creation, education, professional advice, and organizational decision-making. A model provider's defaults around safety, politics, sexuality, mental health, religion, risk, acceptable language, sourcing, uncertainty, and commercial recommendations can then propagate through millions of downstream interactions.
 
-The consequential layer is not merely what the model refuses to say. It is what the model makes easy to think.
+The consequential layer is not merely what the model refuses to say. It is what the model makes easy to think. Defaults are not scenery when they sit upstream of judgment.
 
 Some defaults are unavoidable.
 
@@ -80,11 +80,11 @@ What happens when a government becomes a customer?
 
 What happens when the model is asked to manage workers rather than assist them?
 
-These are not future philosophy questions. They are procurement questions, architecture questions, and governance questions being answered right now.
+These are not future philosophy questions. They are procurement questions, architecture questions, and governance questions being answered right now, often by people who thought they were choosing software.
 
 The FTC partnership report illustrates why concentration multiplies the stakes. Cloud providers are not merely neutral landlords for frontier labs. Partnerships can combine capital, compute commitments, technical integration, information access, and commercial distribution. [S151] A lab's survival can depend on infrastructure from a partner with its own platform interests. A cloud company can obtain preferred access to frontier capability. Enterprise customers then encounter the model through products they already use.
 
-The same integration that makes AI useful makes exit harder.
+The same integration that makes AI useful makes exit harder. Convenience accumulates into dependency one workflow at a time.
 
 This is how infrastructure becomes institution.
 
@@ -92,7 +92,7 @@ Once a model is embedded in document workflows, code repositories, customer-supp
 
 That lock-in has an epistemic dimension.
 
-People learn to ask the system before asking one another.
+People learn to ask the system before asking one another. Eventually, “what does the assistant say?” can become institutional muscle memory.
 
 A junior employee asks the assistant how the company normally writes the memo.
 
@@ -112,7 +112,7 @@ A platform that generates the language of discourse has more.
 
 A platform that generates the analysis behind institutional decisions has more still.
 
-A platform that can autonomously execute those decisions begins to resemble part of the institution's nervous system.
+A platform that can autonomously execute those decisions begins to resemble part of the institution's nervous system. At that point, “vendor” starts to feel like an undersized noun.
 
 And if the systems are centrally administered, updated, and optimized by a small number of private companies, a civilization-scale dependency can emerge long before anybody declares the arrival of AGI.
 
@@ -134,9 +134,9 @@ This is where alignment to the present world becomes a much less comforting phra
 
 ## When the interface becomes a working relationship
 
-There is a useful way to distinguish a tool from a dependency. Ask what the user must rebuild to leave it.
+There is a useful way to distinguish a tool from a dependency. Ask what the user must rebuild to leave it. Exit cost is often a better map of power than the subscription price.
 
-A calculator can be replaced without transferring a history of what its owner means by a good answer. A deeply integrated assistant is different. In a hypothetical small design firm, it might hold project context, drafting conventions, client preferences, permissions, and the record of previous decisions. It might connect to storage, invoicing, scheduling, and a publishing system. The owner can export the conversation and still lose the operating relationship. A pile of sentences is not the same thing as a functioning workflow.
+A calculator can be replaced without transferring a history of what its owner means by a good answer. A deeply integrated assistant is different. In a hypothetical small design firm, it might hold project context, drafting conventions, client preferences, permissions, and the record of previous decisions. It might connect to storage, invoicing, scheduling, and a publishing system. The owner can export the conversation and still lose the operating relationship. A pile of sentences is not the same thing as a functioning workflow. A transcript is not an operating system for the relationship.
 
 This creates several kinds of switching cost. One is financial: the price of a new subscription or migration. Another is technical: tools may accept different formats, expose different actions, or handle errors differently. A third is organizational: people must learn how to supervise the replacement. A fourth is epistemic: someone must establish which remembered claims were observations, which were guesses, and which instructions remain authorized.
 
@@ -146,9 +146,9 @@ I want continuity. I want software to remember the relevant context instead of m
 
 This is where the story about an ordinary customer becomes connected to the story about infrastructure. At each layer, integration can offer a real benefit. Specialized chips can improve performance. A cloud service can reduce the burden of running hardware. A model can make the service useful. An application can make the model accessible. None of those benefits proves that control at the layers below is irrelevant to the user above. The OECD's infrastructure analysis treats the supply chain, its participants, and entry barriers as connected questions rather than treating the chatbot as a self-contained market. [S154]
 
-Nor does concentration require one company to own everything. Dependence can arise through a network of contracts among firms that remain legally separate. A model developer can depend on one supplier for compute and another channel for distribution. A business can sell a specialized interface while depending on a model whose prices and behavior it cannot control. Many brands on the screen can therefore conceal fewer independent choices underneath. The FTC's historical partnership study identifies concrete contractual and technical channels through which such dependence can develop; it does not establish that every partnership has the same terms or has violated the law. [S151]
+Nor does concentration require one company to own everything. Dependence can arise through a network of contracts among firms that remain legally separate. A model developer can depend on one supplier for compute and another channel for distribution. A business can sell a specialized interface while depending on a model whose prices and behavior it cannot control. Many brands on the screen can therefore conceal fewer independent choices underneath. Five logos can still share one spine. The FTC's historical partnership study identifies concrete contractual and technical channels through which such dependence can develop; it does not establish that every partnership has the same terms or has violated the law. [S151]
 
-The relevant test is not to count logos. It is to trace replaceable functions.
+The relevant test is not to count logos. It is to trace replaceable functions. Branding is not an independence proof.
 
 Could the service change models without losing the capability its customers need? Could it move its data without breaking the application? Could it continue operating after a supplier changes access? Could the customer recover the records needed to understand a disputed action? These questions separate apparent variety from practical alternatives. They also avoid pretending that every large firm is the same institution with a different trademark.
 
@@ -156,7 +156,7 @@ Could the service change models without losing the capability its customers need
 
 The power of a reasoning interface begins before it gives an answer. It begins with the options it makes available for consideration.
 
-Imagine asking an assistant how to reduce a household bill. It might suggest a cheaper plan, a rival provider, a complaint, a public assistance program, a change in consumption, or accepting the current bill as reasonable. A response can contain only true statements and still present a narrow option set. The missing possibility will not necessarily appear as a false sentence that a fact-checker can flag.
+Imagine asking an assistant how to reduce a household bill. It might suggest a cheaper plan, a rival provider, a complaint, a public assistance program, a change in consumption, or accepting the current bill as reasonable. A response can contain only true statements and still present a narrow option set. The missing possibility will not necessarily appear as a false sentence that a fact-checker can flag. Omission does not throw an error.
 
 That is an old problem in advice, now placed inside a system that can answer at scale. A human adviser also selects a frame. The difference worth examining is not an imagined purity of human judgment. It is the reach, consistency, update speed, and commercial embedding of the new intermediary. Where one underlying system supplies many interfaces, a framing choice can travel farther than the visible conversation suggests.
 
@@ -166,7 +166,7 @@ The same distinction applies to refusal. A service must set limits on what it wi
 
 My own work depends heavily on machine assistance. I use these systems to understand difficult subjects, write working software, coordinate complicated projects, research claims, and keep long chains of work coherent. I am not criticizing a toy I could throw away without consequence. The usefulness is precisely what creates the dependency.
 
-That is why I care who can change the model, the terms, the memory, the available tools, the allowed actions, the price, the defaults, and the surrounding infrastructure. Once the system becomes part of how I think and work, those are no longer ordinary product settings.
+That is why I care who can change the model, the terms, the memory, the available tools, the allowed actions, the price, the defaults, and the surrounding infrastructure. Once the system becomes part of how I think and work, those are no longer ordinary product settings. They are governance knobs attached to a working relationship.
 
 Consider a future update that improves most benchmark scores but changes how an assistant handles uncertainty. A research team may prefer more abstention; a sales team may prefer fewer interruptions. A customer-support department may value an answer that sounds settled; a person contesting a bill may need the unresolved possibility kept open. The same model revision could have different consequences in those settings. There is no single word, such as helpfulness, that removes the conflict.
 
@@ -188,7 +188,7 @@ I do not take that feedback to mean that expertise is worthless or that every co
 
 This brings us back to the procurement room. A preferred category becomes a requirement. The requirement shapes who can enter. The successful entrants produce the case studies. The case studies make the preferred category look more established. An assistant trained on the resulting record can reproduce the cycle without ever receiving an instruction to protect an incumbent.
 
-The machine inherits a history of selection, not just a collection of facts.
+The machine inherits a history of selection, not just a collection of facts. The archive remembers the winners more clearly than the roads never taken.
 
 ## Keeping assistance from becoming substitution
 
@@ -196,9 +196,9 @@ There is a difference between letting an assistant do work and letting it silent
 
 A system can reduce the cost of research while leaving a person responsible for deciding what evidence matters. It can assemble alternatives while preserving the reasons some were excluded. It can execute an authorized action while retaining a record of who authorized it and under which conditions. These separations require design and maintenance. They are not guaranteed by adding the word agent to the product description.
 
-The distinction becomes sharper when the person supervising the system lacks time. A manager may receive a polished summary of a hundred cases, each condensed by another model. The summary may accurately describe its inputs. Yet the person has no practical way to discover that the original cases were framed too narrowly. Adding a human approval step at the end does not recover information that vanished at the beginning.
+The distinction becomes sharper when the person supervising the system lacks time. A manager may receive a polished summary of a hundred cases, each condensed by another model. The summary may accurately describe its inputs. Yet the person has no practical way to discover that the original cases were framed too narrowly. Adding a human approval step at the end does not recover information that vanished at the beginning. A ceremonial human-in-the-loop is still ceremonial.
 
-This is the institutional form of the disclosure problem. Formally, the person can inspect the record. Practically, the time and skill required may exceed what the workflow provides. A nominally supervised system can therefore move the location of ignorance rather than remove it. The dashboard becomes an attractive endpoint for a process nobody has followed from source to action.
+This is the institutional form of the disclosure problem. Formally, the person can inspect the record. Practically, the time and skill required may exceed what the workflow provides. A nominally supervised system can therefore move the location of ignorance rather than remove it. The dashboard becomes an attractive endpoint for a process nobody has followed from source to action. Clean interface. Missing causal chain.
 
 The answer is not to require a human to read every token or approve every harmless operation. That would destroy many of the benefits. It is to know which distinctions the workflow cannot afford to erase: a claim versus an observation, an inference versus an instruction, permission to read versus permission to act, and an unresolved dispute versus an accepted conclusion. Losing those distinctions changes the meaning of the work, not merely its presentation.
 

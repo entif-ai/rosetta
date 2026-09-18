@@ -22,7 +22,7 @@
 
 Imagine that we solve the part everybody is terrified of.
 
-Advanced AI remains controllable. It does not secretly pursue power, deceive its operators, escape containment, or decide that humanity is an obstacle. It does what authorized people and institutions ask, with astonishing competence.
+Advanced AI remains controllable. It does not secretly pursue power, deceive its operators, escape containment, or decide that humanity is an obstacle. It does what authorized people and institutions ask, with astonishing competence. Congratulations: the machine behaved. We still have to discuss the people setting the targets.
 
 That is my best-case branch.
 
@@ -32,7 +32,7 @@ A retailer asks the system to improve margin and conversion. An employer asks it
 
 The distinction is between control over a system and the quality of the objective controlling it. A machine can follow the intended instruction while the instruction omits something important. It can improve the operator's result while imposing a cost elsewhere. It can make a process more consistent without making its terms more humane.
 
-That is what I mean by the best-case dystopia. The engineering works. The models behave. The operators stay in control. We align the machines to the world we already built.
+That is what I mean by the best-case dystopia. The engineering works. The models behave. The operators stay in control. The technical postmortem has nothing to complain about. We align the machines to the world we already built.
 
 But the world we already built was not waiting for AI in a state of moral equilibrium.
 
@@ -42,9 +42,9 @@ That is the failure mode I care about most because it does not require anything 
 
 ## Alignment has more than one principal
 
-The phrase human values can conceal the most important disagreement. The employee and the employer may value different things about the same scheduling system. The customer and the seller may value different things about personalized offers. The person whose application is assessed may have interests that are not represented by the institution purchasing the assessment tool.
+The phrase human values can conceal the most important disagreement. Humanity is not one stakeholder record. The employee and the employer may value different things about the same scheduling system. The customer and the seller may value different things about personalized offers. The person whose application is assessed may have interests that are not represented by the institution purchasing the assessment tool.
 
-A service can have a clear contractual customer without having only one affected human being. This is the principal problem inside a great deal of talk about alignment. The person authorized to configure the system may not be the person most exposed to its mistakes or tradeoffs.
+A service can have a clear contractual customer without having only one affected human being. The invoice has one name. Consequences often do not. This is the principal problem inside a great deal of talk about alignment. The person authorized to configure the system may not be the person most exposed to its mistakes or tradeoffs.
 
 Social-choice research makes clear that diverse human feedback does not automatically collapse into a single coherent preference. Aggregation requires choices about whose preferences enter, how they are weighted, and how conflicts are handled. Conitzer and colleagues argue that alignment research should draw on that field rather than treating human feedback as one uncomplicated signal. [S183]
 
@@ -62,7 +62,7 @@ Consider three possible outcomes from the same reduction in the labor needed to 
 
 In the first, the worker completes the same output in fewer hours and retains income. The gain appears as time: more room for care, study, rest, or work the person chooses. In the second, the expected output rises while hours and pay stay the same. The gain appears primarily as increased production. In the third, the organization reduces staffing, and the remaining workers use the tool to cover the task. The gain appears partly as lower labor expense, with a transition cost for those who leave.
 
-The model can be equally capable in all three cases. It can be equally honest, equally secure, and equally obedient. The difference lies in decisions about the workplace and the claims people have on its gains.
+The model can be equally capable in all three cases. It can be equally honest, equally secure, and equally obedient. Same model. Three labor bargains. The difference lies in decisions about the workplace and the claims people have on its gains.
 
 None of these simplified cases captures the whole economy. Lower costs can affect prices, demand, investment, and new work. A displaced worker may find a better position or may not. A more productive firm may expand or may distribute the gain to owners. Those subsequent adjustments are important. They are also reasons not to treat the immediate technical gain as a complete welfare result.
 
@@ -72,17 +72,17 @@ The ILO's exposure work and empirical review likewise distinguish potential task
 
 A July 2026 IMF working paper makes another useful distinction. Using sampled Claude web conversations from January 2025 through February 2026, it estimates a labor-cost equivalent of time savings, not a direct increase in GDP. Its baseline covers 86 countries, relies on scaling assumptions, and does not resolve whether the gains accrue to workers or firms. It finds uneven occupational distribution, with concentration declining in many countries as use broadens. Both the inequality and the diffusion belong in the story. [S182]
 
-The point is not to deny the productivity prize. It is to stop awarding the prize to everyone before we know who receives it.
+The point is not to deny the productivity prize. It is to stop awarding the prize to everyone before we know who receives it. The confetti can wait for the distribution schedule.
 
 ## The baseline can rise as fast as the tool improves
 
 I know what that escalation feels like from the inside. Before one Gartner Symposium launch, I logged more than 300 hours in a single September because I was convinced the extraordinary effort was good for me, good for the launch, and evidence that I was the kind of person who could be trusted with more.
 
-Now imagine a tool that makes each hour more productive. The humane possibility is obvious: the same necessary work could take less of a person's life. But a different possibility is also obvious. The organization can redefine normal output around the new tool. The worker receives assistance and a higher target at the same time.
+Now imagine a tool that makes each hour more productive. The humane possibility is obvious: the same necessary work could take less of a person's life. But a different possibility is also obvious. The organization can redefine normal output around the new tool. The worker receives assistance and a higher target at the same time. The saved hour can get reassigned before it ever reaches the worker.
 
 I use productivity tools constantly because they help me. The point is that the tool does not decide how much work is enough. If every saved hour becomes capacity for another target, the productivity gain can be completely real while the worker's life gains nothing.
 
-A baseline can rise without anyone announcing a punitive policy. Early adopters complete more. Their output enters comparisons. Managers revise expectations. Other workers adopt to keep up. What was once exceptional becomes ordinary. The process can be individually understandable at each step while leaving little of the saved time in the worker's hands.
+A baseline can rise without anyone announcing a punitive policy. Early adopters complete more. Their output enters comparisons. Managers revise expectations. Other workers adopt to keep up. What was once exceptional becomes ordinary. The baseline eats the miracle. The process can be individually understandable at each step while leaving little of the saved time in the worker's hands.
 
 The resulting pressure can affect high performers as well as people struggling to adapt. A capable worker may be given more scope because the system now makes more scope possible. The ability to handle it does not prove that taking it on improves the person's life. Competence can become a reason to assign another obligation.
 
@@ -98,9 +98,9 @@ An assistant can be patient where a call center was frustrating. A form can be e
 
 A hypothetical service illustrates the separation. Its AI explains a fee accurately, courteously, and without delay. It offers every discount the company has authorized. It never lies about the terms. Yet the customer cannot obtain a correction when the underlying account is wrong, because the workflow has no effective path for revisiting that record. The conversational experience improves while the substantive problem remains.
 
-The service may receive better satisfaction scores for the conversation. That result would not be false. It would measure a different part of the experience. The danger begins when the score is used as evidence that the whole relationship has improved.
+The service may receive better satisfaction scores for the conversation. That result would not be false. It would measure a different part of the experience. The dashboard can be telling the truth about the wrong layer. The danger begins when the score is used as evidence that the whole relationship has improved.
 
-This is why I do not define a good outcome by how pleasantly a system speaks. Civility can reduce friction and make help accessible. It cannot substitute for the power to correct an error, refuse an unwanted action, or obtain a remedy. An assistant that explains an unchangeable decision beautifully may be a better interface to the same wall.
+This is why I do not define a good outcome by how pleasantly a system speaks. Civility can reduce friction and make help accessible. It cannot substitute for the power to correct an error, refuse an unwanted action, or obtain a remedy. An assistant that explains an unchangeable decision beautifully may be a better interface to the same wall. A concierge at the wall is still a wall.
 
 The same distinction applies to individualized persuasion. A recommendation can fit a person's tastes closely and still serve a seller's objective more than the person's long-term interest. The ability to predict a response does not establish that the response improves welfare. A click, a purchase, a return visit, and a considered endorsement are different outcomes.
 
@@ -112,13 +112,13 @@ That extrapolation is still worth examining. Lowering the cost of generating, te
 
 I care about precision. I also care about whether a correction changes the mechanism under discussion or merely gives us a more technically immaculate way to avoid looking at it.
 
-That distinction became a sore point while this essay was taking shape. Again and again, a material argument about incentives, opacity, labor, money, or institutional power could be diverted into a semantic side road. Sometimes the side road matters. Sometimes it is the whole point. But sometimes the technical correction lands, the terminology improves, and the functional outcome remains sitting exactly where it was.
+That distinction became a sore point while this essay was taking shape. Again and again, a material argument about incentives, opacity, labor, money, or institutional power could be diverted into a semantic side road. The side road can have immaculate signage and still go nowhere. Sometimes the side road matters. Sometimes it is the whole point. But sometimes the technical correction lands, the terminology improves, and the functional outcome remains sitting exactly where it was.
 
 That is the standard I want applied here. If a distinction changes the mechanism, change the argument. If it changes the magnitude, change the magnitude. If it kills the claim, kill the claim. But if the distinction only changes which technically correct phrase we use to describe the same practical relationship, then make the correction and keep following the relationship.
 
 This matters even more with AI because these systems are exceptionally good at producing plausible distinctions. A reasoning assistant can protect us from sloppy thinking. It can also bury a material question under an infinite mountain of immaculate qualifications until nobody remembers what the question was.
 
-The answer is not to stop checking facts. It is to stop confusing contrarianism with rigor. The evidence should determine how hard I can push a claim. It should not require me to write the opposition's essay inside my own every time I have a well-supported conclusion.
+The answer is not to stop checking facts. It is to stop confusing contrarianism with rigor. A correction should pay rent in the argument. The evidence should determine how hard I can push a claim. It should not require me to write the opposition's essay inside my own every time I have a well-supported conclusion.
 
 ## A future can be technically successful and humanly disappointing
 
